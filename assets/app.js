@@ -89,7 +89,8 @@
       stat(D.outbound.plans[0].legs.length + D.retplan.plans[0].legs.length, 'itinerary legs on the recommended plans') +
       stat(D.sources.sources.length, 'source pages read (see Sources tab)') +
       stat(countVerified(D), 'transit rows marked official-live') +
-      stat(D.specials.entries.length, 'lunch entries in the master list') +
+      stat(D.specials.entries.length, 'lunch rows in the master list') +
+      stat(D.specials.search_protocol.new_entries_verified_before_add || 0, 'new rows verified before adding') +
       stat(countLevel(D, 'official'), 'lunch rows verified on the restaurant\'s own menu') +
       stat(D.lunch_rejected.distinct_businesses_rejected || D.lunch_rejected.rejected.length, 'distinct businesses searched and rejected, with reasons') +
       '</div>' +

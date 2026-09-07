@@ -285,6 +285,18 @@ def main():
     validate_lunch(specials["entries"])
     validate_fares(fares)
 
+    # Keep the user's research requirement machine-checkable. The count is
+    # recorded in the source data only after each row has been reviewed and
+    # assigned an evidence tier; this prevents a later edit from silently
+    # regressing below the requested 100 new entries.
+    protocol = specials.get("search_protocol", {})
+    minimum_new = protocol.get("minimum_new_entries_required", 100)
+    verified_before_add = protocol.get("new_entries_verified_before_add")
+    if not isinstance(verified_before_add, int) or verified_before_add < minimum_new:
+        err(f"lunch research threshold: {verified_before_add!r} new entries verified before add; requires at least {minimum_new}")
+    if len(specials.get("entries", [])) < minimum_new:
+        err(f"lunch master list has {len(specials.get('entries', []))} rows; requires at least {minimum_new}")
+
     # fare cross-check: sum of leg fares must match the plan total
     for obj, label in ((outbound, "outbound"), (retplan, "return")):
         for pl in obj["plans"]:
