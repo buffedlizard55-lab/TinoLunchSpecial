@@ -24,7 +24,7 @@ Every number above is a row in `data/` with the agency page it was read from.
 
 ```
 index.html                  the site (no build step, no dependencies, works from file://)
-assets/styles.css           system fonts, light/dark-safe layout, print stylesheet
+assets/styles.css           system fonts, responsive layout, print stylesheet
 assets/app.js               renders data/generated.js into 8 tabs
 data/*.json                 the source of truth - edit these, not generated.js
 data/generated.js           the compiled bundle the browser loads (window.TINO_DATA)
@@ -33,16 +33,17 @@ data/plan.json              trip definition, constraints, decision log
 data/transit_outbound.json  3 outbound plans, leg by leg, with per-leg links
 data/transit_return.json    3 return plans + the last-workable-train cutoff
 data/fares.json             agency fare tables and six day-total scenarios
-data/lunch_specials.json    251 lunch entries (27 original + 20 batch-2 + 54 batch-3 + 49 batch-4 + 101 batch-5, all 2026-09-07), hours, days, prices, verification level
+data/lunch_specials.json    252 lunch entries (27 original + 20 batch-2 + 54 batch-3 + 49 batch-4 + 101 batch-5 + 1 review-pass, all 2026-09-07), hours, days, prices, verification level
 data/lunch_rejected.json    53 rejected/deferred candidates, each with a reason and a link
 data/flags.json             29 irregularities found while verifying - all still listed
-data/sources.json           53 source pages, what each one proved, and the fetch status
+data/sources.json           57 source pages, what each one proved, and the fetch status
 docs/VERIFICATION.md        how to re-check every row, and what could not be verified
 scripts/build_data.py       validates + rebuilds generated.js and summary.md
 scripts/check_links.py      every row must link to a citable https page
 scripts/merge_incoming.py   merges researched batches in data/incoming/*.json into the master list
 scripts/smoke_test.js       renders all 8 panels headlessly, fails on undefined/NaN
-.github/workflows/deploy.yml
+.github/workflows/ci.yml    validates data + runs the link check and smoke test on every push
+.github/workflows/pages.yml deploys the static site to GitHub Pages
 ```
 
 ## Rebuild and check
@@ -62,15 +63,15 @@ python3 -m http.server 8000       # preview at http://127.0.0.1:8000
 2. **Lunch:** a price is only printed if it appears on the restaurant's own website or published menu; hours may come from Yelp/Google/TripAdvisor. Anything seen only on a menu aggregator or delivery app is recorded as a lead and flagged, never presented as verified.
 3. **Absence is a result.** "No lunch special published" and "closed on Tuesdays" are rows of their own, so a gap in the data is visible instead of silently dropped.
 4. **Conflicts stay visible.** Where two sources disagree (Muni headway text vs timetable, OSM hours vs the restaurant's own site) both values are shown and the choice is explained in `data/flags.json`.
-5. **Nothing was backfilled by hand.** The 20-entry search requirement was met by 28 queries over 51 candidates; 27 survived into the master list and 24 were rejected, each with a reason and a link (14 rows in `data/lunch_rejected.json`).
+5. **Nothing was backfilled by hand.** The first search pass ran 28 queries over 51 candidates; 27 survived into the master list and the rest were rejected, each with a reason and a link. Later passes added 225 more rows the same way; the master list is now 252 rows with 53 rejects in `data/lunch_rejected.json`.
 
 GitHub Pages: `.github/workflows/pages.yml` deploys `index.html` + `assets/` + `data/generated.js`. Set the repo Pages source to **GitHub Actions**. Live URL once enabled: https://buffedlizard55-lab.github.io/TinoLunchSpecial/
 
-## Flagged irregularities (23)
+## Flagged irregularities (29)
 
-Twelve transit, eleven lunch. Headlines:
+Fourteen transit, fifteen lunch. Headlines:
 
-* **N Judah does not stop at 22nd St Caltrain.** The metro line ends at King St & 4th St; Caltrain's own station page lists "Muni N-Judah" there. Two options are priced and timed in the data (ride the 6:20 express from the terminal, or transfer at Castro and board at 22nd St on the 6:30 local).
+* **N Judah does not stop at 22nd St Caltrain.** The metro line ends at King St & 4th St; Caltrain's own station page lists "Muni N-Judah" there. Plans board at the terminal and still publish the 22nd St times in the same rows for reference (same Zone 1 fare).
 * **SFMTA's own pages disagree** about the pre-6:15 AM N Bus frequency: the route page says every 60 minutes, the timetable says every 15. The timetable (with the date `20260908`) was used, and both readings still make the 6:20 train.
 * **The Caltrain weekday PDF could not be downloaded** from the build environment, so minute-level times were read from Caltrain's live per-station tables; the holiday/weekend PDFs were checked and do not cover Sept 8.
 * **The VTA stop closest to the destination** (`Stevens Creek & De Anza`) is 1.4 km / 18 min on foot - there is no closer stop, and the 7:26 AM school-only trip is not usable.
