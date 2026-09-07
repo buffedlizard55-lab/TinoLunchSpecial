@@ -67,9 +67,12 @@
 
 | # | Mode | Line / service | From | Departs | To | Arrives | Time | Fare | Verified | Sources |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 1 | VTA bus | 55 northbound (peak variant via Fremont & Sydney) | McClellan Rd & Felton Way (E) | about 1:04 PM | Sunnyvale Transit Center (N) | 1:31 PM | 27 min | $2.50 | official-live (boarding time interpolated) | [VTA - route 55 schedule PDF](https://www.vta.org/sites/default/files/route_schedule_pdfs/current/route_55/route_55_schedule.pdf) |
-| 2 | Caltrain | Northbound local (train 135 in the published grid) | Sunnyvale station | 1:42 PM | San Francisco Caltrain Station | 2:46 PM | 64 min | $8.50 | official-live | [Caltrain - Sunnyvale station schedules](https://www.caltrain.com/station/sunnyvale) [Caltrain - San Francisco station schedules](https://www.caltrain.com/station/sanfrancisco) |
-| 3 | SF Muni | N Judah metro westbound | King St & 4th St/Caltrain | 2:57 PM | Judah St & 19th Ave | 3:39 PM | 42 min | $2.85 | official-live | [SFMTA - N Judah weekday timetable (westbound)](https://www.sfmta.com/routes/schedule/N?direction_id=0) |
+| 1 | Walk | 20387 Gillick Way to McClellan Rd & Felton Way | 20387 Gillick Way, Cupertino | 12:55 PM | McClellan Rd & Felton Way (E) | about 1:04 PM | 9 min | - free | estimate | [Valhalla / OpenStreetMap pedestrian route](https://valhalla.openstreetmap.de/) |
+| 2 | VTA bus | 55 northbound (peak variant via Fremont & Sydney) | McClellan Rd & Felton Way (E) | about 1:04 PM | Sunnyvale Transit Center (N) | 1:31 PM | 27 min | $2.50 | official-live (boarding time interpolated) | [VTA - route 55 schedule PDF](https://www.vta.org/sites/default/files/route_schedule_pdfs/current/route_55/route_55_schedule.pdf) |
+| 3 | Walk | Sunnyvale Transit Center to Sunnyvale Caltrain platform | Sunnyvale Transit Center (N) | 1:31 PM | Sunnyvale station, 121 W Evelyn Ave | 1:33 PM | 2 min | - free | estimate | [Caltrain - Sunnyvale station page](https://www.caltrain.com/station/sunnyvale) [OpenStreetMap - Sunnyvale Transit Center node](https://www.openstreetmap.org/node/6720130283) |
+| 4 | Caltrain | Northbound local (train 135 in the published grid) | Sunnyvale station | 1:42 PM | San Francisco Caltrain Station | 2:46 PM | 64 min | $8.50 | official-live | [Caltrain - Sunnyvale station schedules](https://www.caltrain.com/station/sunnyvale) [Caltrain - San Francisco station schedules](https://www.caltrain.com/station/sanfrancisco) |
+| 5 | SF Muni | N Judah metro westbound | King St & 4th St/Caltrain | 2:57 PM | Judah St & 19th Ave | 3:39 PM | 42 min | $2.85 | official-live | [SFMTA - N Judah weekday timetable (westbound)](https://www.sfmta.com/routes/schedule/N?direction_id=0) |
+| 6 | Walk | Judah St & 19th Ave to home | Judah St & 19th Ave (stop 15201) | 3:39 PM | 21st Ave & Judah St (home) | about 3:43 PM | 4 min | - free | estimate | [SFMTA - N Judah route page (stop list)](https://www.sfmta.com/routes/n-judah) |
 
 ## Fare options for 2026-09-08
 

@@ -350,8 +350,8 @@ window.TINO_DATA = {
     "label":"Plan A2 - earliest departure with a safe transfer",
     "recommended":false,
     "leave_home":"5:10 AM",
-    "arrive_destination":"about 8:23 AM",
-    "total_time_min":193,
+    "arrive_destination":"about 8:15 AM",
+    "total_time_min":185,
     "cash_cost_usd":13.85,
     "clipper_cost_usd":13.85,
     "legs":[
@@ -483,7 +483,8 @@ window.TINO_DATA = {
     ],
     "flags_summary":[
      "FLAG-7"
-    ]
+    ],
+    "note":"Same Muni trip as Plan A, but the 6:25 a.m. local instead of the 6:20 express. Trades 20 minutes of travel time for a 12-minute-plus Caltrain-to-VTA margin and a later bus (7:40 a.m. instead of 7:19 a.m.). Arrives about 8:15 AM."
    },
    {
     "id":"B",
@@ -998,14 +999,38 @@ window.TINO_DATA = {
     "id":"R3",
     "label":"Plan R3 - DO NOT RELY (breaks the 3:30 PM deadline)",
     "recommended":false,
-    "leave_destination":"12:48 PM",
+    "leave_destination":"12:55 PM",
     "arrive_home":"about 3:43 PM - misses the deadline",
-    "total_time_min":235,
+    "total_time_min":168,
     "cash_cost_usd":13.85,
     "clipper_cost_usd":11.0,
     "legs":[
      {
       "seq":1,
+      "mode":"Walk",
+      "operator":"-",
+      "line":"20387 Gillick Way to McClellan Rd & Felton Way",
+      "from":"20387 Gillick Way, Cupertino",
+      "to":"McClellan Rd & Felton Way (E)",
+      "depart":"12:55 PM",
+      "arrive":"about 1:04 PM",
+      "travel_min":9,
+      "fare_usd":0.0,
+      "verified":"estimate",
+      "note":"0.741 km on OpenStreetMap footway geometry at about 3 mph; the same walk as plans R1 and R2, only later.",
+      "sources":[
+       {
+        "label":"Valhalla / OpenStreetMap pedestrian route",
+        "url":"https://valhalla.openstreetmap.de/",
+        "verifies":"0.741 km, about 9 min"
+       }
+      ],
+      "flags":[
+       "FLAG-8"
+      ]
+     },
+     {
+      "seq":2,
       "mode":"VTA bus",
       "operator":"VTA",
       "line":"55 northbound (peak variant via Fremont & Sydney)",
@@ -1030,7 +1055,36 @@ window.TINO_DATA = {
       ]
      },
      {
-      "seq":2,
+      "seq":3,
+      "mode":"Walk",
+      "operator":"-",
+      "line":"Sunnyvale Transit Center to Sunnyvale Caltrain platform",
+      "from":"Sunnyvale Transit Center (N)",
+      "to":"Sunnyvale station, 121 W Evelyn Ave",
+      "depart":"1:31 PM",
+      "arrive":"1:33 PM",
+      "travel_min":2,
+      "fare_usd":0.0,
+      "verified":"estimate",
+      "note":"17 m between the Caltrain platform and the transit-center bays (OpenStreetMap node 6720130283); 9 minutes of dwell time before the 1:42 PM train.",
+      "sources":[
+       {
+        "label":"Caltrain - Sunnyvale station page",
+        "url":"https://www.caltrain.com/station/sunnyvale",
+        "verifies":"station and VTA connection on the same block"
+       },
+       {
+        "label":"OpenStreetMap - Sunnyvale Transit Center node",
+        "url":"https://www.openstreetmap.org/node/6720130283",
+        "verifies":"bay-to-platform distance"
+       }
+      ],
+      "flags":[
+       "FLAG-6"
+      ]
+     },
+     {
+      "seq":4,
       "mode":"Caltrain",
       "operator":"Peninsula Corridor Joint Powers Board",
       "line":"Northbound local (train 135 in the published grid)",
@@ -1060,7 +1114,7 @@ window.TINO_DATA = {
       ]
      },
      {
-      "seq":3,
+      "seq":5,
       "mode":"SF Muni",
       "operator":"SFMTA",
       "line":"N Judah metro westbound",
@@ -1081,13 +1135,37 @@ window.TINO_DATA = {
        }
       ],
       "flags":[]
+     },
+     {
+      "seq":6,
+      "mode":"Walk",
+      "operator":"-",
+      "line":"Judah St & 19th Ave to home",
+      "from":"Judah St & 19th Ave (stop 15201)",
+      "to":"21st Ave & Judah St (home)",
+      "depart":"3:39 PM",
+      "arrive":"about 3:43 PM",
+      "travel_min":4,
+      "fare_usd":0.0,
+      "verified":"estimate",
+      "note":"Two 200 ft blocks. Even with no time at all at the stop, the deadline is already missed on the bus.",
+      "sources":[
+       {
+        "label":"SFMTA - N Judah route page (stop list)",
+        "url":"https://www.sfmta.com/routes/n-judah",
+        "verifies":"stop 15201 at Judah & 19th Ave"
+       }
+      ],
+      "flags":[
+       "FLAG-8"
+      ]
      }
     ],
     "flags_summary":[
      "FLAG-5",
      "FLAG-9"
     ],
-    "verdict":"Listed so the cutoff is explicit: if lunch runs long past 12:48 PM, call it a day earlier or plan to be home late."
+    "verdict":"Listed so the cutoff is explicit: if lunch runs long past 12:50 PM, no option gets you home by 3:30 PM. The 1:31 PM arrival at Sunnyvale still makes the 1:42 PM train, but the only N Judah westbound that day after 2:46 PM is 2:57 PM, which lands at Judah & 19th at 3:39 PM. Take R1 or R2 instead."
    }
   ],
   "option_table":[
@@ -1122,7 +1200,7 @@ window.TINO_DATA = {
     "status":"OK - last comfortable combination"
    },
    {
-    "leave_gillick":"12:48 PM",
+    "leave_gillick":"12:55 PM (12:48 PM if you want slack)",
     "vta_55_nb":"about 1:04 PM (12:59 PM from Stelling)",
     "arrives_sunnyvale_tc":"1:31 PM",
     "caltrain_nb":"1:42 PM from Sunnyvale",
@@ -1135,7 +1213,8 @@ window.TINO_DATA = {
   "notes":[
    "The morning peak on Caltrain starts after this return window, so the 12:42 PM / 1:12 PM locals are off-peak, midday trains at 30-minute frequency; the rush-hour risk is concentrated in the Muni ride, which is why the plan keeps a 10-minute Muni buffer and a 17-minute station buffer.",
    "Earlier northbound route 55 trips (mid-morning) exist on the VTA weekday sheet but their stop-by-stop times were not verified in this pass, so the earliest option shown is the 12:01 PM trip from Stelling & Stevens Creek.",
-   "Do not get off at 22nd Street on the way home: the N Judah stop is King St & 4th St at the SF terminal, 6 minutes further north. 22nd Street times are shown only for reference against the requested mode chain."
+   "Do not get off at 22nd Street on the way home: the N Judah stop is King St & 4th St at the SF terminal, 6 minutes further north. 22nd Street times are shown only for reference against the requested mode chain.",
+   "The one-line option table and the plan tables use the same 9-minute walk from 20387 Gillick Way to McClellan Rd & Felton Way; where the option table shows an earlier 'leave the house' time it is deliberately padded, and the plan table shows the minimum that still gets to the bay before the bus."
   ]
  },
  "fares":{
