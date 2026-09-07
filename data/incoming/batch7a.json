@@ -1,0 +1,510 @@
+{
+ "note": "Batch 7a - pass 7, 2026-09-07. Los Gatos + Blossom Valley + Palo Alto + West San Jose entries verified line by line from Yelp/official/directory snippets captured during pass-7 searches.",
+ "entries": [
+  {
+   "name": "Tsing Tao",
+   "city": "Los Gatos",
+   "address": "15525 Los Gatos Blvd, Ste D, Los Gatos, CA 95032",
+   "area": "Los Gatos Blvd",
+   "cuisine": "Chinese (northern/Szechuan)",
+   "days_open": "Tue-Sun (closed Monday)",
+   "hours_tuesday": "11:30 AM - 2:00 PM, 4:00 PM - 9:00 PM",
+   "lunch_special": {
+    "name": "Luncheon specials (entree plate with rice, soup of the day, spring roll)",
+    "price_from": 15.75,
+    "price_to": 18.9,
+    "days": "Tue-Sun lunch service (Mon closed)",
+    "window": "11:30 AM - 2:00 PM",
+    "includes": "Per MenuPix luncheon-special list: Sesame/Kung Pao/Cashew chicken etc. $15.75; beef $16.80; prawns/happy family up to $18.90. To-go orders do not include soup (per the chain's own menu text)."
+   },
+   "open_on_trip_date": true,
+   "fits_return_bus": {
+    "ok": false,
+    "note": "Los Gatos Blvd - off the Cupertino return corridor; needs its own plan."
+   },
+   "flags": [
+    "MenuPix luncheon-special prices are directory-captured; Yelp review confirms 'reasonably priced lunch specials'. Tuesday hours 11:30-2 per Yelp (updated 2026)."
+   ],
+   "phone": "(408) 402-3180",
+   "review_links": {
+    "yelp": "https://www.yelp.com/biz/tsing-tao-los-gatos",
+    "google_maps": "https://www.google.com/maps/search/?api=1&query=Tsing+Tao+15525+Los+Gatos+Blvd+Los+Gatos"
+   },
+   "verification": {
+    "level": "listing",
+    "accessed": "2026-09-07",
+    "sources": [
+     {
+      "label": "Yelp - Tsing Tao Los Gatos (address, phone, Tue-Sun 11:30-2/4-9 hours, closed Monday)",
+      "url": "https://www.yelp.com/biz/tsing-tao-los-gatos"
+     },
+     {
+      "label": "MenuPix - Tsing Tao Los Gatos Luncheon Special price list ($15.75-$18.90)",
+      "url": "https://www.menupix.com/menudirectory/menu.php?id=32795037&type=6"
+     },
+     {
+      "label": "DoorDash - Tsing Tao Los Gatos (lunch window 11:30 AM-1:35 PM for delivery, menu cross-check)",
+      "url": "https://www.doordash.com/store/tsing-tao-chinese-restaurant-los-gatos-175620/"
+     }
+    ]
+   }
+  },
+  {
+   "name": "Golden Triangle Cuisine",
+   "city": "Los Gatos",
+   "address": "217 N Santa Cruz Ave, Ste A, Los Gatos, CA 95030",
+   "area": "Downtown Los Gatos",
+   "cuisine": "Thai / Laotian",
+   "days_open": "Mon, Wed-Sun (Yelp shows Tuesday closed; directories disagree - conflict)",
+   "hours_tuesday": "Closed per Yelp (updated 2026); directories show 11:30 AM - 3:00 PM - conflict",
+   "lunch_special": {
+    "name": "Lunch specials (reviewer-confirmed)",
+    "price_from": null,
+    "price_to": null,
+    "days": "days open (Mon, Wed-Sun per Yelp)",
+    "window": "11:30 AM - 3:00 PM lunch service",
+    "includes": "Yelp review: 'The lunch specials is where it's at! The value is in the...' - no published special price captured."
+   },
+   "open_on_trip_date": false,
+   "fits_return_bus": {
+    "ok": false,
+    "note": "Downtown Los Gatos - off the return corridor; not usable on the trip Tuesday if Yelp Tue-closed hours hold."
+   },
+   "flags": [
+    "IRREGULARITY: Yelp hours (updated Mar-May 2026) show Tuesday CLOSED; zmenu/restaurantguru/restaurants-info directories all list Tue 11:30-3 + dinner. Yelp treated as current; call (408) 402-5092 before relying on it."
+   ],
+   "phone": "(408) 402-5092",
+   "review_links": {
+    "yelp": "https://www.yelp.com/biz/golden-triangle-cuisine-los-gatos",
+    "google_maps": "https://www.google.com/maps/search/?api=1&query=Golden+Triangle+Cuisine+217+N+Santa+Cruz+Ave+Los+Gatos"
+   },
+   "verification": {
+    "level": "conflicting",
+    "accessed": "2026-09-07",
+    "sources": [
+     {
+      "label": "Yelp - Golden Triangle Cuisine (address, phone, Tue closed, Mon/Wed-Sun 11:30-3 lunch)",
+      "url": "https://www.yelp.com/biz/golden-triangle-cuisine-los-gatos?start=40"
+     },
+     {
+      "label": "zmenu - Golden Triangle Cuisine directory (address, phone, daily 11:30-3 + 5-9:30)",
+      "url": "https://www.zmenu.com/golden-triangle-cuisine-los-gatos-online-menu/"
+     },
+     {
+      "label": "RestaurantGuru - Golden Triangle Cuisine (JSON opening hours incl. Tue closed, review lunch-special mention)",
+      "url": "https://restaurantguru.com/Golden-Triangle-Cuisine-Los-Gatos"
+     }
+    ]
+   }
+  },
+  {
+   "name": "Shabuya",
+   "city": "Milpitas",
+   "address": "84 Ranch Dr, Milpitas, CA 95035",
+   "area": "McCarthy Ranch",
+   "cuisine": "Japanese hot pot / AYCE",
+   "days_open": "Daily",
+   "hours_tuesday": "11:30 AM - 10:00 PM",
+   "lunch_special": {
+    "name": "Lunch Special AYCE (official lunch menu)",
+    "price_from": 22.99,
+    "price_to": 22.99,
+    "days": "Mon-Fri until 3:00 PM (excluding holidays)",
+    "window": "open-3:00 PM weekdays",
+    "includes": "$22.99 per person; children under 40in free, 40-50in $10.99; 1.5-hour dining limit per the official menu."
+   },
+   "open_on_trip_date": true,
+   "fits_return_bus": {
+    "ok": false,
+    "note": "Milpitas - far end of the 10-15 mi radius; needs its own VTA/ride plan."
+   },
+   "flags": [],
+   "phone": "(408) 935-8020",
+   "review_links": {
+    "yelp": "https://www.yelp.com/biz/shabuya-milpitas-milpitas-2",
+    "google_maps": "https://www.google.com/maps/search/?api=1&query=Shabuya+84+Ranch+Dr+Milpitas"
+   },
+   "verification": {
+    "level": "official",
+    "accessed": "2026-09-07",
+    "sources": [
+     {
+      "label": "Official Shabuya Milpitas page - $22.99 Mon-Fri until 3 PM lunch special menu, address, phone, daily hours",
+      "url": "https://www.shabuyarestaurant.com/milpitas-online"
+     },
+     {
+      "label": "Yelp - Shabuya Milpitas (address, phone, full weekly hours cross-check)",
+      "url": "https://www.yelp.com/biz/shabuya-milpitas-milpitas-2"
+     }
+    ]
+   }
+  },
+  {
+   "name": "Wagyu Master",
+   "city": "San Jose",
+   "address": "1410 El Paseo De Saratoga, San Jose, CA 95130",
+   "area": "West San Jose (El Paseo de Saratoga)",
+   "cuisine": "Japanese wagyu / hot pot",
+   "days_open": "Daily",
+   "hours_tuesday": "11:30 AM - 3:00 PM, 5:30 PM - 10:00 PM (Yelp Aug 2026; a July 2026 snapshot showed no weekday lunch - conflict)",
+   "lunch_special": {
+    "name": "Weekday lunch menu (reviewer-confirmed lunch specials)",
+    "price_from": null,
+    "price_to": null,
+    "days": "daily lunch service per current Yelp hours",
+    "window": "11:30 AM - 3:00 PM",
+    "includes": "Yelp review: 'Staffs are fantastic and lunch specials are great value for money.' AYCE sukiyaki $98 / shabu $88 (SFGate); no separate published lunch-special price captured."
+   },
+   "open_on_trip_date": true,
+   "fits_return_bus": {
+    "ok": false,
+    "note": "West San Jose - off the return corridor."
+   },
+   "flags": [
+    "IRREGULARITY: Yelp snapshots conflict - July 2026 capture shows Mon-Thu dinner-only (5:30-10); August 2026 verified hours show lunch restored 11:30-3 daily. Call ahead."
+   ],
+   "phone": "(408) 549-7891",
+   "review_links": {
+    "yelp": "https://www.yelp.com/biz/wagyu-master-san-jose",
+    "google_maps": "https://www.google.com/maps/search/?api=1&query=Wagyu+Master+1410+El+Paseo+de+Saratoga+San+Jose"
+   },
+   "verification": {
+    "level": "listing",
+    "accessed": "2026-09-07",
+    "sources": [
+     {
+      "label": "Yelp - Wagyu Master San Jose (address, phone, Tue 11:30-3 + 5:30-10, verified Aug 2026)",
+      "url": "https://www.yelp.com/biz/wagyu-master-san-jose"
+     },
+     {
+      "label": "Yelp July 2026 snapshot showing Mon-Thu dinner-only hours (the conflict)",
+      "url": "https://www.yelp.com/biz/wagyu-master-san-jose?start=80"
+     },
+     {
+      "label": "SFGate - Wagyu AYCE debut (prices $88/$98, address, 'open Mon-Thu 11:30am-10pm')",
+      "url": "https://www.sfgate.com/food/article/all-you-can-eat-wagyu-bay-area-21957620.php"
+     }
+    ]
+   }
+  },
+  {
+   "name": "The Sandwich Maker",
+   "city": "Los Gatos",
+   "address": "987 University Ave, Ste 29, Los Gatos, CA 95032",
+   "area": "University Ave office park",
+   "cuisine": "Vietnamese banh mi / deli",
+   "days_open": "Mon-Fri (closed weekends)",
+   "hours_tuesday": "8:30 AM - 3:30 PM",
+   "lunch_special": {
+    "name": "Lunch specials (reviewer figure; no published menu special)",
+    "price_from": null,
+    "price_to": null,
+    "days": "Mon-Fri",
+    "window": "8:30 AM - 3:30 PM",
+    "includes": "Yelp review: 'Lunch specials are about $5 - great deal.' Banh mi, pho, deli sandwiches, plates. Reviewer price, not a published menu price."
+   },
+   "open_on_trip_date": true,
+   "fits_return_bus": {
+    "ok": false,
+    "note": "Los Gatos University Ave - off the return corridor."
+   },
+   "flags": [
+    "Suite number differs: official site says #38, Yelp says Ste 29 (same 987 University Ave plaza). Weekday-only shop - closed weekends, fine for the Tuesday trip."
+   ],
+   "phone": "(408) 395-6331",
+   "review_links": {
+    "yelp": "https://www.yelp.com/biz/the-sandwich-maker-los-gatos",
+    "google_maps": "https://www.google.com/maps/search/?api=1&query=The+Sandwich+Maker+987+University+Ave+Los+Gatos"
+   },
+   "verification": {
+    "level": "listing",
+    "accessed": "2026-09-07",
+    "sources": [
+     {
+      "label": "Official site - The Sandwich Maker (address, phone, Mon-Fri 8:30-3:30, closed weekends)",
+      "url": "https://thesandwichmaker.us/"
+     },
+     {
+      "label": "Yelp - The Sandwich Maker (Ste 29, hours cross-check, lunch-specials review quote)",
+      "url": "https://www.yelp.com/biz/the-sandwich-maker-los-gatos"
+     },
+     {
+      "label": "Restaurantji - Sandwich Maker (hours Mo-Fr 8:30-15:30 cross-check)",
+      "url": "https://www.restaurantji.com/ca/los-gatos/sandwich-maker-/"
+     }
+    ]
+   },
+   "coords": [
+    37.2468,
+    -121.9774
+   ]
+  },
+  {
+   "name": "Goku Sushi",
+   "city": "San Jose",
+   "address": "840 Blossom Hill Rd, San Jose, CA 95123",
+   "area": "Blossom Valley",
+   "cuisine": "Sushi",
+   "days_open": "Daily",
+   "hours_tuesday": "11:00 AM - 2:30 PM, 5:00 PM - 9:00 PM",
+   "lunch_special": {
+    "name": "Lunch special (2-3 roll combos)",
+    "price_from": 13.0,
+    "price_to": null,
+    "days": "every day (owner: 'lunch special available everyday 11-2:30')",
+    "window": "11:00 AM - 2:30 PM",
+    "includes": "Yelp review: '2x 6-8 piece rolls for $13 or 3x...' - reviewer figure; owner confirms daily availability in Yelp Q&A."
+   },
+   "open_on_trip_date": true,
+   "fits_return_bus": {
+    "ok": false,
+    "note": "Blossom Valley (~13 mi) - edge of radius; needs its own plan."
+   },
+   "flags": [],
+   "phone": "(408) 622-8129",
+   "review_links": {
+    "yelp": "https://www.yelp.com/biz/goku-sushi-san-jose",
+    "google_maps": "https://www.google.com/maps/search/?api=1&query=Goku+Sushi+840+Blossom+Hill+Rd+San+Jose"
+   },
+   "verification": {
+    "level": "review",
+    "accessed": "2026-09-07",
+    "sources": [
+     {
+      "label": "Yelp - Goku Sushi (address, phone, Mon-Fri 11-2:30/5-9, owner Q&A: lunch special every day 11-2:30)",
+      "url": "https://www.yelp.com/biz/goku-sushi-san-jose"
+     },
+     {
+      "label": "Restaurantji - Goku Sushi (weekly hours cross-check)",
+      "url": "https://www.restaurantji.com/ca/san-jose/goku-sushi-/"
+     },
+     {
+      "label": "Yelp search listing 'Lunch Specials Los Gatos' - Goku Sushi review quote ($13 for 2 rolls)",
+      "url": "https://www.yelp.com/search?find_desc=Lunch+Specials&find_loc=Los+Gatos%2C+CA"
+     }
+    ]
+   }
+  },
+  {
+   "name": "Zareen's",
+   "city": "Palo Alto",
+   "address": "365 S California Ave, Palo Alto, CA 94306",
+   "area": "California Avenue",
+   "cuisine": "Pakistani/Indian halal",
+   "days_open": "Daily 11 AM - midnight",
+   "hours_tuesday": "11:00 AM - 12:00 AM",
+   "lunch_special": {
+    "name": "Lunch special (large thali/plate - reviewer-confirmed)",
+    "price_from": null,
+    "price_to": null,
+    "days": "daily",
+    "window": "lunch service from 11 AM",
+    "includes": "Yelp review: 'Lunch special is a HUGE portion and a great deal. Do be aware, you need to order rice and naan...' No published special price captured; menu plates $11.25-$19.75 on the official ordering site."
+   },
+   "open_on_trip_date": true,
+   "fits_return_bus": {
+    "ok": false,
+    "note": "Palo Alto - off the return corridor."
+   },
+   "flags": [],
+   "phone": "(650) 562-8700",
+   "review_links": {
+    "yelp": "https://www.yelp.com/biz/zareens-palo-alto",
+    "google_maps": "https://www.google.com/maps/search/?api=1&query=Zareen's+365+S+California+Ave+Palo+Alto"
+   },
+   "verification": {
+    "level": "review",
+    "accessed": "2026-09-07",
+    "sources": [
+     {
+      "label": "Yelp - Zareen's Palo Alto (address, phone, daily 11 AM-midnight, verified 2026)",
+      "url": "https://www.yelp.com/biz/zareens-palo-alto?start=880"
+     },
+     {
+      "label": "Official online ordering - Zareen's Palo Alto (address, 11 AM open, menu prices)",
+      "url": "https://order.online/store/zareen's-palo-alto-174409"
+     },
+     {
+      "label": "Eater - Zareen's Palo Alto venue page (address, daily 11-12 hours)",
+      "url": "https://www.eater.com/venue/96965/zareen-s-palo-alto"
+     },
+     {
+      "label": "Yelp search 'Lunch Specials Palo Alto' - review quote 'Lunch special is a HUGE portion and a great deal'",
+      "url": "https://www.yelp.com/search?find_desc=Lunch+Specials&find_loc=Palo+Alto%2C+CA"
+     }
+    ]
+   },
+   "coords": [
+    37.4299,
+    -122.1466
+   ]
+  },
+  {
+   "name": "Sushi Roku",
+   "city": "Palo Alto",
+   "address": "180 El Camino Real, Stanford Shopping Center, Palo Alto, CA 94304",
+   "area": "Stanford Shopping Center",
+   "cuisine": "Japanese",
+   "days_open": "Daily",
+   "hours_tuesday": "11:30 AM - 9:30 PM",
+   "lunch_special": {
+    "name": "Weekday lunch specials (reviewer-confirmed)",
+    "price_from": null,
+    "price_to": null,
+    "days": "weekday lunch",
+    "window": "11:30 AM onward",
+    "includes": "Yelp review: 'Great weekday lunch specials and good sushi.' No published special price captured."
+   },
+   "open_on_trip_date": true,
+   "fits_return_bus": {
+    "ok": false,
+    "note": "Stanford Shopping Center - off the return corridor."
+   },
+   "flags": [
+    "April 2024 opening coverage said dinner-only with lunch 'soon'; current mall + Yelp listings show lunch from 11:30 AM daily - the launch-era dinner-only text is outdated."
+   ],
+   "phone": "(650) 507-2100",
+   "review_links": {
+    "yelp": "https://www.yelp.com/biz/sushi-roku-stanford-shopping-center-palo-alto",
+    "google_maps": "https://www.google.com/maps/search/?api=1&query=Sushi+Roku+Stanford+Shopping+Center+Palo+Alto"
+   },
+   "verification": {
+    "level": "review",
+    "accessed": "2026-09-07",
+    "sources": [
+     {
+      "label": "Simon (Stanford Shopping Center official) - Sushi Roku (address, phone, Mo-Th 11:30-9:30, Fr-Sa 11:30-10, Su 11:30-9:30)",
+      "url": "https://www.simon.com/mall/stanford-shopping-center/stores/sushi-roku"
+     },
+     {
+      "label": "Yelp - Sushi Roku review quote 'Great weekday lunch specials'",
+      "url": "https://www.yelp.com/search?find_desc=Sushi+Roku&find_loc=Palo+Alto%2C+CA"
+     },
+     {
+      "label": "The SF Peninsula listing - lunch + dinner Sun-Thu 11:30-9:30",
+      "url": "https://www.thesanfranciscopeninsula.com/listing/sushi-roku/5403/"
+     }
+    ]
+   }
+  },
+  {
+   "name": "Rara",
+   "city": "Palo Alto",
+   "address": "201 California Ave, Palo Alto, CA 94306",
+   "area": "California Avenue",
+   "cuisine": "Nepalese/Himalayan",
+   "days_open": "Daily 11 AM - 10 PM",
+   "hours_tuesday": "11:00 AM - 10:00 PM",
+   "lunch_special": {
+    "name": "Lunch special chicken thali (reviewer-confirmed)",
+    "price_from": null,
+    "price_to": null,
+    "days": "daily",
+    "window": "lunch from 11 AM",
+    "includes": "Yelp review: 'Ordered lunch special chicken thali, and to our surprise it came with (refillable...)' No published special price captured."
+   },
+   "open_on_trip_date": true,
+   "fits_return_bus": {
+    "ok": false,
+    "note": "Palo Alto - off the return corridor."
+   },
+   "flags": [],
+   "phone": "(650) 485-1055",
+   "review_links": {
+    "yelp": "https://www.yelp.com/biz/rara-palo-alto",
+    "google_maps": "https://www.google.com/maps/search/?api=1&query=Rara+201+California+Ave+Palo+Alto"
+   },
+   "verification": {
+    "level": "review",
+    "accessed": "2026-09-07",
+    "sources": [
+     {
+      "label": "Yelp - Rara Palo Alto (address, phone, daily 11-10)",
+      "url": "https://www.yelp.com/biz/rara-palo-alto?start=15"
+     },
+     {
+      "label": "OpenTable - Rara (address, daily 11 AM-10 PM, official website rararestaurant.com)",
+      "url": "https://www.opentable.com/r/rara-palo-alto"
+     },
+     {
+      "label": "Yelp search 'Lunch Specials Palo Alto' - Rara thali review quote",
+      "url": "https://www.yelp.com/search?find_desc=Lunch+Specials&find_loc=Palo+Alto%2C+CA"
+     }
+    ]
+   },
+   "coords": [
+    37.428218,
+    -122.14307
+   ]
+  },
+  {
+   "name": "HE&C Tea + Pot",
+   "city": "Palo Alto",
+   "address": "544 Emerson St, Palo Alto, CA 94301",
+   "area": "Downtown Palo Alto",
+   "cuisine": "Chinese hot pot / tea",
+   "days_open": "Daily (lunch block varies by source - conflict)",
+   "hours_tuesday": "11:30 AM - 2:30 PM, 4:30 PM - 9:30 PM per Yelp (Aug 2026)",
+   "lunch_special": {
+    "name": "Lunch special (reviewer-confirmed)",
+    "price_from": null,
+    "price_to": null,
+    "days": "per Yelp review 'the lunch special from Monday to...'",
+    "window": "11:30 AM - 2:30 PM",
+    "includes": "Yelp review quote confirms a Mon-onward lunch special; no price captured."
+   },
+   "open_on_trip_date": true,
+   "fits_return_bus": {
+    "ok": false,
+    "note": "Downtown Palo Alto - off the return corridor."
+   },
+   "flags": [
+    "IRREGULARITY: Yelp (updated Aug 2026) shows daily 11:30-2:30 + 4:30-9:30; RestaurantGuru shows Mon-Fri dinner-only (4:30-9:30) with lunch only Sat-Sun; roadtrippers shows Mon-Tue dinner-only; MenuPix (stale) shows Tue closed. Yelp is the most recently verified source; call (650) 521-0069 to confirm Tuesday lunch."
+   ],
+   "phone": "(650) 521-0069",
+   "review_links": {
+    "yelp": "https://www.yelp.com/biz/he-and-c-tea-pot-palo-alto",
+    "google_maps": "https://www.google.com/maps/search/?api=1&query=HE%26C+Tea+Pot+544+Emerson+St+Palo+Alto"
+   },
+   "verification": {
+    "level": "conflicting",
+    "accessed": "2026-09-07",
+    "sources": [
+     {
+      "label": "Yelp - HE&C Tea + Pot (address, phone, daily 11:30-2:30 + 4:30-9:30, updated Aug 2026)",
+      "url": "https://www.yelp.com/biz/he-and-c-tea-pot-palo-alto"
+     },
+     {
+      "label": "RestaurantGuru - HE&C Tea + Pot (conflicting Mon-Fri dinner-only hours)",
+      "url": "https://restaurantguru.com/HEandampC-TEAPOT-Palo-Alto"
+     },
+     {
+      "label": "Roadtrippers listing - Mon/Tue dinner-only variant of the conflict",
+      "url": "https://maps.roadtrippers.com/us/palo-alto-ca/food-drink/he-c-tea-pot"
+     },
+     {
+      "label": "Yelp search 'Lunch Specials Palo Alto' - lunch special review quote",
+      "url": "https://www.yelp.com/search?find_desc=Lunch+Specials&find_loc=Palo+Alto%2C+CA"
+     }
+    ]
+   },
+   "coords": [
+    37.444,
+    -122.16208
+   ]
+  }
+ ],
+ "rejected": [
+  {
+   "name": "Yokohama",
+   "city": "Los Gatos",
+   "why": "Dinner-only: Yelp's Los Gatos lunch-specials index lists Yokohama 'Closed until 4:30 PM' - no weekday lunch service captured.",
+   "links": [
+    {
+     "label": "Yelp - Top 10 Lunch Specials Los Gatos (Yokohama listed as opening 4:30 PM)",
+     "url": "https://www.yelp.com/search?find_desc=Lunch+Specials&find_loc=Los+Gatos%2C+CA"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,701 @@
+{
+ "note": "Batch 7b - pass 7, 2026-09-07. Sunnyvale/Santa Clara/Milpitas/Cupertino/San Jose entries verified line by line from Yelp, official sites and directory snippets captured during pass-7 searches.",
+ "entries": [
+  {
+   "name": "Chef Chu's",
+   "city": "Los Altos",
+   "address": "1067 N San Antonio Rd, Los Altos, CA 94022",
+   "area": "N San Antonio Rd",
+   "cuisine": "Chinese (Cantonese/Sichuan)",
+   "days_open": "Mon, Wed-Sun (closed Tuesday)",
+   "hours_tuesday": "Closed",
+   "lunch_special": {
+    "name": "No published lunch special; a la carte lunch menu",
+    "price_from": null,
+    "price_to": null,
+    "days": "n/a",
+    "window": "lunch Mon/Wed/Thu 11:30 AM - 2:00 PM, Fri-Sun 11:30 AM - 2:30 PM",
+    "includes": "OpenTable menu shows soup-of-the-day and a la carte pricing (Hot & Sour $7.50 etc.); no discounted lunch block published."
+   },
+   "open_on_trip_date": false,
+   "fits_return_bus": {"ok": false, "note": "Los Altos - off the return corridor, and closed on the trip Tuesday."},
+   "flags": ["IRREGULARITY: Closed Tuesdays per Yelp, OpenTable and Apple Maps - not usable on Tue Sept 8, 2026. Listed so the gap is visible."],
+   "phone": "(650) 948-2696",
+   "review_links": {
+    "yelp": "https://www.yelp.com/biz/chef-chus-los-altos",
+    "google_maps": "https://www.google.com/maps/search/?api=1&query=Chef+Chu's+1067+N+San+Antonio+Rd+Los+Altos"
+   },
+   "verification": {
+    "level": "listing",
+    "accessed": "2026-09-07",
+    "sources": [
+     {"label": "Yelp - Chef Chu's (address, phone, Tue closed, lunch hours by day)", "url": "https://www.yelp.com/biz/chef-chus-los-altos"},
+     {"label": "OpenTable - Chef Chu's (hours of operation incl. Tue closed, menu prices)", "url": "https://www.opentable.com/r/chef-chus-los-altos"},
+     {"label": "Apple Maps - Chef Chu's (Tue closed cross-check, chefchu.com)", "url": "https://maps.apple.com/place?place-id=I329E6F0A9F6A99B7"}
+    ]
+   },
+   "coords": [37.400509, -122.113839]
+  },
+  {
+   "name": "Enka Japanese Izakaya",
+   "city": "Sunnyvale",
+   "address": "500 Lawrence Expy, Ste 100a, Sunnyvale, CA 94085",
+   "area": "Lawrence Expy",
+   "cuisine": "Japanese izakaya",
+   "days_open": "Mon, Wed-Sun (closed Tuesday)",
+   "hours_tuesday": "Closed",
+   "lunch_special": {
+    "name": "Lunch special (reviewer-confirmed)",
+    "price_from": null,
+    "price_to": null,
+    "days": "Mon, Wed-Sun lunch service",
+    "window": "11:00 AM - 2:30 PM",
+    "includes": "Yelp review: 'lunch special chicken with enka...' - no published special price captured."
+   },
+   "open_on_trip_date": false,
+   "fits_return_bus": {"ok": false, "note": "North Sunnyvale - off the return corridor and closed on the trip Tuesday."},
+   "flags": ["Closed Tuesdays per Yelp - not usable on Tue Sept 8, 2026."],
+   "phone": "(669) 249-7021",
+   "review_links": {
+    "yelp": "https://www.yelp.com/biz/enka-japanese-izakaya-sunnyvale",
+    "google_maps": "https://www.google.com/maps/search/?api=1&query=Enka+Japanese+Izakaya+500+Lawrence+Expy+Sunnyvale"
+   },
+   "verification": {
+    "level": "review",
+    "accessed": "2026-09-07",
+    "sources": [
+     {"label": "Yelp - Enka Japanese Izakaya (address, phone, Tue closed, daily 11-2:30 + 5:30-9:30)", "url": "https://www.yelp.com/biz/enka-japanese-izakaya-sunnyvale"},
+     {"label": "Restaurantji - Enka (hours cross-check Mo 11-14:30, Tu closed)", "url": "https://www.restaurantji.com/ca/sunnyvale/enka-japanese-izakaya-/"},
+     {"label": "Yelp search 'Lunch Specials Sunnyvale' - lunch special review quote", "url": "https://www.yelp.com/search?find_desc=Lunch+Specials&find_loc=Sunnyvale%2C+CA"}
+    ]
+   }
+  },
+  {
+   "name": "bb.q Chicken Sunnyvale",
+   "city": "Sunnyvale",
+   "address": "561 E El Camino Real, Sunnyvale, CA 94087",
+   "area": "E El Camino Real",
+   "cuisine": "Korean fried chicken",
+   "days_open": "Daily",
+   "hours_tuesday": "11:00 AM - 9:30 PM",
+   "lunch_special": {
+    "name": "Lunch specials combo (reviewer-confirmed)",
+    "price_from": null,
+    "price_to": null,
+    "days": "daily",
+    "window": "from 11 AM",
+    "includes": "Yelp reviews: 'Lunch specials special (combo...)' and 'Lunch special no longer includes a free drink.' No published special price captured."
+   },
+   "open_on_trip_date": true,
+   "fits_return_bus": {"ok": false, "note": "Sunnyvale El Camino - not on the return-walk corridor."},
+   "flags": [],
+   "phone": "(408) 743-5787",
+   "review_links": {
+    "yelp": "https://www.yelp.com/biz/bb-q-chicken-sunnyvale-sunnyvale-5",
+    "google_maps": "https://www.google.com/maps/search/?api=1&query=bb.q+Chicken+561+E+El+Camino+Real+Sunnyvale"
+   },
+   "verification": {
+    "level": "review",
+    "accessed": "2026-09-07",
+    "sources": [
+     {"label": "Yelp - bb.q Chicken Sunnyvale (address, phone, daily 11 AM-9:30 PM, business site bbqchicken.com)", "url": "https://www.yelp.com/biz/bb-q-chicken-sunnyvale-sunnyvale-5"},
+     {"label": "Yelp search 'Lunch Specials Sunnyvale' - lunch combo review quotes", "url": "https://www.yelp.com/search?find_desc=Lunch+Specials&find_loc=Sunnyvale%2C+CA"}
+    ]
+   }
+  },
+  {
+   "name": "Bag O' Crab",
+   "city": "Sunnyvale",
+   "address": "108 E El Camino Real, Sunnyvale, CA 94087",
+   "area": "E El Camino Real",
+   "cuisine": "Seafood boil",
+   "days_open": "Daily",
+   "hours_tuesday": "11:00 AM - 9:00 PM",
+   "lunch_special": {
+    "name": "Lunch special meal (reviewer-confirmed)",
+    "price_from": null,
+    "price_to": null,
+    "days": "daily",
+    "window": "from 11 AM",
+    "includes": "Yelp review: 'portion was good, and lunch special meal was nice!' - no published special price captured."
+   },
+   "open_on_trip_date": true,
+   "fits_return_bus": {"ok": false, "note": "Sunnyvale El Camino - not on the return-walk corridor."},
+   "flags": [],
+   "phone": "(408) 212-4710",
+   "review_links": {
+    "yelp": "https://www.yelp.com/biz/bag-o-crab-sunnyvale",
+    "google_maps": "https://www.google.com/maps/search/?api=1&query=Bag+O+Crab+108+E+El+Camino+Real+Sunnyvale"
+   },
+   "verification": {
+    "level": "review",
+    "accessed": "2026-09-07",
+    "sources": [
+     {"label": "Yelp - Bag O' Crab Sunnyvale (address, phone, Mon-Thu/Sun 11-9, Fri-Sat 11-9:30, bagocrabusa.com)", "url": "https://www.yelp.com/biz/bag-o-crab-sunnyvale"},
+     {"label": "Yelp search 'Lunch Specials Sunnyvale' - lunch special review quote", "url": "https://www.yelp.com/search?find_desc=Lunch+Specials&find_loc=Sunnyvale%2C+CA"}
+    ]
+   }
+  },
+  {
+   "name": "Lee's Kitchen",
+   "city": "Santa Clara",
+   "address": "2767 El Camino Real, Santa Clara, CA 95051",
+   "area": "El Camino Real",
+   "cuisine": "Chinese",
+   "days_open": "Mon, Wed-Sat + Sun (closed Tuesday)",
+   "hours_tuesday": "Closed",
+   "lunch_special": {
+    "name": "Lunch specials (reviewer-confirmed, very cheap)",
+    "price_from": 5.0,
+    "price_to": 6.0,
+    "days": "Mon, Wed-Fri lunch (Sat/Sun all-day); closed Tuesday",
+    "window": "11:30 AM - 3:00 PM",
+    "includes": "Yelp review: 'lunch specials for a ridiculously cheap 5-6 dollars with generous portion size.' Reviewer figures, not published menu prices."
+   },
+   "open_on_trip_date": false,
+   "fits_return_bus": {"ok": false, "note": "Santa Clara El Camino - off the return corridor and closed on the trip Tuesday."},
+   "flags": ["IRREGULARITY: Closed Tuesdays per Yelp + Restaurantji - not usable on Tue Sept 8, 2026."],
+   "phone": "(408) 247-8662",
+   "review_links": {
+    "yelp": "https://www.yelp.com/biz/lees-kitchen-santa-clara-2",
+    "google_maps": "https://www.google.com/maps/search/?api=1&query=Lee's+Kitchen+2767+El+Camino+Real+Santa+Clara"
+   },
+   "verification": {
+    "level": "review",
+    "accessed": "2026-09-07",
+    "sources": [
+     {"label": "Yelp - Lee's Kitchen Santa Clara (address, phone, Tue closed, 11:30-3 lunch block)", "url": "https://www.yelp.com/biz/lees-kitchen-santa-clara-2"},
+     {"label": "Restaurantji - Lee's Kitchen (hours cross-check, Tue closed)", "url": "https://www.restaurantji.com/ca/santa-clara/lees-kitchen-/"},
+     {"label": "Yelp search 'Cheap Lunch Specials Sunnyvale' - $5-6 lunch specials review quote", "url": "https://www.yelp.com/search?find_desc=Cheap+Lunch+Specials&find_loc=Sunnyvale%2C+CA"}
+    ]
+   }
+  },
+  {
+   "name": "Little India Cafe",
+   "city": "Sunnyvale",
+   "address": "415 N Mary Ave, Ste 101, Sunnyvale, CA 94085",
+   "area": "N Mary Ave",
+   "cuisine": "Indian",
+   "days_open": "Daily (Yelp); Sun closes 8 PM",
+   "hours_tuesday": "11:00 AM - 2:30 PM, 5:00 PM - 9:00 PM",
+   "lunch_special": {
+    "name": "Weekday lunch buffet (availability conflicted)",
+    "price_from": null,
+    "price_to": null,
+    "days": "Mon-Sat per the owner Q&A that says buffet exists",
+    "window": "11:00 AM - 2:30 PM",
+    "includes": "CONFLICT: Yelp Q&A answer 'They do have Weekday Buffet just like the old days. Price is $16.99' vs another answer 'No buffet at the moment.' Reddit (Jan 2024) reported Mon-Sat 11-2 buffet ~$16. Call (408) 245-6200 to confirm."
+   },
+   "open_on_trip_date": true,
+   "fits_return_bus": {"ok": false, "note": "North Sunnyvale - off the return corridor."},
+   "flags": ["IRREGULARITY: Yelp Q&A answers contradict each other on whether the lunch buffet still runs ($16.99 figure is a Q&A figure, not a published menu price)."],
+   "phone": "(408) 245-6200",
+   "review_links": {
+    "yelp": "https://www.yelp.com/biz/little-india-cafe-sunnyvale",
+    "google_maps": "https://www.google.com/maps/search/?api=1&query=Little+India+Cafe+415+N+Mary+Ave+Sunnyvale"
+   },
+   "verification": {
+    "level": "conflicting",
+    "accessed": "2026-09-07",
+    "sources": [
+     {"label": "Yelp - Little India Cafe (address, Ste 101 vs #102 note, hours, buffet Q&A conflict)", "url": "https://www.yelp.com/biz/little-india-cafe-sunnyvale?start=20"},
+     {"label": "wheree listing - Little India Cafe (address 415 N Mary Ave #102, hours cross-check)", "url": "https://little-india-cafe.wheree.com/"},
+     {"label": "Reddit r/SanJose Indian buffet thread - 'Little India Cafe Sunnyvale. lunch buffet Mon-Sat 11-2pm $16'", "url": "https://www.reddit.com/r/SanJose/comments/1abtjpe/indian_buffet_recommendations/"}
+    ]
+   }
+  },
+  {
+   "name": "Deedee's",
+   "city": "Santa Clara",
+   "address": "341 Lafayette St, Ste 101, Santa Clara, CA 95050",
+   "area": "Lafayette St",
+   "cuisine": "Indian vegetarian buffet",
+   "days_open": "Mon, Wed-Sun (closed Tuesday)",
+   "hours_tuesday": "Closed",
+   "lunch_special": {
+    "name": "Lunch buffet",
+    "price_from": null,
+    "price_to": null,
+    "days": "Mon, Wed-Sun; closed Tuesday",
+    "window": "11:30 AM - 3:00 PM",
+    "includes": "Buffet listed by zmenu/menu-res/Yelp; Reddit (2024): 'Deedee's in Santa Clara! It's something like $17 with cash' - reviewer figure, no published price captured."
+   },
+   "open_on_trip_date": false,
+   "fits_return_bus": {"ok": false, "note": "Santa Clara Lafayette St - off the return corridor and closed on the trip Tuesday."},
+   "flags": ["IRREGULARITY: Closed Tuesdays per zmenu, menu-res and Yelp - not usable on Tue Sept 8, 2026."],
+   "phone": "(408) 261-0568",
+   "review_links": {
+    "yelp": "https://www.yelp.com/biz/deedees-santa-clara",
+    "google_maps": "https://www.google.com/maps/search/?api=1&query=Deedee's+341+Lafayette+St+Santa+Clara"
+   },
+   "verification": {
+    "level": "listing",
+    "accessed": "2026-09-07",
+    "sources": [
+     {"label": "Yelp - Deedee's Santa Clara (Ste 101, phone, Tue closed, 11:30-3 lunch)", "url": "https://www.yelp.com/biz/deedees-santa-clara"},
+     {"label": "zmenu - Deedee's (address, geo 37.3541/-121.9552, Tue closed)", "url": "https://www.zmenu.com/deedees-santa-clara-online-menu/"},
+     {"label": "menu-res - Deedee's (weekly hours table, Tue closed)", "url": "https://deedees.menu-res.com/"},
+     {"label": "Reddit r/SanJose - '$17 with cash' buffet figure", "url": "https://www.reddit.com/r/SanJose/comments/1abtjpe/indian_buffet_recommendations/"}
+    ]
+   },
+   "coords": [37.354108, -121.955236]
+  },
+  {
+   "name": "Sakoon Restaurant",
+   "city": "Santa Clara",
+   "address": "3701 E El Camino Real, Santa Clara, CA 95051",
+   "area": "E El Camino Real",
+   "cuisine": "Indian",
+   "days_open": "Daily (Sat/Sun from 12 PM per directory)",
+   "hours_tuesday": "11:30 AM - 10:00 PM",
+   "lunch_special": {
+    "name": "Lunch buffet",
+    "price_from": 21.99,
+    "price_to": 21.99,
+    "days": "daily lunch",
+    "window": "11:30 AM - 2:30 PM",
+    "includes": "Recent review: 'At $21.99 + tax for adults and $13.99 + tax for kids ages 3-9, I think the lunch buffet offers very good value.' Reviewer figure. (2022 Reddit figure was $20.95 Mon-Thu - both shown, price has moved.)"
+   },
+   "open_on_trip_date": true,
+   "fits_return_bus": {"ok": false, "note": "Santa Clara El Camino - off the return corridor."},
+   "flags": ["Different location from Sakoon Mountain View (L149 in the master list). Price is reviewer-captured, not published on a page we could read."],
+   "phone": "(408) 241-5150",
+   "review_links": {
+    "yelp": "https://www.yelp.com/biz/sakoon-santa-clara-2",
+    "google_maps": "https://www.google.com/maps/search/?api=1&query=Sakoon+3701+E+El+Camino+Real+Santa+Clara"
+   },
+   "verification": {
+    "level": "review",
+    "accessed": "2026-09-07",
+    "sources": [
+     {"label": "Triptap - Sakoon Santa Clara (address, official site sakoonrestaurant.com, Mon-Thu 11:30-10)", "url": "https://triptap.com/places/us/california/san-jose/sakoon-restaurant-t0150c56"},
+     {"label": "Wanderboat - Sakoon review quote ($21.99 buffet adults / $13.99 kids)", "url": "https://wanderboat.ai/restaurants/united-states/santa-clara/sakoon-restaurant/pF2wnDweSpiPFJJ4Ofe9Kw"},
+     {"label": "Reddit r/Sunnyvale - 2022 buffet price/hours quote (the older figure)", "url": "https://www.reddit.com/r/Sunnyvale/comments/zclt8w/south_bay_indian_buffet/"}
+    ]
+   }
+  },
+  {
+   "name": "Milpitas Buffet",
+   "city": "Milpitas",
+   "address": "24 S Abbott Ave, Milpitas, CA 95035",
+   "area": "Milpitas",
+   "cuisine": "Asian/American buffet",
+   "days_open": "Daily",
+   "hours_tuesday": "11:00 AM - 9:00 PM",
+   "lunch_special": {
+    "name": "Lunch buffet",
+    "price_from": null,
+    "price_to": null,
+    "days": "daily",
+    "window": "from 11 AM",
+    "includes": "atly listing: 'Lunch buffet costs $19.99 from Monday to Friday, while weekends are $30' - third-party figure, not confirmed on milpitasbuffet.com, so price left unverified."
+   },
+   "open_on_trip_date": true,
+   "fits_return_bus": {"ok": false, "note": "Milpitas - far end of the radius; needs its own plan."},
+   "flags": ["Price figure comes from a low-trust aggregator (atly); the official site was not readable in this pass. Treat price as unverified."],
+   "phone": "(408) 945-8888",
+   "review_links": {
+    "yelp": "https://www.yelp.com/biz/milpitas-buffet-milpitas",
+    "google_maps": "https://www.google.com/maps/search/?api=1&query=Milpitas+Buffet+24+S+Abbott+Ave"
+   },
+   "verification": {
+    "level": "listing",
+    "accessed": "2026-09-07",
+    "sources": [
+     {"label": "Apple Maps - Milpitas Buffet (24 S Abbott Ave, Mon-Fri 11-9, Sat-Sun 11-9:30, milpitas-buffet.com)", "url": "https://maps.apple.com/place?place-id=I947929D8FCCD677D"},
+     {"label": "atly - Milpitas Buffet ($19.99 weekday lunch buffet figure, flagged unverified)", "url": "https://www.atly.com/location/MilpitasBuffet"},
+     {"label": "Groupon - Milpitas Buffet (address, phone, official website)", "url": "https://www.groupon.com/biz/milpitas-ca/milpitas-buffet"}
+    ]
+   }
+  },
+  {
+   "name": "Orange Square",
+   "city": "Milpitas",
+   "address": "1790 Milmont Dr, Milpitas, CA 95035",
+   "area": "Milmont Dr",
+   "cuisine": "Taiwanese / Asian fusion",
+   "days_open": "Daily",
+   "hours_tuesday": "11:00 AM - 8:00 PM",
+   "lunch_special": {
+    "name": "Bento specials (listicle-claimed, unconfirmed)",
+    "price_from": null,
+    "price_to": null,
+    "days": "not captured",
+    "window": "not captured",
+    "includes": "atly listicle: 'Wednesdays feature a grilled chicken bento for $9.99' - third-party claim, not confirmed on the restaurant's site (orangesq.com). Price left unverified."
+   },
+   "open_on_trip_date": true,
+   "fits_return_bus": {"ok": false, "note": "Milpitas - far end of the radius."},
+   "flags": ["The $9.99 Wednesday bento figure exists only in an atly listicle; treat as a lead, not a verified price."],
+   "phone": "(669) 284-9093",
+   "review_links": {
+    "yelp": "https://www.yelp.com/biz/orange-square-milpitas",
+    "google_maps": "https://www.google.com/maps/search/?api=1&query=Orange+Square+1790+Milmont+Dr+Milpitas"
+   },
+   "verification": {
+    "level": "listing",
+    "accessed": "2026-09-07",
+    "sources": [
+     {"label": "Yelp - Orange Square Milpitas (address, phone, daily 11-8, orangesq.com)", "url": "https://www.yelp.com/biz/orange-square-milpitas"},
+     {"label": "wheree listing - Orange Square (hours cross-check daily 11-8)", "url": "https://orange-square-2.wheree.com/"},
+     {"label": "atly - Milpitas affordable food listicle (the $9.99 Wednesday bento claim)", "url": "https://www.atly.com/united-states/california/milpitas/best-affordable-food"}
+    ]
+   }
+  },
+  {
+   "name": "Kakuna Sushi",
+   "city": "Milpitas",
+   "address": "75 S Abbott Ave, Milpitas, CA 95035",
+   "area": "Milpitas",
+   "cuisine": "Sushi / ramen",
+   "days_open": "Daily",
+   "hours_tuesday": "11:30 AM - 9:00 PM",
+   "lunch_special": {
+    "name": "Lunch special (two 6-piece rolls - listicle-claimed, unconfirmed)",
+    "price_from": null,
+    "price_to": null,
+    "days": "Mon-Thu lunch per the listicle",
+    "window": "not captured",
+    "includes": "atly listicle: 'a lunch special with two 6-piece rolls for $11.99' during lunchtime and happy hours Mon-Thu - third-party claim; no published price captured. Price left unverified."
+   },
+   "open_on_trip_date": true,
+   "fits_return_bus": {"ok": false, "note": "Milpitas - far end of the radius."},
+   "flags": ["IRREGULARITY: Hour conflict - Yelp/Restaurantji show 11:30-9 daily; corner.inc (Mar 2026) shows 11:15-2:15 + 4-9 with Friday-Sunday continuous. Yelp is current; verify on arrival."],
+   "phone": "(408) 824-5978",
+   "review_links": {
+    "yelp": "https://www.yelp.com/biz/kakuna-sushi-milpitas",
+    "google_maps": "https://www.google.com/maps/search/?api=1&query=Kakuna+Sushi+75+S+Abbott+Ave+Milpitas"
+   },
+   "verification": {
+    "level": "listing",
+    "accessed": "2026-09-07",
+    "sources": [
+     {"label": "Yelp - Kakuna Sushi (address, phone, daily 11:30-9)", "url": "https://www.yelp.com/biz/kakuna-sushi-milpitas"},
+     {"label": "Restaurantji - Kakuna Sushi (hours cross-check)", "url": "https://www.restaurantji.com/ca/milpitas/kakuna-sushi-/"},
+     {"label": "corner.inc - Kakuna Sushi (the conflicting 11:15-2:15/4-9 hours + kakuna.menu11.com)", "url": "https://www.corner.inc/place/223354"},
+     {"label": "atly - Milpitas affordable food listicle (the $11.99 roll-special claim)", "url": "https://www.atly.com/united-states/california/milpitas/best-affordable-food"}
+    ]
+   }
+  },
+  {
+   "name": "Cairo Grill",
+   "city": "Santa Clara",
+   "address": "805 Scott Blvd, Santa Clara, CA 95050",
+   "area": "Scott Blvd",
+   "cuisine": "Egyptian / Mediterranean halal",
+   "days_open": "Daily",
+   "hours_tuesday": "10:00 AM - 9:00 PM",
+   "lunch_special": {
+    "name": "No published lunch special; wraps/bowls/plates menu",
+    "price_from": null,
+    "price_to": null,
+    "days": "daily",
+    "window": "from 10 AM",
+    "includes": "Official site shows a '$19.99 Order Now' hero item without naming the dish - the figure could not be attributed to a specific lunch special, so it is not recorded as a price. Yelp's Cupertino cheap-lunch index flags it as a cheap-lunch option."
+   },
+   "open_on_trip_date": true,
+   "fits_return_bus": {"ok": false, "note": "Santa Clara Scott Blvd - off the return corridor."},
+   "flags": ["Yelp's 'cheap lunch specials near Cupertino 95014' index lists Cairo Grill although the address is Santa Clara; site hero shows $19.99 with no item name - flagged, not treated as a special price."],
+   "phone": "(408) 708-7075",
+   "review_links": {
+    "yelp": "https://www.yelp.com/biz/cairo-grill-santa-clara",
+    "google_maps": "https://www.google.com/maps/search/?api=1&query=Cairo+Grill+805+Scott+Blvd+Santa+Clara"
+   },
+   "verification": {
+    "level": "listing",
+    "accessed": "2026-09-07",
+    "sources": [
+     {"label": "Yelp - Cairo Grill Santa Clara (805 Scott Blvd, daily 10-9, cairogrill.us)", "url": "https://www.yelp.com/biz/cairo-grill-santa-clara"},
+     {"label": "Official site - Cairo Grill (address, phone, Mon-Sun 10-9, menu/catering)", "url": "https://cairogrill.us/"},
+     {"label": "Yelp search 'Cheap Lunch Specials near Cupertino 95014' - index placement", "url": "https://www.yelp.com/search?find_desc=cheap+lunch+specials&find_loc=Cupertino%2C+CA+95014"}
+    ]
+   }
+  },
+  {
+   "name": "Chicken Meets Rice",
+   "city": "Cupertino",
+   "address": "10445 S De Anza Blvd, Ste 101, Cupertino, CA 95014",
+   "area": "S De Anza Blvd",
+   "cuisine": "Asian chicken-rice plates",
+   "days_open": "Daily",
+   "hours_tuesday": "10:30 AM - 9:00 PM",
+   "lunch_special": {
+    "name": "No published lunch special; cheap plate menu",
+    "price_from": null,
+    "price_to": null,
+    "days": "daily",
+    "window": "from 10:30 AM",
+    "includes": "Yelp's cheap-lunch index: 'The food is healthy, cheap, and yummy.' No published special or price captured."
+   },
+   "open_on_trip_date": true,
+   "fits_return_bus": {"ok": true, "note": "S De Anza Blvd at Bollinger - ~4 min walk from the VTA 55 Stevens Creek & De Anza stop on the return corridor."},
+   "flags": [],
+   "phone": "(408) 412-7728",
+   "review_links": {
+    "yelp": "https://www.yelp.com/biz/chicken-meets-rice-cupertino-3",
+    "google_maps": "https://www.google.com/maps/search/?api=1&query=Chicken+Meets+Rice+10445+S+De+Anza+Blvd+Cupertino"
+   },
+   "verification": {
+    "level": "listing",
+    "accessed": "2026-09-07",
+    "sources": [
+     {"label": "Yelp - Chicken Meets Rice Cupertino (address, Ste 101, daily 10:30-9, chickenmeetsrice.com)", "url": "https://www.yelp.com/biz/chicken-meets-rice-cupertino-3?start=10"},
+     {"label": "Yelp search 'Cheap Lunch Specials near Cupertino' - cheap-lunch review quote", "url": "https://www.yelp.com/search?find_desc=cheap+lunch+specials&find_loc=Cupertino%2C+CA+95014"}
+    ]
+   }
+  },
+  {
+   "name": "Pho Luc Lac",
+   "city": "San Jose",
+   "address": "1705 Branham Ln, Ste B3, San Jose, CA 95118",
+   "area": "Branham Ln (Cambrian)",
+   "cuisine": "Vietnamese",
+   "days_open": "Mon, Wed-Sun (closed Tuesday)",
+   "hours_tuesday": "Closed",
+   "lunch_special": {
+    "name": "No published lunch special; pho/BBH/banh mi menu",
+    "price_from": null,
+    "price_to": null,
+    "days": "n/a",
+    "window": "10 AM - 8 PM Mon, Wed-Sun",
+    "includes": "Yelp's 'cheap lunch specials near Cupertino' index placement only; no published special captured. A third-party menu site (res-menu.net) shows a 9-6:30 daily schedule that contradicts Yelp - Yelp is current."
+   },
+   "open_on_trip_date": false,
+   "fits_return_bus": {"ok": false, "note": "South San Jose (~12 mi) and closed on the trip Tuesday."},
+   "flags": ["IRREGULARITY: Closed Tuesdays per Yelp - not usable on Tue Sept 8, 2026. Third-party res-menu.net hours contradict Yelp; Yelp used."],
+   "phone": "(408) 622-8115",
+   "review_links": {
+    "yelp": "https://www.yelp.com/biz/pho-luc-lac-san-jose",
+    "google_maps": "https://www.google.com/maps/search/?api=1&query=Pho+Luc+Lac+1705+Branham+Ln+San+Jose"
+   },
+   "verification": {
+    "level": "listing",
+    "accessed": "2026-09-07",
+    "sources": [
+     {"label": "Yelp - Pho Luc Lac (address, Tue closed, Mon+Wed-Sun 10-8)", "url": "https://www.yelp.com/biz/pho-luc-lac-san-jose"},
+     {"label": "Yelp search 'Cheap Lunch Specials near Cupertino 95014' - index placement", "url": "https://www.yelp.com/search?find_desc=cheap+lunch+specials&find_loc=Cupertino%2C+CA+95014"}
+    ]
+   }
+  },
+  {
+   "name": "JP Taiwan Bistro",
+   "city": "Cupertino",
+   "address": "10271 Torre Ave, Cupertino, CA 95014",
+   "area": "Torre Ave (Memorial Park)",
+   "cuisine": "Taiwanese",
+   "days_open": "Mon 11:30-8; Wed-Sun 11:30-8:30 (closed Tuesday)",
+   "hours_tuesday": "Closed",
+   "lunch_special": {
+    "name": "Lunch dine-in special (owner-posted)",
+    "price_from": null,
+    "price_to": null,
+    "days": "posted as a Yelp business update/photo; days not captured",
+    "window": "lunch service from 11:30 AM",
+    "includes": "Yelp business update 'Lunch Dine in Special' + photo 'LUNCH DINE IN SPCIAL'; price not published in the captured text."
+   },
+   "open_on_trip_date": false,
+   "fits_return_bus": {"ok": true, "note": "Torre Ave - walkable from Memorial Park area, but closed on the trip Tuesday."},
+   "flags": ["IRREGULARITY: Closed Tuesdays per Yelp (both listing snapshots) - not usable on Tue Sept 8, 2026."],
+   "phone": "(408) 320-1080",
+   "review_links": {
+    "yelp": "https://www.yelp.com/biz/jp-taiwan-bistro-cupertino-5",
+    "google_maps": "https://www.google.com/maps/search/?api=1&query=JP+Taiwan+Bistro+10271+Torre+Ave+Cupertino"
+   },
+   "verification": {
+    "level": "listing",
+    "accessed": "2026-09-07",
+    "sources": [
+     {"label": "Yelp - JP Taiwan Bistro (address, phone, Mon 11:30-8, Tue closed, Wed-Sun 11:30-8:30, lunch special update)", "url": "https://www.yelp.com/biz/jp-taiwan-bistro-cupertino-5"},
+     {"label": "Yelp (Dec 2025 snapshot) - LUNCH DINE IN SPECIAL photo update, same Tue-closed hours", "url": "https://www.yelp.com/biz/jp-taiwan-bistro-cupertino-2"}
+    ]
+   }
+  },
+  {
+   "name": "Happy Lamb Hot Pot",
+   "city": "Cupertino",
+   "address": "19062 Stevens Creek Blvd, Cupertino, CA 95014",
+   "area": "Stevens Creek Blvd",
+   "cuisine": "Mongolian hot pot",
+   "days_open": "Daily",
+   "hours_tuesday": "11:30 AM - 10:00 PM",
+   "lunch_special": {
+    "name": "Lunch combos / lunch specials (reviewer-confirmed)",
+    "price_from": null,
+    "price_to": null,
+    "days": "daily",
+    "window": "from 11:30 AM",
+    "includes": "Yelp review: 'I used to come here often when I worked at Apple because they offer lunch combos and lunch specials, which they still do...' No published special price captured."
+   },
+   "open_on_trip_date": true,
+   "fits_return_bus": {"ok": true, "note": "Stevens Creek Blvd near De Anza - on the VTA 55 return corridor."},
+   "flags": ["zmenu's July 2025 snapshot says 'Temporarily closed'; Yelp (updated Aug-Sept 2026) shows open daily 11:30-10. Yelp treated as current."],
+   "phone": "(408) 996-9919",
+   "review_links": {
+    "yelp": "https://www.yelp.com/biz/happy-lamb-hot-pot-cupertino-3",
+    "google_maps": "https://www.google.com/maps/search/?api=1&query=Happy+Lamb+Hot+Pot+19062+Stevens+Creek+Blvd+Cupertino"
+   },
+   "verification": {
+    "level": "review",
+    "accessed": "2026-09-07",
+    "sources": [
+     {"label": "Yelp - Happy Lamb Hot Pot Cupertino (address, phone, daily 11:30-10, happylambhotpot.com)", "url": "https://www.yelp.com/biz/happy-lamb-hot-pot-cupertino-3"},
+     {"label": "zmenu - the stale 'temporarily closed' note (the conflict)", "url": "https://www.zmenu.com/little-sheep-mongolian-hot-pot-cupertino-3-online-menu/"},
+     {"label": "Yelp search 'Lunch Special near Cupertino 95014' - lunch combos review quote", "url": "https://www.yelp.com/search?find_desc=Lunch+Special&find_loc=Cupertino%2C+CA+95014"}
+    ]
+   }
+  },
+  {
+   "name": "Masakali Indian Cuisine",
+   "city": "Cupertino",
+   "address": "10310 S De Anza Blvd, Cupertino, CA 95014",
+   "area": "S De Anza Blvd",
+   "cuisine": "Indian",
+   "days_open": "Mon, Wed-Thu 11:30-9; Fri-Sun 11:30-10 (closed Tuesday)",
+   "hours_tuesday": "Closed",
+   "lunch_special": {
+    "name": "No published lunch special captured; new weekday-lunch restaurant",
+    "price_from": null,
+    "price_to": null,
+    "days": "n/a",
+    "window": "from 11:30 AM",
+    "includes": "Yelp review: 'Tried this new restaurant for a weekday lunch and loved the food and service.' No special or price captured."
+   },
+   "open_on_trip_date": false,
+   "fits_return_bus": {"ok": true, "note": "S De Anza Blvd - on the return corridor, but closed on the trip Tuesday."},
+   "flags": ["IRREGULARITY: Closed Tuesdays per Yelp/Apple Maps/roadtrippers - not usable on Tue Sept 8, 2026."],
+   "phone": "(408) 352-5097",
+   "review_links": {
+    "yelp": "https://www.yelp.com/biz/masakali-indian-cuisine-cupertino-3",
+    "google_maps": "https://www.google.com/maps/search/?api=1&query=Masakali+Indian+Cuisine+10310+S+De+Anza+Blvd+Cupertino"
+   },
+   "verification": {
+    "level": "listing",
+    "accessed": "2026-09-07",
+    "sources": [
+     {"label": "Yelp - Masakali Indian Cuisine (address, phone, Tue closed, hours by day, masakalicalifornia.com)", "url": "https://www.yelp.com/biz/masakali-indian-cuisine-cupertino-3"},
+     {"label": "Apple Maps - Masakali (Tue closed cross-check)", "url": "https://maps.apple.com/place?place-id=I77A4AA0CB1AE95BA"},
+     {"label": "Roadtrippers - Masakali (geo 37.31818/-122.03185, hours cross-check)", "url": "https://maps.roadtrippers.com/us/cupertino-ca/food-drink/masakali-cupertino-ca--0"}
+    ]
+   },
+   "coords": [37.318179, -122.031849]
+  },
+  {
+   "name": "Liuyishou Hot Pot",
+   "city": "San Jose",
+   "address": "1199 S De Anza Blvd, Ste 10, San Jose, CA 95129",
+   "area": "West San Jose / Cupertino border",
+   "cuisine": "Chongqing hot pot",
+   "days_open": "Daily (lunch + dinner blocks)",
+   "hours_tuesday": "11:30 AM - 2:30 PM, 5:00 PM - 10:30 PM",
+   "lunch_special": {
+    "name": "Lunch specials (reviewer-confirmed)",
+    "price_from": null,
+    "price_to": null,
+    "days": "daily lunch block",
+    "window": "11:30 AM - 2:30 PM",
+    "includes": "Yelp review: 'If you want the best bang for your buck: Lunch Specials: They have an...' No published special price captured."
+   },
+   "open_on_trip_date": true,
+   "fits_return_bus": {"ok": false, "note": "S De Anza at Graves - ~1.5 mi off the VTA 55 corridor."},
+   "flags": [],
+   "phone": "(408) 217-8108",
+   "review_links": {
+    "yelp": "https://www.yelp.com/biz/liuyishou-hot-pot-san-jose",
+    "google_maps": "https://www.google.com/maps/search/?api=1&query=Liuyishou+Hot+Pot+1199+S+De+Anza+Blvd+San+Jose"
+   },
+   "verification": {
+    "level": "review",
+    "accessed": "2026-09-07",
+    "sources": [
+     {"label": "Yelp - Liuyishou Hot Pot San Jose (address, Ste 10, daily lunch 11:30-2:30, liuyishouna.com)", "url": "https://www.yelp.com/biz/liuyishou-hot-pot-san-jose"},
+     {"label": "corner.inc - Liuyishou (hours cross-check + official site)", "url": "https://www.corner.inc/place/111721"},
+     {"label": "Yelp search 'Lunch Specials near Cupertino 95014' - lunch specials review quote", "url": "https://www.yelp.com/search?find_desc=Lunch+Specials&find_loc=Cupertino,+CA+95014"}
+    ]
+   }
+  },
+  {
+   "name": "Athena Grill",
+   "city": "Santa Clara",
+   "address": "1505 Space Park Dr, Santa Clara, CA 95054",
+   "area": "Space Park Dr",
+   "cuisine": "Greek / Mediterranean",
+   "days_open": "Tue-Sat (Mon lunch only 10:30-3), Sun closed",
+   "hours_tuesday": "10:30 AM - 8:30 PM",
+   "lunch_special": {
+    "name": "Rotating specials (e.g. Grilled Branzini per owner update); classic plate lunches",
+    "price_from": null,
+    "price_to": null,
+    "days": "Tue-Fri lunch",
+    "window": "10:30 AM - 3:00 PM (lunch block Mon-Thu)",
+    "includes": "Owner update: 'Come try one of our new specials Grilled Branzini!' No published special price captured."
+   },
+   "open_on_trip_date": true,
+   "fits_return_bus": {"ok": false, "note": "Santa Clara Space Park - off the return corridor."},
+   "flags": ["IRREGULARITY: Yelp owner update announces 'We will be closed Tuesday & Wednesday' (temporary, undated) - hours below are the standing Tue 10:30-8:30 listing; call (408) 567-9144. Hours also differ by source (OpenTable shows 11-8 blocks)."],
+   "phone": "(408) 567-9144",
+   "review_links": {
+    "yelp": "https://www.yelp.com/biz/athena-grill-santa-clara-2",
+    "google_maps": "https://www.google.com/maps/search/?api=1&query=Athena+Grill+1505+Space+Park+Dr+Santa+Clara"
+   },
+   "verification": {
+    "level": "listing",
+    "accessed": "2026-09-07",
+    "sources": [
+     {"label": "Yelp - Athena Grill (address, phone, Mon 10:30-3/Tue-Thu 10:30-8:30, temporary Tue-Wed closure notice)", "url": "https://www.yelp.com/biz/athena-grill-santa-clara-2?start=480"},
+     {"label": "Restaurantji - Athena Grill (hours cross-check, official site athenagrill.com)", "url": "https://www.restaurantji.com/ca/santa-clara/athena-grill-and-catering-/"},
+     {"label": "OpenTable - Athena Grill (conflicting 11-8 blocks, address, geo)", "url": "https://www.opentable.com/athena-grill-santa-clara"}
+    ]
+   },
+   "coords": [37.3765827, -121.9564652]
+  },
+  {
+   "name": "The Bento Box",
+   "city": "Milpitas",
+   "address": "228 Barber Ct, Milpitas, CA 95035",
+   "area": "Barber Ct",
+   "cuisine": "Taiwanese bento",
+   "days_open": "Tue-Sun (closed Monday)",
+   "hours_tuesday": "11:15 AM - 7:15 PM (Restaurantji; other listings show 11-8)",
+   "lunch_special": {
+    "name": "Lunch special including duck (reviewer-confirmed)",
+    "price_from": null,
+    "price_to": null,
+    "days": "Tue-Sun",
+    "window": "11:15 AM onward",
+    "includes": "Yelp review quote: 'It is also good to see the lunch special including duck meat.' No published special price captured."
+   },
+   "open_on_trip_date": true,
+   "fits_return_bus": {"ok": false, "note": "Milpitas - far end of the radius."},
+   "flags": ["Hours vary by source: Restaurantji 11:15-7:15, usarestaurants 11-8, nears.me 11:15-7:30. Closed Mondays everywhere."],
+   "phone": "(408) 255-1388",
+   "review_links": {
+    "yelp": "https://www.yelp.com/biz/the-bento-box-milpitas",
+    "google_maps": "https://www.google.com/maps/search/?api=1&query=The+Bento+Box+228+Barber+Ct+Milpitas"
+   },
+   "verification": {
+    "level": "review",
+    "accessed": "2026-09-07",
+    "sources": [
+     {"label": "Restaurantji - The Bento Box (228 Barber Ct, Tue-Sun hours, closed Mon)", "url": "https://www.restaurantji.com/ca/milpitas/the-bento-box-/"},
+     {"label": "usarestaurants - The Bento Box (address, geo 37.42361/-121.91815, phone)", "url": "https://usarestaurants.info/explore/united-states/california/santa-clara-county/milpitas/460040-the-bento-box.htm"},
+     {"label": "Yelp search 'Cheap Lunch Specials near Cupertino' - duck lunch special review quote", "url": "https://www.yelp.com/search?find_desc=cheap+lunch+specials&find_loc=Cupertino%2C+CA+95014"}
+    ]
+   },
+   "coords": [37.4236092, -121.9181543]
+  }
+ ],
+ "rejected": [
+  {
+   "name": "Blue Sky Cafe (Cupertino index hit)",
+   "city": "not resolvable to the radius",
+   "why": "Yelp's Cupertino cheap-lunch index lists 'Blue Sky Cafe' but every resolved listing is in another city (Diamond Bar CA, Pierceton IN, San Carlos listing of a different name) - no Cupertino-area business with published hours could be verified.",
+   "links": [{"label": "Yelp - Blue Sky Cafe Diamond Bar (the closest resolved hit)", "url": "https://www.yelp.com/biz/blue-sky-cafe-diamond-bar-3"}]
+  },
+  {
+   "name": "El Torito Milpitas",
+   "city": "Milpitas",
+   "why": "Official site shows daily 11 AM-10/11 PM service but the only deal is Cantina happy hour 3-7 PM - no lunch special on the trip window.",
+   "links": [{"label": "Official El Torito Milpitas page (hours + happy-hour-only specials)", "url": "https://www.eltorito.com/location/milpitas/"}]
+  }
+ ]
+}
