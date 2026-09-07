@@ -321,6 +321,166 @@
           "url": "https://www.yelp.com/search?find_desc=The+Basin&find_loc=Saratoga%2C+CA"
         }
       ]
+    },
+    {
+      "name": "Dishdash (Sunnyvale)",
+      "city": "Sunnyvale",
+      "why": "Lunch menu prices were captured from dishdash.com but no street address and no weekly hours were captured in this pass, so the row cannot be located or scheduled.",
+      "price_hint": "Lunch menu items $7-$28 (soups from $7, wraps $20-$27)",
+      "source": "https://www.dishdash.com/menu/sunnyvale-lunch/",
+      "searched": "2026-09-07"
+    },
+    {
+      "name": "Aqui Cal Mex - Campbell",
+      "city": "Campbell",
+      "why": "Only the rotating daily special plate was published and it was date-limited to August 19 - September 1, 2026, which ends before the September 8 trip date. No address captured.",
+      "price_hint": "Daily special plate $16.49 (Guajillo BBQ Chicken), soup $5.09 - valid 8/19-9/1/2026 only",
+      "source": "https://www.aquicalmex.com/campbell-menu/",
+      "searched": "2026-09-07"
+    },
+    {
+      "name": "Wine Cellar (Los Gatos)",
+      "city": "Los Gatos",
+      "why": "The 'Today's Lunch Specials' page is real and priced ($20-$24) but the specials rotate daily and no address or weekly hours were captured in this pass.",
+      "price_hint": "Today's Lunch Specials $20-$24",
+      "source": "https://www.winecellarlosgatos.com/menu/todays-specials/",
+      "searched": "2026-09-07"
+    },
+    {
+      "name": "Los Altos Mexican Bar and Grill",
+      "city": "Los Altos",
+      "why": "The lunch menu that surfaced ($9.89-$15.38) is from menu.quickmunchi.com and could not be confirmed to be the Los Altos, California restaurant - several same-name restaurants exist in other states.",
+      "price_hint": "Lunch combos $9.89-$15.38 (unconfirmed location)",
+      "source": "https://menu.quickmunchi.com/order/location/LosAltos",
+      "searched": "2026-09-07"
+    },
+    {
+      "name": "Krung Thai Mountain View",
+      "city": "Mountain View",
+      "why": "Yelp flags this location as CLOSED ('Yelpers report this location has closed'), so it cannot be planned for September 8, 2026.",
+      "price_hint": "Older review mentions lunch specials a dollar more than a neighbour's $7.95-$8.95",
+      "source": "https://www.yelp.com/biz/krung-thai-mountain-view-mountain-view",
+      "searched": "2026-09-07"
+    },
+    {
+      "name": "BCD Tofu House (Sunnyvale)",
+      "city": "Sunnyvale",
+      "why": "No Sunnyvale/Santa Clara listing surfaced - the search returned only Rowland Heights, Fort Lee and Los Angeles branches, so a South Bay address could not be verified.",
+      "price_hint": null,
+      "source": "https://www.yelp.com/biz/bcd-tofu-house-rowland-heights",
+      "searched": "2026-09-07"
+    },
+    {
+      "name": "Bushido Izakaya Restaurant",
+      "city": "Mountain View",
+      "why": "Dinner only - the listing shows 5:00 PM - 10:35 PM, so there is no lunch service on the trip date.",
+      "price_hint": "Ramen $18.15, small plates $6.60+",
+      "source": "https://www.doordash.com/store/bushido-izakaya-restaurant-mountain-view-64",
+      "searched": "2026-09-07"
+    },
+    {
+      "name": "Capers Restaurant",
+      "city": "Campbell",
+      "why": "Not a lunch option on the trip date: OpenTable lists Tuesday hours as 4:00 PM - 8:00 PM, while its own offers block advertises Tue 11:00 AM - 10:00 PM - an unresolved conflict with no lunch menu published.",
+      "price_hint": null,
+      "source": "https://www.opentable.com/capers",
+      "searched": "2026-09-07"
+    },
+    {
+      "name": "Hong Fu Gourmet Chinese Restaurant",
+      "city": "Cupertino",
+      "why": "Tripadvisor marks the business CLOSED; the menu prices there are historical.",
+      "price_hint": "Historic chow mein $7.50, entrees $12.95-$14.95",
+      "source": "https://www.tripadvisor.com/Restaurant_Review-g32273-d473148-Reviews-Hong_Fu_Gourmet_Chinese_Restaurant-Cupertino_California.html",
+      "searched": "2026-09-07"
+    },
+    {
+      "name": "Korean Cuisine Bob Sang",
+      "city": "Sunnyvale",
+      "why": "The '$18 weekday lunch specials' figure comes only from a third-party listicle (eattheway.com), not the restaurant, Yelp, Google or Reddit, and no address was captured.",
+      "price_hint": "$18 weekday lunch special (listicle only)",
+      "source": "https://eattheway.com/korean-restaurants-in-sunnyvale-ca/",
+      "searched": "2026-09-07"
+    },
+    {
+      "name": "Sushi Confidential (Campbell)",
+      "city": "Campbell",
+      "why": "The restaurant's own site publishes Campbell hours including Tuesday 11:30 AM - 9:00 PM, but no street address for that branch was captured in this pass.",
+      "price_hint": null,
+      "source": "https://sushiconfidential.com/campbell-sushi-location/",
+      "searched": "2026-09-07"
+    },
+    {
+      "name": "Oveja Negra",
+      "city": "San Jose",
+      "why": "The official site publishes Santana Row lunch hours (Mon-Sat 11:00 AM - 4:00 PM) and a Txuleton Tuesday $140 dinner, which is an evening offer - but no street address for the branch was captured.",
+      "price_hint": "Txuleton Tuesday $140 for two, 5:30 PM - 10:00 PM (dinner, not lunch)",
+      "source": "https://www.ovejanegrasj.com/",
+      "searched": "2026-09-07"
+    },
+    {
+      "name": "The Basin",
+      "city": "Saratoga",
+      "why": "Dinner only - OpenTable lists 'Monday - Sunday: 5:00pm - Close' with no lunch service.",
+      "price_hint": "Cheeseburger and fries $15 on the happy-hour menu (4-6 PM)",
+      "source": "https://www.opentable.com/r/the-basin-saratoga",
+      "searched": "2026-09-07"
+    },
+    {
+      "name": "Hachi Ju Hachi",
+      "city": "Saratoga",
+      "why": "Dinner only - the Saratoga Chamber directory lists Tue-Sun 5:00 PM - 9:00 PM.",
+      "price_hint": null,
+      "source": "https://www.saratogachamber.org/copy-of-lodging",
+      "searched": "2026-09-07"
+    },
+    {
+      "name": "The Hero Ranch Kitchen",
+      "city": "Saratoga",
+      "why": "Opens at 4:00 PM Wednesday to Sunday, so there is no lunch service and it is closed on Tuesday.",
+      "price_hint": null,
+      "source": "https://www.saratogachamber.org/copy-of-lodging",
+      "searched": "2026-09-07"
+    },
+    {
+      "name": "Florentine Trattoria",
+      "city": "Saratoga",
+      "why": "Dinner only - the Saratoga Chamber directory lists Mon-Sun 4:00 PM - 7:30 PM.",
+      "price_hint": null,
+      "source": "https://www.saratogachamber.org/copy-of-lodging",
+      "searched": "2026-09-07"
+    },
+    {
+      "name": "Mangia Mornings",
+      "city": "Saratoga",
+      "why": "Closed on Tuesdays - the directory lists Wednesday to Sunday 8:00 AM - 4:00 PM.",
+      "price_hint": null,
+      "source": "https://www.saratogachamber.org/copy-of-lodging",
+      "searched": "2026-09-07"
+    },
+    {
+      "name": "Sushi Heaven",
+      "city": "Saratoga",
+      "why": "Dinner only - the directory lists 5:00 PM - 9:00 PM with 'call to confirm days'.",
+      "price_hint": null,
+      "source": "https://www.saratogachamber.org/copy-of-lodging",
+      "searched": "2026-09-07"
+    },
+    {
+      "name": "TeaZenTea (Saratoga)",
+      "city": "Saratoga",
+      "why": "Boba tea shop, not a lunch special - no food menu or hours were published on the pages read.",
+      "price_hint": null,
+      "source": "https://www.teazentea.com/order/saratoga/menu",
+      "searched": "2026-09-07"
+    },
+    {
+      "name": "Mandarin Gourmet Cupertino",
+      "city": "Cupertino",
+      "why": "Yelp marks the N De Anza Blvd address as CLOSED, and the only hours available (11:30 AM - 1:30 PM lunch) come from a menu aggregator, so it cannot be planned for the trip date.",
+      "price_hint": null,
+      "source": "https://www.yelp.com/biz/mandarin-gourmet-cupertino-cupertino",
+      "searched": "2026-09-07"
     }
   ],
   "notes": [

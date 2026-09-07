@@ -1,0 +1,445 @@
+{
+ "note": "Batch 2 - researched 2026-09-07. Sunnyvale, Campbell, Mountain View, Cupertino. Buffet rows, official lunch-combo rows and 'no lunch special published' rows are all kept, each labelled.",
+ "entries": [
+  {
+   "name": "The Urban Grill",
+   "city": "Sunnyvale",
+   "area": "Apollo Way (north Sunnyvale)",
+   "address": "1214 Apollo Way Ste 404-B, Sunnyvale, CA 94085",
+   "coords": [37.3987, -122.0205],
+   "coords_source": "approximate - Apollo Way block, not a captured geocode",
+   "cuisine": "Indian, buffet",
+   "phone": "(669) 306-6700",
+   "lunch_special": {
+    "name": "Weekday lunch buffet",
+    "price_from": 16.99,
+    "price_to": 16.99,
+    "days": "Monday-Thursday (per urbanindianflavors.com); the Yelp business blurb says the lunch buffet runs every day",
+    "window": "11:30 AM - 3:00 PM, last seating 2:30 PM",
+    "includes": "Grand lunch buffet, Indian/North Indian"
+   },
+   "hours_tuesday": "11:30 AM - 3:00 PM, 6:00 PM - 10:30 PM",
+   "days_open": "Mon-Wed 11:30 AM - 3:00 PM, 6:00 PM - 10:30 PM; Thu 11:30 AM - 3:30 PM, 5:30 PM - 10:30 PM; Fri 11:30 AM - 3:00 PM, 5:30 PM - 10:30 PM; Sat-Sun 11:30 AM - 3:00 PM, 6:00 PM - 10:30 PM (Yelp)",
+   "open_on_trip_date": true,
+   "fits_return_bus": {"ok": false, "note": "About 6.1 mi north of 20387 Gillick Way in Sunnyvale; the buffet also runs to 3:00 PM, well past the 11:50 AM departure."},
+   "verification": {
+    "level": "official",
+    "sources": [
+     {"label": "urbanindianflavors.com (Urban Grill own domain) - Weekday Lunch Buffet Monday-Thursday 11:30 AM - 3:00 PM, $16.99 per person, last seating 2:30 PM", "url": "https://urbanindianflavors.com/urban-grill/"},
+     {"label": "urbangrillusa.com (same brand, second domain) - lunch buffet priced at $19.99 with a Friday-Sunday schedule, which conflicts with the page above", "url": "https://www.urbangrillusa.com/"},
+     {"label": "Yelp - The Urban Grill address, phone, week hours and 'LUNCH Buffet every day @ 11:30 AM-3:00 PM'", "url": "https://www.yelp.com/biz/the-urban-grill-sunnyvale"}
+    ],
+    "accessed": "2026-09-07"
+   },
+   "review_links": {
+    "yelp": "https://www.yelp.com/biz/the-urban-grill-sunnyvale",
+    "google_maps": "https://www.google.com/maps/search/?api=1&query=Urban+Grill+1214+Apollo+Way+Sunnyvale"
+   },
+   "flags": [
+    "CONFLICT: the brand's two domains disagree - urbanindianflavors.com prices the buffet at $16.99 Mon-Thu, urbangrillusa.com shows $19.99 with a Fri-Sun schedule. Both are linked; call to confirm the Tuesday price.",
+    "The buffet runs to 3:00 PM, so it cannot be combined with the 11:50 AM return departure."
+   ]
+  },
+  {
+   "name": "UlavacharU Indian Restaurant",
+   "city": "Sunnyvale",
+   "area": "E El Camino Real",
+   "address": "685 E El Camino Real, Sunnyvale, CA 94087",
+   "coords": [37.3571, -122.0147],
+   "coords_source": "approximate - E El Camino Real block, not a captured geocode",
+   "cuisine": "Indian, South and North Indian, biryani",
+   "phone": "(408) 528-2709",
+   "lunch_special": {
+    "name": "Lunch buffet - Friday to Sunday only (not Tuesday)",
+    "price_from": null,
+    "price_to": null,
+    "days": "Friday-Sunday for the buffet; unlimited thali at lunch on weekdays per a Yelp answer",
+    "window": "Mon-Fri 11:30 AM - 2:30 PM; Sat-Sun 11:00 AM - 3:00 PM",
+    "includes": "The business states 'Special Lunch Buffet from Friday to Sunday'. A Yelp Q&A answer says the unlimited lunch thali is about $22 per person (reviewer was not certain)."
+   },
+   "hours_tuesday": "11:30 AM - 2:30 PM, 5:30 PM - 10:00 PM",
+   "days_open": "Mon-Fri 11:30 AM - 2:30 PM, 5:30 PM - 10:00 PM; Sat-Sun 11:00 AM - 3:00 PM, 5:30 PM - 10:00 PM (Yelp)",
+   "open_on_trip_date": true,
+   "fits_return_bus": {"ok": false, "note": "About 3.4 mi from the destination and the buffet does not run on Tuesdays, so it is not usable on the trip date."},
+   "verification": {
+    "level": "listing",
+    "sources": [
+     {"label": "Yelp - UlavacharU address, phone, hours and the 'Special Lunch Buffet from Friday to Sunday' statement", "url": "https://www.yelp.com/biz/ulavacharu-indian-restaurant-sunnyvale"}
+    ],
+    "accessed": "2026-09-07"
+   },
+   "review_links": {
+    "yelp": "https://www.yelp.com/biz/ulavacharu-indian-restaurant-sunnyvale",
+    "google_maps": "https://www.google.com/maps/search/?api=1&query=UlavacharU+685+E+El+Camino+Real+Sunnyvale"
+   },
+   "flags": [
+    "THE BUFFET IS FRIDAY-SUNDAY ONLY - it does not run on Tuesday September 8.",
+    "The ~$22 thali figure is a Yelp Q&A estimate, not a menu price, so no price is printed in the table."
+   ]
+  },
+  {
+   "name": "SAJJ Mediterranean",
+   "city": "Sunnyvale",
+   "area": "S Frances St (Downtown Sunnyvale)",
+   "address": "145 S Frances St, Sunnyvale, CA 94086",
+   "coords": [37.3761, -122.0307],
+   "coords_source": "approximate - S Frances St block, not a captured geocode",
+   "cuisine": "Mediterranean, Middle Eastern, halal",
+   "phone": "(408) 746-5970",
+   "lunch_special": {
+    "name": "No lunch special published - build-your-own bowls and wraps",
+    "price_from": null,
+    "price_to": null,
+    "days": "Mon-Sun",
+    "window": "11:00 AM - 9:00 PM daily",
+    "includes": "No priced lunch special found on the pages read; the menu is bowls, wraps and plates."
+   },
+   "hours_tuesday": "11:00 AM - 9:00 PM",
+   "days_open": "Mon-Sun 11:00 AM - 9:00 PM (Yelp and restaurantji agree)",
+   "open_on_trip_date": true,
+   "fits_return_bus": {"ok": false, "note": "About 4.4 mi from the destination near the Sunnyvale Caltrain station - it works on the way back only if you are already at the station."},
+   "verification": {
+    "level": "listing",
+    "sources": [
+     {"label": "Yelp - SAJJ Mediterranean Sunnyvale address, phone and daily 11:00 AM - 9:00 PM", "url": "https://www.yelp.com/biz/sajj-mediterranean-sunnyvale"},
+     {"label": "restaurantji - SAJJ Mediterranean structured weekly hours and address", "url": "https://www.restaurantji.com/ca/sunnyvale/sajj-mediterranean-sunnyvale-/"}
+    ],
+    "accessed": "2026-09-07"
+   },
+   "review_links": {
+    "yelp": "https://www.yelp.com/biz/sajj-mediterranean-sunnyvale",
+    "google_maps": "https://www.google.com/maps/search/?api=1&query=SAJJ+Mediterranean+145+S+Frances+St+Sunnyvale"
+   },
+   "flags": ["No lunch special published; two directories agree on the hours."]
+  },
+  {
+   "name": "Oren's Hummus",
+   "city": "Mountain View",
+   "area": "Castro Street",
+   "address": "126 Castro St, Mountain View, CA 94041",
+   "coords": [37.3939, -122.0805],
+   "coords_source": "approximate - Castro Street block, not a captured geocode",
+   "cuisine": "Mediterranean, Middle Eastern",
+   "phone": "(650) 938-6736",
+   "lunch_special": {
+    "name": "No lunch special published - a la carte hummus plates and pitas",
+    "price_from": null,
+    "price_to": null,
+    "days": "Mon-Sun",
+    "window": "opens 11:00 AM",
+    "includes": "No priced lunch special found on the pages read."
+   },
+   "hours_tuesday": "11:00 AM - 9:00 PM (one Yelp view shows 9:30 PM)",
+   "days_open": "Mon-Thu 11:00 AM - 9:00 PM (Yelp also shows a 9:30 PM close); Fri-Sat 11:00 AM - 9:30/10:00 PM; Sun 11:00 AM - 9:00/9:30 PM",
+   "open_on_trip_date": true,
+   "fits_return_bus": {"ok": false, "note": "Mountain View is the fallback station, about 7.8 mi from 20387 Gillick Way."},
+   "verification": {
+    "level": "listing",
+    "sources": [
+     {"label": "Yelp - Oren's Hummus Mountain View address, phone and week hours", "url": "https://www.yelp.com/biz/orens-hummus-mountain-view-3"}
+    ],
+    "accessed": "2026-09-07"
+   },
+   "review_links": {
+    "yelp": "https://www.yelp.com/biz/orens-hummus-mountain-view-3",
+    "google_maps": "https://www.google.com/maps/search/?api=1&query=Oren%27s+Hummus+126+Castro+St+Mountain+View"
+   },
+   "flags": ["Closing time differs between two Yelp views of the same listing (9:00 PM vs 9:30 PM); the 11:00 AM opening agrees."]
+  },
+  {
+   "name": "Xiang Home Kitchen 2 (家湘 2)",
+   "city": "Cupertino",
+   "area": "Stevens Creek Blvd",
+   "address": "19634 Stevens Creek Blvd, Cupertino, CA 95014-2465",
+   "coords": [37.3222, -122.0124],
+   "coords_source": "approximate - Stevens Creek Blvd block, not a captured geocode",
+   "cuisine": "Hunan / Chinese",
+   "lunch_special": {
+    "name": "Lunch menu section - stir-fry lunch plates",
+    "price_from": 12.99,
+    "price_to": 15.99,
+    "days": "days not stated on the menu",
+    "window": "lunch",
+    "includes": "OpenTable menu lists a Lunch section: Stir Fried Smoked Tofu with Leek $12.99, Stir Fried A Choy $12.99, Stir Fried Pork with Pepper $13.99, Stir Fried Minced Pork with Beans $13.99, up to Stir Fried Chicken Gizzard with White Pepper $15.99"
+   },
+   "hours_tuesday": "not captured",
+   "days_open": "not captured",
+   "open_on_trip_date": null,
+   "fits_return_bus": {"ok": false, "note": "Hours were not captured, so it cannot be scheduled; about 1.3 mi from the destination."},
+   "verification": {
+    "level": "listing",
+    "sources": [
+     {"label": "OpenTable - Xiang Home Kitchen 2 Cupertino address and the Lunch section of the menu with prices", "url": "https://www.opentable.com/r/xiang-home-kitchen-cupertino"}
+    ],
+    "accessed": "2026-09-07"
+   },
+   "review_links": {"google_maps": "https://www.google.com/maps/search/?api=1&query=Xiang+Home+Kitchen+19634+Stevens+Creek+Blvd+Cupertino"},
+   "flags": [
+    "Prices come from the OpenTable-hosted menu, not the restaurant's own website.",
+    "Hours were not captured in this pass - call before relying on it."
+   ]
+  },
+  {
+   "name": "Shan Restaurant",
+   "city": "Cupertino",
+   "area": "Stevens Creek Blvd",
+   "address": "20007 Stevens Creek Blvd, Cupertino, CA 95014",
+   "coords": [37.3209, -122.0164],
+   "coords_source": "approximate - Stevens Creek Blvd block, not a captured geocode",
+   "cuisine": "Pakistani / North Indian",
+   "lunch_special": {
+    "name": "Lunch-price lead only - curry and saalan plates",
+    "price_from": null,
+    "price_to": null,
+    "days": "not captured",
+    "window": "not captured",
+    "includes": "A menu aggregator (menupages.com) lists curries at $8.99 and daily specials at $9.49 for this address. No price is printed here because the only source is an aggregator."
+   },
+   "hours_tuesday": "not captured",
+   "days_open": "not captured",
+   "open_on_trip_date": null,
+   "fits_return_bus": {"ok": false, "note": "Hours not captured; about 1 mi from the destination."},
+   "verification": {
+    "level": "unverified",
+    "sources": [
+     {"label": "menupages.com - Shan Restaurant (Stevens Creek Blvd) address and menu prices (aggregator, not the restaurant)", "url": "https://menupages.com/shan-restaurant-stevens-creek-blvd/20007-stevens-creek-blvd-cupertino"}
+    ],
+    "accessed": "2026-09-07"
+   },
+   "review_links": {"google_maps": "https://www.google.com/maps/search/?api=1&query=Shan+Restaurant+20007+Stevens+Creek+Blvd+Cupertino"},
+   "flags": [
+    "Only an aggregator menu was found, so no price is printed and the row is marked unverified.",
+    "Hours and phone were not captured."
+   ]
+  },
+  {
+   "name": "A Bellagio",
+   "city": "Campbell",
+   "area": "S Central Ave (downtown Campbell)",
+   "address": "33 S Central Ave, Campbell, CA 95008",
+   "coords": [37.2872, -121.95],
+   "coords_source": "approximate - S Central Ave block, not a captured geocode",
+   "cuisine": "Italian",
+   "phone": "(408) 370-7705",
+   "lunch_special": {
+    "name": "Lunch service - no separate lunch-special price published",
+    "price_from": null,
+    "price_to": null,
+    "days": "Tuesday-Friday",
+    "window": "11:30 AM - 2:30 PM",
+    "includes": "The restaurant's own site publishes a lunch service Tue-Fri 11:30am-2:30pm; no lunch-special price was found."
+   },
+   "hours_tuesday": "11:30 AM - 2:30 PM, 5:00 PM - 9:30 PM",
+   "days_open": "Lunch Tue-Fri 11:30 AM - 2:30 PM; dinner Mon-Thu 5:00-9:30 PM, Fri-Sat 4:30-10:00 PM, Sun 4:30-9:00 PM (official site)",
+   "open_on_trip_date": true,
+   "fits_return_bus": {"ok": false, "note": "About 5.4 mi from the destination in Campbell - off the Cupertino return path."},
+   "verification": {
+    "level": "official",
+    "sources": [
+     {"label": "A Bellagio official site - address, phone and 'Lunch: Tuesday-Friday 11:30am-2:30pm'", "url": "http://www.abellagio.com/"}
+    ],
+    "accessed": "2026-09-07"
+   },
+   "review_links": {"google_maps": "https://www.google.com/maps/search/?api=1&query=A+Bellagio+33+S+Central+Ave+Campbell"},
+   "flags": [
+    "Open Tuesday, and Tuesday is the first day of its lunch week - a good match for the trip date.",
+    "No lunch-special price is published on the site."
+   ]
+  },
+  {
+   "name": "Buca di Beppo Italian Restaurant",
+   "city": "Campbell",
+   "area": "S Bascom Ave (Pruneyard area)",
+   "address": "1875 S Bascom Ave, Campbell, CA 95008",
+   "coords": [37.28859, -121.933],
+   "coords_source": "official location page JSON-LD",
+   "cuisine": "Italian, family style",
+   "phone": "(408) 377-7722",
+   "lunch_special": {
+    "name": "Lunch Combos - available Monday-Friday until 3:00 PM, includes side salad and garlic bread",
+    "price_from": null,
+    "price_to": null,
+    "days": "Monday-Friday",
+    "window": "until 3:00 PM",
+    "includes": "Side salad and garlic bread included; the combo prices are on the menu sub-page, which was not captured with figures"
+   },
+   "hours_tuesday": "11:00 AM - 9:30 PM",
+   "days_open": "Mon-Thu 11:00 AM - 9:30 PM; Fri-Sat 11:00 AM - 10:30 PM; Sun 11:00 AM - 9:00 PM (official location page)",
+   "open_on_trip_date": true,
+   "fits_return_bus": {"ok": false, "note": "About 5.6 mi from the destination in Campbell, and the lunch combos run to 3:00 PM - too late for the 11:50 AM departure."},
+   "verification": {
+    "level": "official",
+    "sources": [
+     {"label": "Buca di Beppo Campbell official location page - hours, address, coordinates and 'Lunch Combos available Monday-Friday until 3:00pm'", "url": "https://dineatbuca.com/locations/campbell/"}
+    ],
+    "accessed": "2026-09-07"
+   },
+   "review_links": {"google_maps": "https://www.google.com/maps/search/?api=1&query=Buca+di+Beppo+1875+S+Bascom+Ave+Campbell"},
+   "flags": ["The lunch combo prices sit on a separate menu page that was not captured, so no price is printed."]
+  },
+  {
+   "name": "Naschmarkt",
+   "city": "Campbell",
+   "area": "E Campbell Ave (downtown Campbell)",
+   "address": "384 E Campbell Ave, Campbell, CA 95008",
+   "coords": [37.2866, -121.9463],
+   "coords_source": "approximate - E Campbell Ave block, not a captured geocode",
+   "cuisine": "Austrian, German, modern European",
+   "phone": "(408) 378-0335",
+   "lunch_special": {
+    "name": "No lunch special published - lunch service only",
+    "price_from": null,
+    "price_to": null,
+    "days": "Mon-Sun",
+    "window": "11:30 AM - 2:00 PM",
+    "includes": "No priced lunch special found on the pages read."
+   },
+   "hours_tuesday": "11:30 AM - 2:00 PM, 5:00 PM - 9:00 PM",
+   "days_open": "Mon-Thu 11:30 AM - 2:00 PM, 5:00-9:00 PM; Fri-Sat 11:30 AM - 2:00 PM, 5:00-9:30 PM; Sun 11:30 AM - 2:00 PM, 5:00-9:00 PM (Yelp)",
+   "open_on_trip_date": true,
+   "fits_return_bus": {"ok": false, "note": "About 5.2 mi from the destination in Campbell - not on the Cupertino return path."},
+   "verification": {
+    "level": "listing",
+    "sources": [
+     {"label": "Yelp - Naschmarkt Campbell address, phone and the 11:30 AM - 2:00 PM lunch service", "url": "https://www.yelp.com/biz/naschmarkt-campbell-campbell-3"}
+    ],
+    "accessed": "2026-09-07"
+   },
+   "review_links": {
+    "yelp": "https://www.yelp.com/biz/naschmarkt-campbell-campbell-3",
+    "google_maps": "https://www.google.com/maps/search/?api=1&query=Naschmarkt+384+E+Campbell+Ave+Campbell"
+   },
+   "flags": ["No lunch special published; the row records the lunch service window."]
+  },
+  {
+   "name": "Royal Taj India Cuisine",
+   "city": "Campbell",
+   "area": "Camden Ave",
+   "address": "1350 Camden Ave, Campbell, CA 95008",
+   "coords": [37.2847, -121.9613],
+   "coords_source": "approximate - Camden Ave block, not a captured geocode",
+   "cuisine": "Indian",
+   "phone": "(408) 559-6801",
+   "lunch_special": {
+    "name": "Lunch service - buffet historically reported, not confirmed for 2026",
+    "price_from": null,
+    "price_to": null,
+    "days": "Mon-Sun lunch",
+    "window": "11:30 AM - 3:00 PM (Mon-Tue and Thu-Sun), 11:00 AM - 3:00 PM (Wed)",
+    "includes": "No current buffet price was published on the pages read; older directories describe a long-running lunch buffet that is not on the current official site."
+   },
+   "hours_tuesday": "11:30 AM - 3:00 PM, 5:00 PM - 9:00 PM (official site) vs 11:30 AM - 9:30 PM (Yelp, which flags the business closed)",
+   "days_open": "Official site: Mon-Tue and Thu-Sun 11:30 AM - 3:00 PM, 5:00-9:00 PM; Wed 11:00 AM - 3:00 PM, 5:00-9:00 PM",
+   "open_on_trip_date": null,
+   "fits_return_bus": {"ok": false, "note": "About 5.6 mi from the destination and the open/closed status is unresolved."},
+   "verification": {
+    "level": "conflicting",
+    "sources": [
+     {"label": "royaltacamdencampbell.com - the restaurant's own current site, listing address, phone and Mon-Tue 11:30AM-3:00PM hours", "url": "https://royaltajcamdencampbell.com/"},
+     {"label": "Yelp - the Campbell listing is flagged CLOSED while showing the same address and phone", "url": "https://www.yelp.com/biz/royal-taj-campbell"}
+    ],
+    "accessed": "2026-09-07"
+   },
+   "review_links": {
+    "yelp": "https://www.yelp.com/biz/royal-taj-campbell",
+    "google_maps": "https://www.google.com/maps/search/?api=1&query=Royal+Taj+1350+Camden+Ave+Campbell"
+   },
+   "flags": [
+    "OPEN OR CLOSED IS UNRESOLVED: the restaurant's own site (royaltacamdencampbell.com) is live with current hours, while Yelp marks this address CLOSED. Phone (408) 559-6801 before going.",
+    "The lunch buffet often attributed to this address is not on the current official site - no price is printed."
+   ]
+  },
+  {
+   "name": "Sushi Arashi",
+   "city": "Mountain View",
+   "area": "Castro Street",
+   "address": "240 Castro St, Mountain View, CA 94041",
+   "coords": [37.393, -122.0781],
+   "coords_source": "approximate - Castro Street block, not a captured geocode",
+   "cuisine": "Japanese, sushi",
+   "phone": "(650) 274-8988",
+   "lunch_special": {
+    "name": "No lunch special published - sushi and dinner-combo plates",
+    "price_from": null,
+    "price_to": null,
+    "days": "Mon-Sun",
+    "window": "opens 11:00 AM",
+    "includes": "No priced lunch special found; Yelp lists rolls from $6.50 and dinner/combo plates $15.95-$17.95."
+   },
+   "hours_tuesday": "11:00 AM - 10:00 PM",
+   "days_open": "Mon-Thu 11:00 AM - 10:00 PM (Yelp, Fri-Sun not fully captured)",
+   "open_on_trip_date": true,
+   "fits_return_bus": {"ok": false, "note": "Mountain View, about 7.8 mi from the destination - off the Sunnyvale return chain."},
+   "verification": {
+    "level": "listing",
+    "sources": [
+     {"label": "Yelp - Sushi Arashi address, phone, hours and menu prices", "url": "https://www.yelp.com/biz/sushi-arashi-mountain-view"}
+    ],
+    "accessed": "2026-09-07"
+   },
+   "review_links": {
+    "yelp": "https://www.yelp.com/biz/sushi-arashi-mountain-view",
+    "google_maps": "https://www.google.com/maps/search/?api=1&query=Sushi+Arashi+240+Castro+St+Mountain+View"
+   },
+   "flags": ["No lunch special published on the pages read."]
+  }
+ ],
+ "rejected": [
+  {
+   "name": "Krung Thai Mountain View",
+   "city": "Mountain View",
+   "why": "Yelp flags this location as CLOSED ('Yelpers report this location has closed'), so it cannot be planned for September 8, 2026.",
+   "price_hint": "Older review mentions lunch specials a dollar more than a neighbour's $7.95-$8.95",
+   "source": "https://www.yelp.com/biz/krung-thai-mountain-view-mountain-view",
+   "searched": "2026-09-07"
+  },
+  {
+   "name": "BCD Tofu House (Sunnyvale)",
+   "city": "Sunnyvale",
+   "why": "No Sunnyvale/Santa Clara listing surfaced - the search returned only Rowland Heights, Fort Lee and Los Angeles branches, so a South Bay address could not be verified.",
+   "price_hint": null,
+   "source": "https://www.yelp.com/biz/bcd-tofu-house-rowland-heights",
+   "searched": "2026-09-07"
+  },
+  {
+   "name": "Bushido Izakaya Restaurant",
+   "city": "Mountain View",
+   "why": "Dinner only - the listing shows 5:00 PM - 10:35 PM, so there is no lunch service on the trip date.",
+   "price_hint": "Ramen $18.15, small plates $6.60+",
+   "source": "https://www.doordash.com/store/bushido-izakaya-restaurant-mountain-view-64",
+   "searched": "2026-09-07"
+  },
+  {
+   "name": "Capers Restaurant",
+   "city": "Campbell",
+   "why": "Not a lunch option on the trip date: OpenTable lists Tuesday hours as 4:00 PM - 8:00 PM, while its own offers block advertises Tue 11:00 AM - 10:00 PM - an unresolved conflict with no lunch menu published.",
+   "price_hint": null,
+   "source": "https://www.opentable.com/capers",
+   "searched": "2026-09-07"
+  },
+  {
+   "name": "Hong Fu Gourmet Chinese Restaurant",
+   "city": "Cupertino",
+   "why": "Tripadvisor marks the business CLOSED; the menu prices there are historical.",
+   "price_hint": "Historic chow mein $7.50, entrees $12.95-$14.95",
+   "source": "https://www.tripadvisor.com/Restaurant_Review-g32273-d473148-Reviews-Hong_Fu_Gourmet_Chinese_Restaurant-Cupertino_California.html",
+   "searched": "2026-09-07"
+  },
+  {
+   "name": "Korean Cuisine Bob Sang",
+   "city": "Sunnyvale",
+   "why": "The '$18 weekday lunch specials' figure comes only from a third-party listicle (eattheway.com), not the restaurant, Yelp, Google or Reddit, and no address was captured.",
+   "price_hint": "$18 weekday lunch special (listicle only)",
+   "source": "https://eattheway.com/korean-restaurants-in-sunnyvale-ca/",
+   "searched": "2026-09-07"
+  },
+  {
+   "name": "Sushi Confidential (Campbell)",
+   "city": "Campbell",
+   "why": "The restaurant's own site publishes Campbell hours including Tuesday 11:30 AM - 9:00 PM, but no street address for that branch was captured in this pass.",
+   "price_hint": null,
+   "source": "https://sushiconfidential.com/campbell-sushi-location/",
+   "searched": "2026-09-07"
+  }
+ ]
+}

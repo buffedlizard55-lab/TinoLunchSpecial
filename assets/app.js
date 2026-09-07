@@ -212,6 +212,29 @@
 
   /* ---------- lunch ---------- */
   const FILTERS = { q: '', city: 'all', verifiedOnly: false, cheap: false, openTue: false, fitsBus: false };
+  const SORT = { key: 'dist', dir: 1 };
+  const SORTVAL = {
+    name: (e) => String(e.name || '').toLowerCase(),
+    city: (e) => String(e.city || '').toLowerCase(),
+    cuisine: (e) => String(e.cuisine || '').toLowerCase(),
+    deal: (e) => String(e.lunch_special.name || '').toLowerCase(),
+    days: (e) => String(e.lunch_special.days || '').toLowerCase(),
+    price: (e) => (e.lunch_special.price_from == null ? 9999 : e.lunch_special.price_from),
+    dist: (e) => (e.distance_mi == null ? 9999 : e.distance_mi),
+    level: (e) => {
+      const l = String(e.verification.level || '');
+      return l.indexOf('official') === 0 ? 0 : l.indexOf('review') === 0 ? 1 : l.indexOf('conflicting') === 0 ? 2
+        : l.indexOf('mixed') === 0 ? 3 : l.indexOf('listing') === 0 ? 4 : 5;
+    },
+    id: (e) => e.id
+  };
+
+  function distCell(e) {
+    if (e.distance_mi == null) return '<span class="tiny">not geocoded</span>';
+    const approx = /approximate|block, not/i.test(e.coords_source || '');
+    return '<span class="dist">' + (approx ? '~' : '') + e.distance_mi + ' mi</span>' +
+      '<div class="tiny">' + (approx ? 'city-block estimate, not a geocoded address' : 'straight-line walk from 20387 Gillick Way') + '</div>';
+  }
 
   function lunchRow(e, level) {
     const ls = e.lunch_special;
@@ -230,8 +253,9 @@
     ].filter(Boolean).join(' ');
     return '<tr class="' + (level === 'official' ? 'row-official' : '') + '">' +
       '<td class="name"><span class="rid">' + esc(e.id) + '</span><span class="rname">' + esc(e.name) + '</span><span class="rcity">' + esc(e.city) + (e.area ? ' - ' + esc(e.area) : '') + '</span>' +
-      '<span class="raddr">' + esc(e.address) + (e.distance_mi != null ? ' - about ' + e.distance_mi + ' mi from 20387 Gillick Way' : '') + '</span>' +
+      '<span class="raddr">' + esc(e.address) + '</span>' +
       '<span class="rtags">' + open + ' ' + fits + '</span></td>' +
+      '<td class="num">' + distCell(e) + '</td>' +
       '<td>' + esc(e.cuisine) + '</td>' +
       '<td class="deal">' + esc(ls.name) + (ls.includes ? '<div class="tiny">' + esc(ls.includes) + '</div>' : '') + '</td>' +
       '<td>' + price + (ls.window ? '<div class="tiny">' + esc(ls.window) + '</div>' : '') + '</td>' +
@@ -273,8 +297,14 @@
       '<button id="lreset" type="button">Reset</button>' +
       '<span id="lcount" class="tiny"></span>' +
       '</div>' +
+      '<div class="sortbar">Sort by: ' +
+      [['dist', 'Closest to 20387 Gillick Way'], ['price', 'Cheapest lunch first'], ['name', 'Name A-Z'], ['city', 'City'], ['level', 'Best evidence first'], ['id', 'As searched']]
+        .map(([k, l]) => '<button type="button" class="sortchip" data-sortkey="' + k + '">' + esc(l) + '</button>').join('') +
+      '</div>' +
       '<div class="scrollpanel"><table class="ltable"><thead><tr>' +
-      '<th>Restaurant</th><th>Cuisine</th><th>What the special is</th><th>Price</th><th>Days</th><th>Tuesday hours / all days</th><th>Verification and links</th><th>Flags and notes</th>' +
+      [['name', 'Restaurant'], ['dist', 'Distance'], ['cuisine', 'Cuisine'], ['deal', 'What the special is'], ['price', 'Price'], ['days', 'Days']]
+        .map(([k, l]) => '<th class="sortable" data-sort="' + k + '">' + l + '<span class="sortind" data-ind="' + k + '"></span></th>').join('') +
+      '<th>Tuesday hours / all days</th><th>Verification and links</th><th>Flags and notes</th>' +
       '</tr></thead><tbody id="lbody"></tbody></table></div>' +
 
       '<h3>Top five for a Tuesday, September 8</h3>' +
@@ -310,9 +340,20 @@
         }
         return true;
       });
+      rows.sort((a, b) => {
+        const va = SORTVAL[SORT.key](a), vb = SORTVAL[SORT.key](b);
+        if (va < vb) return -1 * SORT.dir;
+        if (va > vb) return 1 * SORT.dir;
+        return a.id < b.id ? -1 : 1;
+      });
       body.innerHTML = rows.map((e) => lunchRow(e, e.verification.level)).join('') ||
-        '<tr><td colspan="8" class="tiny">Nothing matches - clear a filter.</td></tr>';
-      document.getElementById('lcount').textContent = rows.length + ' of ' + m.entries.length + ' entries shown';
+        '<tr><td colspan="9" class="tiny">Nothing matches - clear a filter.</td></tr>';
+      document.querySelectorAll('#panel-lunch .sortind').forEach((s) => {
+        s.textContent = s.dataset.ind === SORT.key ? (SORT.dir === 1 ? ' \u25B2' : ' \u25BC') : '';
+      });
+      document.querySelectorAll('#panel-lunch .sortchip').forEach((c) => c.classList.toggle('is-active', c.dataset.sortkey === SORT.key));
+      document.getElementById('lcount').textContent = rows.length + ' of ' + m.entries.length + ' entries shown' +
+        (SORT.key === 'dist' ? ' - closest first' : SORT.key === 'price' ? ' - cheapest first' : ' - sorted by ' + SORT.key);
     };
     const bind = (id, fn) => { const el = document.getElementById(id); if (el) el.addEventListener('input', fn) || el.addEventListener('change', fn); };
     document.getElementById('lq').addEventListener('input', (ev) => { FILTERS.q = ev.target.value; paint(); });
@@ -321,6 +362,15 @@
     document.getElementById('lfits').addEventListener('change', (ev) => { FILTERS.fitsBus = ev.target.checked; paint(); });
     document.getElementById('lofficial').addEventListener('change', (ev) => { FILTERS.verifiedOnly = ev.target.checked; paint(); });
     document.getElementById('lcheap').addEventListener('change', (ev) => { FILTERS.cheap = ev.target.checked; paint(); });
+    document.querySelectorAll('#panel-lunch th.sortable').forEach((th) => th.addEventListener('click', () => {
+      const k = th.dataset.sort;
+      SORT.dir = SORT.key === k ? -SORT.dir : 1;
+      SORT.key = k;
+      paint();
+    }));
+    document.querySelectorAll('#panel-lunch .sortchip').forEach((b) => b.addEventListener('click', () => {
+      SORT.key = b.dataset.sortkey; SORT.dir = 1; paint();
+    }));
     document.getElementById('lreset').addEventListener('click', () => {
       Object.keys(FILTERS).forEach((k) => { FILTERS[k] = k === 'city' ? 'all' : (k === 'q' ? '' : false); });
       ['lq'].forEach((i) => document.getElementById(i).value = '');

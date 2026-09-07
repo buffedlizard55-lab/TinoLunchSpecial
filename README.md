@@ -33,13 +33,14 @@ data/plan.json              trip definition, constraints, decision log
 data/transit_outbound.json  3 outbound plans, leg by leg, with per-leg links
 data/transit_return.json    3 return plans + the last-workable-train cutoff
 data/fares.json             agency fare tables and six day-total scenarios
-data/lunch_specials.json    101 lunch entries (27 original + 20 batch-2 + 54 batch-3, all 2026-09-07), hours, days, prices, verification level
-data/lunch_rejected.json    28 rejected/deferred candidates (17 rows), each with a reason and a link
-data/flags.json             23 irregularities found while verifying - all still listed
-data/sources.json           37 source pages, what each one proved, and the fetch status
+data/lunch_specials.json    150 lunch entries (27 original + 20 batch-2 + 54 batch-3 + 49 batch-4, all 2026-09-07), hours, days, prices, verification level
+data/lunch_rejected.json    37 rejected/deferred candidates, each with a reason and a link
+data/flags.json             26 irregularities found while verifying - all still listed
+data/sources.json           45 source pages, what each one proved, and the fetch status
 docs/VERIFICATION.md        how to re-check every row, and what could not be verified
 scripts/build_data.py       validates + rebuilds generated.js and summary.md
 scripts/check_links.py      every row must link to a citable https page
+scripts/merge_incoming.py   merges researched batches in data/incoming/*.json into the master list
 scripts/smoke_test.js       renders all 8 panels headlessly, fails on undefined/NaN
 .github/workflows/deploy.yml
 ```

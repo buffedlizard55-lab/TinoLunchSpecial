@@ -1,0 +1,237 @@
+{
+ "note": "Batch 4 - researched 2026-09-07. Palo Alto, Mountain View, Sunnyvale, Cupertino.",
+ "entries": [
+  {
+   "name": "Chef Zhao Kitchen - Palo Alto",
+   "city": "Palo Alto",
+   "area": "W Bayshore Rd",
+   "address": "2180 W Bayshore Rd Ste 120, Palo Alto, CA 94303",
+   "coords": [37.4474, -122.1266],
+   "coords_source": "approximate - W Bayshore Rd block, not a captured geocode",
+   "cuisine": "Shanghainese / Chinese",
+   "phone": "(650) 485-2221",
+   "lunch_special": {
+    "name": "No lunch special published - bento boxes and a la carte at lunch",
+    "price_from": null,
+    "price_to": null,
+    "days": "Tue-Sun (closed Monday)",
+    "window": "11:00 AM - 2:30 PM",
+    "includes": "The business blurb mentions bento boxes and a la carte available for dine-in and take-out; no priced lunch special was published."
+   },
+   "hours_tuesday": "11:00 AM - 2:30 PM, 5:00 PM - 9:00 PM",
+   "days_open": "Mon closed; Tue-Sun 11:00 AM - 2:30 PM, 5:00 PM - 9:00 PM (Yelp and restaurantji agree)",
+   "open_on_trip_date": true,
+   "fits_return_bus": {"ok": false, "note": "Palo Alto is about 12 mi from 20387 Gillick Way - far outside the Cupertino walk radius."},
+   "verification": {
+    "level": "listing",
+    "sources": [
+     {"label": "Yelp - Chef Zhao Kitchen address, phone and hours", "url": "https://www.yelp.com/biz/chef-zhao-kitchen-palo-alto"},
+     {"label": "restaurantji - Chef Zhao Kitchen structured weekly hours", "url": "https://www.restaurantji.com/ca/palo-alto/chef-zhao-kitchen-/"}
+    ],
+    "accessed": "2026-09-07"
+   },
+   "review_links": {
+    "yelp": "https://www.yelp.com/biz/chef-zhao-kitchen-palo-alto",
+    "google_maps": "https://www.google.com/maps/search/?api=1&query=Chef+Zhao+Kitchen+2180+W+Bayshore+Rd+Palo+Alto"
+   },
+   "flags": [
+    "Note the city: the Cupertino branch mentioned in the business description is gone - the current address is Palo Alto, about 12 mi from the destination.",
+    "No lunch special published."
+   ]
+  },
+  {
+   "name": "Fashion Wok",
+   "city": "Sunnyvale",
+   "area": "S Murphy Ave (Downtown Sunnyvale)",
+   "address": "163 S Murphy Ave, Sunnyvale, CA 94086",
+   "coords": [37.36883, -122.0363496],
+   "coords_source": "directory listing JSON-LD",
+   "cuisine": "Chinese, dim sum, hot pot",
+   "phone": "(408) 739-8866",
+   "lunch_special": {
+    "name": "No lunch special published - opens 11:15 AM daily",
+    "price_from": null,
+    "price_to": null,
+    "days": "Mon-Sun",
+    "window": "11:15 AM - 11:15 PM",
+    "includes": "No priced lunch special found on the pages read."
+   },
+   "hours_tuesday": "11:15 AM - 11:15 PM",
+   "days_open": "Mon-Sun 11:15 AM - 11:15 PM (Yelp and zmenu agree)",
+   "open_on_trip_date": true,
+   "fits_return_bus": {"ok": false, "note": "About 4.4 mi from the destination, next to the Sunnyvale Caltrain station - usable only if you are already at the station."},
+   "verification": {
+    "level": "listing",
+    "sources": [
+     {"label": "Yelp - Fashion Wok address, phone and daily 11:15 AM - 11:15 PM", "url": "https://www.yelp.com/biz/fashion-wok-sunnyvale"},
+     {"label": "zmenu - Fashion Wok address, coordinates and hours", "url": "https://www.zmenu.com/fashion-wok-sunnyvale-online-menu/"}
+    ],
+    "accessed": "2026-09-07"
+   },
+   "review_links": {
+    "yelp": "https://www.yelp.com/biz/fashion-wok-sunnyvale",
+    "google_maps": "https://www.google.com/maps/search/?api=1&query=Fashion+Wok+163+S+Murphy+Ave+Sunnyvale"
+   },
+   "flags": [
+    "Yelp lists this business's website as homeeat.com/sunnyvale, so the Murphy Avenue store may now be trading under the Home Eat name - check the sign when you arrive.",
+    "No lunch special published."
+   ]
+  },
+  {
+   "name": "Chaat Bhavan - Sunnyvale (E El Camino Real)",
+   "city": "Sunnyvale",
+   "area": "E El Camino Real",
+   "address": "976 E El Camino Real, Sunnyvale, CA 94087",
+   "coords": [37.351897, -122.009473],
+   "coords_source": "official site JSON-LD",
+   "cuisine": "Indian vegetarian",
+   "phone": "(408) 795-1100",
+   "lunch_special": {
+    "name": "No lunch special published - vegetarian Indian a la carte",
+    "price_from": null,
+    "price_to": null,
+    "days": "Mon-Sun",
+    "window": "opens 11:30 AM (Yelp says 10:30 AM)",
+    "includes": "No priced lunch thali or lunch special was published on the pages read."
+   },
+   "hours_tuesday": "11:30 AM - 10:00 PM (official site) vs 10:30 AM - 10:00 PM (Yelp)",
+   "days_open": "Daily 11:30 AM - 10:00 PM on the official site; Yelp shows 10:30 AM - 10:00 PM daily",
+   "open_on_trip_date": true,
+   "fits_return_bus": {"ok": false, "note": "About 3.4 mi from the destination - a ride, not a walk, for the 11:50 AM departure."},
+   "verification": {
+    "level": "official",
+    "sources": [
+     {"label": "Chaat Bhavan official site - address, coordinates, phone and daily 11:30-22:00 hours", "url": "https://www.chaatbhavan.com/"},
+     {"label": "Yelp - Chaat Bhavan Sunnyvale hours and phone", "url": "https://www.yelp.com/biz/chaat-bhavan-sunnyvale-sunnyvale"}
+    ],
+    "accessed": "2026-09-07"
+   },
+   "review_links": {
+    "yelp": "https://www.yelp.com/biz/chaat-bhavan-sunnyvale-sunnyvale",
+    "google_maps": "https://www.google.com/maps/search/?api=1&query=Chaat+Bhavan+976+E+El+Camino+Real+Sunnyvale"
+   },
+   "flags": [
+    "Opening time conflict: the official site says 11:30 AM, Yelp says 10:30 AM - either way it is open before the 11:50 AM departure.",
+    "No lunch thali price is published."
+   ]
+  },
+  {
+   "name": "Chaat Bhavan - Sunnyvale (Lawrence Expressway)",
+   "city": "Sunnyvale",
+   "area": "Lawrence Expressway",
+   "address": "544 Lawrence Expressway, Sunnyvale, CA 94085",
+   "coords": [37.384487, -121.995162],
+   "coords_source": "official site JSON-LD",
+   "cuisine": "Indian vegetarian",
+   "phone": "(408) 773-1101",
+   "lunch_special": {
+    "name": "No lunch special published",
+    "price_from": null,
+    "price_to": null,
+    "days": "days as published: Sun, Mon, Wed, Thu, Fri, Sat - Tuesday is missing from the site's hours",
+    "window": "10:00 AM - 9:30 PM (published days)",
+    "includes": "No priced lunch special found."
+   },
+   "hours_tuesday": "not published - the official site lists this branch for every day except Tuesday",
+   "days_open": "Official site lists Sun, Mon, Wed, Thu, Fri and Sat 10:00 AM - 9:30 PM; Tuesday is not listed",
+   "open_on_trip_date": null,
+   "fits_return_bus": {"ok": false, "note": "About 5.7 mi from the destination and Tuesday opening is unconfirmed."},
+   "verification": {
+    "level": "unverified",
+    "sources": [
+     {"label": "Chaat Bhavan official site - Lawrence Expressway branch address, coordinates, phone and hours (no Tuesday entry)", "url": "https://www.chaatbhavan.com/"}
+    ],
+    "accessed": "2026-09-07"
+   },
+   "review_links": {"google_maps": "https://www.google.com/maps/search/?api=1&query=Chaat+Bhavan+544+Lawrence+Expressway+Sunnyvale"},
+   "flags": [
+    "IRREGULAR: the restaurant's own site lists hours for this branch for every day EXCEPT Tuesday, the trip date. Probably a data gap on the site, but do not rely on it - call (408) 773-1101.",
+    "No lunch special published."
+   ]
+  },
+  {
+   "name": "Sakoon",
+   "city": "Mountain View",
+   "area": "Castro Street",
+   "address": "357 Castro St, Mountain View, CA 94041",
+   "coords": [37.3933, -122.0777],
+   "coords_source": "approximate - Castro Street block, not a captured geocode",
+   "cuisine": "Indian, buffet",
+   "phone": "(650) 965-2000",
+   "lunch_special": {
+    "name": "Lunch buffet - Wednesday to Sunday only, not Tuesday",
+    "price_from": 19.99,
+    "price_to": 24.99,
+    "days": "Wednesday-Sunday (Yelp answer); a directory quotes a single $22.99 buffet price",
+    "window": "12:00 PM - 2:30 PM on buffet days",
+    "includes": "Yelp Q&A: 'When do you serve buffets? Wednesday through Sun 12 - 2:30 PM. Wed, Thurs - $19.99; Fri - $21.99; Sat, Sun - $24.99'"
+   },
+   "hours_tuesday": "11:30 AM - 2:30 PM, 5:00 PM - 10:00 PM",
+   "days_open": "Mon-Thu 11:30 AM - 2:30 PM, 5:00-10:00 PM; Fri 11:30 AM - 2:30 PM, 5:00-10:30 PM; Sat-Sun 12:00 PM - 3:00 PM, 5:00-10:00/10:30 PM (Yelp)",
+   "open_on_trip_date": true,
+   "fits_return_bus": {"ok": false, "note": "Mountain View, about 7.8 mi from the destination, and the buffet does not run on Tuesdays."},
+   "verification": {
+    "level": "review",
+    "sources": [
+     {"label": "Yelp Q&A - 'When do you serve buffets? Wednesday through Sun 12 - 2:30 PM. Wed, Thurs - $19.99; Fri - $21.99; Sat, Sun - $24.99'", "url": "https://www.yelp.com/biz/sakoon-mountain-view-3"},
+     {"label": "wheree directory - Sakoon address and a quoted $22.99 buffet price, which conflicts with the Yelp answer", "url": "https://sakoon.wheree.com/"}
+    ],
+    "accessed": "2026-09-07"
+   },
+   "review_links": {
+    "yelp": "https://www.yelp.com/biz/sakoon-mountain-view-3",
+    "google_maps": "https://www.google.com/maps/search/?api=1&query=Sakoon+357+Castro+St+Mountain+View"
+   },
+   "flags": [
+    "NO BUFFET ON TUESDAY: the buffet runs Wednesday-Sunday, so only the a la carte menu is available on September 8.",
+    "Buffet price conflict: Yelp Q&A gives $19.99-$24.99 by day, a directory quotes $22.99 flat. Neither is the restaurant's own menu page."
+   ]
+  },
+  {
+   "name": "QQ Noodle",
+   "city": "Cupertino",
+   "area": "S Blaney Ave",
+   "address": "10889 S Blaney Ave, Cupertino, CA 95014",
+   "coords": [37.3107069, -122.0242054],
+   "coords_source": "restaurantguru listing JSON-LD",
+   "cuisine": "Chinese noodles",
+   "phone": "(408) 253-5858",
+   "lunch_special": {
+    "name": "No lunch special published - noodle bowls",
+    "price_from": null,
+    "price_to": null,
+    "days": "Mon-Tue, Thu-Sat (closed Wednesday per directories)",
+    "window": "11:30 AM - 2:00 PM",
+    "includes": "No priced lunch special found."
+   },
+   "hours_tuesday": "11:30 AM - 2:00 PM, 5:00 PM - 8:00 PM",
+   "days_open": "Official site shows Mon-Sun 11:30 AM - 2:00 PM, 5:00-8:00 PM; restaurantji and restaurantguru both say CLOSED Wednesday",
+   "open_on_trip_date": true,
+   "fits_return_bus": {"ok": true, "note": "Only about 0.4 mi from 20387 Gillick Way - the closest sit-down noodle shop to the destination, a 8-10 min walk each way."},
+   "verification": {
+    "level": "official",
+    "sources": [
+     {"label": "QQ Noodle official site - address, phone and Tuesday 11:30 AM - 2:00 PM / 5:00 PM - 8:00 PM", "url": "https://qqnoodlecupertino.com/"},
+     {"label": "restaurantguru - QQ Noodle coordinates and hours including the Wednesday closure", "url": "https://restaurantguru.com/QQ-Noodle-Cupertino"},
+     {"label": "restaurantji - QQ Noodle hours and phone", "url": "https://www.restaurantji.com/ca/cupertino/qq-noodles-/"}
+    ],
+    "accessed": "2026-09-07"
+   },
+   "review_links": {"google_maps": "https://www.google.com/maps/search/?api=1&query=QQ+Noodle+10889+S+Blaney+Ave+Cupertino"},
+   "flags": [
+    "The official site lists every day; two directories say Wednesday is closed. Tuesday is not affected.",
+    "No lunch special published, but it is the closest lunch option to 20387 Gillick Way that has been verified so far."
+   ]
+  }
+ ],
+ "rejected": [
+  {
+   "name": "Mandarin Gourmet Cupertino",
+   "city": "Cupertino",
+   "why": "Yelp marks the N De Anza Blvd address as CLOSED, and the only hours available (11:30 AM - 1:30 PM lunch) come from a menu aggregator, so it cannot be planned for the trip date.",
+   "price_hint": null,
+   "source": "https://www.yelp.com/biz/mandarin-gourmet-cupertino-cupertino",
+   "searched": "2026-09-07"
+  }
+ ]
+}
