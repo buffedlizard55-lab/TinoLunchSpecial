@@ -1,0 +1,52 @@
+name: Data checks and site build
+
+# Pages for this repo is configured the simple way (legacy: publish from branch `main`,
+# folder `/`), which is why there is no deploy job here: pushing the site files to `main`
+# is the deployment. This workflow is the gate that keeps the tables honest.
+
+on:
+  push:
+    branches: [main, "arena/**"]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Validate the data and rebuild the browser bundle
+        run: |
+          python3 scripts/build_data.py
+          python3 scripts/check_links.py --report
+
+      - name: Fail if the committed bundle is stale
+        run: |
+          if ! git diff --exit-code -- data/generated.js data/summary.md; then
+            echo "::error::data/generated.js or data/summary.md is out of date with data/*.json - run python3 scripts/build_data.py and commit the result."
+            exit 1
+          fi
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Render every panel headlessly
+        run: node scripts/smoke_test.js
+
+      - name: Assemble the site the same way Pages will serve it
+        run: |
+          test -f index.html
+          test -f assets/app.js
+          test -f assets/styles.css
+          test -f data/generated.js
+          grep -q 'data/generated.js' index.html
+          echo "site files present; Pages will serve the repo root"

@@ -1,0 +1,1426 @@
+{
+  "search_protocol": {
+    "requirement": "Search for 20 new entries before adding anything to the master list; verify line by line; keep official/review links for manual review.",
+    "queries_run": 28,
+    "candidates_found": 51,
+    "added_to_master": 27,
+    "rejected_or_deferred": 24,
+    "search_date": "2026-09-07",
+    "cities_covered": [
+      "Cupertino",
+      "Sunnyvale",
+      "Palo Alto",
+      "Stanford",
+      "Campbell",
+      "Los Gatos",
+      "Los Altos",
+      "Santa Clara",
+      "San Jose (De Anza corridor)"
+    ],
+    "radius_note": "Cupertino first, then everything inside about a 7-mile radius of 20387 Gillick Way; the two far entries (Los Gatos, Los Altos) are 6-7 mi and are marked.",
+    "levels": {
+      "official": "price and/or hours read from the restaurant's own website, ordering page or published menu PDF",
+      "review": "the lunch special exists per a Yelp or Google review, but the price is a reviewer figure, not a published menu price",
+      "listing": "hours/address from a directory listing (Yelp/TripAdvisor/OpenTable/Zagat-class); price not published",
+      "conflicting": "two sources disagree; both values shown",
+      "unverified": "no price or no hours could be confirmed - listed so you can check it in one click, do not budget for it"
+    },
+    "notes": [
+      "Query mix: 26 search queries for lunch specials by city and by dish, plus 2 targeted address/hours resolutions (Red Hot Wok, Pho Ha Noi) that came out of the validator rejecting placeholder rows.",
+      "Two rows were rewritten during the check pass because the validator refused to publish an address it could not support: Red Hot Wok now cites the restaurant's own full menu (no lunch special exists) and Pho Ha Noi cites Tripadvisor/Yelp/its own site for address and hours."
+    ]
+  },
+  "entries": [
+    {
+      "id": "L01",
+      "name": "Benihana",
+      "city": "Cupertino",
+      "area": "Vallco Fashion Park (Wolfe Rd & I-280)",
+      "address": "2074 Vallco Fashion Park, Cupertino, CA 95014",
+      "coords": [
+        37.3263,
+        -122.0144
+      ],
+      "coords_source": "official site JSON-LD",
+      "cuisine": "Japanese teppanyaki / hibachi, sushi",
+      "lunch_special": {
+        "name": "Power Lunch - full 3-course hibachi meal, served in 45 minutes or less",
+        "price_from": 15.95,
+        "price_to": null,
+        "days": "Monday-Friday",
+        "window": "11:00 AM - 3:00 PM",
+        "includes": "3 courses in the dining room; 'or your meal is on us' if it takes longer than 45 minutes"
+      },
+      "hours_tuesday": "11:00 AM - 10:00 PM",
+      "days_open": "Sun-Wed 11:00-22:00, Thu-Sat 11:00-23:00",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": true,
+        "note": "Lunch window ends 3:00 PM; the 11:50 AM departure needs you back at the table-side by about 11:45 AM - use the 12:06 PM bus, so finish eating by 11:50 AM. Happy hour 3-6 PM does not help here."
+      },
+      "verification": {
+        "level": "official",
+        "sources": [
+          {
+            "label": "Benihana Cupertino location page (Power Lunch price, days, window, hours, address)",
+            "url": "https://www.benihana.com/locations/cupertino/"
+          },
+          {
+            "label": "Benihana full menus",
+            "url": "https://www.benihana.com/menus/"
+          }
+        ],
+        "accessed": "2026-09-07"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/benihana-cupertino",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Benihana+Cupertino+2074+Vallco+Fashion+Park"
+      },
+      "flags": [
+        "Chain location: the Power Lunch price is published on the Cupertino page, but the 45-minute guarantee is 'dining room only'.",
+        "About 1.3 mi from 20387 Gillick Way - 25 min walk or a short ride; it is closer to the Stevens Creek & De Anza bus stop than to McClellan & Felton."
+      ],
+      "distance_mi": 1.27
+    },
+    {
+      "id": "L02",
+      "name": "Gyu-Kaku Japanese BBQ",
+      "city": "Cupertino",
+      "area": "Stevens Creek Blvd, Cupertino Square area",
+      "address": "19620 Stevens Creek Blvd, #150, Cupertino, CA 95014",
+      "coords": [
+        37.3226,
+        -122.01767
+      ],
+      "coords_source": "OpenStreetMap node 2629332081 (Kong Tofu, same building block) - see flag",
+      "cuisine": "Japanese BBQ (yakiniku)",
+      "lunch_special": {
+        "name": "Create Your Own Lunch Gyu-Combo",
+        "price_from": 18.95,
+        "price_to": 22.95,
+        "days": "Monday-Friday (not weekends or holidays)",
+        "window": "11:30 AM - 4:00 PM last seating",
+        "includes": "2 BBQ items $18.95 or 3 BBQ items $22.95, served with miso soup, lunch salad and rice; bowls $13.95-$16.95; ramen sets $14.95; value course for 2 $75"
+      },
+      "hours_tuesday": "11:30 AM - 9:30 PM",
+      "days_open": "Mon-Thu 11:30-21:30, Fri-Sat 11:30-22:00, Sun 11:30-21:30 (per the location page)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": true,
+        "note": "Lunch runs to 4:00 PM, so both return options (12:06 PM and 12:36 PM bus) work."
+      },
+      "verification": {
+        "level": "official",
+        "sources": [
+          {
+            "label": "Gyu-Kaku Cupertino page - hours, lunch-menu availability, address, phone",
+            "url": "https://www.gyu-kaku.com/cupertino/"
+          },
+          {
+            "label": "Gyu-Kaku official Lunch Menu PDF (prices)",
+            "url": "https://www.gyu-kaku.com/wp-content/uploads/2025/01/cp_lunch2411.pdf"
+          }
+        ],
+        "accessed": "2026-09-07"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/search?find_desc=Gyu-Kaku&find_loc=Cupertino%2C+CA",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Gyu-Kaku+Cupertino+19620+Stevens+Creek+Blvd"
+      },
+      "flags": [
+        "Address conflict: OpenStreetMap lists this Gyu-Kaku at 1920 Stevens Creek Blvd, the official page says 19620 Stevens Creek Blvd #150. The official page is used; distance is computed from the neighbouring verified node, so treat 1.0 mi as approximate.",
+        "Premium All-You-Can-Eat is also weekday-priced (Mon-Thu to 8 PM), which can beat the lunch combo for big appetites."
+      ],
+      "distance_mi": 0.96
+    },
+    {
+      "id": "L03",
+      "name": "Home Eat",
+      "city": "Cupertino",
+      "area": "Stevens Creek Blvd & De Anza Blvd",
+      "address": "20588 Stevens Creek Blvd, Cupertino, CA 95014",
+      "coords": null,
+      "cuisine": "Chinese, seafood, hot pot",
+      "lunch_special": {
+        "name": "Lunch Special (with a complimentary 'mystery' drink)",
+        "price_from": 13.99,
+        "price_to": 14.99,
+        "days": "listed on the restaurant's online menu; no day restriction shown",
+        "window": "restaurant open 11:15 AM - 11:15 PM",
+        "includes": "Beef Broccoli $13.99, Mongolian Shrimp $14.99, String Beans & Eggplant (price not shown in the menu block), each with a randomly chosen complimentary dine-in drink"
+      },
+      "hours_tuesday": "11:15 AM - 11:15 PM",
+      "days_open": "every day 11:15 AM - 11:15 PM",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": true,
+        "note": "About 0.7 mi from 20387 Gillick Way and 3 minutes from the Stevens Creek & De Anza bus stop - the easiest lunch stop for the 12:06 PM return bus."
+      },
+      "verification": {
+        "level": "official",
+        "sources": [
+          {
+            "label": "Home Eat official online menu - Lunch Specials section (prices)",
+            "url": "https://homeeat.toast.site/order/home-eat-cupertino"
+          },
+          {
+            "label": "Yelp - Home Eat Cupertino (address, phone, weekly hours, 4.6 stars / 1.3k reviews)",
+            "url": "https://www.yelp.com/biz/home-eat-cupertino-4"
+          }
+        ],
+        "accessed": "2026-09-07"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/home-eat-cupertino-4",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Home+Eat+20588+Stevens+Creek+Blvd+Cupertino"
+      },
+      "flags": [
+        "A Yelp review describes a $6.99 two-choice pre-made lunch deal that is not on the current online menu - the online menu prices above are the ones to budget.",
+        "The drink is randomly selected and cannot be swapped, per the menu text."
+      ],
+      "distance_mi": null
+    },
+    {
+      "id": "L04",
+      "name": "Ajito",
+      "city": "Cupertino",
+      "area": "Bollinger Rd & De Anza Blvd - closest entry to the destination",
+      "address": "7335 Bollinger Rd, Ste C, Cupertino, CA 95014",
+      "coords": [
+        37.3125777,
+        -122.0332703
+      ],
+      "coords_source": "Google-derived business listing (restaurantguru) geo fields",
+      "cuisine": "Japanese izakaya / tapas",
+      "lunch_special": {
+        "name": "Weekday lunch menu (izakaya plates and bento)",
+        "price_from": null,
+        "price_to": null,
+        "days": "Tue-Sat (closed Mon and Sun)",
+        "window": "11:30 AM - 1:00 PM only",
+        "includes": "review text: 'we specially love their lunch specials, it's good quality and the price is super reasonable'; published dish photos show Kaisen Bento $31.99, Mentai Udon $15.99, Grilled Sliced Beef Tongue $12.99"
+      },
+      "hours_tuesday": "11:30 AM - 1:00 PM, 5:00 PM - 8:30 PM",
+      "days_open": "Tue-Fri 11:30-13:00 & 17:00-20:30 (Fri/Sat to 21:00), Sat 11:30-13:00 & 17:00-21:00; Mon and Sun closed",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": "tight",
+        "note": "Lunch stops at 1:00 PM. For the 12:06 PM return bus you would have roughly 11:55 AM - 12:35 PM at the table; it is 3 minutes' walk from the McClellan & Felton stop and about 0.2 mi from 20387 Gillick Way."
+      },
+      "verification": {
+        "level": "review",
+        "sources": [
+          {
+            "label": "Yelp - Ajito Cupertino (hours, address, photos with prices)",
+            "url": "https://www.yelp.com/biz/ajito-cupertino"
+          },
+          {
+            "label": "Google-derived listing with opening hours and coordinates",
+            "url": "https://restaurantguru.com/Ajito-Cupertino"
+          }
+        ],
+        "accessed": "2026-09-07"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/ajito-cupertino",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Ajito+7335+Bollinger+Rd+Cupertino"
+      },
+      "flags": [
+        "No published lunch price: the 'lunch special' exists only in review text, so call (408) 829-7510 or ask at the door - treat any budget as unknown.",
+        "A Google review pasted into the listing says 'Meal type: Dinner, price per person $20-30' - do not read that as a lunch price."
+      ],
+      "distance_mi": 0.16
+    },
+    {
+      "id": "L05",
+      "name": "Wooga Premium Korean BBQ",
+      "city": "Cupertino",
+      "area": "South De Anza Blvd",
+      "address": "10493 S De Anza Blvd, Cupertino, CA 95014",
+      "coords": null,
+      "cuisine": "Korean BBQ, jjigae, bossam",
+      "lunch_special": {
+        "name": "Weekday lunch specials",
+        "price_from": 9.99,
+        "price_to": null,
+        "days": "Monday-Friday",
+        "window": "11:00 AM - 3:00 PM",
+        "includes": "one reviewer: 'we went on a Friday around 3pm and ordered the weekday lunch specials, which is a great deal'; a directory summary states weekday lunch specials for $9.99"
+      },
+      "hours_tuesday": "11:00 AM - 3:00 PM, 5:00 PM - 9:00 PM",
+      "days_open": "Mon-Thu 11:00-15:00 & 17:00-21:00; Fri-Sat 11:00-22:00; Sun 11:00-21:00",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": true,
+        "note": "Lunch service ends 3:00 PM; it is about 0.4 mi from 20387 Gillick Way, on the walk between the destination and De Anza Blvd."
+      },
+      "verification": {
+        "level": "review",
+        "sources": [
+          {
+            "label": "Yelp search listing 'Lunch Specials near Cupertino' - Wooga ranked #1, tagged 'Good for lunch, Lunch Specials'",
+            "url": "https://www.yelp.com/search?find_desc=Lunch+Specials&find_loc=Cupertino%2C+CA+95014"
+          },
+          {
+            "label": "Directory entry repeating the $9.99 weekday lunch special and weekly hours",
+            "url": "https://www.restaurantji.com/ca/cupertino/wooga-korean-bbq-/"
+          },
+          {
+            "label": "Wooga's own online ordering menu (dinner pricing, for comparison)",
+            "url": "https://www.toasttab.com/local/order/wooga-korean-bbq-10493-s-de-anza-blvd"
+          }
+        ],
+        "accessed": "2026-09-07"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/wooga-premium-korean-bbq-cupertino",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Wooga+Premium+Korean+BBQ+10493+S+De+Anza+Blvd+Cupertino"
+      },
+      "flags": [
+        "$9.99 comes from a third-party directory, not from Wooga's own menu (their online ordering page has no lunch section) - the single most important row to phone-verify: (408) 352-5515."
+      ],
+      "distance_mi": null
+    },
+    {
+      "id": "L06",
+      "name": "Red Hot Wok",
+      "city": "Cupertino",
+      "area": "Cupertino Plaza",
+      "address": "10074 E Estates Dr",
+      "coords": null,
+      "cuisine": "Chinese / Taiwanese",
+      "lunch_special": {
+        "name": "No lunch special published - full a la carte menu at lunch",
+        "price_from": 13.95,
+        "price_to": 21.95,
+        "days": "n/a - no discounted lunch item exists on the published menu",
+        "window": "lunch service 11:00 AM - 2:15 PM",
+        "includes": "Cheapest single dish on the official menu is the House Special Ground Pork Rice Bowl $13.95; fried rice and noodle plates $15.45-$17.45; sizzling hot plates $17.95-$21.95. Price range here is the menu band for lunch-orderable entrees, not a special.",
+        "source_status": "official menu read in full - no lunch special section exists"
+      },
+      "hours_tuesday": "11:00 AM - 2:15 PM (the restaurant's own site) / Yelp shows 11:00 AM - 2:00 PM",
+      "days_open": "closed Monday; Tue-Thu 11:00-14:15 and 17:00-21:15; Fri-Sat 11:00-14:15 and 17:00-21:45; Sun 11:00-14:15 and 17:00-21:15",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": "tight",
+        "why": "lunch window ends 14:15 so the timing is fine, but the walk back from E Estates Dr to a route 55 stop is long enough that the 11:50 AM departure becomes the binding constraint"
+      },
+      "verification": {
+        "level": "official (menu, prices, address and hours from redhotwokcupertino.com)",
+        "sources": [
+          {
+            "label": "Red Hot Wok official site - full menu with prices, address and open hours",
+            "url": "https://www.redhotwokcupertino.com/"
+          },
+          {
+            "label": "Yelp listing (hours, 4.1 stars from 1.5k reviews, Monday closed)",
+            "url": "https://www.yelp.com/biz/red-hot-wok-cupertino"
+          }
+        ],
+        "accessed": "2026-09-07"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/red-hot-wok-cupertino"
+      },
+      "flags": [
+        "VERIFIED NEGATIVE: no lunch special. The $17.00 figure that appeared in an earlier search pass was an aggregator price for a regular entree and has been removed - the restaurant's own menu is the authority.",
+        "Hours conflict: the official site says lunch ends 2:15 PM, Yelp says 2:00 PM. Either way a 11:15 AM seating clears in time for the 11:50 AM walk out.",
+        "Closed Monday, open Tuesday - fine for Sept 8",
+        "10074 E Estates Dr is a 2.0 mi detour southeast of 20387 Gillick Way (about 40 min each way on foot) - only worth it with a car or a VTA ride, so treat this as a 'if you have a car' row"
+      ],
+      "distance_mi": null,
+      "zip": "95014",
+      "phone": "(408) 996-2999"
+    },
+    {
+      "id": "L07",
+      "name": "Siam Station",
+      "city": "Cupertino",
+      "area": "Homestead Rd & Stevens Creek",
+      "address": "20956 Homestead Rd, Ste A2, Cupertino, CA 95014",
+      "coords": null,
+      "cuisine": "Thai, Pan-Asian",
+      "lunch_special": {
+        "name": "Lunch entree with a free drink",
+        "price_from": null,
+        "price_to": null,
+        "days": "daily",
+        "window": "11:30 AM - 9:00 PM (all day)",
+        "includes": "reviewer: 'They also have a lunch special where if you buy an entree you get a free drink'; Yelp tags it 'Good for lunch, Lunch Specials'"
+      },
+      "hours_tuesday": "11:30 AM - 9:00 PM",
+      "days_open": "every day 11:30 AM - 9:00 PM",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": true,
+        "note": "About 0.5 mi from 20387 Gillick Way and about 8 min on foot to the McClellan & Felton stop."
+      },
+      "verification": {
+        "level": "review",
+        "sources": [
+          {
+            "label": "Yelp - Siam Station (address, phone, daily hours, 4.3 stars / 1.5k reviews)",
+            "url": "https://www.yelp.com/biz/siam-station-cupertino"
+          },
+          {
+            "label": "Yelp search listing 'Lunch Specials near Cupertino' - Siam Station tagged for lunch specials",
+            "url": "https://www.yelp.com/search?find_desc=Lunch+Specials&find_loc=Cupertino%2C+CA+95014"
+          }
+        ],
+        "accessed": "2026-09-07"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/siam-station-cupertino",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Siam+Station+20956+Homestead+Rd+Cupertino"
+      },
+      "flags": [
+        "No price published for the lunch offer; it is a free-drink add-on rather than a fixed-price plate, so budget the normal entree price. Phone (408) 352-5207."
+      ],
+      "distance_mi": null
+    },
+    {
+      "id": "L08",
+      "name": "Fish's Wild",
+      "city": "Cupertino",
+      "area": "Homestead Rd",
+      "address": "20672 Homestead Rd, Cupertino, CA 95014",
+      "coords": null,
+      "cuisine": "Seafood, Hawaiian, fish & chips",
+      "lunch_special": {
+        "name": "Daily lunch specials",
+        "price_from": null,
+        "price_to": 10.0,
+        "days": "every day",
+        "window": "11:00 AM - 8:00 PM (kitchen hours not published)",
+        "includes": "reviewer: 'Lunch specials are less than $10. I ordered grilled salmon special. Good quality and good price.'"
+      },
+      "hours_tuesday": "11:00 AM - 8:00 PM",
+      "days_open": "Mon-Thu 11:00-20:00, Fri 11:00-20:20, Sat 11:00-20:30, Sun 11:00-20:00",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": true,
+        "note": "About 0.4 mi from 20387 Gillick Way (one block off Homestead)."
+      },
+      "verification": {
+        "level": "mixed",
+        "sources": [
+          {
+            "label": "Fish's Wild official site - Cupertino location hours",
+            "url": "https://fishiswild.com/places/cupertino---southside"
+          },
+          {
+            "label": "Yelp - Fish's Wild Cupertino (address, phone, hours, 4.2 / 274 reviews)",
+            "url": "https://www.yelp.com/biz/fishs-wild-cupertino"
+          },
+          {
+            "label": "Tripadvisor - Fish's Wild (hours cross-check)",
+            "url": "https://www.tripadvisor.com/Restaurant_Review-g32273-d9883340-Reviews-Fish_s_Wild-Cupertino_California.html"
+          }
+        ],
+        "accessed": "2026-09-07"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/fishs-wild-cupertino",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Fish%27s+Wild+20672+Homestead+Rd+Cupertino"
+      },
+      "flags": [
+        "Price is a reviewer figure ('less than $10'), not a published menu price. Phone (408) 863-1288."
+      ],
+      "distance_mi": null
+    },
+    {
+      "id": "L09",
+      "name": "Kizuna",
+      "city": "San Jose (Cupertino border)",
+      "area": "Bollinger Rd & De Anza Blvd, west of the destination",
+      "address": "6174 Bollinger Rd, San Jose, CA 95129",
+      "coords": [
+        37.3087665,
+        -122.0135827
+      ],
+      "coords_source": "OpenStreetMap node 2299924169 (checked 2026-07-11)",
+      "cuisine": "Japanese, sushi",
+      "lunch_special": {
+        "name": "Daily lunch specials",
+        "price_from": null,
+        "price_to": null,
+        "days": "Tuesday-Saturday (dinner only Monday, closed Sunday)",
+        "window": "11:30 AM - 2:00 PM",
+        "includes": "reviewer: 'The daily lunch specials are quite tasty'; OpenStreetMap opening_hours field records Tu-Sa 11:30-14:00 lunch service"
+      },
+      "hours_tuesday": "11:30 AM - 2:00 PM, 5:00 PM - 9:00 PM",
+      "days_open": "Mon 17:00-21:00 only; Tue-Sat 11:30-14:00 & 17:00-21:00; Sun closed",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": "tight",
+        "note": "Lunch ends at 2:00 PM and it is 1.0 mi from the destination, so it fits Plan R2 (leave 12:20 PM) better than the 12:06 PM bus."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {
+            "label": "Yelp search listing 'Cheap Lunch near Cupertino' - Kizuna, 'daily lunch specials are quite tasty'",
+            "url": "https://www.yelp.com/search?find_desc=Cheap+Lunch&find_loc=Cupertino%2C+CA"
+          },
+          {
+            "label": "Kizuna official site",
+            "url": "https://www.kizunasushisj.com/"
+          },
+          {
+            "label": "OpenStreetMap node with opening_hours",
+            "url": "https://www.openstreetmap.org/node/2299924169"
+          }
+        ],
+        "accessed": "2026-09-07"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/kizuna-san-jose",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Kizuna+6174+Bollinger+Rd+San+Jose"
+      },
+      "flags": [
+        "Official hours were not verified against kizunasushisj.com in this pass - the lunch window comes from an OpenStreetMap opening_hours field last checked 2026-07-11. Phone +1 408 477 2633."
+      ],
+      "distance_mi": 0.96
+    },
+    {
+      "id": "L10",
+      "name": "Siam Thai",
+      "city": "San Jose (Cupertino border)",
+      "area": "South De Anza Blvd, 0.4 mi from the destination",
+      "address": "1080 South De Anza Blvd, Ste A, San Jose, CA 95129",
+      "coords": [
+        37.3068136,
+        -122.031882
+      ],
+      "coords_source": "OpenStreetMap node 487569962",
+      "cuisine": "Thai",
+      "lunch_special": {
+        "name": "Thai lunch plates (typical lunch-service restaurant)",
+        "price_from": null,
+        "price_to": null,
+        "days": "unknown - not verified",
+        "window": "unknown",
+        "includes": "no published lunch-special price found; kept on the list because it is the closest sit-down lunch to 20387 Gillick Way (0.43 mi, about 9 minutes on foot via South De Anza Blvd)"
+      },
+      "hours_tuesday": "not verified in this pass",
+      "days_open": "not verified",
+      "open_on_trip_date": null,
+      "fits_return_bus": {
+        "ok": null,
+        "note": "Distance-based only: 0.43 mi to the destination and about 0.35 mi to the McClellan & Felton bus stop."
+      },
+      "verification": {
+        "level": "unverified",
+        "sources": [
+          {
+            "label": "OpenStreetMap node (name, address, cuisine)",
+            "url": "https://www.openstreetmap.org/node/487569962"
+          },
+          {
+            "label": "Yelp search for lunch specials in this area",
+            "url": "https://www.yelp.com/search?find_desc=Lunch+Specials&find_loc=Cupertino%2C+CA+95014"
+          }
+        ],
+        "accessed": "2026-09-07"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/search?find_desc=Siam+Thai&find_loc=1080+S+De+Anza+Blvd%2C+San+Jose%2C+CA",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Siam+Thai+1080+South+De+Anza+Blvd+San+Jose"
+      },
+      "flags": [
+        "INCOMPLETE ROW - hours, days and price all need a check. Do not plan around this one; it is here because proximity makes it worth a phone call."
+      ],
+      "distance_mi": 0.43
+    },
+    {
+      "id": "L11",
+      "name": "Pho Hoa (Phở Hòa)",
+      "city": "San Jose (Cupertino border)",
+      "area": "South De Anza Blvd, 0.46 mi from the destination",
+      "address": "1089 South De Anza Blvd, San Jose, CA 95129",
+      "coords": [
+        37.3065382,
+        -122.0328323
+      ],
+      "coords_source": "OpenStreetMap node 2099014851",
+      "cuisine": "Vietnamese pho and noodle",
+      "lunch_special": {
+        "name": "Lunch combos / com bo gang style plates",
+        "price_from": null,
+        "price_to": null,
+        "days": "unknown - not verified",
+        "window": "unknown",
+        "includes": "no published lunch price found in this pass; the chain is widely cited for combo lunches, so verify on the Google listing"
+      },
+      "hours_tuesday": "not verified in this pass",
+      "days_open": "not verified",
+      "open_on_trip_date": null,
+      "fits_return_bus": {
+        "ok": null,
+        "note": "0.46 mi from the destination; 5 min walk to South De Anza & McClellan, 10 min to McClellan & Felton."
+      },
+      "verification": {
+        "level": "unverified",
+        "sources": [
+          {
+            "label": "OpenStreetMap node (name, brand, address)",
+            "url": "https://www.openstreetmap.org/node/2099014851"
+          }
+        ],
+        "accessed": "2026-09-07"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/search?find_desc=Pho+Hoa&find_loc=1089+S+De+Anza+Blvd%2C+San+Jose%2C+CA",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Pho+Hoa+1089+South+De+Anza+Blvd+San+Jose"
+      },
+      "flags": [
+        "INCOMPLETE ROW - verify hours and price before using."
+      ],
+      "distance_mi": 0.46
+    },
+    {
+      "id": "L12",
+      "name": "Curry Hyuga",
+      "city": "Cupertino",
+      "area": "Stevens Creek Blvd (Cupertino Square)",
+      "address": "19650 Stevens Creek Blvd, Cupertino, CA 95014",
+      "coords": [
+        37.3219925,
+        -122.0170773
+      ],
+      "coords_source": "Google-derived business listing (restaurantguru) geo fields",
+      "cuisine": "Japanese curry, omurice, katsu",
+      "lunch_special": {
+        "name": "Lunch service (curry and rice bowls; famously large portions)",
+        "price_from": null,
+        "price_to": null,
+        "days": "Mon, Wed-Sun - CLOSED TUESDAY",
+        "window": "Mon 11:30-14:30; Wed-Thu 11:30-14:30 & 17:00-21:00; Fri-Sun 11:30-21:00",
+        "includes": "Google-derived listing gives 'Price per person $10-20, meal type: Lunch' in one review; no published lunch menu found"
+      },
+      "hours_tuesday": "CLOSED on Tuesday",
+      "days_open": "Monday lunch only; Tuesday closed; Wednesday-Friday 11:30-21:00-ish; Saturday-Sunday 11:30-21:00",
+      "open_on_trip_date": false,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Not usable for a Tuesday, September 8 visit - closed. Kept in the list because the same listing is useful on any other weekday."
+      },
+      "verification": {
+        "level": "conflicting",
+        "sources": [
+          {
+            "label": "Google-derived place page with per-day hours (Tuesday: Closed)",
+            "url": "https://www.corner.inc/place/pz22rNwbMDj5"
+          },
+          {
+            "label": "Google-derived listing with opening hours and $10-20 lunch review",
+            "url": "https://restaurantguru.com/Curry-Hyuga-Cupertino"
+          },
+          {
+            "label": "Yelp search results for Cupertino lunch (Curry Hyuga tagged 'Good for Lunch')",
+            "url": "https://www.yelp.com/search?find_desc=Lunch&find_loc=Cupertino%2C+CA+95014"
+          },
+          {
+            "label": "Curry Hyuga official site",
+            "url": "https://curryhyuga.com/"
+          }
+        ],
+        "accessed": "2026-09-07"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/curry-hyuga-cupertino",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Curry+Hyuga+19650+Stevens+Creek+Blvd+Cupertino"
+      },
+      "flags": [
+        "Two sources agree Tuesday is closed, which is unusual enough to double-check by phone: (408) 352-5368.",
+        "The official site has no menu page, so no price is claimed here."
+      ],
+      "distance_mi": 0.96
+    },
+    {
+      "id": "L13",
+      "name": "Bento Express",
+      "city": "Sunnyvale",
+      "area": "Hollenbeck Ave, 1.4 mi from Sunnyvale Transit Center",
+      "address": "1677 Hollenbeck Ave, Sunnyvale, CA 94087",
+      "coords": null,
+      "cuisine": "Taiwanese bento / boxed lunch",
+      "lunch_special": {
+        "name": "Bento lunch boxes (the whole menu is lunch-priced boxes)",
+        "price_from": null,
+        "price_to": null,
+        "days": "Mon-Thu, Sat per Yelp; Friday conflicting",
+        "window": "11:00 AM - 2:00 PM lunch service",
+        "includes": "reviewer: 'a solid cheap lunch option'; Yelp tags 'Good for Lunch, Lunch Specials'"
+      },
+      "hours_tuesday": "11:00 AM - 2:00 PM, 4:10 PM - 8:00 PM",
+      "days_open": "Mon-Thu 11:00-14:00 & 16:10-20:00 (Yelp); Fri same per Yelp but one aggregator says Friday closed; Sat 11:00-14:00 & 16:10-20:00; Sun closed",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "It sits on Hollenbeck Ave, about 1.4 mi / 28 min walk from the Sunnyvale Transit Center - you would need a car or a 20-53 bus, so it does not fit a 45-minute transit layover."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {
+            "label": "Yelp - Bento Express Sunnyvale (address, phone, weekly hours)",
+            "url": "https://www.yelp.com/biz/bento-express-sunnyvale"
+          },
+          {
+            "label": "Third-party menu listing with a different Friday/Sunday pattern (not used for pricing)",
+            "url": "https://www.zmenu.com/bento-express-sunnyvale-online-menu/"
+          }
+        ],
+        "accessed": "2026-09-07"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/bento-express-sunnyvale",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Bento+Express+1677+Hollenbeck+Ave+Sunnyvale"
+      },
+      "flags": [
+        "Hours conflict: Yelp shows Friday lunch service, an aggregator says Friday closed; also 4:10 PM vs 4:15 PM evening reopen.",
+        "No price published anywhere official - box prices stay unverified."
+      ],
+      "distance_mi": null
+    },
+    {
+      "id": "L14",
+      "name": "Taste",
+      "city": "Palo Alto",
+      "area": "University Ave downtown",
+      "address": "423 University Ave, Palo Alto, CA 94301",
+      "coords": null,
+      "cuisine": "Chinese (Sichuan-leaning)",
+      "lunch_special": {
+        "name": "Lunch Special, served with steamed white rice and soup of the day",
+        "price_from": 13.0,
+        "price_to": 15.0,
+        "days": "Monday-Friday",
+        "window": "11:00 AM - 3:00 PM",
+        "includes": "Mapo Tofu $13.00; Eggplant in Garlic Sauce $13.00; Dry Braised String Bean $13.00; Stir Fried Mixed Vegetables $13.00; Eggplant w/ Green Bean $14.00; Sauteed Cured Meat w/ String Bean $14.00; Shrimp & Egg Sauteed Tofu $14.00; Kung Pao Shrimp $15.00; Shrimp w/ Scrambled Egg $15.00; Mixed Vegetables w/ Shrimp $15.00"
+      },
+      "hours_tuesday": "lunch 11:00 AM - 3:00 PM, dinner 5:00 PM - 9:30 PM (one listing says 10:00 PM)",
+      "days_open": "every day, lunch 11:00-15:00; dinner 17:00-21:30/22:00",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "4.9 mi from the destination and a 15-minute walk from the California Avenue or Palo Alto Caltrain station - only realistic if you change the Caltrain alighting stop, which the mode chain does not allow."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {
+            "label": "Taste menu block (lunch special section, prices, days, window) as published on the restaurant's OpenTable page",
+            "url": "https://www.opentable.com/r/taste-palo-alto"
+          },
+          {
+            "label": "Directory page with address and daily lunch/dinner windows",
+            "url": "https://www.beyondmenu.com/50252/palo-alto/taste-palo-alto-94301/info.aspx"
+          },
+          {
+            "label": "Yelp search listing for Palo Alto lunch specials - Taste tagged 'Good for lunch, Lunch specials'",
+            "url": "https://www.yelp.com/search?find_desc=cheap+lunch+specials&find_loc=Palo+Alto%2C+CA"
+          }
+        ],
+        "accessed": "2026-09-07"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/taste-palo-alto",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Taste+423+University+Ave+Palo+Alto"
+      },
+      "flags": [
+        "No restaurant-owned website was found; the price list comes from the OpenTable menu block, which is usually owner-maintained but is still a third party.",
+        "Dinner close time conflicts between sources (9:30 vs 10:00 PM)."
+      ],
+      "distance_mi": null
+    },
+    {
+      "id": "L15",
+      "name": "Araki Sushi",
+      "city": "Palo Alto",
+      "area": "University Ave downtown",
+      "address": "201 University Ave, Palo Alto, CA 94301",
+      "coords": null,
+      "cuisine": "Sushi bar, Japanese, noodles",
+      "lunch_special": {
+        "name": "Lunch special (reviewer-confirmed, item list not published online)",
+        "price_from": null,
+        "price_to": null,
+        "days": "unknown - Yelp lists it as open daily",
+        "window": "11:00 AM - 10:00 PM (store hours)",
+        "includes": "reviewer: 'came to Araki Sushi for saturday lunch. friendly service, decent prices (they have a lunch special...'"
+      },
+      "hours_tuesday": "11:00 AM - 10:00 PM",
+      "days_open": "every day 11:00-22:00",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Same geography problem as Taste - it is downtown Palo Alto, not on the Sunnyvale return path."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {
+            "label": "Yelp - Araki Sushi (address, phone, daily hours, 4.0 / 212 reviews)",
+            "url": "https://www.yelp.com/biz/araki-sushi-palo-alto-2"
+          },
+          {
+            "label": "Third-party menu snapshot with a la carte roll prices $3.85-$18.65 (not a lunch special)",
+            "url": "https://www.roostcafeandbistro.com/araki-sushi-94301/"
+          }
+        ],
+        "accessed": "2026-09-07"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/araki-sushi-palo-alto-2",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Araki+Sushi+201+University+Ave+Palo+Alto"
+      },
+      "flags": [
+        "The lunch special's contents and price are not published; the roll prices shown by the third-party page are a la carte, not lunch deals.",
+        "Phone (650) 324-3300."
+      ],
+      "distance_mi": null
+    },
+    {
+      "id": "L16",
+      "name": "Pho Ha Noi",
+      "city": "Cupertino",
+      "area": "Stevens Creek Blvd corridor",
+      "address": "10100 S De Anza Blvd",
+      "coords": [
+        37.321556,
+        -122.03189
+      ],
+      "cuisine": "Vietnamese pho",
+      "lunch_special": {
+        "name": "No lunch special published",
+        "price_from": null,
+        "price_to": null,
+        "days": null,
+        "window": "11:00-14:00 is the lunch service block",
+        "includes": "Menu shows a lunch service every day 11:00-14:00; no discounted lunch item is published, so nothing is claimed here.",
+        "source_status": "listing only"
+      },
+      "hours_tuesday": "11:00-14:00 and 17:00-20:30",
+      "days_open": "Mon-Thu 11:00-14:00 / 17:00-20:30, Fri 11:00-14:00 / 17:00-21:00, Sat-Sun 11:00-15:00 / 16:30-21:00",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": "tight",
+        "note": "A 2:00 PM close means the 12:06 PM return bus works only for a quick bowl; the 12:36 PM bus is safer."
+      },
+      "verification": {
+        "level": "listing (address and hours confirmed by three independent listings; no price found)",
+        "sources": [
+          {
+            "label": "Tripadvisor listing (address, phone, 'Lunch, Dinner')",
+            "url": "https://www.tripadvisor.com/Restaurant_Review-g32273-d19141024-Reviews-Pho_Ha_Noi-Cupertino_California.html"
+          },
+          {
+            "label": "Yelp listing (10100 S De Anza Blvd, Tue 11:00 am-2:00 pm)",
+            "url": "https://www.yelp.com/biz/pho-ha-noi-cupertino"
+          },
+          {
+            "label": "Restaurant's own site",
+            "url": "https://phohanoi.com"
+          }
+        ],
+        "accessed": "2026-09-07"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/search?find_desc=Pho+Ha+Noi&find_loc=Cupertino%2C+CA",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Pho+Ha+Noi+Cupertino+lunch"
+      },
+      "flags": [
+        "0.6 mi from 20387 Gillick Way (straight line), between the destination and Stevens Creek - walkable",
+        "Two listings agree on the Tue lunch window 11:00-14:00, which closes before the 11:50 AM bus leaves, so it fits",
+        "No lunch special published anywhere - listed so the gap is visible, not because a deal was found"
+      ],
+      "zip": "95014",
+      "phone": "(408) 899-4164",
+      "distance_mi": 0.6
+    },
+    {
+      "id": "L17",
+      "name": "Water Tower Kitchen",
+      "city": "Campbell",
+      "area": "Orchard Supply Hardware / Orchard City Dr, downtown Campbell",
+      "address": "201 Orchard City Dr, Campbell, CA 95008",
+      "coords": null,
+      "cuisine": "New American, burgers, sports bar",
+      "lunch_special": {
+        "name": "Separate lunch menu and a weekday 'Performance Plates' menu",
+        "price_from": null,
+        "price_to": null,
+        "days": "Performance Plates listed Mon-Fri",
+        "window": "11:00 AM - 9:00 PM (the menu block's window, not a short lunch window)",
+        "includes": "reviewer: 'they have a different lunch menu and dinner...'; the restaurant's own delivery storefront lists 'Performance Plates, Mon-Fri 11:00-21:00' and 'Menu' at other times"
+      },
+      "hours_tuesday": "11:00 AM - 9:00 PM (Postmates storefront) vs 11:00 AM - 10:00 PM (a directory)",
+      "days_open": "Sun 10:00-21:00; Mon-Fri 11:00-21:00; Sat 11:00-21:00",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "4.0 mi from the destination; no VTA one-bus link from the Gillick area in the time available."
+      },
+      "verification": {
+        "level": "conflicting",
+        "sources": [
+          {
+            "label": "Yelp search listing Campbell lunch - Water Tower Kitchen, 'different lunch menu'",
+            "url": "https://www.yelp.com/search?find_desc=Lunch&find_loc=Campbell%2C+CA+95008"
+          },
+          {
+            "label": "Restaurant's Postmates storefront (menu availability by day/time)",
+            "url": "https://postmates.com/store/water-tower-kitchen/DVAdqdF_RDuLqZ1kIoM2cA"
+          },
+          {
+            "label": "Directory listing with different closing times",
+            "url": "https://www.menupix.com/sanjose/restaurants/31814217/Water-Tower-Kitchen-Campbell-CA"
+          }
+        ],
+        "accessed": "2026-09-07"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/water-tower-kitchen-campbell",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Water+Tower+Kitchen+201+Orchard+City+Dr+Campbell"
+      },
+      "flags": [
+        "Two sources disagree on Tuesday closing (9:00 vs 10:00 PM), and one directory shows Tuesday as the long day while the delivery storefront shows 11:00-21:00.",
+        "Aggregator food prices ($20.60 vs $23.00 for the same burger) are delivery markups - never used here.",
+        "watertowerkitchen.com should be checked for the actual dine-in lunch menu."
+      ],
+      "distance_mi": null
+    },
+    {
+      "id": "L18",
+      "name": "Brew City Grill",
+      "city": "Campbell",
+      "area": "West Hamilton Ave",
+      "address": "651 W Hamilton Ave, Ste 1070, Campbell, CA 95008",
+      "coords": [
+        37.2947332,
+        -121.9617974
+      ],
+      "coords_source": "Google-derived listing (restaurantguru) geo fields",
+      "cuisine": "American, brewpub, burgers",
+      "lunch_special": {
+        "name": "Lunch specials plus rotating drafts",
+        "price_from": null,
+        "price_to": null,
+        "days": "unknown - published as all-week hours",
+        "window": "opens 11:00 AM",
+        "includes": "reviewer: 'Great service & awesome lunch specials. I like that they rotate their draft beer...'"
+      },
+      "hours_tuesday": "11:00 AM - 9:00 PM (Yelp)",
+      "days_open": "Mon-Thu 11:00-21:00, Fri-Sat 11:00-21:30, Sun 11:00-20:30 per Yelp; a reservations page says Mon-Thu and Sun 11:00-20:00, Fri-Sat 11:00-21:00",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "4.0 mi from the destination."
+      },
+      "verification": {
+        "level": "conflicting",
+        "sources": [
+          {
+            "label": "Yelp - Brew City Grill Campbell (address, phone, weekly hours, 4.4 / 852 reviews)",
+            "url": "https://www.yelp.com/biz/brew-city-grill-campbell-3"
+          },
+          {
+            "label": "Restaurant site listed from the reservations page",
+            "url": "https://www.brewcitygrill.com/"
+          },
+          {
+            "label": "Yelp search listing Campbell lunch restaurants - 'awesome lunch specials'",
+            "url": "https://www.yelp.com/search?find_desc=Lunch+Restaurants&find_loc=Campbell%2C+CA+95008"
+          }
+        ],
+        "accessed": "2026-09-07"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/brew-city-grill-campbell-3",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Brew+City+Grill+651+W+Hamilton+Ave+Campbell"
+      },
+      "flags": [
+        "Hours conflict between sources: up to an hour difference on Tuesday closing. Phone (408) 963-6991.",
+        "No lunch special price is published, so nothing is claimed here."
+      ],
+      "distance_mi": 3.97
+    },
+    {
+      "id": "L19",
+      "name": "Los Gatos Cafe",
+      "city": "Los Gatos",
+      "area": "North Santa Cruz Ave, downtown Los Gatos (6.6 mi)",
+      "address": "340 N Santa Cruz Ave, Los Gatos, CA 95030",
+      "coords": null,
+      "cuisine": "Breakfast & brunch, burgers, sandwiches",
+      "lunch_special": {
+        "name": "Midweek-only lunch specials",
+        "price_from": null,
+        "price_to": null,
+        "days": "'midweek only' per a reviewer - exact days not published",
+        "window": "open 7:00 AM - 2:30 PM, so lunch must finish by 2:30 PM",
+        "includes": "reviewer: 'Midweek only they offer lunch specials'; published dish prices nearby on the same page: Eggs Benedict $21.60, Crab Cake Club $21.60, 'Irish benedict - $19' in a photo caption"
+      },
+      "hours_tuesday": "7:00 AM - 2:30 PM",
+      "days_open": "every day 7:00 AM - 2:30 PM",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "6.6 mi from the destination and no single-bus link from the De Anza corridor; only realistic by car or a 25/55 + light rail chain that the mode plan does not cover."
+      },
+      "verification": {
+        "level": "review",
+        "sources": [
+          {
+            "label": "Yelp - Los Gatos Cafe (address, phone, daily hours, 4.3 / 2.6k reviews)",
+            "url": "https://www.yelp.com/biz/los-gatos-cafe-los-gatos-4"
+          },
+          {
+            "label": "Yelp search 'Lunch near Los Gatos Cafe' - midweek lunch specials quote",
+            "url": "https://www.yelp.com/search?find_desc=Lunch&find_near=los-gatos-cafe-los-gatos-4"
+          }
+        ],
+        "accessed": "2026-09-07"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/los-gatos-cafe-los-gatos-4",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Los+Gatos+Cafe+340+N+Santa+Cruz+Ave+Los+Gatos"
+      },
+      "flags": [
+        "'Midweek' is not defined by the restaurant, and a Tuesday visit may or may not be covered - phone (408) 354-4647.",
+        "No lunch price published; the $19-$21.60 figures are regular menu items from Yelp photo captions and popular-dish data, not special pricing."
+      ],
+      "distance_mi": null
+    },
+    {
+      "id": "L20",
+      "name": "Los Gatos Parkside",
+      "city": "Los Gatos",
+      "area": "West Main St, downtown Los Gatos",
+      "address": "145 W Main St, Los Gatos, CA 95030",
+      "coords": null,
+      "cuisine": "American, brunch and dinner",
+      "lunch_special": {
+        "name": "No lunch special found - regular lunch a la carte",
+        "price_from": 15.5,
+        "price_to": 23.5,
+        "days": "n/a",
+        "window": "n/a",
+        "includes": "published lunch-scale items from the Yelp menu block: Chicken Salad Sandwich $17.50, Fried Chicken Sandwich $18.50, Chopped Salad $18.50, Grain Bowl $23.50, Avocado Bruschetta $16.50, Meatballs $16.50, Burrata Toast $15.50, Deviled Eggs $14.50"
+      },
+      "hours_tuesday": "11:30 AM - 9:00 PM",
+      "days_open": "Mon-Thu 11:30-21:00; Fri 11:30-22:00; Sat 10:00-22:00; Sun 10:00-21:00",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "6.7 mi from the destination."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {
+            "label": "Yelp - Los Gatos Parkside (address, phone, weekly hours, popular dish prices)",
+            "url": "https://www.yelp.com/biz/los-gatos-parkside-los-gatos"
+          }
+        ],
+        "accessed": "2026-09-07"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/los-gatos-parkside-los-gatos",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Los+Gatos+Parkside+145+W+Main+St+Los+Gatos"
+      },
+      "flags": [
+        "Recorded as a verified negative: no lunch special is published or described in reviews, so this is a full-price lunch. Phone (408) 560-0099."
+      ],
+      "distance_mi": null
+    },
+    {
+      "id": "L21",
+      "name": "Gardenia",
+      "city": "Los Gatos",
+      "area": "North Santa Cruz Ave, downtown Los Gatos",
+      "address": "115 N Santa Cruz Ave, Los Gatos, CA 95030",
+      "coords": [
+        37.2250589,
+        -121.9831013
+      ],
+      "coords_source": "reservation-platform listing geo",
+      "cuisine": "Contemporary French / Asian fusion cafe",
+      "lunch_special": {
+        "name": "Lunch menu (no discount advertised)",
+        "price_from": 12.0,
+        "price_to": 21.0,
+        "days": "Tue-Fri for brunch 10:30-14:30 per the reservation page",
+        "window": "Coffee & pastries daily 8:30-17:00; Brunch Tue-Fri 10:30-14:30 and Sat-Sun 9:30-14:30; Dinner Thu-Sun 17:00-21:00",
+        "includes": "reviewer: 'Great pasta great lunch menus love the service Open for lunch and dinner'; menu items shown on a review site include Classic French Onion Soup $12, Gardenia Salad $16, Crispy Brussels Sprouts $16, Grilled Organic Caesar Salad $17"
+      },
+      "hours_tuesday": "08:30 - 21:00 per one listing (brunch 10:30-14:30)",
+      "days_open": "conflicting - a directory shows Thursday closed, the reservation page has no Thursday closure",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "6.7 mi from the destination."
+      },
+      "verification": {
+        "level": "conflicting",
+        "sources": [
+          {
+            "label": "Yelp search 'Lunch near Los Gatos Cafe' - Gardenia Los Gatos tagged 'Good for lunch'",
+            "url": "https://www.yelp.com/search?find_desc=Lunch&find_near=los-gatos-cafe-los-gatos-4"
+          },
+          {
+            "label": "Reservation-platform listing with the daypart schedule",
+            "url": "https://www.opentable.com/r/gardenia-los-gatos"
+          },
+          {
+            "label": "Third-party menu snapshot (item prices, not a lunch special)",
+            "url": "https://gardenialosgatos.restaurants-us.com/"
+          }
+        ],
+        "accessed": "2026-09-07"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/gardenia-los-gatos",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Gardenia+115+N+Santa+Cruz+Ave+Los+Gatos"
+      },
+      "flags": [
+        "One snapshot shows 'Thursday: Closed' inside a Tuesday-open week, and the day-by-day times differ between sources. Phone (669) 294-4498 before planning a Los Gatos lunch.",
+        "The item prices come from a third-party page, so treat them as indicative only."
+      ],
+      "distance_mi": 6.6
+    },
+    {
+      "id": "L22",
+      "name": "Los Altos Grill",
+      "city": "Los Altos",
+      "area": "Third St, downtown Los Altos (4.6 mi)",
+      "address": "233 3rd St, Los Altos, CA 94022",
+      "coords": null,
+      "cuisine": "American, New American",
+      "lunch_special": {
+        "name": "Lunch menu - limited selection rather than a priced special",
+        "price_from": null,
+        "price_to": null,
+        "days": "unknown",
+        "window": "opens 11:30 AM",
+        "includes": "reviewer: 'Head's up - the lunch menu is limited (6 items to choose from). Luckily, we didn't have trouble...'"
+      },
+      "hours_tuesday": "11:30 AM - 9:00 PM",
+      "days_open": "Mon-Thu 11:30-21:00; Fri-Sat 11:30-21:30; Sun 11:30-21:00",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "4.6 mi from the destination; also 2.5 mi from the Sunnyvale Caltrain station, which is the only station in the mode chain that touches this area."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {
+            "label": "Yelp - Los Altos Grill (address, phone, weekly hours)",
+            "url": "https://www.yelp.com/biz/los-altos-grill-los-altos-3"
+          },
+          {
+            "label": "Yelp search 'Lunch in Los Altos' - the limited-lunch-menu quote",
+            "url": "https://www.yelp.com/search?find_desc=Lunch&find_loc=Los+Altos%2C+CA"
+          }
+        ],
+        "accessed": "2026-09-07"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/los-altos-grill-los-altos-3",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Los+Altos+Grill+233+3rd+St+Los+Altos"
+      },
+      "flags": [
+        "No priced lunch special found; do not budget a 'deal' here."
+      ],
+      "distance_mi": null
+    },
+    {
+      "id": "L23",
+      "name": "Kathmandu Cuisine",
+      "city": "Los Altos",
+      "area": "First St, downtown Los Altos",
+      "address": "376 1st St, Los Altos, CA 94022",
+      "coords": [
+        37.375776,
+        -122.1164871
+      ],
+      "coords_source": "reservation-platform listing geo",
+      "cuisine": "Himalayan / Nepalese, Indian",
+      "lunch_special": {
+        "name": "Himalayan Thakali thali offered at lunch",
+        "price_from": null,
+        "price_to": null,
+        "days": "Wednesday-Sunday (CLOSED TUESDAY)",
+        "window": "11:00 AM - 3:00 PM",
+        "includes": "reviewer: 'We also got a Himalayan thakali thali (lunch special) with fish curry and lots of sides'; Yelp tags 'Good for lunch'"
+      },
+      "hours_tuesday": "CLOSED on Tuesday",
+      "days_open": "Mon, Wed-Sun 11:00-15:00 & 17:00-21:00; Tuesday closed (Yelp)",
+      "open_on_trip_date": false,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Closed on the trip day, and 6.4 mi from the destination."
+      },
+      "verification": {
+        "level": "conflicting",
+        "sources": [
+          {
+            "label": "Yelp - Kathmandu Cuisine Los Altos (address, weekly hours including Tuesday closed)",
+            "url": "https://www.yelp.com/biz/kathmandu-cuisine-los-altos-3"
+          },
+          {
+            "label": "Reservation listing (says Mon, Wed-Sun 11:00-21:00; website ktmcuisinelosaltos.com)",
+            "url": "https://www.opentable.com/r/kathmandu-cuisine-milpitas"
+          },
+          {
+            "label": "Yelp search 'Lunch in Los Altos' - thakali thali as a lunch special",
+            "url": "https://www.yelp.com/search?find_desc=Lunch&find_loc=Los+Altos%2C+CA"
+          }
+        ],
+        "accessed": "2026-09-07"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/kathmandu-cuisine-los-altos-3",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Kathmandu+Cuisine+376+1st+St+Los+Altos"
+      },
+      "flags": [
+        "The reservation page URL is labelled 'milpitas' - a stale slug for the Los Altos address. Two independent sources still say Tuesday closed, so treat the trip day as a hard blocker. Phone (650) 383-5477 (listing) or (606) 613-6144 (Yelp) - that phone conflict is itself a reason to re-verify."
+      ],
+      "distance_mi": 6.43
+    },
+    {
+      "id": "L24",
+      "name": "Master Oh's",
+      "city": "Santa Clara",
+      "area": "outside the core radius, about 10 mi",
+      "address": "Santa Clara - address not verified in this pass (see Yelp link)",
+      "coords": null,
+      "cuisine": "Korean",
+      "lunch_special": {
+        "name": "Lunch special bossam set",
+        "price_from": null,
+        "price_to": null,
+        "days": "unknown",
+        "window": "Yelp status line: open until 2:30 PM",
+        "includes": "reviewer: 'We also had their lunch special bossam set, which was also delicious'; Yelp tags 'Good for lunch, Lunch Specials', 'Free parking', 'Free WiFi'"
+      },
+      "hours_tuesday": "opens in the morning, closes 2:30 PM per the search listing",
+      "days_open": "not verified",
+      "open_on_trip_date": null,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "10 mi from the destination and off the Sunnyvale return path."
+      },
+      "verification": {
+        "level": "unverified",
+        "sources": [
+          {
+            "label": "Yelp search listing 'Lunch Specials near Cupertino' - Master Oh's entry",
+            "url": "https://www.yelp.com/search?find_desc=Lunch+Specials&find_loc=Cupertino%2C+CA+95014"
+          }
+        ],
+        "accessed": "2026-09-07"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/search?find_desc=Master+Oh%27s&find_loc=Santa+Clara%2C+CA",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Master+Oh%27s+Santa+Clara+Korean+lunch"
+      },
+      "flags": [
+        "INCOMPLETE ROW - address, hours, days and price all still need checking; only the review text about a bossam lunch set was found."
+      ],
+      "distance_mi": null
+    },
+    {
+      "id": "L25",
+      "name": "Cap't Loui",
+      "city": "Cupertino",
+      "area": "Vallco (Stevens Creek Blvd & McClellan Rd)",
+      "address": "19700 Vallco Pkwy, Ste 150, Cupertino, CA 95014",
+      "coords": [
+        37.32535,
+        -122.01255
+      ],
+      "coords_source": "Tripadvisor listing geo",
+      "cuisine": "Cajun seafood boil, fish & chips",
+      "lunch_special": {
+        "name": "No Cupertino lunch special found",
+        "price_from": null,
+        "price_to": null,
+        "days": "n/a",
+        "window": "n/a",
+        "includes": "reviews praise a lunch special ('The lunch special had great value and the flavor did not disappoint') but the Cupertino online ordering menu lists no lunch line: Garlic Noodles $9.54, PO' Boy $19.44, baskets $19.44-$25.95 (delivery pricing)"
+      },
+      "hours_tuesday": "11:30 AM - 9:00 PM (Yelp)",
+      "days_open": "Mon-Thu and Sun 11:30-21:00; Fri-Sat 11:30-22:00 (Yelp) - a reservation listing shows 11:30-22:00 every day",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "1.3 mi from the destination, at the far side of the Vallco block; a round trip on foot is about 40 minutes plus eating time, which does not fit the 12:06 PM bus."
+      },
+      "verification": {
+        "level": "conflicting",
+        "sources": [
+          {
+            "label": "Yelp - Cap't Loui Cupertino (address, phone, weekly hours, 4.5 / 1.3k reviews)",
+            "url": "https://www.yelp.com/biz/capt-loui-cupertino"
+          },
+          {
+            "label": "Tripadvisor - Cap't Loui Cupertino (address, hours, geo)",
+            "url": "https://www.tripadvisor.com/Restaurant_Review-g32273-d23649419-Reviews-Cap_t_Loui-Cupertino_California.html"
+          },
+          {
+            "label": "Cupertino online ordering menu (no lunch special section)",
+            "url": "https://postmates.com/store/capt-loui-cupertino/Ki7HCEL3W9m3ujsTF7Se2A"
+          }
+        ],
+        "accessed": "2026-09-07"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/capt-loui-cupertino",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Cap%27t+Loui+19700+Vallco+Pkwy+Cupertino"
+      },
+      "flags": [
+        "A '$13.95 Lunch Special, 11:30-3pm Mon-Fri' block in the search results belongs to Cap't Loui LAS VEGAS, not Cupertino. It is deliberately excluded. Phone (669) 242-7449.",
+        "Yelp price tier is '$$$' while a menu directory says '($)' - both can be true (per-head vs per-dish), which is another reason to price-check in person."
+      ],
+      "distance_mi": 1.3
+    },
+    {
+      "id": "L26",
+      "name": "Sizzling Lunch",
+      "city": "Cupertino",
+      "area": "Cupertino (also a 3PO location)",
+      "address": "10033 Saich Way",
+      "coords": null,
+      "cuisine": "Japanese: katsu, curry, teppan plates",
+      "lunch_special": {
+        "name": "No lunch special on the menu despite the name",
+        "price_from": 16.5,
+        "price_to": 18.0,
+        "days": "n/a",
+        "window": "n/a",
+        "includes": "official online menu lists Chicken Katsu with Curry Sauce $17.00, Pork Katsu $18.00, Tempura Shrimp $17.00, Chicken Karaage with Curry $16.50, plus $4-$9.50 sides and appetizers; no lunch-priced line"
+      },
+      "hours_tuesday": "11:00-21:00",
+      "days_open": "every day 11:00-21:00",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": null,
+        "note": "Hours not verified."
+      },
+      "verification": {
+        "level": "official",
+        "sources": [
+          {
+            "label": "Sizzling Lunch official online menu (Cupertino) - entree prices, no lunch section",
+            "url": "https://www.toasttab.com/local/order/sizzlinglunch-cupertino"
+          },
+          {
+            "label": "Yelp search listing for Cupertino lunch (Sizzling Lunch, 4.1 / 725 reviews)",
+            "url": "https://www.yelp.com/search?find_desc=lunch&find_loc=Cupertino%2C+CA+95014"
+          },
+          {
+            "label": "Google-review mirror with the structured hours block (Tue 11:00-21:00)",
+            "url": "https://www.restaurantji.com/ca/cupertino/sizzling-lunch-/"
+          }
+        ],
+        "accessed": "2026-09-07"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/sizzling-lunch-cupertino",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Sizzling+Lunch+Cupertino"
+      },
+      "flags": [
+        "Verified negative: this is a price check on the menu, not a deal. Recorded so the name does not cost you a trip.",
+        "Address and daily hours confirmed on 2026-09-07 (10033 Saich Way, in the Cupertino Shopping Center block off Stevens Creek Blvd)"
+      ],
+      "zip": "95014",
+      "phone": "(408) 320-2444",
+      "distance_mi": null
+    },
+    {
+      "id": "L27",
+      "name": "Yiassoo",
+      "city": "Cupertino",
+      "area": "Stevens Creek Blvd",
+      "address": "10660 S De Anza Blvd",
+      "coords": [
+        37.313471,
+        -122.031959
+      ],
+      "cuisine": "Thai fusion",
+      "lunch_special": {
+        "name": "No lunch special published",
+        "price_from": null,
+        "price_to": null,
+        "days": null,
+        "window": null,
+        "includes": "Menu cards are not published online with prices; the official site has no lunch section.",
+        "source_status": "official site checked, nothing found"
+      },
+      "hours_tuesday": "open 7 days a week (per the restaurant's own listing); exact Tuesday hours not confirmed from the restaurant",
+      "days_open": "7 days a week",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": null,
+        "note": "Unverified hours."
+      },
+      "verification": {
+        "level": "listing (address, phone and 7-day operation confirmed; no price published)",
+        "sources": [
+          {
+            "label": "Official site",
+            "url": "https://yiassoocupertino.com/"
+          },
+          {
+            "label": "Yelp listing",
+            "url": "https://www.yelp.com/biz/yiassoo-cupertino"
+          }
+        ],
+        "accessed": "2026-09-07"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/yiassoo-cupertino",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Yiassoo+Cupertino"
+      },
+      "flags": [
+        "The closest entry on the list to 20387 Gillick Way - about 0.04 mi (a 1 minute walk), per the DoorDash geo point 37.313471,-122.031959",
+        "Greek/Mediterranean; no lunch special published, so it is on the list for proximity only - call (408) 253-5544"
+      ],
+      "zip": "95014",
+      "phone": "(408) 253-5544",
+      "distance_mi": 0.1
+    }
+  ],
+  "top_picks_for_tuesday_sept_8": [
+    {
+      "rank": 1,
+      "id": "L03",
+      "why": "0.7 mi from the destination, official menu with a real lunch price ($13.99-$14.99 with a drink), open 11:15 AM-11:15 PM, and it is 3 minutes from the Stevens Creek & De Anza bus stop you arrive at in the morning."
+    },
+    {
+      "rank": 2,
+      "id": "L04",
+      "why": "The only lunch within about 5 minutes' walk of 20387 Gillick Way; izakaya lunch plates, but its 11:30-1:00 window and unpriced special mean you should phone first."
+    },
+    {
+      "rank": 3,
+      "id": "L02",
+      "why": "Best verified value on an official menu: $18.95 (2 items) or $22.95 (3 items) with miso soup, salad and rice, Mon-Fri 11:30-4:00 - and it fits either return option."
+    },
+    {
+      "rank": 4,
+      "id": "L01",
+      "why": "Cheapest verified sit-down hibachi lunch ($15.95, Mon-Fri 11-3, 45-minute guarantee) if you are willing to walk or ride 1.3 mi to Vallco."
+    },
+    {
+      "rank": 5,
+      "id": "L07",
+      "why": "0.5 mi away, open all day (no rush), lunch entree with a free drink - useful when the clock matters more than the price."
+    }
+  ],
+  "transit_fit_note": "The return chain leaves 20387 Gillick Way at 11:50 AM for the 2:40 PM arrival, or at 12:20 PM for the 3:18 PM arrival. Every lunch stop in this radius has to fit one of those two departures, so the useful lunch window is roughly 11:15 AM - 12:10 PM (or - 12:40 PM)."
+}
