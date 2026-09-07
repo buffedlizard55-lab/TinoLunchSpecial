@@ -261,12 +261,72 @@
           "url": "https://www.yelp.com/search?find_desc=Lunch&find_loc=Campbell%2C+CA+95008"
         }
       ]
+    },
+    {
+      "id": "R15",
+      "count": 1,
+      "names": [
+        "Pluto's"
+      ],
+      "name": "Pluto's",
+      "city": "Palo Alto",
+      "why": "Closure conflict - menupix reports the University Ave store permanently closed while Yellow Pages and a directory still show Mon-Fri 11-10 hours. Excluded until open/closed status is confirmed.",
+      "price_hint": "none usable",
+      "links": [
+        {
+          "label": "menupix - reported permanently closed",
+          "url": "https://www.menupix.com/sanmateo/restaurants/5505778/Plutos-Fresh-Food-Palo-Alto-CA"
+        },
+        {
+          "label": "Yellow Pages - still lists hours",
+          "url": "https://www.yellowpages.com/palo-alto-ca/mip/plutos-633098"
+        }
+      ]
+    },
+    {
+      "id": "R16",
+      "count": 1,
+      "names": [
+        "Halal Street Xinjiang Cuisine"
+      ],
+      "name": "Halal Street Xinjiang Cuisine",
+      "city": "Mountain View",
+      "why": "Yelp marks both listings CLOSED (174 Castro St). The $24.95 AYCE lunch figure is moot.",
+      "price_hint": "$24.95 AYCE lunch (atly listing, moot - closed)",
+      "links": [
+        {
+          "label": "Yelp - Halal Street (CLOSED)",
+          "url": "https://www.yelp.com/biz/halal-street-xinjiang-cuisine-mountain-view"
+        }
+      ]
+    },
+    {
+      "id": "R17",
+      "count": 2,
+      "names": [
+        "MacArthur Park",
+        "The Basin"
+      ],
+      "name": "MacArthur Park, The Basin",
+      "city": "Palo Alto / Saratoga",
+      "why": "Dinner-only, no lunch service: MacArthur Park Palo Alto (27 University Ave) Tue 4:30-9:00 PM; The Basin Saratoga Mon-Sun 5:00 PM-close.",
+      "price_hint": "n/a - dinner only",
+      "links": [
+        {
+          "label": "MacArthur Park official site (dinner hours)",
+          "url": "https://macpark.com/"
+        },
+        {
+          "label": "Yelp search - The Basin Saratoga (dinner-only, via search index)",
+          "url": "https://www.yelp.com/search?find_desc=The+Basin&find_loc=Saratoga%2C+CA"
+        }
+      ]
     }
   ],
   "notes": [
     "Reddit was searched for Cupertino / Sunnyvale / Los Gatos lunch specials and returned only threads about other cities, so no Reddit citation is used (see LUNCH-FLAG-8).",
     "Every rejection above is a source-of-truth decision, not a judgement about the food. Anything here can be promoted into the master list as soon as hours, days and a price are confirmed."
   ],
-  "distinct_businesses_rejected": 24,
-  "note": "14 rows covering 24 distinct businesses; one row groups the 1 near-miss candidates that were surfaced by the same query and rejected for the same reason (no published lunch special found in this pass)."
+  "distinct_businesses_rejected": 28,
+  "note": "17 rows covering 28 distinct businesses; R14 groups the near-miss candidates surfaced by the same queries and rejected for the same reason (no published lunch special found in this pass)."
 }

@@ -16,7 +16,7 @@ Live site: https://buffedlizard55-lab.github.io/TinoLunchSpecial/
 | **Leave home** | **5:10 AM** - walk 2 min to Judah & 19th Ave, N Judah **Bus** 5:15 AM (the subway does not run yet at that hour) |
 | **At the door in Cupertino** | **about 7:55 AM** - Caltrain express 6:20 AM from the SF terminal (6:24 AM from 22nd St) to Sunnyvale 7:09 AM, VTA 55 at 7:19 AM to Stevens Creek & De Anza, 18 min walk |
 | **Lunch window** | 11:15 AM - 1:30 PM near Cupertino; **leave the house at 11:50 AM** and the 12:42 PM Caltrain gets you home by 2:40 PM |
-| **Cost** | **$24.85** round trip with Clipper/contactless (adult), $27.70 without the transfer credit, $31.00 all cash |
+| **Cost** | **$27.20** round trip with Clipper/contactless (adult; includes the $0.50 Caltrain-to-Muni credit), $27.70 without the credit, $31.00 all cash |
 
 Every number above is a row in `data/` with the agency page it was read from.
 
@@ -33,10 +33,10 @@ data/plan.json              trip definition, constraints, decision log
 data/transit_outbound.json  3 outbound plans, leg by leg, with per-leg links
 data/transit_return.json    3 return plans + the last-workable-train cutoff
 data/fares.json             agency fare tables and six day-total scenarios
-data/lunch_specials.json    47 lunch entries (27 original + 20 new 2026-09-07 batch), hours, days, prices, verification level
-data/lunch_rejected.json    24 rejected/deferred candidates (14 rows), each with a reason and a link
-data/flags.json             18 irregularities found while verifying - all still listed
-data/sources.json           27 source pages, what each one proved, and the fetch status
+data/lunch_specials.json    101 lunch entries (27 original + 20 batch-2 + 54 batch-3, all 2026-09-07), hours, days, prices, verification level
+data/lunch_rejected.json    28 rejected/deferred candidates (17 rows), each with a reason and a link
+data/flags.json             23 irregularities found while verifying - all still listed
+data/sources.json           37 source pages, what each one proved, and the fetch status
 docs/VERIFICATION.md        how to re-check every row, and what could not be verified
 scripts/build_data.py       validates + rebuilds generated.js and summary.md
 scripts/check_links.py      every row must link to a citable https page
@@ -65,9 +65,9 @@ python3 -m http.server 8000       # preview at http://127.0.0.1:8000
 
 GitHub Pages: `.github/workflows/pages.yml` deploys `index.html` + `assets/` + `data/generated.js`. Set the repo Pages source to **GitHub Actions**. Live URL once enabled: https://buffedlizard55-lab.github.io/TinoLunchSpecial/
 
-## Flagged irregularities (19)
+## Flagged irregularities (23)
 
-Nine transit, ten lunch. Headlines:
+Twelve transit, eleven lunch. Headlines:
 
 * **N Judah does not stop at 22nd St Caltrain.** The metro line ends at King St & 4th St; Caltrain's own station page lists "Muni N-Judah" there. Two options are priced and timed in the data (ride the 6:20 express from the terminal, or transfer at Castro and board at 22nd St on the 6:30 local).
 * **SFMTA's own pages disagree** about the pre-6:15 AM N Bus frequency: the route page says every 60 minutes, the timetable says every 15. The timetable (with the date `20260908`) was used, and both readings still make the 6:20 train.

@@ -12,7 +12,7 @@
       },
       "rows": [
         {
-          "ticket": "Single Ride (Clipper, MuniMobile or contactless)",
+          "ticket": "Single Ride (Clipper or contactless)",
           "price": 2.85,
           "validity": "120 minutes of travel and transfers",
           "applies_to": "both N Judah legs"
@@ -31,9 +31,9 @@
         },
         {
           "ticket": "Clipper inter-agency transfer credit onto Muni",
-          "price": -2.85,
-          "validity": "$2.85 off an adult Muni fare when transferring TO Muni from another agency within 2 hours",
-          "applies_to": "the return N Judah ride after tapping off Caltrain on the same Clipper/contactless card"
+          "price": -0.5,
+          "validity": "$0.50 off an adult Muni fare when transferring TO Muni from Caltrain within 1 hour of tagging off (tag on and off; Clipper cash value or monthly pass including Zone 1; SFMTA table also shows contactless eligible)",
+          "applies_to": "the return N Judah ride after tapping off Caltrain on the same card"
         },
         {
           "ticket": "Muni Monthly",
@@ -49,7 +49,8 @@
         }
       ],
       "notes": [
-        "SFMTA also lists a youth fare-free policy for riders 18 and under and Visitor Passport options ($15 / $35 / $47)."
+        "SFMTA also lists a youth fare-free policy for riders 18 and under and Visitor Passport options ($15 / $35 / $47).",
+        "MuniMobile Single Ride passes were discontinued Sep 1 2026 - on Sep 8 a Muni single ride is Clipper/contactless ($2.85) or cash/TVM ($3.00)."
       ]
     },
     {
@@ -105,8 +106,8 @@
         },
         {
           "ticket": "Youth (6-18) One-Way, 3 zones",
-          "price": 2.0,
-          "validity": "half reduced fare",
+          "price": 1.0,
+          "validity": "$1.00 flat, all zones",
           "applies_to": "alternate"
         }
       ],
@@ -168,7 +169,7 @@
   "day_totals": [
     {
       "label": "Cheapest realistic - Clipper or contactless end to end, adult",
-      "assumption": "Adult fare, tap onto Muni, buy Caltrain one-way on the same card so the Muni transfer credit applies, tap VTA twice (same card, same service day).",
+      "assumption": "Adult fare, Clipper or contactless end to end; the $0.50 Caltrain-to-Muni credit applies to the return Muni ride (same card, tag off Caltrain then tap Muni within 1 hour).",
       "items": [
         {
           "label": "Muni N Bus, 5:15 AM from home",
@@ -177,10 +178,6 @@
         {
           "label": "Caltrain SF Terminal -> Sunnyvale, one-way, 3 zones",
           "fare": 8.5
-        },
-        {
-          "label": "Muni -> Caltrain inter-agency transfer credit applied by Caltrain",
-          "fare": -2.85
         },
         {
           "label": "VTA 55, Sunnyvale -> Stevens Creek & De Anza",
@@ -195,17 +192,17 @@
           "fare": 8.5
         },
         {
-          "label": "Muni N Judah metro, 1:56 PM (more than 120 min after the first tap, so a new Single Ride)",
-          "fare": 2.85
+          "label": "Muni N Judah metro, 1:56 PM (more than 120 min after the first tap, so a new Single Ride $2.85 minus the $0.50 Caltrain-to-Muni credit)",
+          "fare": 2.35
         }
       ],
-      "total": 24.85,
+      "total": 27.2,
       "caveat": "Children 18 and under ride Muni free, which removes the $5.70 Muni half of this total.",
-      "verified_from": "https://www.sfmta.com/getting-around/muni/fares, https://www.caltrain.com/fares, https://www.vta.org/go/fares"
+      "verified_from": "https://www.sfmta.com/getting-around/muni/fares, https://www.caltrain.com/fares, https://www.vta.org/go/fares, https://www.caltrain.com/fares/regional-transfer-discounts"
     },
     {
       "label": "Same rides, but no transfer credit (contactless card tap or a printed ticket)",
-      "assumption": "Useful if you do not tap the same Clipper card onto Caltrain, or if you buy a paper ticket: the $2.85 Muni credit is not applied.",
+      "assumption": "Useful if you do not tap the same Clipper card onto Caltrain, or if you buy a paper ticket: the $0.50 Muni credit is not applied.",
       "items": [
         {
           "label": "Muni N Bus",
@@ -225,7 +222,7 @@
         }
       ],
       "total": 27.7,
-      "caveat": "$2.85 more than the first option; the credit is the only difference.",
+      "caveat": "$0.50 more than the first option; the credit is the only difference.",
       "verified_from": "https://www.caltrain.com/fares"
     },
     {
@@ -267,7 +264,7 @@
         }
       ],
       "total": 27.7,
-      "caveat": "Identical to buying two one-ways with a card, so the day pass is free insurance against a missed train on the outbound leg.",
+      "caveat": "$0.50 more than two one-ways with the transfer credit, so the day pass is cheap insurance against a missed train on the outbound leg.",
       "verified_from": "https://www.caltrain.com/fares"
     },
     {
@@ -284,7 +281,7 @@
         }
       ],
       "total": 30.2,
-      "caveat": "Costs $5.35 more than the Clipper option and adds nothing for a single one-way pair of rides.",
+      "caveat": "Costs $3.00 more than the Clipper option ($30.20 vs $27.20) and adds nothing for a single one-way pair of rides.",
       "verified_from": "https://www.caltrain.com/fares"
     },
     {
@@ -296,15 +293,15 @@
           "fare": 0.0
         },
         {
-          "label": "Caltrain youth 3-zone one-way, both directions",
-          "fare": 4.0
+          "label": "Caltrain youth 3-zone one-way, both directions ($1.00 flat each)",
+          "fare": 2.0
         },
         {
           "label": "VTA youth 6-18, two single rides",
           "fare": 2.5
         }
       ],
-      "total": 6.5,
+      "total": 4.5,
       "caveat": "Bring ID that shows the date of birth; conductor checks on Caltrain.",
       "verified_from": "https://www.caltrain.com/fares, https://www.vta.org/go/fares"
     }

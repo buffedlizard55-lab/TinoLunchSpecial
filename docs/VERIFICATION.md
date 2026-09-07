@@ -16,7 +16,7 @@ This page explains what was and was not possible to verify from the build enviro
 | 6 | 22nd Street southbound departures (6:24 / 6:30 AM) - and no N Judah in its connections | https://www.caltrain.com/station/22ndstreet |
 | 7 | Sunnyvale northbound departures (12:12 / 12:42 / 1:12 / 1:42 PM) and the VTA 55 connection | https://www.caltrain.com/station/sunnyvale |
 | 8 | Mountain View northbound departures, used for the Sunnyvale-vs-Mountain View comparison | https://www.caltrain.com/station/mountainview |
-| 9 | Caltrain fares by zone, day passes, the $2.85 Muni credit, ticket machines and Clipper | https://www.caltrain.com/fares |
+| 9 | Caltrain fares by zone, day passes, the $0.50 Muni credit, ticket machines and Clipper | https://www.caltrain.com/fares |
 | 10 | VTA 55 timepoints both directions and the fare rules ($2.50, 2-hour transfers, $7.50 cap) | https://www.vta.org/sites/default/files/route_schedule_pdfs/current/route_55/route_55_schedule.pdf and https://www.vta.org/go/fares |
 
 Cross-checks that were run: both SFMTA schedule pages re-read with `?date=20260908` (identical to the undated view); the VTA route 55 page
@@ -87,5 +87,5 @@ San Antonio and Chicago threads). Recorded so the empty result is not mistaken f
 2. Caltrain's live page for the station you board - does the 6:20 AM express still run as a **southbound express from the SF terminal**? If the 6:20 is gone, the 6:25 local still reaches Sunnyvale before the 7:40 AM trip on plan A2.
 3. VTA 55 service alerts (link 10) - any detour on Stevens Creek Blvd.
 4. Call the restaurant you picked: lunch counters are the first thing to change, and five rows depend on hours more than on price.
-5. Load a Clipper card, or tap the same contactless card on Muni **and** onto Caltrain so the $2.85 credit applies.
+5. Load a Clipper card, or tap the same contactless card on Muni **and** onto Caltrain so the $0.50 credit applies.
 6. On the way back, board at `McClellan & Felton` and be at the bay for the **12:42 PM** northbound; the 1:42 PM train puts you home at 3:43 PM, past the deadline.

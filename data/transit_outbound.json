@@ -345,7 +345,7 @@
           "fare_usd": 2.5,
           "fare_note": "$2.50 single ride.",
           "verified": "official-live (alighting time interpolated)",
-          "note": "Timepoints for this trip: Sunnyvale TC 7:40, De Anza & Homestead 7:54, Stelling & Stevens Creek 8:02 (12-minute Caltrain-to-bus connection).",
+          "note": "Timepoints for this trip: Sunnyvale TC 7:40, De Anza & Homestead 7:55, Stelling & Stevens Creek 8:03 (12-minute Caltrain-to-bus connection).",
           "sources": [
             {
               "label": "VTA - route 55 schedule PDF",
@@ -490,7 +490,7 @@
           "fare_usd": 2.5,
           "fare_note": "$2.50.",
           "verified": "official-live (alighting time interpolated)",
-          "note": "Timepoints: Sunnyvale TC 9:59, De Anza & Homestead 10:13, Stelling & Stevens Creek 10:21.",
+          "note": "Timepoints: Sunnyvale TC 9:59, De Anza & Homestead 10:13, Stelling & Stevens Creek 10:20.",
           "sources": [
             {
               "label": "VTA - route 55 schedule PDF",
