@@ -42,7 +42,9 @@ def minutes(t):
     """'1:12 PM' -> minutes after midnight. None when unparseable or relative."""
     if not t or not isinstance(t, str):
         return None
-    m = re.match(r"^(\d{1,2}):(\d{2}) (AM|PM)", t.strip())
+    # search, not match: values are allowed to be hedged or annotated, e.g.
+    # "about 7:55 AM" or "3:43 PM - misses the deadline"
+    m = re.search(r"\b(\d{1,2}):(\d{2}) (AM|PM)", t.strip())
     if not m:
         return None
     h, mi, ap = int(m.group(1)), int(m.group(2)), m.group(3)
@@ -95,13 +97,32 @@ def validate_transit(obj, label):
                     err(f"{label}/{p['id']}/leg{leg.get('seq')}: bad source url {s.get('url')}")
             if leg.get("travel_min") and leg["travel_min"] < 0:
                 err(f"{label}/{p['id']}/leg{leg.get('seq')}: negative travel time")
-        # total time must equal first departure to last arrival
+        # the plan header must agree with its own first and last leg, and the
+        # stated duration must be the span those two times actually imply
         first = minutes(p["legs"][0]["depart"])
         last = minutes(p["legs"][-1]["arrive"])
+        dep_key = "leave_home" if "leave_home" in p else "leave_destination"
+        arr_key = "arrive_destination" if "arrive_destination" in p else "arrive_home"
+        # compare the clock times, not the wording: headers are allowed to hedge
+        # ("about 2:40 PM") or annotate ("3:43 PM - misses the deadline"), but the
+        # minutes must be identical to the leg they summarise.
+        for key, leg_val in ((dep_key, p["legs"][0]["depart"]), (arr_key, p["legs"][-1]["arrive"])):
+            want = p.get(key)
+            if want is None:
+                err(f"{label}/{p['id']}: {key} is missing")
+                continue
+            a, b = minutes(str(want)), minutes(str(leg_val))
+            if a is None or b is None:
+                warn(f"{label}/{p['id']}: {key}='{want}' could not be parsed against leg '{leg_val}'")
+            elif a != b:
+                err(f"{label}/{p['id']}: header {key}='{want}' is {abs((a-b+720)%1440-720 if abs(a-b)>720 else a-b)} min off from the leg table's '{leg_val}'")
         if first is not None and last is not None:
             span = (last - first) % (24 * 60)
-            if p.get("total_time_min") and abs(span - p["total_time_min"]) > 3:
-                warn(f"{label}/{p['id']}: stated total {p['total_time_min']} min vs {span} min from the leg times (rounding/approx legs)")
+            if p.get("total_time_min") is None:
+                p["total_time_min"] = span
+            elif abs(span - p["total_time_min"]) > 3:
+                err(f"{label}/{p['id']}: stated total {p['total_time_min']} min contradicts its own leg times ({span} min from "
+                    f"{p['legs'][0]['depart']} to {p['legs'][-1]['arrive']})")
 
 
 def validate_lunch(entries):
