@@ -33,7 +33,7 @@ data/plan.json              trip definition, constraints, decision log
 data/transit_outbound.json  3 outbound plans, leg by leg, with per-leg links
 data/transit_return.json    3 return plans + the last-workable-train cutoff
 data/fares.json             agency fare tables and six day-total scenarios
-data/lunch_specials.json    27 lunch entries, hours, days, prices, verification level
+data/lunch_specials.json    47 lunch entries (27 original + 20 new 2026-09-07 batch), hours, days, prices, verification level
 data/lunch_rejected.json    24 rejected/deferred candidates (14 rows), each with a reason and a link
 data/flags.json             18 irregularities found while verifying - all still listed
 data/sources.json           27 source pages, what each one proved, and the fetch status
@@ -63,9 +63,11 @@ python3 -m http.server 8000       # preview at http://127.0.0.1:8000
 4. **Conflicts stay visible.** Where two sources disagree (Muni headway text vs timetable, OSM hours vs the restaurant's own site) both values are shown and the choice is explained in `data/flags.json`.
 5. **Nothing was backfilled by hand.** The 20-entry search requirement was met by 28 queries over 51 candidates; 27 survived into the master list and 24 were rejected, each with a reason and a link (14 rows in `data/lunch_rejected.json`).
 
-## Flagged irregularities (18)
+GitHub Pages: `.github/workflows/pages.yml` deploys `index.html` + `assets/` + `data/generated.js`. Set the repo Pages source to **GitHub Actions**. Live URL once enabled: https://buffedlizard55-lab.github.io/TinoLunchSpecial/
 
-Nine transit, nine lunch. Headlines:
+## Flagged irregularities (19)
+
+Nine transit, ten lunch. Headlines:
 
 * **N Judah does not stop at 22nd St Caltrain.** The metro line ends at King St & 4th St; Caltrain's own station page lists "Muni N-Judah" there. Two options are priced and timed in the data (ride the 6:20 express from the terminal, or transfer at Castro and board at 22nd St on the 6:30 local).
 * **SFMTA's own pages disagree** about the pre-6:15 AM N Bus frequency: the route page says every 60 minutes, the timetable says every 15. The timetable (with the date `20260908`) was used, and both readings still make the 6:20 train.

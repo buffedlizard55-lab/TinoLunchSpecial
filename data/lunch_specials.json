@@ -1,9 +1,9 @@
 {
   "search_protocol": {
     "requirement": "Search for 20 new entries before adding anything to the master list; verify line by line; keep official/review links for manual review.",
-    "queries_run": 28,
-    "candidates_found": 51,
-    "added_to_master": 27,
+    "queries_run": 48,
+    "candidates_found": 71,
+    "added_to_master": 47,
     "rejected_or_deferred": 24,
     "search_date": "2026-09-07",
     "cities_covered": [
@@ -27,7 +27,8 @@
     },
     "notes": [
       "Query mix: 26 search queries for lunch specials by city and by dish, plus 2 targeted address/hours resolutions (Red Hot Wok, Pho Ha Noi) that came out of the validator rejecting placeholder rows.",
-      "Two rows were rewritten during the check pass because the validator refused to publish an address it could not support: Red Hot Wok now cites the restaurant's own full menu (no lunch special exists) and Pho Ha Noi cites Tripadvisor/Yelp/its own site for address and hours."
+      "Two rows were rewritten during the check pass because the validator refused to publish an address it could not support: Red Hot Wok now cites the restaurant's own full menu (no lunch special exists) and Pho Ha Noi cites Tripadvisor/Yelp/its own site for address and hours.",
+      "2026-09-07 batch 2: 20 new master rows L28-L47 searched and verified before add. Aqui and Galpao were previously rejected; re-added with new official/hours evidence and flags."
     ]
   },
   "entries": [
@@ -1393,6 +1394,933 @@
       "zip": "95014",
       "phone": "(408) 253-5544",
       "distance_mi": 0.1
+    },
+    {
+      "id": "L28",
+      "name": "Aqui Cal Mex",
+      "city": "Cupertino",
+      "area": "S De Anza Blvd, 0.1 mi from 20387 Gillick Way",
+      "address": "10630 S De Anza Blvd, Cupertino, CA 95014",
+      "coords": null,
+      "cuisine": "Cal-Mex / Southwest",
+      "lunch_special": {
+        "name": "Daily special plate (not a lunch-only deal) - Salmon Enchiladas and Crab Cake",
+        "price_from": 17.59,
+        "price_to": 17.59,
+        "days": "Published window September 2nd - September 15th (covers Tue Sept 8 2026)",
+        "window": "all-day while open; soup special $5.09",
+        "includes": "Official home page: grilled salmon enchiladas with potato-crusted crab cake, Cioppino sauce, beans & fennel salsa, lemon aioli, kale and zucchini $17.59; Portobello Mushroom soup $5.09"
+      },
+      "hours_tuesday": "11:00 AM - 9:00 PM",
+      "days_open": "Mon-Thu 11:00-21:00, Fri-Sat 11:00-21:30, Sun 11:00-21:00 (Yelp)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": true,
+        "note": "Walkable from Gillick Way; open all afternoon."
+      },
+      "verification": {
+        "level": "official",
+        "sources": [
+          {
+            "label": "Aqui official home - daily special plate price and Sept 2-15 window",
+            "url": "https://www.aquicalmex.com/"
+          },
+          {
+            "label": "Aqui Cupertino menu page",
+            "url": "https://www.aquicalmex.com/cupertino-menu/"
+          },
+          {
+            "label": "Yelp hours and address",
+            "url": "https://www.yelp.com/biz/aqui-cal-mex-cupertino-3"
+          }
+        ],
+        "accessed": "2026-09-07"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/aqui-cal-mex-cupertino-3",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Aqui+Cal+Mex+10630+S+De+Anza+Blvd+Cupertino"
+      },
+      "flags": [
+        "Previously rejected (R08) because no lunch-only special existed. Re-added because the official site now publishes a dated daily plate that covers Sept 8 2026.",
+        "This is a daily chef plate, not a weekday lunch combo."
+      ],
+      "distance_mi": null,
+      "phone": "(408) 996-1443"
+    },
+    {
+      "id": "L29",
+      "name": "BJ's Restaurant & Brewhouse",
+      "city": "Cupertino",
+      "area": "N De Anza Blvd / Vallco area",
+      "address": "10690 N De Anza Blvd, Cupertino, CA 95014",
+      "coords": [
+        37.33134,
+        -122.031784
+      ],
+      "coords_source": "Tripadvisor JSON-LD",
+      "cuisine": "American, pizza, brewpub",
+      "lunch_special": {
+        "name": "Chain lunch-specials menu exists; Cupertino combo prices not shown on the fetched menu page",
+        "price_from": null,
+        "price_to": null,
+        "days": "Third-party pages claim Mon-Fri 11:00 AM-3:00 PM; not confirmed on bjsrestaurants.com for this store",
+        "window": "unverified for this location",
+        "includes": "Official menu page /menu/13-lunch-specials loaded the full menu (Pizookie, pizzas, pastas) not a lunch combo table. Do not budget a deal."
+      },
+      "hours_tuesday": "11:00 AM - 12:00 AM (next day)",
+      "days_open": "every day 11:00 AM - midnight (Yelp)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": true,
+        "note": "Open from 11:00 AM; ~1.3 mi north of Gillick Way."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {
+            "label": "BJ's official locations (Cupertino 10690 N De Anza)",
+            "url": "https://www.bjsrestaurants.com/locations?fullSearchString=Cupertino%2C+California&lat=37.3229978&lng=-122.03218229999999&searchString=cupertino"
+          },
+          {
+            "label": "BJ's official lunch-specials menu slug (no combo prices on fetch)",
+            "url": "https://www.bjsrestaurants.com/menu/13-lunch-specials"
+          },
+          {
+            "label": "Yelp hours",
+            "url": "https://www.yelp.com/biz/bjs-restaurant-and-brewhouse-cupertino"
+          }
+        ],
+        "accessed": "2026-09-07"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/bjs-restaurant-and-brewhouse-cupertino"
+      },
+      "flags": [
+        "Lunch combo prices for Cupertino were not on the official page when fetched. Phone (408) 865-6970."
+      ],
+      "distance_mi": 1.28
+    },
+    {
+      "id": "L30",
+      "name": "Ippudo Cupertino",
+      "city": "Cupertino",
+      "area": "Vallco Parkway",
+      "address": "19540 Vallco Parkway, Ste 130, Cupertino, CA 95014",
+      "coords": null,
+      "cuisine": "Japanese ramen",
+      "lunch_special": {
+        "name": "Weekday Lunch Set Specials (Yelp business update)",
+        "price_from": null,
+        "price_to": null,
+        "days": "Monday-Friday",
+        "window": "11:00 AM - 4:00 PM (Yelp business update text)",
+        "includes": "Yelp business update: 'WEEKDAY LUNCH SET SPECIALS! Available Monday - Friday 11am - 4pm'. Set contents and price not published on ippudous.com in this pass."
+      },
+      "hours_tuesday": "11:00 AM - 10:00 PM",
+      "days_open": "Mon-Sat 11:00-22:00, Sun 11:00-21:30 (Yelp)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": true,
+        "note": "Lunch set window to 4:00 PM; ~1.3 mi from destination."
+      },
+      "verification": {
+        "level": "review",
+        "sources": [
+          {
+            "label": "Yelp Ippudo Cupertino - hours, address, weekday lunch set update",
+            "url": "https://www.yelp.com/biz/ippudo-cupertino-cupertino-2"
+          }
+        ],
+        "accessed": "2026-09-07"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/ippudo-cupertino-cupertino-2"
+      },
+      "flags": [
+        "Price of the lunch set is unpublished. Call (408) 721-6789."
+      ],
+      "distance_mi": null,
+      "phone": "(408) 721-6789"
+    },
+    {
+      "id": "L31",
+      "name": "Gochi Japanese Fusion Tapas",
+      "city": "Cupertino",
+      "area": "Homestead Rd",
+      "address": "19980 Homestead Rd, Cupertino, CA 95014",
+      "coords": [
+        37.336834,
+        -122.02281
+      ],
+      "coords_source": "Tripadvisor JSON-LD",
+      "cuisine": "Japanese fusion / izakaya",
+      "lunch_special": {
+        "name": "Lunch service (no priced special found)",
+        "price_from": null,
+        "price_to": null,
+        "days": "Tuesday-Saturday (closed Monday; Sunday dinner only)",
+        "window": "11:15 AM - 1:15 PM",
+        "includes": "OpenTable and Yelp agree on a 2-hour lunch window. No lunch-special price published."
+      },
+      "hours_tuesday": "11:15 AM - 1:15 PM, 6:00 PM - 8:30 PM",
+      "days_open": "Mon closed; Tue-Thu lunch 11:15-13:15 dinner 18:00-20:30; Fri-Sat lunch 11:15-13:15 dinner 17:30-21:00; Sun dinner 17:30-20:30",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": "tight",
+        "note": "Lunch ends 1:15 PM. Fits an 11:15 seating before the 11:50 AM walk-out."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {
+            "label": "OpenTable hours",
+            "url": "https://www.opentable.com/r/gochi-japanese-fusion-tapas-cupertino"
+          },
+          {
+            "label": "Yelp hours",
+            "url": "https://www.yelp.com/biz/gochi-cupertino-cupertino"
+          }
+        ],
+        "accessed": "2026-09-07"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/gochi-cupertino-cupertino"
+      },
+      "flags": [
+        "No lunch price published. Phone (408) 725-0542."
+      ],
+      "distance_mi": 1.7,
+      "phone": "(408) 725-0542"
+    },
+    {
+      "id": "L32",
+      "name": "Dish N Dash",
+      "city": "Cupertino",
+      "area": "Stevens Creek Blvd / Crossroads",
+      "address": "20750 Stevens Creek Blvd, Cupertino, CA 95014",
+      "coords": null,
+      "cuisine": "Middle Eastern",
+      "lunch_special": {
+        "name": "No lunch special published - regular menu at lunch",
+        "price_from": 12.0,
+        "price_to": 22.5,
+        "days": "n/a",
+        "window": "open from 11:00 AM",
+        "includes": "Official Cupertino menu: appetizers $12-$14.50, handhelds $20.25-$22.50. No lunch-special section."
+      },
+      "hours_tuesday": "11:00 AM - 9:00 PM",
+      "days_open": "Sun-Thu 11:00-21:00, Fri-Sat 11:00-21:30 (Yelp / Apple Maps)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": true,
+        "note": "Open 11-9; ~0.7 mi from destination."
+      },
+      "verification": {
+        "level": "official",
+        "sources": [
+          {
+            "label": "Official Dish N Dash Cupertino menu with prices",
+            "url": "https://www.dishdash.com/menu/dish-n-dash-cupertino-menu/"
+          },
+          {
+            "label": "Yelp hours and address",
+            "url": "https://www.yelp.com/biz/dish-n-dash-cupertino-cupertino-5"
+          }
+        ],
+        "accessed": "2026-09-07"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/dish-n-dash-cupertino-cupertino-5"
+      },
+      "flags": [
+        "Verified negative for a lunch special; regular menu prices only."
+      ],
+      "distance_mi": null,
+      "phone": "(408) 899-2565"
+    },
+    {
+      "id": "L33",
+      "name": "Eureka!",
+      "city": "Cupertino",
+      "area": "Stevens Creek Blvd",
+      "address": "19369 Stevens Creek Boulevard Suite 130, Cupertino, CA 95014",
+      "coords": [
+        37.32338,
+        -122.00909
+      ],
+      "coords_source": "Tripadvisor JSON-LD",
+      "cuisine": "American bar & grill",
+      "lunch_special": {
+        "name": "No lunch special published",
+        "price_from": null,
+        "price_to": null,
+        "days": "n/a",
+        "window": "opens 11:00 AM",
+        "includes": "Reviews mention happy hour after 2 PM, which is after the return bus."
+      },
+      "hours_tuesday": "11:00 AM - 11:00 PM",
+      "days_open": "Sun-Thu 11:00-23:00, Fri-Sat 11:00-00:00 (Tripadvisor JSON-LD)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": true,
+        "note": "Open from 11; ~1.2 mi east of destination."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {
+            "label": "Tripadvisor listing with hours, address, geo",
+            "url": "https://www.tripadvisor.com/Restaurants-g32273-Cupertino_California.html"
+          },
+          {
+            "label": "Yelp search context",
+            "url": "https://www.yelp.com/search?find_desc=Lunch&find_loc=Cupertino%2C+CA+95014"
+          }
+        ],
+        "accessed": "2026-09-07"
+      },
+      "review_links": {
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Eureka+Cupertino+19369+Stevens+Creek"
+      },
+      "flags": [
+        "No lunch special found. Happy hour 2-6 PM does not help the 11:50 AM departure."
+      ],
+      "distance_mi": 1.37,
+      "phone": "(669) 266-6752"
+    },
+    {
+      "id": "L34",
+      "name": "Chipotle Mexican Grill",
+      "city": "Cupertino",
+      "area": "S De Anza Blvd",
+      "address": "10385 S De Anza Blvd, Cupertino, CA 95014",
+      "coords": null,
+      "cuisine": "Mexican fast casual",
+      "lunch_special": {
+        "name": "No lunch special - standard burrito/bowl menu",
+        "price_from": null,
+        "price_to": null,
+        "days": "n/a",
+        "window": "open from 10:45 AM",
+        "includes": "Fast option if time is tight. No published lunch discount."
+      },
+      "hours_tuesday": "10:45 AM - 10:00 PM",
+      "days_open": "every day 10:45 AM - 10:00 PM (Yelp)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": true,
+        "note": "Closest fast-casual to De Anza; walkable."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {
+            "label": "Yelp Chipotle Cupertino hours and address",
+            "url": "https://www.yelp.com/biz/chipotle-mexican-grill-cupertino"
+          }
+        ],
+        "accessed": "2026-09-07"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/chipotle-mexican-grill-cupertino"
+      },
+      "flags": [
+        "No lunch special. Listed as a timed fallback, not a deal."
+      ],
+      "distance_mi": null,
+      "phone": "(408) 252-5421"
+    },
+    {
+      "id": "L35",
+      "name": "Panda Express",
+      "city": "Cupertino",
+      "area": "Stevens Creek Blvd",
+      "address": "21000 Stevens Creek Blvd, Suite 300, Cupertino, CA 95014",
+      "coords": null,
+      "cuisine": "Chinese fast food",
+      "lunch_special": {
+        "name": "No location-specific lunch special published",
+        "price_from": null,
+        "price_to": null,
+        "days": "n/a",
+        "window": "open from 9:30 AM weekdays (Yelp)",
+        "includes": "Standard two-entree plate. No Cupertino lunch combo found on pandaexpress.com in this pass."
+      },
+      "hours_tuesday": "9:30 AM - 9:30 PM",
+      "days_open": "Mon-Fri 9:30-21:30, Sat-Sun 10:00-21:30 (Yelp)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": true,
+        "note": "Opens before lunch; ~0.8 mi."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {
+            "label": "Yelp Panda Express Cupertino hours and address",
+            "url": "https://www.yelp.com/biz/panda-express-cupertino-2"
+          }
+        ],
+        "accessed": "2026-09-07"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/panda-express-cupertino-2"
+      },
+      "flags": [
+        "No verified lunch-special price."
+      ],
+      "distance_mi": null,
+      "phone": "(408) 517-0670"
+    },
+    {
+      "id": "L36",
+      "name": "Galpao Gaucho Brazilian Steakhouse",
+      "city": "Cupertino",
+      "area": "Stevens Creek Blvd",
+      "address": "19780 Stevens Creek Blvd, Cupertino, CA 95014",
+      "coords": [
+        37.32255,
+        -122.01911
+      ],
+      "coords_source": "Tripadvisor JSON-LD",
+      "cuisine": "Brazilian steakhouse",
+      "lunch_special": {
+        "name": "Weekday lunch rodizio (current Cupertino price not on official menu page)",
+        "price_from": null,
+        "price_to": null,
+        "days": "Monday-Friday lunch (OpenTable)",
+        "window": "OpenTable: Lunch Mon-Fri 11:30 AM-2:00 PM; Tripadvisor JSON-LD 11:30-14:00",
+        "includes": "Official menu page lists salad bar, grill, desserts but no dollar prices. 2018 Mercury News listed lunch $37.95 / salad $28.95 - those figures are eight years old and are NOT used here."
+      },
+      "hours_tuesday": "11:30 AM - 2:00 PM, 5:00 PM - 9:30 PM (OpenTable)",
+      "days_open": "Lunch Mon-Fri 11:30-14:00; dinner Mon-Thu 17:00-21:30; Fri 17:00-22:00; Sat 12:00-22:00; Sun 12:00-21:00 (Tripadvisor JSON-LD, times differ slightly from OpenTable)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": "tight",
+        "note": "Lunch ends ~2:00 PM; only a very short meal fits the 11:50 AM departure."
+      },
+      "verification": {
+        "level": "conflicting",
+        "sources": [
+          {
+            "label": "Official Galpao menu (no prices)",
+            "url": "https://galpaogauchousa.com/menu/"
+          },
+          {
+            "label": "OpenTable Cupertino hours",
+            "url": "https://www.opentable.com/r/galpao-gaucho-brazilian-steakhouse-cupertino"
+          },
+          {
+            "label": "Tripadvisor JSON-LD hours",
+            "url": "https://www.tripadvisor.com/Restaurants-g32273-Cupertino_California.html"
+          }
+        ],
+        "accessed": "2026-09-07"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/galpao-gaucho-brazilian-steakhouse-cupertino"
+      },
+      "flags": [
+        "Previously rejected (R10) for dinner-only pricing on the location page. Re-added because OpenTable/Tripadvisor publish a weekday lunch window. Price still unverified.",
+        "Hours conflict OpenTable vs Tripadvisor on Tuesday dinner close."
+      ],
+      "distance_mi": 0.91,
+      "phone": "(408) 366-2370"
+    },
+    {
+      "id": "L37",
+      "name": "Marufuku Ramen",
+      "city": "Cupertino",
+      "area": "Stevens Creek Blvd",
+      "address": "19772 Stevens Creek Blvd, Cupertino, CA 95014",
+      "coords": null,
+      "cuisine": "Ramen",
+      "lunch_special": {
+        "name": "No lunch special published",
+        "price_from": null,
+        "price_to": null,
+        "days": "n/a",
+        "window": "lunch service 11:00 AM - 2:00 PM on one listing; Yelp currently shows 11:00 AM - 9:00 PM continuous",
+        "includes": "Hours conflict. No priced lunch set found on marufukuramen.com in this pass."
+      },
+      "hours_tuesday": "11:00 AM - 9:00 PM (Yelp) / 11:00 AM - 2:00 PM and 5:00 PM - 9:00 PM (restaurantji)",
+      "days_open": "conflicting - see flags",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": true,
+        "note": "Either hours pattern is open at 11:00 AM."
+      },
+      "verification": {
+        "level": "conflicting",
+        "sources": [
+          {
+            "label": "Yelp hours (continuous 11-9)",
+            "url": "https://www.yelp.com/biz/marufuku-ramen-cupertino-cupertino-2"
+          },
+          {
+            "label": "Directory hours with lunch break",
+            "url": "https://www.restaurantji.com/ca/cupertino/marufuku-ramen-cupertino-/"
+          }
+        ],
+        "accessed": "2026-09-07"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/marufuku-ramen-cupertino-cupertino-2"
+      },
+      "flags": [
+        "Hours conflict between Yelp and restaurantji. Phone (408) 982-3028."
+      ],
+      "distance_mi": null,
+      "phone": "(408) 982-3028"
+    },
+    {
+      "id": "L38",
+      "name": "Bonchon",
+      "city": "Sunnyvale",
+      "area": "E El Camino Real",
+      "address": "572 E El Camino Real, Sunnyvale, CA 94087",
+      "coords": [
+        37.3623033,
+        -122.0273398
+      ],
+      "coords_source": "official location JSON-LD",
+      "cuisine": "Korean fried chicken",
+      "lunch_special": {
+        "name": "Lunch Specials (wings / boneless / drums / strips)",
+        "price_from": null,
+        "price_to": null,
+        "days": "listed on the official location menu (no day restriction shown)",
+        "window": "store hours 11:00 AM - 9:00 PM every day",
+        "includes": "Official Sunnyvale page has a Lunch Specials section: Mixed 6 PC (4 wings + 2 drums), Wings 6 PC, Boneless 8 PC, Drums 3 PC, Strips 6 PC. Dollar prices were not printed next to the items on the fetch."
+      },
+      "hours_tuesday": "11:00 AM - 9:00 PM",
+      "days_open": "every day 11:00-21:00 (official)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Near El Camino / Sunnyvale, not on the Gillick Way walk."
+      },
+      "verification": {
+        "level": "official",
+        "sources": [
+          {
+            "label": "Bonchon Sunnyvale official location page - hours and Lunch Specials section",
+            "url": "https://restaurants.bonchon.com/locations/ca/sunnyvale/572-e-el-camino-real"
+          }
+        ],
+        "accessed": "2026-09-07"
+      },
+      "review_links": {
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Bonchon+572+E+El+Camino+Real+Sunnyvale"
+      },
+      "flags": [
+        "Lunch specials exist on the official page but prices were not displayed. Phone (408) 720-8689."
+      ],
+      "distance_mi": 3.42,
+      "phone": "(408) 720-8689"
+    },
+    {
+      "id": "L39",
+      "name": "The Urban Grill",
+      "city": "Sunnyvale",
+      "area": "Apollo Way",
+      "address": "1214 Apollo Way, Ste 404-B, Sunnyvale, CA 94085",
+      "coords": null,
+      "cuisine": "Indian",
+      "lunch_special": {
+        "name": "Lunch buffet every day",
+        "price_from": null,
+        "price_to": null,
+        "days": "every day (Yelp specialties text)",
+        "window": "11:30 AM - 3:00 PM",
+        "includes": "Yelp specialties: 'LUNCH Buffet (every day @ 11:30 AM-3:00 PM)'. Buffet price not published."
+      },
+      "hours_tuesday": "11:30 AM - 3:00 PM, 6:00 PM - 10:30 PM",
+      "days_open": "Yelp: lunch 11:30-15:00 and dinner 18:00-22:30 Tue",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "North Sunnyvale, not on the VTA 55 Cupertino walk."
+      },
+      "verification": {
+        "level": "review",
+        "sources": [
+          {
+            "label": "Yelp Urban Grill Sunnyvale - hours and lunch buffet claim",
+            "url": "https://www.yelp.com/biz/the-urban-grill-sunnyvale"
+          }
+        ],
+        "accessed": "2026-09-07"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/the-urban-grill-sunnyvale"
+      },
+      "flags": [
+        "Buffet price unpublished. Phone (669) 306-6700."
+      ],
+      "distance_mi": null,
+      "phone": "(669) 306-6700"
+    },
+    {
+      "id": "L40",
+      "name": "P.F. Chang's",
+      "city": "Sunnyvale",
+      "area": "W El Camino Real",
+      "address": "390 W El Camino Real, Sunnyvale, CA 94087",
+      "coords": [
+        37.36864,
+        -122.03664
+      ],
+      "coords_source": "Tripadvisor JSON-LD",
+      "cuisine": "Chinese / Pan-Asian",
+      "lunch_special": {
+        "name": "Lunch specials - entree + soup or salad + rice",
+        "price_from": 13.99,
+        "price_to": null,
+        "days": "daily (OpenTable offer text)",
+        "window": "open until 3:00 PM for lunch pricing",
+        "includes": "OpenTable: 'Lunch from $13.99 & Dinner from $16.99. Lunch served daily from open - 3pm'. Individual portions with soup or salad plus rice."
+      },
+      "hours_tuesday": "11:00 AM - 10:00 PM (OpenTable) / 11:00 AM - 9:00 PM (Tripadvisor)",
+      "days_open": "OpenTable: Sun-Thu 11:00-22:00, Fri-Sat 11:00-23:00; Tripadvisor JSON-LD Sun-Thu 11:00-21:00",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Sunnyvale El Camino, not the Cupertino walk."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {
+            "label": "OpenTable P.F. Chang's Sunnyvale - lunch from $13.99 and hours",
+            "url": "https://www.opentable.com/r/pf-changs-sunnyvale"
+          },
+          {
+            "label": "Tripadvisor hours JSON-LD",
+            "url": "https://www.tripadvisor.com/Restaurant_Review-g33146-d342109-Reviews-P_F_Chang_s-Sunnyvale_California.html"
+          }
+        ],
+        "accessed": "2026-09-07"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/p-f-changs-sunnyvale"
+      },
+      "flags": [
+        "Price is from OpenTable offer text, not pfchangs.com item list. Hours conflict 9 PM vs 10 PM Tuesday close."
+      ],
+      "distance_mi": 3.87,
+      "phone": "(408) 991-9078"
+    },
+    {
+      "id": "L41",
+      "name": "P.F. Chang's",
+      "city": "Palo Alto",
+      "area": "Stanford Shopping Center",
+      "address": "900 Stanford Shopping Center Bldg. W, Palo Alto, CA 94304",
+      "coords": [
+        37.44327,
+        -122.16973
+      ],
+      "coords_source": "official location JSON-LD",
+      "cuisine": "Chinese / Pan-Asian",
+      "lunch_special": {
+        "name": "Lunch service (location page highlights Lunch; combo price not on this page)",
+        "price_from": null,
+        "price_to": null,
+        "days": "daily while open",
+        "window": "opens 11:00 AM; happy hour 3:00-6:00 PM Mon-Fri (after the return bus)",
+        "includes": "Official Palo Alto page lists Lunch as a highlight. No $13.99 lunch block on this page (that text was Sunnyvale OpenTable)."
+      },
+      "hours_tuesday": "11:00 AM - 10:00 PM",
+      "days_open": "Sun-Thu 11:00-22:00, Fri-Sat 11:00-23:00 (official)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Stanford Shopping Center is off the required Caltrain Sunnyvale/Mountain View chain."
+      },
+      "verification": {
+        "level": "official",
+        "sources": [
+          {
+            "label": "P.F. Chang's Palo Alto official location page - hours, address",
+            "url": "https://locations.pfchangs.com/ca/paloalto/900-stanford-shopping-center-bldg-w.html"
+          }
+        ],
+        "accessed": "2026-09-07"
+      },
+      "review_links": {
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=PF+Chang%27s+900+Stanford+Shopping+Center"
+      },
+      "flags": [
+        "Do not copy Sunnyvale's $13.99 lunch price onto this row."
+      ],
+      "distance_mi": 11.82,
+      "phone": "(650) 330-1782"
+    },
+    {
+      "id": "L42",
+      "name": "Red Hot Wok",
+      "city": "Palo Alto",
+      "area": "El Camino Real",
+      "address": "3345 El Camino Real, Palo Alto, CA 94306",
+      "coords": [
+        37.4202584,
+        -122.1360183
+      ],
+      "coords_source": "official ordering JSON-LD",
+      "cuisine": "Chinese / Taiwanese",
+      "lunch_special": {
+        "name": "Red Hot Wok Lunch Special (bento boxes with rice, two sides and soup)",
+        "price_from": 15.95,
+        "price_to": 18.95,
+        "days": "Tuesday through Friday except holidays (Monday closed). Menu also says Available Monday-Friday 11:00 AM-2:00 PM - that Monday conflict is flagged.",
+        "window": "11:00 AM - 2:00 PM",
+        "includes": "Official ordering page: Stir Fried Mix Vegetable Over Rice $15.95; several bento boxes $16.45-$16.95; House Special / Kung Pao Beef $17.95; shrimp/salmon boxes $18.45-$18.95."
+      },
+      "hours_tuesday": "11:00 AM - 2:00 PM, 5:00 PM - 8:30 PM (JSON-LD)",
+      "days_open": "Closed Monday; Tue-Thu 11:00-14:00 and 17:00-20:30; Fri-Sat 11:00-14:00 and 17:00-21:00; Sun 11:00-14:00 (JSON-LD)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Palo Alto El Camino, not on the Cupertino return path."
+      },
+      "verification": {
+        "level": "official",
+        "sources": [
+          {
+            "label": "Red Hot Wok Palo Alto official lunch menu with prices",
+            "url": "https://www.redhotwokpaloalto.com/uvs503m5/restaurant/order-online?menu=Lunch+Menu"
+          }
+        ],
+        "accessed": "2026-09-07"
+      },
+      "review_links": {
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Red+Hot+Wok+3345+El+Camino+Real+Palo+Alto"
+      },
+      "flags": [
+        "Different restaurant from Red Hot Wok Cupertino (L06). Header says Tue-Fri except holidays AND Available Monday-Friday - Monday is closed per JSON-LD. Phone (650) 565-8868."
+      ],
+      "distance_mi": 9.42,
+      "phone": "(650) 565-8868"
+    },
+    {
+      "id": "L43",
+      "name": "Inchin's Bamboo Garden",
+      "city": "Sunnyvale",
+      "area": "W Washington Ave",
+      "address": "151 W Washington Ave, Sunnyvale, CA 94086",
+      "coords": null,
+      "cuisine": "Indo-Chinese",
+      "lunch_special": {
+        "name": "Lunch specials (rice + entree; aggregator prices)",
+        "price_from": 10.0,
+        "price_to": 14.0,
+        "days": "not stated on the aggregator page",
+        "window": "not stated",
+        "includes": "allmenus.com lists Lunch Specials: Bowl $10, Box $11 with veggie spring roll, chicken $13, paneer/tofu $13, lamb/shrimp/fish $14. Uber Eats shows marked-up $18-$20 lunch lines - those delivery prices are NOT used."
+      },
+      "hours_tuesday": "not verified from the restaurant's own site in this pass",
+      "days_open": "not verified on official site",
+      "open_on_trip_date": null,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Downtown Sunnyvale; hours unverified."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {
+            "label": "allmenus lunch specials block (aggregator - not official)",
+            "url": "https://www.allmenus.com/ca/sunnyvale/698087-inchins-bamboo-garden/menu/"
+          },
+          {
+            "label": "Cityline Sunnyvale restaurant-week listing (address)",
+            "url": "https://www.citylinesunnyvale.com/restaurant-week"
+          }
+        ],
+        "accessed": "2026-09-07"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/search?find_desc=Inchin%27s+Bamboo+Garden&find_loc=Sunnyvale%2C+CA"
+      },
+      "flags": [
+        "Prices are aggregator, not inchins.com. Uber Eats lunch lines are higher and unused. Hours still need a phone check."
+      ],
+      "distance_mi": null
+    },
+    {
+      "id": "L44",
+      "name": "Tai Pan",
+      "city": "Palo Alto",
+      "area": "Waverley St downtown",
+      "address": "560 Waverley St, Palo Alto, CA 94301",
+      "coords": null,
+      "cuisine": "Chinese",
+      "lunch_special": {
+        "name": "Lunch service (no priced special found)",
+        "price_from": null,
+        "price_to": null,
+        "days": "daily (OpenTable)",
+        "window": "11:00 AM - 3:00 PM",
+        "includes": "OpenTable lists lunch daily 11:00-15:00. Official site taipanpaloalto.com was not fetched with a priced lunch block."
+      },
+      "hours_tuesday": "11:00 AM - 3:00 PM, 5:30 PM - 9:30 PM",
+      "days_open": "Lunch daily 11:00-15:00; dinner daily 17:30-21:30 (OpenTable)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Downtown Palo Alto."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {
+            "label": "OpenTable Tai Pan hours and address",
+            "url": "https://www.opentable.com/r/tai-pan-palo-alto"
+          }
+        ],
+        "accessed": "2026-09-07"
+      },
+      "review_links": {
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Tai+Pan+560+Waverley+St+Palo+Alto"
+      },
+      "flags": [
+        "No lunch price published in this pass."
+      ],
+      "distance_mi": null
+    },
+    {
+      "id": "L45",
+      "name": "Imperial Treasure",
+      "city": "Palo Alto",
+      "area": "California Ave",
+      "address": "151 California Ave, Ste E101, Palo Alto, CA 94306",
+      "coords": null,
+      "cuisine": "Chinese",
+      "lunch_special": {
+        "name": "Lunch service (no priced special found)",
+        "price_from": null,
+        "price_to": null,
+        "days": "daily (Yelp)",
+        "window": "11:00 AM - 3:00 PM",
+        "includes": "Yelp hours only. No lunch-special price captured."
+      },
+      "hours_tuesday": "11:00 AM - 3:00 PM, 5:00 PM - 9:30 PM",
+      "days_open": "Mon-Sat 11:00-15:00 and 17:00-21:30; Sun 11:00-15:00 and 17:00-21:00 (Yelp)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "California Ave, Palo Alto."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {
+            "label": "Yelp Imperial Treasure hours and address",
+            "url": "https://www.yelp.com/biz/imperial-treasure-palo-alto"
+          }
+        ],
+        "accessed": "2026-09-07"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/imperial-treasure-palo-alto"
+      },
+      "flags": [
+        "No lunch special price. Phone (650) 656-9597."
+      ],
+      "distance_mi": null,
+      "phone": "(650) 656-9597"
+    },
+    {
+      "id": "L46",
+      "name": "True Food Kitchen",
+      "city": "Palo Alto",
+      "area": "Stanford Shopping Center",
+      "address": "180 El Camino Real, Ste 1140, Palo Alto, CA 94304",
+      "coords": [
+        37.44392,
+        -122.17033
+      ],
+      "coords_source": "Tripadvisor JSON-LD",
+      "cuisine": "New American",
+      "lunch_special": {
+        "name": "No lunch special published - regular lunch menu",
+        "price_from": null,
+        "price_to": null,
+        "days": "n/a",
+        "window": "opens 11:00 AM Tuesday",
+        "includes": "Simon mall page and Yelp agree on Tuesday 11:00 AM-9:00 PM. No lunch-special price."
+      },
+      "hours_tuesday": "11:00 AM - 9:00 PM",
+      "days_open": "Mon-Thu 11:00-21:00, Fri 11:00-22:00, Sat 10:00-22:00, Sun 10:00-21:00 (Simon / Yelp)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Stanford Shopping Center."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {
+            "label": "Stanford Shopping Center store page - hours",
+            "url": "https://www.simon.com/mall/stanford-shopping-center/stores/true-food-kitchen"
+          },
+          {
+            "label": "Yelp hours",
+            "url": "https://www.yelp.com/biz/true-food-kitchen-palo-alto-2"
+          }
+        ],
+        "accessed": "2026-09-07"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/true-food-kitchen-palo-alto-2"
+      },
+      "flags": [
+        "No lunch special. Previously in rejected group R14; re-listed with verified hours."
+      ],
+      "distance_mi": 11.88,
+      "phone": "(650) 272-5157"
+    },
+    {
+      "id": "L47",
+      "name": "Thai Basil",
+      "city": "Sunnyvale",
+      "area": "S Murphy Ave downtown",
+      "address": "101 S Murphy Ave, Sunnyvale, CA 94086",
+      "coords": null,
+      "cuisine": "Thai",
+      "lunch_special": {
+        "name": "No current lunch special verified (Restaurant Week was May 31-June 7, not Sept 8)",
+        "price_from": null,
+        "price_to": null,
+        "days": "n/a for Sept 8",
+        "window": "unknown for Sept 8",
+        "includes": "Cityline listed Thai Basil for Sunnyvale Restaurant Week (ended June 7). That event menu is expired and is not a Tuesday Sept 8 special."
+      },
+      "hours_tuesday": "not verified from the restaurant site in this pass",
+      "days_open": "not verified",
+      "open_on_trip_date": null,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Downtown Sunnyvale; hours unverified."
+      },
+      "verification": {
+        "level": "unverified",
+        "sources": [
+          {
+            "label": "Cityline Restaurant Week listing (event dates May 31-June 7 only)",
+            "url": "https://www.citylinesunnyvale.com/restaurant-week"
+          }
+        ],
+        "accessed": "2026-09-07"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/search?find_desc=Thai+Basil&find_loc=Sunnyvale%2C+CA"
+      },
+      "flags": [
+        "Do not treat Restaurant Week as a Sept 8 deal. Kept so the expired event is visible."
+      ],
+      "distance_mi": null
     }
   ],
   "top_picks_for_tuesday_sept_8": [
