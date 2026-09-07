@@ -91,7 +91,7 @@
       stat(countVerified(D), 'transit rows marked official-live') +
       stat(D.specials.entries.length, 'lunch entries in the master list') +
       stat(countLevel(D, 'official'), 'lunch rows verified on the restaurant\'s own menu') +
-      stat(D.lunch_rejected.rejected.length, 'candidates searched and rejected, with reasons') +
+      stat(D.lunch_rejected.distinct_businesses_rejected || D.lunch_rejected.rejected.length, 'distinct businesses searched and rejected, with reasons') +
       '</div>' +
 
       '<h2>Cost, decided</h2>' +
@@ -286,7 +286,8 @@
       '<h3>Candidates that were searched and rejected, with reasons</h3>' +
       '<p class="tiny">A candidate only earns a row if a person can check it in one click. Prices seen only on delivery-app or menu-aggregator pages are left out of the price column, and any business whose "lunch special" turned out to belong to a different city (a Las Vegas special, a Chico restaurant listed as "Los Altos") is rejected here rather than carried forward.</p>' +
       '<div class="scrollpanel"><table class="grid-table"><thead><tr><th>#</th><th>Name</th><th>Area</th><th>Why it is not in the master list</th><th>Links</th></tr></thead><tbody>' +
-      D.lunch_rejected.rejected.map((r) => '<tr><td class="num">' + esc(r.id) + '</td><td class="strong">' + esc(r.name) + '</td><td>' + esc(r.city) + '</td>' +
+      D.lunch_rejected.rejected.map((r) => '<tr><td class="num">' + esc(r.id) + '</td><td class="strong">' + esc(r.name) +
+        (r.count > 1 ? '<div class="tiny">' + r.count + ' businesses, one reason</div>' : '') + '</td><td>' + esc(r.city) + '</td>' +
         '<td>' + esc(r.why) + (r.price_hint ? '<div class="tiny">price seen elsewhere: ' + esc(r.price_hint) + '</div>' : '') + (r.note ? '<div class="tiny">' + esc(r.note) + '</div>' : '') + '</td>' +
         '<td class="src">' + (r.links || []).map((l) => typeof l === 'string' ? link(l, l.replace(/^https?:\/\/(www\.)?/, '').slice(0, 46), 'srclink') : link(l.url, l.label, 'srclink')).join('') + '</td></tr>').join('') +
       '</tbody></table></div>' +

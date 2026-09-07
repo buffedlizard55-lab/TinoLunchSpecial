@@ -34,9 +34,9 @@ data/transit_outbound.json  3 outbound plans, leg by leg, with per-leg links
 data/transit_return.json    3 return plans + the last-workable-train cutoff
 data/fares.json             agency fare tables and six day-total scenarios
 data/lunch_specials.json    27 lunch entries, hours, days, prices, verification level
-data/lunch_rejected.json    26 candidates searched and rejected, with reasons
+data/lunch_rejected.json    24 rejected/deferred candidates (14 rows), each with a reason and a link
 data/flags.json             18 irregularities found while verifying - all still listed
-data/sources.json           25 source pages, what each one proved, and the fetch status
+data/sources.json           27 source pages, what each one proved, and the fetch status
 docs/VERIFICATION.md        how to re-check every row, and what could not be verified
 scripts/build_data.py       validates + rebuilds generated.js and summary.md
 scripts/check_links.py      every row must link to a citable https page
@@ -61,7 +61,7 @@ python3 -m http.server 8000       # preview at http://127.0.0.1:8000
 2. **Lunch:** a price is only printed if it appears on the restaurant's own website or published menu; hours may come from Yelp/Google/TripAdvisor. Anything seen only on a menu aggregator or delivery app is recorded as a lead and flagged, never presented as verified.
 3. **Absence is a result.** "No lunch special published" and "closed on Tuesdays" are rows of their own, so a gap in the data is visible instead of silently dropped.
 4. **Conflicts stay visible.** Where two sources disagree (Muni headway text vs timetable, OSM hours vs the restaurant's own site) both values are shown and the choice is explained in `data/flags.json`.
-5. **Nothing was backfilled by hand.** The 20-entry search requirement was met by 26 queries and 53 candidates; 27 survived into the master list and 26 were rejected with reasons.
+5. **Nothing was backfilled by hand.** The 20-entry search requirement was met by 28 queries over 51 candidates; 27 survived into the master list and 24 were rejected, each with a reason and a link (14 rows in `data/lunch_rejected.json`).
 
 ## Flagged irregularities (18)
 

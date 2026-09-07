@@ -2,23 +2,271 @@
   "purpose": "Line-by-line review log for candidates that were searched but NOT added to the master list. Recorded so nothing is silently dropped and so every rejection has a reason and a link.",
   "search_date": "2026-09-07",
   "rejected": [
-    {"name": "Yummee Sandwiches", "city": "Cupertino", "why": "Closure conflict - one Yelp page says the location has closed, another shows live Tue-Fri hours. Also only a review mentions a 'nice lunch special'.", "price_hint": "$6.99-ish sandwich lunch per a Yelp review (unusable until open/closed status is confirmed)", "links": [{"label": "Yelp page marked CLOSED", "url": "https://m.yelp.com/biz/yummee-sandwiches-cupertino-4?start=40"}, {"label": "Yelp page with live hours", "url": "https://www.yelp.com/biz/yummee-sandwiches-cupertino-2?start=40"}]},
-    {"name": "Los Altos Taqueria / Los Altos Mexican Grill (Goose Creek)", "city": "not Los Altos, CA", "why": "Wrong location: it has a genuinely published lunch special, 'Lunch Specials served 11AM to 3PM Monday - Friday, Muy Rapido Lunch $7.99', but the listing is in the Chico area of Northern California, 180 miles away.", "price_hint": "$7.99 (irrelevant here)", "links": [{"label": "official lunch menu page", "url": "https://losaltosmexicangrill.com/goose-creek-los-altos-taqueria-food-menu"}]},
-    {"name": "Los Altos Restaurant (Goleta / Salinas)", "city": "Santa Barbara / Monterey County", "why": "Name collision with Los Altos, CA.", "price_hint": "n/a", "links": [{"label": "Yelp - Goleta", "url": "https://www.yelp.com/biz/los-altos-restaurant-goleta"}]},
-    {"name": "Cap't Loui lunch special block ('$13.95, 11:30am-3pm Mon-Fri')", "city": "Las Vegas, NV", "why": "Wrong city. The lunch special text belongs to Cap't Loui Las Vegas; the Cupertino restaurant's own ordering menu has no lunch line. Kept out of the Cupertino row and recorded as LUNCH-FLAG-2.", "price_hint": "$13.95 (Las Vegas only)", "links": [{"label": "OpenTable - Cap't Loui Las Vegas menu", "url": "https://www.opentable.com/r/capt-loui-las-vegas"}, {"label": "Cap't Loui Cupertino ordering menu", "url": "https://postmates.com/store/capt-loui-cupertino/Ki7HCEL3W9m3ujsTF7Se2A"}]},
-    {"name": "Z & Y Restaurant / 'Z&Y Cafe'", "city": "San Francisco (Chinatown) - not Sunnyvale", "why": "Searched for the Sunnyvale-area Z&Y Cafe; every result pointed at the Michelin Bib Gourmand restaurant in San Francisco Chinatown, 50 miles away, whose OpenTable page does list 'Lunch Mon, Wed-Sun 11:30 am-3:00 pm'.", "price_hint": "n/a", "links": [{"label": "OpenTable - Z & Y Restaurant (SF)", "url": "https://www.opentable.com/z-and-y-restaurant"}]},
-    {"name": "Kiku Restaurant", "city": "Cupertino", "why": "A reviewer states plainly 'No lunch specials.' No address, hours or menu could be verified, so it earns a footnote here instead of a master row.", "price_hint": "none", "links": [{"label": "Yelp search listing that contains the quote", "url": "https://www.yelp.com/search?find_desc=Cheap+Lunch&find_loc=Cupertino%2C+CA"}]},
-    {"name": "Taiwan Porridge - Cupertino", "city": "Cupertino", "why": "Reviewer reports the lunch special was not available ('Sadly they didn't have the lunch special'); no published hours or price found.", "price_hint": "none", "links": [{"label": "Yelp search listing with the quote", "url": "https://www.yelp.com/search?find_desc=Lunch+Special&find_loc=Cupertino%2C+CA+95014"}]},
-    {"name": "Aqui Cal Mex", "city": "Cupertino", "why": "Official menu page has a rotating 'Daily special Plate' at $17.49 and entrees $10.99-$17.99, but nothing that is defined as a lunch special, and no lunch-day/hour condition is published. Excluded to keep the master list about lunch deals.", "price_hint": "$17.49 daily special plate; smaller eats from $10.99", "links": [{"label": "official Cupertino menu page", "url": "https://www.aquicalmex.com/cupertino-menu/"}]},
-    {"name": "The Old Spaghetti Factory", "city": "no Cupertino location found", "why": "The chain's lunch-combo reputation would have been a good row, but the only Bay Area result in this search radius was the San Jose location (51 N San Pedro St, about 12 mi), and OpenTable/Tripadvisor give dinner-style hours only. Excluded rather than guess an address.", "price_hint": "n/a", "links": [{"label": "Tripadvisor - Old Spaghetti Factory San Jose", "url": "https://www.tripadvisor.com/Restaurant_Review-g33020-d347407-Reviews-The_Old_Spaghetti_Factory-San_Jose_California.html"}]},
-    {"name": "Galpao Gaucho", "city": "Cupertino", "why": "Official page publishes 'Dinner and Weekends' pricing only (salad bar and hot sides $46.00, full experience $79.00) - no lunch offering, so it is not a lunch candidate.", "price_hint": "$46 / $79 dinner", "links": [{"label": "official Cupertino location page", "url": "https://galpaogauchousa.com/location/cupertino-ca/"}]},
-    {"name": "Tokyo Central", "city": "Cupertino", "why": "Grocery/food-court sushi boxes described as 'great to pick up for an inexpensive lunch', but there is no restaurant lunch special, no seat-time guarantee and no published price to verify. Good fallback, not a 'special'.", "price_hint": "premade sushi boxes (no price captured)", "links": [{"label": "Yelp search listing with the quote", "url": "https://www.yelp.com/search?find_desc=Cheap+Lunch&find_loc=Cupertino%2C+CA"}]},
-    {"name": "Little Sky Kitchen", "city": "Palo Alto", "why": "A reviewer says they go 'in at lunch for one of their lunch specials', but no hours, address or price was captured in this pass; it needs a verification round before it can be a master row.", "price_hint": "none captured", "links": [{"label": "Yelp search result containing the quote", "url": "https://www.yelp.com/search?find_desc=Lunch&find_near=stanford-shopping-center-palo-alto"}]},
-    {"name": "Sizzling Lunch 3PO location", "city": "Cupertino (3prong/De Anza area)", "why": "The same brand's second menu block shows slightly different prices (e.g. Cheese French Fries $9.50 vs $9.00, Rice $3.50 vs $3.00), so per-location pricing must be confirmed; the Cupertino row keeps the primary menu only.", "price_hint": "entrees $16.50-$18.00 (no lunch special at either)", "links": [{"label": "official menu page (both blocks)", "url": "https://www.toasttab.com/local/order/sizzlinglunch-cupertino"}]},
-    {"name": "Dish N Dash, Eureka!, Bloom, Marufuku Ramen, Nick the Greek, Pineapple Thai, Special Noodle Soup, Omee J 2, CRUST, Sweet Maple, True Food Kitchen", "city": "Cupertino / Sunnyvale / Campbell / Palo Alto / Los Altos", "why": "Surfaced in the 'lunch' searches as good lunch spots but with no lunch special claimed by the restaurant and no review text describing a deal, so there was nothing to verify line by line.", "price_hint": "n/a", "links": [{"label": "Yelp Cupertino lunch search (the source list)", "url": "https://www.yelp.com/search?find_desc=Lunch&find_loc=Cupertino%2C+CA+95014"}, {"label": "Yelp Campbell lunch search", "url": "https://www.yelp.com/search?find_desc=Lunch&find_loc=Campbell%2C+CA+95008"}]}
+    {
+      "id": "R01",
+      "count": 1,
+      "names": [
+        "Yummee Sandwiches"
+      ],
+      "name": "Yummee Sandwiches",
+      "city": "Cupertino",
+      "why": "Closure conflict - one Yelp page says the location has closed, another shows live Tue-Fri hours. Also only a review mentions a 'nice lunch special'.",
+      "price_hint": "$6.99-ish sandwich lunch per a Yelp review (unusable until open/closed status is confirmed)",
+      "links": [
+        {
+          "label": "Yelp page marked CLOSED",
+          "url": "https://m.yelp.com/biz/yummee-sandwiches-cupertino-4?start=40"
+        },
+        {
+          "label": "Yelp page with live hours",
+          "url": "https://www.yelp.com/biz/yummee-sandwiches-cupertino-2?start=40"
+        }
+      ]
+    },
+    {
+      "id": "R02",
+      "count": 1,
+      "names": [
+        "Los Altos Taqueria / Los Altos Mexican Grill (Goose Creek)"
+      ],
+      "name": "Los Altos Taqueria / Los Altos Mexican Grill (Goose Creek)",
+      "city": "not Los Altos, CA",
+      "why": "Wrong location: it has a genuinely published lunch special, 'Lunch Specials served 11AM to 3PM Monday - Friday, Muy Rapido Lunch $7.99', but the listing is in the Chico area of Northern California, 180 miles away.",
+      "price_hint": "$7.99 (irrelevant here)",
+      "links": [
+        {
+          "label": "official lunch menu page",
+          "url": "https://losaltosmexicangrill.com/goose-creek-los-altos-taqueria-food-menu"
+        }
+      ]
+    },
+    {
+      "id": "R03",
+      "count": 1,
+      "names": [
+        "Los Altos Restaurant (Goleta / Salinas)"
+      ],
+      "name": "Los Altos Restaurant (Goleta / Salinas)",
+      "city": "Santa Barbara / Monterey County",
+      "why": "Name collision with Los Altos, CA.",
+      "price_hint": "n/a",
+      "links": [
+        {
+          "label": "Yelp - Goleta",
+          "url": "https://www.yelp.com/biz/los-altos-restaurant-goleta"
+        }
+      ]
+    },
+    {
+      "id": "R04",
+      "count": 1,
+      "names": [
+        "Cap't Loui lunch special block ('$13.95, 11:30am-3pm Mon-Fri')"
+      ],
+      "name": "Cap't Loui lunch special block ('$13.95, 11:30am-3pm Mon-Fri')",
+      "city": "Las Vegas, NV",
+      "why": "Wrong city. The lunch special text belongs to Cap't Loui Las Vegas; the Cupertino restaurant's own ordering menu has no lunch line. Kept out of the Cupertino row and recorded as LUNCH-FLAG-2.",
+      "price_hint": "$13.95 (Las Vegas only)",
+      "links": [
+        {
+          "label": "OpenTable - Cap't Loui Las Vegas menu",
+          "url": "https://www.opentable.com/r/capt-loui-las-vegas"
+        },
+        {
+          "label": "Cap't Loui Cupertino ordering menu",
+          "url": "https://postmates.com/store/capt-loui-cupertino/Ki7HCEL3W9m3ujsTF7Se2A"
+        }
+      ]
+    },
+    {
+      "id": "R05",
+      "count": 1,
+      "names": [
+        "Z & Y Restaurant / 'Z&Y Cafe'"
+      ],
+      "name": "Z & Y Restaurant / 'Z&Y Cafe'",
+      "city": "San Francisco (Chinatown) - not Sunnyvale",
+      "why": "Searched for the Sunnyvale-area Z&Y Cafe; every result pointed at the Michelin Bib Gourmand restaurant in San Francisco Chinatown, 50 miles away, whose OpenTable page does list 'Lunch Mon, Wed-Sun 11:30 am-3:00 pm'.",
+      "price_hint": "n/a",
+      "links": [
+        {
+          "label": "OpenTable - Z & Y Restaurant (SF)",
+          "url": "https://www.opentable.com/z-and-y-restaurant"
+        }
+      ]
+    },
+    {
+      "id": "R06",
+      "count": 1,
+      "names": [
+        "Kiku Restaurant"
+      ],
+      "name": "Kiku Restaurant",
+      "city": "Cupertino",
+      "why": "A reviewer states plainly 'No lunch specials.' No address, hours or menu could be verified, so it earns a footnote here instead of a master row.",
+      "price_hint": "none",
+      "links": [
+        {
+          "label": "Yelp search listing that contains the quote",
+          "url": "https://www.yelp.com/search?find_desc=Cheap+Lunch&find_loc=Cupertino%2C+CA"
+        }
+      ]
+    },
+    {
+      "id": "R07",
+      "count": 1,
+      "names": [
+        "Taiwan Porridge - Cupertino"
+      ],
+      "name": "Taiwan Porridge - Cupertino",
+      "city": "Cupertino",
+      "why": "Reviewer reports the lunch special was not available ('Sadly they didn't have the lunch special'); no published hours or price found.",
+      "price_hint": "none",
+      "links": [
+        {
+          "label": "Yelp search listing with the quote",
+          "url": "https://www.yelp.com/search?find_desc=Lunch+Special&find_loc=Cupertino%2C+CA+95014"
+        }
+      ]
+    },
+    {
+      "id": "R08",
+      "count": 1,
+      "names": [
+        "Aqui Cal Mex"
+      ],
+      "name": "Aqui Cal Mex",
+      "city": "Cupertino",
+      "why": "Official menu page has a rotating 'Daily special Plate' at $17.49 and entrees $10.99-$17.99, but nothing that is defined as a lunch special, and no lunch-day/hour condition is published. Excluded to keep the master list about lunch deals.",
+      "price_hint": "$17.49 daily special plate; smaller eats from $10.99",
+      "links": [
+        {
+          "label": "official Cupertino menu page",
+          "url": "https://www.aquicalmex.com/cupertino-menu/"
+        }
+      ]
+    },
+    {
+      "id": "R09",
+      "count": 1,
+      "names": [
+        "The Old Spaghetti Factory"
+      ],
+      "name": "The Old Spaghetti Factory",
+      "city": "no Cupertino location found",
+      "why": "The chain's lunch-combo reputation would have been a good row, but the only Bay Area result in this search radius was the San Jose location (51 N San Pedro St, about 12 mi), and OpenTable/Tripadvisor give dinner-style hours only. Excluded rather than guess an address.",
+      "price_hint": "n/a",
+      "links": [
+        {
+          "label": "Tripadvisor - Old Spaghetti Factory San Jose",
+          "url": "https://www.tripadvisor.com/Restaurant_Review-g33020-d347407-Reviews-The_Old_Spaghetti_Factory-San_Jose_California.html"
+        }
+      ]
+    },
+    {
+      "id": "R10",
+      "count": 1,
+      "names": [
+        "Galpao Gaucho"
+      ],
+      "name": "Galpao Gaucho",
+      "city": "Cupertino",
+      "why": "Official page publishes 'Dinner and Weekends' pricing only (salad bar and hot sides $46.00, full experience $79.00) - no lunch offering, so it is not a lunch candidate.",
+      "price_hint": "$46 / $79 dinner",
+      "links": [
+        {
+          "label": "official Cupertino location page",
+          "url": "https://galpaogauchousa.com/location/cupertino-ca/"
+        }
+      ]
+    },
+    {
+      "id": "R11",
+      "count": 1,
+      "names": [
+        "Tokyo Central"
+      ],
+      "name": "Tokyo Central",
+      "city": "Cupertino",
+      "why": "Grocery/food-court sushi boxes described as 'great to pick up for an inexpensive lunch', but there is no restaurant lunch special, no seat-time guarantee and no published price to verify. Good fallback, not a 'special'.",
+      "price_hint": "premade sushi boxes (no price captured)",
+      "links": [
+        {
+          "label": "Yelp search listing with the quote",
+          "url": "https://www.yelp.com/search?find_desc=Cheap+Lunch&find_loc=Cupertino%2C+CA"
+        }
+      ]
+    },
+    {
+      "id": "R12",
+      "count": 1,
+      "names": [
+        "Little Sky Kitchen"
+      ],
+      "name": "Little Sky Kitchen",
+      "city": "Palo Alto",
+      "why": "A reviewer says they go 'in at lunch for one of their lunch specials', but no hours, address or price was captured in this pass; it needs a verification round before it can be a master row.",
+      "price_hint": "none captured",
+      "links": [
+        {
+          "label": "Yelp search result containing the quote",
+          "url": "https://www.yelp.com/search?find_desc=Lunch&find_near=stanford-shopping-center-palo-alto"
+        }
+      ]
+    },
+    {
+      "id": "R13",
+      "count": 1,
+      "names": [
+        "Sizzling Lunch 3PO location"
+      ],
+      "name": "Sizzling Lunch 3PO location",
+      "city": "Cupertino (3prong/De Anza area)",
+      "why": "The same brand's second menu block shows slightly different prices (e.g. Cheese French Fries $9.50 vs $9.00, Rice $3.50 vs $3.00), so per-location pricing must be confirmed; the Cupertino row keeps the primary menu only.",
+      "price_hint": "entrees $16.50-$18.00 (no lunch special at either)",
+      "links": [
+        {
+          "label": "official menu page (both blocks)",
+          "url": "https://www.toasttab.com/local/order/sizzlinglunch-cupertino"
+        }
+      ]
+    },
+    {
+      "id": "R14",
+      "count": 11,
+      "names": [
+        "Dish N Dash",
+        "Eureka!",
+        "Bloom",
+        "Marufuku Ramen",
+        "Nick the Greek",
+        "Pineapple Thai",
+        "Special Noodle Soup",
+        "Omee J 2",
+        "CRUST",
+        "Sweet Maple",
+        "True Food Kitchen"
+      ],
+      "name": "Dish N Dash, Eureka!, Bloom, Marufuku Ramen, Nick the Greek, Pineapple Thai, Special Noodle Soup, Omee J 2, CRUST, Sweet Maple, True Food Kitchen",
+      "city": "Cupertino / Sunnyvale / Campbell / Palo Alto / Los Altos",
+      "why": "Surfaced in the 'lunch' searches as good lunch spots but with no lunch special claimed by the restaurant and no review text describing a deal, so there was nothing to verify line by line.",
+      "price_hint": "n/a",
+      "links": [
+        {
+          "label": "Yelp Cupertino lunch search (the source list)",
+          "url": "https://www.yelp.com/search?find_desc=Lunch&find_loc=Cupertino%2C+CA+95014"
+        },
+        {
+          "label": "Yelp Campbell lunch search",
+          "url": "https://www.yelp.com/search?find_desc=Lunch&find_loc=Campbell%2C+CA+95008"
+        }
+      ]
+    }
   ],
   "notes": [
     "Reddit was searched for Cupertino / Sunnyvale / Los Gatos lunch specials and returned only threads about other cities, so no Reddit citation is used (see LUNCH-FLAG-8).",
     "Every rejection above is a source-of-truth decision, not a judgement about the food. Anything here can be promoted into the master list as soon as hours, days and a price are confirmed."
-  ]
+  ],
+  "distinct_businesses_rejected": 24,
+  "note": "14 rows covering 24 distinct businesses; one row groups the 1 near-miss candidates that were surfaced by the same query and rejected for the same reason (no published lunch special found in this pass)."
 }

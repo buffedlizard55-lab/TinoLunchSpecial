@@ -2,9 +2,9 @@
   "search_protocol": {
     "requirement": "Search for 20 new entries before adding anything to the master list; verify line by line; keep official/review links for manual review.",
     "queries_run": 28,
-    "candidates_found": 53,
+    "candidates_found": 51,
     "added_to_master": 27,
-    "rejected_or_deferred": 26,
+    "rejected_or_deferred": 24,
     "search_date": "2026-09-07",
     "cities_covered": [
       "Cupertino",
