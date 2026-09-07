@@ -1,0 +1,610 @@
+{
+ "note": "Batch 1 - researched 2026-09-07. Cupertino, Santa Clara, Los Altos. Prices only where a page actually showed them; everything else is marked not captured or published-as-none.",
+ "entries": [
+  {
+   "name": "Lazy Dog Restaurant & Bar",
+   "city": "Cupertino",
+   "area": "Stevens Creek Blvd (Vallco / I-280 side)",
+   "address": "19359 Stevens Creek Blvd, Cupertino, CA 95014",
+   "coords": [37.32326, -122.00854],
+   "coords_source": "Tripadvisor listing JSON-LD",
+   "cuisine": "American, burgers, comfort food",
+   "phone": "(408) 359-4690",
+   "lunch_special": {
+    "name": "Lunch Specials - specials starting at $8.95, 'til 4pm daily",
+    "price_from": 8.95,
+    "price_to": 13.95,
+    "days": "daily",
+    "window": "until 4:00 PM, daily",
+    "includes": "Specials starting at $8.95; the published Cupertino lunch items include the Quarter-Pound All-American Burger at $13.95 with fries"
+   },
+   "hours_tuesday": "11:00 AM - 12:00 AM",
+   "days_open": "Mon-Fri 11:00 AM - 12:00 AM, Sat-Sun 10:00 AM - 12:00 AM (Yelp)",
+   "open_on_trip_date": true,
+   "fits_return_bus": {"ok": "tight", "note": "About 1.4 mi from 20387 Gillick Way - a 25-30 min walk, so you would have to leave the table by about 11:15 AM to make the 11:50 AM departure on foot."},
+   "verification": {
+    "level": "official",
+    "sources": [
+     {"label": "Lazy Dog Cupertino official ordering page - 'Lunch Specials: Specials starting at $8.95 'til 4pm daily'", "url": "https://orders.lazydogrestaurants.com/order/cupertino"},
+     {"label": "Yelp - Lazy Dog Cupertino address, phone and full week hours", "url": "https://www.yelp.com/biz/lazy-dog-restaurant-and-bar-cupertino"},
+     {"label": "Tripadvisor listing JSON-LD - coordinates and Tuesday 11:00 AM - 12:00 AM", "url": "https://www.tripadvisor.com/Restaurant_Review-g32273-d8833785-Reviews-Lazy_Dog_Restaurant_Bar-Cupertino_California.html"}
+    ],
+    "accessed": "2026-09-07"
+   },
+   "review_links": {
+    "yelp": "https://www.yelp.com/biz/lazy-dog-restaurant-and-bar-cupertino",
+    "google_maps": "https://www.google.com/maps/search/?api=1&query=Lazy+Dog+Restaurant+19359+Stevens+Creek+Blvd+Cupertino"
+   },
+   "flags": [
+    "Monday hours conflict: Yelp says 11:00 AM opening, Tripadvisor says 10:00 AM. Tuesday agrees at 11:00 AM on both, so the trip day is unaffected.",
+    "Chain restaurant: the lunch-special board is published on the Cupertino ordering page, not a printed PDF."
+   ]
+  },
+  {
+   "name": "Haidilao Hot Pot Cupertino",
+   "city": "Cupertino",
+   "area": "Stevens Creek Blvd (Cupertino Village area)",
+   "address": "19409 Stevens Creek Blvd Ste 100, Cupertino, CA 95014",
+   "coords": [37.323785, -122.009201],
+   "coords_source": "restaurantguru listing JSON-LD",
+   "cuisine": "Chinese hot pot",
+   "phone": "(669) 230-3117",
+   "lunch_special": {
+    "name": "Lunch set - entree, rice, broth and sauce (review-reported)",
+    "price_from": 18.99,
+    "price_to": null,
+    "days": "weekday lunch (per Reddit post)",
+    "window": "lunch (exact window not published on the pages read)",
+    "includes": "Entree, rice, broth and sauce bar per the Reddit post; the restaurant's own page was not captured with a lunch price"
+   },
+   "hours_tuesday": "11:30 AM - 12:00 AM (Yelp) vs 11:30 AM - 1:00 AM (restaurantguru)",
+   "days_open": "Mon-Thu 11:30 AM - 12:00 AM, Fri-Sun 11:00 AM - 12:00 AM (Yelp)",
+   "open_on_trip_date": true,
+   "fits_return_bus": {"ok": "tight", "note": "About 1.4 mi from the destination - 25-30 min walk back; hot pot is also a slow lunch, so it does not fit the 11:50 AM departure."},
+   "verification": {
+    "level": "review",
+    "sources": [
+     {"label": "Reddit r/Cupertino 'HotPot Discounts?' - Haidilao lunch 18.99 with entree, rice, broth, sauce", "url": "https://www.reddit.com/r/Cupertino/comments/1f9bixv/hotpot_discounts/"},
+     {"label": "Yelp - Haidilao Cupertino address, phone and week hours", "url": "https://www.yelp.com/biz/haidilao-hot-pot-cupertino-4"},
+     {"label": "restaurantguru - Haidilao Cupertino address, coordinates and week hours", "url": "https://restaurantguru.com/Haidilao-Hotpot-%E6%B5%B7%E5%BA%95%E6%8D%9E%E7%81%AB%E9%94%85-Cupertino-3"}
+    ],
+    "accessed": "2026-09-07"
+   },
+   "review_links": {
+    "yelp": "https://www.yelp.com/biz/haidilao-hot-pot-cupertino-4",
+    "google_maps": "https://www.google.com/maps/search/?api=1&query=Haidilao+Hot+Pot+19409+Stevens+Creek+Blvd+Cupertino"
+   },
+   "flags": [
+    "PRICE IS A REVIEW FIGURE, NOT A MENU PRICE: the $18.99 lunch set comes from a Sept 2024 Reddit post, so the price may have changed. Confirm on the day.",
+    "Closing time conflict: Yelp 12:00 AM vs restaurantguru 1:00 AM. Both agree the restaurant opens at 11:30 AM Tuesday."
+   ]
+  },
+  {
+   "name": "Local Kitchens - Cupertino",
+   "city": "Cupertino",
+   "area": "Stevens Creek Blvd",
+   "address": "21666 Stevens Creek Blvd, Cupertino, CA 95014",
+   "coords": [37.3215, -122.0146],
+   "coords_source": "approximate - Stevens Creek Blvd block, not a captured geocode",
+   "cuisine": "Multi-brand food hall (burgers, tacos, chicken)",
+   "lunch_special": {
+    "name": "Lunch Specials - burger, chicken sandwich or taco combo with a side and a drink",
+    "price_from": 13.0,
+    "price_to": 17.5,
+    "days": "lunch (days not stated on the ordering page)",
+    "window": "lunch service on the ordering page",
+    "includes": "Comes with a drink and your choice of fries or potato chips: Fried Chicken Sandwich $13.00, 2 Taco Lunch Special $13.00, SOB Burger $13.50, Spicy Chicken Sandwich $14.00, Hot SOB Burger $14.50, 2 Caramelo $16.00, Overachieving SOB Burger $17.50"
+   },
+   "hours_tuesday": "not captured",
+   "days_open": "not captured",
+   "open_on_trip_date": null,
+   "fits_return_bus": {"ok": false, "note": "About 1 mi from the destination but opening hours were not captured, so it cannot be scheduled for the 11:50 AM departure."},
+   "verification": {
+    "level": "official",
+    "sources": [
+     {"label": "Local Kitchens Cupertino official ordering page - full Lunch Specials list with prices", "url": "https://localkitchens.toast.site/order/local-kitchens-cupertino"}
+    ],
+    "accessed": "2026-09-07"
+   },
+   "review_links": {"google_maps": "https://www.google.com/maps/search/?api=1&query=Local+Kitchens+21666+Stevens+Creek+Blvd+Cupertino"},
+   "flags": [
+    "Hours not published on the ordering page and not captured from a directory in this pass - call before relying on it.",
+    "Days of the week for the lunch special are not stated on the ordering page."
+   ]
+  },
+  {
+   "name": "Marugame Udon Cupertino",
+   "city": "Cupertino",
+   "area": "Stevens Creek Blvd (Main Street Cupertino)",
+   "address": "20682 Stevens Creek Blvd, Cupertino, CA 95014",
+   "coords": [37.3211, -122.0216],
+   "coords_source": "approximate - Stevens Creek Blvd block, not a captured geocode",
+   "cuisine": "Japanese udon and tempura",
+   "phone": "(408) 685-0350",
+   "lunch_special": {
+    "name": "No lunch special published - a la carte udon bowls",
+    "price_from": null,
+    "price_to": null,
+    "days": "n/a",
+    "window": "n/a",
+    "includes": "No lunch special was found on the pages read. Popular dishes on Yelp: Chicken Katsu Curry $18.89, Bolognese Rice Bowl $16.13, Potato Croquette $3.90, Tamagoyaki $4.40."
+   },
+   "hours_tuesday": "11:00 AM - 9:00 PM",
+   "days_open": "Mon-Tue 11:00 AM - 9:00 PM, Wed-Fri 11:00 AM - 10:00 PM, Sat-Sun 10:30 AM - 10:00 PM (Yelp)",
+   "open_on_trip_date": true,
+   "fits_return_bus": {"ok": "tight", "note": "About 1 mi from the destination, roughly a 20 min walk, and it is a fast-counter lunch - feasible if you eat by 11:20 AM."},
+   "verification": {
+    "level": "listing",
+    "sources": [
+     {"label": "Yelp - Marugame Udon Cupertino address, phone, week hours and popular dish prices", "url": "https://www.yelp.com/biz/marugame-udon-cupertino-3"}
+    ],
+    "accessed": "2026-09-07"
+   },
+   "review_links": {
+    "yelp": "https://www.yelp.com/biz/marugame-udon-cupertino-3",
+    "google_maps": "https://www.google.com/maps/search/?api=1&query=Marugame+Udon+20682+Stevens+Creek+Blvd+Cupertino"
+   },
+   "flags": [
+    "No lunch special is published; the row is here because it is a fast, cheap lunch inside the Cupertino walk radius.",
+    "Delivery-app prices were seen (DoorDash) and were deliberately NOT used - only Yelp-listed dish prices are quoted."
+   ]
+  },
+  {
+   "name": "Gochi - Cupertino",
+   "city": "Cupertino",
+   "area": "E Homestead Rd",
+   "address": "19980 E Homestead Rd, Cupertino, CA 95014",
+   "coords": [37.3146, -122.0409],
+   "coords_source": "approximate - E Homestead Rd block, not a captured geocode",
+   "cuisine": "Japanese izakaya / tapas",
+   "phone": "(408) 725-0542",
+   "lunch_special": {
+    "name": "No lunch special published - short 2-hour lunch service",
+    "price_from": null,
+    "price_to": null,
+    "days": "Tue-Sat lunch",
+    "window": "11:15 AM - 1:15 PM",
+    "includes": "No priced lunch special found. Lunch is a two-hour service; dinner 5:30/6:00 PM - 8:30/9:00 PM."
+   },
+   "hours_tuesday": "11:15 AM - 1:15 PM, 6:00 PM - 8:30 PM",
+   "days_open": "Mon closed; Tue-Sat 11:15 AM - 1:15 PM and 5:30/6:00 PM - 8:30/9:00 PM; Sun 5:30 PM - 8:30 PM (Yelp)",
+   "open_on_trip_date": true,
+   "fits_return_bus": {"ok": "tight", "note": "About 1.2 mi from the destination - a 25 min walk - and the lunch window closes at 1:15 PM, so it only works as an early lunch with a ride back."},
+   "verification": {
+    "level": "listing",
+    "sources": [
+     {"label": "Yelp - Gochi Cupertino address, phone and the Tue-Sat 11:15 AM - 1:15 PM lunch window", "url": "https://www.yelp.com/biz/gochi-cupertino-cupertino"}
+    ],
+    "accessed": "2026-09-07"
+   },
+   "review_links": {
+    "yelp": "https://www.yelp.com/biz/gochi-cupertino-cupertino",
+    "google_maps": "https://www.google.com/maps/search/?api=1&query=Gochi+19980+E+Homestead+Rd+Cupertino"
+   },
+   "flags": [
+    "Yelp shows recent special-hours closures (Sun Sep 6 2026 closed), so the posted hours move around - call ahead.",
+    "Closed Mondays; open Tuesday."
+   ]
+  },
+  {
+   "name": "XPP Claypot (XiaoPoPo)",
+   "city": "Cupertino",
+   "area": "Stevens Creek Blvd",
+   "address": "20950 Stevens Creek Blvd, Cupertino, CA 95014",
+   "coords": [37.3208, -122.0189],
+   "coords_source": "approximate - Stevens Creek Blvd block, not a captured geocode",
+   "cuisine": "Sichuan clay pot",
+   "phone": "(408) 703-3247",
+   "lunch_special": {
+    "name": "No lunch special published - a la carte Sichuan clay pots",
+    "price_from": null,
+    "price_to": null,
+    "days": "Tue-Sun",
+    "window": "11:00 AM - 2:30 PM lunch service",
+    "includes": "No priced lunch special found on the pages read."
+   },
+   "hours_tuesday": "11:00 AM - 2:30 PM, 5:00 PM - 9:00 PM",
+   "days_open": "Mon closed; Tue-Sun 11:00 AM - 2:30 PM and 5:00 PM - 9:00 PM (Yelp)",
+   "open_on_trip_date": true,
+   "fits_return_bus": {"ok": "tight", "note": "About 1 mi from the destination; lunch runs to 2:30 PM, which is well past the 11:50 AM departure - only works as a quick early lunch."},
+   "verification": {
+    "level": "listing",
+    "sources": [
+     {"label": "Yelp - XPP Claypot address, phone and hours", "url": "https://www.yelp.com/biz/xpp-claypot-cupertino"}
+    ],
+    "accessed": "2026-09-07"
+   },
+   "review_links": {
+    "yelp": "https://www.yelp.com/biz/xpp-claypot-cupertino",
+    "google_maps": "https://www.google.com/maps/search/?api=1&query=XPP+Claypot+20950+Stevens+Creek+Blvd+Cupertino"
+   },
+   "flags": ["Closed Mondays; open Tuesday. New business (23-108 reviews at capture)."]
+  },
+  {
+   "name": "Mian Sichuan Noodles & Dumplings",
+   "city": "Cupertino",
+   "area": "Main Street Cupertino, Stevens Creek Blvd",
+   "address": "19389 Stevens Creek Blvd, Cupertino, CA 95014",
+   "coords": [37.323, -122.0095],
+   "coords_source": "approximate - Stevens Creek Blvd block, not a captured geocode",
+   "cuisine": "Szechuan noodles and dumplings",
+   "phone": "(650) 308-4364",
+   "lunch_special": {
+    "name": "No lunch special published - a la carte noodles and dumplings",
+    "price_from": null,
+    "price_to": null,
+    "days": "Mon-Sun",
+    "window": "11:00 AM - 2:30 PM lunch service",
+    "includes": "No priced lunch special found."
+   },
+   "hours_tuesday": "11:00 AM - 2:30 PM, 5:00 PM - 9:00 PM",
+   "days_open": "Mon-Thu 11:00 AM - 2:30 PM, 5:00 PM - 9:00 PM; Fri 11:00 AM - 2:30 PM, 5:00 PM - 9:30 PM; Sat 11:00 AM - 3:00 PM, 4:30 PM - 9:30 PM; Sun 11:00 AM - 3:00 PM, 4:30 PM - 8:30 PM (Yelp)",
+   "open_on_trip_date": true,
+   "fits_return_bus": {"ok": "tight", "note": "About 1.4 mi from 20387 Gillick Way - 25-30 min walk; lunch closes 2:30 PM."},
+   "verification": {
+    "level": "listing",
+    "sources": [
+     {"label": "Yelp - Mian Sichuan Noodles & Dumplings address, phone and hours", "url": "https://www.yelp.com/biz/mian-sichuan-noodles-and-dumplings-cupertino"},
+     {"label": "restaurantji - Mian Sichuan Noodles structured weekly hours", "url": "https://www.restaurantji.com/ca/cupertino/mian-sichuan-noodles-cupertino-zi-wei-xiao-mian-/"}
+    ],
+    "accessed": "2026-09-07"
+   },
+   "review_links": {
+    "yelp": "https://www.yelp.com/biz/mian-sichuan-noodles-and-dumplings-cupertino",
+    "google_maps": "https://www.google.com/maps/search/?api=1&query=Mian+Sichuan+Noodles+19389+Stevens+Creek+Blvd+Cupertino"
+   },
+   "flags": ["Yelp showed a 'special hours' entry for a recent Thursday, so hours are not perfectly stable."]
+  },
+  {
+   "name": "Pineapple Thai",
+   "city": "Cupertino",
+   "area": "Stevens Creek Blvd",
+   "address": "19369 Stevens Creek Blvd Ste 120, Cupertino, CA 95014",
+   "coords": [37.323, -122.0097],
+   "coords_source": "approximate - Stevens Creek Blvd block, not a captured geocode",
+   "cuisine": "Thai",
+   "phone": "(669) 240-5556",
+   "lunch_special": {
+    "name": "No lunch special published - a la carte Thai",
+    "price_from": null,
+    "price_to": null,
+    "days": "Mon-Sun",
+    "window": "11:00 AM - 2:30 PM lunch service",
+    "includes": "No priced lunch special found on the pages read."
+   },
+   "hours_tuesday": "11:00 AM - 2:30 PM, 4:00 PM - 9:00 PM",
+   "days_open": "Mon-Thu 11:00 AM - 2:30 PM, 4:00 PM - 9:00 PM; Fri 11:00 AM - 2:30 PM, 4:00 PM - 9:30 PM; Sat 11:00 AM - 3:00 PM, 4:00 PM - 9:30 PM; Sun 11:00 AM - 3:00 PM, 4:00 PM - 9:00 PM (restaurantji + Yelp)",
+   "open_on_trip_date": true,
+   "fits_return_bus": {"ok": "tight", "note": "About 1.4 mi from the destination; the 11:00 AM - 2:30 PM lunch service is far longer than the window before the 11:50 AM departure."},
+   "verification": {
+    "level": "listing",
+    "sources": [
+     {"label": "restaurantji - Pineapple Thai address, phone and structured weekly hours", "url": "https://www.restaurantji.com/ca/cupertino/pineapple-thai-/"},
+     {"label": "Yelp - Pineapple Thai address, phone and hours", "url": "https://www.yelp.com/biz/pineapple-thai-cupertino"}
+    ],
+    "accessed": "2026-09-07"
+   },
+   "review_links": {
+    "yelp": "https://www.yelp.com/biz/pineapple-thai-cupertino",
+    "google_maps": "https://www.google.com/maps/search/?api=1&query=Pineapple+Thai+19369+Stevens+Creek+Blvd+Cupertino"
+   },
+   "flags": ["No lunch special published on the pages read - the row records the lunch service window only."]
+  },
+  {
+   "name": "Tofu Plus Korean BBQ",
+   "city": "Cupertino",
+   "area": "N Wolfe Rd (Cupertino Village, across from Apple Park)",
+   "address": "10971 N Wolfe Rd, Cupertino, CA 95014",
+   "coords": [37.3313, -122.0103],
+   "coords_source": "approximate - N Wolfe Rd block, not a captured geocode",
+   "cuisine": "Korean BBQ and soon tofu",
+   "phone": "(408) 777-0900",
+   "lunch_special": {
+    "name": "No lunch special published - a la carte Korean BBQ and tofu soup",
+    "price_from": null,
+    "price_to": null,
+    "days": "Mon-Sun",
+    "window": "opens 11:00 AM",
+    "includes": "No priced lunch special found. A Yelp review describes the large banchan spread and recommends arriving 11:00 AM to beat the noon line."
+   },
+   "hours_tuesday": "11:00 AM - 7:45 PM",
+   "days_open": "Mon-Thu 11:00 AM - 7:45 PM; Fri-Sat 11:00 AM - 8:00 PM; Sun 11:00 AM - 8:40 PM (Yelp)",
+   "open_on_trip_date": true,
+   "fits_return_bus": {"ok": false, "note": "About 1.7 mi north of the destination with no direct bus back to Gillick Way - it does not fit the 11:50 AM departure."},
+   "verification": {
+    "level": "listing",
+    "sources": [
+     {"label": "Yelp - Tofu Plus address, phone and hours", "url": "https://www.yelp.com/biz/tofu-plus-cupertino"},
+     {"label": "restaurantjump - Tofu Plus hours and reviews", "url": "https://restaurantjump.com/tofu-plus-korean-bbq-95014/"}
+    ],
+    "accessed": "2026-09-07"
+   },
+   "review_links": {
+    "yelp": "https://www.yelp.com/biz/tofu-plus-cupertino",
+    "google_maps": "https://www.google.com/maps/search/?api=1&query=Tofu+Plus+10971+N+Wolfe+Rd+Cupertino"
+   },
+   "flags": ["No lunch special published; reviews warn of a line forming around noon."]
+  },
+  {
+   "name": "BJ's Restaurant & Brewhouse",
+   "city": "Cupertino",
+   "area": "N De Anza Blvd",
+   "address": "10690 N De Anza Blvd, Cupertino, CA 95014",
+   "coords": [37.3242, -122.0322],
+   "coords_source": "approximate - N De Anza Blvd block, not a captured geocode",
+   "cuisine": "American, pizza, brewpub",
+   "phone": "(408) 865-6970",
+   "lunch_special": {
+    "name": "Weekday lunch specials (window reported by a third-party menu site)",
+    "price_from": null,
+    "price_to": null,
+    "days": "Monday-Friday",
+    "window": "11:00 AM - 3:00 PM (per bjsmenu.com, not bjsrestaurants.com)",
+    "includes": "No price was captured for the lunch specials; the same page lists the 3-course weekend special at $37.99 prime rib / $32.99 pork chop, which is a dinner offer."
+   },
+   "hours_tuesday": "11:00 AM - 12:00 AM",
+   "days_open": "Mon-Sun 11:00 AM - 12:00 AM (Yelp)",
+   "open_on_trip_date": true,
+   "fits_return_bus": {"ok": "tight", "note": "About 1.3 mi from the destination; a sit-down chain lunch is unlikely to fit inside an 11:50 AM departure."},
+   "verification": {
+    "level": "listing",
+    "sources": [
+     {"label": "bjsmenu.com - 'BJ's offers lunch specials Monday through Friday from 11:00 AM to 3:00 PM' (third-party menu site, not the official site)", "url": "https://bjsmenu.com/"},
+     {"label": "Yelp - BJ's Cupertino address, phone and hours", "url": "https://www.yelp.com/biz/bjs-restaurant-and-brewhouse-cupertino"}
+    ],
+    "accessed": "2026-09-07"
+   },
+   "review_links": {
+    "yelp": "https://www.yelp.com/biz/bjs-restaurant-and-brewhouse-cupertino",
+    "google_maps": "https://www.google.com/maps/search/?api=1&query=BJ%27s+Restaurant+10690+N+De+Anza+Blvd+Cupertino"
+   },
+   "flags": [
+    "The lunch window comes from bjsmenu.com, a third-party menu site, NOT bjsrestaurants.com - flagged for manual re-check before you rely on it.",
+    "No lunch-special price was published on the pages read."
+   ]
+  },
+  {
+   "name": "Tomatina",
+   "city": "Santa Clara",
+   "area": "Mission College Blvd",
+   "address": "3127 Mission College Blvd, Santa Clara, CA 95054",
+   "coords": [37.3865, -121.9739],
+   "coords_source": "approximate - Mission College Blvd block, not a captured geocode",
+   "cuisine": "Italian, pizza, salads",
+   "phone": "(408) 654-9000",
+   "lunch_special": {
+    "name": "Pick Two - soup or salad plus an entree",
+    "price_from": 13.5,
+    "price_to": 13.5,
+    "days": "days not stated on the menu page",
+    "window": "lunch (menu section)",
+    "includes": "Pick Two $13.50; Pick Two with a Mini Pizza $13.50; Pick Two with Pasta & Sauce $13.50"
+   },
+   "hours_tuesday": "11:00 AM - 9:00 PM",
+   "days_open": "Mon-Thu 11:00 AM - 9:00 PM; Fri-Sat 11:00 AM - 10:00 PM; Sun 11:00 AM - 9:00 PM (Yelp)",
+   "open_on_trip_date": true,
+   "fits_return_bus": {"ok": false, "note": "About 5.6 mi north of the destination in Santa Clara - not reachable and back inside the 11:50 AM departure."},
+   "verification": {
+    "level": "official",
+    "sources": [
+     {"label": "Tomatina official menu page for the Santa Clara store - Lunch Specials Pick Two $13.50", "url": "https://tomatina.com/menu/tomatina-santa-clara-3127-mission-college-blvd"},
+     {"label": "Yelp - Tomatina Santa Clara address, phone and hours", "url": "https://www.yelp.com/biz/tomatina-santa-clara"}
+    ],
+    "accessed": "2026-09-07"
+   },
+   "review_links": {
+    "yelp": "https://www.yelp.com/biz/tomatina-santa-clara",
+    "google_maps": "https://www.google.com/maps/search/?api=1&query=Tomatina+3127+Mission+College+Blvd+Santa+Clara"
+   },
+   "flags": ["The menu page does not state which days the Pick Two lunch special runs."]
+  },
+  {
+   "name": "The Hut",
+   "city": "Santa Clara",
+   "area": "The Alameda",
+   "address": "3200 The Alameda, Santa Clara, CA 95050",
+   "coords": [37.351461, -121.9404057],
+   "coords_source": "directory listing JSON-LD",
+   "cuisine": "BBQ, bar and grill",
+   "phone": "(408) 899-4294",
+   "lunch_special": {
+    "name": "Taco Tuesday - 3 tacos with a side salad or fries",
+    "price_from": 10.0,
+    "price_to": 10.0,
+    "days": "Tuesdays",
+    "window": "Tuesday (11:00 AM open)",
+    "includes": "3 tacos with your choice of pork, chicken, tri-tip or buffalo cauliflower, plus a side salad or fries"
+   },
+   "hours_tuesday": "11:00 AM - 10:00 PM",
+   "days_open": "Mon-Tue 11:00 AM - 10:00 PM; Wed-Thu 11:00 AM - 12:00 AM (one directory says Wed until 10 PM); Fri 11:00 AM - 12:00 AM; Sat 10:00/10:30 AM - 12:00 AM; Sun closed",
+   "open_on_trip_date": true,
+   "fits_return_bus": {"ok": false, "note": "About 6.6 mi north of the destination in Santa Clara - not reachable and back before the 11:50 AM departure."},
+   "verification": {
+    "level": "official",
+    "sources": [
+     {"label": "The Hut Santa Clara official food menu - Tuesday Taco Tuesday $10.00", "url": "https://thehutsantaclara.com/santa-clara-the-hut-food-menu"},
+     {"label": "Directory listing with coordinates and week hours for The Hut", "url": "https://www.checkle.com/biz/the-hut-santa-clara"}
+    ],
+    "accessed": "2026-09-07"
+   },
+   "review_links": {"google_maps": "https://www.google.com/maps/search/?api=1&query=The+Hut+3200+The+Alameda+Santa+Clara"},
+   "flags": [
+    "A TUESDAY-SPECIFIC SPECIAL - it matches the trip date exactly.",
+    "Wednesday closing time differs between two directories (10:00 PM vs 12:00 AM); Tuesday agrees at 10:00 PM."
+   ]
+  },
+  {
+   "name": "Eureka!",
+   "city": "Santa Clara",
+   "area": "Santa Clara Square Marketplace, Augustine Dr",
+   "address": "2762 Augustine Dr Ste 130, Santa Clara, CA 95054",
+   "coords": [37.3898, -121.9796],
+   "coords_source": "approximate - Augustine Dr block, not a captured geocode",
+   "cuisine": "American, burgers",
+   "phone": "(408) 703-0037",
+   "lunch_special": {
+    "name": "$13 Lunch Specials - every day, until 3 PM",
+    "price_from": 13.0,
+    "price_to": 13.0,
+    "days": "every day",
+    "window": "until 3:00 PM",
+    "includes": "Yelp business highlight: '$13 Lunch Specials - Level Up Your Lunch with $13 Lunch Specials Every Day, Open till 3pm!'"
+   },
+   "hours_tuesday": "not captured",
+   "days_open": "not captured",
+   "open_on_trip_date": null,
+   "fits_return_bus": {"ok": false, "note": "About 5.9 mi north of the destination in Santa Clara - off the Cupertino return path."},
+   "verification": {
+    "level": "listing",
+    "sources": [
+     {"label": "Yelp listing (via search result) - Eureka! $13 Lunch Specials every day until 3 PM", "url": "https://www.yelp.com/search?find_desc=Eureka%21&find_loc=San+Jose%2C+CA"},
+     {"label": "restaurantji - Eureka! Santa Clara address and phone", "url": "https://www.restaurantji.com/ca/santa-clara/eureka-santa-clara-/"}
+    ],
+    "accessed": "2026-09-07"
+   },
+   "review_links": {"google_maps": "https://www.google.com/maps/search/?api=1&query=Eureka+2762+Augustine+Dr+Santa+Clara"},
+   "flags": [
+    "Hours were not captured - only the $13 lunch-special highlight. Re-check before travelling.",
+    "The $13 figure is a Yelp business highlight, not a menu page."
+   ]
+  },
+  {
+   "name": "The Pasta Market",
+   "city": "Los Altos",
+   "area": "El Camino Real (Village Court)",
+   "address": "4546 El Camino Real, Los Altos, CA 94022",
+   "coords": [37.3931, -122.1076],
+   "coords_source": "approximate - El Camino Real block, not a captured geocode",
+   "cuisine": "Italian, fresh pasta",
+   "phone": "(650) 949-1235",
+   "lunch_special": {
+    "name": "Gourmet Lunch Special - pasta with salad and breadsticks",
+    "price_from": 14.95,
+    "price_to": 14.95,
+    "days": "days not stated on the menu page",
+    "window": "lunch",
+    "includes": "Choice of fresh egg pasta, ravioli or tortellini with sauce, plus fresh green salad, original breadsticks and cheese spread"
+   },
+   "hours_tuesday": "11:00 AM - 9:00 PM",
+   "days_open": "Seven days a week, 11:00 AM - 9:00 PM (official locations page)",
+   "open_on_trip_date": true,
+   "fits_return_bus": {"ok": false, "note": "About 7.3 mi from the destination in Los Altos - not on the Cupertino return path."},
+   "verification": {
+    "level": "official",
+    "sources": [
+     {"label": "Pasta Market Los Altos official menu page - Gourmet Lunch Special $14.95", "url": "https://losaltos.pastamarket.com/los-altos-pasta-market-los-altos-food-menu"},
+     {"label": "Pasta Market official locations page - Los Altos address and 11am-9pm seven days", "url": "https://losaltos.pastamarket.com/los-altos-pasta-market-los-altos-locations"},
+     {"label": "Yelp - The Pasta Market Los Altos hours and phone", "url": "https://www.yelp.com/biz/the-pasta-market-los-altos"}
+    ],
+    "accessed": "2026-09-07"
+   },
+   "review_links": {
+    "yelp": "https://www.yelp.com/biz/the-pasta-market-los-altos",
+    "google_maps": "https://www.google.com/maps/search/?api=1&query=The+Pasta+Market+4546+El+Camino+Real+Los+Altos"
+   },
+   "flags": ["The $14.95 lunch special is on the Los Altos store page; the days it runs are not stated."]
+  },
+  {
+   "name": "The Pasta Market - Sunnyvale",
+   "city": "Sunnyvale",
+   "area": "E El Camino Real",
+   "address": "460 E El Camino Real, Sunnyvale, CA 94087",
+   "coords": [37.3571, -122.0289],
+   "coords_source": "approximate - E El Camino Real block, not a captured geocode",
+   "cuisine": "Italian, fresh pasta",
+   "phone": "(408) 720-1299",
+   "lunch_special": {
+    "name": "Gourmet Lunch Special - pasta with salad and breadsticks (price taken from the Los Altos page of the same company)",
+    "price_from": 14.95,
+    "price_to": 14.95,
+    "days": "days not stated",
+    "window": "lunch",
+    "includes": "Fresh pasta or ravioli/tortellini with sauce, green salad, breadsticks and cheese spread"
+   },
+   "hours_tuesday": "11:00 AM - 8:00 PM",
+   "days_open": "Seven days a week, 11:00 AM - 8:00 PM (official locations page)",
+   "open_on_trip_date": true,
+   "fits_return_bus": {"ok": false, "note": "About 3.6 mi north of the destination - not on the VTA 55 return path from Gillick Way."},
+   "verification": {
+    "level": "mixed",
+    "sources": [
+     {"label": "Pasta Market official locations page - Sunnyvale address and hours", "url": "https://losaltos.pastamarket.com/los-altos-pasta-market-los-altos-locations"},
+     {"label": "Pasta Market Los Altos official menu page - Gourmet Lunch Special $14.95 (same company, different store)", "url": "https://losaltos.pastamarket.com/los-altos-pasta-market-los-altos-food-menu"}
+    ],
+    "accessed": "2026-09-07"
+   },
+   "review_links": {"google_maps": "https://www.google.com/maps/search/?api=1&query=The+Pasta+Market+460+E+El+Camino+Real+Sunnyvale"},
+   "flags": [
+    "PRICE IS FROM THE LOS ALTOS STORE PAGE of the same company, not a Sunnyvale menu page - treat as a lead and confirm at the counter.",
+    "Only 3.6 mi from 20387 Gillick Way, the closest of the three Pasta Market branches."
+   ]
+  },
+  {
+   "name": "Ristorante Don Giovanni",
+   "city": "Mountain View",
+   "area": "Castro Street",
+   "address": "235 Castro Street, Mountain View, CA 94041",
+   "coords": [37.3937, -122.0783],
+   "coords_source": "approximate - Castro Street block, not a captured geocode",
+   "cuisine": "Italian",
+   "lunch_special": {
+    "name": "Three-course lunch special (review-reported)",
+    "price_from": 19.95,
+    "price_to": 19.99,
+    "days": "days not stated in the source",
+    "window": "lunch",
+    "includes": "OpenTable FAQ: 'guests report prix-fixe and lunch specials: reviewers mention a $19.95-$19.99 three-course lunch special'"
+   },
+   "hours_tuesday": "not captured",
+   "days_open": "not captured",
+   "open_on_trip_date": null,
+   "fits_return_bus": {"ok": false, "note": "Mountain View is off the chosen Sunnyvale return chain, about 7.8 mi from the destination."},
+   "verification": {
+    "level": "review",
+    "sources": [
+     {"label": "OpenTable - Ristorante Don Giovanni Mountain View, address and the review-reported $19.95-$19.99 three-course lunch special", "url": "https://www.opentable.com/ristorante-don-giovanni-mountain-view"}
+    ],
+    "accessed": "2026-09-07"
+   },
+   "review_links": {"google_maps": "https://www.google.com/maps/search/?api=1&query=Ristorante+Don+Giovanni+235+Castro+Street+Mountain+View"},
+   "flags": [
+    "The lunch price is a review/FAQ figure on OpenTable, not the restaurant's own menu - re-verify.",
+    "Hours were not captured; Mountain View is a fallback station, not the recommended one."
+   ]
+  }
+ ],
+ "rejected": [
+  {
+   "name": "Dishdash (Sunnyvale)",
+   "city": "Sunnyvale",
+   "why": "Lunch menu prices were captured from dishdash.com but no street address and no weekly hours were captured in this pass, so the row cannot be located or scheduled.",
+   "price_hint": "Lunch menu items $7-$28 (soups from $7, wraps $20-$27)",
+   "source": "https://www.dishdash.com/menu/sunnyvale-lunch/",
+   "searched": "2026-09-07"
+  },
+  {
+   "name": "Aqui Cal Mex - Campbell",
+   "city": "Campbell",
+   "why": "Only the rotating daily special plate was published and it was date-limited to August 19 - September 1, 2026, which ends before the September 8 trip date. No address captured.",
+   "price_hint": "Daily special plate $16.49 (Guajillo BBQ Chicken), soup $5.09 - valid 8/19-9/1/2026 only",
+   "source": "https://www.aquicalmex.com/campbell-menu/",
+   "searched": "2026-09-07"
+  },
+  {
+   "name": "Wine Cellar (Los Gatos)",
+   "city": "Los Gatos",
+   "why": "The 'Today's Lunch Specials' page is real and priced ($20-$24) but the specials rotate daily and no address or weekly hours were captured in this pass.",
+   "price_hint": "Today's Lunch Specials $20-$24",
+   "source": "https://www.winecellarlosgatos.com/menu/todays-specials/",
+   "searched": "2026-09-07"
+  },
+  {
+   "name": "Los Altos Mexican Bar and Grill",
+   "city": "Los Altos",
+   "why": "The lunch menu that surfaced ($9.89-$15.38) is from menu.quickmunchi.com and could not be confirmed to be the Los Altos, California restaurant - several same-name restaurants exist in other states.",
+   "price_hint": "Lunch combos $9.89-$15.38 (unconfirmed location)",
+   "source": "https://menu.quickmunchi.com/order/location/LosAltos",
+   "searched": "2026-09-07"
+  }
+ ]
+}

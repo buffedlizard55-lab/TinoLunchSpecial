@@ -1,0 +1,651 @@
+{
+ "note": "Batch 3 - researched 2026-09-07. Los Gatos, Los Altos, Saratoga (chamber directory), San Jose / Santana Row. Saratoga rows come from the Saratoga Chamber of Commerce dining directory and are marked as directory data to confirm.",
+ "entries": [
+  {
+   "name": "Chez Philippe",
+   "city": "Los Gatos",
+   "area": "N Santa Cruz Ave (downtown Los Gatos)",
+   "address": "34 N Santa Cruz Ave, Los Gatos, CA 95030",
+   "coords": [37.2246, -121.9834],
+   "coords_source": "approximate - N Santa Cruz Ave block, not a captured geocode",
+   "cuisine": "French",
+   "phone": "+1 408-442-5353",
+   "lunch_special": {
+    "name": "Lunch service - crepes, Niçoise salad, L'Americain sandwich",
+    "price_from": null,
+    "price_to": null,
+    "days": "Tuesday-Friday",
+    "window": "11:30 AM - 2:00 PM",
+    "includes": "No priced lunch special published; the site recommends the savoury crepe, Niçoise salad and L'Americain sandwich."
+   },
+   "hours_tuesday": "11:30 AM - 2:00 PM, 5:30 PM - 8:30 PM",
+   "days_open": "Mon closed; Tue-Fri lunch 11:30 AM - 2:00 PM and dinner 5:30-8:30 PM; Sat-Sun brunch 10:30 AM - 2:00 PM, Sat dinner 5:30-8:30 PM (official site)",
+   "open_on_trip_date": true,
+   "fits_return_bus": {"ok": false, "note": "Los Gatos is about 7.4 mi from 20387 Gillick Way - off the Cupertino return path."},
+   "verification": {
+    "level": "official",
+    "sources": [
+     {"label": "Chez Philippe official site - address, phone and 'Lunch: Tuesday-Friday 11:30am-2:00pm'", "url": "https://www.chezphilippelosgatos.com/"}
+    ],
+    "accessed": "2026-09-07"
+   },
+   "review_links": {"google_maps": "https://www.google.com/maps/search/?api=1&query=Chez+Philippe+34+N+Santa+Cruz+Ave+Los+Gatos"},
+   "flags": ["Tuesday is the first lunch day of its week - a direct match for the trip date."]
+  },
+  {
+   "name": "Heritage Pub & Chophouse",
+   "city": "Los Gatos",
+   "area": "N Santa Cruz Ave (downtown Los Gatos)",
+   "address": "15.5 N Santa Cruz Ave, Los Gatos, CA 95030",
+   "coords": [37.2236836, -121.9844795],
+   "coords_source": "official site JSON-LD",
+   "cuisine": "American pub, steaks",
+   "phone": "+1 408-827-4066",
+   "lunch_special": {
+    "name": "No lunch special published - open daily for lunch and dinner; happy hour 3-6 PM",
+    "price_from": null,
+    "price_to": null,
+    "days": "daily",
+    "window": "11:30 AM opening; happy hour 3:00-6:00 PM",
+    "includes": "No priced lunch special found on the official site."
+   },
+   "hours_tuesday": "11:30 AM - 10:00 PM",
+   "days_open": "Mon-Thu 11:30 AM - 10:00 PM; Fri-Sat 11:30 AM - 11:30 PM; Sun 11:30 AM - 10:00 PM (official site)",
+   "open_on_trip_date": true,
+   "fits_return_bus": {"ok": false, "note": "Los Gatos, about 7.4 mi from the destination."},
+   "verification": {
+    "level": "official",
+    "sources": [
+     {"label": "Heritage Pub & Chophouse official site - address, coordinates, 'Open daily for lunch & dinner', happy hour 3-6 PM and Mon-Thu 11:30am-10:00pm", "url": "https://heritagepubandchop.com/"}
+    ],
+    "accessed": "2026-09-07"
+   },
+   "review_links": {"google_maps": "https://www.google.com/maps/search/?api=1&query=Heritage+Pub+Chophouse+15+N+Santa+Cruz+Ave+Los+Gatos"},
+   "flags": ["No lunch special published; the happy hour (3-6 PM) is outside the trip's lunch window."]
+  },
+  {
+   "name": "El Comal",
+   "city": "Los Altos",
+   "area": "Main St (downtown Los Altos)",
+   "address": "266 Main St, Los Altos, CA 94022",
+   "coords": [37.3839, -122.1151],
+   "coords_source": "approximate - Main St block, not a captured geocode",
+   "cuisine": "Mexican (Oaxacan and Yucatecan)",
+   "phone": "650-209-5064",
+   "lunch_special": {
+    "name": "No lunch special published - tacos, salads and plates",
+    "price_from": null,
+    "price_to": null,
+    "days": "Mon-Sun",
+    "window": "opens 10:00 AM Mon-Fri",
+    "includes": "No priced lunch special found. A February 2025 Palo Alto Online article quotes tacos $6-$9, salads $14-$22 and plates $22-$34, but no price is printed here because it is a press range, not a menu."
+   },
+   "hours_tuesday": "10:00 AM - 8:00 PM",
+   "days_open": "Mon-Thu 10:00 AM - 8:00 PM; Fri 10:00 AM - 9:00 PM; Sat 8:00 AM - 9:00 PM; Sun 8:00 AM - 8:00 PM (Palo Alto Online, Feb 2025)",
+   "open_on_trip_date": true,
+   "fits_return_bus": {"ok": false, "note": "Los Altos is about 7.5 mi from the destination - off the return path."},
+   "verification": {
+    "level": "listing",
+    "sources": [
+     {"label": "Palo Alto Online (Feb 2025) - El Comal opening article with address, phone, hours and price ranges", "url": "https://www.paloaltoonline.com/los-altos/2025/02/06/el-comal-opens-in-los-altos-specializing-in-dishes-from-oaxaca-and-yucatan/"}
+    ],
+    "accessed": "2026-09-07"
+   },
+   "review_links": {"google_maps": "https://www.google.com/maps/search/?api=1&query=El+Comal+266+Main+St+Los+Altos"},
+   "flags": [
+    "Hours and prices come from a Feb 2025 newspaper article, not the restaurant's own current page - re-check before going.",
+    "No lunch special is published."
+   ]
+  },
+  {
+   "name": "State Street Market",
+   "city": "Los Altos",
+   "area": "State St (downtown Los Altos)",
+   "address": "170 State St, Los Altos, CA 94022",
+   "coords": [37.3856, -122.1139],
+   "coords_source": "approximate - State St block, not a captured geocode",
+   "cuisine": "Market / cafe",
+   "lunch_special": {
+    "name": "No lunch special published",
+    "price_from": null,
+    "price_to": null,
+    "days": "Mon-Sun",
+    "window": "11:00 AM opening Tue",
+    "includes": "No priced lunch special found."
+   },
+   "hours_tuesday": "11:00 AM - 8:00 PM",
+   "days_open": "Mon-Tue 11:00 AM - 8:00 PM; Wed-Thu 11:00 AM - 9:00 PM; Fri 11:00 AM - 10:00 PM (Yelp)",
+   "open_on_trip_date": true,
+   "fits_return_bus": {"ok": false, "note": "Los Altos, about 7.6 mi from the destination."},
+   "verification": {
+    "level": "listing",
+    "sources": [
+     {"label": "Yelp - State Street Market Los Altos address and week hours", "url": "https://www.yelp.com/biz/state-street-market-los-altos"}
+    ],
+    "accessed": "2026-09-07"
+   },
+   "review_links": {
+    "yelp": "https://www.yelp.com/biz/state-street-market-los-altos",
+    "google_maps": "https://www.google.com/maps/search/?api=1&query=State+Street+Market+170+State+St+Los+Altos"
+   },
+   "flags": ["No lunch special published; Friday/Saturday/Sunday hours were not fully captured."]
+  },
+  {
+   "name": "LuLu's on Main Street",
+   "city": "Los Altos",
+   "area": "Main St (downtown Los Altos)",
+   "address": "163 Main St, Los Altos, CA 94022",
+   "coords": [37.379246, -122.11484],
+   "coords_source": "Tripadvisor listing JSON-LD",
+   "cuisine": "Mexican",
+   "phone": "+1 650-559-8226",
+   "lunch_special": {
+    "name": "No lunch special published",
+    "price_from": null,
+    "price_to": null,
+    "days": "Mon-Sun",
+    "window": "9:30 AM - 8:00 PM daily",
+    "includes": "No priced lunch special found."
+   },
+   "hours_tuesday": "9:30 AM - 8:00 PM",
+   "days_open": "Mon-Sun 9:30 AM - 8:00 PM (Tripadvisor listing)",
+   "open_on_trip_date": true,
+   "fits_return_bus": {"ok": false, "note": "Los Altos, about 7.3 mi from the destination."},
+   "verification": {
+    "level": "listing",
+    "sources": [
+     {"label": "Tripadvisor - LuLu's on Main Street address, coordinates and daily 9:30 AM - 8:00 PM", "url": "https://www.tripadvisor.com/Restaurant_Review-g32653-d6499385-Reviews-LuLu_s_on_Main_Street-Los_Altos_California.html"}
+    ],
+    "accessed": "2026-09-07"
+   },
+   "review_links": {"google_maps": "https://www.google.com/maps/search/?api=1&query=LuLu%27s+on+Main+Street+163+Main+St+Los+Altos"},
+   "flags": ["No lunch special published."]
+  },
+  {
+   "name": "Fogo de Chão Brazilian Steakhouse - San Jose",
+   "city": "San Jose",
+   "area": "Santana Row",
+   "address": "377 Santana Row #1090, San Jose, CA 95128",
+   "coords": [37.3202666, -121.9498457],
+   "coords_source": "official location page JSON-LD",
+   "cuisine": "Brazilian steakhouse / churrasco",
+   "phone": "+1-408-244-7001",
+   "lunch_special": {
+    "name": "Lunch menu served 11:30 AM - 3:00 PM weekdays (price not published on the location page)",
+    "price_from": null,
+    "price_to": null,
+    "days": "Monday-Friday lunch",
+    "window": "11:30 AM - 3:00 PM",
+    "includes": "The official location page publishes a separate Lunch Menu and the schedule 'Lunch 11:30 AM - 3:00 PM, Dinner 3:00 PM - 9:30 PM' but no lunch price."
+   },
+   "hours_tuesday": "11:30 AM - 9:30 PM (lunch 11:30 AM - 3:00 PM)",
+   "days_open": "Mon-Thu 11:30 AM - 9:30 PM; Fri-Sat 11:30 AM - 10:00 PM; Sun 11:30 AM - 9:00 PM (official location page)",
+   "open_on_trip_date": true,
+   "fits_return_bus": {"ok": false, "note": "Santana Row is about 5.5 mi from the destination and the lunch service runs to 3:00 PM."},
+   "verification": {
+    "level": "official",
+    "sources": [
+     {"label": "Fogo de Chão San Jose official location page - address, coordinates, and 'Lunch 11:30 AM - 3:00 PM, Dinner 3:00 PM - 9:30 PM'", "url": "https://fogodechao.com/location/san-jose/"}
+    ],
+    "accessed": "2026-09-07"
+   },
+   "review_links": {"google_maps": "https://www.google.com/maps/search/?api=1&query=Fogo+de+Chao+377+Santana+Row+San+Jose"},
+   "flags": ["No lunch price is published on the location page, so no price is printed - the lunch menu itself is behind a separate menu link."]
+  },
+  {
+   "name": "Left Bank - Santana Row",
+   "city": "San Jose",
+   "area": "Santana Row",
+   "address": "377 Santana Row Suite 1100, San Jose, CA 95128",
+   "coords": [37.3214, -121.9499],
+   "coords_source": "approximate - Santana Row block, not a captured geocode",
+   "cuisine": "French brasserie",
+   "phone": "(408) 984-3500",
+   "lunch_special": {
+    "name": "No lunch special published - happy hour Mon-Fri 3-5 PM",
+    "price_from": null,
+    "price_to": null,
+    "days": "Mon-Fri (happy hour)",
+    "window": "happy hour 3:00-5:00 PM; the dining room opens 11:30 AM Mon-Thu",
+    "includes": "No priced lunch special found. OpenTable lists a Mon-Fri 3-5 PM happy hour (truffled popcorn, sliders, short rib poutine)."
+   },
+   "hours_tuesday": "11:30 AM - 9:00 PM",
+   "days_open": "Mon-Thu 11:30 AM - 9:00 PM; Fri 11:30 AM - 10:00 PM; Sat 11:00 AM - 10:00 PM; Sun 11:00 AM - 9:00 PM (OpenTable)",
+   "open_on_trip_date": true,
+   "fits_return_bus": {"ok": false, "note": "Santana Row, about 5.5 mi from the destination - off the Cupertino return path."},
+   "verification": {
+    "level": "listing",
+    "sources": [
+     {"label": "OpenTable - Left Bank Santana Row address, phone, hours and the Mon-Fri 3-5 PM happy hour", "url": "https://www.opentable.com/left-bank-santana-row"}
+    ],
+    "accessed": "2026-09-07"
+   },
+   "review_links": {"google_maps": "https://www.google.com/maps/search/?api=1&query=Left+Bank+377+Santana+Row+San+Jose"},
+   "flags": ["No lunch special published; the happy hour starts at 3:00 PM, after the trip's lunch window."]
+  },
+  {
+   "name": "Dumpling Time - Santana Row",
+   "city": "San Jose",
+   "area": "Santana Row",
+   "address": "378 Santana Row Suite 1035, San Jose, CA 95128",
+   "coords": [37.319967, -121.947612],
+   "coords_source": "official site JSON-LD",
+   "cuisine": "Asian, dumplings",
+   "phone": "408-882-3469",
+   "lunch_special": {
+    "name": "No lunch special published - all-day dumpling menu",
+    "price_from": null,
+    "price_to": null,
+    "days": "Mon-Sun",
+    "window": "opens 11:00 AM",
+    "includes": "No priced lunch special found on the pages read."
+   },
+   "hours_tuesday": "11:00 AM - 9:00 PM",
+   "days_open": "Sun-Thu 11:00 AM - 9:00 PM; Fri-Sat 11:00 AM - 10:00 PM (official site)",
+   "open_on_trip_date": true,
+   "fits_return_bus": {"ok": false, "note": "Santana Row, about 5.4 mi from the destination."},
+   "verification": {
+    "level": "official",
+    "sources": [
+     {"label": "Dumpling Time Santana Row official page - address, coordinates and daily 11:00-21:00 hours", "url": "https://www.dumplingtime.com/santana-row"}
+    ],
+    "accessed": "2026-09-07"
+   },
+   "review_links": {"google_maps": "https://www.google.com/maps/search/?api=1&query=Dumpling+Time+378+Santana+Row+San+Jose"},
+   "flags": ["No lunch special published."]
+  },
+  {
+   "name": "Big Basin Burger Bar",
+   "city": "Saratoga",
+   "area": "Big Basin Way",
+   "address": "14413 Big Basin Way, Saratoga, CA 95070",
+   "coords": [37.2575, -122.0313],
+   "coords_source": "approximate - Big Basin Way block, not a captured geocode",
+   "cuisine": "Burgers",
+   "phone": "(408) 647-2136",
+   "lunch_special": {
+    "name": "No lunch special published - burgers and small plates",
+    "price_from": null,
+    "price_to": null,
+    "days": "Mon-Sun",
+    "window": "opens 11:00 AM",
+    "includes": "No priced lunch special found; the online ordering page shows small plates from $13.00 (Fried Mozzarella)."
+   },
+   "hours_tuesday": "11:00 AM - 9:00 PM (one ordering page shows an 8:00 PM close)",
+   "days_open": "Mon-Thu and Sat 11:00 AM - 9:00 PM; Sun 11:00 AM - 8:00 PM (directory); the Clover ordering page shows 11:00 AM - 8:00 PM",
+   "open_on_trip_date": true,
+   "fits_return_bus": {"ok": false, "note": "Saratoga is about 3.6 mi from the destination but there is no direct bus back to Gillick Way before the 11:50 AM departure."},
+   "verification": {
+    "level": "conflicting",
+    "sources": [
+     {"label": "restaurantjump - Big Basin Burger Bar address, phone and Tuesday 11 AM - 9 PM", "url": "https://restaurantjump.com/big-basin-burger-bar-95070/"}
+    ],
+    "accessed": "2026-09-07"
+   },
+   "review_links": {"google_maps": "https://www.google.com/maps/search/?api=1&query=Big+Basin+Burger+Bar+14413+Big+Basin+Way+Saratoga"},
+   "flags": [
+    "CLOSING TIME CONFLICT: the directory says 9:00 PM, the restaurant's own Clover ordering page says 8:00 PM. The 11:00 AM opening agrees.",
+    "No lunch special published."
+   ]
+  },
+  {
+   "name": "Big Basin Cafe",
+   "city": "Saratoga",
+   "area": "Big Basin Way",
+   "address": "14471 Big Basin Way Ste A, Saratoga, CA 95070",
+   "coords": [37.2579076, -122.0335635],
+   "coords_source": "restaurantguru listing JSON-LD",
+   "cuisine": "Sandwiches, cafe",
+   "phone": "+1 408-741-1185",
+   "lunch_special": {
+    "name": "No lunch special published - sandwiches and breakfast",
+    "price_from": null,
+    "price_to": null,
+    "days": "Mon-Sat",
+    "window": "opens 7:00 AM (directory says 10:00 AM - 2:00 PM)",
+    "includes": "No priced lunch special found. restaurantguru reports a $10-$20 per person range from visitor reviews."
+   },
+   "hours_tuesday": "7:00 AM - 7:00 PM (restaurantguru) vs 10:00 AM - 2:00 PM (Saratoga Chamber directory)",
+   "days_open": "Mon-Sat 7:00 AM - 7:00 PM, Sun 7:00 AM - 6:00 PM (restaurantguru)",
+   "open_on_trip_date": null,
+   "fits_return_bus": {"ok": false, "note": "Saratoga, about 3.6 mi from the destination with no direct return bus."},
+   "verification": {
+    "level": "conflicting",
+    "sources": [
+     {"label": "restaurantguru - Big Basin Cafe address, coordinates, phone and 7AM-7PM hours", "url": "https://restaurantguru.com/Big-Basin-Cafe-Saratoga"},
+     {"label": "Saratoga Chamber of Commerce dining directory - 'Big Basin Cafe, Mon - Sun from 10:00AM - 2:00PM'", "url": "https://www.saratogachamber.org/copy-of-lodging"}
+    ],
+    "accessed": "2026-09-07"
+   },
+   "review_links": {"google_maps": "https://www.google.com/maps/search/?api=1&query=Big+Basin+Cafe+14471+Big+Basin+Way+Saratoga"},
+   "flags": [
+    "HOURS CONFLICT: the chamber directory says 10:00 AM - 2:00 PM while restaurantguru says 7:00 AM - 7:00 PM. Phone (408) 741-1185 before relying on it.",
+    "The chamber also lists a second 'Big Basin Cafe' at 14572 Big Basin Way, so the two addresses may be mixed up."
+   ]
+  },
+  {
+   "name": "Darla Cafe",
+   "city": "Saratoga",
+   "area": "Big Basin Way",
+   "address": "14572 Big Basin Way, Saratoga, CA 95070",
+   "coords": [37.2569, -122.0321],
+   "coords_source": "approximate - Big Basin Way block, not a captured geocode",
+   "cuisine": "Breakfast and lunch cafe",
+   "phone": "(408) 868-9822",
+   "lunch_special": {
+    "name": "No lunch special published - breakfast and lunch until 2:30 PM",
+    "price_from": null,
+    "price_to": null,
+    "days": "Sun, Tue, Wed, Thu, Fri, Sat (closed Monday)",
+    "window": "8:30 AM - 2:30 PM",
+    "includes": "No priced lunch special found."
+   },
+   "hours_tuesday": "8:30 AM - 2:30 PM",
+   "days_open": "Sun and Tue-Sat 8:30 AM - 2:30 PM; closed Monday (Saratoga Chamber directory)",
+   "open_on_trip_date": true,
+   "fits_return_bus": {"ok": false, "note": "Saratoga, about 3.6 mi from the destination with no direct return bus."},
+   "verification": {
+    "level": "listing",
+    "sources": [
+     {"label": "Saratoga Chamber of Commerce dining directory - Darla Cafe address, phone and 'Breakfast/Lunch: Sun, Tue, Wed, Thur, Fri, Sat 8:30 am - 2:30 pm'", "url": "https://www.saratogachamber.org/copy-of-lodging"}
+    ],
+    "accessed": "2026-09-07"
+   },
+   "review_links": {"google_maps": "https://www.google.com/maps/search/?api=1&query=Darla+Cafe+14572+Big+Basin+Way+Saratoga"},
+   "flags": [
+    "Directory data only - the hours come from the chamber directory, not the restaurant, so confirm before going.",
+    "Opens 8:30 AM, so it is one of the few places that could serve an early lunch before the 11:50 AM departure."
+   ]
+  },
+  {
+   "name": "Mandala Indian Cuisine",
+   "city": "Saratoga",
+   "area": "Big Basin Way",
+   "address": "14510 Big Basin Way Suite 3, Saratoga, CA 95070",
+   "coords": [37.2502, -122.0335],
+   "coords_source": "approximate - Big Basin Way block, not a captured geocode",
+   "cuisine": "Indian",
+   "phone": "408-212-0478",
+   "lunch_special": {
+    "name": "Lunch service 11:30 AM - 2:30 PM daily (no buffet price published)",
+    "price_from": null,
+    "price_to": null,
+    "days": "Monday to Sunday",
+    "window": "11:30 AM - 2:30 PM",
+    "includes": "No lunch-buffet price was published on the pages read."
+   },
+   "hours_tuesday": "11:30 AM - 2:30 PM, 5:00 PM - 1:00 AM",
+   "days_open": "Mon-Sun lunch 11:30 AM - 2:30 PM, dinner 5:00 PM - 1:00 AM (Saratoga Chamber directory)",
+   "open_on_trip_date": true,
+   "fits_return_bus": {"ok": false, "note": "Saratoga, about 3.9 mi from the destination with no direct return bus before 11:50 AM."},
+   "verification": {
+    "level": "listing",
+    "sources": [
+     {"label": "Saratoga Chamber of Commerce dining directory - Mandala Indian Cuisine address, phone and 'Monday to Sunday Lunch 11:30 am -2:30 pm, Dinner 5:00 pm - 1 am'", "url": "https://www.saratogachamber.org/copy-of-lodging"}
+    ],
+    "accessed": "2026-09-07"
+   },
+   "review_links": {"google_maps": "https://www.google.com/maps/search/?api=1&query=Mandala+Indian+Cuisine+14510+Big+Basin+Way+Saratoga"},
+   "flags": [
+    "Directory data only - confirm before going.",
+    "The 1:00 AM dinner close looks like a directory typo; only the lunch window matters for this trip."
+   ]
+  },
+  {
+   "name": "Bai Tong Thai Bistro",
+   "city": "Saratoga",
+   "area": "Big Basin Way",
+   "address": "14515 Big Basin Way, Saratoga, CA 95070",
+   "coords": [37.2509, -122.0345],
+   "coords_source": "approximate - Big Basin Way block, not a captured geocode",
+   "cuisine": "Thai",
+   "phone": "408-872-1319",
+   "lunch_special": {
+    "name": "No lunch special published - lunch service 11:30 AM - 2:30 PM",
+    "price_from": null,
+    "price_to": null,
+    "days": "Tue-Sat lunch",
+    "window": "11:30 AM - 2:30 PM",
+    "includes": "No priced lunch special found."
+   },
+   "hours_tuesday": "11:30 AM - 2:30 PM, 5:00 PM - 9:00 PM",
+   "days_open": "Tue-Sat 11:30 AM - 2:30 PM, 5:00-9:00 PM; Sun 5:00-9:00 PM (Saratoga Chamber directory)",
+   "open_on_trip_date": true,
+   "fits_return_bus": {"ok": false, "note": "Saratoga, about 3.6 mi from the destination with no direct return bus."},
+   "verification": {
+    "level": "listing",
+    "sources": [
+     {"label": "Saratoga Chamber of Commerce dining directory - Bai Tong Thai Bistro address, phone and 'Tue - Sat from 11:30AM - 2:30PM, 5:00PM - 9:00PM'", "url": "https://www.saratogachamber.org/copy-of-lodging"}
+    ],
+    "accessed": "2026-09-07"
+   },
+   "review_links": {"google_maps": "https://www.google.com/maps/search/?api=1&query=Bai+Tong+Thai+Bistro+14515+Big+Basin+Way+Saratoga"},
+   "flags": ["Directory data only - confirm before going. Tuesday is the first day of its lunch week."]
+  },
+  {
+   "name": "Bella Saratoga",
+   "city": "Saratoga",
+   "area": "Big Basin Way",
+   "address": "14503 Big Basin Way, Saratoga, CA 95070",
+   "coords": [37.2501, -122.0338],
+   "coords_source": "approximate - Big Basin Way block, not a captured geocode",
+   "cuisine": "Italian",
+   "phone": "408-741-5115",
+   "lunch_special": {
+    "name": "No lunch special published - open from 12:00 PM",
+    "price_from": null,
+    "price_to": null,
+    "days": "daily",
+    "window": "12:00 PM - 8:00 PM",
+    "includes": "No priced lunch special found. Sandwiches on the menu page are $19-$24, which is a dinner-scale price."
+   },
+   "hours_tuesday": "12:00 PM - 8:00 PM",
+   "days_open": "Daily 12:00 PM - 8:00 PM (Saratoga Chamber directory)",
+   "open_on_trip_date": true,
+   "fits_return_bus": {"ok": false, "note": "Saratoga, about 3.6 mi from the destination; it does not open until noon, after the 11:50 AM departure."},
+   "verification": {
+    "level": "listing",
+    "sources": [
+     {"label": "Saratoga Chamber of Commerce dining directory - Bella Saratoga address, phone and 'Daily from 12:00PM - 8:00PM'", "url": "https://www.saratogachamber.org/copy-of-lodging"},
+     {"label": "Bella Saratoga menu page - sandwich prices $19-$24", "url": "https://bellasaratoga.com/saratoga-bella-saratoga-food-menu"}
+    ],
+    "accessed": "2026-09-07"
+   },
+   "review_links": {"google_maps": "https://www.google.com/maps/search/?api=1&query=Bella+Saratoga+14503+Big+Basin+Way+Saratoga"},
+   "flags": ["Directory data only - confirm before going. It opens at noon, so it is out for an early lunch."]
+  },
+  {
+   "name": "Mint Leaf Cuisine",
+   "city": "Saratoga",
+   "area": "Big Basin Way",
+   "address": "14420 Big Basin Way, Saratoga, CA 95070",
+   "coords": [37.2526, -122.0351],
+   "coords_source": "approximate - Big Basin Way block, not a captured geocode",
+   "cuisine": "Indian",
+   "phone": "408-872-3763",
+   "lunch_special": {
+    "name": "No lunch special published - lunch service 11:30 AM - 3:00 PM",
+    "price_from": null,
+    "price_to": null,
+    "days": "days not confirmed - the directory says 'call to confirm days'",
+    "window": "11:30 AM - 3:00 PM",
+    "includes": "No priced lunch special found."
+   },
+   "hours_tuesday": "11:30 AM - 3:00 PM, 5:00 PM - 10:00 PM (days unconfirmed)",
+   "days_open": "'11:30AM - 3:00PM, 5:00PM - 10:00PM - Call to confirm days' (Saratoga Chamber directory)",
+   "open_on_trip_date": null,
+   "fits_return_bus": {"ok": false, "note": "Saratoga, about 3.6 mi from the destination; days are unconfirmed."},
+   "verification": {
+    "level": "unverified",
+    "sources": [
+     {"label": "Saratoga Chamber of Commerce dining directory - Mint Leaf Cuisine address, phone and 'Call to confirm days'", "url": "https://www.saratogachamber.org/copy-of-lodging"}
+    ],
+    "accessed": "2026-09-07"
+   },
+   "review_links": {"google_maps": "https://www.google.com/maps/search/?api=1&query=Mint+Leaf+Cuisine+14420+Big+Basin+Way+Saratoga"},
+   "flags": [
+    "The directory itself says call to confirm the days, so Tuesday opening is unknown.",
+    "No lunch special published."
+   ]
+  },
+  {
+   "name": "Kandoo Patisserie & Café",
+   "city": "Saratoga",
+   "area": "Big Basin Way",
+   "address": "14510 Big Basin Way, Saratoga, CA 95070",
+   "coords": [37.2502, -122.0335],
+   "coords_source": "approximate - Big Basin Way block, not a captured geocode",
+   "cuisine": "Bakery and cafe",
+   "phone": "408-898-3992",
+   "lunch_special": {
+    "name": "No lunch special published - cafe open 11:00 AM - 4:00 PM",
+    "price_from": null,
+    "price_to": null,
+    "days": "Mon-Sun",
+    "window": "11:00 AM - 4:00 PM",
+    "includes": "No priced lunch special found."
+   },
+   "hours_tuesday": "11:00 AM - 4:00 PM",
+   "days_open": "Mon-Sun 11:00 AM - 4:00 PM (Saratoga Chamber directory)",
+   "open_on_trip_date": true,
+   "fits_return_bus": {"ok": false, "note": "Saratoga, about 3.9 mi from the destination with no direct return bus."},
+   "verification": {
+    "level": "listing",
+    "sources": [
+     {"label": "Saratoga Chamber of Commerce dining directory - Kandoo Patisserie & Cafe address, phone and 'Mon - Sun from 11:00AM - 4:00PM'", "url": "https://www.saratogachamber.org/copy-of-lodging"}
+    ],
+    "accessed": "2026-09-07"
+   },
+   "review_links": {"google_maps": "https://www.google.com/maps/search/?api=1&query=Kandoo+Patisserie+14510+Big+Basin+Way+Saratoga"},
+   "flags": ["Directory data only - confirm before going. A cafe, so it suits a fast lunch."]
+  },
+  {
+   "name": "The Mynt",
+   "city": "Saratoga",
+   "area": "Prospect Rd",
+   "address": "5210 Prospect Rd, Saratoga, CA 95070",
+   "coords": [37.2531, -122.0041],
+   "coords_source": "approximate - Prospect Rd block, not a captured geocode",
+   "cuisine": "Indian",
+   "phone": "408-973-9673",
+   "lunch_special": {
+    "name": "No lunch special published - lunch service 11:30 AM - 2:30 PM",
+    "price_from": null,
+    "price_to": null,
+    "days": "Mon-Sun",
+    "window": "11:30 AM - 2:30 PM",
+    "includes": "No priced lunch special found."
+   },
+   "hours_tuesday": "11:30 AM - 2:30 PM, 5:30 PM - 9:30 PM",
+   "days_open": "Mon-Sun 11:30 AM - 2:30 PM, 5:30-9:30 PM (Saratoga Chamber directory)",
+   "open_on_trip_date": true,
+   "fits_return_bus": {"ok": false, "note": "Saratoga, about 3.2 mi from the destination with no direct return bus before 11:50 AM."},
+   "verification": {
+    "level": "listing",
+    "sources": [
+     {"label": "Saratoga Chamber of Commerce dining directory - The Mynt address, phone and 'Mon - Sun from 11:30AM - 2:30PM, 5:30PM - 9:30PM'", "url": "https://www.saratogachamber.org/copy-of-lodging"}
+    ],
+    "accessed": "2026-09-07"
+   },
+   "review_links": {"google_maps": "https://www.google.com/maps/search/?api=1&query=The+Mynt+5210+Prospect+Rd+Saratoga"},
+   "flags": ["Directory data only - confirm before going."]
+  },
+  {
+   "name": "Round Table Pizza - Saratoga",
+   "city": "Saratoga",
+   "area": "Pollard Rd",
+   "address": "1472 Pollard Rd, Saratoga, CA 95070",
+   "coords": [37.2495, -121.9975],
+   "coords_source": "approximate - Pollard Rd block, not a captured geocode",
+   "cuisine": "Pizza",
+   "phone": "408-379-4691",
+   "lunch_special": {
+    "name": "No lunch special published on the pages read",
+    "price_from": null,
+    "price_to": null,
+    "days": "Mon-Sun",
+    "window": "11:00 AM - 8:00 PM",
+    "includes": "No priced lunch special found; this is a walk-in pizza place open from 11:00 AM."
+   },
+   "hours_tuesday": "11:00 AM - 8:00 PM",
+   "days_open": "Mon-Sun 11:00 AM - 8:00 PM (Saratoga Chamber directory)",
+   "open_on_trip_date": true,
+   "fits_return_bus": {"ok": false, "note": "Saratoga, about 4.4 mi from the destination with no direct return bus."},
+   "verification": {
+    "level": "listing",
+    "sources": [
+     {"label": "Saratoga Chamber of Commerce dining directory - Round Table Pizza address, phone and 'Mon - Sun from 11:00AM - 8:00PM'", "url": "https://www.saratogachamber.org/copy-of-lodging"}
+    ],
+    "accessed": "2026-09-07"
+   },
+   "review_links": {"google_maps": "https://www.google.com/maps/search/?api=1&query=Round+Table+Pizza+1472+Pollard+Rd+Saratoga"},
+   "flags": ["Directory data only - confirm before going. Chain pizza, included because it is open from 11:00 AM inside the radius."]
+  }
+ ],
+ "rejected": [
+  {
+   "name": "Oveja Negra",
+   "city": "San Jose",
+   "why": "The official site publishes Santana Row lunch hours (Mon-Sat 11:00 AM - 4:00 PM) and a Txuleton Tuesday $140 dinner, which is an evening offer - but no street address for the branch was captured.",
+   "price_hint": "Txuleton Tuesday $140 for two, 5:30 PM - 10:00 PM (dinner, not lunch)",
+   "source": "https://www.ovejanegrasj.com/",
+   "searched": "2026-09-07"
+  },
+  {
+   "name": "The Basin",
+   "city": "Saratoga",
+   "why": "Dinner only - OpenTable lists 'Monday - Sunday: 5:00pm - Close' with no lunch service.",
+   "price_hint": "Cheeseburger and fries $15 on the happy-hour menu (4-6 PM)",
+   "source": "https://www.opentable.com/r/the-basin-saratoga",
+   "searched": "2026-09-07"
+  },
+  {
+   "name": "Hachi Ju Hachi",
+   "city": "Saratoga",
+   "why": "Dinner only - the Saratoga Chamber directory lists Tue-Sun 5:00 PM - 9:00 PM.",
+   "price_hint": null,
+   "source": "https://www.saratogachamber.org/copy-of-lodging",
+   "searched": "2026-09-07"
+  },
+  {
+   "name": "The Hero Ranch Kitchen",
+   "city": "Saratoga",
+   "why": "Opens at 4:00 PM Wednesday to Sunday, so there is no lunch service and it is closed on Tuesday.",
+   "price_hint": null,
+   "source": "https://www.saratogachamber.org/copy-of-lodging",
+   "searched": "2026-09-07"
+  },
+  {
+   "name": "Florentine Trattoria",
+   "city": "Saratoga",
+   "why": "Dinner only - the Saratoga Chamber directory lists Mon-Sun 4:00 PM - 7:30 PM.",
+   "price_hint": null,
+   "source": "https://www.saratogachamber.org/copy-of-lodging",
+   "searched": "2026-09-07"
+  },
+  {
+   "name": "Mangia Mornings",
+   "city": "Saratoga",
+   "why": "Closed on Tuesdays - the directory lists Wednesday to Sunday 8:00 AM - 4:00 PM.",
+   "price_hint": null,
+   "source": "https://www.saratogachamber.org/copy-of-lodging",
+   "searched": "2026-09-07"
+  },
+  {
+   "name": "Sushi Heaven",
+   "city": "Saratoga",
+   "why": "Dinner only - the directory lists 5:00 PM - 9:00 PM with 'call to confirm days'.",
+   "price_hint": null,
+   "source": "https://www.saratogachamber.org/copy-of-lodging",
+   "searched": "2026-09-07"
+  },
+  {
+   "name": "TeaZenTea (Saratoga)",
+   "city": "Saratoga",
+   "why": "Boba tea shop, not a lunch special - no food menu or hours were published on the pages read.",
+   "price_hint": null,
+   "source": "https://www.teazentea.com/order/saratoga/menu",
+   "searched": "2026-09-07"
+  }
+ ]
+}

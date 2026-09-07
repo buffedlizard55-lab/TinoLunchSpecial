@@ -120,6 +120,16 @@
       "link": "https://www.sfmta.com/fares/single-ride-adult-ages-19-64",
       "rows": [],
       "link_label": "open the agency page"
+    },
+    {
+      "id": "FLAG-13",
+      "severity": "note",
+      "title": "Full transit chain re-verified line by line on 2026-09-07 - every number still matches",
+      "what_we_found": "Re-read the live weekday grid on caltrain.com/schedules/pdfs: SF 6:20 AM (train 502 express) -> Mountain View 7:06 AM -> Sunnyvale 7:09 AM; the 6:25 AM local (106) reaches Sunnyvale 7:28 AM; northbound Sunnyvale 12:12 PM -> SF 1:16 PM, 12:42 PM -> SF 1:46 PM, 1:12 PM -> SF 2:16 PM, 1:42 PM -> SF 2:46 PM. caltrain.com/fares confirms the adult one-way 3-zone fare at $8.50 and the 3-zone day pass at $17.00 (so two one-ways wash), and that the VTA-Caltrain Day Pass adds $7.50 to the Caltrain Day Pass. The VTA route 55 weekday PDF confirms southbound Sunnyvale TC 7:19 AM -> De Anza & Homestead 7:33 AM -> Stelling & Stevens Creek 7:41 AM, and northbound Stelling & Stevens Creek 12:01 PM -> Sunnyvale TC 12:25 PM. The route page stop list also settles why the two legs use different stops: southbound serves 'Stevens Creek & De Anza (W)' while northbound serves 'McClellan & Felton (E)', which is the stop 0.46 mi from 20387 Gillick Way. SFMTA: N Bus inbound Judah St & 19th Ave 5:15 AM -> Townsend St & 5th St/Caltrain 5:53 AM (first trip of the day), N Judah outbound King St & 4th St 1:56 PM -> Judah St & 19th Ave 2:38 PM, single ride $2.85 Clipper/contactless or $3.00 cash. VTA's Labor Day alert ends 09/08/2026 1:00 AM and the Orange Line bus bridge (Sep 2-17) does not touch route 55, so Tuesday runs a normal weekday schedule.",
+      "what_we_did": "No transit number changed. The recommended outbound and return plans, the fares and the last-workable-train cut-off all stand; this flag records the re-check and its links.",
+      "link": "https://www.caltrain.com/schedules/pdfs",
+      "rows": [],
+      "link_label": "open the Caltrain weekday grid"
     }
   ],
   "lunch": [
@@ -308,6 +318,76 @@
         "L101"
       ],
       "link_label": "open the agency page"
+    },
+    {
+      "id": "LUNCH-FLAG-12",
+      "severity": "note",
+      "title": "Fourth search pass - 49 new rows (L102-L150) with 9 rejects",
+      "what_we_found": "Priced lunch specials newly verified on official pages: Lazy Dog Cupertino from $8.95 'til 4pm daily; Tomatina Santa Clara Pick Two $13.50; The Hut Santa Clara Taco Tuesday $10.00 (the only Tuesday-specific special found); Pasta Market Los Altos Gourmet Lunch Special $14.95; Urban Grill weekday buffet $16.99 11:30 AM-3:00 PM; Local Kitchens Cupertino lunch combos $13.00-$17.50 with side and drink. Day-of-week traps found and marked: Sakoon's buffet is Wednesday-Sunday only ($19.99-$24.99) and UlavacharU's is Friday-Sunday only, so neither runs on Tuesday; Chaat Bhavan's Lawrence Expressway branch is listed for every day EXCEPT Tuesday on the company's own site. Status conflicts: Royal Taj Campbell is live on its own site while Yelp marks it CLOSED; Krung Thai Mountain View, Mandarin Gourmet Cupertino and Hong Fu Gourmet Cupertino are all marked closed; GOGA Saratoga is now confirmed closed on Mondays and Tuesdays, which resolves the earlier L101 conflict. Big Basin Cafe and Big Basin Burger Bar have closing-time conflicts between two directories. Closest new find: QQ Noodle, 10889 S Blaney Ave, about 0.4 mi from 20387 Gillick Way - no published special but an 11:30 AM Tuesday opening.",
+      "what_we_did": "All 49 rows added with a verification level and at least one source link; rows whose only price came from an aggregator (Shan Restaurant, BJ's lunch window) were downgraded to unverified/listing with the aggregator flagged; rows with no published lunch special were kept visible and labelled rather than dropped; 9 candidates were rejected with reasons and links.",
+      "link": "https://www.thehutsantaclara.com/santa-clara-the-hut-food-menu",
+      "rows": [
+        "L102",
+        "L103",
+        "L104",
+        "L105",
+        "L106",
+        "L107",
+        "L108",
+        "L109",
+        "L110",
+        "L111",
+        "L112",
+        "L113",
+        "L114",
+        "L115",
+        "L116",
+        "L117",
+        "L118",
+        "L119",
+        "L120",
+        "L121",
+        "L122",
+        "L123",
+        "L124",
+        "L125",
+        "L126",
+        "L127",
+        "L128",
+        "L129",
+        "L130",
+        "L131",
+        "L132",
+        "L133",
+        "L134",
+        "L135",
+        "L136",
+        "L137",
+        "L138",
+        "L139",
+        "L140",
+        "L141",
+        "L142",
+        "L143",
+        "L144",
+        "L145",
+        "L146",
+        "L147",
+        "L148",
+        "L149",
+        "L150"
+      ],
+      "link_label": "open an official menu from this pass"
+    },
+    {
+      "id": "LUNCH-FLAG-13",
+      "severity": "note",
+      "title": "Lead only: Santana Row 'Let's Do Lunch' $25 prix-fixe weekday event, September 2026",
+      "what_we_found": "sanjose.org advertises 'Let's Do Lunch - Taste The Row': $25 prix-fixe lunches (one appetizer plus one entree) at participating Santana Row restaurants, Monday-Friday only, running through September 2026 - which includes Tuesday September 8. The page does not publish the participating restaurant list, and tax, gratuity and beverages are excluded.",
+      "what_we_did": "Not added as a row: without the participant list and per-restaurant menus it cannot be cited line by line. Recorded here so it can be checked against Santana Row restaurants on the day.",
+      "link": "https://www.sanjose.org/events/lets-do-lunch-taste-row",
+      "rows": [],
+      "link_label": "open the event page"
     }
   ]
 }

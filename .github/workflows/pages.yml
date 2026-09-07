@@ -1,8 +1,11 @@
 name: GitHub Pages
 
 on:
+  # Only main can publish: the github-pages environment is tied to the Pages
+  # source branch, so branch pushes were rejected instantly and showed a red
+  # "deploy" check on every pull request. Deploy happens on merge to main.
   push:
-    branches: [main, "arena/**"]
+    branches: [main]
   workflow_dispatch:
 
 permissions:

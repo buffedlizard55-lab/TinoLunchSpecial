@@ -298,6 +298,70 @@
       "url": "https://www.opentable.com/r/the-bywater-los-gatos",
       "fetch_status": "ok via search index",
       "used_for": "menu price bands ($7-$33.95 Local Union 271, $21-$27 The Post - both flagged for re-verification) and the Bywater Lunch Special note"
+    },
+    {
+      "id": "S38",
+      "agency": "Restaurant (own site)",
+      "label": "Tomatina Santa Clara official menu page",
+      "url": "https://tomatina.com/menu/tomatina-santa-clara-3127-mission-college-blvd",
+      "fetch_status": "ok",
+      "used_for": "Pick Two lunch specials $13.50 (Pick Two, Pick Two w/ Mini Pizza, Pick Two w/ Pasta & Sauce) - the only priced lunch special found in the Santa Clara sweep"
+    },
+    {
+      "id": "S39",
+      "agency": "Restaurant (own site)",
+      "label": "The Hut Santa Clara official food menu",
+      "url": "https://thehutsantaclara.com/santa-clara-the-hut-food-menu",
+      "fetch_status": "ok",
+      "used_for": "Taco Tuesday $10.00 (3 tacos plus side salad or fries) plus Monday/Thursday/Friday weekday specials - the only Tuesday-specific lunch special found in this pass"
+    },
+    {
+      "id": "S40",
+      "agency": "Restaurant (own ordering page)",
+      "label": "Lazy Dog, Local Kitchens and Urban Grill ordering pages",
+      "url": "https://orders.lazydogrestaurants.com/order/cupertino",
+      "fetch_status": "ok",
+      "used_for": "Lazy Dog Cupertino 'Lunch Specials starting at $8.95 til 4pm daily'; Local Kitchens Cupertino lunch combos $13.00-$17.50 with side and drink (localkitchens.toast.site); Urban Grill weekday lunch buffet $16.99 Mon-Thu 11:30 AM-3:00 PM (urbanindianflavors.com) against $19.99 Fri-Sun on urbangrillusa.com"
+    },
+    {
+      "id": "S41",
+      "agency": "Chamber of Commerce",
+      "label": "Saratoga Chamber of Commerce dining directory",
+      "url": "https://www.saratogachamber.org/copy-of-lodging",
+      "fetch_status": "ok",
+      "used_for": "Addresses, phones and lunch hours for 12 Saratoga businesses (Darla Cafe, Mandala, Bai Tong, Bella Saratoga, Hong's Gourmet, Mint Leaf, Kandoo, Round Table, The Mynt, Big Basin Cafe, plus dinner-only/closed rejects Hachi Ju Hachi, Hero Ranch Kitchen, Florentine, Mangia Mornings, Sushi Heaven)"
+    },
+    {
+      "id": "S42",
+      "agency": "Yelp",
+      "label": "Batch-4 Yelp business pages (hours and addresses)",
+      "url": "https://www.yelp.com/biz/ulavacharu-indian-restaurant-sunnyvale",
+      "fetch_status": "ok via search index",
+      "used_for": "Hours/address for UlavacharU, SAJJ, Oren's Hummus, Sushi Arashi, Fashion Wok, Chaat Bhavan, Sakoon (buffet Wed-Sun per Q&A), Chef Zhao Kitchen, State Street Market, Naschmarkt, Royal Taj (flagged CLOSED), Krung Thai (CLOSED), Mandarin Gourmet (CLOSED)"
+    },
+    {
+      "id": "S43",
+      "agency": "Third party (hours cross-check only)",
+      "label": "Batch-4 directories: restaurantji, restaurantguru, zmenu, wheree, restaurantjump, checkle, usarestaurants",
+      "url": "https://www.restaurantji.com/ca/cupertino/",
+      "fetch_status": "ok",
+      "used_for": "Structured weekly hours, coordinates and addresses used only to cross-check or to fill hours; no prices taken from these (Pineapple Thai, Mian Sichuan, Sajj, QQ Noodle, Haidilao, Big Basin Burger Bar, Big Basin Cafe, The Urban Grill, The Hut, Chef Zhao)"
+    },
+    {
+      "id": "S44",
+      "agency": "OpenTable",
+      "label": "Batch-4 OpenTable menu and hours blocks",
+      "url": "https://www.opentable.com/r/xiang-home-kitchen-cupertino",
+      "fetch_status": "ok via search index",
+      "used_for": "Xiang Home Kitchen 2 lunch section $12.99-$15.99; Sakoon buffet days/prices via Q&A; Left Bank Santana Row hours and happy hour; The Basin (dinner only); Ristorante Don Giovanni review-reported $19.95-$19.99 three-course lunch"
+    },
+    {
+      "id": "S45",
+      "agency": "Restaurant (own site)",
+      "label": "Batch-4 official hours pages",
+      "url": "https://www.chezphilippelosgatos.com/",
+      "fetch_status": "ok",
+      "used_for": "Chez Philippe Tue-Fri lunch 11:30 AM-2:00 PM; Heritage Pub & Chophouse Mon-Thu 11:30 AM-10:00 PM; A Bellagio Tue-Fri lunch 11:30 AM-2:30 PM; Buca di Beppo Campbell lunch combos Mon-Fri until 3 PM; Fogo de Chao San Jose lunch 11:30 AM-3:00 PM; Dumpling Time Santana Row daily 11:00-21:00; Chaat Bhavan 11:30-22:00; QQ Noodle Tue 11:30 AM-2:00 PM"
     }
   ],
   "dead_ends": [
