@@ -1,0 +1,187 @@
+{
+  "updated": "2026-09-07",
+  "transit": [
+    {
+      "id": "FLAG-1",
+      "severity": "important",
+      "title": "The N Judah does not serve Caltrain's 22nd Street station",
+      "what_we_found": "The requested chain says 'N Judah -> Caltrain station (22nd St)'. SFMTA's N Judah rail terminates/begins at King St & 4th St/Caltrain and the N Bus at Townsend St & 5th St/Caltrain; both are at the San Francisco Caltrain Station, 700 4th St (4th & King). Caltrain's own station pages list 'Muni N-Judah' under the San Francisco station's Transit Connections, and the 22nd Street page does not list the N. The two stations are about 1.3 mi apart along the corridor.",
+      "what_we_did": "Plans use the SF terminal for boarding and alighting and still publish the 22nd Street times in the same rows for reference. Both are Zone 1, so the fare is unchanged, and every weekday southbound train you board at the terminal also stops at 22nd St 4-5 minutes later (5:00/5:35/6:24/6:30/6:53/7:00/7:24/7:30/7:53/8:00/8:24/8:30 AM).",
+      "link": "https://www.caltrain.com/station/sanfrancisco and https://www.sfmta.com/routes/n-judah (downtown stop list) and https://www.caltrain.com/station/22ndstreet",
+      "rows": [],
+      "link_label": "open the agency page"
+    },
+    {
+      "id": "FLAG-2",
+      "severity": "watch",
+      "title": "SFMTA service change in effect since Saturday Aug 29 2026",
+      "what_we_found": "SFMTA's bulletin changes N Judah peak frequency from 10 to 9 minutes. There is no N routing change, but it is the newest published change before the trip date and it means any cached timetable from before Aug 29 is stale.",
+      "what_we_did": "Times were read from the live SFMTA timetable pages for the date 20260908, which matched the general weekday table exactly.",
+      "link": "https://www.sfmta.com/travel-updates/muni-service-changes-effective-saturday-august-29-2026",
+      "rows": [],
+      "link_label": "open the agency page"
+    },
+    {
+      "id": "FLAG-3",
+      "severity": "data conflict",
+      "title": "SFMTA's own N Bus headway text contradicts its N Bus timetable",
+      "what_we_found": "The N Judah Bus route page text says weekday 5-6 a.m. service runs at 60-minute headways, while the published N Bus weekday timetable lists trips at 5:07, 5:15, 5:43, 5:58, 6:13, 6:28, 6:43, 6:58, 7:13 and 7:28 a.m. - a 15-minute headway.",
+      "what_we_did": "The timetable was treated as authoritative because it is the document riders are pointed to for times, and the plan is built around the 5:15 a.m. trip. If SFMTA is really running hourly in that window, the next bus is 5:43 a.m. and the 6:20 a.m. Caltrain is still made (arrives 6:21 a.m.).",
+      "link": "https://www.sfmta.com/routes/n-judah-bus versus https://www.sfmta.com/routes/schedule/NBUS?direction_id=1",
+      "rows": [],
+      "link_label": "open the agency page"
+    },
+    {
+      "id": "FLAG-4",
+      "severity": "note",
+      "title": "The two earliest Caltrain southbounds are unreachable from the N Judah corridor",
+      "what_we_found": "The first weekday southbound departs the SF terminal at 4:55 a.m. (5:00 a.m. at 22nd St) and the second at 5:30 a.m. (5:35 a.m.). The earliest N Bus reaches the station at 5:57 a.m., so the earliest reachable train is the 6:20 a.m. express.",
+      "what_we_did": "Plan A is built on the 6:20 a.m. express; the 6:25 a.m. local is Plan A2.",
+      "link": "https://www.caltrain.com/station/sanfrancisco (southbound rows) and https://www.sfmta.com/routes/schedule/NBUS?direction_id=1",
+      "rows": [],
+      "link_label": "open the agency page"
+    },
+    {
+      "id": "FLAG-5",
+      "severity": "verification gap",
+      "title": "Caltrain minute-level times were read from the live station tables, not the print PDF",
+      "what_we_found": "Caltrain's weekday PDF (caltrain.com/media/36422, effective Jan 31 2026) could not be downloaded from this environment (3 failed fetches), so every Caltrain time here comes from the same agency's live per-station schedule tables. Those tables also contain 6XX 'Weekend Local' columns interleaved with weekday 1XX/4XX/5XX columns, and the two grids share minute offsets, so a mis-picked column can look plausible.",
+      "what_we_did": "Only 1XX Local / 4XX Limited / 5XX Express / 8XX South County Connector columns were used (6XX are weekend-only, and 9/8/2026 is a normal weekday). Every row is labelled 'official-live' and train numbers are described as 'the grid column they appear in' rather than asserted. Please re-check the two Caltrain times per direction against the PDF or trip planner before you travel.",
+      "link": "https://www.caltrain.com/schedules/pdfs and https://www.caltrain.com/station/sunnyvale",
+      "rows": [],
+      "link_label": "open the agency page"
+    },
+    {
+      "id": "FLAG-6",
+      "severity": "risk",
+      "title": "10-minute Caltrain-to-VTA connection on the fastest outbound plan",
+      "what_we_found": "The 6:20 a.m. express arrives Sunnyvale 7:09 a.m.; the route 55 southbound departs the transit center 12 minutes later at 7:19 a.m. VTA asks riders to be at the stop 5 minutes early, so the effective margin is about 5 minutes, and Caltrain trains do run a few minutes late.",
+      "what_we_did": "Plan A2 keeps the same Muni trip but takes the 6:25 a.m. local for a 12-minute-plus margin and a later bus (7:40 a.m.), arriving about 28 minutes later.",
+      "link": "https://www.vta.org/sites/default/files/route_schedule_pdfs/current/route_55/route_55_schedule.pdf",
+      "rows": [],
+      "link_label": "open the agency page"
+    },
+    {
+      "id": "FLAG-7",
+      "severity": "note",
+      "title": "Two Cupertino-side stops are not published timepoints",
+      "what_we_found": "VTA's route 55 sheet publishes times for timepoints only. Stevens Creek Blvd & De Anza Blvd (W) and McClellan Rd & Felton Way (E) are between timepoints, so 7:36 a.m., 7:57 a.m., 12:06 p.m. and 12:36 p.m. here are interpolated between the adjacent published times.",
+      "what_we_did": "Marked 'interpolated' in every affected row, with the neighbouring published times shown in the note. Treat as plus or minus 3 minutes.",
+      "link": "https://www.vta.org/sites/default/files/route_schedule_pdfs/current/route_55/route_55_schedule.pdf",
+      "rows": [],
+      "link_label": "open the agency page"
+    },
+    {
+      "id": "FLAG-8",
+      "severity": "note",
+      "title": "Walk legs are estimates from OpenStreetMap, not agency data",
+      "what_we_found": "0.08 mi home-to-stop, 0.2 mi bus-stop-to-station, 0.46 mi Gillick Way to McClellan & Felton, 0.87 mi Stevens Creek & De Anza to Gillick Way, about 200 ft between the Sunnyvale platform and the transit center. The 0.46/0.87 mi figures are routed pedestrian distances from the public Valhalla service over OSM data; the rest are straight-line figures at about 3 mph.",
+      "what_we_did": "Labelled 'estimate'. Re-time them once on foot if you want the totals exact; none of them changes a connection except in the FLAG-6 case.",
+      "link": "https://valhalla.openstreetmap.de/ and https://www.openstreetmap.org/ (data ODbL)",
+      "rows": [],
+      "link_label": "open the agency page"
+    },
+    {
+      "id": "FLAG-9",
+      "severity": "note",
+      "title": "Route 55 has a peak-only variant and one school-dependent trip",
+      "what_we_found": "VTA shows the off-peak northbound 55 via Sunnyvale-Saratoga Rd & Crescent Ave and a peak variant via West Fremont Ave & Sydney Dr; the two alignments differ by roughly 8 minutes end to end. The route page also states the 7:26 a.m. southbound operates only when Fremont High School is in session. Monday Sept 7 is Labor Day, so Sunday/holiday service applies that day only.",
+      "what_we_did": "Return options name the alignment they were read from, and no plan uses the 7:26 a.m. school trip.",
+      "link": "https://www.vta.org/go/routes/55",
+      "rows": [],
+      "link_label": "open the agency page"
+    }
+  ],
+  "lunch": [
+    {
+      "id": "LUNCH-FLAG-1",
+      "severity": "important",
+      "title": "Third-party menu prices are not the dine-in price",
+      "what_we_found": "DoorDash / Postmates / Menupix listings for Cap't Loui, Water Tower Kitchen and others show marked-up or discounted figures that do not match each other (e.g. Water Tower Kitchen 'The Burger' appears as $20.60 and $23.00 in two aggregators).",
+      "what_we_did": "Aggregator prices are never used as the verified price in the master list. Rows that depend on an aggregator are marked 'needs review'.",
+      "link": "",
+      "rows": [],
+      "link_label": "open the agency page"
+    },
+    {
+      "id": "LUNCH-FLAG-2",
+      "severity": "important",
+      "title": "A lunch special from another city's branch leaked into search results",
+      "what_we_found": "Search results for Cap't Loui returned a 'Lunch Special 11:30am-3pm Mon-Fri, $13.95' block - that is Cap't Loui Las Vegas, not the Cupertino restaurant at 19700 Vallco Pkwy.",
+      "what_we_did": "Excluded. The Cupertino row records only what the Cupertino sources show and is flagged 'lunch special not confirmed for the Cupertino location'.",
+      "link": "",
+      "rows": [],
+      "link_label": "open the agency page"
+    },
+    {
+      "id": "LUNCH-FLAG-3",
+      "severity": "important",
+      "title": "'Los Altos' also names restaurants that are not in Los Altos, CA",
+      "what_we_found": "Two results in the Los Altos search were Los Altos Taqueria / Los Altos Mexican Grill (Chico area, 'Goose Creek' listing) and Los Altos Restaurant in Goleta and Salinas. The Chico listing has a genuine published lunch special ($7.99 Muy Rapido Lunch, 11am-3pm Mon-Fri) but it is 180 miles away.",
+      "what_we_did": "Excluded from the master list and recorded in the rejected-candidates table so the near-miss is visible.",
+      "link": "",
+      "rows": [],
+      "link_label": "open the agency page"
+    },
+    {
+      "id": "LUNCH-FLAG-4",
+      "severity": "watch",
+      "title": "Yelp marks one Cupertino candidate as closed while another page for the same address shows live hours",
+      "what_we_found": "Yelp has two pages for Yummee Sandwiches at 21682 Stevens Creek Blvd: one titled 'YUMMEE SANDWICHES - CLOSED' with 'Yelpers report this location has closed', and one showing Tue-Fri 9:00-19:00. A third source lists Mon-Fri 9-7 with Monday open.",
+      "what_we_did": "Excluded from the master list; the deal ($6.99-ish sandwich lunch special quoted in a Yelp review) cannot be verified as still offered.",
+      "link": "",
+      "rows": [],
+      "link_label": "open the agency page"
+    },
+    {
+      "id": "LUNCH-FLAG-5",
+      "severity": "watch",
+      "title": "Several lunch specials are 'review-sourced', not menu-sourced",
+      "what_we_found": "For Red Hot Wok, Fish's Wild, Siam Station, Wooga, Los Gatos Cafe and Brew City Grill, the lunch special itself is described in customer reviews (Yelp/Google) rather than on a published menu page, so the price is a reviewer figure.",
+      "what_we_did": "Marked 'review-sourced'; the price column shows the reviewer figure with a '~' and the row carries a 'call ahead' note. These are the rows to check first by phone or on the restaurant's own menu.",
+      "link": "",
+      "rows": [],
+      "link_label": "open the agency page"
+    },
+    {
+      "id": "LUNCH-FLAG-6",
+      "severity": "watch",
+      "title": "Two candidates are explicitly reported as NOT having a lunch special",
+      "what_we_found": "Reviews state that Yiassoo Cupertino 'doesn't seem to have the lunch special' and that Kiku Restaurant has 'No lunch specials'. Sizzling Lunch's own online menu lists entrees at $16.50-$18.00 with no lunch line, despite the name.",
+      "what_we_did": "Kept in the master list as verified negatives with their price floor, because they prevent wasting a trip; they are labelled 'no lunch special found'.",
+      "link": "",
+      "rows": [],
+      "link_label": "open the agency page"
+    },
+    {
+      "id": "LUNCH-FLAG-7",
+      "severity": "note",
+      "title": "Lunch windows can close before the return bus",
+      "what_we_found": "Ajito's Tuesday lunch service ends at 1:00 PM and it is closed Monday and Sunday; Bento Express closes 2:00 PM; Red Hot Wok closes 2:00 PM; Pho Ha Noi Cupertino closes 2:00 PM. The recommended return departs 20387 Gillick Way at 11:50 AM.",
+      "what_we_did": "Every row lists a Tuesday close time and a 'fits the 11:50 AM departure?' verdict. Restaurants that only fit a later departure are the ones that pair with Plan R2 (12:20 PM leave-time).",
+      "link": "",
+      "rows": [],
+      "link_label": "open the agency page"
+    },
+    {
+      "id": "LUNCH-FLAG-8",
+      "severity": "note",
+      "title": "No relevant Reddit threads were found for these specific deals",
+      "what_we_found": "Reddit searches for Cupertino/Sunnyvale/Los Gatos lunch specials on 2026-09-07 returned threads about other cities (San Antonio, Chicago).",
+      "what_we_did": "Reddit is recorded as searched and not used, rather than cited loosely. Yelp, Google-derived listings and official menu pages carry the verification.",
+      "link": "",
+      "rows": [],
+      "link_label": "open the agency page"
+    },
+    {
+      "id": "LUNCH-FLAG-9",
+      "severity": "note",
+      "title": "Hours differ between sources for the same business",
+      "what_we_found": "Brew City Grill: OpenTable 'Mon-Thu, Sun 11:00-20:00; Fri-Sat 11:00-21:00' vs Yelp 'Mon-Thu 11:00-21:00; Fri-Sat 11:00-21:30; Sun 11:00-20:30'. Gardenia Los Gatos: one source has Thursday closed, another 08:30-21:00 every day. Bento Express: one aggregator says Friday closed, Yelp says Friday 11:00-14:00 and 16:10-20:00.",
+      "what_we_did": "The row shows the conflict instead of picking silently, and the confidence field says 'conflicting - review'.",
+      "link": "",
+      "rows": [],
+      "link_label": "open the agency page"
+    }
+  ]
+}

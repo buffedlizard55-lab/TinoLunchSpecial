@@ -1,0 +1,156 @@
+{
+  "trip_date": "2026-09-08",
+  "direction": "Outbound - home (21st Ave & Judah St, SF) to 20387 Gillick Way, Cupertino",
+  "source_files": {
+    "muni_nbus_schedule": "https://www.sfmta.com/routes/schedule/NBUS?direction_id=1",
+    "muni_n_judah_schedule_eastbound": "https://www.sfmta.com/routes/schedule/N?direction_id=1",
+    "caltrain_sf_station_times": "https://www.caltrain.com/station/sanfrancisco",
+    "caltrain_sunnyvale_station_times": "https://www.caltrain.com/station/sunnyvale",
+    "vta_55_schedule_pdf": "https://www.vta.org/sites/default/files/route_schedule_pdfs/current/route_55/route_55_schedule.pdf"
+  },
+  "plans": [
+    {
+      "id": "A",
+      "label": "Plan A - earliest possible departure (recommended)",
+      "recommended": true,
+      "leave_home": "5:10 AM",
+      "arrive_destination": "about 7:55 AM",
+      "total_time_min": 165,
+      "cash_cost_usd": 13.85,
+      "clipper_cost_usd": 13.85,
+      "legs": [
+        {
+          "seq": 1, "mode": "Walk", "operator": "-", "line": "21st Ave & Judah St to Judah St & 19th Ave",
+          "from": "21st Ave & Judah St (home)", "to": "Judah St & 19th Ave (SFMTA stop 15200)",
+          "depart": "5:10 AM", "arrive": "5:12 AM", "travel_min": 2, "fare_usd": 0,
+          "verified": "estimate",
+          "note": "Two 200 ft SF avenue blocks at ~3 mph.",
+          "sources": [
+            {"label": "SFMTA stop list (N Judah route page)", "url": "https://www.sfmta.com/routes/n-judah", "verifies": "stop 15200 Judah St & 19th Ave is an N Judah stop"}
+          ],
+          "flags": []
+        },
+        {
+          "seq": 2, "mode": "SF Muni", "operator": "SFMTA", "line": "N Judah Bus (Metro Bus, pre-subway service)",
+          "from": "Judah St & 19th Ave (stop 15200)", "to": "Townsend St & 5th St/Caltrain (stop 17957)",
+          "depart": "5:15 AM", "arrive": "5:53 AM", "travel_min": 38, "fare_usd": 2.85,
+          "fare_note": "Single ride $2.85 with Clipper / MuniMobile / contactless, $3.00 cash. Valid 120 minutes.",
+          "verified": "official-live",
+          "note": "The metro N Judah does not run at this hour. SFMTA: 'Between subway hours and Owl service, use the N Bus.' This is the first outbound N Bus trip of the weekday.",
+          "sources": [
+            {"label": "SFMTA - N Bus weekday timetable (outbound to Caltrain)", "url": "https://www.sfmta.com/routes/schedule/NBUS?direction_id=1", "verifies": "5:15 AM Judah & 19th Ave -> 5:53 AM Townsend & 5th/Caltrain"},
+            {"label": "SFMTA - N Judah Bus route page", "url": "https://www.sfmta.com/routes/n-judah-bus", "verifies": "bus covers non-subway hours and terminates at Townsend St & 5th/Caltrain"},
+            {"label": "SFMTA - Muni fares", "url": "https://www.sfmta.com/getting-around/muni/fares", "verifies": "Single Ride $2.85 / $3.00 cash, 120 min"}
+          ],
+          "flags": ["FLAG-3: SFMTA's N Bus route page still says 'Weekdays 5-6 a.m., 60-minute headway', but the published timetable lists trips at 5:07, 5:15, 5:43, 5:58, 6:13, 6:28 - i.e. 15-minute headways. The timetable is treated as authoritative here."]
+        },
+        {
+          "seq": 3, "mode": "Walk", "operator": "-", "line": "Townsend St & 5th St to SF Caltrain Station",
+          "from": "Townsend St & 5th St/Caltrain (stop 17957)", "to": "San Francisco Caltrain Station, 700 4th St",
+          "depart": "5:53 AM", "arrive": "5:57 AM", "travel_min": 4, "fare_usd": 0,
+          "verified": "estimate",
+          "note": "0.2 mi between the bus stop and the station lobby, computed on OpenStreetMap geometry.",
+          "sources": [
+            {"label": "Caltrain - San Francisco station page", "url": "https://www.caltrain.com/station/sanfrancisco", "verifies": "700 4th St, Zone 1, and Muni N-Judah listed under Transit Connections"},
+            {"label": "SFMTA - N Bus timetable", "url": "https://www.sfmta.com/routes/schedule/NBUS?direction_id=1", "verifies": "5:53 AM arrival at stop 17957"}
+          ],
+          "flags": ["FLAG-1: You asked to board at 22nd Street. The N Judah (rail and bus) connects to the SF terminal at 4th & King, not to 22nd St - Caltrain lists Muni N-Judah only under the San Francisco station. 22nd St is the next stop and every weekday southbound train stops there 4-5 minutes later at the same Zone 1 fare, so both options are priced below."]
+        },
+        {
+          "seq": 4, "mode": "Caltrain", "operator": "Peninsula Corridor Joint Powers Board", "line": "Southbound Express (train 502 in the published grid)",
+          "from": "San Francisco Caltrain Station (700 4th St)", "to": "Sunnyvale station (121 W Evelyn Ave, Zone 3)",
+          "depart": "6:20 AM", "arrive": "7:09 AM", "travel_min": 49, "fare_usd": 8.5,
+          "fare_note": "Adult one-way, Zone 1 to Zone 3 (SF to Sunnyvale) = $8.50 by ticket machine or Clipper. Valid 4 hours, one direction. 3-zone Day Pass is $17.00, which is the same money for a round trip.",
+          "verified": "official-live",
+          "note": "If you board at 22nd Street instead: same train, departs 22nd St 6:24 AM, arrives Sunnyvale 7:09 AM (45 min). Next options from the SF terminal: 6:25 AM local (arrives Sunnyvale 7:28 AM), 6:48 AM Limited (7:43 AM), 6:55 AM local (7:58 AM).",
+          "sources": [
+            {"label": "Caltrain - San Francisco station schedules (weekday table, southbound rows)", "url": "https://www.caltrain.com/station/sanfrancisco", "verifies": "SF departures 4:55, 5:30, 6:20, 6:25, 6:48, 6:55, 7:20, 7:25 AM and 22nd St departures 5:00, 5:35, 6:24, 6:30, 6:53, 7:00, 7:24, 7:30 AM"},
+            {"label": "Caltrain - Sunnyvale station schedules", "url": "https://www.caltrain.com/station/sunnyvale", "verifies": "Sunnyvale arrivals in the same grid; station address and Zone 3 designation"},
+            {"label": "Caltrain - fares", "url": "https://www.caltrain.com/fares", "verifies": "Zone 1-3 adult one-way $8.50, day pass $17.00, 4-hour validity, Clipper/contactless/ticket machines"},
+            {"label": "Caltrain - printer-friendly PDF index (eff. Jan 31 2026)", "url": "https://www.caltrain.com/schedules/pdfs", "verifies": "weekday timetable and train-number legend (1XX local, 4XX limited, 5XX express, 6XX weekend local, 8XX South County Connector)"}
+          ],
+          "flags": ["FLAG-4: The 5:00 AM and 5:35 AM southbound locals cannot be reached from Judah & 19th Ave - the earliest N Bus arrives at the station at 5:57 AM. 6:20 AM is the first reachable train.", "FLAG-5: minute-level times were read from the live Caltrain station tables rather than the weekday PDF (the PDF could not be downloaded from this environment). Train numbers are given as the grid column they appear in; confirm the train number in Caltrain's trip planner before relying on it."]
+        },
+        {
+          "seq": 5, "mode": "Walk", "operator": "-", "line": "Sunnyvale Caltrain platform to Sunnyvale Transit Center bus bays",
+          "from": "Sunnyvale station, 121 W Evelyn Ave", "to": "Sunnyvale Transit Center (605/1201 W Evelyn Ave block)",
+          "depart": "7:09 AM", "arrive": "7:11 AM", "travel_min": 2, "fare_usd": 0,
+          "verified": "estimate",
+          "note": "The transit center is on the same block as the station (about 200 ft between the platform and the VTA bays).",
+          "sources": [
+            {"label": "Caltrain - Sunnyvale station page", "url": "https://www.caltrain.com/station/sunnyvale", "verifies": "VTA 20, 21, 53, 55 and Rapid 523 listed as station connections at 121 W. Evelyn Ave"},
+            {"label": "OpenStreetMap - Sunnyvale Transit Center node", "url": "https://www.openstreetmap.org/node/6720130283", "verifies": "transit center location adjacent to the rail platform (not an agency source)"}
+          ],
+          "flags": []
+        },
+        {
+          "seq": 6, "mode": "VTA bus", "operator": "Santa Clara Valley Transportation Authority", "line": "55 southbound (toward De Anza College)",
+          "from": "Sunnyvale Transit Center (S)", "to": "Stevens Creek Blvd & De Anza Blvd (W)",
+          "depart": "7:19 AM", "arrive": "about 7:36 AM", "travel_min": 17, "fare_usd": 2.5,
+          "fare_note": "VTA adult single ride $2.50 (cash or Clipper), 2 hours of free transfers.",
+          "verified": "official-live (alighting time interpolated)",
+          "note": "Published timepoints for this trip: Sunnyvale TC 7:19 AM, Sunnyvale-Saratoga & El Camino 7:24, Sunnyvale-Saratoga & Fremont 7:29, De Anza & Homestead 7:33, Stelling & Stevens Creek 7:41. Stevens Creek & De Anza is not a timepoint, so 7:36 AM is interpolated between 7:33 and 7:41.",
+          "sources": [
+            {"label": "VTA - route 55 schedule PDF (weekday timepoints)", "url": "https://www.vta.org/sites/default/files/route_schedule_pdfs/current/route_55/route_55_schedule.pdf", "verifies": "7:19 AM from Sunnyvale TC, 7:33 De Anza & Homestead, 7:41 Stelling & Stevens Creek"},
+            {"label": "VTA - route 55 route page", "url": "https://www.vta.org/go/routes/55", "verifies": "stop order both directions, 'arrive 5 minutes early', all times approximate"},
+            {"label": "VTA - fares", "url": "https://www.vta.org/go/fares", "verifies": "adult single ride $2.50, 2-hour free transfers, 8-hour/day pass pricing"}
+          ],
+          "flags": ["FLAG-6: only a 10-minute Caltrain-to-VTA connection (7:09 arrival, 7:19 bus). VTA runs when the doors close; if the train is a few minutes late, the next southbound trip is 7:40 AM (see Plan A2).", "FLAG-7: Stevens Creek & De Anza and McClellan & Felton are not published timepoints, so their times are interpolated and can be off by up to about 3 minutes."]
+        },
+        {
+          "seq": 7, "mode": "Walk", "operator": "-", "line": "Stevens Creek Blvd & De Anza Blvd to 20387 Gillick Way",
+          "from": "Stevens Creek Blvd & De Anza Blvd (W)", "to": "20387 Gillick Way, Cupertino",
+          "depart": "about 7:36 AM", "arrive": "about 7:55 AM", "travel_min": 18, "fare_usd": 0,
+          "verified": "estimate",
+          "note": "1.40 km / about 0.87 mi, 18 min at 3 mph, from Valhalla pedestrian routing over OpenStreetMap (the route uses the Stevens Creek pedestrian path and the Gillick Way walkways).",
+          "sources": [
+            {"label": "Valhalla / OpenStreetMap pedestrian route", "url": "https://valhalla.openstreetmap.de/", "verifies": "routed walking distance 1.40 km, about 18 min (third-party geodata, not an agency source)"}
+          ],
+          "flags": ["FLAG-8: this is the long walk caused by the destination being inside a residential pocket. Alternative: stay on the 55 to Stelling & Stevens Creek (7:41 AM) - that stop is a published timepoint and is served by the northbound trip on the way home."]
+        }
+      ],
+      "flags_summary": ["FLAG-1", "FLAG-3", "FLAG-4", "FLAG-5", "FLAG-6", "FLAG-7", "FLAG-8"]
+    },
+    {
+      "id": "A2",
+      "label": "Plan A2 - earliest departure with a safe transfer",
+      "recommended": false,
+      "leave_home": "5:10 AM",
+      "arrive_destination": "about 8:23 AM",
+      "total_time_min": 193,
+      "cash_cost_usd": 13.85,
+      "clipper_cost_usd": 13.85,
+      "legs": [
+        {"seq": 1, "mode": "Walk", "operator": "-", "line": "home to Judah St & 19th Ave", "from": "21st Ave & Judah St (home)", "to": "Judah St & 19th Ave (stop 15200)", "depart": "5:10 AM", "arrive": "5:12 AM", "travel_min": 2, "fare_usd": 0, "verified": "estimate", "note": "Same as Plan A.", "sources": [{"label": "SFMTA - N Judah route page", "url": "https://www.sfmta.com/routes/n-judah", "verifies": "stop 15200"}], "flags": []},
+        {"seq": 2, "mode": "SF Muni", "operator": "SFMTA", "line": "N Judah Bus", "from": "Judah St & 19th Ave (stop 15200)", "to": "Townsend St & 5th St/Caltrain (stop 17957)", "depart": "5:15 AM", "arrive": "5:53 AM", "travel_min": 38, "fare_usd": 2.85, "fare_note": "Single ride $2.85.", "verified": "official-live", "note": "Identical to Plan A. Later N Bus trips if you sleep in: 5:43 (arr 6:21), 5:58 (6:36), 6:13 (6:51), 6:28 (7:06), 6:43 (7:21), 6:58 (7:36), 7:13 (7:51), 7:28 (8:06).", "sources": [{"label": "SFMTA - N Bus weekday timetable", "url": "https://www.sfmta.com/routes/schedule/NBUS?direction_id=1", "verifies": "trip list and stop times"}], "flags": []},
+        {"seq": 3, "mode": "Caltrain", "operator": "Peninsula Corridor Joint Powers Board", "line": "Southbound local (train 106 in the published grid)", "from": "San Francisco Caltrain Station", "to": "Sunnyvale station", "depart": "6:25 AM", "arrive": "7:28 AM", "travel_min": 63, "fare_usd": 8.5, "fare_note": "Zone 1 to Zone 3, adult one-way $8.50.", "verified": "official-live", "note": "From 22nd Street the same train departs 6:30 AM. This is the local, so it takes 14 minutes longer than the 6:20 AM express but leaves a 12-minute cushion for the VTA connection.", "sources": [{"label": "Caltrain - San Francisco station schedules", "url": "https://www.caltrain.com/station/sanfrancisco", "verifies": "SF 6:25 AM / 22nd St 6:30 AM departures"}, {"label": "Caltrain - Sunnyvale station schedules", "url": "https://www.caltrain.com/station/sunnyvale", "verifies": "7:28 AM Sunnyvale arrival"}, {"label": "Caltrain - fares", "url": "https://www.caltrain.com/fares", "verifies": "3-zone one-way $8.50"}], "flags": []},
+        {"seq": 4, "mode": "VTA bus", "operator": "VTA", "line": "55 southbound", "from": "Sunnyvale Transit Center (S)", "to": "Stevens Creek Blvd & De Anza Blvd (W)", "depart": "7:40 AM", "arrive": "about 7:57 AM", "travel_min": 17, "fare_usd": 2.5, "fare_note": "$2.50 single ride.", "verified": "official-live (alighting time interpolated)", "note": "Timepoints for this trip: Sunnyvale TC 7:40, De Anza & Homestead 7:54, Stelling & Stevens Creek 8:02 (12-minute Caltrain-to-bus connection).", "sources": [{"label": "VTA - route 55 schedule PDF", "url": "https://www.vta.org/sites/default/files/route_schedule_pdfs/current/route_55/route_55_schedule.pdf", "verifies": "7:40 AM departure from Sunnyvale TC and downstream timepoints"}], "flags": ["FLAG-7"]},
+        {"seq": 5, "mode": "Walk", "operator": "-", "line": "Stevens Creek & De Anza to Gillick Way", "from": "Stevens Creek Blvd & De Anza Blvd (W)", "to": "20387 Gillick Way", "depart": "about 7:57 AM", "arrive": "about 8:15 AM", "travel_min": 18, "fare_usd": 0, "verified": "estimate", "note": "1.40 km.", "sources": [{"label": "Valhalla / OpenStreetMap pedestrian route", "url": "https://valhalla.openstreetmap.de/", "verifies": "1.40 km, about 18 min"}], "flags": []}
+      ],
+      "flags_summary": ["FLAG-7"]
+    },
+    {
+      "id": "B",
+      "label": "Plan B - ride the N Judah metro (no bus substitution, simplest)",
+      "recommended": false,
+      "leave_home": "7:37 AM",
+      "arrive_destination": "about 10:34 AM",
+      "total_time_min": 177,
+      "cash_cost_usd": 13.85,
+      "clipper_cost_usd": 13.85,
+      "legs": [
+        {"seq": 1, "mode": "Walk", "operator": "-", "line": "home to Judah St & 19th Ave", "from": "21st Ave & Judah St (home)", "to": "Judah St & 19th Ave (stop 15200)", "depart": "7:37 AM", "arrive": "7:39 AM", "travel_min": 2, "fare_usd": 0, "verified": "estimate", "note": "", "sources": [{"label": "SFMTA - N Judah route page", "url": "https://www.sfmta.com/routes/n-judah", "verifies": "stop 15200"}], "flags": []},
+        {"seq": 2, "mode": "SF Muni", "operator": "SFMTA", "line": "N Judah metro (light rail) eastbound", "from": "Judah St & 19th Ave", "to": "King St & 4th St/Caltrain", "depart": "7:42 AM", "arrive": "8:20 AM", "travel_min": 38, "fare_usd": 2.85, "fare_note": "Single ride $2.85.", "verified": "official-live", "note": "Metro trips from Judah & 19th Ave after the bus window: 7:42, 7:59, 8:13, 8:25 AM (arriving King St & 4th St at 8:20, 8:37, 8:51, 9:03 AM). Peak headway on the N is 9 minutes as of the Aug 29 2026 service change.", "sources": [{"label": "SFMTA - N Judah weekday timetable (eastbound)", "url": "https://www.sfmta.com/routes/schedule/N?direction_id=1", "verifies": "7:42 AM Judah & 19th -> 8:20 AM King St & 4th/Caltrain"}, {"label": "SFMTA - service changes effective Saturday Aug 29 2026", "url": "https://www.sfmta.com/travel-updates/muni-service-changes-effective-saturday-august-29-2026", "verifies": "N Judah peak headway changed from 10 to 9 minutes; no routing change on the N"}], "flags": ["FLAG-2: SFMTA published a systemwide service change effective Aug 29 2026 that touches N Judah frequencies. Confirm the timetable once more on 9/7 evening in case of a further bulletin."]},
+        {"seq": 3, "mode": "Caltrain", "operator": "Peninsula Corridor Joint Powers Board", "line": "Southbound Limited (train 412 in the published grid)", "from": "San Francisco Caltrain Station", "to": "Sunnyvale station", "depart": "8:48 AM", "arrive": "9:43 AM", "travel_min": 55, "fare_usd": 8.5, "fare_note": "Zone 1 to Zone 3, $8.50.", "verified": "official-live", "note": "Boarding at 22nd Street: 8:53 AM. The 8:25 AM local would arrive Sunnyvale 9:28 AM and still make the 9:35 AM bus, and the 8:20 AM express arrives 9:09 AM but leaves only a 26-minute gap to the next bus at 9:35. Do not plan on the 8:24 AM express from 22nd St: it departs 4 minutes after the 8:20 AM metro arrives, which is not a usable transfer.", "sources": [{"label": "Caltrain - San Francisco station schedules", "url": "https://www.caltrain.com/station/sanfrancisco", "verifies": "SF 8:48 AM Limited departure and 22nd St 8:53 AM"}, {"label": "Caltrain - fares", "url": "https://www.caltrain.com/fares", "verifies": "zone fare $8.50"}], "flags": ["FLAG-5"]},
+        {"seq": 4, "mode": "VTA bus", "operator": "VTA", "line": "55 southbound", "from": "Sunnyvale Transit Center (S)", "to": "Stevens Creek Blvd & De Anza Blvd (W)", "depart": "9:59 AM", "arrive": "about 10:16 AM", "travel_min": 17, "fare_usd": 2.5, "fare_note": "$2.50.", "verified": "official-live (alighting time interpolated)", "note": "Timepoints: Sunnyvale TC 9:59, De Anza & Homestead 10:13, Stelling & Stevens Creek 10:21.", "sources": [{"label": "VTA - route 55 schedule PDF", "url": "https://www.vta.org/sites/default/files/route_schedule_pdfs/current/route_55/route_55_schedule.pdf", "verifies": "9:59 AM departure and downstream timepoints"}], "flags": ["FLAG-7"]},
+        {"seq": 5, "mode": "Walk", "operator": "-", "line": "Stevens Creek & De Anza to Gillick Way", "from": "Stevens Creek Blvd & De Anza Blvd (W)", "to": "20387 Gillick Way", "depart": "about 10:16 AM", "arrive": "about 10:34 AM", "travel_min": 18, "fare_usd": 0, "verified": "estimate", "note": "1.40 km.", "sources": [{"label": "Valhalla / OpenStreetMap pedestrian route", "url": "https://valhalla.openstreetmap.de/", "verifies": "1.40 km, about 18 min"}], "flags": []}
+      ],
+      "flags_summary": ["FLAG-2", "FLAG-5", "FLAG-7"]
+    }
+  ],
+  "station_comparison": [
+    {"option": "Sunnyvale (chosen)", "caltrain_leg": "6:20 AM express from SF -> 7:09 AM Sunnyvale", "vta": "route 55, 7:19 AM from the transit center on the same block", "to_door_min": 20, "note": "Caltrain officially lists VTA 55 as a Sunnyvale connection; one ride, no transfer inside the mall."},
+    {"option": "Mountain View", "caltrain_leg": "6:20 AM express from SF -> 7:06 AM Mountain View", "vta": "route 52 from the Mountain View Transit Center", "to_door_min": 45, "note": "4 minutes faster by train, but adds a 0.4 mi walk to the transit center, a less frequent bus and a longer walk from El Monte & De Anza. Route 52 does not serve the Sunnyvale side where the return stop is."},
+    {"option": "Santa Clara / Lawrence / College Park", "caltrain_leg": "n/a", "vta": "-", "to_door_min": null, "note": "Rejected: no direct VTA ride to the Gillick Way area at these stations at the times that matter."}
+  ]
+}

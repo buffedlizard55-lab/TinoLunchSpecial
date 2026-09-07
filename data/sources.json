@@ -1,0 +1,223 @@
+{
+  "accessed": "2026-09-07",
+  "note": "Every time, fare and stop in this project was read from one of these pages. 'fetch_status' records what happened when the page was read from the build environment, so a gap is visible instead of hidden.",
+  "sources": [
+    {
+      "id": "S1",
+      "agency": "SFMTA",
+      "label": "N Judah route page (stops, 24-hour note, subway-hours footnote, Aug 29 change banner)",
+      "url": "https://www.sfmta.com/routes/n-judah",
+      "fetch_status": "ok",
+      "used_for": "stop 15200/15201 Judah & 19th Ave; 'Between subway hours and Owl service, use the N Bus'"
+    },
+    {
+      "id": "S2",
+      "agency": "SFMTA",
+      "label": "N Judah metro weekday timetable, eastbound (to Caltrain)",
+      "url": "https://www.sfmta.com/routes/schedule/N?direction_id=1",
+      "fetch_status": "ok",
+      "used_for": "7:42 AM Judah & 19th -> 8:20 AM King St & 4th; also checked with ?date=20260908 (identical)"
+    },
+    {
+      "id": "S3",
+      "agency": "SFMTA",
+      "label": "N Judah metro weekday timetable, westbound (to Ocean Beach)",
+      "url": "https://www.sfmta.com/routes/schedule/N?direction_id=0",
+      "fetch_status": "ok",
+      "used_for": "midday westbound pairs from King St & 4th St, including 1:56 PM -> 2:38 PM and 2:32 PM -> 3:14 PM"
+    },
+    {
+      "id": "S4",
+      "agency": "SFMTA",
+      "label": "N Judah Bus route page",
+      "url": "https://www.sfmta.com/routes/n-judah-bus",
+      "fetch_status": "ok",
+      "used_for": "bus covers non-subway hours; inbound terminus Townsend St & 5th (17957); weekday 5-6 a.m. headway text (see FLAG-3)"
+    },
+    {
+      "id": "S5",
+      "agency": "SFMTA",
+      "label": "N Bus weekday timetable, outbound to Caltrain",
+      "url": "https://www.sfmta.com/routes/schedule/NBUS?direction_id=1",
+      "fetch_status": "ok",
+      "used_for": "earliest trip 5:07/5:15 AM, 5:53 AM at Townsend & 5th/Caltrain, 15-minute spacing to 7:20 AM; also checked with ?date=20260908 (identical)"
+    },
+    {
+      "id": "S6",
+      "agency": "SFMTA",
+      "label": "Muni fares",
+      "url": "https://www.sfmta.com/getting-around/muni/fares",
+      "fetch_status": "ok",
+      "used_for": "Single Ride $2.85 / cash $3.00 / 120 min; Day Pass $5.70; Monthly $86; youth 18 and under free; $2.85 inter-agency credit when transferring to Muni within 2 hours"
+    },
+    {
+      "id": "S7",
+      "agency": "SFMTA",
+      "label": "Muni service changes effective Saturday Aug 29 2026",
+      "url": "https://www.sfmta.com/travel-updates/muni-service-changes-effective-saturday-august-29-2026",
+      "fetch_status": "ok",
+      "used_for": "N Judah peak headway 10 -> 9 minutes; no N routing change (FLAG-2)"
+    },
+    {
+      "id": "S8",
+      "agency": "Caltrain",
+      "label": "San Francisco Caltrain Station page (Zone 1, 700 4th St, weekday schedule table, Muni N-Judah listed as a connection)",
+      "url": "https://www.caltrain.com/station/sanfrancisco",
+      "fetch_status": "ok",
+      "used_for": "southbound departures 4:55/5:30/6:20/6:25/6:48/6:55/7:20/7:25/7:48/7:55/8:20/8:25/8:48 AM and northbound arrivals 1:10/1:16/1:40/1:46/2:10/2:16/2:40/2:46 PM; also the source for FLAG-1"
+    },
+    {
+      "id": "S9",
+      "agency": "Caltrain",
+      "label": "22nd Street Station page",
+      "url": "https://www.caltrain.com/station/22ndstreet",
+      "fetch_status": "ok",
+      "used_for": "22nd St southbound departures 5:00/5:35/6:24/6:30/6:53/7:00/7:24/7:30/7:53/8:00/8:24/8:30/8:53/9:00/9:30 AM and northbound arrivals at :10/:40 past; no Muni N-Judah in its connection list"
+    },
+    {
+      "id": "S10",
+      "agency": "Caltrain",
+      "label": "Sunnyvale Station page (Zone 3, 121 W Evelyn Ave, VTA 20/21/53/55/Rapid 523 connections)",
+      "url": "https://www.caltrain.com/station/sunnyvale",
+      "fetch_status": "ok",
+      "used_for": "northbound departures 12:12/12:42/1:12/1:42/2:12 PM and the official VTA 55 connection claim"
+    },
+    {
+      "id": "S11",
+      "agency": "Caltrain",
+      "label": "Mountain View Station page",
+      "url": "https://www.caltrain.com/station/mountainview",
+      "fetch_status": "ok",
+      "used_for": "northbound departures 12:46/1:16/1:46 PM used in the Sunnyvale-vs-Mountain View comparison"
+    },
+    {
+      "id": "S12",
+      "agency": "Caltrain",
+      "label": "Caltrain fares",
+      "url": "https://www.caltrain.com/fares",
+      "fetch_status": "ok",
+      "used_for": "adult one-way $4.00/1 zone, $6.25/2, $8.50/3, $10.75/4, $13.00/5, $15.25/6; day pass $8.00/$12.50/$17.00/$21.50/$26.00/$30.50; monthly 3-zone $204; youth $1/$2/$24; 4-hour one-direction one-way validity; Clipper, contactless tap on and off, ticket machines; VTA-Caltrain Day Pass = Caltrain day pass + $7.50, valid to Zone 3"
+    },
+    {
+      "id": "S13",
+      "agency": "Caltrain",
+      "label": "Printer-friendly PDF schedule index (weekday table + legend + zone map)",
+      "url": "https://www.caltrain.com/schedules/pdfs",
+      "fetch_status": "ok (page) / failed (PDF file)",
+      "used_for": "legend 1XX local, 4XX limited, 5XX express, 6XX weekend local, 8XX South County Connector, '--' = train bypasses; weekday PDF eff. Jan 31 2026 (caltrain.com/media/36422); temporary weekend PDF (media/37278) covers only 7/11-12, 8/8-9, 8/22-23 and 9/19-20, so it does not affect Sept 8",
+      "gap": "the PDF itself could not be downloaded (3 attempts, HTTP failure). Minute-level times therefore come from S8/S9/S10 - see FLAG-5."
+    },
+    {
+      "id": "S14",
+      "agency": "VTA",
+      "label": "Route 55 route page (stop lists both directions, service notes)",
+      "url": "https://www.vta.org/go/routes/55",
+      "fetch_status": "ok",
+      "used_for": "'arrive 5 minutes early; all times are approximate'; 7:26 AM southbound operates only when Fremont HS is in session; Labor Day (Mon 9/7/2026) runs on the Sunday/Holiday schedule; Orange Line bus bridge 9/2-9/17 does not affect route 55"
+    },
+    {
+      "id": "S15",
+      "agency": "VTA",
+      "label": "Route 55 weekday schedule PDF (timepoint tables)",
+      "url": "https://www.vta.org/sites/default/files/route_schedule_pdfs/current/route_55/route_55_schedule.pdf",
+      "fetch_status": "ok",
+      "used_for": "southbound from Sunnyvale TC 5:41, 6:11, 6:44, 7:19, 7:40, 7:55, 8:04, 8:34, 9:05, 9:35, 9:59, 10:31 AM, 11:01, 11:31, 12:04, 12:34 PM, 1:04, 1:34, 2:04 PM; timepoints Sunnyvale-Saratoga & El Camino, & Fremont, De Anza & Homestead, Stelling & Stevens Creek; northbound Stelling & Stevens Creek 12:01, 12:31, 12:59, 1:29, 1:59, 2:29, 2:59, 3:24, 3:49 PM with Sunnyvale TC arrivals 12:25, 12:55, 1:31, 2:01 PM"
+    },
+    {
+      "id": "S16",
+      "agency": "VTA",
+      "label": "VTA fares",
+      "url": "https://www.vta.org/go/fares",
+      "fetch_status": "ok",
+      "used_for": "adult single ride $2.50 with 2-hour free transfers; 8-hour $5.00; day pass $7.50 (Clipper contactless accumulator caps a day at $7.50); monthly $90; express $5.00; senior $1.00; youth 5-18 $1.25"
+    },
+    {
+      "id": "S17",
+      "agency": "OpenStreetMap (not an agency)",
+      "label": "Sunnyvale Transit Center node 6720130283; McClellan & Felton and Stevens Creek & De Anza stop nodes; VTA stop area relations",
+      "url": "https://www.openstreetmap.org/node/6720130283",
+      "fetch_status": "ok",
+      "used_for": "platform-to-bay distance at Sunnyvale, stop coordinates used for walk legs. Data (c) OpenStreetMap contributors, ODbL"
+    },
+    {
+      "id": "S18",
+      "agency": "Valhalla / OpenStreetMap (not an agency)",
+      "label": "Public pedestrian routing for the two Cupertino walk legs",
+      "url": "https://valhalla.openstreetmap.de/",
+      "fetch_status": "ok",
+      "used_for": "0.741 km / about 9 min (Gillick Way to McClellan & Felton) and 1.40 km / about 18 min (Stevens Creek & De Anza to Gillick Way)"
+    },
+    {
+      "id": "S19",
+      "agency": "Restaurant (official)",
+      "label": "Benihana Cupertino location page",
+      "url": "https://www.benihana.com/locations/cupertino/",
+      "fetch_status": "ok",
+      "used_for": "Power Lunch $15.95, Mon-Fri 11:00-3:00, dining room, 45-minute guarantee; address 2074 Vallco Fashion Park; weekly hours"
+    },
+    {
+      "id": "S20",
+      "agency": "Restaurant (official)",
+      "label": "Gyu-Kaku Cupertino page + official Lunch Menu PDF",
+      "url": "https://www.gyu-kaku.com/cupertino/",
+      "fetch_status": "ok",
+      "used_for": "hours Mon-Thu 11:30-21:30; Lunch Menu Mon-Fri 11:30 AM-4:00 PM last seating, not weekends or holidays; lunch Gyu-Combo 2 items $18.95 / 3 items $22.95 with miso soup, lunch salad and rice; bowls $13.95-$16.95; ramen $14.95; value course for 2 $75. Menu PDF: https://www.gyu-kaku.com/wp-content/uploads/2025/01/cp_lunch2411.pdf"
+    },
+    {
+      "id": "S21",
+      "agency": "Restaurant (official ordering page)",
+      "label": "Home Eat online menu (Lunch Specials section)",
+      "url": "https://homeeat.toast.site/order/home-eat-cupertino",
+      "fetch_status": "ok",
+      "used_for": "Beef Broccoli Lunch Special $13.99 and Mongolian Shrimp Lunch Special $14.99 with a complimentary randomly selected drink; String Beans & Eggplant lunch special listed without a price in the captured block"
+    },
+    {
+      "id": "S22",
+      "agency": "Restaurant (official)",
+      "label": "Fish's Wild locations page",
+      "url": "https://fishiswild.com/places/cupertino---southside",
+      "fetch_status": "ok",
+      "used_for": "Cupertino hours Sun-Thu 11:00-20:00, Fri 11:00-20:20"
+    },
+    {
+      "id": "S23",
+      "agency": "Yelp",
+      "label": "Red Hot Wok, Siam Station, Ajito, Cap't Loui, Bento Express, Home Eat, Fish's Wild, Araki Sushi, Los Gatos Cafe, Los Gatos Parkside, Los Altos Grill, Kathmandu Cuisine, Brew City Grill pages",
+      "url": "https://www.yelp.com/biz/red-hot-wok-cupertino",
+      "fetch_status": "ok via search index",
+      "used_for": "day-by-day hours, addresses, phone numbers and review quotes describing lunch specials; no aggregator price was promoted to a verified price"
+    },
+    {
+      "id": "S24",
+      "agency": "Third party (not used for prices)",
+      "label": "OpenTable, Tripadvisor, restaurantguru (Google-review mirror), Postmates, DoorDash, Menupix, zmenu, restaurantji, beyondmenu, corner.inc, roostcafeandbistro",
+      "url": "https://www.opentable.com/r/taste-palo-alto",
+      "fetch_status": "ok",
+      "used_for": "hours/daypart cross-checks and the Taste lunch-special menu block; explicitly flagged wherever a price came from one of these instead of the restaurant"
+    },
+    {
+      "id": "S25",
+      "agency": "Geocoding (not an agency)",
+      "label": "Nominatim / Redfin for the two endpoints",
+      "url": "https://nominatim.openstreetmap.org/",
+      "fetch_status": "ok",
+      "used_for": "20387 Gillick Way coordinates (37.3128997, -122.0302984) and confirmation that it is a private residence with no transit stop on the street"
+    }
+  ],
+  "dead_ends": [
+    "No outbound network from the build environment (DNS/TLS blocked, proxy refused), so GTFS feeds for SFMTA/VTA/Caltrain and the 511.org trip planner API could not be pulled. Everything was verified from the agencies' published web tables instead.",
+    "caltrain.com/media/36422 and caltrain.com/media/36422/download failed three times, so the weekday PDF could not be read (FLAG-5).",
+    "caltrain.com/station/22ndst is a 404 - the slug is 22ndstreet. caltrain.com/station/sf is a 404 - the slug is sanfrancisco. vta.org/services/fares 404s - the live path is vta.org/go/fares.",
+    "Reusing a proxy/CDN URL from a previous tool result produces SignatureDoesNotMatch; only canonical agency URLs were fetched."
+  ],
+  "could_not_verify": [
+    "Caltrain weekday timetable PDF (caltrain.com/media/36422): download failed 3 times, so minute-level train times come from Caltrain's own live per-station schedule tables instead. See FLAG-5.",
+    "Live 511 / TripPlanner itineraries and GTFS (SFMTA sidetrail, VTA, Caltrain GTFS): the build environment has no outbound network, so no engine-computed itinerary is available; the times here are hand-assembled from official agency tables.",
+    "VTA midday trip times between Stevens Creek & De Anza and McClellan & Felton: route 55 publishes only timepoints, so those two minutes are interpolated and labelled as such.",
+    "Curry Hyuga Cupertino lunch pricing: no lunch menu is published on curryhyuga.com and no lunch special appears in any other listing; only its hours (Restaurant Guru, corner.inc) could be verified.",
+    "Water Tower Kitchen lunch special: no lunch special is published anywhere; only hours, address and phone were verified.",
+    "Ajito lunch pricing: Yelp confirms the 2-course lunch and its 11:30-3:30 window, not the price.",
+    "Any published lunch price for Los Altos Grill, Little Sky, Araki Sushi and Siam Thai; those rows carry the menu price band or the happy-hour block instead, clearly labelled.",
+    "Kizuna's current hours: OpenStreetMap opening_hours and its own website disagree, so the row says 'unverified'."
+  ]
+}
