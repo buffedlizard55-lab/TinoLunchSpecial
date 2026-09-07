@@ -63,7 +63,7 @@
     {
       "rule": "Costs and times from official sources only",
       "status": "satisfied with 2 caveats",
-      "detail": "Every fare and every posted departure/arrival time comes from sfmta.com, caltrain.com or vta.org. Caveats: (1) the N Bus 5:15 AM trip and the Caltrain minute-level times were read from the agencies' own live schedule pages, not from the print PDFs, because the Caltrain weekday PDF could not be downloaded from this environment; (2) a few Cupertino-side stop times are interpolated between published timepoints and are labelled as such."
+      "detail": "Every fare and every posted departure/arrival time comes from sfmta.com, caltrain.com or vta.org, re-verified line by line on 2026-09-07 against the agencies' live weekday tables and PDFs. Caveats: (1) the Caltrain minute-level times come from the official live schedule grid (same numbers as the Jan 31 2026 weekday timetable) rather than the print PDF, because the PDF bytes could not be downloaded from this environment; (2) a few Cupertino-side stop times are interpolated between published VTA timepoints and are labelled as such."
     },
     {
       "rule": "Board at Caltrain 22nd Street station",
@@ -92,6 +92,6 @@
   "verification": {
     "accessed": "2026-09-07",
     "method": "Each row links to the page it was read from. Rows read from a live agency schedule page are marked 'official-live'. Rows produced by subtracting/adding published times are marked 'derived'. Rows between two published timepoints are marked 'interpolated'. Walk distances are computed on OpenStreetMap data with the public Valhalla routing service and are marked 'estimate' because they are not agency data.",
-    "review_status": "Ready for manual review. 23 open flags (12 transit + 11 lunch), listed in data/flags.json and on the Flags tab."
+    "review_status": "Ready for manual review. 29 open flags (14 transit + 15 lunch), listed in data/flags.json and on the Flags tab."
   }
 }

@@ -37,7 +37,7 @@
     {
       "id": "S5",
       "agency": "SFMTA",
-      "label": "N Bus weekday timetable, outbound to Caltrain",
+      "label": "N Bus weekday timetable, inbound to Caltrain",
       "url": "https://www.sfmta.com/routes/schedule/NBUS?direction_id=1",
       "fetch_status": "ok",
       "used_for": "earliest trip 5:07/5:15 AM, 5:53 AM at Townsend & 5th/Caltrain, 15-minute spacing to 7:20 AM; also checked with ?date=20260908 (identical)"
@@ -362,6 +362,78 @@
       "url": "https://www.chezphilippelosgatos.com/",
       "fetch_status": "ok",
       "used_for": "Chez Philippe Tue-Fri lunch 11:30 AM-2:00 PM; Heritage Pub & Chophouse Mon-Thu 11:30 AM-10:00 PM; A Bellagio Tue-Fri lunch 11:30 AM-2:30 PM; Buca di Beppo Campbell lunch combos Mon-Fri until 3 PM; Fogo de Chao San Jose lunch 11:30 AM-3:00 PM; Dumpling Time Santana Row daily 11:00-21:00; Chaat Bhavan 11:30-22:00; QQ Noodle Tue 11:30 AM-2:00 PM"
+    },
+    {
+      "id": "S46",
+      "agency": "Editorial guide",
+      "label": "Infatuation - 19 Best Restaurants in Santa Clara (May 2026)",
+      "url": "https://www.theinfatuation.com/san-francisco/guides/best-restaurants-santa-clara",
+      "fetch_status": "ok",
+      "used_for": "Batch 5a Santa Clara addresses + lunch verdicts (Pav Bhaji, Ondam, Shawarmajji, Achilles, Bloom, Joey, Puesto, Giwa, Rice Junky, Rise, Tarim, Emelina, Mikiya, Iraklis, Croissante, Leichi, Baekjeong, Milldang) + Master Oh address fix"
+    },
+    {
+      "id": "S47",
+      "agency": "Business association",
+      "label": "Downtown Los Altos (LAVA) dining directory",
+      "url": "https://downtownlosaltos.org/member/wpbdp_category/dining/",
+      "fetch_status": "ok",
+      "used_for": "Batch 5a Los Altos rows (Cafe Nur, Konjoe, Orenchi, Rustic House, State of Mind, Pompeii, Hiroshi) + L22/L83/L130 conflicts + L131 confirm"
+    },
+    {
+      "id": "S48",
+      "agency": "Event press",
+      "label": "dothebay - Let's Do Lunch Santana Row (Sept 2026)",
+      "url": "https://dothebay.com/event/lets-do-lunch-santana-row/2026-09-04/",
+      "fetch_status": "ok",
+      "used_for": "Thirteen $25 Taste The Row event rows: Momosan, Pizza Antica, EMC, Straits, El Jardin, Oveja Negra, Fitoor, Parranga, Suspiro, Zazil, Vintage Wine Bar, Vintage Wine Merchants, Dumpling Time ($25 app+entree, Mon-Fri Sept 1-30 2026)"
+    },
+    {
+      "id": "S49",
+      "agency": "Destinations site",
+      "label": "sanjose.org - Let's Do Lunch event terms",
+      "url": "https://www.sanjose.org/event/lets-do-lunch-santana-row/70376/",
+      "fetch_status": "ok",
+      "used_for": "Event terms cross-check: month-long weekday event Sept 1-30 2026, $25 prix-fixe, hours vary by restaurant"
+    },
+    {
+      "id": "S50",
+      "agency": "Social (Reddit)",
+      "label": "Reddit lunch-special threads (Sunnyvale, downtown Sunnyvale, Mountain View, bayareafood)",
+      "url": "https://www.reddit.com/r/Sunnyvale/comments/1gszlmp/where_is_everyones_favorite_place_to_eat_in/",
+      "fetch_status": "ok",
+      "used_for": "Review-level lunch mentions: Adamson's, Falafel Stop, St John's Tri Tip Tuesday, Von's, Fu Niu Tang, Sushi Tomi - reviewer wording only, no prices"
+    },
+    {
+      "id": "S51",
+      "agency": "Local news",
+      "label": "paloaltoonline - Downtown Sunnyvale openings (Feb 2026)",
+      "url": "https://paloaltoonline.com/food/2026/02/19/new-openings-shake-up-downtown-sunnyvales-dining-scene/",
+      "fetch_status": "ok",
+      "used_for": "Mayan Kitchen Tue-Sun lunch 11:30-2 + Meyhouse Tue-Sun lunch 11:45-2:30"
+    },
+    {
+      "id": "S52",
+      "agency": "Restaurant (own site)",
+      "label": "Batch-5 official hours pages",
+      "url": "https://ramenwakusei.com/location",
+      "fetch_status": "ok",
+      "used_for": "Ramen Wakusei daily 11-21; Rio Adobe daily 11-21; Oakmont Sandwiches hours (conflicts with Yelp); Udon Mugizo split hours; Kikusushi 10:30-20; Dio Deka dinner Wed-Sun; Left Bank Menlo Park hours; Bai Tong lunch Fri-Sat; 7 Santana Row event official pages"
+    },
+    {
+      "id": "S53",
+      "agency": "Third-party fare mirror",
+      "label": "infoforsf Caltrain zone table (checked Aug 2026) + transit.wiki zone map",
+      "url": "https://www.infoforsf.com/caltrain",
+      "fetch_status": "ok",
+      "used_for": "Corroborates adult 3-zone $8.50 and Zone 1 SF / Zone 3 Sunnyvale-MV assignments behind the $8.50 Caltrain fares (official table is JS-rendered)"
+    },
+    {
+      "id": "S57",
+      "agency": "Santana Row (official)",
+      "label": "Official event page - Let's Do Lunch Taste The Row (15 participants)",
+      "url": "https://santanarow.com/event/lets-do-lunch-taste-the-row/",
+      "fetch_status": "ok",
+      "used_for": "Participant list incl. Augustine, Dumpling Time, Ozumo Fridays-only; Sept 1-30 2026 dates; corrected the one-day-event reading"
     }
   ],
   "dead_ends": [
@@ -378,6 +450,11 @@
     "Water Tower Kitchen lunch special: no lunch special is published anywhere; only hours, address and phone were verified.",
     "Ajito lunch pricing: Yelp confirms the 2-course lunch and its 11:30-3:30 window, not the price.",
     "Any published lunch price for Los Altos Grill, Little Sky, Araki Sushi and Siam Thai; those rows carry the menu price band or the happy-hour block instead, clearly labelled.",
-    "Kizuna's current hours: OpenStreetMap opening_hours and its own website disagree, so the row says 'unverified'."
+    "Kizuna's current hours: OpenStreetMap opening_hours and its own website disagree, so the row says 'unverified'.",
+    "Willow Street Pizza (Los Gatos) standalone listing - only an UberEats stub; likely the same business as L69 Willow Street Wood-Fired Pizza.",
+    "Andale (Los Gatos) - no address/hours found in this pass.",
+    "Pedro's (Santa Clara) - search returns only Pedro's Atascadero (~120 mi away); excluded as wrong-city.",
+    "Ox 9 Cupertino branch - existence hinted on Yelp but no address verified; no row added.",
+    "Ethel's, Bowl'd, Mezzaluna (Los Gatos), Thyme (Palo Alto) - named in threads but no verifiable address/hours found."
   ]
 }

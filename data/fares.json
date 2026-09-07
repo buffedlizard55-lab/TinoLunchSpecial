@@ -113,7 +113,8 @@
       ],
       "notes": [
         "Payment: Clipper card, contactless bank card or wallet tap on and off, or ticket machines on the platform. Caltrain is proof-of-payment - there are no gates, but fare inspectors check tickets.",
-        "One-way tickets are valid for 4 hours in one direction, so the outbound and return tickets must be separate."
+        "One-way tickets are valid for 4 hours in one direction, so the outbound and return tickets must be separate.",
+        "Ticket-machine, mobile-app, Clipper and contactless one-way prices are identical since Jan 1 2026, when Caltrain eliminated the 55-cent Clipper discount (all payment methods aligned)."
       ]
     },
     {
@@ -131,9 +132,9 @@
           "applies_to": "route 55 each way"
         },
         {
-          "ticket": "Adult 8-hour Light Rail/Bus pass",
+          "ticket": "Adult 8-hour Light Rail Pass",
           "price": 5.0,
-          "validity": "8 hours",
+          "validity": "8 hours, light rail only (not valid on route 55)",
           "applies_to": "not useful for two rides exactly $5.00 apart"
         },
         {
@@ -227,7 +228,7 @@
     },
     {
       "label": "All cash",
-      "assumption": "$3.00 per Muni ride paid to the operator, Caltrain one-way bought at a ticket machine ($10.00 for 3 zones), VTA $2.50 per ride.",
+      "assumption": "$3.00 per Muni ride paid to the operator, Caltrain one-way bought at a ticket machine ($8.50 for 3 zones - the same as Clipper since the 55-cent Clipper discount ended Jan 1 2026), VTA $2.50 per ride.",
       "items": [
         {
           "label": "Muni, two rides at the cash fare",
@@ -235,16 +236,16 @@
         },
         {
           "label": "Caltrain 3-zone one-way at a ticket machine, both directions",
-          "fare": 20.0
+          "fare": 17.0
         },
         {
           "label": "VTA 55, two rides",
           "fare": 5.0
         }
       ],
-      "total": 31.0,
-      "caveat": "The most expensive way to do this trip. $6.15 of it is the cash/ticket-machine premium.",
-      "verified_from": "https://www.caltrain.com/fares, https://www.sfmta.com/getting-around/muni/fares"
+      "total": 28.0,
+      "caveat": "Costs $0.80 more than the Clipper option ($28.00 vs $27.20): $0.30 is the Muni cash premium and $0.50 is the lost Caltrain-to-Muni transfer credit. There is no ticket-machine premium on Caltrain.",
+      "verified_from": "https://www.caltrain.com/fares, https://www.sfmta.com/getting-around/muni/fares, https://www.caltrain.com/news/caltrain-eliminate-clipper-discount-jan-1"
     },
     {
       "label": "Pass variant - Caltrain 3-zone Day Pass instead of two one-ways",

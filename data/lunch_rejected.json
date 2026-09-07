@@ -411,14 +411,6 @@
       "searched": "2026-09-07"
     },
     {
-      "name": "Oveja Negra",
-      "city": "San Jose",
-      "why": "The official site publishes Santana Row lunch hours (Mon-Sat 11:00 AM - 4:00 PM) and a Txuleton Tuesday $140 dinner, which is an evening offer - but no street address for the branch was captured.",
-      "price_hint": "Txuleton Tuesday $140 for two, 5:30 PM - 10:00 PM (dinner, not lunch)",
-      "source": "https://www.ovejanegrasj.com/",
-      "searched": "2026-09-07"
-    },
-    {
       "name": "The Basin",
       "city": "Saratoga",
       "why": "Dinner only - OpenTable lists 'Monday - Sunday: 5:00pm - Close' with no lunch service.",
@@ -480,6 +472,178 @@
       "why": "Yelp marks the N De Anza Blvd address as CLOSED, and the only hours available (11:30 AM - 1:30 PM lunch) come from a menu aggregator, so it cannot be planned for the trip date.",
       "price_hint": null,
       "source": "https://www.yelp.com/biz/mandarin-gourmet-cupertino-cupertino",
+      "searched": "2026-09-07"
+    },
+    {
+      "city": "Mountain View",
+      "id": "R-batch5-01",
+      "links": [
+        "https://www.yelp.com/biz/scratch-mountain-view-2"
+      ],
+      "name": "Scratch",
+      "note": "Sat-Sun brunch from 10 AM exists, but no weekday lunch.",
+      "why": "Dinner-only on weekdays (Mon-Fri from 4:00 PM per Yelp) - no weekday lunch.",
+      "searched": "2026-09-07"
+    },
+    {
+      "city": "Los Altos",
+      "id": "R-batch5-02",
+      "links": [
+        "https://downtownlosaltos.org/member/wpbdp_category/dining/"
+      ],
+      "name": "Enchante / Campagne One Main Bistro",
+      "why": "Bistro dinner-only Mon-Sat (4-10 PM); Sunday brunch only. No weekday lunch.",
+      "searched": "2026-09-07"
+    },
+    {
+      "city": "Los Altos",
+      "id": "R-batch5-03",
+      "links": [
+        "https://downtownlosaltos.org/member/wpbdp_category/dining/"
+      ],
+      "name": "Elleary Wine",
+      "why": "Wine shop, not a lunch restaurant; no food hours published.",
+      "searched": "2026-09-07"
+    },
+    {
+      "city": "Los Altos",
+      "id": "R-batch5-04",
+      "links": [
+        "https://downtownlosaltos.org/member/wpbdp_category/dining/"
+      ],
+      "name": "Murdoch's Bar",
+      "why": "Cocktail/beer bar inside State Street Market - drinks-focused, no lunch food menu found.",
+      "searched": "2026-09-07"
+    },
+    {
+      "city": "Los Gatos",
+      "id": "R-batch5-05",
+      "links": [
+        "https://www.yelp.com/biz/flights-by-ty-luu-campbell",
+        "https://www.yelp.com/biz/forbes-mill-steakhouse-los-gatos-2"
+      ],
+      "name": "FLIGHTS by Ty Luu (Campbell)",
+      "why": "Yelp marks the Campbell location CLOSED; only Los Gatos/Seascape remain.",
+      "searched": "2026-09-07"
+    },
+    {
+      "city": "Palo Alto",
+      "id": "R-batch5-06",
+      "links": [
+        "https://www.yelp.com/biz/zola-palo-alto"
+      ],
+      "name": "Zola",
+      "why": "Dinner-only (Mon dinner 4-9, Tue-Sat 4-10 per Yelp + website) - no lunch.",
+      "searched": "2026-09-07"
+    },
+    {
+      "city": "Campbell",
+      "id": "R-batch5-07",
+      "links": [
+        "https://www.yelp.com/biz/cin-cin-wine-bar-trattoria-campbell-2"
+      ],
+      "name": "Cin-Cin Wine Bar Trattoria",
+      "why": "Yelp marks it CLOSED; no open hours anywhere.",
+      "searched": "2026-09-07"
+    },
+    {
+      "city": "Campbell",
+      "id": "R-batch5-08",
+      "links": [
+        "https://www.yelp.com/biz/tigelleria-organic-cucina-italiana-campbell"
+      ],
+      "name": "Tigelleria Organic Cucina Italiana",
+      "why": "Yelp review (Oct 2022) reports it closed; current occupant is Locanda Sorrento (added as its own row).",
+      "searched": "2026-09-07"
+    },
+    {
+      "city": "Los Gatos",
+      "id": "R-batch5-09",
+      "links": [
+        "https://www.yelp.com/biz/forbes-mill-steakhouse-los-gatos-2"
+      ],
+      "name": "Forbes Mill Steakhouse",
+      "why": "Dinner-only (Mon-Sun from 4-5 PM, bar noon-1 AM Fri-Sun) - no weekday lunch.",
+      "searched": "2026-09-07"
+    },
+    {
+      "city": "Mountain View",
+      "id": "R-batch5-10",
+      "links": [
+        "https://www.lafiestamexicancuisine.com/"
+      ],
+      "name": "La Fiesta Mexican Cuisine",
+      "why": "Official site: opens 4 PM Mon-Thu and 11 AM Sat-Sun - no weekday lunch.",
+      "searched": "2026-09-07"
+    },
+    {
+      "city": "Palo Alto",
+      "id": "R-batch5-11",
+      "links": [
+        "https://www.italicorestaurant.com/"
+      ],
+      "name": "iTalico",
+      "why": "Official site: dinner-only Mon-Sat from 3 PM, closed Sun; lunches are private full-restaurant buyouts. Apple Maps 'Lunch' hours stale.",
+      "searched": "2026-09-07"
+    },
+    {
+      "city": "Campbell",
+      "id": "R-batch5-12",
+      "links": [
+        "https://www.yelp.com/biz/pasta-armellino-campbell"
+      ],
+      "name": "Pasta Armellino",
+      "why": "Yelp marks it CLOSED; no website/Facebook; Instagram (2021) showed Wed-Sun 5-9 only.",
+      "searched": "2026-09-07"
+    },
+    {
+      "city": "Campbell",
+      "id": "R-batch5-13",
+      "links": [
+        "https://www.yelp.com/biz/fiesta-del-mar-too-campbell"
+      ],
+      "name": "Fiesta Del Mar Too",
+      "why": "Yelp marks CLOSED (Feb-Mar 2026 reviews) and evening-only Tue hours conflict with a lunch listing - exclude.",
+      "searched": "2026-09-07"
+    },
+    {
+      "city": "Santa Clara",
+      "id": "R-batch5-14",
+      "links": [
+        "https://www.yelp.com/biz/ozumo-santana-row-san-jose"
+      ],
+      "name": "Ozumo Santana Row",
+      "why": "Official Santana Row event page lists Ozumo as 'Available on Friday\\'s only' - not a Tuesday option; no weekday special verified.",
+      "searched": "2026-09-07"
+    },
+    {
+      "city": "Palo Alto",
+      "id": "R-batch5-15",
+      "links": [
+        "https://www.yelp.com/biz/reposado-palo-alto"
+      ],
+      "name": "Reposado",
+      "why": "Dinner-only per a single source - not enough to add, needs a second source.",
+      "searched": "2026-09-07"
+    },
+    {
+      "city": "Pasadena (wrong city)",
+      "id": "R-batch5-16",
+      "links": [
+        "https://www.yelp.com/search?find_desc=Porta+Via&find_loc=Pasadena"
+      ],
+      "name": "Porta Via (Pasadena hit)",
+      "why": "NEAR-MISS: search results returned a Pasadena restaurant of a similar name (~350 mi away) - excluded as out of area.",
+      "searched": "2026-09-07"
+    },
+    {
+      "city": "Atascadero (wrong city)",
+      "id": "R-batch5-17",
+      "links": [
+        "https://www.yelp.com/biz/pedros-mexican-restaurant-atascadero-3"
+      ],
+      "name": "Pedro's Mexican Restaurant (Atascadero hit)",
+      "why": "NEAR-MISS: only result was 8550 El Camino Real, Atascadero (~120 mi away) - excluded as out of area.",
       "searched": "2026-09-07"
     }
   ],

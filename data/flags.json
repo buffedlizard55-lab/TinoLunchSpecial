@@ -46,7 +46,7 @@
       "severity": "verification gap",
       "title": "Caltrain minute-level times were read from the live station tables, not the print PDF",
       "what_we_found": "Caltrain's weekday PDF (caltrain.com/media/36422, effective Jan 31 2026) could not be downloaded from this environment (3 failed fetches), so every Caltrain time here comes from the same agency's live per-station schedule tables. Those tables also contain 6XX 'Weekend Local' columns interleaved with weekday 1XX/4XX/5XX columns, and the two grids share minute offsets, so a mis-picked column can look plausible.",
-      "what_we_did": "Only 1XX Local / 4XX Limited / 5XX Express / 8XX South County Connector columns were used (6XX are weekend-only, and 9/8/2026 is a normal weekday). Every row is labelled 'official-live' and train numbers are described as 'the grid column they appear in' rather than asserted. Please re-check the two Caltrain times per direction against the PDF or trip planner before you travel.",
+      "what_we_did": "Only 1XX Local / 4XX Limited / 5XX Express / 8XX South County Connector columns were used (6XX are weekend-only, and 9/8/2026 is a normal weekday). On 2026-09-07 every Caltrain time was re-read directly from the official live weekday grid and matches: 502 (SF 6:20 AM -> Sunnyvale 7:09 AM), 106 (6:25 AM -> 7:28 AM), 412 (8:48 AM -> 9:43 AM), 131 (Sunnyvale 12:42 PM -> SF 1:46 PM), 133 (1:12 PM -> 2:16 PM), 135 (1:42 PM -> 2:46 PM). Rows stay labelled official-live; still confirm in the trip planner on travel day.",
       "link": "https://www.caltrain.com/schedules/pdfs and https://www.caltrain.com/station/sunnyvale",
       "rows": [],
       "link_label": "open the agency page"
@@ -130,6 +130,16 @@
       "link": "https://www.caltrain.com/schedules/pdfs",
       "rows": [],
       "link_label": "open the Caltrain weekday grid"
+    },
+    {
+      "id": "FLAG-14",
+      "severity": "info",
+      "title": "Transit fares re-checked 2026-09-07; Caltrain $8.50 now triple-confirmed",
+      "what_we_found": "SFMTA and VTA official fare pages re-fetched 2026-09-07 (all figures stand). caltrain.com/fares renders its fare table via JavaScript, so the $8.50 adult 3-zone one-way is confirmed three other official ways: (1) the Board-adopted fare policy (base $4.00 since 7/1/2025, +$2.25 per extra zone, no base increase until 7/1/2027) prices 3 zones at exactly $8.50; (2) Caltrain's indexed fare page text prices the adult 3-zone Day Pass at $17.00 (2 x one-way); (3) the Jan 1 2026 elimination of the 55-cent Clipper discount aligned ticket-machine, app, Clipper and contactless prices, so there is no $10 ticket-machine fare. This review also corrected a $10.00 ticket-machine claim in the all-cash scenario to $8.50 (cash total $31.00 -> $28.00).",
+      "what_we_did": "Fixed the all-cash total in fares.json and recorded the three official confirmations in sources.json (S54-S56).",
+      "link": "https://www.caltrain.com/fares",
+      "rows": [],
+      "link_label": "open the agency page"
     }
   ],
   "lunch": [
@@ -388,6 +398,37 @@
       "link": "https://www.sanjose.org/events/lets-do-lunch-taste-row",
       "rows": [],
       "link_label": "open the event page"
+    },
+    {
+      "id": "LUNCH-FLAG-14",
+      "severity": "important",
+      "title": "Batch 5 added 101 rows (L151+): event prices, Tue closures, second branches",
+      "what_we_found": "101 new rows researched 2026-09-07: 21 Santa Clara, 7 Los Altos, 13 Sunnyvale, 11 Cupertino, 13 Mountain View, 10 Palo Alto, 5 Campbell, 2 Los Gatos, 12 Santana Row event, 3 Menlo Park, 3 Milpitas, 1 N San Jose. Thirteen $25 prices are the Taste The Row 'Let's Do Lunch' SEPTEMBER WEEKDAY event (Mon-Fri Sept 1-30, includes the trip Tuesday) - a dated event price, not a standing special. Nine rows are closed/dinner-only on the trip Tuesday. Four rows are second branches of existing listings (Eureka MV/L33, Left Bank MP/L133, Pho Ha Noi Milpitas/L16, Pho Hoa Homestead/L11). 17 candidates rejected (closed, dinner-only, wrong-city leaks).",
+      "what_we_did": "Event rows carry the Sept 1-30 weekday terms (corrected 2026-09-07 from the one-day-event reading); Tue-closed rows are open_on_trip_date=false; branch rows cross-reference the original ID; rejects logged in lunch_rejected.json with reasons.",
+      "link": "",
+      "rows": [],
+      "link_label": ""
+    },
+    {
+      "id": "LUNCH-FLAG-15",
+      "severity": "important",
+      "title": "Ten existing rows corrected 2026-09-07 (conflicts found in re-check)",
+      "what_we_found": "Re-check surfaced: L20 Parkside (OpenTable dinner-only vs Yelp lunch hours), L22 Los Altos Grill (LAVA dinner-only vs Yelp), L83 Aurum (LAVA lunch Wed-Fri only vs daily), L130 State Street Market (LAVA Mon-Tue closed vs Yelp open) - all four now conflicting. L139 Bai Tong corrected to official lunch Fri-Sat only (Tue dinner from 3 PM). L136 Big Basin resolved to listing (3 sources agree). L140 Bella Saratoga hours corrected to Yelp claimed. L24 Master Oh address verified; L82 Urfa confirmed official; L131 LuLu confirmed.",
+      "what_we_did": "Rows updated with the conflicting sources side by side; nothing papered over. Call-ahead flags carry the phone numbers.",
+      "link": "",
+      "rows": [
+        "L20",
+        "L22",
+        "L24",
+        "L82",
+        "L83",
+        "L130",
+        "L131",
+        "L136",
+        "L139",
+        "L140"
+      ],
+      "link_label": ""
     }
   ]
 }

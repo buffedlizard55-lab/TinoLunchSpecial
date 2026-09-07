@@ -57,7 +57,7 @@
           "note": "The metro N Judah does not run at this hour. SFMTA: 'Between subway hours and Owl service, use the N Bus.' This is the first outbound N Bus trip of the weekday.",
           "sources": [
             {
-              "label": "SFMTA - N Bus weekday timetable (outbound to Caltrain)",
+              "label": "SFMTA - N Bus weekday timetable (inbound to Caltrain)",
               "url": "https://www.sfmta.com/routes/schedule/NBUS?direction_id=1",
               "verifies": "5:15 AM Judah & 19th Ave -> 5:53 AM Townsend & 5th/Caltrain"
             },

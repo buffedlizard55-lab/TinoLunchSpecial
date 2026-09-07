@@ -441,9 +441,15 @@
   // data/generated.js sets window.TINO_DATA; that keeps the site working from file:// as well as Pages.
   async function load() {
     if (window.TINO_DATA) return window.TINO_DATA;
-    const r = await fetch('data/generated.js', { cache: 'no-store' });
-    if (!r.ok) throw new Error('missing data/generated.js - run python3 scripts/build_data.py');
-    return r.json();
+    // Fallback if the script tag failed: load the bundle as a script (it is JS, not JSON).
+    await new Promise((resolve, reject) => {
+      const s = document.createElement('script');
+      s.src = 'data/generated.js';
+      s.onload = resolve;
+      s.onerror = () => reject(new Error('missing data/generated.js - run python3 scripts/build_data.py'));
+      document.head.appendChild(s);
+    });
+    return window.TINO_DATA;
   }
 
   async function init() {

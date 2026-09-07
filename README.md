@@ -15,8 +15,8 @@ Live site: https://buffedlizard55-lab.github.io/TinoLunchSpecial/
 |---|---|
 | **Leave home** | **5:10 AM** - walk 2 min to Judah & 19th Ave, N Judah **Bus** 5:15 AM (the subway does not run yet at that hour) |
 | **At the door in Cupertino** | **about 7:55 AM** - Caltrain express 6:20 AM from the SF terminal (6:24 AM from 22nd St) to Sunnyvale 7:09 AM, VTA 55 at 7:19 AM to Stevens Creek & De Anza, 18 min walk |
-| **Lunch window** | 11:15 AM - 1:30 PM near Cupertino; **leave the house at 11:50 AM** and the 12:42 PM Caltrain gets you home by 2:40 PM |
-| **Cost** | **$27.20** round trip with Clipper/contactless (adult; includes the $0.50 Caltrain-to-Muni credit), $27.70 without the credit, $31.00 all cash |
+| **Lunch window** | 11:15 AM - 12:10 PM near Cupertino (**leave the house at 11:50 AM** for the 2:40 PM arrival; the 12:20 PM departure stretches lunch to ~12:40 PM and gets you home 3:18 PM) |
+| **Cost** | **$27.20** round trip with Clipper/contactless (adult; includes the $0.50 Caltrain-to-Muni credit), $27.70 without the credit, $28.00 all cash |
 
 Every number above is a row in `data/` with the agency page it was read from.
 
@@ -33,10 +33,10 @@ data/plan.json              trip definition, constraints, decision log
 data/transit_outbound.json  3 outbound plans, leg by leg, with per-leg links
 data/transit_return.json    3 return plans + the last-workable-train cutoff
 data/fares.json             agency fare tables and six day-total scenarios
-data/lunch_specials.json    150 lunch entries (27 original + 20 batch-2 + 54 batch-3 + 49 batch-4, all 2026-09-07), hours, days, prices, verification level
-data/lunch_rejected.json    37 rejected/deferred candidates, each with a reason and a link
-data/flags.json             26 irregularities found while verifying - all still listed
-data/sources.json           45 source pages, what each one proved, and the fetch status
+data/lunch_specials.json    251 lunch entries (27 original + 20 batch-2 + 54 batch-3 + 49 batch-4 + 101 batch-5, all 2026-09-07), hours, days, prices, verification level
+data/lunch_rejected.json    53 rejected/deferred candidates, each with a reason and a link
+data/flags.json             29 irregularities found while verifying - all still listed
+data/sources.json           53 source pages, what each one proved, and the fetch status
 docs/VERIFICATION.md        how to re-check every row, and what could not be verified
 scripts/build_data.py       validates + rebuilds generated.js and summary.md
 scripts/check_links.py      every row must link to a citable https page
