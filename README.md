@@ -15,8 +15,8 @@ Live site: https://buffedlizard55-lab.github.io/TinoLunchSpecial/
 |---|---|
 | **Leave home** | **5:10 AM** - walk 2 min to Judah & 19th Ave, N Judah **Bus** 5:15 AM (the subway does not run yet at that hour) |
 | **At the door in Cupertino** | **about 7:55 AM** - Caltrain express 6:20 AM from the SF terminal (6:24 AM from 22nd St) to Sunnyvale 7:09 AM, VTA 55 at 7:19 AM to Stevens Creek & De Anza, 18 min walk |
-| **Lunch window** | 11:15 AM - 1:30 PM near Cupertino; **leave the house at 11:50 AM** and the 12:42 PM Caltrain gets you home by 2:40 PM |
-| **Cost** | **$27.20** round trip with Clipper/contactless (adult; includes the $0.50 Caltrain-to-Muni credit), $27.70 without the credit, $31.00 all cash |
+| **Lunch window** | 11:15 AM - 12:10 PM near Cupertino (**leave the house at 11:50 AM** for the 2:40 PM arrival; the 12:20 PM departure stretches lunch to ~12:40 PM and gets you home 3:18 PM) |
+| **Cost** | **$27.20** round trip with Clipper/contactless (adult; includes the $0.50 Caltrain-to-Muni credit), $27.70 without the credit, $28.00 all cash |
 
 Every number above is a row in `data/` with the agency page it was read from.
 

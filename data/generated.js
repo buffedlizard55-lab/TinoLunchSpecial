@@ -67,7 +67,7 @@ window.TINO_DATA = {
    {
     "rule":"Costs and times from official sources only",
     "status":"satisfied with 2 caveats",
-    "detail":"Every fare and every posted departure/arrival time comes from sfmta.com, caltrain.com or vta.org. Caveats: (1) the N Bus 5:15 AM trip and the Caltrain minute-level times were read from the agencies' own live schedule pages, not from the print PDFs, because the Caltrain weekday PDF could not be downloaded from this environment; (2) a few Cupertino-side stop times are interpolated between published timepoints and are labelled as such."
+    "detail":"Every fare and every posted departure/arrival time comes from sfmta.com, caltrain.com or vta.org, re-verified line by line on 2026-09-07 against the agencies' live weekday tables and PDFs. Caveats: (1) the Caltrain minute-level times come from the official live schedule grid (same numbers as the Jan 31 2026 weekday timetable) rather than the print PDF, because the PDF bytes could not be downloaded from this environment; (2) a few Cupertino-side stop times are interpolated between published VTA timepoints and are labelled as such."
    },
    {
     "rule":"Board at Caltrain 22nd Street station",
@@ -96,7 +96,7 @@ window.TINO_DATA = {
   "verification":{
    "accessed":"2026-09-07",
    "method":"Each row links to the page it was read from. Rows read from a live agency schedule page are marked 'official-live'. Rows produced by subtracting/adding published times are marked 'derived'. Rows between two published timepoints are marked 'interpolated'. Walk distances are computed on OpenStreetMap data with the public Valhalla routing service and are marked 'estimate' because they are not agency data.",
-   "review_status":"Ready for manual review. 23 open flags (12 transit + 11 lunch), listed in data/flags.json and on the Flags tab."
+   "review_status":"Ready for manual review. 29 open flags (14 transit + 15 lunch), listed in data/flags.json and on the Flags tab."
   }
  },
  "outbound":{
@@ -158,7 +158,7 @@ window.TINO_DATA = {
       "note":"The metro N Judah does not run at this hour. SFMTA: 'Between subway hours and Owl service, use the N Bus.' This is the first outbound N Bus trip of the weekday.",
       "sources":[
        {
-        "label":"SFMTA - N Bus weekday timetable (outbound to Caltrain)",
+        "label":"SFMTA - N Bus weekday timetable (inbound to Caltrain)",
         "url":"https://www.sfmta.com/routes/schedule/NBUS?direction_id=1",
         "verifies":"5:15 AM Judah & 19th Ave -> 5:53 AM Townsend & 5th/Caltrain"
        },
@@ -1342,7 +1342,8 @@ window.TINO_DATA = {
     ],
     "notes":[
      "Payment: Clipper card, contactless bank card or wallet tap on and off, or ticket machines on the platform. Caltrain is proof-of-payment - there are no gates, but fare inspectors check tickets.",
-     "One-way tickets are valid for 4 hours in one direction, so the outbound and return tickets must be separate."
+     "One-way tickets are valid for 4 hours in one direction, so the outbound and return tickets must be separate.",
+     "Ticket-machine, mobile-app, Clipper and contactless one-way prices are identical since Jan 1 2026, when Caltrain eliminated the 55-cent Clipper discount (all payment methods aligned)."
     ]
    },
    {
@@ -1360,9 +1361,9 @@ window.TINO_DATA = {
       "applies_to":"route 55 each way"
      },
      {
-      "ticket":"Adult 8-hour Light Rail/Bus pass",
+      "ticket":"Adult 8-hour Light Rail Pass",
       "price":5.0,
-      "validity":"8 hours",
+      "validity":"8 hours, light rail only (not valid on route 55)",
       "applies_to":"not useful for two rides exactly $5.00 apart"
      },
      {
@@ -1456,7 +1457,7 @@ window.TINO_DATA = {
    },
    {
     "label":"All cash",
-    "assumption":"$3.00 per Muni ride paid to the operator, Caltrain one-way bought at a ticket machine ($10.00 for 3 zones), VTA $2.50 per ride.",
+    "assumption":"$3.00 per Muni ride paid to the operator, Caltrain one-way bought at a ticket machine ($8.50 for 3 zones - the same as Clipper since the 55-cent Clipper discount ended Jan 1 2026), VTA $2.50 per ride.",
     "items":[
      {
       "label":"Muni, two rides at the cash fare",
@@ -1464,16 +1465,16 @@ window.TINO_DATA = {
      },
      {
       "label":"Caltrain 3-zone one-way at a ticket machine, both directions",
-      "fare":20.0
+      "fare":17.0
      },
      {
       "label":"VTA 55, two rides",
       "fare":5.0
      }
     ],
-    "total":31.0,
-    "caveat":"The most expensive way to do this trip. $6.15 of it is the cash/ticket-machine premium.",
-    "verified_from":"https://www.caltrain.com/fares, https://www.sfmta.com/getting-around/muni/fares"
+    "total":28.0,
+    "caveat":"Costs $0.80 more than the Clipper option ($28.00 vs $27.20): $0.30 is the Muni cash premium and $0.50 is the lost Caltrain-to-Muni transfer credit. There is no ticket-machine premium on Caltrain.",
+    "verified_from":"https://www.caltrain.com/fares, https://www.sfmta.com/getting-around/muni/fares, https://www.caltrain.com/news/caltrain-eliminate-clipper-discount-jan-1"
    },
    {
     "label":"Pass variant - Caltrain 3-zone Day Pass instead of two one-ways",
@@ -1538,26 +1539,28 @@ window.TINO_DATA = {
  },
  "specials":{
   "search_protocol":{
-   "requirement":"Search for 20 new entries before adding anything to the master list; verify line by line; keep official/review links for manual review.",
-   "queries_run":150,
-   "candidates_found":196,
-   "added_to_master":150,
-   "rejected_or_deferred":37,
+   "requirement":"Verify line by line before adding anything to the master list; keep official/review links for manual review. Fifth pass: 100+ new entries searched and verified before add. Sixth pass: priced claims re-checked, Santana Row event terms corrected.",
+   "queries_run":"150 documented plus the fifth-pass sweeps",
+   "candidates_found":"196 documented plus fifth-pass candidates",
+   "added_to_master":252,
+   "rejected_or_deferred":53,
    "search_date":"2026-09-07",
    "cities_covered":[
-    "Cupertino",
-    "Sunnyvale",
-    "Palo Alto",
-    "Stanford",
     "Campbell",
-    "Los Gatos",
+    "Cupertino",
     "Los Altos",
-    "Santa Clara",
-    "San Jose (De Anza corridor)",
+    "Los Gatos",
+    "Menlo Park",
+    "Milpitas",
     "Mountain View",
-    "Saratoga"
+    "Palo Alto",
+    "San Jose",
+    "San Jose (Cupertino border)",
+    "Santa Clara",
+    "Saratoga",
+    "Sunnyvale"
    ],
-   "radius_note":"Cupertino first, then the 10-15 mi radius (Sunnyvale, Santa Clara, Campbell, West San Jose, Mountain View, Los Altos, Palo Alto, Los Gatos, Saratoga); far entries are marked and do not fit the return bus.",
+   "radius_note":"Cupertino first, then the 10-15 mi radius (Sunnyvale, Santa Clara, Campbell, West San Jose, Mountain View, Los Altos, Palo Alto, Menlo Park, Los Gatos, Saratoga, Milpitas); far entries are marked and do not fit the return bus.",
    "levels":{
     "official":"price and/or hours read from the restaurant's own website, ordering page or published menu PDF",
     "review":"the lunch special exists per a Yelp or Google review, but the price is a reviewer figure, not a published menu price",
@@ -1569,9 +1572,11 @@ window.TINO_DATA = {
     "Query mix: 26 search queries for lunch specials by city and by dish, plus 2 targeted address/hours resolutions (Red Hot Wok, Pho Ha Noi) that came out of the validator rejecting placeholder rows.",
     "Two rows were rewritten during the check pass because the validator refused to publish an address it could not support: Red Hot Wok now cites the restaurant's own full menu (no lunch special exists) and Pho Ha Noi cites Tripadvisor/Yelp/its own site for address and hours.",
     "2026-09-07 batch 2: 20 new master rows L28-L47 searched and verified before add. Aqui and Galpao were previously rejected; re-added with new official/hours evidence and flags.",
-    "2026-09-07 batch 3: 54 new master rows L48-L101 (46 queries: 12 city sweeps + 34 single-business resolutions). Tue-closed: Oak & Rye, Bywater, The Post. Rejected this batch: Pluto's (closure report), Halal Street (closed), MacArthur Park + The Basin (dinner-only)."
+    "2026-09-07 batch 3: 54 new master rows L48-L101 (46 queries: 12 city sweeps + 34 single-business resolutions). Tue-closed: Oak & Rye, Bywater, The Post. Rejected this batch: Pluto's (closure report), Halal Street (closed), MacArthur Park + The Basin (dinner-only).",
+    "2026-09-07 batch 5: 101 new master rows L151-L251 (Santa Clara, Los Altos, Sunnyvale, Cupertino, Mountain View, Palo Alto, Campbell, Los Gatos, Santana Row event, Menlo Park, Milpitas, N San Jose). 17 rejects. Ten older rows corrected in the same pass (4 new conflicts, Bai Tong official fix, Big Basin resolution, Bella Saratoga hours).",
+    "2026-09-07 review pass: every transit time and fare re-read from the official live tables (all match); all-cash Caltrain TVM claim corrected $10.00 -> $8.50; Santana Row event corrected to the month-long Mon-Fri Sept 1-30 terms (13 $25 rows incl. Sept 8); The Hut Taco Tuesday corrected $10 -> $9; Augustine added as L252."
    ],
-   "note_fourth_pass":"Fourth search pass added 49 rows (L102-L150): Lazy Dog $8.95+, Tomatina Pick Two $13.50, The Hut Taco Tuesday $10, Pasta Market Gourmet Lunch $14.95, Urban Grill weekday buffet $16.99 (two-domain conflict), Local Kitchens combos $13.00-$17.50, Sakoon buffet $19.99-$24.99 (Wed-Sun only), plus hours-verified rows with no published lunch special. 9 candidates were rejected this pass (closed, dinner-only, or no verifiable address)."
+   "note_fourth_pass":"Fourth search pass added 49 rows (L102-L150): Lazy Dog $8.95+, Tomatina Pick Two $13.50, The Hut Taco Tuesday $9, Pasta Market Gourmet Lunch $14.95, Urban Grill weekday buffet $16.99 (two-domain conflict), Local Kitchens combos $13.00-$17.50, Sakoon buffet $19.99-$24.99 (Wed-Sun only), plus hours-verified rows with no published lunch special. 9 candidates were rejected this pass (closed, dinner-only, or no verifiable address)."
   },
   "entries":[
    {
@@ -6952,12 +6957,12 @@ window.TINO_DATA = {
     "cuisine":"BBQ, bar and grill",
     "phone":"(408) 899-4294",
     "lunch_special":{
-     "name":"Taco Tuesday - 3 tacos with a side salad or fries",
-     "price_from":10.0,
-     "price_to":10.0,
+     "name":"Taco Tuesday lunch - 3 tacos, choice of meat",
+     "price_from":9.0,
+     "price_to":9.0,
      "days":"Tuesdays",
-     "window":"Tuesday (11:00 AM open)",
-     "includes":"3 tacos with your choice of pork, chicken, tri-tip or buffalo cauliflower, plus a side salad or fries"
+     "window":"Tue 11:00 AM - 2:00 PM",
+     "includes":"3 tacos with your choice of meat; lunch 11 AM - 2 PM per the restaurant specials page (quoted week of Jul 21; recurring Taco Tuesday format)"
     },
     "hours_tuesday":"11:00 AM - 10:00 PM",
     "days_open":"Mon-Tue 11:00 AM - 10:00 PM; Wed-Thu 11:00 AM - 12:00 AM (one directory says Wed until 10 PM); Fri 11:00 AM - 12:00 AM; Sat 10:00/10:30 AM - 12:00 AM; Sun closed",
@@ -6976,6 +6981,10 @@ window.TINO_DATA = {
       {
        "label":"Directory listing with coordinates and week hours for The Hut",
        "url":"https://www.checkle.com/biz/the-hut-santa-clara"
+      },
+      {
+       "label":"Official specials page - Taco Tuesday 3 tacos $9, lunch 11-2",
+       "url":"https://www.thehutsantaclara.com/santa-clara-the-hut-happy-hours-specials"
       }
      ],
      "accessed":"2026-09-07"
@@ -6985,7 +6994,8 @@ window.TINO_DATA = {
     },
     "flags":[
      "A TUESDAY-SPECIFIC SPECIAL - it matches the trip date exactly.",
-     "Wednesday closing time differs between two directories (10:00 PM vs 12:00 AM); Tuesday agrees at 10:00 PM."
+     "Wednesday closing time differs between two directories (10:00 PM vs 12:00 AM); Tuesday agrees at 10:00 PM.",
+     "Price corrected 2026-09-07: $9.00 (not $10) per the official specials page; sides are not in the $9 quote."
     ],
     "id":"L112",
     "added_in":"batch1_cupertino_santaclara.json",
@@ -8038,12 +8048,12 @@ window.TINO_DATA = {
     "cuisine":"Asian, dumplings",
     "phone":"408-882-3469",
     "lunch_special":{
-     "name":"No lunch special published - all-day dumpling menu",
-     "price_from":null,
-     "price_to":null,
-     "days":"Mon-Sun",
-     "window":"opens 11:00 AM",
-     "includes":"No priced lunch special found on the pages read."
+     "name":"Let's Do Lunch $25 prix-fixe (Taste The Row, Sept 2026)",
+     "price_from":25.0,
+     "price_to":25.0,
+     "days":"Mon-Fri, Sept 1-30 2026 (includes Tue Sept 8)",
+     "window":"lunch; hours vary by restaurant",
+     "includes":"$25 prix-fixe: 1 appetizer + 1 entree; tax/tip/drinks excluded; benefits World Central Kitchen."
     },
     "hours_tuesday":"11:00 AM - 9:00 PM",
     "days_open":"Sun-Thu 11:00 AM - 9:00 PM; Fri-Sat 11:00 AM - 10:00 PM (official site)",
@@ -8058,6 +8068,14 @@ window.TINO_DATA = {
       {
        "label":"Dumpling Time Santana Row official page - address, coordinates and daily 11:00-21:00 hours",
        "url":"https://www.dumplingtime.com/santana-row"
+      },
+      {
+       "label":"Official event page - Santana Row Let's Do Lunch (Sept 1-30 2026, $25 prix-fixe)",
+       "url":"https://santanarow.com/event/lets-do-lunch-taste-the-row/"
+      },
+      {
+       "label":"The San Jose Blog (Aug 31 2026) - month-long weekday $25 lunches, terms",
+       "url":"https://www.thesanjoseblog.com/"
       }
      ],
      "accessed":"2026-09-07"
@@ -8066,7 +8084,7 @@ window.TINO_DATA = {
      "google_maps":"https://www.google.com/maps/search/?api=1&query=Dumpling+Time+378+Santana+Row+San+Jose"
     },
     "flags":[
-     "No lunch special published."
+     "Sept 2026 weekday event (Mon-Fri, Sept 1-30) - AVAILABLE on the trip Tuesday; confirm the $25 menu at the door. (Added 2026-09-07: official participant list.)"
     ],
     "id":"L134",
     "added_in":"batch3_losgatos_losaltos_saratoga_sj.json",
@@ -12673,17 +12691,17 @@ window.TINO_DATA = {
      "ok":false
     },
     "flags":[
-     "EVENT-ONLY PRICE: $25 special runs once, on ONE weekday in Sept 2026, time slot TBA - verify the date before going.",
+     "Sept 2026 weekday event (Mon-Fri, Sept 1-30) - AVAILABLE on the trip Tuesday; menus/hours vary by restaurant, confirm at the door. (Corrected 2026-09-07: earlier research called this a one-day event with date TBA.)",
      "Official site's hours list rendered blank in the listing - call (408) 217-0000."
     ],
     "hours_tuesday":"not captured - event day TBA",
     "lunch_special":{
-     "days":"One weekday in Sept 2026 (event)",
-     "includes":"$25 prix-fixe: 1 appetizer + 1 entree; tax/gratuity/beverages excluded.",
-     "name":"Let's Do Lunch $25 (one-day September event)",
+     "days":"Mon-Fri, Sept 1-30 2026 (includes Tue Sept 8)",
+     "includes":"$25 prix-fixe: 1 appetizer + 1 entree; tax/tip/drinks excluded; benefits World Central Kitchen.",
+     "name":"Let's Do Lunch $25 prix-fixe (Taste The Row, Sept 2026)",
      "price_from":25.0,
      "price_to":25.0,
-     "window":"event hours vary by restaurant"
+     "window":"lunch; hours vary by restaurant"
     },
     "name":"Momosan Santana Row",
     "open_on_trip_date":null,
@@ -12702,6 +12720,10 @@ window.TINO_DATA = {
       {
        "label":"Official site - Momosan Santana Row address confirmation",
        "url":"https://momosanramen.com/santanarow/"
+      },
+      {
+       "label":"Official event page - Santana Row Let's Do Lunch (Sept 1-30 2026, $25 prix-fixe)",
+       "url":"https://santanarow.com/event/lets-do-lunch-taste-the-row/"
       }
      ]
     },
@@ -12721,17 +12743,17 @@ window.TINO_DATA = {
      "ok":false
     },
     "flags":[
-     "EVENT-ONLY PRICE: $25 special runs once, on ONE weekday in Sept 2026 - verify the date.",
+     "Sept 2026 weekday event (Mon-Fri, Sept 1-30) - AVAILABLE on the trip Tuesday; menus/hours vary by restaurant, confirm at the door. (Corrected 2026-09-07: earlier research called this a one-day event with date TBA.)",
      "No weekday-lunch special outside the event."
     ],
     "hours_tuesday":"11:30 AM - 10:00 PM",
     "lunch_special":{
-     "days":"One weekday in Sept 2026 (event)",
-     "includes":"$25 prix-fixe: 1 appetizer + 1 entree; tax/gratuity/beverages excluded.",
-     "name":"Let's Do Lunch $25 (one-day September event)",
+     "days":"Mon-Fri, Sept 1-30 2026 (includes Tue Sept 8)",
+     "includes":"$25 prix-fixe: 1 appetizer + 1 entree; tax/tip/drinks excluded; benefits World Central Kitchen.",
+     "name":"Let's Do Lunch $25 prix-fixe (Taste The Row, Sept 2026)",
      "price_from":25.0,
      "price_to":25.0,
-     "window":"event hours vary by restaurant"
+     "window":"lunch; hours vary by restaurant"
     },
     "name":"Pizza Antica",
     "open_on_trip_date":true,
@@ -12750,6 +12772,10 @@ window.TINO_DATA = {
       {
        "label":"foursquare - Pizza Antica week hours cross-check",
        "url":"https://foursquare.com/find/in-san-jose/pizza/"
+      },
+      {
+       "label":"Official event page - Santana Row Let's Do Lunch (Sept 1-30 2026, $25 prix-fixe)",
+       "url":"https://santanarow.com/event/lets-do-lunch-taste-the-row/"
       }
      ]
     },
@@ -12769,17 +12795,17 @@ window.TINO_DATA = {
      "ok":false
     },
     "flags":[
-     "EVENT-ONLY PRICE: $25 special runs once, on ONE weekday in Sept 2026 - verify the date.",
+     "Sept 2026 weekday event (Mon-Fri, Sept 1-30) - AVAILABLE on the trip Tuesday; menus/hours vary by restaurant, confirm at the door. (Corrected 2026-09-07: earlier research called this a one-day event with date TBA.)",
      "Happy hour daily 3-6 PM (Yelp Q&A) is AFTER the return-bus window."
     ],
     "hours_tuesday":"11:30 AM - 10:00 PM",
     "lunch_special":{
-     "days":"One weekday in Sept 2026 (event)",
-     "includes":"$25 prix-fixe: 1 appetizer + 1 entree; tax/gratuity/beverages excluded.",
-     "name":"Let's Do Lunch $25 (one-day September event)",
+     "days":"Mon-Fri, Sept 1-30 2026 (includes Tue Sept 8)",
+     "includes":"$25 prix-fixe: 1 appetizer + 1 entree; tax/tip/drinks excluded; benefits World Central Kitchen.",
+     "name":"Let's Do Lunch $25 prix-fixe (Taste The Row, Sept 2026)",
      "price_from":25.0,
      "price_to":25.0,
-     "window":"event hours vary by restaurant"
+     "window":"lunch; hours vary by restaurant"
     },
     "name":"EMC Seafood & Raw Bar",
     "open_on_trip_date":true,
@@ -12798,6 +12824,10 @@ window.TINO_DATA = {
       {
        "label":"sanjose.org - Let's Do Lunch event page (terms, $25)",
        "url":"https://www.sanjose.org/event/lets-do-lunch-santana-row/70376/"
+      },
+      {
+       "label":"Official event page - Santana Row Let's Do Lunch (Sept 1-30 2026, $25 prix-fixe)",
+       "url":"https://santanarow.com/event/lets-do-lunch-taste-the-row/"
       }
      ]
     },
@@ -12817,17 +12847,17 @@ window.TINO_DATA = {
      "ok":false
     },
     "flags":[
-     "EVENT-ONLY PRICE: $25 special runs once, on ONE weekday in Sept 2026 - verify the date.",
+     "Sept 2026 weekday event (Mon-Fri, Sept 1-30) - AVAILABLE on the trip Tuesday; menus/hours vary by restaurant, confirm at the door. (Corrected 2026-09-07: earlier research called this a one-day event with date TBA.)",
      "Closed Monday per the earlier guide; Tuesday open."
     ],
     "hours_tuesday":"11:00 AM - 10:00 PM",
     "lunch_special":{
-     "days":"One weekday in Sept 2026 (event)",
-     "includes":"$25 prix-fixe: 1 appetizer + 1 entree; tax/gratuity/beverages excluded.",
-     "name":"Let's Do Lunch $25 (one-day September event)",
+     "days":"Mon-Fri, Sept 1-30 2026 (includes Tue Sept 8)",
+     "includes":"$25 prix-fixe: 1 appetizer + 1 entree; tax/tip/drinks excluded; benefits World Central Kitchen.",
+     "name":"Let's Do Lunch $25 prix-fixe (Taste The Row, Sept 2026)",
      "price_from":25.0,
      "price_to":25.0,
-     "window":"event hours vary by restaurant"
+     "window":"lunch; hours vary by restaurant"
     },
     "name":"Straits",
     "open_on_trip_date":true,
@@ -12846,6 +12876,10 @@ window.TINO_DATA = {
       {
        "label":"sanjose.org - Let's Do Lunch event page (terms, $25)",
        "url":"https://www.sanjose.org/event/lets-do-lunch-santana-row/70376/"
+      },
+      {
+       "label":"Official event page - Santana Row Let's Do Lunch (Sept 1-30 2026, $25 prix-fixe)",
+       "url":"https://santanarow.com/event/lets-do-lunch-taste-the-row/"
       }
      ]
     },
@@ -12865,17 +12899,17 @@ window.TINO_DATA = {
      "ok":false
     },
     "flags":[
-     "EVENT-ONLY PRICE: $25 special runs once, on ONE weekday in Sept 2026 - verify the date.",
+     "Sept 2026 weekday event (Mon-Fri, Sept 1-30) - AVAILABLE on the trip Tuesday; menus/hours vary by restaurant, confirm at the door. (Corrected 2026-09-07: earlier research called this a one-day event with date TBA.)",
      "Opens NOON daily - 11:50 AM return departure impossible; Yelp shows a bad '4 AM' open snippet (data glitch)."
     ],
     "hours_tuesday":"12:00 PM - 10:00 PM",
     "lunch_special":{
-     "days":"One weekday in Sept 2026 (event)",
-     "includes":"$25 prix-fixe: 1 appetizer + 1 entree; tax/gratuity/beverages excluded.",
-     "name":"Let's Do Lunch $25 (one-day September event)",
+     "days":"Mon-Fri, Sept 1-30 2026 (includes Tue Sept 8)",
+     "includes":"$25 prix-fixe: 1 appetizer + 1 entree; tax/tip/drinks excluded; benefits World Central Kitchen.",
+     "name":"Let's Do Lunch $25 prix-fixe (Taste The Row, Sept 2026)",
      "price_from":25.0,
      "price_to":25.0,
-     "window":"event hours vary by restaurant"
+     "window":"lunch; hours vary by restaurant"
     },
     "name":"El Jardin Tequila Bar",
     "open_on_trip_date":true,
@@ -12894,6 +12928,10 @@ window.TINO_DATA = {
       {
        "label":"Yelp - El Jardin Tequila Bar San Jose (address, noon opening)",
        "url":"https://www.yelp.com/biz/el-jardin-tequila-bar-san-jose"
+      },
+      {
+       "label":"Official event page - Santana Row Let's Do Lunch (Sept 1-30 2026, $25 prix-fixe)",
+       "url":"https://santanarow.com/event/lets-do-lunch-taste-the-row/"
       }
      ]
     },
@@ -12913,18 +12951,18 @@ window.TINO_DATA = {
      "ok":false
     },
     "flags":[
-     "EVENT-ONLY PRICE: $25 special runs once, on ONE weekday in Sept 2026 - verify the date.",
+     "Sept 2026 weekday event (Mon-Fri, Sept 1-30) - AVAILABLE on the trip Tuesday; menus/hours vary by restaurant, confirm at the door. (Corrected 2026-09-07: earlier research called this a one-day event with date TBA.)",
      "'Txuleton Tuesday' is a monthly DINNER event (tomahawk + Rioja + flan + 2 drinks) - not lunch.",
      "Previously rejected (no street address captured); reinstated 2026-09-07 with 355 Santana Row + event pricing."
     ],
     "hours_tuesday":"11:00 AM - 4:00 PM lunch (official); dinner hours on site",
     "lunch_special":{
-     "days":"One weekday in Sept 2026 (event)",
-     "includes":"$25 prix-fixe: 1 appetizer + 1 entree; tax/gratuity/beverages excluded.",
-     "name":"Let's Do Lunch $25 (one-day September event)",
+     "days":"Mon-Fri, Sept 1-30 2026 (includes Tue Sept 8)",
+     "includes":"$25 prix-fixe: 1 appetizer + 1 entree; tax/tip/drinks excluded; benefits World Central Kitchen.",
+     "name":"Let's Do Lunch $25 prix-fixe (Taste The Row, Sept 2026)",
      "price_from":25.0,
      "price_to":25.0,
-     "window":"event hours vary by restaurant"
+     "window":"lunch; hours vary by restaurant"
     },
     "name":"Oveja Negra",
     "open_on_trip_date":true,
@@ -12942,6 +12980,10 @@ window.TINO_DATA = {
       {
        "label":"Official site - Oveja Negra lunch Mon-Sat 11-4, address",
        "url":"https://www.ovejanegrasj.com/"
+      },
+      {
+       "label":"Official event page - Santana Row Let's Do Lunch (Sept 1-30 2026, $25 prix-fixe)",
+       "url":"https://santanarow.com/event/lets-do-lunch-taste-the-row/"
       }
      ]
     },
@@ -12961,17 +13003,17 @@ window.TINO_DATA = {
      "ok":false
     },
     "flags":[
-     "EVENT-ONLY PRICE: $25 special runs once, on ONE weekday in Sept 2026 - verify the date.",
+     "Sept 2026 weekday event (Mon-Fri, Sept 1-30) - AVAILABLE on the trip Tuesday; menus/hours vary by restaurant, confirm at the door. (Corrected 2026-09-07: earlier research called this a one-day event with date TBA.)",
      "Official site lists menu items (Appam, Murg Malai, Nihari) without prices."
     ],
     "hours_tuesday":"11:30 AM - 10:00 PM",
     "lunch_special":{
-     "days":"One weekday in Sept 2026 (event)",
-     "includes":"$25 prix-fixe: 1 appetizer + 1 entree; tax/gratuity/beverages excluded.",
-     "name":"Let's Do Lunch $25 (one-day September event)",
+     "days":"Mon-Fri, Sept 1-30 2026 (includes Tue Sept 8)",
+     "includes":"$25 prix-fixe: 1 appetizer + 1 entree; tax/tip/drinks excluded; benefits World Central Kitchen.",
+     "name":"Let's Do Lunch $25 prix-fixe (Taste The Row, Sept 2026)",
      "price_from":25.0,
      "price_to":25.0,
-     "window":"event hours vary by restaurant"
+     "window":"lunch; hours vary by restaurant"
     },
     "name":"Fitoor",
     "open_on_trip_date":true,
@@ -12990,6 +13032,10 @@ window.TINO_DATA = {
       {
        "label":"Official site - Fitoor (address, phone, hours JSON-LD)",
        "url":"https://eatdrinkfitoor.com/"
+      },
+      {
+       "label":"Official event page - Santana Row Let's Do Lunch (Sept 1-30 2026, $25 prix-fixe)",
+       "url":"https://santanarow.com/event/lets-do-lunch-taste-the-row/"
       }
      ]
     },
@@ -13009,17 +13055,17 @@ window.TINO_DATA = {
      "ok":false
     },
     "flags":[
-     "EVENT-ONLY PRICE: $25 special runs once, on ONE weekday in Sept 2026 - verify the date.",
+     "Sept 2026 weekday event (Mon-Fri, Sept 1-30) - AVAILABLE on the trip Tuesday; menus/hours vary by restaurant, confirm at the door. (Corrected 2026-09-07: earlier research called this a one-day event with date TBA.)",
      "HEALTH-CLOSURE REPORT: whatnow.com says the health dept temporarily closed it (report undated) - VERIFY OPEN before going."
     ],
     "hours_tuesday":"10:30 AM - 9:30 PM",
     "lunch_special":{
-     "days":"One weekday in Sept 2026 (event)",
-     "includes":"$25 prix-fixe: 1 appetizer + 1 entree; tax/gratuity/beverages excluded.",
-     "name":"Let's Do Lunch $25 (one-day September event)",
+     "days":"Mon-Fri, Sept 1-30 2026 (includes Tue Sept 8)",
+     "includes":"$25 prix-fixe: 1 appetizer + 1 entree; tax/tip/drinks excluded; benefits World Central Kitchen.",
+     "name":"Let's Do Lunch $25 prix-fixe (Taste The Row, Sept 2026)",
      "price_from":25.0,
      "price_to":25.0,
-     "window":"event hours vary by restaurant"
+     "window":"lunch; hours vary by restaurant"
     },
     "name":"Parranga",
     "open_on_trip_date":true,
@@ -13038,6 +13084,10 @@ window.TINO_DATA = {
       {
        "label":"Official site - Parranga (address, phone, hours)",
        "url":"https://parranga.com/"
+      },
+      {
+       "label":"Official event page - Santana Row Let's Do Lunch (Sept 1-30 2026, $25 prix-fixe)",
+       "url":"https://santanarow.com/event/lets-do-lunch-taste-the-row/"
       }
      ]
     },
@@ -13057,16 +13107,16 @@ window.TINO_DATA = {
      "ok":false
     },
     "flags":[
-     "EVENT-ONLY PRICE: $25 special runs once, on ONE weekday in Sept 2026 - verify the date."
+     "Sept 2026 weekday event (Mon-Fri, Sept 1-30) - AVAILABLE on the trip Tuesday; menus/hours vary by restaurant, confirm at the door. (Corrected 2026-09-07: earlier research called this a one-day event with date TBA.)"
     ],
     "hours_tuesday":"11:30 AM - 10:00 PM",
     "lunch_special":{
-     "days":"One weekday in Sept 2026 (event)",
-     "includes":"$25 prix-fixe: 1 appetizer + 1 entree; tax/gratuity/beverages excluded.",
-     "name":"Let's Do Lunch $25 (one-day September event)",
+     "days":"Mon-Fri, Sept 1-30 2026 (includes Tue Sept 8)",
+     "includes":"$25 prix-fixe: 1 appetizer + 1 entree; tax/tip/drinks excluded; benefits World Central Kitchen.",
+     "name":"Let's Do Lunch $25 prix-fixe (Taste The Row, Sept 2026)",
      "price_from":25.0,
      "price_to":25.0,
-     "window":"event hours vary by restaurant"
+     "window":"lunch; hours vary by restaurant"
     },
     "name":"Suspiro",
     "open_on_trip_date":true,
@@ -13085,6 +13135,10 @@ window.TINO_DATA = {
       {
        "label":"Official site - Suspiro SJ (address, phone, hours)",
        "url":"https://suspirosj.com/"
+      },
+      {
+       "label":"Official event page - Santana Row Let's Do Lunch (Sept 1-30 2026, $25 prix-fixe)",
+       "url":"https://santanarow.com/event/lets-do-lunch-taste-the-row/"
       }
      ]
     },
@@ -13104,16 +13158,16 @@ window.TINO_DATA = {
      "ok":false
     },
     "flags":[
-     "EVENT-ONLY PRICE: $25 special runs once, on ONE weekday in Sept 2026 - verify the date."
+     "Sept 2026 weekday event (Mon-Fri, Sept 1-30) - AVAILABLE on the trip Tuesday; menus/hours vary by restaurant, confirm at the door. (Corrected 2026-09-07: earlier research called this a one-day event with date TBA.)"
     ],
     "hours_tuesday":"11:30 AM - 10:00 PM",
     "lunch_special":{
-     "days":"One weekday in Sept 2026 (event)",
-     "includes":"$25 prix-fixe: 1 appetizer + 1 entree; tax/gratuity/beverages excluded.",
-     "name":"Let's Do Lunch $25 (one-day September event)",
+     "days":"Mon-Fri, Sept 1-30 2026 (includes Tue Sept 8)",
+     "includes":"$25 prix-fixe: 1 appetizer + 1 entree; tax/tip/drinks excluded; benefits World Central Kitchen.",
+     "name":"Let's Do Lunch $25 prix-fixe (Taste The Row, Sept 2026)",
      "price_from":25.0,
      "price_to":25.0,
-     "window":"event hours vary by restaurant"
+     "window":"lunch; hours vary by restaurant"
     },
     "name":"Zazil",
     "open_on_trip_date":true,
@@ -13131,6 +13185,10 @@ window.TINO_DATA = {
       {
        "label":"sanjose.org - Let's Do Lunch event page (terms, $25)",
        "url":"https://www.sanjose.org/event/lets-do-lunch-santana-row/70376/"
+      },
+      {
+       "label":"Official event page - Santana Row Let's Do Lunch (Sept 1-30 2026, $25 prix-fixe)",
+       "url":"https://santanarow.com/event/lets-do-lunch-taste-the-row/"
       }
      ]
     },
@@ -13150,17 +13208,17 @@ window.TINO_DATA = {
      "ok":false
     },
     "flags":[
-     "EVENT-ONLY PRICE: $25 special runs once, on ONE weekday in Sept 2026 - verify the date.",
+     "Sept 2026 weekday event (Mon-Fri, Sept 1-30) - AVAILABLE on the trip Tuesday; menus/hours vary by restaurant, confirm at the door. (Corrected 2026-09-07: earlier research called this a one-day event with date TBA.)",
      "Distinct from the Vintage Wine Merchants retail shop at Ste 1135 (separate row)."
     ],
     "hours_tuesday":"11:30 AM - 10:00 PM",
     "lunch_special":{
-     "days":"One weekday in Sept 2026 (event)",
-     "includes":"$25 prix-fixe: 1 appetizer + 1 entree; tax/gratuity/beverages excluded.",
-     "name":"Let's Do Lunch $25 (one-day September event)",
+     "days":"Mon-Fri, Sept 1-30 2026 (includes Tue Sept 8)",
+     "includes":"$25 prix-fixe: 1 appetizer + 1 entree; tax/tip/drinks excluded; benefits World Central Kitchen.",
+     "name":"Let's Do Lunch $25 prix-fixe (Taste The Row, Sept 2026)",
      "price_from":25.0,
      "price_to":25.0,
-     "window":"event hours vary by restaurant"
+     "window":"lunch; hours vary by restaurant"
     },
     "name":"Vintage Wine Bar",
     "open_on_trip_date":true,
@@ -13178,6 +13236,10 @@ window.TINO_DATA = {
       {
        "label":"sanjose.org - Let's Do Lunch event page (terms, $25)",
        "url":"https://www.sanjose.org/event/lets-do-lunch-santana-row/70376/"
+      },
+      {
+       "label":"Official event page - Santana Row Let's Do Lunch (Sept 1-30 2026, $25 prix-fixe)",
+       "url":"https://santanarow.com/event/lets-do-lunch-taste-the-row/"
       }
      ]
     },
@@ -13197,17 +13259,18 @@ window.TINO_DATA = {
      "ok":false
     },
     "flags":[
+     "Sept 2026 weekday event (Mon-Fri, Sept 1-30) - on the official participant list; food format at a wine shop unconfirmed, call first.",
      "FORMAT UNCONFIRMED: a wine retail shop on a lunch-event list - food format unknown; call (408) 516-1225.",
      "Hours not captured. Distinct from Vintage Wine Bar (Ste 1040, separate row)."
     ],
     "hours_tuesday":"not captured - see sources",
     "lunch_special":{
-     "days":"One weekday in Sept 2026 (event)",
-     "includes":"$25 event pricing; tax/gratuity/beverages excluded; food format unknown.",
-     "name":"Let's Do Lunch $25 (one-day September event) - shop, verify",
+     "days":"Mon-Fri, Sept 1-30 2026 (includes Tue Sept 8)",
+     "includes":"$25 prix-fixe: 1 appetizer + 1 entree; tax/tip/drinks excluded; benefits World Central Kitchen.",
+     "name":"Let's Do Lunch $25 prix-fixe (Taste The Row, Sept 2026)",
      "price_from":25.0,
      "price_to":25.0,
-     "window":"event hours vary by restaurant"
+     "window":"lunch; hours vary by restaurant"
     },
     "name":"Vintage Wine Merchants",
     "open_on_trip_date":null,
@@ -13226,6 +13289,10 @@ window.TINO_DATA = {
       {
        "label":"Official site - Vintage Wine Merchants contact (address, phone)",
        "url":"https://www.vintagewinemerchants.com/contact"
+      },
+      {
+       "label":"Official event page - Santana Row Let's Do Lunch (Sept 1-30 2026, $25 prix-fixe)",
+       "url":"https://santanarow.com/event/lets-do-lunch-taste-the-row/"
       }
      ]
     },
@@ -13546,6 +13613,59 @@ window.TINO_DATA = {
     "id":"L251",
     "coords":null,
     "added_in":"batch5c_paloalto_campbell_sjevent_mp_milpitas.json",
+    "distance_mi":null
+   },
+   {
+    "address":"377 Santana Row Ste 1000, San Jose, CA 95128",
+    "area":"Santana Row",
+    "city":"San Jose",
+    "cuisine":"American / cafe / cocktail bar",
+    "days_open":"Restaurant Mon-Thu 11:30 AM - 10 PM, Fri 11:30 AM - 11 PM, Sat-Sun from 10 AM; Cafe Sun-Thu 7:30 AM - 9 PM, Fri-Sat 7:30 AM - 10 PM (official); Yelp Sept 2026 daily 7:30 AM - 10/11 PM",
+    "fits_return_bus":{
+     "note":"San Jose event lunch - not on the Cupertino return walk; documented as a dated special.",
+     "ok":false
+    },
+    "flags":[
+     "Sept 2026 weekday event (Mon-Fri, Sept 1-30) - AVAILABLE on the trip Tuesday; restaurant lunch from 11:30 AM, cafe from 7:30 AM.",
+     "Participant count differs by source (15 on the official list vs 16 in press) - Augustine is on the official list."
+    ],
+    "hours_tuesday":"7:30 AM - 10:00 PM (cafe from 7:30 AM; restaurant from 11:30 AM)",
+    "lunch_special":{
+     "days":"Mon-Fri, Sept 1-30 2026 (includes Tue Sept 8)",
+     "includes":"$25 prix-fixe: 1 appetizer + 1 entree; tax/tip/drinks excluded; benefits World Central Kitchen.",
+     "name":"Let's Do Lunch $25 prix-fixe (Taste The Row, Sept 2026)",
+     "price_from":25.0,
+     "price_to":25.0,
+     "window":"lunch; hours vary by restaurant"
+    },
+    "name":"Augustine",
+    "open_on_trip_date":true,
+    "phone":"(408) 785-7700",
+    "review_links":{
+     "google_maps":"https://www.google.com/maps/search/?api=1&query=Augustine+377+Santana+Row+San+Jose",
+     "yelp":"https://www.yelp.com/biz/augustine-san-jose-3"
+    },
+    "verification":{
+     "accessed":"2026-09-07",
+     "level":"official",
+     "sources":[
+      {
+       "label":"Official site - Augustine address, phone, restaurant + cafe hours",
+       "url":"https://www.augustinerestaurant.com/"
+      },
+      {
+       "label":"Official event page - Santana Row Let's Do Lunch (Sept 1-30 2026, $25 prix-fixe)",
+       "url":"https://santanarow.com/event/lets-do-lunch-taste-the-row/"
+      },
+      {
+       "label":"Yelp (Sept 2026, claimed) - Augustine daily 7:30-10/11",
+       "url":"https://www.yelp.com/biz/augustine-san-jose-3"
+      }
+     ]
+    },
+    "id":"L252",
+    "coords":null,
+    "added_in":"batch6a_augustine_eventfix.json",
     "distance_mi":null
    }
   ],
@@ -14198,7 +14318,7 @@ window.TINO_DATA = {
      "https://www.yelp.com/biz/ozumo-santana-row-san-jose"
     ],
     "name":"Ozumo Santana Row",
-    "why":"Only Friday lunch found in listings - not a Tuesday option; no weekday special verified.",
+    "why":"Official Santana Row event page lists Ozumo as 'Available on Friday\\'s only' - not a Tuesday option; no weekday special verified.",
     "searched":"2026-09-07"
    },
    {
@@ -14287,7 +14407,7 @@ window.TINO_DATA = {
     "severity":"verification gap",
     "title":"Caltrain minute-level times were read from the live station tables, not the print PDF",
     "what_we_found":"Caltrain's weekday PDF (caltrain.com/media/36422, effective Jan 31 2026) could not be downloaded from this environment (3 failed fetches), so every Caltrain time here comes from the same agency's live per-station schedule tables. Those tables also contain 6XX 'Weekend Local' columns interleaved with weekday 1XX/4XX/5XX columns, and the two grids share minute offsets, so a mis-picked column can look plausible.",
-    "what_we_did":"Only 1XX Local / 4XX Limited / 5XX Express / 8XX South County Connector columns were used (6XX are weekend-only, and 9/8/2026 is a normal weekday). Every row is labelled 'official-live' and train numbers are described as 'the grid column they appear in' rather than asserted. Please re-check the two Caltrain times per direction against the PDF or trip planner before you travel.",
+    "what_we_did":"Only 1XX Local / 4XX Limited / 5XX Express / 8XX South County Connector columns were used (6XX are weekend-only, and 9/8/2026 is a normal weekday). On 2026-09-07 every Caltrain time was re-read directly from the official live weekday grid and matches: 502 (SF 6:20 AM -> Sunnyvale 7:09 AM), 106 (6:25 AM -> 7:28 AM), 412 (8:48 AM -> 9:43 AM), 131 (Sunnyvale 12:42 PM -> SF 1:46 PM), 133 (1:12 PM -> 2:16 PM), 135 (1:42 PM -> 2:46 PM). Rows stay labelled official-live; still confirm in the trip planner on travel day.",
     "link":"https://www.caltrain.com/schedules/pdfs and https://www.caltrain.com/station/sunnyvale",
     "rows":[],
     "link_label":"open the agency page"
@@ -14375,9 +14495,9 @@ window.TINO_DATA = {
    {
     "id":"FLAG-14",
     "severity":"info",
-    "title":"Transit fares re-checked 2026-09-07; Caltrain table is JS-rendered",
-    "what_we_found":"SFMTA and VTA official fare pages re-fetched 2026-09-07 (figures stand). caltrain.com/fares renders its fare table via JavaScript, so the page fetch returns the schedule explorer instead of prices; the official schedule table does confirm Sunnyvale and Mountain View are Zone 3. Third-party copies checked August 2026 (infoforsf zone table: adult 3-zone $8.50; transit.wiki zone map) corroborate the $8.50 SF-Zone 1 to Zone 3 fare used in the plans.",
-    "what_we_did":"Kept the published $8.50 fares with the official caltrain.com/fares citation; recorded the corroborating third-party tables in sources so the figure is not single-sourced.",
+    "title":"Transit fares re-checked 2026-09-07; Caltrain $8.50 now triple-confirmed",
+    "what_we_found":"SFMTA and VTA official fare pages re-fetched 2026-09-07 (all figures stand). caltrain.com/fares renders its fare table via JavaScript, so the $8.50 adult 3-zone one-way is confirmed three other official ways: (1) the Board-adopted fare policy (base $4.00 since 7/1/2025, +$2.25 per extra zone, no base increase until 7/1/2027) prices 3 zones at exactly $8.50; (2) Caltrain's indexed fare page text prices the adult 3-zone Day Pass at $17.00 (2 x one-way); (3) the Jan 1 2026 elimination of the 55-cent Clipper discount aligned ticket-machine, app, Clipper and contactless prices, so there is no $10 ticket-machine fare. This review also corrected a $10.00 ticket-machine claim in the all-cash scenario to $8.50 (cash total $31.00 -> $28.00).",
+    "what_we_did":"Fixed the all-cash total in fares.json and recorded the three official confirmations in sources.json (S54-S56).",
     "link":"https://www.caltrain.com/fares",
     "rows":[],
     "link_label":"open the agency page"
@@ -14644,8 +14764,8 @@ window.TINO_DATA = {
     "id":"LUNCH-FLAG-14",
     "severity":"important",
     "title":"Batch 5 added 101 rows (L151+): event prices, Tue closures, second branches",
-    "what_we_found":"101 new rows researched 2026-09-07: 21 Santa Clara, 7 Los Altos, 13 Sunnyvale, 11 Cupertino, 13 Mountain View, 10 Palo Alto, 5 Campbell, 2 Los Gatos, 12 Santana Row event, 3 Menlo Park, 3 Milpitas, 1 N San Jose. Twelve $25 prices are a ONE-DAY September event (Let's Do Lunch, date TBA) - not standing specials. Nine rows are closed/dinner-only on the trip Tuesday. Four rows are second branches of existing listings (Eureka MV/L33, Left Bank MP/L133, Pho Ha Noi Milpitas/L16, Pho Hoa Homestead/L11). 17 candidates rejected (closed, dinner-only, wrong-city leaks).",
-    "what_we_did":"Event rows carry EVENT-ONLY flags; Tue-closed rows are open_on_trip_date=false; branch rows cross-reference the original ID; rejects logged in lunch_rejected.json with reasons.",
+    "what_we_found":"101 new rows researched 2026-09-07: 21 Santa Clara, 7 Los Altos, 13 Sunnyvale, 11 Cupertino, 13 Mountain View, 10 Palo Alto, 5 Campbell, 2 Los Gatos, 12 Santana Row event, 3 Menlo Park, 3 Milpitas, 1 N San Jose. Thirteen $25 prices are the Taste The Row 'Let's Do Lunch' SEPTEMBER WEEKDAY event (Mon-Fri Sept 1-30, includes the trip Tuesday) - a dated event price, not a standing special. Nine rows are closed/dinner-only on the trip Tuesday. Four rows are second branches of existing listings (Eureka MV/L33, Left Bank MP/L133, Pho Ha Noi Milpitas/L16, Pho Hoa Homestead/L11). 17 candidates rejected (closed, dinner-only, wrong-city leaks).",
+    "what_we_did":"Event rows carry the Sept 1-30 weekday terms (corrected 2026-09-07 from the one-day-event reading); Tue-closed rows are open_on_trip_date=false; branch rows cross-reference the original ID; rejects logged in lunch_rejected.json with reasons.",
     "link":"",
     "rows":[],
     "link_label":""
@@ -14712,7 +14832,7 @@ window.TINO_DATA = {
    {
     "id":"S5",
     "agency":"SFMTA",
-    "label":"N Bus weekday timetable, outbound to Caltrain",
+    "label":"N Bus weekday timetable, inbound to Caltrain",
     "url":"https://www.sfmta.com/routes/schedule/NBUS?direction_id=1",
     "fetch_status":"ok",
     "used_for":"earliest trip 5:07/5:15 AM, 5:53 AM at Townsend & 5th/Caltrain, 15-minute spacing to 7:20 AM; also checked with ?date=20260908 (identical)"
@@ -15060,7 +15180,7 @@ window.TINO_DATA = {
     "label":"dothebay - Let's Do Lunch Santana Row (Sept 2026)",
     "url":"https://dothebay.com/event/lets-do-lunch-santana-row/2026-09-04/",
     "fetch_status":"ok",
-    "used_for":"Twelve $25 one-day event rows: Momosan, Pizza Antica, EMC, Straits, El Jardin, Oveja Negra, Fitoor, Parranga, Suspiro, Zazil, Vintage Wine Bar, Vintage Wine Merchants ($25 app+entree, date TBA)"
+    "used_for":"Thirteen $25 Taste The Row event rows: Momosan, Pizza Antica, EMC, Straits, El Jardin, Oveja Negra, Fitoor, Parranga, Suspiro, Zazil, Vintage Wine Bar, Vintage Wine Merchants, Dumpling Time ($25 app+entree, Mon-Fri Sept 1-30 2026)"
    },
    {
     "id":"S49",
@@ -15068,7 +15188,7 @@ window.TINO_DATA = {
     "label":"sanjose.org - Let's Do Lunch event terms",
     "url":"https://www.sanjose.org/event/lets-do-lunch-santana-row/70376/",
     "fetch_status":"ok",
-    "used_for":"Event terms cross-check: one weekday in September, $25 prix-fixe, hours vary by restaurant"
+    "used_for":"Event terms cross-check: month-long weekday event Sept 1-30 2026, $25 prix-fixe, hours vary by restaurant"
    },
    {
     "id":"S50",
@@ -15101,6 +15221,14 @@ window.TINO_DATA = {
     "url":"https://www.infoforsf.com/caltrain",
     "fetch_status":"ok",
     "used_for":"Corroborates adult 3-zone $8.50 and Zone 1 SF / Zone 3 Sunnyvale-MV assignments behind the $8.50 Caltrain fares (official table is JS-rendered)"
+   },
+   {
+    "id":"S57",
+    "agency":"Santana Row (official)",
+    "label":"Official event page - Let's Do Lunch Taste The Row (15 participants)",
+    "url":"https://santanarow.com/event/lets-do-lunch-taste-the-row/",
+    "fetch_status":"ok",
+    "used_for":"Participant list incl. Augustine, Dumpling Time, Ozumo Fridays-only; Sept 1-30 2026 dates; corrected the one-day-event reading"
    }
   ],
   "dead_ends":[

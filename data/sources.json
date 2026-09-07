@@ -1,452 +1,460 @@
 {
- "accessed": "2026-09-07",
- "note": "Every time, fare and stop in this project was read from one of these pages. 'fetch_status' records what happened when the page was read from the build environment, so a gap is visible instead of hidden.",
- "sources": [
-  {
-   "id": "S1",
-   "agency": "SFMTA",
-   "label": "N Judah route page (stops, 24-hour note, subway-hours footnote, Aug 29 change banner)",
-   "url": "https://www.sfmta.com/routes/n-judah",
-   "fetch_status": "ok",
-   "used_for": "stop 15200/15201 Judah & 19th Ave; 'Between subway hours and Owl service, use the N Bus'"
-  },
-  {
-   "id": "S2",
-   "agency": "SFMTA",
-   "label": "N Judah metro weekday timetable, eastbound (to Caltrain)",
-   "url": "https://www.sfmta.com/routes/schedule/N?direction_id=1",
-   "fetch_status": "ok",
-   "used_for": "7:42 AM Judah & 19th -> 8:20 AM King St & 4th; also checked with ?date=20260908 (identical)"
-  },
-  {
-   "id": "S3",
-   "agency": "SFMTA",
-   "label": "N Judah metro weekday timetable, westbound (to Ocean Beach)",
-   "url": "https://www.sfmta.com/routes/schedule/N?direction_id=0",
-   "fetch_status": "ok",
-   "used_for": "midday westbound pairs from King St & 4th St, including 1:56 PM -> 2:38 PM and 2:32 PM -> 3:14 PM"
-  },
-  {
-   "id": "S4",
-   "agency": "SFMTA",
-   "label": "N Judah Bus route page",
-   "url": "https://www.sfmta.com/routes/n-judah-bus",
-   "fetch_status": "ok",
-   "used_for": "bus covers non-subway hours; inbound terminus Townsend St & 5th (17957); weekday 5-6 a.m. headway text (see FLAG-3)"
-  },
-  {
-   "id": "S5",
-   "agency": "SFMTA",
-   "label": "N Bus weekday timetable, outbound to Caltrain",
-   "url": "https://www.sfmta.com/routes/schedule/NBUS?direction_id=1",
-   "fetch_status": "ok",
-   "used_for": "earliest trip 5:07/5:15 AM, 5:53 AM at Townsend & 5th/Caltrain, 15-minute spacing to 7:20 AM; also checked with ?date=20260908 (identical)"
-  },
-  {
-   "id": "S6",
-   "agency": "SFMTA",
-   "label": "Muni fares",
-   "url": "https://www.sfmta.com/getting-around/muni/fares",
-   "fetch_status": "ok",
-   "used_for": "Single Ride $2.85 / cash $3.00 / 120 min; Day Pass $5.70; Monthly $86; youth 18 and under free; $0.50 inter-agency credit when transferring TO Muni from Caltrain within 1 hour; MuniMobile Single Ride passes discontinued Sep 1 2026"
-  },
-  {
-   "id": "S7",
-   "agency": "SFMTA",
-   "label": "Muni service changes effective Saturday Aug 29 2026",
-   "url": "https://www.sfmta.com/travel-updates/muni-service-changes-effective-saturday-august-29-2026",
-   "fetch_status": "ok",
-   "used_for": "N Judah peak headway 10 -> 9 minutes; no N routing change (FLAG-2)"
-  },
-  {
-   "id": "S8",
-   "agency": "Caltrain",
-   "label": "San Francisco Caltrain Station page (Zone 1, 700 4th St, weekday schedule table, Muni N-Judah listed as a connection)",
-   "url": "https://www.caltrain.com/station/sanfrancisco",
-   "fetch_status": "ok",
-   "used_for": "southbound departures 4:55/5:30/6:20/6:25/6:48/6:55/7:20/7:25/7:48/7:55/8:20/8:25/8:48 AM and northbound arrivals 1:10/1:16/1:40/1:46/2:10/2:16/2:40/2:46 PM; also the source for FLAG-1"
-  },
-  {
-   "id": "S9",
-   "agency": "Caltrain",
-   "label": "22nd Street Station page",
-   "url": "https://www.caltrain.com/station/22ndstreet",
-   "fetch_status": "ok",
-   "used_for": "22nd St southbound departures 5:00/5:35/6:24/6:30/6:53/7:00/7:24/7:30/7:53/8:00/8:24/8:30/8:53/9:00/9:30 AM and northbound arrivals at :10/:40 past; no Muni N-Judah in its connection list"
-  },
-  {
-   "id": "S10",
-   "agency": "Caltrain",
-   "label": "Sunnyvale Station page (Zone 3, 121 W Evelyn Ave, VTA 20/21/53/55/Rapid 523 connections)",
-   "url": "https://www.caltrain.com/station/sunnyvale",
-   "fetch_status": "ok",
-   "used_for": "northbound departures 12:12/12:42/1:12/1:42/2:12 PM and the official VTA 55 connection claim"
-  },
-  {
-   "id": "S11",
-   "agency": "Caltrain",
-   "label": "Mountain View Station page",
-   "url": "https://www.caltrain.com/station/mountainview",
-   "fetch_status": "ok",
-   "used_for": "northbound departures 12:46/1:16/1:46 PM used in the Sunnyvale-vs-Mountain View comparison"
-  },
-  {
-   "id": "S12",
-   "agency": "Caltrain",
-   "label": "Caltrain fares",
-   "url": "https://www.caltrain.com/fares",
-   "fetch_status": "ok",
-   "used_for": "adult one-way $4.00/1 zone, $6.25/2, $8.50/3, $10.75/4, $13.00/5, $15.25/6; day pass $8.00/$12.50/$17.00/$21.50/$26.00/$30.50; monthly 3-zone $204; youth $1 flat all zones; 4-hour one-direction one-way validity; Clipper, contactless tap on and off, ticket machines; VTA-Caltrain Day Pass = Caltrain day pass + $7.50, valid to Zone 3"
-  },
-  {
-   "id": "S13",
-   "agency": "Caltrain",
-   "label": "Printer-friendly PDF schedule index (weekday table + legend + zone map)",
-   "url": "https://www.caltrain.com/schedules/pdfs",
-   "fetch_status": "ok (page) / failed (PDF file)",
-   "used_for": "legend 1XX local, 4XX limited, 5XX express, 6XX weekend local, 8XX South County Connector, '--' = train bypasses; weekday PDF eff. Jan 31 2026 (caltrain.com/media/36422); temporary weekend PDF (media/37278) covers only 7/11-12, 8/8-9, 8/22-23 and 9/19-20, so it does not affect Sept 8",
-   "gap": "the PDF itself could not be downloaded (3 attempts, HTTP failure). Minute-level times therefore come from S8/S9/S10 - see FLAG-5."
-  },
-  {
-   "id": "S14",
-   "agency": "VTA",
-   "label": "Route 55 route page (stop lists both directions, service notes)",
-   "url": "https://www.vta.org/go/routes/55",
-   "fetch_status": "ok",
-   "used_for": "'arrive 5 minutes early; all times are approximate'; 7:26 AM southbound operates only when Fremont HS is in session; Labor Day (Mon 9/7/2026) runs on the Sunday/Holiday schedule; Orange Line bus bridge 9/2-9/17 does not affect route 55"
-  },
-  {
-   "id": "S15",
-   "agency": "VTA",
-   "label": "Route 55 weekday schedule PDF (timepoint tables)",
-   "url": "https://www.vta.org/sites/default/files/route_schedule_pdfs/current/route_55/route_55_schedule.pdf",
-   "fetch_status": "ok",
-   "used_for": "southbound from Sunnyvale TC 5:41, 6:11, 6:44, 7:19, 7:40, 7:55, 8:04, 8:34, 9:05, 9:35, 9:59, 10:31 AM, 11:01, 11:31, 12:04, 12:34 PM, 1:04, 1:34, 2:04 PM; timepoints Sunnyvale-Saratoga & El Camino, & Fremont, De Anza & Homestead, Stelling & Stevens Creek; northbound Stelling & Stevens Creek 12:01, 12:31, 12:59, 1:29, 1:59, 2:29, 2:59, 3:24, 3:49 PM with Sunnyvale TC arrivals 12:25, 12:55, 1:31, 2:01 PM; re-verified 2026-09-07: SB Sunnyvale TC 7:40 -> De Anza & Homestead 7:55 -> Stelling 8:03, TC 9:59 -> Stelling 10:20; NB Stelling 11:31 -> TC 11:55 (early-backup row)"
-  },
-  {
-   "id": "S16",
-   "agency": "VTA",
-   "label": "VTA fares",
-   "url": "https://www.vta.org/go/fares",
-   "fetch_status": "ok",
-   "used_for": "adult single ride $2.50 with 2-hour free transfers; 8-hour $5.00; day pass $7.50 (Clipper contactless accumulator caps a day at $7.50); monthly $90; express $5.00; senior $1.00; youth 5-18 $1.25"
-  },
-  {
-   "id": "S17",
-   "agency": "OpenStreetMap (not an agency)",
-   "label": "Sunnyvale Transit Center node 6720130283; McClellan & Felton and Stevens Creek & De Anza stop nodes; VTA stop area relations",
-   "url": "https://www.openstreetmap.org/node/6720130283",
-   "fetch_status": "ok",
-   "used_for": "platform-to-bay distance at Sunnyvale, stop coordinates used for walk legs. Data (c) OpenStreetMap contributors, ODbL"
-  },
-  {
-   "id": "S18",
-   "agency": "Valhalla / OpenStreetMap (not an agency)",
-   "label": "Public pedestrian routing for the two Cupertino walk legs",
-   "url": "https://valhalla.openstreetmap.de/",
-   "fetch_status": "ok",
-   "used_for": "0.741 km / about 9 min (Gillick Way to McClellan & Felton) and 1.40 km / about 18 min (Stevens Creek & De Anza to Gillick Way)"
-  },
-  {
-   "id": "S19",
-   "agency": "Restaurant (official)",
-   "label": "Benihana Cupertino location page",
-   "url": "https://www.benihana.com/locations/cupertino/",
-   "fetch_status": "ok",
-   "used_for": "Power Lunch $15.95, Mon-Fri 11:00-3:00, dining room, 45-minute guarantee; address 2074 Vallco Fashion Park; weekly hours"
-  },
-  {
-   "id": "S20",
-   "agency": "Restaurant (official)",
-   "label": "Gyu-Kaku Cupertino page + official Lunch Menu PDF",
-   "url": "https://www.gyu-kaku.com/cupertino/",
-   "fetch_status": "ok",
-   "used_for": "hours Mon-Thu 11:30-21:30; Lunch Menu Mon-Fri 11:30 AM-4:00 PM last seating, not weekends or holidays; lunch Gyu-Combo 2 items $18.95 / 3 items $22.95 with miso soup, lunch salad and rice; bowls $13.95-$16.95; ramen $14.95; value course for 2 $75. Menu PDF: https://www.gyu-kaku.com/wp-content/uploads/2025/01/cp_lunch2411.pdf"
-  },
-  {
-   "id": "S21",
-   "agency": "Restaurant (official ordering page)",
-   "label": "Home Eat online menu (Lunch Specials section)",
-   "url": "https://homeeat.toast.site/order/home-eat-cupertino",
-   "fetch_status": "ok",
-   "used_for": "Beef Broccoli Lunch Special $13.99 and Mongolian Shrimp Lunch Special $14.99 with a complimentary randomly selected drink; String Beans & Eggplant lunch special listed without a price in the captured block"
-  },
-  {
-   "id": "S22",
-   "agency": "Restaurant (official)",
-   "label": "Fish's Wild locations page",
-   "url": "https://fishiswild.com/places/cupertino---southside",
-   "fetch_status": "ok",
-   "used_for": "Cupertino hours Sun-Thu 11:00-20:00, Fri 11:00-20:20"
-  },
-  {
-   "id": "S23",
-   "agency": "Yelp",
-   "label": "Red Hot Wok, Siam Station, Ajito, Cap't Loui, Bento Express, Home Eat, Fish's Wild, Araki Sushi, Los Gatos Cafe, Los Gatos Parkside, Los Altos Grill, Kathmandu Cuisine, Brew City Grill pages",
-   "url": "https://www.yelp.com/biz/red-hot-wok-cupertino",
-   "fetch_status": "ok via search index",
-   "used_for": "day-by-day hours, addresses, phone numbers and review quotes describing lunch specials; no aggregator price was promoted to a verified price"
-  },
-  {
-   "id": "S24",
-   "agency": "Third party (not used for prices)",
-   "label": "OpenTable, Tripadvisor, restaurantguru (Google-review mirror), Postmates, DoorDash, Menupix, zmenu, restaurantji, beyondmenu, corner.inc, roostcafeandbistro",
-   "url": "https://www.opentable.com/r/taste-palo-alto",
-   "fetch_status": "ok",
-   "used_for": "hours/daypart cross-checks and the Taste lunch-special menu block; explicitly flagged wherever a price came from one of these instead of the restaurant"
-  },
-  {
-   "id": "S25",
-   "agency": "Geocoding (not an agency)",
-   "label": "Nominatim / Redfin for the two endpoints",
-   "url": "https://nominatim.openstreetmap.org/",
-   "fetch_status": "ok",
-   "used_for": "20387 Gillick Way coordinates (37.3128997, -122.0302984) and confirmation that it is a private residence with no transit stop on the street"
-  },
-  {
-   "id": "S26",
-   "agency": "Restaurant (official)",
-   "label": "Red Hot Wok official site - complete menu with prices, address, phone and weekly hours",
-   "url": "https://www.redhotwokcupertino.com/",
-   "fetch_status": "ok",
-   "used_for": "proof that Red Hot Wok publishes no lunch special (a la carte $13.95-$22.95), plus its own Tue hours 11:00-14:15 / 17:00-21:15 and Monday closure - supersedes the aggregator $17.00 figure seen earlier"
-  },
-  {
-   "id": "S27",
-   "agency": "Yelp",
-   "label": "Red Hot Wok Cupertino (10074 E Estates Dr, 4.1 stars, 1.5k reviews)",
-   "url": "https://www.yelp.com/biz/red-hot-wok-cupertino",
-   "fetch_status": "ok via search index",
-   "used_for": "address/phone cross-check and the 2:00 PM lunch-close variant that conflicts with the restaurant's own 2:15 PM"
-  },
-  {
-   "id": "S28",
-   "agency": "Restaurant (official)",
-   "label": "Aqui Cal Mex home - daily special plate Sept 2-15 2026",
-   "url": "https://www.aquicalmex.com/",
-   "fetch_status": "ok",
-   "used_for": "Salmon Enchiladas and Crab Cake $17.59; Portobello soup $5.09"
-  },
-  {
-   "id": "S29",
-   "agency": "Restaurant (official)",
-   "label": "Red Hot Wok Palo Alto lunch special menu",
-   "url": "https://www.redhotwokpaloalto.com/uvs503m5/restaurant/order-online?menu=Lunch+Menu",
-   "fetch_status": "ok",
-   "used_for": "Lunch specials $15.95-$18.95 Tue-Fri 11:00-14:00 with rice, two sides and soup"
-  },
-  {
-   "id": "S30",
-   "agency": "Restaurant (official)",
-   "label": "Bonchon Sunnyvale location page",
-   "url": "https://restaurants.bonchon.com/locations/ca/sunnyvale/572-e-el-camino-real",
-   "fetch_status": "ok",
-   "used_for": "Hours 11:00-21:00 daily; Lunch Specials section without dollar prices"
-  },
-  {
-   "id": "S31",
-   "agency": "Caltrain",
-   "label": "Regional transfer discounts ($0.50 TO Muni only)",
-   "url": "https://www.caltrain.com/fares/regional-transfer-discounts",
-   "fetch_status": "ok",
-   "used_for": "$0.50 credit TO Muni within 1 hr of Caltrain tag-off (tag on/off, Clipper cash value or monthly incl. Zone 1); VTA/SamTrans credits need a monthly pass; no Muni-to-Caltrain credit exists"
-  },
-  {
-   "id": "S32",
-   "agency": "SFMTA",
-   "label": "Adult single-ride fares + MuniMobile Single Ride discontinuation",
-   "url": "https://www.sfmta.com/fares/single-ride-adult-ages-19-64",
-   "fetch_status": "ok",
-   "used_for": "$2.85 Clipper/contactless, $3.00 cash, 120-min transfer; MuniMobile Single Ride passes discontinued Sep 1 2026"
-  },
-  {
-   "id": "S33",
-   "agency": "Yelp",
-   "label": "Batch-3 Yelp pages (hours/addresses/phones)",
-   "url": "https://www.yelp.com/biz/pho-lyfe-sunnyvale-2",
-   "fetch_status": "ok via search index",
-   "used_for": "day-by-day hours, addresses, phones for Pho Lyfe, Cam Hung, Home Eat SC, Dusita, Il Fornaio, Falafel's, Breakfast Club, TGI's, Willow Street, Super Duper, Bywater, The Post, Urfa, Cetrella, Kongunadu, Clara's Junction, Diner of LG, Local Union 271, Kakaroto"
-  },
-  {
-   "id": "S34",
-   "agency": "Third party (not used for prices)",
-   "label": "Batch-3 restaurantji pages (hours/addresses)",
-   "url": "https://www.restaurantji.com/ca/sunnyvale/thai-spoons-/",
-   "fetch_status": "ok",
-   "used_for": "hours/address cross-checks for Thai Spoons, First Wok, Asia Village, Dumpling Depot, 10 Butchers, Dusita, TGI's, Oak & Rye, La Esquina, Italian Brothers, Super Duper, The Post, Urfa, Aurum, Cetrella, Pacific Catch"
-  },
-  {
-   "id": "S35",
-   "agency": "Restaurant (official)",
-   "label": "Batch-3 official restaurant sites (lunch prices, hours, addresses)",
-   "url": "https://gingercafe.net/menus/lunchmenu/",
-   "fetch_status": "ok",
-   "used_for": "lunch prices/hours/address from gingercafe.net, clarasjunction.com, citypizzacampbell.com, tonyandalbaspizza.com, lotusthaibistro.com, labohemepaloalto.com, thepastaria.com, laesquinamexlosgatos.com, thebywaterca.com, italianbrothers.restaurant, bcmidtown.com, dusitathaicuisine.com menu PDF, dumplingdepot-s.com, eriksdelicafe.com, mastrosrestaurants.com, mediterraneangrillhouse.com, dongiovannis.com, soongsoong.com, freedomburrito.com, terunpizza.com (conflict), ludwigsmv.com (conflict)"
-  },
-  {
-   "id": "S36",
-   "agency": "Third party (not used for prices)",
-   "label": "Batch-3 directories and press (hours/geo cross-checks)",
-   "url": "https://restaurantguru.com/Asia-Village-Sunnyvale",
-   "fetch_status": "ok",
-   "used_for": "restaurantguru, wheree, Yellow Pages, Tripadvisor, corner.inc, Toast ordering, Chowbus, smorefood, zmenu, Slice, usmenuguide, showmelocal, Nextdoor, map.contact, MV Voice (Toki $8.95 bento), Palo Alto Online (Ludwig's)"
-  },
-  {
-   "id": "S37",
-   "agency": "OpenTable",
-   "label": "Batch-3 OpenTable menu/hours blocks",
-   "url": "https://www.opentable.com/r/the-bywater-los-gatos",
-   "fetch_status": "ok via search index",
-   "used_for": "menu price bands ($7-$33.95 Local Union 271, $21-$27 The Post - both flagged for re-verification) and the Bywater Lunch Special note"
-  },
-  {
-   "id": "S38",
-   "agency": "Restaurant (own site)",
-   "label": "Tomatina Santa Clara official menu page",
-   "url": "https://tomatina.com/menu/tomatina-santa-clara-3127-mission-college-blvd",
-   "fetch_status": "ok",
-   "used_for": "Pick Two lunch specials $13.50 (Pick Two, Pick Two w/ Mini Pizza, Pick Two w/ Pasta & Sauce) - the only priced lunch special found in the Santa Clara sweep"
-  },
-  {
-   "id": "S39",
-   "agency": "Restaurant (own site)",
-   "label": "The Hut Santa Clara official food menu",
-   "url": "https://thehutsantaclara.com/santa-clara-the-hut-food-menu",
-   "fetch_status": "ok",
-   "used_for": "Taco Tuesday $10.00 (3 tacos plus side salad or fries) plus Monday/Thursday/Friday weekday specials - the only Tuesday-specific lunch special found in this pass"
-  },
-  {
-   "id": "S40",
-   "agency": "Restaurant (own ordering page)",
-   "label": "Lazy Dog, Local Kitchens and Urban Grill ordering pages",
-   "url": "https://orders.lazydogrestaurants.com/order/cupertino",
-   "fetch_status": "ok",
-   "used_for": "Lazy Dog Cupertino 'Lunch Specials starting at $8.95 til 4pm daily'; Local Kitchens Cupertino lunch combos $13.00-$17.50 with side and drink (localkitchens.toast.site); Urban Grill weekday lunch buffet $16.99 Mon-Thu 11:30 AM-3:00 PM (urbanindianflavors.com) against $19.99 Fri-Sun on urbangrillusa.com"
-  },
-  {
-   "id": "S41",
-   "agency": "Chamber of Commerce",
-   "label": "Saratoga Chamber of Commerce dining directory",
-   "url": "https://www.saratogachamber.org/copy-of-lodging",
-   "fetch_status": "ok",
-   "used_for": "Addresses, phones and lunch hours for 12 Saratoga businesses (Darla Cafe, Mandala, Bai Tong, Bella Saratoga, Hong's Gourmet, Mint Leaf, Kandoo, Round Table, The Mynt, Big Basin Cafe, plus dinner-only/closed rejects Hachi Ju Hachi, Hero Ranch Kitchen, Florentine, Mangia Mornings, Sushi Heaven)"
-  },
-  {
-   "id": "S42",
-   "agency": "Yelp",
-   "label": "Batch-4 Yelp business pages (hours and addresses)",
-   "url": "https://www.yelp.com/biz/ulavacharu-indian-restaurant-sunnyvale",
-   "fetch_status": "ok via search index",
-   "used_for": "Hours/address for UlavacharU, SAJJ, Oren's Hummus, Sushi Arashi, Fashion Wok, Chaat Bhavan, Sakoon (buffet Wed-Sun per Q&A), Chef Zhao Kitchen, State Street Market, Naschmarkt, Royal Taj (flagged CLOSED), Krung Thai (CLOSED), Mandarin Gourmet (CLOSED)"
-  },
-  {
-   "id": "S43",
-   "agency": "Third party (hours cross-check only)",
-   "label": "Batch-4 directories: restaurantji, restaurantguru, zmenu, wheree, restaurantjump, checkle, usarestaurants",
-   "url": "https://www.restaurantji.com/ca/cupertino/",
-   "fetch_status": "ok",
-   "used_for": "Structured weekly hours, coordinates and addresses used only to cross-check or to fill hours; no prices taken from these (Pineapple Thai, Mian Sichuan, Sajj, QQ Noodle, Haidilao, Big Basin Burger Bar, Big Basin Cafe, The Urban Grill, The Hut, Chef Zhao)"
-  },
-  {
-   "id": "S44",
-   "agency": "OpenTable",
-   "label": "Batch-4 OpenTable menu and hours blocks",
-   "url": "https://www.opentable.com/r/xiang-home-kitchen-cupertino",
-   "fetch_status": "ok via search index",
-   "used_for": "Xiang Home Kitchen 2 lunch section $12.99-$15.99; Sakoon buffet days/prices via Q&A; Left Bank Santana Row hours and happy hour; The Basin (dinner only); Ristorante Don Giovanni review-reported $19.95-$19.99 three-course lunch"
-  },
-  {
-   "id": "S45",
-   "agency": "Restaurant (own site)",
-   "label": "Batch-4 official hours pages",
-   "url": "https://www.chezphilippelosgatos.com/",
-   "fetch_status": "ok",
-   "used_for": "Chez Philippe Tue-Fri lunch 11:30 AM-2:00 PM; Heritage Pub & Chophouse Mon-Thu 11:30 AM-10:00 PM; A Bellagio Tue-Fri lunch 11:30 AM-2:30 PM; Buca di Beppo Campbell lunch combos Mon-Fri until 3 PM; Fogo de Chao San Jose lunch 11:30 AM-3:00 PM; Dumpling Time Santana Row daily 11:00-21:00; Chaat Bhavan 11:30-22:00; QQ Noodle Tue 11:30 AM-2:00 PM"
-  },
-  {
-   "id": "S46",
-   "agency": "Editorial guide",
-   "label": "Infatuation - 19 Best Restaurants in Santa Clara (May 2026)",
-   "url": "https://www.theinfatuation.com/san-francisco/guides/best-restaurants-santa-clara",
-   "fetch_status": "ok",
-   "used_for": "Batch 5a Santa Clara addresses + lunch verdicts (Pav Bhaji, Ondam, Shawarmajji, Achilles, Bloom, Joey, Puesto, Giwa, Rice Junky, Rise, Tarim, Emelina, Mikiya, Iraklis, Croissante, Leichi, Baekjeong, Milldang) + Master Oh address fix"
-  },
-  {
-   "id": "S47",
-   "agency": "Business association",
-   "label": "Downtown Los Altos (LAVA) dining directory",
-   "url": "https://downtownlosaltos.org/member/wpbdp_category/dining/",
-   "fetch_status": "ok",
-   "used_for": "Batch 5a Los Altos rows (Cafe Nur, Konjoe, Orenchi, Rustic House, State of Mind, Pompeii, Hiroshi) + L22/L83/L130 conflicts + L131 confirm"
-  },
-  {
-   "id": "S48",
-   "agency": "Event press",
-   "label": "dothebay - Let's Do Lunch Santana Row (Sept 2026)",
-   "url": "https://dothebay.com/event/lets-do-lunch-santana-row/2026-09-04/",
-   "fetch_status": "ok",
-   "used_for": "Twelve $25 one-day event rows: Momosan, Pizza Antica, EMC, Straits, El Jardin, Oveja Negra, Fitoor, Parranga, Suspiro, Zazil, Vintage Wine Bar, Vintage Wine Merchants ($25 app+entree, date TBA)"
-  },
-  {
-   "id": "S49",
-   "agency": "Destinations site",
-   "label": "sanjose.org - Let's Do Lunch event terms",
-   "url": "https://www.sanjose.org/event/lets-do-lunch-santana-row/70376/",
-   "fetch_status": "ok",
-   "used_for": "Event terms cross-check: one weekday in September, $25 prix-fixe, hours vary by restaurant"
-  },
-  {
-   "id": "S50",
-   "agency": "Social (Reddit)",
-   "label": "Reddit lunch-special threads (Sunnyvale, downtown Sunnyvale, Mountain View, bayareafood)",
-   "url": "https://www.reddit.com/r/Sunnyvale/comments/1gszlmp/where_is_everyones_favorite_place_to_eat_in/",
-   "fetch_status": "ok",
-   "used_for": "Review-level lunch mentions: Adamson's, Falafel Stop, St John's Tri Tip Tuesday, Von's, Fu Niu Tang, Sushi Tomi - reviewer wording only, no prices"
-  },
-  {
-   "id": "S51",
-   "agency": "Local news",
-   "label": "paloaltoonline - Downtown Sunnyvale openings (Feb 2026)",
-   "url": "https://paloaltoonline.com/food/2026/02/19/new-openings-shake-up-downtown-sunnyvales-dining-scene/",
-   "fetch_status": "ok",
-   "used_for": "Mayan Kitchen Tue-Sun lunch 11:30-2 + Meyhouse Tue-Sun lunch 11:45-2:30"
-  },
-  {
-   "id": "S52",
-   "agency": "Restaurant (own site)",
-   "label": "Batch-5 official hours pages",
-   "url": "https://ramenwakusei.com/location",
-   "fetch_status": "ok",
-   "used_for": "Ramen Wakusei daily 11-21; Rio Adobe daily 11-21; Oakmont Sandwiches hours (conflicts with Yelp); Udon Mugizo split hours; Kikusushi 10:30-20; Dio Deka dinner Wed-Sun; Left Bank Menlo Park hours; Bai Tong lunch Fri-Sat; 7 Santana Row event official pages"
-  },
-  {
-   "id": "S53",
-   "agency": "Third-party fare mirror",
-   "label": "infoforsf Caltrain zone table (checked Aug 2026) + transit.wiki zone map",
-   "url": "https://www.infoforsf.com/caltrain",
-   "fetch_status": "ok",
-   "used_for": "Corroborates adult 3-zone $8.50 and Zone 1 SF / Zone 3 Sunnyvale-MV assignments behind the $8.50 Caltrain fares (official table is JS-rendered)"
-  }
- ],
- "dead_ends": [
-  "No outbound network from the build environment (DNS/TLS blocked, proxy refused), so GTFS feeds for SFMTA/VTA/Caltrain and the 511.org trip planner API could not be pulled. Everything was verified from the agencies' published web tables instead.",
-  "caltrain.com/media/36422 and caltrain.com/media/36422/download failed three times, so the weekday PDF could not be read (FLAG-5).",
-  "caltrain.com/station/22ndst is a 404 - the slug is 22ndstreet. caltrain.com/station/sf is a 404 - the slug is sanfrancisco. vta.org/services/fares 404s - the live path is vta.org/go/fares.",
-  "Reusing a proxy/CDN URL from a previous tool result produces SignatureDoesNotMatch; only canonical agency URLs were fetched."
- ],
- "could_not_verify": [
-  "Caltrain weekday timetable PDF (caltrain.com/media/36422): download failed 3 times, so minute-level train times come from Caltrain's own live per-station schedule tables instead. See FLAG-5.",
-  "Live 511 / TripPlanner itineraries and GTFS (SFMTA sidetrail, VTA, Caltrain GTFS): the build environment has no outbound network, so no engine-computed itinerary is available; the times here are hand-assembled from official agency tables.",
-  "VTA midday trip times between Stevens Creek & De Anza and McClellan & Felton: route 55 publishes only timepoints, so those two minutes are interpolated and labelled as such.",
-  "Curry Hyuga Cupertino lunch pricing: no lunch menu is published on curryhyuga.com and no lunch special appears in any other listing; only its hours (Restaurant Guru, corner.inc) could be verified.",
-  "Water Tower Kitchen lunch special: no lunch special is published anywhere; only hours, address and phone were verified.",
-  "Ajito lunch pricing: Yelp confirms the 2-course lunch and its 11:30-3:30 window, not the price.",
-  "Any published lunch price for Los Altos Grill, Little Sky, Araki Sushi and Siam Thai; those rows carry the menu price band or the happy-hour block instead, clearly labelled.",
-  "Kizuna's current hours: OpenStreetMap opening_hours and its own website disagree, so the row says 'unverified'.",
-  "Willow Street Pizza (Los Gatos) standalone listing - only an UberEats stub; likely the same business as L69 Willow Street Wood-Fired Pizza.",
-  "Andale (Los Gatos) - no address/hours found in this pass.",
-  "Pedro's (Santa Clara) - search returns only Pedro's Atascadero (~120 mi away); excluded as wrong-city.",
-  "Ox 9 Cupertino branch - existence hinted on Yelp but no address verified; no row added.",
-  "Ethel's, Bowl'd, Mezzaluna (Los Gatos), Thyme (Palo Alto) - named in threads but no verifiable address/hours found."
- ]
+  "accessed": "2026-09-07",
+  "note": "Every time, fare and stop in this project was read from one of these pages. 'fetch_status' records what happened when the page was read from the build environment, so a gap is visible instead of hidden.",
+  "sources": [
+    {
+      "id": "S1",
+      "agency": "SFMTA",
+      "label": "N Judah route page (stops, 24-hour note, subway-hours footnote, Aug 29 change banner)",
+      "url": "https://www.sfmta.com/routes/n-judah",
+      "fetch_status": "ok",
+      "used_for": "stop 15200/15201 Judah & 19th Ave; 'Between subway hours and Owl service, use the N Bus'"
+    },
+    {
+      "id": "S2",
+      "agency": "SFMTA",
+      "label": "N Judah metro weekday timetable, eastbound (to Caltrain)",
+      "url": "https://www.sfmta.com/routes/schedule/N?direction_id=1",
+      "fetch_status": "ok",
+      "used_for": "7:42 AM Judah & 19th -> 8:20 AM King St & 4th; also checked with ?date=20260908 (identical)"
+    },
+    {
+      "id": "S3",
+      "agency": "SFMTA",
+      "label": "N Judah metro weekday timetable, westbound (to Ocean Beach)",
+      "url": "https://www.sfmta.com/routes/schedule/N?direction_id=0",
+      "fetch_status": "ok",
+      "used_for": "midday westbound pairs from King St & 4th St, including 1:56 PM -> 2:38 PM and 2:32 PM -> 3:14 PM"
+    },
+    {
+      "id": "S4",
+      "agency": "SFMTA",
+      "label": "N Judah Bus route page",
+      "url": "https://www.sfmta.com/routes/n-judah-bus",
+      "fetch_status": "ok",
+      "used_for": "bus covers non-subway hours; inbound terminus Townsend St & 5th (17957); weekday 5-6 a.m. headway text (see FLAG-3)"
+    },
+    {
+      "id": "S5",
+      "agency": "SFMTA",
+      "label": "N Bus weekday timetable, inbound to Caltrain",
+      "url": "https://www.sfmta.com/routes/schedule/NBUS?direction_id=1",
+      "fetch_status": "ok",
+      "used_for": "earliest trip 5:07/5:15 AM, 5:53 AM at Townsend & 5th/Caltrain, 15-minute spacing to 7:20 AM; also checked with ?date=20260908 (identical)"
+    },
+    {
+      "id": "S6",
+      "agency": "SFMTA",
+      "label": "Muni fares",
+      "url": "https://www.sfmta.com/getting-around/muni/fares",
+      "fetch_status": "ok",
+      "used_for": "Single Ride $2.85 / cash $3.00 / 120 min; Day Pass $5.70; Monthly $86; youth 18 and under free; $0.50 inter-agency credit when transferring TO Muni from Caltrain within 1 hour; MuniMobile Single Ride passes discontinued Sep 1 2026"
+    },
+    {
+      "id": "S7",
+      "agency": "SFMTA",
+      "label": "Muni service changes effective Saturday Aug 29 2026",
+      "url": "https://www.sfmta.com/travel-updates/muni-service-changes-effective-saturday-august-29-2026",
+      "fetch_status": "ok",
+      "used_for": "N Judah peak headway 10 -> 9 minutes; no N routing change (FLAG-2)"
+    },
+    {
+      "id": "S8",
+      "agency": "Caltrain",
+      "label": "San Francisco Caltrain Station page (Zone 1, 700 4th St, weekday schedule table, Muni N-Judah listed as a connection)",
+      "url": "https://www.caltrain.com/station/sanfrancisco",
+      "fetch_status": "ok",
+      "used_for": "southbound departures 4:55/5:30/6:20/6:25/6:48/6:55/7:20/7:25/7:48/7:55/8:20/8:25/8:48 AM and northbound arrivals 1:10/1:16/1:40/1:46/2:10/2:16/2:40/2:46 PM; also the source for FLAG-1"
+    },
+    {
+      "id": "S9",
+      "agency": "Caltrain",
+      "label": "22nd Street Station page",
+      "url": "https://www.caltrain.com/station/22ndstreet",
+      "fetch_status": "ok",
+      "used_for": "22nd St southbound departures 5:00/5:35/6:24/6:30/6:53/7:00/7:24/7:30/7:53/8:00/8:24/8:30/8:53/9:00/9:30 AM and northbound arrivals at :10/:40 past; no Muni N-Judah in its connection list"
+    },
+    {
+      "id": "S10",
+      "agency": "Caltrain",
+      "label": "Sunnyvale Station page (Zone 3, 121 W Evelyn Ave, VTA 20/21/53/55/Rapid 523 connections)",
+      "url": "https://www.caltrain.com/station/sunnyvale",
+      "fetch_status": "ok",
+      "used_for": "northbound departures 12:12/12:42/1:12/1:42/2:12 PM and the official VTA 55 connection claim"
+    },
+    {
+      "id": "S11",
+      "agency": "Caltrain",
+      "label": "Mountain View Station page",
+      "url": "https://www.caltrain.com/station/mountainview",
+      "fetch_status": "ok",
+      "used_for": "northbound departures 12:46/1:16/1:46 PM used in the Sunnyvale-vs-Mountain View comparison"
+    },
+    {
+      "id": "S12",
+      "agency": "Caltrain",
+      "label": "Caltrain fares",
+      "url": "https://www.caltrain.com/fares",
+      "fetch_status": "ok",
+      "used_for": "adult one-way $4.00/1 zone, $6.25/2, $8.50/3, $10.75/4, $13.00/5, $15.25/6; day pass $8.00/$12.50/$17.00/$21.50/$26.00/$30.50; monthly 3-zone $204; youth $1 flat all zones; 4-hour one-direction one-way validity; Clipper, contactless tap on and off, ticket machines; VTA-Caltrain Day Pass = Caltrain day pass + $7.50, valid to Zone 3"
+    },
+    {
+      "id": "S13",
+      "agency": "Caltrain",
+      "label": "Printer-friendly PDF schedule index (weekday table + legend + zone map)",
+      "url": "https://www.caltrain.com/schedules/pdfs",
+      "fetch_status": "ok (page) / failed (PDF file)",
+      "used_for": "legend 1XX local, 4XX limited, 5XX express, 6XX weekend local, 8XX South County Connector, '--' = train bypasses; weekday PDF eff. Jan 31 2026 (caltrain.com/media/36422); temporary weekend PDF (media/37278) covers only 7/11-12, 8/8-9, 8/22-23 and 9/19-20, so it does not affect Sept 8",
+      "gap": "the PDF itself could not be downloaded (3 attempts, HTTP failure). Minute-level times therefore come from S8/S9/S10 - see FLAG-5."
+    },
+    {
+      "id": "S14",
+      "agency": "VTA",
+      "label": "Route 55 route page (stop lists both directions, service notes)",
+      "url": "https://www.vta.org/go/routes/55",
+      "fetch_status": "ok",
+      "used_for": "'arrive 5 minutes early; all times are approximate'; 7:26 AM southbound operates only when Fremont HS is in session; Labor Day (Mon 9/7/2026) runs on the Sunday/Holiday schedule; Orange Line bus bridge 9/2-9/17 does not affect route 55"
+    },
+    {
+      "id": "S15",
+      "agency": "VTA",
+      "label": "Route 55 weekday schedule PDF (timepoint tables)",
+      "url": "https://www.vta.org/sites/default/files/route_schedule_pdfs/current/route_55/route_55_schedule.pdf",
+      "fetch_status": "ok",
+      "used_for": "southbound from Sunnyvale TC 5:41, 6:11, 6:44, 7:19, 7:40, 7:55, 8:04, 8:34, 9:05, 9:35, 9:59, 10:31 AM, 11:01, 11:31, 12:04, 12:34 PM, 1:04, 1:34, 2:04 PM; timepoints Sunnyvale-Saratoga & El Camino, & Fremont, De Anza & Homestead, Stelling & Stevens Creek; northbound Stelling & Stevens Creek 12:01, 12:31, 12:59, 1:29, 1:59, 2:29, 2:59, 3:24, 3:49 PM with Sunnyvale TC arrivals 12:25, 12:55, 1:31, 2:01 PM; re-verified 2026-09-07: SB Sunnyvale TC 7:40 -> De Anza & Homestead 7:55 -> Stelling 8:03, TC 9:59 -> Stelling 10:20; NB Stelling 11:31 -> TC 11:55 (early-backup row)"
+    },
+    {
+      "id": "S16",
+      "agency": "VTA",
+      "label": "VTA fares",
+      "url": "https://www.vta.org/go/fares",
+      "fetch_status": "ok",
+      "used_for": "adult single ride $2.50 with 2-hour free transfers; 8-hour $5.00; day pass $7.50 (Clipper contactless accumulator caps a day at $7.50); monthly $90; express $5.00; senior $1.00; youth 5-18 $1.25"
+    },
+    {
+      "id": "S17",
+      "agency": "OpenStreetMap (not an agency)",
+      "label": "Sunnyvale Transit Center node 6720130283; McClellan & Felton and Stevens Creek & De Anza stop nodes; VTA stop area relations",
+      "url": "https://www.openstreetmap.org/node/6720130283",
+      "fetch_status": "ok",
+      "used_for": "platform-to-bay distance at Sunnyvale, stop coordinates used for walk legs. Data (c) OpenStreetMap contributors, ODbL"
+    },
+    {
+      "id": "S18",
+      "agency": "Valhalla / OpenStreetMap (not an agency)",
+      "label": "Public pedestrian routing for the two Cupertino walk legs",
+      "url": "https://valhalla.openstreetmap.de/",
+      "fetch_status": "ok",
+      "used_for": "0.741 km / about 9 min (Gillick Way to McClellan & Felton) and 1.40 km / about 18 min (Stevens Creek & De Anza to Gillick Way)"
+    },
+    {
+      "id": "S19",
+      "agency": "Restaurant (official)",
+      "label": "Benihana Cupertino location page",
+      "url": "https://www.benihana.com/locations/cupertino/",
+      "fetch_status": "ok",
+      "used_for": "Power Lunch $15.95, Mon-Fri 11:00-3:00, dining room, 45-minute guarantee; address 2074 Vallco Fashion Park; weekly hours"
+    },
+    {
+      "id": "S20",
+      "agency": "Restaurant (official)",
+      "label": "Gyu-Kaku Cupertino page + official Lunch Menu PDF",
+      "url": "https://www.gyu-kaku.com/cupertino/",
+      "fetch_status": "ok",
+      "used_for": "hours Mon-Thu 11:30-21:30; Lunch Menu Mon-Fri 11:30 AM-4:00 PM last seating, not weekends or holidays; lunch Gyu-Combo 2 items $18.95 / 3 items $22.95 with miso soup, lunch salad and rice; bowls $13.95-$16.95; ramen $14.95; value course for 2 $75. Menu PDF: https://www.gyu-kaku.com/wp-content/uploads/2025/01/cp_lunch2411.pdf"
+    },
+    {
+      "id": "S21",
+      "agency": "Restaurant (official ordering page)",
+      "label": "Home Eat online menu (Lunch Specials section)",
+      "url": "https://homeeat.toast.site/order/home-eat-cupertino",
+      "fetch_status": "ok",
+      "used_for": "Beef Broccoli Lunch Special $13.99 and Mongolian Shrimp Lunch Special $14.99 with a complimentary randomly selected drink; String Beans & Eggplant lunch special listed without a price in the captured block"
+    },
+    {
+      "id": "S22",
+      "agency": "Restaurant (official)",
+      "label": "Fish's Wild locations page",
+      "url": "https://fishiswild.com/places/cupertino---southside",
+      "fetch_status": "ok",
+      "used_for": "Cupertino hours Sun-Thu 11:00-20:00, Fri 11:00-20:20"
+    },
+    {
+      "id": "S23",
+      "agency": "Yelp",
+      "label": "Red Hot Wok, Siam Station, Ajito, Cap't Loui, Bento Express, Home Eat, Fish's Wild, Araki Sushi, Los Gatos Cafe, Los Gatos Parkside, Los Altos Grill, Kathmandu Cuisine, Brew City Grill pages",
+      "url": "https://www.yelp.com/biz/red-hot-wok-cupertino",
+      "fetch_status": "ok via search index",
+      "used_for": "day-by-day hours, addresses, phone numbers and review quotes describing lunch specials; no aggregator price was promoted to a verified price"
+    },
+    {
+      "id": "S24",
+      "agency": "Third party (not used for prices)",
+      "label": "OpenTable, Tripadvisor, restaurantguru (Google-review mirror), Postmates, DoorDash, Menupix, zmenu, restaurantji, beyondmenu, corner.inc, roostcafeandbistro",
+      "url": "https://www.opentable.com/r/taste-palo-alto",
+      "fetch_status": "ok",
+      "used_for": "hours/daypart cross-checks and the Taste lunch-special menu block; explicitly flagged wherever a price came from one of these instead of the restaurant"
+    },
+    {
+      "id": "S25",
+      "agency": "Geocoding (not an agency)",
+      "label": "Nominatim / Redfin for the two endpoints",
+      "url": "https://nominatim.openstreetmap.org/",
+      "fetch_status": "ok",
+      "used_for": "20387 Gillick Way coordinates (37.3128997, -122.0302984) and confirmation that it is a private residence with no transit stop on the street"
+    },
+    {
+      "id": "S26",
+      "agency": "Restaurant (official)",
+      "label": "Red Hot Wok official site - complete menu with prices, address, phone and weekly hours",
+      "url": "https://www.redhotwokcupertino.com/",
+      "fetch_status": "ok",
+      "used_for": "proof that Red Hot Wok publishes no lunch special (a la carte $13.95-$22.95), plus its own Tue hours 11:00-14:15 / 17:00-21:15 and Monday closure - supersedes the aggregator $17.00 figure seen earlier"
+    },
+    {
+      "id": "S27",
+      "agency": "Yelp",
+      "label": "Red Hot Wok Cupertino (10074 E Estates Dr, 4.1 stars, 1.5k reviews)",
+      "url": "https://www.yelp.com/biz/red-hot-wok-cupertino",
+      "fetch_status": "ok via search index",
+      "used_for": "address/phone cross-check and the 2:00 PM lunch-close variant that conflicts with the restaurant's own 2:15 PM"
+    },
+    {
+      "id": "S28",
+      "agency": "Restaurant (official)",
+      "label": "Aqui Cal Mex home - daily special plate Sept 2-15 2026",
+      "url": "https://www.aquicalmex.com/",
+      "fetch_status": "ok",
+      "used_for": "Salmon Enchiladas and Crab Cake $17.59; Portobello soup $5.09"
+    },
+    {
+      "id": "S29",
+      "agency": "Restaurant (official)",
+      "label": "Red Hot Wok Palo Alto lunch special menu",
+      "url": "https://www.redhotwokpaloalto.com/uvs503m5/restaurant/order-online?menu=Lunch+Menu",
+      "fetch_status": "ok",
+      "used_for": "Lunch specials $15.95-$18.95 Tue-Fri 11:00-14:00 with rice, two sides and soup"
+    },
+    {
+      "id": "S30",
+      "agency": "Restaurant (official)",
+      "label": "Bonchon Sunnyvale location page",
+      "url": "https://restaurants.bonchon.com/locations/ca/sunnyvale/572-e-el-camino-real",
+      "fetch_status": "ok",
+      "used_for": "Hours 11:00-21:00 daily; Lunch Specials section without dollar prices"
+    },
+    {
+      "id": "S31",
+      "agency": "Caltrain",
+      "label": "Regional transfer discounts ($0.50 TO Muni only)",
+      "url": "https://www.caltrain.com/fares/regional-transfer-discounts",
+      "fetch_status": "ok",
+      "used_for": "$0.50 credit TO Muni within 1 hr of Caltrain tag-off (tag on/off, Clipper cash value or monthly incl. Zone 1); VTA/SamTrans credits need a monthly pass; no Muni-to-Caltrain credit exists"
+    },
+    {
+      "id": "S32",
+      "agency": "SFMTA",
+      "label": "Adult single-ride fares + MuniMobile Single Ride discontinuation",
+      "url": "https://www.sfmta.com/fares/single-ride-adult-ages-19-64",
+      "fetch_status": "ok",
+      "used_for": "$2.85 Clipper/contactless, $3.00 cash, 120-min transfer; MuniMobile Single Ride passes discontinued Sep 1 2026"
+    },
+    {
+      "id": "S33",
+      "agency": "Yelp",
+      "label": "Batch-3 Yelp pages (hours/addresses/phones)",
+      "url": "https://www.yelp.com/biz/pho-lyfe-sunnyvale-2",
+      "fetch_status": "ok via search index",
+      "used_for": "day-by-day hours, addresses, phones for Pho Lyfe, Cam Hung, Home Eat SC, Dusita, Il Fornaio, Falafel's, Breakfast Club, TGI's, Willow Street, Super Duper, Bywater, The Post, Urfa, Cetrella, Kongunadu, Clara's Junction, Diner of LG, Local Union 271, Kakaroto"
+    },
+    {
+      "id": "S34",
+      "agency": "Third party (not used for prices)",
+      "label": "Batch-3 restaurantji pages (hours/addresses)",
+      "url": "https://www.restaurantji.com/ca/sunnyvale/thai-spoons-/",
+      "fetch_status": "ok",
+      "used_for": "hours/address cross-checks for Thai Spoons, First Wok, Asia Village, Dumpling Depot, 10 Butchers, Dusita, TGI's, Oak & Rye, La Esquina, Italian Brothers, Super Duper, The Post, Urfa, Aurum, Cetrella, Pacific Catch"
+    },
+    {
+      "id": "S35",
+      "agency": "Restaurant (official)",
+      "label": "Batch-3 official restaurant sites (lunch prices, hours, addresses)",
+      "url": "https://gingercafe.net/menus/lunchmenu/",
+      "fetch_status": "ok",
+      "used_for": "lunch prices/hours/address from gingercafe.net, clarasjunction.com, citypizzacampbell.com, tonyandalbaspizza.com, lotusthaibistro.com, labohemepaloalto.com, thepastaria.com, laesquinamexlosgatos.com, thebywaterca.com, italianbrothers.restaurant, bcmidtown.com, dusitathaicuisine.com menu PDF, dumplingdepot-s.com, eriksdelicafe.com, mastrosrestaurants.com, mediterraneangrillhouse.com, dongiovannis.com, soongsoong.com, freedomburrito.com, terunpizza.com (conflict), ludwigsmv.com (conflict)"
+    },
+    {
+      "id": "S36",
+      "agency": "Third party (not used for prices)",
+      "label": "Batch-3 directories and press (hours/geo cross-checks)",
+      "url": "https://restaurantguru.com/Asia-Village-Sunnyvale",
+      "fetch_status": "ok",
+      "used_for": "restaurantguru, wheree, Yellow Pages, Tripadvisor, corner.inc, Toast ordering, Chowbus, smorefood, zmenu, Slice, usmenuguide, showmelocal, Nextdoor, map.contact, MV Voice (Toki $8.95 bento), Palo Alto Online (Ludwig's)"
+    },
+    {
+      "id": "S37",
+      "agency": "OpenTable",
+      "label": "Batch-3 OpenTable menu/hours blocks",
+      "url": "https://www.opentable.com/r/the-bywater-los-gatos",
+      "fetch_status": "ok via search index",
+      "used_for": "menu price bands ($7-$33.95 Local Union 271, $21-$27 The Post - both flagged for re-verification) and the Bywater Lunch Special note"
+    },
+    {
+      "id": "S38",
+      "agency": "Restaurant (own site)",
+      "label": "Tomatina Santa Clara official menu page",
+      "url": "https://tomatina.com/menu/tomatina-santa-clara-3127-mission-college-blvd",
+      "fetch_status": "ok",
+      "used_for": "Pick Two lunch specials $13.50 (Pick Two, Pick Two w/ Mini Pizza, Pick Two w/ Pasta & Sauce) - the only priced lunch special found in the Santa Clara sweep"
+    },
+    {
+      "id": "S39",
+      "agency": "Restaurant (own site)",
+      "label": "The Hut Santa Clara official food menu",
+      "url": "https://thehutsantaclara.com/santa-clara-the-hut-food-menu",
+      "fetch_status": "ok",
+      "used_for": "Taco Tuesday $10.00 (3 tacos plus side salad or fries) plus Monday/Thursday/Friday weekday specials - the only Tuesday-specific lunch special found in this pass"
+    },
+    {
+      "id": "S40",
+      "agency": "Restaurant (own ordering page)",
+      "label": "Lazy Dog, Local Kitchens and Urban Grill ordering pages",
+      "url": "https://orders.lazydogrestaurants.com/order/cupertino",
+      "fetch_status": "ok",
+      "used_for": "Lazy Dog Cupertino 'Lunch Specials starting at $8.95 til 4pm daily'; Local Kitchens Cupertino lunch combos $13.00-$17.50 with side and drink (localkitchens.toast.site); Urban Grill weekday lunch buffet $16.99 Mon-Thu 11:30 AM-3:00 PM (urbanindianflavors.com) against $19.99 Fri-Sun on urbangrillusa.com"
+    },
+    {
+      "id": "S41",
+      "agency": "Chamber of Commerce",
+      "label": "Saratoga Chamber of Commerce dining directory",
+      "url": "https://www.saratogachamber.org/copy-of-lodging",
+      "fetch_status": "ok",
+      "used_for": "Addresses, phones and lunch hours for 12 Saratoga businesses (Darla Cafe, Mandala, Bai Tong, Bella Saratoga, Hong's Gourmet, Mint Leaf, Kandoo, Round Table, The Mynt, Big Basin Cafe, plus dinner-only/closed rejects Hachi Ju Hachi, Hero Ranch Kitchen, Florentine, Mangia Mornings, Sushi Heaven)"
+    },
+    {
+      "id": "S42",
+      "agency": "Yelp",
+      "label": "Batch-4 Yelp business pages (hours and addresses)",
+      "url": "https://www.yelp.com/biz/ulavacharu-indian-restaurant-sunnyvale",
+      "fetch_status": "ok via search index",
+      "used_for": "Hours/address for UlavacharU, SAJJ, Oren's Hummus, Sushi Arashi, Fashion Wok, Chaat Bhavan, Sakoon (buffet Wed-Sun per Q&A), Chef Zhao Kitchen, State Street Market, Naschmarkt, Royal Taj (flagged CLOSED), Krung Thai (CLOSED), Mandarin Gourmet (CLOSED)"
+    },
+    {
+      "id": "S43",
+      "agency": "Third party (hours cross-check only)",
+      "label": "Batch-4 directories: restaurantji, restaurantguru, zmenu, wheree, restaurantjump, checkle, usarestaurants",
+      "url": "https://www.restaurantji.com/ca/cupertino/",
+      "fetch_status": "ok",
+      "used_for": "Structured weekly hours, coordinates and addresses used only to cross-check or to fill hours; no prices taken from these (Pineapple Thai, Mian Sichuan, Sajj, QQ Noodle, Haidilao, Big Basin Burger Bar, Big Basin Cafe, The Urban Grill, The Hut, Chef Zhao)"
+    },
+    {
+      "id": "S44",
+      "agency": "OpenTable",
+      "label": "Batch-4 OpenTable menu and hours blocks",
+      "url": "https://www.opentable.com/r/xiang-home-kitchen-cupertino",
+      "fetch_status": "ok via search index",
+      "used_for": "Xiang Home Kitchen 2 lunch section $12.99-$15.99; Sakoon buffet days/prices via Q&A; Left Bank Santana Row hours and happy hour; The Basin (dinner only); Ristorante Don Giovanni review-reported $19.95-$19.99 three-course lunch"
+    },
+    {
+      "id": "S45",
+      "agency": "Restaurant (own site)",
+      "label": "Batch-4 official hours pages",
+      "url": "https://www.chezphilippelosgatos.com/",
+      "fetch_status": "ok",
+      "used_for": "Chez Philippe Tue-Fri lunch 11:30 AM-2:00 PM; Heritage Pub & Chophouse Mon-Thu 11:30 AM-10:00 PM; A Bellagio Tue-Fri lunch 11:30 AM-2:30 PM; Buca di Beppo Campbell lunch combos Mon-Fri until 3 PM; Fogo de Chao San Jose lunch 11:30 AM-3:00 PM; Dumpling Time Santana Row daily 11:00-21:00; Chaat Bhavan 11:30-22:00; QQ Noodle Tue 11:30 AM-2:00 PM"
+    },
+    {
+      "id": "S46",
+      "agency": "Editorial guide",
+      "label": "Infatuation - 19 Best Restaurants in Santa Clara (May 2026)",
+      "url": "https://www.theinfatuation.com/san-francisco/guides/best-restaurants-santa-clara",
+      "fetch_status": "ok",
+      "used_for": "Batch 5a Santa Clara addresses + lunch verdicts (Pav Bhaji, Ondam, Shawarmajji, Achilles, Bloom, Joey, Puesto, Giwa, Rice Junky, Rise, Tarim, Emelina, Mikiya, Iraklis, Croissante, Leichi, Baekjeong, Milldang) + Master Oh address fix"
+    },
+    {
+      "id": "S47",
+      "agency": "Business association",
+      "label": "Downtown Los Altos (LAVA) dining directory",
+      "url": "https://downtownlosaltos.org/member/wpbdp_category/dining/",
+      "fetch_status": "ok",
+      "used_for": "Batch 5a Los Altos rows (Cafe Nur, Konjoe, Orenchi, Rustic House, State of Mind, Pompeii, Hiroshi) + L22/L83/L130 conflicts + L131 confirm"
+    },
+    {
+      "id": "S48",
+      "agency": "Event press",
+      "label": "dothebay - Let's Do Lunch Santana Row (Sept 2026)",
+      "url": "https://dothebay.com/event/lets-do-lunch-santana-row/2026-09-04/",
+      "fetch_status": "ok",
+      "used_for": "Thirteen $25 Taste The Row event rows: Momosan, Pizza Antica, EMC, Straits, El Jardin, Oveja Negra, Fitoor, Parranga, Suspiro, Zazil, Vintage Wine Bar, Vintage Wine Merchants, Dumpling Time ($25 app+entree, Mon-Fri Sept 1-30 2026)"
+    },
+    {
+      "id": "S49",
+      "agency": "Destinations site",
+      "label": "sanjose.org - Let's Do Lunch event terms",
+      "url": "https://www.sanjose.org/event/lets-do-lunch-santana-row/70376/",
+      "fetch_status": "ok",
+      "used_for": "Event terms cross-check: month-long weekday event Sept 1-30 2026, $25 prix-fixe, hours vary by restaurant"
+    },
+    {
+      "id": "S50",
+      "agency": "Social (Reddit)",
+      "label": "Reddit lunch-special threads (Sunnyvale, downtown Sunnyvale, Mountain View, bayareafood)",
+      "url": "https://www.reddit.com/r/Sunnyvale/comments/1gszlmp/where_is_everyones_favorite_place_to_eat_in/",
+      "fetch_status": "ok",
+      "used_for": "Review-level lunch mentions: Adamson's, Falafel Stop, St John's Tri Tip Tuesday, Von's, Fu Niu Tang, Sushi Tomi - reviewer wording only, no prices"
+    },
+    {
+      "id": "S51",
+      "agency": "Local news",
+      "label": "paloaltoonline - Downtown Sunnyvale openings (Feb 2026)",
+      "url": "https://paloaltoonline.com/food/2026/02/19/new-openings-shake-up-downtown-sunnyvales-dining-scene/",
+      "fetch_status": "ok",
+      "used_for": "Mayan Kitchen Tue-Sun lunch 11:30-2 + Meyhouse Tue-Sun lunch 11:45-2:30"
+    },
+    {
+      "id": "S52",
+      "agency": "Restaurant (own site)",
+      "label": "Batch-5 official hours pages",
+      "url": "https://ramenwakusei.com/location",
+      "fetch_status": "ok",
+      "used_for": "Ramen Wakusei daily 11-21; Rio Adobe daily 11-21; Oakmont Sandwiches hours (conflicts with Yelp); Udon Mugizo split hours; Kikusushi 10:30-20; Dio Deka dinner Wed-Sun; Left Bank Menlo Park hours; Bai Tong lunch Fri-Sat; 7 Santana Row event official pages"
+    },
+    {
+      "id": "S53",
+      "agency": "Third-party fare mirror",
+      "label": "infoforsf Caltrain zone table (checked Aug 2026) + transit.wiki zone map",
+      "url": "https://www.infoforsf.com/caltrain",
+      "fetch_status": "ok",
+      "used_for": "Corroborates adult 3-zone $8.50 and Zone 1 SF / Zone 3 Sunnyvale-MV assignments behind the $8.50 Caltrain fares (official table is JS-rendered)"
+    },
+    {
+      "id": "S57",
+      "agency": "Santana Row (official)",
+      "label": "Official event page - Let's Do Lunch Taste The Row (15 participants)",
+      "url": "https://santanarow.com/event/lets-do-lunch-taste-the-row/",
+      "fetch_status": "ok",
+      "used_for": "Participant list incl. Augustine, Dumpling Time, Ozumo Fridays-only; Sept 1-30 2026 dates; corrected the one-day-event reading"
+    }
+  ],
+  "dead_ends": [
+    "No outbound network from the build environment (DNS/TLS blocked, proxy refused), so GTFS feeds for SFMTA/VTA/Caltrain and the 511.org trip planner API could not be pulled. Everything was verified from the agencies' published web tables instead.",
+    "caltrain.com/media/36422 and caltrain.com/media/36422/download failed three times, so the weekday PDF could not be read (FLAG-5).",
+    "caltrain.com/station/22ndst is a 404 - the slug is 22ndstreet. caltrain.com/station/sf is a 404 - the slug is sanfrancisco. vta.org/services/fares 404s - the live path is vta.org/go/fares.",
+    "Reusing a proxy/CDN URL from a previous tool result produces SignatureDoesNotMatch; only canonical agency URLs were fetched."
+  ],
+  "could_not_verify": [
+    "Caltrain weekday timetable PDF (caltrain.com/media/36422): download failed 3 times, so minute-level train times come from Caltrain's own live per-station schedule tables instead. See FLAG-5.",
+    "Live 511 / TripPlanner itineraries and GTFS (SFMTA sidetrail, VTA, Caltrain GTFS): the build environment has no outbound network, so no engine-computed itinerary is available; the times here are hand-assembled from official agency tables.",
+    "VTA midday trip times between Stevens Creek & De Anza and McClellan & Felton: route 55 publishes only timepoints, so those two minutes are interpolated and labelled as such.",
+    "Curry Hyuga Cupertino lunch pricing: no lunch menu is published on curryhyuga.com and no lunch special appears in any other listing; only its hours (Restaurant Guru, corner.inc) could be verified.",
+    "Water Tower Kitchen lunch special: no lunch special is published anywhere; only hours, address and phone were verified.",
+    "Ajito lunch pricing: Yelp confirms the 2-course lunch and its 11:30-3:30 window, not the price.",
+    "Any published lunch price for Los Altos Grill, Little Sky, Araki Sushi and Siam Thai; those rows carry the menu price band or the happy-hour block instead, clearly labelled.",
+    "Kizuna's current hours: OpenStreetMap opening_hours and its own website disagree, so the row says 'unverified'.",
+    "Willow Street Pizza (Los Gatos) standalone listing - only an UberEats stub; likely the same business as L69 Willow Street Wood-Fired Pizza.",
+    "Andale (Los Gatos) - no address/hours found in this pass.",
+    "Pedro's (Santa Clara) - search returns only Pedro's Atascadero (~120 mi away); excluded as wrong-city.",
+    "Ox 9 Cupertino branch - existence hinted on Yelp but no address verified; no row added.",
+    "Ethel's, Bowl'd, Mezzaluna (Los Gatos), Thyme (Palo Alto) - named in threads but no verifiable address/hours found."
+  ]
 }
