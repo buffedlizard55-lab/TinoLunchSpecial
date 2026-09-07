@@ -33,7 +33,7 @@ setTimeout(() => {
   const out = {};
   for (const k of Object.keys(store)) out[k] = String(store[k].innerHTML || store[k].textContent || '').length;
   console.log('rendered element content lengths:', JSON.stringify(out, null, 1));
-  for (const p of ['panel-overview','panel-outbound','panel-return','panel-fares','panel-lunch','panel-flags','panel-sources','panel-method']) {
+  for (const p of ['panel-overview','panel-lunch','panel-flags','panel-sources','panel-method']) {
     const h = String(store[p].innerHTML);
     if (h.includes('undefined]') || /\bundefined\b/.test(h.replace(/data-planblock="[^"]*"/g,''))) console.log('!! "undefined" text appears in', p, h.match(/.{0,60}undefined.{0,60}/)[0]);
     if (h.includes('NaN')) console.log('!! NaN in', p);
@@ -41,6 +41,6 @@ setTimeout(() => {
   }
   const errEl = store['panel-overview'].innerHTML;
   if (errEl.includes('Data not built yet')) { console.log('FALLBACK RENDERED - see below'); console.log(errEl.slice(0, 600)); process.exit(1); }
-  console.log('SMOKE TEST PASSED (all 8 panels rendered without throwing)');
+  console.log('SMOKE TEST PASSED (all lunch panels rendered without throwing)');
   console.log('lunch rows in body:', (String(store['lbody'].innerHTML).match(/<tr /g) || []).length);
 }, 60);

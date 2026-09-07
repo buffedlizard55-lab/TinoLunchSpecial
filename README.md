@@ -1,6 +1,6 @@
 # Tino Lunch Special
 
-A verified transit plan and a verified lunch-special list for **Tuesday, September 8, 2026**.
+A lunch-special research index for **Tuesday, September 8, 2026**. The public-transit data remains in the repository for trip context, but the site UI is intentionally lunch-special only.
 
 * **Home:** 21st Ave & Judah St, San Francisco, CA
 * **Destination:** 20387 Gillick Way, Cupertino, CA 95014

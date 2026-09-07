@@ -24,89 +24,50 @@
 
   /* ---------- header + tabs ---------- */
   function header(D) {
-    const p = D.plan;
+    const p = D.plan, m = D.specials, sp = m.search_protocol;
+    const official = m.entries.filter((e) => String(e.verification.level || '').startsWith('official')).length;
+    const open = D.flags.lunch.length;
     document.getElementById('subtitle').textContent =
-      p.trip_date_label + ' - ' + p.origin.address + ' to ' + p.destination.address +
-      ' - N Judah > Caltrain > VTA 55, verified row by row';
-    const out = D.outbound.plans.find((x) => x.recommended) || D.outbound.plans[0];
-    const ret = D.retplan.plans.find((x) => x.recommended) || D.retplan.plans[0];
+      p.trip_date_label + ' - Cupertino-first lunch research within a 10-15 mile search area';
     const chips = [
-      { k: 'Earliest leave home', v: out.leave_home, cls: 'go' },
-      { k: 'At the door in Cupertino', v: out.arrive_destination, cls: 'go' },
-      { k: 'Home again', v: ret.arrive_home.replace('about ', ''), cls: 'ok' },
-      { k: 'Deadline', v: '3:30 PM', cls: 'warn' },
-      { k: 'Total trip cost', v: money(out.cash_cost_usd + ret.cash_cost_usd) + ' round trip', cls: 'flat' },
-      { k: 'Master list rows', v: D.specials.entries.length, cls: 'flat' },
-      { k: 'Open flags', v: D.flags.transit.length + D.flags.lunch.length, cls: 'bad' }
+      { k: 'Master rows', v: m.entries.length, cls: 'go' },
+      { k: 'New verified before add', v: sp.new_entries_verified_before_add, cls: 'go' },
+      { k: 'Own-menu evidence', v: official, cls: 'ok' },
+      { k: 'Cities covered', v: (sp.cities_covered || []).length, cls: 'flat' },
+      { k: 'Open flags', v: open, cls: open ? 'warn' : 'ok' }
     ];
     document.getElementById('headline-chips').innerHTML = chips.map((c) =>
       '<span class="chip ' + c.cls + '"><span class="k">' + esc(c.k) + '</span><span class="v">' + esc(String(c.v)) + '</span></span>').join('');
-    document.getElementById('flag-count').textContent = D.flags.transit.length + D.flags.lunch.length;
+    document.getElementById('flag-count').textContent = open;
     document.getElementById('footer-note').innerHTML =
-      'Verified on ' + esc(p.verification.accessed) + '. ' +
+      'Lunch research verified on ' + esc(sp.search_date) + '. ' +
       link('https://github.com/buffedlizard55-lab/TinoLunchSpecial', 'Source data and check scripts on GitHub');
   }
 
   /* ---------- overview ---------- */
   function renderOverview(D) {
-    const p = D.plan;
-    const out = D.outbound.plans.find((x) => x.recommended);
-    const ret = D.retplan.plans.find((x) => x.recommended);
-    const cash = D.fares.day_totals.find((t) => /All cash/.test(t.label));
-    const clip = D.fares.day_totals.find((t) => /Cheapest/.test(t.label));
-    const rows = D.specials.top_picks_for_tuesday_sept_8.map((t) => {
-      const e = D.specials.entries.find((x) => x.id === t.id);
-      if (!e) return '';
-      return '<tr><td><b>' + esc(e.name) + '</b><div class="tiny">' + esc(e.city) + '</div></td>' +
-        '<td>' + (e.lunch_special.price_from != null ? money(e.lunch_special.price_from) + (e.lunch_special.price_to && e.lunch_special.price_to !== e.lunch_special.price_from ? '-' + money(e.lunch_special.price_to) : '') : '<span class="bad">price unverified</span>') + '</td>' +
-        '<td>' + esc(dash(e.lunch_special.days)) + '</td>' +
-        '<td>' + esc(dash(e.hours_tuesday)) + '</td>' +
-        '<td>' + badge(e.verification.level) + '</td>' +
-        '<td class="tiny">' + esc(t.why) + '</td></tr>';
+    const p = D.plan, m = D.specials, sp = m.search_protocol;
+    const official = m.entries.filter((e) => String(e.verification.level || '').startsWith('official')).length;
+    const priced = m.entries.filter((e) => e.lunch_special && e.lunch_special.price_from != null && String(e.verification.level || '').startsWith('official')).length;
+    const tuesday = m.entries.filter((e) => e.open_on_trip_date === true).length;
+    const picks = m.top_picks_for_tuesday_sept_8.slice(0, 6).map((t) => {
+      const e = m.entries.find((x) => x.id === t.id);
+      return e ? '<tr><td><b>' + esc(e.name) + '</b><div class="tiny">' + esc(e.city) + '</div></td><td>' +
+        (e.lunch_special.price_from != null ? money(e.lunch_special.price_from) : '<span class="bad">not published</span>') +
+        '</td><td>' + esc(dash(e.hours_tuesday)) + '</td><td>' + badge(e.verification.level) + '</td><td>' + esc(t.why) + '</td></tr>' : '';
     }).join('');
-
     document.getElementById('panel-overview').innerHTML =
-      '<h2>What this is</h2>' +
-      '<p class="lead">One transit itinerary and one lunch menu of deals, every line traced back to a page you can open. Built for ' +
-      esc(p.trip_date_label) + '. <b>' + esc(p.calendar_note) + '</b></p>' +
-
-      '<h2>The plan on one line</h2>' +
-      '<div class="callout good"><b>Leave home ' + esc(out.leave_home) + '</b> - N Judah Bus 5:15 AM from Judah & 19th Ave to Townsend & 5th/Caltrain - ' +
-      'Caltrain 6:20 AM express from the SF terminal (6:24 AM from 22nd Street) to Sunnyvale 7:09 AM - VTA 55 at 7:19 AM to Stevens Creek & De Anza - 18 min walk - ' +
-      '<b>at 20387 Gillick Way ' + esc(out.arrive_destination) + '</b>. ' + dur(out.total_time_min) + ', ' + money(out.cash_cost_usd) + '.</div>' +
-      '<div class="callout good"><b>Leave the destination 11:50 AM</b> - VTA 55 at about 12:06 PM from McClellan & Felton to Sunnyvale Transit Center 12:25 PM - ' +
-      'Caltrain 12:42 PM local to the SF terminal 1:46 PM (22nd Street 1:40 PM) - N Judah metro 1:56 PM to Judah & 19th Ave 2:38 PM - ' +
-      '<b>home ' + esc(ret.arrive_home) + '</b>, inside your 2:30-3:00 PM target and 50 minutes before the 3:30 PM deadline. ' +
-      dur(ret.total_time_min) + ', ' + money(ret.cash_cost_usd) + '.</div>' +
-
-      '<h2>The two things you asked for that the sources do not agree with</h2>' +
-      '<ol>' + p.constraints.filter((c) => /conflict/.test(c.status)).map((c) =>
-        '<li><b>' + esc(c.rule) + '</b><br>' + esc(c.detail) + '</li>').join('') +
-      '<li><b>Caltrain print PDFs</b><br>The weekday PDF (caltrain.com/media/36422) could not be downloaded from the build environment, so minute-level Caltrain times were read from Caltrain\'s own live per-station schedule tables instead of the PDF. Train numbers are described, not asserted. Re-check before you travel (FLAG-5).</li></ol>' +
-
-      '<h2>Verification status, in numbers</h2>' +
-      '<div class="grid g3">' +
-      stat(D.outbound.plans[0].legs.length + D.retplan.plans[0].legs.length, 'itinerary legs on the recommended plans') +
-      stat(D.sources.sources.length, 'source pages read (see Sources tab)') +
-      stat(countVerified(D), 'transit rows marked official-live') +
-      stat(D.specials.entries.length, 'lunch rows in the master list') +
-      stat(D.specials.search_protocol.new_entries_verified_before_add || 0, 'new rows verified before adding') +
-      stat(countLevel(D, 'official'), 'lunch rows verified on the restaurant\'s own menu') +
-      stat(D.lunch_rejected.distinct_businesses_rejected || D.lunch_rejected.rejected.length, 'distinct businesses searched and rejected, with reasons') +
+      '<h2>Cupertino lunch research index</h2>' +
+      '<p class="lead">A Cupertino-first master list of lunch specials, lunch service, hours, Tuesday availability, prices, and source links. Every row is kept at its evidence level so an unverified lead cannot look like a confirmed deal.</p>' +
+      '<div class="callout good"><b>Research threshold met:</b> ' + esc(sp.new_entries_verified_before_add) + ' new entries were verified before being added to the master list, exceeding the requested minimum of ' + esc(sp.minimum_new_entries_required) + '.</div>' +
+      '<h2>What is in the list</h2><div class="grid g3">' +
+      stat(m.entries.length, 'rows in the master list') + stat(official, 'rows with restaurant-owned evidence') + stat(priced, 'officially priced lunch rows') +
+      stat(tuesday, 'rows marked open Tuesday') + stat(sp.candidates_found, 'candidates checked') + stat(sp.rejected_or_deferred, 'rejected or deferred with reasons') +
       '</div>' +
-
-      '<h2>Cost, decided</h2>' +
-      '<table class="kv"><tbody>' +
-      '<tr><th>Cheapest realistic (Clipper/contactless end to end)</th><td class="num strong">' + money(clip.total) + '</td><td class="tiny">' + esc(clip.caveat) + '</td></tr>' +
-      '<tr><th>All cash</th><td class="num strong">' + money(cash.total) + '</td><td class="tiny">' + esc(cash.caveat) + '</td></tr>' +
-      '</tbody></table><p class="tiny">Caltrain 3-zone one-way is ' + money(8.5) + ' and the 3-zone day pass is ' + money(17) + ', so a round trip is identical; the day pass is only worth it if a connection goes wrong. The combined VTA-Caltrain Day Pass (' + money(24.5) + ') costs more than the rides you actually need.</p>' +
-
-      '<h2>Where to eat - the shortlist that fits the return bus</h2>' +
-      '<p class="tiny">' + esc(D.specials.transit_fit_note) + '</p>' +
-      '<div class="scrollpanel"><table class="grid-table"><thead><tr><th>Entry</th><th>Lunch special</th><th>Days</th><th>Tuesday hours</th><th>Verified</th><th>Why it is on the list</th></tr></thead><tbody>' + rows + '</tbody></table></div>' +
-
-      '<h2>Every flag on this page</h2>' +
-      '<p>' + (D.flags.transit.length + D.flags.lunch.length) + ' irregularities were found and are all listed on the Flags tab. None of them is hidden in a footnote: ' + D.flags.transit.length + ' are about transit data, ' + D.flags.lunch.length + ' about lunch data.</p>';
+      '<h2>Search coverage</h2><p>' + esc(sp.radius_note) + '</p><p class="tiny"><b>Covered:</b> ' + esc((sp.cities_covered || []).join(', ')) + '</p>' +
+      '<h2>Best starting points for Tuesday</h2><p class="tiny">These are research picks, not guarantees. Check each linked source again before visiting because menus, prices, and hours change.</p>' +
+      '<div class="scrollpanel"><table class="grid-table"><thead><tr><th>Restaurant</th><th>Price</th><th>Tuesday hours</th><th>Evidence</th><th>Why it is listed</th></tr></thead><tbody>' + picks + '</tbody></table></div>' +
+      '<h2>How to use the full list</h2><p>Open the <b>Lunch specials</b> tab to search by restaurant, city, cuisine, price, Tuesday opening, or evidence tier. Use the <b>Flags</b> tab for conflicts, missing addresses, missing coordinates, and any row that needs a phone or source check.</p>';
   }
 
   function stat(n, label) { return '<div class="card stat"><div class="n">' + esc(String(n)) + '</div><div class="l">' + esc(label) + '</div></div>'; }
@@ -396,18 +357,18 @@
       '</article>';
     document.getElementById('panel-flags').innerHTML =
       '<h2>Irregularities found while verifying, all of them</h2>' +
-      '<p class="lead">Nothing was smoothed over. Transit flags concern how the agencies\' own pages disagree with each other or with the requested mode chain; lunch flags concern prices and hours that could not be pinned to a restaurant\'s own menu.</p>' +
-      '<h3>Transit (' + D.flags.transit.length + ')</h3>' + D.flags.transit.map(card).join('') +
+      '<p class="lead">Nothing was smoothed over. These lunch flags cover prices, hours, addresses, Tuesday availability, and source conflicts that could not be pinned down line by line.</p>' +
       '<h3>Lunch (' + D.flags.lunch.length + ')</h3>' + D.flags.lunch.map(card).join('');
   }
 
   /* ---------- sources + method ---------- */
   function renderSources(D) {
+    const lunchSources = D.sources.sources.filter((s) => !/sfmta|caltrain|vta/i.test(String(s.agency || '') + ' ' + String(s.label || '')));
     document.getElementById('panel-sources').innerHTML =
       '<h2>Every source page, and what it was used for</h2>' +
       '<p class="lead">' + esc(D.sources.note) + '</p>' +
       '<div class="scrollpanel"><table class="grid-table"><thead><tr><th>ID</th><th>Agency</th><th>Page</th><th>What it verified</th><th>Fetch status</th></tr></thead><tbody>' +
-      D.sources.sources.map((s) => '<tr><td class="num">' + esc(s.id) + '</td><td>' + esc(s.agency) + '</td>' +
+      lunchSources.map((s) => '<tr><td class="num">' + esc(s.id) + '</td><td>' + esc(s.agency) + '</td>' +
         '<td>' + link(s.url, s.label) + '</td><td class="tiny">' + esc(s.used_for) + '</td>' +
         '<td>' + (s.fetch_status === 'ok' ? '<span class="badge good">ok</span>' : '<span class="badge bad">' + esc(s.fetch_status) + '</span>') + (s.gap ? '<div class="tiny bad">' + esc(s.gap) + '</div>' : '') + '</td></tr>').join('') +
       '</tbody></table></div>' +
@@ -418,24 +379,18 @@
   }
 
   function renderMethod(D) {
-    const p = D.plan;
+    const p = D.plan, m = D.specials, sp = m.search_protocol;
     document.getElementById('panel-method').innerHTML =
-      '<h2>How this was built and how to check it</h2>' +
-      '<div class="grid g2">' +
-      '<div class="card"><h3>Decision log</h3><ol>' + p.decision_log.map((d) => '<li><b>' + esc(d.decision) + '</b> - ' + esc(d.reason) + '</li>').join('') + '</ol></div>' +
-      '<div class="card"><h3>Constraint checks</h3><ul>' + p.constraints.map((c) => '<li><b>' + esc(c.rule) + '</b><div class="tiny">status: ' + esc(c.status) + '</div><div class="tiny">' + esc(c.detail) + '</div></li>').join('') + '</ul></div>' +
-      '</div>' +
-      '<h3>Verification method</h3><p>' + esc(p.verification.method) + '</p>' +
-      '<h3>Origin and destination</h3>' +
-      '<table class="kv"><tbody>' +
-      '<tr><th>Home</th><td>' + esc(p.origin.address) + '</td><td class="tiny">' + esc(p.origin.nearest_stop) + ' - ' + esc(p.origin.walk_to_stop) + '</td></tr>' +
-      '<tr><th>Destination</th><td>' + esc(p.destination.address) + '</td><td class="tiny">' + esc(p.destination.coords_source) + ' - ' + esc(p.destination.coords.join(', ')) + '</td></tr>' +
-      '<tr><th>Nearest stops</th><td colspan="2">' + p.destination.nearest_stops.map((s) => '<div class="tiny"><b>' + esc(s.name) + '</b> - walk ' + esc(s.walk) + '</div>').join('') + '</td></tr>' +
-      '</tbody></table>' +
-      '<div class="callout">' + esc(p.destination.irregularity) + '</div>' +
-      '<h3>Re-run the checks</h3>' +
-      '<pre><code>python3 scripts/build_data.py   # validates data/*.json, rebuilds data/generated.js + data/summary.md\npython3 scripts/check_links.py  # every row links back to a citable https page\nnode scripts/smoke_test.js      # renders all 8 panels headlessly</code></pre>' +
-      '<p class="tiny">The data lives in <code>data/*.json</code>; <code>data/generated.js</code> is the same content compiled for the browser. Both are committed, so the site renders even if you open it without a build step.</p>';
+      '<h2>Research method and evidence rules</h2>' +
+      '<div class="grid g2"><div class="card"><h3>Scope</h3><ul>' +
+      '<li>Start in Cupertino, then expand across the requested surrounding cities.</li>' +
+      '<li>Search radius is documented per row; unknown distances are left blank.</li>' +
+      '<li>Search date: <b>' + esc(sp.search_date) + '</b>.</li>' +
+      '<li>Trip context: <b>' + esc(p.trip_date_label) + '</b>.</li></ul></div>' +
+      '<div class="card"><h3>Evidence levels</h3><ul>' + Object.keys(sp.levels).map((k) => '<li><b>' + esc(k) + '</b> - ' + esc(sp.levels[k]) + '</li>').join('') + '</ul></div></div>' +
+      '<h3>Line-by-line safeguards</h3><ol><li>Every master row has an evidence source URL.</li><li>Published prices appear only when captured from the stated source; otherwise the table says “not published.”</li><li>Conflicts and missing values stay visible as flags instead of being filled with estimates.</li><li>Rejected and deferred candidates remain available in the Lunch specials tab with the reason they were excluded.</li></ol>' +
+      '<h3>Re-run the checks</h3><pre><code>python3 scripts/build_data.py\npython3 scripts/check_links.py --report\nnode scripts/smoke_test.js</code></pre>' +
+      '<p class="tiny">The data lives in <code>data/*.json</code>; <code>data/generated.js</code> is the browser bundle. The validator enforces the 100-new-entry threshold and fails if required source fields are removed.</p>';
   }
 
   /* ---------- boot ---------- */
@@ -453,7 +408,7 @@
       D.plan = data.plan; D.outbound = data.outbound; D.retplan = data.retplan; D.fares = data.fares;
       D.specials = data.specials; D.lunch_rejected = data.rejected; D.flags = data.flags; D.sources = data.sources;
       header(D);
-      renderOverview(D); renderTransit(D, 'outbound'); renderTransit(D, 'return'); renderFares(D);
+      renderOverview(D);
       renderLunch(D); renderFlags(D); renderSources(D); renderMethod(D);
     } catch (e) {
       document.getElementById('panel-overview').innerHTML =
