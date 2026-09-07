@@ -1,10 +1,10 @@
 {
   "search_protocol": {
     "requirement": "Search for 20 new entries before adding anything to the master list; verify line by line; keep official/review links for manual review.",
-    "queries_run": 48,
-    "candidates_found": 71,
-    "added_to_master": 47,
-    "rejected_or_deferred": 24,
+    "queries_run": 94,
+    "candidates_found": 126,
+    "added_to_master": 101,
+    "rejected_or_deferred": 28,
     "search_date": "2026-09-07",
     "cities_covered": [
       "Cupertino",
@@ -15,9 +15,11 @@
       "Los Gatos",
       "Los Altos",
       "Santa Clara",
-      "San Jose (De Anza corridor)"
+      "San Jose (De Anza corridor)",
+      "Mountain View",
+      "Saratoga"
     ],
-    "radius_note": "Cupertino first, then everything inside about a 7-mile radius of 20387 Gillick Way; the two far entries (Los Gatos, Los Altos) are 6-7 mi and are marked.",
+    "radius_note": "Cupertino first, then the 10-15 mi radius (Sunnyvale, Santa Clara, Campbell, West San Jose, Mountain View, Los Altos, Palo Alto, Los Gatos, Saratoga); far entries are marked and do not fit the return bus.",
     "levels": {
       "official": "price and/or hours read from the restaurant's own website, ordering page or published menu PDF",
       "review": "the lunch special exists per a Yelp or Google review, but the price is a reviewer figure, not a published menu price",
@@ -28,7 +30,8 @@
     "notes": [
       "Query mix: 26 search queries for lunch specials by city and by dish, plus 2 targeted address/hours resolutions (Red Hot Wok, Pho Ha Noi) that came out of the validator rejecting placeholder rows.",
       "Two rows were rewritten during the check pass because the validator refused to publish an address it could not support: Red Hot Wok now cites the restaurant's own full menu (no lunch special exists) and Pho Ha Noi cites Tripadvisor/Yelp/its own site for address and hours.",
-      "2026-09-07 batch 2: 20 new master rows L28-L47 searched and verified before add. Aqui and Galpao were previously rejected; re-added with new official/hours evidence and flags."
+      "2026-09-07 batch 2: 20 new master rows L28-L47 searched and verified before add. Aqui and Galpao were previously rejected; re-added with new official/hours evidence and flags.",
+      "2026-09-07 batch 3: 54 new master rows L48-L101 (46 queries: 12 city sweeps + 34 single-business resolutions). Tue-closed: Oak & Rye, Bywater, The Post. Rejected this batch: Pluto's (closure report), Halal Street (closed), MacArthur Park + The Basin (dinner-only)."
     ]
   },
   "entries": [
@@ -144,11 +147,11 @@
       "cuisine": "Chinese, seafood, hot pot",
       "lunch_special": {
         "name": "Lunch Special (with a complimentary 'mystery' drink)",
-        "price_from": 13.99,
+        "price_from": 12.99,
         "price_to": 14.99,
         "days": "listed on the restaurant's online menu; no day restriction shown",
         "window": "restaurant open 11:15 AM - 11:15 PM",
-        "includes": "Beef Broccoli $13.99, Mongolian Shrimp $14.99, String Beans & Eggplant (price not shown in the menu block), each with a randomly chosen complimentary dine-in drink"
+        "includes": "Crispy Chicken / Sesame Chicken $12.99, Beef Broccoli $13.99, Mongolian Shrimp $14.99, String Beans & Eggplant (price not shown in the menu block), each with a randomly chosen complimentary dine-in drink"
       },
       "hours_tuesday": "11:15 AM - 11:15 PM",
       "days_open": "every day 11:15 AM - 11:15 PM",
@@ -962,7 +965,7 @@
         "price_to": null,
         "days": "'midweek only' per a reviewer - exact days not published",
         "window": "open 7:00 AM - 2:30 PM, so lunch must finish by 2:30 PM",
-        "includes": "reviewer: 'Midweek only they offer lunch specials'; published dish prices nearby on the same page: Eggs Benedict $21.60, Crab Cake Club $21.60, 'Irish benedict - $19' in a photo caption"
+        "includes": "reviewer: 'Midweek only they offer lunch specials'; published dish prices nearby on the same page: Eggs Benedict $21.60, Crab Cake Club $21.60, 'Irish benedict - $19' in a photo caption Current Yelp dishes $16.80-$28.80 (Irish Benedict $24.00, Crabcakes $28.80)."
       },
       "hours_tuesday": "7:00 AM - 2:30 PM",
       "days_open": "every day 7:00 AM - 2:30 PM",
@@ -991,7 +994,7 @@
       },
       "flags": [
         "'Midweek' is not defined by the restaurant, and a Tuesday visit may or may not be covered - phone (408) 354-4647.",
-        "No lunch price published; the $19-$21.60 figures are regular menu items from Yelp photo captions and popular-dish data, not special pricing."
+        "No lunch price published; the $16.80-$28.80 figures are regular menu items from Yelp (Irish Benedict $24, Crabcakes $28.80), not special pricing."
       ],
       "distance_mi": null
     },
@@ -1057,15 +1060,15 @@
         "window": "Coffee & pastries daily 8:30-17:00; Brunch Tue-Fri 10:30-14:30 and Sat-Sun 9:30-14:30; Dinner Thu-Sun 17:00-21:00",
         "includes": "reviewer: 'Great pasta great lunch menus love the service Open for lunch and dinner'; menu items shown on a review site include Classic French Onion Soup $12, Gardenia Salad $16, Crispy Brussels Sprouts $16, Grilled Organic Caesar Salad $17"
       },
-      "hours_tuesday": "08:30 - 21:00 per one listing (brunch 10:30-14:30)",
-      "days_open": "conflicting - a directory shows Thursday closed, the reservation page has no Thursday closure",
+      "hours_tuesday": "8:30 AM - 9:00 PM (brunch 10:30 AM - 2:30 PM)",
+      "days_open": "Monday closed; Tue-Sun 8:30 AM - 9:00 PM (Yelp, current)",
       "open_on_trip_date": true,
       "fits_return_bus": {
         "ok": false,
         "note": "6.7 mi from the destination."
       },
       "verification": {
-        "level": "conflicting",
+        "level": "listing",
         "sources": [
           {
             "label": "Yelp search 'Lunch near Los Gatos Cafe' - Gardenia Los Gatos tagged 'Good for lunch'",
@@ -1087,7 +1090,7 @@
         "google_maps": "https://www.google.com/maps/search/?api=1&query=Gardenia+115+N+Santa+Cruz+Ave+Los+Gatos"
       },
       "flags": [
-        "One snapshot shows 'Thursday: Closed' inside a Tuesday-open week, and the day-by-day times differ between sources. Phone (669) 294-4498 before planning a Los Gatos lunch.",
+        "Thursday-closure conflict RESOLVED 2026-09-07: the current Yelp listing shows Monday closed, Tue-Sun 8:30 AM - 9:00 PM. Phone (669) 294-4498.",
         "The item prices come from a third-party page, so treat them as indicative only."
       ],
       "distance_mi": 6.6
@@ -1785,12 +1788,12 @@
       "coords_source": "Tripadvisor JSON-LD",
       "cuisine": "Brazilian steakhouse",
       "lunch_special": {
-        "name": "Weekday lunch rodizio (current Cupertino price not on official menu page)",
-        "price_from": null,
-        "price_to": null,
+        "name": "Weekday lunch rodizio (official Cupertino lunch prices)",
+        "price_from": 46.0,
+        "price_to": 59.0,
         "days": "Monday-Friday lunch (OpenTable)",
         "window": "OpenTable: Lunch Mon-Fri 11:30 AM-2:00 PM; Tripadvisor JSON-LD 11:30-14:00",
-        "includes": "Official menu page lists salad bar, grill, desserts but no dollar prices. 2018 Mercury News listed lunch $37.95 / salad $28.95 - those figures are eight years old and are NOT used here."
+        "includes": "Official pricing page: lunch Monday-Friday salad bar $46 / full experience $59; dinner and weekends $46 / $79."
       },
       "hours_tuesday": "11:30 AM - 2:00 PM, 5:00 PM - 9:30 PM (OpenTable)",
       "days_open": "Lunch Mon-Fri 11:30-14:00; dinner Mon-Thu 17:00-21:30; Fri 17:00-22:00; Sat 12:00-22:00; Sun 12:00-21:00 (Tripadvisor JSON-LD, times differ slightly from OpenTable)",
@@ -1800,11 +1803,11 @@
         "note": "Lunch ends ~2:00 PM; only a very short meal fits the 11:50 AM departure."
       },
       "verification": {
-        "level": "conflicting",
+        "level": "official",
         "sources": [
           {
-            "label": "Official Galpao menu (no prices)",
-            "url": "https://galpaogauchousa.com/menu/"
+            "label": "Official Galpao Cupertino pricing (lunch Mon-Fri $46/$59)",
+            "url": "https://galpaogauchousa.com/location/cupertino-ca/"
           },
           {
             "label": "OpenTable Cupertino hours",
@@ -1821,7 +1824,7 @@
         "yelp": "https://www.yelp.com/biz/galpao-gaucho-brazilian-steakhouse-cupertino"
       },
       "flags": [
-        "Previously rejected (R10) for dinner-only pricing on the location page. Re-added because OpenTable/Tripadvisor publish a weekday lunch window. Price still unverified.",
+        "Previously rejected (R10) for dinner-only pricing; re-added with a weekday lunch window and now official lunch prices. Lunch ends about 2:00 PM; only a short meal fits the 11:50 AM departure.",
         "Hours conflict OpenTable vs Tripadvisor on Tuesday dinner close."
       ],
       "distance_mi": 0.91,
@@ -2006,7 +2009,8 @@
         "yelp": "https://www.yelp.com/biz/p-f-changs-sunnyvale"
       },
       "flags": [
-        "Price is from OpenTable offer text, not pfchangs.com item list. Hours conflict 9 PM vs 10 PM Tuesday close."
+        "Price is from OpenTable offer text, not pfchangs.com item list. Hours conflict 9 PM vs 10 PM Tuesday close.",
+        "Sunnyvale Restaurant Week lunch $16.99 (svoc.org) was a past limited-time event, not the daily offer - the row keeps OpenTable's daily 'Lunch from $13.99'."
       ],
       "distance_mi": 3.87,
       "phone": "(408) 991-9078"
@@ -2321,13 +2325,2543 @@
         "Do not treat Restaurant Week as a Sept 8 deal. Kept so the expired event is visible."
       ],
       "distance_mi": null
+    },
+    {
+      "id": "L48",
+      "name": "Ginger Cafe",
+      "city": "Sunnyvale",
+      "area": "W El Camino Real",
+      "address": "1146 W El Camino Real, Sunnyvale, CA 94087",
+      "coords": null,
+      "cuisine": "Chinese / Southeast Asian",
+      "lunch_special": {
+        "name": "Lunch Specials with soup + rice",
+        "price_from": 16.0,
+        "price_to": 19.0,
+        "days": "every day",
+        "window": "11:00 AM - 3:00 PM",
+        "includes": "Entree ($16-$19: e.g. Kung Pao Chicken $17, Mango Chicken $17.50, Crispy Shrimp Garlic Noodles $19, Wonton Soup $16) with soup of the day and steamed or egg fried rice."
+      },
+      "hours_tuesday": "11:00 AM - 9:00 PM (lunch 11 AM - 3 PM; dinner/dim sum 11 AM - 9 PM)",
+      "days_open": "every day 11:00 AM - 9:00 PM",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Sunnyvale El Camino - not on the Cupertino return walk."
+      },
+      "verification": {
+        "level": "official",
+        "sources": [
+          {
+            "label": "Ginger Cafe official lunch menu - specials $16-$19, 11 AM-3 PM, soup + rice",
+            "url": "https://gingercafe.net/menus/lunchmenu/"
+          },
+          {
+            "label": "Ginger Cafe homepage - address, phone, daily hours",
+            "url": "https://gingercafe.net/"
+          }
+        ],
+        "accessed": "2026-09-07"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/search?find_desc=Ginger+Cafe&find_loc=Sunnyvale%2C+CA",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Ginger+Cafe+1146+W+El+Camino+Real+Sunnyvale"
+      },
+      "flags": [
+        "Salad add-on price conflicts on the restaurant's own pages ($1.25 vs $2.50) - confirm at the table."
+      ],
+      "distance_mi": null,
+      "phone": "(408) 736-2828"
+    },
+    {
+      "id": "L49",
+      "name": "Thai Spoons",
+      "city": "Sunnyvale",
+      "area": "W El Camino Real",
+      "address": "909 W El Camino Real, Sunnyvale, CA 94087",
+      "coords": [
+        37.37144595,
+        -122.0441334
+      ],
+      "cuisine": "Thai, seafood, vegan",
+      "lunch_special": {
+        "name": "Lunch Combo Menu",
+        "price_from": null,
+        "price_to": null,
+        "days": "Tue-Sat",
+        "window": "10:30 AM - 2:00 PM",
+        "includes": "Ordering storefront lists a Lunch Combo Menu 10:30 AM - 2:00 PM (items/prices not captured). A Yelp reviewer mentions $5-$6 lunch specials (date unknown - do not budget)."
+      },
+      "hours_tuesday": "10:30 AM - 9:00 PM (Chowbus) / 11:00 AM - 9:00 PM (restaurantji)",
+      "days_open": "Tue-Sat 10:30/11:00 AM - 9:00 PM; Sun closed; Monday conflicts (closed per Chowbus, 11-9 per restaurantji)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Sunnyvale - not on the Cupertino return walk."
+      },
+      "verification": {
+        "level": "review",
+        "sources": [
+          {
+            "label": "Thai Spoons ordering storefront - address, hours, Lunch Combo Menu 10:30-2",
+            "url": "https://pos.chowbus.com/online-ordering/store/Thai-Spoons/22597"
+          },
+          {
+            "label": "Restaurantji - Thai Spoons hours/address cross-check",
+            "url": "https://www.restaurantji.com/ca/sunnyvale/thai-spoons-/"
+          }
+        ],
+        "accessed": "2026-09-07"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/search?find_desc=Thai+Spoons&find_loc=Sunnyvale%2C+CA",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Thai+Spoons+909+W+El+Camino+Real+Sunnyvale"
+      },
+      "flags": [
+        "Monday open/closed conflicts between sources; Tuesday lunch is agreed. Combo prices unpublished - phone (408) 739-1798."
+      ],
+      "distance_mi": 4.12,
+      "phone": "(408) 739-1798",
+      "coords_source": "thaifoodnetwork listing geo"
+    },
+    {
+      "id": "L50",
+      "name": "First Wok",
+      "city": "Sunnyvale",
+      "area": "S Bernardo Ave",
+      "address": "653 S Bernardo Ave, Sunnyvale, CA 94087",
+      "coords": null,
+      "cuisine": "Chinese, vegetarian",
+      "lunch_special": {
+        "name": "Lunch specials (Yelp tag; details unpublished)",
+        "price_from": null,
+        "price_to": null,
+        "days": "unknown",
+        "window": "store hours 11:00 AM - 9:30 PM",
+        "includes": "Yelp tags it for lunch specials but no lunch menu, items or prices were captured."
+      },
+      "hours_tuesday": "11:00 AM - 9:30 PM",
+      "days_open": "Mon-Sat 11:00 AM - 9:30 PM; Sunday conflicts (closed per restaurantji/ordering page, open per zmenu)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Sunnyvale - not on the Cupertino return walk."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {
+            "label": "Restaurantji - First Wok address, hours, phone",
+            "url": "https://www.restaurantji.com/ca/sunnyvale/first-wok-/"
+          },
+          {
+            "label": "First Wok ordering page - address/hours JSON-LD",
+            "url": "https://www.smorefood.com/by3jcocr/first-wok-sunnyvale-94087/order-online"
+          }
+        ],
+        "accessed": "2026-09-07"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/search?find_desc=First+Wok&find_loc=Sunnyvale%2C+CA",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=First+Wok+653+S+Bernardo+Ave+Sunnyvale"
+      },
+      "flags": [
+        "Sunday open/closed conflicts; Tuesday agreed. No lunch price published - phone (408) 481-9888."
+      ],
+      "distance_mi": null,
+      "phone": "(408) 481-9888"
+    },
+    {
+      "id": "L51",
+      "name": "Asia Village Restaurant",
+      "city": "Sunnyvale",
+      "area": "S Wolfe Rd",
+      "address": "747 S Wolfe Rd, Sunnyvale, CA 94086",
+      "coords": [
+        37.365393,
+        -122.0150982
+      ],
+      "cuisine": "Cantonese / Chinese",
+      "lunch_special": {
+        "name": "Lunch specials incl. beef stew (reviewer)",
+        "price_from": null,
+        "price_to": null,
+        "days": "unknown",
+        "window": "11:00 AM - 2:30 PM",
+        "includes": "Reviewer describes a beef stew lunch special; no lunch menu or prices captured."
+      },
+      "hours_tuesday": "11:00 AM - 2:30 PM, 4:30 PM - 9:00 PM",
+      "days_open": "every day 11:00 AM - 2:30 PM / 4:30 - 9:00 PM (restaurantji, restaurantguru); Apple Maps says Monday closed",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Sunnyvale - not on the Cupertino return walk."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {
+            "label": "Restaurantji - Asia Village hours/address",
+            "url": "https://www.restaurantji.com/ca/sunnyvale/asia-village-/"
+          },
+          {
+            "label": "RestaurantGuru - Asia Village hours/geo cross-check",
+            "url": "https://restaurantguru.com/Asia-Village-Sunnyvale"
+          }
+        ],
+        "accessed": "2026-09-07"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/search?find_desc=Asia+Village&find_loc=Sunnyvale%2C+CA",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Asia+Village+747+S+Wolfe+Rd+Sunnyvale"
+      },
+      "flags": [
+        "Monday open/closed conflicts; Tuesday lunch agreed. Apple Maps lists an official site (asiavillagesunnyvale.com) that was not fetched - it may publish the lunch menu. Phone (408) 773-8988."
+      ],
+      "distance_mi": 3.72,
+      "phone": "(408) 773-8988",
+      "coords_source": "restaurantguru geo fields"
+    },
+    {
+      "id": "L52",
+      "name": "Pho Lyfe",
+      "city": "Sunnyvale",
+      "area": "E El Camino Real",
+      "address": "568 E El Camino Real Unit B, Sunnyvale, CA 94087",
+      "coords": null,
+      "cuisine": "Vietnamese",
+      "lunch_special": {
+        "name": "Lunch specials (reviewer: published on restaurant website)",
+        "price_from": null,
+        "price_to": null,
+        "days": "unknown",
+        "window": "store hours 11:00 AM - 9:00 PM",
+        "includes": "Reviewer says lunch specials are on the restaurant's website; the site (pholyfe.com) returned HTTP 500 when fetched, so items/prices are unconfirmed."
+      },
+      "hours_tuesday": "11:00 AM - 9:00 PM",
+      "days_open": "every day 11:00 AM - 9:00 PM (Yelp)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Sunnyvale - not on the Cupertino return walk."
+      },
+      "verification": {
+        "level": "review",
+        "sources": [
+          {
+            "label": "Yelp - Pho Lyfe (address, phone, daily 11-9 hours)",
+            "url": "https://www.yelp.com/biz/pho-lyfe-sunnyvale-2"
+          }
+        ],
+        "accessed": "2026-09-07"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/pho-lyfe-sunnyvale-2",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Pho+Lyfe+568+E+El+Camino+Real+Sunnyvale"
+      },
+      "flags": [
+        "Official site unreachable (HTTP 500) - lunch specials unconfirmed. Phone (408) 685-2121."
+      ],
+      "distance_mi": null,
+      "phone": "(408) 685-2121"
+    },
+    {
+      "id": "L53",
+      "name": "Cam Hung",
+      "city": "Sunnyvale",
+      "area": "Reed Ave",
+      "address": "903 Reed Ave, Sunnyvale, CA 94086",
+      "coords": [
+        37.366985,
+        -122.013306
+      ],
+      "cuisine": "Vietnamese sandwiches, coffee & tea",
+      "lunch_special": {
+        "name": "Banh mi lunch (~$10 reviewer)",
+        "price_from": 10.0,
+        "price_to": null,
+        "days": "every day",
+        "window": "all day (opens 8:00/8:30 AM)",
+        "includes": "Reviewer figure: banh mi about $10. No published menu prices captured."
+      },
+      "hours_tuesday": "8:00 AM - 8:00 PM (Yelp) / 8:30 AM - 8:00 PM (Tripadvisor)",
+      "days_open": "Mon-Fri 8:00 AM - 8:00 PM; Sat-Sun 9:00 AM - 8:00 PM (Yelp)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Sunnyvale - not on the Cupertino return walk."
+      },
+      "verification": {
+        "level": "review",
+        "sources": [
+          {
+            "label": "Yelp - Cam Hung (address, phone, weekly hours)",
+            "url": "https://www.yelp.com/biz/cam-hung-sunnyvale"
+          },
+          {
+            "label": "Tripadvisor - Cam Hung (address, hours, geo)",
+            "url": "https://www.tripadvisor.com/Restaurant_Review-g33146-d540624-Reviews-C_m_Hung_Sandwich_Coffee-Sunnyvale_California.html"
+          }
+        ],
+        "accessed": "2026-09-07"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/cam-hung-sunnyvale",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Cam+Hung+903+Reed+Ave+Sunnyvale"
+      },
+      "flags": [
+        "Opening time conflicts by 30 min (8:00 vs 8:30 AM); Tuesday open either way. Price is a reviewer figure. Phone (408) 735-8989."
+      ],
+      "distance_mi": 3.85,
+      "phone": "(408) 735-8989",
+      "coords_source": "Tripadvisor JSON-LD"
+    },
+    {
+      "id": "L54",
+      "name": "Country Gourmet",
+      "city": "Sunnyvale",
+      "area": "S Mary Ave",
+      "address": "1314 S Mary Ave, Sunnyvale, CA 94087",
+      "coords": [
+        37.351474,
+        -122.049414
+      ],
+      "cuisine": "American breakfast, brunch & lunch",
+      "lunch_special": {
+        "name": "Brunch/lunch menu (no priced special)",
+        "price_from": null,
+        "price_to": null,
+        "days": "unknown",
+        "window": "lunch covered under either hours reading",
+        "includes": "Breakfast/brunch/lunch restaurant; no lunch special or prices captured."
+      },
+      "hours_tuesday": "7:00 AM - 9:00 PM (Yellow Pages, Tripadvisor) vs 8:00 AM - 3:00 PM (nears.me)",
+      "days_open": "conflicting - see Tuesday line",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Sunnyvale - not on the Cupertino return walk."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {
+            "label": "Yellow Pages - Country Gourmet (address, Mon-Fri 7-9 hours)",
+            "url": "https://www.yellowpages.com/sunnyvale-ca/mip/country-gourmet-restaurant-305632"
+          },
+          {
+            "label": "Tripadvisor - Country Gourmet American Bistro (hours, geo)",
+            "url": "https://www.tripadvisor.com/Restaurant_Review-g33146-d350027-Reviews-Country_Gourmet_American_Bistro-Sunnyvale_California.html"
+          }
+        ],
+        "accessed": "2026-09-07"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/search?find_desc=Country+Gourmet&find_loc=Sunnyvale%2C+CA",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Country+Gourmet+1314+S+Mary+Ave+Sunnyvale"
+      },
+      "flags": [
+        "Hours conflict materially (close 3 PM vs 9 PM); Tuesday lunch is covered by both. countrygourmet.com is a parked domain - there is no official site there. Phone (408) 733-9446."
+      ],
+      "distance_mi": 2.86,
+      "phone": "(408) 733-9446",
+      "coords_source": "nears.me listing geo"
+    },
+    {
+      "id": "L55",
+      "name": "Dumpling Depot",
+      "city": "Sunnyvale",
+      "area": "S Murphy Ave, downtown Sunnyvale",
+      "address": "562 S Murphy Ave, Sunnyvale, CA 94086",
+      "coords": [
+        37.3694473,
+        -122.0321685
+      ],
+      "cuisine": "Dumplings, dim sum, noodles",
+      "lunch_special": {
+        "name": "Lunch service (no priced special)",
+        "price_from": null,
+        "price_to": null,
+        "days": "every day",
+        "window": "11:00 AM - 2:30 PM (Sat-Sun to 3:00 PM)",
+        "includes": "Official site gives hours only; no lunch menu prices captured."
+      },
+      "hours_tuesday": "11:00 AM - 2:30 PM, 5:00 PM - 9:00 PM",
+      "days_open": "Mon-Fri 11:00 AM - 2:30 PM / 5:00 - 9:00 PM; Sat-Sun 11:00 AM - 3:00 PM / 5:00 - 9:00 PM (official)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Downtown Sunnyvale - not on the Cupertino return walk."
+      },
+      "verification": {
+        "level": "official",
+        "sources": [
+          {
+            "label": "Dumpling Depot official site - address and weekly hours",
+            "url": "https://dumplingdepot-s.com/"
+          },
+          {
+            "label": "Restaurantji - Dumpling Depot hours cross-check",
+            "url": "https://www.restaurantji.com/ca/sunnyvale/dumpling-depot-/"
+          }
+        ],
+        "accessed": "2026-09-07"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/search?find_desc=Dumpling+Depot&find_loc=Sunnyvale%2C+CA",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Dumpling+Depot+562+S+Murphy+Ave+Sunnyvale"
+      },
+      "flags": [
+        "No lunch prices published on the official site. Phone (408) 685-2979."
+      ],
+      "distance_mi": 3.91,
+      "phone": "(408) 685-2979",
+      "coords_source": "official ordering page JSON-LD"
+    },
+    {
+      "id": "L56",
+      "name": "10 Butchers Korean BBQ",
+      "city": "Sunnyvale",
+      "area": "E El Camino Real, Camino Oaks Plaza",
+      "address": "595 E El Camino Real, Sunnyvale, CA 94087",
+      "coords": [
+        37.3628164,
+        -122.0254525
+      ],
+      "cuisine": "Korean BBQ, wine bar",
+      "lunch_special": {
+        "name": "Lunch special (reviewer)",
+        "price_from": null,
+        "price_to": null,
+        "days": "unknown",
+        "window": "11:30 AM - 2:30 PM",
+        "includes": "Reviewer mentions a lunch special; items/prices unconfirmed."
+      },
+      "hours_tuesday": "11:30 AM - 2:30 PM, 5:00 PM - 9:00 PM",
+      "days_open": "Mon-Thu 11:30 AM - 2:30 PM / 5:00 - 9:00 PM; Fri to 10:00 PM; Sat 11:30 AM - 10:00 PM; Sun 11:30 AM - 9:00 PM (3 sources agree)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Sunnyvale - not on the Cupertino return walk."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {
+            "label": "Restaurantji - 10 Butchers hours/address",
+            "url": "https://www.restaurantji.com/ca/sunnyvale/10-butchers-korean-bbq-/"
+          },
+          {
+            "label": "RestaurantGuru - 10 Butchers hours/geo cross-check",
+            "url": "https://restaurantguru.com/10-Butchers-Korean-BBQ-Sunnyvale"
+          }
+        ],
+        "accessed": "2026-09-07"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/search?find_desc=10+Butchers&find_loc=Sunnyvale%2C+CA",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=10+Butchers+595+E+El+Camino+Real+Sunnyvale"
+      },
+      "flags": [
+        "Official site 10butchers.net was not fetched - it may publish the lunch special. Phone (408) 720-8889."
+      ],
+      "distance_mi": 3.46,
+      "phone": "(408) 720-8889",
+      "coords_source": "restaurantguru geo fields"
+    },
+    {
+      "id": "L57",
+      "name": "Home Eat",
+      "city": "Santa Clara",
+      "area": "El Camino Real",
+      "address": "638 El Camino Real, Santa Clara, CA 95050",
+      "coords": null,
+      "cuisine": "Chinese, seafood, hot pot",
+      "lunch_special": {
+        "name": "Lunch Specials with mystery drink",
+        "price_from": 12.99,
+        "price_to": 14.99,
+        "days": "listed on the online menu; no day restriction shown",
+        "window": "restaurant open 11:15 AM - 11:15 PM",
+        "includes": "Chicken $12.99 / beef $13.99 / shrimp $14.99 tiers with a randomly chosen complimentary dine-in drink (same program as the Cupertino store)."
+      },
+      "hours_tuesday": "11:15 AM - 11:15 PM",
+      "days_open": "every day 11:15 AM - 11:15 PM (Yelp, Apple Maps)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Santa Clara - not on the Cupertino return walk (sister store of L03)."
+      },
+      "verification": {
+        "level": "official",
+        "sources": [
+          {
+            "label": "Home Eat Santa Clara official ordering - lunch specials $12.99-$14.99",
+            "url": "https://homeeat.toast.site/order/home-eat-santa-clara"
+          },
+          {
+            "label": "Yelp - Home Eat Santa Clara (address, phone, daily hours)",
+            "url": "https://www.yelp.com/biz/home-eat-santa-clara-2"
+          }
+        ],
+        "accessed": "2026-09-07"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/home-eat-santa-clara-2",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Home+Eat+638+El+Camino+Real+Santa+Clara"
+      },
+      "flags": [
+        "Drink is randomly selected per the menu text. Phone (408) 984-0414."
+      ],
+      "distance_mi": null,
+      "phone": "(408) 984-0414"
+    },
+    {
+      "id": "L58",
+      "name": "Dusita Thai Cuisine",
+      "city": "Santa Clara",
+      "area": "El Camino Real",
+      "address": "2325 El Camino Real, Ste 104-105, Santa Clara, CA 95050",
+      "coords": null,
+      "cuisine": "Thai",
+      "lunch_special": {
+        "name": "Weekday lunch",
+        "price_from": 13.75,
+        "price_to": null,
+        "days": "Monday-Friday",
+        "window": "11:00 AM - 2:30 PM",
+        "includes": "Reviewer figure $13.75 for weekday lunch; official menu PDF confirms the lunch window (regular menu prices e.g. soups $11.95+)."
+      },
+      "hours_tuesday": "11:00 AM - 2:30 PM, 5:00 PM - 9:30 PM",
+      "days_open": "Mon-Fri lunch 11:00 AM - 2:30 PM + dinner 5:00 - 9:30 PM; Sat dinner only; Sun closed (official PDF, Yelp agrees)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Santa Clara - not on the Cupertino return walk."
+      },
+      "verification": {
+        "level": "mixed",
+        "sources": [
+          {
+            "label": "Dusita official menu PDF - lunch window, address, phone",
+            "url": "https://dusitathaicuisine.com/wp-content/uploads/Dusita_mainmenu_JL-1-10-no-bg-SM.pdf"
+          },
+          {
+            "label": "Yelp - Dusita Thai Cuisine (hours cross-check)",
+            "url": "https://www.yelp.com/biz/dusita-thai-cuisine-santa-clara"
+          }
+        ],
+        "accessed": "2026-09-07"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/dusita-thai-cuisine-santa-clara",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Dusita+Thai+2325+El+Camino+Real+Santa+Clara"
+      },
+      "flags": [
+        "$13.75 is a reviewer figure, not a published lunch price. Phone (408) 247-5199."
+      ],
+      "distance_mi": null,
+      "phone": "(408) 247-5199"
+    },
+    {
+      "id": "L59",
+      "name": "Il Fornaio",
+      "city": "Santa Clara",
+      "area": "Augustine Dr, north Santa Clara",
+      "address": "2752 Augustine Dr, Ste 120, Santa Clara, CA 95054",
+      "coords": null,
+      "cuisine": "Italian, pizza, seafood",
+      "lunch_special": {
+        "name": "Lunch menu (no priced special)",
+        "price_from": null,
+        "price_to": null,
+        "days": "every day",
+        "window": "opens 11:30 AM",
+        "includes": "No lunch special or prices captured; official menu not fetched."
+      },
+      "hours_tuesday": "11:30 AM - 9:30 PM (Yelp) / to 9:00 PM Mon-Thu (wheree)",
+      "days_open": "every day 11:30 AM - 9:30 PM (Yelp, updated ~Sep 2026)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "North Santa Clara - not on the Cupertino return walk."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {
+            "label": "Yelp - Il Fornaio Santa Clara (address, phone, daily hours)",
+            "url": "https://www.yelp.com/biz/il-fornaio-santa-clara-2"
+          },
+          {
+            "label": "Wheree - Il Fornaio hours cross-check",
+            "url": "https://il-fornaio-santa-clara.wheree.com/"
+          }
+        ],
+        "accessed": "2026-09-07"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/il-fornaio-santa-clara-2",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Il+Fornaio+2752+Augustine+Dr+Santa+Clara"
+      },
+      "flags": [
+        "Close time conflicts by 30 min on weeknights (9:00 vs 9:30 PM); lunch unaffected. Phone (408) 217-8844."
+      ],
+      "distance_mi": null,
+      "phone": "(408) 217-8844"
+    },
+    {
+      "id": "L60",
+      "name": "Mastro's Steakhouse",
+      "city": "Santa Clara",
+      "area": "Stevens Creek Blvd (Valley Fair)",
+      "address": "2855 Stevens Creek Blvd, Suite 1860, Santa Clara, CA 95050",
+      "coords": null,
+      "cuisine": "Steakhouse, seafood",
+      "lunch_special": {
+        "name": "Lunch menu (official; price band to re-verify)",
+        "price_from": null,
+        "price_to": null,
+        "days": "every day",
+        "window": "opens 12:00 PM",
+        "includes": "Official lunch menu exists; a ~$22-$42 mains band was seen in the first pass and must be re-verified on the menu page before budgeting."
+      },
+      "hours_tuesday": "12:00 PM - 9:00 PM",
+      "days_open": "Sun-Thu 12:00 PM - 9:00 PM; Fri-Sat 12:00 PM - 10:00 PM (official)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Santa Clara - not on the Cupertino return walk."
+      },
+      "verification": {
+        "level": "official",
+        "sources": [
+          {
+            "label": "Mastro's official Santa Clara page - address, hours",
+            "url": "https://www.mastrosrestaurants.com/location/santa-clara/"
+          },
+          {
+            "label": "Mastro's California page - Santa Clara dining hours cross-check",
+            "url": "https://www.mastrosrestaurants.com/california/"
+          }
+        ],
+        "accessed": "2026-09-07"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/search?find_desc=Mastro's+Steakhouse&find_loc=Santa+Clara%2C+CA",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Mastro's+Steakhouse+2855+Stevens+Creek+Blvd+Santa+Clara"
+      },
+      "flags": [
+        "CORRECTION: this is Mastro's STEAKHOUSE Santa Clara, not an Ocean Club. Lunch price band unverified - phone (408) 538-4183."
+      ],
+      "distance_mi": null,
+      "phone": "(408) 538-4183"
+    },
+    {
+      "id": "L61",
+      "name": "Erik's DeliCafe",
+      "city": "Santa Clara",
+      "area": "Kiely Blvd",
+      "address": "830 Kiely Blvd, Suite 105, Santa Clara, CA 95051",
+      "coords": null,
+      "cuisine": "Deli: sandwiches, salads, soups",
+      "lunch_special": {
+        "name": "Deli lunch (no priced special)",
+        "price_from": null,
+        "price_to": null,
+        "days": "every day",
+        "window": "opens 10:00 AM (11:00 AM Sun)",
+        "includes": "No lunch special or prices captured; sandwiches/salads/soups/bakery."
+      },
+      "hours_tuesday": "10:00 AM - 7:00 PM",
+      "days_open": "Mon-Sat 10:00 AM - 7:00 PM; Sun 11:00 AM - 7:00 PM (official)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Santa Clara - not on the Cupertino return walk."
+      },
+      "verification": {
+        "level": "official",
+        "sources": [
+          {
+            "label": "Erik's DeliCafe official locations - Santa Clara Kiely address/hours",
+            "url": "https://www.eriksdelicafe.com/locations/"
+          }
+        ],
+        "accessed": "2026-09-07"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/search?find_desc=Erik's+DeliCafe&find_loc=Santa+Clara%2C+CA",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Erik's+DeliCafe+830+Kiely+Blvd+Santa+Clara"
+      },
+      "flags": [
+        "No prices on the locations page - check the ordering menu. Phone (408) 246-1010."
+      ],
+      "distance_mi": null,
+      "phone": "(408) 246-1010"
+    },
+    {
+      "id": "L62",
+      "name": "Clara's Junction",
+      "city": "Santa Clara",
+      "area": "Tasman Dr, near Levi's Stadium",
+      "address": "2221 Tasman Dr, Santa Clara, CA 95054",
+      "coords": null,
+      "cuisine": "American, sports bar, BBQ",
+      "lunch_special": {
+        "name": "$19 Two-Course Lunch (NOT valid Tuesday)",
+        "price_from": 19.0,
+        "price_to": 19.0,
+        "days": "Wednesday-Friday ONLY",
+        "window": "11:00 AM - 3:00 PM",
+        "includes": "Official: starter (avocado/Caesar/hummus) + main (smash burger, chicken/pork sandwich, tinga tacos, fish & chips) + lemonade/iced tea/soda. Tuesday is regular menu only."
+      },
+      "hours_tuesday": "11:00 AM - 9:00 PM (Yelp) vs CLOSED Tuesday (wheree) - CONFLICT",
+      "days_open": "Mon-Thu/Sun 11:00 AM - 9:00 PM; Fri-Sat 11:00 AM - 10:00 PM (Yelp, Jul 2026) vs Mon-Tue closed (wheree)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Santa Clara - not on the Cupertino return walk."
+      },
+      "verification": {
+        "level": "conflicting",
+        "sources": [
+          {
+            "label": "Clara's Junction homepage - $19 lunch Wed-Fri 11-3",
+            "url": "https://www.clarasjunction.com/"
+          },
+          {
+            "label": "Yelp - Clara's Junction (address, phone, Tue 11-9)",
+            "url": "https://www.yelp.com/biz/claras-junction-santa-clara"
+          }
+        ],
+        "accessed": "2026-09-07"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/claras-junction-santa-clara",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Clara's+Junction+2221+Tasman+Dr+Santa+Clara"
+      },
+      "flags": [
+        "Two material caveats: (1) the $19 special runs Wed-Fri, NOT on the Tuesday trip; (2) Tuesday open/closed conflicts between Yelp (open) and wheree (closed) - phone (408) 335-7788 before going."
+      ],
+      "distance_mi": null,
+      "phone": "(408) 335-7788"
+    },
+    {
+      "id": "L63",
+      "name": "Stick & Wok",
+      "city": "Santa Clara",
+      "area": "Stevens Creek Blvd (Valley Fair)",
+      "address": "2855 Stevens Creek Blvd, Ste 2329, Santa Clara, CA 95050",
+      "coords": null,
+      "cuisine": "Chinese (skewers/wok)",
+      "lunch_special": {
+        "name": "Lunch service (no priced special)",
+        "price_from": null,
+        "price_to": null,
+        "days": "unknown",
+        "window": "Tuesday 11:00 AM - 8:30 PM",
+        "includes": "No lunch special or prices captured."
+      },
+      "hours_tuesday": "11:00 AM - 8:30 PM",
+      "days_open": "Tuesday 11:00 AM - 8:30 PM (Yelp via search index); rest of week not captured",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Santa Clara - not on the Cupertino return walk."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {
+            "label": "Yelp search - Stick & Wok Santa Clara (address, Tue hours, via search index)",
+            "url": "https://www.yelp.com/search?find_desc=Stick+%26+Wok&find_loc=Santa+Clara%2C+CA"
+          }
+        ],
+        "accessed": "2026-09-07"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/search?find_desc=Stick+%26+Wok&find_loc=Santa+Clara%2C+CA",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Stick+%26+Wok+2855+Stevens+Creek+Santa+Clara"
+      },
+      "flags": [
+        "WEAK ROW: single-source hours via the search index - verify by phone before going."
+      ],
+      "distance_mi": null
+    },
+    {
+      "id": "L64",
+      "name": "Din Tai Fung",
+      "city": "Santa Clara",
+      "area": "Stevens Creek Blvd (Valley Fair)",
+      "address": "2855 Stevens Creek Blvd, Ste 1259, Santa Clara, CA 95050",
+      "coords": null,
+      "cuisine": "Taiwanese dumplings / xiao long bao",
+      "lunch_special": {
+        "name": "No lunch special (verified negative)",
+        "price_from": null,
+        "price_to": null,
+        "days": "n/a",
+        "window": "Tuesday 10:30 AM - 9:30 PM",
+        "includes": "No lunch special claimed anywhere; listed so the gap is visible."
+      },
+      "hours_tuesday": "10:30 AM - 9:30 PM",
+      "days_open": "Tuesday 10:30 AM - 9:30 PM (directory, via search index); rest of week not captured",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Santa Clara - not on the Cupertino return walk."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {
+            "label": "Yelp search - Din Tai Fung Santa Clara (address, Tue hours, via search index)",
+            "url": "https://www.yelp.com/search?find_desc=Din+Tai+Fung&find_loc=Santa+Clara%2C+CA"
+          }
+        ],
+        "accessed": "2026-09-07"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/search?find_desc=Din+Tai+Fung&find_loc=Santa+Clara%2C+CA",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Din+Tai+Fung+2855+Stevens+Creek+Santa+Clara"
+      },
+      "flags": [
+        "Suite 1259 is per a directory listing - confirm on the official site. Hours need a re-check on the official locations page."
+      ],
+      "distance_mi": null
+    },
+    {
+      "id": "L65",
+      "name": "City Pizza",
+      "city": "Campbell",
+      "area": "W Hamilton Ave",
+      "address": "888 West Hamilton Ave, Campbell, CA 95008",
+      "coords": null,
+      "cuisine": "Pizza, Italian",
+      "lunch_special": {
+        "name": "Value menu (no lunch-only special)",
+        "price_from": 6.99,
+        "price_to": 10.99,
+        "days": "every day (assumed - see flag)",
+        "window": "11:00 AM - 9:00 PM",
+        "includes": "Official menu: gyro $6.99, cheese + 1 topping $8.99, specialty pizzas $10.99, wings $11.99, salads $6.99-$10.99."
+      },
+      "hours_tuesday": "11:00 AM - 9:00 PM",
+      "days_open": "11:00 AM - 9:00 PM (days not specified on the page; assumed daily)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Campbell - not on the Cupertino return walk."
+      },
+      "verification": {
+        "level": "official",
+        "sources": [
+          {
+            "label": "City Pizza official site - menu prices, address, hours",
+            "url": "https://www.citypizzacampbell.com/"
+          }
+        ],
+        "accessed": "2026-09-07"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/search?find_desc=City+Pizza&find_loc=Campbell%2C+CA",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=City+Pizza+888+West+Hamilton+Ave+Campbell"
+      },
+      "flags": [
+        "Open days not stated on the official page - Tuesday assumed, phone (408) 370-2489. Wings price differs between menu blocks ($11.99 vs $12.99)."
+      ],
+      "distance_mi": null,
+      "phone": "(408) 370-2489"
+    },
+    {
+      "id": "L66",
+      "name": "TGI's Sushi",
+      "city": "Campbell",
+      "area": "W Hamilton Ave",
+      "address": "100 W Hamilton Ave, Ste C, Campbell, CA 95008",
+      "coords": null,
+      "cuisine": "Sushi, Japanese",
+      "lunch_special": {
+        "name": "Lunch menu (aggregator prices - re-verify)",
+        "price_from": null,
+        "price_to": null,
+        "days": "Mon/Tue/Thu/Fri/Sat",
+        "window": "11:30 AM - 2:00/2:30 PM",
+        "includes": "Lunch menu $13.95-$16.95 per the menupages aggregator (NOT verified on the restaurant's site)."
+      },
+      "hours_tuesday": "11:30 AM - 2:30 PM, 4:30 PM - 9:00 PM (Yelp, newest)",
+      "days_open": "Mon/Tue/Thu/Fri/Sat lunch + dinner; Wed and Sun dinner only (Yelp) - restaurantji and Apple Maps differ on splits/closes",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Campbell - not on the Cupertino return walk."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {
+            "label": "Yelp - TGI's Sushi Campbell (address, hours)",
+            "url": "https://www.yelp.com/biz/tgis-sushi-campbell"
+          },
+          {
+            "label": "Restaurantji - TGI's Sushi hours cross-check",
+            "url": "https://www.restaurantji.com/ca/campbell/tgi-sushi-/"
+          }
+        ],
+        "accessed": "2026-09-07"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/tgis-sushi-campbell",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=TGI's+Sushi+100+W+Hamilton+Ave+Campbell"
+      },
+      "flags": [
+        "Lunch prices are aggregator-sourced - confirm on tgisushi.com or by phone (408) 871-0123. Three-way hours conflict; Tuesday lunch 11:30-2+ is agreed."
+      ],
+      "distance_mi": null,
+      "phone": "(408) 871-0123"
+    },
+    {
+      "id": "L67",
+      "name": "The Breakfast Club",
+      "city": "Campbell",
+      "area": "W Hamilton Ave, Midtown",
+      "address": "851 W Hamilton Ave, Campbell, CA 95008",
+      "coords": null,
+      "cuisine": "Breakfast & brunch, American",
+      "lunch_special": {
+        "name": "Brunch menu to 3 PM (no lunch-only special)",
+        "price_from": 19.0,
+        "price_to": 30.0,
+        "days": "every day",
+        "window": "7:00 AM - 3:00 PM",
+        "includes": "Brunch dishes $19-$30 per Yelp; kitchen closes 3:00 PM daily."
+      },
+      "hours_tuesday": "7:00 AM - 3:00 PM",
+      "days_open": "every day 7:00 AM - 3:00 PM (official + Yelp agree)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Campbell - not on the Cupertino return walk."
+      },
+      "verification": {
+        "level": "mixed",
+        "sources": [
+          {
+            "label": "Breakfast Club official location page - address, daily 7-3",
+            "url": "https://www.bcmidtown.com/location/unnamed-1/"
+          },
+          {
+            "label": "Yelp - The Breakfast Club Campbell (hours/prices cross-check)",
+            "url": "https://www.yelp.com/biz/the-breakfast-club-campbell"
+          }
+        ],
+        "accessed": "2026-09-07"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/the-breakfast-club-campbell",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Breakfast+Club+851+W+Hamilton+Ave+Campbell"
+      },
+      "flags": [
+        "Prices are Yelp-sourced, not from the official site. Phone (408) 374-4559."
+      ],
+      "distance_mi": null,
+      "phone": "(408) 374-4559"
+    },
+    {
+      "id": "L68",
+      "name": "Oak & Rye",
+      "city": "Los Gatos",
+      "area": "N Santa Cruz Ave, downtown",
+      "address": "303 N Santa Cruz Ave, Los Gatos, CA 95030",
+      "coords": [
+        37.227684,
+        -121.98171
+      ],
+      "cuisine": "Pizza, American",
+      "lunch_special": {
+        "name": "Lunch 12-3 Thu-Sun (CLOSED Tuesday)",
+        "price_from": null,
+        "price_to": null,
+        "days": "Thu-Sun",
+        "window": "12:00 PM - 3:00 PM + dinner",
+        "includes": "No lunch special or prices captured."
+      },
+      "hours_tuesday": "CLOSED on Tuesday (restaurantji + wheree agree)",
+      "days_open": "Mon/Wed 5:00 - 9:00 PM; Tue closed; Thu-Sun 12:00 - 3:00 PM + dinner (to 9/10 PM)",
+      "open_on_trip_date": false,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Closed on the trip day; Los Gatos is off the return path anyway."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {
+            "label": "Restaurantji - Oak & Rye (Tue closed, lunch Thu-Sun)",
+            "url": "https://www.restaurantji.com/ca/los-gatos/oak-and-rye-/"
+          },
+          {
+            "label": "Wheree - Oak & Rye hours cross-check (Tue closed)",
+            "url": "https://oak-rye.wheree.com/"
+          }
+        ],
+        "accessed": "2026-09-07"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/search?find_desc=Oak+%26+Rye&find_loc=Los+Gatos%2C+CA",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Oak+%26+Rye+303+N+Santa+Cruz+Ave+Los+Gatos"
+      },
+      "flags": [
+        "Yellow Pages shows stale daily hours - the two current sources agree Tuesday is closed. Phone (408) 395-4441."
+      ],
+      "distance_mi": 6.47,
+      "phone": "(408) 395-4441",
+      "coords_source": "Yellow Pages listing geo"
+    },
+    {
+      "id": "L69",
+      "name": "Willow Street Wood-Fired Pizza",
+      "city": "Los Gatos",
+      "area": "S Santa Cruz Ave, downtown",
+      "address": "20 S Santa Cruz Ave, Ste 218, Los Gatos, CA 95030",
+      "coords": null,
+      "cuisine": "Pizza, Italian, New American",
+      "lunch_special": {
+        "name": "Regular menu (no priced special)",
+        "price_from": null,
+        "price_to": null,
+        "days": "every day",
+        "window": "opens 11:30 AM",
+        "includes": "Wood-fired pizzas, pastas, salads, sandwiches; no lunch special captured."
+      },
+      "hours_tuesday": "11:30 AM - 9:00 PM (Yelp, newest)",
+      "days_open": "every day 11:30 AM - 9:00 PM (newest Yelp; older captures show 8:30 PM closes)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Los Gatos - not on the Cupertino return walk."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {
+            "label": "Yelp - Willow Street Los Gatos (address, daily hours)",
+            "url": "https://www.yelp.com/biz/willow-street-wood-fired-pizza-los-gatos-6"
+          }
+        ],
+        "accessed": "2026-09-07"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/willow-street-wood-fired-pizza-los-gatos-6",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Willow+Street+Pizza+20+S+Santa+Cruz+Ave+Los+Gatos"
+      },
+      "flags": [
+        "Close time drifted between captures (8:30 vs 9:00 PM); lunch unaffected. Official site willowstreet.com not fetched. Phone (408) 354-5566."
+      ],
+      "distance_mi": null,
+      "phone": "(408) 354-5566"
+    },
+    {
+      "id": "L70",
+      "name": "Super Duper Burgers",
+      "city": "Los Gatos",
+      "area": "Los Gatos Blvd",
+      "address": "15991 Los Gatos Blvd, Bldg 3, Los Gatos, CA 95032",
+      "coords": null,
+      "cuisine": "Burgers, American",
+      "lunch_special": {
+        "name": "Regular menu; happy hour 4-6 PM weekdays (after lunch)",
+        "price_from": null,
+        "price_to": null,
+        "days": "every day",
+        "window": "opens 10:30 AM",
+        "includes": "Mini/Super burgers, chicken sandwich, veggie burger, shakes. Official happy hour Mon-Fri 4-6 PM (free fries with a drink) is after the return bus."
+      },
+      "hours_tuesday": "10:30 AM - 9:30 PM (Yelp, newest)",
+      "days_open": "Mon-Thu/Sun 10:30 AM - 9:30 PM; Fri-Sat 10:30 AM - 10:00 PM (newest Yelp; older captures vary 9:00-10:00 PM)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Los Gatos - not on the Cupertino return walk."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {
+            "label": "Yelp - Super Duper Burgers Los Gatos (address, hours)",
+            "url": "https://www.yelp.com/biz/super-duper-burgers-los-gatos"
+          },
+          {
+            "label": "Restaurantji - Super Duper hours cross-check",
+            "url": "https://www.restaurantji.com/ca/los-gatos/super-duper-burgers-/"
+          }
+        ],
+        "accessed": "2026-09-07"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/super-duper-burgers-los-gatos",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Super+Duper+Burgers+15991+Los+Gatos+Blvd+Los+Gatos"
+      },
+      "flags": [
+        "Close-time conflicts (9:00/9:30/10:00 PM) between captures; lunch unaffected. No prices captured. Phone (408) 356-0684."
+      ],
+      "distance_mi": null,
+      "phone": "(408) 356-0684"
+    },
+    {
+      "id": "L71",
+      "name": "La Esquina",
+      "city": "Los Gatos",
+      "area": "N Santa Cruz Ave",
+      "address": "551 N Santa Cruz Ave, Los Gatos, CA 95030",
+      "coords": [
+        37.2336259,
+        -121.9789257
+      ],
+      "cuisine": "Mexican",
+      "lunch_special": {
+        "name": "Regular menu (no priced special)",
+        "price_from": null,
+        "price_to": null,
+        "days": "Mon-Sat (Sun closed)",
+        "window": "Tuesday 9:00 AM - 8:00 PM",
+        "includes": "No lunch special or prices captured."
+      },
+      "hours_tuesday": "9:00 AM - 8:00 PM (official)",
+      "days_open": "Mon/Wed/Sat 9:00 AM - 3:00 PM; Tue/Thu/Fri 9:00 AM - 8:00 PM; Sun closed (official)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Los Gatos - not on the Cupertino return walk."
+      },
+      "verification": {
+        "level": "official",
+        "sources": [
+          {
+            "label": "La Esquina official site - address, phone, Tue 9-8 hours",
+            "url": "https://www.laesquinamexlosgatos.com/"
+          },
+          {
+            "label": "Restaurantji - La Esquina cross-check",
+            "url": "https://www.restaurantji.com/ca/los-gatos/la-esquina-/"
+          }
+        ],
+        "accessed": "2026-09-07"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/search?find_desc=La+Esquina&find_loc=Los+Gatos%2C+CA",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=La+Esquina+551+N+Santa+Cruz+Ave+Los+Gatos"
+      },
+      "flags": [
+        "Restaurantji opens an hour later (10 AM) than the official site (9 AM). Phone (408) 884-8599."
+      ],
+      "distance_mi": 6.16,
+      "phone": "(408) 884-8599",
+      "coords_source": "Waze place geo"
+    },
+    {
+      "id": "L72",
+      "name": "The Bywater",
+      "city": "Los Gatos",
+      "area": "N Santa Cruz Ave",
+      "address": "532 N Santa Cruz Ave, Los Gatos, CA 95030",
+      "coords": null,
+      "cuisine": "Cajun/Creole/Southern",
+      "lunch_special": {
+        "name": "Lunch Special, Wed-Fri (CLOSED Tuesday)",
+        "price_from": null,
+        "price_to": null,
+        "days": "Wed-Fri (not Tue)",
+        "window": "12:00 PM - 9:00 PM (Wed-Fri)",
+        "includes": "OpenTable notes a Lunch Special; closed Tuesday so not valid on the trip."
+      },
+      "hours_tuesday": "CLOSED on Tuesday (official + Yelp agree)",
+      "days_open": "Mon 3:00 - 9:00 PM; Tue closed; Wed-Fri 12:00 - 9:00 PM; Sat 11:00 AM - 9:00 PM; Sun 11:00 AM - 8:00 PM",
+      "open_on_trip_date": false,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Closed on the trip day; Los Gatos is off the return path anyway."
+      },
+      "verification": {
+        "level": "official",
+        "sources": [
+          {
+            "label": "Bywater official site - Tue closed, address, phone",
+            "url": "https://www.thebywaterca.com/"
+          },
+          {
+            "label": "Yelp - The Bywater (Tue closed cross-check)",
+            "url": "https://www.yelp.com/biz/the-bywater-los-gatos"
+          },
+          {
+            "label": "OpenTable - The Bywater (Lunch Special note, hours)",
+            "url": "https://www.opentable.com/r/the-bywater-los-gatos"
+          }
+        ],
+        "accessed": "2026-09-07"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/the-bywater-los-gatos",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Bywater+532+N+Santa+Cruz+Ave+Los+Gatos"
+      },
+      "flags": [
+        "Lunch Special exists but Tuesday closure blocks the trip. Phone (408) 560-9639."
+      ],
+      "distance_mi": null,
+      "phone": "(408) 560-9639"
+    },
+    {
+      "id": "L73",
+      "name": "Italian Brothers Restaurant",
+      "city": "Los Gatos",
+      "area": "N Santa Cruz Ave, downtown",
+      "address": "330 N Santa Cruz Ave, Los Gatos, CA 95030",
+      "coords": [
+        37.2281621,
+        -121.9811058
+      ],
+      "cuisine": "Italian, pizza",
+      "lunch_special": {
+        "name": "Lunch service 11:30-2:30 (no priced special)",
+        "price_from": null,
+        "price_to": null,
+        "days": "Tue-Sun",
+        "window": "11:30 AM - 2:30 PM",
+        "includes": "No lunch special or prices captured."
+      },
+      "hours_tuesday": "11:30 AM - 2:30 PM + dinner (restaurantji/Slice) / 11:30 AM - 9:00 PM continuous (official JSON-LD)",
+      "days_open": "Mon dinner only; Tue-Sun lunch + dinner (splits/closes vary by source)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Los Gatos - not on the Cupertino return walk."
+      },
+      "verification": {
+        "level": "official",
+        "sources": [
+          {
+            "label": "Italian Brothers official site - address, hours JSON-LD",
+            "url": "https://www.italianbrothers.restaurant/"
+          },
+          {
+            "label": "Restaurantji - Italian Brothers hours cross-check",
+            "url": "https://www.restaurantji.com/ca/los-gatos/italian-brothers-restaurant-/"
+          }
+        ],
+        "accessed": "2026-09-07"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/search?find_desc=Italian+Brothers&find_loc=Los+Gatos%2C+CA",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Italian+Brothers+330+N+Santa+Cruz+Ave+Los+Gatos"
+      },
+      "flags": [
+        "Official page shows continuous hours, directories show a lunch/dinner split; Tuesday lunch 11:30-2:30 is agreed. Phone (408) 354-0111."
+      ],
+      "distance_mi": 6.45,
+      "phone": "(408) 354-0111",
+      "coords_source": "Slice ordering page geo"
+    },
+    {
+      "id": "L74",
+      "name": "The Pastaria & Market",
+      "city": "Los Gatos",
+      "area": "N Santa Cruz Ave, downtown",
+      "address": "27 N Santa Cruz Ave, Los Gatos, CA 95030",
+      "coords": [
+        37.223506,
+        -121.983772
+      ],
+      "cuisine": "Italian",
+      "lunch_special": {
+        "name": "Lunch service 11:30-3 (no priced special)",
+        "price_from": null,
+        "price_to": null,
+        "days": "Tue-Sat",
+        "window": "11:30 AM - 3:00 PM",
+        "includes": "No lunch special or prices captured; still open (closure worry unfounded)."
+      },
+      "hours_tuesday": "11:30 AM - 3:00 PM, 5:00 PM - 9:00 PM",
+      "days_open": "Mon closed; Tue-Fri 11:30 AM - 3:00 PM / 5:00 - 9:00 PM; Sat 11:30 AM - 9:00 PM; Sun 2:00 - 8:00 PM (official JSON-LD)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Los Gatos - not on the Cupertino return walk."
+      },
+      "verification": {
+        "level": "official",
+        "sources": [
+          {
+            "label": "Pastaria official menu - address, hours JSON-LD",
+            "url": "https://www.thepastaria.com/menu"
+          }
+        ],
+        "accessed": "2026-09-07"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/search?find_desc=Pastaria&find_loc=Los+Gatos%2C+CA",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Pastaria+27+N+Santa+Cruz+Ave+Los+Gatos"
+      },
+      "flags": [
+        "No prices on the official menu page. Phone (408) 399-3477."
+      ],
+      "distance_mi": 6.69,
+      "phone": "(408) 399-3477",
+      "coords_source": "official site JSON-LD"
+    },
+    {
+      "id": "L75",
+      "name": "The Diner of Los Gatos",
+      "city": "Los Gatos",
+      "area": "Los Gatos-Saratoga Rd",
+      "address": "235 Los Gatos Saratoga Rd, Los Gatos, CA 95030",
+      "coords": null,
+      "cuisine": "American diner",
+      "lunch_special": {
+        "name": "All-day diner menu (no priced special)",
+        "price_from": null,
+        "price_to": null,
+        "days": "every day",
+        "window": "7:00 AM - 9:00 PM",
+        "includes": "No lunch special or prices captured."
+      },
+      "hours_tuesday": "7:00 AM - 9:00 PM",
+      "days_open": "every day 7:00 AM - 9:00 PM (Yelp, Toast, Wanderlog agree)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Los Gatos - not on the Cupertino return walk."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {
+            "label": "Yelp - Diner of Los Gatos (address, daily 7-9)",
+            "url": "https://www.yelp.com/biz/the-diner-of-los-gatos-los-gatos"
+          },
+          {
+            "label": "Diner of Los Gatos Toast ordering - address/hours",
+            "url": "https://www.toasttab.com/local/order/lgdiner"
+          }
+        ],
+        "accessed": "2026-09-07"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/the-diner-of-los-gatos-los-gatos",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Diner+of+Los+Gatos+235+Los+Gatos+Saratoga+Rd"
+      },
+      "flags": [
+        "No prices captured. Phone (408) 354-4886."
+      ],
+      "distance_mi": null,
+      "phone": "(408) 354-4886"
+    },
+    {
+      "id": "L76",
+      "name": "Lotus Thai Bistro",
+      "city": "Palo Alto",
+      "area": "California Ave",
+      "address": "425 California Avenue, Palo Alto, CA",
+      "coords": null,
+      "cuisine": "Thai",
+      "lunch_special": {
+        "name": "Lunch specials Mon-Sat (official; prices TBD)",
+        "price_from": null,
+        "price_to": null,
+        "days": "Monday-Saturday",
+        "window": "daypart hours not published",
+        "includes": "Official site confirms lunch specials Mon-Sat and dinner; lunch menu is a linked PDF that was not fetched."
+      },
+      "hours_tuesday": "open Tuesday (hours of day not published)",
+      "days_open": "Mon-Sat open; Sun closed; closed Labor Day Mon 9/7/2026 (day before the trip)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Palo Alto California Ave - not on the Cupertino return walk."
+      },
+      "verification": {
+        "level": "official",
+        "sources": [
+          {
+            "label": "Lotus Thai Bistro official site - lunch specials Mon-Sat, address, phone",
+            "url": "https://www.lotusthaibistro.com/"
+          }
+        ],
+        "accessed": "2026-09-07"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/search?find_desc=Lotus+Thai+Bistro&find_loc=Palo+Alto%2C+CA",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Lotus+Thai+Bistro+425+California+Ave+Palo+Alto"
+      },
+      "flags": [
+        "Lunch prices and daypart hours TBD - check the Toast ordering page or phone (650) 289-0907."
+      ],
+      "distance_mi": null,
+      "phone": "(650) 289-0907"
+    },
+    {
+      "id": "L77",
+      "name": "Sprout Cafe",
+      "city": "Palo Alto",
+      "area": "University Ave, downtown",
+      "address": "168 University Ave, Palo Alto, CA 94301",
+      "coords": null,
+      "cuisine": "Californian: salads, sandwiches",
+      "lunch_special": {
+        "name": "Salads/sandwiches (2018 prices - stale)",
+        "price_from": null,
+        "price_to": null,
+        "days": "Mon-Sat",
+        "window": "10:30 AM - 7:00 PM",
+        "includes": "2018 menu had salads from $8.45 - eight years old, do not budget."
+      },
+      "hours_tuesday": "10:30 AM - 7:00 PM",
+      "days_open": "Mon-Sat 10:30 AM - 7:00 PM (directory, via search index)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Downtown Palo Alto - not on the Cupertino return walk."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {
+            "label": "Yelp search - Sprout Cafe Palo Alto (address, hours, via search index)",
+            "url": "https://www.yelp.com/search?find_desc=Sprout+Cafe&find_loc=Palo+Alto%2C+CA"
+          }
+        ],
+        "accessed": "2026-09-07"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/search?find_desc=Sprout+Cafe&find_loc=Palo+Alto%2C+CA",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Sprout+Cafe+168+University+Ave+Palo+Alto"
+      },
+      "flags": [
+        "WEAK ROW: single-source hours via the search index; prices stale (2018). Verify by phone before going."
+      ],
+      "distance_mi": null
+    },
+    {
+      "id": "L78",
+      "name": "La Boheme",
+      "city": "Palo Alto",
+      "area": "California Ave",
+      "address": "415 California Avenue, Palo Alto, CA 94306",
+      "coords": [
+        37.4262478,
+        -122.1446999
+      ],
+      "cuisine": "French / Californian",
+      "lunch_special": {
+        "name": "Lunch Tue-Fri (official window; no prices)",
+        "price_from": null,
+        "price_to": null,
+        "days": "Tuesday-Friday",
+        "window": "11:00 AM - 2:00 PM",
+        "includes": "Official lunch window; no lunch menu prices captured."
+      },
+      "hours_tuesday": "11:00 AM - 2:00 PM, 5:00 PM - 9:00 PM",
+      "days_open": "Lunch Tue-Fri 11:00 AM - 2:00 PM; dinner Tue-Sat 5:00 - 9:00 PM; brunch Sat-Sun 9:30 AM - 2:00 PM (official)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Palo Alto California Ave - not on the Cupertino return walk."
+      },
+      "verification": {
+        "level": "official",
+        "sources": [
+          {
+            "label": "La Boheme official homepage - lunch Tue-Fri 11-2, address, phone",
+            "url": "https://www.labohemepaloalto.com/"
+          }
+        ],
+        "accessed": "2026-09-07"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/search?find_desc=La+Boheme&find_loc=Palo+Alto%2C+CA",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=La+Boheme+415+California+Ave+Palo+Alto"
+      },
+      "flags": [
+        "No lunch prices on the official homepage (no menu page found). Phone (650) 561-3577."
+      ],
+      "distance_mi": 10.04,
+      "phone": "(650) 561-3577",
+      "coords_source": "Google Maps pin linked from official homepage"
+    },
+    {
+      "id": "L79",
+      "name": "Terun Pizzeria",
+      "city": "Palo Alto",
+      "area": "California Ave",
+      "address": "448 California Ave, Palo Alto, CA 94306",
+      "coords": null,
+      "cuisine": "Italian / pizza",
+      "lunch_special": {
+        "name": "Lunch (Tuesday lunch CONFLICTED)",
+        "price_from": null,
+        "price_to": null,
+        "days": "unknown for Tuesday",
+        "window": "conflicted - see flags",
+        "includes": "Page text says lunch + dinner 7 days; JSON-LD says Mon/Tue dinner only. Tuesday dinner 5-9 PM is agreed; Tuesday lunch is not."
+      },
+      "hours_tuesday": "dinner 5:00 - 9:00 PM agreed; lunch 11:30 AM - 2:00 PM conflicted",
+      "days_open": "conflicting - see Tuesday line",
+      "open_on_trip_date": null,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Tuesday lunch unconfirmed; Palo Alto is off the return path anyway."
+      },
+      "verification": {
+        "level": "conflicting",
+        "sources": [
+          {
+            "label": "Terun official site - address; page text vs JSON-LD hours conflict",
+            "url": "https://www.terunpizza.com/"
+          },
+          {
+            "label": "Yelp search - Terun Palo Alto (hours cross-check)",
+            "url": "https://www.yelp.com/search?find_desc=Terun&find_loc=Palo+Alto%2C+CA"
+          }
+        ],
+        "accessed": "2026-09-07"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/search?find_desc=Terun&find_loc=Palo+Alto%2C+CA",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Terun+448+California+Ave+Palo+Alto"
+      },
+      "flags": [
+        "MATERIAL CONFLICT: do not plan a Tuesday lunch without phoning first."
+      ],
+      "distance_mi": null
+    },
+    {
+      "id": "L80",
+      "name": "Local Union 271",
+      "city": "Palo Alto",
+      "area": "University Ave, downtown",
+      "address": "271 University Ave, Palo Alto, CA 94301",
+      "coords": null,
+      "cuisine": "American farm-to-table, bar",
+      "lunch_special": {
+        "name": "Lunch menu $7-$33.95 (OpenTable block - re-verify)",
+        "price_from": 7.0,
+        "price_to": 33.95,
+        "days": "every day",
+        "window": "opens 11:30 AM (10:00 AM Sat-Sun)",
+        "includes": "OpenTable menu block items $7-$33.95; menu URL not retained - re-verify."
+      },
+      "hours_tuesday": "11:30 AM - 9:00 PM",
+      "days_open": "Mon-Wed 11:30 AM - 9:00 PM; Thu-Fri to 10:00 PM; Sat-Sun 10:00 AM - 10:00/9:00 PM (Yelp/Corner; closes vary by capture)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Downtown Palo Alto - not on the Cupertino return walk."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {
+            "label": "Yelp - Local Union 271 (address, hours, phone)",
+            "url": "https://www.yelp.com/biz/local-union-271-palo-alto-2"
+          },
+          {
+            "label": "Corner - Local Union 271 (hours/address cross-check)",
+            "url": "https://www.corner.inc/place/123161"
+          }
+        ],
+        "accessed": "2026-09-07"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/local-union-271-palo-alto-2",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Local+Union+271+University+Ave+Palo+Alto"
+      },
+      "flags": [
+        "Menu prices from an OpenTable block whose URL was not retained - re-verify on OpenTable or localunion271.com. Phone (650) 322-7509."
+      ],
+      "distance_mi": null,
+      "phone": "(650) 322-7509"
+    },
+    {
+      "id": "L81",
+      "name": "The Post",
+      "city": "Los Altos",
+      "area": "Main St, downtown Los Altos",
+      "address": "395 Main St, Los Altos, CA 94022",
+      "coords": [
+        37.377796,
+        -122.1174993
+      ],
+      "cuisine": "American comfort food, cocktail bar",
+      "lunch_special": {
+        "name": "Lunch menu $21-$27 (CLOSED Tuesday)",
+        "price_from": 21.0,
+        "price_to": 27.0,
+        "days": "not Tuesday",
+        "window": "n/a for the trip",
+        "includes": "OpenTable menu $21-$27 (URL not retained - re-verify); closed Tuesday."
+      },
+      "hours_tuesday": "CLOSED on Tuesday (Yelp, restaurantji, nears.me agree)",
+      "days_open": "Mon/Wed/Thu 11:30 AM - 9:30 PM; Fri to midnight; Sat-Sun 11:00 AM - 9:30/9:00 PM; Tue closed",
+      "open_on_trip_date": false,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Closed on the trip day; Los Altos is off the return path."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {
+            "label": "Yelp - The Post Los Altos (Tue closed, address)",
+            "url": "https://www.yelp.com/biz/the-post-los-altos"
+          },
+          {
+            "label": "Restaurantji - The Post (Tue closed cross-check)",
+            "url": "https://www.restaurantji.com/ca/los-altos/the-post-/"
+          }
+        ],
+        "accessed": "2026-09-07"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/the-post-los-altos",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=The+Post+395+Main+St+Los+Altos"
+      },
+      "flags": [
+        "Menu prices from an OpenTable block whose URL was not retained. Phone (650) 935-2003."
+      ],
+      "distance_mi": 6.56,
+      "phone": "(650) 935-2003",
+      "coords_source": "nears.me listing geo"
+    },
+    {
+      "id": "L82",
+      "name": "Urfa Bistro",
+      "city": "Los Altos",
+      "area": "State St, downtown Los Altos",
+      "address": "233 State St, Los Altos, CA 94022",
+      "coords": null,
+      "cuisine": "Mediterranean / Turkish / Middle Eastern",
+      "lunch_special": {
+        "name": "Lunch 11-2 daily (no priced special)",
+        "price_from": null,
+        "price_to": null,
+        "days": "every day",
+        "window": "11:00 AM - 2:00 PM",
+        "includes": "No lunch special or prices captured."
+      },
+      "hours_tuesday": "11:00 AM - 2:00 PM, 5:00 PM - 8:30 PM",
+      "days_open": "Mon/Tue/Sun 11:00 AM - 2:00 PM / 5:00 - 8:30 PM; Wed-Sat dinner to 9:00 PM (Yelp Sep 2026, restaurantji agree)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Los Altos - not on the Cupertino return walk."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {
+            "label": "Yelp - Urfa Bistro (address, lunch 11-2 daily)",
+            "url": "https://www.yelp.com/biz/urfa-bistro-los-altos"
+          },
+          {
+            "label": "Restaurantji - Urfa Bistro hours cross-check",
+            "url": "https://www.restaurantji.com/ca/los-altos/urfa-bistro-/"
+          }
+        ],
+        "accessed": "2026-09-07"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/urfa-bistro-los-altos",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Urfa+Bistro+233+State+St+Los+Altos"
+      },
+      "flags": [
+        "No prices captured. Phone (650) 397-5614."
+      ],
+      "distance_mi": null,
+      "phone": "(650) 397-5614"
+    },
+    {
+      "id": "L83",
+      "name": "Aurum",
+      "city": "Los Altos",
+      "area": "State St, downtown Los Altos",
+      "address": "132 State St, Los Altos, CA 94022",
+      "coords": [
+        37.3801424,
+        -122.1156664
+      ],
+      "cuisine": "Indian, vegan-friendly",
+      "lunch_special": {
+        "name": "Lunch 11:30-2:30 (no priced special)",
+        "price_from": null,
+        "price_to": null,
+        "days": "every day",
+        "window": "11:30 AM - 2:30 PM (Toast: to 2:15 PM)",
+        "includes": "No lunch special or prices captured."
+      },
+      "hours_tuesday": "11:30 AM - 2:30 PM, 5:00 PM - 9:30 PM",
+      "days_open": "Mon-Thu/Sun 11:30 AM - 2:30 PM / 5:00 - 9:30 PM; Fri-Sat dinner to 10:00 PM (Toast shows :15/:45 closes)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Los Altos - not on the Cupertino return walk."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {
+            "label": "RestaurantGuru - Aurum (address, hours, geo)",
+            "url": "https://restaurantguru.com/Aurum-Los-Altos"
+          },
+          {
+            "label": "Restaurantji - Aurum hours cross-check",
+            "url": "https://www.restaurantji.com/ca/los-altos/aurum-/"
+          },
+          {
+            "label": "Aurum Toast ordering - address/hours",
+            "url": "https://www.toasttab.com/local/order/aurumca"
+          }
+        ],
+        "accessed": "2026-09-07"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/search?find_desc=Aurum&find_loc=Los+Altos%2C+CA",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Aurum+132+State+St+Los+Altos"
+      },
+      "flags": [
+        "15-minute close-time conflicts (2:15 vs 2:30 PM lunch end); lunch unaffected. Phone (650) 383-5221."
+      ],
+      "distance_mi": 6.6,
+      "phone": "(650) 383-5221",
+      "coords_source": "restaurantguru geo fields"
+    },
+    {
+      "id": "L84",
+      "name": "Cetrella",
+      "city": "Los Altos",
+      "area": "State St, downtown Los Altos",
+      "address": "160 State St, Los Altos, CA 94022",
+      "coords": null,
+      "cuisine": "Mediterranean, cocktail bar",
+      "lunch_special": {
+        "name": "Lunch 11:30-2 Tue-Sun (no priced special)",
+        "price_from": null,
+        "price_to": null,
+        "days": "Tue-Sun (Mon closed)",
+        "window": "11:30 AM - 2:00 PM",
+        "includes": "No lunch special or prices captured."
+      },
+      "hours_tuesday": "11:30 AM - 2:00 PM, 5:00 PM - 9:00 PM",
+      "days_open": "Mon closed; Tue-Sun 11:30 AM - 2:00 PM / 5:00 - 9:00 PM (newest Yelp; older dinner close 8:30 PM)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Los Altos - not on the Cupertino return walk."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {
+            "label": "Yelp - Cetrella (address, Mon closed, Tue lunch)",
+            "url": "https://www.yelp.com/biz/cetrella-los-altos"
+          },
+          {
+            "label": "Restaurantji - Cetrella hours cross-check",
+            "url": "https://www.restaurantji.com/ca/los-altos/cetrella-/"
+          }
+        ],
+        "accessed": "2026-09-07"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/cetrella-los-altos",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Cetrella+160+State+St+Los+Altos"
+      },
+      "flags": [
+        "Dinner close drifted 8:30 -> 9:00 PM between captures; lunch unaffected. Official site cetrella.com not fetched. Phone (650) 948-0400."
+      ],
+      "distance_mi": null,
+      "phone": "(650) 948-0400"
+    },
+    {
+      "id": "L85",
+      "name": "La Fontaine",
+      "city": "Mountain View",
+      "area": "Castro St, downtown MV",
+      "address": "186 Castro St, Mountain View, CA 94041",
+      "coords": null,
+      "cuisine": "French / Californian",
+      "lunch_special": {
+        "name": "Lunch Tue 11:30-2 (no priced special)",
+        "price_from": null,
+        "price_to": null,
+        "days": "unknown",
+        "window": "Tuesday 11:30 AM - 2:00 PM, 5:00 PM - 9:30 PM",
+        "includes": "No lunch special or prices captured."
+      },
+      "hours_tuesday": "11:30 AM - 2:00 PM, 5:00 PM - 9:30 PM",
+      "days_open": "Tuesday 11:30 AM - 2:00 PM / 5:00 - 9:30 PM (directory, via search index); rest of week not captured",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Downtown MV - not on the Cupertino return walk."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {
+            "label": "Yelp search - La Fontaine Mountain View (address, Tue hours, via search index)",
+            "url": "https://www.yelp.com/search?find_desc=La+Fontaine&find_loc=Mountain+View%2C+CA"
+          }
+        ],
+        "accessed": "2026-09-07"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/search?find_desc=La+Fontaine&find_loc=Mountain+View%2C+CA",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=La+Fontaine+186+Castro+St+Mountain+View"
+      },
+      "flags": [
+        "WEAK ROW: single-source hours via the search index - verify by phone before going."
+      ],
+      "distance_mi": null
+    },
+    {
+      "id": "L86",
+      "name": "Mediterranean Grill House",
+      "city": "Mountain View",
+      "area": "Castro St, downtown MV",
+      "address": "650 Castro St, Unit 110, Mountain View, CA 94041",
+      "coords": null,
+      "cuisine": "Mediterranean",
+      "lunch_special": {
+        "name": "Lunch service (no priced special)",
+        "price_from": null,
+        "price_to": null,
+        "days": "unknown",
+        "window": "Mon-Wed 11:00 AM - 10:00 PM",
+        "includes": "No lunch special or prices captured."
+      },
+      "hours_tuesday": "11:00 AM - 10:00 PM",
+      "days_open": "Mon-Wed 11:00 AM - 10:00 PM (official site); rest of week not captured",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Downtown MV - not on the Cupertino return walk."
+      },
+      "verification": {
+        "level": "official",
+        "sources": [
+          {
+            "label": "Mediterranean Grill House official site - address, hours",
+            "url": "https://mediterraneangrillhouse.com/"
+          },
+          {
+            "label": "Yelp search - Mediterranean Grill House cross-check",
+            "url": "https://www.yelp.com/search?find_desc=Mediterranean+Grill+House&find_loc=Mountain+View%2C+CA"
+          }
+        ],
+        "accessed": "2026-09-07"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/search?find_desc=Mediterranean+Grill+House&find_loc=Mountain+View%2C+CA",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Mediterranean+Grill+House+650+Castro+St+Mountain+View"
+      },
+      "flags": [
+        "Thu-Sun hours not captured; no prices. Verify by phone."
+      ],
+      "distance_mi": null
+    },
+    {
+      "id": "L87",
+      "name": "Cascal",
+      "city": "Mountain View",
+      "area": "Castro St, downtown MV",
+      "address": "400 Castro St, Mountain View, CA 94041",
+      "coords": null,
+      "cuisine": "Latin / Spanish",
+      "lunch_special": {
+        "name": "Lunch 11:30-3 (no priced special)",
+        "price_from": null,
+        "price_to": null,
+        "days": "unknown",
+        "window": "11:30 AM - 3:00 PM",
+        "includes": "No lunch special or prices captured."
+      },
+      "hours_tuesday": "lunch 11:30 AM - 3:00 PM (directory, via search index)",
+      "days_open": "lunch 11:30 AM - 3:00 PM; full dayparts not captured",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Downtown MV - not on the Cupertino return walk."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {
+            "label": "Yelp search - Cascal Mountain View (address, lunch window, via search index)",
+            "url": "https://www.yelp.com/search?find_desc=Cascal&find_loc=Mountain+View%2C+CA"
+          }
+        ],
+        "accessed": "2026-09-07"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/search?find_desc=Cascal&find_loc=Mountain+View%2C+CA",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Cascal+400+Castro+St+Mountain+View"
+      },
+      "flags": [
+        "WEAK ROW: single-source lunch window via the search index - verify by phone."
+      ],
+      "distance_mi": null
+    },
+    {
+      "id": "L88",
+      "name": "Ludwig's Biergarten",
+      "city": "Mountain View",
+      "area": "Castro St, downtown MV",
+      "address": "383 Castro St, Mountain View, CA 94041",
+      "coords": null,
+      "cuisine": "German / beer garden",
+      "lunch_special": {
+        "name": "Lunch service (no priced special)",
+        "price_from": null,
+        "price_to": null,
+        "days": "Tue-Sun (Mon closed per press)",
+        "window": "11:30 AM - 9:00 PM",
+        "includes": "No lunch special or prices captured; under new ownership since Oct 2024."
+      },
+      "hours_tuesday": "11:30 AM - 9:00 PM (press) / 11:30 AM - 10:00 PM (official Sun-Thu)",
+      "days_open": "Tue-Fri 11:30 AM - 9:00 PM; Sat 12:00 - 10:00 PM; Sun 11:30 AM - 8:00 PM (paloaltoonline, Oct 2024) vs Sun-Thu 11:30 AM - 10:00 PM (official site)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Downtown MV - not on the Cupertino return walk."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {
+            "label": "Palo Alto Online - Ludwig's address, phone, hours",
+            "url": "https://www.paloaltoonline.com/mountain-view/2024/10/07/ludwigs-mountain-view-transitions-to-new-ownership-under-creative-collective-founder-gisela-qasim/"
+          },
+          {
+            "label": "Ludwig's official site - hours Sun-Thu 11:30-22",
+            "url": "https://ludwigsmv.com/"
+          }
+        ],
+        "accessed": "2026-09-07"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/search?find_desc=Ludwig's+Biergarten&find_loc=Mountain+View%2C+CA",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Ludwig's+Biergarten+383+Castro+St+Mountain+View"
+      },
+      "flags": [
+        "Hours conflict between 2024 press and the official site (Mon/Fri/close times); Tuesday lunch 11:30 AM is agreed. Phone (650) 282-5342."
+      ],
+      "distance_mi": null,
+      "phone": "(650) 282-5342"
+    },
+    {
+      "id": "L89",
+      "name": "Don Giovanni's",
+      "city": "Mountain View",
+      "area": "Castro St, downtown MV",
+      "address": "235 Castro St, Mountain View, CA 94041",
+      "coords": null,
+      "cuisine": "Italian",
+      "lunch_special": {
+        "name": "Lunch Tue-Fri (no priced special)",
+        "price_from": null,
+        "price_to": null,
+        "days": "Tuesday-Friday",
+        "window": "11:30 AM - 2:00 PM",
+        "includes": "No lunch special or prices captured."
+      },
+      "hours_tuesday": "11:30 AM - 2:00 PM + dinner",
+      "days_open": "lunch Tue-Fri 11:30 AM - 2:00 PM (official site); full week not captured",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Downtown MV - not on the Cupertino return walk."
+      },
+      "verification": {
+        "level": "official",
+        "sources": [
+          {
+            "label": "Don Giovanni official site - address, Tue-Fri lunch",
+            "url": "https://dongiovannis.com/"
+          },
+          {
+            "label": "Yelp search - Don Giovanni cross-check",
+            "url": "https://www.yelp.com/search?find_desc=Don+Giovanni&find_loc=Mountain+View%2C+CA"
+          }
+        ],
+        "accessed": "2026-09-07"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/search?find_desc=Don+Giovanni&find_loc=Mountain+View%2C+CA",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Don+Giovanni+235+Castro+St+Mountain+View"
+      },
+      "flags": [
+        "Dinner hours and prices not captured - verify by phone."
+      ],
+      "distance_mi": null
+    },
+    {
+      "id": "L90",
+      "name": "Toki Sushi",
+      "city": "Mountain View",
+      "area": "N Shoreline Blvd",
+      "address": "570 N Shoreline Blvd, Suite J, Mountain View, CA 94043",
+      "coords": null,
+      "cuisine": "Japanese: sushi, bento",
+      "lunch_special": {
+        "name": "Bento specials",
+        "price_from": 8.95,
+        "price_to": null,
+        "days": "every day",
+        "window": "11:30 AM - 3:00 PM",
+        "includes": "MV Voice (Dec 2025): bentos from $8.95. An atly reviewer says $13 - conflict, see flags."
+      },
+      "hours_tuesday": "11:30 AM - 3:00 PM, 5:00 PM - 9:00 PM",
+      "days_open": "Mon-Thu 11:30 AM - 3:00 PM / 5:00 - 9:00 PM; Fri-Sun 11:30 AM - 9:30 PM (MV Voice) vs daily split to 9:00 PM (Toast)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Mountain View - not on the Cupertino return walk."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {
+            "label": "MV Voice - Toki Sushi address, phone, hours, $8.95 bento",
+            "url": "https://www.mv-voice.com/mountain-view/2025/12/09/this-new-japanese-restaurant-offers-bentos-for-just-8-95/"
+          },
+          {
+            "label": "Toki Sushi Toast ordering - address/hours",
+            "url": "https://www.toasttab.com/local/order/toki-sushi-570-n-shoreline-blvd-suite-j"
+          }
+        ],
+        "accessed": "2026-09-07"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/search?find_desc=Toki+Sushi&find_loc=Mountain+View%2C+CA",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Toki+Sushi+570+N+Shoreline+Blvd+Mountain+View"
+      },
+      "flags": [
+        "Bento price conflicts ($8.95 press Dec 2025 vs $13 reviewer) - confirm at the counter. Fri-Sun close conflicts (9:00 vs 9:30 PM). Phone (650) 887-6368."
+      ],
+      "distance_mi": null,
+      "phone": "(650) 887-6368"
+    },
+    {
+      "id": "L91",
+      "name": "Kakaroto Japanese Restaurant",
+      "city": "Mountain View",
+      "area": "W Dana St, downtown MV",
+      "address": "743 W Dana St, Mountain View, CA 94041",
+      "coords": null,
+      "cuisine": "Japanese",
+      "lunch_special": {
+        "name": "Lunch 11:30-2:30 (no priced special)",
+        "price_from": null,
+        "price_to": null,
+        "days": "Tue-Sun (Mon closed)",
+        "window": "11:30 AM - 2:30 PM",
+        "includes": "No lunch special or prices captured."
+      },
+      "hours_tuesday": "11:30 AM - 2:30 PM, 5:00 PM - 9:00 PM",
+      "days_open": "Mon closed; Tue-Thu/Sun 11:30 AM - 2:30 PM / 5:00 - 9:00 PM; Fri-Sat dinner to 9:30 PM (Yelp)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Downtown MV - not on the Cupertino return walk."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {
+            "label": "Yelp - Kakaroto (address, Mon closed, Tue lunch)",
+            "url": "https://www.yelp.com/biz/kakaroto-japanese-restaurant-mountain-view"
+          }
+        ],
+        "accessed": "2026-09-07"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/kakaroto-japanese-restaurant-mountain-view",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Kakaroto+743+W+Dana+St+Mountain+View"
+      },
+      "flags": [
+        "No prices captured. Phone (650) 903-9668."
+      ],
+      "distance_mi": null,
+      "phone": "(650) 903-9668"
+    },
+    {
+      "id": "L92",
+      "name": "Erik's DeliCafe",
+      "city": "Mountain View",
+      "area": "Grant Rd",
+      "address": "1350 Grant Rd, Suite 18, Mountain View, CA 94040",
+      "coords": null,
+      "cuisine": "Deli: sandwiches, salads, soups",
+      "lunch_special": {
+        "name": "Deli lunch (no priced special)",
+        "price_from": null,
+        "price_to": null,
+        "days": "every day",
+        "window": "opens 9:00 AM weekdays",
+        "includes": "No lunch special or prices captured."
+      },
+      "hours_tuesday": "9:00 AM - 8:00 PM",
+      "days_open": "Mon-Fri 9:00 AM - 8:00 PM; Sat-Sun 10:00 AM - 7:00 PM (official)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Mountain View - not on the Cupertino return walk."
+      },
+      "verification": {
+        "level": "official",
+        "sources": [
+          {
+            "label": "Erik's DeliCafe official locations - Grant Rd address/hours",
+            "url": "https://www.eriksdelicafe.com/locations/"
+          }
+        ],
+        "accessed": "2026-09-07"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/search?find_desc=Erik's+DeliCafe&find_loc=Mountain+View%2C+CA",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Erik's+DeliCafe+1350+Grant+Rd+Mountain+View"
+      },
+      "flags": [
+        "No prices on the locations page. Phone (650) 962-9191."
+      ],
+      "distance_mi": null,
+      "phone": "(650) 962-9191"
+    },
+    {
+      "id": "L93",
+      "name": "Erik's DeliCafe",
+      "city": "Mountain View",
+      "area": "Charleston Rd",
+      "address": "2424 Charleston Rd, Mountain View, CA 94043",
+      "coords": null,
+      "cuisine": "Deli: sandwiches, salads, soups",
+      "lunch_special": {
+        "name": "Deli lunch (no priced special)",
+        "price_from": null,
+        "price_to": null,
+        "days": "every day",
+        "window": "opens 10:00 AM (11:00 AM Sun)",
+        "includes": "No lunch special or prices captured."
+      },
+      "hours_tuesday": "10:00 AM - 7:00 PM",
+      "days_open": "Mon-Sat 10:00 AM - 7:00 PM; Sun 11:00 AM - 6:00 PM (official)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Mountain View - not on the Cupertino return walk."
+      },
+      "verification": {
+        "level": "official",
+        "sources": [
+          {
+            "label": "Erik's DeliCafe official locations - Charleston Rd address/hours",
+            "url": "https://www.eriksdelicafe.com/locations/"
+          }
+        ],
+        "accessed": "2026-09-07"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/search?find_desc=Erik's+DeliCafe&find_loc=Mountain+View%2C+CA",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Erik's+DeliCafe+2424+Charleston+Rd+Mountain+View"
+      },
+      "flags": [
+        "No prices on the locations page. Phone (650) 962-1212."
+      ],
+      "distance_mi": null,
+      "phone": "(650) 962-1212"
+    },
+    {
+      "id": "L94",
+      "name": "Tony & Alba's Pizza & Pasta",
+      "city": "San Jose",
+      "area": "Stevens Creek Blvd",
+      "address": "3137 Stevens Creek Blvd, San Jose, CA",
+      "coords": null,
+      "cuisine": "Italian: pizza, pasta",
+      "lunch_special": {
+        "name": "Regular menu (August combo deal EXPIRED)",
+        "price_from": 9.99,
+        "price_to": 24.5,
+        "days": "Tue-Sun (Mon closed)",
+        "window": "Tuesday 11:00 AM - 8:15 PM",
+        "includes": "Official menu: garlic bread $9.99, Italian salad $12.50, cheese/BYOB pizza $19+, specialty pizzas $24.50+, meat sauce pasta + meatballs $22+. The $45 'Back To School' combo was Tue-Thu through August only - expired before Sep 8."
+      },
+      "hours_tuesday": "11:00 AM - 8:15 PM",
+      "days_open": "Mon closed; Tue-Sun from 11:00 AM (Tue to 8:15 PM per directory, via search index)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "West San Jose - not on the Cupertino return walk."
+      },
+      "verification": {
+        "level": "official",
+        "sources": [
+          {
+            "label": "Tony & Alba official menu - prices, address, Tue 11 AM open",
+            "url": "https://tonyandalbaspizza.com/menu"
+          },
+          {
+            "label": "Tony & Alba official homepage - hours",
+            "url": "https://tonyandalbaspizza.com/"
+          }
+        ],
+        "accessed": "2026-09-07"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/search?find_desc=Tony+%26+Alba's&find_loc=San+Jose%2C+CA",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Tony+%26+Alba's+3137+Stevens+Creek+Blvd+San+Jose"
+      },
+      "flags": [
+        "No active lunch special - the August combo expired. Full weekly hours not captured."
+      ],
+      "distance_mi": null
+    },
+    {
+      "id": "L95",
+      "name": "Soong Soong",
+      "city": "San Jose",
+      "area": "Stevens Creek Blvd",
+      "address": "3680 Stevens Creek Blvd, Unit C, San Jose, CA",
+      "coords": null,
+      "cuisine": "Chinese (Taiwanese-style)",
+      "lunch_special": {
+        "name": "Lunch Tue 11-2:30 (no priced special)",
+        "price_from": null,
+        "price_to": null,
+        "days": "Tue-Sun (Wed closed)",
+        "window": "Tuesday 11:00 AM - 2:30 PM",
+        "includes": "No lunch special or prices captured."
+      },
+      "hours_tuesday": "lunch 11:00 AM - 2:30 PM (official site)",
+      "days_open": "Tue lunch 11:00 AM - 2:30 PM; Wed closed (official site); full week not captured",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "West San Jose - not on the Cupertino return walk."
+      },
+      "verification": {
+        "level": "official",
+        "sources": [
+          {
+            "label": "Soong Soong official site - address, Tue lunch, Wed closed",
+            "url": "https://soongsoong.com/"
+          },
+          {
+            "label": "Yelp search - Soong Soong cross-check",
+            "url": "https://www.yelp.com/search?find_desc=Soong+Soong&find_loc=San+Jose%2C+CA"
+          }
+        ],
+        "accessed": "2026-09-07"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/search?find_desc=Soong+Soong&find_loc=San+Jose%2C+CA",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Soong+Soong+3680+Stevens+Creek+Blvd+San+Jose"
+      },
+      "flags": [
+        "Dinner hours and prices not captured - verify by phone."
+      ],
+      "distance_mi": null
+    },
+    {
+      "id": "L96",
+      "name": "Freedom Burrito",
+      "city": "San Jose",
+      "area": "Stevens Creek Blvd",
+      "address": "5239 Stevens Creek Blvd, San Jose, CA 95128 (site text says Santa Clara - conflict)",
+      "coords": null,
+      "cuisine": "Mexican: burritos",
+      "lunch_special": {
+        "name": "All-day menu 8-10 (no priced special)",
+        "price_from": null,
+        "price_to": null,
+        "days": "every day (assumed)",
+        "window": "8:00 AM - 10:00 PM",
+        "includes": "No lunch special or prices captured."
+      },
+      "hours_tuesday": "8:00 AM - 10:00 PM",
+      "days_open": "Tuesday 8:00 AM - 10:00 PM (official site); rest of week not captured",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Stevens Creek corridor - not on the Cupertino return walk."
+      },
+      "verification": {
+        "level": "conflicting",
+        "sources": [
+          {
+            "label": "Freedom Burrito official site - address, Tue 8-22 hours",
+            "url": "https://freedomburrito.com/"
+          },
+          {
+            "label": "Yelp search - Freedom Burrito city/hours cross-check",
+            "url": "https://www.yelp.com/search?find_desc=Freedom+Burrito&find_loc=San+Jose%2C+CA"
+          }
+        ],
+        "accessed": "2026-09-07"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/search?find_desc=Freedom+Burrito&find_loc=San+Jose%2C+CA",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Freedom+Burrito+5239+Stevens+Creek+Blvd"
+      },
+      "flags": [
+        "CITY CONFLICT: official site says Santa Clara but 95128 is a San Jose postcode - verify the city before navigating. Prices not captured."
+      ],
+      "distance_mi": null
+    },
+    {
+      "id": "L97",
+      "name": "Falafel's Drive-In",
+      "city": "San Jose",
+      "area": "Stevens Creek Blvd",
+      "address": "2301 Stevens Creek Blvd, San Jose, CA 95128",
+      "coords": [
+        37.3237033,
+        -121.9350772
+      ],
+      "cuisine": "Middle Eastern / falafel",
+      "lunch_special": {
+        "name": "Falafel + banana shake combo",
+        "price_from": 7.5,
+        "price_to": 14.0,
+        "days": "every day",
+        "window": "10:00 AM - 8:00 PM (Sun to 6:00 PM)",
+        "includes": "Ordering menu: small falafel $7.50, large falafel $9.50, large falafel + banana shake $14.00, hummus $8.75, fries $5.50."
+      },
+      "hours_tuesday": "10:00 AM - 8:00 PM",
+      "days_open": "Mon-Sat 10:00 AM - 8:00 PM; Sun 10:00 AM - 6:00 PM (Yelp, restaurantguru agree)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "West San Jose - not on the Cupertino return walk."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {
+            "label": "Yelp - Falafel's Drive-In (address, weekly hours)",
+            "url": "https://www.yelp.com/biz/falafels-drive-in-san-jose"
+          },
+          {
+            "label": "Falafel's online ordering menu - sandwich/shake prices",
+            "url": "https://order.online/store/falafels-drive-in-31486"
+          }
+        ],
+        "accessed": "2026-09-07"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/falafels-drive-in-san-jose",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Falafel's+Drive-In+2301+Stevens+Creek+Blvd+San+Jose"
+      },
+      "flags": [
+        "WARNING: falafels-drive-in.com looks official but states it is a user-generated fan site - do not cite it. Phone (408) 294-7886."
+      ],
+      "distance_mi": 5.29,
+      "phone": "(408) 294-7886",
+      "coords_source": "restaurantguru geo fields"
+    },
+    {
+      "id": "L98",
+      "name": "Kongunadu",
+      "city": "San Jose",
+      "area": "S De Anza Blvd, West San Jose",
+      "address": "1136 S De Anza Blvd, Ste A, San Jose, CA 95129",
+      "coords": null,
+      "cuisine": "South Indian (Kongunadu)",
+      "lunch_special": {
+        "name": "Thali lunch (reviewer $24.99)",
+        "price_from": 24.99,
+        "price_to": null,
+        "days": "every day",
+        "window": "11:00 AM - 10:30 PM",
+        "includes": "Reviewer figure: thali $24.99. No published menu prices captured."
+      },
+      "hours_tuesday": "11:00 AM - 10:30 PM",
+      "days_open": "every day 11:00 AM - 10:30 PM (Yelp)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "West San Jose near the Cupertino border - not on the Cupertino return walk."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {
+            "label": "Yelp - Kongunadu (address, phone, daily hours)",
+            "url": "https://www.yelp.com/biz/kongunadu-san-jose-7"
+          }
+        ],
+        "accessed": "2026-09-07"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/kongunadu-san-jose-7",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Kongunadu+1136+S+De+Anza+Blvd+San+Jose"
+      },
+      "flags": [
+        "Not in Cupertino despite lunch-list placement - West San Jose 95129. Price is a reviewer figure; official site kongunadu.us not fetched. Phone (669) 251-7262."
+      ],
+      "distance_mi": null,
+      "phone": "(669) 251-7262"
+    },
+    {
+      "id": "L99",
+      "name": "Pacific Catch",
+      "city": "Cupertino",
+      "area": "Stevens Creek Blvd",
+      "address": "19399 Stevens Creek Blvd, Ste 5, Cupertino, CA 95014",
+      "coords": [
+        37.3235661,
+        -122.0101751
+      ],
+      "cuisine": "Seafood, tacos, sushi bar",
+      "lunch_special": {
+        "name": "Regular menu (no lunch-only special)",
+        "price_from": 10.0,
+        "price_to": 15.0,
+        "days": "every day",
+        "window": "11:00 AM - 9:00 PM",
+        "includes": "Reviewer $10-$15 lunch range; happy hour Mon-Fri 3-6 PM is after the return bus."
+      },
+      "hours_tuesday": "11:00 AM - 9:00 PM",
+      "days_open": "Mon-Thu/Sun 11:00 AM - 9:00 PM; Fri-Sat 11:00 AM - 10:00 PM (3 sources agree)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": true,
+        "note": "Open from 11 AM on Stevens Creek Blvd; see computed distance."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {
+            "label": "Restaurantji - Pacific Catch Cupertino (address, hours)",
+            "url": "https://www.restaurantji.com/ca/cupertino/pacific-catch-/"
+          },
+          {
+            "label": "usmenuguide - Pacific Catch hours/happy-hour cross-check",
+            "url": "https://usmenuguide.com/places/united-states/california/cupertino/pacific-catch-cupertino/"
+          }
+        ],
+        "accessed": "2026-09-07"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/search?find_desc=Pacific+Catch&find_loc=Cupertino%2C+CA",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Pacific+Catch+19399+Stevens+Creek+Blvd+Cupertino"
+      },
+      "flags": [
+        "Price is a reviewer range; official page pacificcatch.com/locations/cupertino/ not fetched. Phone (408) 899-2604."
+      ],
+      "distance_mi": 1.33,
+      "phone": "(408) 899-2604",
+      "coords_source": "usmenuguide listing geo"
+    },
+    {
+      "id": "L100",
+      "name": "Hong's Gourmet",
+      "city": "Saratoga",
+      "area": "Big Basin Way, downtown Saratoga",
+      "address": "14510 Big Basin Way, Ste 9, Saratoga, CA 95070",
+      "coords": null,
+      "cuisine": "Chinese",
+      "lunch_special": {
+        "name": "Lunch service (Yelp menu dishes $8-$37)",
+        "price_from": 8.0,
+        "price_to": 37.0,
+        "days": "unknown",
+        "window": "Tuesday 11:30 AM - 2:30 PM, 5:00 PM - 9:00 PM",
+        "includes": "Yelp menu dishes $8-$37; no lunch-only special identified."
+      },
+      "hours_tuesday": "11:30 AM - 2:30 PM, 5:00 PM - 9:00 PM",
+      "days_open": "Tuesday 11:30 AM - 2:30 PM / 5:00 - 9:00 PM (Yelp via search index); rest of week not captured",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Saratoga - not on the Cupertino return walk."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {
+            "label": "Yelp search - Hong's Gourmet Saratoga (address, Tue hours, menu prices)",
+            "url": "https://www.yelp.com/search?find_desc=Hong's+Gourmet&find_loc=Saratoga%2C+CA"
+          }
+        ],
+        "accessed": "2026-09-07"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/search?find_desc=Hong's+Gourmet&find_loc=Saratoga%2C+CA",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Hong's+Gourmet+14510+Big+Basin+Way+Saratoga"
+      },
+      "flags": [
+        "WEAK ROW: single-source hours/prices via the search index - verify by phone."
+      ],
+      "distance_mi": null
+    },
+    {
+      "id": "L101",
+      "name": "GOGA Restaurant",
+      "city": "Saratoga",
+      "area": "Big Basin Way, downtown Saratoga",
+      "address": "14443 Big Basin Way, Unit C, Saratoga, CA 95070",
+      "coords": [
+        37.2586086,
+        -122.0331341
+      ],
+      "cuisine": "Hawaiian / Asian fusion",
+      "lunch_special": {
+        "name": "Lunch (hours UNCERTAIN)",
+        "price_from": null,
+        "price_to": null,
+        "days": "unknown",
+        "window": "conflicted - see flags",
+        "includes": "Small family restaurant with a changing menu; no prices captured."
+      },
+      "hours_tuesday": "11:00 AM - 2:30 PM / 5:30 - 9:00 PM (Yelp) vs CLOSED Mon-Tue per map.contact - CONFLICT",
+      "days_open": "conflicting - Tuesday lunch unconfirmed",
+      "open_on_trip_date": false,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Tuesday hours unconfirmed - call (408) 656-8315 before considering."
+      },
+      "verification": {
+        "level": "conflicting",
+        "sources": [
+          {
+            "label": "Nextdoor - GOGA address/phone",
+            "url": "https://nextdoor.com/pages/indo-cafe/"
+          },
+          {
+            "label": "Map.contact - GOGA address/hours (conflicts with Yelp)",
+            "url": "https://map.contact/goga-saratoga-california"
+          }
+        ],
+        "accessed": "2026-09-07"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/search?find_desc=GOGA&find_loc=Saratoga%2C+CA",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=GOGA+14443+Big+Basin+Way+Saratoga"
+      },
+      "flags": [
+        "MATERIAL CONFLICT: Yelp-style hours vs closed-Mon-Tue - Tuesday lunch unconfirmed. open_on_trip_date set false until verified."
+      ],
+      "distance_mi": 3.75,
+      "phone": "(408) 656-8315",
+      "coords_source": "Nextdoor business geo"
     }
   ],
   "top_picks_for_tuesday_sept_8": [
     {
       "rank": 1,
       "id": "L03",
-      "why": "0.7 mi from the destination, official menu with a real lunch price ($13.99-$14.99 with a drink), open 11:15 AM-11:15 PM, and it is 3 minutes from the Stevens Creek & De Anza bus stop you arrive at in the morning."
+      "why": "0.7 mi from the destination, official menu with a real lunch price ($12.99-$14.99 with a drink), open 11:15 AM-11:15 PM, and it is 3 minutes from the Stevens Creek & De Anza bus stop you arrive at in the morning."
     },
     {
       "rank": 2,

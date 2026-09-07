@@ -5,37 +5,93 @@
   "origin": {
     "label": "Home",
     "address": "21st Ave & Judah St, San Francisco, CA",
-    "nearest_stop": "Judah St & 19th Ave (SFMTA stop 15200 eastbound / 15201 westbound)",
+    "nearest_stop": "Judah St & 19th Ave (SFMTA stop 15200 eastbound / 15199 westbound)",
     "walk_to_stop": "about 0.08 mi / 2 min (two 200 ft SF avenue blocks)"
   },
   "destination": {
     "label": "Destination",
     "address": "20387 Gillick Way, Cupertino, CA 95014",
-    "coords": [37.3128997, -122.0302984],
+    "coords": [
+      37.3128997,
+      -122.0302984
+    ],
     "coords_source": "OpenStreetMap building 377870770 / Redfin listing 1535551",
     "nearest_stops": [
-      {"name": "McClellan Rd & Felton Way (VTA)", "coords": [37.3155385, -122.0337250], "walk": "0.46 mi / 9 min (Valhalla pedestrian routing on OSM)"},
-      {"name": "Stevens Creek Blvd & South De Anza Blvd (VTA)", "coords": [37.3227293, -122.0314790], "walk": "0.87 mi / 18 min (Valhalla pedestrian routing on OSM)"},
-      {"name": "South De Anza Blvd & McClellan Rd (VTA, routes 25/51/55 northbound side)", "coords": [37.3150513, -122.0325230], "walk": "0.20 mi / 4 min"}
+      {
+        "name": "McClellan Rd & Felton Way (VTA)",
+        "coords": [
+          37.3155385,
+          -122.033725
+        ],
+        "walk": "0.46 mi / 9 min (Valhalla pedestrian routing on OSM)"
+      },
+      {
+        "name": "Stevens Creek Blvd & South De Anza Blvd (VTA)",
+        "coords": [
+          37.3227293,
+          -122.031479
+        ],
+        "walk": "0.87 mi / 18 min (Valhalla pedestrian routing on OSM)"
+      },
+      {
+        "name": "South De Anza Blvd & McClellan Rd (VTA, routes 25/51/55 northbound side)",
+        "coords": [
+          37.3150513,
+          -122.032523
+        ],
+        "walk": "0.20 mi / 4 min"
+      }
     ],
     "irregularity": "The address is a private single-family house inside a residential pocket. No VTA stop sits on Gillick Way, and the southbound direction of route 55 does not serve South De Anza Blvd south of Stevens Creek, so the outbound trip ends with a 0.87 mi walk. If you would rather shorten that walk, ride the 55 to De Anza College and come back north, or take a 25/51 (see flags)."
   },
   "constraints": [
-    {"rule": "Mandatory mode chain", "status": "satisfied", "detail": "N Judah (Muni) -> Caltrain 22nd St / SF terminal -> Caltrain to Sunnyvale -> VTA 55 to Cupertino. Mountain View was evaluated as the Caltrain alighting stop and lost (see the station-comparison table)."},
-    {"rule": "Earliest departure from home", "status": "satisfied", "detail": "5:10 AM walk-out, 5:15 AM N Judah Bus from Judah & 19th Ave. Nothing earlier exists on the N corridor before the 5:15 AM bus; the 91 Owl / N Owl windows end before any Caltrain departure is reachable."},
-    {"rule": "Home by 3:30 PM, target 2:30-3:00 PM", "status": "satisfied by recommended plan", "detail": "Recommended return lands home 2:42 PM. The last workable Caltrain arrival at the SF terminal is 2:16 PM (home ~3:18 PM). The 2:46 PM arrival breaks the 3:30 PM deadline and is shown as DO NOT RELY."},
-    {"rule": "Costs and times from official sources only", "status": "satisfied with 2 caveats", "detail": "Every fare and every posted departure/arrival time comes from sfmta.com, caltrain.com or vta.org. Caveats: (1) the N Bus 5:15 AM trip and the Caltrain minute-level times were read from the agencies' own live schedule pages, not from the print PDFs, because the Caltrain weekday PDF could not be downloaded from this environment; (2) a few Cupertino-side stop times are interpolated between published timepoints and are labelled as such."},
-    {"rule": "Board at Caltrain 22nd Street station", "status": "conflict - flagged", "detail": "The N Judah does not stop at 22nd Street. SFMTA's N Judah rail and N Bus both terminate/begin at the Caltrain platform at 4th & King (700 4th St), and Caltrain's own station pages list Muni N-Judah under the San Francisco station, not under 22nd Street. Both stations are Zone 1, so the fare is identical and every weekday southbound train that you board at the terminal also stops at 22nd St 4-5 minutes later. The tables below give both times."}
+    {
+      "rule": "Mandatory mode chain",
+      "status": "satisfied",
+      "detail": "N Judah (Muni) -> Caltrain 22nd St / SF terminal -> Caltrain to Sunnyvale -> VTA 55 to Cupertino. Mountain View was evaluated as the Caltrain alighting stop and lost (see the station-comparison table)."
+    },
+    {
+      "rule": "Earliest departure from home",
+      "status": "satisfied",
+      "detail": "5:10 AM walk-out, 5:15 AM N Judah Bus from Judah & 19th Ave. Nothing earlier exists on the N corridor before the 5:15 AM bus; the 91 Owl / N Owl windows end before any Caltrain departure is reachable."
+    },
+    {
+      "rule": "Home by 3:30 PM, target 2:30-3:00 PM",
+      "status": "satisfied by recommended plan",
+      "detail": "Recommended return lands home 2:42 PM. The last workable Caltrain arrival at the SF terminal is 2:16 PM (home ~3:18 PM). The 2:46 PM arrival breaks the 3:30 PM deadline and is shown as DO NOT RELY."
+    },
+    {
+      "rule": "Costs and times from official sources only",
+      "status": "satisfied with 2 caveats",
+      "detail": "Every fare and every posted departure/arrival time comes from sfmta.com, caltrain.com or vta.org. Caveats: (1) the N Bus 5:15 AM trip and the Caltrain minute-level times were read from the agencies' own live schedule pages, not from the print PDFs, because the Caltrain weekday PDF could not be downloaded from this environment; (2) a few Cupertino-side stop times are interpolated between published timepoints and are labelled as such."
+    },
+    {
+      "rule": "Board at Caltrain 22nd Street station",
+      "status": "conflict - flagged",
+      "detail": "The N Judah does not stop at 22nd Street. SFMTA's N Judah rail and N Bus both terminate/begin at the Caltrain platform at 4th & King (700 4th St), and Caltrain's own station pages list Muni N-Judah under the San Francisco station, not under 22nd Street. Both stations are Zone 1, so the fare is identical and every weekday southbound train that you board at the terminal also stops at 22nd St 4-5 minutes later. The tables below give both times."
+    }
   ],
   "decision_log": [
-    {"decision": "Use Sunnyvale Caltrain station instead of Mountain View", "reason": "From 20387 Gillick Way, Sunnyvale is reachable with one VTA ride (route 55, which Caltrain officially lists as a Sunnyvale station connection). Mountain View would require VTA 52 from El Monte & De Anza plus a 0.4 mi walk to the Mountain View Transit Center, and the Caltrain time saving (Sunnyvale 12:42 PM vs Mountain View 12:46 PM for the same northbound train, i.e. 4 minutes) is smaller than the extra bus/walk time."},
-    {"decision": "Ride the N Bus (surface) for the pre-subway window", "reason": "sfmta.com states the N Judah metro runs only during subway hours and tells riders to use the N Bus in between. The N Bus is the only N-judah service on the corridor at 5:15 AM, and it terminates at Townsend St & 5th St/Caltrain (stop 17957), a 2 min walk from the station lobby."},
-    {"decision": "Pay Caltrain as two one-way Zone 1-3 tickets instead of a day pass", "reason": "Caltrain's own page prices the 3-zone adult one-way at $8.50 and the 3-zone adult day pass at $17.00, so a round trip is a wash; the day pass only wins if a third ride is added."},
-    {"decision": "Skip the VTA-Caltrain Day Pass", "reason": "Caltrain's fare page states the combined VTA-Caltrain Day Pass costs the Caltrain day pass plus $7.50 ($24.50 for 3 zones), while the needed rides are $17.00 + 2 x $2.50 = $22.00."}
+    {
+      "decision": "Use Sunnyvale Caltrain station instead of Mountain View",
+      "reason": "From 20387 Gillick Way, Sunnyvale is reachable with one VTA ride (route 55, which Caltrain officially lists as a Sunnyvale station connection). Mountain View would require VTA 52 from El Monte & De Anza plus a 0.4 mi walk to the Mountain View Transit Center, and the Caltrain time saving (Sunnyvale 12:42 PM vs Mountain View 12:46 PM for the same northbound train, i.e. 4 minutes) is smaller than the extra bus/walk time."
+    },
+    {
+      "decision": "Ride the N Bus (surface) for the pre-subway window",
+      "reason": "sfmta.com states the N Judah metro runs only during subway hours and tells riders to use the N Bus in between. The N Bus is the only N-judah service on the corridor at 5:15 AM, and it terminates at Townsend St & 5th St/Caltrain (stop 17957), a 2 min walk from the station lobby."
+    },
+    {
+      "decision": "Pay Caltrain as two one-way Zone 1-3 tickets instead of a day pass",
+      "reason": "Caltrain's own page prices the 3-zone adult one-way at $8.50 and the 3-zone adult day pass at $17.00, so a round trip is a wash; the day pass only wins if a third ride is added."
+    },
+    {
+      "decision": "Skip the VTA-Caltrain Day Pass",
+      "reason": "Caltrain's fare page states the combined VTA-Caltrain Day Pass costs the Caltrain day pass plus $7.50 ($24.50 for 3 zones), while the needed rides are $17.00 + 2 x $2.50 = $22.00."
+    }
   ],
   "verification": {
     "accessed": "2026-09-07",
     "method": "Each row links to the page it was read from. Rows read from a live agency schedule page are marked 'official-live'. Rows produced by subtracting/adding published times are marked 'derived'. Rows between two published timepoints are marked 'interpolated'. Walk distances are computed on OpenStreetMap data with the public Valhalla routing service and are marked 'estimate' because they are not agency data.",
-    "review_status": "Ready for manual review. 9 open flags, listed in data/flags.json and on the Flags tab."
+    "review_status": "Ready for manual review. 23 open flags (12 transit + 11 lunch), listed in data/flags.json and on the Flags tab."
   }
 }

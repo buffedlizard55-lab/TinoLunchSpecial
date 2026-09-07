@@ -48,7 +48,7 @@
       "label": "Muni fares",
       "url": "https://www.sfmta.com/getting-around/muni/fares",
       "fetch_status": "ok",
-      "used_for": "Single Ride $2.85 / cash $3.00 / 120 min; Day Pass $5.70; Monthly $86; youth 18 and under free; $2.85 inter-agency credit when transferring to Muni within 2 hours"
+      "used_for": "Single Ride $2.85 / cash $3.00 / 120 min; Day Pass $5.70; Monthly $86; youth 18 and under free; $0.50 inter-agency credit when transferring TO Muni from Caltrain within 1 hour; MuniMobile Single Ride passes discontinued Sep 1 2026"
     },
     {
       "id": "S7",
@@ -96,7 +96,7 @@
       "label": "Caltrain fares",
       "url": "https://www.caltrain.com/fares",
       "fetch_status": "ok",
-      "used_for": "adult one-way $4.00/1 zone, $6.25/2, $8.50/3, $10.75/4, $13.00/5, $15.25/6; day pass $8.00/$12.50/$17.00/$21.50/$26.00/$30.50; monthly 3-zone $204; youth $1/$2/$24; 4-hour one-direction one-way validity; Clipper, contactless tap on and off, ticket machines; VTA-Caltrain Day Pass = Caltrain day pass + $7.50, valid to Zone 3"
+      "used_for": "adult one-way $4.00/1 zone, $6.25/2, $8.50/3, $10.75/4, $13.00/5, $15.25/6; day pass $8.00/$12.50/$17.00/$21.50/$26.00/$30.50; monthly 3-zone $204; youth $1 flat all zones; 4-hour one-direction one-way validity; Clipper, contactless tap on and off, ticket machines; VTA-Caltrain Day Pass = Caltrain day pass + $7.50, valid to Zone 3"
     },
     {
       "id": "S13",
@@ -121,7 +121,7 @@
       "label": "Route 55 weekday schedule PDF (timepoint tables)",
       "url": "https://www.vta.org/sites/default/files/route_schedule_pdfs/current/route_55/route_55_schedule.pdf",
       "fetch_status": "ok",
-      "used_for": "southbound from Sunnyvale TC 5:41, 6:11, 6:44, 7:19, 7:40, 7:55, 8:04, 8:34, 9:05, 9:35, 9:59, 10:31 AM, 11:01, 11:31, 12:04, 12:34 PM, 1:04, 1:34, 2:04 PM; timepoints Sunnyvale-Saratoga & El Camino, & Fremont, De Anza & Homestead, Stelling & Stevens Creek; northbound Stelling & Stevens Creek 12:01, 12:31, 12:59, 1:29, 1:59, 2:29, 2:59, 3:24, 3:49 PM with Sunnyvale TC arrivals 12:25, 12:55, 1:31, 2:01 PM"
+      "used_for": "southbound from Sunnyvale TC 5:41, 6:11, 6:44, 7:19, 7:40, 7:55, 8:04, 8:34, 9:05, 9:35, 9:59, 10:31 AM, 11:01, 11:31, 12:04, 12:34 PM, 1:04, 1:34, 2:04 PM; timepoints Sunnyvale-Saratoga & El Camino, & Fremont, De Anza & Homestead, Stelling & Stevens Creek; northbound Stelling & Stevens Creek 12:01, 12:31, 12:59, 1:29, 1:59, 2:29, 2:59, 3:24, 3:49 PM with Sunnyvale TC arrivals 12:25, 12:55, 1:31, 2:01 PM; re-verified 2026-09-07: SB Sunnyvale TC 7:40 -> De Anza & Homestead 7:55 -> Stelling 8:03, TC 9:59 -> Stelling 10:20; NB Stelling 11:31 -> TC 11:55 (early-backup row)"
     },
     {
       "id": "S16",
@@ -242,6 +242,62 @@
       "url": "https://restaurants.bonchon.com/locations/ca/sunnyvale/572-e-el-camino-real",
       "fetch_status": "ok",
       "used_for": "Hours 11:00-21:00 daily; Lunch Specials section without dollar prices"
+    },
+    {
+      "id": "S31",
+      "agency": "Caltrain",
+      "label": "Regional transfer discounts ($0.50 TO Muni only)",
+      "url": "https://www.caltrain.com/fares/regional-transfer-discounts",
+      "fetch_status": "ok",
+      "used_for": "$0.50 credit TO Muni within 1 hr of Caltrain tag-off (tag on/off, Clipper cash value or monthly incl. Zone 1); VTA/SamTrans credits need a monthly pass; no Muni-to-Caltrain credit exists"
+    },
+    {
+      "id": "S32",
+      "agency": "SFMTA",
+      "label": "Adult single-ride fares + MuniMobile Single Ride discontinuation",
+      "url": "https://www.sfmta.com/fares/single-ride-adult-ages-19-64",
+      "fetch_status": "ok",
+      "used_for": "$2.85 Clipper/contactless, $3.00 cash, 120-min transfer; MuniMobile Single Ride passes discontinued Sep 1 2026"
+    },
+    {
+      "id": "S33",
+      "agency": "Yelp",
+      "label": "Batch-3 Yelp pages (hours/addresses/phones)",
+      "url": "https://www.yelp.com/biz/pho-lyfe-sunnyvale-2",
+      "fetch_status": "ok via search index",
+      "used_for": "day-by-day hours, addresses, phones for Pho Lyfe, Cam Hung, Home Eat SC, Dusita, Il Fornaio, Falafel's, Breakfast Club, TGI's, Willow Street, Super Duper, Bywater, The Post, Urfa, Cetrella, Kongunadu, Clara's Junction, Diner of LG, Local Union 271, Kakaroto"
+    },
+    {
+      "id": "S34",
+      "agency": "Third party (not used for prices)",
+      "label": "Batch-3 restaurantji pages (hours/addresses)",
+      "url": "https://www.restaurantji.com/ca/sunnyvale/thai-spoons-/",
+      "fetch_status": "ok",
+      "used_for": "hours/address cross-checks for Thai Spoons, First Wok, Asia Village, Dumpling Depot, 10 Butchers, Dusita, TGI's, Oak & Rye, La Esquina, Italian Brothers, Super Duper, The Post, Urfa, Aurum, Cetrella, Pacific Catch"
+    },
+    {
+      "id": "S35",
+      "agency": "Restaurant (official)",
+      "label": "Batch-3 official restaurant sites (lunch prices, hours, addresses)",
+      "url": "https://gingercafe.net/menus/lunchmenu/",
+      "fetch_status": "ok",
+      "used_for": "lunch prices/hours/address from gingercafe.net, clarasjunction.com, citypizzacampbell.com, tonyandalbaspizza.com, lotusthaibistro.com, labohemepaloalto.com, thepastaria.com, laesquinamexlosgatos.com, thebywaterca.com, italianbrothers.restaurant, bcmidtown.com, dusitathaicuisine.com menu PDF, dumplingdepot-s.com, eriksdelicafe.com, mastrosrestaurants.com, mediterraneangrillhouse.com, dongiovannis.com, soongsoong.com, freedomburrito.com, terunpizza.com (conflict), ludwigsmv.com (conflict)"
+    },
+    {
+      "id": "S36",
+      "agency": "Third party (not used for prices)",
+      "label": "Batch-3 directories and press (hours/geo cross-checks)",
+      "url": "https://restaurantguru.com/Asia-Village-Sunnyvale",
+      "fetch_status": "ok",
+      "used_for": "restaurantguru, wheree, Yellow Pages, Tripadvisor, corner.inc, Toast ordering, Chowbus, smorefood, zmenu, Slice, usmenuguide, showmelocal, Nextdoor, map.contact, MV Voice (Toki $8.95 bento), Palo Alto Online (Ludwig's)"
+    },
+    {
+      "id": "S37",
+      "agency": "OpenTable",
+      "label": "Batch-3 OpenTable menu/hours blocks",
+      "url": "https://www.opentable.com/r/the-bywater-los-gatos",
+      "fetch_status": "ok via search index",
+      "used_for": "menu price bands ($7-$33.95 Local Union 271, $21-$27 The Post - both flagged for re-verification) and the Bywater Lunch Special note"
     }
   ],
   "dead_ends": [

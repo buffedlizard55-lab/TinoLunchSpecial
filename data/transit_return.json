@@ -21,7 +21,7 @@
       "arrive_home": "about 2:40 PM",
       "total_time_min": 170,
       "cash_cost_usd": 13.85,
-      "clipper_cost_usd": 11.0,
+      "clipper_cost_usd": 13.35,
       "legs": [
         {
           "seq": 1,
@@ -144,12 +144,12 @@
           "operator": "SFMTA",
           "line": "N Judah metro (light rail) westbound",
           "from": "King St & 4th St/Caltrain (stop 15240)",
-          "to": "Judah St & 19th Ave (stop 15201)",
+          "to": "Judah St & 19th Ave (stop 15199)",
           "depart": "1:56 PM",
           "arrive": "2:38 PM",
           "travel_min": 42,
           "fare_usd": 2.85,
-          "fare_note": "Single ride $2.85 (or $3.00 cash). With Clipper or a contactless card used to tap off Caltrain, Muni's inter-agency transfer credit takes $2.85 off, so this ride is $0.00 if tapped within 2 hours.",
+          "fare_note": "Single ride $2.85 (or $3.00 cash). With the same Clipper/contactless card used to tag off Caltrain, the $0.50 inter-agency transfer credit applies, so this ride is $2.35 if tapped within 1 hour.",
           "verified": "official-live",
           "note": "Westbound departures from King St & 4th St in the window that matters: 1:20 (-> 2:02), 1:32 (-> 2:14), 1:44 (-> 2:26), 1:56 (-> 2:38), 2:08 (-> 2:50), 2:20 (-> 3:02), 2:32 (-> 3:14), 2:45 (-> 3:27), 2:57 (-> 3:39). The 1:44 PM trip leaves before the 12:42 PM Caltrain arrives at 1:46 PM, so 1:56 PM is the usable connection.",
           "sources": [
@@ -161,7 +161,7 @@
             {
               "label": "SFMTA - Muni fares",
               "url": "https://www.sfmta.com/getting-around/muni/fares",
-              "verifies": "$2.85 single ride, $3.00 cash, day pass $5.70, and the $2.85 inter-agency transfer credit onto Muni within 2 hours"
+              "verifies": "$2.85 single ride, $3.00 cash, day pass $5.70, and the $0.50 inter-agency transfer credit onto Muni within 1 hour of tagging off Caltrain"
             }
           ],
           "flags": [
@@ -173,7 +173,7 @@
           "mode": "Walk",
           "operator": "-",
           "line": "Judah St & 19th Ave to home",
-          "from": "Judah St & 19th Ave (stop 15201)",
+          "from": "Judah St & 19th Ave (stop 15199)",
           "to": "21st Ave & Judah St (home)",
           "depart": "2:38 PM",
           "arrive": "2:40 PM",
@@ -185,7 +185,7 @@
             {
               "label": "SFMTA - N Judah route page",
               "url": "https://www.sfmta.com/routes/n-judah",
-              "verifies": "stop 15201 Judah St & 19th Ave"
+              "verifies": "stop 15199 Judah St & 19th Ave"
             }
           ],
           "flags": []
@@ -206,7 +206,7 @@
       "arrive_home": "about 3:18 PM",
       "total_time_min": 178,
       "cash_cost_usd": 13.85,
-      "clipper_cost_usd": 11.0,
+      "clipper_cost_usd": 13.35,
       "legs": [
         {
           "seq": 1,
@@ -296,7 +296,7 @@
           "arrive": "3:14 PM",
           "travel_min": 42,
           "fare_usd": 2.85,
-          "fare_note": "$2.85, or $0.00 with the Clipper inter-agency credit.",
+          "fare_note": "$2.85, or $2.35 with the $0.50 Clipper inter-agency credit (same card, within 1 hour of the Caltrain tag-off).",
           "verified": "official-live",
           "note": "The 2:20 PM trip is only 4 minutes after the train arrives, which is not a usable transfer - wait for 2:32 PM.",
           "sources": [
@@ -325,7 +325,7 @@
             {
               "label": "SFMTA - N Judah route page",
               "url": "https://www.sfmta.com/routes/n-judah",
-              "verifies": "stop 15201"
+              "verifies": "stop 15199"
             }
           ],
           "flags": []
@@ -344,7 +344,7 @@
       "arrive_home": "about 3:43 PM - misses the deadline",
       "total_time_min": 168,
       "cash_cost_usd": 13.85,
-      "clipper_cost_usd": 11.0,
+      "clipper_cost_usd": 13.35,
       "legs": [
         {
           "seq": 1,
@@ -465,7 +465,7 @@
           "arrive": "3:39 PM",
           "travel_min": 42,
           "fare_usd": 2.85,
-          "fare_note": "$2.85.",
+          "fare_note": "$2.85 ($2.35 with the $0.50 credit).",
           "verified": "official-live",
           "note": "The 2:45 PM trip leaves one minute before the train arrives, so 2:57 PM is the only connection, and it lands at Judah & 19th Ave at 3:39 PM - after the 3:30 PM deadline.",
           "sources": [
@@ -482,7 +482,7 @@
           "mode": "Walk",
           "operator": "-",
           "line": "Judah St & 19th Ave to home",
-          "from": "Judah St & 19th Ave (stop 15201)",
+          "from": "Judah St & 19th Ave (stop 15199)",
           "to": "21st Ave & Judah St (home)",
           "depart": "3:39 PM",
           "arrive": "about 3:43 PM",
@@ -494,7 +494,7 @@
             {
               "label": "SFMTA - N Judah route page (stop list)",
               "url": "https://www.sfmta.com/routes/n-judah",
-              "verifies": "stop 15201 at Judah & 19th Ave"
+              "verifies": "stop 15199 at Judah & 19th Ave"
             }
           ],
           "flags": [
@@ -510,6 +510,16 @@
     }
   ],
   "option_table": [
+    {
+      "leave_gillick": "11:27 AM",
+      "vta_55_nb": "about 11:36 AM at McClellan & Felton (11:31 AM from Stelling & Stevens Creek)",
+      "arrives_sunnyvale_tc": "11:55 AM",
+      "caltrain_nb": "12:12 PM from Sunnyvale",
+      "arrives_sf_terminal": "1:16 PM",
+      "n_judah_wb": "1:32 PM",
+      "home": "about 2:16 PM",
+      "status": "EARLY BACKUP - needs lunch done by about 11:20 AM; verified 2026-09-07"
+    },
     {
       "leave_gillick": "11:50 AM",
       "vta_55_nb": "about 12:06 PM at McClellan & Felton (12:01 PM from Stelling & Stevens Creek)",
@@ -553,7 +563,7 @@
   ],
   "notes": [
     "The morning peak on Caltrain starts after this return window, so the 12:42 PM / 1:12 PM locals are off-peak, midday trains at 30-minute frequency; the rush-hour risk is concentrated in the Muni ride, which is why the plan keeps a 10-minute Muni buffer and a 17-minute station buffer.",
-    "Earlier northbound route 55 trips (mid-morning) exist on the VTA weekday sheet but their stop-by-stop times were not verified in this pass, so the earliest option shown is the 12:01 PM trip from Stelling & Stevens Creek.",
+    "The 11:31 AM northbound trip from Stelling & Stevens Creek (Sunnyvale TC 11:55 AM) was verified on the VTA weekday sheet on 2026-09-07 and is shown as the early-backup row above; earlier mid-morning trips exist but their stop times were not verified.",
     "Do not get off at 22nd Street on the way home: the N Judah stop is King St & 4th St at the SF terminal, 6 minutes further north. 22nd Street times are shown only for reference against the requested mode chain.",
     "The one-line option table and the plan tables use the same 9-minute walk from 20387 Gillick Way to McClellan Rd & Felton Way; where the option table shows an earlier 'leave the house' time it is deliberately padded, and the plan table shows the minimum that still gets to the bay before the bus."
   ]
