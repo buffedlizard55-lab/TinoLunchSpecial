@@ -202,6 +202,22 @@
       "url": "https://nominatim.openstreetmap.org/",
       "fetch_status": "ok",
       "used_for": "20387 Gillick Way coordinates (37.3128997, -122.0302984) and confirmation that it is a private residence with no transit stop on the street"
+    },
+    {
+      "id": "S26",
+      "agency": "Restaurant (official)",
+      "label": "Red Hot Wok official site - complete menu with prices, address, phone and weekly hours",
+      "url": "https://www.redhotwokcupertino.com/",
+      "fetch_status": "ok",
+      "used_for": "proof that Red Hot Wok publishes no lunch special (a la carte $13.95-$22.95), plus its own Tue hours 11:00-14:15 / 17:00-21:15 and Monday closure - supersedes the aggregator $17.00 figure seen earlier"
+    },
+    {
+      "id": "S27",
+      "agency": "Yelp",
+      "label": "Red Hot Wok Cupertino (10074 E Estates Dr, 4.1 stars, 1.5k reviews)",
+      "url": "https://www.yelp.com/biz/red-hot-wok-cupertino",
+      "fetch_status": "ok via search index",
+      "used_for": "address/phone cross-check and the 2:00 PM lunch-close variant that conflicts with the restaurant's own 2:15 PM"
     }
   ],
   "dead_ends": [

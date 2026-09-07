@@ -1,7 +1,7 @@
 {
   "search_protocol": {
     "requirement": "Search for 20 new entries before adding anything to the master list; verify line by line; keep official/review links for manual review.",
-    "queries_run": 26,
+    "queries_run": 28,
     "candidates_found": 53,
     "added_to_master": 27,
     "rejected_or_deferred": 26,
@@ -24,7 +24,11 @@
       "listing": "hours/address from a directory listing (Yelp/TripAdvisor/OpenTable/Zagat-class); price not published",
       "conflicting": "two sources disagree; both values shown",
       "unverified": "no price or no hours could be confirmed - listed so you can check it in one click, do not budget for it"
-    }
+    },
+    "notes": [
+      "Query mix: 26 search queries for lunch specials by city and by dish, plus 2 targeted address/hours resolutions (Red Hot Wok, Pho Ha Noi) that came out of the validator rejecting placeholder rows.",
+      "Two rows were rewritten during the check pass because the validator refused to publish an address it could not support: Red Hot Wok now cites the restaurant's own full menu (no lunch special exists) and Pho Ha Noi cites Tripadvisor/Yelp/its own site for address and hours."
+    ]
   },
   "entries": [
     {
@@ -98,8 +102,8 @@
         "window": "11:30 AM - 4:00 PM last seating",
         "includes": "2 BBQ items $18.95 or 3 BBQ items $22.95, served with miso soup, lunch salad and rice; bowls $13.95-$16.95; ramen sets $14.95; value course for 2 $75"
       },
-      "hours_tuesday": "11:30 AM - 9:30 PM (last seating)",
-      "days_open": "Mon-Thu 11:30-21:30, Fri-Sat 11:30-22:00, Sun 11:30-21:30",
+      "hours_tuesday": "11:30 AM - 9:30 PM",
+      "days_open": "Mon-Thu 11:30-21:30, Fri-Sat 11:30-22:00, Sun 11:30-21:30 (per the location page)",
       "open_on_trip_date": true,
       "fits_return_bus": {
         "ok": true,
@@ -282,44 +286,51 @@
       "name": "Red Hot Wok",
       "city": "Cupertino",
       "area": "Cupertino Plaza",
-      "address": "per Yelp: 10074 E Estates Dr? - see flag",
+      "address": "10074 E Estates Dr",
       "coords": null,
-      "cuisine": "Chinese, Taiwanese",
+      "cuisine": "Chinese / Taiwanese",
       "lunch_special": {
-        "name": "Lunch special plates",
-        "price_from": 17.0,
-        "price_to": null,
-        "days": "Tue-Sun (closed Monday)",
-        "window": "11:00 AM - 2:00 PM",
-        "includes": "reviewer: 'the lunch special offers good variety and a lot of food for the price point of $17'"
+        "name": "No lunch special published - full a la carte menu at lunch",
+        "price_from": 13.95,
+        "price_to": 21.95,
+        "days": "n/a - no discounted lunch item exists on the published menu",
+        "window": "lunch service 11:00 AM - 2:15 PM",
+        "includes": "Cheapest single dish on the official menu is the House Special Ground Pork Rice Bowl $13.95; fried rice and noodle plates $15.45-$17.45; sizzling hot plates $17.95-$21.95. Price range here is the menu band for lunch-orderable entrees, not a special.",
+        "source_status": "official menu read in full - no lunch special section exists"
       },
-      "hours_tuesday": "11:00 AM - 2:00 PM, 5:00 PM - 8:30 PM",
-      "days_open": "Mon closed; Tue-Thu 11:00-14:00 & 17:00-20:30; Fri-Sat 11:00-14:00 & 17:00-21:00; Sun 11:00-14:00 & 17:00-20:30",
+      "hours_tuesday": "11:00 AM - 2:15 PM (the restaurant's own site) / Yelp shows 11:00 AM - 2:00 PM",
+      "days_open": "closed Monday; Tue-Thu 11:00-14:15 and 17:00-21:15; Fri-Sat 11:00-14:15 and 17:00-21:45; Sun 11:00-14:15 and 17:00-21:15",
       "open_on_trip_date": true,
       "fits_return_bus": {
         "ok": "tight",
-        "note": "Lunch ends 2:00 PM, but the 12:06 PM return bus means you must be done by 11:50 AM. If you want the full lunch window, use the 12:36 PM / Plan R2 chain (leave at 12:20 PM)."
+        "why": "lunch window ends 14:15 so the timing is fine, but the walk back from E Estates Dr to a route 55 stop is long enough that the 11:50 AM departure becomes the binding constraint"
       },
       "verification": {
-        "level": "review",
+        "level": "official (menu, prices, address and hours from redhotwokcupertino.com)",
         "sources": [
           {
-            "label": "Yelp - Red Hot Wok (address, phone, weekly hours, 4.1 stars / 1.5k reviews)",
+            "label": "Red Hot Wok official site - full menu with prices, address and open hours",
+            "url": "https://www.redhotwokcupertino.com/"
+          },
+          {
+            "label": "Yelp listing (hours, 4.1 stars from 1.5k reviews, Monday closed)",
             "url": "https://www.yelp.com/biz/red-hot-wok-cupertino"
           }
         ],
         "accessed": "2026-09-07"
       },
       "review_links": {
-        "yelp": "https://www.yelp.com/biz/red-hot-wok-cupertino",
-        "google_maps": "https://www.google.com/maps/search/?api=1&query=Red+Hot+Wok+Cupertino"
+        "yelp": "https://www.yelp.com/biz/red-hot-wok-cupertino"
       },
       "flags": [
-        "The address string returned by the Yelp snippet ('10074 E Estates Dr') does not match how this restaurant is usually cited; open the Yelp or Google link and confirm the address before navigating.",
-        "No published menu found, so the $17 figure is a reviewer's total, not an advertised special price.",
-        "Phone (408) 996-2999."
+        "VERIFIED NEGATIVE: no lunch special. The $17.00 figure that appeared in an earlier search pass was an aggregator price for a regular entree and has been removed - the restaurant's own menu is the authority.",
+        "Hours conflict: the official site says lunch ends 2:15 PM, Yelp says 2:00 PM. Either way a 11:15 AM seating clears in time for the 11:50 AM walk out.",
+        "Closed Monday, open Tuesday - fine for Sept 8",
+        "10074 E Estates Dr is a 2.0 mi detour southeast of 20387 Gillick Way (about 40 min each way on foot) - only worth it with a car or a VTA ride, so treat this as a 'if you have a car' row"
       ],
-      "distance_mi": null
+      "distance_mi": null,
+      "zip": "95014",
+      "phone": "(408) 996-2999"
     },
     {
       "id": "L07",
