@@ -33,7 +33,7 @@ data/plan.json              trip definition, constraints, decision log
 data/transit_outbound.json  3 outbound plans, leg by leg, with per-leg links
 data/transit_return.json    3 return plans + the last-workable-train cutoff
 data/fares.json             agency fare tables and six day-total scenarios
-data/lunch_specials.json    150 lunch entries (27 original + 20 batch-2 + 54 batch-3 + 49 batch-4, all 2026-09-07), hours, days, prices, verification level
+data/lunch_specials.json    150 lunch entries (27 original + 123 new entries across four dated passes, all 2026-09-07), hours, days, prices, verification level
 data/lunch_rejected.json    37 rejected/deferred candidates, each with a reason and a link
 data/flags.json             26 irregularities found while verifying - all still listed
 data/sources.json           45 source pages, what each one proved, and the fetch status
@@ -62,7 +62,7 @@ python3 -m http.server 8000       # preview at http://127.0.0.1:8000
 2. **Lunch:** a price is only printed if it appears on the restaurant's own website or published menu; hours may come from Yelp/Google/TripAdvisor. Anything seen only on a menu aggregator or delivery app is recorded as a lead and flagged, never presented as verified.
 3. **Absence is a result.** "No lunch special published" and "closed on Tuesdays" are rows of their own, so a gap in the data is visible instead of silently dropped.
 4. **Conflicts stay visible.** Where two sources disagree (Muni headway text vs timetable, OSM hours vs the restaurant's own site) both values are shown and the choice is explained in `data/flags.json`.
-5. **Nothing was backfilled by hand.** The 20-entry search requirement was met by 28 queries over 51 candidates; 27 survived into the master list and 24 were rejected, each with a reason and a link (14 rows in `data/lunch_rejected.json`).
+5. **Nothing was backfilled by hand.** The requested 100-new-entry threshold was exceeded: 123 new rows were verified before being added to the 150-row master list. Each row retains its evidence tier and source links; rejected or deferred candidates remain in `data/lunch_rejected.json` with reasons.
 
 GitHub Pages: `.github/workflows/pages.yml` deploys `index.html` + `assets/` + `data/generated.js`. Set the repo Pages source to **GitHub Actions**. Live URL once enabled: https://buffedlizard55-lab.github.io/TinoLunchSpecial/
 

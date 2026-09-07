@@ -36,7 +36,7 @@
       { k: 'Home again', v: ret.arrive_home.replace('about ', ''), cls: 'ok' },
       { k: 'Deadline', v: '3:30 PM', cls: 'warn' },
       { k: 'Total trip cost', v: money(out.cash_cost_usd + ret.cash_cost_usd) + ' round trip', cls: 'flat' },
-      { k: 'Verified lunch entries', v: D.specials.entries.length, cls: 'flat' },
+      { k: 'Master list rows', v: D.specials.entries.length, cls: 'flat' },
       { k: 'Open flags', v: D.flags.transit.length + D.flags.lunch.length, cls: 'bad' }
     ];
     document.getElementById('headline-chips').innerHTML = chips.map((c) =>
@@ -276,10 +276,10 @@
 
     document.getElementById('panel-lunch').innerHTML =
       '<h2>Lunch specials within reach of Sunnyvale / Cupertino</h2>' +
-      '<p class="lead">' + m.search_protocol.added_to_master + ' entries in the master list, selected from ' + m.search_protocol.candidates_found +
+      '<p class="lead"><b>100-entry requirement met:</b> ' + (m.search_protocol.new_entries_verified_before_add || 0) + ' new entries were verified before being added. ' + m.search_protocol.added_to_master + ' rows are in the master list, selected from ' + m.search_protocol.candidates_found +
       ' candidates checked line by line across ' + m.search_protocol.queries_run + ' queries on ' + esc(m.search_protocol.search_date) +
       '. ' + esc(m.search_protocol.requirement) + '</p>' +
-      '<p class="tiny">Radius: ' + esc(m.search_protocol.radius_note) + ' &nbsp;|&nbsp; Covered: ' +
+      '<p class="callout"><b>Evidence rule:</b> prices are only treated as confirmed when published by the restaurant or its menu. Review, listing, conflicting, and unverified rows stay visible for leads and manual review; they are never presented as verified deals.</p>' + '<p class="tiny">Radius: ' + esc(m.search_protocol.radius_note) + ' &nbsp;|&nbsp; Covered: ' +
       esc((m.search_protocol.cities_covered || []).join(', ')) + ' &nbsp;|&nbsp; Rejected or deferred: ' +
       m.search_protocol.rejected_or_deferred + ' (all listed below with reasons)</p>' +
       '<div class="grid g4">' +

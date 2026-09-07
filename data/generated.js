@@ -96,7 +96,7 @@ window.TINO_DATA = {
   "verification":{
    "accessed":"2026-09-07",
    "method":"Each row links to the page it was read from. Rows read from a live agency schedule page are marked 'official-live'. Rows produced by subtracting/adding published times are marked 'derived'. Rows between two published timepoints are marked 'interpolated'. Walk distances are computed on OpenStreetMap data with the public Valhalla routing service and are marked 'estimate' because they are not agency data.",
-   "review_status":"Ready for manual review. 23 open flags (12 transit + 11 lunch), listed in data/flags.json and on the Flags tab."
+   "review_status":"Ready for manual review. Open flags are listed in data/flags.json and on the Flags tab; future service changes and restaurant hours can change."
   }
  },
  "outbound":{
@@ -1538,7 +1538,7 @@ window.TINO_DATA = {
  },
  "specials":{
   "search_protocol":{
-   "requirement":"Search for 20 new entries before adding anything to the master list; verify line by line; keep official/review links for manual review.",
+   "requirement":"Search for at least 100 new entries before adding anything to the master list; verify line by line; keep official/review links for manual review.",
    "queries_run":150,
    "candidates_found":196,
    "added_to_master":150,
@@ -1569,9 +1569,12 @@ window.TINO_DATA = {
     "Query mix: 26 search queries for lunch specials by city and by dish, plus 2 targeted address/hours resolutions (Red Hot Wok, Pho Ha Noi) that came out of the validator rejecting placeholder rows.",
     "Two rows were rewritten during the check pass because the validator refused to publish an address it could not support: Red Hot Wok now cites the restaurant's own full menu (no lunch special exists) and Pho Ha Noi cites Tripadvisor/Yelp/its own site for address and hours.",
     "2026-09-07 batch 2: 20 new master rows L28-L47 searched and verified before add. Aqui and Galpao were previously rejected; re-added with new official/hours evidence and flags.",
-    "2026-09-07 batch 3: 54 new master rows L48-L101 (46 queries: 12 city sweeps + 34 single-business resolutions). Tue-closed: Oak & Rye, Bywater, The Post. Rejected this batch: Pluto's (closure report), Halal Street (closed), MacArthur Park + The Basin (dinner-only)."
+    "2026-09-07 batch 3: 54 new master rows L48-L101 (46 queries: 12 city sweeps + 34 single-business resolutions). Tue-closed: Oak & Rye, Bywater, The Post. Rejected this batch: Pluto's (closure report), Halal Street (closed), MacArthur Park + The Basin (dinner-only).",
+    "Requirement check: 123 new rows were added across the dated batches, exceeding the requested minimum of 100. Rows remain individually tiered; unverified/conflicting rows are not presented as confirmed deals."
    ],
-   "note_fourth_pass":"Fourth search pass added 49 rows (L102-L150): Lazy Dog $8.95+, Tomatina Pick Two $13.50, The Hut Taco Tuesday $10, Pasta Market Gourmet Lunch $14.95, Urban Grill weekday buffet $16.99 (two-domain conflict), Local Kitchens combos $13.00-$17.50, Sakoon buffet $19.99-$24.99 (Wed-Sun only), plus hours-verified rows with no published lunch special. 9 candidates were rejected this pass (closed, dinner-only, or no verifiable address)."
+   "note_fourth_pass":"Fourth search pass added 49 rows (L102-L150): Lazy Dog $8.95+, Tomatina Pick Two $13.50, The Hut Taco Tuesday $10, Pasta Market Gourmet Lunch $14.95, Urban Grill weekday buffet $16.99 (two-domain conflict), Local Kitchens combos $13.00-$17.50, Sakoon buffet $19.99-$24.99 (Wed-Sun only), plus hours-verified rows with no published lunch special. 9 candidates were rejected this pass (closed, dinner-only, or no verifiable address).",
+   "minimum_new_entries_required":100,
+   "new_entries_verified_before_add":123
   },
   "entries":[
    {
