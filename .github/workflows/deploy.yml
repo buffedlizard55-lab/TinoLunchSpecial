@@ -2,7 +2,8 @@ name: Deploy GitHub Pages
 
 on:
   push:
-    branches: [main]
+    # main is the default branch; the arena/* branch is where this session's work lands.
+    branches: [main, "arena/**"]
   workflow_dispatch:
 
 permissions:
