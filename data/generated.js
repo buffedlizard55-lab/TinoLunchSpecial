@@ -14496,11 +14496,11 @@ window.TINO_DATA = {
     "id":"FLAG-14",
     "severity":"info",
     "title":"Transit fares re-checked 2026-09-07; Caltrain $8.50 now triple-confirmed",
-    "what_we_found":"SFMTA and VTA official fare pages re-fetched 2026-09-07 (all figures stand). caltrain.com/fares renders its fare table via JavaScript, so the $8.50 adult 3-zone one-way is confirmed three other official ways: (1) the Board-adopted fare policy (base $4.00 since 7/1/2025, +$2.25 per extra zone, no base increase until 7/1/2027) prices 3 zones at exactly $8.50; (2) Caltrain's indexed fare page text prices the adult 3-zone Day Pass at $17.00 (2 x one-way); (3) the Jan 1 2026 elimination of the 55-cent Clipper discount aligned ticket-machine, app, Clipper and contactless prices, so there is no $10 ticket-machine fare. This review also corrected a $10.00 ticket-machine claim in the all-cash scenario to $8.50 (cash total $31.00 -> $28.00).",
-    "what_we_did":"Fixed the all-cash total in fares.json and recorded the three official confirmations in sources.json (S54-S56).",
-    "link":"https://www.caltrain.com/fares",
+    "what_we_found":"SFMTA and VTA official fare pages re-fetched 2026-09-07 (all figures stand). caltrain.com/fares renders its fare table via JavaScript, so the $8.50 adult 3-zone one-way is confirmed four other official ways: (1) the fare formula (base $4.00 + $2.25 per extra zone) prices 3 zones at exactly $8.50; (2) the Dec 4 2025 board deck shows the zone upgrade at $2.25 with the next increase rescheduled from 7/1/2026 to 1/1/2027, and confirms the FY26 structure (Clipper-discount removal, base $4.00) was adopted 11/6/2025 and went live 1/1/2026 (S54); (3) Caltrain's indexed fares-page text prices the adult 3-zone Day Pass at $17.00 (2 x one-way); (4) the Jan 1 2026 elimination of the 55-cent Clipper discount aligned ticket-machine, app, Clipper and contactless prices, so there is no $10 ticket-machine fare (S55). A current third-party mirror of the fare chart (effective 1/1/2026, page updated Aug 2026) shows the same $8.50 / $17.00 / $15.25-max figures (S56, corroboration only). This review corrected a $10.00 ticket-machine claim in the all-cash scenario to $8.50 (cash total $31.00 -> $28.00). Caveat: the Dec 4 2025 board vote adopting the FY27-30 January-1st schedule was not directly confirmed (no minutes found); the conclusion rests on the current fares-page text plus the current tables.",
+    "what_we_did":"Kept $8.50 / $17.00 / $28.00 cash total; registered S54-S56; re-check the fares page before travel since the table itself is JS-rendered.",
+    "link":"https://www.caltrain.com/media/36182/download and https://www.caltrain.com/fares",
     "rows":[],
-    "link_label":"open the agency page"
+    "link_label":"Dec 2025 board fare deck + official fares page"
    }
   ],
   "lunch":[
@@ -15229,6 +15229,30 @@ window.TINO_DATA = {
     "url":"https://santanarow.com/event/lets-do-lunch-taste-the-row/",
     "fetch_status":"ok",
     "used_for":"Participant list incl. Augustine, Dumpling Time, Ozumo Fridays-only; Sept 1-30 2026 dates; corrected the one-day-event reading"
+   },
+   {
+    "id":"S54",
+    "agency":"Caltrain JPB (official)",
+    "label":"Dec 4 2025 board deck - fare structure FY27-30 (zone $2.25 until 1/1/2027)",
+    "url":"https://www.caltrain.com/media/36182/download",
+    "fetch_status":"ok",
+    "used_for":"Fare = base + zone upgrade x extra zones; FY26 Clipper-discount removal adopted 11/6/2025 (base $3.45 -> $4.00); 2023-adopted 7/1/2026 zone increase rescheduled to 1/1/2027, so the zone upgrade is $2.25 through 2026 and 3 zones = $8.50. The Dec 4 adoption vote itself was not directly confirmed (no minutes found)."
+   },
+   {
+    "id":"S55",
+    "agency":"Caltrain (official)",
+    "label":"Caltrain to Eliminate Clipper Discount on Jan. 1 (news)",
+    "url":"https://www.caltrain.com/news/caltrain-eliminate-clipper-discount-jan-1",
+    "fetch_status":"title confirmed; article body renders as the schedule explorer, not text",
+    "used_for":"Page title + URL confirm the Jan 1 2026 Clipper-discount elimination; the fact itself is confirmed in the S54 board deck (FY26 structure adopted 11/6/2025, live 1/1/2026). No TVM premium remains, so no $10 ticket-machine fare."
+   },
+   {
+    "id":"S56",
+    "agency":"Transit.wiki (third-party mirror)",
+    "label":"Caltrain fares chart, effective 1/1/2026 (corroboration only)",
+    "url":"https://www.transit.wiki/Caltrain_fares",
+    "fetch_status":"ok",
+    "used_for":"CORROBORATION ONLY - no fare is sourced from this page. Its chart effective 1/1/2026 shows $2.25 zone increments (3-zone $8.50 = cash and Clipper, Day Pass $17.00, 6-zone max $15.25), consistent with the official fares page. Note: one prose line on the page is stale (still mentions the 55-cent Clipper discount its own chart no longer reflects)."
    }
   ],
   "dead_ends":[

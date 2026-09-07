@@ -434,6 +434,30 @@
       "url": "https://santanarow.com/event/lets-do-lunch-taste-the-row/",
       "fetch_status": "ok",
       "used_for": "Participant list incl. Augustine, Dumpling Time, Ozumo Fridays-only; Sept 1-30 2026 dates; corrected the one-day-event reading"
+    },
+    {
+      "id": "S54",
+      "agency": "Caltrain JPB (official)",
+      "label": "Dec 4 2025 board deck - fare structure FY27-30 (zone $2.25 until 1/1/2027)",
+      "url": "https://www.caltrain.com/media/36182/download",
+      "fetch_status": "ok",
+      "used_for": "Fare = base + zone upgrade x extra zones; FY26 Clipper-discount removal adopted 11/6/2025 (base $3.45 -> $4.00); 2023-adopted 7/1/2026 zone increase rescheduled to 1/1/2027, so the zone upgrade is $2.25 through 2026 and 3 zones = $8.50. The Dec 4 adoption vote itself was not directly confirmed (no minutes found)."
+    },
+    {
+      "id": "S55",
+      "agency": "Caltrain (official)",
+      "label": "Caltrain to Eliminate Clipper Discount on Jan. 1 (news)",
+      "url": "https://www.caltrain.com/news/caltrain-eliminate-clipper-discount-jan-1",
+      "fetch_status": "title confirmed; article body renders as the schedule explorer, not text",
+      "used_for": "Page title + URL confirm the Jan 1 2026 Clipper-discount elimination; the fact itself is confirmed in the S54 board deck (FY26 structure adopted 11/6/2025, live 1/1/2026). No TVM premium remains, so no $10 ticket-machine fare."
+    },
+    {
+      "id": "S56",
+      "agency": "Transit.wiki (third-party mirror)",
+      "label": "Caltrain fares chart, effective 1/1/2026 (corroboration only)",
+      "url": "https://www.transit.wiki/Caltrain_fares",
+      "fetch_status": "ok",
+      "used_for": "CORROBORATION ONLY - no fare is sourced from this page. Its chart effective 1/1/2026 shows $2.25 zone increments (3-zone $8.50 = cash and Clipper, Day Pass $17.00, 6-zone max $15.25), consistent with the official fares page. Note: one prose line on the page is stale (still mentions the 55-cent Clipper discount its own chart no longer reflects)."
     }
   ],
   "dead_ends": [
