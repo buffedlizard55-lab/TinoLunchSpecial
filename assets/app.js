@@ -105,7 +105,7 @@
       '<div class="scrollpanel"><table class="grid-table"><thead><tr><th>Entry</th><th>Lunch special</th><th>Days</th><th>Tuesday hours</th><th>Verified</th><th>Why it is on the list</th></tr></thead><tbody>' + rows + '</tbody></table></div>' +
 
       '<h2>Every flag on this page</h2>' +
-      '<p>' + (D.flags.transit.length + D.flags.lunch.length) + ' irregularities were found and are all listed on the Flags tab. None of them is hidden in a footnote: 9 are about transit data, 9 about lunch data.</p>';
+      '<p>' + (D.flags.transit.length + D.flags.lunch.length) + ' irregularities were found and are all listed on the Flags tab. None of them is hidden in a footnote: ' + D.flags.transit.length + ' are about transit data, ' + D.flags.lunch.length + ' about lunch data.</p>';
   }
 
   function stat(n, label) { return '<div class="card stat"><div class="n">' + esc(String(n)) + '</div><div class="l">' + esc(label) + '</div></div>'; }
@@ -383,7 +383,7 @@
       '</tbody></table>' +
       '<div class="callout">' + esc(p.destination.irregularity) + '</div>' +
       '<h3>Re-run the checks</h3>' +
-      '<pre><code>python3 scripts/plan_trip.py    # rebuilds data/generated.js and prints a text itinerary\npython3 scripts/verify_data.py  # schema, time math, link coverage, fare math</code></pre>' +
+      '<pre><code>python3 scripts/build_data.py   # validates data/*.json, rebuilds data/generated.js + data/summary.md\npython3 scripts/check_links.py  # every row links back to a citable https page\nnode scripts/smoke_test.js      # renders all 8 panels headlessly</code></pre>' +
       '<p class="tiny">The data lives in <code>data/*.json</code>; <code>data/generated.js</code> is the same content compiled for the browser. Both are committed, so the site renders even if you open it without a build step.</p>';
   }
 
