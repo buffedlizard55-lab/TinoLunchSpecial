@@ -218,6 +218,30 @@
       "url": "https://www.yelp.com/biz/red-hot-wok-cupertino",
       "fetch_status": "ok via search index",
       "used_for": "address/phone cross-check and the 2:00 PM lunch-close variant that conflicts with the restaurant's own 2:15 PM"
+    },
+    {
+      "id": "S28",
+      "agency": "Restaurant (official)",
+      "label": "Aqui Cal Mex home - daily special plate Sept 2-15 2026",
+      "url": "https://www.aquicalmex.com/",
+      "fetch_status": "ok",
+      "used_for": "Salmon Enchiladas and Crab Cake $17.59; Portobello soup $5.09"
+    },
+    {
+      "id": "S29",
+      "agency": "Restaurant (official)",
+      "label": "Red Hot Wok Palo Alto lunch special menu",
+      "url": "https://www.redhotwokpaloalto.com/uvs503m5/restaurant/order-online?menu=Lunch+Menu",
+      "fetch_status": "ok",
+      "used_for": "Lunch specials $15.95-$18.95 Tue-Fri 11:00-14:00 with rice, two sides and soup"
+    },
+    {
+      "id": "S30",
+      "agency": "Restaurant (official)",
+      "label": "Bonchon Sunnyvale location page",
+      "url": "https://restaurants.bonchon.com/locations/ca/sunnyvale/572-e-el-camino-real",
+      "fetch_status": "ok",
+      "used_for": "Hours 11:00-21:00 daily; Lunch Specials section without dollar prices"
     }
   ],
   "dead_ends": [

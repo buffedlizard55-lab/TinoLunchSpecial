@@ -182,6 +182,37 @@
       "link": "",
       "rows": [],
       "link_label": "open the agency page"
+    },
+    {
+      "id": "LUNCH-FLAG-10",
+      "severity": "note",
+      "title": "Second search batch (20 new rows L28-L47) mixed official deals with verified negatives",
+      "what_we_found": "Aqui Cal Mex publishes a dated daily plate ($17.59, Sept 2-15 2026) that is not a lunch combo. Red Hot Wok Palo Alto publishes bento lunch specials $15.95-$18.95. P.F. Chang's Sunnyvale OpenTable lists lunch from $13.99. Bonchon Sunnyvale lists lunch specials without prices. Several Cupertino rows (Dish N Dash, Eureka, Chipotle, Panda, Marufuku) have no lunch special. Thai Basil Restaurant Week ended June 7 2026 and is not valid on Sept 8. Galpao lunch dollar prices from 2018 were not reused.",
+      "what_we_did": "Added all 20 as master rows with verification levels and source links. Did not invent prices. Flagged hour conflicts (Marufuku, Galpao, PF Chang Sunnyvale, Red Hot Wok Palo Alto Monday text).",
+      "link": "https://www.aquicalmex.com/",
+      "rows": [
+        "L28",
+        "L29",
+        "L30",
+        "L31",
+        "L32",
+        "L33",
+        "L34",
+        "L35",
+        "L36",
+        "L37",
+        "L38",
+        "L39",
+        "L40",
+        "L41",
+        "L42",
+        "L43",
+        "L44",
+        "L45",
+        "L46",
+        "L47"
+      ],
+      "link_label": "Aqui official daily special"
     }
   ]
 }
