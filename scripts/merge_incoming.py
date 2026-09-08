@@ -47,7 +47,7 @@ def main():
     rejected = load(os.path.join(DATA, "lunch_rejected.json"))
     rej_names = {norm(r["name"]) + "|" + norm(r.get("city", "")) for r in rejected["rejected"]}
 
-    added, skipped, rej_added, problems = [], [], [], []
+    added, skipped, rej_added, problems, superseded = [], [], [], [], []
 
     for path in sorted(glob.glob(os.path.join(INCOMING, "*.json"))):
         batch = load(path)
@@ -64,8 +64,16 @@ def main():
                 skipped.append(f"{raw['name']} ({raw['city']}) - address already listed")
                 continue
             if key in rej_names:
-                skipped.append(f"{raw['name']} ({raw['city']}) - already in the rejected list")
-                continue
+                if raw.get("supersedes_rejection"):
+                    # a later pass verified lunch service / an address: drop the old
+                    # rejection so the verified row can be listed
+                    rejected["rejected"] = [r for r in rejected["rejected"]
+                                            if norm(r.get("name", "")) + "|" + norm(r.get("city", "")) != key]
+                    rej_names.discard(key)
+                    superseded.append(f"{raw['name']} ({raw['city']}) - earlier rejection superseded: {raw['supersedes_rejection']}")
+                else:
+                    skipped.append(f"{raw['name']} ({raw['city']}) - already in the rejected list")
+                    continue
             highest += 1
             e = dict(raw)
             e["id"] = "L%03d" % highest
@@ -97,8 +105,8 @@ def main():
 
         for r in batch.get("rejected", []):
             key = norm(r.get("name", "")) + "|" + norm(r.get("city", ""))
-            if key in rej_names:
-                continue
+            if key in rej_names or key in seen_name:
+                continue  # already rejected, or listed by a verified row
             r.setdefault("searched", DAY)
             rejected["rejected"].append(r)
             rej_names.add(key)
@@ -111,6 +119,8 @@ def main():
     print(f"added: {len(added)}  rejected: {len(rej_added)}  skipped: {len(skipped)}")
     for s in skipped:
         print("  -", s)
+    for s in superseded:
+        print("  ^", s)
     for p in problems:
         print("  x", p)
 
