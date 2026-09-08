@@ -403,14 +403,6 @@
       "searched": "2026-09-07"
     },
     {
-      "name": "Sushi Confidential (Campbell)",
-      "city": "Campbell",
-      "why": "The restaurant's own site publishes Campbell hours including Tuesday 11:30 AM - 9:00 PM, but no street address for that branch was captured in this pass.",
-      "price_hint": null,
-      "source": "https://sushiconfidential.com/campbell-sushi-location/",
-      "searched": "2026-09-07"
-    },
-    {
       "name": "The Basin",
       "city": "Saratoga",
       "why": "Dinner only - OpenTable lists 'Monday - Sunday: 5:00pm - Close' with no lunch service.",
@@ -647,18 +639,6 @@
       "searched": "2026-09-07"
     },
     {
-      "name": "Yokohama",
-      "city": "Los Gatos",
-      "why": "Dinner-only: Yelp's Los Gatos lunch-specials index lists Yokohama 'Closed until 4:30 PM' - no weekday lunch service captured.",
-      "links": [
-        {
-          "label": "Yelp - Top 10 Lunch Specials Los Gatos (Yokohama listed as opening 4:30 PM)",
-          "url": "https://www.yelp.com/search?find_desc=Lunch+Specials&find_loc=Los+Gatos%2C+CA"
-        }
-      ],
-      "searched": "2026-09-07"
-    },
-    {
       "name": "Blue Sky Cafe (Cupertino index hit)",
       "city": "not resolvable to the radius",
       "why": "Yelp's Cupertino cheap-lunch index lists 'Blue Sky Cafe' but every resolved listing is in another city (Diamond Bar CA, Pierceton IN, San Carlos listing of a different name) - no Cupertino-area business with published hours could be verified.",
@@ -744,6 +724,188 @@
       "name": "Los Pambazos",
       "city": "San Jose",
       "why": "Evening-only: Tue-Sun 4:30 PM-12:30/1 AM, Monday closed (wheree listing). No lunch service. City correction: 1305 S Winchester Blvd is San Jose 95117, not Campbell as first pooled.",
+      "price_hint": null,
+      "searched": "2026-09-07"
+    },
+    {
+      "name": "Arya Global Cuisine",
+      "city": "Cupertino",
+      "why": "Yelp marks the business CLOSED.",
+      "price_hint": null,
+      "searched": "2026-09-07"
+    },
+    {
+      "name": "Bull Ohgane",
+      "city": "Cupertino",
+      "why": "Yelp marks 10493 S De Anza Blvd location CLOSED.",
+      "price_hint": null,
+      "searched": "2026-09-07"
+    },
+    {
+      "name": "Arirang Tofu & BBQ",
+      "city": "Cupertino",
+      "why": "Yelp marks 10310 S De Anza Blvd location CLOSED.",
+      "price_hint": null,
+      "searched": "2026-09-07"
+    },
+    {
+      "name": "Islands Restaurant",
+      "city": "Cupertino",
+      "why": "Yelp marks 20750 Stevens Creek Blvd location CLOSED.",
+      "price_hint": null,
+      "searched": "2026-09-07"
+    },
+    {
+      "name": "Chili's Grill & Bar",
+      "city": "Cupertino",
+      "why": "Yelp marks 20060 Stevens Creek Blvd location CLOSED.",
+      "price_hint": null,
+      "searched": "2026-09-07"
+    },
+    {
+      "name": "Turmeric",
+      "city": "Sunnyvale",
+      "why": "Permanently closed per listings.",
+      "price_hint": null,
+      "searched": "2026-09-07"
+    },
+    {
+      "name": "Tong Dumpling",
+      "city": "Cupertino",
+      "why": "Official site dead; could not confirm the business is still operating.",
+      "price_hint": null,
+      "searched": "2026-09-07"
+    },
+    {
+      "name": "Beque Korean Grill",
+      "city": "Santa Clara",
+      "why": "Dinner-only on weekdays (Mon-Fri opens 4 PM per Yelp); no Tuesday lunch.",
+      "price_hint": "dolsot $13-14 (review)",
+      "searched": "2026-09-07"
+    },
+    {
+      "name": "Xanh",
+      "city": "Mountain View",
+      "why": "110 Castro St now lists as Bloom & Vine; Xanh appears replaced.",
+      "price_hint": null,
+      "searched": "2026-09-07"
+    },
+    {
+      "name": "Amarin Thai Cuisine (174 Castro)",
+      "city": "Mountain View",
+      "why": "Old location marked CLOSED on Yelp; replaced by the 147 Castro St row.",
+      "price_hint": null,
+      "searched": "2026-09-07"
+    },
+    {
+      "name": "Amarin Thai Cuisine",
+      "city": "San Jose",
+      "why": "5205 Prospect Rd location marked CLOSED on Yelp (space now Suvai).",
+      "price_hint": null,
+      "searched": "2026-09-07"
+    },
+    {
+      "name": "Chef Ko Chinese Cuisine",
+      "city": "Campbell",
+      "why": "Yelp marks the business CLOSED.",
+      "price_hint": null,
+      "searched": "2026-09-07"
+    },
+    {
+      "name": "Taste of Pho",
+      "city": "Santa Clara",
+      "why": "Yelp marks the business CLOSED.",
+      "price_hint": null,
+      "searched": "2026-09-07"
+    },
+    {
+      "name": "K-Star Doshirak",
+      "city": "Santa Clara",
+      "why": "Yelp marks the business CLOSED.",
+      "price_hint": null,
+      "searched": "2026-09-07"
+    },
+    {
+      "name": "Bierhaus",
+      "city": "Mountain View",
+      "why": "383 Castro St location marked CLOSED on Yelp (Das Bierhauz at 135 Castro is a different business).",
+      "price_hint": null,
+      "searched": "2026-09-07"
+    },
+    {
+      "name": "El Alto",
+      "city": "Los Altos",
+      "why": "Yelp marks the business CLOSED; was dinner-only anyway.",
+      "price_hint": null,
+      "searched": "2026-09-07"
+    },
+    {
+      "name": "The Menu",
+      "city": "Mountain View",
+      "why": "Yelp marks the business CLOSED.",
+      "price_hint": null,
+      "searched": "2026-09-07"
+    },
+    {
+      "name": "Los Gatos Tavern",
+      "city": "Los Gatos",
+      "why": "Dinner-only (Tue-Sat from 5 PM).",
+      "price_hint": null,
+      "searched": "2026-09-07"
+    },
+    {
+      "name": "The Cats Restaurant",
+      "city": "Los Gatos",
+      "why": "Lunch only Sat-Sun brunch buffet ($29.95); closed Mon-Thu.",
+      "price_hint": "$29.95 weekend brunch buffet",
+      "searched": "2026-09-07"
+    },
+    {
+      "name": "GOGA Restaurant (batch8 recheck)",
+      "city": "Saratoga",
+      "why": "Already in master; Yelp confirms closed Tue and lunch Sat-Sun only.",
+      "price_hint": null,
+      "searched": "2026-09-07"
+    },
+    {
+      "name": "Yeobo Darling",
+      "city": "Menlo Park",
+      "why": "Dinner-only per Yelp (opens 5 PM).",
+      "price_hint": null,
+      "searched": "2026-09-07"
+    },
+    {
+      "name": "Drunken Monk",
+      "city": "Menlo Park",
+      "why": "Dinner-only per Yelp (opens 5 PM).",
+      "price_hint": null,
+      "searched": "2026-09-07"
+    },
+    {
+      "name": "Chaat Bhavan Express",
+      "city": "Sunnyvale",
+      "why": "Same 544 Lawrence Expy site as the Chaat Bhavan (Lawrence Expressway) row already in master.",
+      "price_hint": null,
+      "searched": "2026-09-07"
+    },
+    {
+      "name": "Little Sky Kitchen",
+      "city": "Menlo Park",
+      "why": "Shares the 1010 El Camino Real parcel with Cafe Borrone (L246) with no suite number, so the address dedupe cannot separate them (see LUNCH-FLAG on address collisions); unclaimed listing, no phone.",
+      "price_hint": null,
+      "searched": "2026-09-07"
+    },
+    {
+      "name": "Little Sky Bakery",
+      "city": "Menlo Park",
+      "why": "Bakery (506 Santa Cruz Ave, 8-4 daily) - not a lunch-special venue; listed here only to avoid confusion with Little Sky Kitchen.",
+      "price_hint": null,
+      "searched": "2026-09-07"
+    },
+    {
+      "name": "Mendocino Farms",
+      "city": "Cupertino",
+      "why": "Could not confirm a Cupertino location from official/Yelp sources (search returned other cities only).",
       "price_hint": null,
       "searched": "2026-09-07"
     }

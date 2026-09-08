@@ -5872,7 +5872,7 @@
       "distance_mi": 1.17
     },
     {
-      "name": "Shan Restaurant",
+      "name": "Kabab & Curry's (formerly Shan Restaurant)",
       "city": "Cupertino",
       "area": "Stevens Creek Blvd",
       "address": "20007 Stevens Creek Blvd, Cupertino, CA 95014",
@@ -5881,42 +5881,53 @@
         -122.0164
       ],
       "coords_source": "approximate - Stevens Creek Blvd block, not a captured geocode",
-      "cuisine": "Pakistani / North Indian",
+      "cuisine": "Indian / Pakistani",
       "lunch_special": {
-        "name": "Lunch-price lead only - curry and saalan plates",
+        "name": "Lunch platter (weekday)",
         "price_from": null,
         "price_to": null,
-        "days": "not captured",
-        "window": "not captured",
-        "includes": "A menu aggregator (menupages.com) lists curries at $8.99 and daily specials at $9.49 for this address. No price is printed here because the only source is an aggregator."
+        "days": "Tue-Fri",
+        "window": "11:30 AM - 2:30 PM",
+        "includes": null
       },
-      "hours_tuesday": "not captured",
-      "days_open": "not captured",
-      "open_on_trip_date": null,
+      "hours_tuesday": "11:30 AM - 2:30 PM, 5:00 PM - 9:30 PM",
+      "days_open": "Tue-Sun lunch & dinner; closed Mon",
+      "open_on_trip_date": true,
       "fits_return_bus": {
         "ok": false,
         "note": "Hours not captured; about 1 mi from the destination."
       },
       "verification": {
-        "level": "unverified",
+        "level": "review",
+        "accessed": "2026-09-08",
         "sources": [
           {
-            "label": "menupages.com - Shan Restaurant (Stevens Creek Blvd) address and menu prices (aggregator, not the restaurant)",
-            "url": "https://menupages.com/shan-restaurant-stevens-creek-blvd/20007-stevens-creek-blvd-cupertino"
+            "label": "Yelp - Kabab & Curry's Cupertino (20007 Stevens Creek; closed Mon; lunch Tue-Thu 11:30-2:30, Fri-Sun 11:30-3)",
+            "url": "https://www.yelp.com/biz/kabab-and-currys-cupertino"
+          },
+          {
+            "label": "Yelp - Shan (marked CLOSED)",
+            "url": "https://www.yelp.com/biz/shan-cupertino"
+          },
+          {
+            "label": "Official site (image-only menu)",
+            "url": "https://www.kababandcurrys.com/"
           }
-        ],
-        "accessed": "2026-09-07"
+        ]
       },
       "review_links": {
-        "google_maps": "https://www.google.com/maps/search/?api=1&query=Shan+Restaurant+20007+Stevens+Creek+Blvd+Cupertino"
+        "yelp": "https://www.yelp.com/biz/kabab-and-currys-cupertino",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Kabab+%26+Curry%27s+20007+Stevens+Creek+Blvd+Cupertino"
       },
       "flags": [
-        "Only an aggregator menu was found, so no price is printed and the row is marked unverified.",
-        "Hours and phone were not captured."
+        "REPLACED (pass 8): Shan Restaurant at this address is marked CLOSED on Yelp; row now describes Kabab & Curry's, the current tenant.",
+        "Lunch price not printed by any checked source - confirm on arrival.",
+        "Official menu is posted as images only."
       ],
       "id": "L121",
       "added_in": "batch2_sunnyvale_campbell_mv.json",
-      "distance_mi": 0.94
+      "distance_mi": 0.94,
+      "phone": "(669) 230-3993"
     },
     {
       "name": "A Bellagio",
@@ -12915,20 +12926,20 @@
       "distance_mi": null
     },
     {
-      "name": "Little India Cafe",
+      "name": "Desi Dhaba (formerly Little India Cafe)",
       "city": "Sunnyvale",
       "address": "415 N Mary Ave, Ste 101, Sunnyvale, CA 94085",
       "area": "N Mary Ave",
       "cuisine": "Indian",
-      "days_open": "Daily (Yelp); Sun closes 8 PM",
-      "hours_tuesday": "11:00 AM - 2:30 PM, 5:00 PM - 9:00 PM",
+      "days_open": "Mon-Sat lunch & dinner; Sun dinner only (Yelp snapshots also show Sun closed)",
+      "hours_tuesday": "11:00 AM - 2:30 PM, 4:30 PM - 9:00 PM",
       "lunch_special": {
         "name": "Weekday lunch buffet (availability conflicted)",
-        "price_from": null,
+        "price_from": 16.99,
         "price_to": null,
         "days": "Mon-Sat per the owner Q&A that says buffet exists",
         "window": "11:00 AM - 2:30 PM",
-        "includes": "CONFLICT: Yelp Q&A answer 'They do have Weekday Buffet just like the old days. Price is $16.99' vs another answer 'No buffet at the moment.' Reddit (Jan 2024) reported Mon-Sat 11-2 buffet ~$16. Call (408) 245-6200 to confirm."
+        "includes": "CONFLICT: Yelp Q&A answer \"weekday buffet, $16.99\" vs \"no buffet at the moment\". Call (408) 245-6200 to confirm."
       },
       "open_on_trip_date": true,
       "fits_return_bus": {
@@ -12936,17 +12947,22 @@
         "note": "North Sunnyvale - off the return corridor."
       },
       "flags": [
-        "IRREGULARITY: Yelp Q&A answers contradict each other on whether the lunch buffet still runs ($16.99 figure is a Q&A figure, not a published menu price)."
+        "RENAMED (pass 8): the Yelp listing at this address now trades as Desi Dhaba (same phone); hours updated.",
+        "IRREGULARITY: Yelp Q&A answers contradict each other on whether the lunch buffet still runs ($16.99 is a Q&A figure, not a menu price)."
       ],
       "phone": "(408) 245-6200",
       "review_links": {
-        "yelp": "https://www.yelp.com/biz/little-india-cafe-sunnyvale",
+        "yelp": "https://www.yelp.com/biz/desi-dhaba-sunnyvale-2",
         "google_maps": "https://www.google.com/maps/search/?api=1&query=Little+India+Cafe+415+N+Mary+Ave+Sunnyvale"
       },
       "verification": {
         "level": "conflicting",
-        "accessed": "2026-09-07",
+        "accessed": "2026-09-08",
         "sources": [
+          {
+            "label": "Yelp - Desi Dhaba (415 N Mary Ave Ste 101; Mon-Sat 10/11-2:30 & 4:30-9; buffet Q&A conflict)",
+            "url": "https://www.yelp.com/biz/desi-dhaba-sunnyvale-2"
+          },
           {
             "label": "Yelp - Little India Cafe (address, Ste 101 vs #102 note, hours, buffet Q&A conflict)",
             "url": "https://www.yelp.com/biz/little-india-cafe-sunnyvale?start=20"
@@ -17082,6 +17098,4797 @@
       "id": "L352",
       "coords": null,
       "added_in": "batch7g.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Avachi Biryani House",
+      "city": "Cupertino",
+      "address": "10251 S De Anza Blvd, Cupertino, CA 95014",
+      "area": "De Anza Blvd",
+      "cuisine": "Indian (Hyderabadi)",
+      "days_open": "Daily lunch & dinner",
+      "hours_tuesday": "11:30 AM - 2:30 PM, 5:00 PM - 9:30 PM",
+      "lunch_special": {
+        "name": "Lunch buffet",
+        "price_from": null,
+        "price_to": null,
+        "days": "Daily",
+        "window": "11:30 AM - 2:30 PM (Sat-Sun to 3 PM)",
+        "includes": null
+      },
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": true,
+        "note": "On/near Stevens Creek Blvd or De Anza Blvd - VTA 23/523 corridor back toward Sunnyvale/Caltrain."
+      },
+      "flags": [
+        "Buffet price ($17 weekday / $22 weekend) appears only in a Yelp review - unverified."
+      ],
+      "phone": "(408) 982-5220",
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/avachi-biryani-house-cupertino",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Avachi+Biryani+House+10251+S+De+Anza+Blvd+Cupertino+CA+95014"
+      },
+      "verification": {
+        "level": "review",
+        "accessed": "2026-09-08",
+        "sources": [
+          {
+            "label": "Yelp - Avachi Biryani House (address, phone, lunch Mon-Fri 11:30-2:30, Sat-Sun 11:30-3)",
+            "url": "https://www.yelp.com/biz/avachi-biryani-house-cupertino"
+          }
+        ]
+      },
+      "id": "L353",
+      "coords": null,
+      "added_in": "batch8.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Safar By Karimi",
+      "city": "Cupertino",
+      "address": "19930 Stevens Creek Blvd, Cupertino, CA 95014",
+      "area": "Stevens Creek Blvd",
+      "cuisine": "Persian / Afghan",
+      "days_open": "Wed-Mon; closed Tue",
+      "hours_tuesday": "Closed Tuesdays",
+      "lunch_special": {
+        "name": "Lunch menu 11:30-3",
+        "price_from": null,
+        "price_to": null,
+        "days": "Wed-Mon",
+        "window": "11:30 AM - 3:00 PM",
+        "includes": null
+      },
+      "open_on_trip_date": false,
+      "fits_return_bus": {
+        "ok": true,
+        "note": "On/near Stevens Creek Blvd or De Anza Blvd - VTA 23/523 corridor back toward Sunnyvale/Caltrain."
+      },
+      "flags": [
+        "CLOSED on the trip date (Tuesday).",
+        "Lunch price not printed by any checked source - confirm on arrival."
+      ],
+      "phone": "(408) 816-8080",
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/safar-by-karimi-cupertino",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Safar+By+Karimi+19930+Stevens+Creek+Blvd+Cupertino+CA+95014"
+      },
+      "verification": {
+        "level": "review",
+        "accessed": "2026-09-08",
+        "sources": [
+          {
+            "label": "Yelp - Safar By Karimi (closed Tue; lunch 11:30-3)",
+            "url": "https://www.yelp.com/biz/safar-by-karimi-cupertino"
+          },
+          {
+            "label": "Official site (hours; no prices)",
+            "url": "https://www.safarbykarimi.com/"
+          }
+        ]
+      },
+      "id": "L354",
+      "coords": null,
+      "added_in": "batch8.json",
+      "distance_mi": null
+    },
+    {
+      "name": "The City Fish",
+      "city": "Cupertino",
+      "address": "21678 Stevens Creek Blvd, Cupertino, CA 95014",
+      "area": "West Stevens Creek Blvd",
+      "cuisine": "Seafood / Fish & chips",
+      "days_open": "Daily",
+      "hours_tuesday": "10:00 AM - 8:30 PM",
+      "lunch_special": {
+        "name": "Fish & chips (2 pc) / chowder combo",
+        "price_from": 11.0,
+        "price_to": 15.0,
+        "days": "Daily",
+        "window": "All day",
+        "includes": "Counter-service; prices from the official online menu (no separate lunch pricing)."
+      },
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": true,
+        "note": "On/near Stevens Creek Blvd or De Anza Blvd - VTA 23/523 corridor back toward Sunnyvale/Caltrain."
+      },
+      "flags": [],
+      "phone": "(408) 320-1434",
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/the-city-fish-cupertino",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=The+City+Fish+21678+Stevens+Creek+Blvd+Cupertino+CA+95014"
+      },
+      "verification": {
+        "level": "official",
+        "accessed": "2026-09-08",
+        "sources": [
+          {
+            "label": "Official menu - cityfishco.com (fish & chips $11 / $15, chowder combo $15)",
+            "url": "https://www.cityfishco.com/menu-1"
+          },
+          {
+            "label": "Yelp - The City Fish (address, phone, daily 10-8:30)",
+            "url": "https://www.yelp.com/biz/the-city-fish-cupertino"
+          }
+        ]
+      },
+      "id": "L355",
+      "coords": null,
+      "added_in": "batch8.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Harumi Sushi",
+      "city": "Cupertino",
+      "address": "20030 Stevens Creek Blvd, Cupertino, CA 95014",
+      "area": "Stevens Creek Blvd",
+      "cuisine": "Japanese / Sushi",
+      "days_open": "Daily",
+      "hours_tuesday": "11:30 AM - 9:00 PM",
+      "lunch_special": {
+        "name": "Lunch bento",
+        "price_from": 16.05,
+        "price_to": 19.95,
+        "days": "Daily",
+        "window": "Lunch",
+        "includes": null
+      },
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": true,
+        "note": "On/near Stevens Creek Blvd or De Anza Blvd - VTA 23/523 corridor back toward Sunnyvale/Caltrain."
+      },
+      "flags": [
+        "Bento price conflicts between menu mirrors ($16-17 vs $19.95) - treat as approx."
+      ],
+      "phone": null,
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/harumi-sushi-cupertino",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Harumi+Sushi+20030+Stevens+Creek+Blvd+Cupertino+CA+95014"
+      },
+      "verification": {
+        "level": "conflicting",
+        "accessed": "2026-09-08",
+        "sources": [
+          {
+            "label": "Official site - harumisushi.com (hours; no prices)",
+            "url": "https://www.harumisushi.com/"
+          },
+          {
+            "label": "Yelp - Harumi Sushi (bento prices quoted $16.05-$17.07 vs $19.95 in different listings)",
+            "url": "https://www.yelp.com/biz/harumi-sushi-cupertino"
+          }
+        ]
+      },
+      "id": "L356",
+      "coords": null,
+      "added_in": "batch8.json",
+      "distance_mi": null
+    },
+    {
+      "name": "O2 Valley",
+      "city": "Cupertino",
+      "address": "19058 Stevens Creek Blvd, Cupertino, CA 95014",
+      "area": "East Stevens Creek Blvd",
+      "cuisine": "Taiwanese / Boba cafe",
+      "days_open": "Daily",
+      "hours_tuesday": "11:00 AM - 9:00 PM",
+      "lunch_special": {
+        "name": "No published lunch special (rice/noodle plates)",
+        "price_from": null,
+        "price_to": null,
+        "days": null,
+        "window": null,
+        "includes": null
+      },
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": true,
+        "note": "On/near Stevens Creek Blvd or De Anza Blvd - VTA 23/523 corridor back toward Sunnyvale/Caltrain."
+      },
+      "flags": [
+        "Lunch price not printed by any checked source - confirm on arrival."
+      ],
+      "phone": "(408) 564-0542",
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/o2-valley-cupertino",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=O2+Valley+19058+Stevens+Creek+Blvd+Cupertino+CA+95014"
+      },
+      "verification": {
+        "level": "review",
+        "accessed": "2026-09-08",
+        "sources": [
+          {
+            "label": "Yelp - O2 Valley (address, phone, daily 11-9)",
+            "url": "https://www.yelp.com/biz/o2-valley-cupertino"
+          },
+          {
+            "label": "Official site (online ordering only; prices not readable)",
+            "url": "https://www.o2-valley.com/"
+          }
+        ]
+      },
+      "id": "L357",
+      "coords": null,
+      "added_in": "batch8.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Orange Square",
+      "city": "Cupertino",
+      "address": "20343 Stevens Creek Blvd, Cupertino, CA 95014",
+      "area": "Stevens Creek Blvd",
+      "cuisine": "Vietnamese / Asian",
+      "days_open": "Daily",
+      "hours_tuesday": "11:00 AM - 8:00 PM",
+      "lunch_special": {
+        "name": "Wednesday special",
+        "price_from": null,
+        "price_to": null,
+        "days": "Wed",
+        "window": "Lunch",
+        "includes": null
+      },
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": true,
+        "note": "On/near Stevens Creek Blvd or De Anza Blvd - VTA 23/523 corridor back toward Sunnyvale/Caltrain."
+      },
+      "flags": [
+        "$9.99 Wednesday special is a Yelp-review claim, not a menu price.",
+        "Separate from the Milpitas Orange Square already listed."
+      ],
+      "phone": "(510) 602-5278",
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/orange-square-cupertino",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Orange+Square+20343+Stevens+Creek+Blvd+Cupertino+CA+95014"
+      },
+      "verification": {
+        "level": "review",
+        "accessed": "2026-09-08",
+        "sources": [
+          {
+            "label": "Yelp - Orange Square Cupertino (address, phone, daily 11-8)",
+            "url": "https://www.yelp.com/biz/orange-square-cupertino"
+          }
+        ]
+      },
+      "id": "L358",
+      "coords": null,
+      "added_in": "batch8.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Wei's Fish",
+      "city": "Cupertino",
+      "address": "10520 S De Anza Blvd, Cupertino, CA 95014",
+      "area": "De Anza Blvd",
+      "cuisine": "Chinese (fish / seafood)",
+      "days_open": "Daily",
+      "hours_tuesday": "11:00 AM - 9:00 PM",
+      "lunch_special": {
+        "name": "No published lunch special",
+        "price_from": null,
+        "price_to": null,
+        "days": null,
+        "window": null,
+        "includes": null
+      },
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": true,
+        "note": "On/near Stevens Creek Blvd or De Anza Blvd - VTA 23/523 corridor back toward Sunnyvale/Caltrain."
+      },
+      "flags": [
+        "Lunch price not printed by any checked source - confirm on arrival."
+      ],
+      "phone": "(408) 549-3087",
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/weis-fish-cupertino",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Wei's+Fish+10520+S+De+Anza+Blvd+Cupertino+CA+95014"
+      },
+      "verification": {
+        "level": "review",
+        "accessed": "2026-09-08",
+        "sources": [
+          {
+            "label": "Yelp - Wei's Fish (address, phone, Mon-Thu 11-9, Fri-Sun 11-9:30)",
+            "url": "https://www.yelp.com/biz/weis-fish-cupertino"
+          }
+        ]
+      },
+      "id": "L359",
+      "coords": null,
+      "added_in": "batch8.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Beijing Duck House",
+      "city": "Cupertino",
+      "address": "10883 S Blaney Ave, Cupertino, CA 95014",
+      "area": "Blaney Ave (off Stevens Creek)",
+      "cuisine": "Chinese (Peking duck)",
+      "days_open": "Wed-Mon; closed Tue",
+      "hours_tuesday": "Closed Tuesdays",
+      "lunch_special": {
+        "name": "Lunch service 11:30-2:30",
+        "price_from": null,
+        "price_to": null,
+        "days": null,
+        "window": null,
+        "includes": null
+      },
+      "open_on_trip_date": false,
+      "fits_return_bus": {
+        "ok": true,
+        "note": "Cupertino - short walk/ride to the Stevens Creek/De Anza VTA corridor."
+      },
+      "flags": [
+        "CLOSED on the trip date (Tuesday).",
+        "Lunch price not printed by any checked source - confirm on arrival."
+      ],
+      "phone": "(408) 366-0588",
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/beijing-duck-house-cupertino",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Beijing+Duck+House+10883+S+Blaney+Ave+Cupertino+CA+95014"
+      },
+      "verification": {
+        "level": "review",
+        "accessed": "2026-09-08",
+        "sources": [
+          {
+            "label": "Yelp - Beijing Duck House (closed Tue; 11:30-2:30 & 5-9)",
+            "url": "https://www.yelp.com/biz/beijing-duck-house-cupertino"
+          },
+          {
+            "label": "Michelin Guide listing",
+            "url": "https://guide.michelin.com/us/en/california/cupertino/restaurant/beijing-duck-house"
+          }
+        ]
+      },
+      "id": "L360",
+      "coords": null,
+      "added_in": "batch8.json",
+      "distance_mi": null
+    },
+    {
+      "name": "YAYOI",
+      "city": "Cupertino",
+      "address": "20682 Homestead Rd, Cupertino, CA 95014",
+      "area": "Homestead Rd",
+      "cuisine": "Japanese (teishoku)",
+      "days_open": "Daily",
+      "hours_tuesday": "11:30 AM - 8:00 PM",
+      "lunch_special": {
+        "name": "Teishoku set meals",
+        "price_from": 22.0,
+        "price_to": 33.9,
+        "days": "Daily",
+        "window": "All day",
+        "includes": "Set meal with rice, miso soup and sides; same price lunch and dinner."
+      },
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": true,
+        "note": "Cupertino - short walk/ride to the Stevens Creek/De Anza VTA corridor."
+      },
+      "flags": [],
+      "phone": "(408) 564-8852",
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/yayoi-cupertino",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=YAYOI+20682+Homestead+Rd+Cupertino+CA+95014"
+      },
+      "verification": {
+        "level": "official",
+        "accessed": "2026-09-08",
+        "sources": [
+          {
+            "label": "Official menu - yayoi-us.com (teishoku $22-$33.90)",
+            "url": "https://www.yayoi-us.com/menu"
+          },
+          {
+            "label": "Yelp - YAYOI Cupertino (address, phone, daily 11:30-8)",
+            "url": "https://www.yelp.com/biz/yayoi-cupertino"
+          }
+        ]
+      },
+      "id": "L361",
+      "coords": null,
+      "added_in": "batch8.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Azuma",
+      "city": "Cupertino",
+      "address": "19645 Stevens Creek Blvd, Cupertino, CA 95014",
+      "area": "Stevens Creek Blvd",
+      "cuisine": "Japanese",
+      "days_open": "Mon-Sat lunch & dinner",
+      "hours_tuesday": "11:30 AM - 2:00 PM, 5:00 PM - 9:00 PM",
+      "lunch_special": {
+        "name": "Lunch menu",
+        "price_from": null,
+        "price_to": null,
+        "days": "Mon-Sat",
+        "window": "11:30 AM - 2:00 PM",
+        "includes": null
+      },
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": true,
+        "note": "On/near Stevens Creek Blvd or De Anza Blvd - VTA 23/523 corridor back toward Sunnyvale/Caltrain."
+      },
+      "flags": [
+        "Lunch price not printed by any checked source - confirm on arrival."
+      ],
+      "phone": "(408) 257-4057",
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/azuma-cupertino",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Azuma+19645+Stevens+Creek+Blvd+Cupertino+CA+95014"
+      },
+      "verification": {
+        "level": "review",
+        "accessed": "2026-09-08",
+        "sources": [
+          {
+            "label": "Yelp - Azuma Cupertino (address, phone, lunch 11:30-2 Mon-Sat)",
+            "url": "https://www.yelp.com/biz/azuma-cupertino"
+          }
+        ]
+      },
+      "id": "L362",
+      "coords": null,
+      "added_in": "batch8.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Alexander's Steakhouse",
+      "city": "Cupertino",
+      "address": "19379 Stevens Creek Blvd, Cupertino, CA 95014",
+      "area": "Stevens Creek Blvd (Main Street)",
+      "cuisine": "Steakhouse",
+      "days_open": "Lunch Wed-Sun; dinner nightly",
+      "hours_tuesday": "Dinner only (lunch Wed-Fri 12-2, Sat-Sun 11-2)",
+      "lunch_special": {
+        "name": "Weekday prix-fixe lunch",
+        "price_from": 58.0,
+        "price_to": null,
+        "days": "Wed-Fri",
+        "window": "12:00 PM - 2:00 PM",
+        "includes": null
+      },
+      "open_on_trip_date": false,
+      "fits_return_bus": {
+        "ok": true,
+        "note": "On/near Stevens Creek Blvd or De Anza Blvd - VTA 23/523 corridor back toward Sunnyvale/Caltrain."
+      },
+      "flags": [
+        "No lunch on Tuesday (lunch Wed-Sun only).",
+        "Prix-fixe quoted $58 (official) vs $55/$70 in third-party mirrors."
+      ],
+      "phone": "(408) 446-2222",
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/alexanders-steakhouse-cupertino",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Alexander's+Steakhouse+19379+Stevens+Creek+Blvd+Cupertino+CA+95014"
+      },
+      "verification": {
+        "level": "conflicting",
+        "accessed": "2026-09-08",
+        "sources": [
+          {
+            "label": "Official weekday lunch menu - alexandershospitality.com ($58 prix fixe)",
+            "url": "https://www.alexandershospitality.com/cupertino-menus"
+          },
+          {
+            "label": "Yelp - Alexander's Steakhouse Cupertino (hours)",
+            "url": "https://www.yelp.com/biz/alexanders-steakhouse-cupertino"
+          }
+        ]
+      },
+      "id": "L363",
+      "coords": null,
+      "added_in": "batch8.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Thai Square",
+      "city": "Cupertino",
+      "address": "21267 Stevens Creek Blvd Ste 311, Cupertino, CA 95014",
+      "area": "West Stevens Creek Blvd (Oaks)",
+      "cuisine": "Thai",
+      "days_open": "Daily",
+      "hours_tuesday": "11:00 AM - 3:30 PM, 5:00 PM - 9:00 PM",
+      "lunch_special": {
+        "name": "Lunch fried rice / noodle plates",
+        "price_from": 10.0,
+        "price_to": 11.0,
+        "days": "Mon-Sat",
+        "window": "11:00 AM - 3:30 PM",
+        "includes": null
+      },
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": true,
+        "note": "On/near Stevens Creek Blvd or De Anza Blvd - VTA 23/523 corridor back toward Sunnyvale/Caltrain."
+      },
+      "flags": [
+        "OpenTable menu prices are dated (2022) - expect higher."
+      ],
+      "phone": null,
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/thai-square-cupertino",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Thai+Square+21267+Stevens+Creek+Blvd+Ste+311+Cupertino+CA+95014"
+      },
+      "verification": {
+        "level": "review",
+        "accessed": "2026-09-08",
+        "sources": [
+          {
+            "label": "OpenTable - Thai Square Cupertino (hours; menu $10-11 lunch plates, 2022 data)",
+            "url": "https://www.opentable.com/r/thai-square-cupertino"
+          },
+          {
+            "label": "Yelp - Thai Square Cupertino",
+            "url": "https://www.yelp.com/biz/thai-square-cupertino"
+          }
+        ]
+      },
+      "id": "L364",
+      "coords": null,
+      "added_in": "batch8.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Thai Bangkok Cuisine",
+      "city": "Cupertino",
+      "address": "21670 Stevens Creek Blvd, Cupertino, CA 95014",
+      "area": "West Stevens Creek Blvd",
+      "cuisine": "Thai",
+      "days_open": "Tue-Sun; closed Mon",
+      "hours_tuesday": "11:00 AM - 2:30 PM, 5:00 PM - 9:00 PM",
+      "lunch_special": {
+        "name": "Lunch menu (entrees, noodles, soups)",
+        "price_from": 11.99,
+        "price_to": 21.0,
+        "days": "Tue-Fri",
+        "window": "11:00 AM - 2:30 PM",
+        "includes": null
+      },
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": true,
+        "note": "On/near Stevens Creek Blvd or De Anza Blvd - VTA 23/523 corridor back toward Sunnyvale/Caltrain."
+      },
+      "flags": [
+        "OpenTable lists Mon-Fri lunch but the official site says closed Monday - official used."
+      ],
+      "phone": "(669) 342-7300",
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/thai-bangkok-cuisine-cupertino",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Thai+Bangkok+Cuisine+21670+Stevens+Creek+Blvd+Cupertino+CA+95014"
+      },
+      "verification": {
+        "level": "conflicting",
+        "accessed": "2026-09-08",
+        "sources": [
+          {
+            "label": "Official site - thaibangkokcuisineca.com (hours: closed Mon; Tue-Fri 11-2:30 & 5-9; Sat-Sun 11-3 & 5-9)",
+            "url": "https://www.thaibangkokcuisineca.com/"
+          },
+          {
+            "label": "Beyondmenu mirror (lunch entrees/noodles from $19, lunch BBQ $21, lunch soups $11.99)",
+            "url": "https://www.beyondmenu.com/85416/cupertino/thai-bangkok-cuisine-cupertino-95014.aspx"
+          }
+        ]
+      },
+      "id": "L365",
+      "coords": null,
+      "added_in": "batch8.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Olarn Thai",
+      "city": "Cupertino",
+      "address": "19672 Stevens Creek Blvd, Cupertino, CA 95014",
+      "area": "Stevens Creek Blvd",
+      "cuisine": "Thai",
+      "days_open": "Daily",
+      "hours_tuesday": "11:00 AM - 10:00 PM",
+      "lunch_special": {
+        "name": "Lunch entrees",
+        "price_from": 9.95,
+        "price_to": 14.95,
+        "days": "Daily",
+        "window": "11:00 AM - 3:00 PM",
+        "includes": null
+      },
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": true,
+        "note": "On/near Stevens Creek Blvd or De Anza Blvd - VTA 23/523 corridor back toward Sunnyvale/Caltrain."
+      },
+      "flags": [
+        "Menu prices are from a 2019 mirror - almost certainly higher now."
+      ],
+      "phone": null,
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/olarn-thai-cupertino",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Olarn+Thai+19672+Stevens+Creek+Blvd+Cupertino+CA+95014"
+      },
+      "verification": {
+        "level": "review",
+        "accessed": "2026-09-08",
+        "sources": [
+          {
+            "label": "OpenTable - Olarn Thai (hours daily 11-10)",
+            "url": "https://www.opentable.com/r/olarn-thai-cupertino"
+          },
+          {
+            "label": "Beyondmenu mirror (lunch entrees $9.95-$14.95, 2019 data)",
+            "url": "https://www.beyondmenu.com/olarn-thai-cupertino"
+          }
+        ]
+      },
+      "id": "L366",
+      "coords": null,
+      "added_in": "batch8.json",
+      "distance_mi": null
+    },
+    {
+      "name": "I Heart Bento",
+      "city": "Cupertino",
+      "address": "10129 S De Anza Blvd, Cupertino, CA 95014",
+      "area": "De Anza Blvd",
+      "cuisine": "Japanese (bento)",
+      "days_open": "Mon-Sat; closed Sun",
+      "hours_tuesday": "11:00 AM - 7:00 PM",
+      "lunch_special": {
+        "name": "Bento boxes",
+        "price_from": 16.0,
+        "price_to": 21.5,
+        "days": "Mon-Sat",
+        "window": "All day",
+        "includes": null
+      },
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": true,
+        "note": "On/near Stevens Creek Blvd or De Anza Blvd - VTA 23/523 corridor back toward Sunnyvale/Caltrain."
+      },
+      "flags": [],
+      "phone": "(408) 996-0928",
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/i-heart-bento-cupertino",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=I+Heart+Bento+10129+S+De+Anza+Blvd+Cupertino+CA+95014"
+      },
+      "verification": {
+        "level": "listing",
+        "accessed": "2026-09-08",
+        "sources": [
+          {
+            "label": "Zmenu - I Heart Bento (address, phone, hours Mon-Sat 11-7)",
+            "url": "https://www.zmenu.com/i-heart-bento-cupertino-online-menu/"
+          },
+          {
+            "label": "ezCater menu mirror (bentos $16-$21.50)",
+            "url": "https://www.ezcater.com/catering/i-heart-bento"
+          }
+        ]
+      },
+      "id": "L367",
+      "coords": null,
+      "added_in": "batch8.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Nutrition Restaurant",
+      "city": "Cupertino",
+      "address": "10935 N Wolfe Rd, Cupertino, CA 95014",
+      "area": "N Wolfe Rd (Cupertino Village)",
+      "cuisine": "Chinese",
+      "days_open": "Tue-Sun; closed Mon",
+      "hours_tuesday": "10:30 AM - 8:30 PM",
+      "lunch_special": {
+        "name": "Rice plates / entrees",
+        "price_from": 9.59,
+        "price_to": 17.99,
+        "days": "Tue-Sun",
+        "window": "All day",
+        "includes": null
+      },
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": true,
+        "note": "Cupertino - short walk/ride to the Stevens Creek/De Anza VTA corridor."
+      },
+      "flags": [
+        "Yelp rating 3.1 - reviews mixed."
+      ],
+      "phone": "(408) 777-8208",
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/nutrition-restaurant-cupertino",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Nutrition+Restaurant+10935+N+Wolfe+Rd+Cupertino+CA+95014"
+      },
+      "verification": {
+        "level": "review",
+        "accessed": "2026-09-08",
+        "sources": [
+          {
+            "label": "Yelp - Nutrition Restaurant (address, phone, closed Mon; Tue-Fri 10:30-8:30; entrees $9.59-$17.99)",
+            "url": "https://www.yelp.com/biz/nutrition-restaurant-cupertino"
+          }
+        ]
+      },
+      "id": "L368",
+      "coords": null,
+      "added_in": "batch8.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Curry Pizza House",
+      "city": "Cupertino",
+      "address": "20080 Stevens Creek Blvd Ste 106, Cupertino, CA 95014",
+      "area": "Stevens Creek Blvd",
+      "cuisine": "Indian-fusion pizza",
+      "days_open": "Daily",
+      "hours_tuesday": "10:00 AM - 10:00 PM",
+      "lunch_special": {
+        "name": "Lunch Special #2 - personal 8\" specialty pizza + drink",
+        "price_from": 13.99,
+        "price_to": null,
+        "days": "Mon-Fri",
+        "window": "Open - 4:00 PM",
+        "includes": "Personal 8-inch specialty pizza + drink; side salad +$2."
+      },
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": true,
+        "note": "On/near Stevens Creek Blvd or De Anza Blvd - VTA 23/523 corridor back toward Sunnyvale/Caltrain."
+      },
+      "flags": [],
+      "phone": "(408) 617-9050",
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/curry-pizza-house-cupertino",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Curry+Pizza+House+20080+Stevens+Creek+Blvd+Ste+106+Cupertino+CA+95014"
+      },
+      "verification": {
+        "level": "review",
+        "accessed": "2026-09-08",
+        "sources": [
+          {
+            "label": "TripAdvisor - Curry Pizza House Cupertino (menu: Lunch Special 2 $13.99, Mon-Fri open to 4 PM)",
+            "url": "https://www.tripadvisor.com/Restaurant_Review-g32273-d19306765-Reviews-Curry_Pizza_House-Cupertino_California.html"
+          },
+          {
+            "label": "OpenTable - Curry Pizza House Cupertino (address, phone, daily 10-10)",
+            "url": "https://www.opentable.com/r/curry-pizza-house-cupertino"
+          }
+        ]
+      },
+      "id": "L369",
+      "coords": null,
+      "added_in": "batch8.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Kura Revolving Sushi Bar",
+      "city": "Cupertino",
+      "address": "19600 Vallco Pkwy Ste 160, Cupertino, CA 95014",
+      "area": "Vallco Pkwy / Main Street",
+      "cuisine": "Japanese (conveyor sushi)",
+      "days_open": "Daily",
+      "hours_tuesday": "11:00 AM - 9:30 PM",
+      "lunch_special": {
+        "name": "Per-plate pricing (no lunch special)",
+        "price_from": null,
+        "price_to": null,
+        "days": null,
+        "window": null,
+        "includes": null
+      },
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": true,
+        "note": "Cupertino - short walk/ride to the Stevens Creek/De Anza VTA corridor."
+      },
+      "flags": [
+        "Plate price not verified from an official source (reviews quote $2.25-$3.xx historically).",
+        "Hours differ slightly between TripAdvisor (11:30 open weekdays) and Restaurant Guru (11:00)."
+      ],
+      "phone": "(408) 861-0155",
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/kura-revolving-sushi-bar-cupertino-4",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Kura+Revolving+Sushi+Bar+19600+Vallco+Pkwy+Ste+160+Cupertino+CA+95014"
+      },
+      "verification": {
+        "level": "listing",
+        "accessed": "2026-09-08",
+        "sources": [
+          {
+            "label": "Restaurant Guru - Kura Cupertino (address, phone, hours Mon-Thu 11-9:30, Fri-Sat 11-10:30, Sun 11-10)",
+            "url": "https://restaurantguru.com/Kura-Revolving-Sushi-Bar-Cupertino-2"
+          },
+          {
+            "label": "Yelp - Kura Revolving Sushi Bar Cupertino",
+            "url": "https://www.yelp.com/biz/kura-revolving-sushi-bar-cupertino-4"
+          }
+        ]
+      },
+      "id": "L370",
+      "coords": null,
+      "added_in": "batch8.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Kong Tofu & BBQ",
+      "city": "Cupertino",
+      "address": "19626 Stevens Creek Blvd, Cupertino, CA 95014",
+      "area": "Stevens Creek Blvd",
+      "cuisine": "Korean (tofu soup / BBQ)",
+      "days_open": "Tue-Sun; closed Mon",
+      "hours_tuesday": "11:30 AM - 2:00 PM, 5:00 PM - 8:00 PM",
+      "lunch_special": {
+        "name": "Lunch service 11:30-2",
+        "price_from": null,
+        "price_to": null,
+        "days": "Tue-Sun",
+        "window": "11:30 AM - 2:00 PM",
+        "includes": null
+      },
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": true,
+        "note": "On/near Stevens Creek Blvd or De Anza Blvd - VTA 23/523 corridor back toward Sunnyvale/Caltrain."
+      },
+      "flags": [
+        "Lunch price not printed by any checked source - confirm on arrival.",
+        "Lunch window ends 2:00 PM sharp."
+      ],
+      "phone": "(408) 863-0234",
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/kong-tofu-and-bbq-cupertino-2",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Kong+Tofu+&+BBQ+19626+Stevens+Creek+Blvd+Cupertino+CA+95014"
+      },
+      "verification": {
+        "level": "review",
+        "accessed": "2026-09-08",
+        "sources": [
+          {
+            "label": "Yelp - Kong Tofu & BBQ (address, phone, closed Mon; Tue-Sun 11:30-2 & 5-8/8:30)",
+            "url": "https://www.yelp.com/biz/kong-tofu-and-bbq-cupertino-2"
+          }
+        ]
+      },
+      "id": "L371",
+      "coords": null,
+      "added_in": "batch8.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Taste Good Beijing Cuisine",
+      "city": "Cupertino",
+      "address": "20916 Homestead Rd Unit A, Cupertino, CA 95014",
+      "area": "Homestead Rd",
+      "cuisine": "Chinese (Beijing)",
+      "days_open": "Daily",
+      "hours_tuesday": "10:30 AM - 2:00 PM, 4:30 PM - 9:00 PM",
+      "lunch_special": {
+        "name": "Lunch service 10:30-2",
+        "price_from": null,
+        "price_to": null,
+        "days": null,
+        "window": null,
+        "includes": null
+      },
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": true,
+        "note": "Cupertino - short walk/ride to the Stevens Creek/De Anza VTA corridor."
+      },
+      "flags": [
+        "Lunch price not printed by any checked source - confirm on arrival.",
+        "Yelp rating 2.6 - reviews poor."
+      ],
+      "phone": "(408) 320-2138",
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/taste-good-beijing-cuisine-cupertino-cupertino",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Taste+Good+Beijing+Cuisine+20916+Homestead+Rd+Unit+A+Cupertino+CA+95014"
+      },
+      "verification": {
+        "level": "review",
+        "accessed": "2026-09-08",
+        "sources": [
+          {
+            "label": "Yelp - Taste Good Beijing Cuisine Cupertino (address, phone, Sun-Thu 10:30-2 & 4:30-9, Fri-Sat to 2:30/9:30)",
+            "url": "https://www.yelp.com/biz/taste-good-beijing-cuisine-cupertino-cupertino"
+          },
+          {
+            "label": "Apple Maps listing (hours cross-check)",
+            "url": "https://maps.apple.com/place?place-id=IB7CF3417A41F7A03"
+          }
+        ]
+      },
+      "id": "L372",
+      "coords": null,
+      "added_in": "batch8.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Special Noodle Soup",
+      "city": "Cupertino",
+      "address": "10275 S De Anza Blvd, Cupertino, CA 95014",
+      "area": "De Anza Blvd",
+      "cuisine": "Chinese (noodle soup)",
+      "days_open": "Daily",
+      "hours_tuesday": "11:00 AM - 9:00 PM",
+      "lunch_special": {
+        "name": "No published lunch special",
+        "price_from": null,
+        "price_to": null,
+        "days": null,
+        "window": null,
+        "includes": null
+      },
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": true,
+        "note": "On/near Stevens Creek Blvd or De Anza Blvd - VTA 23/523 corridor back toward Sunnyvale/Caltrain."
+      },
+      "flags": [
+        "Lunch price not printed by any checked source - confirm on arrival."
+      ],
+      "phone": "(408) 429-8866",
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/special-noodle-soup-cupertino",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Special+Noodle+Soup+10275+S+De+Anza+Blvd+Cupertino+CA+95014"
+      },
+      "verification": {
+        "level": "review",
+        "accessed": "2026-09-08",
+        "sources": [
+          {
+            "label": "Yelp - Special Noodle Soup (address, phone, daily 11-9)",
+            "url": "https://www.yelp.com/biz/special-noodle-soup-cupertino"
+          }
+        ]
+      },
+      "id": "L373",
+      "coords": null,
+      "added_in": "batch8.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Liukoushui Chongqing Noodles",
+      "city": "Cupertino",
+      "address": "19052 Stevens Creek Blvd, Cupertino, CA 95014",
+      "area": "East Stevens Creek Blvd",
+      "cuisine": "Chinese (Chongqing noodles)",
+      "days_open": "Daily",
+      "hours_tuesday": "11:00 AM - 2:00 PM, 4:30 PM - 9:00 PM",
+      "lunch_special": {
+        "name": "No published lunch special",
+        "price_from": null,
+        "price_to": null,
+        "days": null,
+        "window": null,
+        "includes": null
+      },
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": true,
+        "note": "On/near Stevens Creek Blvd or De Anza Blvd - VTA 23/523 corridor back toward Sunnyvale/Caltrain."
+      },
+      "flags": [
+        "Lunch price not printed by any checked source - confirm on arrival.",
+        "Unclaimed Yelp listing (31 reviews) - confirm hours."
+      ],
+      "phone": null,
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/liukoushui-chongqing-noodles-cupertino",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Liukoushui+Chongqing+Noodles+19052+Stevens+Creek+Blvd+Cupertino+CA+95014"
+      },
+      "verification": {
+        "level": "review",
+        "accessed": "2026-09-08",
+        "sources": [
+          {
+            "label": "Yelp - Liukoushui Chongqing Noodles (address, hours 11-2 & 4:30-9; Wed-Thu lunch to 2:30)",
+            "url": "https://www.yelp.com/biz/liukoushui-chongqing-noodles-cupertino"
+          }
+        ]
+      },
+      "id": "L374",
+      "coords": null,
+      "added_in": "batch8.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Tanto Japanese Restaurant",
+      "city": "Sunnyvale",
+      "address": "1063 E El Camino Real, Sunnyvale, CA 94087",
+      "area": "E El Camino Real",
+      "cuisine": "Japanese (izakaya)",
+      "days_open": "Tue-Sun; lunch Tue-Fri",
+      "hours_tuesday": "11:30 AM - 1:00 PM, 5:30 PM - 9:00 PM",
+      "lunch_special": {
+        "name": "Lunch sets",
+        "price_from": null,
+        "price_to": null,
+        "days": "Tue-Fri",
+        "window": "11:30 AM - 1:00 PM",
+        "includes": null
+      },
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Outside the Cupertino return corridor - drive/rideshare only."
+      },
+      "flags": [
+        "Very short lunch window (last order ~1 PM) and listings disagree - call ahead.",
+        "Lunch price not printed by any checked source - confirm on arrival."
+      ],
+      "phone": "(408) 244-7311",
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/tanto-japanese-restaurant-sunnyvale",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Tanto+Japanese+Restaurant+1063+E+El+Camino+Real+Sunnyvale+CA+94087"
+      },
+      "verification": {
+        "level": "conflicting",
+        "accessed": "2026-09-08",
+        "sources": [
+          {
+            "label": "Yelp - Tanto Sunnyvale (address, phone; lunch Tue-Fri 11:30-1)",
+            "url": "https://www.yelp.com/biz/tanto-japanese-restaurant-sunnyvale"
+          }
+        ]
+      },
+      "id": "L375",
+      "coords": null,
+      "added_in": "batch8.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Saravanaa Bhavan",
+      "city": "Sunnyvale",
+      "address": "1305 S Mary Ave, Sunnyvale, CA 94087",
+      "area": "S Mary Ave",
+      "cuisine": "South Indian vegetarian",
+      "days_open": "Daily",
+      "hours_tuesday": "11:00 AM - 9:30 PM",
+      "lunch_special": {
+        "name": "Lunch thali / combos",
+        "price_from": null,
+        "price_to": null,
+        "days": null,
+        "window": null,
+        "includes": null
+      },
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Outside the Cupertino return corridor - drive/rideshare only."
+      },
+      "flags": [
+        "Lunch price not printed by any checked source - confirm on arrival.",
+        "Tuesday hours transcribed from listing - confirm."
+      ],
+      "phone": "(408) 616-7755",
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/saravanaa-bhavan-sunnyvale",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Saravanaa+Bhavan+1305+S+Mary+Ave+Sunnyvale+CA+94087"
+      },
+      "verification": {
+        "level": "review",
+        "accessed": "2026-09-08",
+        "sources": [
+          {
+            "label": "Yelp - Saravanaa Bhavan Sunnyvale (address, phone)",
+            "url": "https://www.yelp.com/biz/saravanaa-bhavan-sunnyvale"
+          },
+          {
+            "label": "Official site - saravanaabhavan.us (locations)",
+            "url": "https://www.saravanaabhavan.us/"
+          }
+        ]
+      },
+      "id": "L376",
+      "coords": null,
+      "added_in": "batch8.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Madras Cafe",
+      "city": "Sunnyvale",
+      "address": "1177 W El Camino Real, Sunnyvale, CA 94087",
+      "area": "W El Camino Real",
+      "cuisine": "South Indian vegetarian",
+      "days_open": "Daily",
+      "hours_tuesday": "8:30 AM - 10:00 PM",
+      "lunch_special": {
+        "name": "No published lunch special (dosa/idli a la carte)",
+        "price_from": null,
+        "price_to": null,
+        "days": null,
+        "window": null,
+        "includes": null
+      },
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Outside the Cupertino return corridor - drive/rideshare only."
+      },
+      "flags": [
+        "Lunch price not printed by any checked source - confirm on arrival."
+      ],
+      "phone": "(408) 737-2323",
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/madras-cafe-sunnyvale",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Madras+Cafe+1177+W+El+Camino+Real+Sunnyvale+CA+94087"
+      },
+      "verification": {
+        "level": "review",
+        "accessed": "2026-09-08",
+        "sources": [
+          {
+            "label": "Yelp - Madras Cafe Sunnyvale (address, phone, daily 8:30-10)",
+            "url": "https://www.yelp.com/biz/madras-cafe-sunnyvale"
+          }
+        ]
+      },
+      "id": "L377",
+      "coords": null,
+      "added_in": "batch8.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Kabul Afghan Cuisine",
+      "city": "Sunnyvale",
+      "address": "351 W Washington Ave, Sunnyvale, CA 94086",
+      "area": "Downtown Sunnyvale",
+      "cuisine": "Afghan",
+      "days_open": "Lunch Mon-Fri; dinner nightly",
+      "hours_tuesday": "11:30 AM - 2:00 PM, 5:00 PM - 9:00 PM",
+      "lunch_special": {
+        "name": "Lunch menu Mon-Fri",
+        "price_from": null,
+        "price_to": null,
+        "days": "Mon-Fri",
+        "window": "11:30 AM - 2:00 PM",
+        "includes": null
+      },
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Outside the Cupertino return corridor - drive/rideshare only."
+      },
+      "flags": [
+        "Lunch price not printed by any checked source - confirm on arrival."
+      ],
+      "phone": "(408) 245-4350",
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/kabul-afghan-cuisine-sunnyvale",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Kabul+Afghan+Cuisine+351+W+Washington+Ave+Sunnyvale+CA+94086"
+      },
+      "verification": {
+        "level": "review",
+        "accessed": "2026-09-08",
+        "sources": [
+          {
+            "label": "Yelp - Kabul Afghan Cuisine Sunnyvale (address, phone, lunch Mon-Fri 11:30-2)",
+            "url": "https://www.yelp.com/biz/kabul-afghan-cuisine-sunnyvale"
+          },
+          {
+            "label": "Official site",
+            "url": "https://www.kabulcuisine.com/"
+          }
+        ]
+      },
+      "id": "L378",
+      "coords": null,
+      "added_in": "batch8.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Faultline Brewing Company",
+      "city": "Sunnyvale",
+      "address": "1235 Oakmead Pkwy, Sunnyvale, CA 94085",
+      "area": "Oakmead Pkwy (near Lawrence Expy)",
+      "cuisine": "American brewpub",
+      "days_open": "Daily",
+      "hours_tuesday": "11:00 AM - 9:00 PM",
+      "lunch_special": {
+        "name": "No lunch special (full menu from 11)",
+        "price_from": null,
+        "price_to": null,
+        "days": null,
+        "window": null,
+        "includes": null
+      },
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Outside the Cupertino return corridor - drive/rideshare only."
+      },
+      "flags": [
+        "No discounted lunch item found - listed for hours only."
+      ],
+      "phone": null,
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/faultline-brewing-company-sunnyvale",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Faultline+Brewing+Company+1235+Oakmead+Pkwy+Sunnyvale+CA+94085"
+      },
+      "verification": {
+        "level": "official",
+        "accessed": "2026-09-08",
+        "sources": [
+          {
+            "label": "Official site - faultlinebrewing.com (hours 11-9)",
+            "url": "https://www.faultlinebrewing.com/"
+          },
+          {
+            "label": "Yelp - Faultline Brewing Company",
+            "url": "https://www.yelp.com/biz/faultline-brewing-company-sunnyvale"
+          }
+        ]
+      },
+      "id": "L379",
+      "coords": null,
+      "added_in": "batch8.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Indian Tadka",
+      "city": "Sunnyvale",
+      "address": "1082 E El Camino Real #7, Sunnyvale, CA 94087",
+      "area": "E El Camino Real",
+      "cuisine": "Indian",
+      "days_open": "Daily (Mon dinner only)",
+      "hours_tuesday": "11:30 AM - 2:00 PM, 5:00 PM - 9:30 PM",
+      "lunch_special": {
+        "name": "Lunch special (starter + curry + biryani)",
+        "price_from": null,
+        "price_to": null,
+        "days": "Tue-Sun",
+        "window": "11:30 AM - 2:00 PM",
+        "includes": null
+      },
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Outside the Cupertino return corridor - drive/rideshare only."
+      },
+      "flags": [
+        "Lunch price not printed by any checked source - confirm on arrival."
+      ],
+      "phone": "(408) 246-6000",
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/indian-tadka-sunnyvale",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Indian+Tadka+1082+E+El+Camino+Real+#7+Sunnyvale+CA+94087"
+      },
+      "verification": {
+        "level": "review",
+        "accessed": "2026-09-08",
+        "sources": [
+          {
+            "label": "Yelp - Indian Tadka (address, phone; Mon dinner only, Tue-Fri 11:30-2, Sat-Sun 11:30-2:30)",
+            "url": "https://www.yelp.com/biz/indian-tadka-sunnyvale"
+          }
+        ]
+      },
+      "id": "L380",
+      "coords": null,
+      "added_in": "batch8.json",
+      "distance_mi": null
+    },
+    {
+      "name": "California Momo Kitchen",
+      "city": "Sunnyvale",
+      "address": "913 E Duane Ave, Sunnyvale, CA 94085",
+      "area": "E Duane Ave",
+      "cuisine": "Nepali / Himalayan",
+      "days_open": "Daily",
+      "hours_tuesday": "11:00 AM - 9:00 PM",
+      "lunch_special": {
+        "name": "Lunch specials 11-3",
+        "price_from": null,
+        "price_to": null,
+        "days": "Daily",
+        "window": "11:00 AM - 3:00 PM",
+        "includes": null
+      },
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Outside the Cupertino return corridor - drive/rideshare only."
+      },
+      "flags": [
+        "Lunch price not printed by any checked source - confirm on arrival.",
+        "Lunch-special window (11-3) comes from a review, not the menu."
+      ],
+      "phone": "(408) 743-5857",
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/california-momo-kitchen-sunnyvale",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=California+Momo+Kitchen+913+E+Duane+Ave+Sunnyvale+CA+94085"
+      },
+      "verification": {
+        "level": "review",
+        "accessed": "2026-09-08",
+        "sources": [
+          {
+            "label": "Yelp - California Momo Kitchen (address, phone, Mon-Thu 11-9, Fri 11-10, Sat 11:30-10, Sun 11:30-9)",
+            "url": "https://www.yelp.com/biz/california-momo-kitchen-sunnyvale"
+          }
+        ]
+      },
+      "id": "L381",
+      "coords": null,
+      "added_in": "batch8.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Surmai",
+      "city": "Sunnyvale",
+      "address": "500 Lawrence Expy Ste C, Sunnyvale, CA 94085",
+      "area": "Lawrence Expy",
+      "cuisine": "Indian (Maharashtrian coastal)",
+      "days_open": "Wed-Mon; closed Tue",
+      "hours_tuesday": "Closed Tuesdays",
+      "lunch_special": {
+        "name": "Special Thali",
+        "price_from": null,
+        "price_to": null,
+        "days": null,
+        "window": null,
+        "includes": null
+      },
+      "open_on_trip_date": false,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Outside the Cupertino return corridor - drive/rideshare only."
+      },
+      "flags": [
+        "CLOSED on the trip date (Tuesday).",
+        "Lunch price not printed by any checked source - confirm on arrival."
+      ],
+      "phone": "(408) 736-2411",
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/surmai-sunnyvale",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Surmai+500+Lawrence+Expy+Ste+C+Sunnyvale+CA+94085"
+      },
+      "verification": {
+        "level": "review",
+        "accessed": "2026-09-08",
+        "sources": [
+          {
+            "label": "Yelp - Surmai (address, phone; closed Tue; Mon/Wed/Thu/Sun 11-9:30, Fri-Sat 11-10:30)",
+            "url": "https://www.yelp.com/biz/surmai-sunnyvale"
+          }
+        ]
+      },
+      "id": "L382",
+      "coords": null,
+      "added_in": "batch8.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Seapot Hot Pot & KBBQ",
+      "city": "Sunnyvale",
+      "address": "740 E El Camino Real, Sunnyvale, CA 94087",
+      "area": "E El Camino Real",
+      "cuisine": "Hot pot / Korean BBQ (AYCE)",
+      "days_open": "Daily",
+      "hours_tuesday": "11:00 AM - 3:00 PM, 5:00 PM - 10:00 PM",
+      "lunch_special": {
+        "name": "Weekday Lunch Special (AYCE)",
+        "price_from": 23.99,
+        "price_to": null,
+        "days": "Mon-Fri",
+        "window": "11:00 AM - 3:00 PM",
+        "includes": null
+      },
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Outside the Cupertino return corridor - drive/rideshare only."
+      },
+      "flags": [
+        "Price is from the business's Yelp offer banner - confirm current."
+      ],
+      "phone": "(408) 685-2268",
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/seapot-hot-pot-and-kbbq-sunnyvale",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Seapot+Hot+Pot+&+KBBQ+740+E+El+Camino+Real+Sunnyvale+CA+94087"
+      },
+      "verification": {
+        "level": "review",
+        "accessed": "2026-09-08",
+        "sources": [
+          {
+            "label": "Yelp - Seapot Hot Pot & KBBQ Sunnyvale (address, phone, hours; Yelp offer: Lunch Special M-F $23.99)",
+            "url": "https://www.yelp.com/biz/seapot-hot-pot-and-kbbq-sunnyvale"
+          }
+        ]
+      },
+      "id": "L383",
+      "coords": null,
+      "added_in": "batch8.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Abhiruchi",
+      "city": "Sunnyvale",
+      "address": "893 E El Camino Real, Sunnyvale, CA 94087",
+      "area": "E El Camino Real",
+      "cuisine": "South Indian (Andhra)",
+      "days_open": "Thu-Tue; closed Wed",
+      "hours_tuesday": "8:30 AM - 10:30 PM",
+      "lunch_special": {
+        "name": "Lunch thali (after 11:30)",
+        "price_from": 17.99,
+        "price_to": 18.99,
+        "days": "Thu-Tue",
+        "window": "from 11:30 AM",
+        "includes": null
+      },
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Outside the Cupertino return corridor - drive/rideshare only."
+      },
+      "flags": [
+        "Prices from menu mirrors, not official site."
+      ],
+      "phone": null,
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/abhiruchi-sunnyvale",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Abhiruchi+893+E+El+Camino+Real+Sunnyvale+CA+94087"
+      },
+      "verification": {
+        "level": "listing",
+        "accessed": "2026-09-08",
+        "sources": [
+          {
+            "label": "Menupages - Abhiruchi (address, hours; closed Wed)",
+            "url": "https://menupages.com/abhiruchi/893-e-el-camino-real-sunnyvale"
+          },
+          {
+            "label": "Beyondmenu mirror (thali $17.99-$18.99)",
+            "url": "https://www.beyondmenu.com/abhiruchi-sunnyvale"
+          }
+        ]
+      },
+      "id": "L384",
+      "coords": null,
+      "added_in": "batch8.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Mom's Biryani",
+      "city": "Sunnyvale",
+      "address": "103 E Fremont Ave, Sunnyvale, CA 94087",
+      "area": "E Fremont Ave",
+      "cuisine": "Indian (Hyderabadi biryani)",
+      "days_open": "Daily",
+      "hours_tuesday": "11:00 AM - 2:30 PM, 5:30 PM - 9:30 PM",
+      "lunch_special": {
+        "name": "Lunch 11-2:30",
+        "price_from": null,
+        "price_to": null,
+        "days": "Daily",
+        "window": "11:00 AM - 2:30 PM",
+        "includes": null
+      },
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Outside the Cupertino return corridor - drive/rideshare only."
+      },
+      "flags": [
+        "Lunch price not printed by any checked source - confirm on arrival."
+      ],
+      "phone": "(408) 680-9804",
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/moms-biryani-sunnyvale",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Mom's+Biryani+103+E+Fremont+Ave+Sunnyvale+CA+94087"
+      },
+      "verification": {
+        "level": "official",
+        "accessed": "2026-09-08",
+        "sources": [
+          {
+            "label": "Official site - momsbiryanica.com (hours; ordering page, no lunch pricing readable)",
+            "url": "https://momsbiryanica.com/"
+          },
+          {
+            "label": "Yelp - Mom's Biryani Sunnyvale",
+            "url": "https://www.yelp.com/biz/moms-biryani-sunnyvale"
+          }
+        ]
+      },
+      "id": "L385",
+      "coords": null,
+      "added_in": "batch8.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Dehaati",
+      "city": "Sunnyvale",
+      "address": "954 E El Camino Real, Sunnyvale, CA 94087",
+      "area": "E El Camino Real",
+      "cuisine": "Indian (village-style)",
+      "days_open": "Tue-Sun; closed Mon",
+      "hours_tuesday": "11:30 AM - 3:00 PM, 5:30 PM - 9:30 PM",
+      "lunch_special": {
+        "name": "Lunch service 11:30-3",
+        "price_from": null,
+        "price_to": null,
+        "days": "Tue-Sun",
+        "window": "11:30 AM - 3:00 PM",
+        "includes": null
+      },
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Outside the Cupertino return corridor - drive/rideshare only."
+      },
+      "flags": [
+        "Lunch price not printed by any checked source - confirm on arrival."
+      ],
+      "phone": "(408) 685-2054",
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/dehaati-sunnyvale",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Dehaati+954+E+El+Camino+Real+Sunnyvale+CA+94087"
+      },
+      "verification": {
+        "level": "review",
+        "accessed": "2026-09-08",
+        "sources": [
+          {
+            "label": "Yelp - Dehaati (address, phone, closed Mon; Tue-Sun 11:30-3 & 5:30-9:30)",
+            "url": "https://www.yelp.com/biz/dehaati-sunnyvale"
+          }
+        ]
+      },
+      "id": "L386",
+      "coords": null,
+      "added_in": "batch8.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Delhiwala Chaat",
+      "city": "Sunnyvale",
+      "address": "590 Old San Francisco Rd, Sunnyvale, CA 94086",
+      "area": "Old San Francisco Rd",
+      "cuisine": "Indian street food (veg)",
+      "days_open": "Tue-Sun; closed Mon",
+      "hours_tuesday": "11:00 AM - 9:00 PM",
+      "lunch_special": {
+        "name": "No published lunch special (chaat a la carte)",
+        "price_from": null,
+        "price_to": null,
+        "days": null,
+        "window": null,
+        "includes": null
+      },
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Outside the Cupertino return corridor - drive/rideshare only."
+      },
+      "flags": [
+        "Lunch price not printed by any checked source - confirm on arrival."
+      ],
+      "phone": "(669) 224-8030",
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/delhiwala-chaat-sunnyvale-8",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Delhiwala+Chaat+590+Old+San+Francisco+Rd+Sunnyvale+CA+94086"
+      },
+      "verification": {
+        "level": "review",
+        "accessed": "2026-09-08",
+        "sources": [
+          {
+            "label": "Yelp - Delhiwala Chaat (address, phone, closed Mon; Tue-Fri 11-9, Sat-Sun 10-9)",
+            "url": "https://www.yelp.com/biz/delhiwala-chaat-sunnyvale-8"
+          }
+        ]
+      },
+      "id": "L387",
+      "coords": null,
+      "added_in": "batch8.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Chelokababi Persian Cuisine",
+      "city": "Sunnyvale",
+      "address": "1236 S Wolfe Rd, Sunnyvale, CA 94086",
+      "area": "S Wolfe Rd",
+      "cuisine": "Persian",
+      "days_open": "Tue-Sun (Tue dinner only)",
+      "hours_tuesday": "Dinner only (4:30 PM - 9:00 PM)",
+      "lunch_special": {
+        "name": "Lunch Wed-Sun",
+        "price_from": null,
+        "price_to": null,
+        "days": "Wed-Sun",
+        "window": "from 11:30 AM",
+        "includes": null
+      },
+      "open_on_trip_date": false,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Outside the Cupertino return corridor - drive/rideshare only."
+      },
+      "flags": [
+        "No lunch on Tuesday (dinner only).",
+        "Lunch price not printed by any checked source - confirm on arrival."
+      ],
+      "phone": "(408) 737-1222",
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/chelokababi-persian-cuisine-sunnyvale",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Chelokababi+Persian+Cuisine+1236+S+Wolfe+Rd+Sunnyvale+CA+94086"
+      },
+      "verification": {
+        "level": "review",
+        "accessed": "2026-09-08",
+        "sources": [
+          {
+            "label": "Yelp - Chelokababi (address, phone; Mon closed, Tue 4:30-9, Wed-Thu 11:30-9, Fri 11:30-9:30, Sat-Sun 12-9/9:30)",
+            "url": "https://www.yelp.com/biz/chelokababi-persian-cuisine-sunnyvale"
+          }
+        ]
+      },
+      "id": "L388",
+      "coords": null,
+      "added_in": "batch8.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Tao Tao Cafe",
+      "city": "Sunnyvale",
+      "address": "175 S Murphy Ave, Sunnyvale, CA 94086",
+      "area": "Downtown Sunnyvale (Murphy Ave)",
+      "cuisine": "Chinese-American",
+      "days_open": "Tue-Sun; lunch Tue-Fri",
+      "hours_tuesday": "11:30 AM - 2:00 PM, 3:30 PM - 8:30 PM",
+      "lunch_special": {
+        "name": "Lunch service Tue-Fri",
+        "price_from": null,
+        "price_to": null,
+        "days": "Tue-Fri",
+        "window": "11:30 AM - 2:00 PM",
+        "includes": null
+      },
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Outside the Cupertino return corridor - drive/rideshare only."
+      },
+      "flags": [
+        "Lunch price not printed by any checked source - confirm on arrival."
+      ],
+      "phone": "(408) 736-3731",
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/tao-tao-cafe-sunnyvale-2",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Tao+Tao+Cafe+175+S+Murphy+Ave+Sunnyvale+CA+94086"
+      },
+      "verification": {
+        "level": "review",
+        "accessed": "2026-09-08",
+        "sources": [
+          {
+            "label": "Yelp - Tao Tao Cafe (address, phone; closed Mon; Tue-Fri 11:30-2 & 3:30-8:30; Sat-Sun from 3 PM)",
+            "url": "https://www.yelp.com/biz/tao-tao-cafe-sunnyvale-2"
+          },
+          {
+            "label": "Restaurantji hours cross-check",
+            "url": "https://www.restaurantji.com/ca/sunnyvale/tao-tao-/"
+          }
+        ]
+      },
+      "id": "L389",
+      "coords": null,
+      "added_in": "batch8.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Garlic High",
+      "city": "Sunnyvale",
+      "address": "107 W Maude Ave, Sunnyvale, CA 94085",
+      "area": "W Maude Ave",
+      "cuisine": "Japanese (garlic ramen)",
+      "days_open": "Tue-Sun; closed Mon",
+      "hours_tuesday": "11:30 AM - 1:30 PM, 5:30 PM - 8:30 PM",
+      "lunch_special": {
+        "name": "Lunch ramen service",
+        "price_from": null,
+        "price_to": null,
+        "days": "Tue-Sun",
+        "window": "11:30 AM - 1:30 PM",
+        "includes": null
+      },
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Outside the Cupertino return corridor - drive/rideshare only."
+      },
+      "flags": [
+        "Yelp still shows dinner-only hours; Apple Maps/Corner show lunch 11:30-1:30 - call ahead.",
+        "Lunch price not printed by any checked source - confirm on arrival."
+      ],
+      "phone": "(408) 599-9475",
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/garlic-high-sunnyvale",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Garlic+High+107+W+Maude+Ave+Sunnyvale+CA+94085"
+      },
+      "verification": {
+        "level": "conflicting",
+        "accessed": "2026-09-08",
+        "sources": [
+          {
+            "label": "Corner.inc listing (address, hours Tue-Fri 11:30-1:30 & 5:30-8:30)",
+            "url": "https://www.corner.inc/place/p8gQqaMsgu1K"
+          },
+          {
+            "label": "Yelp - Garlic High (older listing shows dinner-only hours)",
+            "url": "https://www.yelp.com/biz/garlic-high-sunnyvale"
+          }
+        ]
+      },
+      "id": "L390",
+      "coords": null,
+      "added_in": "batch8.json",
+      "distance_mi": null
+    },
+    {
+      "name": "DL Brazuca",
+      "city": "Sunnyvale",
+      "address": "510 Lawrence Expy Ste 101, Sunnyvale, CA 94085",
+      "area": "Lawrence Expy",
+      "cuisine": "Brazilian deli / bakery",
+      "days_open": "Mon-Sat; closed Sun",
+      "hours_tuesday": "9:00 AM - 5:00 PM",
+      "lunch_special": {
+        "name": "Daily hot lunch plates (11:30-3)",
+        "price_from": null,
+        "price_to": null,
+        "days": "Mon-Fri",
+        "window": "11:30 AM - 3:00 PM",
+        "includes": null
+      },
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Outside the Cupertino return corridor - drive/rideshare only."
+      },
+      "flags": [
+        "Lunch price not printed by any checked source - confirm on arrival."
+      ],
+      "phone": "(408) 836-8056",
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/dl-brazuca-sunnyvale-2",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=DL+Brazuca+510+Lawrence+Expy+Ste+101+Sunnyvale+CA+94085"
+      },
+      "verification": {
+        "level": "review",
+        "accessed": "2026-09-08",
+        "sources": [
+          {
+            "label": "Yelp - DL Brazuca (address, phone, Mon-Fri 9-5, Sat 9-2/3, Sun closed)",
+            "url": "https://www.yelp.com/biz/dl-brazuca-sunnyvale-2"
+          },
+          {
+            "label": "Apple Maps listing (lunch service Mon-Fri 11:30-3)",
+            "url": "https://maps.apple.com/place?place-id=ID3919490360472E"
+          }
+        ]
+      },
+      "id": "L391",
+      "coords": null,
+      "added_in": "batch8.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Sumika",
+      "city": "Los Altos",
+      "address": "236 Central Plz, Los Altos, CA 94022",
+      "area": "Downtown Los Altos",
+      "cuisine": "Japanese (yakitori)",
+      "days_open": "Daily",
+      "hours_tuesday": "11:30 AM - 2:00 PM, 5:30 PM - 9:00 PM",
+      "lunch_special": {
+        "name": "Lunch bento",
+        "price_from": null,
+        "price_to": null,
+        "days": "Daily",
+        "window": "11:30 AM - 2:00 PM",
+        "includes": null
+      },
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Outside the Cupertino return corridor - drive/rideshare only."
+      },
+      "flags": [
+        "$20 bento price is from a review, not the menu."
+      ],
+      "phone": "(650) 917-1822",
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/sumika-los-altos",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Sumika+236+Central+Plz+Los+Altos+CA+94022"
+      },
+      "verification": {
+        "level": "review",
+        "accessed": "2026-09-08",
+        "sources": [
+          {
+            "label": "Yelp - Sumika Los Altos (address, phone, lunch 11:30-2)",
+            "url": "https://www.yelp.com/biz/sumika-los-altos"
+          },
+          {
+            "label": "Official site - sumikagrill.com",
+            "url": "https://www.sumikagrill.com/"
+          }
+        ]
+      },
+      "id": "L392",
+      "coords": null,
+      "added_in": "batch8.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Yoshi Sushi",
+      "city": "Los Altos",
+      "address": "250 3rd St, Los Altos, CA 94022",
+      "area": "Downtown Los Altos",
+      "cuisine": "Japanese / Sushi",
+      "days_open": "Mon-Sat",
+      "hours_tuesday": "11:00 AM - 3:00 PM, 5:00 PM - 9:00 PM",
+      "lunch_special": {
+        "name": "Weekday lunch bento / roll combos",
+        "price_from": 12.99,
+        "price_to": 17.99,
+        "days": "Mon-Fri",
+        "window": "11:00 AM - 3:00 PM",
+        "includes": null
+      },
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Outside the Cupertino return corridor - drive/rideshare only."
+      },
+      "flags": [
+        "Official menu page was down when checked - prices from Yelp menu."
+      ],
+      "phone": "(650) 941-8150",
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/yoshi-sushi-los-altos",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Yoshi+Sushi+250+3rd+St+Los+Altos+CA+94022"
+      },
+      "verification": {
+        "level": "review",
+        "accessed": "2026-09-08",
+        "sources": [
+          {
+            "label": "Yelp - Yoshi Sushi Los Altos (address, phone; lunch bento $15.99, 2-roll $12.99 / 3-roll $17.99)",
+            "url": "https://www.yelp.com/biz/yoshi-sushi-los-altos"
+          },
+          {
+            "label": "Official site (Los Altos menu page returned HTTP 500 at check time)",
+            "url": "https://www.yoshisushisanjose.com/"
+          }
+        ]
+      },
+      "id": "L393",
+      "coords": null,
+      "added_in": "batch8.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Amber India",
+      "city": "Los Altos",
+      "address": "4926 El Camino Real, Los Altos, CA 94022",
+      "area": "El Camino Real",
+      "cuisine": "Indian (upscale)",
+      "days_open": "Daily",
+      "hours_tuesday": "11:30 AM - 2:30 PM, 5:00 PM - 9:30 PM",
+      "lunch_special": {
+        "name": "Weekend lunch buffet / weekday lunch meal box",
+        "price_from": 27.99,
+        "price_to": null,
+        "days": "Sat-Sun (buffet)",
+        "window": "11:30 AM - 2:30 PM",
+        "includes": null
+      },
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Outside the Cupertino return corridor - drive/rideshare only."
+      },
+      "flags": [
+        "Buffet is weekend-only; weekday lunch is a la carte / meal box (price not published)."
+      ],
+      "phone": "(650) 968-7511",
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/amber-india-los-altos",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Amber+India+4926+El+Camino+Real+Los+Altos+CA+94022"
+      },
+      "verification": {
+        "level": "official",
+        "accessed": "2026-09-08",
+        "sources": [
+          {
+            "label": "Official menu - amber-india.com Los Altos (buffet $27.99 Sat-Sun)",
+            "url": "https://www.amber-india.com/los-altos-menu"
+          },
+          {
+            "label": "Yelp - Amber India Los Altos (hours; 'Daily Fresh Lunch Meal Box 11-2' update)",
+            "url": "https://www.yelp.com/biz/amber-india-los-altos"
+          }
+        ]
+      },
+      "id": "L394",
+      "coords": null,
+      "added_in": "batch8.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Sushiko",
+      "city": "Los Altos",
+      "address": "4546 El Camino Real Ste A4, Los Altos, CA 94022",
+      "area": "El Camino Real (Rancho Shopping Ctr area)",
+      "cuisine": "Japanese / Sushi",
+      "days_open": "Mon-Sat; closed Sun",
+      "hours_tuesday": "11:30 AM - 2:00 PM, 4:00 PM - 8:30 PM",
+      "lunch_special": {
+        "name": "Lunch bento",
+        "price_from": null,
+        "price_to": null,
+        "days": "Mon-Sat",
+        "window": "11:30 AM - 2:00 PM",
+        "includes": null
+      },
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Outside the Cupertino return corridor - drive/rideshare only."
+      },
+      "flags": [
+        "Lunch price not printed by any checked source - confirm on arrival."
+      ],
+      "phone": "(650) 559-9218",
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/sushiko-los-altos",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Sushiko+4546+El+Camino+Real+Ste+A4+Los+Altos+CA+94022"
+      },
+      "verification": {
+        "level": "review",
+        "accessed": "2026-09-08",
+        "sources": [
+          {
+            "label": "Yelp - Sushiko Los Altos (address, phone, Mon-Sat 11:30-2 & 4-8:30, Sun closed)",
+            "url": "https://www.yelp.com/biz/sushiko-los-altos"
+          }
+        ]
+      },
+      "id": "L395",
+      "coords": null,
+      "added_in": "batch8.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Pho Vi Hoa",
+      "city": "Los Altos",
+      "address": "4546 El Camino Real Ste A12, Los Altos, CA 94022",
+      "area": "El Camino Real",
+      "cuisine": "Vietnamese (pho)",
+      "days_open": "Daily",
+      "hours_tuesday": "10:00 AM - 10:00 PM",
+      "lunch_special": {
+        "name": "No published lunch special",
+        "price_from": null,
+        "price_to": null,
+        "days": null,
+        "window": null,
+        "includes": null
+      },
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Outside the Cupertino return corridor - drive/rideshare only."
+      },
+      "flags": [
+        "Lunch price not printed by any checked source - confirm on arrival."
+      ],
+      "phone": "(650) 947-1290",
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/pho-vi-hoa-los-altos",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Pho+Vi+Hoa+4546+El+Camino+Real+Ste+A12+Los+Altos+CA+94022"
+      },
+      "verification": {
+        "level": "listing",
+        "accessed": "2026-09-08",
+        "sources": [
+          {
+            "label": "TripAdvisor - Pho Vi Hoa (address, phone, daily 10-10)",
+            "url": "https://www.tripadvisor.com/Restaurants-g32653-Los_Altos_California.html"
+          },
+          {
+            "label": "Yelp - Pho Vi Hoa Los Altos",
+            "url": "https://www.yelp.com/biz/pho-vi-hoa-los-altos"
+          }
+        ]
+      },
+      "id": "L396",
+      "coords": null,
+      "added_in": "batch8.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Bloom & Vine",
+      "city": "Mountain View",
+      "address": "110 Castro St, Mountain View, CA 94041",
+      "area": "Castro St",
+      "cuisine": "Vietnamese-fusion / wine bar",
+      "days_open": "Tue-Sun; closed Mon",
+      "hours_tuesday": "11:00 AM - 2:30 PM, dinner",
+      "lunch_special": {
+        "name": "Lunch special (main + soup or side)",
+        "price_from": null,
+        "price_to": null,
+        "days": "Tue-Sun",
+        "window": "11:00 AM - 2:30 PM",
+        "includes": null
+      },
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Outside the Cupertino return corridor - drive/rideshare only."
+      },
+      "flags": [
+        "Lunch price not printed by any checked source - confirm on arrival.",
+        "Same address as former Xanh - appears to have replaced it."
+      ],
+      "phone": "(669) 261-1677",
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/bloom-and-vine-mountain-view",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Bloom+&+Vine+110+Castro+St+Mountain+View+CA+94041"
+      },
+      "verification": {
+        "level": "review",
+        "accessed": "2026-09-08",
+        "sources": [
+          {
+            "label": "Yelp - Bloom & Vine (address, phone, Tue-Sun 11-2:30; reviews describe lunch special with soup/side)",
+            "url": "https://www.yelp.com/biz/bloom-and-vine-mountain-view"
+          }
+        ]
+      },
+      "id": "L397",
+      "coords": null,
+      "added_in": "batch8.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Bonchon",
+      "city": "Mountain View",
+      "address": "260 Castro St, Mountain View, CA 94041",
+      "area": "Castro St",
+      "cuisine": "Korean fried chicken",
+      "days_open": "Daily",
+      "hours_tuesday": "11:00 AM - 9:00 PM",
+      "lunch_special": {
+        "name": "No published lunch special (lunch combos vary by store)",
+        "price_from": null,
+        "price_to": null,
+        "days": null,
+        "window": null,
+        "includes": null
+      },
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Outside the Cupertino return corridor - drive/rideshare only."
+      },
+      "flags": [
+        "Lunch price not printed by any checked source - confirm on arrival.",
+        "Separate from the Sunnyvale Bonchon already listed."
+      ],
+      "phone": "(650) 282-5633",
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/bonchon-mountain-view",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Bonchon+260+Castro+St+Mountain+View+CA+94041"
+      },
+      "verification": {
+        "level": "review",
+        "accessed": "2026-09-08",
+        "sources": [
+          {
+            "label": "Yelp - Bonchon Mountain View (address, phone, daily 11-9)",
+            "url": "https://www.yelp.com/biz/bonchon-mountain-view"
+          },
+          {
+            "label": "Official locator (MV page unavailable at check time)",
+            "url": "https://locations.bonchon.com/"
+          }
+        ]
+      },
+      "id": "L398",
+      "coords": null,
+      "added_in": "batch8.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Shalimar Sizzle",
+      "city": "Mountain View",
+      "address": "246 Castro St, Mountain View, CA 94041",
+      "area": "Castro St",
+      "cuisine": "Indian / Pakistani",
+      "days_open": "Daily",
+      "hours_tuesday": "11:00 AM - 11:00 PM",
+      "lunch_special": {
+        "name": "No published lunch special",
+        "price_from": null,
+        "price_to": null,
+        "days": null,
+        "window": null,
+        "includes": null
+      },
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Outside the Cupertino return corridor - drive/rideshare only."
+      },
+      "flags": [
+        "Lunch price not printed by any checked source - confirm on arrival."
+      ],
+      "phone": null,
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/shalimar-sizzle-mountain-view",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Shalimar+Sizzle+246+Castro+St+Mountain+View+CA+94041"
+      },
+      "verification": {
+        "level": "review",
+        "accessed": "2026-09-08",
+        "sources": [
+          {
+            "label": "Yelp - Shalimar Sizzle (address, daily 11-11)",
+            "url": "https://www.yelp.com/biz/shalimar-sizzle-mountain-view"
+          }
+        ]
+      },
+      "id": "L399",
+      "coords": null,
+      "added_in": "batch8.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Amarin Thai Cuisine",
+      "city": "Mountain View",
+      "address": "147 Castro St, Mountain View, CA 94041",
+      "area": "Castro St",
+      "cuisine": "Thai",
+      "days_open": "Daily",
+      "hours_tuesday": "11:30 AM - 2:30 PM, 5:00 PM - 9:00 PM",
+      "lunch_special": {
+        "name": "Lunch service 11:30-2:30",
+        "price_from": null,
+        "price_to": null,
+        "days": "Mon-Fri",
+        "window": "11:30 AM - 2:30 PM",
+        "includes": null
+      },
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Outside the Cupertino return corridor - drive/rideshare only."
+      },
+      "flags": [
+        "Lunch price not printed by any checked source - confirm on arrival.",
+        "Relocated from 174 Castro (old listing marked CLOSED) - use 147 Castro."
+      ],
+      "phone": "(650) 282-5434",
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/amarin-thai-cuisine-mountain-view-3",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Amarin+Thai+Cuisine+147+Castro+St+Mountain+View+CA+94041"
+      },
+      "verification": {
+        "level": "review",
+        "accessed": "2026-09-08",
+        "sources": [
+          {
+            "label": "Yelp - Amarin Thai Cuisine (147 Castro; Mon-Fri 11:30-2:30 & 5-9, Sat-Sun 12-3)",
+            "url": "https://www.yelp.com/biz/amarin-thai-cuisine-mountain-view-3"
+          }
+        ]
+      },
+      "id": "L400",
+      "coords": null,
+      "added_in": "batch8.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Das Bierhauz",
+      "city": "Mountain View",
+      "address": "135 Castro St, Mountain View, CA 94041",
+      "area": "Castro St",
+      "cuisine": "German beer garden",
+      "days_open": "Daily",
+      "hours_tuesday": "11:00 AM - 10:00 PM",
+      "lunch_special": {
+        "name": "No lunch special (full menu from 11)",
+        "price_from": null,
+        "price_to": null,
+        "days": null,
+        "window": null,
+        "includes": null
+      },
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Outside the Cupertino return corridor - drive/rideshare only."
+      },
+      "flags": [
+        "Not to be confused with the closed 'Bierhaus' at 383 Castro.",
+        "Lunch price not printed by any checked source - confirm on arrival."
+      ],
+      "phone": "(650) 336-7613",
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/das-bierhauz-mountain-view-mountain-view-2",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Das+Bierhauz+135+Castro+St+Mountain+View+CA+94041"
+      },
+      "verification": {
+        "level": "review",
+        "accessed": "2026-09-08",
+        "sources": [
+          {
+            "label": "Yelp - Das Bierhauz Mountain View (address, phone, Mon-Thu 11-10, Fri 11-11, Sat 9-11, Sun 9-10)",
+            "url": "https://www.yelp.com/biz/das-bierhauz-mountain-view-mountain-view-2"
+          }
+        ]
+      },
+      "id": "L401",
+      "coords": null,
+      "added_in": "batch8.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Hyderabad Dum Biryani",
+      "city": "Mountain View",
+      "address": "2105 Old Middlefield Way Ste C, Mountain View, CA 94043",
+      "area": "Old Middlefield Way",
+      "cuisine": "Indian (Hyderabadi, halal)",
+      "days_open": "Daily",
+      "hours_tuesday": "11:00 AM - 10:00 PM",
+      "lunch_special": {
+        "name": "Lunch combos",
+        "price_from": null,
+        "price_to": null,
+        "days": null,
+        "window": null,
+        "includes": null
+      },
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Outside the Cupertino return corridor - drive/rideshare only."
+      },
+      "flags": [
+        "Lunch price not printed by any checked source - confirm on arrival."
+      ],
+      "phone": "(650) 386-1725",
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/hyderabad-dum-biryani-mountain-view-6",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Hyderabad+Dum+Biryani+2105+Old+Middlefield+Way+Ste+C+Mountain+View+CA+94043"
+      },
+      "verification": {
+        "level": "review",
+        "accessed": "2026-09-08",
+        "sources": [
+          {
+            "label": "Yelp - Hyderabad Dum Biryani Mountain View (address, phone, daily 11-10/10:30)",
+            "url": "https://www.yelp.com/biz/hyderabad-dum-biryani-mountain-view-6"
+          }
+        ]
+      },
+      "id": "L402",
+      "coords": null,
+      "added_in": "batch8.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Masa Sushi Japan",
+      "city": "Mountain View",
+      "address": "650 Castro St Ste 180, Mountain View, CA 94041",
+      "area": "Castro St",
+      "cuisine": "Japanese / Sushi",
+      "days_open": "Mon-Sat; closed Sun",
+      "hours_tuesday": "11:00 AM - 1:30 PM, 4:30 PM - 8:00 PM",
+      "lunch_special": {
+        "name": "Lunch service 11-1:30",
+        "price_from": null,
+        "price_to": null,
+        "days": "Mon-Sat",
+        "window": "11:00 AM - 1:30 PM",
+        "includes": null
+      },
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Outside the Cupertino return corridor - drive/rideshare only."
+      },
+      "flags": [
+        "Lunch price not printed by any checked source - confirm on arrival.",
+        "Lunch ends 1:30 PM."
+      ],
+      "phone": "(650) 282-5204",
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/masa-sushi-japan-mountain-view",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Masa+Sushi+Japan+650+Castro+St+Ste+180+Mountain+View+CA+94041"
+      },
+      "verification": {
+        "level": "review",
+        "accessed": "2026-09-08",
+        "sources": [
+          {
+            "label": "Yelp - Masa Sushi Japan (address, phone, Mon-Fri 11-1:30, Sat 11:30-2, Sun closed)",
+            "url": "https://www.yelp.com/biz/masa-sushi-japan-mountain-view"
+          }
+        ]
+      },
+      "id": "L403",
+      "coords": null,
+      "added_in": "batch8.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Himalayan Kitchen",
+      "city": "Mountain View",
+      "address": "820 E El Camino Real Ste C, Mountain View, CA 94040",
+      "area": "E El Camino Real",
+      "cuisine": "Indian / Nepalese",
+      "days_open": "Daily",
+      "hours_tuesday": "11:00 AM - 3:00 PM, 5:00 PM - 10:00 PM",
+      "lunch_special": {
+        "name": "Lunch buffet",
+        "price_from": 24.99,
+        "price_to": null,
+        "days": "Fri-Sun (per Q&A)",
+        "window": "11:00 AM - 3:00 PM",
+        "includes": null
+      },
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Outside the Cupertino return corridor - drive/rideshare only."
+      },
+      "flags": [
+        "Owner text says 'every day lunch buffet' but Q&A says Fri-Sun only at $24.99 - confirm."
+      ],
+      "phone": "(650) 967-4240",
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/himalayan-kitchen-mountain-view",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Himalayan+Kitchen+820+E+El+Camino+Real+Ste+C+Mountain+View+CA+94040"
+      },
+      "verification": {
+        "level": "conflicting",
+        "accessed": "2026-09-08",
+        "sources": [
+          {
+            "label": "Yelp - Himalayan Kitchen (address, phone, daily 11-3 & 5-10; Q&A: buffet Fri-Sun $24.99)",
+            "url": "https://www.yelp.com/biz/himalayan-kitchen-mountain-view"
+          }
+        ]
+      },
+      "id": "L404",
+      "coords": null,
+      "added_in": "batch8.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Los Altos Taqueria",
+      "city": "Mountain View",
+      "address": "2105 Old Middlefield Way Ste E, Mountain View, CA 94043",
+      "area": "Old Middlefield Way",
+      "cuisine": "Mexican taqueria",
+      "days_open": "Daily",
+      "hours_tuesday": "7:00 AM - 10:00 PM",
+      "lunch_special": {
+        "name": "No published lunch special",
+        "price_from": null,
+        "price_to": null,
+        "days": null,
+        "window": null,
+        "includes": null
+      },
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Outside the Cupertino return corridor - drive/rideshare only."
+      },
+      "flags": [
+        "Lunch price not printed by any checked source - confirm on arrival.",
+        "Open time differs (7:00 Yelp vs 7:30 ordering site)."
+      ],
+      "phone": "(650) 965-7236",
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/los-altos-taqueria-mexican-mountain-view",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Los+Altos+Taqueria+2105+Old+Middlefield+Way+Ste+E+Mountain+View+CA+94043"
+      },
+      "verification": {
+        "level": "review",
+        "accessed": "2026-09-08",
+        "sources": [
+          {
+            "label": "Yelp - Los Altos Taqueria (address, daily 7-10)",
+            "url": "https://www.yelp.com/biz/los-altos-taqueria-mexican-mountain-view"
+          },
+          {
+            "label": "Netwaiter ordering page (phone, hours 7:30-10)",
+            "url": "https://losaltostaqueria.netwaiter.com/mountain-view/"
+          }
+        ]
+      },
+      "id": "L405",
+      "coords": null,
+      "added_in": "batch8.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Chili's",
+      "city": "Mountain View",
+      "address": "2560 W El Camino Real, Mountain View, CA 94040",
+      "area": "W El Camino Real",
+      "cuisine": "American / Tex-Mex chain",
+      "days_open": "Daily",
+      "hours_tuesday": "11:00 AM - 10:00 PM",
+      "lunch_special": {
+        "name": "3 For Me lunch combo",
+        "price_from": null,
+        "price_to": null,
+        "days": "Daily",
+        "window": "All day",
+        "includes": null
+      },
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Outside the Cupertino return corridor - drive/rideshare only."
+      },
+      "flags": [
+        "3 For Me price varies by location (third-party sites quote from $10.99) - not verified for this store.",
+        "Yelp rating 2.8."
+      ],
+      "phone": "(650) 941-2227",
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/chilis-mountain-view-2",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Chili's+2560+W+El+Camino+Real+Mountain+View+CA+94040"
+      },
+      "verification": {
+        "level": "review",
+        "accessed": "2026-09-08",
+        "sources": [
+          {
+            "label": "Yelp - Chili's Mountain View (address, phone, Mon-Thu 11-10, Fri-Sat 11-11, Sun 11-10)",
+            "url": "https://www.yelp.com/biz/chilis-mountain-view-2"
+          },
+          {
+            "label": "Chili's official - 3 For Me",
+            "url": "https://www.chilis.com/menu/3-for-me"
+          }
+        ]
+      },
+      "id": "L406",
+      "coords": null,
+      "added_in": "batch8.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Pedro's Restaurant & Cantina",
+      "city": "Santa Clara",
+      "address": "3935 Freedom Cir, Santa Clara, CA 95054",
+      "area": "Freedom Circle (near Great America)",
+      "cuisine": "Mexican",
+      "days_open": "Mon-Fri lunch & dinner",
+      "hours_tuesday": "11:00 AM - 10:00 PM",
+      "lunch_special": {
+        "name": "Luncheon specials 11-2",
+        "price_from": null,
+        "price_to": null,
+        "days": "Mon-Fri",
+        "window": "11:00 AM - 2:00 PM",
+        "includes": null
+      },
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Outside the Cupertino return corridor - drive/rideshare only."
+      },
+      "flags": [
+        "Lunch price not printed by any checked source - confirm on arrival.",
+        "Official menu page 404 - lunch specials unconfirmed for 2026."
+      ],
+      "phone": "(408) 496-6777",
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/pedros-restaurant-and-cantina-santa-clara",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Pedro's+Restaurant+&+Cantina+3935+Freedom+Cir+Santa+Clara+CA+95054"
+      },
+      "verification": {
+        "level": "review",
+        "accessed": "2026-09-08",
+        "sources": [
+          {
+            "label": "Yelp - Pedro's Santa Clara (address, phone, Mon-Fri 11-10)",
+            "url": "https://www.yelp.com/biz/pedros-restaurant-and-cantina-santa-clara"
+          },
+          {
+            "label": "Official site (Santa Clara menu page returned 404 at check time)",
+            "url": "https://www.pedrosrestaurants.com/"
+          }
+        ]
+      },
+      "id": "L407",
+      "coords": null,
+      "added_in": "batch8.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Happy Sushi",
+      "city": "Santa Clara",
+      "address": "3216 El Camino Real Ste 5, Santa Clara, CA 95051",
+      "area": "El Camino Real",
+      "cuisine": "Japanese / Korean",
+      "days_open": "Daily",
+      "hours_tuesday": "10:30 AM - 2:30 PM, 4:30 PM - 9:00 PM",
+      "lunch_special": {
+        "name": "Lunch bento / rolls",
+        "price_from": null,
+        "price_to": null,
+        "days": "Daily",
+        "window": "10:30 AM - 2:30 PM",
+        "includes": null
+      },
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Outside the Cupertino return corridor - drive/rideshare only."
+      },
+      "flags": [
+        "Lunch price not printed by any checked source - confirm on arrival."
+      ],
+      "phone": "(408) 638-7606",
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/happy-sushi-santa-clara-2",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Happy+Sushi+3216+El+Camino+Real+Ste+5+Santa+Clara+CA+95051"
+      },
+      "verification": {
+        "level": "official",
+        "accessed": "2026-09-08",
+        "sources": [
+          {
+            "label": "Official site - happysushimenu.com (address, hours)",
+            "url": "https://www.happysushimenu.com/"
+          },
+          {
+            "label": "Yelp - Happy Sushi Santa Clara (hours cross-check)",
+            "url": "https://www.yelp.com/biz/happy-sushi-santa-clara-2"
+          }
+        ]
+      },
+      "id": "L408",
+      "coords": null,
+      "added_in": "batch8.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Sushi O Sushi",
+      "city": "Santa Clara",
+      "address": "2789 El Camino Real, Santa Clara, CA 95051",
+      "area": "El Camino Real",
+      "cuisine": "Japanese / Sushi",
+      "days_open": "Daily",
+      "hours_tuesday": "11:30 AM - 2:00 PM, 5:00 PM - 9:00 PM",
+      "lunch_special": {
+        "name": "Lunch service 11:30-2",
+        "price_from": null,
+        "price_to": null,
+        "days": "Daily",
+        "window": "11:30 AM - 2:00 PM",
+        "includes": null
+      },
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Outside the Cupertino return corridor - drive/rideshare only."
+      },
+      "flags": [
+        "Lunch price not printed by any checked source - confirm on arrival."
+      ],
+      "phone": "(408) 241-1677",
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/sushi-o-sushi-santa-clara-2",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Sushi+O+Sushi+2789+El+Camino+Real+Santa+Clara+CA+95051"
+      },
+      "verification": {
+        "level": "review",
+        "accessed": "2026-09-08",
+        "sources": [
+          {
+            "label": "Yelp - Sushi O Sushi (address, phone, Mon-Sat 11:30-2 & 5-9/9:30, Sun 12-2:30)",
+            "url": "https://www.yelp.com/biz/sushi-o-sushi-santa-clara-2"
+          },
+          {
+            "label": "Official site",
+            "url": "https://www.sushiosushi.com/"
+          }
+        ]
+      },
+      "id": "L409",
+      "coords": null,
+      "added_in": "batch8.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Kobe Japanese Restaurant",
+      "city": "Santa Clara",
+      "address": "2086 El Camino Real, Santa Clara, CA 95050",
+      "area": "El Camino Real",
+      "cuisine": "Japanese / Sushi",
+      "days_open": "Daily (Sun dinner only)",
+      "hours_tuesday": "11:00 AM - 2:00 PM, 4:00 PM - 9:00 PM",
+      "lunch_special": {
+        "name": "Lunch service 11-2",
+        "price_from": null,
+        "price_to": null,
+        "days": "Mon-Sat",
+        "window": "11:00 AM - 2:00 PM",
+        "includes": null
+      },
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Outside the Cupertino return corridor - drive/rideshare only."
+      },
+      "flags": [
+        "Lunch price not printed by any checked source - confirm on arrival.",
+        "Yelp rating 2.8, unclaimed listing."
+      ],
+      "phone": "(408) 984-5623",
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/kobe-japanese-restaurant-santa-clara",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Kobe+Japanese+Restaurant+2086+El+Camino+Real+Santa+Clara+CA+95050"
+      },
+      "verification": {
+        "level": "review",
+        "accessed": "2026-09-08",
+        "sources": [
+          {
+            "label": "Yelp - Kobe Japanese Restaurant (address, phone, Mon-Sat 11-2 & 4-9, Sun 4-9)",
+            "url": "https://www.yelp.com/biz/kobe-japanese-restaurant-santa-clara"
+          }
+        ]
+      },
+      "id": "L410",
+      "coords": null,
+      "added_in": "batch8.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Mio Vicino",
+      "city": "Santa Clara",
+      "address": "1290 Benton St, Santa Clara, CA 95050",
+      "area": "Benton St (Old Quad)",
+      "cuisine": "Italian",
+      "days_open": "Daily; lunch Tue-Fri",
+      "hours_tuesday": "11:00 AM - 2:00 PM, 5:00 PM - 9:00 PM",
+      "lunch_special": {
+        "name": "Lunch service Tue-Fri",
+        "price_from": null,
+        "price_to": null,
+        "days": "Tue-Fri",
+        "window": "11:00 AM - 2:00 PM",
+        "includes": null
+      },
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Outside the Cupertino return corridor - drive/rideshare only."
+      },
+      "flags": [
+        "Lunch price not printed by any checked source - confirm on arrival."
+      ],
+      "phone": "(408) 241-9414",
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/mio-vicino-santa-clara",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Mio+Vicino+1290+Benton+St+Santa+Clara+CA+95050"
+      },
+      "verification": {
+        "level": "review",
+        "accessed": "2026-09-08",
+        "sources": [
+          {
+            "label": "Yelp - Mio Vicino (address, phone; Mon 5-9, Tue-Fri 11-2 & 5-9, Sat-Sun 4:30-9)",
+            "url": "https://www.yelp.com/biz/mio-vicino-santa-clara"
+          }
+        ]
+      },
+      "id": "L411",
+      "coords": null,
+      "added_in": "batch8.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Thai Chili Cuisine",
+      "city": "Santa Clara",
+      "address": "1550 Halford Ave, Santa Clara, CA 95051",
+      "area": "Halford Ave",
+      "cuisine": "Thai",
+      "days_open": "Daily (Sat dinner only)",
+      "hours_tuesday": "11:00 AM - 1:30 PM, 5:00 PM - 8:30 PM",
+      "lunch_special": {
+        "name": "Lunch combo (with tom yum soup + veggie roll)",
+        "price_from": null,
+        "price_to": null,
+        "days": "Mon-Fri, Sun",
+        "window": "11:00 AM - 1:30 PM",
+        "includes": "Tom yum veggie soup + veggie roll per business update."
+      },
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Outside the Cupertino return corridor - drive/rideshare only."
+      },
+      "flags": [
+        "Lunch price not printed by any checked source - confirm on arrival.",
+        "Lunch ends 1:30 PM; Yelp shows an obviously wrong 'open 24 hours' for Thursday."
+      ],
+      "phone": "(408) 615-9199",
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/thai-chili-cuisine-santa-clara-3",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Thai+Chili+Cuisine+1550+Halford+Ave+Santa+Clara+CA+95051"
+      },
+      "verification": {
+        "level": "review",
+        "accessed": "2026-09-08",
+        "sources": [
+          {
+            "label": "Yelp - Thai Chili Cuisine (address, phone; lunch 11-1:30 Mon-Wed/Fri/Sun; business update: lunch combo includes soup & roll)",
+            "url": "https://www.yelp.com/biz/thai-chili-cuisine-santa-clara-3"
+          }
+        ]
+      },
+      "id": "L412",
+      "coords": null,
+      "added_in": "batch8.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Home Kitchen Vietnamese Cuisine",
+      "city": "Santa Clara",
+      "address": "1045 Monroe St, Santa Clara, CA 95050",
+      "area": "Monroe St (Old Quad)",
+      "cuisine": "Vietnamese",
+      "days_open": "Tue-Sat; closed Sun-Mon",
+      "hours_tuesday": "11:00 AM - 9:00 PM",
+      "lunch_special": {
+        "name": "No published lunch special",
+        "price_from": null,
+        "price_to": null,
+        "days": null,
+        "window": null,
+        "includes": null
+      },
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Outside the Cupertino return corridor - drive/rideshare only."
+      },
+      "flags": [
+        "Lunch price not printed by any checked source - confirm on arrival."
+      ],
+      "phone": "(408) 557-9923",
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/home-kitchen-vietnamese-cuisine-santa-clara",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Home+Kitchen+Vietnamese+Cuisine+1045+Monroe+St+Santa+Clara+CA+95050"
+      },
+      "verification": {
+        "level": "review",
+        "accessed": "2026-09-08",
+        "sources": [
+          {
+            "label": "Yelp - Home Kitchen Vietnamese Cuisine (address, phone, Tue-Sat 11-9)",
+            "url": "https://www.yelp.com/biz/home-kitchen-vietnamese-cuisine-santa-clara"
+          }
+        ]
+      },
+      "id": "L413",
+      "coords": null,
+      "added_in": "batch8.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Tai Er Sichuan Cuisine",
+      "city": "Santa Clara",
+      "address": "2855 Stevens Creek Blvd Unit A268, Santa Clara, CA 95050",
+      "area": "Westfield Valley Fair",
+      "cuisine": "Sichuan (pickled-fish)",
+      "days_open": "Daily",
+      "hours_tuesday": "11:00 AM - 9:30 PM",
+      "lunch_special": {
+        "name": "No published lunch special",
+        "price_from": null,
+        "price_to": null,
+        "days": null,
+        "window": null,
+        "includes": null
+      },
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Outside the Cupertino return corridor - drive/rideshare only."
+      },
+      "flags": [
+        "Lunch price not printed by any checked source - confirm on arrival."
+      ],
+      "phone": "(408) 528-2222",
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/tai-er-sichuan-cuisine-santa-clara",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Tai+Er+Sichuan+Cuisine+2855+Stevens+Creek+Blvd+Unit+A268+Santa+Clara+CA+95050"
+      },
+      "verification": {
+        "level": "review",
+        "accessed": "2026-09-08",
+        "sources": [
+          {
+            "label": "Yelp - Tai Er Sichuan Cuisine (address, phone, Sun-Thu 11-9:30, Fri-Sat 11-10:30)",
+            "url": "https://www.yelp.com/biz/tai-er-sichuan-cuisine-santa-clara"
+          }
+        ]
+      },
+      "id": "L414",
+      "coords": null,
+      "added_in": "batch8.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Pho Van",
+      "city": "Santa Clara",
+      "address": "1555 Laurelwood Rd, Santa Clara, CA 95054",
+      "area": "Laurelwood Rd (office park)",
+      "cuisine": "Vietnamese (pho)",
+      "days_open": "Daily",
+      "hours_tuesday": "10:00 AM - 6:00 PM",
+      "lunch_special": {
+        "name": "No published lunch special ($ price tier)",
+        "price_from": null,
+        "price_to": null,
+        "days": null,
+        "window": null,
+        "includes": null
+      },
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Outside the Cupertino return corridor - drive/rideshare only."
+      },
+      "flags": [
+        "Lunch price not printed by any checked source - confirm on arrival.",
+        "Older Yelp snapshot shows Sat closed - confirm weekend."
+      ],
+      "phone": "(408) 567-9225",
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/pho-van-santa-clara",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Pho+Van+1555+Laurelwood+Rd+Santa+Clara+CA+95054"
+      },
+      "verification": {
+        "level": "review",
+        "accessed": "2026-09-08",
+        "sources": [
+          {
+            "label": "Yelp - Pho Van (address, phone; Mon-Fri 10-6, Sat 10:30-6, Sun 10-6)",
+            "url": "https://www.yelp.com/biz/pho-van-santa-clara"
+          }
+        ]
+      },
+      "id": "L415",
+      "coords": null,
+      "added_in": "batch8.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Pedro's Cocina",
+      "city": "Los Gatos",
+      "address": "316 N Santa Cruz Ave, Los Gatos, CA 95030",
+      "area": "Downtown Los Gatos",
+      "cuisine": "Mexican",
+      "days_open": "Daily",
+      "hours_tuesday": "11:00 AM - 9:00 PM",
+      "lunch_special": {
+        "name": "Lunch menu",
+        "price_from": null,
+        "price_to": null,
+        "days": null,
+        "window": null,
+        "includes": null
+      },
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Outside the Cupertino return corridor - drive/rideshare only."
+      },
+      "flags": [
+        "Lunch price not printed by any checked source - confirm on arrival.",
+        "Tuesday hours transcribed from listing - confirm."
+      ],
+      "phone": "(408) 354-7570",
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/pedros-restaurant-and-cantina-los-gatos",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Pedro's+Cocina+316+N+Santa+Cruz+Ave+Los+Gatos+CA+95030"
+      },
+      "verification": {
+        "level": "review",
+        "accessed": "2026-09-08",
+        "sources": [
+          {
+            "label": "Yelp - Pedro's Los Gatos (address, phone)",
+            "url": "https://www.yelp.com/biz/pedros-restaurant-and-cantina-los-gatos"
+          },
+          {
+            "label": "Official site",
+            "url": "https://www.pedrosrestaurants.com/"
+          }
+        ]
+      },
+      "id": "L416",
+      "coords": null,
+      "added_in": "batch8.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Opelia",
+      "city": "Los Gatos",
+      "address": "25 E Main St, Los Gatos, CA 95030",
+      "area": "Downtown Los Gatos",
+      "cuisine": "Mediterranean / Turkish",
+      "days_open": "Daily",
+      "hours_tuesday": "11:00 AM - 2:00 PM, 5:00 PM - 10:00 PM",
+      "lunch_special": {
+        "name": "Lunch service 11-2",
+        "price_from": null,
+        "price_to": null,
+        "days": "Daily",
+        "window": "11:00 AM - 2:00 PM",
+        "includes": null
+      },
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Outside the Cupertino return corridor - drive/rideshare only."
+      },
+      "flags": [
+        "Lunch price not printed by any checked source - confirm on arrival."
+      ],
+      "phone": "(408) 827-4215",
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/opelia-los-gatos",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Opelia+25+E+Main+St+Los+Gatos+CA+95030"
+      },
+      "verification": {
+        "level": "review",
+        "accessed": "2026-09-08",
+        "sources": [
+          {
+            "label": "Yelp - Opelia (address, phone, daily 11-2 & 5-10/12)",
+            "url": "https://www.yelp.com/biz/opelia-los-gatos"
+          },
+          {
+            "label": "Official site",
+            "url": "https://www.opelia.com/"
+          }
+        ]
+      },
+      "id": "L417",
+      "coords": null,
+      "added_in": "batch8.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Yokohama",
+      "city": "Los Gatos",
+      "address": "336 N Santa Cruz Ave, Los Gatos, CA 95030",
+      "area": "Downtown Los Gatos",
+      "cuisine": "Japanese / Sushi",
+      "days_open": "Tue-Sun; closed Mon",
+      "hours_tuesday": "11:30 AM - 2:00 PM, 5:00 PM - 9:00 PM",
+      "lunch_special": {
+        "name": "Lunch specials",
+        "price_from": null,
+        "price_to": null,
+        "days": "Tue-Sat",
+        "window": "11:30 AM - 2:00 PM",
+        "includes": null
+      },
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Outside the Cupertino return corridor - drive/rideshare only."
+      },
+      "flags": [
+        "Lunch price not printed by any checked source - confirm on arrival.",
+        "Earlier pass rejected this as dinner-only from a Yelp index snippet; the business page shows lunch Tue-Sat 11:30-2, so the rejection is superseded."
+      ],
+      "phone": "(408) 395-1990",
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/yokohama-los-gatos",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Yokohama+336+N+Santa+Cruz+Ave+Los+Gatos+CA+95030"
+      },
+      "verification": {
+        "level": "review",
+        "accessed": "2026-09-08",
+        "sources": [
+          {
+            "label": "Yelp - Yokohama Los Gatos (address, phone; closed Mon; Tue-Sat 11:30-2 & 5-9/9:30; Sun 4:30-9)",
+            "url": "https://www.yelp.com/biz/yokohama-los-gatos"
+          }
+        ]
+      },
+      "supersedes_rejection": "Yelp business page shows Tue-Sat lunch 11:30 AM - 2:00 PM (earlier 'dinner-only' came from a search-index snippet).",
+      "id": "L418",
+      "coords": null,
+      "added_in": "batch8.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Kamakura Japanese Restaurant",
+      "city": "Los Gatos",
+      "address": "135 N Santa Cruz Ave, Los Gatos, CA 95030",
+      "area": "Downtown Los Gatos",
+      "cuisine": "Japanese / Sushi",
+      "days_open": "Daily",
+      "hours_tuesday": "11:30 AM - 2:30 PM, 4:30 PM - 9:00 PM",
+      "lunch_special": {
+        "name": "Lunch service 11:30-2:30",
+        "price_from": null,
+        "price_to": null,
+        "days": "Daily",
+        "window": "11:30 AM - 2:30 PM",
+        "includes": null
+      },
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Outside the Cupertino return corridor - drive/rideshare only."
+      },
+      "flags": [
+        "Lunch price not printed by any checked source - confirm on arrival.",
+        "Unclaimed Yelp listing."
+      ],
+      "phone": "(408) 395-6650",
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/kamakura-japanese-restaurant-los-gatos",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Kamakura+Japanese+Restaurant+135+N+Santa+Cruz+Ave+Los+Gatos+CA+95030"
+      },
+      "verification": {
+        "level": "review",
+        "accessed": "2026-09-08",
+        "sources": [
+          {
+            "label": "Yelp - Kamakura (address, phone, Mon-Fri 11:30-2:30 & 4:30-9, Sat-Sun 11:30-9/9:30)",
+            "url": "https://www.yelp.com/biz/kamakura-japanese-restaurant-los-gatos"
+          }
+        ]
+      },
+      "id": "L419",
+      "coords": null,
+      "added_in": "batch8.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Hanna Asian Noodle Bar - Downtown",
+      "city": "Los Gatos",
+      "address": "155 N Santa Cruz Ave Ste A, Los Gatos, CA 95030",
+      "area": "Downtown Los Gatos",
+      "cuisine": "Vietnamese / Asian noodles",
+      "days_open": "Daily",
+      "hours_tuesday": "11:00 AM - 9:00 PM",
+      "lunch_special": {
+        "name": "No published lunch special",
+        "price_from": null,
+        "price_to": null,
+        "days": null,
+        "window": null,
+        "includes": null
+      },
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Outside the Cupertino return corridor - drive/rideshare only."
+      },
+      "flags": [
+        "Lunch price not printed by any checked source - confirm on arrival."
+      ],
+      "phone": "(408) 442-5172",
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/hanna-asian-noodle-bar-downtown-los-gatos",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Hanna+Asian+Noodle+Bar+-+Downtown+155+N+Santa+Cruz+Ave+Ste+A+Los+Gatos+CA+95030"
+      },
+      "verification": {
+        "level": "review",
+        "accessed": "2026-09-08",
+        "sources": [
+          {
+            "label": "Yelp - Hanna Asian Noodle Bar Downtown (address, phone, daily 11-9)",
+            "url": "https://www.yelp.com/biz/hanna-asian-noodle-bar-downtown-los-gatos"
+          },
+          {
+            "label": "Official site",
+            "url": "https://www.hannanoodlebar.com/"
+          }
+        ]
+      },
+      "id": "L420",
+      "coords": null,
+      "added_in": "batch8.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Aldo's Ristorante & Bar",
+      "city": "Los Gatos",
+      "address": "14109 Winchester Blvd, Los Gatos, CA 95032",
+      "area": "Winchester Blvd",
+      "cuisine": "Italian",
+      "days_open": "Daily; lunch Mon-Fri",
+      "hours_tuesday": "11:00 AM - 2:00 PM, 5:00 PM - 9:00 PM",
+      "lunch_special": {
+        "name": "Lunch Mon-Fri 11-2",
+        "price_from": null,
+        "price_to": null,
+        "days": "Mon-Fri",
+        "window": "11:00 AM - 2:00 PM",
+        "includes": null
+      },
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Outside the Cupertino return corridor - drive/rideshare only."
+      },
+      "flags": [
+        "Lunch price not printed by any checked source - confirm on arrival."
+      ],
+      "phone": "(408) 374-1808",
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/aldos-ristorante-and-bar-los-gatos",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Aldo's+Ristorante+&+Bar+14109+Winchester+Blvd+Los+Gatos+CA+95032"
+      },
+      "verification": {
+        "level": "official",
+        "accessed": "2026-09-08",
+        "sources": [
+          {
+            "label": "Official site - aldos-ristorante.com (lunch Mon-Fri 11-2; dinner nightly 5-9)",
+            "url": "https://www.aldos-ristorante.com/"
+          },
+          {
+            "label": "Yelp - Aldo's Ristorante & Bar (hours cross-check)",
+            "url": "https://www.yelp.com/biz/aldos-ristorante-and-bar-los-gatos"
+          }
+        ]
+      },
+      "id": "L421",
+      "coords": null,
+      "added_in": "batch8.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Zona Rosa",
+      "city": "Los Gatos",
+      "address": "81 W Main St, Los Gatos, CA 95030",
+      "area": "Downtown Los Gatos",
+      "cuisine": "Mexican",
+      "days_open": "Tue-Sun; closed Mon",
+      "hours_tuesday": "11:30 AM - 9:00 PM",
+      "lunch_special": {
+        "name": "No published lunch special",
+        "price_from": null,
+        "price_to": null,
+        "days": null,
+        "window": null,
+        "includes": null
+      },
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Outside the Cupertino return corridor - drive/rideshare only."
+      },
+      "flags": [
+        "Lunch price not printed by any checked source - confirm on arrival."
+      ],
+      "phone": "(408) 884-8268",
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/zona-rosa-los-gatos",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Zona+Rosa+81+W+Main+St+Los+Gatos+CA+95030"
+      },
+      "verification": {
+        "level": "review",
+        "accessed": "2026-09-08",
+        "sources": [
+          {
+            "label": "Yelp - Zona Rosa (address, phone; closed Mon; Tue-Thu 11:30-9, Fri 11:30-9:30, Sat 10:30-9:30, Sun 11-9)",
+            "url": "https://www.yelp.com/biz/zona-rosa-los-gatos"
+          }
+        ]
+      },
+      "id": "L422",
+      "coords": null,
+      "added_in": "batch8.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Blue Sky Chinese Restaurant",
+      "city": "Campbell",
+      "address": "2028 Winchester Blvd, Campbell, CA 95008",
+      "area": "Winchester Blvd",
+      "cuisine": "Chinese-American",
+      "days_open": "Daily",
+      "hours_tuesday": "11:00 AM - 9:30 PM",
+      "lunch_special": {
+        "name": "Lunch special combos / lunch rice plates",
+        "price_from": 14.95,
+        "price_to": 16.95,
+        "days": "Daily",
+        "window": "Lunch",
+        "includes": null
+      },
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Outside the Cupertino return corridor - drive/rideshare only."
+      },
+      "flags": [
+        "Two menu mirrors disagree ($11.95 vs $15.95 combos) - newer mirror likely current."
+      ],
+      "phone": "(408) 378-0424",
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/blue-sky-chinese-restaurant-campbell",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Blue+Sky+Chinese+Restaurant+2028+Winchester+Blvd+Campbell+CA+95008"
+      },
+      "verification": {
+        "level": "conflicting",
+        "accessed": "2026-09-08",
+        "sources": [
+          {
+            "label": "Allmenus - Blue Sky (lunch combos $11.95-$13.95, rice plates $10.50-$10.95; older menu)",
+            "url": "https://www.allmenus.com/ca/campbell/19712-blue-sky-restaurant/menu/"
+          },
+          {
+            "label": "Placejoys menu mirror (Lunch Special $15.95, rice plates $14.95-$16.95; newer)",
+            "url": "https://blue-sky.placejoys.com/menu"
+          },
+          {
+            "label": "Yelp - Blue Sky Chinese Restaurant (address, phone, daily 11-9:30; photo notes no soup/salad included)",
+            "url": "https://www.yelp.com/biz/blue-sky-chinese-restaurant-campbell"
+          }
+        ]
+      },
+      "id": "L423",
+      "coords": null,
+      "added_in": "batch8.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Best Taste Chinese Restaurant",
+      "city": "Campbell",
+      "address": "2360 S Bascom Ave Ste A, Campbell, CA 95008",
+      "area": "S Bascom Ave",
+      "cuisine": "Chinese / sushi",
+      "days_open": "Daily",
+      "hours_tuesday": "11:00 AM - 9:00 PM",
+      "lunch_special": {
+        "name": "No published lunch special",
+        "price_from": null,
+        "price_to": null,
+        "days": null,
+        "window": null,
+        "includes": null
+      },
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Outside the Cupertino return corridor - drive/rideshare only."
+      },
+      "flags": [
+        "Lunch price not printed by any checked source - confirm on arrival.",
+        "Older Yelp listing shows Sun opening 4 PM."
+      ],
+      "phone": "(408) 377-7666",
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/best-taste-chinese-restaurant-campbell-2",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Best+Taste+Chinese+Restaurant+2360+S+Bascom+Ave+Ste+A+Campbell+CA+95008"
+      },
+      "verification": {
+        "level": "review",
+        "accessed": "2026-09-08",
+        "sources": [
+          {
+            "label": "Yelp - Best Taste Chinese Restaurant (address, phone, daily 11-9)",
+            "url": "https://www.yelp.com/biz/best-taste-chinese-restaurant-campbell-2"
+          }
+        ]
+      },
+      "id": "L424",
+      "coords": null,
+      "added_in": "batch8.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Sushi Confidential (Campbell)",
+      "city": "Campbell",
+      "address": "247 E Campbell Ave, Campbell, CA 95008",
+      "area": "Downtown Campbell",
+      "cuisine": "Japanese / Sushi",
+      "days_open": "Daily",
+      "hours_tuesday": "11:30 AM - 9:00 PM",
+      "lunch_special": {
+        "name": "Lunch specials (see Willow Glen row for chain pricing)",
+        "price_from": null,
+        "price_to": null,
+        "days": null,
+        "window": null,
+        "includes": null
+      },
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Outside the Cupertino return corridor - drive/rideshare only."
+      },
+      "flags": [
+        "Price not verified for this branch.",
+        "Earlier pass rejected for lack of a street address; Yelp now supplies 247 E Campbell Ave."
+      ],
+      "phone": "(408) 596-5554",
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/sushi-confidential-campbell-campbell",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Sushi+Confidential+(Campbell)+247+E+Campbell+Ave+Campbell+CA+95008"
+      },
+      "verification": {
+        "level": "review",
+        "accessed": "2026-09-08",
+        "sources": [
+          {
+            "label": "Yelp - Sushi Confidential Campbell (address, phone, Sun-Thu 11:30-9, Fri-Sat 11:30-11)",
+            "url": "https://www.yelp.com/biz/sushi-confidential-campbell-campbell"
+          },
+          {
+            "label": "Official site",
+            "url": "https://www.sushiconfidential.com/"
+          }
+        ]
+      },
+      "supersedes_rejection": "Street address (247 E Campbell Ave) now verified on Yelp.",
+      "id": "L425",
+      "coords": null,
+      "added_in": "batch8.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Thai Orchid",
+      "city": "Campbell",
+      "address": "866 E Campbell Ave, Campbell, CA 95008",
+      "area": "E Campbell Ave",
+      "cuisine": "Thai",
+      "days_open": "Tue-Sat; closed Sun-Mon",
+      "hours_tuesday": "11:00 AM - 2:00 PM, 4:30 PM - 9:30 PM",
+      "lunch_special": {
+        "name": "Lunch Tue-Fri 11-2",
+        "price_from": null,
+        "price_to": null,
+        "days": "Tue-Fri",
+        "window": "11:00 AM - 2:00 PM",
+        "includes": null
+      },
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Outside the Cupertino return corridor - drive/rideshare only."
+      },
+      "flags": [
+        "Lunch price not printed by any checked source - confirm on arrival."
+      ],
+      "phone": "(408) 626-9779",
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/thai-orchid-campbell",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Thai+Orchid+866+E+Campbell+Ave+Campbell+CA+95008"
+      },
+      "verification": {
+        "level": "review",
+        "accessed": "2026-09-08",
+        "sources": [
+          {
+            "label": "Yelp - Thai Orchid Campbell (address, phone; closed Sun-Mon; Tue-Fri 11-2 & 4:30-9:30; Sat dinner only)",
+            "url": "https://www.yelp.com/biz/thai-orchid-campbell"
+          },
+          {
+            "label": "Official site",
+            "url": "https://www.eatthaiorchid.com/"
+          }
+        ]
+      },
+      "id": "L426",
+      "coords": null,
+      "added_in": "batch8.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Thaibodia Bistro - Campbell",
+      "city": "Campbell",
+      "address": "2200 S Bascom Ave, Campbell, CA 95008",
+      "area": "S Bascom Ave",
+      "cuisine": "Thai / Cambodian",
+      "days_open": "Daily",
+      "hours_tuesday": "11:00 AM - 9:30 PM",
+      "lunch_special": {
+        "name": "No published lunch special",
+        "price_from": null,
+        "price_to": null,
+        "days": null,
+        "window": null,
+        "includes": null
+      },
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Outside the Cupertino return corridor - drive/rideshare only."
+      },
+      "flags": [
+        "Lunch price not printed by any checked source - confirm on arrival."
+      ],
+      "phone": "(408) 879-9215",
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/thaibodia-bistro-campbell-campbell-2",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Thaibodia+Bistro+-+Campbell+2200+S+Bascom+Ave+Campbell+CA+95008"
+      },
+      "verification": {
+        "level": "review",
+        "accessed": "2026-09-08",
+        "sources": [
+          {
+            "label": "Yelp - Thaibodia Bistro Campbell (address, phone, Mon-Thu 11-9:30, Fri-Sun 11-10)",
+            "url": "https://www.yelp.com/biz/thaibodia-bistro-campbell-campbell-2"
+          },
+          {
+            "label": "Official site",
+            "url": "https://www.thaibodia.com/"
+          }
+        ]
+      },
+      "id": "L427",
+      "coords": null,
+      "added_in": "batch8.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Hinodeya Ramen Bar",
+      "city": "Campbell",
+      "address": "2210 S Bascom Ave, Campbell, CA 95008",
+      "area": "S Bascom Ave",
+      "cuisine": "Japanese (ramen)",
+      "days_open": "Daily",
+      "hours_tuesday": "11:00 AM - 12:00 AM",
+      "lunch_special": {
+        "name": "No published lunch special",
+        "price_from": null,
+        "price_to": null,
+        "days": null,
+        "window": null,
+        "includes": null
+      },
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Outside the Cupertino return corridor - drive/rideshare only."
+      },
+      "flags": [
+        "Lunch price not printed by any checked source - confirm on arrival."
+      ],
+      "phone": "(408) 744-2155",
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/hinodeya-ramen-bar-campbell",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Hinodeya+Ramen+Bar+2210+S+Bascom+Ave+Campbell+CA+95008"
+      },
+      "verification": {
+        "level": "review",
+        "accessed": "2026-09-08",
+        "sources": [
+          {
+            "label": "Yelp - Hinodeya Ramen Bar Campbell (address, phone, daily 11 AM-midnight)",
+            "url": "https://www.yelp.com/biz/hinodeya-ramen-bar-campbell"
+          }
+        ]
+      },
+      "id": "L428",
+      "coords": null,
+      "added_in": "batch8.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Sultan's Kebab",
+      "city": "Campbell",
+      "address": "278 E Campbell Ave, Campbell, CA 95008",
+      "area": "Downtown Campbell",
+      "cuisine": "Turkish / Mediterranean",
+      "days_open": "Daily",
+      "hours_tuesday": "10:00 AM - 10:00 PM",
+      "lunch_special": {
+        "name": "No published lunch special (kebab plates)",
+        "price_from": null,
+        "price_to": null,
+        "days": null,
+        "window": null,
+        "includes": null
+      },
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Outside the Cupertino return corridor - drive/rideshare only."
+      },
+      "flags": [
+        "Lunch price not printed by any checked source - confirm on arrival."
+      ],
+      "phone": "(408) 628-4333",
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/sultans-kebab-campbell-2",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Sultan's+Kebab+278+E+Campbell+Ave+Campbell+CA+95008"
+      },
+      "verification": {
+        "level": "review",
+        "accessed": "2026-09-08",
+        "sources": [
+          {
+            "label": "Yelp - Sultan's Kebab Campbell (address, phone, daily 10-10)",
+            "url": "https://www.yelp.com/biz/sultans-kebab-campbell-2"
+          }
+        ]
+      },
+      "id": "L429",
+      "coords": null,
+      "added_in": "batch8.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Casa Lupe Restaurant",
+      "city": "Campbell",
+      "address": "2165 Winchester Blvd, Campbell, CA 95008",
+      "area": "Winchester Blvd",
+      "cuisine": "Mexican",
+      "days_open": "Mon-Sat; closed Sun",
+      "hours_tuesday": "11:00 AM - 2:30 PM, 5:00 PM - 9:00 PM",
+      "lunch_special": {
+        "name": "Lunch service 11-2:30",
+        "price_from": null,
+        "price_to": null,
+        "days": "Mon-Sat",
+        "window": "11:00 AM - 2:30 PM",
+        "includes": null
+      },
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Outside the Cupertino return corridor - drive/rideshare only."
+      },
+      "flags": [
+        "Lunch price not printed by any checked source - confirm on arrival.",
+        "Older snapshots show 11:30 open and Mon dinner-only - confirm.",
+        "Separate from Casa Lupe Mountain View already listed."
+      ],
+      "phone": "(408) 378-1277",
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/casa-lupe-restaurant-campbell",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Casa+Lupe+Restaurant+2165+Winchester+Blvd+Campbell+CA+95008"
+      },
+      "verification": {
+        "level": "review",
+        "accessed": "2026-09-08",
+        "sources": [
+          {
+            "label": "Yelp - Casa Lupe Restaurant Campbell (address, phone; Mon-Sat 11-2:30 & 5-9, Sun closed)",
+            "url": "https://www.yelp.com/biz/casa-lupe-restaurant-campbell"
+          }
+        ]
+      },
+      "id": "L430",
+      "coords": null,
+      "added_in": "batch8.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Aqui Cal-Mex",
+      "city": "Campbell",
+      "address": "201 E Campbell Ave, Campbell, CA 95008",
+      "area": "Downtown Campbell",
+      "cuisine": "Cal-Mex",
+      "days_open": "Daily",
+      "hours_tuesday": "11:00 AM - 9:00 PM",
+      "lunch_special": {
+        "name": "Chef's lunch specials & daily soups",
+        "price_from": null,
+        "price_to": null,
+        "days": "Daily",
+        "window": "Lunch",
+        "includes": null
+      },
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Outside the Cupertino return corridor - drive/rideshare only."
+      },
+      "flags": [
+        "Lunch price not printed by any checked source - confirm on arrival.",
+        "Separate from the Cupertino Aqui already listed."
+      ],
+      "phone": "(408) 374-2784",
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/aqui-cal-mex-campbell",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Aqui+Cal-Mex+201+E+Campbell+Ave+Campbell+CA+95008"
+      },
+      "verification": {
+        "level": "review",
+        "accessed": "2026-09-08",
+        "sources": [
+          {
+            "label": "Yelp - Aqui Cal-Mex Campbell (address, phone, Sun-Thu 11-9, Fri-Sat 11-9:30; business text: chef's lunch specials)",
+            "url": "https://www.yelp.com/biz/aqui-cal-mex-campbell"
+          }
+        ]
+      },
+      "id": "L431",
+      "coords": null,
+      "added_in": "batch8.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Anchors Fish & Chips",
+      "city": "Saratoga",
+      "address": "14441 Big Basin Way, Saratoga, CA 95070",
+      "area": "Saratoga Village",
+      "cuisine": "Fish & chips / seafood",
+      "days_open": "Daily",
+      "hours_tuesday": "11:00 AM - 9:00 PM",
+      "lunch_special": {
+        "name": "Fish & chips",
+        "price_from": 19.0,
+        "price_to": null,
+        "days": "Daily",
+        "window": "All day",
+        "includes": null
+      },
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Outside the Cupertino return corridor - drive/rideshare only."
+      },
+      "flags": [
+        "Price $17 (menupix) vs $19 (Yelp photo dated 5/2026) - newer used.",
+        "Unclaimed Yelp listing."
+      ],
+      "phone": "(408) 647-2783",
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/anchors-fish-and-chips-saratoga",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Anchors+Fish+&+Chips+14441+Big+Basin+Way+Saratoga+CA+95070"
+      },
+      "verification": {
+        "level": "conflicting",
+        "accessed": "2026-09-08",
+        "sources": [
+          {
+            "label": "Yelp - Anchors Fish & Chips (address, phone, Mon-Thu 11-9, Fri-Sat 11-9:30; photos: fish 'n chips $19, Baja tacos $18, menu 5/2026)",
+            "url": "https://www.yelp.com/biz/anchors-fish-and-chips-saratoga"
+          },
+          {
+            "label": "Saratoga Chamber restaurant list (hours)",
+            "url": "https://www.saratogachamber.org/restaurants"
+          },
+          {
+            "label": "Menupix mirror (fish & chips $17 - older)",
+            "url": "https://www.menupix.com/sanjose/restaurants/32160423/Anchors-Fish-and-Chips-and-Seafood-Grill-Saratoga-CA"
+          }
+        ]
+      },
+      "id": "L432",
+      "coords": null,
+      "added_in": "batch8.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Buca di Beppo Italian Restaurant",
+      "city": "Palo Alto",
+      "address": "643 Emerson St, Palo Alto, CA 94301",
+      "area": "Downtown Palo Alto",
+      "cuisine": "Italian (family style)",
+      "days_open": "Daily",
+      "hours_tuesday": "11:00 AM - 9:30 PM",
+      "lunch_special": {
+        "name": "Lunch Combos (Mon-Fri until 3 PM)",
+        "price_from": null,
+        "price_to": null,
+        "days": "Mon-Fri",
+        "window": "Open - 3:00 PM",
+        "includes": "Side salad and garlic bread."
+      },
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Outside the Cupertino return corridor - drive/rideshare only."
+      },
+      "flags": [
+        "Combo price not shown on the location page.",
+        "Separate from the Campbell Buca already listed."
+      ],
+      "phone": "(650) 329-0665",
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/buca-di-beppo-italian-restaurant-palo-alto-2",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Buca+di+Beppo+Italian+Restaurant+643+Emerson+St+Palo+Alto+CA+94301"
+      },
+      "verification": {
+        "level": "official",
+        "accessed": "2026-09-08",
+        "sources": [
+          {
+            "label": "Official location page - dineatbuca.com Palo Alto (hours; Lunch Combos Mon-Fri until 3 PM, includes side salad & garlic bread)",
+            "url": "https://dineatbuca.com/locations/palo-alto/"
+          },
+          {
+            "label": "Yelp - Buca di Beppo Palo Alto (hours cross-check)",
+            "url": "https://www.yelp.com/biz/buca-di-beppo-italian-restaurant-palo-alto-2"
+          }
+        ]
+      },
+      "id": "L433",
+      "coords": null,
+      "added_in": "batch8.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Sushi House",
+      "city": "Palo Alto",
+      "address": "855 El Camino Real Ste 158, Palo Alto, CA 94301",
+      "area": "Town & Country Village",
+      "cuisine": "Japanese / Sushi",
+      "days_open": "Daily",
+      "hours_tuesday": "11:00 AM - 2:00 PM, 4:30 PM - 8:00 PM",
+      "lunch_special": {
+        "name": "Lunch bento",
+        "price_from": null,
+        "price_to": null,
+        "days": "Daily",
+        "window": "11:00 AM - 2:00 PM",
+        "includes": null
+      },
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Outside the Cupertino return corridor - drive/rideshare only."
+      },
+      "flags": [
+        "Lunch price not printed by any checked source - confirm on arrival."
+      ],
+      "phone": "(650) 321-3453",
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/sushi-house-palo-alto",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Sushi+House+855+El+Camino+Real+Ste+158+Palo+Alto+CA+94301"
+      },
+      "verification": {
+        "level": "review",
+        "accessed": "2026-09-08",
+        "sources": [
+          {
+            "label": "Yelp - Sushi House Palo Alto (address, phone, daily 11-2 & 4:30-8/8:30)",
+            "url": "https://www.yelp.com/biz/sushi-house-palo-alto"
+          },
+          {
+            "label": "Restaurant Guru hours cross-check",
+            "url": "https://restaurantguru.com/Sushi-House-Palo-Alto"
+          }
+        ]
+      },
+      "id": "L434",
+      "coords": null,
+      "added_in": "batch8.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Vino Locale",
+      "city": "Palo Alto",
+      "address": "431 Kipling St, Palo Alto, CA 94301",
+      "area": "Downtown Palo Alto",
+      "cuisine": "New American / wine bar",
+      "days_open": "Tue-Sat; closed Sun-Mon",
+      "hours_tuesday": "11:30 AM - 2:30 PM, 3:30 PM - 9:00 PM",
+      "lunch_special": {
+        "name": "Casual self-order lunch (menu from $9)",
+        "price_from": 9.0,
+        "price_to": null,
+        "days": "Tue-Sat",
+        "window": "11:30 AM - 2:30 PM",
+        "includes": null
+      },
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Outside the Cupertino return corridor - drive/rideshare only."
+      },
+      "flags": [
+        "'From $9' is the owner's Yelp blurb, not a current menu.",
+        "One Yelp snapshot shows lunch ending 2:00 and no Sat lunch - confirm."
+      ],
+      "phone": "(650) 328-0450",
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/vino-locale-palo-alto",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Vino+Locale+431+Kipling+St+Palo+Alto+CA+94301"
+      },
+      "verification": {
+        "level": "conflicting",
+        "accessed": "2026-09-08",
+        "sources": [
+          {
+            "label": "Yelp - Vino Locale (address, phone; owner text: Tue-Sat 11:30-2:30 lunch, menu starts from $9)",
+            "url": "https://www.yelp.com/biz/vino-locale-palo-alto"
+          }
+        ]
+      },
+      "id": "L435",
+      "coords": null,
+      "added_in": "batch8.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Thaiphoon",
+      "city": "Palo Alto",
+      "address": "543 Emerson St, Palo Alto, CA 94301",
+      "area": "Downtown Palo Alto",
+      "cuisine": "Thai",
+      "days_open": "Daily; lunch Mon-Fri",
+      "hours_tuesday": "11:00 AM - 2:30 PM, 4:00 PM - 9:00 PM",
+      "lunch_special": {
+        "name": "Lunch Mon-Fri 11-2:30",
+        "price_from": null,
+        "price_to": null,
+        "days": "Mon-Fri",
+        "window": "11:00 AM - 2:30 PM",
+        "includes": null
+      },
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Outside the Cupertino return corridor - drive/rideshare only."
+      },
+      "flags": [
+        "Lunch price not printed by any checked source - confirm on arrival."
+      ],
+      "phone": "(650) 323-7700",
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/thaiphoon-palo-alto",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Thaiphoon+543+Emerson+St+Palo+Alto+CA+94301"
+      },
+      "verification": {
+        "level": "review",
+        "accessed": "2026-09-08",
+        "sources": [
+          {
+            "label": "Yelp - Thaiphoon (address, phone; Mon-Fri 11-2:30 & 4-9/10; Sat-Sun dinner only)",
+            "url": "https://www.yelp.com/biz/thaiphoon-palo-alto"
+          }
+        ]
+      },
+      "id": "L436",
+      "coords": null,
+      "added_in": "batch8.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Hong Kong Restaurant",
+      "city": "Palo Alto",
+      "address": "3691 El Camino Real, Palo Alto, CA 94306",
+      "area": "S El Camino Real",
+      "cuisine": "Cantonese / seafood",
+      "days_open": "Daily",
+      "hours_tuesday": "11:00 AM - 9:00 PM",
+      "lunch_special": {
+        "name": "No published lunch special",
+        "price_from": null,
+        "price_to": null,
+        "days": null,
+        "window": null,
+        "includes": null
+      },
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Outside the Cupertino return corridor - drive/rideshare only."
+      },
+      "flags": [
+        "Lunch price not printed by any checked source - confirm on arrival."
+      ],
+      "phone": "(650) 251-9062",
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/hong-kong-restaurant-palo-alto",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Hong+Kong+Restaurant+3691+El+Camino+Real+Palo+Alto+CA+94306"
+      },
+      "verification": {
+        "level": "review",
+        "accessed": "2026-09-08",
+        "sources": [
+          {
+            "label": "Yelp - Hong Kong Restaurant Palo Alto (address, phone, daily 11-9)",
+            "url": "https://www.yelp.com/biz/hong-kong-restaurant-palo-alto"
+          }
+        ]
+      },
+      "id": "L437",
+      "coords": null,
+      "added_in": "batch8.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Darbar Indian Cuisine",
+      "city": "Palo Alto",
+      "address": "129 Lytton Ave, Palo Alto, CA 94301",
+      "area": "Downtown Palo Alto",
+      "cuisine": "Indian",
+      "days_open": "Daily (Sun dinner only)",
+      "hours_tuesday": "11:00 AM - 2:30 PM, 5:00 PM - 9:30 PM",
+      "lunch_special": {
+        "name": "Weekday lunch buffet",
+        "price_from": null,
+        "price_to": null,
+        "days": "Mon-Fri",
+        "window": "11:00 AM - 2:30 PM",
+        "includes": "~two dozen dishes incl. 4 veg + 4 meat entrees (per business description)."
+      },
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Outside the Cupertino return corridor - drive/rideshare only."
+      },
+      "flags": [
+        "Buffet price not published."
+      ],
+      "phone": "(650) 407-1154",
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/darbar-indian-cuisine-palo-alto",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Darbar+Indian+Cuisine+129+Lytton+Ave+Palo+Alto+CA+94301"
+      },
+      "verification": {
+        "level": "review",
+        "accessed": "2026-09-08",
+        "sources": [
+          {
+            "label": "Yelp - Darbar Indian Cuisine (address, phone; business text: lunch buffet Mon-Fri 11-2:30)",
+            "url": "https://www.yelp.com/biz/darbar-indian-cuisine-palo-alto"
+          }
+        ]
+      },
+      "id": "L438",
+      "coords": null,
+      "added_in": "batch8.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Khazana",
+      "city": "Palo Alto",
+      "address": "339 University Ave, Palo Alto, CA 94301",
+      "area": "Downtown Palo Alto",
+      "cuisine": "Indian (small plates)",
+      "days_open": "Daily; lunch Wed-Sun",
+      "hours_tuesday": "Dinner only (5:00 PM - 9:00 PM)",
+      "lunch_special": {
+        "name": "Lunch Wed-Sun",
+        "price_from": null,
+        "price_to": null,
+        "days": "Wed-Sun",
+        "window": "11:30 AM - 2:00 PM",
+        "includes": null
+      },
+      "open_on_trip_date": false,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Outside the Cupertino return corridor - drive/rideshare only."
+      },
+      "flags": [
+        "No lunch on Tuesday.",
+        "Lunch price not printed by any checked source - confirm on arrival.",
+        "Unclaimed Yelp listing."
+      ],
+      "phone": "(650) 384-6411",
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/khazana-palo-alto",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Khazana+339+University+Ave+Palo+Alto+CA+94301"
+      },
+      "verification": {
+        "level": "review",
+        "accessed": "2026-09-08",
+        "sources": [
+          {
+            "label": "Yelp - Khazana (address, phone; Mon-Tue dinner only; Wed-Thu 11:30-2; Fri 11:30-2:30; Sat-Sun 12-2:30)",
+            "url": "https://www.yelp.com/biz/khazana-palo-alto"
+          }
+        ]
+      },
+      "id": "L439",
+      "coords": null,
+      "added_in": "batch8.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Jun Bistro",
+      "city": "Milpitas",
+      "address": "290 Barber Ct, Milpitas, CA 95035",
+      "area": "Barber Ct (near Great Mall)",
+      "cuisine": "Chinese (Yunnan)",
+      "days_open": "Tue-Sun; closed Mon",
+      "hours_tuesday": "11:30 AM - 2:30 PM, 5:00 PM - 9:00 PM",
+      "lunch_special": {
+        "name": "Lunch special",
+        "price_from": null,
+        "price_to": null,
+        "days": "Tue-Sun",
+        "window": "11:30 AM - 2:30 PM",
+        "includes": null
+      },
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Outside the Cupertino return corridor - drive/rideshare only."
+      },
+      "flags": [
+        "Lunch price not printed by any checked source - confirm on arrival.",
+        "Phone differs between listings ((669) 629-0965 vs (650) 963-3408)."
+      ],
+      "phone": "(669) 629-0965",
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/jun-bistro-milpitas",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Jun+Bistro+290+Barber+Ct+Milpitas+CA+95035"
+      },
+      "verification": {
+        "level": "review",
+        "accessed": "2026-09-08",
+        "sources": [
+          {
+            "label": "Metro Silicon Valley - Jun Bistro (open Tue-Sun 11:30-2:30 & 5-9; address; May 2026)",
+            "url": "https://www.metrosiliconvalley.com/jun-bistro-explores-yunnan-cuisine-in-milpitas/"
+          },
+          {
+            "label": "Yelp - Jun Bistro (4.7 stars; reviews cite lunch special)",
+            "url": "https://www.yelp.com/biz/jun-bistro-milpitas"
+          }
+        ]
+      },
+      "id": "L440",
+      "coords": null,
+      "added_in": "batch8.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Yuan Bistro",
+      "city": "Milpitas",
+      "address": "42 Dixon Rd, Milpitas, CA 95035",
+      "area": "Dixon Rd",
+      "cuisine": "Chinese",
+      "days_open": "Daily",
+      "hours_tuesday": "11:00 AM - 2:30 PM, 5:00 PM - 9:00 PM",
+      "lunch_special": {
+        "name": "Lunch service 11-2:30",
+        "price_from": null,
+        "price_to": null,
+        "days": "Mon-Fri",
+        "window": "11:00 AM - 2:30 PM",
+        "includes": null
+      },
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Outside the Cupertino return corridor - drive/rideshare only."
+      },
+      "flags": [
+        "Lunch price not printed by any checked source - confirm on arrival."
+      ],
+      "phone": "(408) 956-9051",
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/yuan-bistro-milpitas",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Yuan+Bistro+42+Dixon+Rd+Milpitas+CA+95035"
+      },
+      "verification": {
+        "level": "review",
+        "accessed": "2026-09-08",
+        "sources": [
+          {
+            "label": "Yelp - Yuan Bistro (address, phone, Mon-Fri 11-2:30 & 5-9, Sat-Sun 11-9)",
+            "url": "https://www.yelp.com/biz/yuan-bistro-milpitas"
+          }
+        ]
+      },
+      "id": "L441",
+      "coords": null,
+      "added_in": "batch8.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Daeho Kalbi Jjim & Beef Soup",
+      "city": "Milpitas",
+      "address": "217 W Calaveras Blvd, Milpitas, CA 95035",
+      "area": "W Calaveras Blvd",
+      "cuisine": "Korean (braised short rib / soups)",
+      "days_open": "Daily",
+      "hours_tuesday": "11:00 AM - 2:30 PM, 4:30 PM - 9:00 PM",
+      "lunch_special": {
+        "name": "Lunch special (per reviews)",
+        "price_from": null,
+        "price_to": null,
+        "days": "Mon-Fri",
+        "window": "11:00 AM - 2:30 PM",
+        "includes": null
+      },
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Outside the Cupertino return corridor - drive/rideshare only."
+      },
+      "flags": [
+        "Lunch special price not published; signature kalbi jjim is $76+ (shared)."
+      ],
+      "phone": "(408) 770-3778",
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/daeho-kalbi-jjim-and-beef-soup-milpitas",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Daeho+Kalbi+Jjim+&+Beef+Soup+217+W+Calaveras+Blvd+Milpitas+CA+95035"
+      },
+      "verification": {
+        "level": "review",
+        "accessed": "2026-09-08",
+        "sources": [
+          {
+            "label": "Yelp - Daeho Kalbi Jjim & Beef Soup (address, phone, Mon-Fri 11-2:30 & 4:30-9; reviews cite lunch special)",
+            "url": "https://www.yelp.com/biz/daeho-kalbi-jjim-and-beef-soup-milpitas"
+          },
+          {
+            "label": "Menu mirror (Sat-Sun 10:30-9; kalbi jjim $76-$101 - not lunch pricing)",
+            "url": "https://daeho-kalbi-jjim-beef-soup.goto-restaurants.com/"
+          }
+        ]
+      },
+      "id": "L442",
+      "coords": null,
+      "added_in": "batch8.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Siam Station",
+      "city": "Milpitas",
+      "address": "210 Barber Ct, Milpitas, CA 95035",
+      "area": "Barber Ct (near Great Mall)",
+      "cuisine": "Thai",
+      "days_open": "Daily",
+      "hours_tuesday": "11:30 AM - 9:00 PM",
+      "lunch_special": {
+        "name": "Lunch special with drink (per reviews)",
+        "price_from": null,
+        "price_to": null,
+        "days": null,
+        "window": null,
+        "includes": null
+      },
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Outside the Cupertino return corridor - drive/rideshare only."
+      },
+      "flags": [
+        "Lunch price not printed by any checked source - confirm on arrival.",
+        "Separate from the Cupertino Siam Station already listed."
+      ],
+      "phone": null,
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/siam-station-milpitas",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Siam+Station+210+Barber+Ct+Milpitas+CA+95035"
+      },
+      "verification": {
+        "level": "review",
+        "accessed": "2026-09-08",
+        "sources": [
+          {
+            "label": "Yelp - Siam Station Milpitas (address, daily 11:30-9)",
+            "url": "https://www.yelp.com/biz/siam-station-milpitas"
+          }
+        ]
+      },
+      "id": "L443",
+      "coords": null,
+      "added_in": "batch8.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Kathmandu Cuisine",
+      "city": "Milpitas",
+      "address": "138 S Main St, Milpitas, CA 95035",
+      "area": "Downtown Milpitas",
+      "cuisine": "Nepali / Indian",
+      "days_open": "Wed-Mon; closed Tue",
+      "hours_tuesday": "Closed Tuesdays",
+      "lunch_special": {
+        "name": "Lunch 11-4",
+        "price_from": null,
+        "price_to": null,
+        "days": null,
+        "window": null,
+        "includes": null
+      },
+      "open_on_trip_date": false,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Outside the Cupertino return corridor - drive/rideshare only."
+      },
+      "flags": [
+        "CLOSED on the trip date (Tuesday).",
+        "Lunch price not printed by any checked source - confirm on arrival.",
+        "Hours have changed several times per business updates - confirm.",
+        "Separate from the Los Altos Kathmandu Cuisine already listed."
+      ],
+      "phone": "(408) 649-3616",
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/kathmandu-cuisine-milpitas-2",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Kathmandu+Cuisine+138+S+Main+St+Milpitas+CA+95035"
+      },
+      "verification": {
+        "level": "review",
+        "accessed": "2026-09-08",
+        "sources": [
+          {
+            "label": "Yelp - Kathmandu Cuisine Milpitas (address, phone; Tue closed; other days 11-4 & 6-11:30)",
+            "url": "https://www.yelp.com/biz/kathmandu-cuisine-milpitas-2"
+          }
+        ]
+      },
+      "id": "L444",
+      "coords": null,
+      "added_in": "batch8.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Hyderabad Dum Biryani",
+      "city": "Milpitas",
+      "address": "55 Dempsey Rd, Milpitas, CA 95035",
+      "area": "Dempsey Rd",
+      "cuisine": "Indian (Hyderabadi, halal)",
+      "days_open": "Daily",
+      "hours_tuesday": "11:30 AM - 10:00 PM",
+      "lunch_special": {
+        "name": "Lunch combos",
+        "price_from": null,
+        "price_to": null,
+        "days": null,
+        "window": null,
+        "includes": null
+      },
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Outside the Cupertino return corridor - drive/rideshare only."
+      },
+      "flags": [
+        "Lunch price not printed by any checked source - confirm on arrival."
+      ],
+      "phone": "(408) 493-6133",
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/hyderabad-dum-biryani-milpitas",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Hyderabad+Dum+Biryani+55+Dempsey+Rd+Milpitas+CA+95035"
+      },
+      "verification": {
+        "level": "review",
+        "accessed": "2026-09-08",
+        "sources": [
+          {
+            "label": "Yelp - Hyderabad Dum Biryani Milpitas (address, phone, daily 11:30-10/10:30)",
+            "url": "https://www.yelp.com/biz/hyderabad-dum-biryani-milpitas"
+          }
+        ]
+      },
+      "id": "L445",
+      "coords": null,
+      "added_in": "batch8.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Kai Japanese Restaurant",
+      "city": "San Jose",
+      "address": "5190 Stevens Creek Blvd, San Jose, CA 95129",
+      "area": "West San Jose (Stevens Creek)",
+      "cuisine": "Japanese / Sushi",
+      "days_open": "Wed-Mon; closed Tue",
+      "hours_tuesday": "Closed Tuesdays",
+      "lunch_special": {
+        "name": "Lunch 11:30-2",
+        "price_from": null,
+        "price_to": null,
+        "days": null,
+        "window": null,
+        "includes": null
+      },
+      "open_on_trip_date": false,
+      "fits_return_bus": {
+        "ok": true,
+        "note": "On Stevens Creek Blvd east of Cupertino - VTA 23/523 corridor."
+      },
+      "flags": [
+        "CLOSED on the trip date (Tuesday).",
+        "Lunch price not printed by any checked source - confirm on arrival."
+      ],
+      "phone": "(408) 320-1811",
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/kai-japanese-restaurant-san-jose",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Kai+Japanese+Restaurant+5190+Stevens+Creek+Blvd+San+Jose+CA+95129"
+      },
+      "verification": {
+        "level": "review",
+        "accessed": "2026-09-08",
+        "sources": [
+          {
+            "label": "Yelp - Kai Japanese Restaurant (address, phone; Tue closed; other days 11:30-2 & 5-9)",
+            "url": "https://www.yelp.com/biz/kai-japanese-restaurant-san-jose"
+          },
+          {
+            "label": "Official site",
+            "url": "https://www.kaisushi4u.com/"
+          }
+        ]
+      },
+      "id": "L446",
+      "coords": null,
+      "added_in": "batch8.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Suvai",
+      "city": "San Jose",
+      "address": "5205 Prospect Rd Ste 110, San Jose, CA 95129",
+      "area": "West San Jose (Prospect Rd)",
+      "cuisine": "Indian (South Indian)",
+      "days_open": "Tue-Sun; closed Mon",
+      "hours_tuesday": "11:00 AM - 2:30 PM, 5:30 PM - 10:00 PM",
+      "lunch_special": {
+        "name": "Weekday lunch buffet (per review)",
+        "price_from": null,
+        "price_to": null,
+        "days": "Tue-Fri",
+        "window": "11:00 AM - 2:30 PM",
+        "includes": null
+      },
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Outside the Cupertino return corridor - drive/rideshare only."
+      },
+      "flags": [
+        "Buffet price not published."
+      ],
+      "phone": "(408) 703-3884",
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/suvai-san-jose-2",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Suvai+5205+Prospect+Rd+Ste+110+San+Jose+CA+95129"
+      },
+      "verification": {
+        "level": "review",
+        "accessed": "2026-09-08",
+        "sources": [
+          {
+            "label": "Yelp - Suvai (address, phone; Mon closed; Tue-Thu 11-2:30, Fri 11-3, Sat-Sun 8:30-3; review cites weekday lunch buffet)",
+            "url": "https://www.yelp.com/biz/suvai-san-jose-2"
+          }
+        ]
+      },
+      "id": "L447",
+      "coords": null,
+      "added_in": "batch8.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Applebee's Grill + Bar",
+      "city": "San Jose",
+      "address": "555 Saratoga Ave, San Jose, CA 95129",
+      "area": "West San Jose (Saratoga Ave)",
+      "cuisine": "American chain",
+      "days_open": "Daily",
+      "hours_tuesday": "11:00 AM - 12:00 AM",
+      "lunch_special": {
+        "name": "Lunch specials (chain menu)",
+        "price_from": null,
+        "price_to": null,
+        "days": null,
+        "window": null,
+        "includes": null
+      },
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Outside the Cupertino return corridor - drive/rideshare only."
+      },
+      "flags": [
+        "Lunch special prices not shown on the location page."
+      ],
+      "phone": "(408) 446-8370",
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/applebees-grill-and-bar-san-jose-4",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Applebee's+Grill+++Bar+555+Saratoga+Ave+San+Jose+CA+95129"
+      },
+      "verification": {
+        "level": "official",
+        "accessed": "2026-09-08",
+        "sources": [
+          {
+            "label": "Official location page - restaurants.applebees.com (address, phone, daily 11 AM-midnight; 'Lunch Specials' menu section)",
+            "url": "https://restaurants.applebees.com/en-us/ca/san-jose/555-saratoga-ave.-95095"
+          }
+        ]
+      },
+      "id": "L448",
+      "coords": null,
+      "added_in": "batch8.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Pho Nam",
+      "city": "Sunnyvale",
+      "address": "844 W El Camino Real, Sunnyvale, CA 94087",
+      "area": "W El Camino Real",
+      "cuisine": "Vietnamese (pho)",
+      "days_open": "Daily",
+      "hours_tuesday": "10:00 AM - 8:00 PM",
+      "lunch_special": {
+        "name": "No published lunch special",
+        "price_from": null,
+        "price_to": null,
+        "days": null,
+        "window": null,
+        "includes": null
+      },
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Outside the Cupertino return corridor - drive/rideshare only."
+      },
+      "flags": [
+        "Lunch price not printed by any checked source - confirm on arrival.",
+        "Unclaimed Yelp listing; a second Pho Nam at 1205 Wildwood Ave (10-7) is a different branch."
+      ],
+      "phone": "(408) 737-1086",
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/pho-nam-sunnyvale-4",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Pho+Nam+844+W+El+Camino+Real+Sunnyvale+CA+94087"
+      },
+      "verification": {
+        "level": "review",
+        "accessed": "2026-09-08",
+        "sources": [
+          {
+            "label": "Yelp - Pho Nam (844 W El Camino; daily 10-8; phone)",
+            "url": "https://www.yelp.com/biz/pho-nam-sunnyvale-4"
+          }
+        ]
+      },
+      "id": "L449",
+      "coords": null,
+      "added_in": "batch8.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Pho To Chau 999",
+      "city": "Santa Clara",
+      "address": "2636 Homestead Rd, Santa Clara, CA 95051",
+      "area": "Homestead Rd",
+      "cuisine": "Vietnamese (pho)",
+      "days_open": "Daily",
+      "hours_tuesday": "11:00 AM - 9:00 PM",
+      "lunch_special": {
+        "name": "No published lunch special",
+        "price_from": null,
+        "price_to": null,
+        "days": null,
+        "window": null,
+        "includes": null
+      },
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Outside the Cupertino return corridor - drive/rideshare only."
+      },
+      "flags": [
+        "Lunch price not printed by any checked source - confirm on arrival.",
+        "Closing time differs between Yelp snapshots (9:00 vs 9:30 PM)."
+      ],
+      "phone": "(408) 352-5277",
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/pho-to-chau-999-santa-clara-2",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Pho+To+Chau+999+2636+Homestead+Rd+Santa+Clara+CA+95051"
+      },
+      "verification": {
+        "level": "review",
+        "accessed": "2026-09-08",
+        "sources": [
+          {
+            "label": "Yelp - Pho To Chau 999 (address, phone; Mon-Thu 11-9/9:30; weekend opens 10-10:30)",
+            "url": "https://www.yelp.com/biz/pho-to-chau-999-santa-clara-2"
+          },
+          {
+            "label": "Official site",
+            "url": "https://www.photochau999.com/"
+          }
+        ]
+      },
+      "id": "L450",
+      "coords": null,
+      "added_in": "batch8.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Tommy Thai",
+      "city": "Mountain View",
+      "address": "1482 W El Camino Real, Mountain View, CA 94040",
+      "area": "W El Camino Real",
+      "cuisine": "Thai / Cambodian",
+      "days_open": "Daily",
+      "hours_tuesday": "10:30 AM - 11:00 PM",
+      "lunch_special": {
+        "name": "Lunch specials (per reviews)",
+        "price_from": null,
+        "price_to": null,
+        "days": null,
+        "window": null,
+        "includes": null
+      },
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Outside the Cupertino return corridor - drive/rideshare only."
+      },
+      "flags": [
+        "Lunch price not printed by any checked source - confirm on arrival."
+      ],
+      "phone": "(650) 988-6857",
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/tommy-thai-mountain-view",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Tommy+Thai+1482+W+El+Camino+Real+Mountain+View+CA+94040"
+      },
+      "verification": {
+        "level": "review",
+        "accessed": "2026-09-08",
+        "sources": [
+          {
+            "label": "Yelp - Tommy Thai (address, phone, Mon-Sat 10:30-11, Sun 10:30-10)",
+            "url": "https://www.yelp.com/biz/tommy-thai-mountain-view"
+          },
+          {
+            "label": "Official site",
+            "url": "https://www.tommy-thai.com/"
+          }
+        ]
+      },
+      "id": "L451",
+      "coords": null,
+      "added_in": "batch8.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Veggie Garden",
+      "city": "Mountain View",
+      "address": "2464 W El Camino Real Ste C, Mountain View, CA 94040",
+      "area": "W El Camino Real",
+      "cuisine": "Chinese vegetarian / vegan",
+      "days_open": "Tue-Sun; closed Mon",
+      "hours_tuesday": "11:30 AM - 2:30 PM, 5:00 PM - 9:30 PM",
+      "lunch_special": {
+        "name": "Lunch plates (e.g. E6 Mongolian vegetarian chicken lunch)",
+        "price_from": null,
+        "price_to": null,
+        "days": "Tue-Fri",
+        "window": "11:30 AM - 2:30 PM",
+        "includes": null
+      },
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Outside the Cupertino return corridor - drive/rideshare only."
+      },
+      "flags": [
+        "Lunch price not printed by any checked source - confirm on arrival."
+      ],
+      "phone": "(650) 961-6888",
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/veggie-garden-mountain-view",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Veggie+Garden+2464+W+El+Camino+Real+Ste+C+Mountain+View+CA+94040"
+      },
+      "verification": {
+        "level": "review",
+        "accessed": "2026-09-08",
+        "sources": [
+          {
+            "label": "Yelp - Veggie Garden (address, phone; Mon closed; Tue-Fri 11:30-2:30 & 5-9:30; Sat-Sun 11:30-9:30; photo of lunch plate)",
+            "url": "https://www.yelp.com/biz/veggie-garden-mountain-view"
+          },
+          {
+            "label": "Official site",
+            "url": "https://www.veggiegardenchinese.com/"
+          }
+        ]
+      },
+      "id": "L452",
+      "coords": null,
+      "added_in": "batch8.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Uncle John's Pancake House - Winchester",
+      "city": "Campbell",
+      "address": "2125 S Winchester Blvd, Campbell, CA 95008",
+      "area": "S Winchester Blvd",
+      "cuisine": "American diner / breakfast",
+      "days_open": "Daily",
+      "hours_tuesday": "7:00 AM - 2:00 PM",
+      "lunch_special": {
+        "name": "Lunch menu (burgers, salads, sandwiches) until 2 PM",
+        "price_from": null,
+        "price_to": null,
+        "days": "Daily",
+        "window": "Open - 2:00 PM",
+        "includes": null
+      },
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Outside the Cupertino return corridor - drive/rideshare only."
+      },
+      "flags": [
+        "Lunch price not printed by any checked source - confirm on arrival.",
+        "Closes 2:00 PM."
+      ],
+      "phone": "(408) 724-9835",
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/uncle-johns-pancake-house-winchester-campbell",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Uncle+John's+Pancake+House+-+Winchester+2125+S+Winchester+Blvd+Campbell+CA+95008"
+      },
+      "verification": {
+        "level": "review",
+        "accessed": "2026-09-08",
+        "sources": [
+          {
+            "label": "Yelp - Uncle John's Pancake House Winchester (address, phone, daily 7-2)",
+            "url": "https://www.yelp.com/biz/uncle-johns-pancake-house-winchester-campbell"
+          },
+          {
+            "label": "Official site",
+            "url": "https://www.unclejohnspancakes.com/"
+          }
+        ]
+      },
+      "id": "L453",
+      "coords": null,
+      "added_in": "batch8.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Must Be Thai",
+      "city": "San Jose",
+      "address": "3143 Stevens Creek Blvd, San Jose, CA 95117",
+      "area": "West San Jose (Stevens Creek near Valley Fair)",
+      "cuisine": "Thai",
+      "days_open": "Daily",
+      "hours_tuesday": "11:00 AM - 9:00 PM",
+      "lunch_special": {
+        "name": "No published lunch special",
+        "price_from": null,
+        "price_to": null,
+        "days": null,
+        "window": null,
+        "includes": null
+      },
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": true,
+        "note": "On Stevens Creek Blvd - VTA 23/523 corridor east of Cupertino."
+      },
+      "flags": [
+        "Lunch price not printed by any checked source - confirm on arrival.",
+        "The downtown 'Must Be Thai and Bar' (18 N San Pedro St) is a separate branch, closed Mon."
+      ],
+      "phone": "(408) 816-7179",
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/must-be-thai-san-jose-2",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Must+Be+Thai+3143+Stevens+Creek+Blvd+San+Jose+CA+95117"
+      },
+      "verification": {
+        "level": "review",
+        "accessed": "2026-09-08",
+        "sources": [
+          {
+            "label": "Yelp - Must Be Thai (address, phone, Sun-Thu 11-9, Fri-Sat 11-9:30)",
+            "url": "https://www.yelp.com/biz/must-be-thai-san-jose-2"
+          },
+          {
+            "label": "Official site",
+            "url": "https://www.mustbethai.com/"
+          }
+        ]
+      },
+      "id": "L454",
+      "coords": null,
+      "added_in": "batch8.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Khaosan Thai",
+      "city": "San Jose",
+      "address": "2062 Curtner Ave, San Jose, CA 95124",
+      "area": "Cambrian Park",
+      "cuisine": "Thai",
+      "days_open": "Daily; lunch Mon-Fri 11-3",
+      "hours_tuesday": "11:00 AM - 3:00 PM, 5:00 PM - 9:00 PM",
+      "lunch_special": {
+        "name": "Lunch Mon-Fri 11-3",
+        "price_from": null,
+        "price_to": null,
+        "days": "Mon-Fri",
+        "window": "11:00 AM - 3:00 PM",
+        "includes": null
+      },
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Outside the Cupertino return corridor - drive/rideshare only."
+      },
+      "flags": [
+        "Lunch price not printed by any checked source - confirm on arrival.",
+        "Cambrian Park is ~9 mi from Cupertino - edge of the ring."
+      ],
+      "phone": "(408) 677-8061",
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/khaosan-thai-san-jose",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Khaosan+Thai+2062+Curtner+Ave+San+Jose+CA+95124"
+      },
+      "verification": {
+        "level": "official",
+        "accessed": "2026-09-08",
+        "sources": [
+          {
+            "label": "Official site - khaosanthaisj.com (Mon-Fri 11-3 & 5-9; Sat-Sun 11:30-9; address, phone)",
+            "url": "https://www.khaosanthaisj.com/home"
+          },
+          {
+            "label": "Yelp - Khaosan Thai (hours cross-check)",
+            "url": "https://www.yelp.com/biz/khaosan-thai-san-jose"
+          }
+        ]
+      },
+      "id": "L455",
+      "coords": null,
+      "added_in": "batch8.json",
       "distance_mi": null
     }
   ],
