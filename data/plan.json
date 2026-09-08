@@ -92,6 +92,6 @@
   "verification": {
     "accessed": "2026-09-07",
     "method": "Each row links to the page it was read from. Rows read from a live agency schedule page are marked 'official-live'. Rows produced by subtracting/adding published times are marked 'derived'. Rows between two published timepoints are marked 'interpolated'. Walk distances are computed on OpenStreetMap data with the public Valhalla routing service and are marked 'estimate' because they are not agency data.",
-    "review_status": "Ready for manual review. 29 open flags (14 transit + 15 lunch), listed in data/flags.json and on the Flags tab."
+    "review_status": "Ready for manual review. 33 open flags (14 transit + 19 lunch), listed in data/flags.json and on the Flags tab."
   }
 }
