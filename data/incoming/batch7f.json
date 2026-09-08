@@ -1,0 +1,712 @@
+{
+ "note": "Batch 7f - pass 7, 2026-09-07. Final tranche: Santa Clara, Campbell, Sunnyvale, Los Gatos, Willow Glen entries verified line by line from Yelp, official sites, and directory cross-checks captured during pass-7 searches.",
+ "entries": [
+  {
+   "name": "Mountain Mike's Pizza",
+   "city": "Sunnyvale",
+   "address": "848 E El Camino Real, Sunnyvale, CA 94087",
+   "area": "E El Camino Real",
+   "cuisine": "Pizza buffet",
+   "days_open": "Daily",
+   "hours_tuesday": "9:00 AM - 11:00 PM",
+   "lunch_special": {
+    "name": "Weekday lunch buffet 11 AM-2 PM (business rep on Yelp)",
+    "price_from": null,
+    "price_to": null,
+    "days": "Mon-Fri",
+    "window": "11:00 AM - 2:00 PM",
+    "includes": "Yelp Q&A answered by Mountain Mike's business rep: 'our Sunnyvale team offers a weekday buffet from 11 AM to 2 PM.' Buffet price not published - call to confirm."
+   },
+   "open_on_trip_date": true,
+   "fits_return_bus": {
+    "ok": false,
+    "note": "Sunnyvale - off the return corridor."
+   },
+   "flags": [
+    "Buffet price not published; confirm by phone. Tuesday-discount question was referred to the store."
+   ],
+   "phone": "(408) 773-2717",
+   "review_links": {
+    "yelp": "https://www.yelp.com/biz/mountain-mikes-pizza-sunnyvale",
+    "google_maps": "https://www.google.com/maps/search/?api=1&query=Mountain+Mike's+Pizza+848+E+El+Camino+Real+Sunnyvale"
+   },
+   "verification": {
+    "level": "review",
+    "accessed": "2026-09-07",
+    "sources": [
+     {
+      "label": "Yelp - Mountain Mike's Sunnyvale (848 E El Camino, daily 9-11, buffet Q&A by business rep)",
+      "url": "https://www.yelp.com/biz/mountain-mikes-pizza-sunnyvale"
+     }
+    ]
+   }
+  },
+  {
+   "name": "Chicken Meets Rice",
+   "city": "Santa Clara",
+   "address": "2213 Tasman Dr, Santa Clara, CA 95054",
+   "area": "Tasman Dr",
+   "cuisine": "Hainanese chicken rice",
+   "days_open": "Daily",
+   "hours_tuesday": "10:30 AM - 9:00 PM",
+   "lunch_special": {
+    "name": "No published lunch special; chicken-rice plates",
+    "price_from": null,
+    "price_to": null,
+    "days": "daily",
+    "window": "from 10:30 AM",
+    "includes": "Second CMR location - the Cupertino row (10105 N Wolfe Rd) is separate. Sirved shows 11-9 (minor variance); Yelp business updates say open till 9 PM daily."
+   },
+   "open_on_trip_date": true,
+   "fits_return_bus": {
+    "ok": false,
+    "note": "Santa Clara - off the return corridor."
+   },
+   "flags": [
+    "Minor hour variance: Sirved 11-9 vs Yelp 10:30-9."
+   ],
+   "phone": "(408) 212-7928",
+   "review_links": {
+    "yelp": "https://www.yelp.com/biz/chicken-meets-rice-santa-clara",
+    "google_maps": "https://www.google.com/maps/search/?api=1&query=Chicken+Meets+Rice+2213+Tasman+Dr+Santa+Clara"
+   },
+   "verification": {
+    "level": "listing",
+    "accessed": "2026-09-07",
+    "sources": [
+     {
+      "label": "Yelp - Chicken Meets Rice (2213 Tasman Dr, daily 10:30-9)",
+      "url": "https://www.yelp.com/biz/chicken-meets-rice-santa-clara?start=240"
+     },
+     {
+      "label": "Sirved - CMR Tasman (menu/hours cross-check)",
+      "url": "https://www.sirved.com/restaurant/santa_clara-california-usa/chicken-meets-rice-tasman/515325/menus"
+     }
+    ]
+   }
+  },
+  {
+   "name": "Tay Ho",
+   "city": "Santa Clara",
+   "address": "2047 El Camino Real, Santa Clara, CA 95050",
+   "area": "El Camino Real",
+   "cuisine": "Vietnamese",
+   "days_open": "Daily",
+   "hours_tuesday": "10:30 AM - 9:00 PM",
+   "lunch_special": {
+    "name": "No published lunch special; banh xeo + noodles",
+    "price_from": null,
+    "price_to": null,
+    "days": "daily",
+    "window": "from 10:30 AM",
+    "includes": "Same restaurant group as Banh Cuon Tay Ho (2895 Senter Rd, San Jose) - separate row not added."
+   },
+   "open_on_trip_date": true,
+   "fits_return_bus": {
+    "ok": false,
+    "note": "Santa Clara - off the return corridor."
+   },
+   "flags": [],
+   "phone": "(408) 239-4748",
+   "review_links": {
+    "yelp": "https://www.yelp.com/biz/tay-ho-santa-clara-3",
+    "google_maps": "https://www.google.com/maps/search/?api=1&query=Tay+Ho+2047+El+Camino+Real+Santa+Clara"
+   },
+   "verification": {
+    "level": "listing",
+    "accessed": "2026-09-07",
+    "sources": [
+     {
+      "label": "Yelp - Tay Ho Santa Clara (2047 El Camino, daily 10:30-9, restaurant.tayho.com)",
+      "url": "https://www.yelp.com/biz/tay-ho-santa-clara-3?osq=Pho&start=220"
+     },
+     {
+      "label": "Restaurantji - Tay Ho (hours cross-check)",
+      "url": "https://www.restaurantji.com/ca/santa-clara/tay-ho-/"
+     }
+    ]
+   }
+  },
+  {
+   "name": "It's Lunch Time",
+   "city": "Santa Clara",
+   "address": "3205 Edward Ave, Santa Clara, CA 95054",
+   "area": "Edward Ave (North San Jose border)",
+   "cuisine": "Korean wraps/sandwiches",
+   "days_open": "Mon-Fri only",
+   "hours_tuesday": "9:30 AM - 1:30 PM",
+   "lunch_special": {
+    "name": "Lunch-only window (name is literal); $10-$20 per person",
+    "price_from": null,
+    "price_to": null,
+    "days": "Mon-Fri",
+    "window": "9:30 AM - 1:30 PM",
+    "includes": "Weekday-only cafe near the business parks. Restaurantji shows 10:30-1:30 (variance); Yelp's current 9:30-1:30 governs."
+   },
+   "open_on_trip_date": true,
+   "fits_return_bus": {
+    "ok": false,
+    "note": "Santa Clara - off the return corridor."
+   },
+   "flags": [
+    "Very short weekday window (till 1:30 PM); Sat-Sun closed; hour variance 9:30 vs 10:30 open across directories."
+   ],
+   "phone": "(408) 235-2350",
+   "review_links": {
+    "yelp": "https://www.yelp.com/biz/its-lunch-time-santa-clara",
+    "google_maps": "https://www.google.com/maps/search/?api=1&query=It's+Lunch+Time+3205+Edward+Ave+Santa+Clara"
+   },
+   "verification": {
+    "level": "listing",
+    "accessed": "2026-09-07",
+    "sources": [
+     {
+      "label": "Yelp - It's Lunch Time (3205 Edward Ave, Mon-Fri 9:30-1:30, Sat-Sun closed)",
+      "url": "https://www.yelp.com/biz/its-lunch-time-santa-clara?start=40"
+     },
+     {
+      "label": "RestaurantGuru - It's Lunch Time (9:30-1:30 cross-check, geo 37.38291/-121.93945)",
+      "url": "https://restaurantguru.com/Its-Lunch-Time-Santa-Clara"
+     },
+     {
+      "label": "Restaurantji - It's Lunch Time (10:30-1:30 variant)",
+      "url": "https://www.restaurantji.com/ca/santa-clara/its-lunch-time-/"
+     }
+    ]
+   },
+   "coords": [
+    37.3829131,
+    -121.9394485
+   ]
+  },
+  {
+   "name": "IB's Cheesesteaks",
+   "city": "Santa Clara",
+   "address": "2261 The Alameda, Santa Clara, CA 95050",
+   "area": "The Alameda",
+   "cuisine": "Cheesesteaks",
+   "days_open": "Daily",
+   "hours_tuesday": "10:00 AM - 10:00 PM",
+   "lunch_special": {
+    "name": "No published lunch special; cheesesteaks",
+    "price_from": null,
+    "price_to": null,
+    "days": "daily",
+    "window": "from 10 AM",
+    "includes": "Late-close Thu-Sat (midnight). Note: IBISS (1100 Lincoln Ave) is CLOSED - different business."
+   },
+   "open_on_trip_date": true,
+   "fits_return_bus": {
+    "ok": false,
+    "note": "The Alameda - off the return corridor."
+   },
+   "flags": [],
+   "phone": "(669) 242-7416",
+   "review_links": {
+    "yelp": "https://www.yelp.com/biz/ib-s-santa-clara-2",
+    "google_maps": "https://www.google.com/maps/search/?api=1&query=IB's+Cheesesteaks+2261+The+Alameda+Santa+Clara"
+   },
+   "verification": {
+    "level": "listing",
+    "accessed": "2026-09-07",
+    "sources": [
+     {
+      "label": "Yelp - IB's (2261 The Alameda, Mon-Wed 10-10, Thu-Fri till midnight, ibscheesesteaks.com)",
+      "url": "https://www.yelp.com/biz/ib-s-santa-clara-2"
+     },
+     {
+      "label": "Yelp - IBISS (CLOSED - excluded, different business)",
+      "url": "https://www.yelp.com/biz/ibiss-san-jose"
+     }
+    ]
+   }
+  },
+  {
+   "name": "Slurp A Bowl",
+   "city": "San Jose",
+   "address": "1882 Curtner Ave, San Jose, CA 95124",
+   "area": "Cambrian Park",
+   "cuisine": "Chinese noodles",
+   "days_open": "Tue-Sun (Monday closed)",
+   "hours_tuesday": "11:30 AM - 8:30 PM",
+   "lunch_special": {
+    "name": "No published lunch special; noodle bowls",
+    "price_from": null,
+    "price_to": null,
+    "days": "Tue-Sun",
+    "window": "11:30 AM - 8:30 PM",
+    "includes": "Pork trotter snail noodles etc.; slurpabowl.com."
+   },
+   "open_on_trip_date": true,
+   "fits_return_bus": {
+    "ok": false,
+    "note": "Cambrian Park - off the return corridor."
+   },
+   "flags": [],
+   "phone": "(626) 702-2333",
+   "review_links": {
+    "yelp": "https://www.yelp.com/biz/slurp-a-bowl-san-jose",
+    "google_maps": "https://www.google.com/maps/search/?api=1&query=Slurp+A+Bowl+1882+Curtner+Ave+San+Jose"
+   },
+   "verification": {
+    "level": "listing",
+    "accessed": "2026-09-07",
+    "sources": [
+     {
+      "label": "Yelp - Slurp A Bowl (1882 Curtner, Mon closed, Tue-Sun 11:30-8:30, slurpabowl.com)",
+      "url": "https://www.yelp.com/biz/slurp-a-bowl-san-jose"
+     }
+    ]
+   }
+  },
+  {
+   "name": "STARDUST Coffee House",
+   "city": "Campbell",
+   "address": "1725 S Bascom Ave, Ste 1100, Campbell, CA 95008",
+   "area": "S Bascom Ave (The Pruneyard area)",
+   "cuisine": "Cafe / acai bowls",
+   "days_open": "Daily",
+   "hours_tuesday": "8:00 AM - 6:00 PM",
+   "lunch_special": {
+    "name": "No published lunch special; toasts, bowls, light lunch",
+    "price_from": null,
+    "price_to": null,
+    "days": "daily",
+    "window": "8:00 AM - 6:00 PM",
+    "includes": "Mon-Fri 8-6, Sat-Sun 9-6 per Yelp current hours + every.coffee OSM data."
+   },
+   "open_on_trip_date": true,
+   "fits_return_bus": {
+    "ok": false,
+    "note": "Campbell - off the return corridor."
+   },
+   "flags": [],
+   "phone": "(408) 692-5823",
+   "review_links": {
+    "yelp": "https://www.yelp.com/biz/stardust-coffee-house-campbell-5",
+    "google_maps": "https://www.google.com/maps/search/?api=1&query=Stardust+Coffee+House+1725+S+Bascom+Ave+Campbell"
+   },
+   "verification": {
+    "level": "listing",
+    "accessed": "2026-09-07",
+    "sources": [
+     {
+      "label": "Yelp - STARDUST Coffee House (1725 S Bascom Ste 1100, Mon-Fri 8-6, Sat-Sun 9-6, stardustsuper.com)",
+      "url": "https://www.yelp.com/biz/stardust-coffee-house-campbell-5"
+     },
+     {
+      "label": "every.coffee - Stardust (OSM hours cross-check, geo 37.29227/-121.93203)",
+      "url": "https://every.coffee/cafe/ca/campbell/d-3310/stardust-super-coffee"
+     }
+    ]
+   }
+  },
+  {
+   "name": "Mr. Pickle's Sandwich Shop",
+   "city": "Campbell",
+   "address": "2080 S Bascom Ave, Ste A, Campbell, CA 95008",
+   "area": "S Bascom Ave",
+   "cuisine": "Sandwiches",
+   "days_open": "Daily",
+   "hours_tuesday": "9:00 AM - 8:00 PM",
+   "lunch_special": {
+    "name": "No published lunch special; gourmet sandwiches",
+    "price_from": null,
+    "price_to": null,
+    "days": "daily",
+    "window": "9:00 AM - 8:00 PM",
+    "includes": "Official site JSON says 9-20 daily; Los Gatos branch is separate."
+   },
+   "open_on_trip_date": true,
+   "fits_return_bus": {
+    "ok": false,
+    "note": "Campbell - off the return corridor."
+   },
+   "flags": [
+    "Minor variance: official JSON 9 AM-8 PM daily vs Yelp 9-8 (agrees)."
+   ],
+   "phone": "(408) 371-1300",
+   "review_links": {
+    "yelp": "https://www.yelp.com/biz/mr-pickles-sandwich-shop-campbell-2",
+    "google_maps": "https://www.google.com/maps/search/?api=1&query=Mr.+Pickle's+Sandwich+Shop+2080+S+Bascom+Ave+Campbell"
+   },
+   "verification": {
+    "level": "official",
+    "accessed": "2026-09-07",
+    "sources": [
+     {
+      "label": "Official site - Mr. Pickle's Campbell/Los Gatos (2080 S Bascom Ste A, daily 9-8, geo 37.28524/-121.93124)",
+      "url": "https://mrpickleslosgatos.com/"
+     },
+     {
+      "label": "Yelp - Mr. Pickle's Campbell (hours cross-check)",
+      "url": "https://www.yelp.com/biz/mr-pickles-sandwich-shop-campbell-2?start=140"
+     }
+    ]
+   },
+   "coords": [
+    37.2852361,
+    -121.9312426
+   ]
+  },
+  {
+   "name": "Xiaoman Riceburrito",
+   "city": "Sunnyvale",
+   "address": "573 E El Camino Real, Sunnyvale, CA 94087",
+   "area": "E El Camino Real",
+   "cuisine": "Taiwanese breakfast/lunch",
+   "days_open": "Daily except Thursday",
+   "hours_tuesday": "8:00 AM - 1:30 PM",
+   "lunch_special": {
+    "name": "Rice burritos + Taiwanese plates (morning-to-lunch window)",
+    "price_from": null,
+    "price_to": null,
+    "days": "Mon-Wed, Fri-Sun",
+    "window": "8:00 AM - 1:30 PM",
+    "includes": "Closes 1:30 PM - an early-lunch option; THURSDAY CLOSED (trip date Tuesday is fine)."
+   },
+   "open_on_trip_date": true,
+   "fits_return_bus": {
+    "ok": false,
+    "note": "Sunnyvale - off the return corridor."
+   },
+   "flags": [
+    "Closed Thursdays; 1:30 PM close - go early."
+   ],
+   "phone": "(669) 291-6167",
+   "review_links": {
+    "yelp": "https://www.yelp.com/biz/xiao-man-riceburrito-xiaoman-sunnyvale",
+    "google_maps": "https://www.google.com/maps/search/?api=1&query=Xiaoman+Riceburrito+573+E+El+Camino+Real+Sunnyvale"
+   },
+   "verification": {
+    "level": "listing",
+    "accessed": "2026-09-07",
+    "sources": [
+     {
+      "label": "Restaurantji - Xiaoman (573 E El Camino, Tue 8-1:30, Thu closed)",
+      "url": "https://www.restaurantji.com/ca/sunnyvale/xiao-man-riceburrito-xiaoman-sunnyvale-/"
+     },
+     {
+      "label": "corner.inc - Xiaoman (address + hours cross-check)",
+      "url": "https://www.corner.inc/place/103707"
+     },
+     {
+      "label": "Wanderlog - Xiaoman (hours cross-check)",
+      "url": "https://wanderlog.com/place/details/6741447/xiaoman-riceburrito"
+     }
+    ]
+   }
+  },
+  {
+   "name": "Valley Goat",
+   "city": "Sunnyvale",
+   "address": "1100 N Mathilda Ave, Sunnyvale, CA 94089",
+   "area": "N Mathilda Ave (Treehouse Hotel)",
+   "cuisine": "New American (Stephanie Izard)",
+   "days_open": "Daily",
+   "hours_tuesday": "11:00 AM - 2:00 PM, 4:00 PM - 10:00 PM",
+   "lunch_special": {
+    "name": "Weekday lunch 11 AM-2 PM (official); Sat-Sun brunch 10-2",
+    "price_from": null,
+    "price_to": null,
+    "days": "Mon-Fri lunch",
+    "window": "11:00 AM - 2:00 PM",
+    "includes": "Official About page: Lunch Mon-Fri 11-2; Brunch Sat-Sun 10-2; Bar & Bites 2-4; Dinner 4-10."
+   },
+   "open_on_trip_date": true,
+   "fits_return_bus": {
+    "ok": false,
+    "note": "North Sunnyvale - off the return corridor."
+   },
+   "flags": [
+    "Yelp shows continuous 11-10 hours; official page defines the 2-4 PM 'Bar & Bites' gap."
+   ],
+   "phone": "(408) 900-9470",
+   "review_links": {
+    "yelp": "https://www.yelp.com/biz/valley-goat-sunnyvale-2",
+    "google_maps": "https://www.google.com/maps/search/?api=1&query=Valley+Goat+1100+N+Mathilda+Ave+Sunnyvale"
+   },
+   "verification": {
+    "level": "official",
+    "accessed": "2026-09-07",
+    "sources": [
+     {
+      "label": "Official site - Valley Goat About page (1100 N Mathilda; lunch Mon-Fri 11-2; brunch weekends 10-2; dinner 4-10)",
+      "url": "https://www.valleygoatsv.com/about"
+     },
+     {
+      "label": "Yelp - Valley Goat (hours cross-check)",
+      "url": "https://www.yelp.com/biz/valley-goat-sunnyvale-2?start=80"
+     }
+    ]
+   }
+  },
+  {
+   "name": "Kung Sil Rice Bakery",
+   "city": "Santa Clara",
+   "address": "2725 El Camino Real, Ste 106, Santa Clara, CA 95051",
+   "area": "El Camino Real",
+   "cuisine": "Korean bakery / gimbap",
+   "days_open": "Daily (short Sunday)",
+   "hours_tuesday": "5:30 AM - 1:30 PM",
+   "lunch_special": {
+    "name": "Morning-to-lunch window (gimbap/kimbap + rice cakes)",
+    "price_from": null,
+    "price_to": null,
+    "days": "Mon-Sat",
+    "window": "until 1:30 PM",
+    "includes": "Official site JSON: Mon-Sat 5:30-1:30, Sun 5:30-10 AM. Early-lunch only; Yelp shows 6-1 (minor variance)."
+   },
+   "open_on_trip_date": true,
+   "fits_return_bus": {
+    "ok": false,
+    "note": "Santa Clara - off the return corridor."
+   },
+   "flags": [
+    "Closes 1:30 PM (Yelp variant 1:00 PM); Sunday closes 10 AM."
+   ],
+   "phone": "(408) 246-1990",
+   "review_links": {
+    "yelp": "https://www.yelp.com/biz/kung-sil-rice-bakery-santa-clara-2",
+    "google_maps": "https://www.google.com/maps/search/?api=1&query=Kung+Sil+Rice+Bakery+2725+El+Camino+Real+Santa+Clara"
+   },
+   "verification": {
+    "level": "official",
+    "accessed": "2026-09-07",
+    "sources": [
+     {
+      "label": "Official site - Kung Sil Rice Bakery Our Story (2725 El Camino, Mon-Sat 5:30-1:30, Sun 5:30-10)",
+      "url": "https://www.kungsilricebakery.com/our-story"
+     },
+     {
+      "label": "Yelp - Kung Sil (Mon-Sat 6-1, Sun 6-10 variant)",
+      "url": "https://www.yelp.com/biz/kung-sil-rice-bakery-santa-clara-2"
+     }
+    ]
+   }
+  },
+  {
+   "name": "Coup De Thai",
+   "city": "Los Gatos",
+   "address": "137 N Santa Cruz Ave, Los Gatos, CA 95030",
+   "area": "Downtown Los Gatos",
+   "cuisine": "Thai",
+   "days_open": "Daily",
+   "hours_tuesday": "11:00 AM - 2:30 PM, 4:00 PM - 9:00 PM",
+   "lunch_special": {
+    "name": "No published lunch special; lunch service with afternoon gap",
+    "price_from": null,
+    "price_to": null,
+    "days": "daily lunch",
+    "window": "11:00 AM - 2:30 PM",
+    "includes": "Weekend lunch till 3 PM; Fri-Sun dinner till 9:30."
+   },
+   "open_on_trip_date": true,
+   "fits_return_bus": {
+    "ok": false,
+    "note": "Los Gatos - far edge of the radius."
+   },
+   "flags": [],
+   "phone": "(408) 442-5977",
+   "review_links": {
+    "yelp": "https://www.yelp.com/biz/coup-de-thai-los-gatos-2",
+    "google_maps": "https://www.google.com/maps/search/?api=1&query=Coup+De+Thai+137+N+Santa+Cruz+Ave+Los+Gatos"
+   },
+   "verification": {
+    "level": "listing",
+    "accessed": "2026-09-07",
+    "sources": [
+     {
+      "label": "Yelp - Coup De Thai (137 N Santa Cruz, Mon-Thu 11-2:30 + 4-9, Fri-Sun till 9:30)",
+      "url": "https://www.yelp.com/biz/coup-de-thai-los-gatos-2?start=130"
+     },
+     {
+      "label": "Restaurantji - Coup De Thai (hours cross-check)",
+      "url": "https://www.restaurantji.com/ca/los-gatos/coup-de-thai-/"
+     }
+    ]
+   }
+  },
+  {
+   "name": "Ambrosia India Bistro",
+   "city": "Los Gatos",
+   "address": "133 N Santa Cruz Ave, Los Gatos, CA 95030",
+   "area": "Downtown Los Gatos",
+   "cuisine": "Indian",
+   "days_open": "Daily",
+   "hours_tuesday": "11:30 AM - 2:45 PM, 4:00 PM - 9:00 PM",
+   "lunch_special": {
+    "name": "No published lunch special; lunch service",
+    "price_from": null,
+    "price_to": null,
+    "days": "daily lunch",
+    "window": "11:30 AM - 2:45 PM",
+    "includes": "Opened March 2024 in the former North space; Fri-Sat dinner till 9:30."
+   },
+   "open_on_trip_date": true,
+   "fits_return_bus": {
+    "ok": false,
+    "note": "Los Gatos - far edge of the radius."
+   },
+   "flags": [],
+   "phone": "(408) 827-4339",
+   "review_links": {
+    "yelp": "https://www.yelp.com/biz/ambrosia-india-bistro-los-gatos-2",
+    "google_maps": "https://www.google.com/maps/search/?api=1&query=Ambrosia+India+Bistro+133+N+Santa+Cruz+Ave+Los+Gatos"
+   },
+   "verification": {
+    "level": "listing",
+    "accessed": "2026-09-07",
+    "sources": [
+     {
+      "label": "Palo Alto Online - Ambrosia opening coverage (133 N Santa Cruz; hours 11:30-2:45 + 4-9/9:30)",
+      "url": "https://www.paloaltoonline.com/express-newsletter-content/2024/04/03/punjabi-restaurant-ambrosia-india-bistro-opens-in-los-gatos/"
+     },
+     {
+      "label": "Yelp - Ambrosia India Bistro (hours cross-check, ambrosiaib.com)",
+      "url": "https://www.yelp.com/biz/ambrosia-india-bistro-los-gatos-2?start=40"
+     }
+    ]
+   }
+  },
+  {
+   "name": "Hercules",
+   "city": "Los Gatos",
+   "address": "165 Saratoga-Los Gatos Rd, Los Gatos, CA 95030",
+   "area": "Saratoga-Los Gatos Rd",
+   "cuisine": "Mexican / cantina",
+   "days_open": "Tue-Sun (Monday closed)",
+   "hours_tuesday": "11:30 AM - 8:30 PM",
+   "lunch_special": {
+    "name": "No published lunch special; lunch service",
+    "price_from": null,
+    "price_to": null,
+    "days": "Tue-Sun",
+    "window": "from 11:30 AM",
+    "includes": "Fri-Sat till 9:30; happy hour Mon-Fri 4-6 (not a lunch deal)."
+   },
+   "open_on_trip_date": true,
+   "fits_return_bus": {
+    "ok": false,
+    "note": "Los Gatos - far edge of the radius."
+   },
+   "flags": [
+    "Closed Mondays."
+   ],
+   "phone": "(408) 402-3131",
+   "review_links": {
+    "yelp": "https://www.yelp.com/biz/hercules-los-gatos",
+    "google_maps": "https://www.google.com/maps/search/?api=1&query=Hercules+165+Saratoga-Los+Gatos+Rd+Los+Gatos"
+   },
+   "verification": {
+    "level": "listing",
+    "accessed": "2026-09-07",
+    "sources": [
+     {
+      "label": "Yelp - Hercules Draft House & Cantina (165 Saratoga-Los Gatos Rd, Mon closed, Tue-Sun 11:30-8:30/9:30)",
+      "url": "https://www.yelp.com/biz/hercules-los-gatos?start=5"
+     },
+     {
+      "label": "Yelp mobile - Hercules (hours + HH Q&A cross-check)",
+      "url": "https://m.yelp.com/biz/hercules-draft-house-and-cantina-los-gatos?start=40"
+     }
+    ]
+   }
+  },
+  {
+   "name": "Burma Roots",
+   "city": "San Jose",
+   "address": "1100 Lincoln Ave, Ste 101, San Jose, CA 95125",
+   "area": "Willow Glen (Lincoln Ave)",
+   "cuisine": "Burmese",
+   "days_open": "Daily",
+   "hours_tuesday": "11:00 AM - 2:30 PM, 4:30 PM - 9:00 PM",
+   "lunch_special": {
+    "name": "No published lunch special; tea leaf salad etc.",
+    "price_from": null,
+    "price_to": null,
+    "days": "daily lunch",
+    "window": "11:00 AM - 2:30 PM",
+    "includes": "Tea Leaf Salad $19 per Yelp photo. Fri-Sat dinner till 9:30."
+   },
+   "open_on_trip_date": true,
+   "fits_return_bus": {
+    "ok": false,
+    "note": "Willow Glen - off the return corridor."
+   },
+   "flags": [
+    "City correction: pool listed this as Los Gatos - it is Willow Glen, San Jose (1100 Lincoln Ave)."
+   ],
+   "phone": "(669) 242-7954",
+   "review_links": {
+    "yelp": "https://www.yelp.com/biz/burma-roots-san-jose",
+    "google_maps": "https://www.google.com/maps/search/?api=1&query=Burma+Roots+1100+Lincoln+Ave+San+Jose"
+   },
+   "verification": {
+    "level": "listing",
+    "accessed": "2026-09-07",
+    "sources": [
+     {
+      "label": "Yelp - Burma Roots (1100 Lincoln Ste 101, daily 11-2:30 + 4:30-9/9:30, Tea Leaf Salad $19 photo)",
+      "url": "https://www.yelp.com/biz/burma-roots-san-jose?hrid=cE7vIO1dxAmtYrd6wz5Gsg&osq=Hot+And+New+Restaurants"
+     },
+     {
+      "label": "Apple Maps - Burma Roots (hours cross-check, burmarootssj.com)",
+      "url": "https://maps.apple.com/place?place-id=IED134AABF5AE035"
+     }
+    ]
+   }
+  },
+  {
+   "name": "Enoteca La Storia",
+   "city": "Los Gatos",
+   "address": "416 N Santa Cruz Ave, Los Gatos, CA 95030",
+   "area": "Downtown Los Gatos",
+   "cuisine": "Italian wine bar / small plates",
+   "days_open": "Daily",
+   "hours_tuesday": "12:00 PM - 8:00 PM",
+   "lunch_special": {
+    "name": "No published lunch special; small plates",
+    "price_from": null,
+    "price_to": null,
+    "days": "daily",
+    "window": "from 12 PM",
+    "includes": "Opens at noon daily; Thu till 9, Fri-Sat later per Yelp current hours (usmenuguide variant shows 12-9 Mon-Wed - minor variance)."
+   },
+   "open_on_trip_date": true,
+   "fits_return_bus": {
+    "ok": false,
+    "note": "Los Gatos - far edge of the radius."
+   },
+   "flags": [
+    "Minor hour variance: usmenuguide 12-9 Mon-Wed vs Yelp 12-8."
+   ],
+   "phone": "(408) 625-7272",
+   "review_links": {
+    "yelp": "https://www.yelp.com/biz/enoteca-la-storia-los-gatos-los-gatos",
+    "google_maps": "https://www.google.com/maps/search/?api=1&query=Enoteca+La+Storia+416+N+Santa+Cruz+Ave+Los+Gatos"
+   },
+   "verification": {
+    "level": "listing",
+    "accessed": "2026-09-07",
+    "sources": [
+     {
+      "label": "Yelp - Enoteca La Storia Los Gatos (416 N Santa Cruz, Mon-Wed 12-8, Thu 12-9, enotecalastoria.com)",
+      "url": "https://www.yelp.com/biz/enoteca-la-storia-los-gatos-los-gatos?start=100"
+     },
+     {
+      "label": "usmenuguide - Enoteca (hours variant cross-check)",
+      "url": "https://usmenuguide.com/places/united-states/california/los-gatos/enoteca-la-storia-los-gatos/"
+     }
+    ]
+   }
+  }
+ ],
+ "rejected": [
+  {
+   "name": "Backyard Cafe",
+   "city": "Sunnyvale",
+   "why": "Real cafe (1100 N Mathilda, daily 6:30-2, verified) but shares the Treehouse Hotel campus street address with Valley Goat, which is also verified; the merge address-dedupe can only keep one row per street address. Dropped the cafe, kept the restaurant row."
+  }
+ ]
+}

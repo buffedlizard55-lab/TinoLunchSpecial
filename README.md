@@ -33,8 +33,8 @@ data/plan.json              trip definition, constraints, decision log
 data/transit_outbound.json  3 outbound plans, leg by leg, with per-leg links
 data/transit_return.json    3 return plans + the last-workable-train cutoff
 data/fares.json             agency fare tables and six day-total scenarios
-data/lunch_specials.json    252 lunch entries (27 original + 20 batch-2 + 54 batch-3 + 49 batch-4 + 101 batch-5 + 1 review-pass, all 2026-09-07), hours, days, prices, verification level
-data/lunch_rejected.json    53 rejected/deferred candidates, each with a reason and a link
+data/lunch_specials.json    352 lunch entries (27 original + 20 batch-2 + 54 batch-3 + 49 batch-4 + 101 batch-5 + 1 review-pass + 100 batch-6/7, all 2026-09-07), hours, days, prices, verification level
+data/lunch_rejected.json    62 rejected/deferred candidates, each with a reason and a link
 data/flags.json             29 irregularities found while verifying - all still listed
 data/sources.json           57 source pages, what each one proved, and the fetch status
 docs/VERIFICATION.md        how to re-check every row, and what could not be verified
@@ -63,7 +63,7 @@ python3 -m http.server 8000       # preview at http://127.0.0.1:8000
 2. **Lunch:** a price is only printed if it appears on the restaurant's own website or published menu; hours may come from Yelp/Google/TripAdvisor. Anything seen only on a menu aggregator or delivery app is recorded as a lead and flagged, never presented as verified.
 3. **Absence is a result.** "No lunch special published" and "closed on Tuesdays" are rows of their own, so a gap in the data is visible instead of silently dropped.
 4. **Conflicts stay visible.** Where two sources disagree (Muni headway text vs timetable, OSM hours vs the restaurant's own site) both values are shown and the choice is explained in `data/flags.json`.
-5. **Nothing was backfilled by hand.** The first search pass ran 28 queries over 51 candidates; 27 survived into the master list and the rest were rejected, each with a reason and a link. Later passes added 225 more rows the same way; the master list is now 252 rows with 53 rejects in `data/lunch_rejected.json`.
+5. **Nothing was backfilled by hand.** The first search pass ran 28 queries over 51 candidates; 27 survived into the master list and the rest were rejected, each with a reason and a link. Later passes added 325 more rows the same way (including the seventh pass: 100 new rows searched and verified line by line before adding); the master list is now 352 rows with 62 rejects in `data/lunch_rejected.json`.
 
 GitHub Pages: `.github/workflows/pages.yml` deploys `index.html` + `assets/` + `data/generated.js`. Set the repo Pages source to **GitHub Actions**. Live URL once enabled: https://buffedlizard55-lab.github.io/TinoLunchSpecial/
 

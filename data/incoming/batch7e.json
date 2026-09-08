@@ -1,0 +1,742 @@
+{
+ "note": "Batch 7e - pass 7, 2026-09-07. Palo Alto/Sunnyvale/San Jose/Mountain View entries verified line by line from Yelp, official sites, and directory cross-checks captured during pass-7 searches.",
+ "entries": [
+  {
+   "name": "So Gong Dong Tofu House",
+   "city": "Palo Alto",
+   "address": "4127 El Camino Real, Palo Alto, CA 94306",
+   "area": "El Camino Real",
+   "cuisine": "Korean soondubu",
+   "days_open": "Daily",
+   "hours_tuesday": "11:30 AM - 1:45 PM, 4:30 PM - 8:30 PM",
+   "lunch_special": {
+    "name": "No published lunch special; soondubu lunch service",
+    "price_from": null,
+    "price_to": null,
+    "days": "daily lunch",
+    "window": "11:30 AM - 1:45 PM",
+    "includes": "Short weekday lunch window (ends 1:45 PM); weekends 11:30-2:15."
+   },
+   "open_on_trip_date": true,
+   "fits_return_bus": {
+    "ok": false,
+    "note": "Palo Alto - off the return corridor."
+   },
+   "flags": [
+    "Very short weekday lunch window (11:30 AM-1:45 PM)."
+   ],
+   "phone": "(650) 424-8805",
+   "review_links": {
+    "yelp": "https://www.yelp.com/biz/so-gong-dong-tofu-house-palo-alto",
+    "google_maps": "https://www.google.com/maps/search/?api=1&query=So+Gong+Dong+Tofu+House+4127+El+Camino+Real+Palo+Alto"
+   },
+   "verification": {
+    "level": "listing",
+    "accessed": "2026-09-07",
+    "sources": [
+     {
+      "label": "Yelp - So Gong Dong (4127 El Camino, Mon-Fri 11:30-1:45 + 4:30-8:30, Sat-Sun 11:30-2:15, paloaltotofuhouse.com)",
+      "url": "https://www.yelp.com/biz/so-gong-dong-tofu-house-palo-alto?start=220"
+     }
+    ]
+   }
+  },
+  {
+   "name": "Pho Banh Mi",
+   "city": "Palo Alto",
+   "address": "405 University Ave, Palo Alto, CA 94301",
+   "area": "Downtown Palo Alto",
+   "cuisine": "Vietnamese",
+   "days_open": "Daily",
+   "hours_tuesday": "11:00 AM - 9:00 PM",
+   "lunch_special": {
+    "name": "No published lunch special; pho + banh mi",
+    "price_from": null,
+    "price_to": null,
+    "days": "daily",
+    "window": "11:00 AM - 9:00 PM",
+    "includes": "New ownership Aug 2025 per Yelp specialties; new menu banner."
+   },
+   "open_on_trip_date": true,
+   "fits_return_bus": {
+    "ok": false,
+    "note": "Downtown Palo Alto - off the return corridor."
+   },
+   "flags": [],
+   "phone": "(650) 384-6614",
+   "review_links": {
+    "yelp": "https://www.yelp.com/biz/pho-banh-mi-palo-alto",
+    "google_maps": "https://www.google.com/maps/search/?api=1&query=Pho+Banh+Mi+405+University+Ave+Palo+Alto"
+   },
+   "verification": {
+    "level": "listing",
+    "accessed": "2026-09-07",
+    "sources": [
+     {
+      "label": "Yelp - Pho Banh Mi (405 University Ave, daily 11-9, claimed)",
+      "url": "https://www.yelp.com/biz/pho-banh-mi-palo-alto"
+     }
+    ]
+   }
+  },
+  {
+   "name": "Sweet Maple",
+   "city": "Palo Alto",
+   "address": "150 University Ave, Palo Alto, CA 94301",
+   "area": "Downtown Palo Alto",
+   "cuisine": "Brunch / American",
+   "days_open": "Daily",
+   "hours_tuesday": "8:30 AM - 2:30 PM",
+   "lunch_special": {
+    "name": "No published lunch special; brunch-lunch menu",
+    "price_from": null,
+    "price_to": null,
+    "days": "daily",
+    "window": "8:30 AM - 2:30 PM",
+    "includes": "Closes 2:30 PM - workable for the early return schedule only on the R1 plan."
+   },
+   "open_on_trip_date": true,
+   "fits_return_bus": {
+    "ok": false,
+    "note": "Downtown Palo Alto - off the return corridor."
+   },
+   "flags": [
+    "Closes 2:30 PM - tight against the 2:30-3:00 PM home target."
+   ],
+   "phone": "(650) 521-0764",
+   "review_links": {
+    "yelp": "https://www.yelp.com/biz/sweet-maple-palo-alto",
+    "google_maps": "https://www.google.com/maps/search/?api=1&query=Sweet+Maple+150+University+Ave+Palo+Alto"
+   },
+   "verification": {
+    "level": "official",
+    "accessed": "2026-09-07",
+    "sources": [
+     {
+      "label": "Official site - Sweet Maple locations (Palo Alto 150 University Ave, Mon-Sun 8:30-2:30)",
+      "url": "https://www.sweetmaplesf.com/locations"
+     },
+     {
+      "label": "Official site - Sweet Maple home (Palo Alto JSON hours 8:30-14:30 daily)",
+      "url": "https://www.sweetmaplesf.com/"
+     }
+    ]
+   }
+  },
+  {
+   "name": "Sweet Maple",
+   "city": "Cupertino",
+   "address": "20010 Stevens Creek Blvd, Cupertino, CA 95014",
+   "area": "Stevens Creek Blvd",
+   "cuisine": "Brunch / American",
+   "days_open": "Daily",
+   "hours_tuesday": "8:00 AM - 2:30 PM",
+   "lunch_special": {
+    "name": "No published lunch special; brunch-lunch menu",
+    "price_from": null,
+    "price_to": null,
+    "days": "daily",
+    "window": "8:00 AM - 2:30 PM",
+    "includes": "Cupertino branch - first-come first-served, no reservations (official site)."
+   },
+   "open_on_trip_date": true,
+   "fits_return_bus": {
+    "ok": true,
+    "note": "Stevens Creek Blvd in Cupertino - near the destination; short ride back toward the return bus corridor."
+   },
+   "flags": [
+    "Closes 2:30 PM - aligns with the R1 return plan (leave 11:50 AM)."
+   ],
+   "phone": "(408) 216-0759",
+   "review_links": {
+    "yelp": "https://www.yelp.com/biz/sweet-maple-cupertino",
+    "google_maps": "https://www.google.com/maps/search/?api=1&query=Sweet+Maple+20010+Stevens+Creek+Blvd+Cupertino"
+   },
+   "verification": {
+    "level": "official",
+    "accessed": "2026-09-07",
+    "sources": [
+     {
+      "label": "Official site - Sweet Maple locations (Cupertino 20010 Stevens Creek Blvd, Mon-Sun 8:00-2:30)",
+      "url": "https://www.sweetmaplesf.com/locations"
+     },
+     {
+      "label": "Official site - Sweet Maple menu page (Cupertino JSON geo 37.322609/-122.023452)",
+      "url": "https://www.sweetmaplesf.com/menu-palo-alto"
+     }
+    ]
+   },
+   "coords": [
+    37.322609,
+    -122.023452
+   ]
+  },
+  {
+   "name": "Lagaram Restaurant & Catering",
+   "city": "Sunnyvale",
+   "address": "415 N Mary Ave, Ste 115, Sunnyvale, CA 94085",
+   "area": "N Mary Ave",
+   "cuisine": "South Indian",
+   "days_open": "Daily",
+   "hours_tuesday": "8:00 AM - 9:00 PM",
+   "lunch_special": {
+    "name": "Biryani/south-Indian lunch (Yelp lunch index placement)",
+    "price_from": null,
+    "price_to": null,
+    "days": "daily",
+    "window": "all day (8 AM-9 PM)",
+    "includes": "Yelp lunch-to-go index: 'South Indian breakfast deals and biryani specials for lunch.'"
+   },
+   "open_on_trip_date": true,
+   "fits_return_bus": {
+    "ok": false,
+    "note": "Sunnyvale - off the return corridor."
+   },
+   "flags": [],
+   "phone": "(408) 502-5566",
+   "review_links": {
+    "yelp": "https://www.yelp.com/biz/lagaram-sunnyvale",
+    "google_maps": "https://www.google.com/maps/search/?api=1&query=Lagaram+Restaurant+415+N+Mary+Ave+Sunnyvale"
+   },
+   "verification": {
+    "level": "listing",
+    "accessed": "2026-09-07",
+    "sources": [
+     {
+      "label": "Yelp - Lagaram (415 N Mary Ste 115, Mon-Sat 8-9, Sun 8-8, lagaramca.com)",
+      "url": "https://www.yelp.com/biz/lagaram-sunnyvale"
+     },
+     {
+      "label": "Yelp search 'lunch to go Sunnyvale' - index placement",
+      "url": "https://www.yelp.com/search?find_desc=lunch+to+go&find_loc=Sunnyvale%2C+CA"
+     }
+    ]
+   }
+  },
+  {
+   "name": "Momo Grill",
+   "city": "Saratoga",
+   "address": "12100 Saratoga-Sunnyvale Rd, Saratoga, CA 95070",
+   "area": "Saratoga-Sunnyvale Rd",
+   "cuisine": "Nepali/Tibetan",
+   "days_open": "Daily",
+   "hours_tuesday": "11:00 AM - 2:30 PM, 5:00 PM - 9:30 PM",
+   "lunch_special": {
+    "name": "Lunch service (reviewer: 'We decided to try this place for lunch')",
+    "price_from": null,
+    "price_to": null,
+    "days": "daily lunch",
+    "window": "11:00 AM - 2:30 PM",
+    "includes": "Official site: lunch daily 11-2:30, dinner 5-9:30. Also Sunnyvale and food-truck locations."
+   },
+   "open_on_trip_date": true,
+   "fits_return_bus": {
+    "ok": false,
+    "note": "Saratoga - far edge of the radius."
+   },
+   "flags": [],
+   "phone": "(408) 320-1255",
+   "review_links": {
+    "yelp": "https://www.yelp.com/biz/momo-grill-restaurant-saratoga",
+    "google_maps": "https://www.google.com/maps/search/?api=1&query=Momo+Grill+12100+Saratoga-Sunnyvale+Rd+Saratoga"
+   },
+   "verification": {
+    "level": "official",
+    "accessed": "2026-09-07",
+    "sources": [
+     {
+      "label": "Official site - Momo Grill (12100 Saratoga-Sunnyvale Rd, Mon-Sun lunch 11-2:30, dinner 5-9:30)",
+      "url": "https://themomogrillca.com/"
+     },
+     {
+      "label": "Official ordering site - Momo Grill (Saratoga + Sunnyvale locations)",
+      "url": "https://order.themomogrillca.com/"
+     },
+     {
+      "label": "Yelp search 'Lunch near me' ( Yelp lunch index) - the for-lunch quote",
+      "url": "https://www.yelp.com/search?find_desc=lunch&find_loc=Sunnyvale,+CA"
+     }
+    ]
+   }
+  },
+  {
+   "name": "Momo Grill",
+   "city": "Sunnyvale",
+   "address": "133 S Murphy Ave, Sunnyvale, CA 94086",
+   "area": "Downtown Sunnyvale (Murphy Ave)",
+   "cuisine": "Nepali/Tibetan",
+   "days_open": "Daily",
+   "hours_tuesday": "11:30 AM - 2:30 PM, 5:00 PM - 9:30 PM",
+   "lunch_special": {
+    "name": "Lunch service",
+    "price_from": null,
+    "price_to": null,
+    "days": "daily lunch",
+    "window": "11:30 AM - 2:30 PM",
+    "includes": "OpenTable hours: lunch daily 11:30-2:30, dinner 5-9:30. Second Momo Grill location (Saratoga row is separate)."
+   },
+   "open_on_trip_date": true,
+   "fits_return_bus": {
+    "ok": false,
+    "note": "Downtown Sunnyvale - off the return corridor."
+   },
+   "flags": [
+    "OpenTable listing labels the city 'San Francisco' in its slug but Neighborhood 'Sunnyvale' with a Sunnyvale address; the address (133 S Murphy Ave, Sunnyvale) governs."
+   ],
+   "phone": "(650) 350-0958",
+   "review_links": {
+    "yelp": "https://www.yelp.com/biz/momo-grill-sunnyvale",
+    "google_maps": "https://www.google.com/maps/search/?api=1&query=Momo+Grill+133+S+Murphy+Ave+Sunnyvale"
+   },
+   "verification": {
+    "level": "listing",
+    "accessed": "2026-09-07",
+    "sources": [
+     {
+      "label": "OpenTable - Momo Grill (133 S Murphy Ave, lunch daily 11:30-2:30, dinner 5-9:30)",
+      "url": "https://www.opentable.com/r/momo-grill-san-francisco"
+     },
+     {
+      "label": "Official ordering site - Momo Grill Sunnyvale (133 S Murphy Ave)",
+      "url": "https://order.themomogrillca.com/"
+     }
+    ]
+   }
+  },
+  {
+   "name": "Clarita's Filipino Cuisine",
+   "city": "Sunnyvale",
+   "address": "905 E Duane Ave, Sunnyvale, CA 94085",
+   "area": "E Duane Ave",
+   "cuisine": "Filipino",
+   "days_open": "Mon-Sat (Sunday closed)",
+   "hours_tuesday": "11:00 AM - 7:00 PM",
+   "lunch_special": {
+    "name": "No published lunch special; carinderia-style plate lunches",
+    "price_from": null,
+    "price_to": null,
+    "days": "Mon-Fri",
+    "window": "11:00 AM - 7:00 PM",
+    "includes": "Yelp lunch-to-go index placement; Saturday short day 10:30-3."
+   },
+   "open_on_trip_date": true,
+   "fits_return_bus": {
+    "ok": false,
+    "note": "Sunnyvale - off the return corridor."
+   },
+   "flags": [],
+   "phone": "(408) 735-1721",
+   "review_links": {
+    "yelp": "https://www.yelp.com/biz/claritas-filipino-cuisine-sunnyvale",
+    "google_maps": "https://www.google.com/maps/search/?api=1&query=Clarita's+Filipino+Cuisine+905+E+Duane+Ave+Sunnyvale"
+   },
+   "verification": {
+    "level": "listing",
+    "accessed": "2026-09-07",
+    "sources": [
+     {
+      "label": "RestaurantGuru - Clarita's (905 E Duane, Mon-Fri 11-7, Sat 10:30-3, Sun closed)",
+      "url": "https://restaurantguru.com/Claritas-Filipino-Cuisine-Sunnyvale"
+     },
+     {
+      "label": "usarestaurants.info - Clarita's (hours cross-check, geo 37.38895/-122.00463)",
+      "url": "https://usarestaurants.info/explore/united-states/california/santa-clara-county/sunnyvale/560265-claritas-filipino-cuisine.htm"
+     },
+     {
+      "label": "Restaurantji - Clarita's (hours cross-check)",
+      "url": "https://www.restaurantji.com/ca/sunnyvale/claritas-filipino-cuisine-/"
+     }
+    ]
+   },
+   "coords": [
+    37.3889476,
+    -122.0046346
+   ]
+  },
+  {
+   "name": "Amazing Katsu",
+   "city": "Sunnyvale",
+   "address": "1026 W Evelyn Ave, Sunnyvale, CA 94086",
+   "area": "W Evelyn Ave",
+   "cuisine": "Korean/Japanese katsu",
+   "days_open": "Daily",
+   "hours_tuesday": "10:00 AM - 8:00 PM",
+   "lunch_special": {
+    "name": "No published lunch special; katsu plates and combos",
+    "price_from": null,
+    "price_to": null,
+    "days": "daily",
+    "window": "from 10 AM",
+    "includes": "Official site confirms Sunnyvale hours (everyday 10-8); sister branches in Santa Clara (2670 El Camino, Mon-Fri) and San Mateo."
+   },
+   "open_on_trip_date": true,
+   "fits_return_bus": {
+    "ok": false,
+    "note": "Sunnyvale - off the return corridor."
+   },
+   "flags": [],
+   "phone": "(669) 400-1822",
+   "review_links": {
+    "yelp": "https://www.yelp.com/biz/amazing-katsu-sunnyvale",
+    "google_maps": "https://www.google.com/maps/search/?api=1&query=Amazing+Katsu+1026+W+Evelyn+Ave+Sunnyvale"
+   },
+   "verification": {
+    "level": "official",
+    "accessed": "2026-09-07",
+    "sources": [
+     {
+      "label": "Official site - Amazing Katsu (Sunnyvale 1026 W Evelyn, everyday 10-8; Santa Clara + San Mateo branches)",
+      "url": "https://www.amazingkatsu.com/our-menu?menu=dinner-menu"
+     },
+     {
+      "label": "Yelp - Amazing Katsu Sunnyvale (daily 10-8 cross-check)",
+      "url": "https://www.yelp.com/biz/amazing-katsu-sunnyvale"
+     }
+    ]
+   }
+  },
+  {
+   "name": "Olioli Hawaiian BBQ",
+   "city": "San Jose",
+   "address": "1657 N Capitol Ave, San Jose, CA 95132",
+   "area": "N Capitol Ave (Berryessa)",
+   "cuisine": "Hawaiian plate lunch",
+   "days_open": "Daily",
+   "hours_tuesday": "11:00 AM - 9:30 PM",
+   "lunch_special": {
+    "name": "No published lunch special; plate lunches",
+    "price_from": null,
+    "price_to": null,
+    "days": "daily",
+    "window": "from 11 AM",
+    "includes": "Yelp review: 'Chicken Katsu & Kalua Pork HUGE serving - can be finished by a very hungry human or two people.'"
+   },
+   "open_on_trip_date": true,
+   "fits_return_bus": {
+    "ok": false,
+    "note": "North San Jose/Berryessa - beyond the practical return corridor."
+   },
+   "flags": [
+    "Northern edge of the 15-mile radius."
+   ],
+   "phone": "(669) 899-1228",
+   "review_links": {
+    "yelp": "https://www.yelp.com/biz/olioli-hawaiian-bbq-san-jose",
+    "google_maps": "https://www.google.com/maps/search/?api=1&query=Olioli+Hawaiian+BBQ+1657+N+Capitol+Ave+San+Jose"
+   },
+   "verification": {
+    "level": "listing",
+    "accessed": "2026-09-07",
+    "sources": [
+     {
+      "label": "Yelp - Olioli Hawaiian BBQ (1657 N Capitol Ave, daily 11-9:30, oliolihawaiianbbq.com)",
+      "url": "https://www.yelp.com/biz/olioli-hawaiian-bbq-san-jose"
+     },
+     {
+      "label": "corner.inc - Olioli (address + hours cross-check)",
+      "url": "https://www.corner.inc/place/72741"
+     }
+    ]
+   }
+  },
+  {
+   "name": "Manakish Oven & Grill",
+   "city": "San Jose",
+   "address": "670 Stockton Ave, San Jose, CA 95126",
+   "area": "Stockton Ave (Rose Garden)",
+   "cuisine": "Middle Eastern",
+   "days_open": "Daily",
+   "hours_tuesday": "10:00 AM - 9:00 PM",
+   "lunch_special": {
+    "name": "No published lunch special; manakish plates",
+    "price_from": null,
+    "price_to": null,
+    "days": "daily",
+    "window": "from 10 AM",
+    "includes": "Yelp lunch-to-go index placement. Walnut Creek sister branch is separate."
+   },
+   "open_on_trip_date": true,
+   "fits_return_bus": {
+    "ok": false,
+    "note": "Rose Garden San Jose - beyond the practical return corridor."
+   },
+   "flags": [],
+   "phone": "(408) 409-2445",
+   "review_links": {
+    "yelp": "https://www.yelp.com/biz/manakish-oven-and-grill-san-jose-9",
+    "google_maps": "https://www.google.com/maps/search/?api=1&query=Manakish+Oven+and+Grill+670+Stockton+Ave+San+Jose"
+   },
+   "verification": {
+    "level": "official",
+    "accessed": "2026-09-07",
+    "sources": [
+     {
+      "label": "Official site - Manakish Oven & Grill (San Jose 670 Stockton Ave, daily 10-9)",
+      "url": "https://manakishoven.com/places/sunnyvale"
+     },
+     {
+      "label": "Yelp - Manakish (hours cross-check)",
+      "url": "https://www.yelp.com/biz/manakish-oven-and-grill-san-jose-9?start=40"
+     }
+    ]
+   }
+  },
+  {
+   "name": "Henry's World Famous Hi-Life",
+   "city": "San Jose",
+   "address": "301 W St John St, San Jose, CA 95110",
+   "area": "Downtown San Jose",
+   "cuisine": "BBQ / steaks",
+   "days_open": "Tue-Fri lunch + dinner; Sat-Sun dinner; Monday closed",
+   "hours_tuesday": "11:30 AM - 2:00 PM, 4:30 PM - 8:30 PM",
+   "lunch_special": {
+    "name": "No published lunch special; weekday lunch service",
+    "price_from": null,
+    "price_to": null,
+    "days": "Tue-Fri lunch",
+    "window": "11:30 AM - 2:00 PM",
+    "includes": "Institution since 1950; famous BBQ. Sat opens 3 PM, Sun 4 PM - lunch Tue-Fri only."
+   },
+   "open_on_trip_date": true,
+   "fits_return_bus": {
+    "ok": false,
+    "note": "Downtown San Jose - beyond the practical return corridor."
+   },
+   "flags": [
+    "Closed Mondays; Saturday lunch not served."
+   ],
+   "phone": "(408) 295-5414",
+   "review_links": {
+    "yelp": "https://www.yelp.com/biz/henrys-world-famous-hi-life-san-jose",
+    "google_maps": "https://www.google.com/maps/search/?api=1&query=Henry's+Hi-Life+301+W+St+John+St+San+Jose"
+   },
+   "verification": {
+    "level": "listing",
+    "accessed": "2026-09-07",
+    "sources": [
+     {
+      "label": "Yelp - Henry's Hi-Life (301 W St John, Tue-Fri 11:30-2 + dinner, Sat 3-9, Sun 4-8, Mon closed)",
+      "url": "https://www.yelp.com/biz/henrys-world-famous-hi-life-san-jose?start=260"
+     }
+    ]
+   }
+  },
+  {
+   "name": "La Victoria Taqueria",
+   "city": "San Jose",
+   "address": "131 W Santa Clara St, San Jose, CA 95113",
+   "area": "Downtown San Jose",
+   "cuisine": "Mexican",
+   "days_open": "Daily",
+   "hours_tuesday": "7:00 AM - 10:00 PM",
+   "lunch_special": {
+    "name": "No published lunch special; burritos/tacos (orange sauce)",
+    "price_from": null,
+    "price_to": null,
+    "days": "daily",
+    "window": "from 7 AM",
+    "includes": "Downtown flagship of the La Vic's chain; separate N 4th St and 140 E San Carlos St branches."
+   },
+   "open_on_trip_date": true,
+   "fits_return_bus": {
+    "ok": false,
+    "note": "Downtown San Jose - beyond the practical return corridor."
+   },
+   "flags": [
+    "Fri-Sat open till 3 AM at this branch; other branches differ."
+   ],
+   "phone": "(408) 993-8230",
+   "review_links": {
+    "yelp": "https://www.yelp.com/biz/la-victoria-taqueria-san-jose",
+    "google_maps": "https://www.google.com/maps/search/?api=1&query=La+Victoria+Taqueria+131+W+Santa+Clara+St+San+Jose"
+   },
+   "verification": {
+    "level": "listing",
+    "accessed": "2026-09-07",
+    "sources": [
+     {
+      "label": "Yelp - La Victoria (131 W Santa Clara St, Mon-Thu/Sun 7-10, Fri-Sat till 3 AM)",
+      "url": "https://www.yelp.com/biz/la-victoria-taqueria-san-jose"
+     },
+     {
+      "label": "Tripadvisor - La Victoria 140 E San Carlos St (chain cross-reference)",
+      "url": "https://www.tripadvisor.com/Restaurant_Review-g33020-d342832-Reviews-La_Victoria-San_Jose_California.html"
+     }
+    ]
+   }
+  },
+  {
+   "name": "Fu Lam Mum",
+   "city": "Mountain View",
+   "address": "153 Castro St, Ste 1, Mountain View, CA 94041",
+   "area": "Downtown Mountain View (Castro St)",
+   "cuisine": "Cantonese dim sum",
+   "days_open": "Daily (Monday closed)",
+   "hours_tuesday": "11:00 AM - 2:30 PM, 5:00 PM - 9:00 PM",
+   "lunch_special": {
+    "name": "No published lunch special; dim sum a la carte (~$6.50-$11.95 items)",
+    "price_from": 6.5,
+    "price_to": 11.95,
+    "days": "Tue-Sun lunch",
+    "window": "from 10/11 AM (weekends 10 AM)",
+    "includes": "Yelp photo caption prices dim sum dishes $6.50-$11.95; weekend dim sum from 10 AM."
+   },
+   "open_on_trip_date": true,
+   "fits_return_bus": {
+    "ok": false,
+    "note": "Downtown Mountain View - off the return corridor."
+   },
+   "flags": [
+    "Monday closed; one Yelp snapshot showed a Tue 'special hours' closure - current listing shows Tue 11-2:30 normal service."
+   ],
+   "phone": "(650) 967-1689",
+   "review_links": {
+    "yelp": "https://www.yelp.com/biz/fu-lam-mum-mountain-view",
+    "google_maps": "https://www.google.com/maps/search/?api=1&query=Fu+Lam+Mum+153+Castro+St+Mountain+View"
+   },
+   "verification": {
+    "level": "listing",
+    "accessed": "2026-09-07",
+    "sources": [
+     {
+      "label": "Yelp - Fu Lam Mum (153 Castro Ste 1, Mon closed, Tue-Fri 11-2:30 + dinner, Sat-Sun 10-3, dim sum $6.50-$11.95 photo)",
+      "url": "https://www.yelp.com/biz/fu-lam-mum-mountain-view?start=820"
+     }
+    ]
+   }
+  },
+  {
+   "name": "The Don's Deli",
+   "city": "Sunnyvale",
+   "address": "620 E Evelyn Ave, Sunnyvale, CA 94086",
+   "area": "E Evelyn Ave",
+   "cuisine": "Deli sandwiches",
+   "days_open": "Daily 10-4 (per official site)",
+   "hours_tuesday": "10:00 AM - 4:00 PM",
+   "lunch_special": {
+    "name": "No published lunch special; deli sandwiches",
+    "price_from": null,
+    "price_to": null,
+    "days": "daily",
+    "window": "10:00 AM - 4:00 PM",
+    "includes": "Official site lists Downtown Sunnyvale at 620 E Evelyn Ave (Mon-Sun 10-4); a Mountain View branch at 2105 Old Middlefield is separate."
+   },
+   "open_on_trip_date": true,
+   "fits_return_bus": {
+    "ok": false,
+    "note": "Sunnyvale - off the return corridor."
+   },
+   "flags": [
+    "Address conflict: Restaurantji/directories list 121 S Frances St; the official site says 620 E Evelyn Ave - official site wins; verify by phone if walking in."
+   ],
+   "phone": "(408) 962-0463",
+   "review_links": {
+    "yelp": "https://www.yelp.com/biz/the-dons-deli-sunnyvale",
+    "google_maps": "https://www.google.com/maps/search/?api=1&query=The+Don's+Deli+620+E+Evelyn+Ave+Sunnyvale"
+   },
+   "verification": {
+    "level": "official",
+    "accessed": "2026-09-07",
+    "sources": [
+     {
+      "label": "Official site - The Don's Deli (Downtown Sunnyvale 620 E Evelyn Mon-Sun 10-4; Mountain View 2105 Old Middlefield Mon-Sat)",
+      "url": "https://www.thedonsdeli.com/"
+     },
+     {
+      "label": "Restaurantji - The Don's Deli (conflicting 121 S Frances address + hours 10-4)",
+      "url": "https://www.restaurantji.com/ca/sunnyvale/the-dons-deli-/"
+     }
+    ]
+   }
+  },
+  {
+   "name": "The Don's Deli",
+   "city": "Mountain View",
+   "address": "2105 Old Middlefield Rd, Mountain View, CA 94043",
+   "area": "Old Middlefield Rd",
+   "cuisine": "Deli sandwiches",
+   "days_open": "Mon-Sat (Sunday closed)",
+   "hours_tuesday": "10:00 AM - 4:00 PM",
+   "lunch_special": {
+    "name": "No published lunch special; deli sandwiches",
+    "price_from": null,
+    "price_to": null,
+    "days": "Mon-Sat",
+    "window": "10:00 AM - 4:00 PM",
+    "includes": "Second Don's Deli location per official site."
+   },
+   "open_on_trip_date": true,
+   "fits_return_bus": {
+    "ok": false,
+    "note": "Mountain View - off the return corridor."
+   },
+   "flags": [],
+   "phone": "(408) 962-0463",
+   "review_links": {
+    "yelp": "https://www.yelp.com/biz/the-dons-deli-mountain-view",
+    "google_maps": "https://www.google.com/maps/search/?api=1&query=The+Don's+Deli+2105+Old+Middlefield+Rd+Mountain+View"
+   },
+   "verification": {
+    "level": "official",
+    "accessed": "2026-09-07",
+    "sources": [
+     {
+      "label": "Official site - The Don's Deli (Mountain View 2105 Old Middlefield, Mon-Sat 10-4, Sun closed)",
+      "url": "https://www.thedonsdeli.com/"
+     }
+    ]
+   }
+  },
+  {
+   "name": "Greek Spot",
+   "city": "Sunnyvale",
+   "address": "604 S Mary Ave, Sunnyvale, CA 94087",
+   "area": "S Mary Ave",
+   "cuisine": "Greek",
+   "days_open": "Daily",
+   "hours_tuesday": "11:00 AM - 8:00 PM",
+   "lunch_special": {
+    "name": "No published lunch special; gyros/plates",
+    "price_from": null,
+    "price_to": null,
+    "days": "daily",
+    "window": "11:00 AM - 8:00 PM",
+    "includes": "Established 2015; wheree directory claims 9 PM close - Yelp's 8 PM governs."
+   },
+   "open_on_trip_date": true,
+   "fits_return_bus": {
+    "ok": false,
+    "note": "Sunnyvale - off the return corridor."
+   },
+   "flags": [
+    "Minor hour variance: wheree says 11-9 daily; current Yelp says 11-8."
+   ],
+   "phone": "(408) 900-8239",
+   "review_links": {
+    "yelp": "https://www.yelp.com/biz/greek-spot-sunnyvale",
+    "google_maps": "https://www.google.com/maps/search/?api=1&query=Greek+Spot+604+S+Mary+Ave+Sunnyvale"
+   },
+   "verification": {
+    "level": "listing",
+    "accessed": "2026-09-07",
+    "sources": [
+     {
+      "label": "Yelp - Greek Spot (604 S Mary, daily 11-8, greek-spot.com)",
+      "url": "https://www.yelp.com/biz/greek-spot-sunnyvale"
+     },
+     {
+      "label": "wheree - Greek Spot (hours variant 11-9)",
+      "url": "https://greek-spot.wheree.com/"
+     }
+    ]
+   }
+  }
+ ],
+ "rejected": [
+  {
+   "name": "Backyard Cafe",
+   "city": "Sunnyvale",
+   "why": "Real cafe (1100 N Mathilda, daily 6:30-2, verified) but shares the Treehouse Hotel campus street address with Valley Goat, which is also verified; the merge address-dedupe can only keep one row per street address. Dropped the cafe, kept the restaurant row."
+  }
+ ]
+}

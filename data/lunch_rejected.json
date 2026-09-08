@@ -645,6 +645,107 @@
       "name": "Pedro's Mexican Restaurant (Atascadero hit)",
       "why": "NEAR-MISS: only result was 8550 El Camino Real, Atascadero (~120 mi away) - excluded as out of area.",
       "searched": "2026-09-07"
+    },
+    {
+      "name": "Yokohama",
+      "city": "Los Gatos",
+      "why": "Dinner-only: Yelp's Los Gatos lunch-specials index lists Yokohama 'Closed until 4:30 PM' - no weekday lunch service captured.",
+      "links": [
+        {
+          "label": "Yelp - Top 10 Lunch Specials Los Gatos (Yokohama listed as opening 4:30 PM)",
+          "url": "https://www.yelp.com/search?find_desc=Lunch+Specials&find_loc=Los+Gatos%2C+CA"
+        }
+      ],
+      "searched": "2026-09-07"
+    },
+    {
+      "name": "Blue Sky Cafe (Cupertino index hit)",
+      "city": "not resolvable to the radius",
+      "why": "Yelp's Cupertino cheap-lunch index lists 'Blue Sky Cafe' but every resolved listing is in another city (Diamond Bar CA, Pierceton IN, San Carlos listing of a different name) - no Cupertino-area business with published hours could be verified.",
+      "links": [
+        {
+          "label": "Yelp - Blue Sky Cafe Diamond Bar (the closest resolved hit)",
+          "url": "https://www.yelp.com/biz/blue-sky-cafe-diamond-bar-3"
+        }
+      ],
+      "searched": "2026-09-07"
+    },
+    {
+      "name": "El Torito Milpitas",
+      "city": "Milpitas",
+      "why": "Official site shows daily 11 AM-10/11 PM service but the only deal is Cantina happy hour 3-7 PM - no lunch special on the trip window.",
+      "links": [
+        {
+          "label": "Official El Torito Milpitas page (hours + happy-hour-only specials)",
+          "url": "https://www.eltorito.com/location/milpitas/"
+        }
+      ],
+      "searched": "2026-09-07"
+    },
+    {
+      "name": "Pasta Q",
+      "city": "Mountain View",
+      "why": "Yelp marks it CLOSED (April 2026 capture; the $10 soup+pasta+drink special in an old review is historical).",
+      "links": [
+        {
+          "label": "Yelp - PASTA Q CLOSED (160 Castro St)",
+          "url": "https://www.yelp.com/biz/pasta-q-mountain-view?start=140"
+        }
+      ],
+      "searched": "2026-09-07"
+    },
+    {
+      "name": "Lira",
+      "city": "Campbell",
+      "why": "Yelp marks it CLOSED (Apr 2026); the '$5 pint + burger happy-hour lunch special' quote predates closure; remaining directory hours are dinner-only.",
+      "links": [
+        {
+          "label": "Yelp - LIRA CLOSED (368 E Campbell Ave)",
+          "url": "https://www.yelp.com/biz/lira-campbell?start=40"
+        },
+        {
+          "label": "Metro Silicon Valley - dinner-only hours",
+          "url": "https://www.metrosiliconvalley.com/downtown-campbell-gets-a-next-level-chef/"
+        }
+      ],
+      "searched": "2026-09-07"
+    },
+    {
+      "name": "Pizza My Heart (Sunnyvale)",
+      "city": "Sunnyvale",
+      "why": "Daily 11-9 verified at 110 E El Camino Real, but no published lunch special/price could be captured (only a Too Good To Go surplus-bag photo at $6.54, which is not a menu deal).",
+      "links": [
+        {
+          "label": "Yelp - Pizza My Heart Sunnyvale (hours; no lunch deal published)",
+          "url": "https://www.yelp.com/biz/pizza-my-heart-sunnyvale?start=180"
+        }
+      ],
+      "searched": "2026-09-07"
+    },
+    {
+      "name": "Panera Bread (Cupertino)",
+      "city": "Cupertino",
+      "why": "The 'You Pick Two' combo exists chainwide but the captured price guides are unofficial aggregator sites; the Cupertino cafe's own hours/price page was not retrievable in this pass, so nothing citable to panerabread.com was captured.",
+      "links": [
+        {
+          "label": "Unofficial You Pick Two price guide (rejected as a source)",
+          "url": "https://panera-menu.com/panera-bread-you-pick-two-menu/"
+        }
+      ],
+      "searched": "2026-09-07"
+    },
+    {
+      "name": "Backyard Cafe",
+      "city": "Sunnyvale",
+      "why": "Real cafe (1100 N Mathilda, daily 6:30-2, verified) but shares the Treehouse Hotel campus street address with Valley Goat, which is also verified; the merge address-dedupe can only keep one row per street address. Dropped the cafe, kept the restaurant row.",
+      "searched": "2026-09-07"
+    },
+    {
+      "name": "Los Pambazos",
+      "city": "San Jose",
+      "why": "Evening-only: Tue-Sun 4:30 PM-12:30/1 AM, Monday closed (wheree listing). No lunch service. City correction: 1305 S Winchester Blvd is San Jose 95117, not Campbell as first pooled.",
+      "price_hint": null,
+      "searched": "2026-09-07"
     }
   ],
   "notes": [
