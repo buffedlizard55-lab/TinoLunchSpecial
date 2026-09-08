@@ -35,9 +35,10 @@ data/transit_return.json    3 return plans + the last-workable-train cutoff
 data/fares.json             agency fare tables and six day-total scenarios
 data/lunch_specials.json    352 lunch entries (27 original + 20 batch-2 + 54 batch-3 + 49 batch-4 + 101 batch-5 + 1 review-pass + 100 batch-6/7, all 2026-09-07), hours, days, prices, verification level
 data/lunch_rejected.json    62 rejected/deferred candidates, each with a reason and a link
-data/flags.json             29 irregularities found while verifying - all still listed
-data/sources.json           57 source pages, what each one proved, and the fetch status
+data/flags.json             33 irregularities found while verifying - all still listed
+data/sources.json           73 source pages, what each one proved, and the fetch status
 docs/VERIFICATION.md        how to re-check every row, and what could not be verified
+docs/REVIEW_2026-09-08.md   current QA pass, Pages status, validation results
 scripts/build_data.py       validates + rebuilds generated.js and summary.md
 scripts/check_links.py      every row must link to a citable https page
 scripts/merge_incoming.py   merges researched batches in data/incoming/*.json into the master list
@@ -50,7 +51,7 @@ scripts/smoke_test.js       renders all 8 panels headlessly, fails on undefined/
 
 ```bash
 python3 scripts/build_data.py     # validates, writes data/generated.js + data/summary.md
-python3 scripts/check_links.py    # every row links to a real page
+python3 scripts/check_links.py    # every row has a citable HTTPS source link on an allowed host
 node scripts/smoke_test.js        # the site renders without throwing
 python3 -m http.server 8000       # preview at http://127.0.0.1:8000
 ```
@@ -65,16 +66,16 @@ python3 -m http.server 8000       # preview at http://127.0.0.1:8000
 4. **Conflicts stay visible.** Where two sources disagree (Muni headway text vs timetable, OSM hours vs the restaurant's own site) both values are shown and the choice is explained in `data/flags.json`.
 5. **Nothing was backfilled by hand.** The first search pass ran 28 queries over 51 candidates; 27 survived into the master list and the rest were rejected, each with a reason and a link. Later passes added 325 more rows the same way (including the seventh pass: 100 new rows searched and verified line by line before adding); the master list is now 352 rows with 62 rejects in `data/lunch_rejected.json`.
 
-GitHub Pages: `.github/workflows/pages.yml` deploys `index.html` + `assets/` + `data/generated.js`. Set the repo Pages source to **GitHub Actions**. Live URL once enabled: https://buffedlizard55-lab.github.io/TinoLunchSpecial/
+GitHub Pages is enabled at https://buffedlizard55-lab.github.io/TinoLunchSpecial/. The repo also includes `.github/workflows/pages.yml` for Action-based deployment if the Pages source is switched from `main /` to **GitHub Actions** later.
 
-## Flagged irregularities (29)
+## Flagged irregularities (33)
 
-Fourteen transit, fifteen lunch. Headlines:
+Fourteen transit, nineteen lunch. Headlines:
 
 * **N Judah does not stop at 22nd St Caltrain.** The metro line ends at King St & 4th St; Caltrain's own station page lists "Muni N-Judah" there. Plans board at the terminal and still publish the 22nd St times in the same rows for reference (same Zone 1 fare).
 * **SFMTA's own pages disagree** about the pre-6:15 AM N Bus frequency: the route page says every 60 minutes, the timetable says every 15. The timetable (with the date `20260908`) was used, and both readings still make the 6:20 train.
 * **The Caltrain weekday PDF could not be downloaded** from the build environment, so minute-level times were read from Caltrain's live per-station tables; the holiday/weekend PDFs were checked and do not cover Sept 8.
 * **The VTA stop closest to the destination** (`Stevens Creek & De Anza`) is 1.4 km / 18 min on foot - there is no closer stop, and the 7:26 AM school-only trip is not usable.
-* **Four lunch entries could not be pinned to a published price** (Kizuna, Master Oh's, Gardenia hours conflict, Sizzling Lunch has no lunch line) and are marked as such.
+* **Nine lunch entries remain unverified leads** and many more are listing/review-level only; the Lunch tab keeps those rows visible instead of promoting them to verified specials.
 
 Full text of every flag, with the link to re-check it, is in `data/flags.json` and the **Flags** tab.

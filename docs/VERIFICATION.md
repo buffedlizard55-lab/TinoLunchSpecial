@@ -30,9 +30,10 @@ Sunnyvale measured from OpenStreetMap stop coordinates (17 m platform to bay).
   minute in this project therefore comes from Caltrain's **live per-station schedule tables** (links 5-8),
   not from the PDF. The PDF's own legend was still captured from the index page, so the train-type numbers
   used in the notes are read from Caltrain's legend, not guessed.
-* No outbound network, so **GTFS** for SFMTA/VTA/Caltrain and the 511.org trip planner could not be pulled.
-  Consequence: no engine-computed itinerary and no automatic transfer-validity proof. If you want that
-  second opinion, run the same chain in https://tripplanner.511.org and compare against `data/summary.md`.
+* **Static GTFS and the 511.org trip planner are not part of the committed verification pipeline.**
+  Consequence: the itinerary is verified from agency schedule pages and PDFs, not from an engine-computed
+  trip-plan export. For a same-day second opinion, run the same chain in https://tripplanner.511.org
+  and compare against `data/summary.md`.
 * `sfmta.com` route pages render a "Real time arrivals" widget that only works in a browser, so live
   vehicle positions were not read. On a 5:15 AM start, the published timetable is the safer reference anyway.
 
@@ -52,7 +53,7 @@ times are approximate."* Budget for that, and use the 7:40 AM trip if you want s
 
 ## Lunch - how each row was decided
 
-Verified level per row, from `data/lunch_specials.json`:
+Verified level per row, from `data/lunch_specials.json` (current counts: 83 official, 62 review, 166 listing, 28 conflicting, 9 unverified, 4 mixed):
 
 * **official** - price and/or hours read from the restaurant's own website, ordering page or menu PDF.
   Examples: Benihana's Power Lunch $15.95 (Mon-Fri 11-3) on `benihana.com/locations/cupertino/`;
@@ -65,8 +66,7 @@ Verified level per row, from `data/lunch_specials.json`:
   flagged in the row).
 * **conflicting** - two sources disagree (Gardenia: Tuesday brunch 10:30-14:30 on one page, "closed Thursday"
   on an aggregator). Both are shown; nothing was silently picked.
-* **unverified** - no usable price was found (Kizuna, Master Oh's, Sizzling Lunch, Yiassoo, Curry Hyuga).
-  These rows exist so the gap is visible; call before going.
+* **unverified** - no usable current price/hours proof was found. These rows exist so the gap is visible; call before going.
 
 Two rules that changed the outcome and are worth knowing when you review:
 

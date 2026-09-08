@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
-"""Structural check of every link in data/*.json.
+"""Structural check of every citable source URL in data/*.json.
 
 The rule this project is built on: every row must be clickable back to the page it
-came from. This script enforces the shape of that rule (there is no network access
-in CI for the agency pages, so a URL is checked, not fetched):
+came from. This script enforces the shape of that rule; it checks URL form,
+placeholder/proxy patterns, and source-host policy, but does not fetch every page:
 
   * every transit leg has at least one source with an https URL and a human label
   * every lunch row has at least one verification source with an https URL
@@ -99,7 +99,7 @@ def main():
     require_links_per_row(load)
 
     total = sum(hosts.values())
-    print(f"https URLs checked: {total} across {len(hosts)} hosts")
+    print(f"https URLs shape-checked: {total} across {len(hosts)} hosts")
     if "--report" in sys.argv:
         for h, n in hosts.most_common():
             print(f"  {n:3d}  {h}")
@@ -108,7 +108,7 @@ def main():
         for p in problems:
             print("  x", p)
         return 1
-    print("OK: every row links back to a real, citable page")
+    print("OK: every row has a citable HTTPS source URL")
     return 0
 
 
