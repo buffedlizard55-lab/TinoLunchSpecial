@@ -1,7 +1,12 @@
-/* Tino Lunch Special - renders data/*.json. No build step, no dependencies. */
+/* Tino Lunch Special - renders data/*.json. No build step, no dependencies.
+   Two pages share this file:
+     index.html    data-page="lunch"   - verified lunch specials (the deal list is the site's top section)
+     transit.html  data-page="transit" - the public-transit trip plan (rendering logic unchanged)
+   With no data-page attribute (headless smoke test) every panel renders. */
 (function () {
   'use strict';
 
+  const PAGE = (typeof document !== 'undefined' && document.body && document.body.dataset && document.body.dataset.page) || 'all';
   const FILES = ['plan', 'transit_outbound', 'transit_return', 'fares', 'lunch_specials', 'lunch_rejected', 'flags', 'sources'];
   const D = {};
   const esc = (s) => String(s == null ? '' : s).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
@@ -25,11 +30,35 @@
   /* ---------- header + tabs ---------- */
   function header(D) {
     const p = D.plan;
+    const out = D.outbound.plans.find((x) => x.recommended) || D.outbound.plans[0];
+    const ret = D.retplan.plans.find((x) => x.recommended) || D.retplan.plans[0];
+    document.getElementById('flag-count').textContent =
+      PAGE === 'lunch' ? D.flags.lunch.length : D.flags.transit.length + D.flags.lunch.length;
+    document.getElementById('footer-note').innerHTML =
+      'Verified on ' + esc(p.verification.accessed) + '. ' +
+      link('https://github.com/buffedlizard55-lab/TinoLunchSpecial', 'Source data and check scripts on GitHub');
+    if (PAGE === 'lunch') {
+      const cities = {};
+      D.specials.entries.forEach((e) => { cities[e.city] = 1; });
+      const priced = D.specials.entries.filter((e) => e.lunch_special.price_from != null);
+      const cheapest = priced.length ? Math.min(...priced.map((e) => e.lunch_special.price_from)) : null;
+      document.getElementById('subtitle').textContent =
+        D.specials.entries.length + ' restaurants checked line by line - Cupertino first, then a 10-15 mile ring ' +
+        '(Sunnyvale, Santa Clara, Mountain View, Palo Alto / Stanford, Los Altos, Campbell, Los Gatos, Saratoga, Milpitas, Menlo Park, west San Jose). ' +
+        'Every row links to the page it was read from. The trip plan itself is on the transit page.';
+      document.getElementById('headline-chips').innerHTML = [
+        { k: 'Verified entries', v: D.specials.entries.length, cls: 'go' },
+        { k: 'Priced on the restaurant\u2019s own menu', v: countLevel(D, 'official'), cls: 'go' },
+        { k: 'Cheapest printed lunch price', v: cheapest == null ? '-' : money(cheapest), cls: 'ok' },
+        { k: 'Cities covered', v: Object.keys(cities).length, cls: 'flat' },
+        { k: 'Searched and rejected, with reasons', v: D.lunch_rejected.distinct_businesses_rejected || D.lunch_rejected.rejected.length, cls: 'flat' },
+        { k: 'Open flags', v: D.flags.lunch.length, cls: 'bad' }
+      ].map((c) => '<span class="chip ' + c.cls + '"><span class="k">' + esc(c.k) + '</span><span class="v">' + esc(String(c.v)) + '</span></span>').join('');
+      return;
+    }
     document.getElementById('subtitle').textContent =
       p.trip_date_label + ' - ' + p.origin.address + ' to ' + p.destination.address +
       ' - N Judah > Caltrain > VTA 55, verified row by row';
-    const out = D.outbound.plans.find((x) => x.recommended) || D.outbound.plans[0];
-    const ret = D.retplan.plans.find((x) => x.recommended) || D.retplan.plans[0];
     const chips = [
       { k: 'Earliest leave home', v: out.leave_home, cls: 'go' },
       { k: 'At the door in Cupertino', v: out.arrive_destination, cls: 'go' },
@@ -41,10 +70,6 @@
     ];
     document.getElementById('headline-chips').innerHTML = chips.map((c) =>
       '<span class="chip ' + c.cls + '"><span class="k">' + esc(c.k) + '</span><span class="v">' + esc(String(c.v)) + '</span></span>').join('');
-    document.getElementById('flag-count').textContent = D.flags.transit.length + D.flags.lunch.length;
-    document.getElementById('footer-note').innerHTML =
-      'Verified on ' + esc(p.verification.accessed) + '. ' +
-      link('https://github.com/buffedlizard55-lab/TinoLunchSpecial', 'Source data and check scripts on GitHub');
   }
 
   /* ---------- overview ---------- */
@@ -120,6 +145,60 @@
     const map = { official: 'good', 'official-live': 'good', review: 'warn', review_sourced: 'warn', listing: 'info', mixed: 'info', conflicting: 'bad', unverified: 'bad', incomplete: 'bad', estimate: 'flat', derived: 'flat', interpolated: 'flat', verified: 'good' };
     const key = (level || '').split(' ')[0];
     return '<span class="badge ' + (map[key] || 'flat') + '">' + esc(level || 'n/a') + '</span>';
+  }
+
+  /* ---------- top deals strip (lunch page, above everything) ---------- */
+  function renderDeals(D) {
+    const m = D.specials;
+    const priced = m.entries.filter((e) => e.lunch_special.price_from != null);
+    const best = priced
+      .filter((e) => (e.verification.level || '').indexOf('official') === 0)
+      .sort((a, b) => {
+        const da = a.distance_mi == null ? 999 : a.distance_mi, db = b.distance_mi == null ? 999 : b.distance_mi;
+        return da - db || a.lunch_special.price_from - b.lunch_special.price_from;
+      })
+      .slice(0, 8);
+    const cards = best.map((e) => {
+      const ls = e.lunch_special;
+      const src = (e.verification.sources || [])[0];
+      return '<article class="dealcard">' +
+        '<div class="price">' + money(ls.price_from) + (ls.price_to != null && ls.price_to !== ls.price_from ? ' - ' + money(ls.price_to) : '') + '</div>' +
+        '<div class="dn">' + esc(e.name) + '<span class="rcity"> ' + esc(e.city) + '</span></div>' +
+        '<div class="tiny deal-name">' + esc(ls.name || 'lunch deal') + '</div>' +
+        '<div class="tiny">' + esc(e.hours_tuesday && e.hours_tuesday !== 'not captured' ? e.hours_tuesday : 'hours: see row') + '</div>' +
+        '<div class="tiny">' + esc(ls.days || 'days: see row') + (e.distance_mi != null ? ' - ' + e.distance_mi + ' mi from the Cupertino destination' : '') + '</div>' +
+        (src ? '<div class="links">' + link(src.url, src.label && src.label.length > 42 ? src.label.slice(0, 42) + '...' : src.label, 'srclink') + '</div>' : '') +
+        '</article>';
+    }).join('');
+    document.getElementById('panel-deals').innerHTML =
+      '<div class="deals-head"><h2>Verified lunch deals - the top of the list</h2>' +
+      '<p class="tiny">These rows have a lunch price printed on the restaurant\u2019s own menu, sorted by distance from 20387 Gillick Way. ' +
+      'Click through to the menu page to confirm before you go; the full table below also keeps review-level and unverified rows visible.</p></div>' +
+      '<div class="dealgrid">' + cards + '</div>';
+  }
+
+  /* ---------- lunch method (lunch page) ---------- */
+  function renderLunchMethod(D) {
+    const m = D.specials;
+    document.getElementById('panel-lmethod').innerHTML =
+      '<h2>How the deal list was built</h2>' +
+      '<p class="lead">' + esc(m.search_protocol.requirement) + '</p>' +
+      '<div class="grid g4">' +
+      stat(m.search_protocol.queries_run, 'search queries run (all passes)') +
+      stat(m.search_protocol.candidates_found, 'candidates found') +
+      stat(m.entries.length, 'entries in the master list') +
+      stat(D.lunch_rejected.rejected.length, 'rejected / deferred, each with a reason') +
+      '</div>' +
+      '<h3>Verification levels</h3><ul class="tiny">' +
+      Object.keys(m.search_protocol.levels).map((k) => '<li><b>' + esc(k) + '</b> - ' + esc(m.search_protocol.levels[k]) + '</li>').join('') +
+      '</ul>' +
+      '<h3>Radius</h3><p>' + esc(m.search_protocol.radius_note) + '</p>' +
+      '<p class="tiny">Cities covered: ' + esc((m.search_protocol.cities_covered || []).join(', ')) + '</p>' +
+      '<h3>Re-check any row</h3>' +
+      '<p class="tiny">Each row carries its source links (restaurant menu first, then Yelp / Google Maps for hours). ' +
+      'The machine checks that run on every commit: <code>python3 scripts/build_data.py</code> (shapes, prices, distances), ' +
+      '<code>python3 scripts/check_links.py</code> (every row links to a citable HTTPS page), <code>node scripts/smoke_test.js</code> (the site renders without throwing).</p>' +
+      '<p class="tiny">The public-transit plan for the trip (N Judah &rarr; Caltrain &rarr; VTA), with its own verified tables and agency links, lives on the <a href="transit.html">Trip &amp; transit plan</a> page.</p>';
   }
 
   /* ---------- transit ---------- */
@@ -275,7 +354,7 @@
     m.entries.forEach((e) => { cities[e.city] = (cities[e.city] || 0) + 1; });
 
     document.getElementById('panel-lunch').innerHTML =
-      '<h2>Lunch specials within reach of Sunnyvale / Cupertino</h2>' +
+      '<h2>The full lunch-special master list - Cupertino first, then the 10-15 mile ring</h2>' +
       '<p class="lead">' + m.search_protocol.added_to_master + ' entries in the master list, selected from ' + m.search_protocol.candidates_found +
       ' candidates checked line by line across ' + m.search_protocol.queries_run + ' queries on ' + esc(m.search_protocol.search_date) +
       '. ' + esc(m.search_protocol.requirement) + '</p>' +
@@ -382,8 +461,9 @@
   }
 
   /* ---------- flags ---------- */
-  function renderFlags(D) {
-    const sev = { important: 'bad', watch: 'warn', data_conflict: 'bad', note: 'flat', risk: 'warn' };
+  function renderFlags(D, sects) {
+    const wanted = sects || ['transit', 'lunch'];
+    const sev = { important: 'bad', watch: 'warn', data_conflict: 'bad', note: 'flat', risk: 'warn', minor: 'flat' };
     const card = (f) => '<article class="flag ' + (sev[f.severity] || 'flat') + '">' +
       '<div class="fhead"><span class="fid">' + esc(f.id) + '</span><span class="chip ' + (sev[f.severity] || 'flat') + '">' + esc((f.severity || '').replace(/_/g, ' ')) + '</span></div>' +
       '<h3>' + esc(f.title) + '</h3>' +
@@ -393,11 +473,16 @@
       (f.link ? '<p class="tiny">Verify: ' + link(f.link, f.link_label || f.link) + '</p>' : '') +
       (f.rows && f.rows.length ? '<p class="tiny">Rows affected: ' + f.rows.map((r) => '<span class="chip flat">' + esc(r) + '</span>').join(' ') + '</p>' : '') +
       '</article>';
+    const nLunch = D.flags.lunch.length, nTransit = D.flags.transit.length;
+    const lead = wanted.length === 1 && wanted[0] === 'lunch'
+      ? '<p class="lead">' + nLunch + ' irregularities were found while verifying lunch rows and all of them are listed here - prices that could not be pinned to a restaurant\u2019s own menu, hours two sources disagree about, and rows to call ahead on. The transit plan keeps its own ' + nTransit + ' flags on the <a href="transit.html#flags">transit page</a>.</p>'
+      : wanted.length === 1 && wanted[0] === 'transit'
+      ? '<p class="lead">' + nTransit + ' transit irregularities were found and none is hidden: they concern how the agencies\u2019 own pages disagree with each other or with the requested mode chain. The lunch list keeps its own ' + nLunch + ' flags on the <a href="index.html#flags">lunch page</a>.</p>'
+      : '<p class="lead">Nothing was smoothed over. Transit flags concern how the agencies\u2019 own pages disagree with each other or with the requested mode chain; lunch flags concern prices and hours that could not be pinned to a restaurant\u2019s own menu.</p>';
     document.getElementById('panel-flags').innerHTML =
-      '<h2>Irregularities found while verifying, all of them</h2>' +
-      '<p class="lead">Nothing was smoothed over. Transit flags concern how the agencies\' own pages disagree with each other or with the requested mode chain; lunch flags concern prices and hours that could not be pinned to a restaurant\'s own menu.</p>' +
-      '<h3>Transit (' + D.flags.transit.length + ')</h3>' + D.flags.transit.map(card).join('') +
-      '<h3>Lunch (' + D.flags.lunch.length + ')</h3>' + D.flags.lunch.map(card).join('');
+      '<h2>Irregularities found while verifying, all of them</h2>' + lead +
+      (wanted.indexOf('transit') >= 0 ? '<h3>Transit (' + nTransit + ')</h3>' + D.flags.transit.map(card).join('') : '') +
+      (wanted.indexOf('lunch') >= 0 ? '<h3>Lunch (' + nLunch + ')</h3>' + D.flags.lunch.map(card).join('') : '');
   }
 
   /* ---------- sources + method ---------- */
@@ -458,12 +543,18 @@
       D.plan = data.plan; D.outbound = data.outbound; D.retplan = data.retplan; D.fares = data.fares;
       D.specials = data.specials; D.lunch_rejected = data.rejected; D.flags = data.flags; D.sources = data.sources;
       header(D);
-      renderOverview(D); renderTransit(D, 'outbound'); renderTransit(D, 'return'); renderFares(D);
-      renderLunch(D); renderFlags(D); renderSources(D); renderMethod(D);
+      if (PAGE !== 'lunch') {
+        renderOverview(D); renderTransit(D, 'outbound'); renderTransit(D, 'return'); renderFares(D);
+        renderSources(D); renderMethod(D);
+      }
+      if (PAGE !== 'transit') {
+        renderDeals(D); renderLunch(D); renderLunchMethod(D);
+      }
+      renderFlags(D, PAGE === 'lunch' ? ['lunch'] : PAGE === 'transit' ? ['transit'] : undefined);
     } catch (e) {
-      document.getElementById('panel-overview').innerHTML =
-        '<h2>Data not built yet</h2><p class="lead">' + esc(e.message) + '</p>' +
-        '<p class="tiny">Run <code>python3 scripts/plan_trip.py</code> to compile <code>data/generated.js</code>, or serve the repo with <code>python3 -m http.server</code> if you are opening it over file://.</p>';
+      const errHtml = '<h2>Data not built yet</h2><p class="lead">' + esc(e.message) + '</p>' +
+        '<p class="tiny">Run <code>python3 scripts/build_data.py</code> to compile <code>data/generated.js</code>, or serve the repo with <code>python3 -m http.server</code> if you are opening it over file://.</p>';
+      ['panel-overview', 'panel-deals'].forEach((id) => { const el = document.getElementById(id); if (el) el.innerHTML = errHtml; });
     }
     document.querySelectorAll('.tab').forEach((btn) => {
       btn.addEventListener('click', () => {
@@ -472,6 +563,11 @@
         window.scrollTo({ top: 0, behavior: 'smooth' });
       });
     });
+    if (document.querySelector) {
+      const want = (window.location && window.location.hash || '').replace('#', '');
+      const tab = want && document.querySelector('.tab[data-tab="' + want + '"]');
+      if (tab) tab.click();
+    }
   }
   document.addEventListener('DOMContentLoaded', init);
 })();

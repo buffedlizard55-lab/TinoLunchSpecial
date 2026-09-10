@@ -45,8 +45,11 @@ jobs:
       - name: Assemble the site the same way Pages will serve it
         run: |
           test -f index.html
+          test -f transit.html
           test -f assets/app.js
           test -f assets/styles.css
           test -f data/generated.js
           grep -q 'data/generated.js' index.html
+          grep -q 'transit.html' index.html
+          grep -q 'index.html' transit.html
           echo "site files present; Pages will serve the repo root"

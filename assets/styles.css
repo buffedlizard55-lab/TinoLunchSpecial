@@ -187,3 +187,23 @@ p code, li code { background: #eef1f5; color: var(--ink); padding: 1px 5px; bord
   .grid-table, .ltable { min-width: 0; font-size: 9px; }
   body { background: #fff; }
 }
+
+/* ---------- two-page site: lunch front page + transit subpage ---------- */
+.pagebar { display: flex; align-items: center; gap: 8px; padding-bottom: 12px; border-bottom: 1px solid rgba(255,255,255,.14); margin-bottom: 14px; }
+.pagebar .brandmark { font-size: 13px; letter-spacing: .12em; text-transform: uppercase; color: #9fd2b1; margin-right: 6px; }
+.pagebar .spacer { flex: 1; }
+.pagelink { display: inline-block; padding: 7px 14px; border-radius: 99px; border: 1px solid rgba(255,255,255,.28); color: #dff3e6; text-decoration: none; font-size: 13px; font-weight: 600; white-space: nowrap; }
+.pagelink:hover { background: rgba(255,255,255,.12); color: #fff; text-decoration: none; }
+.pagelink.is-active { background: #fff; border-color: #fff; color: #0f2419; }
+
+.deals-top { margin: 20px 0 6px; }
+.deals-head { margin-bottom: 10px; }
+.deals-head h2 { margin: 0 0 4px; }
+.dealgrid { display: grid; grid-template-columns: repeat(auto-fill, minmax(235px, 1fr)); gap: 12px; margin: 10px 0 18px; }
+.dealcard { background: var(--surface); border: 1px solid var(--line); border-left: 4px solid var(--brand-2); border-radius: var(--radius); box-shadow: var(--shadow); padding: 12px 14px; display: flex; flex-direction: column; gap: 5px; }
+.dealcard .price { font-size: 21px; font-weight: 800; color: var(--brand); letter-spacing: -.3px; }
+.dealcard .dn { font-weight: 700; font-size: 14.5px; }
+.dealcard .deal-name { color: var(--ink-2); }
+.dealcard .links { margin-top: 2px; }
+
+@media print { .pagebar { display: none; } }

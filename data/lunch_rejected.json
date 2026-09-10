@@ -908,6 +908,398 @@
       "why": "Could not confirm a Cupertino location from official/Yelp sources (search returned other cities only).",
       "price_hint": null,
       "searched": "2026-09-07"
+    },
+    {
+      "name": "Gen Korean BBQ House",
+      "city": "Milpitas",
+      "why": "TripAdvisor listing for 190 Barber Ct is titled 'GEN KOREAN BBG HOUSE - CLOSED'; the chain's Fremont store is listed in the master instead.",
+      "links": [
+        {
+          "label": "TripAdvisor - Gen Korean BBQ House Milpitas (CLOSED page)",
+          "url": "https://www.tripadvisor.com/Restaurant_Review-g32717-d11872464-Reviews-Gen_Korean_BBQ_House-Milpitas_California.html"
+        }
+      ],
+      "searched": "2026-09-07"
+    },
+    {
+      "name": "Fugetsu",
+      "city": "Santa Clara",
+      "why": "The Santa Clara storefront (2783 El Camino Real) closed in May 2021 and the business reopened inside Rokko in Sunnyvale; it is listed there instead.",
+      "links": [
+        {
+          "label": "SF Chronicle (2021): 'shutting down in Santa Clara ... reopened inside ... Sunnyvale'",
+          "url": "https://www.sfchronicle.com/food/article/Japanese-chain-Fugetsu-brings-its-crispy-saucy-16154939.php"
+        }
+      ],
+      "searched": "2026-09-07"
+    },
+    {
+      "name": "Toro Sushi (Stone Grill & Bar)",
+      "city": "Fremont",
+      "why": "The deal quoted on its Yelp snippet is '$10 special rolls' on Monday NIGHTS - a dinner happy-hour promotion, not a lunch special.",
+      "links": [
+        {
+          "label": "Yelp 'Tuesday Specials in Fremont' results page",
+          "url": "https://www.yelp.com/search?find_desc=Tuesday+Specials&find_loc=Fremont%2C+CA"
+        }
+      ],
+      "searched": "2026-09-07"
+    },
+    {
+      "name": "Dope Pho",
+      "city": "Fremont",
+      "why": "Only evidence is 'affordable since they have a happy hour menu' - a happy-hour menu is not a lunch special.",
+      "links": [
+        {
+          "label": "Yelp 'Cheap Lunch Specials in Fremont' results page",
+          "url": "https://www.yelp.com/search?find_desc=cheap+lunch+specials&find_loc=Fremont%2C+CA"
+        }
+      ],
+      "searched": "2026-09-07"
+    },
+    {
+      "name": "Amazing Basil",
+      "city": "Fremont",
+      "why": "Review wording is hedged ('They have kind of lunch specials and...'); no deal name, window or price could be pinned.",
+      "links": [
+        {
+          "label": "Yelp 'Lunch Specials in Fremont' results page",
+          "url": "https://www.yelp.com/search?find_desc=Lunch+Specials&find_loc=Fremont,+CA"
+        }
+      ],
+      "searched": "2026-09-07"
+    },
+    {
+      "name": "Zaytinya",
+      "city": "Palo Alto",
+      "why": "The 'lunch special' phrase in the top Yelp quote refers to the server making a guest's birthday lunch special, not a recurring deal.",
+      "links": [
+        {
+          "label": "Yelp 'Lunch Specials in Palo Alto' results page",
+          "url": "https://www.yelp.com/search?find_desc=Lunch+Specials&find_loc=Palo+Alto%2C+CA"
+        }
+      ],
+      "searched": "2026-09-07"
+    },
+    {
+      "name": "Little Lamb Hot Pot & BBQ",
+      "city": "San Jose",
+      "why": "The area deal captured on Reddit is '25$ off for spending 50$' (a spending discount, not a lunch special); lunch hours also conflict across aggregators (zmenu prints Tue dinner-only, beyondmenu prints Tue 11:00-21:30).",
+      "links": [
+        {
+          "label": "Reddit r/Cupertino hot pot discounts thread",
+          "url": "https://www.reddit.com/r/Cupertino/comments/1f9bixv/hotpot_discounts/"
+        },
+        {
+          "label": "zmenu hours block (Tue 5:00pm-9:00pm)",
+          "url": "https://www.zmenu.com/little-lamb-hot-pot-and-bbq-san-jose-2-online-menu/"
+        },
+        {
+          "label": "beyondmenu hours block (Tue 11:00-21:30)",
+          "url": "https://www.beyondmenu.com/56416/san-jose/little-lamb-hot-pot-and-bbq-san-jose-95122/info.aspx"
+        }
+      ],
+      "searched": "2026-09-07"
+    },
+    {
+      "name": "Ahisushi & Steakhouse",
+      "city": "Redwood City",
+      "why": "Deferred this pass: the lunch-special review exists ('has great lunch specials') but no address/hours page could be pinned before the search budget ran out.",
+      "links": [
+        {
+          "label": "Yelp 'Lunch Specials in Redwood City' results page",
+          "url": "https://www.yelp.com/search?find_desc=Lunch+Specials&find_loc=Redwood+City%2C+CA"
+        }
+      ],
+      "searched": "2026-09-07"
+    },
+    {
+      "name": "Blue Fin Sushi",
+      "city": "Redwood City",
+      "why": "Deferred this pass: lunch-special review exists but no locatable directory page was captured.",
+      "links": [
+        {
+          "label": "Yelp 'Lunch Specials in Redwood City' results page",
+          "url": "https://www.yelp.com/search?find_desc=Lunch+Specials&find_loc=Redwood+City%2C+CA"
+        }
+      ],
+      "searched": "2026-09-07"
+    },
+    {
+      "name": "Salt And Brine",
+      "city": "San Carlos",
+      "why": "Only 6 reviews and no stable directory page; the '$10 lunch special smash burger' quote could not be corroborated - too thin to list.",
+      "links": [
+        {
+          "label": "Yelp 'Happy Hour Specials in Redwood City' results page",
+          "url": "https://www.yelp.com/search?find_desc=Happy+Hour+Specials&find_loc=Redwood+City%2C+CA"
+        }
+      ],
+      "searched": "2026-09-07"
+    },
+    {
+      "name": "La Vigna Trattoria",
+      "city": "Santa Clara",
+      "why": "Search results for 'La Vigna menu/price' resolve to La Vigna in Forest Hills, Queens (lavignany.com, menuxp) and an Astoria OpenTable; no current Santa Clara (The Alameda) restaurant page or address could be found - likely long closed.",
+      "links": [
+        {
+          "label": "menuxp page that resolves to the Queens restaurant",
+          "url": "https://www.menuxp.com/la-vigna-menu"
+        },
+        {
+          "label": "lavignany.com (Forest Hills, NY)",
+          "url": "https://www.lavignany.com/forest-hills-forest-hills-la-vigna-restaurant-food-menu"
+        }
+      ],
+      "searched": "2026-09-07"
+    },
+    {
+      "name": "True Food Kitchen",
+      "city": "Menlo Park",
+      "why": "The only 'lunch special' sentence about it is a reviewer wishing they had one ('what would be a great edition is for them to have a lunch special').",
+      "links": [
+        {
+          "label": "Yelp 'Lunch Deals near Menlo Park' results page",
+          "url": "https://www.yelp.com/search?find_desc=lunch+deals&find_loc=Menlo+Park%2C+CA+94025"
+        }
+      ],
+      "searched": "2026-09-07"
+    },
+    {
+      "name": "Bell Tower Cafe",
+      "city": "Saratoga",
+      "why": "A lunch *spot* but no lunch special, set price or deal named in any captured source; kept out of the master list rather than padded with a non-deal row.",
+      "links": [
+        {
+          "label": "Yelp 'Lunch near Saratoga' results page",
+          "url": "https://www.yelp.com/search?find_desc=Lunch&find_loc=Saratoga%2C+CA+95070"
+        }
+      ],
+      "searched": "2026-09-07"
+    },
+    {
+      "name": "Flowers Saratoga",
+      "city": "Saratoga",
+      "why": "A review says 'because of the summer, it has a temporary lunch menu' - a seasonal pop-up is not a standing lunch special; also no price captured.",
+      "links": [
+        {
+          "label": "Yelp mobile 'Lunch near Saratoga' results page with the temporary-lunch-menu quote",
+          "url": "https://www.m.yelp.com/search?find_desc=Lunch&find_loc=Saratoga%2C+CA"
+        }
+      ],
+      "searched": "2026-09-07"
+    },
+    {
+      "name": "West Coast Sourdough",
+      "city": "Newark",
+      "why": "'combo options looked like good deals' is generic combo pricing, not a named lunch special.",
+      "links": [
+        {
+          "label": "Yelp 'Lunch near Newark' results page",
+          "url": "https://www.yelp.com/search?find_desc=lunch&find_loc=Newark,+CA+94560"
+        }
+      ],
+      "searched": "2026-09-07"
+    },
+    {
+      "name": "Su Zhe Eatery",
+      "city": "Palo Alto",
+      "why": "Yelp business page is marked 'SUZHE EATERY - CLOSED' (Jan 2026) even though menu mirrors still show a lunch block at 4256 El Camino Real - excluded; call it a ghost listing until the venue confirms reopening.",
+      "links": [
+        {
+          "label": "Yelp (CLOSED banner)",
+          "url": "https://www.yelp.com/biz/suzhe-eatery-palo-alto"
+        },
+        {
+          "label": "allmenus mirror with the lunch prices",
+          "url": "https://www.allmenus.com/ca/palo-alto/1005136-su-zhe-eatery/menu/"
+        }
+      ],
+      "searched": "2026-09-07"
+    },
+    {
+      "name": "Pot Sticker King",
+      "city": "Cupertino",
+      "why": "Yelp marks 'POT STICKER KING - CLOSED' (Dec 2025). Its old allmenus page showed a rich 'Lunch Special 11:00-2:30' block - recorded here so a reader can re-check; the closure page outranks it for now.",
+      "links": [
+        {
+          "label": "Yelp (CLOSED)",
+          "url": "https://www.yelp.com/biz/pot-sticker-king-cupertino"
+        },
+        {
+          "label": "allmenus menu with the $8.75 lunch special block",
+          "url": "https://www.allmenus.com/ca/cupertino/52774-pot-sticker-king/menu/"
+        }
+      ],
+      "searched": "2026-09-07"
+    },
+    {
+      "name": "La Strada Italian Restaurant",
+      "city": "Palo Alto",
+      "why": "Yelp page reads 'LA STRADA - CLOSED' (May 2026); a stale YellowPages hours block still prints open hours - excluded, per the closure page.",
+      "links": [
+        {
+          "label": "Yelp (CLOSED)",
+          "url": "https://m.yelp.com/biz/la-strada-palo-alto"
+        },
+        {
+          "label": "YellowPages (stale open hours)",
+          "url": "https://www.yellowpages.com/palo-alto-ca/mip/la-strada-italian-restaurant-18297943"
+        }
+      ],
+      "searched": "2026-09-07"
+    },
+    {
+      "name": "China Delight",
+      "city": "Palo Alto",
+      "why": "Yelp: 'CHINA DELIGHT - CLOSED'; the '$7 lunch deal' only appears in a 2018 Reddit comment - two strikes (closure + staleness), excluded.",
+      "links": [
+        {
+          "label": "Yelp (CLOSED)",
+          "url": "https://www.yelp.com/biz/china-delight-palo-alto"
+        },
+        {
+          "label": "Reddit 2018 DTPA lunch-deals thread",
+          "url": "https://www.reddit.com/r/bayarea/comments/82zti3/any_great_downtown_palo_alto_lunch_deal/"
+        }
+      ],
+      "searched": "2026-09-07"
+    },
+    {
+      "name": "Clarkes Burgers",
+      "city": "Mountain View",
+      "why": "Deferred: the 2018 'lunch special $9.50' listicle interleaves two venues' addresses in the retrieved block ('650 Castro St' vs '615 W El Camino Real'), so the address attribution for the lunch special could not be pinned without a fresh source.",
+      "links": [
+        {
+          "label": "ilovemv.org 'Ten places for lunch under 10 bucks' (2018)",
+          "url": "https://www.ilovemv.org/new-blog-1/category/ten-places-for-lunch-for-less-than-10-bucks6"
+        }
+      ],
+      "searched": "2026-09-07"
+    },
+    {
+      "name": "Ping's Bistro",
+      "city": "San Mateo",
+      "why": "Deferred: the San Mateo search page lists a second 'Ping's Bistro' (4.1, 111 reviews) beside the Fremont one already in the master list; address could not be pinned this pass - re-check before adding a second row.",
+      "links": [
+        {
+          "label": "Yelp 'Lunch Specials in San Mateo' results page",
+          "url": "https://www.yelp.com/search?find_desc=Lunch+Specials&find_loc=San+Mateo%2C+CA"
+        }
+      ],
+      "searched": "2026-09-07"
+    },
+    {
+      "name": "Pho Ha Noi",
+      "city": "Palo Alto",
+      "why": "Deferred: 'The lunch special was wonderful and a great deal!!' appears in the Palo Alto Lunch Specials index, but no address/hours were captured this pass; not to be confused with the two existing Pho Ha Noi rows (Cupertino, Milpitas).",
+      "links": [
+        {
+          "label": "Yelp 'Lunch Specials in Palo Alto' results page",
+          "url": "https://www.yelp.com/search?find_desc=Lunch+Specials&find_loc=Palo+Alto%2C+CA"
+        }
+      ],
+      "searched": "2026-09-07"
+    },
+    {
+      "name": "Tao Tao Restaurant",
+      "city": "Sunnyvale",
+      "why": "Flagged for manual review: allmenus prints a rich 'Lunch Specials $9-$13 + group lunches' block for a 'Tao Tao Restaurant' in Sunnyvale while the master list carries 'Tao Tao Cafe | Sunnyvale'; likely the same venue under a different name. Deliberately not added to avoid a duplicate - a reviewer should decide whether to merge the menu data into the existing row.",
+      "links": [
+        {
+          "label": "allmenus Tao Tao menu (lunch specials block)",
+          "url": "https://www.allmenus.com/ca/sunnyvale/387795-tao-tao-restaurant/menu/"
+        }
+      ],
+      "searched": "2026-09-07"
+    },
+    {
+      "name": "Empire Armadillo BBQ",
+      "city": "Sunnyvale",
+      "why": "Only source is the Sunnyvale chamber Restaurant Week page (Nov 2025): 'Lunch Special - $26.99' for a deli/BBQ plate. The venue's current address/hours were not confirmable this pass - deferred.",
+      "links": [
+        {
+          "label": "Sunnyvale chamber Restaurant Week participants page",
+          "url": "https://www.svcoc.org/sunnyvale-restaurant-week-where-to-dine/"
+        }
+      ],
+      "searched": "2026-09-07"
+    },
+    {
+      "name": "Kitchen at Peery Park",
+      "city": "Sunnyvale",
+      "why": "Its Restaurant Week special is explicitly 'Dinner Only' - out of scope for a lunch list.",
+      "links": [
+        {
+          "label": "Sunnyvale chamber Restaurant Week participants page",
+          "url": "https://www.svcoc.org/sunnyvale-restaurant-week-where-to-dine/"
+        }
+      ],
+      "searched": "2026-09-07"
+    },
+    {
+      "name": "Saratoga Springs / Saratoga County listings",
+      "city": "Saratoga (NY trap)",
+      "why": "IRREGULARITY GUARD: searching 'Saratoga lunch special' returns Saratoga Springs, NY results (saratoga.com '2 For $22 Lunch' at Morrissey's, Times-Union restaurant-week stories). None of those businesses are in California; they were excluded. The CA Saratoga candidates that surfaced (GOGA, Anchors, Darla, Mint Leaf, Bell Tower, Flowers, Hero Ranch) were all either already listed or had no lunch special.",
+      "links": [
+        {
+          "label": "saratoga.com food specials (NY)",
+          "url": "https://www.saratoga.com/food-drink-specials/"
+        },
+        {
+          "label": "Times Union Saratoga County Restaurant Week (NY)",
+          "url": "https://www.timesunion.com/food/article/eat-saratoga-county-restaurant-week-2026-21350016.php"
+        }
+      ],
+      "searched": "2026-09-07"
+    },
+    {
+      "name": "La Vigna-style New York listings",
+      "city": "Santa Clara (trap)",
+      "why": "IRREGULARITY GUARD: the 'La Vigna' menu hits resolve to Forest Hills/Astoria NY venues; no Santa Clara page exists. Excluded (see the master reject entry).",
+      "links": [
+        {
+          "label": "gazette NY La Vigna article",
+          "url": "https://www.qgazette.com/articles/la-vigna-italian-restaurant-2/"
+        }
+      ],
+      "searched": "2026-09-07"
+    },
+    {
+      "name": "Delhi to Kathmandu",
+      "city": "Sunnyvale",
+      "why": "Only found on the Sunnyvale chamber Restaurant Week page (special menu $11-$18); an event-week menu is not a standing lunch special, and the venue's address was not independently captured this pass.",
+      "links": [
+        {
+          "label": "Sunnyvale chamber Restaurant Week page",
+          "url": "https://www.svcoc.org/sunnyvale-restaurant-week-where-to-dine/"
+        }
+      ],
+      "searched": "2026-09-07"
+    },
+    {
+      "name": "The Melt",
+      "city": "Sunnyvale",
+      "why": "Shown as sponsored in a 'Tuesday Specials in Sunnyvale' search with an 'On their website: specials' tag; no specific lunch deal, price or hours were captured - too thin to list.",
+      "links": [
+        {
+          "label": "Yelp 'Restaurants Tuesday Specials in Sunnyvale' results page",
+          "url": "https://www.yelp.com/search?find_desc=Restaurants+Tuesday+Specials&find_loc=Sunnyvale%2C+CA"
+        }
+      ],
+      "searched": "2026-09-07"
+    },
+    {
+      "name": "The Diner of Los Gatos",
+      "city": "Los Gatos (duplicate check)",
+      "why": "Researched as new this pass and found ALREADY in the master list (address match). The merge pipeline rejected the batch9c copy automatically - recorded so the dedupe is visible rather than silent.",
+      "links": [
+        {
+          "label": "Yelp business page",
+          "url": "https://www.yelp.com/biz/the-diner-of-los-gatos-los-gatos"
+        }
+      ],
+      "searched": "2026-09-07"
     }
   ],
   "notes": [
