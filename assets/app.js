@@ -33,7 +33,7 @@
     const out = D.outbound.plans.find((x) => x.recommended) || D.outbound.plans[0];
     const ret = D.retplan.plans.find((x) => x.recommended) || D.retplan.plans[0];
     document.getElementById('flag-count').textContent =
-      PAGE === 'lunch' ? D.flags.lunch.length : D.flags.transit.length + D.flags.lunch.length;
+      PAGE === 'lunch' ? D.flags.lunch.length : PAGE === 'transit' ? D.flags.transit.length : D.flags.transit.length + D.flags.lunch.length;
     document.getElementById('footer-note').innerHTML =
       'Verified on ' + esc(p.verification.accessed) + '. ' +
       link('https://github.com/buffedlizard55-lab/TinoLunchSpecial', 'Source data and check scripts on GitHub');
