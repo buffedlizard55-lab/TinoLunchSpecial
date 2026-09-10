@@ -1,10 +1,10 @@
 {
   "search_protocol": {
-    "requirement": "Verify line by line before adding anything to the master list; keep official/review links for manual review. Ninth pass (2026-09-10): ~100 new candidates searched - Cupertino first, then a 10-15 mile ring that now also covers Fremont, Newark, Union City, San Mateo, Redwood City, San Carlos and Foster City - 668 of them verified well enough to enter the master list; the rest are recorded as rejects or deferred leads with the link that proves the rejection. No candidate entered on an unverified price.",
+    "requirement": "Verify line by line before adding anything to the master list; keep official/review links for manual review. Ninth pass (2026-09-10): ~100 new candidates searched - Cupertino first, then a 10-15 mile ring that now also covers Fremont, Newark, Union City, San Mateo, Redwood City, San Carlos and Foster City - 68 of them verified well enough to enter the master list; the rest are recorded as rejects or deferred leads with the link that proves the rejection. No candidate entered on an unverified price.",
     "queries_run": "cumulative ~385 searches across nine passes (~90 in the ninth)",
     "candidates_found": "all passes documented plus ~100 new ninth-pass candidates (341 dedupe hits against the master list were also checked and dropped)",
     "added_to_master": 523,
-    "rejected_or_deferred": 118,
+    "rejected_or_deferred": 116,
     "search_date": "2026-09-07 through 2026-09-10",
     "cities_covered": [
       "Campbell",

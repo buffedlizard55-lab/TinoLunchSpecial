@@ -1306,6 +1306,6 @@
     "Reddit was searched for Cupertino / Sunnyvale / Los Gatos lunch specials and returned only threads about other cities, so no Reddit citation is used (see LUNCH-FLAG-8).",
     "Every rejection above is a source-of-truth decision, not a judgement about the food. Anything here can be promoted into the master list as soon as hours, days and a price are confirmed."
   ],
-  "distinct_businesses_rejected": 28,
-  "note": "17 rows covering 28 distinct businesses; R14 groups the near-miss candidates surfaced by the same queries and rejected for the same reason (no published lunch special found in this pass)."
+  "distinct_businesses_rejected": 124,
+  "note": "116 rows covering 124 distinct businesses. R14 (first pass) groups the near-miss candidates surfaced by the same queries and rejected for the same reason (no published lunch special found in that pass); later passes appended one row per candidate or per grouped reason - 30 of the rows are from the ninth pass on 2026-09-10."
 }

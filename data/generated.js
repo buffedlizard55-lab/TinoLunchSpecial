@@ -1539,11 +1539,11 @@ window.TINO_DATA = {
  },
  "specials":{
   "search_protocol":{
-   "requirement":"Verify line by line before adding anything to the master list; keep official/review links for manual review. Ninth pass (2026-09-10): ~100 new candidates searched - Cupertino first, then a 10-15 mile ring that now also covers Fremont, Newark, Union City, San Mateo, Redwood City, San Carlos and Foster City - 668 of them verified well enough to enter the master list; the rest are recorded as rejects or deferred leads with the link that proves the rejection. No candidate entered on an unverified price.",
+   "requirement":"Verify line by line before adding anything to the master list; keep official/review links for manual review. Ninth pass (2026-09-10): ~100 new candidates searched - Cupertino first, then a 10-15 mile ring that now also covers Fremont, Newark, Union City, San Mateo, Redwood City, San Carlos and Foster City - 68 of them verified well enough to enter the master list; the rest are recorded as rejects or deferred leads with the link that proves the rejection. No candidate entered on an unverified price.",
    "queries_run":"cumulative ~385 searches across nine passes (~90 in the ninth)",
    "candidates_found":"all passes documented plus ~100 new ninth-pass candidates (341 dedupe hits against the master list were also checked and dropped)",
    "added_to_master":523,
-   "rejected_or_deferred":118,
+   "rejected_or_deferred":116,
    "search_date":"2026-09-07 through 2026-09-10",
    "cities_covered":[
     "Campbell",
@@ -28294,8 +28294,8 @@ window.TINO_DATA = {
    "Reddit was searched for Cupertino / Sunnyvale / Los Gatos lunch specials and returned only threads about other cities, so no Reddit citation is used (see LUNCH-FLAG-8).",
    "Every rejection above is a source-of-truth decision, not a judgement about the food. Anything here can be promoted into the master list as soon as hours, days and a price are confirmed."
   ],
-  "distinct_businesses_rejected":28,
-  "note":"17 rows covering 28 distinct businesses; R14 groups the near-miss candidates surfaced by the same queries and rejected for the same reason (no published lunch special found in this pass)."
+  "distinct_businesses_rejected":124,
+  "note":"116 rows covering 124 distinct businesses. R14 (first pass) groups the near-miss candidates surfaced by the same queries and rejected for the same reason (no published lunch special found in that pass); later passes appended one row per candidate or per grouped reason - 30 of the rows are from the ninth pass on 2026-09-10."
  },
  "flags":{
   "updated":"2026-09-10",
