@@ -1,0 +1,687 @@
+{
+  "note": "Batch 9c - pass 9 (2026-09-10). Los Gatos/Saratoga-adjacent + Willow Glen + San Mateo/Newark/Union-City edges of the 10-15 mile ring. Same rules: prices only where a source printed them, conflicts shown not smoothed, closed-days kept visible.",
+  "entries": [
+    {
+      "name": "The Diner of Los Gatos",
+      "city": "Los Gatos",
+      "address": "235 Los Gatos-Saratoga Rd, Los Gatos, CA 95030",
+      "area": "Los Gatos-Saratoga Rd",
+      "cuisine": "American diner",
+      "days_open": "daily 7:00-21:00 (Yelp + TripAdvisor + chamber page agree)",
+      "hours_tuesday": "7:00 AM - 9:00 PM",
+      "lunch_special": {
+        "name": "Own-menu $7 lunch plates (with fries) and Blue Plate Specials with soup or salad",
+        "price_from": 7.0,
+        "price_to": 22.0,
+        "days": "daily (menu page prints Lunch and Blue Plate Specials; hours say open every day 7am-9pm)",
+        "window": "served from 7:00 AM open; dinner menu later",
+        "includes": "Lunch: cheeseburger/hot dog/grilled cheese/ham triangles $7 each w/fries; Blue Plate: meatloaf, BBQ chicken, pork chops etc. $18.75-$22 with soup or salad & bread"
+      },
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "not assessed - outside the walk radius of the return stop"
+      },
+      "flags": [
+        "Street spelled two ways across sources ('235 Los Gatos Saratoga Rd' vs '235 Saratoga-Los Gatos Rd') - same address block.",
+        "Menu page carries no printed last-updated date; the mirror is served from the restaurant's own domain (lgdiner.com), so the prices count as own-menu for this list - still confirm on arrival."
+      ],
+      "review_links": {
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=The+Diner+of+Los+Gatos+235+Los+Gatos-Saratoga+Rd,+Los+Gatos,+CA+95030",
+        "yelp": "https://www.yelp.com/biz/the-diner-of-los-gatos-los-gatos"
+      },
+      "verification": {
+        "level": "official",
+        "accessed": "2026-09-10",
+        "sources": [
+          {
+            "label": "The Diner's own menu page - 'Lunch' block $7.00 items and 'Blue Plate Specials - includes choice of soup or salad and bread & butter' $18.75-$22.00",
+            "url": "https://lgdiner.com/los-gatos-the-diner-of-los-gatos-food-menu"
+          },
+          {
+            "label": "Yelp - address, phone, full weekly hours",
+            "url": "https://www.yelp.com/biz/the-diner-of-los-gatos-los-gatos"
+          },
+          {
+            "label": "TripAdvisor - address + hours JSON",
+            "url": "https://www.tripadvisor.com/Restaurant_Review-g32657-d2371669-Reviews-The_Diner-Los_Gatos_California.html"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Wine Cellar Restaurant",
+      "city": "Los Gatos",
+      "address": "50 University Ave Ste 180, Los Gatos, CA 95030",
+      "area": "Old Town Los Gatos (former schoolhouse site)",
+      "cuisine": "New American / wine bar",
+      "days_open": "Mon closed; Tue/Wed 16:30-20:00; Thu-Sun lunch from 11:30 (Yelp + restaurantji agree)",
+      "hours_tuesday": "4:30 PM - 8:00 PM (dinner only)",
+      "lunch_special": {
+        "name": "Own-site 'Luncheon Entrees' menu with printed prices",
+        "price_from": 22.0,
+        "price_to": 38.0,
+        "days": "lunch on Thu-Sun only (Tue/Wed show dinner-only hours in the captured blocks)",
+        "window": "11:30 AM - close on lunch days (Thu 11:30-20:30; Fri/Sat to 21:00; Sun to 20:00)",
+        "includes": "luncheon entrees: salmon $38, ahi $38, fish & chips $24, chicken marsala/piccata $33, Baja tacos $22 (own-site menu page)"
+      },
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "not assessed - outside the walk radius of the return stop"
+      },
+      "flags": [
+        "NO LUNCH ON TUESDAY (or Monday, or Wednesday dinner-only blocks): the trip day has dinner only 4:30-8:00 PM per the two hours blocks. Included because 'which days lunch is on' is exactly this table's job.",
+        "Listed at $$$ - the luncheon prices are $22-$38; 'specials' block on the same page changes seasonally."
+      ],
+      "review_links": {
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Wine+Cellar+Restaurant+50+University+Ave+Ste+180,+Los+Gatos,+CA+95030",
+        "yelp": "https://www.yelp.com/biz/wine-cellar-restaurant-los-gatos"
+      },
+      "verification": {
+        "level": "official",
+        "accessed": "2026-09-10",
+        "sources": [
+          {
+            "label": "Wine Cellar own menu page - 'Luncheon Entrees' priced block + weekly specials",
+            "url": "https://www.winecellarlosgatos.com/menus/"
+          },
+          {
+            "label": "Yelp - address, hours incl. Monday closed",
+            "url": "https://www.yelp.com/biz/wine-cellar-restaurant-los-gatos"
+          },
+          {
+            "label": "restaurantji - the same weekly hours block",
+            "url": "https://www.restaurantji.com/ca/los-gatos/wine-cellar-restaurant-/"
+          }
+        ]
+      }
+    },
+    {
+      "name": "John's of Willow Glen",
+      "city": "San Jose",
+      "address": "1238 Lincoln Ave, San Jose, CA 95125",
+      "area": "Willow Glen (Lincoln Ave)",
+      "cuisine": "Greek-American diner",
+      "days_open": "daily 8:00-20:00, Fri/Sat to 21:00 (restaurantji + TripAdvisor + ordering page agree)",
+      "hours_tuesday": "8:00 AM - 8:00 PM",
+      "lunch_special": {
+        "name": "A printed 'Lunch' menu block (salads/sandwiches/platters) - shown on the menu pages",
+        "price_from": 9.5,
+        "price_to": 16.5,
+        "days": "daily (open 8am every day)",
+        "window": "from 8:00 AM open; lunch block through mid-afternoon",
+        "includes": "salad lunches $9.50-$16.50; sandwich lunches $11.50-$14.50; 'Broiled Chicken Breast Lo Cal Lunch Plate' $14.50; kids lunches $5-$6.50"
+      },
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "not assessed - outside the walk radius of the return stop"
+      },
+      "flags": [
+        "Prices come from a menupages copy of the venue's menu, not a page fetched from the restaurant itself; the toast ordering page snippet says 'Takeout Only!' - call before planning to sit.",
+        "Established 1976 per the ordering page."
+      ],
+      "review_links": {
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=John's+of+Willow+Glen+1238+Lincoln+Ave,+San+Jose,+CA+95125",
+        "yelp": null
+      },
+      "verification": {
+        "level": "listing",
+        "accessed": "2026-09-10",
+        "sources": [
+          {
+            "label": "menupages reproduction of John's full menu with the Lunch section and prices (aggregator copy - flag below)",
+            "url": "https://menupages.com/johns-of-willow-glen/1238-lincoln-ave-san-jose"
+          },
+          {
+            "label": "restaurantji - address, phone, hours",
+            "url": "https://www.restaurantji.com/ca/san-jose/johns-of-willow-glen-/"
+          },
+          {
+            "label": "TripAdvisor - address + hours JSON",
+            "url": "https://www.tripadvisor.com/Restaurant_Review-g33020-d343592-Reviews-John_s_of_Willow_Glen-San_Jose_California.html"
+          }
+        ]
+      },
+      "coords": [
+        37.306152,
+        -121.899254
+      ],
+      "coords_source": "directory JSON-LD captured in this pass"
+    },
+    {
+      "name": "Locanda Ischia",
+      "city": "San Jose",
+      "address": "1346 Lincoln Ave, San Jose, CA 95125",
+      "area": "Willow Glen (Lincoln Ave)",
+      "cuisine": "Italian",
+      "days_open": "Mon-Thu lunch + dinner; Fri/Sat 11:30-22:00; Sun 11:30-21:00 (restaurantji + aggregator + Apple Maps agree)",
+      "hours_tuesday": "11:30 AM - 2:30 PM, 4:00 PM - 9:00 PM",
+      "lunch_special": {
+        "name": "'various lunch specials ... a great deal' (review)",
+        "price_from": null,
+        "price_to": null,
+        "days": "lunch Mon-Thu 11:30-2:30 (Fri/Sun continuous)",
+        "window": "11:30 AM - 2:30 PM (Mon-Thu)",
+        "includes": "not itemised in captured reviews"
+      },
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "not assessed - outside the walk radius of the return stop"
+      },
+      "flags": [
+        "No price for the lunch specials published anywhere captured - the specials are named only by a reviewer."
+      ],
+      "review_links": {
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Locanda+Ischia+1346+Lincoln+Ave,+San+Jose,+CA+95125",
+        "yelp": null
+      },
+      "verification": {
+        "level": "review",
+        "accessed": "2026-09-10",
+        "sources": [
+          {
+            "label": "Yelp 'Lunch near Willow Glen' results page carrying the lunch-specials review quote",
+            "url": "https://www.yelp.com/search?find_desc=Lunch&find_loc=Willow+Glen,+San+Jose,+CA"
+          },
+          {
+            "label": "restaurantji - address, phone, weekly hours",
+            "url": "https://www.restaurantji.com/ca/san-jose/locanda-ischia-/"
+          },
+          {
+            "label": "Apple Maps place page - same hours block",
+            "url": "https://maps.apple.com/place?place-id=I6458F58E3ABE6191"
+          }
+        ]
+      },
+      "coords": [
+        37.304301,
+        -121.897594
+      ],
+      "coords_source": "directory JSON-LD captured in this pass"
+    },
+    {
+      "name": "Willow Street Pizza",
+      "city": "San Jose",
+      "address": "1072 Willow St, San Jose, CA 95125",
+      "area": "Willow Glen",
+      "cuisine": "Wood-fired pizza",
+      "days_open": "CONFLICT: own contact page shows two blocks - 'Sunday 11:30-8:30; Mon-Thu 4:00-8:30; Fri/Sat 11:30-9:00' and '11:30am-9pm Mon-Sun'; OpenTable info says dinner Mon-Thu/Sun 4:00-8:30",
+      "hours_tuesday": "hours conflict - see flags",
+      "lunch_special": {
+        "name": "Monday all-day 'Lunch Special' $16.99 - any mini pizza or pasta with soup or salad",
+        "price_from": 16.99,
+        "price_to": null,
+        "days": "Monday special (per the restaurant's own OpenTable 'Daily Specials' text)",
+        "window": "all day (Monday)",
+        "includes": "any mini pizza or pasta + soup or salad; dine-in only"
+      },
+      "open_on_trip_date": null,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "not assessed - outside the walk radius of the return stop"
+      },
+      "flags": [
+        "IRREGULARITY - the venue's own pages disagree about whether Tuesday lunch happens at all (4 PM dinner start in one block vs 11:30 open in another) while the Monday all-day lunch special is listed as a daily special. Verify the day before going; open_on_trip_date left unknown.",
+        "This is the original Willow Street on Willow St itself; the master list already carries the Los Gatos location as its own row."
+      ],
+      "review_links": {
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Willow+Street+Pizza+1072+Willow+St,+San+Jose,+CA+95125",
+        "yelp": null
+      },
+      "verification": {
+        "level": "review",
+        "accessed": "2026-09-10",
+        "sources": [
+          {
+            "label": "OpenTable Willow Glen page - the restaurant's listed 'Daily Specials' with the Monday $16.99 lunch special + address/phone",
+            "url": "https://www.opentable.com/r/willow-street-pizza-and-taproom-san-jose"
+          },
+          {
+            "label": "Willow Street own contact/locations page - two different hours blocks",
+            "url": "https://www.willowstreet.com/contact-us/"
+          },
+          {
+            "label": "Yelp 'Lunch near Willow Glen' results page (context)",
+            "url": "https://www.yelp.com/search?find_desc=Lunch&find_loc=Willow+Glen,+San+Jose,+CA"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Taste Of Sha Xian",
+      "city": "San Mateo",
+      "address": "38 E 4th Ave, San Mateo, CA 94401",
+      "area": "Downtown San Mateo",
+      "cuisine": "Chinese (Shaaxi - hand-pulled noodles)",
+      "days_open": "daily lunch 11:00-15:00; Sat/Sun continuous from 11:00 (wa-cafe + beyondmenu + Yelp agree; dinner close 21:45-22:00)",
+      "hours_tuesday": "11:00 AM - 3:00 PM, 5:00 PM - 10:00 PM",
+      "lunch_special": {
+        "name": "Lunch special with a free drink (review)",
+        "price_from": null,
+        "price_to": null,
+        "days": "daily lunch 11:00-3:00",
+        "window": "11:00 AM - 3:00 PM",
+        "includes": "free drink with the lunch special per the review"
+      },
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "not assessed - outside the walk radius of the return stop"
+      },
+      "flags": [
+        "No price published in any captured source; 'good deals' phrasing is a reviewer's."
+      ],
+      "review_links": {
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Taste+Of+Sha+Xian+38+E+4th+Ave,+San+Mateo,+CA+94401",
+        "yelp": "https://www.yelp.com/biz/taste-of-sha-xian-san-mateo-5"
+      },
+      "verification": {
+        "level": "review",
+        "accessed": "2026-09-10",
+        "sources": [
+          {
+            "label": "Yelp 'Lunch Specials in San Mateo' results page with the 'lunch special with a free drink' quote",
+            "url": "https://www.yelp.com/search?find_desc=Lunch+Specials&find_loc=San+Mateo%2C+CA"
+          },
+          {
+            "label": "directory menu page - address, phone, weekly hours",
+            "url": "https://taste-of-sha-xian.wa-cafe.com/"
+          },
+          {
+            "label": "Yelp business page - hours block",
+            "url": "https://www.yelp.com/biz/taste-of-sha-xian-san-mateo-5?start=40"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Takahashi Market",
+      "city": "San Mateo",
+      "address": "221 S Claremont St, San Mateo, CA 94401",
+      "area": "Claremont",
+      "cuisine": "Japanese / Hawaiian market-deli",
+      "days_open": "closed Mon-Tue; Wed-Sun 11:00-16:00 (Yelp hours block)",
+      "hours_tuesday": "CLOSED",
+      "lunch_special": {
+        "name": "Kalua pig lunch special (review)",
+        "price_from": null,
+        "price_to": null,
+        "days": "Wed-Sun 11:00-4:00 (CLOSED Mon & Tue)",
+        "window": "11:00 AM - 4:00 PM",
+        "includes": "musubi/poke; lunch special item not itemised"
+      },
+      "open_on_trip_date": false,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "not assessed - outside the walk radius of the return stop"
+      },
+      "flags": [
+        "CLOSED ON TUESDAYS (and Mondays) - lunch only Wed-Sun; kept visible as a days-of-week result.",
+        "A market, not a restaurant: line wraps around the store per the review; cash-and-carry service model."
+      ],
+      "review_links": {
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Takahashi+Market+221+S+Claremont+St,+San+Mateo,+CA+94401",
+        "yelp": "https://www.yelp.com/biz/takahashi-market-san-mateo"
+      },
+      "verification": {
+        "level": "review",
+        "accessed": "2026-09-10",
+        "sources": [
+          {
+            "label": "Yelp 'Lunch Specials in San Mateo' results page with the 'Kalua pig lunch special' review quote",
+            "url": "https://www.yelp.com/search?find_desc=Lunch+Specials&find_loc=San+Mateo%2C+CA"
+          },
+          {
+            "label": "Yelp business page - address, phone, weekly hours incl. Monday and Tuesday closed",
+            "url": "https://www.yelp.com/biz/takahashi-market-san-mateo?start=40"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Rin-Tei",
+      "city": "San Mateo",
+      "address": "104 S El Camino Real, San Mateo, CA 94401",
+      "area": "El Camino Real downtown",
+      "cuisine": "Asian fusion (Thai/Japanese)",
+      "days_open": "closed Tue; Mon-Fri lunch 11:00-14:30 + dinner 17:30-23:00 (Fri/Sat to 23:00; Sun dinner 17:30-22:00); Sat/Sun lunch to 15:00 (Yelp + restaurantji + mirror agree)",
+      "hours_tuesday": "CLOSED",
+      "lunch_special": {
+        "name": "Lunch specials described in a review (spring roll, salmon miso)",
+        "price_from": null,
+        "price_to": null,
+        "days": "CLOSED Tuesday; lunch Mon/Wed/Thu 11:00-2:30, Fri-Sun to 3:00",
+        "window": "11:00 AM - 2:30 PM (when open)",
+        "includes": "not itemised; the quote mentions $10 for a lunch special portion"
+      },
+      "open_on_trip_date": false,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "not assessed - outside the walk radius of the return stop"
+      },
+      "flags": [
+        "CLOSED ON TUESDAYS - flagged like Takahashi Market.",
+        "The '$10' fragment in the review sentence is ambiguous (spring roll vs lunch special) - no price asserted."
+      ],
+      "review_links": {
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Rin-Tei+104+S+El+Camino+Real,+San+Mateo,+CA+94401",
+        "yelp": "https://www.yelp.com/biz/rin-tei-san-mateo-2"
+      },
+      "verification": {
+        "level": "review",
+        "accessed": "2026-09-10",
+        "sources": [
+          {
+            "label": "Yelp 'Lunch Specials in San Mateo' results page with the lunch-special review quote",
+            "url": "https://www.yelp.com/search?find_desc=Lunch+Specials&find_loc=San+Mateo%2C+CA"
+          },
+          {
+            "label": "Yelp business page - address, phone, full weekly hours incl. Tuesday closed",
+            "url": "https://www.yelp.com/biz/rin-tei-san-mateo-2"
+          },
+          {
+            "label": "restaurantji - the same Tuesday closed",
+            "url": "https://www.restaurantji.com/ca/san-mateo/rin-tei-/"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Onigilly Japanese Kitchen",
+      "city": "San Mateo",
+      "address": "670 E 3rd Ave, San Mateo, CA 94401",
+      "area": "Downtown San Mateo",
+      "cuisine": "Japanese (onigiri / rice bowls)",
+      "days_open": "daily 11:00-19:00 (Yelp + restaurantji + Apple Maps agree)",
+      "hours_tuesday": "11:00 AM - 7:00 PM",
+      "lunch_special": {
+        "name": "'$15 deal for lunch special' (review, ordering online)",
+        "price_from": 15.0,
+        "price_to": null,
+        "days": "daily 11:00-19:00",
+        "window": "from 11:00 AM open",
+        "includes": "not itemised"
+      },
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "not assessed - outside the walk radius of the return stop"
+      },
+      "flags": [
+        "$15 is a reviewer's figure quoted on the search page; own site (onigilly.com) menu prices were not captured - treat as indicative, not verified."
+      ],
+      "review_links": {
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Onigilly+Japanese+Kitchen+670+E+3rd+Ave,+San+Mateo,+CA+94401",
+        "yelp": "https://www.yelp.com/biz/onigilly-japanese-kitchen-san-mateo-3"
+      },
+      "verification": {
+        "level": "review",
+        "accessed": "2026-09-10",
+        "sources": [
+          {
+            "label": "Yelp 'Lunch Specials in San Mateo' results page with the '$15 deal for lunch special' quote",
+            "url": "https://www.yelp.com/search?find_desc=Lunch+Specials&find_loc=San+Mateo%2C+CA"
+          },
+          {
+            "label": "Yelp business page - address, phone, hours",
+            "url": "https://www.yelp.com/biz/onigilly-japanese-kitchen-san-mateo-3"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Dough Zone Dumpling House",
+      "city": "San Mateo",
+      "address": "111 E 4th Ave, San Mateo, CA 94401",
+      "area": "Downtown San Mateo",
+      "cuisine": "Chinese - dumplings",
+      "days_open": "daily 11:00-21:00 (Yelp hours block)",
+      "hours_tuesday": "11:00 AM - 9:00 PM",
+      "lunch_special": {
+        "name": "Late-lunch 'lunch special' - good price for soup dumplings + steamed items (review)",
+        "price_from": null,
+        "price_to": null,
+        "days": "daily 11:00-21:00",
+        "window": "from 11:00 AM",
+        "includes": "not itemised; Yelp menu block prints singles $4.65-$11.55"
+      },
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "not assessed - outside the walk radius of the return stop"
+      },
+      "flags": [
+        "No named/printed lunch special found on the chain's own site - the special is reviewer-described; individual dish prices shown on Yelp ($4.65-$11.55) are listed-item prices, not a set deal."
+      ],
+      "review_links": {
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Dough+Zone+Dumpling+House+111+E+4th+Ave,+San+Mateo,+CA+94401",
+        "yelp": "https://www.yelp.com/biz/dough-zone-dumpling-house-san-mateo-san-mateo-2"
+      },
+      "verification": {
+        "level": "review",
+        "accessed": "2026-09-10",
+        "sources": [
+          {
+            "label": "Yelp 'Lunch Specials in San Mateo' results page with the lunch-special review",
+            "url": "https://www.yelp.com/search?find_desc=Lunch+Specials&find_loc=San+Mateo%2C+CA"
+          },
+          {
+            "label": "Yelp business page - address, phone, weekly hours, menu prices block",
+            "url": "https://www.yelp.com/biz/dough-zone-dumpling-house-san-mateo-san-mateo-2"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Kong Sarang Tofu & BBQ",
+      "city": "Newark",
+      "address": "6180 Jarvis Ave Ste A, Newark, CA 94560",
+      "area": "Jarvis Ave",
+      "cuisine": "Korean (soft tofu & BBQ)",
+      "days_open": "daily 11:00-21:00 (Yelp + wheree + Apple Maps agree)",
+      "hours_tuesday": "11:00 AM - 9:00 PM",
+      "lunch_special": {
+        "name": "Lunch deals, 'Mondays to Fridays only, strictly...' (review)",
+        "price_from": null,
+        "price_to": null,
+        "days": "Mon-Fri (lunch deals weekday-only per review)",
+        "window": "from 11:00 AM open",
+        "includes": "not itemised"
+      },
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "not assessed - outside the walk radius of the return stop"
+      },
+      "flags": [
+        "The lunch-deal wording was truncated on the results page ('strictly...' likely 'strictly lunch time') - open the Yelp link to read the full review.",
+        "Union City searches surface this Newark store (nearest); the name|city used here is Newark per its own pages."
+      ],
+      "review_links": {
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Kong+Sarang+Tofu+&+BBQ+6180+Jarvis+Ave+Ste+A,+Newark,+CA+94560",
+        "yelp": "https://www.yelp.com/biz/kong-sarang-tofu-and-bbq-newark-3"
+      },
+      "verification": {
+        "level": "review",
+        "accessed": "2026-09-10",
+        "sources": [
+          {
+            "label": "Yelp 'Lunch Specials near Union City' results page with the weekday lunch-deal quote",
+            "url": "https://www.yelp.com/search?find_desc=Lunch+Specials&find_loc=Union+City%2C+CA"
+          },
+          {
+            "label": "Yelp business page - address, phone, hours",
+            "url": "https://www.yelp.com/biz/kong-sarang-tofu-and-bbq-newark-3"
+          },
+          {
+            "label": "Apple Maps - address, phone, site kongsarang4u.com",
+            "url": "https://maps.apple.com/place?place-id=I64AEA84EC38BB1E0"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Sultana Mediterranean",
+      "city": "Menlo Park",
+      "address": "1149 El Camino Real, Menlo Park, CA 94025",
+      "area": "El Camino Real",
+      "cuisine": "Turkish / Mediterranean",
+      "days_open": "daily 11:00-21:00 (Yelp + restaurantji agree)",
+      "hours_tuesday": "11:00 AM - 9:00 PM",
+      "lunch_special": {
+        "name": "$10 shish kebab lunch special (review: 'shish kebob special (chicken, lamb...)')",
+        "price_from": null,
+        "price_to": null,
+        "days": "daily 11:00-21:00",
+        "window": "lunch 11:00 AM opening onward (a 2009 article described lunch 11:00-2:30)",
+        "includes": "kebab plate per the review"
+      },
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "not assessed - outside the walk radius of the return stop"
+      },
+      "flags": [
+        "The $10 is a reviewer's figure and the continuous 2009-2026 hours changed from 11-2:30/5-9:30 to all-day - confirm current lunch pricing in person.",
+        "Business update text on its Yelp page: take out service from 10:30 am - the hours blocks say 11:00; both printed."
+      ],
+      "review_links": {
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Sultana+Mediterranean+1149+El+Camino+Real,+Menlo+Park,+CA+94025",
+        "yelp": "https://www.yelp.com/biz/sultana-mediterranean-menlo-park-2"
+      },
+      "verification": {
+        "level": "review",
+        "accessed": "2026-09-10",
+        "sources": [
+          {
+            "label": "Yelp 'Lunch Deals near Menlo Park' results page with the '$10 shish kebob special' quote",
+            "url": "https://www.yelp.com/search?find_desc=lunch+deals&find_loc=Menlo+Park%2C+CA+94025"
+          },
+          {
+            "label": "Yelp business page - address, takeout hours, all-day hours",
+            "url": "https://www.yelp.com/biz/sultana-mediterranean-menlo-park-2?start=40"
+          },
+          {
+            "label": "Mercury News 2009 'Quick Bite' profile - original hours block (lunch 11:00-2:30)",
+            "url": "https://www.mercurynews.com/2009-10-12/quick-bite-a-savory-sultana-in-menlo-park/"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Urban Kitchen",
+      "city": "Newark",
+      "address": "5855 Jarvis Ave, Newark, CA 94560",
+      "area": "Jarvis Ave plaza",
+      "cuisine": "Indian fusion sports bistro",
+      "days_open": "not captured - the TripAdvisor page shows no hours block in the captured snapshot",
+      "hours_tuesday": "not captured",
+      "lunch_special": {
+        "name": "'...as well as a lunch special' (2021 review)",
+        "price_from": null,
+        "price_to": null,
+        "days": "not captured",
+        "window": "not captured",
+        "includes": "not itemised"
+      },
+      "open_on_trip_date": null,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "not assessed - outside the walk radius of the return stop"
+      },
+      "flags": [
+        "Sole evidence is a Nov 2021 review; no hours captured and the business may have changed hands since - treat as a call-ahead lead (address only proven to the plaza).",
+        "This row is why hours/days columns read 'not captured': nothing verifiable was found in 2025-2026 sources within this pass."
+      ],
+      "review_links": {
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Urban+Kitchen+5855+Jarvis+Ave,+Newark,+CA+94560",
+        "yelp": null
+      },
+      "verification": {
+        "level": "review",
+        "accessed": "2026-09-10",
+        "sources": [
+          {
+            "label": "TripAdvisor Urban Kitchen Newark (title carries '5855 Jarvis Ave') - review describing a lunch special",
+            "url": "https://www.tripadvisor.com/Restaurant_Review-g32774-d19667148-Reviews-Urban_Kitchen-Newark_California.html"
+          }
+        ]
+      }
+    }
+  ],
+  "rejected": [
+    {
+      "name": "La Vigna Trattoria",
+      "city": "Santa Clara",
+      "why": "Search results for 'La Vigna menu/price' resolve to La Vigna in Forest Hills, Queens (lavignany.com, menuxp) and an Astoria OpenTable; no current Santa Clara (The Alameda) restaurant page or address could be found - likely long closed.",
+      "links": [
+        {
+          "label": "menuxp page that resolves to the Queens restaurant",
+          "url": "https://www.menuxp.com/la-vigna-menu"
+        },
+        {
+          "label": "lavignany.com (Forest Hills, NY)",
+          "url": "https://www.lavignany.com/forest-hills-forest-hills-la-vigna-restaurant-food-menu"
+        }
+      ]
+    },
+    {
+      "name": "Little Sky Kitchen",
+      "city": "Menlo Park",
+      "why": "Already handled in an earlier pass (rejected entry for this business; re-verifying the lunch-special review quote did not produce a menu page, so the rejection stands).",
+      "links": [
+        {
+          "label": "Yelp 'Best Lunch Menlo Park' results page with the lunch-special quote",
+          "url": "https://www.yelp.com/search?find_desc=Best+Lunch&find_loc=Menlo+Park%2C+CA"
+        }
+      ]
+    },
+    {
+      "name": "True Food Kitchen",
+      "city": "Menlo Park",
+      "why": "The only 'lunch special' sentence about it is a reviewer wishing they had one ('what would be a great edition is for them to have a lunch special').",
+      "links": [
+        {
+          "label": "Yelp 'Lunch Deals near Menlo Park' results page",
+          "url": "https://www.yelp.com/search?find_desc=lunch+deals&find_loc=Menlo+Park%2C+CA+94025"
+        }
+      ]
+    },
+    {
+      "name": "Bell Tower Cafe",
+      "city": "Saratoga",
+      "why": "A lunch *spot* but no lunch special, set price or deal named in any captured source; kept out of the master list rather than padded with a non-deal row.",
+      "links": [
+        {
+          "label": "Yelp 'Lunch near Saratoga' results page",
+          "url": "https://www.yelp.com/search?find_desc=Lunch&find_loc=Saratoga%2C+CA+95070"
+        }
+      ]
+    },
+    {
+      "name": "Flowers Saratoga",
+      "city": "Saratoga",
+      "why": "A review says 'because of the summer, it has a temporary lunch menu' - a seasonal pop-up is not a standing lunch special; also no price captured.",
+      "links": [
+        {
+          "label": "Yelp mobile 'Lunch near Saratoga' results page with the temporary-lunch-menu quote",
+          "url": "https://www.m.yelp.com/search?find_desc=Lunch&find_loc=Saratoga%2C+CA"
+        }
+      ]
+    },
+    {
+      "name": "West Coast Sourdough",
+      "city": "Newark",
+      "why": "'combo options looked like good deals' is generic combo pricing, not a named lunch special.",
+      "links": [
+        {
+          "label": "Yelp 'Lunch near Newark' results page",
+          "url": "https://www.yelp.com/search?find_desc=lunch&find_loc=Newark,+CA+94560"
+        }
+      ]
+    }
+  ]
+}

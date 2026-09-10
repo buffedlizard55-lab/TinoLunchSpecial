@@ -1,0 +1,922 @@
+{
+  "note": "Batch 9b - pass 9 (2026-09-10). Fremont/Newark + the east side of the Peninsula side of the ring (Redwood City, San Mateo, San Carlos, Foster City) - the two clusters that the earlier passes had not yet reached. Hours from Yelp business blocks, own sites and directory JSON; specials quoted verbatim from review snippets on the linked pages; no aggregator price promoted to verified.",
+  "entries": [
+    {
+      "name": "Mr. Taco",
+      "city": "Fremont",
+      "address": "3930 Decoto Rd, Fremont, CA 94555",
+      "area": "Decoto Rd",
+      "cuisine": "Mexican",
+      "days_open": "Mon-Sat 10:00-20:30ish, Sun 11:00-19:00 (sources differ on closing time)",
+      "hours_tuesday": "10:00 AM - 8:30 PM",
+      "lunch_special": {
+        "name": "$1 taco Tuesdays (business photo caption on Yelp)",
+        "price_from": null,
+        "price_to": null,
+        "days": "Tuesday only, all day during open hours",
+        "window": "while open (10:00 AM opening)",
+        "includes": "taco Tuesday special"
+      },
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "not assessed - outside the walk radius of the return stop"
+      },
+      "flags": [
+        "The $1 figure is a Yelp photo caption; a review on the same day says $1.50. Neither is a menu page price - confirm in person.",
+        "Closing time drifts by source (Yelp 20:30, TripAdvisor 22:00, zmenu 20:00 Tue 20:30) - both shown, not averaged."
+      ],
+      "review_links": {
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Mr.+Taco+3930+Decoto+Rd,+Fremont,+CA+94555",
+        "yelp": "https://www.yelp.com/biz/mr-taco-fremont"
+      },
+      "verification": {
+        "level": "review",
+        "accessed": "2026-09-10",
+        "sources": [
+          {
+            "label": "TripAdvisor - Mr Taco Fremont (address, phone, daily hours JSON)",
+            "url": "https://www.tripadvisor.com/Restaurant_Review-g32411-d4658567-Reviews-Mr_Taco-Fremont_California.html"
+          },
+          {
+            "label": "Yelp business page - '$1/taco Tuesdays only' photo caption + hours block",
+            "url": "https://www.yelp.com/biz/mr-taco-fremont?start=160"
+          },
+          {
+            "label": "Yelp 'Tuesday Specials in Fremont' results page with the '$1.50 taco Tuesday' review quote",
+            "url": "https://www.yelp.com/search?find_desc=Tuesday+Specials&find_loc=Fremont%2C+CA"
+          }
+        ]
+      },
+      "coords": [
+        37.57078,
+        -122.03107
+      ],
+      "coords_source": "directory JSON-LD captured in this pass"
+    },
+    {
+      "name": "Mi Lindo Sinaloa",
+      "city": "Fremont",
+      "address": "4796 Thornton Ave, Fremont, CA 94536",
+      "area": "Thornton Ave",
+      "cuisine": "Mexican (Sinaloa)",
+      "days_open": "closed Monday; Tue-Sat 10:00-22:00; Sun 10:00-16:00 (Yelp/zmenu/restaurantji/waze agree)",
+      "hours_tuesday": "10:00 AM - 10:00 PM",
+      "lunch_special": {
+        "name": "Taco Tuesday $1 each / Burrito Wednesday $4.99 (business's own Yelp 'Specialties' text)",
+        "price_from": null,
+        "price_to": null,
+        "days": "Tuesday and Wednesday specials",
+        "window": "while open (10:00 AM opening)",
+        "includes": "per-taco/per-burrito pricing, not a plate price"
+      },
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "not assessed - outside the walk radius of the return stop"
+      },
+      "flags": [
+        "Prices are per taco ($1) and per burrito ($4.99), written by the business on its Yelp page (menu photos dated Oct 2023) - left out of the price column because they are not a lunch-plate price.",
+        "One older directory (bippermedia, 2024) shows Tue-Sat closing 20:00 and Sun to 17:00; the four 2025-2026 sources say 22:00/16:00. 22:00 used."
+      ],
+      "review_links": {
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Mi+Lindo+Sinaloa+4796+Thornton+Ave,+Fremont,+CA+94536",
+        "yelp": "https://www.yelp.com/biz/mi-lindo-sinaloa-fremont-3"
+      },
+      "verification": {
+        "level": "review",
+        "accessed": "2026-09-10",
+        "sources": [
+          {
+            "label": "Yelp business page 'Specialties' - business-written 'Tuesday - Taco Tuesday $1 each; Wednesday - Burrito Wednesday $4.99' + full hours",
+            "url": "https://www.yelp.com/biz/mi-lindo-sinaloa-fremont-3?start=20"
+          },
+          {
+            "label": "zmenu - hours block",
+            "url": "https://www.zmenu.com/mi-lindo-sinaloa-fremont-3-online-menu/"
+          },
+          {
+            "label": "restaurantji - hours block",
+            "url": "https://www.restaurantji.com/ca/fremont/mi-lindo-sinaloa-/"
+          }
+        ]
+      },
+      "coords": [
+        37.550145,
+        -122.019632
+      ],
+      "coords_source": "directory JSON-LD captured in this pass"
+    },
+    {
+      "name": "Taqueria Extra",
+      "city": "Fremont",
+      "address": "39494 Fremont Blvd, Fremont, CA 94538",
+      "area": "Fremont Blvd near the Hub",
+      "cuisine": "Mexican",
+      "days_open": "Yelp prints 10:00-23:00 all seven days; restaurantji prints Thursday closed - conflict shown",
+      "hours_tuesday": "10:00 AM - 11:00 PM",
+      "lunch_special": {
+        "name": "Taco Tuesday deal praised in a review; a menu mirror lists '$0.99 happy hour tacos Mon-Fri 3-6pm'",
+        "price_from": null,
+        "price_to": null,
+        "days": "Tuesday tacos per the review; the $0.99 window is an afternoon happy hour",
+        "window": "review: 'so happy to find a place with a Taco Tuesday deal'; mirror: 3:00-6:00 PM Mon-Fri",
+        "includes": "taco deal"
+      },
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "not assessed - outside the walk radius of the return stop"
+      },
+      "flags": [
+        "IRREGULARITY - restaurantji says Thursday closed while the Yelp hours block shows Thursday 10-23; call ahead.",
+        "The $0.99 figure comes from a menu-mirror page, so it is recorded as a lead only.",
+        "The cafe-inspector URL still carries the venue's former name 'Taqueria Limon' - naming drift, same address."
+      ],
+      "review_links": {
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Taqueria+Extra+39494+Fremont+Blvd,+Fremont,+CA+94538",
+        "yelp": null
+      },
+      "verification": {
+        "level": "review",
+        "accessed": "2026-09-10",
+        "sources": [
+          {
+            "label": "Yelp business page - address, phone, hours",
+            "url": "https://www.yelp.com/biz/taqueria-extra-fremont?start=400"
+          },
+          {
+            "label": "Yelp 'Tuesday Specials in Fremont' results page carrying the Taco Tuesday review",
+            "url": "https://www.yelp.com/search?find_desc=Tuesday+Specials&find_loc=Fremont%2C+CA"
+          },
+          {
+            "label": "cafe-inspector menu mirror showing '$0.99 Mon to fri 3pm to 6pm' (aggregator - NOT promoted to verified)",
+            "url": "https://taqueria-limon.cafe-inspector.com/"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Old Street Chengpan Malatang",
+      "city": "Fremont",
+      "address": "6080 Stevenson Blvd, Fremont, CA 94538",
+      "area": "The Globe Mall",
+      "cuisine": "Sichuan malatang (pick-your-own skewers)",
+      "days_open": "closed Monday; Tue-Thu 11:00-14:30 & 17:00-21:30; Fri-Sun 11:00-14:30 & 17:00-22:00 (Apple Maps + wheree + roadtrippers agree)",
+      "hours_tuesday": "11:00 AM - 2:30 PM, 5:00 PM - 9:30 PM",
+      "lunch_special": {
+        "name": "Lunch special meals (two ordered by three people in a review)",
+        "price_from": null,
+        "price_to": null,
+        "days": "lunch 11:00-2:30 Tue-Sun (closed Mon)",
+        "window": "11:00 AM - 2:30 PM",
+        "includes": "not itemised in the captured review"
+      },
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "not assessed - outside the walk radius of the return stop"
+      },
+      "flags": [
+        "No price published anywhere captured; malatang is priced by weight at many stores - confirm the format before going."
+      ],
+      "review_links": {
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Old+Street+Chengpan+Malatang+6080+Stevenson+Blvd,+Fremont,+CA+94538",
+        "yelp": null
+      },
+      "verification": {
+        "level": "review",
+        "accessed": "2026-09-10",
+        "sources": [
+          {
+            "label": "Apple Maps place page - address, phone, weekly hours",
+            "url": "https://maps.apple.com/place?place-id=ICC2D41D2D1476CFE"
+          },
+          {
+            "label": "wheree profile - same hours block (May 2026)",
+            "url": "https://old-street-chengpan-malatang.wheree.com/"
+          },
+          {
+            "label": "Yelp 'Cheap Lunch Specials in Fremont' results page with the lunch-special review quote",
+            "url": "https://www.yelp.com/search?find_desc=cheap+lunch+specials&find_loc=Fremont%2C+CA"
+          }
+        ]
+      },
+      "coords": [
+        37.518321,
+        -121.989926
+      ],
+      "coords_source": "directory JSON-LD captured in this pass"
+    },
+    {
+      "name": "Burma Bay Cafe",
+      "city": "Fremont",
+      "address": "47966 Warm Springs Blvd, Fremont, CA 94539",
+      "area": "Warm Springs Blvd",
+      "cuisine": "Burmese",
+      "days_open": "Mo-Th 11:00-21:00, Fr-Sa 11:00-21:30, Su 11:00-21:00 (own site JSON)",
+      "hours_tuesday": "11:00 AM - 9:00 PM",
+      "lunch_special": {
+        "name": "Lunch specials: 'each lunch special came with entree, vegetable, ...' (party-of-three review)",
+        "price_from": null,
+        "price_to": null,
+        "days": "daily (lunch served from opening)",
+        "window": "11:00 AM opening",
+        "includes": "entree + vegetable + more per the review (truncated)"
+      },
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "not assessed - outside the walk radius of the return stop"
+      },
+      "flags": [
+        "No price found on the own site (menu page not indexed); call for the lunch special price."
+      ],
+      "review_links": {
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Burma+Bay+Cafe+47966+Warm+Springs+Blvd,+Fremont,+CA+94539",
+        "yelp": null
+      },
+      "verification": {
+        "level": "review",
+        "accessed": "2026-09-10",
+        "sources": [
+          {
+            "label": "Burma Bay Cafe own site - address + weekly hours JSON (squarespace page)",
+            "url": "https://burmabaycafe.squarespace.com/blog/local-burmese-food-favorites"
+          },
+          {
+            "label": "Yelp 'Lunch Restaurants in Fremont' results page with the lunch-special review quote",
+            "url": "https://www.yelp.com/search?find_desc=Lunch+Restaurants&find_loc=Fremont%2C+CA"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Milk & Honey Cafe",
+      "city": "Fremont",
+      "address": "34265 Fremont Blvd, Fremont, CA 94555",
+      "area": "Fremont Blvd (Centerville)",
+      "cuisine": "Taiwanese cafe (noodles, rice)",
+      "days_open": "closed Monday; Tue-Sun 11:00-21:00 (own site 'lunch' tag page; 11:00-20:45 per the directory copy)",
+      "hours_tuesday": "11:00 AM - 9:00 PM",
+      "lunch_special": {
+        "name": "Tagged 'Lunch specials' on its Yelp page (no specific deal named)",
+        "price_from": null,
+        "price_to": null,
+        "days": "Tue-Sun; closed Monday",
+        "window": "11:00 AM opening",
+        "includes": "not named in captured sources"
+      },
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "not assessed - outside the walk radius of the return stop"
+      },
+      "flags": [
+        "The 'lunch special' claim is a Yelp attribute tag on the results page; no named dish or price found - call ahead.",
+        "Own site's hours block shows Sat 10:45 opening; directories show 11:00 - minor drift."
+      ],
+      "review_links": {
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Milk+&+Honey+Cafe+34265+Fremont+Blvd,+Fremont,+CA+94555",
+        "yelp": null
+      },
+      "verification": {
+        "level": "listing",
+        "accessed": "2026-09-10",
+        "sources": [
+          {
+            "label": "Milk & Honey own site lunch tag page - address + weekly hours",
+            "url": "https://milkandhoneyfremont.com/tags/lunch"
+          },
+          {
+            "label": "Yelp 'Cheap Lunch Specials in Fremont' results page (tag + intro quote)",
+            "url": "https://www.yelp.com/search?find_desc=cheap+lunch+specials&find_loc=Fremont%2C+CA"
+          },
+          {
+            "label": "sirved directory - hours incl. 'Monday Closed'",
+            "url": "https://www.sirved.com/restaurant/fremont-california-usa/milk-and-honey-cafe/456667/menus"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Steaking",
+      "city": "Fremont",
+      "address": "43755 Boscell Rd, Fremont, CA 94538",
+      "area": "Boscell Rd",
+      "cuisine": "Taiwanese steaks & hot pot",
+      "days_open": "not captured (the ordering page shows lunch blocks 11:00-2:30)",
+      "hours_tuesday": "not captured",
+      "lunch_special": {
+        "name": "Monday-Friday lunch special on sizzling plates (review)",
+        "price_from": null,
+        "price_to": null,
+        "days": "Monday-Friday (per review: 'monday-fridays any sizzling...')",
+        "window": "11:00 AM - 2:30 PM (Sunday lunch block shown as example of the weekday pattern)",
+        "includes": "sizzling-plate lunch; unlimited soup/bread sides per the delivery menu"
+      },
+      "open_on_trip_date": null,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "not assessed - outside the walk radius of the return stop"
+      },
+      "flags": [
+        "Business opened ~late 2025 (a March 2026 Reddit post celebrates 6 months) - young listing, limited review data; hours only partially captured.",
+        "Delivery-menu prices ($18.99 pork teppanyaki etc.) are an aggregator copy; no lunch-special price is published, so none is asserted."
+      ],
+      "review_links": {
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Steaking+43755+Boscell+Rd,+Fremont,+CA+94538",
+        "yelp": null
+      },
+      "verification": {
+        "level": "review",
+        "accessed": "2026-09-10",
+        "sources": [
+          {
+            "label": "Yelp 'Lunch Specials in Fremont' results page with the 'lunch special is really nice, monday-fridays' quote",
+            "url": "https://www.yelp.com/search?find_desc=Lunch+Specials&find_loc=Fremont,+CA"
+          },
+          {
+            "label": "Steaking own site - address, phone, cuisine JSON",
+            "url": "https://steakingca.com/"
+          },
+          {
+            "label": "Postmates menu mirror of the sizzling plates ($18.99-$32.99; aggregator - lead only)",
+            "url": "https://postmates.com/store/steaking-%E7%8E%8B%E6%8E%92-43755-boscell-rd/bLb9ZMBYSoe59AsLY9B5bQ"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Kiya Sushi",
+      "city": "Fremont",
+      "address": "36488 Fremont Blvd, Fremont, CA 94536",
+      "area": "Fremont Blvd",
+      "cuisine": "Japanese / sushi",
+      "days_open": "Mon-Thu 11:00-14:30 + 17:00-21:30; Fri/Sat 11:00-21:30; Sun 11:00-21:00 (own site + yelp + zmenu)",
+      "hours_tuesday": "11:00 AM - 2:30 PM, 4:30 PM - 9:00 PM",
+      "lunch_special": {
+        "name": "Trio-roll lunch special with free matcha ice cream, quoted at $14.99 in a review",
+        "price_from": null,
+        "price_to": null,
+        "days": "Mon-Thu lunch 11:00-2:30 (Fri-Sun lunch inside continuous hours)",
+        "window": "11:00 AM - 2:30 PM (Mon-Thu)",
+        "includes": "3-roll lunch special + free dessert per the review"
+      },
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "not assessed - outside the walk radius of the return stop"
+      },
+      "flags": [
+        "$14.99 is a reviewer's figure; the own-site menu page (kiyasushi.com) could not be read for a printed price - call to confirm.",
+        "zmenu lists the dinner resumption at 16:30-21:00 while Yelp prints 4:30-9:00 pm Mon-Thu; the 4:30 pm block is from the business's own page."
+      ],
+      "review_links": {
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Kiya+Sushi+36488+Fremont+Blvd,+Fremont,+CA+94536",
+        "yelp": "https://www.yelp.com/biz/kiya-sushi-fremont-2"
+      },
+      "verification": {
+        "level": "review",
+        "accessed": "2026-09-10",
+        "sources": [
+          {
+            "label": "Kiya Sushi own site - takeout hours and address JSON",
+            "url": "https://www.kiyasushi.com/"
+          },
+          {
+            "label": "Yelp 'Lunch Specials in Fremont' results page with the '$14.99 trio roll' review quote",
+            "url": "https://www.yelp.com/search?find_desc=Lunch+Specials&find_loc=Fremont,+CA"
+          },
+          {
+            "label": "Yelp business page - full weekly hours block",
+            "url": "https://www.yelp.com/biz/kiya-sushi-fremont-2"
+          }
+        ]
+      },
+      "coords": [
+        37.562857,
+        -122.014539
+      ],
+      "coords_source": "directory JSON-LD captured in this pass"
+    },
+    {
+      "name": "Tai Pan Dim Sum (Tai Pan BBQ Express)",
+      "city": "Fremont",
+      "address": "39486 Fremont Blvd, Fremont, CA 94538",
+      "area": "Fremont Blvd",
+      "cuisine": "Cantonese dim sum / BBQ takeout",
+      "days_open": "daily 10:00-19:00 (restaurantji + zmenu + roadtrippers + checkle agree)",
+      "hours_tuesday": "10:00 AM - 7:00 PM",
+      "lunch_special": {
+        "name": "Daily lunch specials per review; 'sesame balls 5 for $1' quote",
+        "price_from": null,
+        "price_to": null,
+        "days": "daily 10:00-19:00",
+        "window": "lunch inside 10:00-19:00",
+        "includes": "not itemised"
+      },
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "not assessed - outside the walk radius of the return stop"
+      },
+      "flags": [
+        "Directory naming drift: one aggregator page mixes in 'Dragon BBQ Express' URL fragments at the same address; the Yelp-sourced quote is the only lunch-special evidence.",
+        "Takeout-focused spot ('takeout-only spot' per the directory summary) - call to check dining options."
+      ],
+      "review_links": {
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Tai+Pan+Dim+Sum+(Tai+Pan+BBQ+Express)+39486+Fremont+Blvd,+Fremont,+CA+94538",
+        "yelp": null
+      },
+      "verification": {
+        "level": "review",
+        "accessed": "2026-09-10",
+        "sources": [
+          {
+            "label": "Yelp 'Cheap Lunch Specials in Fremont' results page with the daily-lunch-specials + $1 sesame ball quotes",
+            "url": "https://www.yelp.com/search?find_desc=cheap+lunch+specials&find_loc=Fremont%2C+CA"
+          },
+          {
+            "label": "restaurantji - address, phone, daily hours",
+            "url": "https://www.restaurantji.com/ca/fremont/tai-pan-dim-sum-/"
+          },
+          {
+            "label": "zmenu hours block",
+            "url": "https://www.zmenu.com/tai-pan-bbq-express-dim-sum-fremont-3-online-menu/"
+          }
+        ]
+      },
+      "coords": [
+        37.545638,
+        -121.980489
+      ],
+      "coords_source": "directory JSON-LD captured in this pass"
+    },
+    {
+      "name": "Crabby Crabby",
+      "city": "Newark",
+      "address": "6225 Jarvis Ave, Newark, CA 94560",
+      "area": "Jarvis Ave (tastypot plaza)",
+      "cuisine": "Seafood boil / Cajun / Mexican",
+      "days_open": "Yelp: open 7 days; restaurantji prints Thursday closed - conflict",
+      "hours_tuesday": "11:00 AM - 9:30 PM",
+      "lunch_special": {
+        "name": "Tagged 'Lunch specials' on Yelp; business posts a happy-hour menu and a Feb 2026 menu update",
+        "price_from": null,
+        "price_to": null,
+        "days": "daily",
+        "window": "open from 11:00 AM (Yelp)",
+        "includes": "not named"
+      },
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "not assessed - outside the walk radius of the return stop"
+      },
+      "flags": [
+        "IRREGULARITY - Yelp says open all seven days while restaurantji says Thursday closed; two phone numbers circulate (510) 790-8988 and (510) 462-6890.",
+        "No lunch special is itemised anywhere captured - listing-level row, call first."
+      ],
+      "review_links": {
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Crabby+Crabby+6225+Jarvis+Ave,+Newark,+CA+94560",
+        "yelp": "https://www.yelp.com/biz/crabby-crabby-newark-2"
+      },
+      "verification": {
+        "level": "listing",
+        "accessed": "2026-09-10",
+        "sources": [
+          {
+            "label": "Yelp business page - address, phone, hours, business updates",
+            "url": "https://www.yelp.com/biz/crabby-crabby-newark-2"
+          },
+          {
+            "label": "Yelp 'Cheap Lunch Specials in Fremont' results page carrying the Lunch-specials tag",
+            "url": "https://www.yelp.com/search?find_desc=cheap+lunch+specials&find_loc=Fremont%2C+CA"
+          },
+          {
+            "label": "restaurantji - alternative hours (Thu closed)",
+            "url": "https://www.restaurantji.com/ca/newark/crabby-crabby-/"
+          }
+        ]
+      },
+      "coords": [
+        37.550322,
+        -122.05128
+      ],
+      "coords_source": "directory JSON-LD captured in this pass"
+    },
+    {
+      "name": "Mission Pizza",
+      "city": "Fremont",
+      "address": "1572 Washington Blvd, Fremont, CA 94539",
+      "area": "Washington Blvd (Niles)",
+      "cuisine": "Pizza pub",
+      "days_open": "Mon 16:00-21:00 (dinner only); Tue-Thu 11:00-21:00; Fri 11:00-22:00; Sat/Sun 12:00 open (Yelp + own-site directory JSON agree)",
+      "hours_tuesday": "11:00 AM - 9:00 PM",
+      "lunch_special": {
+        "name": "Review mentions 'pizza by the slice & lunch specials'",
+        "price_from": null,
+        "price_to": null,
+        "days": "Tue-Sun mid-day (Mon opens 4 PM - no Monday lunch)",
+        "window": "from 11:00 AM open",
+        "includes": "not itemised"
+      },
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "not assessed - outside the walk radius of the return stop"
+      },
+      "flags": [
+        "No lunch price printed on any captured page; missionpizza.com was not readable from this environment - check the specials page on their site."
+      ],
+      "review_links": {
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Mission+Pizza+1572+Washington+Blvd,+Fremont,+CA+94539",
+        "yelp": null
+      },
+      "verification": {
+        "level": "review",
+        "accessed": "2026-09-10",
+        "sources": [
+          {
+            "label": "Yelp 'Tuesday Specials in Fremont' results page with the 'website specials' tag + review",
+            "url": "https://www.yelp.com/search?find_desc=Tuesday+Specials&find_loc=Fremont%2C+CA"
+          },
+          {
+            "label": "yupup directory - address + weekly hours JSON",
+            "url": "https://yupup.com/directory/ca/fremont/mission-pizza"
+          },
+          {
+            "label": "Yelp business page - hours block",
+            "url": "https://www.yelp.com/biz/mission-pizza-and-pub-fremont"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Brochette Dumpling and Grill",
+      "city": "Redwood City",
+      "address": "917 Main St, Redwood City, CA 94063",
+      "area": "Main St downtown",
+      "cuisine": "Dumplings / skewers / grill",
+      "days_open": "Yelp: Mon-Thu 11:30-15:00 + 16:00-22:30, Fri-Sun to 23:00; the ordering site shows 11:30-23:00 every day - both shown",
+      "hours_tuesday": "11:30 AM - 3:00 PM, 4:00 PM - 10:30 PM",
+      "lunch_special": {
+        "name": "'Lunch special 11:30am-3:00pm' in the business's own Yelp description",
+        "price_from": null,
+        "price_to": null,
+        "days": "daily lunch window",
+        "window": "11:30 AM - 3:00 PM",
+        "includes": "not itemised in the business blurb"
+      },
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "not assessed - outside the walk radius of the return stop"
+      },
+      "flags": [
+        "No price published on any captured page; Thursday also carries a separate happy hour per the business blurb.",
+        "Closing time drifts between the Yelp block (22:30 Mon-Thu) and the ordering site (23:00 every day)."
+      ],
+      "review_links": {
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Brochette+Dumpling+and+Grill+917+Main+St,+Redwood+City,+CA+94063",
+        "yelp": null
+      },
+      "verification": {
+        "level": "review",
+        "accessed": "2026-09-10",
+        "sources": [
+          {
+            "label": "Yelp page (business-written 'About' with the lunch-special window) + hours block",
+            "url": "https://www.yelp.com/reservations/brochette-dumpling-and-grill-redwood-city"
+          },
+          {
+            "label": "Yelp 'Lunch Specials in Redwood City' results page with the review quote",
+            "url": "https://www.yelp.com/search?find_desc=Lunch+Specials&find_loc=Redwood+City%2C+CA"
+          },
+          {
+            "label": "Brochette's own ordering page (kwickmenu) - address, phone, daily hours",
+            "url": "https://brochettedumpling.kwickmenu.com/"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Varam",
+      "city": "Redwood City",
+      "address": "2120 Broadway, Redwood City, CA 94063",
+      "area": "Broadway",
+      "cuisine": "Indian",
+      "days_open": "Su-Th 11:30-22:00; Fr/Sa 11:30-24:00 (own-site JSON)",
+      "hours_tuesday": "11:30 AM - 9:00 PM",
+      "lunch_special": {
+        "name": "Active lunch menu on the restaurant's own ordering site",
+        "price_from": null,
+        "price_to": null,
+        "days": "daily lunch service",
+        "window": "from 11:30 AM open",
+        "includes": "not itemised in this fetch"
+      },
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "not assessed - outside the walk radius of the return stop"
+      },
+      "flags": [
+        "The own-site lunch page is live but its item prices were not captured by this fetcher (the ordering app renders them client-side) - open the link to read them.",
+        "Est. 2024 (own-site foundingDate) - young listing."
+      ],
+      "review_links": {
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Varam+2120+Broadway,+Redwood+City,+CA+94063",
+        "yelp": null
+      },
+      "verification": {
+        "level": "listing",
+        "accessed": "2026-09-10",
+        "sources": [
+          {
+            "label": "Varam own site - 'Lunch - Order Online' menu page (address + hours JSON on the page)",
+            "url": "https://www.varamrestaurant.com/popmenu-order/varam/menus/active-lunch"
+          },
+          {
+            "label": "Yelp 'Lunch Specials in Redwood City' results page: 'I love their lunch specials' review",
+            "url": "https://www.yelp.com/search?find_desc=Lunch+Specials&find_loc=Redwood+City%2C+CA"
+          }
+        ]
+      }
+    },
+    {
+      "name": "No 5 House",
+      "city": "San Mateo",
+      "address": "5 S Ellsworth Ave, San Mateo, CA 94401",
+      "area": "Ellsworth Ave (Vietnam Town)",
+      "cuisine": "Taiwanese noodles / dim sum",
+      "days_open": "closed Tue; Mon/Wed/Thu/Fri 10:30-14:30 & 17:00-21:00; Sat/Sun 10:30-21:00 (Yelp hours block)",
+      "hours_tuesday": "CLOSED",
+      "lunch_special": {
+        "name": "'lunch special A' = Taiwanese beef noodles + 2 side dishes (review)",
+        "price_from": null,
+        "price_to": null,
+        "days": "closed Tuesday; lunch Mon/Wed-Fri 10:30-2:30, weekends 10:30-21:00",
+        "window": "10:30 AM - 2:30 PM (when open)",
+        "includes": "beef noodles + 2 sides (cucumber salad...) per the review"
+      },
+      "open_on_trip_date": false,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "not assessed - outside the walk radius of the return stop"
+      },
+      "flags": [
+        "CLOSED ON TUESDAYS - no lunch on the trip day; kept visible deliberately.",
+        "No price captured for the special in the review snippet."
+      ],
+      "review_links": {
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=No+5+House+5+S+Ellsworth+Ave,+San+Mateo,+CA+94401",
+        "yelp": "https://www.yelp.com/biz/no-5-house-san-mateo-2"
+      },
+      "verification": {
+        "level": "review",
+        "accessed": "2026-09-10",
+        "sources": [
+          {
+            "label": "Yelp business page - address, phone, full weekly hours incl. Tuesday closed",
+            "url": "https://www.yelp.com/biz/no-5-house-san-mateo-2"
+          },
+          {
+            "label": "Yelp 'Lunch Specials in Redwood City' results page carrying the 'lunch special A' review",
+            "url": "https://www.yelp.com/search?find_desc=Lunch+Specials&find_loc=Redwood+City%2C+CA"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Broadway Masala",
+      "city": "Redwood City",
+      "address": "2397 Broadway St, Redwood City, CA 94063",
+      "area": "Broadway",
+      "cuisine": "Indian",
+      "days_open": "daily; lunch Mon-Fri 11:30-14:30, Sat/Sun until 15:00 (Yelp + OpenTable agree; sirved shows Sat to 14:30 - minor drift)",
+      "hours_tuesday": "11:30 AM - 2:30 PM, 5:00 PM - 9:30 PM",
+      "lunch_special": {
+        "name": "Weekday 'A Thali Lunch' with unlimited refills + weekend Street Food Lunch Special (restaurant's own OpenTable experiences)",
+        "price_from": null,
+        "price_to": null,
+        "days": "weekday lunch thali; weekend specials",
+        "window": "Mon-Fri 11:30 AM - 2:30 PM; Sat/Sun 11:30-3:00",
+        "includes": "thali: rotating regional dishes, breads, chutneys, curries, unlimited refills"
+      },
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "not assessed - outside the walk radius of the return stop"
+      },
+      "flags": [
+        "The specials are listed by the restaurant but no price is printed on the captured pages - check the OpenTable experience cards for the current price."
+      ],
+      "review_links": {
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Broadway+Masala+2397+Broadway+St,+Redwood+City,+CA+94063",
+        "yelp": null
+      },
+      "verification": {
+        "level": "review",
+        "accessed": "2026-09-10",
+        "sources": [
+          {
+            "label": "OpenTable restaurant page - the venue's own listed experiences 'A Thali Lunch' / 'Weekend Street Food Lunch Special' + hours",
+            "url": "https://www.opentable.com/r/broadway-masala-redwood-city"
+          },
+          {
+            "label": "Yelp business page - address, phone, full weekly hours",
+            "url": "https://www.yelp.com/biz/broadway-masala-redwood-city-3?start=120"
+          },
+          {
+            "label": "Yelp 'Lunch Specials in Redwood City' results page: 'comes with rice, salad, naan' review",
+            "url": "https://www.yelp.com/search?find_desc=Lunch+Specials&find_loc=Redwood+City%2C+CA"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Harry's Hofbrau",
+      "city": "Redwood City",
+      "address": "1909 El Camino Real, Redwood City, CA 94063",
+      "area": "El Camino Real",
+      "cuisine": "American / German cafeteria-style",
+      "days_open": "daily 11:00-22:00, Thu-Sat to 23:00 (restaurantji + zmenu + aggregator agree)",
+      "hours_tuesday": "11:00 AM - 10:00 PM",
+      "lunch_special": {
+        "name": "'the lunch special might be the best in the bay, especially at around $20' (review)",
+        "price_from": null,
+        "price_to": null,
+        "days": "daily lunch service",
+        "window": "from 11:00 AM open",
+        "includes": "not itemised"
+      },
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "not assessed - outside the walk radius of the return stop"
+      },
+      "flags": [
+        "The ~$20 is a reviewer's figure - no menu page for the special was found; price left null."
+      ],
+      "review_links": {
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Harry's+Hofbrau+1909+El+Camino+Real,+Redwood+City,+CA+94063",
+        "yelp": null
+      },
+      "verification": {
+        "level": "review",
+        "accessed": "2026-09-10",
+        "sources": [
+          {
+            "label": "Yelp 'Lunch Specials in Redwood City' results page with the $20 lunch-special review",
+            "url": "https://www.yelp.com/search?find_desc=Lunch+Specials&find_loc=Redwood+City%2C+CA"
+          },
+          {
+            "label": "restaurantji - address, hours",
+            "url": "https://www.restaurantji.com/ca/redwood-city/harrys-hofbrau-/"
+          },
+          {
+            "label": "zmenu - hours + cafeteria summary",
+            "url": "https://www.zmenu.com/harrys-hofbrau-redwood-city-online-menu/"
+          }
+        ]
+      },
+      "coords": [
+        37.477874,
+        -122.223177
+      ],
+      "coords_source": "directory JSON-LD captured in this pass"
+    },
+    {
+      "name": "Sushi Kazoku",
+      "city": "San Carlos",
+      "address": "920 El Camino Real, San Carlos, CA 94070",
+      "area": "El Camino Real",
+      "cuisine": "Sushi counter",
+      "days_open": "Mon-Sun lunch to ~14:00-14:30 + dinner to 21:00 (Fri/Sat 21:30); two nearby sources differ on lunch close (2:00/2:15/2:30)",
+      "hours_tuesday": "11:00 AM - 2:00 PM, 4:30 PM - 9:00 PM",
+      "lunch_special": {
+        "name": "'a lunch special offered at the back of the menu' (review)",
+        "price_from": null,
+        "price_to": null,
+        "days": "daily lunch block",
+        "window": "11:00 AM - 2:15/2:30 PM",
+        "includes": "not itemised"
+      },
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "not assessed - outside the walk radius of the return stop"
+      },
+      "flags": [
+        "Lunch close time varies (2:00 Tuesday per corner.inc vs 2:30 on the ordering site) - arrive by 1:45 PM and confirm."
+      ],
+      "review_links": {
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Sushi+Kazoku+920+El+Camino+Real,+San+Carlos,+CA+94070",
+        "yelp": null
+      },
+      "verification": {
+        "level": "review",
+        "accessed": "2026-09-10",
+        "sources": [
+          {
+            "label": "Yelp 'Lunch Specials in Redwood City' results page with the back-of-menu lunch special review",
+            "url": "https://www.yelp.com/search?find_desc=Lunch+Specials&find_loc=Redwood+City%2C+CA"
+          },
+          {
+            "label": "Sushi Kazoku ordering site (kwickmenu) - address, phone, weekly hours",
+            "url": "https://sushikazoku.kwickmenu.com/"
+          },
+          {
+            "label": "corner.inc place page - full weekly hours block",
+            "url": "https://www.corner.inc/place/pXhkWdsRoQwW"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Chuan Chim Thai Cuisine",
+      "city": "Foster City",
+      "address": "1099 Foster Square Ln Ste 125, Foster City, CA 94404",
+      "area": "Foster Square",
+      "cuisine": "Thai",
+      "days_open": "daily lunch + dinner (restaurantji + aggregator + snapchat place blocks agree)",
+      "hours_tuesday": "11:00 AM - 3:00 PM, 5:00 PM - 9:00 PM",
+      "lunch_special": {
+        "name": "Pad Gra Pow / Pad Prig King lunch specials named in a review",
+        "price_from": null,
+        "price_to": null,
+        "days": "lunch daily",
+        "window": "Mon-Fri 11:00 AM - 3:00 PM; Sat/Sun 11:30-3:00",
+        "includes": "two named dishes offered as lunch specials"
+      },
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "not assessed - outside the walk radius of the return stop"
+      },
+      "flags": [
+        "No price in any captured source; the Yelp page offers an 'Order' link but prices render client-side - call or order ahead."
+      ],
+      "review_links": {
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Chuan+Chim+Thai+Cuisine+1099+Foster+Square+Ln+Ste+125,+Foster+City,+CA+94404",
+        "yelp": null
+      },
+      "verification": {
+        "level": "review",
+        "accessed": "2026-09-10",
+        "sources": [
+          {
+            "label": "Yelp 'Lunch Specials in Redwood City' results page with the named lunch specials",
+            "url": "https://www.yelp.com/search?find_desc=Lunch+Specials&find_loc=Redwood+City%2C+CA"
+          },
+          {
+            "label": "restaurantji - address, phone, weekly hours",
+            "url": "https://www.restaurantji.com/ca/foster-city/chuan-chim-thai-cuisine-/"
+          }
+        ]
+      },
+      "coords": [
+        37.559327,
+        -122.267925
+      ],
+      "coords_source": "directory JSON-LD captured in this pass"
+    }
+  ],
+  "rejected": [
+    {
+      "name": "Ahisushi & Steakhouse",
+      "city": "Redwood City",
+      "why": "Deferred this pass: the lunch-special review exists ('has great lunch specials') but no address/hours page could be pinned before the search budget ran out.",
+      "links": [
+        {
+          "label": "Yelp 'Lunch Specials in Redwood City' results page",
+          "url": "https://www.yelp.com/search?find_desc=Lunch+Specials&find_loc=Redwood+City%2C+CA"
+        }
+      ]
+    },
+    {
+      "name": "Blue Fin Sushi",
+      "city": "Redwood City",
+      "why": "Deferred this pass: lunch-special review exists but no locatable directory page was captured.",
+      "links": [
+        {
+          "label": "Yelp 'Lunch Specials in Redwood City' results page",
+          "url": "https://www.yelp.com/search?find_desc=Lunch+Specials&find_loc=Redwood+City%2C+CA"
+        }
+      ]
+    },
+    {
+      "name": "Salt And Brine",
+      "city": "San Carlos",
+      "why": "Only 6 reviews and no stable directory page; the '$10 lunch special smash burger' quote could not be corroborated - too thin to list.",
+      "links": [
+        {
+          "label": "Yelp 'Happy Hour Specials in Redwood City' results page",
+          "url": "https://www.yelp.com/search?find_desc=Happy+Hour+Specials&find_loc=Redwood+City%2C+CA"
+        }
+      ]
+    }
+  ]
+}

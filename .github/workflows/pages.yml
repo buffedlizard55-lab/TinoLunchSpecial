@@ -33,7 +33,7 @@ jobs:
       - name: Stage only the files Pages should serve
         run: |
           mkdir -p _site/assets _site/data
-          cp index.html _site/
+          cp index.html transit.html _site/
           cp assets/styles.css assets/app.js _site/assets/
           cp data/generated.js _site/data/
       - uses: actions/configure-pages@v5

@@ -1,0 +1,190 @@
+{
+  "note": "Batch 9e - pass 9 tail (2026-09-10). Final locatable leads from the Union City / San Mateo / Palo Alto sweeps + event-only menus recorded as rejects.",
+  "entries": [
+    {
+      "name": "Pho Ha Noi",
+      "city": "Palo Alto",
+      "address": "185 University Ave, Palo Alto, CA 94301",
+      "area": "Downtown Palo Alto (University Ave)",
+      "cuisine": "Vietnamese",
+      "days_open": "Mon-Thu 11:30-14:00 & 17:00-21:00; Fri 11:30-14:00 & 17:00-22:00; Sat 11:00-15:00 & 17:00-22:00; Sun 11:00-15:00 & 17:00-21:00 (Yelp hours block)",
+      "hours_tuesday": "11:30 AM - 2:00 PM, 5:00 PM - 9:00 PM",
+      "lunch_special": {
+        "name": "Lunch special described as 'wonderful and a great deal' in a review",
+        "price_from": null,
+        "price_to": null,
+        "days": "daily lunch block; Mon-Fri 11:30-2:00, Sat/Sun 11:00-3:00",
+        "window": "11:30 AM - 2:00 PM (Sat/Sun until 3:00)",
+        "includes": "not itemised"
+      },
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "not assessed - outside the walk radius of the return stop"
+      },
+      "flags": [
+        "Same brand name as the existing 'Pho Ha Noi' rows in Cupertino and Milpitas - three different addresses in three cities; verify which one you are looking at.",
+        "No published lunch price found; own site not read this pass."
+      ],
+      "review_links": {
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Pho+Ha+Noi+185+University+Ave,+Palo+Alto,+CA+94301",
+        "yelp": "https://www.yelp.com/biz/pho-ha-noi-palo-alto-2"
+      },
+      "verification": {
+        "level": "review",
+        "accessed": "2026-09-10",
+        "sources": [
+          {
+            "label": "Yelp 'Lunch Specials in Palo Alto' results page with the lunch-special review",
+            "url": "https://www.yelp.com/search?find_desc=Lunch+Specials&find_loc=Palo+Alto%2C+CA"
+          },
+          {
+            "label": "Yelp business page - address, phone, weekly hours, own site phohanoi.com",
+            "url": "https://www.yelp.com/biz/pho-ha-noi-palo-alto-2?start=10"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Sapore Express",
+      "city": "San Mateo",
+      "address": "125 E 4th Ave, San Mateo, CA 94401",
+      "area": "Downtown San Mateo",
+      "cuisine": "Italian (house-made pasta)",
+      "days_open": "closed Mon; Tue-Sun 11:30-15:00 & 16:30-21:00 (corner.inc + ordering block; one mirror extends Fri/Sat dinner to 22:00)",
+      "hours_tuesday": "11:30 AM - 3:00 PM, 4:30 PM - 9:00 PM",
+      "lunch_special": {
+        "name": "'I'm definitely coming back, especially while they still have their lunch specials!' (review)",
+        "price_from": null,
+        "price_to": null,
+        "days": "closed Monday; lunch Tue-Sun 11:30-3:00",
+        "window": "11:30 AM - 3:00 PM",
+        "includes": "not itemised"
+      },
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "not assessed - outside the walk radius of the return stop"
+      },
+      "flags": [
+        "The reviewer's wording ('while they still have them') suggests a temporary deal - re-check current availability."
+      ],
+      "review_links": {
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Sapore+Express+125+E+4th+Ave,+San+Mateo,+CA+94401",
+        "yelp": null
+      },
+      "verification": {
+        "level": "review",
+        "accessed": "2026-09-10",
+        "sources": [
+          {
+            "label": "Yelp 'Lunch Specials in San Mateo' results page with the lunch-specials review",
+            "url": "https://www.yelp.com/search?find_desc=Lunch+Specials&find_loc=San+Mateo%2C+CA"
+          },
+          {
+            "label": "corner.inc place page - address, phone, site saporeexpress.com, weekly hours",
+            "url": "https://www.corner.inc/place/p56AWG3Srwrt"
+          },
+          {
+            "label": "ordering page - pickup hours 11:30-14:25 / 16:30-20:25",
+            "url": "https://order.online/store/sapore-express-2464019"
+          }
+        ]
+      },
+      "coords": [
+        37.564046,
+        -122.323058
+      ],
+      "coords_source": "directory JSON-LD captured in this pass",
+      "supersedes_rejection": "Pass-9 batch 9d deferred this business only because its address/hours were missing; the 9e follow-up captured both from the cited pages, so the verified row supersedes the deferral."
+    },
+    {
+      "name": "Sizzling Lunch",
+      "city": "Fremont",
+      "address": "40522 Albrae St, Fremont, CA 94538",
+      "area": "Albrae Plaza (Centerville)",
+      "cuisine": "Japanese teppanyaki lunch sets",
+      "days_open": "daily 11:00-21:00, Fri/Sat to 22:00 (restaurantji + aggregator + Apple Maps agree)",
+      "hours_tuesday": "11:00 AM - 9:00 PM",
+      "lunch_special": {
+        "name": "Listed under 'Cheap Lunch Specials' search results with 'Quite affordable esp compared...' review",
+        "price_from": null,
+        "price_to": null,
+        "days": "daily lunch from 11:00",
+        "window": "11:00 AM - 9:00 PM (lunch served from open)",
+        "includes": "not itemised"
+      },
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "not assessed - outside the walk radius of the return stop"
+      },
+      "flags": [
+        "Tag + price-sentiment evidence only; sizzlinglunch.com (shared with the Cupertino store already in the master list) was not read for per-store prices this pass."
+      ],
+      "review_links": {
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Sizzling+Lunch+40522+Albrae+St,+Fremont,+CA+94538",
+        "yelp": null
+      },
+      "verification": {
+        "level": "listing",
+        "accessed": "2026-09-10",
+        "sources": [
+          {
+            "label": "Yelp 'Cheap Lunch Specials in Fremont' results page listing the store under lunch specials",
+            "url": "https://www.yelp.com/search?find_desc=cheap+lunch+specials&find_loc=Fremont%2C+CA"
+          },
+          {
+            "label": "restaurantji - address, phone, weekly hours",
+            "url": "https://www.restaurantji.com/ca/fremont/sizzling-lunch-/"
+          },
+          {
+            "label": "Apple Maps place page - same hours block",
+            "url": "https://maps.apple.com/place?place-id=I6DA18189BC4E5F69"
+          }
+        ]
+      },
+      "coords": [
+        37.519852,
+        -121.987719
+      ],
+      "coords_source": "directory JSON-LD captured in this pass",
+      "supersedes_rejection": "Pass-9 batch 9d deferred this business only because its address/hours were missing; the 9e follow-up captured both from the cited pages, so the verified row supersedes the deferral."
+    }
+  ],
+  "rejected": [
+    {
+      "name": "Delhi to Kathmandu",
+      "city": "Sunnyvale",
+      "why": "Only found on the Sunnyvale chamber Restaurant Week page (special menu $11-$18); an event-week menu is not a standing lunch special, and the venue's address was not independently captured this pass.",
+      "links": [
+        {
+          "label": "Sunnyvale chamber Restaurant Week page",
+          "url": "https://www.svcoc.org/sunnyvale-restaurant-week-where-to-dine/"
+        }
+      ]
+    },
+    {
+      "name": "The Melt",
+      "city": "Sunnyvale",
+      "why": "Shown as sponsored in a 'Tuesday Specials in Sunnyvale' search with an 'On their website: specials' tag; no specific lunch deal, price or hours were captured - too thin to list.",
+      "links": [
+        {
+          "label": "Yelp 'Restaurants Tuesday Specials in Sunnyvale' results page",
+          "url": "https://www.yelp.com/search?find_desc=Restaurants+Tuesday+Specials&find_loc=Sunnyvale%2C+CA"
+        }
+      ]
+    },
+    {
+      "name": "The Diner of Los Gatos",
+      "city": "Los Gatos (duplicate check)",
+      "why": "Researched as new this pass and found ALREADY in the master list (address match). The merge pipeline rejected the batch9c copy automatically - recorded so the dedupe is visible rather than silent.",
+      "links": [
+        {
+          "label": "Yelp business page",
+          "url": "https://www.yelp.com/biz/the-diner-of-los-gatos-los-gatos"
+        }
+      ]
+    }
+  ]
+}

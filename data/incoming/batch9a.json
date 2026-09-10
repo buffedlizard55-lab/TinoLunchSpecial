@@ -1,0 +1,783 @@
+{
+  "note": "Batch 9a - pass 9 (2026-09-10). Cupertino-first + ring research. Hours/addresses transcribed from Yelp business-page snippets, the businesses' own pages where readable, TripAdvisor/restaurantji/zmenu/Apple-Maps JSON blocks and directory pages listed per row; prices only where a source printed one (never promoted from an aggregator to verified). Yelp links may 403 to automated fetchers - they are for manual review. Rows with no verifiable price carry price null and a flag.",
+  "entries": [
+    {
+      "name": "Mandarin Gourmet",
+      "city": "Cupertino",
+      "address": "10145 N De Anza Blvd, Cupertino, CA 95014",
+      "area": "North De Anza Blvd",
+      "cuisine": "Chinese (Cantonese/Szechuan)",
+      "days_open": "not captured",
+      "hours_tuesday": "not captured",
+      "lunch_special": {
+        "name": "Gourmet lunch plates on the restaurant's own menu page",
+        "price_from": 13.95,
+        "price_to": 14.95,
+        "days": "not captured on the menu page (directory shows lunch served weekdays)",
+        "window": "not captured",
+        "includes": "each plate served with daily appetizer, fried or steamed rice and fortune cookie per the menu mirror"
+      },
+      "open_on_trip_date": null,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "not assessed - outside the walk radius of the return stop"
+      },
+      "flags": [
+        "Price drift: the restaurant's own menu page shows $13.95-$14.95 for the gourmet lunch plates; the allmenus mirror of the same block shows $14.95-$19.95. The own-site figures are used and the mirror difference is left visible.",
+        "Hours of operation were not captured from a page the fetcher could read - call before going.",
+        "Reviews on the TripAdvisor page describe lunch specials with appetizer+rice included; one review complains the appetizer was missed on a busy day."
+      ],
+      "review_links": {
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Mandarin+Gourmet+10145+N+De+Anza+Blvd,+Cupertino,+CA+95014",
+        "yelp": null
+      },
+      "verification": {
+        "level": "official",
+        "accessed": "2026-09-10",
+        "sources": [
+          {
+            "label": "Mandarin Gourmet own site - gourmet lunches page, prices 13.95-14.95 as shown in the indexed page",
+            "url": "https://www.themandaringourmet.com/gourmetlunches.html"
+          },
+          {
+            "label": "TripAdvisor - address and listing for The Mandarin Gourmet Cupertino",
+            "url": "https://www.tripadvisor.com/Restaurant_Review-g32273-d357291-Reviews-The_Mandarin_Gourmet_Cupertino-Cupertino_California.html"
+          },
+          {
+            "label": "allmenus mirror of the same lunch block (lists 14.95-19.95)",
+            "url": "https://www.allmenus.com/ca/cupertino/52800-mandarin-gourmet/menu/"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Gen Korean BBQ House",
+      "city": "Fremont",
+      "address": "43476 Boscell Rd Ste M6-B, Fremont, CA 94538",
+      "area": "Boscell Rd (Centerville)",
+      "cuisine": "Korean BBQ (all-you-can-eat)",
+      "days_open": "daily 10:30-22:00/23:00 (Fri/Sat to 23:30 per aggregator)",
+      "hours_tuesday": "10:30 AM - 11:00 PM",
+      "lunch_special": {
+        "name": "Weekday lunch AYCE priced below dinner per reviews",
+        "price_from": null,
+        "price_to": null,
+        "days": "daily (reviews describe weekday lunch pricing)",
+        "window": "lunch seatings before dinner",
+        "includes": "all-you-can-eat meats and sides; dinner menu has more choices per reviews"
+      },
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "not assessed - outside the walk radius of the return stop"
+      },
+      "flags": [
+        "Prices come from 2017-2018 reviews ($15.99-$16 lunch); Gen's own site was not readable from this environment - treat the number as stale and re-check.",
+        "The Milpitas Gen at 190 Barber Ct is marked CLOSED on TripAdvisor; only the Fremont store is listed here."
+      ],
+      "review_links": {
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Gen+Korean+BBQ+House+43476+Boscell+Rd+Ste+M6-B,+Fremont,+CA+94538",
+        "yelp": null
+      },
+      "verification": {
+        "level": "review",
+        "accessed": "2026-09-10",
+        "sources": [
+          {
+            "label": "TripAdvisor page (address, daily hours, JSON-LD coordinates)",
+            "url": "https://www.tripadvisor.com/Restaurant_Review-g32411-d13152197-Reviews-Gen_Korean_BBQ-Fremont_California.html"
+          },
+          {
+            "label": "TripAdvisor review 'All You Can Eat' (weekday lunch ~$16 vs dinner $24.95, Aug 2018)",
+            "url": "https://www.tripadvisor.com/ShowUserReviews-g32411-d13152197-r651960626-Gen_Korean_BBQ-Fremont_California.html"
+          },
+          {
+            "label": "Yelp 'Tuesday Specials in Fremont' search results (lists this location)",
+            "url": "https://www.yelp.com/search?find_desc=Tuesday+Specials&find_loc=Fremont%2C+CA"
+          }
+        ]
+      },
+      "coords": [
+        37.503242,
+        -121.97524
+      ],
+      "coords_source": "directory JSON-LD captured in this pass"
+    },
+    {
+      "name": "Gobi Mongolian BBQ",
+      "city": "Sunnyvale",
+      "address": "1135 Tasman Dr, Sunnyvale, CA 94089",
+      "area": "Tasman Dr",
+      "cuisine": "Mongolian BBQ (build-your-own)",
+      "days_open": "daily 11:00-20:30 (Yelp, restaurantji, zmenu agree)",
+      "hours_tuesday": "11:00 AM - 8:30 PM",
+      "lunch_special": {
+        "name": "All-you-can-eat lunch priced under $10 per review",
+        "price_from": null,
+        "price_to": null,
+        "days": "daily",
+        "window": "11:00 AM opening; lunch before dinner",
+        "includes": "build-your-own noodles/vegetables/protein, AYCE per review"
+      },
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "not assessed - outside the walk radius of the return stop"
+      },
+      "flags": [
+        "The 'under $10' lunch figure is a Yelp reviewer's words, not a printed menu price - unverified.",
+        "Aggregator confusion: Restaurant Guru serves this Sunnyvale listing under a 'Gobi-Mongolian-BBQ-Santa-Clara' URL. Business website listed on Yelp: gobibbq.com."
+      ],
+      "review_links": {
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Gobi+Mongolian+BBQ+1135+Tasman+Dr,+Sunnyvale,+CA+94089",
+        "yelp": "https://www.yelp.com/biz/gobi-mongolian-bbq-sunnyvale"
+      },
+      "verification": {
+        "level": "review",
+        "accessed": "2026-09-10",
+        "sources": [
+          {
+            "label": "Yelp - Gobi Mongolian BBQ Sunnyvale (address, daily hours)",
+            "url": "https://www.yelp.com/biz/gobi-mongolian-bbq-sunnyvale?start=200"
+          },
+          {
+            "label": "Yelp 'All You Can Eat Buffet near Cupertino' results page carrying the 'lunch price ... under $10' review quote",
+            "url": "https://www.yelp.com/search?find_desc=All+You+Can+Eat+Buffet&find_loc=Cupertino%2C+CA+95014&start=80"
+          },
+          {
+            "label": "restaurantji - address, phone, hours",
+            "url": "https://www.restaurantji.com/ca/sunnyvale/gobi-mongolian-bbq-/"
+          }
+        ]
+      },
+      "coords": [
+        37.36883,
+        -122.03635
+      ],
+      "coords_source": "directory JSON-LD captured in this pass"
+    },
+    {
+      "name": "Brundavan",
+      "city": "Santa Clara",
+      "address": "2798 E El Camino Real, Santa Clara, CA 95051",
+      "area": "East El Camino Real",
+      "cuisine": "Indian (South Indian)",
+      "days_open": "Mon-Thu+Sun 11:30-22:00; Fri/Sat 11:30-24:00 (Yelp)",
+      "hours_tuesday": "11:30 AM - 10:00 PM",
+      "lunch_special": {
+        "name": "All-you-can-eat lunch buffet",
+        "price_from": 25.0,
+        "price_to": null,
+        "days": "daily per the buffet promo; Yelp hours daily 11:30",
+        "window": "11:30 AM - 2:30 PM (weekends to 3:00 PM per promo text)",
+        "includes": "starters, mains, biryanis, curries, breads, sweets - all you can eat"
+      },
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "not assessed - outside the walk radius of the return stop"
+      },
+      "flags": [
+        "Price conflict kept visible: a June 2026 food post says $25 for the AYCE lunch; the 2025 Reddit list says about $20. Neither is the restaurant's own printed price; call to confirm."
+      ],
+      "review_links": {
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Brundavan+2798+E+El+Camino+Real,+Santa+Clara,+CA+95051",
+        "yelp": null
+      },
+      "verification": {
+        "level": "review",
+        "accessed": "2026-09-10",
+        "sources": [
+          {
+            "label": "Yelp - Brundavan Santa Clara (address, hours, menu prices)",
+            "url": "https://www.yelp.com/biz/brundavan-santa-clara"
+          },
+          {
+            "label": "TikTok discover 'Indian Buffet Santa Clara' (June 2026): '$25 All-You-Can-Eat Buffet ... Daily 11:30 AM - 2:30 PM'",
+            "url": "https://www.tiktok.com/discover/indian-buffet-santa-clara"
+          },
+          {
+            "label": "Reddit r/bayarea buffet list (Feb 2025): 'Brundavan (Indian, Santa Clara, AYCE ~$20)'",
+            "url": "https://www.reddit.com/r/bayarea/comments/1iv0dxu/list_of_all_bay_area_buffets_and_allyoucaneat/"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Sankranti",
+      "city": "Sunnyvale",
+      "address": "727 S Wolfe Rd, Sunnyvale, CA 94086",
+      "area": "South Wolfe Rd",
+      "cuisine": "Indian",
+      "days_open": "conflicting across sources",
+      "hours_tuesday": "not captured (2026 aggregator shows Tue dinner-only)",
+      "lunch_special": {
+        "name": "Lunch buffet (Tue-Fri per 2023 article; the address now also appears under a different name in 2026 listings)",
+        "price_from": null,
+        "price_to": null,
+        "days": "Tue-Fri lunch buffet per 2023 article",
+        "window": "11:30 AM - 2:30 PM (2023 article)",
+        "includes": "buffet: six vegetable curries, three rices, five non-veg dishes, two biryanis per a 2026 review site"
+      },
+      "open_on_trip_date": null,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "not assessed - outside the walk radius of the return stop"
+      },
+      "flags": [
+        "IRREGULARITY - operation status uncertain: a March 2026 directory snapshot lists 727 S Wolfe Rd as 'Bombay to Goa' with no Tuesday lunch, while April 2026 and 2025 pages still describe Sankranti. Do not plan on this one without a phone call.",
+        "Prices differ across the captured pages ($14.95 weekday / $19.95 weekend in 2023; $18.99 weekend on a 2026 page). None is a current own-menu price, so the price column is left blank."
+      ],
+      "review_links": {
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Sankranti+727+S+Wolfe+Rd,+Sunnyvale,+CA+94086",
+        "yelp": null
+      },
+      "verification": {
+        "level": "conflicting",
+        "accessed": "2026-09-10",
+        "sources": [
+          {
+            "label": "disharoundtown - 'Sankranti Spices Up Mornings and Lunch with Bountiful Buffets' ($14.95 adults Tue-Fri; $19.95 weekends; hours)",
+            "url": "https://www.disharoundtown.com/news/sankranti-morning-and-lunch-buffets"
+          },
+          {
+            "label": "Restaurant Guru March-2026 snapshot for the same address, now named 'Bombay to Goa' with Tuesday dinner-only hours",
+            "url": "https://restaurantguru.com/Sankranti-Sunnyvale"
+          },
+          {
+            "label": "wheree profile (Apr 2026) still showing Sankranti with weekend lunch buffet $18.99",
+            "url": "https://sankranti.wheree.com/"
+          }
+        ]
+      }
+    },
+    {
+      "name": "3 Kingdoms Hot Pot",
+      "city": "Mountain View",
+      "address": "134B Castro St, Mountain View, CA 94041",
+      "area": "Downtown Castro St",
+      "cuisine": "Sichuan hot pot",
+      "days_open": "Mon-Thu 11:30-15:00 & 17:00-23:00; Fri-Sun 11:30-23:00 (aggregator)",
+      "hours_tuesday": "11:30 AM - 3:00 PM, 5:00 PM - 11:00 PM (aggregator); DoorDash prints lunch ending 2:10 PM",
+      "lunch_special": {
+        "name": "Lunch special for two under $60 per Google review quote; a Reddit lunch entry quote says $23.95",
+        "price_from": null,
+        "price_to": null,
+        "days": "lunch daily per aggregators",
+        "window": "11:30 AM - 2:10 PM (DoorDash) or to 3 PM (aggregator hours) - sources disagree",
+        "includes": "combo with broths and rice per the Reddit quote"
+      },
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "not assessed - outside the walk radius of the return stop"
+      },
+      "flags": [
+        "IRREGULARITY - a 2025 aggregator snapshot carried 'May be permanently closed' next to the listing, while the place page was updated 2026-08-22 with recent reviews. Verify before going.",
+        "Two lunch quotes conflict ($23.95 entree with broth+rice vs a lunch-for-two under $60); neither is from an own menu - no price is asserted.",
+        "Lunch close time disagrees between sources (2:10 PM vs 3:00 PM)."
+      ],
+      "review_links": {
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=3+Kingdoms+Hot+Pot+134B+Castro+St,+Mountain+View,+CA+94041",
+        "yelp": null
+      },
+      "verification": {
+        "level": "review",
+        "accessed": "2026-09-10",
+        "sources": [
+          {
+            "label": "menu mirror 3kingdomshotpot.gotoeat.net - platter combo prices and menu text",
+            "url": "https://3kingdomshotpot.gotoeat.net/menu"
+          },
+          {
+            "label": "postcard.inc place page - address, phone, site '3kingdomshotpot.com', and the Google-review quote 'lunch special for 2 ... less than $60'",
+            "url": "https://www.postcard.inc/places/3-kingdoms-hot-pot-mountain-view-BxrZmNM-6rE"
+          },
+          {
+            "label": "Reddit r/Cupertino hot pot discounts (Sep 2024): '3 kingdom (mt.view) 23.95 lamb/beef entree with broth rice'",
+            "url": "https://www.reddit.com/r/Cupertino/comments/1f9bixv/hotpot_discounts/"
+          }
+        ]
+      },
+      "coords": [
+        37.394738,
+        -122.07884
+      ],
+      "coords_source": "directory JSON-LD captured in this pass"
+    },
+    {
+      "name": "Fugetsu - Sunnyvale",
+      "city": "Sunnyvale",
+      "address": "190 S Frances St (inside Rokko Japanese Restaurant), Sunnyvale, CA 94086",
+      "area": "Downtown Sunnyvale",
+      "cuisine": "Okonomiyaki / teppan",
+      "days_open": "Mon-Sat lunch 11:30-13:30 + dinner; Sun dinner only; hours per Yelp page (a 2021 article shows Tue-Sat lunch, Sun dinner, closed Mon)",
+      "hours_tuesday": "11:30 AM - 1:30 PM, 5:30 PM - 8:30 PM",
+      "lunch_special": {
+        "name": "Lunch special (pork yakisoba + okonomiyaki) called 'literally the best deal ever' in a review",
+        "price_from": null,
+        "price_to": null,
+        "days": "Tue-Sat lunch 11:30-1:30 (hours as printed on Yelp)",
+        "window": "11:30 AM - 1:30 PM",
+        "includes": "review describes yakisoba with okonomiyaki as the lunch special"
+      },
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "not assessed - outside the walk radius of the return stop"
+      },
+      "flags": [
+        "Lunch window is only 11:30 AM - 1:30 PM; no published price was found anywhere - the official site (fugetsu-usa.com) was not readable from this environment.",
+        "The Yelp hours block prints lunch on all seven days at 11:30-1:30 except Sunday, while the 2021 Chronicle profile shows Tuesday-Saturday lunch and Monday 11:30-1:30 too. Both shown; call first."
+      ],
+      "review_links": {
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Fugetsu+-+Sunnyvale+190+S+Frances+St+(inside+Rokko+Japanese+Restaurant),+Sunnyvale,+CA+94086",
+        "yelp": "https://www.yelp.com/biz/fugetsu-sunnyvale-sunnyvale-2"
+      },
+      "verification": {
+        "level": "review",
+        "accessed": "2026-09-10",
+        "sources": [
+          {
+            "label": "Yelp - Fugetsu Sunnyvale (address, phone, full weekly hours)",
+            "url": "https://www.yelp.com/biz/fugetsu-sunnyvale-sunnyvale-2"
+          },
+          {
+            "label": "Yelp 'Cheap Lunch Specials in Sunnyvale' results page carrying the lunch-special review quote",
+            "url": "https://www.yelp.com/search?find_desc=Cheap+Lunch+Specials&find_loc=Sunnyvale%2C+CA"
+          },
+          {
+            "label": "SF Chronicle (May 2021): closure at 2783 El Camino Real Santa Clara, reopening inside Rokko in Sunnyvale",
+            "url": "https://www.sfchronicle.com/food/article/Japanese-chain-Fugetsu-brings-its-crispy-saucy-16154939.php"
+          }
+        ]
+      },
+      "coords": [
+        37.353038,
+        -121.977083
+      ],
+      "coords_source": "directory JSON-LD captured in this pass"
+    },
+    {
+      "name": "Country Way",
+      "city": "Fremont",
+      "address": "5325 Mowry Ave, Fremont, CA 94536",
+      "area": "Mowry Ave",
+      "cuisine": "American diner",
+      "days_open": "daily 7:00-15:00 (Yelp prints Mon-Sat, restaurantji adds Sun)",
+      "hours_tuesday": "7:00 AM - 3:00 PM",
+      "lunch_special": {
+        "name": "Bacon burger lunch special quoted at $7.95 in a review",
+        "price_from": null,
+        "price_to": null,
+        "days": "daily breakfast-lunch",
+        "window": "7:00 AM - 3:00 PM (closes at 3 PM - diner, lunch-only operation)",
+        "includes": "burger plate as described in the review"
+      },
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "not assessed - outside the walk radius of the return stop"
+      },
+      "flags": [
+        "The $7.95 is a reviewer's figure from the Yelp results page, not a printed menu price - left out of the price column.",
+        "Closes at 3 PM every day: no dinner service (confirmed twice in the Yelp Q&A)."
+      ],
+      "review_links": {
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Country+Way+5325+Mowry+Ave,+Fremont,+CA+94536",
+        "yelp": "https://www.yelp.com/biz/country-way-fremont-2"
+      },
+      "verification": {
+        "level": "review",
+        "accessed": "2026-09-10",
+        "sources": [
+          {
+            "label": "Yelp - Country Way Fremont (address, phone, hours, business site countrywayfremont.net)",
+            "url": "https://www.yelp.com/biz/country-way-fremont-2"
+          },
+          {
+            "label": "Yelp 'Food Deals in Fremont' results page carrying the '$7.95 bacon burger lunch special' review quote",
+            "url": "https://www.yelp.com/search?find_desc=Food+Deals&find_loc=Fremont%2C+CA"
+          },
+          {
+            "label": "restaurantji - hours mirror",
+            "url": "https://www.restaurantji.com/ca/fremont/country-way-/"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Sala Thai",
+      "city": "Fremont",
+      "address": "3241 Walnut Ave, Fremont, CA 94538",
+      "area": "Old town Fremont / Walnut Ave",
+      "cuisine": "Thai",
+      "days_open": "Mon/Wed/Thu 11:00-15:00 & 16:00-20:30, Fri 11:00-15:00 & 16:00-21:00, Sat/Sun 12:00-16:00 & 17:00-21:00, Tue closed (Yelp + restaurantji + zmenu agree)",
+      "hours_tuesday": "CLOSED",
+      "lunch_special": {
+        "name": "Pad thai / red curry lunch specials named in reviews",
+        "price_from": null,
+        "price_to": null,
+        "days": "closed Tuesday; lunch Mon, Wed-Fri 11:00-3:00, Sat-Sun 12:00-4:00",
+        "window": "11:00 AM - 3:00 PM (Tue closed)",
+        "includes": "reviews describe entree lunch specials (pad thai, red curry)"
+      },
+      "open_on_trip_date": false,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "not assessed - outside the walk radius of the return stop"
+      },
+      "flags": [
+        "CLOSED ON TUESDAYS - the trip day (Tue Sept 8) has no lunch service here; kept visible because 'closed Tuesday' is itself a result.",
+        "No published lunch price was found; website salathairestaurants.com was not readable from this environment."
+      ],
+      "review_links": {
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Sala+Thai+3241+Walnut+Ave,+Fremont,+CA+94538",
+        "yelp": "https://www.yelp.com/biz/sala-thai-fremont-2"
+      },
+      "verification": {
+        "level": "review",
+        "accessed": "2026-09-10",
+        "sources": [
+          {
+            "label": "Yelp - Sala Thai Fremont (address, phone, full weekly hours incl. Tuesday closed)",
+            "url": "https://www.yelp.com/biz/sala-thai-fremont-2"
+          },
+          {
+            "label": "Yelp 'Cheap Lunch Specials in Fremont' results page naming the pad thai and red curry lunch specials",
+            "url": "https://www.yelp.com/search?find_desc=cheap+lunch+specials&find_loc=Fremont%2C+CA"
+          },
+          {
+            "label": "zmenu - hours incl. 'Tue Closed'",
+            "url": "https://www.zmenu.com/sala-thai-online-menu/"
+          }
+        ]
+      },
+      "coords": [
+        37.550567,
+        -121.979411
+      ],
+      "coords_source": "directory JSON-LD captured in this pass"
+    },
+    {
+      "name": "Sala Thai 3",
+      "city": "Fremont",
+      "address": "47894 Warm Springs Blvd, Fremont, CA 94539",
+      "area": "Warm Springs Blvd",
+      "cuisine": "Thai",
+      "days_open": "Mon-Sun with Wednesday closed (Yelp hours block)",
+      "hours_tuesday": "11:00 AM - 3:00 PM, 4:00 PM - 9:00 PM",
+      "lunch_special": {
+        "name": "Lunch specials served 11:00-3:00 (Tue open, Wed closed)",
+        "price_from": null,
+        "price_to": null,
+        "days": "Mon,Tue,Fri 11:00-15:00; Sat/Sun 12:00-15:00; dinner after 16:00; closed Wednesday",
+        "window": "11:00 AM - 3:00 PM",
+        "includes": "not captured"
+      },
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "not assessed - outside the walk radius of the return stop"
+      },
+      "flags": [
+        "Second Sala Thai storefront in Fremont (Walnut Ave branch is a separate row and is closed Tuesdays); no lunch price is published on the captured page."
+      ],
+      "review_links": {
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Sala+Thai+3+47894+Warm+Springs+Blvd,+Fremont,+CA+94539",
+        "yelp": "https://www.yelp.com/biz/sala-thai-3-fremont-4"
+      },
+      "verification": {
+        "level": "review",
+        "accessed": "2026-09-10",
+        "sources": [
+          {
+            "label": "Yelp - Sala Thai 3 Fremont (address, phone, full weekly hours incl. Wed closed)",
+            "url": "https://www.yelp.com/biz/sala-thai-3-fremont-4"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Haidilao",
+      "city": "Fremont",
+      "address": "43349 Boscell Rd, Fremont, CA 94538",
+      "area": "Boscell Rd (Centerville)",
+      "cuisine": "Hot pot (chain)",
+      "days_open": "Mon-Thu 11:30-02:00, Fri-Sun 11:00-02:00 (Yelp + zmenu + aggregator agree)",
+      "hours_tuesday": "11:30 AM - 2:00 AM (next day)",
+      "lunch_special": {
+        "name": "Weekday lunch special (choose-two-meats combo described in a review)",
+        "price_from": null,
+        "price_to": null,
+        "days": "daily; lunch from opening",
+        "window": "from 11:30 AM opening (Mon-Thu) / 11:00 AM (Fri-Sun)",
+        "includes": "review: 'for two people we get to choose two meats ...'"
+      },
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "not assessed - outside the walk radius of the return stop"
+      },
+      "flags": [
+        "A 2024 Reddit thread quotes Haidilao 'lunch 18.99 with entree, rice, broth, sauce' - that figure was given for the chain generally and the Cupertino store, not verified for Fremont; no price is asserted here.",
+        "Chain: the lunch combo is a brand-wide format; per-store availability of the lunch window at Fremont should be confirmed with the location."
+      ],
+      "review_links": {
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Haidilao+43349+Boscell+Rd,+Fremont,+CA+94538",
+        "yelp": "https://www.yelp.com/biz/haidilao-fremont-5"
+      },
+      "verification": {
+        "level": "review",
+        "accessed": "2026-09-10",
+        "sources": [
+          {
+            "label": "Yelp - Haidilao Fremont (address, phone, hours)",
+            "url": "https://www.yelp.com/biz/haidilao-fremont-5"
+          },
+          {
+            "label": "Yelp 'Lunch Specials in Fremont' results page carrying the lunch-special review quote",
+            "url": "https://www.yelp.com/search?find_desc=Lunch+Specials&find_loc=Fremont,+CA"
+          },
+          {
+            "label": "zmenu - hours",
+            "url": "https://www.zmenu.com/haidilao-hot-pot-fremont-fremont-2-online-menu/"
+          }
+        ]
+      },
+      "coords": [
+        37.503205,
+        -121.976593
+      ],
+      "coords_source": "directory JSON-LD captured in this pass"
+    },
+    {
+      "name": "Roll N Crust",
+      "city": "Fremont",
+      "address": "46600 Mission Blvd, Fremont, CA 94539",
+      "area": "Mission Blvd (Centerville)",
+      "cuisine": "Pizza",
+      "days_open": "Mon-Thu 10:00-22:00; Fri/Sat 10:00-23:00; Sun 10:00-22:00 (own contact page + Apple Maps agree)",
+      "hours_tuesday": "10:00 AM - 10:00 PM",
+      "lunch_special": {
+        "name": "Weekday lunch buffet (pizza, cheese bread, salad bar) quoted at $13.99 in a review",
+        "price_from": 13.99,
+        "price_to": null,
+        "days": "lunch hours inside 10:00-22:00 (Mon-Thu)",
+        "window": "during the 10:00 AM opening (review mentions lunch-special hours ending before dinner)",
+        "includes": "pizza, cheese bread, salad bar per the review quote"
+      },
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "not assessed - outside the walk radius of the return stop"
+      },
+      "flags": [
+        "The $13.99 buffet price comes from a Yelp review quoted on the search page, not from the restaurant's own menu - treat as indicative.",
+        "The 'lunch buffet' claim is one reviewer's experience ('Went there to try the lunch buffet...') - confirm the buffet day/time before going."
+      ],
+      "review_links": {
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Roll+N+Crust+46600+Mission+Blvd,+Fremont,+CA+94539",
+        "yelp": null
+      },
+      "verification": {
+        "level": "review",
+        "accessed": "2026-09-10",
+        "sources": [
+          {
+            "label": "Roll N Crust own contact page - address, phones, weekly hours",
+            "url": "https://rollncrust.com/contact/"
+          },
+          {
+            "label": "Yelp 'Food Deals in Fremont' results page with the '$13.99 lunch buffet' review quote",
+            "url": "https://www.yelp.com/search?find_desc=Food+Deals&find_loc=Fremont%2C+CA"
+          },
+          {
+            "label": "Apple Maps place page - hours Sun-Thu 10-22, Fri-Sat 10-23",
+            "url": "https://maps.apple.com/place?place-id=IDCDDD4FCB3B8908E"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Taipei Station",
+      "city": "Fremont",
+      "address": "47954 Warm Springs Blvd, Fremont, CA 94539",
+      "area": "Warm Springs Blvd (Galleria)",
+      "cuisine": "Chinese / Taiwanese",
+      "days_open": "Mon-Thu+Sun 11:00-14:30 & 17:00-20:30; Fri/Sat to 21:00 dinner (Yelp hours block)",
+      "hours_tuesday": "11:00 AM - 2:30 PM, 5:00 PM - 8:30 PM",
+      "lunch_special": {
+        "name": "Lunch special bento praised as 'great quality and value' in reviews",
+        "price_from": null,
+        "price_to": null,
+        "days": "lunch daily 11:00-2:30",
+        "window": "11:00 AM - 2:30 PM",
+        "includes": "bento lunch special (contents not itemised in captured reviews)"
+      },
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "not assessed - outside the walk radius of the return stop"
+      },
+      "flags": [
+        "No printed price for the bento special was found; the restaurant's own page was not readable from this environment.",
+        "roadtrippers prints 'Warm Spring Blvd' - Yelp and the store's own Instagram show 'Warm Springs Blvd'; the Yelp spelling is used."
+      ],
+      "review_links": {
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Taipei+Station+47954+Warm+Springs+Blvd,+Fremont,+CA+94539",
+        "yelp": "https://www.yelp.com/biz/taipei-station-fremont"
+      },
+      "verification": {
+        "level": "review",
+        "accessed": "2026-09-10",
+        "sources": [
+          {
+            "label": "Yelp - Taipei Station Fremont (address, phone, full weekly hours)",
+            "url": "https://www.yelp.com/biz/taipei-station-fremont"
+          },
+          {
+            "label": "Yelp 'Food Deals in Fremont' + 'Lunch Restaurants in Fremont' results pages carrying the lunch-special bento quotes",
+            "url": "https://www.yelp.com/search?find_desc=Food+Deals&find_loc=Fremont%2C+CA"
+          },
+          {
+            "label": "roadtrippers place page - address, phone, Sun-Thu/Fri-Sat hours",
+            "url": "https://maps.roadtrippers.com/us/fremont-ca/food-drink/taipei-station-fremont-ca--0"
+          }
+        ]
+      },
+      "coords": [
+        37.47602,
+        -121.921182
+      ],
+      "coords_source": "directory JSON-LD captured in this pass"
+    },
+    {
+      "name": "IHOP",
+      "city": "Milpitas",
+      "address": "765 East Calaveras Blvd, Milpitas, CA 95035",
+      "area": "East Calaveras Blvd",
+      "cuisine": "American diner / breakfast-lunch chain",
+      "days_open": "Sun-Thu 06:00-24:00; Fri/Sat 06:00-02:00 (official IHOP page JSON)",
+      "hours_tuesday": "6:00 AM - 12:00 AM (Fri/Sat to 2:00 AM)",
+      "lunch_special": {
+        "name": "Official location page titled 'All-Day Breakfast & Daily Lunch Specials'",
+        "price_from": null,
+        "price_to": null,
+        "days": "daily",
+        "window": "from 6:00 AM opening; Fri/Sat to 2:00 AM",
+        "includes": "lunch specials + value menu listed on the IHOP location page"
+      },
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "not assessed - outside the walk radius of the return stop"
+      },
+      "flags": [
+        "The page confirms 'Daily Lunch Specials' exist at this location but the fetched content did not print the prices - open the specials page (or the menu) for the current numbers.",
+        "Breakfast-chain deal: the lunch specials are the Anytime Tacos/Burrito and Value Menu-style prices, not a prix-fixe."
+      ],
+      "review_links": {
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=IHOP+765+East+Calaveras+Blvd,+Milpitas,+CA+95035",
+        "yelp": null
+      },
+      "verification": {
+        "level": "official",
+        "accessed": "2026-09-10",
+        "sources": [
+          {
+            "label": "IHOP official Milpitas specials page - title 'Breakfast & Pancake Specials - Daily Lunch & Meal Deals', address and hours in page JSON",
+            "url": "https://restaurants.ihop.com/en-us/ca/milpitas/breakfast-765-east-calaveras-blvd-3294/specials"
+          }
+        ]
+      }
+    }
+  ],
+  "rejected": [
+    {
+      "name": "Gen Korean BBQ House",
+      "city": "Milpitas",
+      "why": "TripAdvisor listing for 190 Barber Ct is titled 'GEN KOREAN BBG HOUSE - CLOSED'; the chain's Fremont store is listed in the master instead.",
+      "links": [
+        {
+          "label": "TripAdvisor - Gen Korean BBQ House Milpitas (CLOSED page)",
+          "url": "https://www.tripadvisor.com/Restaurant_Review-g32717-d11872464-Reviews-Gen_Korean_BBQ_House-Milpitas_California.html"
+        }
+      ]
+    },
+    {
+      "name": "Fugetsu",
+      "city": "Santa Clara",
+      "why": "The Santa Clara storefront (2783 El Camino Real) closed in May 2021 and the business reopened inside Rokko in Sunnyvale; it is listed there instead.",
+      "links": [
+        {
+          "label": "SF Chronicle (2021): 'shutting down in Santa Clara ... reopened inside ... Sunnyvale'",
+          "url": "https://www.sfchronicle.com/food/article/Japanese-chain-Fugetsu-brings-its-crispy-saucy-16154939.php"
+        }
+      ]
+    },
+    {
+      "name": "Toro Sushi (Stone Grill & Bar)",
+      "city": "Fremont",
+      "why": "The deal quoted on its Yelp snippet is '$10 special rolls' on Monday NIGHTS - a dinner happy-hour promotion, not a lunch special.",
+      "links": [
+        {
+          "label": "Yelp 'Tuesday Specials in Fremont' results page",
+          "url": "https://www.yelp.com/search?find_desc=Tuesday+Specials&find_loc=Fremont%2C+CA"
+        }
+      ]
+    },
+    {
+      "name": "Dope Pho",
+      "city": "Fremont",
+      "why": "Only evidence is 'affordable since they have a happy hour menu' - a happy-hour menu is not a lunch special.",
+      "links": [
+        {
+          "label": "Yelp 'Cheap Lunch Specials in Fremont' results page",
+          "url": "https://www.yelp.com/search?find_desc=cheap+lunch+specials&find_loc=Fremont%2C+CA"
+        }
+      ]
+    },
+    {
+      "name": "Amazing Basil",
+      "city": "Fremont",
+      "why": "Review wording is hedged ('They have kind of lunch specials and...'); no deal name, window or price could be pinned.",
+      "links": [
+        {
+          "label": "Yelp 'Lunch Specials in Fremont' results page",
+          "url": "https://www.yelp.com/search?find_desc=Lunch+Specials&find_loc=Fremont,+CA"
+        }
+      ]
+    },
+    {
+      "name": "Zaytinya",
+      "city": "Palo Alto",
+      "why": "The 'lunch special' phrase in the top Yelp quote refers to the server making a guest's birthday lunch special, not a recurring deal.",
+      "links": [
+        {
+          "label": "Yelp 'Lunch Specials in Palo Alto' results page",
+          "url": "https://www.yelp.com/search?find_desc=Lunch+Specials&find_loc=Palo+Alto%2C+CA"
+        }
+      ]
+    },
+    {
+      "name": "Little Lamb Hot Pot & BBQ",
+      "city": "San Jose",
+      "why": "The area deal captured on Reddit is '25$ off for spending 50$' (a spending discount, not a lunch special); lunch hours also conflict across aggregators (zmenu prints Tue dinner-only, beyondmenu prints Tue 11:00-21:30).",
+      "links": [
+        {
+          "label": "Reddit r/Cupertino hot pot discounts thread",
+          "url": "https://www.reddit.com/r/Cupertino/comments/1f9bixv/hotpot_discounts/"
+        },
+        {
+          "label": "zmenu hours block (Tue 5:00pm-9:00pm)",
+          "url": "https://www.zmenu.com/little-lamb-hot-pot-and-bbq-san-jose-2-online-menu/"
+        },
+        {
+          "label": "beyondmenu hours block (Tue 11:00-21:30)",
+          "url": "https://www.beyondmenu.com/56416/san-jose/little-lamb-hot-pot-and-bbq-san-jose-95122/info.aspx"
+        }
+      ]
+    }
+  ]
+}

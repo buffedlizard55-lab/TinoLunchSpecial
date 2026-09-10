@@ -53,12 +53,13 @@ times are approximate."* Budget for that, and use the 7:40 AM trip if you want s
 
 ## Lunch - how each row was decided
 
-Verified level per row, from `data/lunch_specials.json` (current counts: 83 official, 62 review, 166 listing, 28 conflicting, 9 unverified, 4 mixed):
+Verified level per row, from `data/lunch_specials.json` (counts after the ninth pass, 2026-09-10: 96 official, 192 review, 185 listing, 38 conflicting, 8 unverified, 4 mixed):
 
 * **official** - price and/or hours read from the restaurant's own website, ordering page or menu PDF.
   Examples: Benihana's Power Lunch $15.95 (Mon-Fri 11-3) on `benihana.com/locations/cupertino/`;
   Gyu-Kaku's lunch combos $18.95 / $22.95 in `https://www.gyu-kaku.com/wp-content/uploads/2025/01/cp_lunch2411.pdf`;
-  Home Eat's $13.99 / $14.99 lunch specials on its Toast ordering page.
+  Home Eat's $13.99 / $14.99 lunch specials on its Toast ordering page; from the ninth pass, the Mandarin Gourmet
+  gourmet-lunch page on its own site ($13.95-$14.95, L456) and IHOP Milpitas' own 'Daily Lunch Specials' location page.
 * **review** - the special exists in a Yelp/Google review, but the price is a reviewer's figure.
   Treat the price as indicative until the restaurant confirms it.
 * **listing** - address/hours from a directory; no price published anywhere (Taste Palo Alto's lunch menu
@@ -78,8 +79,30 @@ Two rules that changed the outcome and are worth knowing when you review:
    restaurant and Sparks, NV; `Z & Y` is SF Chinatown; `Old Spaghetti Factory`'s nearest location is San Jose.
    Each of those is in `data/lunch_rejected.json` with the link that proves it.
 
-Reddit was searched for Cupertino/South Bay lunch deals and produced nothing usable for this area (only
-San Antonio and Chicago threads). Recorded so the empty result is not mistaken for "not tried".
+Reddit threads are used as review-level evidence with the thread linked per row: the r/Cupertino hot-pot
+discounts thread (3 Kingdoms, Happy Lamb, Haidilao leads) and the r/bayarea all-you-can-eat list (Brundavan
+~$20, Ulavacharu $17 buffet incl. beer) both fed the ninth pass; where a Reddit figure conflicts with a newer
+review figure, both are shown and no price is asserted.
+
+### Ninth-pass spot checks (each one click, verified 2026-09-10)
+
+| Row | Re-check on |
+|---|---|
+| L456 Mandarin Gourmet, Cupertino ($13.95-14.95 lunch plates) | the restaurant's own lunch page: <https://www.themandaringourmet.com/gourmetlunches.html> |
+| L460 Sankranti, Sunnyvale (CONFLICTING) | 2023 buffet pricing <https://www.disharoundtown.com/news/sankranti-morning-and-lunch-buffets> vs the 2026 'Bombay to Goa' snapshot <https://restaurantguru.com/Sankranti-Sunnyvale> |
+| L474 Brundavan, Santa Clara ($25 vs ~$20 AYCE lunch) | <https://www.tiktok.com/discover/indian-buffet-santa-clara> vs <https://www.reddit.com/r/bayarea/comments/1iv0dxu/list_of_all_bay_area_buffets_and_allyoucaneat/> |
+| L470..L483 Fremont/Newark cluster | Yelp business pages carry the full weekly hours block used: e.g. <https://www.yelp.com/biz/country-way-fremont-2>, <https://www.yelp.com/biz/kiya-sushi-fremont-2>, <https://www.yelp.com/biz/taipei-station-fremont> |
+| L514 Texas Roadhouse, Union City ($9.99 vs $14.99 Early Dine quotes, both unpriced in the table) | <https://www.yelp.com/biz/texas-roadhouse-union-city-5> (business hours block + Q&A) |
+| L522/L523 deferral superseded twice in one pass | merge prints the supersede reason: <code>python3 scripts/merge_incoming.py</code> |
+
+Yelp pages return HTTP 403 to non-browser fetchers, so Yelp links in the newest rows are for **manual review**
+(the snippet text they contain is what the rows were transcribed from).
+
+## Where the site shows what
+
+`index.html` is the lunch front page (top-deals strip + the full 523-row table with filters);
+`transit.html` is the trip-plan subpage (overview, outbound, return, fares, its own flags/sources/method).
+The transit data files and validator are unchanged; only their rendering moved pages.
 
 ## Pre-trip checklist (5 minutes, Tuesday morning)
 
