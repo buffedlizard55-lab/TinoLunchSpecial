@@ -1,0 +1,639 @@
+{
+  "pass": "11",
+  "searched": "2026-09-11",
+  "method": "Eleventh lunch pass - Cupertino and Sunnyvale inner ring plus Saratoga, Campbell, Mountain View, Menlo Park and Palo Alto. Every field below was transcribed from a page actually retrieved this turn (URL in the row). Nothing was typed from memory. Prices that exist only as diner quotes or Yelp Q&A answers are described in the row and left out of the price column. Yelp business pages return HTTP 403 to direct fetch here, so Yelp facts come from the Yelp business-page URL as surfaced by search and are levelled 'listing'/'conflicting', never 'official'.",
+  "entries": [
+    {
+      "name": "Campbell Cafe & More",
+      "city": "Campbell",
+      "area": "S Bascom Ave (Cambrian Park)",
+      "address": "2425 S Bascom Ave, Campbell, CA 95008",
+      "cuisine": "Cambodian / Thai",
+      "phone": "(408) 628-4363",
+      "lunch_special": {
+        "name": "Khmer Box $15.95 and Cambodian plates $13.95 - written in the business's own description on its Yelp page",
+        "price_from": 13.95,
+        "price_to": 15.95,
+        "days": "Monday-Friday per the hours table (the business's own text says the lunch runs 11am to 9pm - see flag)",
+        "window": "from 11:00 AM",
+        "includes": "Khmer Box $15.95 with rice, one kabob, salad, soup and 3 pieces of appetizer (veggie eggrolls, shrimp eggrolls or crispy chicken dumplings; steak, chicken or shrimp kabob). Cambodian plates $13.95 with garlic rice, tomatoes, cucumbers and pickled veggies plus a choice of steak, pork or chicken."
+      },
+      "hours_tuesday": "7:30 AM - 4:30 PM",
+      "days_open": "Mon-Fri 7:30 AM-4:30 PM; Sat-Sun 8:00 AM-4:30 PM (Yelp business page, updated 2 weeks ago)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Campbell is ~7 mi from 20387 Gillick Way: a there-and-back bus trip does not fit the 11:50 AM departure and 3:30 PM home deadline."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {
+            "label": "Yelp business page - Campbell Cafe & More, 2425 S Bascom Ave: Mon-Fri 7:30 am-4:30 pm, Sat-Sun 8:00 am-4:30 pm, and the business-written description naming the $15.95 Khmer Box and $13.95 Cambodian plates",
+            "url": "https://www.yelp.com/biz/campbell-cafe-and-more-campbell"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/campbell-cafe-and-more-campbell",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Campbell+Cafe+and+More+2425+S+Bascom+Ave+Campbell"
+      },
+      "flags": [
+        "CONTRADICTION INSIDE THE BUSINESS'S OWN TEXT: it says 'Special lunch served from 11am to 9pm', but the same page's hours table closes the shop at 4:30 PM every day. Both are printed; the 4:30 PM close is used for the hours field.",
+        "The lunch prices come from the business's own description on Yelp, not from a menu page on its own domain, so the row is levelled 'listing' rather than 'official'."
+      ]
+    },
+    {
+      "name": "Kabab & Curry's",
+      "city": "Cupertino",
+      "area": "Stevens Creek Blvd",
+      "address": "20007 Stevens Creek Blvd, Cupertino, CA 95014",
+      "coords": [37.3233026, -122.0236318],
+      "coords_source": "OpenTable listing geo",
+      "cuisine": "North Indian / Pakistani, halal",
+      "phone": "(669) 230-3993",
+      "lunch_special": {
+        "name": "Zuhrana lunch platter - the business owner states on Yelp 'we offer \u201czuhrana\u201d lunch platter Tuesday thru Friday'; no price published",
+        "price_from": null,
+        "price_to": null,
+        "days": "Tuesday-Friday (owner statement)",
+        "window": "11:30 AM - 2:30 PM lunch block (Tue-Thu); 11:30 AM-3:00 PM Fri-Sun",
+        "includes": "Menu prices captured from the Yelp menu module: Tandoori Chicken Leg $11.00, Palak $15.00, Chicken Seekh Kabab $6.50, Roomali Roti $6.00, Chicken Tikka Masala $22.00, Butter Chicken $22.00, Tandoori Fish $22.00, Chicken Boti Kabab $22.00, Goat Biryani $23.00, Rogan Josh Goat $23.00, Lamb Stew $23.00, Goan Fish Curry $22.00. A 'Zuhrana Lunch Lamb Stew' appears on the menu module without a price."
+      },
+      "hours_tuesday": "11:30 AM - 2:30 PM and 5:30 PM - 9:30 PM",
+      "days_open": "Mon closed; Tue-Thu 11:30-14:30 and 17:30-21:30; Fri 11:30-14:30 and 17:30-22:00/22:30; Sat 11:30/12:00-15:00 and 17:30-22:00/22:30; Sun 11:30/12:00-15:00 and 17:30-21:30/22:00 (Yelp business page and Restaurant Guru differ on the Friday-Sunday closings)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": true,
+        "note": "~1 mi from 20387 Gillick Way - the closest restaurant in this batch. The 11:30 AM lunch opening works with either departure."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {
+            "label": "Yelp business page - Kabab & Curry's, 20007 Stevens Creek Blvd: Mon Closed, Tue-Thu 11:30 am-2:30 pm and 5:30 pm-9:30 pm, Fri-Sun blocks, menu prices, and the owner's own Q&A answer 'we offer \u201czuhrana\u201d lunch platter Tuesday thru Friday'",
+            "url": "https://www.yelp.com/biz/kabab-and-curry-s-cupertino"
+          },
+          {
+            "label": "OpenTable - Kabab & Curry's, 20007 Stevens Creek Blvd: 'Lunch Tue-Thu 11:30 am-2:30 pm, Fri-Sun 11:30 am-3:00 pm', $30 and under, geo",
+            "url": "https://www.opentable.com/r/kabab-and-currys-cupertino"
+          },
+          {
+            "label": "Restaurant Guru - 20007 Stevens Creek Blvd, Tue-Thu 11:30AM-3PM and 5:30PM-9:30PM (a 3:00 PM lunch close rather than 2:30 PM), $30-$50 per person",
+            "url": "https://restaurantguru.com/Kabab-and-currys-Cupertino"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/kabab-and-curry-s-cupertino",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Kabab+and+Curry%27s+20007+Stevens+Creek+Blvd+Cupertino"
+      },
+      "flags": [
+        "LUNCH-CLOSE CONFLICT: Yelp and OpenTable end the Tue-Thu lunch at 2:30 PM, Restaurant Guru at 3:00 PM. Both printed.",
+        "The lunch platter's existence is stated by the business owner in a Yelp Q&A answer, but no price for the platter is published anywhere, so the price column is blank.",
+        "CLOSED MONDAYS.",
+        "A diner review on Restaurant Guru complains about a Ramadan special page; that offer is not included here because it is neither verified nor a lunch offer."
+      ]
+    },
+    {
+      "name": "YGF Malatang Noodles & Pots (杨国福麻辣烫)",
+      "city": "Cupertino",
+      "area": "Stevens Creek Blvd",
+      "address": "19672 Stevens Creek Blvd, Cupertino, CA 95014",
+      "coords": [37.3217104, -122.0174991],
+      "coords_source": "Restaurant Guru listing geo",
+      "cuisine": "Chinese malatang - build-your-own hot pot bowls",
+      "phone": "(408) 352-5101",
+      "lunch_special": {
+        "name": "No lunch-only promotion - single-person malatang pots priced $21.99-$22.99 on delivery menus; food is priced by weight in store",
+        "price_from": null,
+        "price_to": null,
+        "days": "daily",
+        "window": "11:30 AM opening (weekday lunch block closes 2:00 PM)",
+        "includes": "Delivery-menu prices captured: Small Pot Malatang Set items $22.99 each (beef bone broth, tomato vegan broth, spicy mix dry pot, classic bone broth, house special spicy oil); rice $3.50 (free with a $20 purchase); sesame sauce $2.50. A second delivery app lists the same bowls with rice at $21.99. A diner on Reddit describes a bowl around $20 with leftovers. Those are delivery-app and diner figures, so the price column is blank."
+      },
+      "hours_tuesday": "11:30 AM - 2:00 PM and 5:00 PM - 9:00 PM (three listings) / 11:30 AM - 1:30 PM and 5:00 PM - 8:30 PM (delivery storefront) - see flag",
+      "days_open": "Mon-Fri 11:30-14:00 and 17:00-21:00; Sat-Sun 11:30-15:00 and 17:00-21:00 (Zmenu, Corner.inc and Restaurant Guru all agree)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": true,
+        "note": "~1 mi from 20387 Gillick Way and open from 11:30 AM; workable on either departure."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {
+            "label": "Zmenu - YGF Malatang Noodles & Pots Cupertino, 19672 Stevens Creek Blvd: Mon-Fri 11:30am-2:00pm and 5:00pm-9:00pm, Sat-Sun 11:30am-3:00pm and 5:00pm-9:00pm",
+            "url": "https://www.zmenu.com/ygf-cupertino-cupertino-online-menu/"
+          },
+          {
+            "label": "Corner.inc - 19672 Stevens Blvd, same weekly hours, phone, description 'build-your-own noodle bowls and spicy beef bone broth'",
+            "url": "https://www.corner.inc/place/prHkSpphkSZC"
+          },
+          {
+            "label": "Restaurant Guru - 19672 Stevens Creek Blvd, Mon-Fri 11:30AM-2PM / 5PM-9PM, $20-$30 per person, geo",
+            "url": "https://restaurantguru.com/YGF-Malatang-Noodles-and-Pots-Cupertino-%E6%9D%A8%E5%9B%BD%E7%A6%8F%E9%BA%BB%E8%BE%A3%E7%83%AB-Cupertino"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/search?find_desc=YGF+Malatang&find_loc=Cupertino%2C+CA",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=YGF+Malatang+19672+Stevens+Creek+Blvd+Cupertino"
+      },
+      "flags": [
+        "HOURS CONFLICT: three listings say the weekday lunch block ends at 2:00 PM and dinner ends at 9:00 PM; the delivery storefront says 1:30 PM and 8:30 PM. Both printed.",
+        "Every price found is on a delivery app or in a diner quote - none is published by the business, so the price column is blank.",
+        "Pricing is by weight in store; the delivery-app bowl prices ($21.99-$22.99) include a fixed ingredient selection and may not match an in-store bowl."
+      ]
+    },
+    {
+      "name": "Tofu Plus | Korean BBQ",
+      "city": "Cupertino",
+      "area": "N Wolfe Rd (next to 99 Ranch)",
+      "address": "10971 N Wolfe Rd, Cupertino, CA 95014",
+      "coords": [37.3362179, -122.0151355],
+      "coords_source": "Trip.com listing geo",
+      "cuisine": "Korean BBQ and tofu house",
+      "phone": "(408) 777-0900",
+      "lunch_special": {
+        "name": "No lunch special published - open from 11:00 AM every day",
+        "price_from": null,
+        "price_to": null,
+        "days": "daily",
+        "window": "opens 11:00 AM",
+        "includes": "Korean BBQ and tofu soups. A Yelp Q&A answer notes reservations are taken Monday-Thursday only (as of 8/8/2024). No lunch-only price is published."
+      },
+      "hours_tuesday": "11:00 AM - 7:45 PM (Yelp, Restaurantji, wheree) / 11:00 AM - 10:00 PM (TripAdvisor and Trip.com) - see flag",
+      "days_open": "Yelp / Restaurantji / wheree: Mon-Thu 11:00-19:45, Fri-Sat 11:00-20:00, Sun 11:00-20:40. TripAdvisor and Trip.com: daily 11:00-22:00.",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": true,
+        "note": "~2 mi from 20387 Gillick Way and open from 11:00 AM; workable on either departure."
+      },
+      "verification": {
+        "level": "conflicting",
+        "sources": [
+          {
+            "label": "Yelp business page - Tofu Plus, 10971 N Wolfe Rd: Mon-Thu 11:00 am-7:45 pm, Fri-Sat 11:00 am-8:00 pm, Sun 11:00 am-8:40 pm",
+            "url": "https://www.yelp.com/biz/tofu-plus-cupertino"
+          },
+          {
+            "label": "Restaurantji - 10971 N Wolfe Rd, same weekly hours, geo, phone",
+            "url": "https://www.restaurantji.com/ca/cupertino/tofu-plus-korean-bbq-/"
+          },
+          {
+            "label": "TripAdvisor - 10971 N Wolfe Rd, structured daily 11:00-22:00 (conflicting second value), geo",
+            "url": "https://www.tripadvisor.com/Restaurant_Review-g32273-d10518008-Reviews-Tofu_Plus_Korean_BBQ-Cupertino_California.html"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/tofu-plus-cupertino",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Tofu+Plus+10971+N+Wolfe+Rd+Cupertino"
+      },
+      "flags": [
+        "CLOSING-TIME CONFLICT: three sources say 7:45 PM on Mon-Thu, two say 10:00 PM nightly. Both printed; the row is levelled 'conflicting'. Either way the shop is open for lunch.",
+        "No lunch-only pricing is published, so the price column is blank."
+      ]
+    },
+    {
+      "name": "Asia Village Restaurant",
+      "city": "Sunnyvale",
+      "area": "S Wolfe Rd",
+      "address": "747 S Wolfe Rd, Sunnyvale, CA 94086",
+      "coords": [37.365393, -122.0150982],
+      "coords_source": "official ordering site JSON-LD",
+      "cuisine": "Cantonese Chinese",
+      "phone": "(408) 773-8988",
+      "lunch_special": {
+        "name": "Lunch Menu / Lunch Specials - the restaurant's own ordering site prints 'Lunch Specials Mon-Fri: 11:00am-2:30pm'",
+        "price_from": null,
+        "price_to": null,
+        "days": "Monday-Friday",
+        "window": "11:00 AM - 2:30 PM",
+        "includes": "The lunch menu page names dishes (for example Broccoli Chicken Over Rice) but the prices were not rendered on the page retrieved, so no price is printed."
+      },
+      "hours_tuesday": "11:00 AM - 2:30 PM and 4:30 PM - 9:00 PM",
+      "days_open": "Mon-Sun 11:00-14:30 and 16:30-21:00 per the restaurant's own ordering site; Yelp and Restaurantji print the same blocks with a 4:30 PM dinner opening",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": true,
+        "note": "~2 mi from 20387 Gillick Way and the lunch menu opens at 11:00 AM; workable on either departure."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {
+            "label": "Asia Village official ordering site - 747 S. Wolfe Road, Sunnyvale; 'Lunch Specials Mon-Fri: 11:00am-2:30pm'; structured daily hours 11:00-14:30 and 16:30-21:00; geo",
+            "url": "https://www.asiavillagesunnyvale.com/jp8qxd7s/restaurant/order-online/menus/lunch-menu/52562891?menu=Lunch+Menu"
+          },
+          {
+            "label": "Yelp business page - Asia Village, 747 S Wolfe Rd: daily 11:00 am-2:30 pm and 4:30 pm-9:00 pm",
+            "url": "https://www.yelp.com/biz/asia-village-sunnyvale"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/asia-village-sunnyvale",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Asia+Village+747+S+Wolfe+Rd+Sunnyvale"
+      },
+      "flags": [
+        "The existence and Mon-Fri 11:00 AM-2:30 PM window of the lunch menu come from the restaurant's own ordering site, but the dish prices did not render on the page retrieved, so the price column is blank rather than guessed.",
+        "DINNER-OPENING CONFLICT: the restaurant's own site says dinner starts 4:30 PM-9:00 PM, Yelp and Restaurantji say 4:30 PM-9:00 PM - these agree, but the site's structured block prints 16:30-21:00. No material conflict; both printed for completeness.",
+        "A listing (Bipper Media) prints 11:00 am-12:00 am daily for this address, which contradicts every other source. Printed, not used."
+      ]
+    },
+    {
+      "name": "Desi Dhaba",
+      "city": "Sunnyvale",
+      "area": "N Mary Ave",
+      "address": "415 N Mary Ave Ste 101, Sunnyvale, CA 94085",
+      "cuisine": "Indian",
+      "phone": "(408) 245-6200",
+      "lunch_special": {
+        "name": "Weekday buffet - one Yelp Q&A answer says 'They do have Weekday Buffet just like the old days. Price is $16.99'; another answer on the same page says 'No buffet at the moment'",
+        "price_from": null,
+        "price_to": null,
+        "days": "weekdays claimed, but the two answers disagree on whether a buffet exists at all",
+        "window": "11:00 AM - 2:30 PM (or from 10:00 AM on the newest Yelp snapshot)",
+        "includes": "Buffet only - no dish-level detail was published on any page retrieved."
+      },
+      "hours_tuesday": "10:00 AM - 2:30 PM and 4:30 PM - 9:00 PM (newest Yelp) / 11:00 AM - 2:30 PM and 4:30 PM - 9:00 PM (older Yelp) - see flag",
+      "days_open": "Newest Yelp snapshot: Mon-Sat 10:00 am-2:30 pm and 4:30 pm-9:00 pm, Sun closed. Older snapshot: Mon-Sat 11:00 am-2:30 pm and 4:30 pm-9:00 pm, Sun 4:30 pm-9:00 pm.",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": true,
+        "note": "~3 mi from 20387 Gillick Way and open from 10:00-11:00 AM; workable on either departure."
+      },
+      "verification": {
+        "level": "conflicting",
+        "sources": [
+          {
+            "label": "Yelp business page (newest snapshot) - Desi Dhaba, 415 N Mary Ave Ste 101: Mon-Sat 10:00 am-2:30 pm and 4:30 pm-9:00 pm, Sun closed",
+            "url": "https://www.yelp.com/biz/desi-dhaba-sunnyvale-2"
+          },
+          {
+            "label": "Yelp Q&A on the same page - 'They do have Weekday Buffet just like the old days. Price is $16.99' (Lolina L.) and, separately, 'No buffet at the moment' (Tellis H.)",
+            "url": "https://www.yelp.com/biz/desi-dhaba-sunnyvale-2?start=620"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/desi-dhaba-sunnyvale-2",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Desi+Dhaba+415+N+Mary+Ave+Sunnyvale"
+      },
+      "flags": [
+        "BUFFET EXISTENCE CONFLICT: two answers on the same Yelp Q&A disagree - one quotes a $16.99 weekday buffet, the other says there is no buffet at the moment. Neither is published by the business, so no buffet is claimed and no price is printed.",
+        "OPENING-TIME CONFLICT: the newest Yelp snapshot opens at 10:00 AM, older ones at 11:00 AM. Both printed; the newer value is used.",
+        "SUNDAY CONFLICT: the newest snapshot says Sunday closed, an older one says Sunday 4:30 pm-9:00 pm."
+      ]
+    },
+    {
+      "name": "Masa Sushi Japan",
+      "city": "Mountain View",
+      "area": "Castro St",
+      "address": "650 Castro St Ste 180, Mountain View, CA 94041",
+      "coords": [37.3879696, -122.0829683],
+      "coords_source": "official ordering site JSON-LD",
+      "cuisine": "Japanese / sushi",
+      "phone": "(650) 282-5204",
+      "lunch_special": {
+        "name": "Weekday lunch service block (11:00 AM - 1:30 PM) - no lunch-only price published",
+        "price_from": null,
+        "price_to": null,
+        "days": "Monday-Friday (Saturday lunch 11:30 AM-2:00 PM, CLOSED SUNDAY)",
+        "window": "11:00 AM - 1:30 PM",
+        "includes": "Sushi and Japanese plates. No lunch menu or lunch price was published on any page retrieved."
+      },
+      "hours_tuesday": "11:00 AM - 1:30 PM and 4:30 PM - 8:00 PM",
+      "days_open": "Mon-Thu 11:00-13:30 and 16:30-20:00; Fri 11:00-13:30 and 16:00-20:00; Sat 11:30-14:00 and 16:00-20:00; Sun closed (Yelp business page; the restaurant's own ordering site confirms the Mon-Fri 11:00-13:30 and Sat 11:30-14:00 lunch blocks and lists no Sunday hours)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Mountain View is ~7 mi from 20387 Gillick Way: a there-and-back bus trip does not fit the 11:50 AM departure and 3:30 PM home deadline. The 1:30 PM lunch close is early in any case."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {
+            "label": "Masa Sushi Japan official ordering site - 650 Castro St #180; structured Mon-Fri 11:00-13:30 and Sat 11:30-14:00 lunch blocks, no Sunday hours; geo",
+            "url": "https://www.masasushijapanca.com/i59fy89p/masa-sushi-japan-mountain-view-94041/order-online"
+          },
+          {
+            "label": "Yelp business page - Masa Sushi Japan, 650 Castro St Ste 180: Mon-Thu 11:00 am-1:30 pm and 4:30 pm-8:00 pm, Fri 4:00 pm dinner start, Sat 11:30 am-2:00 pm and 4:00 pm-8:00 pm, Sun closed",
+            "url": "https://www.yelp.com/biz/masa-sushi-japan-mountain-view"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/masa-sushi-japan-mountain-view",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Masa+Sushi+Japan+650+Castro+St+Mountain+View"
+      },
+      "flags": [
+        "CLOSED SUNDAY and a short 11:00 AM-1:30 PM weekday lunch block - arriving after 1:30 PM means no food until 4:30 PM.",
+        "No lunch-only pricing is published, so the price column is blank."
+      ]
+    },
+    {
+      "name": "Ramen Nagi",
+      "city": "Palo Alto",
+      "area": "Bryant St (downtown Palo Alto)",
+      "address": "541 Bryant St, Palo Alto, CA 94301",
+      "cuisine": "Ramen",
+      "phone": null,
+      "lunch_special": {
+        "name": "No lunch special published - lunch service 11:00 AM-2:30 PM daily",
+        "price_from": null,
+        "price_to": null,
+        "days": "daily",
+        "window": "11:00 AM - 2:30 PM",
+        "includes": "Ramen and noodle dishes; signature 'Black King' bowl named in Yelp photo captions. No lunch-only price is published."
+      },
+      "hours_tuesday": "11:00 AM - 2:30 PM and 5:00 PM - 9:00 PM",
+      "days_open": "Mon-Sun 11:00 am-2:30 pm and 5:00 pm-9:00 pm (Yelp business page, consistent across every snapshot retrieved)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Palo Alto is ~11 mi from 20387 Gillick Way: outside the 11:50 AM departure / 3:30 PM home deadline."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {
+            "label": "Yelp business page - Ramen Nagi, 541 Bryant St: Mon-Sun 11:00 am-2:30 pm and 5:00 pm-9:00 pm",
+            "url": "https://www.yelp.com/biz/ramen-nagi-palo-alto"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/ramen-nagi-palo-alto",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Ramen+Nagi+541+Bryant+St+Palo+Alto"
+      },
+      "flags": [
+        "No lunch-only pricing is published, so the price column is blank.",
+        "The 2:30 PM-5:00 PM afternoon break is consistent across all snapshots - a late lunch is impossible."
+      ]
+    },
+    {
+      "name": "Cook's Seafood",
+      "city": "Menlo Park",
+      "area": "El Camino Real",
+      "address": "751 El Camino Real, Menlo Park, CA 94025",
+      "cuisine": "Seafood / fish and chips (with a retail fish market)",
+      "phone": "(650) 325-0604",
+      "lunch_special": {
+        "name": "No lunch special published - open from 10:30 AM for lunch",
+        "price_from": null,
+        "price_to": null,
+        "days": "Monday-Saturday, plus Sunday since the business reopened Sundays (see flag)",
+        "window": "opens 10:30 AM",
+        "includes": "Fish and chips, halibut and chips, seafood pasta per the business's own description on its Yelp page. No lunch-only price is published."
+      },
+      "hours_tuesday": "10:30 AM - 8:00 PM",
+      "days_open": "Restaurant: Mon-Thu and Sat 10:30 am-8:00 pm, Fri 10:30 am-8:30 pm, Sun 11:30 am-7:00 pm (the business's own 'About' text on Yelp, matched by Restaurantji and the newest Yelp snapshots). Separate fish-market hours: Mon-Sat 9:00 am-7:00 pm, Sun 10:00 am-6:00 pm.",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Menlo Park is ~15 mi from 20387 Gillick Way: outside the 11:50 AM departure / 3:30 PM home deadline."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {
+            "label": "Yelp business page - Cook's Seafood, 751 El Camino Real: the business's own About text 'Restaurant Hours: Monday-Thursday & Saturday 10:30am-8pm, Friday 10:30am-8:30pm, Sunday 11:30am-7pm' plus 'Now Open Sundays'",
+            "url": "https://www.yelp.com/biz/cook-s-seafood-menlo-park"
+          },
+          {
+            "label": "Restaurantji - 751 El Camino Real, Mon-Thu 10:30AM-8PM, Fri 10:30AM-8:30PM, Sat 10:30AM-8PM, Sun 11:30AM-7PM",
+            "url": "https://www.restaurantji.com/ca/menlo-park/cooks-seafood-/"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/cook-s-seafood-menlo-park",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Cook%27s+Seafood+751+El+Camino+Real+Menlo+Park"
+      },
+      "flags": [
+        "SUNDAY CONFLICT RESOLVED IN THE BUSINESS'S FAVOUR: older Yelp snapshots say Sunday closed, while the business's own About text and newer snapshots say Sunday 11:30 am-7:00 pm under a 'Now Open Sundays' note. Both readings are printed; the newer one is used.",
+        "The in-house fish market keeps different hours (Mon-Sat 9:00 am-7:00 pm, Sun 10:00 am-6:00 pm) from the restaurant - printed separately so the two are not confused.",
+        "No lunch-only pricing is published, so the price column is blank."
+      ]
+    },
+    {
+      "name": "Masu Japanese Bistro",
+      "city": "Saratoga",
+      "area": "Big Basin Way",
+      "address": "14510 Big Basin Way Ste 6, Saratoga, CA 95070",
+      "cuisine": "Japanese",
+      "phone": "(408) 868-0600",
+      "lunch_special": {
+        "name": "Weekday lunch service block (11:30 AM - 2:00 PM) - no lunch-only price published",
+        "price_from": null,
+        "price_to": null,
+        "days": "Tuesday-Friday (CLOSED MONDAY)",
+        "window": "11:30 AM - 2:00 PM (Saturday 12:00-2:00 PM)",
+        "includes": "Sushi rolls, miso, fried rice and udon per the listing's summary of reviews. No lunch menu or price was published on any page retrieved."
+      },
+      "hours_tuesday": "11:30 AM - 2:00 PM and 5:00 PM - 9:00 PM",
+      "days_open": "Mon closed; Tue-Fri 11:30-14:00 and 17:00-21:00; Sat 12:00-14:00 and 15:00-21:00; Sun 13:00-20:30 (Yelp business page, matched by Restaurantji)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Saratoga is ~8 mi from 20387 Gillick Way: a there-and-back bus trip does not fit the 11:50 AM departure and 3:30 PM home deadline."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {
+            "label": "Yelp business page - Masu Japanese Bistro, 14510 Big Basin Way Ste 6: Mon closed, Tue-Fri 11:30 am-2:00 pm and 5:00 pm-9:00 pm, Sat 12:00 pm-2:00 pm and 3:00 pm-9:00 pm, Sun 1:00 pm-8:30 pm",
+            "url": "https://www.yelp.com/biz/masu-japanese-bistro-saratoga"
+          },
+          {
+            "label": "Restaurantji - 14510 Big Basin Wy #6, same weekly hours, address and phone cross-check",
+            "url": "https://www.restaurantji.com/ca/saratoga/masu-japanese-bistro-/"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/masu-japanese-bistro-saratoga",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Masu+Japanese+Bistro+14510+Big+Basin+Way+Saratoga"
+      },
+      "flags": [
+        "CLOSED MONDAYS - irrelevant to a Tuesday trip but recorded.",
+        "No lunch-only pricing is published, so the price column is blank."
+      ]
+    },
+    {
+      "name": "Round Table Pizza - Saratoga",
+      "city": "Saratoga",
+      "area": "Prospect Rd",
+      "address": "18482 Prospect Rd, Saratoga, CA 95070",
+      "coords": [37.2914149, -121.9942575],
+      "coords_source": "Slice Life listing geo",
+      "cuisine": "Pizza",
+      "phone": "(408) 252-0277",
+      "lunch_special": {
+        "name": "Lunch buffet - a Yelp photo on this store's page is captioned 'Lunch Specials!'; no price is published for this store",
+        "price_from": null,
+        "price_to": null,
+        "days": "not stated for the Saratoga store",
+        "window": "not stated for the Saratoga store",
+        "includes": "No price or window was published for this address. A Yelp Q&A on a different Round Table store (Shoreline, WA) quotes 'lunch buffet ... 11-2 Mon-Fri. Pizza only is $11.99. Pizza & Unlimited Salad Bar is $13.99' - that is a different store in a different state and is NOT used here."
+      },
+      "hours_tuesday": "11:00 AM - 9:00 PM (Yelp, Restaurantji, TripAdvisor) / 11:00 AM - 8:00 PM (Slice Life) - see flag",
+      "days_open": "Mon-Thu and Sun 11:00-21:00; Fri-Sat 11:00-22:00 (Yelp and Restaurantji; TripAdvisor prints 11:00-21:00 every day)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Saratoga is ~8 mi from 20387 Gillick Way: a there-and-back bus trip does not fit the 11:50 AM departure and 3:30 PM home deadline."
+      },
+      "verification": {
+        "level": "conflicting",
+        "sources": [
+          {
+            "label": "Yelp business page - Round Table Pizza, 18482 Prospect Rd: Mon-Thu 11:00 am-9:00 pm, Fri-Sat 11:00 am-10:00 pm, Sun 11:00 am-9:00 pm, and a photo captioned 'Lunch Specials!'",
+            "url": "https://www.yelp.com/biz/round-table-pizza-saratoga"
+          },
+          {
+            "label": "Restaurantji - 18482 Prospect Rd, same weekly hours, address and phone",
+            "url": "https://www.restaurantji.com/ca/saratoga/round-table-pizza-/"
+          },
+          {
+            "label": "Slice Life - 18482 Prospect Rd, 11:00-20:00 Sun-Thu and 11:00-21:00 Fri-Sat (an hour earlier), geo",
+            "url": "https://slicelife.com/restaurants/ca/saratoga/95070/round-table-pizza-saratoga/menu"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/round-table-pizza-saratoga",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Round+Table+Pizza+18482+Prospect+Rd+Saratoga"
+      },
+      "flags": [
+        "OUT-OF-STATE PRICE TRAP AVOIDED: the $11.99 / $13.99 buffet prices that appear on Round Table Yelp Q&A belong to the Shoreline, WA store, not to this Saratoga store. They are recorded here only to show they were rejected.",
+        "CLOSING-TIME CONFLICT: Yelp/Restaurantji 9:00 PM (Fri-Sat 10:00 PM), TripAdvisor 9:00 PM nightly, Slice Life 8:00 PM (Fri-Sat 9:00 PM). All printed.",
+        "No lunch window or price is published for this store, so the price column is blank."
+      ]
+    },
+    {
+      "name": "Sue's Gallery Cafe",
+      "city": "Saratoga",
+      "area": "Big Basin Way (downtown Saratoga)",
+      "address": "14665 Big Basin Way, Saratoga, CA 95070",
+      "coords": [37.2558028, -122.0374028],
+      "coords_source": "Joe Coffee listing geo",
+      "cuisine": "Cafe - coffee, tea, pastries",
+      "phone": "(408) 636-8145",
+      "lunch_special": {
+        "name": "No lunch special published - all-day cafe open 8:00 AM-6:00 PM",
+        "price_from": null,
+        "price_to": null,
+        "days": "daily",
+        "window": "8:00 AM - 6:00 PM",
+        "includes": "Speciality coffee, tea and snacks served in handmade ceramics per the business's own Yelp Specialties text. No lunch menu or price was published on any page retrieved."
+      },
+      "hours_tuesday": "8:00 AM - 6:00 PM",
+      "days_open": "Mon-Sun 8:00 AM - 6:00 PM (Yelp business page, Joe Coffee listing and the business's own site link all agree)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Saratoga is ~8 mi from 20387 Gillick Way: a there-and-back bus trip does not fit the 11:50 AM departure and 3:30 PM home deadline."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {
+            "label": "Yelp business page - Sue's Gallery Cafe, 14665 Big Basin Way: Mon-Sun 8:00 am-6:00 pm, speciality coffee/tea/snacks, suesgallerycafe.com",
+            "url": "https://www.yelp.com/biz/sues-gallery-cafe-saratoga-2"
+          },
+          {
+            "label": "Joe Coffee listing - 14665 Big Basin Wy, Mon-Sun 8 AM-6 PM, geo, menu link to suesgallerycafe.com",
+            "url": "https://joe.coffee/locations/ca/saratoga/sue-s-gallery-cafe-saratoga/"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/sues-gallery-cafe-saratoga-2",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Sue%27s+Gallery+Cafe+14665+Big+Basin+Way+Saratoga"
+      },
+      "flags": [
+        "This is a cafe, not a lunch-special venue: it is listed because it is open through the whole lunch block in downtown Saratoga, and no lunch-only price is published."
+      ]
+    },
+    {
+      "name": "Momosan Santana Row",
+      "city": "San Jose",
+      "area": "Santana Row",
+      "address": "378 Santana Row Ste 1130, San Jose, CA 95128",
+      "coords": [37.3193431, -121.947511],
+      "coords_source": "Restaurant Guru listing geo",
+      "cuisine": "Ramen / izakaya",
+      "phone": "(408) 320-2776",
+      "lunch_special": {
+        "name": "Lunch special - a Reddit diner reports 'a Lunch special sign ... $21 for Ramen + Rice bowl'; nothing is published by the business",
+        "price_from": null,
+        "price_to": null,
+        "days": "not stated",
+        "window": "11:30 AM opening",
+        "includes": "Ramen and rice-bowl combination per the diner quote. Menu prices captured from TripAdvisor: Tofu Agedashi $14.00, Edamame $8.00. No lunch price is published, so the price column is blank."
+      },
+      "hours_tuesday": "11:30 AM - 9:00 PM (Yelp) / 11:30 AM - 3:00 PM and 4:00 or 5:00 PM - 9:00 PM (Restaurant Guru and Restaurantji) - see flag",
+      "days_open": "Yelp: Mon-Thu and Sun 11:30 am-9:00 pm, Fri-Sat 11:30 am-10:00 pm. Restaurant Guru: Mon-Wed 11:30-15:00 and 16:00-21:00, Thu 11:30-21:00, Fri-Sat 11:30-22:00, Sun 11:30-21:00. Restaurantji: Mon-Thu 11:30-15:00 and 17:00-21:00, Fri 11:30-15:00 and 17:00-22:00, Sat-Sun continuous.",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Santana Row is ~5 mi from 20387 Gillick Way but the return-bus chain puts it outside the 11:50 AM departure / 3:30 PM home deadline on this itinerary."
+      },
+      "verification": {
+        "level": "conflicting",
+        "sources": [
+          {
+            "label": "Yelp business page - Momosan Santana Row, 378 Santana Row Ste 1130: Mon-Thu and Sun 11:30 am-9:00 pm, Fri-Sat 11:30 am-10:00 pm",
+            "url": "https://www.yelp.com/biz/momosan-santana-row-san-jose"
+          },
+          {
+            "label": "Restaurant Guru - 378 Santana Row #1130, Mon-Wed 11:30-15:00 and 16:00-21:00 etc., $30-$50 per person, geo",
+            "url": "https://restaurantguru.com/Momosan-Ramen-and-Sake-San-Jose"
+          },
+          {
+            "label": "TripAdvisor - 378 Santana Row Suite 1130, structured Tue 11:30-21:00, and menu prices (Tofu Agedashi $14.00, Edamame $8.00), geo",
+            "url": "https://www.tripadvisor.com/Restaurant_Review-g33020-d25166745-Reviews-Momosan_Santana_Row-San_Jose_California.html"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/momosan-santana-row-san-jose",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Momosan+378+Santana+Row+San+Jose"
+      },
+      "flags": [
+        "HOURS CONFLICT: Yelp shows continuous service from 11:30 AM, Restaurant Guru and Restaurantji show a 3:00 PM-4:00/5:00 PM afternoon break on Mon-Wed/Thu. All three printed; the row is levelled 'conflicting'.",
+        "The $21 ramen-plus-rice-bowl lunch price is a Reddit diner quote, not a published menu price, so the price column is blank.",
+        "PHONE CONFLICT: Restaurantji lists (408) 850-2822 while Yelp and Restaurant Guru list (408) 320-2776 for the same suite. Both printed."
+      ]
+    }
+  ],
+  "rejected": [
+    {
+      "name": "Tony & Alba's Pizza and Pasta",
+      "city": "San Jose",
+      "why": "DEFERRED - incomplete hours. Its address (3137 Stevens Creek Blvd, San Jose, CA 95117) and lunch-menu prices are verifiable - the waiter.com menu prints a 'SANDWICHES - LUNCH' section at $18.00 and pasta meals at $17.00, and a Yelp review and a Reddit thread both mention a Tony & Alba's lunch special - but no page retrieved this pass printed a complete per-day hours table (the TripAdvisor hours block cuts off at Tuesday and Yelp's list page for the name shows only 'Open until 8:00 PM'). Held back rather than guessed; revisit with a direct fetch of the restaurant's own site.",
+      "links": [
+        {"label": "Waiter.com menu for Tony & Alba's, 3137 Stevens Creek Blvd - lunch sandwiches $18.00, pasta meals $17.00", "url": "https://www.waiter.com/takeout-delivery/tonyalba/san-jose-ca/3137-stevens-creek-boulevard"},
+        {"label": "TripAdvisor - Tony & Alba's Pizza and Pasta, 3137 Stevens Creek Blvd (hours table truncated at Tuesday)", "url": "https://www.tripadvisor.com/Restaurant_Review-g33020-d347390-Reviews-Tony_Alba_s_Pizza_and_Pasta-San_Jose_California.html"}
+      ],
+      "searched": "2026-09-11"
+    }
+  ]
+}

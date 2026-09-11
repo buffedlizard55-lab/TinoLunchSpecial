@@ -1,0 +1,475 @@
+{
+  "pass": "11",
+  "searched": "2026-09-11",
+  "method": "Eleventh lunch pass - Fremont / Newark sweep. Every field below was transcribed from a page actually retrieved this turn (URL in the row). Nothing was typed from memory. Fremont Restaurant Week pages are event pages: where a price was read from one, the row says so and the event dates are flagged as unverified. Yelp business pages return HTTP 403 to direct fetch here, so Yelp facts are recorded from the Yelp business-page URL as surfaced by search and levelled 'listing'/'conflicting', never 'official'.",
+  "entries": [
+    {
+      "name": "Tai Pan BBQ Express Dim Sum",
+      "city": "Fremont",
+      "area": "Fremont Blvd",
+      "address": "39486 Fremont Blvd, Fremont, CA 94538",
+      "cuisine": "Chinese BBQ / dim sum",
+      "phone": "(510) 739-1868",
+      "lunch_special": {
+        "name": "Daily lunch specials - a Yelp reviewer writes 'They have daily lunch specials...' but no lunch-only price is published",
+        "price_from": null,
+        "price_to": null,
+        "days": "daily (the room is open 10:00 AM-7:00 PM every day)",
+        "window": "10:00 AM opening",
+        "includes": "Menu prices captured from the Yelp menu module: BBQ Pork $13.99, Roast Pork $12.00, Large Soy Sauce Chow Mein $13.95, Vegetable & Pork Bun $4.30. These are regular prices, not a lunch deal."
+      },
+      "hours_tuesday": "10:00 AM - 7:00 PM",
+      "days_open": "Mon-Sun 10:00 AM - 7:00 PM (Yelp business page, Restaurantji and Roadtrippers all agree)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "~13 mi from 20387 Gillick Way: far outside the 11:50 AM departure / 3:30 PM home deadline."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {
+            "label": "Yelp business page - Tai Pan BBQ Express Dim Sum, 39486 Fremont Blvd: daily 10:00 am-7:00 pm, phone, menu prices, reviewer line 'They have daily lunch specials'",
+            "url": "https://www.yelp.com/biz/tai-pan-bbq-express-dim-sum-fremont-3"
+          },
+          {
+            "label": "Restaurantji - 39486 Fremont Blvd, Mon-Sun 10AM-7PM, address and phone cross-check",
+            "url": "https://www.restaurantji.com/ca/fremont/tai-pan-dim-sum-/"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/tai-pan-bbq-express-dim-sum-fremont-3",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Tai+Pan+BBQ+Express+39486+Fremont+Blvd+Fremont"
+      },
+      "flags": [
+        "The words 'daily lunch specials' come from a Yelp review quote, and no lunch-only price is published on any page retrieved, so the price column is left blank."
+      ]
+    },
+    {
+      "name": "Chuan Xiang Spicy Cuisine (川湘阁)",
+      "city": "Newark",
+      "area": "Mowry Ave",
+      "address": "6092 Mowry Ave, Newark, CA 94560",
+      "coords": [37.52399, -122.0080432],
+      "coords_source": "official site JSON-LD",
+      "cuisine": "Szechuan / Hunan Chinese",
+      "phone": "(510) 998-0888",
+      "lunch_special": {
+        "name": "Weekday lunch service block (11:00 AM - 2:30 PM) - a Yelp reviewer cites 'Good lunch special. Good price. 4 dishes and soup'; no published lunch price",
+        "price_from": null,
+        "price_to": null,
+        "days": "Monday-Friday",
+        "window": "11:00 AM - 2:30 PM (dinner block from 4:30 PM)",
+        "includes": "Szechuan/Hunan menu; the lunch block is a distinct service period on the restaurant's own ordering site and on Yelp."
+      },
+      "hours_tuesday": "11:00 AM - 2:30 PM and 4:30 PM - 9:30 PM",
+      "days_open": "Mon-Thu 11:00-14:30 and 16:30-21:30; Fri 11:00-14:30 and 16:30-24:00; Sat 11:30-24:00; Sun 11:30-21:30 (restaurant's own ordering site, matched by Yelp and Beyondmenu)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "~14 mi from 20387 Gillick Way: far outside the 11:50 AM departure / 3:30 PM home deadline."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {
+            "label": "Chuan Xiang Spicy Cuisine official ordering site - 6092 Mowry Ave, Newark; takeout hours Mon-Thu 11:00 am-2:30 pm and 4:30 pm-9:30 pm, Fri to midnight, Sat-Sun blocks; geo",
+            "url": "https://www.chuanxiangspicycuisine.com/"
+          },
+          {
+            "label": "Yelp business page - 6092 Mowry Ave, same weekly hours, and the reviewer line 'Good lunch special. Good price. 4 dishes and soup.'",
+            "url": "https://www.yelp.com/biz/chuan-xiang-spicy-cuisine-newark-2"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/chuan-xiang-spicy-cuisine-newark-2",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Chuan+Xiang+Spicy+Cuisine+6092+Mowry+Ave+Newark"
+      },
+      "flags": [
+        "The existence of a lunch special rests on one Yelp review; the restaurant's own site shows a weekday 11:00 AM-2:30 PM service block but publishes no lunch price. No price is printed.",
+        "The restaurant's own structured data on the ordering sub-page prints a slightly different Friday/Saturday close (23:59:59) than the takeout-hours block on its homepage (midnight). Both are printed."
+      ]
+    },
+    {
+      "name": "Dosa Express",
+      "city": "Fremont",
+      "area": "Thornton Ave",
+      "address": "3625 Thornton Ave, Fremont, CA 94536",
+      "coords": [37.563137, -122.0101418],
+      "coords_source": "Restaurant Guru listing geo",
+      "cuisine": "South Indian vegetarian (dosa, idli, thali)",
+      "phone": "(510) 275-5676",
+      "lunch_special": {
+        "name": "$8.45 Mega Combo (Masala Dosa, Idli, Medu Vada, Sambar, 3 chutneys) - written in the business's own Yelp 'Specialties' blurb",
+        "price_from": 8.45,
+        "price_to": 8.45,
+        "days": "not stated; the room is CLOSED TUESDAY in any case",
+        "window": "served during the 8:00 AM-2:30 PM block per the hours on the business page",
+        "includes": "Masala Dosa, Idli, Medu Vada, Sambar and 3 chutneys. Regular menu prices from the Yelp menu module: Masala Dosa $14.75, Ghee Butter Masala Dosa $12.99, Onion Masala Dosa $12.99, Kids Cone Dosa $9.99."
+      },
+      "hours_tuesday": "CLOSED on Tuesday (Yelp business page and Restaurant Guru both show Tuesday Closed)",
+      "days_open": "Mon 8:00-14:30 and 17:30-21:00; Tue closed; Wed-Thu 8:00-14:30 and 17:30-21:00; Fri-Sat 8:00-14:30 and 17:30-21:30; Sun 8:00-14:30 and 17:30-21:30 (Yelp business page structured hours)",
+      "open_on_trip_date": false,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "CLOSED TUESDAYS - out for 2026-09-08 - and ~14 mi from the destination besides."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {
+            "label": "Yelp business page - Dosa Express, 3625 Thornton Ave: Tuesday Closed, daily 8:00 am-2:30 pm / 5:30 pm-9:00-9:30 pm, and the business-written Specialties blurb naming the $8.45 Mega Combo",
+            "url": "https://www.yelp.com/biz/dosa-express-fremont-4"
+          },
+          {
+            "label": "Fremont Restaurant Week page for Dosa Express - Dosa Combo $14.99 and Hot Thali Meal $18.99, 'Availability: Fremont Location Only! 8am to 230pm, 530pm to 9pm'",
+            "url": "https://www.fremontrestaurantweek.com/dosa-express.html"
+          },
+          {
+            "label": "Restaurant Guru - 3625 Thornton Ave, Tuesday Closed, $10-$20 per person range, geo",
+            "url": "https://restaurantguru.com/Dosa-Express-Sri-Annapoorna-Bhavan-Fremont"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/dosa-express-fremont-4",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Dosa+Express+3625+Thornton+Ave+Fremont"
+      },
+      "flags": [
+        "CLOSED ON TUESDAY per both sources that publish per-day hours - the trip date 2026-09-08 is a Tuesday, so open_on_trip_date is false.",
+        "TWO DIFFERENT PRICES: the business's own Yelp Specialties blurb prices its Mega Combo at $8.45, while the Fremont Restaurant Week page lists a Dosa Combo at $14.99 and a Hot Thali Meal at $18.99 for the same address. Both are printed; they may be different combos, and the lower figure is used as price_from because it is the business's own wording.",
+        "Fremont Restaurant Week is an event page with no date range on the restaurant's own sub-page - the event price is not assumed to be available on 2026-09-08.",
+        "ADDRESS/NAME VARIANT: Restaurant Guru lists the same phone under 'Dosa-i-x'press, 3625 Thornton Ave'; Yelp also carries a 'DOSA EXPRESS / Sri Annapoorna Bhavan' duplicate page for the same street address."
+      ]
+    },
+    {
+      "name": "Zaitoon Restaurant",
+      "city": "Fremont",
+      "area": "Paseo Padre Pkwy",
+      "address": "39006 Paseo Padre Pkwy, Fremont, CA 94538",
+      "cuisine": "South Indian, non-vegetarian, halal",
+      "phone": "(510) 260-0088",
+      "lunch_special": {
+        "name": "Weekday lunch service / thali - no lunch-only price published on the business's own menu",
+        "price_from": null,
+        "price_to": null,
+        "days": "Mon, Wed, Thu, Fri (CLOSED TUESDAY)",
+        "window": "11:30 AM - 2:30 PM",
+        "includes": "Menu prices from the Yelp menu module: Madurai Parotta Salna $14.50, Chicken 65 Biryani $19.35, Chicken Thali $20.55, Mutton Thali $21.80, Mutton Biryani $21.80. The Fremont Restaurant Week page prices Chicken 65 Biryani at $11.99 for the event."
+      },
+      "hours_tuesday": "CLOSED on Tuesday (Yelp business page and Wanderlog both show Tuesday Closed)",
+      "days_open": "Mon 11:30-14:30 and 17:30-21:30; Tue closed; Wed-Thu 11:30-14:30 and 17:30-21:30; Fri 11:30-14:30 and 17:30-22:00; Sat 11:30-22:00; Sun 11:30-21:30 (Yelp business page)",
+      "open_on_trip_date": false,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "CLOSED TUESDAYS - out for 2026-09-08 - and ~14 mi from the destination besides."
+      },
+      "verification": {
+        "level": "conflicting",
+        "sources": [
+          {
+            "label": "Yelp business page - Zaitoon Restaurant, 39006 Paseo Padre Pkwy: Tuesday Closed, Mon 11:30 am-2:30 pm / 5:30 pm-9:30 pm, menu prices (Chicken Thali $20.55, Chicken 65 Biryani $19.35)",
+            "url": "https://www.yelp.com/biz/zaitoon-restaurant-fremont"
+          },
+          {
+            "label": "Wanderlog - 39006 Paseo Padre Pkwy, Tuesday Closed, but a 4:30 PM (not 5:30 PM) afternoon opening on Mon/Fri/Sat",
+            "url": "https://wanderlog.com/place/details/14299316/zaitoon-south-indian-non-vegetarian-restaurant-halal"
+          },
+          {
+            "label": "Roadtrippers listing - 39006 Paseo Padre Pkwy, a fourth set of daily hours (Mon 11:30 am-9:30 pm, Wed 11:30 am-10:30 pm)",
+            "url": "https://maps.roadtrippers.com/us/fremont-ca/food-drink/zaitoon-restaurant-fremont"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/zaitoon-restaurant-fremont",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Zaitoon+Restaurant+39006+Paseo+Padre+Pkwy+Fremont"
+      },
+      "flags": [
+        "CLOSED ON TUESDAY per the two sources that publish per-day hours; the trip date 2026-09-08 is a Tuesday, so open_on_trip_date is false.",
+        "HOURS CONFLICT: Yelp says the afternoon block opens 5:30 PM, Wanderlog says 4:30 PM, and Roadtrippers prints a third and fourth variant. All are printed; the Yelp per-day table is used because it is the claimed business page.",
+        "The $11.99 Chicken 65 Biryani is Fremont Restaurant Week event pricing, not a standing menu price, so it is not printed in the price column."
+      ]
+    },
+    {
+      "name": "Papasan Rolls & Bowls Revolving Sushi",
+      "city": "Fremont",
+      "area": "Walnut Ave",
+      "address": "3353 Walnut Ave, Fremont, CA 94538",
+      "cuisine": "Japanese revolving sushi",
+      "phone": "(510) 795-8638",
+      "lunch_special": {
+        "name": "Weekday lunch service block (11:30 AM - 2:30 PM); Fremont Restaurant Week priced plates at $3.99 during the event",
+        "price_from": null,
+        "price_to": null,
+        "days": "Tuesday-Sunday (CLOSED MONDAY)",
+        "window": "11:30 AM - 2:30 PM",
+        "includes": "Revolving-sushi service. The $3.99-per-plate figure comes from the Fremont Restaurant Week listing, i.e. event pricing with no published date range, so it is not printed in the price column."
+      },
+      "hours_tuesday": "11:30 AM - 2:30 PM and 5:30 PM - 8:30 PM",
+      "days_open": "Mon closed; Tue-Thu 11:30-14:30 and 17:30-20:30; Fri-Sat 11:30-14:30 and 17:30-21:00; Sun 11:30-14:30 and 17:30-20:30 (Yelp business page, corroborated by Roadtrippers)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "~14 mi from 20387 Gillick Way: far outside the 11:50 AM departure / 3:30 PM home deadline."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {
+            "label": "Yelp business page - Papasan Rolls & Bowls Revolving Sushi, 3353 Walnut Ave: Mon Closed, Tue-Thu 11:30 am-2:30 pm and 5:30 pm-8:30 pm, Fri-Sat to 9:00 pm, Sun to 8:30 pm; papasan883.com",
+            "url": "https://www.yelp.com/biz/papasan-rolls-and-bowls-revolving-sushi-fremont-2"
+          },
+          {
+            "label": "Roadtrippers listing - 3353 Walnut Ave, same weekday blocks, cross-check",
+            "url": "https://maps.roadtrippers.com/us/fremont-ca/food-drink/papasan-rolls-bowls-revolving-sushi"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/papasan-rolls-and-bowls-revolving-sushi-fremont-2",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Papasan+Rolls+and+Bowls+3353+Walnut+Ave+Fremont"
+      },
+      "flags": [
+        "The $3.99-per-plate figure reported for this restaurant comes from the Fremont Restaurant Week 2025 line-up in the Mercury News, i.e. event pricing with no published date range; it is not a standing lunch price and is not printed.",
+        "CLOSED MONDAYS - irrelevant to a Tuesday trip but recorded for completeness."
+      ]
+    },
+    {
+      "name": "Saki's Spin A Yarn Restaurant",
+      "city": "Fremont",
+      "area": "Warm Springs Blvd",
+      "address": "45915 Warm Springs Blvd, Fremont, CA 94539",
+      "coords": [37.4951359, -121.9336795],
+      "coords_source": "Restaurant Guru listing geo",
+      "cuisine": "Steakhouse / seafood",
+      "phone": "(510) 656-9141",
+      "lunch_special": {
+        "name": "Fremont Restaurant Week lunch special - 20% off all food items (event pricing)",
+        "price_from": null,
+        "price_to": null,
+        "days": "event days only; the room serves lunch Monday-Saturday",
+        "window": "opens 11:00 AM",
+        "includes": "The Mercury News Fremont Restaurant Week line-up lists 'Spin A Yarn: Lunch special, 20% off all food items.' No dollar price, and the event has no published date range, so no price is printed."
+      },
+      "hours_tuesday": "11:00 AM - 9:00 PM (Yelp) / 11:00 AM - 10:00 PM (Restaurant Guru and Waze) - see flag",
+      "days_open": "Yelp: Mon-Thu 11:00 am-9:00 pm, Fri-Sat 11:00 am-11:00 pm, Sun closed. Restaurant Guru/Waze: Mon-Sat 11:00-22:00, Sun closed.",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "~13 mi from 20387 Gillick Way: far outside the 11:50 AM departure / 3:30 PM home deadline."
+      },
+      "verification": {
+        "level": "conflicting",
+        "sources": [
+          {
+            "label": "Yelp business page - Saki's Spin A Yarn Restaurant, 45915 Warm Springs Blvd: Mon-Thu 11:00 am-9:00 pm, Fri-Sat 11:00 am-11:00 pm, Sun closed",
+            "url": "https://www.yelp.com/biz/sakis-spin-a-yarn-restaurant-fremont"
+          },
+          {
+            "label": "Restaurant Guru - 45915 Warm Springs Blvd, Mon-Sat 11AM-10PM, Sun closed, $50-$100 per person range, geo",
+            "url": "https://restaurantguru.com/Spin-A-Yarn-Steakhouse-San-Jose"
+          },
+          {
+            "label": "Waze listing - 45915 Warm Springs Blvd, structured Mon-Sat 11:00-22:00 hours (third variant)",
+            "url": "https://www.waze.com/live-map/directions/spin-a-yarn-steakhouse-warm-springs-blvd-45915-fremont?to=place.w.156041591.1560219302.847466"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/sakis-spin-a-yarn-restaurant-fremont",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Spin+A+Yarn+45915+Warm+Springs+Blvd+Fremont"
+      },
+      "flags": [
+        "THREE-WAY CLOSING-TIME CONFLICT (9:00 PM on Yelp vs 10:00 PM on Restaurant Guru/Waze vs 11:00 PM for Fri-Sat on Yelp). All are printed; nothing averaged. All three agree the restaurant is open Tuesday lunch and closed Sunday.",
+        "The '20% off all food items' lunch figure is Fremont Restaurant Week event pricing with no date range, so no dollar price is printed."
+      ]
+    },
+    {
+      "name": "Massimo's",
+      "city": "Fremont",
+      "area": "Mowry Ave (Los Arboles Shopping Center)",
+      "address": "5200 Mowry Ave Ste M, Fremont, CA 94538",
+      "coords": [37.5335162, -121.999071],
+      "coords_source": "OpenTable listing geo",
+      "cuisine": "Italian / American",
+      "phone": "(510) 792-2000",
+      "lunch_special": {
+        "name": "Weekday lunch service (11:30 AM - 3:00 PM) per KQED and a 2014 East Bay Times column - but current listing pages show dinner only",
+        "price_from": null,
+        "price_to": null,
+        "days": "Tuesday-Friday per the lunch-serving sources; see flag",
+        "window": "11:30 AM - 3:00 PM per KQED; 11:00 AM - 3:00 PM per the 2014 East Bay Times column",
+        "includes": "No lunch menu price was published on any page retrieved. OpenTable and Restaurant Guru show only dinner hours."
+      },
+      "hours_tuesday": "5:00 PM - 9:00 PM dinner only (OpenTable, TripAdvisor, Restaurant Guru) vs 11:30 AM - 3:00 PM lunch plus 5:00 PM - 9:30 PM dinner (KQED) - see flag",
+      "days_open": "OpenTable: dinner Tue-Thu 5:00 pm-9:00 pm, Fri-Sat 5:00 pm-9:30 pm. TripAdvisor: Tue-Thu 5-9 PM, Fri-Sat 5-9:30 PM, Sun-Mon closed. Restaurant Guru: Tue-Thu 5PM-8:30PM, Fri-Sat 5PM-9:30PM. KQED: Mon dinner only; Tue-Fri lunch 11:30am-3:00pm plus dinner; Sat dinner only (private luncheons); Sun closed.",
+      "open_on_trip_date": false,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "~14 mi from 20387 Gillick Way, and the current listing hours show no lunch service at all - out either way."
+      },
+      "verification": {
+        "level": "conflicting",
+        "sources": [
+          {
+            "label": "OpenTable - Massimo's Fremont, 5200 Mowry Avenue Suite M: 'Hours of operation Fri, Sat 5:00 pm-9:30 pm Dinner Tue-Thu 5:00 pm-9:00 pm' - no lunch listed",
+            "url": "https://www.opentable.com/r/massimos-fremont"
+          },
+          {
+            "label": "KQED Check, Please! restaurant page - 'Tuesday 11:30am-3:00pm (lunch), 5:00pm-9:30pm (dinner)' through Friday; Saturday dinner only; Sunday closed",
+            "url": "https://www.kqed.org/checkplease/10885/massimos-restaurant-info"
+          },
+          {
+            "label": "TripAdvisor listing - 5200 Mowry Ave Suite M, structured Tue 17:00-21:00 ... Sat 17:00-21:30, geo",
+            "url": "https://www.tripadvisor.com/Restaurant_Review-g32411-d608424-Reviews-Massimo_s-Fremont_California.html"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/search?find_desc=Massimo%27s&find_loc=Fremont%2C+CA",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Massimo%27s+5200+Mowry+Ave+Fremont"
+      },
+      "flags": [
+        "MATERIAL CONFLICT - LUNCH MAY NOT EXIST ANY MORE: three current listing sources (OpenTable, TripAdvisor, Restaurant Guru) show dinner-only hours for Tuesday, while KQED's restaurant page and a 2014 East Bay Times column describe a Tue-Fri lunch service. The current-reading is used (open_on_trip_date false), both readings are printed, and the row is levelled 'conflicting'.",
+        "No lunch price is published anywhere, so the price column stays blank even if the lunch service still runs.",
+        "This restaurant is a Fremont Restaurant Week participant, but the event line-up quotes only a prix-fixe dinner."
+      ]
+    },
+    {
+      "name": "Cantaritos Restaurant & Bar",
+      "city": "Fremont",
+      "area": "Washington Blvd",
+      "address": "1530 Washington Blvd, Fremont, CA 94539",
+      "coords": [37.530848, -121.93645],
+      "coords_source": "official site JSON-LD",
+      "cuisine": "Mexican",
+      "phone": "(510) 770-9661",
+      "lunch_special": {
+        "name": "No lunch special published - open through lunch from 11:00 AM Tuesday-Saturday",
+        "price_from": null,
+        "price_to": null,
+        "days": "Tuesday-Saturday (the official site lists no Sunday)",
+        "window": "opens 11:00 AM",
+        "includes": "Fremont Restaurant Week lists Chile Colorado, Chicken Caesar and Carne en su jugo as this restaurant's event dishes; no dollar price was published and those are event, not standing, items."
+      },
+      "hours_tuesday": "11:00 AM - 9:00 PM",
+      "days_open": "Mon-Thu 11:00-21:00, Fri-Sat 11:00-21:30 (official site structured hours; no Sunday listed)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "~14 mi from 20387 Gillick Way: far outside the 11:50 AM departure / 3:30 PM home deadline."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {
+            "label": "Cantaritos Restaurant & Bar official contact page - 1530 Washington Blvd, Fremont 94539, structured hours Mo-Th 11:00-21:00 and Fr-Sa 11:00-21:30, phone, geo",
+            "url": "https://www.cantaritosrestaurantandbar.com/contact-us"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/search?find_desc=Cantaritos&find_loc=Fremont%2C+CA",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Cantaritos+Restaurant+1530+Washington+Blvd+Fremont"
+      },
+      "flags": [
+        "The official site's structured hours list Monday-Saturday with no Sunday entry; a Sunday visit is unverified rather than stated as closed.",
+        "No lunch-only pricing is published, so the price column is blank."
+      ]
+    },
+    {
+      "name": "El Patio Original",
+      "city": "Fremont",
+      "area": "Fremont Blvd",
+      "address": "37311 Fremont Blvd, Fremont, CA 94536",
+      "coords": [37.558044, -122.0074],
+      "coords_source": "TripAdvisor listing geo",
+      "cuisine": "Mexican",
+      "phone": "(510) 796-1733",
+      "lunch_special": {
+        "name": "No lunch special published - open from 9:00 AM through the lunch block; the site advertises happy-hour food and drink specials",
+        "price_from": null,
+        "price_to": null,
+        "days": "daily",
+        "window": "opens 9:00 AM (10:30 AM per TripAdvisor - see flag)",
+        "includes": "Own site: full bar, happy hour 'with great food and drink specials', catering. No lunch-only price published."
+      },
+      "hours_tuesday": "9:00 AM - 9:00 PM (own site) / 9:00 AM - 8:00 PM (Zmenu) / 10:30 AM - 9:00 PM (TripAdvisor) - see flag",
+      "days_open": "Own site: Mon-Thu 9am-9pm, Fri-Sat 9am-10pm, Sun 9am-8pm. Zmenu: Mon-Thu 9-8, Fri-Sat 9-9, Sun 9-8. TripAdvisor: Sun-Thu 10:30 am-9:00 pm, Fri-Sat 10:30 am-11:00 pm. Findglocal: Tue-Wed 10:30-19:00, Thu-Sat 10:00-19:00.",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "~14 mi from 20387 Gillick Way: far outside the 11:50 AM departure / 3:30 PM home deadline."
+      },
+      "verification": {
+        "level": "conflicting",
+        "sources": [
+          {
+            "label": "El Patio Original official site - 37311 Fremont Blvd, Mon-Thu 9am-9pm, Fri-Sat 9am-10pm, Sun 9am-8pm, happy-hour note",
+            "url": "https://www.elpatiofremont.com/"
+          },
+          {
+            "label": "Zmenu - 37311 Fremont Blvd, Mon-Thu 9:00am-8:00pm, Fri-Sat 9:00am-9:00pm, Sun 9:00am-8:00pm",
+            "url": "https://www.zmenu.com/el-patio-original-online-menu/"
+          },
+          {
+            "label": "TripAdvisor - 37311 Fremont Blvd, structured Sun-Thu 10:30-21:00, Fri-Sat 10:30-23:00, geo",
+            "url": "https://www.tripadvisor.com/Restaurant_Review-g32411-d3247938-Reviews-El_Patio-Fremont_California.html"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/search?find_desc=El+Patio+Original&find_loc=Fremont%2C+CA",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=El+Patio+Original+37311+Fremont+Blvd+Fremont"
+      },
+      "flags": [
+        "FOUR SOURCES, FOUR DIFFERENT TUESDAY CLOSING TIMES (9:00 PM own site, 8:00 PM Zmenu, 9:00 PM TripAdvisor from a 10:30 AM opening, 7:00 PM Findglocal) and two different opening times (9:00 AM vs 10:30 AM). All are printed; nothing averaged.",
+        "No lunch-only pricing is published, so the price column is blank."
+      ]
+    }
+  ],
+  "rejected": [
+    {
+      "name": "Taverna Vesuvio Pizzeria & Ristorante",
+      "city": "Fremont",
+      "why": "REJECTED - closure. Its Yelp business page is titled 'TAVERNA VESUVIO PIZZERIA & RISTORANTE - CLOSED' at 39965 Mission Blvd, Fremont, CA 94539, and the hours it still prints (Mon-Thu 4:00 pm-8:30 pm, Fri-Sat 12:00 pm-9:30 pm) are dinner-led with no lunch window. It appeared in the Fremont Restaurant Week line-up with new menu items, which is why it was screened.",
+      "links": [
+        {"label": "Yelp - Taverna Vesuvio Pizzeria & Ristorante - CLOSED (39965 Mission Blvd, Fremont)", "url": "https://www.yelp.com/biz/taverna-vesuvio-pizzeria-and-ristorante-fremont"},
+        {"label": "SanFranSecrets - Fremont Italian restaurant round-up listing Taverna Vesuvio with 2 PM openings and no lunch hours", "url": "https://sanfransecrets.com/best-italian-restaurants-in-fremont-ca"}
+      ],
+      "searched": "2026-09-11"
+    },
+    {
+      "name": "Papillon Restaurant",
+      "city": "Fremont",
+      "why": "REJECTED - dinner-only. The restaurant's own About page prints 'Tue 5pm - 9pm, Wed 5pm - 9pm, Thu 5pm - 9pm, Fri 5pm - 9pm, Sat 5pm - 9pm, Sun 5pm - 9pm' at 37296 Mission Blvd, Fremont, CA 94536, i.e. it opens at 5:00 PM every day it is open and serves no lunch. It is a Fremont Restaurant Week participant (prix-fixe dinner), which is why it surfaced.",
+      "links": [
+        {"label": "Papillon Restaurant official About page (37296 Mission Blvd; Tue-Sun 5pm-9pm)", "url": "https://papillonrestaurant.com/about-papillon"},
+        {"label": "Restaurantji - Papillon, 37296 Mission Blvd, Monday Closed, Tue-Sun 5-9PM", "url": "https://www.restaurantji.com/ca/fremont/papillon-restaurant-/"}
+      ],
+      "searched": "2026-09-11"
+    },
+    {
+      "name": "Kyoto Ramen Hawaiian BBQ",
+      "city": "Fremont (unverified in Fremont)",
+      "why": "DEFERRED - out-of-area name collision. The brand's pages that could be retrieved this pass place it at 1029 Arnold Dr Ste 2, Martinez, CA 94553 (daily 10:00 AM-9:00 PM) and in Hercules; every 'Fremont' hit in the Yelp lunch-special list resolves to those rooms, not to a Fremont street address. No Fremont address or hours were verified, so nothing was merged.",
+      "links": [
+        {"label": "Yelp - Kyoto Ramen Hawaiian BBQ, 1029 Arnold Dr Ste 2, Martinez (daily 10:00 am-9:00 pm)", "url": "https://www.yelp.com/biz/kyoto-ramen-hawaiian-bbq-martinez"},
+        {"label": "TripAdvisor - Kyoto Ramen and Hawaiian BBQ, Martinez, daily 10:00 AM-9:00 PM", "url": "https://www.tripadvisor.com/Restaurant_Review-g60868-d23970299-Reviews-Kyoto_Ramen_And_Hawaiian_BBQ-Martinez_California.html"}
+      ],
+      "searched": "2026-09-11"
+    }
+  ]
+}

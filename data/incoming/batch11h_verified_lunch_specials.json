@@ -1,0 +1,442 @@
+{
+  "pass": "11",
+  "searched": "2026-09-11",
+  "method": "Eleventh lunch pass - a final sweep aimed at restaurants that actually publish a lunch price. Every field below was transcribed from a page retrieved this turn (URL in the row). Where a restaurant's own site printed a lunch price it is carried into price_from/price_to; where only a directory, blog or review quote priced the lunch, the figure is described inside the row and deliberately left out of the price columns.",
+  "entries": [
+    {
+      "name": "Home Eat - Santa Clara",
+      "city": "Santa Clara",
+      "area": "El Camino Real",
+      "address": "638 El Camino Real, Santa Clara, CA 95050",
+      "cuisine": "Chinese",
+      "phone": "(408) 984-0414",
+      "lunch_special": {
+        "name": "Lunch Specials 特价午餐 (Crispy Chicken / Beef Broccoli / Chicken Broccoli), each with a free 'mystery drink'",
+        "price_from": 12.99,
+        "price_to": 13.99,
+        "days": "served from 11:15 AM; the menu page lists no end day",
+        "window": "from the 11:15 AM opening - the ordering page prints no closing time for the special",
+        "includes": "Crispy Chicken Lunch Special 椒香鸡特价午餐 $12.99; Chicken Broccoli Lunch Special 芥蓝鸡特价午餐 $12.99; Beef Broccoli Lunch Special 芥蓝牛特价午餐 $13.99. Each includes a randomly selected complimentary drink (赠送盲盒饮料); the restaurant states the drink is randomly selected, no substitutions."
+      },
+      "hours_tuesday": "11:15 AM - 11:15 PM",
+      "days_open": "Mon-Sun 11:15 am-11:15 pm (Yelp business page and Apple Maps agree on every day)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "~4 mi from 20387 Gillick Way, but a 12-hour day shift does not help the 11:50 AM departure / 3:30 PM home deadline."
+      },
+      "verification": {
+        "level": "official",
+        "sources": [
+          {
+            "label": "Home Eat's own Toast ordering site - 'Home Eat Santa Clara, 638 El Camino Real, Santa Clara, CA', Lunch Specials section: Crispy Chicken $12.99, Beef Broccoli $13.99, Chicken Broccoli $12.99, each including a mystery drink",
+            "url": "https://homeeat.toast.site/order/home-eat-santa-clara"
+          },
+          {
+            "label": "Yelp business page - Home Eat, 638 El Camino Real, Santa Clara: Mon-Sun 11:15 am-11:15 pm",
+            "url": "https://www.yelp.com/biz/home-eat-santa-clara-2"
+          },
+          {
+            "label": "Apple Maps - Home Eat, 638 El Camino Real, Santa Clara: Every Day 11:15 AM - 11:15 PM, homeeat.com",
+            "url": "https://maps.apple.com/place?place-id=I98B9774233289D18"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/home-eat-santa-clara-2",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Home+Eat+638+El+Camino+Real+Santa+Clara"
+      },
+      "flags": [
+        "The restaurant's own ordering page lists the lunch-special prices but no end time or day restriction for the special; the hours are carried from Yelp and Apple Maps.",
+        "A separate Home Eat is listed on Yelp in Cupertino with the same lunch-special reputation - only the Santa Clara address, whose lunch prices are actually printed on the ordering site, is merged here."
+      ]
+    },
+    {
+      "name": "Tatami Buffet",
+      "city": "Cupertino",
+      "area": "N Wolfe Rd (Vallco Park South)",
+      "address": "10123 N Wolfe Rd, Cupertino, CA 95014",
+      "coords": [37.326267, -122.01459],
+      "coords_source": "Yellowpages listing geo",
+      "cuisine": "Sushi and seafood buffet",
+      "phone": "(408) 996-3444",
+      "lunch_special": {
+        "name": "Lunch-only buffet service - the restaurant opens for the lunch buffet and closes in mid-afternoon",
+        "price_from": null,
+        "price_to": null,
+        "days": "daily",
+        "window": "11:30 AM - 2:30 PM Mon-Fri (3:00 PM Sat-Sun) - the whole operating day",
+        "includes": "Sushi, seafood and meat buffet, 100+ varieties per the business description; a free birthday meal is advertised when accompanied by two paying adults. No buffet price is printed on any page retrieved."
+      },
+      "hours_tuesday": "11:30 AM - 2:30 PM",
+      "days_open": "Mon-Fri 11:30-14:30; Sat-Sun 11:30-15:00 (Yellowpages, allbiz and the restaurant's own localsearch page all agree)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": true,
+        "note": "~2 mi from 20387 Gillick Way and it is open the entire window: a 2:30 PM close fits the 11:50 AM departure / 3:30 PM home deadline."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {
+            "label": "Yellowpages - Tatami Buffet, 10123 N Wolfe Rd, Cupertino: Mon-Fri 11:30 am-2:30 pm, Sat-Sun 11:30 am-3:00 pm, geo, phone",
+            "url": "https://www.yellowpages.com/cupertino-ca/mip/tatami-buffet-460371458"
+          },
+          {
+            "label": "allbiz - Tatami Buffet, 10123 N Wolfe Rd #2001: day-by-day Mon-Fri 11:30 AM-2:30 PM, Sat-Sun 11:30 AM-3:00 PM; sameAs links to its Yelp and TripAdvisor pages",
+            "url": "https://www.allbiz.com/business/tatami-buffet-408-996-3444"
+          },
+          {
+            "label": "Tatami's own localsearch page (linked from Yellowpages) - 10123 N Wolfe Rd, Cupertino, Mon-Fri 11:30 am-2:30 pm, Sat-Sun 11:30 am-3:00 pm",
+            "url": "https://tatamibuffet.localsearch.com/"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/tatami-sushi-and-seafood-buffet-cupertino-2",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Tatami+Buffet+10123+N+Wolfe+Rd+Cupertino"
+      },
+      "flags": [
+        "LUNCH-ONLY OPERATING DAY: this is the one row in the master list whose entire weekly schedule sits inside the lunch window - it opens 11:30 AM and is shut by 2:30 PM on weekdays. Confirm before travelling.",
+        "No buffet price is printed anywhere retrieved (its own site tatamibuffet.com would not load), so the price column is blank.",
+        "Founding year is printed inconsistently by directories (2010 vs 2011) - not material, no value carried."
+      ]
+    },
+    {
+      "name": "Lotus Thai Bistro",
+      "city": "Palo Alto",
+      "area": "California Avenue business district",
+      "address": "425 California Ave, Palo Alto, CA 94306",
+      "cuisine": "Thai",
+      "phone": "(650) 289-0907",
+      "lunch_special": {
+        "name": "Lunch specials - the restaurant's own site says 'We are open Monday-Saturday for lunch specials and dinner' and links a dedicated lunch-specials menu",
+        "price_from": null,
+        "price_to": null,
+        "days": "Monday-Saturday (CLOSED SUNDAY)",
+        "window": "11:00 AM - 3:00 PM Mon-Fri (its own Toast ordering page shows a 2:45 PM last lunch seat)",
+        "includes": "A dedicated lunch-specials menu is published as a PDF from the restaurant's own site; the PDF contents were not rendered in the page fetched, so no items or prices are carried. Menu items seen on the Toast ordering page include Mus-Sa-Mun Curry (L), Pad Thai (L) and Yellow Curry."
+      },
+      "hours_tuesday": "11:00 AM - 3:00 PM and 5:00 PM - 9:30 PM",
+      "days_open": "Mon-Fri 11:00-15:00 and 17:00-21:30 (Yelp and the res-pick listing agree); Saturday is printed three different ways - see flag; Sunday closed.",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Palo Alto is ~10 mi from 20387 Gillick Way: outside the 11:50 AM departure / 3:30 PM home deadline."
+      },
+      "verification": {
+        "level": "conflicting",
+        "sources": [
+          {
+            "label": "Lotus Thai Bistro official site - '425 California Avenue, Palo Alto, CA' and 'We are open Monday-Saturday for lunch specials and dinner', linking its own lunch-specials PDF; lists a Labor Day closure",
+            "url": "https://www.lotusthaibistro.com/"
+          },
+          {
+            "label": "Yelp business page - 425 California Ave: Mon-Fri 11:00 am-3:00 pm and 5:00 pm-9:30 pm, Sat 11:00 am-3:00 pm and 4:00 pm-9:30 pm, Sun closed",
+            "url": "https://www.yelp.com/biz/lotus-thai-bistro-palo-alto"
+          },
+          {
+            "label": "Its own Toast ordering page - 425 California Ave: Mon-Fri 11:00 am-2:45 pm and 5:00 pm-9:15 pm, Sat 12:00 pm-9:15 pm, Sun closed (a third Saturday reading)",
+            "url": "https://www.toasttab.com/local/order/lotus-thai-bistro-425-california-ave/item-mussamun-curry-l_62fb99d2-02bc-4f11-be6f-0d51cf9660d9"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/lotus-thai-bistro-palo-alto",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Lotus+Thai+Bistro+425+California+Ave+Palo+Alto"
+      },
+      "flags": [
+        "SATURDAY IS PRINTED THREE WAYS: the res-pick listing says 4:00 PM-9:30 PM only (no lunch), Yelp says 11:00 AM-3:00 PM and 4:00 PM-9:30 PM, and the restaurant's own Toast ordering page says 12:00 PM-9:15 PM. All three printed; weekday hours are consistent across sources.",
+        "CLOSED SUNDAY, and closed Monday September 7, 2026 for Labor Day.",
+        "The lunch-specials PDF linked from its own site did not render in the fetch, so no lunch price is carried."
+      ]
+    },
+    {
+      "name": "Boda - Chinese and Vietnamese Restaurant",
+      "city": "San Jose",
+      "area": "Story Rd (East San Jose, at the outer edge of the 15-mile ring)",
+      "address": "2868 Story Rd, San Jose, CA 95127",
+      "coords": [37.353368, -121.822705],
+      "coords_source": "Franki listing geo",
+      "cuisine": "Chinese and Vietnamese",
+      "phone": "(408) 251-3855",
+      "lunch_special": {
+        "name": "Weekday Lunch Special - $5.99 for a full plate, $6.50 for the prawn versions",
+        "price_from": 5.99,
+        "price_to": 6.5,
+        "days": "Monday-Friday",
+        "window": "11:00 AM - 2:00 PM",
+        "includes": "All items served with egg roll, soup of the day, and steamed rice or shrimp fried rice (soup not included on to-go orders). $5.99 plates: Chicken with Black Bean Sauce, Chicken with Mixed Vegetables, Kung Pao Chicken, Almond Chicken, Cashew Chicken, Chicken with Broccoli, Sweet & Sour Chicken, Lemon Chicken, Beef with Broccoli, Beef with Black Bean Sauce, Beef with Mixed Vegetables, Pork with Mixed Vegetables, Sweet & Sour Pork, Vegetable Deluxe, Broccoli with Oyster Sauce, Bean Curd with Vegetables. $6.50 prawn plates: Prawns with Broccoli, Kung Pao Prawns, Sweet & Sour Prawns, Prawns with Chinese Broccoli, Almond Prawns, Prawns with Cashew Nuts, Prawns with Mixed Vegetables, Prawns with Black Bean Sauce."
+      },
+      "hours_tuesday": "11:00 AM - 10:00 PM",
+      "days_open": "Open 7 days a week, 11:00 am-10:00 pm (restaurant's own site 'Hours of Operation' section, matched day-by-day by the Franki listing)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "East San Jose is ~15 mi from 20387 Gillick Way - at the outer edge of the search ring and well outside the 11:50 AM departure / 3:30 PM home deadline."
+      },
+      "verification": {
+        "level": "official",
+        "sources": [
+          {
+            "label": "Boda's own site - Weekday Lunch Special: 'All items are served with Egg Roll, Soup of the Day, Steamed Rice or Shrimp Fried Rice... From Mon. to Fri. 11:00 am to 2:00 pm. Lunch Special are not served during Holiday. $5.99' (prawn section $6.50); 'Hours of Operation - Open 7 Days a Week, 11am - 10pm'; phone (408) 251-3855",
+            "url": "http://www.bodarestaurant.com/"
+          },
+          {
+            "label": "Franki listing - 2868 Story Rd, San Jose: day-by-day Mon-Sun 11:00-22:00, geo, phone, links bodarestaurant.com",
+            "url": "https://frankiapp.com/business/boda-chinese-vietnamese-food-284350"
+          },
+          {
+            "label": "Nextdoor business page - 2868 Story Road, San Jose, CA 95127, +1 408-251-3855, geo - corroborates the street address",
+            "url": "https://nextdoor.com/pages/boda-chinese-vietnamese-food/"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/search?find_desc=Boda&find_loc=San+Jose%2C+CA",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Boda+2868+Story+Rd+San+Jose"
+      },
+      "flags": [
+        "The restaurant's own site prints the street address only as 'San Jose' - the 2868 Story Rd address is carried from the Nextdoor and Franki listings, both of which also match its published phone number.",
+        "STATED CAVEAT ON ITS OWN SITE: 'Menu and prices subject to change. Call restaurant for current prices and selections.'",
+        "Lunch specials are not served on holidays.",
+        "This is the cheapest verified lunch in the master list at $5.99, and it sits at the outer edge of the 15-mile ring."
+      ]
+    },
+    {
+      "name": "Inchin's Bamboo Garden - Sunnyvale",
+      "city": "Sunnyvale",
+      "area": "Heritage District (W Washington Ave)",
+      "address": "151 W Washington Ave, Sunnyvale, CA 94087",
+      "cuisine": "Indo-Chinese fusion",
+      "phone": "(408) 481-9350",
+      "lunch_special": {
+        "name": "No lunch special published - a distinct lunch service 11:30 AM-2:30 PM weekdays (12:00-3:00 PM weekends)",
+        "price_from": null,
+        "price_to": null,
+        "days": "daily",
+        "window": "11:30 AM - 2:30 PM Mon-Fri; 12:00-3:00 PM Sat-Sun",
+        "includes": "Indo-Chinese plates (Chinese Bhel, Paneer 65, Lat-mai-paneer named in reviews). Reviews also flag happy-hour half-price appetizers, which is a separate offer. No lunch price is published."
+      },
+      "hours_tuesday": "11:30 AM - 2:30 PM and 5:00 PM - 10:00 PM",
+      "days_open": "Mon-Thu 11:30-14:30 and 17:00-22:00; Fri 11:30-14:30 and 17:00-22:30; Sat-Sun 12:00-15:00 and 17:00-22:30 (Yelp, Restaurantji and corner.inc agree)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": true,
+        "note": "~4 mi from 20387 Gillick Way and the 11:30 AM-2:30 PM lunch service sits inside the 11:50 AM departure / 3:30 PM home deadline - but it is a table-service room, so allow time."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {
+            "label": "Yelp business page - Inchin's Bamboo Garden, 151 W Washington Ave, Sunnyvale: Mon-Thu 11:30 am-2:30 pm and 5:00 pm-10:00 pm, Fri-Sat to 10:30 pm, Sun 12:00-3:00 pm and 5:00-10:00 pm",
+            "url": "https://www.yelp.com/biz/inchins-bamboo-garden-sunnyvale-3"
+          },
+          {
+            "label": "Restaurantji - 151 W Washington Ave: same per-day opening hours, geo, phone",
+            "url": "https://www.restaurantji.com/ca/sunnyvale/inchins-bamboo-garden-/"
+          },
+          {
+            "label": "corner.inc - 151 W Washington Ave, Sunnyvale (Heritage District): same per-day hours, updated July 2026, links bamboo-gardens.com",
+            "url": "https://www.corner.inc/place/p7kikrrF6mFz"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/inchins-bamboo-garden-sunnyvale-3",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Inchin%27s+Bamboo+Garden+151+W+Washington+Ave+Sunnyvale"
+      },
+      "flags": [
+        "No lunch-only pricing is published, so the price column is blank.",
+        "A 2020 post on its social feed lists earlier closing times (9:00-9:30 PM); the 10:00-10:30 PM figures come from the three current listings."
+      ]
+    },
+    {
+      "name": "Milpitas Buffet",
+      "city": "Milpitas",
+      "area": "S Abbott Ave",
+      "address": "24 S Abbott Ave, Milpitas, CA 95035",
+      "cuisine": "Chinese seafood buffet",
+      "phone": "(408) 945-8888",
+      "lunch_special": {
+        "name": "Weekday lunch buffet - no price printed on any official page (third-party sites and reviews say $19.99-$20)",
+        "price_from": null,
+        "price_to": null,
+        "days": "Monday-Friday per third-party sources",
+        "window": "from the 11:00 AM opening; no lunch cut-off printed",
+        "includes": "Chinese dishes, dim sum, a fried-food section, sushi and desserts, with crab legs and Mongolian BBQ named by a Google review. The $19.99 weekday / $30 weekend lunch figures come from atly.com and a Wanderlog review quote - neither is official, so nothing is printed."
+      },
+      "hours_tuesday": "11:00 AM - 9:00 PM",
+      "days_open": "Mon-Fri 11:00-21:00; Sat-Sun 11:00-21:30 (Wanderlog listing)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Milpitas is ~11 mi from 20387 Gillick Way: outside the 11:50 AM departure / 3:30 PM home deadline."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {
+            "label": "Wanderlog - Milpitas Buffet, 24 S Abbott Ave, Milpitas: Mon-Fri 11:00-21:00, Sat-Sun 11:00-21:30, (408) 945-8888, links milpitasbuffet.shop",
+            "url": "https://wanderlog.com/place/details/448028/milpitas-buffet"
+          },
+          {
+            "label": "Yelp buffet search for Milpitas - lists Milpitas Buffet as the #1 buffet near Milpitas, open until 9:30 PM",
+            "url": "https://www.yelp.com/search?cflt=buffets&find_loc=Milpitas%2C+CA%2C+95035"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/search?find_desc=Milpitas+Buffet&find_loc=Milpitas%2C+CA",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Milpitas+Buffet+24+S+Abbott+Ave+Milpitas"
+      },
+      "flags": [
+        "PRICE NOT PRINTED: the $19.99 weekday / $30 weekend lunch-buffet figures come from atly.com (a third-party aggregator) and the $20 figure from a Google review quoted on Wanderlog. Neither is a restaurant-published price.",
+        "Its own domain, milpitasbuffet.shop, is linked from the Wanderlog listing but was not retrieved directly this pass."
+      ]
+    },
+    {
+      "name": "Opa! Willow Glen",
+      "city": "San Jose",
+      "area": "Willow Glen (Lincoln Ave)",
+      "address": "1100 Lincoln Ave, San Jose, CA 95125",
+      "coords": [37.308464, -121.90071],
+      "coords_source": "TripAdvisor listing geo",
+      "cuisine": "Greek",
+      "phone": "(408) 998-8704",
+      "lunch_special": {
+        "name": "No lunch special published - open from 11:00 AM daily; lunch-plate prices on the menu run $7.99-$17.50",
+        "price_from": null,
+        "price_to": null,
+        "days": "daily",
+        "window": "from the 11:00 AM opening",
+        "includes": "Menu prices captured on the listing: Opa Fries $4.99, Dolmades / stuffed grape leaves $7.99, Opa! Ribs $10.99, Gyro Meat Platter $11.99, seafood or lamb skewers +$1.99. These are regular-menu prices, not a lunch deal, so the price column is blank."
+      },
+      "hours_tuesday": "11:00 AM - 9:00 PM (see flag - the listing prints a shorter 2:00 PM block on Sat/Sun only)",
+      "days_open": "Mon-Thu 11:00-21:00; Fri 11:00-22:00; Sat-Sun printed twice on the same listing as 11:00-14:00 and 11:00-21:00/22:00",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Willow Glen is ~10 mi from 20387 Gillick Way: outside the 11:50 AM departure / 3:30 PM home deadline."
+      },
+      "verification": {
+        "level": "conflicting",
+        "sources": [
+          {
+            "label": "TripAdvisor - Opa! Willow Glen, 1100 Lincoln Ave, San Jose: structured Mon-Thu 11:00-21:00, Fri 11:00-22:00, with Sat and Sun each carrying both an 11:00-14:00 block and an 11:00-21:00/22:00 block; geo; phone; menu prices",
+            "url": "https://www.tripadvisor.com/Restaurant_Review-g33020-d2234576-Reviews-Opa_Willow_Glen-San_Jose_California.html"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/search?find_desc=Opa%21+Willow+Glen&find_loc=San+Jose%2C+CA",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Opa+1100+Lincoln+Ave+San+Jose"
+      },
+      "flags": [
+        "DUPLICATE WEEKEND BLOCKS on the only page retrieved: Saturday and Sunday each print an 11:00-14:00 block alongside an 11:00-21:00 / 11:00-22:00 block. The weekday hours are clean; the weekend one is not resolved, so the row is levelled 'conflicting'.",
+        "The listing page carries a 2018 date stamp - the menu prices shown are likely stale and are quoted only as a scale indicator, not as current prices.",
+        "No lunch-only pricing is published, so the price column is blank."
+      ]
+    },
+    {
+      "name": "Ristorante Don Giovanni",
+      "city": "Mountain View",
+      "area": "Castro Street",
+      "address": "235 Castro Street, Mountain View, CA 94041",
+      "cuisine": "Italian",
+      "phone": "(650) 961-9749",
+      "lunch_special": {
+        "name": "A distinct lunch service Tue-Fri 11:30 AM-2:00 PM (weekends 11:30 AM-3:00 PM); reviewers report a three-course lunch special but no price is published",
+        "price_from": null,
+        "price_to": null,
+        "days": "Tuesday-Sunday (no Monday lunch)",
+        "window": "11:30 AM - 2:00 PM Tue-Fri",
+        "includes": "OpenTable's review summary says 'guests report prix-fixe and lunch specials: reviewers mention a $19.95-$19.99 three-course lunch special and a separate $35 prix-fixe'. Those are diner reports, not prices published by the restaurant, so the price column is blank."
+      },
+      "hours_tuesday": "Lunch 11:30 AM - 2:00 PM; Dinner 5:00 PM - 9:00 PM",
+      "days_open": "OpenTable: Lunch Tue-Fri 11:30 am-2:00 pm; Sat, Sun 11:30 am-3:00 pm; Dinner Mon-Fri 5:00 pm-9:00 pm; Sat, Sun 3:00 pm-9:00 pm",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Mountain View is ~8 mi from 20387 Gillick Way: the 2:00 PM lunch close is inside the 3:30 PM deadline but the trip out leaves too little margin on the 11:50 AM departure."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {
+            "label": "OpenTable - Ristorante Don Giovanni, 235 Castro Street, Mountain View: 'Hours of operation Lunch Tue-Fri 11:30 am-2:00 pm; Sat, Sun 11:30 am-3:00 pm; Dinner Mon-Fri 5:00 pm-9:00 pm; Sat, Sun 3:00 pm-9:00 pm', $50 and over, (650) 961-9749",
+            "url": "https://www.opentable.com/ristorante-don-giovanni-mountain-view"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/search?find_desc=Don+Giovanni&find_loc=Mountain+View%2C+CA",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Ristorante+Don+Giovanni+235+Castro+Street+Mountain+View"
+      },
+      "flags": [
+        "The $19.95-$19.99 three-course lunch figure appears only inside OpenTable's review-summary text, not in a published menu, so it is not printed as the row price.",
+        "NO MONDAY LUNCH: Monday is dinner only (5:00 pm-9:00 pm).",
+        "OpenTable brackets it at '$50 and over', which sits above a lunch-deal budget."
+      ]
+    }
+  ],
+  "rejected": [
+    {
+      "name": "Vida Tapas Y Cocteles",
+      "city": "Mountain View",
+      "why": "REJECTED - closure. Its Yelp business page (110 Castro St, Mountain View, CA 94041) carries 'Yelpers report this location has closed', and the order.online storefront for the same address renders 'Unavailable'. A 2024 blog post and a 2024 Yelp review both praised a $25 '2 tapas + 1 dessert' lunch special, but that offer belongs to a restaurant that is no longer trading, so nothing was merged.",
+      "links": [
+        {"label": "Yelp - Vida Tapas Y Cocteles, Mountain View: 'Yelpers report this location has closed'", "url": "https://www.yelp.com/biz/vida-tapas-y-cocteles-mountain-view"},
+        {"label": "order.online - Vida Tapas Y Cocteles, 110 Castro St, Mountain View: Unavailable", "url": "https://order.online/store/vida-tapas-y-cocteles-24929383"}
+      ],
+      "searched": "2026-09-11"
+    },
+    {
+      "name": "Los Gatos Cafe",
+      "city": "Los Gatos",
+      "why": "DEFERRED - incomplete weekly hours. The address (340 N Santa Cruz Ave, Los Gatos, CA 95030) and a 7:00 AM-2:30 PM day are confirmed, but no page retrieved this pass printed a full per-day schedule, and the project rule requires weekly hours before a row can be merged. Its menu is breakfast-and-lunch with no distinct lunch special.",
+      "links": [
+        {"label": "Yelp - Los Gatos Cafe, Los Gatos: open 7:00 AM-2:30 PM, menu prices", "url": "https://www.yelp.com/biz/los-gatos-cafe-los-gatos-4"},
+        {"label": "los-gatos.cafe-inspector.com - full breakfast and lunch menu with prices", "url": "https://los-gatos.cafe-inspector.com/"}
+      ],
+      "searched": "2026-09-11"
+    },
+    {
+      "name": "John's of Willow Glen / Johns Xlnt Foods",
+      "city": "San Jose",
+      "why": "DEFERRED - incomplete weekly hours. The address (1238 Lincoln Ave, San Jose, CA 95125) is confirmed by both its OpenTable listing and a menu directory, and a full priced 'Lunch' menu exists ($8.00 grilled cheese up to $17.50 seafood-salad lunch), but no per-day hours table was retrieved this pass.",
+      "links": [
+        {"label": "OpenTable - Johns Xlnt Foods, 1238 Lincoln Ave, San Jose: $30 and under", "url": "https://www.opentable.com/r/johns-xlnt-foods-san-jose"},
+        {"label": "MenuPages - John's of Willow Glen, 1238 Lincoln Ave: priced lunch-salad, lunch-burger and lunch-lo-cal-plate sections", "url": "https://menupages.com/johns-of-willow-glen/1238-lincoln-ave-san-jose"}
+      ],
+      "searched": "2026-09-11"
+    },
+    {
+      "name": "Taiwan Restaurant - Willow Glen",
+      "city": "San Jose",
+      "why": "DEFERRED - incomplete weekly hours. Only Sunday 11:30 AM-2:00 PM was visible on the ordering page for 1306 Lincoln Ave, San Jose, CA 95125; no other day was printed, so it fails the weekly-hours rule. Its plates are $17-27, above a lunch-deal budget anyway.",
+      "links": [
+        {"label": "Postmates - Taiwan Restaurant Willow Glen, 1306 Lincoln Ave, San Jose: Sunday 11:30 AM-2:00 PM only", "url": "https://postmates.com/store/taiwan-restaurant-willow-glen-1306-lincoln-ave/Jy_ykyh3XtiNZZ41ZH7iFg"}
+      ],
+      "searched": "2026-09-11"
+    },
+    {
+      "name": "Aqui Cal Mex (Campbell and Willow Glen)",
+      "city": "Campbell",
+      "why": "DEFERRED - no street address. Its own site published full Campbell and Willow Glen menus with prices (a $16.49 daily special plate, $11.59 smaller eats, $13.99-$15.79 bowls), but neither page printed a street address or per-day hours this pass.",
+      "links": [
+        {"label": "Aqui Cal Mex official site - Campbell menu with prices", "url": "https://www.aquicalmex.com/campbell-menu/"},
+        {"label": "Aqui Cal Mex official site - Willow Glen menu with prices", "url": "https://www.aquicalmex.com/willow-glen-menu/"}
+      ],
+      "searched": "2026-09-11"
+    }
+  ]
+}

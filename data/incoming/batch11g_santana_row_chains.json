@@ -1,0 +1,533 @@
+{
+  "pass": "11",
+  "searched": "2026-09-11",
+  "method": "Eleventh lunch pass - Santana Row, Willow Glen, downtown San Jose and the chain row. Every field below was transcribed from a page actually retrieved this turn (URL in the row). Nothing was typed from memory. Chains are included only where a specific store page gave a street address and per-day hours; lunch prices quoted on third-party 'specials' sites or in Reddit threads are described in the row and left out of the price column. Closures are recorded as rejects rather than silently dropped.",
+  "entries": [
+    {
+      "name": "LB Steak",
+      "city": "San Jose",
+      "area": "Santana Row",
+      "address": "334 Santana Row Ste 1000, San Jose, CA 95128",
+      "coords": [37.322437, -121.947533],
+      "coords_source": "official site JSON-LD",
+      "cuisine": "Steakhouse / modern American",
+      "phone": "(408) 244-1180",
+      "lunch_special": {
+        "name": "No lunch special published - open for lunch from 11:30 AM every day",
+        "price_from": null,
+        "price_to": null,
+        "days": "daily",
+        "window": "from the 11:30 AM opening",
+        "includes": "Menu prices captured from the Yelp menu module: Maine Lobster Bisque $22.00, Boneless Rib Eye 14 oz $79.00, Lindsay Farms NY Strip 12 oz $110.00. These are high-end dinner-scale prices, not lunch deals."
+      },
+      "hours_tuesday": "11:30 AM - 9:00 PM",
+      "days_open": "Sun-Thu 11:30-21:00; Fri-Sat 11:30-22:00 (restaurant's own site structured hours, matched by Yelp and Wanderlog)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Santana Row is ~5 mi from 20387 Gillick Way but sits outside the return-bus window for the 11:50 AM departure / 3:30 PM home deadline on this itinerary."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {
+            "label": "LB Steak official site - 334 Santana Row #1000, San Jose; structured hours Su-Th 11:30-21:00 and Fr-Sa 11:30-22:00; geo; phone",
+            "url": "https://www.lbsteak.com/menus/all-day-menu"
+          },
+          {
+            "label": "Yelp business page - LB Steak, 334 Santana Row Ste 1000: Mon-Thu 11:30 am-9:00 pm, Fri-Sat 11:30 am-10:00 pm, Sun 11:30 am-9:00 pm, menu prices",
+            "url": "https://www.yelp.com/biz/lb-steak-santana-row-san-jose"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/lb-steak-santana-row-san-jose",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=LB+Steak+334+Santana+Row+San+Jose"
+      },
+      "flags": [
+        "No lunch-only pricing is published; the prices captured are the regular menu, so the price column is blank.",
+        "The same official page also carries a second LB Steak at 6000 Bollinger Canyon Rd, San Ramon - only the Santana Row room is used here."
+      ]
+    },
+    {
+      "name": "The Counter Santana Row",
+      "city": "San Jose",
+      "area": "Santana Row (Olin Ave)",
+      "address": "3055 Olin Ave Ste 1035, San Jose, CA 95128",
+      "cuisine": "Build-your-own burgers",
+      "phone": "(408) 423-9200",
+      "lunch_special": {
+        "name": "No lunch special published - open from 11:15 AM every day",
+        "price_from": null,
+        "price_to": null,
+        "days": "daily",
+        "window": "from the 11:15 AM opening",
+        "includes": "Custom burgers and sandwiches. A Reddit diner says ordering 'off the menu and not the build it worksheet, plus get some fries or something to share, drink water' keeps a meal under $30; that is a diner strategy, not a published offer."
+      },
+      "hours_tuesday": "11:15 AM - 9:00 PM",
+      "days_open": "Mon-Thu and Sun 11:15-21:00; Fri-Sat 11:15-22:00 (Yelp business page, consistent across every snapshot retrieved)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Santana Row is ~5 mi from 20387 Gillick Way but sits outside the return-bus window for the 11:50 AM departure / 3:30 PM home deadline."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {
+            "label": "Yelp business page - The Counter Santana Row, 3055 Olin Ave Ste 1035: Mon-Thu and Sun 11:15 am-9:00 pm, Fri-Sat 11:15 am-10:00 pm, thecounter.com",
+            "url": "https://www.yelp.com/biz/the-counter-santana-row-san-jose-3"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/the-counter-santana-row-san-jose-3",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=The+Counter+3055+Olin+Ave+San+Jose"
+      },
+      "flags": [
+        "PHONE CONFLICT on the same Yelp page: two snapshots list (408) 610-1362 and two list (408) 423-9200 for this suite. Both printed.",
+        "No lunch-only pricing is published, so the price column is blank."
+      ]
+    },
+    {
+      "name": "Veggie Grill - Santana Row",
+      "city": "San Jose",
+      "area": "Santana Row (Olin Ave)",
+      "address": "3055 Olin Ave Ste 1030, San Jose, CA 95128",
+      "coords": [37.320587, -121.94808],
+      "coords_source": "Yellowpages listing geo",
+      "cuisine": "Vegan American",
+      "phone": "(408) 493-0777",
+      "lunch_special": {
+        "name": "No lunch special published - open from 11:00 AM every day; a Reddit diner prices the menu at $10-$15 a plate",
+        "price_from": null,
+        "price_to": null,
+        "days": "daily",
+        "window": "from the 11:00 AM opening",
+        "includes": "100% vegan menu of burgers, sandwiches and bowls. The $10-$15 figure is a Reddit diner quote, not a published lunch price, so the price column is blank."
+      },
+      "hours_tuesday": "11:00 AM - 10:00 PM (Yellowpages, vkind, 4leaflabs and UberEats) / 11:00 AM - 11:00 PM (TripAdvisor) - see flag",
+      "days_open": "Mon-Sun 11:00-22:00 (Yellowpages, vkind, 4leaflabs); UberEats Sun-Thu 11:00-22:00 and Fri-Sat 11:00-22:30; TripAdvisor 11:00-23:00 daily",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Santana Row is ~5 mi from 20387 Gillick Way but sits outside the return-bus window for the 11:50 AM departure / 3:30 PM home deadline."
+      },
+      "verification": {
+        "level": "conflicting",
+        "sources": [
+          {
+            "label": "Yellowpages - Veggie Grill - Santana Row, 3055 Olin Ave Ste 1030: Mon-Sun 11:00 am-10:00 pm, geo, phone, veggiegrill.com",
+            "url": "https://www.yellowpages.com/san-jose-ca/mip/veggie-grill-473528072"
+          },
+          {
+            "label": "vkind listing - 3055 Olin Ave #1030, structured Mon-Sun 11:00-22:00, geo",
+            "url": "https://www.vkind.com/vegan-businesses/veggie-grill-santana-row/"
+          },
+          {
+            "label": "TripAdvisor - 3055 Olin Ave #1030, structured Tue 11:00-23:00 (later close, conflicting), geo",
+            "url": "https://www.tripadvisor.ca/Restaurant_Review-g33020-d3955311-Reviews-Veggie_Grill_Santana_Row-San_Jose_California.html"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/search?find_desc=Veggie+Grill&find_loc=San+Jose%2C+CA",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Veggie+Grill+3055+Olin+Ave+San+Jose"
+      },
+      "flags": [
+        "CLOSING-TIME CONFLICT: four sources say 10:00 PM, TripAdvisor says 11:00 PM and UberEats says 10:30 PM on Fri-Sat. All printed.",
+        "PHONE CONFLICT: Yellowpages and TripAdvisor list (408) 493-0777, the vkind listing lists (408) 296-6473 for the same suite. Both printed.",
+        "No lunch-only pricing is published, so the price column is blank."
+      ]
+    },
+    {
+      "name": "Mezcal",
+      "city": "San Jose",
+      "area": "Downtown San Jose (W San Fernando St)",
+      "address": "25 W San Fernando St, San Jose, CA 95113",
+      "coords": [37.3342803, -121.8897689],
+      "coords_source": "OpenTable listing geo",
+      "cuisine": "Regional Mexican",
+      "phone": "(408) 283-9595",
+      "lunch_special": {
+        "name": "No lunch special published - a short weekday lunch service 11:30 AM-1:30 PM per Yelp, or continuous 11:30 AM-9:00 PM per OpenTable (see flag)",
+        "price_from": null,
+        "price_to": null,
+        "days": "Tuesday-Sunday (CLOSED MONDAY)",
+        "window": "11:30 AM - 1:30 PM per Yelp",
+        "includes": "Mexican menu; Dine Downtown offered a three-course prix fixe with ribeye steak or branzino at $49 for this restaurant in July 2026 - that is event pricing, not a standing lunch offer, so it is not printed."
+      },
+      "hours_tuesday": "11:30 AM - 1:30 PM and 5:00 PM - 9:00 PM (Yelp) vs 11:30 AM - 9:00 PM continuous (OpenTable) - see flag",
+      "days_open": "Yelp: Mon closed; Tue-Thu 11:30-13:30 and 17:00-21:00; Fri 11:30-13:30 and 17:00-21:30; Sat 12:00-21:30; Sun 12:00-20:00. OpenTable: Tue-Thu 11:30 am-9:00 pm; Fri 11:30 am-9:30 pm; Sat 12:00-9:30 pm; Sun 12:00-8:00 pm.",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Downtown San Jose is ~11 mi from 20387 Gillick Way: outside the 11:50 AM departure / 3:30 PM home deadline."
+      },
+      "verification": {
+        "level": "conflicting",
+        "sources": [
+          {
+            "label": "OpenTable - Mezcal, 25 W San Fernando St: 'Hours of operation Tue-Thu 11:30 am-9:00 pm, Fri 11:30 am-9:30 pm, Sat 12:00 pm-9:30 pm, Sun 12:00 pm-8:00 pm', $30 and under, geo",
+            "url": "https://www.opentable.com/mezcal-san-jose"
+          },
+          {
+            "label": "Yelp business page - Mezcal, 25 W San Fernando St: Mon closed, Tue-Thu 11:30 am-1:30 pm and 5:00 pm-9:00 pm, Fri-Sun blocks - a two-hour lunch window the OpenTable entry does not show",
+            "url": "https://www.yelp.com/biz/mezcal-san-jose"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/mezcal-san-jose",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Mezcal+25+W+San+Fernando+St+San+Jose"
+      },
+      "flags": [
+        "MATERIAL HOURS CONFLICT: OpenTable shows continuous 11:30 AM-9:00 PM service Tue-Thu; Yelp shows a two-hour lunch (11:30 AM-1:30 PM) then a 5:00 PM reopen. If Yelp is right, arriving after 1:30 PM means no food until 5:00 PM. Both printed; the row is levelled 'conflicting'.",
+        "The $49 three-course figure is Dine Downtown event pricing from a July 2026 window, not a standing lunch offer, so it is not printed as the row price.",
+        "CLOSED MONDAY."
+      ]
+    },
+    {
+      "name": "Strata (Strāta)",
+      "city": "San Jose",
+      "area": "Downtown San Jose (E Santa Clara St, across from City Hall)",
+      "address": "181 E Santa Clara St, San Jose, CA 95113",
+      "coords": [37.3386646, -121.8869102],
+      "coords_source": "OpenTable listing geo",
+      "cuisine": "Contemporary American (a la carte lounge + prix-fixe dining room)",
+      "phone": "(408) 520-3893",
+      "lunch_special": {
+        "name": "Lunch served Tue-Fri 11:00 AM-2:00 PM per OpenTable's hours table (opening coverage said dinner-only) - no lunch price published",
+        "price_from": null,
+        "price_to": null,
+        "days": "Tuesday-Friday per OpenTable",
+        "window": "11:00 AM - 2:00 PM",
+        "includes": "OpenTable's lunch-menu listing for this restaurant names: bread & butter, potato pave, wings, crab lumpia, caviar service, rockfish crudo, steak tartare, burger (6 oz angus, garlic aioli, white cheddar, balsamic red onion), skirt-steak sandwich, short rib panuozzo, chicken panuozzo and shaved ice. No prices were rendered, so the price column is blank."
+      },
+      "hours_tuesday": "Lunch 11:00 AM - 2:00 PM, happy hour 2:00-6:00 PM, dinner 4:00 PM - 9:00 PM (OpenTable) vs 5:00 PM opening only (Eater SF and Metro) - see flag",
+      "days_open": "OpenTable: Bar Tue-Fri 11:00 am-9:00 pm; Lunch Tue-Fri 11:00 am-2:00 pm; Happy Hour Tue-Fri 2:00-6:00 pm; Dinner Tue-Thu 4:00-9:00 pm, Fri 4:00-10:00 pm, Sat 5:00-10:00 pm, Sun 5:00-9:00 pm. Eater SF and Metro (May 2026) describe a dinner-only room opening at 5:00 pm Tue-Sun; AAA lists bar Tue-Sun 5:00 pm-10:00 pm.",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Downtown San Jose is ~11 mi from 20387 Gillick Way: outside the 11:50 AM departure / 3:30 PM home deadline."
+      },
+      "verification": {
+        "level": "conflicting",
+        "sources": [
+          {
+            "label": "OpenTable - Strata, 181 E Santa Clara St: 'Lunch Tue-Fri 11:00 am-2:00 pm; Happy Hour Tue-Fri 2:00 pm-6:00 pm; Dinner Tue-Thu 4:00 pm-9:00 pm', $31 to $50, geo, and the lunch menu item list",
+            "url": "https://www.opentable.com/r/strata-san-jose"
+          },
+          {
+            "label": "Eater SF (May 2026) - 'open from 5 p.m. to 9 p.m. Tuesday through Wednesday, 5 p.m. to 10 p.m. Thursday through Saturday, and 5 p.m. to 9 p.m. on Sunday' - no lunch service",
+            "url": "https://sf.eater.com/restaurant-news/212357/strata-san-jose-restaurant-opening"
+          },
+          {
+            "label": "Metro Silicon Valley review - 'Tues and Wed 5pm to 9pm, Thurs through Sat 5pm to 10pm, Sun 5pm to 9pm, 181 E Santa Clara St.' - also dinner-only",
+            "url": "https://www.metrosiliconvalley.com/strata-restaurant-review-downtown-san-jose/"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/search?find_desc=Strata&find_loc=San+Jose%2C+CA",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Strata+181+E+Santa+Clara+St+San+Jose"
+      },
+      "flags": [
+        "MATERIAL CONFLICT: OpenTable's current hours table lists a Tue-Fri 11:00 AM-2:00 PM lunch (with its own lunch-menu items), while both opening-coverage pieces from May 2026 describe a dinner-only restaurant opening at 5:00 PM. The restaurant opened in May 2026, so the lunch service may have been added since. Both readings are printed and the row is levelled 'conflicting' - call ahead.",
+        "The Dine Downtown $50 three-course prix fixe quoted for Strata is event pricing for a July 2026 window, not a standing lunch price.",
+        "No lunch prices were rendered on the OpenTable menu listing, so the price column is blank."
+      ]
+    },
+    {
+      "name": "Sushi Confidential - Willow Glen",
+      "city": "San Jose",
+      "area": "Willow Glen (Lincoln Ave)",
+      "address": "1140 Lincoln Ave, San Jose, CA 95125",
+      "cuisine": "Sushi / Japanese",
+      "phone": "(408) 287-9854",
+      "lunch_special": {
+        "name": "No lunch special published - open from 11:30 AM every day",
+        "price_from": null,
+        "price_to": null,
+        "days": "daily",
+        "window": "from the 11:30 AM opening",
+        "includes": "Sushi and Japanese plates (shishito kamikaze named in Yelp photo captions). No lunch-only price is published."
+      },
+      "hours_tuesday": "11:30 AM - 8:30 PM",
+      "days_open": "Mon-Thu and Sun 11:30-20:30; Fri-Sat 11:30-21:30 (Yelp business page)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Willow Glen is ~10 mi from 20387 Gillick Way: outside the 11:50 AM departure / 3:30 PM home deadline."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {
+            "label": "Yelp business page - Sushi Confidential Willow Glen, 1140 Lincoln Ave: Mon-Thu and Sun 11:30 am-8:30 pm, Fri-Sat 11:30 am-9:30 pm",
+            "url": "https://www.yelp.com/biz/sushi-confidential-willow-glen-san-jose-14"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/sushi-confidential-willow-glen-san-jose-14",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Sushi+Confidential+1140+Lincoln+Ave+San+Jose"
+      },
+      "flags": [
+        "SISTER ROOM, DIFFERENT HOURS: the downtown Sushi Confidential at 26 N San Pedro St is closed Monday-Wednesday and does not open until 4:00 PM Thursday, so it has no Tuesday lunch and is not merged. Only the Willow Glen room is listed here.",
+        "No lunch-only pricing is published, so the price column is blank."
+      ]
+    },
+    {
+      "name": "Habit Burger & Grill - San Jose (Almaden)",
+      "city": "San Jose",
+      "area": "Almaden Expressway (Blossom Valley)",
+      "address": "5018 Almaden Expressway Ste 10, San Jose, CA 95118",
+      "coords": [37.258722, -121.875617],
+      "coords_source": "official site JSON-LD",
+      "cuisine": "Chargrilled burgers / fast casual",
+      "phone": "(408) 613-2578",
+      "lunch_special": {
+        "name": "No lunch special published on this store's page - a Reddit diner quotes 'Habit Burger. $10. Half burger, side salad, drink, & chicken nuggets'",
+        "price_from": null,
+        "price_to": null,
+        "days": "daily",
+        "window": "from the 10:30 AM opening",
+        "includes": "Charburgers, salads and sandwiches. The $10 figure is a Reddit diner quote for a promo combo, not a price published by the chain, so the price column is blank."
+      },
+      "hours_tuesday": "10:30 AM - 9:30 PM",
+      "days_open": "Mon-Thu and Sun 10:30-21:30; Fri-Sat 10:30-22:00 (official store page structured hours, matched by Yelp and Restaurantji)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Blossom Valley is ~11 mi from 20387 Gillick Way: outside the 11:50 AM departure / 3:30 PM home deadline."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {
+            "label": "Habit Burger & Grill official store page - San Jose (Almaden), 5018 Almaden Expressway: 'Mon - Thur 10:30am - 9:30pm, Fri - Sat 10:30am - 10:00pm, Sun 10:30am - 9:30pm'; geo; phone",
+            "url": "https://www.habitburger.com/locations/san-jose-almaden/"
+          },
+          {
+            "label": "Yelp business page - Habit Burger & Grill, 5018 Almaden Expressway Ste 10: same weekly hours",
+            "url": "https://www.yelp.com/biz/habit-burger-and-grill-san-jose-3"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/habit-burger-and-grill-san-jose-3",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Habit+Burger+5018+Almaden+Expressway+San+Jose"
+      },
+      "flags": [
+        "The $10 combo is a Reddit diner quote; the chain's own store page publishes no lunch price, so the price column is blank.",
+        "A second San Jose Habit at 1510 Monterey Rd Unit 10 keeps different hours (daily 10:30 am-9:00 pm per its own store page) - not merged into this row."
+      ]
+    },
+    {
+      "name": "Red Robin Gourmet Burgers and Brews - Eastridge",
+      "city": "San Jose",
+      "area": "Eastridge (2200 Eastridge Loop)",
+      "address": "2200 Eastridge Loop, San Jose, CA 95122",
+      "coords": [37.3257189, -121.81257],
+      "coords_source": "Restaurant Guru listing geo",
+      "cuisine": "Burgers / American",
+      "phone": "(408) 223-1000",
+      "lunch_special": {
+        "name": "No lunch special published on this store's page - a Reddit diner quotes '$10 ... two burger, fries & drink deals' available for online order and pickup only",
+        "price_from": null,
+        "price_to": null,
+        "days": "daily",
+        "window": "from the 11:00 AM opening",
+        "includes": "Burgers and bottomless fries. The $10 figure is a Reddit diner quote describing an online pickup-only promotion, not a price published by the chain, so the price column is blank."
+      },
+      "hours_tuesday": "11:00 AM - 10:00 PM",
+      "days_open": "Mon-Thu 11:00-22:00; Fri-Sat 11:00-23:00; Sun 11:00-21:00 (Yelp business page, matched by Restaurant Guru and Apple Maps)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "East San Jose is ~13 mi from 20387 Gillick Way: outside the 11:50 AM departure / 3:30 PM home deadline."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {
+            "label": "Yelp business page - Red Robin, 2200 Eastridge Lp: Mon-Thu 11:00 am-10:00 pm, Fri-Sat 11:00 am-11:00 pm, Sun 11:00 am-9:00 pm; photo captions note 'New Happy Hour 3 - 6pm Weekdays'",
+            "url": "https://www.yelp.com/biz/red-robin-gourmet-burgers-and-brews-san-jose"
+          },
+          {
+            "label": "Restaurant Guru - 2200 Eastridge Loop, Mon-Thu 11:00-22:00, Fri-Sat 11:00-23:00, Sun 11:00-21:00, $10-$20 per person, geo",
+            "url": "https://restaurantguru.com/Red-Robin-Eastridge-San-Jose"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/red-robin-gourmet-burgers-and-brews-san-jose",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Red+Robin+2200+Eastridge+Loop+San+Jose"
+      },
+      "flags": [
+        "The $10 burger-fries-drink deal is quoted on Reddit as an online order-and-pickup promotion; the chain's store pages publish no lunch price, so the price column is blank.",
+        "A second San Jose Red Robin at 1000 El Paseo De Saratoga is listed on Yelp as CLOSED - not merged."
+      ]
+    },
+    {
+      "name": "Olive Garden Italian Restaurant - Milpitas",
+      "city": "Milpitas",
+      "area": "Great Mall Dr",
+      "address": "1350 Great Mall Dr, Milpitas, CA 95035",
+      "cuisine": "Italian-American chain",
+      "phone": "(408) 935-8176",
+      "lunch_special": {
+        "name": "A third-party 'specials' site advertises a $5.99 weekday lunch menu, Mon-Fri 11:00 AM-3:00 PM - not confirmed on the chain's own pages, so no price is printed",
+        "price_from": null,
+        "price_to": null,
+        "days": "Monday-Friday per the third-party site",
+        "window": "11:00 AM - 3:00 PM per the third-party site; the store opens 11:00 AM",
+        "includes": "The third-party site describes 'classic pasta, salads, sandwiches, or soups' at $5.99 with breadsticks or salad, plus a soup-and-salad combo and a 3:00-5:00 PM early-dinner discount. None of that appears on the chain's own store pages, so the price column is blank."
+      },
+      "hours_tuesday": "11:00 AM - 10:00 PM",
+      "days_open": "Mon-Thu 11:00-22:00; Fri-Sat 11:00-23:00; Sun 11:00-22:00 (Yelp business page and Yellowpages agree)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "The Great Mall is ~11 mi from 20387 Gillick Way: outside the 11:50 AM departure / 3:30 PM home deadline."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {
+            "label": "Yelp business page - Olive Garden, 1350 Great Mall Dr, Milpitas: Mon-Thu 11:00 am-10:00 pm, Fri-Sat 11:00 am-11:00 pm, Sun 11:00 am-10:00 pm",
+            "url": "https://www.yelp.com/biz/olive-garden-italian-restaurant-milpitas-3"
+          },
+          {
+            "label": "Yellowpages - Olive Garden, 1350 Great Mall Dr, Milpitas: structured Mo-Th 11:00-22:00, Fr-Sa 11:00-23:00, Su 11:00-22:00",
+            "url": "https://www.yellowpages.com/cupertino-ca/olive-garden"
+          },
+          {
+            "label": "olivegardenmenus.net - third-party 'specials' page claiming a $5.99 weekday lunch 11:00 AM-3:00 PM and a 3:00-5:00 PM early-dinner discount (NOT an official page - price not printed in this row)",
+            "url": "https://olivegardenmenus.net/olive-garden-specials-menu-2/"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/olive-garden-italian-restaurant-milpitas-3",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Olive+Garden+1350+Great+Mall+Dr+Milpitas"
+      },
+      "flags": [
+        "THIRD-PARTY PRICE REJECTED: the $5.99 weekday lunch figure comes from olivegardenmenus.net, an unofficial 'specials' site. It is not printed as the row price and is recorded here only so the claim is on the record.",
+        "NO CUPERTINO LOCATION: the chain has no Cupertino restaurant - the nearest rooms are Milpitas (1350 Great Mall Dr), San Jose (2226 Eastridge Loop and 940 Blossom Hill Rd) and Fremont (39145 Farwell Dr). Only the Milpitas room is merged.",
+        "A Reddit diner's 'unlimited soup/salad/breadsticks and entree for like 12 bucks' is a diner quote and is likewise not printed."
+      ]
+    },
+    {
+      "name": "Togo's",
+      "city": "Cupertino",
+      "area": "Stevens Creek Blvd (Oaks Center, across from De Anza College)",
+      "address": "21265 Stevens Creek Blvd, Cupertino, CA 95014",
+      "coords": [37.32349, -122.0474],
+      "coords_source": "TripAdvisor listing geo",
+      "cuisine": "Sandwich shop",
+      "phone": "(408) 517-0475",
+      "lunch_special": {
+        "name": "No lunch special published - counter-service sandwiches from 10:00 AM",
+        "price_from": null,
+        "price_to": null,
+        "days": "daily",
+        "window": "opens 10:00 AM",
+        "includes": "Hot and cold sandwiches, salads, soups and wraps. No lunch-only price is published on any page retrieved."
+      },
+      "hours_tuesday": "10:00 AM - 8:30 PM (TripAdvisor and Yellowpages) / 9:30 AM - 9:00 PM (hours-locations.com) - see flag",
+      "days_open": "TripAdvisor and Yellowpages: Mon-Thu 10:00-20:30, Fri 10:00-20:00, Sat 10:00-18:00, Sun 10:00-17:00. hours-locations.com: Mon-Fri 9:30 am-9:00 pm, Sat 10:00 am-8:30 pm, Sun 10:00 am-8:00 pm.",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": true,
+        "note": "~1 mi from 20387 Gillick Way and a counter-service room: the fastest option in this batch, workable even on the 11:50 AM departure."
+      },
+      "verification": {
+        "level": "conflicting",
+        "sources": [
+          {
+            "label": "TripAdvisor - Togo's, 21265 Stevens Creek Blvd, Cupertino: structured Mon-Thu 10:00-20:30, Fri 10:00-20:00, Sat 10:00-18:00, Sun 10:00-17:00; geo",
+            "url": "https://www.tripadvisor.com/Restaurant_Review-g32273-d4467748-Reviews-Togo_s-Cupertino_California.html"
+          },
+          {
+            "label": "Yellowpages - Togo's Eatery, 21265 Stevens Creek Blvd, Cupertino: Mon-Thu 10:00 am-8:30 pm, Fri 10:00 am-8:00 pm, Sat 10:00 am-6:00 pm, Sun 10:00 am-5:00 pm",
+            "url": "https://www.yellowpages.com/cupertino-ca/mip/togos-eatery-1448907"
+          },
+          {
+            "label": "hours-locations.com - 21265 Stevens Creek Blvd, Mon-Fri 9:30 am-9:00 pm, Sat-Sun later (third value, conflicting)",
+            "url": "https://www.hours-locations.com/togos/ca/cupertino/21265-stevens-creek-blvd/"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/search?find_desc=Togo%27s&find_loc=Cupertino%2C+CA",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Togo%27s+21265+Stevens+Creek+Blvd+Cupertino"
+      },
+      "flags": [
+        "THREE-WAY HOURS CONFLICT (10:00 AM-8:30 PM on two sources vs 9:30 AM-9:00 PM on a directory). All printed; the two-source reading is used.",
+        "No lunch-only pricing is published, so the price column is blank.",
+        "A separate Togo's at 1200 Crossman Ave, Sunnyvale keeps different hours (Mon-Fri 9:00 am-7:00 pm, Sat 10:00 am-3:00 pm, Sun closed) and is not merged here."
+      ]
+    }
+  ],
+  "rejected": [
+    {
+      "name": "Left Bank Brasserie - Santana Row",
+      "city": "San Jose",
+      "why": "REJECTED - closure. Its Yelp business page is now titled 'LEFT BANK BRASSERIE - SANTANA ROW - CLOSED' at 377 Santana Row Ste 1100, San Jose, CA 95128. The hours still printed there (Mon-Thu 11:30 am-9:00 pm) and on TripAdvisor are stale listing data for a room that has closed; nothing was merged.",
+      "links": [
+        {"label": "Yelp - LEFT BANK BRASSERIE - SANTANA ROW - CLOSED, 377 Santana Row Ste 1100", "url": "https://www.yelp.com/biz/left-bank-san-jose-san-jose"},
+        {"label": "TripAdvisor - Left Bank Santana Row, 377 Santana Row Suite #1100 (stale hours)", "url": "https://www.tripadvisor.co.uk/Restaurant_Review-g33020-d1370371-Reviews-Left_Bank_Santana_Row-San_Jose_California.html"}
+      ],
+      "searched": "2026-09-11"
+    },
+    {
+      "name": "Rosie McCann's Irish Pub & Restaurant - Santana Row",
+      "city": "San Jose",
+      "why": "REJECTED - closure. Yelp titles it 'CLOSED', TripAdvisor titles it 'Rosie McCann's - Santana Row - CLOSED', and Restaurant Guru says 'Permanently closed' for 355 Santana Row Ste 1060, San Jose, CA 95128. Two of its own menu pages also disagree about hours (one says Mon-Thu 5:00 pm-12:00 am, another says Mon 4:00 pm / Tue-Thu 12:00 pm), so even the stale data conflicts.",
+      "links": [
+        {"label": "Yelp - ROSIE MCCANN'S IRISH PUB & RESTAURANT - SANTANA ROW - CLOSED, 355 Santana Row Ste 1060", "url": "https://www.yelp.com/biz/rosie-mccanns-irish-pub-and-restaurant-santana-row-san-jose"},
+        {"label": "Restaurant Guru - Rosie McCann's Santana Row: 'Permanently closed'", "url": "https://restaurantguru.com/Rosie-McCanns-Santana-Row-San-Jose"}
+      ],
+      "searched": "2026-09-11"
+    },
+    {
+      "name": "Yankee Pier",
+      "city": "San Jose",
+      "why": "REJECTED - closure. Its Yelp business page is titled 'YANKEE PIER - CLOSED' at 378 Santana Row Ste 1100, San Jose, CA 95128. A third listing (manta.com) even prints dinner-only 5:00 PM openings, so no current hours could be trusted even ignoring the closure.",
+      "links": [
+        {"label": "Yelp - YANKEE PIER - CLOSED, 378 Santana Row Ste 1100, San Jose", "url": "https://www.yelp.com/biz/yankee-pier-san-jose"}
+      ],
+      "searched": "2026-09-11"
+    },
+    {
+      "name": "Sushi Confidential - San Jose (downtown)",
+      "city": "San Jose",
+      "why": "REJECTED - no Tuesday service. At 26 N San Pedro St, San Jose, CA 95113 the Yelp hours table and its structured data agree: Monday, Tuesday and Wednesday closed, Thursday 4:00 pm-9:00 pm, Friday-Saturday 4:00 pm-11:00 pm, Sunday 11:00 am-10:00 pm. There is no lunch at all on the trip date. Its Willow Glen room has normal lunch hours and is merged separately.",
+      "links": [
+        {"label": "Yelp - Sushi Confidential - San Jose, 26 N San Pedro St: Mon-Tue-Wed closed, Thu-Fri 4:00 pm open", "url": "https://www.yelp.com/biz/sushi-confidential-san-jose-san-jose"}
+      ],
+      "searched": "2026-09-11"
+    },
+    {
+      "name": "Osha Thai - Santana Row",
+      "city": "San Jose",
+      "why": "DEFERRED - not identified. The searches run this pass surfaced only Osha Thai rooms in San Francisco (4 Embarcadero Ctr, 696 Geary St and 149 2nd St) with their hours; no Santana Row address, phone or per-day hours for an Osha Thai in San Jose could be retrieved. Held rather than guessed.",
+      "links": [
+        {"label": "Osha Thai official site (SF locations only; no Santana Row page found)", "url": "https://oshathai.com/embarcadero/menu/"}
+      ],
+      "searched": "2026-09-11"
+    }
+  ]
+}

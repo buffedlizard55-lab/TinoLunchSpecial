@@ -1,0 +1,582 @@
+{
+  "pass": "11",
+  "searched": "2026-09-11",
+  "method": "Eleventh lunch pass. Cupertino first, then the 10-15 mile ring; this file is the Milpitas sweep. Every field below was transcribed from a page actually retrieved this turn (URL in the row). Nothing was typed from memory. Yelp business pages return HTTP 403 to direct fetch in this environment, so Yelp facts are recorded from the Yelp business-page URL as surfaced by search and levelled 'listing'/'conflicting', never 'official'. Rows whose name is shared by an out-of-area twin are flagged rather than silently merged.",
+  "entries": [
+    {
+      "name": "Wagyu Grill AYCE (牛浪人 Wagyu Grill)",
+      "city": "Milpitas",
+      "area": "Barber Lane (McCarthy Ranch area)",
+      "address": "500 Barber Ln, Milpitas, CA 95035",
+      "coords": [37.4209735, -121.9159418],
+      "coords_source": "official site JSON-LD",
+      "cuisine": "Japanese yakiniku / AYCE wagyu, sushi",
+      "phone": "(408) 649-3106",
+      "lunch_special": {
+        "name": "Lunch AYCE tier - $25.95 per person",
+        "price_from": 25.95,
+        "price_to": 25.95,
+        "days": "Monday-Friday",
+        "window": "11:00 AM - 4:00 PM",
+        "includes": "Select wagyu cuts, sushi rolls, appetizers and sides. The all-day tiers are higher: Silver $35.95, Gold $43.95, Premium $65.95 (Japanese A5)."
+      },
+      "hours_tuesday": "11:00 AM - 9:30 PM",
+      "days_open": "Mon-Thu 11:00-21:30, Fri 11:00-22:30, Sat 11:30-22:30, Sun 11:30-21:30 (official site)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Milpitas is ~10 mi from 20387 Gillick Way, so it sits outside what the 11:50 AM departure and 3:30 PM home deadline can absorb on the VTA 55 chain. The lunch tier itself runs to 4:00 PM."
+      },
+      "verification": {
+        "level": "official",
+        "sources": [
+          {
+            "label": "Wagyu Grill official site - pricing tiers (Lunch $25.95/person Mon-Fri 11am-4pm; Silver $35.95, Gold $43.95, Premium $65.95), address, weekly hours, geo",
+            "url": "https://wagyu-grill.com/"
+          },
+          {
+            "label": "Yelp business page - 500 Barber Ln, Mon-Thu 11:00 AM-9:30 PM, cross-check of the weekly hours",
+            "url": "https://www.yelp.com/biz/wagyu-grill-ayce-milpitas"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/wagyu-grill-ayce-milpitas",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Wagyu+Grill+500+Barber+Ln+Milpitas"
+      },
+      "flags": [
+        "Social-video captions quote an older lunch figure ($25) and different tier names ($45/$58/$75) - only the restaurant's own pricing page is printed here.",
+        "AYCE price is per person and the page does not say whether tax, gratuity or a shared-grill surcharge applies."
+      ]
+    },
+    {
+      "name": "Annapoorna Authentic Indian Cuisine",
+      "city": "Milpitas",
+      "area": "E Tasman Dr",
+      "address": "770 E Tasman Dr, Milpitas, CA 95035",
+      "coords": [37.4120292, -121.9183208],
+      "coords_source": "Restaurant Guru / listing geo",
+      "cuisine": "Indian (Maharashtrian), vegetarian",
+      "phone": "(408) 834-4933",
+      "lunch_special": {
+        "name": "Thali / combo meals printed on the restaurant's own menu",
+        "price_from": 12.0,
+        "price_to": 23.0,
+        "days": "daily (the combos are all-day menu items, not a time-limited lunch offer)",
+        "window": "served through the lunch service: indoor dining Sun-Thu 11:00 AM-2:30 PM",
+        "includes": "Rice Combo $12.00 (white rice 16 oz, tadka daal 12 oz, pickle, raita, ghee); Express Thali $15.00 (2 rotis, 1 veg, daal, rice, raita); Paratha Meal $18.50; Full Combo with 2 entrees $20.00; Combo Thali $21.00; Misal Thali $23.00."
+      },
+      "hours_tuesday": "11:00 AM - 2:30 PM and 5:00 PM - 8:30 PM (indoor dining, own menu page)",
+      "days_open": "Indoor dining: Sun-Thu 11:00-14:30 and 17:00-20:30; Fri-Sat 11:00-14:30 and 17:30-21:30. Takeaway/outdoor: Mon-Thu 11:00-21:00, Fri-Sat 11:00-22:00, Sun 11:30-21:00 (all from the restaurant's own menu page)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "~10 mi from 20387 Gillick Way: outside the 11:50 AM departure / 3:30 PM home deadline. The lunch service itself closes at 2:30 PM, so a seated lunch would have to start by about 11:30 AM."
+      },
+      "verification": {
+        "level": "official",
+        "sources": [
+          {
+            "label": "Annapoorna official menu page - Combo Thali $21.00, Rice Combo $12.00, Misal Thali $23.00, indoor-dining and takeaway hours, 770 East Tasman Dr address",
+            "url": "https://myannapoorna.com/menu/"
+          },
+          {
+            "label": "Annapoorna own Toast ordering page - Express Thali $15.00, Paratha Meal $18.50, Full Combo with 2 entrees $20.00, daily 10:45 am-9:00/10:00 pm hours",
+            "url": "https://www.toasttab.com/local/order/annapoorna-770-east-tasman-dr"
+          },
+          {
+            "label": "Yelp business page - 770 E Tasman Dr, Mon-Thu 11:00 am-9:00 pm, cross-check of the weekly hours",
+            "url": "https://www.yelp.com/biz/annapoorna-authentic-indian-cuisine-milpitas-4"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/annapoorna-authentic-indian-cuisine-milpitas-4",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Annapoorna+770+E+Tasman+Dr+Milpitas"
+      },
+      "flags": [
+        "CONFLICT inside the restaurant's own site: the menu page prints 'Take Away/Outdoor Timings MON - THU 11:00AM - 9:00PM' in one block and 'MON - FRI 11:00 AM Through Midnight' in a second block on the same page. Both are printed; nothing was averaged.",
+        "These thali/combo prices are all-day menu items, not a lunch-only promotion - the row is listed because the indoor lunch service (11:00 AM-2:30 PM) is the window in which they can be ordered, and the price is printed on the restaurant's own menu.",
+        "A different Annapoorna (14450 Culver Dr, Irvine, CA) shares the brand name; only the Milpitas room's address and prices are used here."
+      ]
+    },
+    {
+      "name": "Biryani Junction",
+      "city": "Milpitas",
+      "area": "S Abel St (Ranch Dr corridor)",
+      "address": "68 S Abel St, Milpitas, CA 95035",
+      "coords": [37.429493, -121.90757],
+      "coords_source": "Roadtrippers listing geo",
+      "cuisine": "Indian (Hyderabadi / Andhra biryani)",
+      "phone": "(408) 262-1128",
+      "lunch_special": {
+        "name": "Weekday lunch buffet (served 11:30 AM - 3:00 PM)",
+        "price_from": null,
+        "price_to": null,
+        "days": "weekdays (a Yelp photo on this business page is captioned 'Weekday lunch buffet items')",
+        "window": "11:30 AM - 3:00 PM",
+        "includes": "Buffet during the 11:30 AM-3:00 PM lunch block. A Reddit thread quotes 'Milpitas Buffet is $21 weekdays before 3:15pm', which is a diner figure, not a published menu price, so no price is printed in the price column."
+      },
+      "hours_tuesday": "11:30 AM - 3:00 PM and 5:00 PM - 10:00 PM",
+      "days_open": "Mon-Sun 11:30 AM-3:00 PM and 5:00 PM-10:00 PM (Yelp business page, updated over 3 months ago)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "~9 mi from 20387 Gillick Way: outside the 11:50 AM departure / 3:30 PM home deadline."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {
+            "label": "Yelp business page - Biryani Junction, 68 S Abel St: daily 11:30 am-3:00 pm / 5:00 pm-10:00 pm, phone, website, 'Weekday lunch buffet items' photo caption",
+            "url": "https://www.yelp.com/biz/biryani-junction-milpitas-2"
+          },
+          {
+            "label": "Roadtrippers listing - 68 S Abel St address and geo cross-check",
+            "url": "https://maps.roadtrippers.com/us/milpitas-ca/food-drink/biryani-junction-milpitas-ca"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/biryani-junction-milpitas-2",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Biryani+Junction+68+S+Abel+St+Milpitas"
+      },
+      "flags": [
+        "SAME-BRAND SECOND ADDRESS: Yelp also lists a Biryani Junction at 131 Ranch Dr, Milpitas, 95035 with identical 11:30 am-3:00 pm / 5:00 pm-10:00 pm hours and the same website (biryanijunctionmilpitas.com). Only the 68 S Abel St room is merged; the duplicate address is recorded here so the two are not counted as two independent finds.",
+        "The only lunch-buffet price found ($21 weekdays before 3:15 pm) is a Reddit diner quote, so the price column is left blank."
+      ]
+    },
+    {
+      "name": "Sri Radha's Veg Cuisine",
+      "city": "Milpitas",
+      "area": "E Calaveras Blvd",
+      "address": "680 E Calaveras Blvd, Milpitas, CA 95035",
+      "coords": [37.4323341, -121.8995741],
+      "coords_source": "Zmenu listing geo",
+      "cuisine": "Indian, vegetarian (pay-by-weight buffet)",
+      "phone": "(510) 771-7759",
+      "lunch_special": {
+        "name": "Lunch buffet (a 'Buffet' line item appears on the delivery menu; the dining room buffet is priced by weight)",
+        "price_from": null,
+        "price_to": null,
+        "days": "Monday-Saturday",
+        "window": "11:30 AM - 2:30 PM (dinner block 5:00 PM-8:30 PM)",
+        "includes": "Delivery-menu line items captured: Buffet $6.99, Appetizer of the day 16 oz $7.99, Dal of the day 16 oz $7.99, Dry Curry of the day 16 oz $7.99, Dessert of the day 16 oz $8.99. A listing site describes the dining-room buffet as pay-by-weight at $5.99 per pound. Those are listing/delivery-app figures, so no price is printed in the price column."
+      },
+      "hours_tuesday": "11:30 AM - 2:30 PM and 5:00 PM - 8:30 PM",
+      "days_open": "Mon-Sat 11:30-14:30 and 17:00-20:30; Sunday not listed (Zmenu). UberEats lists Mon-Sat 11:30 AM-2:10 PM and 5:00 PM-8:10 PM.",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "~10 mi from 20387 Gillick Way: outside the 11:50 AM departure / 3:30 PM home deadline."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {
+            "label": "Zmenu - Sri Radha's Veg Cuisine, 680 E Calaveras Blvd: address, geo, phone, Mon-Sat 11:30 am-2:30 pm / 5:00 pm-8:30 pm",
+            "url": "https://www.zmenu.com/sri-radhas-veg-cuisine-milpitas-online-menu/"
+          },
+          {
+            "label": "UberEats store page - 680 East Calaveras Blvd, Mon-Sat 11:30 AM-2:10 PM / 5:00 PM-8:10 PM, Buffet $6.99 line item",
+            "url": "https://www.ubereats.com/store/sri-radhas-veg-cuisine-milpitas/ohqDYmANQZOuEs4M5Qje2w"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/search?find_desc=Sri+Radha%27s+Veg+Cuisine&find_loc=Milpitas%2C+CA",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Sri+Radha%27s+Veg+Cuisine+680+E+Calaveras+Blvd+Milpitas"
+      },
+      "flags": [
+        "No street-address page from the business itself was found; address and hours come from two listing/delivery pages that agree on the street address and the 11:30 AM lunch opening but differ by 20 minutes on the closing times (2:30 PM vs 2:10 PM, 8:30 PM vs 8:10 PM). Both are printed.",
+        "Every price seen for this room is on a delivery app or a listing site, so per this project's rule (aggregator prices are leads, not verified) no price is printed."
+      ]
+    },
+    {
+      "name": "Hansang Tofu",
+      "city": "Milpitas",
+      "area": "Beresford Square Shopping Center, N Milpitas Blvd",
+      "address": "57 N Milpitas Blvd, Milpitas, CA 95035",
+      "coords": [37.434014, -121.9017723],
+      "coords_source": "Restaurant Guru / businessyab listing geo",
+      "cuisine": "Korean tofu house (soon dubu), BBQ",
+      "phone": "(408) 770-2107",
+      "lunch_special": {
+        "name": "Weekday lunch service - a Yelp reviewer cites 'good lunch specials, endless banchan'; no published lunch price found",
+        "price_from": null,
+        "price_to": null,
+        "days": "daily (the room opens 11:30 AM every day)",
+        "window": "opens 11:30 AM",
+        "includes": "Korean tofu soups, kalbi, bulgogi, K-chicken, army stew per the business description on its own site."
+      },
+      "hours_tuesday": "11:30 AM - 9:00 PM",
+      "days_open": "Mon-Sun 11:30 AM - 9:00 PM (agreed by Yelp, Restaurant Guru, Restaurantji and the listing that mirrors the business's own site)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "~10 mi from 20387 Gillick Way: outside the 11:50 AM departure / 3:30 PM home deadline."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {
+            "label": "Restaurantji - Hansang Tofu, 57 N Milpitas Blvd: address, phone, daily 11:30 AM-9 PM",
+            "url": "https://www.restaurantji.com/ca/milpitas/hansang-tofu-/"
+          },
+          {
+            "label": "Yelp business page - 57 N Milpitas Blvd, Mon-Sun 11:30 am-9:00 pm, and the reviewer line 'Good service, good lunch specials, endless banchan, good barley tea'",
+            "url": "https://www.yelp.com/biz/hansang-tofu-milpitas"
+          },
+          {
+            "label": "Restaurant Guru - 57 N Milpitas Blvd, daily 11:30 AM-9 PM, geo",
+            "url": "https://restaurantguru.com/Hansang-Tofu-Milpitas"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/hansang-tofu-milpitas",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Hansang+Tofu+57+N+Milpitas+Blvd+Milpitas"
+      },
+      "flags": [
+        "The existence of a lunch special rests on a Yelp review quote, not on a published menu, so the row is levelled 'listing' and no price is printed."
+      ]
+    },
+    {
+      "name": "Ushiya Grill",
+      "city": "Milpitas",
+      "area": "N Milpitas Blvd",
+      "address": "1792 N Milpitas Blvd, Milpitas, CA 95035",
+      "cuisine": "Japanese / Korean BBQ, premium wagyu",
+      "phone": "(669) 260-2988",
+      "lunch_special": {
+        "name": "Weekday lunch service block (11:30 AM - 2:30 PM) - no lunch price published on any page retrieved",
+        "price_from": null,
+        "price_to": null,
+        "days": "Monday-Friday",
+        "window": "11:30 AM - 2:30 PM",
+        "includes": "The lunch block is a distinct service period on the Yelp hours table; the menu itself was not published on any page retrieved this pass."
+      },
+      "hours_tuesday": "11:30 AM - 2:30 PM and 5:30 PM - 10:00 PM",
+      "days_open": "Mon-Thu 11:30-14:30 and 17:30-22:00; Fri 11:30-14:30 and 16:30-22:30; Sat 11:30-22:30; Sun 11:30-22:00 (Yelp business page)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "~10 mi from 20387 Gillick Way: outside the 11:50 AM departure / 3:30 PM home deadline."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {
+            "label": "Yelp business page - Ushiya Grill, 1792 N Milpitas Blvd: Mon-Thu 11:30 am-2:30 pm / 5:30 pm-10:00 pm, Fri 11:30 am-2:30 pm / 4:30 pm-10:30 pm, Sat-Sun hours, phone",
+            "url": "https://www.yelp.com/biz/ushiya-grill-milpitas"
+          },
+          {
+            "label": "Corner.inc listing - 1792 N Milpitas Blvd, same weekly hours, links ushiyagrill.com as the business site",
+            "url": "https://www.corner.inc/place/549433"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/ushiya-grill-milpitas",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Ushiya+Grill+1792+N+Milpitas+Blvd+Milpitas"
+      },
+      "flags": [
+        "Social-video captions quote AYCE figures for this address ($35 Signature / $55 Premium); those are TikTok captions, not citable menu prices, so they are not printed in the price column.",
+        "No published lunch price: the row records the verified weekday lunch service block only."
+      ]
+    },
+    {
+      "name": "Ramen 101",
+      "city": "Milpitas",
+      "area": "Ranch Dr",
+      "address": "133 Ranch Dr, Milpitas, CA 95035",
+      "cuisine": "Hawaiian / ramen",
+      "phone": "(408) 649-3151",
+      "lunch_special": {
+        "name": "No lunch special published - full-price lunch service from 11:00 AM",
+        "price_from": null,
+        "price_to": null,
+        "days": "daily",
+        "window": "opens 11:00 AM",
+        "includes": "Menu prices captured from the Yelp menu module: Black Garlic Ramen $17.95, Tonkotsu Ramen $16.95, Chicken Katsu $15.00, Teriyaki Chicken $15.00, BBQ Mix $19.00. These are regular menu prices, not a lunch deal."
+      },
+      "hours_tuesday": "11:00 AM - 9:00 PM (Yelp) / 11:00 AM - 8:00 PM (Zmenu) - see flag",
+      "days_open": "Mon-Sun 11:00 AM-9:00 PM (Yelp business page and the business's own mirror page); Zmenu lists Mon-Sun 11:00 am-8:00 pm",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "~10 mi from 20387 Gillick Way: outside the 11:50 AM departure / 3:30 PM home deadline."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {
+            "label": "Yelp business page - Ramen 101, 133 Ranch Dr: daily 11:00 am-9:00 pm, menu prices (Black Garlic Ramen $17.95, Tonkotsu Ramen $16.95, Chicken Katsu $15.00)",
+            "url": "https://www.yelp.com/biz/ramen-101-milpitas-2"
+          },
+          {
+            "label": "Ramen 101 business page (ramen-101.res-menu.net) - 133 Ranch Dr, daily 11:00 AM-9:00 PM",
+            "url": "https://ramen-101.res-menu.net/"
+          },
+          {
+            "label": "Zmenu - 133 Ranch Dr, Mon-Sun 11:00 am-8:00 pm (conflicting closing time)",
+            "url": "https://www.zmenu.com/ramen-101-milpitas-2-online-menu/"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/ramen-101-milpitas-2",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Ramen+101+133+Ranch+Dr+Milpitas"
+      },
+      "flags": [
+        "Closing-time conflict: Yelp and the business's own mirror page say 9:00 PM daily, Zmenu says 8:00 PM daily. Both are printed; nothing averaged.",
+        "A same-brand Ramen 101 exists in Modesto - only the Milpitas room is listed."
+      ]
+    },
+    {
+      "name": "Tayyibaat Meat & Grill",
+      "city": "Milpitas",
+      "area": "S Abbott Ave",
+      "address": "10 S Abbott Ave, Milpitas, CA 95035",
+      "cuisine": "Mediterranean / halal butcher, kebabs, burgers",
+      "phone": "(408) 586-9700",
+      "lunch_special": {
+        "name": "No lunch special published - open through lunch from 11:00 AM",
+        "price_from": null,
+        "price_to": null,
+        "days": "daily",
+        "window": "opens 11:00 AM",
+        "includes": "Business description on its Yelp page: kebabs with a Mediterranean/South Asian fusion, live-flame rotisserie chicken, and a specials menu of open-face NY steak sandwich, 1/2 lb wagyu burger and ribeye steak. No lunch-only pricing was found."
+      },
+      "hours_tuesday": "11:00 AM - 9:00 PM",
+      "days_open": "Mon-Sun 11:00 AM - 9:00 PM (Yelp business page)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "~10 mi from 20387 Gillick Way: outside the 11:50 AM departure / 3:30 PM home deadline."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {
+            "label": "Yelp business page - Tayyibaat Meat & Grill, 10 S Abbott Ave: Mon-Sun 11:00 am-9:00 pm, phone, business description, tayyibaat.com",
+            "url": "https://www.yelp.com/biz/tayyibaat-meat-and-grill-milpitas-4"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/tayyibaat-meat-and-grill-milpitas-4",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Tayyibaat+Meat+and+Grill+10+S+Abbott+Ave+Milpitas"
+      },
+      "flags": [
+        "Sunday Steak Night and the specials menu are described on the business's Yelp page, not on the business's own site, and neither is a lunch offer. No price is printed."
+      ]
+    },
+    {
+      "name": "Pho Nguyen Restaurant (Phở Nguyễn)",
+      "city": "Milpitas",
+      "area": "W Calaveras Blvd",
+      "address": "275 W Calaveras Blvd, Milpitas, CA 95035",
+      "coords": [37.4274436, -121.9110572],
+      "coords_source": "official site JSON-LD",
+      "cuisine": "Vietnamese (pho)",
+      "phone": "(408) 945-5909",
+      "lunch_special": {
+        "name": "No lunch special published - full-price lunch service from 10:00 AM every day it is open",
+        "price_from": null,
+        "price_to": null,
+        "days": "Monday, Wednesday-Sunday (CLOSED TUESDAY)",
+        "window": "10:00 AM opening",
+        "includes": "Restaurant Guru lists a price range per person of $11-$30 for this address; that is a listing-derived range, not a published lunch price, so the price column stays blank."
+      },
+      "hours_tuesday": "CLOSED on Tuesday - the restaurant's own structured data lists Monday and Wednesday-Sunday 10:00-20:00 only",
+      "days_open": "Mon 10:00-20:00; Tue closed; Wed-Sun 10:00-20:00 (restaurant's own structured data on phonguyenmilpitas.com, corroborated by Restaurantji and Restaurant Guru)",
+      "open_on_trip_date": false,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "CLOSED TUESDAYS - out for 2026-09-08 - and ~10 mi from the destination besides."
+      },
+      "verification": {
+        "level": "official",
+        "sources": [
+          {
+            "label": "Pho Nguyen official site - 275 W Calaveras Blvd, structured opening hours (Mon and Wed-Sun 10:00-20:00, Tuesday absent), geo, phone",
+            "url": "https://phonguyenmilpitas.com/"
+          },
+          {
+            "label": "Restaurantji - 275 W Calaveras Blvd, Tuesday Closed, all other days 10AM-8PM",
+            "url": "https://www.restaurantji.com/ca/milpitas/pho-nguyen-restaurant-/"
+          },
+          {
+            "label": "Restaurant Guru - 275 W Calaveras Blvd, Tue closed, $11-$30 per person range, geo",
+            "url": "https://restaurantguru.com/Pho-Nguyen-Milpitas"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/search?find_desc=Pho+Nguyen&find_loc=Milpitas%2C+CA",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Pho+Nguyen+275+W+Calaveras+Blvd+Milpitas"
+      },
+      "flags": [
+        "CLOSED ON TUESDAY - the trip date 2026-09-08 is a Tuesday, so this row is recorded as not open on the trip date.",
+        "CONFLICT: menuweb.menu lists this address as 10:00-19:40 daily including Tuesday, which contradicts the restaurant's own structured data, Restaurantji and Restaurant Guru. The majority reading (Tuesday closed) is used and the outlier is printed here."
+      ]
+    },
+    {
+      "name": "Super Potato (粉阿姐超级土豆粉)",
+      "city": "Milpitas",
+      "area": "W Calaveras Blvd",
+      "address": "177 W Calaveras Blvd, Milpitas, CA 95035",
+      "cuisine": "Chinese - potato noodles, fruit teas",
+      "phone": "(408) 618-8502",
+      "lunch_special": {
+        "name": "Weekday lunch service block (11:00 AM - 2:30 PM) - no lunch-only price published",
+        "price_from": null,
+        "price_to": null,
+        "days": "Mon, Wed, Thu, Fri (CLOSED TUESDAY)",
+        "window": "11:00 AM - 2:30 PM (dinner block 5:00 PM-9:30 PM)",
+        "includes": "Potato-noodle bowls and fruit teas. A listing site describes prices as 'reasonable, with large portions for under $10'; that is a listing claim, not a published menu price, so no price is printed."
+      },
+      "hours_tuesday": "CLOSED on Tuesday (Yelp and Corner.inc both show Tuesday Closed)",
+      "days_open": "Mon 11:00-14:30 and 17:00-21:30; Tue closed; Wed-Fri 11:00-14:30 and 17:00-21:30; Sat-Sun 11:00-21:30 (Yelp and Corner.inc)",
+      "open_on_trip_date": false,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "CLOSED TUESDAYS - out for 2026-09-08 - and ~10 mi from the destination besides."
+      },
+      "verification": {
+        "level": "conflicting",
+        "sources": [
+          {
+            "label": "Yelp business page - Super Potato, 177 W Calaveras Blvd: Tue Closed; Mon/Wed/Thu/Fri 11:00 am-2:30 pm and 5:00 pm-9:30 pm; Sat-Sun 11:00 am-9:30 pm",
+            "url": "https://www.yelp.com/biz/super-potato-milpitas"
+          },
+          {
+            "label": "Corner.inc listing - 177 W Calaveras Blvd, Tuesday: Closed, same remaining days",
+            "url": "https://www.corner.inc/place/272528"
+          },
+          {
+            "label": "Zmenu - 177 W Calaveras Blvd, every day 11:00am-9:30pm including Tuesday (conflicting)",
+            "url": "https://www.zmenu.com/%E7%B2%89%E9%98%BF%E5%A7%90%E8%B6%85%E7%BA%A7%E5%9C%9F%E8%B1%86%E7%B2%89super-potato-milpitas-milpitas-online-menu/"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/super-potato-milpitas",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Super+Potato+177+W+Calaveras+Blvd+Milpitas"
+      },
+      "flags": [
+        "TUESDAY CONFLICT: Yelp and Corner.inc both list Tuesday as Closed; Zmenu lists 11:00 am-9:30 pm every day including Tuesday, and Beyondmenu lists 11:00 am-9:15 pm every day. Two independent sources say closed, two aggregators say open. The row is levelled 'conflicting' and open_on_trip_date is set to false - confirm by phone before relying on a Tuesday visit.",
+        "No lunch-only price is published, so the price column stays blank."
+      ]
+    },
+    {
+      "name": "Masala Dosa Vegetarian Restaurant",
+      "city": "Milpitas",
+      "area": "E Calaveras Blvd",
+      "address": "1231 E Calaveras Blvd, Milpitas, CA 95035",
+      "cuisine": "South Indian vegetarian (dosa, idli)",
+      "phone": "(669) 284-9129",
+      "lunch_special": {
+        "name": "Breakfast happy-hour combo 9:00-10:00 AM at $10 per one listing site; no lunch-only special published",
+        "price_from": null,
+        "price_to": null,
+        "days": "not stated for the combo; the room is CLOSED TUESDAY in any case",
+        "window": "9:00 AM - 10:00 AM for the breakfast combo",
+        "includes": "Menu prices captured from the Yelp menu module: Idli $8.99, Plain Dosa $10.99, Ghee Dosa $11.99, Mysore Masala Dosa $12.99, Onion Masala Dosa $12.99, Davangere Benne Masala Dosa $13.99, Kanchipuram Vegetable Masala Dosa $13.99, Kids Ghee Dosa $9.99, Extra Bun Parotta $5.99 (evening from 6 pm). These are regular menu prices.",
+        "price_note": "The only discounted item found ($10 breakfast happy-hour combo, 9-10 AM) comes from a listing site, not the business, so it is not printed in the price column."
+      },
+      "hours_tuesday": "CLOSED on Tuesday (Yelp and the wheree listing both show Tuesday Closed)",
+      "days_open": "Mon 9:00-21:00; Tue closed; Wed-Thu 9:00-21:00; Fri-Sat 9:00-22:00; Sun 9:00-22:00 (Yelp business page)",
+      "open_on_trip_date": false,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "CLOSED TUESDAYS - out for 2026-09-08 - and ~10 mi from the destination besides."
+      },
+      "verification": {
+        "level": "conflicting",
+        "sources": [
+          {
+            "label": "Yelp business page - Masala Dosa Vegetarian Restaurant, 1231 East Calaveras Blvd: Tue Closed, Mon 9-9, Wed-Thu 9-9, Fri-Sat 9-10, Sun 9-10, phone, menu prices",
+            "url": "https://www.yelp.com/biz/masala-dosa-vegetarian-restaurant-milpitas"
+          },
+          {
+            "label": "Wheree listing - 1251 E Calaveras Blvd (address differs by 20 street numbers), Tuesday Close, same remaining days",
+            "url": "https://masala-dosa-vegetarian-restaurant.wheree.com/"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/masala-dosa-vegetarian-restaurant-milpitas",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Masala+Dosa+Vegetarian+Restaurant+1231+E+Calaveras+Blvd+Milpitas"
+      },
+      "flags": [
+        "ADDRESS CONFLICT: Yelp gives 1231 E Calaveras Blvd, the wheree listing and DoorDash give 1251 E Calaveras Blvd. Both are printed; the Yelp street number is used because it is the claimed business page.",
+        "CLOSED ON TUESDAY per both sources - the trip date 2026-09-08 is a Tuesday, so open_on_trip_date is false.",
+        "The $10 breakfast happy-hour combo (9-10 AM) comes from a listing site only and is not a lunch offer, so no price is printed."
+      ]
+    },
+    {
+      "name": "Los Jefes Taqueria",
+      "city": "Milpitas",
+      "area": "S Park Victoria Dr",
+      "address": "1350 S Park Victoria Dr Ste 43, Milpitas, CA 95035",
+      "coords": [37.417397, -121.87398],
+      "coords_source": "TripAdvisor listing geo",
+      "cuisine": "Mexican / New Mexican, tacos",
+      "phone": "(669) 249-1947",
+      "lunch_special": {
+        "name": "No lunch special published - open from breakfast through the lunch block",
+        "price_from": null,
+        "price_to": null,
+        "days": "daily",
+        "window": "opens 7:30-8:00 AM depending on the source (see flag)",
+        "includes": "A listing site quotes the menu: 'a bean and cheese burrito costs about $6, with an additional $1.49 for rice'. That is a listing claim, not a published menu price, so no price is printed."
+      },
+      "hours_tuesday": "8:00 AM - 10:00 PM (Yelp, updated 2 months ago) / 7:30 AM - 9:00 PM (Wanderlog) / 8:00 AM - 8:00 PM (TripAdvisor) - three values, see flag",
+      "days_open": "Yelp: Mon 7:30 am-9:00 pm, Tue-Fri 7:30 am-10:00 pm, Sat 9:00 am-10:00 pm, Sun 9:00 am-8:00 pm. TripAdvisor: Mon-Tue 8-8, Wed 8-8, Thu 8-9, Fri 8-10, Sat 10-10, Sun 10-8.",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "~11 mi from 20387 Gillick Way: outside the 11:50 AM departure / 3:30 PM home deadline."
+      },
+      "verification": {
+        "level": "conflicting",
+        "sources": [
+          {
+            "label": "Yelp business page - Los Jefes Taqueria, 1350 S Park Victoria Dr Ste 43: Mon 7:30 am-9:00 pm, Tue-Fri 7:30 am-10:00 pm, Sat 9:00 am-10:00 pm, Sun 9:00 am-8:00 pm",
+            "url": "https://www.yelp.com/biz/los-jefes-taqueria-milpitas"
+          },
+          {
+            "label": "TripAdvisor listing - 1350 South Park Victoria Drive #43, structured per-day hours (Tue 08:00-20:00), geo",
+            "url": "https://www.tripadvisor.ca/Restaurant_Review-g32717-d34198009-Reviews-Los_Jefes_Taqueria-Milpitas_California.html"
+          },
+          {
+            "label": "Wanderlog - same address, Tuesday 7:30AM-9PM (third value)",
+            "url": "https://wanderlog.com/place/details/14169569/los-jefes-taqueria"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/los-jefes-taqueria-milpitas",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Los+Jefes+Taqueria+1350+S+Park+Victoria+Dr+Milpitas"
+      },
+      "flags": [
+        "THREE-WAY HOURS CONFLICT for Tuesday (8:00 AM-10:00 PM on Yelp, 7:30 AM-9:00 PM on Wanderlog, 8:00 AM-8:00 PM on TripAdvisor). All three are printed; the Yelp value is used for the Tuesday field because it is the most recently updated (2 months ago) and the other two agree it is open Tuesday.",
+        "No published lunch special; the ~$6 bean-and-cheese burrito figure is a listing-site claim and is not printed as a price."
+      ]
+    }
+  ]
+}

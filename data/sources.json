@@ -1,6 +1,6 @@
 {
-  "accessed": "2026-09-07 through 2026-09-11",
-  "note": "Every time, fare and stop in this project was read from one of these pages. 'fetch_status' records what happened when the page was read from the build environment, so a gap is visible instead of hidden. Pass 7 (2026-09-07): 16 official restaurant pages added for the seventh search pass; review-level evidence remains inline in each row verification.sources.",
+  "accessed": "2026-09-11",
+  "note": "Every time, fare and stop in this project was read from one of these pages. 'fetch_status' records what happened when the page was read from the build environment, so a gap is visible instead of hidden. Pass 7 (2026-09-07): 16 official restaurant pages added for the seventh search pass; review-level evidence remains inline in each row verification.sources. Pass 11 (2026-09-11): sources S95-S120 added - the verified-lunch pages that produced the pass-11 rows (Home Eat's own ordering site, Lotus Thai Bistro, Tatami Buffet, LB Steak, Habit, Togo's), the https stand-in for Boda (whose own site is http-only), the closure and withdrawal evidence for six restaurants, and the two duplicate/withdrawal pages kept so nothing found this pass is silently lost. S119 is flagged as a lead-only source: Reddit threads pointed at cheap lunches but no Reddit price was ever printed in a row.",
   "sources": [
     {
       "id": "S1",
@@ -754,6 +754,246 @@
       "url": "https://menupages.com/campbell-pizza/3393-winchester-blvd-campbell",
       "fetch_status": "ok",
       "used_for": "REJECT evidence: page advertises a 'Lunch Specials' category and then states 'Restaurant closed'"
+    },
+    {
+      "id": "S95",
+      "agency": "Nextdoor",
+      "label": "Boda Chinese & Vietnamese Food, 2868 Story Road, San Jose",
+      "url": "https://nextdoor.com/pages/boda-chinese-vietnamese-food/",
+      "fetch_status": "ok",
+      "used_for": "L592: 2868 Story Road, San Jose, CA 95127, +1 408-251-3855, geo 37.353175,-121.82256 - https-citable corroboration of the street address and phone. Boda's OWN site (http://www.bodarestaurant.com/) is the page that prints 'Weekday Lunch Special ... From Mon. to Fri. 11:00 am to 2:00 pm ... $5.99' with a $6.50 prawn section and 'Open 7 Days a Week 11am - 10pm', but it serves http only - see could_not_verify."
+    },
+    {
+      "id": "S96",
+      "agency": "Home Eat (official ordering site)",
+      "label": "Toast ordering page - Home Eat Santa Clara",
+      "url": "https://homeeat.toast.site/order/home-eat-santa-clara",
+      "fetch_status": "ok",
+      "used_for": "L534: 638 El Camino Real, Santa Clara; Lunch Specials - Crispy Chicken $12.99, Beef Broccoli $13.99, Chicken Broccoli $12.99, each with a randomly selected complimentary 'mystery drink'"
+    },
+    {
+      "id": "S97",
+      "agency": "Lotus Thai Bistro (official)",
+      "label": "Official site - 425 California Avenue, Palo Alto",
+      "url": "https://www.lotusthaibistro.com/",
+      "fetch_status": "ok",
+      "used_for": "L536: 'We are open Monday-Saturday for lunch specials and dinner', links its own lunch-specials PDF, Labor Day closure Mon 2026-09-07"
+    },
+    {
+      "id": "S98",
+      "agency": "Yellowpages",
+      "label": "Tatami Buffet, 10123 N Wolfe Rd, Cupertino",
+      "url": "https://www.yellowpages.com/cupertino-ca/mip/tatami-buffet-460371458",
+      "fetch_status": "ok",
+      "used_for": "L591: Mon-Fri 11:30 am-2:30 pm / Sat-Sun 11:30 am-3:00 pm, geo 37.326267,-122.01459, (408) 996-3444 - a lunch-only operating day"
+    },
+    {
+      "id": "S99",
+      "agency": "allbiz",
+      "label": "Tatami Buffet business record",
+      "url": "https://www.allbiz.com/business/tatami-buffet-408-996-3444",
+      "fetch_status": "ok",
+      "used_for": "L591: day-by-day corroboration of the same lunch-only hours, plus sameAs links to its own Yelp and TripAdvisor pages"
+    },
+    {
+      "id": "S100",
+      "agency": "LB Steak (official)",
+      "label": "All-day menu page (structured hours for every location)",
+      "url": "https://www.lbsteak.com/menus/all-day-menu",
+      "fetch_status": "ok",
+      "used_for": "L535: 334 Santana Row #1000, San Jose; Su-Th 11:30-21:00, Fr-Sa 11:30-22:00; geo 37.322437,-121.947533"
+    },
+    {
+      "id": "S101",
+      "agency": "OpenTable",
+      "label": "Mezcal, 25 W San Fernando St, San Jose",
+      "url": "https://www.opentable.com/mezcal-san-jose",
+      "fetch_status": "ok",
+      "used_for": "L538: continuous Tue-Thu 11:30 am-9:00 pm service - conflicts with Yelp's 11:30 am-1:30 pm lunch block; row levelled 'conflicting'"
+    },
+    {
+      "id": "S102",
+      "agency": "OpenTable",
+      "label": "Strata (Strata), 181 E Santa Clara St, San Jose",
+      "url": "https://www.opentable.com/r/strata-san-jose",
+      "fetch_status": "ok",
+      "used_for": "L539: 'Lunch Tue-Fri 11:00 am-2:00 pm' plus the full lunch-menu item list - conflicts with the May 2026 opening coverage that described a dinner-only room"
+    },
+    {
+      "id": "S103",
+      "agency": "Eater SF",
+      "label": "Strata opening coverage (May 2026)",
+      "url": "https://sf.eater.com/restaurant-news/212357/strata-san-jose-restaurant-opening",
+      "fetch_status": "ok",
+      "used_for": "L539 conflict evidence: 'open from 5 p.m. to 9 p.m. Tuesday through Wednesday...' with no lunch service at all"
+    },
+    {
+      "id": "S104",
+      "agency": "OpenTable",
+      "label": "Ristorante Don Giovanni, 235 Castro St, Mountain View - DEFERRED",
+      "url": "https://www.opentable.com/ristorante-don-giovanni-mountain-view",
+      "fetch_status": "ok",
+      "used_for": "NOT MERGED - the address de-duplication caught 235 Castro Street against the existing row L89 Don Giovanni's (235 Castro St). Recorded here so the page is not lost; the $19.95-$19.99 three-course lunch appears only in OpenTable's review-summary text."
+    },
+    {
+      "id": "S105",
+      "agency": "Yelp",
+      "label": "Left Bank Brasserie - Santana Row - CLOSED",
+      "url": "https://www.yelp.com/biz/left-bank-san-jose-san-jose",
+      "fetch_status": "403 to direct fetch (read via search snippet)",
+      "used_for": "REJECT evidence: page title now reads 'LEFT BANK BRASSERIE - SANTANA ROW - CLOSED' at 377 Santana Row Ste 1100"
+    },
+    {
+      "id": "S106",
+      "agency": "Yelp",
+      "label": "Rosie McCann's Irish Pub & Restaurant - Santana Row - CLOSED",
+      "url": "https://www.yelp.com/biz/rosie-mccanns-irish-pub-and-restaurant-santana-row-san-jose",
+      "fetch_status": "403 to direct fetch (read via search snippet)",
+      "used_for": "REJECT evidence: page title reads 'CLOSED'; TripAdvisor and Restaurant Guru both say permanently closed (355 Santana Row Ste 1060)"
+    },
+    {
+      "id": "S107",
+      "agency": "Yelp",
+      "label": "Yankee Pier - CLOSED",
+      "url": "https://www.yelp.com/biz/yankee-pier-san-jose",
+      "fetch_status": "403 to direct fetch (read via search snippet)",
+      "used_for": "REJECT evidence: page title reads 'YANKEE PIER - CLOSED' at 378 Santana Row Ste 1100"
+    },
+    {
+      "id": "S108",
+      "agency": "Yelp",
+      "label": "Vida Tapas Y Cocteles, Mountain View - CLOSED",
+      "url": "https://www.yelp.com/biz/vida-tapas-y-cocteles-mountain-view",
+      "fetch_status": "403 to direct fetch (read via search snippet)",
+      "used_for": "REJECT evidence: 'Yelpers report this location has closed'; the order.online storefront for 110 Castro St also renders 'Unavailable'. A $25 '2 tapas + 1 dessert' lunch special is documented in 2024 posts but belongs to a closed room."
+    },
+    {
+      "id": "S109",
+      "agency": "Yelp",
+      "label": "Sushi Confidential - San Jose (downtown), 26 N San Pedro St",
+      "url": "https://www.yelp.com/biz/sushi-confidential-san-jose-san-jose",
+      "fetch_status": "403 to direct fetch (read via search snippet)",
+      "used_for": "REJECT evidence: Mon/Tue/Wed closed, Thu-Fri open from 4:00 pm - no Tuesday lunch. Its Willow Glen room (1140 Lincoln Ave) has normal lunch hours and was merged as L590."
+    },
+    {
+      "id": "S110",
+      "agency": "Yellowpages",
+      "label": "Olive Garden locations near Cupertino",
+      "url": "https://www.yellowpages.com/cupertino-ca/olive-garden",
+      "fetch_status": "ok",
+      "used_for": "L543: there is no Olive Garden in Cupertino - the nearest rooms are Milpitas (1350 Great Mall Dr), two in San Jose and one in Fremont. Structured hours Mo-Th 11:00-22:00, Fr-Sa 11:00-23:00, Su 11:00-22:00 for the Milpitas room."
+    },
+    {
+      "id": "S111",
+      "agency": "Habit Burger & Grill (official)",
+      "label": "San Jose - Almaden store page",
+      "url": "https://www.habitburger.com/locations/san-jose-almaden/",
+      "fetch_status": "ok",
+      "used_for": "L588: 5018 Almaden Expressway; Mon-Thur 10:30am-9:30pm, Fri-Sat 10:30am-10:00pm, Sun 10:30am-9:30pm; geo 37.258722,-121.875617"
+    },
+    {
+      "id": "S112",
+      "agency": "Restaurant Guru",
+      "label": "Red Robin - Eastridge, San Jose",
+      "url": "https://restaurantguru.com/Red-Robin-Eastridge-San-Jose",
+      "fetch_status": "ok",
+      "used_for": "L589: 2200 Eastridge Loop; Mon-Thu 11:00-22:00, Fri-Sat 11:00-23:00, Sun 11:00-21:00; geo; $10-$20 per person"
+    },
+    {
+      "id": "S113",
+      "agency": "TripAdvisor",
+      "label": "Togo's, 21265 Stevens Creek Blvd, Cupertino",
+      "url": "https://www.tripadvisor.com/Restaurant_Review-g32273-d4467748-Reviews-Togo_s-Cupertino_California.html",
+      "fetch_status": "ok",
+      "used_for": "L590: structured Mon-Thu 10:00-20:30, Fri 10:00-20:00, Sat 10:00-18:00, Sun 10:00-17:00; geo 37.32349,-122.0474"
+    },
+    {
+      "id": "S114",
+      "agency": "Wanderlog",
+      "label": "Milpitas Buffet, 24 S Abbott Ave",
+      "url": "https://wanderlog.com/place/details/448028/milpitas-buffet",
+      "fetch_status": "ok",
+      "used_for": "L587: Mon-Fri 11:00-21:00, Sat-Sun 11:00-21:30, (408) 945-8888. The $19.99/$20 lunch-buffet prices quoted on this page are review text and were NOT carried into the row."
+    },
+    {
+      "id": "S115",
+      "agency": "corner.inc",
+      "label": "Inchin's Bamboo Garden, 151 W Washington Ave, Sunnyvale",
+      "url": "https://www.corner.inc/place/p7kikrrF6mFz",
+      "fetch_status": "ok",
+      "used_for": "DUPLICATE CAUGHT AFTER MERGE: same street address as the existing row L43 (Inchin's Bamboo Garden). The pass-11 row was withdrawn and recorded in lunch_rejected.json; this page is kept so the hours evidence is not lost."
+    },
+    {
+      "id": "S116",
+      "agency": "TripAdvisor",
+      "label": "Opa! Willow Glen, 1100 Lincoln Ave, San Jose - WITHDRAWN",
+      "url": "https://www.tripadvisor.com/Restaurant_Review-g33020-d2234576-Reviews-Opa_Willow_Glen-San_Jose_California.html",
+      "fetch_status": "ok",
+      "used_for": "WITHDRAWN AFTER MERGE: the listing carries a 2018 date stamp, prints Saturday and Sunday twice, and its street address is already held by Burma Roots (row L348, 1100 Lincoln Ave Ste 101). Row deleted; recorded in lunch_rejected.json."
+    },
+    {
+      "id": "S117",
+      "agency": "Franki",
+      "label": "Boda Chinese & Vietnamese Food, 2868 Story Rd, San Jose",
+      "url": "https://frankiapp.com/business/boda-chinese-vietnamese-food-284350",
+      "fetch_status": "ok",
+      "used_for": "L592: day-by-day Mon-Sun 11:00-22:00, geo 37.353368,-121.822705, phone, links bodarestaurant.com - the https-citable source standing in for Boda's http-only site"
+    },
+    {
+      "id": "S118",
+      "agency": "Yelp",
+      "label": "The Counter Santana Row, 3055 Olin Ave Ste 1035",
+      "url": "https://www.yelp.com/biz/the-counter-santana-row-san-jose-3",
+      "fetch_status": "403 to direct fetch (read via search snippet)",
+      "used_for": "L537: Mon-Thu and Sun 11:15 am-9:00 pm, Fri-Sat 11:15 am-10:00 pm. Phone is printed two ways on the same page ((408) 610-1362 and (408) 423-9200) - both carried in the row flag."
+    },
+    {
+      "id": "S119",
+      "agency": "Reddit",
+      "label": "r/bayarea and r/SanJose cheap-lunch threads",
+      "url": "https://www.reddit.com/r/bayarea/",
+      "fetch_status": "ok (thread-level; individual threads cited inline in rows)",
+      "used_for": "LEAD SOURCE ONLY for pass 11 - Habit Burger $10 half-burger combo, Red Robin $10 burger-fries-drink pickup deal, Olive Garden $12 soup/salad/breadsticks, Veggie Grill $10-$15 plates. Used to find restaurants, never to price them; every one of these figures is described in its row and left out of price_from/price_to."
+    },
+    {
+      "id": "S120",
+      "agency": "Sunnyvale Chamber of Commerce",
+      "label": "Sunnyvale Restaurant Week - Where To Dine",
+      "url": "https://www.svcoc.org/sunnyvale-restaurant-week-where-to-dine/",
+      "fetch_status": "ok",
+      "used_for": "Re-read on pass 11 to re-check the seven restaurant-week lunch rows (Adrestia $35, Delhi to Kathmandu $11-$18, Empire Armadillo $26.99, Falafel Flare $16-$25, P.F. Chang's $16.99, RBG $34.99, Valley Goat $45). Still no date range printed on the page - existing LUNCH-FLAG-26 stands."
+    },
+    {
+      "id": "S121",
+      "agency": "Last Chance Restaurant",
+      "label": "Last Chance Restaurant menu and ordering site",
+      "url": "https://www.lastchancerestaurantmenu.com/",
+      "fetch_status": "ok",
+      "used_for": "L593: 3400 De La Cruz Blvd, Santa Clara; menu items and published prices; daily hours."
+    },
+    {
+      "id": "S122",
+      "agency": "OpenTable",
+      "label": "Nar Restaurant Mountain View listing",
+      "url": "https://www.opentable.com/r/nar-restaurant-mountain-view",
+      "fetch_status": "ok",
+      "used_for": "L594: 286 W El Camino Real, Mountain View; Tue-Sun lunch 11:30 am-2:00 pm and dinner hours."
+    },
+    {
+      "id": "S123",
+      "agency": "Delarosa",
+      "label": "Delarosa Palo Alto official location and menu",
+      "url": "https://www.delarosasf.com/location/palo-alto/",
+      "fetch_status": "ok",
+      "used_for": "L595: Stanford Shopping Center address, weekly hours, all-day menu and printed prices."
+    },
+    {
+      "id": "S124",
+      "agency": "Rosewood Hotels",
+      "label": "Madera at Rosewood Sand Hill official page",
+      "url": "https://www.rosewoodhotels.com/en/sand-hill-menlo-park/dining/madera",
+      "fetch_status": "ok",
+      "used_for": "L596: weekday lunch 11:30 am-2:00 pm, daily dinner, restaurant identity."
     }
   ],
   "dead_ends": [
@@ -779,6 +1019,7 @@
     "Ox 9 Cupertino branch - existence hinted on Yelp but no address verified; no row added.",
     "Ethel's, Bowl'd, Mezzaluna (Los Gatos), Thyme (Palo Alto) - named in threads but no verifiable address/hours found.",
     "Whether the Sunnyvale Restaurant Week menus are running on 2026-09-08: the chamber's Where To Dine and About pages publish no date range and the artwork is dated 2025.",
-    "Sunnyvale street addresses and weekly hours for Urban Plates, Gurkha Kitchen, RBG Bar & Grill and Teriyaki Madness - the chamber page links only to brand homepages or ordering pages, so all four were deferred instead of merged with a placeholder address."
+    "Sunnyvale street addresses and weekly hours for Urban Plates, Gurkha Kitchen, RBG Bar & Grill and Teriyaki Madness - the chamber page links only to brand homepages or ordering pages, so all four were deferred instead of merged with a placeholder address.",
+    "Boda (2868 Story Rd, San Jose) publishes its $5.99 / $6.50 weekday lunch special and its 'Open 7 Days a Week 11am - 10pm' hours on its own site at http://www.bodarestaurant.com/, but that host refuses https (HTTP 500 on both the www and bare-domain forms). The project cites https URLs only, so the page is recorded here instead of as a source row, and the row L592 carries the price in its description text with price_from / price_to left blank. See LUNCH-FLAG-37."
   ]
 }
