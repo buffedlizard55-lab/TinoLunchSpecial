@@ -286,6 +286,21 @@ def main():
     validate_lunch(specials["entries"])
     validate_fares(fares)
 
+    # search_protocol feeds the front-page summary sentence, where queries_run and
+    # candidates_found are interpolated as counts. If someone puts prose in them the
+    # page prints nonsense ("selected from all passes documented plus ~100 ...
+    # candidates checked line by line across cumulative ~385 searches ... queries"),
+    # so the data file itself has to hold numbers.
+    sp = specials.get("search_protocol") or {}
+    for field in ("queries_run", "candidates_found", "added_to_master", "rejected_or_deferred"):
+        v = sp.get(field)
+        if not isinstance(v, int):
+            err(f"search_protocol.{field} must be an integer count, got {type(v).__name__}: {str(v)[:80]!r}")
+    if isinstance(sp.get("added_to_master"), int) and sp["added_to_master"] != len(specials["entries"]):
+        err(f"search_protocol.added_to_master says {sp['added_to_master']} but the file has {len(specials['entries'])} entries")
+    if isinstance(sp.get("rejected_or_deferred"), int) and sp["rejected_or_deferred"] != len(rejected["rejected"]):
+        err(f"search_protocol.rejected_or_deferred says {sp['rejected_or_deferred']} but the rejects file has {len(rejected['rejected'])} rows")
+
     # fare cross-check: sum of leg fares must match the plan total
     for obj, label in ((outbound, "outbound"), (retplan, "return")):
         for pl in obj["plans"]:

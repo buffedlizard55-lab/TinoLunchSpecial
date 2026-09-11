@@ -358,6 +358,7 @@
       '<p class="lead">' + m.search_protocol.added_to_master + ' entries in the master list, selected from ' + m.search_protocol.candidates_found +
       ' candidates checked line by line across ' + m.search_protocol.queries_run + ' queries on ' + esc(m.search_protocol.search_date) +
       '. ' + esc(m.search_protocol.requirement) + '</p>' +
+      (m.search_protocol.candidates_found_note ? '<p class="tiny">' + esc(m.search_protocol.candidates_found_note) + '</p>' : '') +
       '<p class="tiny">Radius: ' + esc(m.search_protocol.radius_note) + ' &nbsp;|&nbsp; Covered: ' +
       esc((m.search_protocol.cities_covered || []).join(', ')) + ' &nbsp;|&nbsp; Rejected or deferred: ' +
       m.search_protocol.rejected_or_deferred + ' (all listed below with reasons)</p>' +

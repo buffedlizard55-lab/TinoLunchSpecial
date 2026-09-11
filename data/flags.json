@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-10",
+  "updated": "2026-09-11",
   "transit": [
     {
       "id": "FLAG-1",
@@ -664,6 +664,119 @@
         "L516",
         "L478"
       ]
+    },
+    {
+      "id": "LUNCH-FLAG-26",
+      "severity": "high",
+      "title": "Undated event pricing: the Sunnyvale Restaurant Week page publishes lunch prices with no date range",
+      "what_we_found": "The Sunnyvale Chamber of Commerce 'Where To Dine' page lists per-restaurant lunch specials (Falafel Flare $16-$25, Empire Armadillo $26.99, Delhi to Kathmandu $11-$18, P.F. Chang's $16.99, Adrestia $35, Meyhouse $39.95 three-course 11:45 AM-2:00 PM, Valley Goat $45 lunch Mon-Fri only). Neither that page nor its 'About' tab states a start or end date, and the uploaded artwork is dated September-November 2025.",
+      "what_we_did": "The three rows merged this pass that rely on it (Falafel Flare, Empire Armadillo BBQ & Deli, Delhi to Kathmandu) carry the price AND an explicit 'EVENT DATES UNVERIFIED' flag saying the figure cannot be confirmed as running on 2026-09-08. The prices were not presented as standing menu prices.",
+      "rows": [
+        "L528",
+        "L529",
+        "L530"
+      ],
+      "link": {
+        "label": "Sunnyvale Chamber of Commerce - Sunnyvale Restaurant Week Where To Dine",
+        "url": "https://www.svcoc.org/sunnyvale-restaurant-week-where-to-dine/"
+      },
+      "manual_review": "Call each venue before relying on the event price; if the chamber publishes a 2026 date range, re-level these rows."
+    },
+    {
+      "id": "LUNCH-FLAG-27",
+      "severity": "high",
+      "title": "Zaytinya Palo Alto is verified closed for lunch on Tuesdays - rejection upgraded, not dropped",
+      "what_we_found": "Its OpenTable listing prints 'Lunch Wed-Sun 11:30 am-3:00 pm; Dinner Mon-Thu, Sun 4:00 pm-9:00 pm; Fri, Sat 4:00 pm-10:00 pm'. A diner review on the same page quotes a '$40/3-course lunch menu', and the SFGate opening notice lists dinner hours only.",
+      "what_we_did": "The earlier rejection was re-checked with the new evidence and kept. The reason was upgraded from 'no lunch found' to 'verified closed for lunch on Tuesdays', so the reviewer's $40 lunch claim is visible but not bookable for this trip.",
+      "rows": [],
+      "link": {
+        "label": "OpenTable - Zaytinya Palo Alto",
+        "url": "https://www.opentable.com/r/zaytinya-palo-alto"
+      },
+      "manual_review": "If the trip date moves to Wednesday-Sunday, this row becomes a $40 three-course lunch candidate."
+    },
+    {
+      "id": "LUNCH-FLAG-28",
+      "severity": "high",
+      "title": "Two out-of-state name traps caught by reading the address off the page itself",
+      "what_we_found": "'Los Altos Breakfast and Lunch' carries structured data placing it at 5015 Pyramid Way Ste 107, Sparks, NV 89436. 'Camino Real Mexican Restaurant', surfaced by a Sunnyvale/El Camino Real query, prints a genuine $9.50 lunch menu but its own footer places it at 16 Crow St., Berryville, VA 22611.",
+      "what_we_did": "Both rejected with the URL that proves the address, so neither the Nevada $10-$20 lunch prices nor the Virginia $9.50 lunch combinations can enter a Cupertino-area list. Same failure mode as the pass-9 Saratoga NY and La Vigna Queens NY traps.",
+      "rows": [],
+      "link": {
+        "label": "Camino Real Mexican Restaurant lunch menu (Berryville, VA address in the footer)",
+        "url": "https://www.caminorealdining.com/lunch-menu"
+      },
+      "manual_review": "None - both are out of state. Recorded so the exclusion is auditable."
+    },
+    {
+      "id": "LUNCH-FLAG-29",
+      "severity": "watch",
+      "title": "Directory 'Lunch Specials' tags on venues that do not serve lunch",
+      "what_we_found": "Trattoria 360 (360 E Campbell Ave) opens at 17:00 every day it opens and has no Monday entry. Capers Eat & Drink (1710 W Campbell Ave) opens 16:00. Campbell Pizza's menu directory page advertises a 'Lunch Specials' category and then states 'Restaurant closed'.",
+      "what_we_did": "All three rejected with the hour-by-hour evidence rather than listed, so a 'lunch specials' category tag is never treated as proof of lunch service.",
+      "rows": [],
+      "link": {
+        "label": "TripAdvisor - Restaurants in Campbell (per-day openingHoursSpecification)",
+        "url": "https://www.tripadvisor.com/Restaurants-g32154-Campbell_California.html"
+      },
+      "manual_review": "Re-check Capers and Trattoria 360 if either adds a lunch service."
+    },
+    {
+      "id": "LUNCH-FLAG-30",
+      "severity": "watch",
+      "title": "Three-way hour conflict for Hummus Mediterranean Kitchen Palo Alto, two of the values on the restaurant's own two pages",
+      "what_we_found": "eatathummus.com/palo-alto says Mon-Thu 10:30-21:00 and Sat 9:30-21:30; eatathummus.com/locations says Mon-Thu 10:30-21:30 and Sat 10:30-22:00; the Yelp business page says Mon-Thu 10:30-21:00.",
+      "what_we_did": "Row L525 is levelled 'conflicting' and prints all three blocks. Nothing was averaged and no single value was silently chosen. The same pattern was recorded for Falafel Flare (L528: 10:30 vs 11:00 opening, plus an 'Every Day 11:00-8:30' block on the same Apple Maps record).",
+      "rows": [
+        "L525",
+        "L528"
+      ],
+      "link": {
+        "label": "Hummus Mediterranean Kitchen official Palo Alto page",
+        "url": "https://www.eatathummus.com/palo-alto"
+      },
+      "manual_review": "Confirm the Tuesday close by phone if the return timing depends on it."
+    },
+    {
+      "id": "LUNCH-FLAG-31",
+      "severity": "watch",
+      "title": "Existing master row L20 (Los Gatos Parkside) may be dinner-only - flagged, not silently changed",
+      "what_we_found": "OpenTable's listing for Los Gatos Parkside, 145 W Main St, Los Gatos, states 'Hours of operation: Daily 5:00 pm-9:00 pm' and its Toast ordering page shows only a DINNER menu. L20 is an existing master row that presents the venue as a lunch option.",
+      "what_we_did": "L20 was NOT edited or deleted this pass - changing a row that earlier passes verified needs the earlier source re-read, which is recorded here as the next action. The conflict is surfaced instead of being buried.",
+      "rows": [
+        "L20"
+      ],
+      "link": {
+        "label": "OpenTable - Los Gatos Parkside (Daily 5:00 pm-9:00 pm)",
+        "url": "https://www.opentable.com/r/los-gatos-parkside-los-gatos"
+      },
+      "manual_review": "Re-read the source cited on L20 against the OpenTable hours and either correct L20 or record why the lunch service stands."
+    },
+    {
+      "id": "LUNCH-FLAG-32",
+      "severity": "watch",
+      "title": "Verification limitation: Yelp business pages return HTTP 403 to direct fetch in this environment",
+      "what_we_found": "A direct fetch of https://www.yelp.com/search?find_desc=Lunch+Specials&find_loc=Cupertino%2C+CA returned HTTP 403. Yelp content is therefore reachable only as surfaced through search, not by opening the page.",
+      "what_we_did": "Rows that rest on Yelp are levelled 'listing' or 'conflicting', never 'official', and each carries the Yelp URL for manual review. This is recorded so a reviewer knows why no pass-10 row is levelled 'official' on Yelp evidence alone.",
+      "rows": [],
+      "link": {
+        "label": "Yelp lunch-specials search for Cupertino (returned 403 on direct fetch)",
+        "url": "https://www.yelp.com/search?find_desc=Lunch+Specials&find_loc=Cupertino%2C+CA"
+      },
+      "manual_review": "Open the Yelp URLs in a browser to confirm the hours and quotes; they could not be fetched programmatically."
+    },
+    {
+      "id": "LUNCH-FLAG-33",
+      "severity": "info",
+      "title": "Casa Lupe Los Altos serves lunch on Thursdays only",
+      "what_we_found": "The Los Altos room's own site publishes 'OPEN MONDAY - SATURDAY: MONDAY, TUESDAY & WEDNESDAY 5:00PM-8:30P; THURSDAY 11:30AM-2:00PM'. Lunch therefore exists on exactly one day, and that day is not the trip date. The page prints no street address.",
+      "what_we_did": "Deferred rather than merged - no verifiable street address, and no Tuesday lunch. Distinct from the two Casa Lupe rows already in the master list (459 Castro St, Mountain View; 2165 Winchester Blvd, Campbell).",
+      "rows": [],
+      "link": {
+        "label": "Casa Lupe Los Altos official site (business hours block)",
+        "url": "https://casalupelosaltos.com/"
+      },
+      "manual_review": "If the trip ever moves to a Thursday, resolve a street address and add it."
     }
   ]
 }

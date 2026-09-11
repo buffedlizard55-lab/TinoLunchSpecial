@@ -1,6 +1,6 @@
 {
   "purpose": "Line-by-line review log for candidates that were searched but NOT added to the master list. Recorded so nothing is silently dropped and so every rejection has a reason and a link.",
-  "search_date": "2026-09-07",
+  "search_date": "2026-09-07 through 2026-09-11",
   "rejected": [
     {
       "id": "R01",
@@ -1300,12 +1300,244 @@
         }
       ],
       "searched": "2026-09-07"
+    },
+    {
+      "name": "Trattoria 360",
+      "city": "Campbell",
+      "why": "Dinner only - no lunch service at all. TripAdvisor structured data for 360 E Campbell Avenue lists Sunday 17:00-21:30, Tuesday-Thursday 17:00-21:30, Friday-Saturday 17:00-22:00 and NO Monday entry. The restaurant's own site describes it as a dinner room with a full bar. A lunch special is impossible here.",
+      "links": [
+        {
+          "label": "TripAdvisor - Restaurants in Campbell (Trattoria 360 openingHoursSpecification, address, geo)",
+          "url": "https://www.tripadvisor.com/Restaurants-g32154-Campbell_California.html"
+        },
+        {
+          "label": "Trattoria 360 official site (dinner-focused description, 360 E. Campbell Avenue)",
+          "url": "https://trattoria360campbell.com/"
+        }
+      ],
+      "searched": "2026-09-11"
+    },
+    {
+      "name": "Capers Eat & Drink",
+      "city": "Campbell",
+      "why": "Dinner only. TripAdvisor structured data for 1710 W Campbell Ave lists Sunday 16:00-20:00 and Tuesday-Saturday 16:00-21:00, with no Monday entry and no lunch block. This is the current name of the business already rejected as 'Capers Restaurant' - recorded under the current name so the dedupe is visible.",
+      "links": [
+        {
+          "label": "TripAdvisor - Restaurants in Campbell (Capers Eat & Drink openingHoursSpecification, address, menu link)",
+          "url": "https://www.tripadvisor.com/Restaurants-g32154-Campbell_California.html"
+        },
+        {
+          "label": "Capers Eat & Drink menu (linked from the TripAdvisor record)",
+          "url": "https://caperseatanddrink.com/menu/"
+        }
+      ],
+      "searched": "2026-09-11"
+    },
+    {
+      "name": "Keke's Breakfast Cafe",
+      "city": "Sunnyvale",
+      "why": "DEFERRED, not refused on merit. The restaurant's own location page carries the banners 'COMING SOON' and 'Map Coming Soon' while still printing 311 S Mathilda Ave, Sunnyvale CA 94086 and 'Open Daily 7:00 AM - 2:30 PM'. It cannot be confirmed that this room is trading on 2026-09-08, and a 2:30 PM close would cut the return-bus margin anyway. Its Restaurant Week offer (free shortstack of pancakes with an entree or a $10 minimum purchase, dine-in, one per person) is recorded here for the next pass.",
+      "links": [
+        {
+          "label": "Keke's official Sunnyvale location page (address, hours, 'COMING SOON' banner)",
+          "url": "https://www.kekes.com/locations/kekes-sunnyvale"
+        },
+        {
+          "label": "Sunnyvale Chamber of Commerce - Sunnyvale Restaurant Week (the free-shortstack offer)",
+          "url": "https://www.svcoc.org/sunnyvale-restaurant-week-where-to-dine/"
+        }
+      ],
+      "searched": "2026-09-11"
+    },
+    {
+      "name": "Urban Plates",
+      "city": "Sunnyvale",
+      "why": "DEFERRED. The Sunnyvale Restaurant Week page lists a $59 three-course meal for two, but the entry links only to the brand's national homepage - no Sunnyvale street address or weekly hours could be pinned to a citable page this pass, so it was not merged with a placeholder address.",
+      "links": [
+        {
+          "label": "Sunnyvale Chamber of Commerce - Sunnyvale Restaurant Week ($59 Three-Course Meal for Two)",
+          "url": "https://www.svcoc.org/sunnyvale-restaurant-week-where-to-dine/"
+        },
+        {
+          "label": "Urban Plates official site (brand homepage only - no location resolved this pass)",
+          "url": "https://urbanplates.com/"
+        }
+      ],
+      "searched": "2026-09-11"
+    },
+    {
+      "name": "Gurkha Kitchen",
+      "city": "Sunnyvale",
+      "why": "DEFERRED. Chamber page lists a $40 Lunch & Dinner Combo and $45 Indo-Chinese Combo (both serve 3), but no Sunnyvale street address or weekly hours could be verified this pass.",
+      "links": [
+        {
+          "label": "Sunnyvale Chamber of Commerce - Sunnyvale Restaurant Week (combo prices)",
+          "url": "https://www.svcoc.org/sunnyvale-restaurant-week-where-to-dine/"
+        },
+        {
+          "label": "Gurkha Kitchen official site",
+          "url": "https://thegurkhaskitchen.com/"
+        }
+      ],
+      "searched": "2026-09-11"
+    },
+    {
+      "name": "RBG Bar & Grill",
+      "city": "Sunnyvale",
+      "why": "DEFERRED. The chamber page lists a $34.99 special menu (short ribs, whipped potatoes, sweet corn, Josh Cabernet; prawns +$8; cheesecake +$14) at the Radisson Sunnyvale, but no per-day hours and no street address were verified this pass, and the entry does not say the menu is a lunch menu.",
+      "links": [
+        {
+          "label": "Sunnyvale Chamber of Commerce - Sunnyvale Restaurant Week ($34.99 Special Menu)",
+          "url": "https://www.svcoc.org/sunnyvale-restaurant-week-where-to-dine/"
+        },
+        {
+          "label": "RBG Bar & Grill dining page at the Radisson Sunnyvale",
+          "url": "https://www.choicehotels.com/california/sunnyvale/radisson-hotels/cak33/dining"
+        }
+      ],
+      "searched": "2026-09-11"
+    },
+    {
+      "name": "Teriyaki Madness",
+      "city": "Sunnyvale",
+      "why": "DEFERRED. The chamber page lists a 'Buy 1 Bowl, Get 1 Free' offer (regular or large bowl, free JR or regular bowl, drinks must not be part of a combo) but no dollar price, address or hours were verified this pass.",
+      "links": [
+        {
+          "label": "Sunnyvale Chamber of Commerce - Sunnyvale Restaurant Week (BOGO bowl terms)",
+          "url": "https://www.svcoc.org/sunnyvale-restaurant-week-where-to-dine/"
+        },
+        {
+          "label": "Teriyaki Madness Sunnyvale ordering page",
+          "url": "https://order.teriyakimadness.com/menu/sunnyvale"
+        }
+      ],
+      "searched": "2026-09-11"
+    },
+    {
+      "name": "Casa Lupe",
+      "city": "Los Altos",
+      "why": "DEFERRED with a strong irregularity. The Los Altos room's own website publishes 'OPEN MONDAY - SATURDAY: MONDAY, TUESDAY & WEDNESDAY 5:00PM-8:30P; THURSDAY 11:30AM-2:00PM' - i.e. the ONLY lunch service is Thursday, so it is closed for the Tuesday trip - and the page prints no street address at all, so it could not be merged as a locatable row. Distinct from the two Casa Lupe rows already in the master list (459 Castro St, Mountain View and 2165 Winchester Blvd, Campbell).",
+      "links": [
+        {
+          "label": "Casa Lupe Los Altos official site (business hours block: Thursday-only lunch)",
+          "url": "https://casalupelosaltos.com/"
+        }
+      ],
+      "searched": "2026-09-11"
+    },
+    {
+      "name": "Los Altos Breakfast and Lunch",
+      "city": "Los Altos (name trap - actually Sparks, NV)",
+      "why": "REJECTED - geographic name trap. The name reads as Los Altos, California, but the business's own menu page carries structured data placing it at 5015 Pyramid Way Ste 107, Sparks, NV 89436 (geo 39.58242389999999, -119.7444019, phone (775) 425-8010, hours 7:00 AM - 2:30 PM daily). Out of state and roughly 200 miles outside the ring; its $10-$20 lunch prices must not be read as Los Altos prices.",
+      "links": [
+        {
+          "label": "Los Altos Breakfast and Lunch menu page with the Sparks, NV structured-data address",
+          "url": "https://losaltosbreakfastandlunch.com/menu/"
+        }
+      ],
+      "searched": "2026-09-11"
+    },
+    {
+      "name": "Camino Real Mexican Restaurant",
+      "city": "Cupertino-area search hit (actually Berryville, VA)",
+      "why": "REJECTED - geographic name trap surfaced by a Sunnyvale/El Camino Real query. Its lunch page is a genuine published lunch menu (13 combinations at $9.50 daily 11:00 AM - 2:30 PM, house specials $12-$14), but the same page's own footer places the restaurant at 16 Crow St., Berryville, VA 22611 with a 540 area-code phone. Not in the Bay Area; excluded so the $9.50 lunch figures never enter a Cupertino-area list.",
+      "links": [
+        {
+          "label": "Camino Real Mexican Restaurant lunch menu (prices) with the Berryville, VA address in the page footer",
+          "url": "https://www.caminorealdining.com/lunch-menu"
+        }
+      ],
+      "searched": "2026-09-11"
+    },
+    {
+      "name": "Bluestone Lane Los Altos Cafe",
+      "city": "Los Altos",
+      "why": "DEFERRED. The brand's own Los Altos page prints 288 1st St, Los Altos CA 94022 and 7:30 AM - 5:30 PM daily, but its structured data still carries addressLocality 'coming_soon_city' and postalCode 'coming_soon_zip', and the page is a coffee/brunch room with no published lunch special. Refused as a placeholder rather than merged.",
+      "links": [
+        {
+          "label": "Bluestone Lane official Los Altos cafe page (address, hours, placeholder structured data)",
+          "url": "https://bluestonelane.com/cafes/los-altos-cafe-288-1st-st/"
+        }
+      ],
+      "searched": "2026-09-11"
+    },
+    {
+      "name": "Campbell Pizza",
+      "city": "Campbell",
+      "why": "REJECTED - closure. Its menu directory page for 3393 Winchester Blvd, Campbell, CA 95008-6844 advertises 'Lunch Specials' as a category but the same page states 'Restaurant closed' at the foot of the menu. Not merged; recorded so the stale 'Lunch Specials' tag is not mistaken for a live deal.",
+      "links": [
+        {
+          "label": "MenuPages - Campbell Pizza, 3393 Winchester Blvd (menu with 'Lunch Specials' category and the 'Restaurant closed' notice)",
+          "url": "https://menupages.com/campbell-pizza/3393-winchester-blvd-campbell"
+        }
+      ],
+      "searched": "2026-09-11"
+    },
+    {
+      "name": "Cafe Arbor",
+      "city": "Palo Alto",
+      "why": "DEFERRED. A Bay Area food blog describes an affordable Stanford Shopping Center lunch room open 7:00 AM - 2:00 PM on weekdays with entrees $15-$20 and a Stanford-employee discount, but no official menu, address or hours page could be verified this pass - a single blog is not a citable source for a master row.",
+      "links": [
+        {
+          "label": "Try Bay Area - Cafe Arbor near Stanford Shopping Center (weekday 7am-2pm, $15-$20)",
+          "url": "https://www.trybayarea.com/post/cafe-arbor-for-an-affordable-option-near-stanford-shopping-center-in-palo-alto"
+        }
+      ],
+      "searched": "2026-09-11"
+    },
+    {
+      "name": "107 Bistro & Wine Bar",
+      "city": "Los Gatos",
+      "why": "DEFERRED. A Yelp lunch search tags it 'Good for lunch' and describes it as inside the historic Testarossa Winery, but no street address, weekly hours or priced lunch special were verified this pass.",
+      "links": [
+        {
+          "label": "Yelp lunch search for Los Gatos (107 Bistro & Wine Bar 'Good for lunch' tag and blurb)",
+          "url": "https://www.yelp.com/search?find_desc=Lunch&find_loc=Los+Gatos%2C+CA"
+        }
+      ],
+      "searched": "2026-09-11"
+    },
+    {
+      "name": "Komala Vilas",
+      "city": "Sunnyvale",
+      "why": "DEFERRED. A Yelp business page shows a 'Lunch Thali' dish and menu items from $6.00, and the page header begins an address at '1020 ...' that the retrieved snippet truncates, so the street address could not be verified. Not merged with a partial address.",
+      "links": [
+        {
+          "label": "Yelp business page - Komala Vilas, Sunnyvale (Lunch Thali, item prices, truncated address)",
+          "url": "https://www.yelp.com/biz/komala-vilas-sunnyvale"
+        }
+      ],
+      "searched": "2026-09-11"
+    },
+    {
+      "name": "Indian Sizzler",
+      "city": "Santa Clara",
+      "why": "DEFERRED. A Yelp business page prints 'Closed 11:30 AM - 11:30 PM' and item prices from $7.00-$20.00, and a social post describes an all-you-can-eat buffet at roughly $25, but no street address and no lunch-specific price were verified this pass.",
+      "links": [
+        {
+          "label": "Yelp business page - Indian Sizzler, Santa Clara (hours and item prices)",
+          "url": "https://www.yelp.com/biz/indian-sizzler-santa-clara"
+        }
+      ],
+      "searched": "2026-09-11"
+    },
+    {
+      "name": "Barracuda Japanese Restaurant",
+      "city": "Mountain View",
+      "why": "DEFERRED. A Yelp review collected on the Castro Street collection page describes a three-item bento box with salad, miso, rice and edamame at 'about $12 each, including tip & tax' - a reviewer figure with no street address or hours verified this pass.",
+      "links": [
+        {
+          "label": "Yelp Castro Street collection (Barracuda Japanese Restaurant bento review)",
+          "url": "https://www.yelp.com/collection/nyZA_OjmDoKoAK0aPvGqcQ/Castro-Street"
+        }
+      ],
+      "searched": "2026-09-11"
     }
   ],
   "notes": [
     "Reddit was searched for Cupertino / Sunnyvale / Los Gatos lunch specials and returned only threads about other cities, so no Reddit citation is used (see LUNCH-FLAG-8).",
     "Every rejection above is a source-of-truth decision, not a judgement about the food. Anything here can be promoted into the master list as soon as hours, days and a price are confirmed."
   ],
-  "distinct_businesses_rejected": 124,
-  "note": "116 rows covering 124 distinct businesses. R14 (first pass) groups the near-miss candidates surfaced by the same queries and rejected for the same reason (no published lunch special found in that pass); later passes appended one row per candidate or per grouped reason - 30 of the rows are from the ninth pass on 2026-09-10."
+  "distinct_businesses_rejected": 132,
+  "note": "133 rows covering 132 distinct businesses. R14 (first pass) groups the near-miss candidates surfaced by the same queries and rejected for the same reason (no published lunch special found in that pass); later passes appended one row per candidate or per grouped reason - 30 rows from the ninth pass on 2026-09-10 and 17 from the tenth pass on 2026-09-11. Every row carries the URL that proves the rejection, including three out-of-state name traps and two dinner-only venues whose directory pages still advertise 'Lunch Specials'."
 }
