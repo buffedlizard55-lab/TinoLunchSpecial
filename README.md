@@ -2,7 +2,7 @@
 
 A verified lunch-special master list for Cupertino and its 10-15 mile ring, plus a verified transit plan for **Tuesday, September 8, 2026**.
 
-**Site layout (updated 2026-09-10):** the front page (`index.html`) is the **lunch deals** - verified specials at the very top, then the full searchable table. The public-transit route plan lives on its own subpage, [`transit.html`](transit.html) - the trip-planning system itself was left untouched by this change.
+**Site layout (updated 2026-09-11):** the front page (`index.html`) is the **lunch deals** - verified specials at the very top, then the full searchable table. The public-transit route plan lives on its own subpage, [`transit.html`](transit.html) - the trip-planning system itself was left untouched by this change.
 
 * **Home:** 21st Ave & Judah St, San Francisco, CA
 * **Destination:** 20387 Gillick Way, Cupertino, CA 95014
@@ -36,12 +36,13 @@ data/plan.json              trip definition, constraints, decision log
 data/transit_outbound.json  3 outbound plans, leg by leg, with per-leg links
 data/transit_return.json    3 return plans + the last-workable-train cutoff
 data/fares.json             agency fare tables and six day-total scenarios
-data/lunch_specials.json    523 lunch entries (27 original + 20 batch-2 + 54 batch-3 + 49 batch-4 + 101 batch-5 + 1 review-pass + 100 batch-6/7 on 2026-09-07 + 103 batch-8 on 2026-09-08 + 68 batch-9 on 2026-09-10), hours, days, prices, verification level
-data/lunch_rejected.json    116 rejected/deferred rows covering 124 distinct businesses, each with a reason and a link
-data/flags.json             39 irregularities found while verifying - all still listed
-data/sources.json           73 source pages, what each one proved, and the fetch status
+data/lunch_specials.json    533 lunch entries (27 original + 20 batch-2 + 54 batch-3 + 49 batch-4 + 101 batch-5 + 1 review-pass + 100 batch-6/7 on 2026-09-07 + 103 batch-8 on 2026-09-08 + 68 batch-9 on 2026-09-10 + 10 batch-10 on 2026-09-11), hours, days, prices, verification level
+data/lunch_rejected.json    133 rejected/deferred rows covering 132 distinct businesses, each with a reason and a link
+data/flags.json             47 irregularities found while verifying - all still listed
+data/sources.json           94 source pages, what each one proved, and the fetch status
 docs/VERIFICATION.md        how to re-check every row, and what could not be verified
-docs/REVIEW_2026-09-10.md   current QA pass (the ninth lunch pass + the site split), validation results
+docs/REVIEW_2026-09-11.md   current QA pass (the tenth lunch pass + the front-page summary fix), validation results
+docs/REVIEW_2026-09-10.md   the ninth lunch pass + the site split
 docs/REVIEW_2026-09-08.md   the eighth pass' QA record
 scripts/build_data.py       validates + rebuilds generated.js and summary.md
 scripts/check_links.py      every row must link to a citable https page
@@ -68,7 +69,7 @@ python3 -m http.server 8000       # preview at http://127.0.0.1:8000
 2. **Lunch:** a price is only printed if it appears on the restaurant's own website or published menu; hours may come from Yelp/Google/TripAdvisor. Anything seen only on a menu aggregator or delivery app is recorded as a lead and flagged, never presented as verified.
 3. **Absence is a result.** "No lunch special published" and "closed on Tuesdays" are rows of their own, so a gap in the data is visible instead of silently dropped.
 4. **Conflicts stay visible.** Where two sources disagree (Muni headway text vs timetable, OSM hours vs the restaurant's own site) both values are shown and the choice is explained in `data/flags.json`.
-5. **Nothing was backfilled by hand.** The first search pass ran 28 queries over 51 candidates; 27 survived into the master list and the rest were rejected, each with a reason and a link. Later passes added 496 more rows the same way (the seventh pass added 100, the eighth 103 - each searched and verified line by line before adding - and the ninth pass on 2026-09-10 searched ~100 new candidates Cupertino-first, then a 10-15 mile ring that now also covers Fremont, Newark, Union City, San Mateo, Redwood City, San Carlos and Foster City: 68 rows survived, 30 candidates were rejected or deferred with links, ~341 hits were deduped against the master list, four were confirmed closed (Pot Sticker King, Su Zhe Eatery, La Strada, China Delight), one new entry superseded its own earlier deferral twice over via `supersedes_rejection`, and a would-be duplicate (The Diner of Los Gatos) was caught by the address check); the master list is now 523 rows with 116 reject rows (124 distinct businesses) in `data/lunch_rejected.json`. See `docs/REVIEW_2026-09-10.md`.
+5. **Nothing was backfilled by hand.** The first search pass ran 28 queries over 51 candidates; 27 survived into the master list and the rest were rejected, each with a reason and a link. Later passes added 496 more rows the same way (the seventh pass added 100, the eighth 103 - each searched and verified line by line before adding - and the ninth pass on 2026-09-10 searched ~100 new candidates Cupertino-first, then a 10-15 mile ring that now also covers Fremont, Newark, Union City, San Mateo, Redwood City, San Carlos and Foster City: 68 rows survived, 30 candidates were rejected or deferred with links, ~341 hits were deduped against the master list, four were confirmed closed (Pot Sticker King, Su Zhe Eatery, La Strada, China Delight), one new entry superseded its own earlier deferral twice over via `supersedes_rejection`, and a would-be duplicate (The Diner of Los Gatos) was caught by the address check); the tenth pass on 2026-09-11 screened ~30 more candidates and added 10 rows, deferring the rest because a price without a citable street address and weekly hours cannot be merged. The master list is now 533 rows with 133 reject rows (132 distinct businesses) in `data/lunch_rejected.json`. See `docs/REVIEW_2026-09-11.md`.
 
 GitHub Pages is enabled at https://buffedlizard55-lab.github.io/TinoLunchSpecial/. The repo also includes `.github/workflows/pages.yml` for Action-based deployment if the Pages source is switched from `main /` to **GitHub Actions** later.
 

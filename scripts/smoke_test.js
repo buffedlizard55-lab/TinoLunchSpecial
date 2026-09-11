@@ -41,6 +41,29 @@ setTimeout(() => {
   }
   const errEl = store['panel-overview'].innerHTML;
   if (errEl.includes('Data not built yet')) { console.log('FALLBACK RENDERED - see below'); console.log(errEl.slice(0, 600)); process.exit(1); }
+
+  /* Regression guard for the front-page summary sentence.
+   * search_protocol.queries_run and .candidates_found are interpolated straight into
+   * prose ("selected from N candidates ... across N queries"), so they must be counts.
+   * A past edit put whole sentences in those fields and the page printed
+   * "selected from all passes documented plus ~100 new ninth-pass candidates (341
+   * dedupe hits ...) candidates checked line by line across cumulative ~385 searches
+   * across nine passes (~90 in the ninth) queries". Fail loudly if that returns. */
+  const sp = data.specials.search_protocol;
+  for (const f of ['queries_run', 'candidates_found']) {
+    if (typeof sp[f] !== 'number' || !Number.isFinite(sp[f])) {
+      console.log(`!! search_protocol.${f} is ${typeof sp[f]} (${JSON.stringify(sp[f])}) but is interpolated as a count`);
+      process.exit(1);
+    }
+  }
+  const lead = String(store['panel-lunch'].innerHTML).replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim();
+  console.log('front-page lead:', lead.slice(0, 260));
+  if (!new RegExp(`selected from ${sp.candidates_found} candidates`).test(lead) ||
+      !new RegExp(`across ${sp.queries_run} queries`).test(lead)) {
+    console.log('!! front-page lead does not print its own counts');
+    process.exit(1);
+  }
+
   console.log('SMOKE TEST PASSED (all 8 panels rendered without throwing)');
   console.log('lunch rows in body:', (String(store['lbody'].innerHTML).match(/<tr /g) || []).length);
 }, 60);

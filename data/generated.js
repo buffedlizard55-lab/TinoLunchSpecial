@@ -1539,12 +1539,12 @@ window.TINO_DATA = {
  },
  "specials":{
   "search_protocol":{
-   "requirement":"Verify line by line before adding anything to the master list; keep official/review links for manual review. Ninth pass (2026-09-10): ~100 new candidates searched - Cupertino first, then a 10-15 mile ring that now also covers Fremont, Newark, Union City, San Mateo, Redwood City, San Carlos and Foster City - 68 of them verified well enough to enter the master list; the rest are recorded as rejects or deferred leads with the link that proves the rejection. No candidate entered on an unverified price.",
-   "queries_run":"cumulative ~385 searches across nine passes (~90 in the ninth)",
-   "candidates_found":"all passes documented plus ~100 new ninth-pass candidates (341 dedupe hits against the master list were also checked and dropped)",
-   "added_to_master":523,
-   "rejected_or_deferred":116,
-   "search_date":"2026-09-07 through 2026-09-10",
+   "requirement":"Verify line by line before adding anything to the master list; keep official/review links for manual review. Tenth pass (2026-09-11): ~30 new candidates screened - Cupertino first, then the 10-15 mile ring - and 10 of them verified well enough to enter the master list with a citable street address and weekly hours; 17 more were recorded as rejects or deferred leads with the URL that proves the rejection, including two out-of-state name traps and three venues whose directory pages advertise 'Lunch Specials' but which do not serve lunch. No candidate entered on an unverified price.",
+   "queries_run":400,
+   "candidates_found":553,
+   "added_to_master":533,
+   "rejected_or_deferred":133,
+   "search_date":"2026-09-07 through 2026-09-11",
    "cities_covered":[
     "Campbell",
     "Cupertino",
@@ -1589,7 +1589,10 @@ window.TINO_DATA = {
    ],
    "note_fourth_pass":"Fourth search pass added 49 rows (L102-L150): Lazy Dog $8.95+, Tomatina Pick Two $13.50, The Hut Taco Tuesday $9, Pasta Market Gourmet Lunch $14.95, Urban Grill weekday buffet $16.99 (two-domain conflict), Local Kitchens combos $13.00-$17.50, Sakoon buffet $19.99-$24.99 (Wed-Sun only), plus hours-verified rows with no published lunch special. 9 candidates were rejected this pass (closed, dinner-only, or no verifiable address).",
    "note_seventh_pass":"Seventh search pass added 100 rows (L253-L352). Only fully verified rows were written: 48 listing-level, 27 review-level, 20 official-level, 4 conflicting, 1 unverified (Taiwan Restaurant SJ - no hours captured). Three verified venues remain unmerged due to address-key collisions (see notes) and are listed in flags.json.",
-   "note_ninth_pass":"Ninth search pass (2026-09-10) added 68 rows (L456-L523) from five incoming files batch9a-9e: Cupertino/Sunnyvale/Santa Clara/Mountain View core first (Mandarin Gourmet official lunch prices, Sankranti/Bombay-to-Goa conflict row, 3 Kingdoms, Gobi, Brundavan), then the cities the earlier passes never reached - Fremont/Newark/Union City (14 rows incl. Roll N Crust, Taipei Station, Texas Roadhouse, Mr. Taco, Mi Lindo) - then the Peninsula edge of the ring (San Mateo / Redwood City / San Carlos / Foster City) and the Willow Glen / Almaden / Los Gatos tail. 30 further ninth-pass candidates became rejects or deferred leads (4 outright closures: Pot Sticker King, Su Zhe Eatery, La Strada, China Delight). One candidate (The Diner of Los Gatos) turned out to be already listed - the dedupe caught it and recorded the near-duplicate. All rows carry per-row sources; prices appear only where a restaurant's own page printed them."
+   "note_ninth_pass":"Ninth search pass (2026-09-10) added 68 rows (L456-L523) from five incoming files batch9a-9e: Cupertino/Sunnyvale/Santa Clara/Mountain View core first (Mandarin Gourmet official lunch prices, Sankranti/Bombay-to-Goa conflict row, 3 Kingdoms, Gobi, Brundavan), then the cities the earlier passes never reached - Fremont/Newark/Union City (14 rows incl. Roll N Crust, Taipei Station, Texas Roadhouse, Mr. Taco, Mi Lindo) - then the Peninsula edge of the ring (San Mateo / Redwood City / San Carlos / Foster City) and the Willow Glen / Almaden / Los Gatos tail. 30 further ninth-pass candidates became rejects or deferred leads (4 outright closures: Pot Sticker King, Su Zhe Eatery, La Strada, China Delight). One candidate (The Diner of Los Gatos) turned out to be already listed - the dedupe caught it and recorded the near-duplicate. All rows carry per-row sources; prices appear only where a restaurant's own page printed them.",
+   "queries_run_note":"cumulative ~400 searches across ten passes (~15 in the tenth)",
+   "candidates_found_note":"all passes documented plus ~30 new tenth-pass candidates screened line by line; 424 dedupe hits against the master list were also checked and dropped",
+   "note_tenth_pass":"Tenth search pass (2026-09-11) added 10 rows (L524-L533) from data/incoming/batch10a_pass10_verified.json: Teleferic Barcelona Los Gatos with its $28-$34 weekday lunch menu; three Hummus Mediterranean Kitchen rooms (Palo Alto at Stanford Shopping Center, 185 Castro St Mountain View, 150 E 4th Ave San Mateo) from the chain's own locations index; Falafel Flare, Empire Armadillo BBQ & Deli and Delhi to Kathmandu in Sunnyvale from the chamber's restaurant-week page with per-item prices; Asian Box Mountain View and Opa! Campbell with verified weekday lunch hours; and Shake Shack at the Stanford Shopping Center end of the ring. This pass is deliberately smaller than earlier ones: the merge was capped by the number of candidates whose street address AND weekly hours could be pinned to a citable page, not by the number of names found. Yelp pages return HTTP 403 to direct fetch here, which removed the highest-yield bulk source used by pass 9."
   },
   "entries":[
    {
@@ -26950,6 +26953,493 @@ window.TINO_DATA = {
     "id":"L523",
     "added_in":"batch9e.json",
     "distance_mi":14.49
+   },
+   {
+    "name":"Telef\u00e8ric Barcelona - Los Gatos",
+    "city":"Los Gatos",
+    "area":"Old Town Los Gatos (University Ave & Main St)",
+    "address":"50 University Ave b270, Los Gatos, CA 95030",
+    "cuisine":"Spanish / Catalan tapas, pintxos, paella",
+    "lunch_special":{
+     "name":"Barcelona Lunch Menu - weekday prix-fixe: one starter plus one main course",
+     "price_from":28.0,
+     "price_to":34.0,
+     "days":"Monday-Friday (the OpenTable listing calls it the 'special weekday lunch menu'; not available on holidays)",
+     "window":"Lunch service 11:30 AM - 3:00 PM on weekdays is not printed on the OpenTable page; the printed lunch service window is Mon-Thu 11:30 AM - 9:15 PM. Treat the weekday lunch menu as available during the 11:30 AM opening.",
+     "includes":"One starter (Crab Croquetas, Telef\u00e8ric Market Salad, Burrata Bowl, Tuna Tacos or Bruselas) plus one main (Small Paella Negra, Small Paella Mixta, Small Veggie Paella, Prime Wellington +$6, Grilled Salmon +$2, Pulpo Telef\u00e8ric or Spanish Albondigas). Dessert add-on +$6 (Churros, Torrija, Orange Mochi). Drinks, service charge and taxes are NOT included."
+    },
+    "hours_tuesday":"11:30 AM - 9:15 PM",
+    "days_open":"Mon-Thu 11:30-21:15, Fri 11:30-22:15, Sat 11:00-22:15, Sun 11:00-21:15",
+    "open_on_trip_date":true,
+    "fits_return_bus":{
+     "ok":true,
+     "note":"Opens 11:30 AM, so a full weekday lunch menu before the 11:50 AM walk to McClellan & Felton is impossible - the earliest seated lunch ends after the bus. Works only with the 12:20 PM departure (VTA 55 at 12:36 PM), and even then the ~40-minute paella window is tight. Flagged rather than sold as a fit."
+    },
+    "verification":{
+     "level":"listing",
+     "sources":[
+      {
+       "label":"OpenTable - Teleferic Barcelona Los Gatos (address, weekly hours, 'Barcelona Lunch Menu $28.00 - $34.00 per person', holiday exclusion, website)",
+       "url":"https://www.opentable.com/r/teleferic-barcelona-los-gatos"
+      },
+      {
+       "label":"Teleferic Barcelona official site (linked from the OpenTable row as the restaurant's own site)",
+       "url":"https://www.telefericbarcelona.com/"
+      }
+     ],
+     "accessed":"2026-09-11"
+    },
+    "review_links":{
+     "yelp":"https://www.yelp.com/biz/teleferic-barcelona-los-gatos",
+     "google_maps":"https://www.google.com/maps/search/?api=1&query=Teleferic+Barcelona+50+University+Ave+Los+Gatos"
+    },
+    "flags":[
+     "Happy-hour window conflicts on the restaurant's own OpenTable listing: the 'About this restaurant' text says 'Happy hour Mon-Thu 3-5 PM', while the Happy Hour Experience block on the same page says 'Monday through Thursday, from 3:00 PM to 6:00 PM'. Neither value was averaged; both are printed here.",
+     "Price is per person and excludes drinks, service charge and tax - the $28-$34 figure is not the final bill.",
+     "The lunch menu is explicitly not available on holidays; 2026-09-08 is a normal Tuesday, so no holiday exclusion applies."
+    ],
+    "id":"L524",
+    "coords":null,
+    "added_in":"batch10a_pass10_verified.json",
+    "distance_mi":null
+   },
+   {
+    "name":"Hummus Mediterranean Kitchen - Stanford Shopping Center",
+    "city":"Palo Alto",
+    "area":"Stanford Shopping Center (space 715)",
+    "address":"715 Stanford Shopping Center, Palo Alto, CA 94304",
+    "cuisine":"Turkish / Mediterranean, halal, kebab, meze",
+    "lunch_special":{
+     "name":"Weekday lunch service (housemade hummus, fresh-baked pita, halal rotisserie gyro); no priced lunch special is published",
+     "price_from":null,
+     "price_to":null,
+     "days":"daily",
+     "window":"opens 10:30 AM weekdays, so the whole visit window is inside lunch service",
+     "includes":"A diner-photo caption on the business's Yelp page prices one item: 'Ballon Bread w/ toum (missing), butter, anatolian tulum cheese, walnuts | $9.95'. That is a reviewer-uploaded dish photo price, not a published lunch special, so no price is printed in the price column."
+    },
+    "hours_tuesday":"10:30 AM - 9:00 PM (own location page) / 10:30 AM - 9:30 PM (own locations index) - see flag",
+    "days_open":"Own locations index: Mon-Thu 10:30-21:30, Fri-Sat 10:30-22:00, Sun 10:30-21:00. Own Palo Alto page: Mon-Thu 10:30-21:00, Fri 10:30-21:30, Sat 9:30-21:30, Sun 9:30-21:00. Yelp: Mon-Thu 10:30-21:00.",
+    "open_on_trip_date":true,
+    "fits_return_bus":{
+     "ok":true,
+     "note":"Opens 10:30 AM and is open through the afternoon, so it clears the 11:50 AM departure with room to spare."
+    },
+    "verification":{
+     "level":"conflicting",
+     "sources":[
+      {
+       "label":"Hummus Mediterranean Kitchen official Palo Alto page (address, per-day hours, phone, breakfast window)",
+       "url":"https://www.eatathummus.com/palo-alto"
+      },
+      {
+       "label":"Hummus Mediterranean Kitchen official locations index (conflicting Mon-Thu and Fri-Sat closing times)",
+       "url":"https://www.eatathummus.com/locations"
+      },
+      {
+       "label":"Yelp business page (address and Mon-Thu hours, third value)",
+       "url":"https://www.yelp.com/biz/hummus-mediterranean-kitchen-palo-alto"
+      }
+     ],
+     "accessed":"2026-09-11"
+    },
+    "review_links":{
+     "yelp":"https://www.yelp.com/biz/hummus-mediterranean-kitchen-palo-alto",
+     "google_maps":"https://www.google.com/maps/search/?api=1&query=Hummus+Mediterranean+Kitchen+715+Stanford+Shopping+Center+Palo+Alto"
+    },
+    "flags":[
+     "Three different weekly hour blocks for the same restaurant, two of them on the restaurant's OWN two pages: eatathummus.com/palo-alto says Mon-Thu to 9:00 PM and Sat from 9:30 AM; eatathummus.com/locations says Mon-Thu to 9:30 PM and Sat from 10:30 AM. Both are printed; nothing was averaged.",
+     "No priced lunch special is published anywhere for this location - do not budget a specific lunch number."
+    ],
+    "id":"L525",
+    "coords":null,
+    "added_in":"batch10a_pass10_verified.json",
+    "distance_mi":null
+   },
+   {
+    "name":"Hummus Mediterranean Kitchen - Castro Street",
+    "city":"Mountain View",
+    "area":"Castro Street (downtown Mountain View)",
+    "address":"185 Castro Street, Mountain View, CA 94041",
+    "cuisine":"Turkish / Mediterranean, halal, kebab, meze",
+    "lunch_special":{
+     "name":"Weekday lunch service (same menu family as the Palo Alto room); no priced lunch special published",
+     "price_from":null,
+     "price_to":null,
+     "days":"daily",
+     "window":"opens 10:30 AM weekdays",
+     "includes":"Phone (650) 386-1860 is printed on the official locations index for this room."
+    },
+    "hours_tuesday":"10:30 AM - 9:30 PM",
+    "days_open":"Mon-Thu 10:30-21:30, Fri-Sat 10:30-22:00, Sun 10:30-21:00 (official locations index)",
+    "open_on_trip_date":true,
+    "fits_return_bus":{
+     "ok":true,
+     "note":"Open all day; no lunch-window risk."
+    },
+    "verification":{
+     "level":"listing",
+     "sources":[
+      {
+       "label":"Hummus Mediterranean Kitchen official locations index (185 Castro Street address, weekly hours, phone)",
+       "url":"https://www.eatathummus.com/locations"
+      }
+     ],
+     "accessed":"2026-09-11"
+    },
+    "review_links":{
+     "yelp":"https://www.yelp.com/biz/hummus-mediterranean-kitchen-mountain-view",
+     "google_maps":"https://www.google.com/maps/search/?api=1&query=Hummus+Mediterranean+Kitchen+185+Castro+Street+Mountain+View"
+    },
+    "flags":[
+     "Distinct street address from the existing Mountain View row at 126 Castro St (Oren's Hummus, L119) - not the same business; both are on Castro Street, which is why the dedupe was checked by address and not by name."
+    ],
+    "id":"L526",
+    "coords":null,
+    "added_in":"batch10a_pass10_verified.json",
+    "distance_mi":null
+   },
+   {
+    "name":"Hummus Mediterranean Kitchen - San Mateo",
+    "city":"San Mateo",
+    "area":"E 4th Avenue (downtown San Mateo)",
+    "address":"150 E 4th Avenue, San Mateo, CA 94401",
+    "cuisine":"Turkish / Mediterranean, halal, kebab, meze",
+    "lunch_special":{
+     "name":"Weekday lunch service (same menu family); no priced lunch special published",
+     "price_from":null,
+     "price_to":null,
+     "days":"daily",
+     "window":"opens 10:30 AM Mon-Sat",
+     "includes":"Phone (650) 401-6903 and sanmateo@eatathummus.com printed on the official locations index."
+    },
+    "hours_tuesday":"10:30 AM - 9:30 PM",
+    "days_open":"Mon-Sat 10:30-21:30, Sun 10:30-21:00 (official locations index)",
+    "open_on_trip_date":true,
+    "fits_return_bus":{
+     "ok":false,
+     "note":"Open at lunch, but San Mateo is at the far edge of the ring and is not reachable inside the 11:50 AM departure and 3:30 PM home deadline by transit from Cupertino."
+    },
+    "verification":{
+     "level":"listing",
+     "sources":[
+      {
+       "label":"Hummus Mediterranean Kitchen official locations index (150 E 4th Avenue address, weekly hours, phone, email)",
+       "url":"https://www.eatathummus.com/locations"
+      }
+     ],
+     "accessed":"2026-09-11"
+    },
+    "review_links":{
+     "yelp":"https://www.yelp.com/biz/hummus-mediterranean-kitchen-san-mateo",
+     "google_maps":"https://www.google.com/maps/search/?api=1&query=Hummus+Mediterranean+Kitchen+150+E+4th+Avenue+San+Mateo"
+    },
+    "flags":[
+     "Far edge of the ring: listed for completeness of the chain's Bay Area footprint, but it does not fit the return bus."
+    ],
+    "id":"L527",
+    "coords":null,
+    "added_in":"batch10a_pass10_verified.json",
+    "distance_mi":null
+   },
+   {
+    "name":"Falafel Flare",
+    "city":"Sunnyvale",
+    "area":"N Mathilda Ave (Sunnyvale Square Shopping Center)",
+    "address":"470 N Mathilda Ave, Sunnyvale, CA 94085",
+    "cuisine":"Middle Eastern / falafel, gyros, wraps, burgers",
+    "lunch_special":{
+     "name":"Sunnyvale Restaurant Week lunch menu - wrap or burger with fries and a soda",
+     "price_from":16.0,
+     "price_to":25.0,
+     "days":"Sunnyvale Restaurant Week (the chamber page does not print a date range - see flag)",
+     "window":"not printed on the chamber page; the business's own hours run from 10:30/11:00 AM",
+     "includes":"$16 Gyro, Chicken or Falafel Wrap with fries & soda; $16 Classic Cheeseburger, Hamburger or Veggie Burger with fries & soda; $25 Tender Chicken Platter with fries & soda. The same chamber page lists $30-$35 DINNER items - those are excluded from this lunch figure."
+    },
+    "hours_tuesday":"10:30 AM - 9:00 PM (Apple Maps) / 11:00 AM - 9:00 PM (Yelp) - see flag",
+    "days_open":"Apple Maps: Mon-Fri 10:30-21:00, Sat 11:00-21:00, Sun 11:00-21:00, plus a separate 'Every Day 11:00 AM - 8:30 PM' block. Yelp: Mon-Sun 11:00-21:00.",
+    "open_on_trip_date":true,
+    "fits_return_bus":{
+     "ok":true,
+     "note":"Opens before 11:00 AM under every published block, so an 11:15-11:45 lunch is feasible against the 11:50 AM departure - but only if the Restaurant Week menu is actually running that day."
+    },
+    "verification":{
+     "level":"conflicting",
+     "sources":[
+      {
+       "label":"Sunnyvale Chamber of Commerce - Sunnyvale Restaurant Week 'Where To Dine' (Falafel Flare LUNCH MENU prices $16 / $16 / $25 and the separate dinner menu)",
+       "url":"https://www.svcoc.org/sunnyvale-restaurant-week-where-to-dine/"
+      },
+      {
+       "label":"Apple Maps place record (470 N Mathilda Ave, per-day hours, phone, website)",
+       "url":"https://maps.apple.com/place?place-id=I2EC93131EFC720B2"
+      },
+      {
+       "label":"Yelp business page (same address; Mon-Sun 11:00 AM - 9:00 PM)",
+       "url":"https://www.yelp.com/biz/falafel-flare-sunnyvale-2"
+      },
+      {
+       "label":"Falafel Flare official site (linked from both the chamber page and the maps record)",
+       "url":"https://falafelflaresunnyvale.com/"
+      }
+     ],
+     "accessed":"2026-09-11"
+    },
+    "review_links":{
+     "yelp":"https://www.yelp.com/biz/falafel-flare-sunnyvale-2",
+     "google_maps":"https://www.google.com/maps/search/?api=1&query=Falafel+Flare+470+N+Mathilda+Ave+Sunnyvale"
+    },
+    "flags":[
+     "EVENT DATES UNVERIFIED: the Sunnyvale Chamber 'Where To Dine' page publishes these prices with no start or end date, and the page's About tab (fetched this pass) also states none. The uploaded artwork on the page is dated September-November 2025, so it cannot be confirmed that this menu is running on 2026-09-08. Treat the $16-$25 lunch figures as an event price to re-confirm by phone, not a standing menu price.",
+     "Two different weekday opening times (10:30 AM on Apple Maps vs 11:00 AM on Yelp) and a third 'Every Day 11:00 AM - 8:30 PM' block on the same Apple Maps record. Both are printed; nothing was averaged."
+    ],
+    "id":"L528",
+    "coords":null,
+    "added_in":"batch10a_pass10_verified.json",
+    "distance_mi":null
+   },
+   {
+    "name":"Empire Armadillo BBQ & Deli",
+    "city":"Sunnyvale",
+    "area":"E El Camino Real",
+    "address":"161 E El Camino Real, Sunnyvale, CA 94087",
+    "cuisine":"New York deli / Texas barbecue, sandwiches",
+    "lunch_special":{
+     "name":"Sunnyvale Restaurant Week lunch special - double-meat NY deli sandwich with two sides, or a four-meat sampler",
+     "price_from":26.99,
+     "price_to":null,
+     "days":"Sunnyvale Restaurant Week (no date range printed - see flag)",
+     "window":"business is open 11:00 AM - 8:00 PM daily, so the whole lunch window is covered",
+     "includes":"'Empire-style New York deli sandwiches stacked high with double meat and your choice of two sides' OR a four-meat sampler (ribs, brisket, sausage, chicken) with two sides. The $35 figure on the same page is the DINNER special and is excluded here."
+    },
+    "hours_tuesday":"11:00 AM - 8:00 PM",
+    "days_open":"Mon-Sun 11:00 AM - 8:00 PM; listed special closures Thu Nov 26 2026 and Fri Dec 25 2026",
+    "open_on_trip_date":true,
+    "fits_return_bus":{
+     "ok":true,
+     "note":"Opens 11:00 AM, so it is the earliest-opening Sunnyvale row on this pass and leaves the most slack before the 11:50 AM departure."
+    },
+    "verification":{
+     "level":"listing",
+     "sources":[
+      {
+       "label":"Sunnyvale Chamber of Commerce - Sunnyvale Restaurant Week 'Where To Dine' (Lunch Special $26.99, Dinner Special $35, what each includes)",
+       "url":"https://www.svcoc.org/sunnyvale-restaurant-week-where-to-dine/"
+      },
+      {
+       "label":"Yelp business page (161 E El Camino Real, daily 11:00 AM - 8:00 PM, holiday closures, phone)",
+       "url":"https://www.yelp.com/biz/empire-armadillo-bbq-and-deli-sunnyvale-2"
+      },
+      {
+       "label":"Empire Armadillo official site (linked from both sources)",
+       "url":"https://www.empirearmadillo.com/"
+      }
+     ],
+     "accessed":"2026-09-11"
+    },
+    "review_links":{
+     "yelp":"https://www.yelp.com/biz/empire-armadillo-bbq-and-deli-sunnyvale-2",
+     "google_maps":"https://www.google.com/maps/search/?api=1&query=Empire+Armadillo+BBQ+161+E+El+Camino+Real+Sunnyvale"
+    },
+    "flags":[
+     "EVENT DATES UNVERIFIED: same undated Sunnyvale Restaurant Week page as Falafel Flare; the $26.99 lunch figure cannot be confirmed as running on 2026-09-08."
+    ],
+    "id":"L529",
+    "coords":null,
+    "added_in":"batch10a_pass10_verified.json",
+    "distance_mi":null
+   },
+   {
+    "name":"Delhi to Kathmandu Restaurant & Bar",
+    "city":"Sunnyvale",
+    "area":"S Murphy Ave (downtown Sunnyvale)",
+    "address":"155 S Murphy Ave, Sunnyvale, CA 94086",
+    "cuisine":"Indian / Nepalese (Himalayan), momos, full bar",
+    "lunch_special":{
+     "name":"Sunnyvale Restaurant Week special menu - momos, chaat and curry-with-rice plates",
+     "price_from":11.0,
+     "price_to":18.0,
+     "days":"Sunnyvale Restaurant Week (no date range printed - see flag)",
+     "window":"open 11:00 AM daily, so the lunch window is covered",
+     "includes":"Vegetable C Momo (6 pcs) $11, Chicken Momo (6 pcs) $11, Avocado Chaat $11, Butter Chicken with Rice $18, Paneer Butter Masala with Rice $18, Chicken Chow Mein $15 / Veg $14. The chamber page labels this a 'Special Menu', not a lunch-only menu."
+    },
+    "hours_tuesday":"11:00 AM - 12:00 AM (next day)",
+    "days_open":"Mon-Sun 11:00 AM - 12:00 AM (next day); happy hour daily 3:00 PM - 5:00 PM per the business's own Yelp description",
+    "open_on_trip_date":true,
+    "fits_return_bus":{
+     "ok":true,
+     "note":"Opens 11:00 AM and stays open past midnight, so there is no window risk at all."
+    },
+    "verification":{
+     "level":"listing",
+     "sources":[
+      {
+       "label":"Sunnyvale Chamber of Commerce - Sunnyvale Restaurant Week 'Where To Dine' (item-by-item special menu with prices)",
+       "url":"https://www.svcoc.org/sunnyvale-restaurant-week-where-to-dine/"
+      },
+      {
+       "label":"Yelp business page (155 S Murphy Ave, daily 11:00 AM - 12:00 AM, happy hour 3-5 PM, phone, business-written description)",
+       "url":"https://www.yelp.com/biz/delhi-to-kathmandu-restaurant-and-bar-sunnyvale-6"
+      },
+      {
+       "label":"Apple Maps place record (same address, same phone, daily 11:00 AM - 12:00 AM)",
+       "url":"https://maps.apple.com/place?place-id=I6F53D428F4BFDE2B"
+      },
+      {
+       "label":"Delhi to Kathmandu official site (linked from all three)",
+       "url":"https://delhitokathmandu.com/"
+      }
+     ],
+     "accessed":"2026-09-11"
+    },
+    "review_links":{
+     "yelp":"https://www.yelp.com/biz/delhi-to-kathmandu-restaurant-and-bar-sunnyvale-6",
+     "google_maps":"https://www.google.com/maps/search/?api=1&query=Delhi+to+Kathmandu+155+S+Murphy+Ave+Sunnyvale"
+    },
+    "flags":[
+     "EVENT DATES UNVERIFIED: undated chamber event page (see the standing flag). Also note the Apple Maps record carries three overlapping hour blocks (11:00 AM - 12:00 AM, a 3:00-5:00 PM happy-hour block and 11:01 AM - 11:45 PM); the Yelp per-day block was used because it is the most specific.",
+     "The chamber page calls this a 'Special Menu', not a lunch menu - it may be offered all day rather than as a lunch-only deal."
+    ],
+    "id":"L530",
+    "coords":null,
+    "added_in":"batch10a_pass10_verified.json",
+    "distance_mi":null
+   },
+   {
+    "name":"Asian Box - Mountain View",
+    "city":"Mountain View",
+    "area":"Castro Street (downtown Mountain View)",
+    "address":"142 Castro St., Mountain View, CA 94041",
+    "cuisine":"Fast-casual Asian boxes (Vietnamese/French-inspired)",
+    "lunch_special":{
+     "name":"No named lunch special published; the location page publishes a price range instead",
+     "price_from":null,
+     "price_to":null,
+     "days":"daily",
+     "window":"opens 10:30 AM every day",
+     "includes":"The official location page's own structured data prints priceRange 10.00 - 17.00, which is a per-person band rather than a special. Phone 650-584-3947."
+    },
+    "hours_tuesday":"10:30 AM - 9:00 PM",
+    "days_open":"Mon-Sat 10:30-21:00, Sun 10:30-20:00 (official location page)",
+    "open_on_trip_date":true,
+    "fits_return_bus":{
+     "ok":true,
+     "note":"Fast-casual counter service opening at 10:30 AM - the lowest time-risk row on this pass."
+    },
+    "verification":{
+     "level":"listing",
+     "sources":[
+      {
+       "label":"Asian Box official Mountain View Hours & Location page (street address, phone, weekly hours, published price range)",
+       "url":"https://www.asianbox.com/location/mountain-view/"
+      }
+     ],
+     "accessed":"2026-09-11"
+    },
+    "review_links":{
+     "yelp":"https://www.yelp.com/biz/asian-box-mountain-view",
+     "google_maps":"https://www.google.com/maps/search/?api=1&query=Asian+Box+142+Castro+St+Mountain+View"
+    },
+    "flags":[
+     "Listed for weekday-lunch proximity and a published price band, not for a deal - no lunch special exists on the official page, so nothing is printed in the price column."
+    ],
+    "id":"L531",
+    "coords":null,
+    "added_in":"batch10a_pass10_verified.json",
+    "distance_mi":null
+   },
+   {
+    "name":"Opa! Authentic Greek Cuisine",
+    "city":"Campbell",
+    "area":"E Campbell Ave (downtown Campbell)",
+    "address":"276 E Campbell Ave, Campbell, CA 95008",
+    "coords":[
+     37.286896,
+     -121.94476
+    ],
+    "coords_source":"TripAdvisor structured data (geo) on the Campbell restaurants page",
+    "cuisine":"Greek / Mediterranean",
+    "lunch_special":{
+     "name":"No lunch special published; weekday lunch service confirmed by the published hours",
+     "price_from":null,
+     "price_to":null,
+     "days":"daily",
+     "window":"opens 11:00 AM Mon-Sat, 10:00 AM Sunday",
+     "includes":"Phone (408) 866-4570; TripAdvisor structured data lists the cuisine as Greek and the price band as $$ - $$$."
+    },
+    "hours_tuesday":"11:00 AM - 10:00 PM",
+    "days_open":"Sun 10:00-22:00, Mon-Thu 11:00-22:00, Fri-Sat 11:00-23:00 (TripAdvisor structured data)",
+    "open_on_trip_date":true,
+    "fits_return_bus":{
+     "ok":true,
+     "note":"Opens 11:00 AM on Tuesday, so it fits an 11:15-11:45 lunch against the 11:50 AM departure."
+    },
+    "verification":{
+     "level":"listing",
+     "sources":[
+      {
+       "label":"TripAdvisor - Restaurants in Campbell, CA (structured data: street address, geo, openingHoursSpecification per day, phone, cuisine, price range)",
+       "url":"https://www.tripadvisor.com/Restaurants-g32154-Campbell_California.html"
+      }
+     ],
+     "accessed":"2026-09-11"
+    },
+    "review_links":{
+     "yelp":"https://www.yelp.com/biz/opa-authentic-greek-cuisine-campbell",
+     "google_maps":"https://www.google.com/maps/search/?api=1&query=Opa+Authentic+Greek+Cuisine+276+E+Campbell+Ave+Campbell"
+    },
+    "flags":[
+     "No published lunch price - listed for verified downtown-Campbell weekday lunch service only."
+    ],
+    "id":"L532",
+    "added_in":"batch10a_pass10_verified.json",
+    "distance_mi":5.03
+   },
+   {
+    "name":"Shake Shack - Stanford Shopping Center",
+    "city":"Palo Alto",
+    "area":"Stanford Shopping Center (El Camino Real end, in the parking lot)",
+    "address":"180 El Camino Real, Suite #950, Palo Alto, CA 94304",
+    "coords":[
+     37.444286,
+     -122.17108
+    ],
+    "coords_source":"TripAdvisor structured data (geo) on the Shake Shack Stanford Shopping Center page",
+    "cuisine":"American fast food / burgers, fries, shakes",
+    "lunch_special":{
+     "name":"No lunch special published; TripAdvisor lists 'Lunch, Dinner' as the served meals",
+     "price_from":null,
+     "price_to":null,
+     "days":"daily",
+     "window":"opens 10:30 AM every day",
+     "includes":"Phone +1 650-509-5101; ordering page order.shakeshack.com/store/678. Reviewer-reported bills on the same page: $15.78 for a shared double cheeseburger and shake; $30 for two burgers, a shake and fries - reviewer figures, not menu prices, so nothing is printed in the price column."
+    },
+    "hours_tuesday":"10:30 AM - 10:00 PM",
+    "days_open":"Sun-Sat 10:30-22:00 (TripAdvisor structured data)",
+    "open_on_trip_date":true,
+    "fits_return_bus":{
+     "ok":true,
+     "note":"Counter service from 10:30 AM - no window risk."
+    },
+    "verification":{
+     "level":"listing",
+     "sources":[
+      {
+       "label":"TripAdvisor - Shake Shack Stanford Shopping Center (structured data: 180 El Camino Real Suite #950, geo, openingHoursSpecification for all seven days, phone, menu link)",
+       "url":"https://www.tripadvisor.com/Restaurant_Review-g32849-d15617795-Reviews-Shake_Shack_Stanford_Shopping_Center-Palo_Alto_California.html"
+      }
+     ],
+     "accessed":"2026-09-11"
+    },
+    "review_links":{
+     "yelp":"https://www.yelp.com/biz/shake-shack-palo-alto-4",
+     "google_maps":"https://www.google.com/maps/search/?api=1&query=Shake+Shack+180+El+Camino+Real+Palo+Alto"
+    },
+    "flags":[
+     "Chain with no location-specific lunch special; included because the Stanford Shopping Center end of the ring had no verified quick-lunch row. Do not read the reviewer bills as menu prices."
+    ],
+    "id":"L533",
+    "added_in":"batch10a_pass10_verified.json",
+    "distance_mi":11.92
    }
   ],
   "top_picks_for_tuesday_sept_8":[
@@ -26988,7 +27478,7 @@ window.TINO_DATA = {
  },
  "rejected":{
   "purpose":"Line-by-line review log for candidates that were searched but NOT added to the master list. Recorded so nothing is silently dropped and so every rejection has a reason and a link.",
-  "search_date":"2026-09-07",
+  "search_date":"2026-09-07 through 2026-09-11",
   "rejected":[
    {
     "id":"R01",
@@ -28288,17 +28778,249 @@ window.TINO_DATA = {
      }
     ],
     "searched":"2026-09-07"
+   },
+   {
+    "name":"Trattoria 360",
+    "city":"Campbell",
+    "why":"Dinner only - no lunch service at all. TripAdvisor structured data for 360 E Campbell Avenue lists Sunday 17:00-21:30, Tuesday-Thursday 17:00-21:30, Friday-Saturday 17:00-22:00 and NO Monday entry. The restaurant's own site describes it as a dinner room with a full bar. A lunch special is impossible here.",
+    "links":[
+     {
+      "label":"TripAdvisor - Restaurants in Campbell (Trattoria 360 openingHoursSpecification, address, geo)",
+      "url":"https://www.tripadvisor.com/Restaurants-g32154-Campbell_California.html"
+     },
+     {
+      "label":"Trattoria 360 official site (dinner-focused description, 360 E. Campbell Avenue)",
+      "url":"https://trattoria360campbell.com/"
+     }
+    ],
+    "searched":"2026-09-11"
+   },
+   {
+    "name":"Capers Eat & Drink",
+    "city":"Campbell",
+    "why":"Dinner only. TripAdvisor structured data for 1710 W Campbell Ave lists Sunday 16:00-20:00 and Tuesday-Saturday 16:00-21:00, with no Monday entry and no lunch block. This is the current name of the business already rejected as 'Capers Restaurant' - recorded under the current name so the dedupe is visible.",
+    "links":[
+     {
+      "label":"TripAdvisor - Restaurants in Campbell (Capers Eat & Drink openingHoursSpecification, address, menu link)",
+      "url":"https://www.tripadvisor.com/Restaurants-g32154-Campbell_California.html"
+     },
+     {
+      "label":"Capers Eat & Drink menu (linked from the TripAdvisor record)",
+      "url":"https://caperseatanddrink.com/menu/"
+     }
+    ],
+    "searched":"2026-09-11"
+   },
+   {
+    "name":"Keke's Breakfast Cafe",
+    "city":"Sunnyvale",
+    "why":"DEFERRED, not refused on merit. The restaurant's own location page carries the banners 'COMING SOON' and 'Map Coming Soon' while still printing 311 S Mathilda Ave, Sunnyvale CA 94086 and 'Open Daily 7:00 AM - 2:30 PM'. It cannot be confirmed that this room is trading on 2026-09-08, and a 2:30 PM close would cut the return-bus margin anyway. Its Restaurant Week offer (free shortstack of pancakes with an entree or a $10 minimum purchase, dine-in, one per person) is recorded here for the next pass.",
+    "links":[
+     {
+      "label":"Keke's official Sunnyvale location page (address, hours, 'COMING SOON' banner)",
+      "url":"https://www.kekes.com/locations/kekes-sunnyvale"
+     },
+     {
+      "label":"Sunnyvale Chamber of Commerce - Sunnyvale Restaurant Week (the free-shortstack offer)",
+      "url":"https://www.svcoc.org/sunnyvale-restaurant-week-where-to-dine/"
+     }
+    ],
+    "searched":"2026-09-11"
+   },
+   {
+    "name":"Urban Plates",
+    "city":"Sunnyvale",
+    "why":"DEFERRED. The Sunnyvale Restaurant Week page lists a $59 three-course meal for two, but the entry links only to the brand's national homepage - no Sunnyvale street address or weekly hours could be pinned to a citable page this pass, so it was not merged with a placeholder address.",
+    "links":[
+     {
+      "label":"Sunnyvale Chamber of Commerce - Sunnyvale Restaurant Week ($59 Three-Course Meal for Two)",
+      "url":"https://www.svcoc.org/sunnyvale-restaurant-week-where-to-dine/"
+     },
+     {
+      "label":"Urban Plates official site (brand homepage only - no location resolved this pass)",
+      "url":"https://urbanplates.com/"
+     }
+    ],
+    "searched":"2026-09-11"
+   },
+   {
+    "name":"Gurkha Kitchen",
+    "city":"Sunnyvale",
+    "why":"DEFERRED. Chamber page lists a $40 Lunch & Dinner Combo and $45 Indo-Chinese Combo (both serve 3), but no Sunnyvale street address or weekly hours could be verified this pass.",
+    "links":[
+     {
+      "label":"Sunnyvale Chamber of Commerce - Sunnyvale Restaurant Week (combo prices)",
+      "url":"https://www.svcoc.org/sunnyvale-restaurant-week-where-to-dine/"
+     },
+     {
+      "label":"Gurkha Kitchen official site",
+      "url":"https://thegurkhaskitchen.com/"
+     }
+    ],
+    "searched":"2026-09-11"
+   },
+   {
+    "name":"RBG Bar & Grill",
+    "city":"Sunnyvale",
+    "why":"DEFERRED. The chamber page lists a $34.99 special menu (short ribs, whipped potatoes, sweet corn, Josh Cabernet; prawns +$8; cheesecake +$14) at the Radisson Sunnyvale, but no per-day hours and no street address were verified this pass, and the entry does not say the menu is a lunch menu.",
+    "links":[
+     {
+      "label":"Sunnyvale Chamber of Commerce - Sunnyvale Restaurant Week ($34.99 Special Menu)",
+      "url":"https://www.svcoc.org/sunnyvale-restaurant-week-where-to-dine/"
+     },
+     {
+      "label":"RBG Bar & Grill dining page at the Radisson Sunnyvale",
+      "url":"https://www.choicehotels.com/california/sunnyvale/radisson-hotels/cak33/dining"
+     }
+    ],
+    "searched":"2026-09-11"
+   },
+   {
+    "name":"Teriyaki Madness",
+    "city":"Sunnyvale",
+    "why":"DEFERRED. The chamber page lists a 'Buy 1 Bowl, Get 1 Free' offer (regular or large bowl, free JR or regular bowl, drinks must not be part of a combo) but no dollar price, address or hours were verified this pass.",
+    "links":[
+     {
+      "label":"Sunnyvale Chamber of Commerce - Sunnyvale Restaurant Week (BOGO bowl terms)",
+      "url":"https://www.svcoc.org/sunnyvale-restaurant-week-where-to-dine/"
+     },
+     {
+      "label":"Teriyaki Madness Sunnyvale ordering page",
+      "url":"https://order.teriyakimadness.com/menu/sunnyvale"
+     }
+    ],
+    "searched":"2026-09-11"
+   },
+   {
+    "name":"Casa Lupe",
+    "city":"Los Altos",
+    "why":"DEFERRED with a strong irregularity. The Los Altos room's own website publishes 'OPEN MONDAY - SATURDAY: MONDAY, TUESDAY & WEDNESDAY 5:00PM-8:30P; THURSDAY 11:30AM-2:00PM' - i.e. the ONLY lunch service is Thursday, so it is closed for the Tuesday trip - and the page prints no street address at all, so it could not be merged as a locatable row. Distinct from the two Casa Lupe rows already in the master list (459 Castro St, Mountain View and 2165 Winchester Blvd, Campbell).",
+    "links":[
+     {
+      "label":"Casa Lupe Los Altos official site (business hours block: Thursday-only lunch)",
+      "url":"https://casalupelosaltos.com/"
+     }
+    ],
+    "searched":"2026-09-11"
+   },
+   {
+    "name":"Los Altos Breakfast and Lunch",
+    "city":"Los Altos (name trap - actually Sparks, NV)",
+    "why":"REJECTED - geographic name trap. The name reads as Los Altos, California, but the business's own menu page carries structured data placing it at 5015 Pyramid Way Ste 107, Sparks, NV 89436 (geo 39.58242389999999, -119.7444019, phone (775) 425-8010, hours 7:00 AM - 2:30 PM daily). Out of state and roughly 200 miles outside the ring; its $10-$20 lunch prices must not be read as Los Altos prices.",
+    "links":[
+     {
+      "label":"Los Altos Breakfast and Lunch menu page with the Sparks, NV structured-data address",
+      "url":"https://losaltosbreakfastandlunch.com/menu/"
+     }
+    ],
+    "searched":"2026-09-11"
+   },
+   {
+    "name":"Camino Real Mexican Restaurant",
+    "city":"Cupertino-area search hit (actually Berryville, VA)",
+    "why":"REJECTED - geographic name trap surfaced by a Sunnyvale/El Camino Real query. Its lunch page is a genuine published lunch menu (13 combinations at $9.50 daily 11:00 AM - 2:30 PM, house specials $12-$14), but the same page's own footer places the restaurant at 16 Crow St., Berryville, VA 22611 with a 540 area-code phone. Not in the Bay Area; excluded so the $9.50 lunch figures never enter a Cupertino-area list.",
+    "links":[
+     {
+      "label":"Camino Real Mexican Restaurant lunch menu (prices) with the Berryville, VA address in the page footer",
+      "url":"https://www.caminorealdining.com/lunch-menu"
+     }
+    ],
+    "searched":"2026-09-11"
+   },
+   {
+    "name":"Bluestone Lane Los Altos Cafe",
+    "city":"Los Altos",
+    "why":"DEFERRED. The brand's own Los Altos page prints 288 1st St, Los Altos CA 94022 and 7:30 AM - 5:30 PM daily, but its structured data still carries addressLocality 'coming_soon_city' and postalCode 'coming_soon_zip', and the page is a coffee/brunch room with no published lunch special. Refused as a placeholder rather than merged.",
+    "links":[
+     {
+      "label":"Bluestone Lane official Los Altos cafe page (address, hours, placeholder structured data)",
+      "url":"https://bluestonelane.com/cafes/los-altos-cafe-288-1st-st/"
+     }
+    ],
+    "searched":"2026-09-11"
+   },
+   {
+    "name":"Campbell Pizza",
+    "city":"Campbell",
+    "why":"REJECTED - closure. Its menu directory page for 3393 Winchester Blvd, Campbell, CA 95008-6844 advertises 'Lunch Specials' as a category but the same page states 'Restaurant closed' at the foot of the menu. Not merged; recorded so the stale 'Lunch Specials' tag is not mistaken for a live deal.",
+    "links":[
+     {
+      "label":"MenuPages - Campbell Pizza, 3393 Winchester Blvd (menu with 'Lunch Specials' category and the 'Restaurant closed' notice)",
+      "url":"https://menupages.com/campbell-pizza/3393-winchester-blvd-campbell"
+     }
+    ],
+    "searched":"2026-09-11"
+   },
+   {
+    "name":"Cafe Arbor",
+    "city":"Palo Alto",
+    "why":"DEFERRED. A Bay Area food blog describes an affordable Stanford Shopping Center lunch room open 7:00 AM - 2:00 PM on weekdays with entrees $15-$20 and a Stanford-employee discount, but no official menu, address or hours page could be verified this pass - a single blog is not a citable source for a master row.",
+    "links":[
+     {
+      "label":"Try Bay Area - Cafe Arbor near Stanford Shopping Center (weekday 7am-2pm, $15-$20)",
+      "url":"https://www.trybayarea.com/post/cafe-arbor-for-an-affordable-option-near-stanford-shopping-center-in-palo-alto"
+     }
+    ],
+    "searched":"2026-09-11"
+   },
+   {
+    "name":"107 Bistro & Wine Bar",
+    "city":"Los Gatos",
+    "why":"DEFERRED. A Yelp lunch search tags it 'Good for lunch' and describes it as inside the historic Testarossa Winery, but no street address, weekly hours or priced lunch special were verified this pass.",
+    "links":[
+     {
+      "label":"Yelp lunch search for Los Gatos (107 Bistro & Wine Bar 'Good for lunch' tag and blurb)",
+      "url":"https://www.yelp.com/search?find_desc=Lunch&find_loc=Los+Gatos%2C+CA"
+     }
+    ],
+    "searched":"2026-09-11"
+   },
+   {
+    "name":"Komala Vilas",
+    "city":"Sunnyvale",
+    "why":"DEFERRED. A Yelp business page shows a 'Lunch Thali' dish and menu items from $6.00, and the page header begins an address at '1020 ...' that the retrieved snippet truncates, so the street address could not be verified. Not merged with a partial address.",
+    "links":[
+     {
+      "label":"Yelp business page - Komala Vilas, Sunnyvale (Lunch Thali, item prices, truncated address)",
+      "url":"https://www.yelp.com/biz/komala-vilas-sunnyvale"
+     }
+    ],
+    "searched":"2026-09-11"
+   },
+   {
+    "name":"Indian Sizzler",
+    "city":"Santa Clara",
+    "why":"DEFERRED. A Yelp business page prints 'Closed 11:30 AM - 11:30 PM' and item prices from $7.00-$20.00, and a social post describes an all-you-can-eat buffet at roughly $25, but no street address and no lunch-specific price were verified this pass.",
+    "links":[
+     {
+      "label":"Yelp business page - Indian Sizzler, Santa Clara (hours and item prices)",
+      "url":"https://www.yelp.com/biz/indian-sizzler-santa-clara"
+     }
+    ],
+    "searched":"2026-09-11"
+   },
+   {
+    "name":"Barracuda Japanese Restaurant",
+    "city":"Mountain View",
+    "why":"DEFERRED. A Yelp review collected on the Castro Street collection page describes a three-item bento box with salad, miso, rice and edamame at 'about $12 each, including tip & tax' - a reviewer figure with no street address or hours verified this pass.",
+    "links":[
+     {
+      "label":"Yelp Castro Street collection (Barracuda Japanese Restaurant bento review)",
+      "url":"https://www.yelp.com/collection/nyZA_OjmDoKoAK0aPvGqcQ/Castro-Street"
+     }
+    ],
+    "searched":"2026-09-11"
    }
   ],
   "notes":[
    "Reddit was searched for Cupertino / Sunnyvale / Los Gatos lunch specials and returned only threads about other cities, so no Reddit citation is used (see LUNCH-FLAG-8).",
    "Every rejection above is a source-of-truth decision, not a judgement about the food. Anything here can be promoted into the master list as soon as hours, days and a price are confirmed."
   ],
-  "distinct_businesses_rejected":124,
-  "note":"116 rows covering 124 distinct businesses. R14 (first pass) groups the near-miss candidates surfaced by the same queries and rejected for the same reason (no published lunch special found in that pass); later passes appended one row per candidate or per grouped reason - 30 of the rows are from the ninth pass on 2026-09-10."
+  "distinct_businesses_rejected":132,
+  "note":"133 rows covering 132 distinct businesses. R14 (first pass) groups the near-miss candidates surfaced by the same queries and rejected for the same reason (no published lunch special found in that pass); later passes appended one row per candidate or per grouped reason - 30 rows from the ninth pass on 2026-09-10 and 17 from the tenth pass on 2026-09-11. Every row carries the URL that proves the rejection, including three out-of-state name traps and two dinner-only venues whose directory pages still advertise 'Lunch Specials'."
  },
  "flags":{
-  "updated":"2026-09-10",
+  "updated":"2026-09-11",
   "transit":[
    {
     "id":"FLAG-1",
@@ -28963,11 +29685,124 @@ window.TINO_DATA = {
      "L516",
      "L478"
     ]
+   },
+   {
+    "id":"LUNCH-FLAG-26",
+    "severity":"high",
+    "title":"Undated event pricing: the Sunnyvale Restaurant Week page publishes lunch prices with no date range",
+    "what_we_found":"The Sunnyvale Chamber of Commerce 'Where To Dine' page lists per-restaurant lunch specials (Falafel Flare $16-$25, Empire Armadillo $26.99, Delhi to Kathmandu $11-$18, P.F. Chang's $16.99, Adrestia $35, Meyhouse $39.95 three-course 11:45 AM-2:00 PM, Valley Goat $45 lunch Mon-Fri only). Neither that page nor its 'About' tab states a start or end date, and the uploaded artwork is dated September-November 2025.",
+    "what_we_did":"The three rows merged this pass that rely on it (Falafel Flare, Empire Armadillo BBQ & Deli, Delhi to Kathmandu) carry the price AND an explicit 'EVENT DATES UNVERIFIED' flag saying the figure cannot be confirmed as running on 2026-09-08. The prices were not presented as standing menu prices.",
+    "rows":[
+     "L528",
+     "L529",
+     "L530"
+    ],
+    "link":{
+     "label":"Sunnyvale Chamber of Commerce - Sunnyvale Restaurant Week Where To Dine",
+     "url":"https://www.svcoc.org/sunnyvale-restaurant-week-where-to-dine/"
+    },
+    "manual_review":"Call each venue before relying on the event price; if the chamber publishes a 2026 date range, re-level these rows."
+   },
+   {
+    "id":"LUNCH-FLAG-27",
+    "severity":"high",
+    "title":"Zaytinya Palo Alto is verified closed for lunch on Tuesdays - rejection upgraded, not dropped",
+    "what_we_found":"Its OpenTable listing prints 'Lunch Wed-Sun 11:30 am-3:00 pm; Dinner Mon-Thu, Sun 4:00 pm-9:00 pm; Fri, Sat 4:00 pm-10:00 pm'. A diner review on the same page quotes a '$40/3-course lunch menu', and the SFGate opening notice lists dinner hours only.",
+    "what_we_did":"The earlier rejection was re-checked with the new evidence and kept. The reason was upgraded from 'no lunch found' to 'verified closed for lunch on Tuesdays', so the reviewer's $40 lunch claim is visible but not bookable for this trip.",
+    "rows":[],
+    "link":{
+     "label":"OpenTable - Zaytinya Palo Alto",
+     "url":"https://www.opentable.com/r/zaytinya-palo-alto"
+    },
+    "manual_review":"If the trip date moves to Wednesday-Sunday, this row becomes a $40 three-course lunch candidate."
+   },
+   {
+    "id":"LUNCH-FLAG-28",
+    "severity":"high",
+    "title":"Two out-of-state name traps caught by reading the address off the page itself",
+    "what_we_found":"'Los Altos Breakfast and Lunch' carries structured data placing it at 5015 Pyramid Way Ste 107, Sparks, NV 89436. 'Camino Real Mexican Restaurant', surfaced by a Sunnyvale/El Camino Real query, prints a genuine $9.50 lunch menu but its own footer places it at 16 Crow St., Berryville, VA 22611.",
+    "what_we_did":"Both rejected with the URL that proves the address, so neither the Nevada $10-$20 lunch prices nor the Virginia $9.50 lunch combinations can enter a Cupertino-area list. Same failure mode as the pass-9 Saratoga NY and La Vigna Queens NY traps.",
+    "rows":[],
+    "link":{
+     "label":"Camino Real Mexican Restaurant lunch menu (Berryville, VA address in the footer)",
+     "url":"https://www.caminorealdining.com/lunch-menu"
+    },
+    "manual_review":"None - both are out of state. Recorded so the exclusion is auditable."
+   },
+   {
+    "id":"LUNCH-FLAG-29",
+    "severity":"watch",
+    "title":"Directory 'Lunch Specials' tags on venues that do not serve lunch",
+    "what_we_found":"Trattoria 360 (360 E Campbell Ave) opens at 17:00 every day it opens and has no Monday entry. Capers Eat & Drink (1710 W Campbell Ave) opens 16:00. Campbell Pizza's menu directory page advertises a 'Lunch Specials' category and then states 'Restaurant closed'.",
+    "what_we_did":"All three rejected with the hour-by-hour evidence rather than listed, so a 'lunch specials' category tag is never treated as proof of lunch service.",
+    "rows":[],
+    "link":{
+     "label":"TripAdvisor - Restaurants in Campbell (per-day openingHoursSpecification)",
+     "url":"https://www.tripadvisor.com/Restaurants-g32154-Campbell_California.html"
+    },
+    "manual_review":"Re-check Capers and Trattoria 360 if either adds a lunch service."
+   },
+   {
+    "id":"LUNCH-FLAG-30",
+    "severity":"watch",
+    "title":"Three-way hour conflict for Hummus Mediterranean Kitchen Palo Alto, two of the values on the restaurant's own two pages",
+    "what_we_found":"eatathummus.com/palo-alto says Mon-Thu 10:30-21:00 and Sat 9:30-21:30; eatathummus.com/locations says Mon-Thu 10:30-21:30 and Sat 10:30-22:00; the Yelp business page says Mon-Thu 10:30-21:00.",
+    "what_we_did":"Row L525 is levelled 'conflicting' and prints all three blocks. Nothing was averaged and no single value was silently chosen. The same pattern was recorded for Falafel Flare (L528: 10:30 vs 11:00 opening, plus an 'Every Day 11:00-8:30' block on the same Apple Maps record).",
+    "rows":[
+     "L525",
+     "L528"
+    ],
+    "link":{
+     "label":"Hummus Mediterranean Kitchen official Palo Alto page",
+     "url":"https://www.eatathummus.com/palo-alto"
+    },
+    "manual_review":"Confirm the Tuesday close by phone if the return timing depends on it."
+   },
+   {
+    "id":"LUNCH-FLAG-31",
+    "severity":"watch",
+    "title":"Existing master row L20 (Los Gatos Parkside) may be dinner-only - flagged, not silently changed",
+    "what_we_found":"OpenTable's listing for Los Gatos Parkside, 145 W Main St, Los Gatos, states 'Hours of operation: Daily 5:00 pm-9:00 pm' and its Toast ordering page shows only a DINNER menu. L20 is an existing master row that presents the venue as a lunch option.",
+    "what_we_did":"L20 was NOT edited or deleted this pass - changing a row that earlier passes verified needs the earlier source re-read, which is recorded here as the next action. The conflict is surfaced instead of being buried.",
+    "rows":[
+     "L20"
+    ],
+    "link":{
+     "label":"OpenTable - Los Gatos Parkside (Daily 5:00 pm-9:00 pm)",
+     "url":"https://www.opentable.com/r/los-gatos-parkside-los-gatos"
+    },
+    "manual_review":"Re-read the source cited on L20 against the OpenTable hours and either correct L20 or record why the lunch service stands."
+   },
+   {
+    "id":"LUNCH-FLAG-32",
+    "severity":"watch",
+    "title":"Verification limitation: Yelp business pages return HTTP 403 to direct fetch in this environment",
+    "what_we_found":"A direct fetch of https://www.yelp.com/search?find_desc=Lunch+Specials&find_loc=Cupertino%2C+CA returned HTTP 403. Yelp content is therefore reachable only as surfaced through search, not by opening the page.",
+    "what_we_did":"Rows that rest on Yelp are levelled 'listing' or 'conflicting', never 'official', and each carries the Yelp URL for manual review. This is recorded so a reviewer knows why no pass-10 row is levelled 'official' on Yelp evidence alone.",
+    "rows":[],
+    "link":{
+     "label":"Yelp lunch-specials search for Cupertino (returned 403 on direct fetch)",
+     "url":"https://www.yelp.com/search?find_desc=Lunch+Specials&find_loc=Cupertino%2C+CA"
+    },
+    "manual_review":"Open the Yelp URLs in a browser to confirm the hours and quotes; they could not be fetched programmatically."
+   },
+   {
+    "id":"LUNCH-FLAG-33",
+    "severity":"info",
+    "title":"Casa Lupe Los Altos serves lunch on Thursdays only",
+    "what_we_found":"The Los Altos room's own site publishes 'OPEN MONDAY - SATURDAY: MONDAY, TUESDAY & WEDNESDAY 5:00PM-8:30P; THURSDAY 11:30AM-2:00PM'. Lunch therefore exists on exactly one day, and that day is not the trip date. The page prints no street address.",
+    "what_we_did":"Deferred rather than merged - no verifiable street address, and no Tuesday lunch. Distinct from the two Casa Lupe rows already in the master list (459 Castro St, Mountain View; 2165 Winchester Blvd, Campbell).",
+    "rows":[],
+    "link":{
+     "label":"Casa Lupe Los Altos official site (business hours block)",
+     "url":"https://casalupelosaltos.com/"
+    },
+    "manual_review":"If the trip ever moves to a Thursday, resolve a street address and add it."
    }
   ]
  },
  "sources":{
-  "accessed":"2026-09-07",
+  "accessed":"2026-09-07 through 2026-09-11",
   "note":"Every time, fare and stop in this project was read from one of these pages. 'fetch_status' records what happened when the page was read from the build environment, so a gap is visible instead of hidden. Pass 7 (2026-09-07): 16 official restaurant pages added for the seventh search pass; review-level evidence remains inline in each row verification.sources.",
   "sources":[
    {
@@ -29554,13 +30389,183 @@ window.TINO_DATA = {
     "url":"https://italiandeligodfather.com/los-altos/",
     "fetch_status":"ok",
     "used_for":"139 Main St; Mon-Sat 9-5, Sun 9-4"
+   },
+   {
+    "id":"S74",
+    "agency":"Sunnyvale Chamber of Commerce",
+    "label":"Sunnyvale Restaurant Week - Where To Dine (per-restaurant lunch/dinner special prices)",
+    "url":"https://www.svcoc.org/sunnyvale-restaurant-week-where-to-dine/",
+    "fetch_status":"ok",
+    "used_for":"Falafel Flare $16/$16/$25 lunch menu; Empire Armadillo $26.99 lunch; Delhi to Kathmandu $11-$18 special menu; Kitchen at Peery Park $35 'Dinner Only'; Keke's free shortstack; Urban Plates $59 for two; no date range published (see LUNCH-FLAG-26)"
+   },
+   {
+    "id":"S75",
+    "agency":"Sunnyvale Chamber of Commerce",
+    "label":"Sunnyvale Restaurant Week - About tab",
+    "url":"https://www.svcoc.org/sunnyvale-restaurant-week-about/",
+    "fetch_status":"ok",
+    "used_for":"Checked specifically for event dates: none are published, which is why the event prices are flagged"
+   },
+   {
+    "id":"S76",
+    "agency":"OpenTable",
+    "label":"Teleferic Barcelona - Los Gatos",
+    "url":"https://www.opentable.com/r/teleferic-barcelona-los-gatos",
+    "fetch_status":"ok",
+    "used_for":"50 University Ave b270; Mon-Thu 11:30-21:15, Fri 11:30-22:15, Sat 11:00-22:15, Sun 11:00-21:15; Barcelona Lunch Menu $28.00-$34.00 per person, weekday, not on holidays; happy-hour 3-5 PM vs 3-6 PM conflict"
+   },
+   {
+    "id":"S77",
+    "agency":"OpenTable",
+    "label":"Zaytinya - Palo Alto",
+    "url":"https://www.opentable.com/r/zaytinya-palo-alto",
+    "fetch_status":"ok",
+    "used_for":"180 El Camino Real; Lunch Wed-Sun 11:30-15:00 only, i.e. no Tuesday lunch; reviewer $40 three-course lunch claim"
+   },
+   {
+    "id":"S78",
+    "agency":"OpenTable",
+    "label":"Los Gatos Parkside",
+    "url":"https://www.opentable.com/r/los-gatos-parkside-los-gatos",
+    "fetch_status":"ok",
+    "used_for":"145 W Main St; 'Daily 5:00 pm-9:00 pm' - conflicts with master row L20 (see LUNCH-FLAG-31)"
+   },
+   {
+    "id":"S79",
+    "agency":"Hummus Mediterranean Kitchen (official)",
+    "label":"Official Palo Alto location page",
+    "url":"https://www.eatathummus.com/palo-alto",
+    "fetch_status":"ok",
+    "used_for":"715 Stanford Shopping Center; Mon-Thu 10:30-21:00, Fri 10:30-21:30, Sat 9:30-21:30, Sun 9:30-21:00; phone (650) 331-4516"
+   },
+   {
+    "id":"S80",
+    "agency":"Hummus Mediterranean Kitchen (official)",
+    "label":"Official locations index (all Bay Area rooms)",
+    "url":"https://www.eatathummus.com/locations",
+    "fetch_status":"ok",
+    "used_for":"Palo Alto 715 Stanford Shopping Center (Mon-Thu to 21:30); Mountain View 185 Castro Street, (650) 386-1860; San Mateo 150 E 4th Avenue, (650) 401-6903 - and the Palo Alto hour conflict"
+   },
+   {
+    "id":"S81",
+    "agency":"Asian Box (official)",
+    "label":"Official Mountain View Hours & Location page",
+    "url":"https://www.asianbox.com/location/mountain-view/",
+    "fetch_status":"ok",
+    "used_for":"142 Castro St.; Mon-Sat 10:30-21:00, Sun 10:30-20:00; phone 650-584-3947; published priceRange 10.00-17.00"
+   },
+   {
+    "id":"S82",
+    "agency":"Apple Maps",
+    "label":"Falafel Flare place record",
+    "url":"https://maps.apple.com/place?place-id=I2EC93131EFC720B2",
+    "fetch_status":"ok",
+    "used_for":"470 N Mathilda Ave, Sunnyvale CA 94085; Mon-Fri 10:30-21:00, Sat/Sun 11:00-21:00, plus an 'Every Day 11:00-20:30' block; (408) 685-2141"
+   },
+   {
+    "id":"S83",
+    "agency":"Apple Maps",
+    "label":"Delhi to Kathmandu Restaurant & Bar place record",
+    "url":"https://maps.apple.com/place?place-id=I6F53D428F4BFDE2B",
+    "fetch_status":"ok",
+    "used_for":"155 S Murphy Ave, Sunnyvale CA 94086; daily 11:00-24:00; (650) 661-1054"
+   },
+   {
+    "id":"S84",
+    "agency":"Yelp",
+    "label":"Empire Armadillo BBQ & Deli business page",
+    "url":"https://www.yelp.com/biz/empire-armadillo-bbq-and-deli-sunnyvale-2",
+    "fetch_status":"403 on direct fetch; read as surfaced by search",
+    "used_for":"161 E El Camino Real, Sunnyvale CA 94087; daily 11:00-20:00; closed Nov 26 and Dec 25 2026; (669) 249-7080"
+   },
+   {
+    "id":"S85",
+    "agency":"Yelp",
+    "label":"Falafel Flare business page",
+    "url":"https://www.yelp.com/biz/falafel-flare-sunnyvale-2",
+    "fetch_status":"403 on direct fetch; read as surfaced by search",
+    "used_for":"470 N Mathilda Ave; Mon-Sun 11:00-21:00 (the second of the conflicting hour blocks)"
+   },
+   {
+    "id":"S86",
+    "agency":"Yelp",
+    "label":"Delhi to Kathmandu business page",
+    "url":"https://www.yelp.com/biz/delhi-to-kathmandu-restaurant-and-bar-sunnyvale-6",
+    "fetch_status":"403 on direct fetch; read as surfaced by search",
+    "used_for":"155 S Murphy Ave; daily 11:00-24:00; happy hour daily 15:00-17:00 from the business's own description"
+   },
+   {
+    "id":"S87",
+    "agency":"TripAdvisor",
+    "label":"Restaurants in Campbell, CA (structured data)",
+    "url":"https://www.tripadvisor.com/Restaurants-g32154-Campbell_California.html",
+    "fetch_status":"ok",
+    "used_for":"Opa! 276 E Campbell Ave, Sun 10-22 / Mon-Thu 11-22 / Fri-Sat 11-23, geo 37.286896,-121.94476; Trattoria 360 and Capers Eat & Drink open 17:00/16:00 only (dinner-only rejects)"
+   },
+   {
+    "id":"S88",
+    "agency":"TripAdvisor",
+    "label":"Shake Shack Stanford Shopping Center (structured data)",
+    "url":"https://www.tripadvisor.com/Restaurant_Review-g32849-d15617795-Reviews-Shake_Shack_Stanford_Shopping_Center-Palo_Alto_California.html",
+    "fetch_status":"ok",
+    "used_for":"180 El Camino Real Suite #950, Palo Alto CA 94304; Sun-Sat 10:30-22:00; geo 37.444286,-122.17108"
+   },
+   {
+    "id":"S89",
+    "agency":"Keke's Breakfast Cafe (official)",
+    "label":"Official Sunnyvale location page",
+    "url":"https://www.kekes.com/locations/kekes-sunnyvale",
+    "fetch_status":"ok",
+    "used_for":"311 S Mathilda Ave; 'Open Daily 7:00 AM - 2:30 PM'; page still banner-marked 'COMING SOON' / 'Map Coming Soon' - why it was deferred"
+   },
+   {
+    "id":"S90",
+    "agency":"Camino Real Mexican Restaurant (official)",
+    "label":"Lunch menu page",
+    "url":"https://www.caminorealdining.com/lunch-menu",
+    "fetch_status":"ok",
+    "used_for":"REJECT evidence: 13 lunch combinations at $9.50 daily 11:00-14:30, but the footer places it at 16 Crow St., Berryville, VA 22611 - out-of-state name trap"
+   },
+   {
+    "id":"S91",
+    "agency":"Los Altos Breakfast and Lunch (official)",
+    "label":"Menu page",
+    "url":"https://losaltosbreakfastandlunch.com/menu/",
+    "fetch_status":"ok",
+    "used_for":"REJECT evidence: structured data places it at 5015 Pyramid Way Ste 107, Sparks, NV 89436 - out-of-state name trap"
+   },
+   {
+    "id":"S92",
+    "agency":"Casa Lupe Los Altos (official)",
+    "label":"Official site",
+    "url":"https://casalupelosaltos.com/",
+    "fetch_status":"ok",
+    "used_for":"Hours block: Mon-Wed 17:00-20:30, Thu 11:30-14:00 - Thursday-only lunch; no street address printed"
+   },
+   {
+    "id":"S93",
+    "agency":"SFGate",
+    "label":"Jose Andres opens Zaytinya at Stanford Shopping Center",
+    "url":"https://www.sfgate.com/food/article/jose-andres-restaurant-zaytinya-stanford-shopping-21195341.php",
+    "fetch_status":"ok",
+    "used_for":"180 El Camino Real, Suite EE 1400; dinner-only hours at opening - corroborates the no-Tuesday-lunch finding"
+   },
+   {
+    "id":"S94",
+    "agency":"MenuPages",
+    "label":"Campbell Pizza, 3393 Winchester Blvd",
+    "url":"https://menupages.com/campbell-pizza/3393-winchester-blvd-campbell",
+    "fetch_status":"ok",
+    "used_for":"REJECT evidence: page advertises a 'Lunch Specials' category and then states 'Restaurant closed'"
    }
   ],
   "dead_ends":[
    "No outbound network from the build environment (DNS/TLS blocked, proxy refused), so GTFS feeds for SFMTA/VTA/Caltrain and the 511.org trip planner API could not be pulled. Everything was verified from the agencies' published web tables instead.",
    "caltrain.com/media/36422 and caltrain.com/media/36422/download failed three times, so the weekday PDF could not be read (FLAG-5).",
    "caltrain.com/station/22ndst is a 404 - the slug is 22ndstreet. caltrain.com/station/sf is a 404 - the slug is sanfrancisco. vta.org/services/fares 404s - the live path is vta.org/go/fares.",
-   "Reusing a proxy/CDN URL from a previous tool result produces SignatureDoesNotMatch; only canonical agency URLs were fetched."
+   "Reusing a proxy/CDN URL from a previous tool result produces SignatureDoesNotMatch; only canonical agency URLs were fetched.",
+   "Yelp business and search pages return HTTP 403 to direct fetch in this sandbox (tested 2026-09-11 on the Cupertino lunch-specials search). Yelp facts are recorded from the business-page URL as surfaced by search and are never levelled 'official'.",
+   "Two out-of-state name traps were caught by reading the address off the candidate's own page: Los Altos Breakfast and Lunch -> Sparks, NV; Camino Real Mexican Restaurant -> Berryville, VA. Both had published lunch prices and were still refused."
   ],
   "could_not_verify":[
    "Caltrain weekday timetable PDF (caltrain.com/media/36422): download failed 3 times, so minute-level train times come from Caltrain's own live per-station schedule tables instead. See FLAG-5.",
@@ -29575,7 +30580,9 @@ window.TINO_DATA = {
    "Andale (Los Gatos) - no address/hours found in this pass.",
    "Pedro's (Santa Clara) - search returns only Pedro's Atascadero (~120 mi away); excluded as wrong-city.",
    "Ox 9 Cupertino branch - existence hinted on Yelp but no address verified; no row added.",
-   "Ethel's, Bowl'd, Mezzaluna (Los Gatos), Thyme (Palo Alto) - named in threads but no verifiable address/hours found."
+   "Ethel's, Bowl'd, Mezzaluna (Los Gatos), Thyme (Palo Alto) - named in threads but no verifiable address/hours found.",
+   "Whether the Sunnyvale Restaurant Week menus are running on 2026-09-08: the chamber's Where To Dine and About pages publish no date range and the artwork is dated 2025.",
+   "Sunnyvale street addresses and weekly hours for Urban Plates, Gurkha Kitchen, RBG Bar & Grill and Teriyaki Madness - the chamber page links only to brand homepages or ordering pages, so all four were deferred instead of merged with a placeholder address."
   ]
  }
 };
