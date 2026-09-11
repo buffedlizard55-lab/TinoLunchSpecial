@@ -1,5 +1,5 @@
 {
-  "accessed": "2026-09-07 through 2026-09-11",
+  "accessed": "2026-09-11",
   "note": "Every time, fare and stop in this project was read from one of these pages. 'fetch_status' records what happened when the page was read from the build environment, so a gap is visible instead of hidden. Pass 7 (2026-09-07): 16 official restaurant pages added for the seventh search pass; review-level evidence remains inline in each row verification.sources. Pass 11 (2026-09-11): sources S95-S120 added - the verified-lunch pages that produced the pass-11 rows (Home Eat's own ordering site, Lotus Thai Bistro, Tatami Buffet, LB Steak, Habit, Togo's), the https stand-in for Boda (whose own site is http-only), the closure and withdrawal evidence for six restaurants, and the two duplicate/withdrawal pages kept so nothing found this pass is silently lost. S119 is flagged as a lead-only source: Reddit threads pointed at cheap lunches but no Reddit price was ever printed in a row.",
   "sources": [
     {
@@ -962,6 +962,38 @@
       "url": "https://www.svcoc.org/sunnyvale-restaurant-week-where-to-dine/",
       "fetch_status": "ok",
       "used_for": "Re-read on pass 11 to re-check the seven restaurant-week lunch rows (Adrestia $35, Delhi to Kathmandu $11-$18, Empire Armadillo $26.99, Falafel Flare $16-$25, P.F. Chang's $16.99, RBG $34.99, Valley Goat $45). Still no date range printed on the page - existing LUNCH-FLAG-26 stands."
+    },
+    {
+      "id": "S121",
+      "agency": "Last Chance Restaurant",
+      "label": "Last Chance Restaurant menu and ordering site",
+      "url": "https://www.lastchancerestaurantmenu.com/",
+      "fetch_status": "ok",
+      "used_for": "L593: 3400 De La Cruz Blvd, Santa Clara; menu items and published prices; daily hours."
+    },
+    {
+      "id": "S122",
+      "agency": "OpenTable",
+      "label": "Nar Restaurant Mountain View listing",
+      "url": "https://www.opentable.com/r/nar-restaurant-mountain-view",
+      "fetch_status": "ok",
+      "used_for": "L594: 286 W El Camino Real, Mountain View; Tue-Sun lunch 11:30 am-2:00 pm and dinner hours."
+    },
+    {
+      "id": "S123",
+      "agency": "Delarosa",
+      "label": "Delarosa Palo Alto official location and menu",
+      "url": "https://www.delarosasf.com/location/palo-alto/",
+      "fetch_status": "ok",
+      "used_for": "L595: Stanford Shopping Center address, weekly hours, all-day menu and printed prices."
+    },
+    {
+      "id": "S124",
+      "agency": "Rosewood Hotels",
+      "label": "Madera at Rosewood Sand Hill official page",
+      "url": "https://www.rosewoodhotels.com/en/sand-hill-menlo-park/dining/madera",
+      "fetch_status": "ok",
+      "used_for": "L596: weekday lunch 11:30 am-2:00 pm, daily dinner, restaurant identity."
     }
   ],
   "dead_ends": [

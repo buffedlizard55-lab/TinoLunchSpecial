@@ -927,6 +927,24 @@
         "url": "https://github.com/buffedlizard55-lab/TinoLunchSpecial/tree/main/data/incoming"
       },
       "manual_review": "Reaching 100 in one pass now needs a bulk source: Yelp returns HTTP 403 to direct fetch here (LUNCH-FLAG-32), which removed the highest-yield listing source the earlier passes used."
+    },
+    {
+      "id": "LUNCH-FLAG-43",
+      "severity": "info",
+      "title": "Pass 12 adds four lunch-service rows without overstating promotions",
+      "what_we_found": "L593 Last Chance, L594 Nar, L595 Delarosa and L596 Madera all have citable addresses and weekly lunch hours. Only Last Chance and Delarosa pages printed usable item prices; Nar and Madera have blank price fields.",
+      "what_we_did": "Kept the rows because the project includes lunch menus/services, but labeled the price limitation in each row and did not infer a discount.",
+      "rows": [
+        "L593",
+        "L594",
+        "L595",
+        "L596"
+      ],
+      "link": {
+        "label": "Pass 12 incoming batch",
+        "url": "https://github.com/buffedlizard55-lab/TinoLunchSpecial/tree/main/data/incoming"
+      },
+      "manual_review": "Check the current lunch menu before treating any of these as a discounted lunch special."
     }
   ]
 }

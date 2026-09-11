@@ -1540,9 +1540,9 @@ window.TINO_DATA = {
  "specials":{
   "search_protocol":{
    "requirement":"Verify line by line before adding anything to the master list; keep official/review links for manual review. Eleventh pass (2026-09-11): 115 candidate names were first run through an automated name|city dedupe against both the master list and the rejects file (85 new, 30 already listed) before any page was opened, then ~90 more candidates came out of the final city sweeps; 59 of them verified well enough to enter the master list with a citable street address and weekly hours, and 21 more were recorded as rejects or deferred leads with the URL that proves the rejection. No candidate entered on an unverified price, and two rows that survived the merge were withdrawn on a same-day self-audit as duplicates.",
-   "queries_run":502,
-   "candidates_found":760,
-   "added_to_master":592,
+   "queries_run":506,
+   "candidates_found":764,
+   "added_to_master":596,
    "rejected_or_deferred":154,
    "search_date":"2026-09-07 through 2026-09-11",
    "cities_covered":[
@@ -1586,7 +1586,8 @@ window.TINO_DATA = {
     "2026-09-07 seventh pass dedupe outcomes: Rice Junky SC re-found but already L159 (skipped); Mr Bao Kitchen MV (357 Castro St) and Little Sky Kitchen MP (1010 El Camino Real) are VERIFIED restaurants excluded by the address-dedupe because Sakoon L149 / Cafe Borrone L246 hold those street addresses - flagged in flags.json for manual review. Backyard Cafe (1100 N Mathilda) yielded its row to Valley Goat at the same Treehouse campus address.",
     "2026-09-07 seventh pass corrections: Eureka! Cupertino L33 upgraded from no-special to the $13 Lunch Specials Every Day Open-till-3PM Yelp highlight (matches L113); Zareen Palo Alto row coords fixed pre-merge; Sweet Maple Cupertino (20010 Stevens Creek) and J&J Hawaiian BBQ Menlo Park discovered as new rows; Hobee Mountain View confirmed CLOSED while the Sunnyvale branch stays open.",
     "2026-09-07 seventh pass short-window rows worth noting for the 2:30-3:00 PM return: It is Lunch Time SC (Mon-Fri 9:30-1:30), Sumiya SC (Mon-Fri 11:30-1:30), So Gong Dong PA (11:30-1:45), Xiaoman SV (8-1:30, Thu closed), Sweet Maple both branches (till 2:30), Backyard Cafe dropped (see dedupe note), Kung Sil SC (till 1:30).",
-    "2026-09-11 eleventh pass: 59 new master rows L534-L592. Two merged rows were self-audited out after the merge (see note_eleventh_pass) because they were duplicates of rows already in the list. Four Santana Row / Castro Street closures (Left Bank, Rosie McCann's, Yankee Pier, Vida Tapas) were recorded as rejects with the URL that proves each closure, and downtown Sushi Confidential (26 N San Pedro St) was rejected for having no Tuesday service while its Willow Glen room was merged."
+    "2026-09-11 eleventh pass: 59 new master rows L534-L592. Two merged rows were self-audited out after the merge (see note_eleventh_pass) because they were duplicates of rows already in the list. Four Santana Row / Castro Street closures (Left Bank, Rosie McCann's, Yankee Pier, Vida Tapas) were recorded as rejects with the URL that proves each closure, and downtown Sushi Confidential (26 N San Pedro St) was rejected for having no Tuesday service while its Willow Glen room was merged.",
+    "2026-09-11 pass 12 follow-up: four additional lunch-service rows (Last Chance Restaurant, Nar Restaurant, Delarosa Palo Alto, and Madera at Rosewood Sand Hill) were independently checked for address and weekly hours; prices remain blank where no lunch-special price was printed."
    ],
    "note_fourth_pass":"Fourth search pass added 49 rows (L102-L150): Lazy Dog $8.95+, Tomatina Pick Two $13.50, The Hut Taco Tuesday $9, Pasta Market Gourmet Lunch $14.95, Urban Grill weekday buffet $16.99 (two-domain conflict), Local Kitchens combos $13.00-$17.50, Sakoon buffet $19.99-$24.99 (Wed-Sun only), plus hours-verified rows with no published lunch special. 9 candidates were rejected this pass (closed, dinner-only, or no verifiable address).",
    "note_seventh_pass":"Seventh search pass added 100 rows (L253-L352). Only fully verified rows were written: 48 listing-level, 27 review-level, 20 official-level, 4 conflicting, 1 unverified (Taiwan Restaurant SJ - no hours captured). Three verified venues remain unmerged due to address-key collisions (see notes) and are listed in flags.json.",
@@ -1594,7 +1595,8 @@ window.TINO_DATA = {
    "queries_run_note":"cumulative ~502 searches across eleven passes (~102 in the eleventh)",
    "candidates_found_note":"all passes documented plus ~205 new eleventh-pass candidates screened line by line (115 run through an automated name|city dedupe against the master and reject files before any page was opened, then ~90 more surfaced by the final city sweeps); ~424 dedupe hits against the master list were also checked and dropped",
    "note_tenth_pass":"Tenth search pass (2026-09-11) added 10 rows (L524-L533) from data/incoming/batch10a_pass10_verified.json: Teleferic Barcelona Los Gatos with its $28-$34 weekday lunch menu; three Hummus Mediterranean Kitchen rooms (Palo Alto at Stanford Shopping Center, 185 Castro St Mountain View, 150 E 4th Ave San Mateo) from the chain's own locations index; Falafel Flare, Empire Armadillo BBQ & Deli and Delhi to Kathmandu in Sunnyvale from the chamber's restaurant-week page with per-item prices; Asian Box Mountain View and Opa! Campbell with verified weekday lunch hours; and Shake Shack at the Stanford Shopping Center end of the ring. This pass is deliberately smaller than earlier ones: the merge was capped by the number of candidates whose street address AND weekly hours could be pinned to a citable page, not by the number of names found. Yelp pages return HTTP 403 to direct fetch here, which removed the highest-yield bulk source used by pass 9.",
-   "note_eleventh_pass":"Eleventh search pass (2026-09-11) added 59 rows (L534-L592) from eight incoming files batch11a-11h. Order of work: an automated dedupe of 115 candidate names against the master and reject files first (85 new, 30 already listed), then Milpitas (12), Fremont/Newark (8), Santa Clara and the San Jose Korean row (14), Los Gatos / Los Altos / Palo Alto (8), the Cupertino-Sunnyvale core (12), San Jose cheap eats (8), Santana Row and the chain row (10), and a final sweep for restaurants that actually publish a lunch price (8). Two rows were withdrawn immediately after the merge and are recorded as rejects: Inchin's Bamboo Garden - Sunnyvale (a ZIP spelling of the existing L43 row that slipped past the address dedupe) and Opa! Willow Glen (a 2018-stamped listing whose street address is already held by Burma Roots L348). Five closures were caught and rejected rather than published: Left Bank Brasserie, Rosie McCann's and Yankee Pier (all Santana Row) and Vida Tapas Y Cocteles (Mountain View), plus Sushi Confidential's downtown room, which is closed Mon-Wed and has no Tuesday lunch at all. Fourteenth-hour finds worth the manual click: Boda (2868 Story Rd, San Jose) publishes a $5.99 weekday lunch plate on its own site - the cheapest verified lunch in the master list - and Home Eat Santa Clara, Tatami Buffet (a Cupertino room whose entire week is a 11:30-2:30 lunch service) and Lotus Thai Bistro all came with a citable address and weekly hours. Prices were printed only where the restaurant's own page printed them; Reddit, Yelp-Q&A and aggregator figures (Milpitas Buffet $19.99, Sizzler $5.49-$6.99, Don Giovanni $19.95, Olive Garden $5.99) are described inside the rows and deliberately left out of price_from/price_to."
+   "note_eleventh_pass":"Eleventh search pass (2026-09-11) added 59 rows (L534-L592) from eight incoming files batch11a-11h. Order of work: an automated dedupe of 115 candidate names against the master and reject files first (85 new, 30 already listed), then Milpitas (12), Fremont/Newark (8), Santa Clara and the San Jose Korean row (14), Los Gatos / Los Altos / Palo Alto (8), the Cupertino-Sunnyvale core (12), San Jose cheap eats (8), Santana Row and the chain row (10), and a final sweep for restaurants that actually publish a lunch price (8). Two rows were withdrawn immediately after the merge and are recorded as rejects: Inchin's Bamboo Garden - Sunnyvale (a ZIP spelling of the existing L43 row that slipped past the address dedupe) and Opa! Willow Glen (a 2018-stamped listing whose street address is already held by Burma Roots L348). Five closures were caught and rejected rather than published: Left Bank Brasserie, Rosie McCann's and Yankee Pier (all Santana Row) and Vida Tapas Y Cocteles (Mountain View), plus Sushi Confidential's downtown room, which is closed Mon-Wed and has no Tuesday lunch at all. Fourteenth-hour finds worth the manual click: Boda (2868 Story Rd, San Jose) publishes a $5.99 weekday lunch plate on its own site - the cheapest verified lunch in the master list - and Home Eat Santa Clara, Tatami Buffet (a Cupertino room whose entire week is a 11:30-2:30 lunch service) and Lotus Thai Bistro all came with a citable address and weekly hours. Prices were printed only where the restaurant's own page printed them; Reddit, Yelp-Q&A and aggregator figures (Milpitas Buffet $19.99, Sizzler $5.49-$6.99, Don Giovanni $19.95, Olive Garden $5.99) are described inside the rows and deliberately left out of price_from/price_to.",
+   "note_twelfth_pass":"Pass 12 follow-up added 4 rows (L593-L596) after the 59-row pass-11 result. These are lunch-service/menu rows, not invented discount claims: published prices are carried only for Delarosa and Last Chance, while Nar and Madera remain unpriced."
   },
   "entries":[
    {
@@ -30582,6 +30584,198 @@ window.TINO_DATA = {
     "id":"L592",
     "added_in":"batch11h_verified_lunch_specials.json",
     "distance_mi":11.74
+   },
+   {
+    "name":"Last Chance Restaurant",
+    "city":"Santa Clara",
+    "area":"De La Cruz Boulevard",
+    "address":"3400 De La Cruz Blvd, Santa Clara, CA 95054",
+    "cuisine":"American, pizza, burgers",
+    "phone":"(408) 988-2768",
+    "lunch_special":{
+     "name":"Lunch menu with salads, sandwiches, burgers, pizza and lunch plates",
+     "price_from":4.99,
+     "price_to":16.99,
+     "days":"daily service; menu page does not give a separate lunch cutoff",
+     "window":"opens 7:30 AM daily",
+     "includes":"Published menu includes lunch-appropriate salads, sandwiches, burgers and pizza; examples include dinner salad $6.99, cheeseburger $14.99, Louisiana hot link sandwich $12.99 and rib-eye steak sandwich $16.99."
+    },
+    "hours_tuesday":"7:30 AM - 9:00 PM",
+    "days_open":"Monday-Sunday 7:30 AM-9:00 PM",
+    "open_on_trip_date":true,
+    "fits_return_bus":{
+     "ok":false,
+     "note":"Santa Clara is outside the short Cupertino return-bus window; allow a separate trip buffer."
+    },
+    "verification":{
+     "level":"official",
+     "sources":[
+      {
+       "label":"Last Chance Restaurant menu and ordering site: 3400 De La Cruz Blvd, Santa Clara; published menu prices and address",
+       "url":"https://www.lastchancerestaurantmenu.com/"
+      },
+      {
+       "label":"Last Chance Restaurant structured listing: 3400 De La Cruz Blvd and Monday-Sunday 7:30 AM-9:00 PM",
+       "url":"https://www.lastchancerestaurantmenu.com/"
+      }
+     ],
+     "accessed":"2026-09-11"
+    },
+    "review_links":{
+     "yelp":"https://www.yelp.com/biz/last-chance-restaurant-santa-clara",
+     "google_maps":"https://www.google.com/maps/search/?api=1&query=Last+Chance+Restaurant+3400+De+La+Cruz+Blvd+Santa+Clara"
+    },
+    "flags":[
+     "The menu is published, but the page does not label a separate lunch end time; the row is retained as a lunch-service lead, not a timed promotion."
+    ],
+    "id":"L593",
+    "coords":null,
+    "added_in":"batch12a_peninsula_southbay_verified.json",
+    "distance_mi":null
+   },
+   {
+    "name":"Nar Restaurant",
+    "city":"Mountain View",
+    "area":"El Camino Real / downtown",
+    "address":"286 W El Camino Real, Mountain View, CA 94041",
+    "cuisine":"Azerbaijani, Georgian, Armenian",
+    "phone":"(650) 705-2007",
+    "lunch_special":{
+     "name":"Lunch service with South Caucasus menu",
+     "price_from":null,
+     "price_to":null,
+     "days":"Tuesday-Sunday",
+     "window":"11:30 AM - 2:00 PM",
+     "includes":"OpenTable identifies a dedicated lunch service and states the restaurant offers catering for corporate lunches. No separate lunch-special price was printed in the retrieved menu, so prices are blank."
+    },
+    "hours_tuesday":"11:30 AM - 2:00 PM; 5:00 PM - 10:00 PM",
+    "days_open":"Tuesday-Sunday lunch 11:30 AM-2:00 PM and dinner 5:00 PM-10:00 PM; closed Monday",
+    "open_on_trip_date":true,
+    "fits_return_bus":{
+     "ok":false,
+     "note":"Mountain View is outside the short Cupertino return-bus window."
+    },
+    "verification":{
+     "level":"listing",
+     "sources":[
+      {
+       "label":"OpenTable Nar Restaurant: local address, Tuesday-Sunday lunch hours, dinner hours, phone and cuisine",
+       "url":"https://www.opentable.com/r/nar-restaurant-mountain-view"
+      },
+      {
+       "label":"OpenTable menu and restaurant page: lunch service and current menu metadata",
+       "url":"https://www.opentable.com/r/nar-restaurant-mountain-view"
+      }
+     ],
+     "accessed":"2026-09-11"
+    },
+    "review_links":{
+     "yelp":"https://www.yelp.com/biz/nar-restaurant-mountain-view",
+     "google_maps":"https://www.google.com/maps/search/?api=1&query=Nar+Restaurant+286+W+El+Camino+Real+Mountain+View"
+    },
+    "flags":[
+     "Lunch service and hours are citable, but no lunch-special price was printed; do not budget a deal price without checking the current menu."
+    ],
+    "id":"L594",
+    "coords":null,
+    "added_in":"batch12a_peninsula_southbay_verified.json",
+    "distance_mi":null
+   },
+   {
+    "name":"Delarosa - Palo Alto",
+    "city":"Palo Alto",
+    "area":"Stanford Shopping Center",
+    "address":"136 Stanford Shopping Center, Palo Alto, CA 94304",
+    "cuisine":"Italian, pizza",
+    "phone":"(650) 785-1221",
+    "lunch_special":{
+     "name":"All-day lunch/dinner menu",
+     "price_from":6.0,
+     "price_to":27.0,
+     "days":"daily",
+     "window":"11:00 AM opening daily",
+     "includes":"Official menu is labeled All Day Menu and includes pasta, pizza, salads and mains; examples include Caesar salad $9 small/$16 large, pappardelle $20, pizza from $18 and chicken saltimbocca $27."
+    },
+    "hours_tuesday":"11:00 AM - 9:00 PM",
+    "days_open":"Monday-Thursday and Sunday 11:00 AM-9:00 PM; Friday-Saturday 11:00 AM-10:00 PM",
+    "open_on_trip_date":true,
+    "fits_return_bus":{
+     "ok":false,
+     "note":"Palo Alto is beyond the short Cupertino return-bus window."
+    },
+    "verification":{
+     "level":"official",
+     "sources":[
+      {
+       "label":"Delarosa Palo Alto official location page: 136 Stanford Shopping Center, hours and phone",
+       "url":"https://www.delarosasf.com/location/palo-alto/"
+      },
+      {
+       "label":"Delarosa Palo Alto official page: all-day menu and printed item prices",
+       "url":"https://www.delarosasf.com/location/palo-alto/"
+      }
+     ],
+     "accessed":"2026-09-11"
+    },
+    "review_links":{
+     "yelp":"https://www.yelp.com/biz/delarosa-palo-alto",
+     "google_maps":"https://www.google.com/maps/search/?api=1&query=Delarosa+136+Stanford+Shopping+Center+Palo+Alto"
+    },
+    "flags":[
+     "The official page calls this an all-day menu rather than a separately discounted lunch special; price fields reflect printed menu items, not a promotional deal."
+    ],
+    "id":"L595",
+    "coords":null,
+    "added_in":"batch12a_peninsula_southbay_verified.json",
+    "distance_mi":null
+   },
+   {
+    "name":"Madera at Rosewood Sand Hill",
+    "city":"Menlo Park",
+    "area":"Sand Hill Road",
+    "address":"2825 Sand Hill Rd, Menlo Park, CA 94025",
+    "cuisine":"California",
+    "phone":"(650) 561-1540",
+    "lunch_special":{
+     "name":"Weekday lunch service",
+     "price_from":null,
+     "price_to":null,
+     "days":"Monday-Friday",
+     "window":"11:30 AM - 2:00 PM",
+     "includes":"Rosewood's official page describes Madera's wood-fired Californian cuisine and publishes a weekday lunch service. The current fetched page did not expose lunch-item prices, so no price is carried."
+    },
+    "hours_tuesday":"11:30 AM - 2:00 PM; 5:00 PM - 9:00 PM",
+    "days_open":"Lunch Monday-Friday 11:30 AM-2:00 PM; dinner daily 5:00 PM-9:00 PM; weekend brunch 10:30 AM-2:00 PM",
+    "open_on_trip_date":true,
+    "fits_return_bus":{
+     "ok":false,
+     "note":"Menlo Park is outside the short Cupertino return-bus window."
+    },
+    "verification":{
+     "level":"official",
+     "sources":[
+      {
+       "label":"Rosewood Sand Hill official Madera page: weekday lunch hours, daily dinner, weekend brunch and phone",
+       "url":"https://www.rosewoodhotels.com/en/sand-hill-menlo-park/dining/madera"
+      },
+      {
+       "label":"Rosewood official Madera page: Californian cuisine and restaurant identity",
+       "url":"https://www.rosewoodhotels.com/en/sand-hill-menlo-park/dining/madera"
+      }
+     ],
+     "accessed":"2026-09-11"
+    },
+    "review_links":{
+     "yelp":"https://www.yelp.com/biz/madera-menlo-park",
+     "google_maps":"https://www.google.com/maps/search/?api=1&query=Madera+2825+Sand+Hill+Road+Menlo+Park"
+    },
+    "flags":[
+     "The official page confirms lunch service but does not print current lunch prices in the retrieved content; confirm menu and price before treating this as a budget special."
+    ],
+    "id":"L596",
+    "coords":null,
+    "added_in":"batch12a_peninsula_southbay_verified.json",
+    "distance_mi":null
    }
   ],
   "top_picks_for_tuesday_sept_8":[
@@ -33407,11 +33601,29 @@ window.TINO_DATA = {
      "url":"https://github.com/buffedlizard55-lab/TinoLunchSpecial/tree/main/data/incoming"
     },
     "manual_review":"Reaching 100 in one pass now needs a bulk source: Yelp returns HTTP 403 to direct fetch here (LUNCH-FLAG-32), which removed the highest-yield listing source the earlier passes used."
+   },
+   {
+    "id":"LUNCH-FLAG-43",
+    "severity":"info",
+    "title":"Pass 12 adds four lunch-service rows without overstating promotions",
+    "what_we_found":"L593 Last Chance, L594 Nar, L595 Delarosa and L596 Madera all have citable addresses and weekly lunch hours. Only Last Chance and Delarosa pages printed usable item prices; Nar and Madera have blank price fields.",
+    "what_we_did":"Kept the rows because the project includes lunch menus/services, but labeled the price limitation in each row and did not infer a discount.",
+    "rows":[
+     "L593",
+     "L594",
+     "L595",
+     "L596"
+    ],
+    "link":{
+     "label":"Pass 12 incoming batch",
+     "url":"https://github.com/buffedlizard55-lab/TinoLunchSpecial/tree/main/data/incoming"
+    },
+    "manual_review":"Check the current lunch menu before treating any of these as a discounted lunch special."
    }
   ]
  },
  "sources":{
-  "accessed":"2026-09-07 through 2026-09-11",
+  "accessed":"2026-09-11",
   "note":"Every time, fare and stop in this project was read from one of these pages. 'fetch_status' records what happened when the page was read from the build environment, so a gap is visible instead of hidden. Pass 7 (2026-09-07): 16 official restaurant pages added for the seventh search pass; review-level evidence remains inline in each row verification.sources. Pass 11 (2026-09-11): sources S95-S120 added - the verified-lunch pages that produced the pass-11 rows (Home Eat's own ordering site, Lotus Thai Bistro, Tatami Buffet, LB Steak, Habit, Togo's), the https stand-in for Boda (whose own site is http-only), the closure and withdrawal evidence for six restaurants, and the two duplicate/withdrawal pages kept so nothing found this pass is silently lost. S119 is flagged as a lead-only source: Reddit threads pointed at cheap lunches but no Reddit price was ever printed in a row.",
   "sources":[
    {
@@ -34374,6 +34586,38 @@ window.TINO_DATA = {
     "url":"https://www.svcoc.org/sunnyvale-restaurant-week-where-to-dine/",
     "fetch_status":"ok",
     "used_for":"Re-read on pass 11 to re-check the seven restaurant-week lunch rows (Adrestia $35, Delhi to Kathmandu $11-$18, Empire Armadillo $26.99, Falafel Flare $16-$25, P.F. Chang's $16.99, RBG $34.99, Valley Goat $45). Still no date range printed on the page - existing LUNCH-FLAG-26 stands."
+   },
+   {
+    "id":"S121",
+    "agency":"Last Chance Restaurant",
+    "label":"Last Chance Restaurant menu and ordering site",
+    "url":"https://www.lastchancerestaurantmenu.com/",
+    "fetch_status":"ok",
+    "used_for":"L593: 3400 De La Cruz Blvd, Santa Clara; menu items and published prices; daily hours."
+   },
+   {
+    "id":"S122",
+    "agency":"OpenTable",
+    "label":"Nar Restaurant Mountain View listing",
+    "url":"https://www.opentable.com/r/nar-restaurant-mountain-view",
+    "fetch_status":"ok",
+    "used_for":"L594: 286 W El Camino Real, Mountain View; Tue-Sun lunch 11:30 am-2:00 pm and dinner hours."
+   },
+   {
+    "id":"S123",
+    "agency":"Delarosa",
+    "label":"Delarosa Palo Alto official location and menu",
+    "url":"https://www.delarosasf.com/location/palo-alto/",
+    "fetch_status":"ok",
+    "used_for":"L595: Stanford Shopping Center address, weekly hours, all-day menu and printed prices."
+   },
+   {
+    "id":"S124",
+    "agency":"Rosewood Hotels",
+    "label":"Madera at Rosewood Sand Hill official page",
+    "url":"https://www.rosewoodhotels.com/en/sand-hill-menlo-park/dining/madera",
+    "fetch_status":"ok",
+    "used_for":"L596: weekday lunch 11:30 am-2:00 pm, daily dinner, restaurant identity."
    }
   ],
   "dead_ends":[
