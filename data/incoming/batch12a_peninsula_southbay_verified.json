@@ -1,0 +1,111 @@
+{
+  "pass": "12",
+  "searched": "2026-09-11",
+  "method": "Pass 12 follow-up: only venues with a retrievable page showing a local street address, weekly hours, and a lunch service/menu were retained. No price is inferred where the source did not print a price.",
+  "entries": [
+    {
+      "name": "Last Chance Restaurant",
+      "city": "Santa Clara",
+      "area": "De La Cruz Boulevard",
+      "address": "3400 De La Cruz Blvd, Santa Clara, CA 95054",
+      "cuisine": "American, pizza, burgers",
+      "phone": "(408) 988-2768",
+      "lunch_special": {
+        "name": "Lunch menu with salads, sandwiches, burgers, pizza and lunch plates",
+        "price_from": 4.99,
+        "price_to": 16.99,
+        "days": "daily service; menu page does not give a separate lunch cutoff",
+        "window": "opens 7:30 AM daily",
+        "includes": "Published menu includes lunch-appropriate salads, sandwiches, burgers and pizza; examples include dinner salad $6.99, cheeseburger $14.99, Louisiana hot link sandwich $12.99 and rib-eye steak sandwich $16.99."
+      },
+      "hours_tuesday": "7:30 AM - 9:00 PM",
+      "days_open": "Monday-Sunday 7:30 AM-9:00 PM",
+      "open_on_trip_date": true,
+      "fits_return_bus": {"ok": false, "note": "Santa Clara is outside the short Cupertino return-bus window; allow a separate trip buffer."},
+      "verification": {"level": "official", "sources": [
+        {"label": "Last Chance Restaurant menu and ordering site: 3400 De La Cruz Blvd, Santa Clara; published menu prices and address", "url": "https://www.lastchancerestaurantmenu.com/"},
+        {"label": "Last Chance Restaurant structured listing: 3400 De La Cruz Blvd and Monday-Sunday 7:30 AM-9:00 PM", "url": "https://www.lastchancerestaurantmenu.com/"}
+      ], "accessed": "2026-09-11"},
+      "review_links": {"yelp": "https://www.yelp.com/biz/last-chance-restaurant-santa-clara", "google_maps": "https://www.google.com/maps/search/?api=1&query=Last+Chance+Restaurant+3400+De+La+Cruz+Blvd+Santa+Clara"},
+      "flags": ["The menu is published, but the page does not label a separate lunch end time; the row is retained as a lunch-service lead, not a timed promotion."]
+    },
+    {
+      "name": "Nar Restaurant",
+      "city": "Mountain View",
+      "area": "El Camino Real / downtown",
+      "address": "286 W El Camino Real, Mountain View, CA 94041",
+      "cuisine": "Azerbaijani, Georgian, Armenian",
+      "phone": "(650) 705-2007",
+      "lunch_special": {
+        "name": "Lunch service with South Caucasus menu",
+        "price_from": null,
+        "price_to": null,
+        "days": "Tuesday-Sunday",
+        "window": "11:30 AM - 2:00 PM",
+        "includes": "OpenTable identifies a dedicated lunch service and states the restaurant offers catering for corporate lunches. No separate lunch-special price was printed in the retrieved menu, so prices are blank."
+      },
+      "hours_tuesday": "11:30 AM - 2:00 PM; 5:00 PM - 10:00 PM",
+      "days_open": "Tuesday-Sunday lunch 11:30 AM-2:00 PM and dinner 5:00 PM-10:00 PM; closed Monday",
+      "open_on_trip_date": true,
+      "fits_return_bus": {"ok": false, "note": "Mountain View is outside the short Cupertino return-bus window."},
+      "verification": {"level": "listing", "sources": [
+        {"label": "OpenTable Nar Restaurant: local address, Tuesday-Sunday lunch hours, dinner hours, phone and cuisine", "url": "https://www.opentable.com/r/nar-restaurant-mountain-view"},
+        {"label": "OpenTable menu and restaurant page: lunch service and current menu metadata", "url": "https://www.opentable.com/r/nar-restaurant-mountain-view"}
+      ], "accessed": "2026-09-11"},
+      "review_links": {"yelp": "https://www.yelp.com/biz/nar-restaurant-mountain-view", "google_maps": "https://www.google.com/maps/search/?api=1&query=Nar+Restaurant+286+W+El+Camino+Real+Mountain+View"},
+      "flags": ["Lunch service and hours are citable, but no lunch-special price was printed; do not budget a deal price without checking the current menu."]
+    },
+    {
+      "name": "Delarosa - Palo Alto",
+      "city": "Palo Alto",
+      "area": "Stanford Shopping Center",
+      "address": "136 Stanford Shopping Center, Palo Alto, CA 94304",
+      "cuisine": "Italian, pizza",
+      "phone": "(650) 785-1221",
+      "lunch_special": {
+        "name": "All-day lunch/dinner menu",
+        "price_from": 6.0,
+        "price_to": 27.0,
+        "days": "daily",
+        "window": "11:00 AM opening daily",
+        "includes": "Official menu is labeled All Day Menu and includes pasta, pizza, salads and mains; examples include Caesar salad $9 small/$16 large, pappardelle $20, pizza from $18 and chicken saltimbocca $27."
+      },
+      "hours_tuesday": "11:00 AM - 9:00 PM",
+      "days_open": "Monday-Thursday and Sunday 11:00 AM-9:00 PM; Friday-Saturday 11:00 AM-10:00 PM",
+      "open_on_trip_date": true,
+      "fits_return_bus": {"ok": false, "note": "Palo Alto is beyond the short Cupertino return-bus window."},
+      "verification": {"level": "official", "sources": [
+        {"label": "Delarosa Palo Alto official location page: 136 Stanford Shopping Center, hours and phone", "url": "https://www.delarosasf.com/location/palo-alto/"},
+        {"label": "Delarosa Palo Alto official page: all-day menu and printed item prices", "url": "https://www.delarosasf.com/location/palo-alto/"}
+      ], "accessed": "2026-09-11"},
+      "review_links": {"yelp": "https://www.yelp.com/biz/delarosa-palo-alto", "google_maps": "https://www.google.com/maps/search/?api=1&query=Delarosa+136+Stanford+Shopping+Center+Palo+Alto"},
+      "flags": ["The official page calls this an all-day menu rather than a separately discounted lunch special; price fields reflect printed menu items, not a promotional deal."]
+    },
+    {
+      "name": "Madera at Rosewood Sand Hill",
+      "city": "Menlo Park",
+      "area": "Sand Hill Road",
+      "address": "2825 Sand Hill Rd, Menlo Park, CA 94025",
+      "cuisine": "California",
+      "phone": "(650) 561-1540",
+      "lunch_special": {
+        "name": "Weekday lunch service",
+        "price_from": null,
+        "price_to": null,
+        "days": "Monday-Friday",
+        "window": "11:30 AM - 2:00 PM",
+        "includes": "Rosewood's official page describes Madera's wood-fired Californian cuisine and publishes a weekday lunch service. The current fetched page did not expose lunch-item prices, so no price is carried."
+      },
+      "hours_tuesday": "11:30 AM - 2:00 PM; 5:00 PM - 9:00 PM",
+      "days_open": "Lunch Monday-Friday 11:30 AM-2:00 PM; dinner daily 5:00 PM-9:00 PM; weekend brunch 10:30 AM-2:00 PM",
+      "open_on_trip_date": true,
+      "fits_return_bus": {"ok": false, "note": "Menlo Park is outside the short Cupertino return-bus window."},
+      "verification": {"level": "official", "sources": [
+        {"label": "Rosewood Sand Hill official Madera page: weekday lunch hours, daily dinner, weekend brunch and phone", "url": "https://www.rosewoodhotels.com/en/sand-hill-menlo-park/dining/madera"},
+        {"label": "Rosewood official Madera page: Californian cuisine and restaurant identity", "url": "https://www.rosewoodhotels.com/en/sand-hill-menlo-park/dining/madera"}
+      ], "accessed": "2026-09-11"},
+      "review_links": {"yelp": "https://www.yelp.com/biz/madera-menlo-park", "google_maps": "https://www.google.com/maps/search/?api=1&query=Madera+2825+Sand+Hill+Road+Menlo+Park"},
+      "flags": ["The official page confirms lunch service but does not print current lunch prices in the retrieved content; confirm menu and price before treating this as a budget special."]
+    }
+  ]
+}

@@ -1,0 +1,395 @@
+{
+  "pass": "11",
+  "searched": "2026-09-11",
+  "method": "Eleventh lunch pass - Los Gatos / Los Altos-adjacent / Palo Alto / Menlo Park / Campbell / Santa Clara rows screened from the first candidate sweep. Every field below was transcribed from a page actually retrieved this turn (URL in the row). Nothing was typed from memory. Where a business publishes two different hours blocks on its own site, both are printed in the flags and nothing is averaged. Yelp business pages return HTTP 403 to direct fetch here, so Yelp facts come from the Yelp business-page URL as surfaced by search and are levelled 'listing'/'conflicting', never 'official'.",
+  "entries": [
+    {
+      "name": "The Sandwich Maker",
+      "city": "Los Gatos",
+      "area": "University Ave office complex (near Vasona Park)",
+      "address": "987 University Ave Ste 38, Los Gatos, CA 95032",
+      "coords": [37.2468, -121.9774],
+      "coords_source": "official site JSON-LD",
+      "cuisine": "Vietnamese banh mi, pho and deli sandwiches",
+      "phone": "(408) 395-6331",
+      "lunch_special": {
+        "name": "No lunch special published - lunch counter open 8:30 AM-3:30 PM weekdays; a Yelp reviewer notes '~$5 lunch specials'",
+        "price_from": null,
+        "price_to": null,
+        "days": "Monday-Friday (CLOSED SATURDAY AND SUNDAY)",
+        "window": "8:30 AM - 3:30 PM",
+        "includes": "Banh mi, pho and deli sandwiches made to order. The ~$5 figure is a review quote, not a published price, so the price column is blank."
+      },
+      "hours_tuesday": "8:30 AM - 3:30 PM",
+      "days_open": "Mon-Fri 8:30 AM-3:30 PM; Sat-Sun closed (official site, matched by Apple Maps and Wanderlog)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Los Gatos is ~9 mi from 20387 Gillick Way: outside the 11:50 AM departure / 3:30 PM home deadline. The 3:30 PM close is also exactly the home deadline."
+      },
+      "verification": {
+        "level": "official",
+        "sources": [
+          {
+            "label": "The Sandwich Maker official site - 987 University Ave #38, Los Gatos; 'Monday to Friday: 8:30 AM - 3:30 PM, Saturday & Sunday: Closed'; JSON-LD openingHoursSpecification Mon-Fri 08:30-15:30; geo",
+            "url": "https://thesandwichmaker.us/"
+          },
+          {
+            "label": "Apple Maps listing - 987 University Ave Unit 38, Mon-Fri 8:30 AM-3:30 PM, Sat-Sun closed",
+            "url": "https://maps.apple.com/place?place-id=I70A5B471C0977C23"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/the-sandwich-maker-los-gatos",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=The+Sandwich+Maker+987+University+Ave+Los+Gatos"
+      },
+      "flags": [
+        "CONFLICT INSIDE THE BUSINESS'S OWN SITE: its menu-item pages carry a second JSON-LD block reading 'openingHours: Mo-Su 11:00-22:00' and a $$ price range, which contradicts the 8:30 AM-3:30 PM weekday hours on the homepage and in the homepage's own JSON-LD. Both are printed; the homepage block is used because two independent listings (Apple Maps, Wanderlog) agree with it.",
+        "CLOSED WEEKENDS - only weekday lunches are possible."
+      ]
+    },
+    {
+      "name": "Taste of Thai Los Gatos",
+      "city": "Los Gatos",
+      "area": "Downtown Los Gatos (N Santa Cruz Ave)",
+      "address": "337 N Santa Cruz Ave, Los Gatos, CA 95030",
+      "cuisine": "Thai",
+      "phone": "(408) 354-2785",
+      "lunch_special": {
+        "name": "Daily lunch service 11:00 AM-2:30 PM - no lunch-only price published",
+        "price_from": null,
+        "price_to": null,
+        "days": "Tuesday-Sunday (CLOSED MONDAY)",
+        "window": "11:00 AM - 2:30 PM (dinner 5:00 PM-9:30 PM)",
+        "includes": "Full Thai menu; the restaurant's own FAQ names only the lunch and dinner blocks, not a lunch menu or price."
+      },
+      "hours_tuesday": "11:00 AM - 2:30 PM and 5:00 PM - 9:30 PM",
+      "days_open": "Tue-Sun 11:00 AM-2:30 PM and 5:00 PM-9:30 PM; Monday closed (official site footer and contact block)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Los Gatos is ~9 mi from 20387 Gillick Way: outside the 11:50 AM departure / 3:30 PM home deadline."
+      },
+      "verification": {
+        "level": "official",
+        "sources": [
+          {
+            "label": "Taste of Thai Los Gatos official site - 337 N Santa Cruz Ave, 'Tuesday - Sunday: Lunch 11:00 AM - 2:30 PM, Dinner 05:00 PM - 9:30 PM; Monday: Closed', and an FAQ answering '11:00 AM - 2:00 PM and 5:00 PM - 9:00 PM' (second value)",
+            "url": "https://tasteofthailosgatos.com/"
+          },
+          {
+            "label": "Business's own online-ordering storefront (kwickmenu) - 337 N Santa Cruz Ave, Tue-Sun 11:00 am-2:30 pm and 5:00 pm-9:30 pm, Mon closed",
+            "url": "https://tasteofthailosgatos.kwickmenu.com/"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/search?find_desc=Taste+of+Thai&find_loc=Los+Gatos%2C+CA",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Taste+of+Thai+337+N+Santa+Cruz+Ave+Los+Gatos"
+      },
+      "flags": [
+        "CONFLICT INSIDE THE BUSINESS'S OWN SITE: the FAQ says lunch ends 2:00 PM and dinner ends 9:00 PM, while the footer on the same site says 2:30 PM and 9:30 PM. Both are printed; the ordering storefront agrees with the footer.",
+        "CLOSED MONDAYS - irrelevant to a Tuesday trip but recorded.",
+        "Yelp notes this address was previously Thai Spice and is now under new management."
+      ]
+    },
+    {
+      "name": "Son & Garden",
+      "city": "Menlo Park",
+      "area": "Downtown Menlo Park (Merrill St)",
+      "address": "1195 Merrill St, Menlo Park, CA 94025",
+      "coords": [37.45475, -122.18298],
+      "coords_source": "Toast listing geo",
+      "cuisine": "American breakfast/brunch/lunch",
+      "phone": "(650) 665-7963",
+      "lunch_special": {
+        "name": "No lunch special published - daytime service that ends in early afternoon",
+        "price_from": null,
+        "price_to": null,
+        "days": "daily",
+        "window": "9:00 AM opening, closing between 2:00 PM and 3:00 PM depending on the source (see flag)",
+        "includes": "Breakfast and brunch plates, omelets, eggs Benedict, pancakes, plus lunch items. OpenTable's own 'About' text calls it 'a charming brunch restaurant', and its hours table there shows dinner-only service, which conflicts with the ordering pages."
+      },
+      "hours_tuesday": "9:00 AM - 2:00 PM (Toast ordering page) vs 5:00 PM - 11:00 PM dinner only (OpenTable) - see flag",
+      "days_open": "Toast ordering page: Mon-Thu 9:00 am-2:00 pm, Fri 9:00 am-2:00 pm, Sat-Sun 9:00 am-2:30 pm. RestaurantJump: daily 9 AM-2 PM (Sat-Sun to 3 PM). OpenTable: Mon-Wed/Fri/Sun 5:00 pm-11:00 pm, Thu-Sat 5:00 pm-12:00 am, plus Sat-Sun 11:00 am-3:00 pm.",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Menlo Park is ~15 mi from 20387 Gillick Way: outside the 11:50 AM departure / 3:30 PM home deadline."
+      },
+      "verification": {
+        "level": "conflicting",
+        "sources": [
+          {
+            "label": "Toast ordering page for Son and Garden - 1195 Merrill St, Sun 9:00 am-2:30 pm, Mon-Fri 9:00 am-2:00 pm, Sat 9:00 am-2:30 pm, phone, geo",
+            "url": "https://www.toasttab.com/local/order/son-garden-menlopark"
+          },
+          {
+            "label": "OpenTable - Son & Garden Menlo Park, 1195 Merrill St: 'Mon-Wed, Fri, Sun 5:00 pm-11:00 pm; Thu, Sat 5:00 pm-12:00 am; Sat, Sun 11:00 am-3:00 pm' - dinner-led, no weekday lunch",
+            "url": "https://www.opentable.com/r/son-and-garden-menlo-park"
+          },
+          {
+            "label": "RestaurantJump - 1195 Merrill St, daily 9 AM-2 PM (Sat-Sun 9 AM-3 PM), sonandgarden.com",
+            "url": "https://restaurantjump.com/son-garden-94025/"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/search?find_desc=Son+and+Garden&find_loc=Menlo+Park%2C+CA",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Son+and+Garden+1195+Merrill+St+Menlo+Park"
+      },
+      "flags": [
+        "MAJOR HOURS CONFLICT: the ordering pages (Toast, RestaurantJump, HappyCow) show a 9:00 AM-2:00/3:00 PM daytime service seven days a week, while OpenTable's hours table for the same address shows dinner-only Mon-Fri with brunch only on Saturday and Sunday. Both readings are printed; the row is levelled 'conflicting' and no weekday lunch is asserted - call ahead.",
+        "No lunch-only pricing is published, so the price column is blank.",
+        "HappyCow lists the same address as 'Open Mon-Sun 9:00am-3:00pm', a fourth variant."
+      ]
+    },
+    {
+      "name": "Tamarine Restaurant",
+      "city": "Palo Alto",
+      "area": "Downtown Palo Alto (University Ave at Tasso)",
+      "address": "546 University Ave, Palo Alto, CA 94301",
+      "coords": [37.4488748, -122.1584172],
+      "coords_source": "OpenTable listing geo",
+      "cuisine": "Vietnamese / Asian",
+      "phone": "(650) 325-8500",
+      "lunch_special": {
+        "name": "Lunch service Mon-Thu 11:30 AM-2:30 PM - no lunch prix-fixe published",
+        "price_from": null,
+        "price_to": null,
+        "days": "Monday-Thursday per OpenTable (Restaurant Guru says Monday-Friday - see flag)",
+        "window": "11:30 AM - 2:30 PM",
+        "includes": "Menu prices captured from the business's own ordering storefront: Tamarine Prawns $34.00, Vegetarian Glass Noodles $27.00, Salt & Pepper Calamari $20.00, Tuna Tartare $24.00, Green Papaya Salad $19.00, Garlic Fried Rice $15.00, Empress Rice $16.00, Shrimp & Pork Spring Rolls $14.00, Ha Long Bay Soup $24.00. These are regular menu prices."
+      },
+      "hours_tuesday": "11:30 AM - 2:30 PM and 5:00 PM - 9:00 PM",
+      "days_open": "OpenTable: Lunch Mon-Thu 11:30 am-2:30 pm; Dinner Mon-Thu and Sun 5:00 pm-9:00 pm, Fri-Sat 5:00 pm-9:30 pm. Restaurant Guru: Mon-Fri 11:30-14:30 with dinner from 17:00 (Fri to 21:30, Sat from 17:00, no Saturday lunch).",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Palo Alto is ~11 mi from 20387 Gillick Way: outside the 11:50 AM departure / 3:30 PM home deadline."
+      },
+      "verification": {
+        "level": "conflicting",
+        "sources": [
+          {
+            "label": "OpenTable - Tamarine Restaurant, 546 University Ave: 'Hours of operation Lunch Mon-Thu 11:30 am-2:30 pm; Dinner Mon-Thu, Sun 5:00 pm-9:00 pm; Fri, Sat 5:00 pm-9:30 pm', geo, $31 to $50",
+            "url": "https://www.opentable.com/r/tamarine-restaurant-palo-alto"
+          },
+          {
+            "label": "Restaurant Guru - 546 University Ave, 'Closes soon: 2:30PM Reopens 5PM', Mo-Fr 11:30-14:30 and 17:00-21:00/21:30, Sa-Su dinner only (second reading: lunch runs Monday-Friday)",
+            "url": "https://restaurantguru.com/Tamarine-San-Jose"
+          },
+          {
+            "label": "Tamarine online ordering storefront - 546 University Avenue, online ordering hours 11:30 AM-2:10 PM and 5:00 PM-6:10 PM / 7:45 PM-8:40 PM, item prices",
+            "url": "https://order.online/store/tamarine-restaurant-palo-alto-32977"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/search?find_desc=Tamarine&find_loc=Palo+Alto%2C+CA",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Tamarine+546+University+Ave+Palo+Alto"
+      },
+      "flags": [
+        "LUNCH-DAYS CONFLICT: OpenTable says lunch runs Monday-Thursday only, Restaurant Guru says Monday-Friday. Both are printed; the row is levelled 'conflicting'. Tuesday is covered either way.",
+        "No lunch prix-fixe or lunch-only price is published, so the price column is blank.",
+        "A Michelin-selected restaurant per Restaurant Guru; per-person spend reported by diners there is $50-$100, which is well above the lunch prices elsewhere in this list."
+      ]
+    },
+    {
+      "name": "Schaub's Meat Fish & Poultry",
+      "city": "Palo Alto",
+      "area": "Stanford Shopping Center",
+      "address": "395 Stanford Shopping Ctr, Palo Alto, CA 94304",
+      "coords": [37.44225, -122.17311],
+      "coords_source": "Foodeist listing geo",
+      "cuisine": "Butcher / seafood market with made-to-order sandwiches",
+      "phone": "(650) 325-6328",
+      "lunch_special": {
+        "name": "No lunch special published - a Yelp reviewer cites 'Lunch Special Bulgogi and rice'; no price is published",
+        "price_from": null,
+        "price_to": null,
+        "days": "daily",
+        "window": "opens 10:00 AM Mon-Sat, 11:00 AM Sunday",
+        "includes": "Sandwiches and grilled meats to order (a reviewer names the 'Stanford Melt' and the 'Fred Steak'); the business also sells butcher cuts to take home."
+      },
+      "hours_tuesday": "10:00 AM - 7:00 PM",
+      "days_open": "Mon-Sat 10:00 AM-7:00 PM; Sun 11:00 AM-6:00 PM (Yelp business page, matched by Restaurantji, Restaurant Guru and Zmenu)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Palo Alto is ~11 mi from 20387 Gillick Way: outside the 11:50 AM departure / 3:30 PM home deadline."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {
+            "label": "Yelp business page - Schaub's Meat Fish & Poultry, 395 Stanford Shopping Ctr: Mon-Sat 10:00 am-7:00 pm, Sun 11:00 am-6:00 pm, and the reviewer line naming a 'Lunch Special Bulgogi and rice'",
+            "url": "https://www.yelp.com/biz/schaubs-meat-fish-and-poultry-palo-alto"
+          },
+          {
+            "label": "Restaurantji - 395 Stanford Shopping Center, Mon-Sat 10AM-7PM, Sun 11AM-6PM; a listing-site review mentions the lettuce-wrap sandwich",
+            "url": "https://www.restaurantji.com/ca/palo-alto/schaubs-meat-fish-and-poultry-/"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/schaubs-meat-fish-and-poultry-palo-alto",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Schaub%27s+395+Stanford+Shopping+Center+Palo+Alto"
+      },
+      "flags": [
+        "The words 'Lunch Special' come from a Yelp review quote; the business publishes no lunch menu or price, so the price column is blank.",
+        "One listing (Foodeist) prints Saturday as 9:00-19:00 rather than 10:00-19:00, and Zmenu's geo for this address is ~0.02 degrees off the other listings. Printed, not used."
+      ]
+    },
+    {
+      "name": "Tasty Pot",
+      "city": "Palo Alto",
+      "area": "Emerson St (University Ave corridor)",
+      "address": "443 Emerson St, Palo Alto, CA 94301",
+      "coords": [37.4451522, -122.1630299],
+      "coords_source": "official site JSON-LD",
+      "cuisine": "Taiwanese individual hot pot",
+      "phone": "(650) 380-6975",
+      "lunch_special": {
+        "name": "No lunch special published - open from 11:00 AM, with a 3:00 PM-4:30 PM break per Yelp",
+        "price_from": null,
+        "price_to": null,
+        "days": "daily",
+        "window": "opens 11:00 AM",
+        "includes": "Individual Taiwanese hot pots (kimchi dumpling, Thai flavour, stinky tofu, beef), sizzling plates and boba. No lunch-only price is published."
+      },
+      "hours_tuesday": "11:00 AM - 3:00 PM and 4:30 PM - 9:30 PM (Yelp) / 11:00 AM - 9:30 PM continuous (own site) - see flag",
+      "days_open": "Own site takeout hours: Mon-Thu 11:00 am-9:30 pm, Fri-Sat 11:00 am-10:00 pm, Sun 11:00 am-9:30 pm. Yelp: Mon-Thu 11:00 am-3:00 pm and 4:30 pm-9:30 pm, Fri 11:00 am-3:00 pm and 4:30 pm-10:00 pm, Sat-Sun 11:00 am-10:00 pm/9:30 pm continuous.",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Palo Alto is ~11 mi from 20387 Gillick Way: outside the 11:50 AM departure / 3:30 PM home deadline."
+      },
+      "verification": {
+        "level": "conflicting",
+        "sources": [
+          {
+            "label": "Tasty Pot official site - 443 Emerson St, Palo Alto; takeout hours Mon-Thu 11:00 am-9:30 pm, Fri-Sat 11:00 am-10:00 pm, Sun 11:00 am-9:30 pm; JSON-LD 'Su,Mo,Tu,We,Th 11:00-21:30, Fr,Sa 11:00-22:00'; geo",
+            "url": "https://www.tastypotcalifornia.com/"
+          },
+          {
+            "label": "Yelp business page - Tasty Pot, 443 Emerson St: Mon-Thu 11:00 am-3:00 pm and 4:30 pm-9:30 pm (i.e. an afternoon break the official site does not show)",
+            "url": "https://www.yelp.com/biz/tasty-pot-palo-alto-2"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/tasty-pot-palo-alto-2",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Tasty+Pot+443+Emerson+St+Palo+Alto"
+      },
+      "flags": [
+        "AFTERNOON-BREAK CONFLICT: Yelp shows a 3:00 PM-4:30 PM break on weekdays; the restaurant's own site shows continuous 11:00 AM-9:30 PM service. Both are printed - if the break is real, a late lunch after 3:00 PM is impossible.",
+        "SAME BRAND: Tasty Pot also operates at 222 Barber Ct, Milpitas; only the Palo Alto room is listed here.",
+        "No lunch-only pricing is published, so the price column is blank."
+      ]
+    },
+    {
+      "name": "Sumiya",
+      "city": "Santa Clara",
+      "area": "Homestead Rd (Mariposa Gardens Shopping Center)",
+      "address": "2634 Homestead Rd, Santa Clara, CA 95051",
+      "coords": [37.339367, -121.973114],
+      "coords_source": "Yellowpages listing geo",
+      "cuisine": "Japanese charcoal-grill yakitori",
+      "phone": "(408) 973-0604",
+      "lunch_special": {
+        "name": "Weekday lunch service block (11:30 AM - 1:30 PM) - menu prices captured from the business's own menu feed; no lunch-only special published",
+        "price_from": null,
+        "price_to": null,
+        "days": "Monday-Friday",
+        "window": "11:30 AM - 1:30 PM - the shortest lunch window in this list",
+        "includes": "Menu prices from the business's own singleplatform menu feed: Fresh Cabbage $1.00, Takowasa $5.00, Hiyayakko $5.00, Crispy Chicken Skin Dip $7.00, Shiitake Mushrooms and Cherry Tomatoes skewers $4.00, Shishamo $4.00, Sake/Hamachi skewers $6.00, Hotate $7.00, yakitori combinations $18-$20, Steamed Rice $2.00, Kimchi $3.00."
+      },
+      "hours_tuesday": "11:30 AM - 1:30 PM and 5:30 PM - 9:00 PM",
+      "days_open": "Mon-Thu 11:30-13:30 and 17:30-21:00; Fri 11:30-13:30 and 17:30-21:30; Sat 17:30-21:30; Sun 17:30-21:00 (Yelp business page, matched by Restaurantji, Restaurant Guru and the menu feed)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "~4 mi from 20387 Gillick Way, so the bus works, but the lunch block closes at 1:30 PM: only the 11:50 AM departure leaves a full hour, and the 12:20 PM would close the door early."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {
+            "label": "Sumiya menu feed (singleplatform) - 2634 Homestead Rd, Mon-Wed 11:30am-1:30pm, Thu 11:30am-10:00pm, Fri-Sat 5:30pm-10:30pm, Sun 5:00pm-9:30pm, full price list",
+            "url": "http://places.singleplatform.com/sumiya-japanese-yakitori-restaurant/menu"
+          },
+          {
+            "label": "Yelp business page - Sumiya, 2634 Homestead Rd: Mon-Fri 11:30 AM-1:30 PM with dinner from 5:30 PM, Sat-Sun dinner only",
+            "url": "https://www.yelp.com/biz/sumiya-santa-clara"
+          },
+          {
+            "label": "Yellowpages - 2634 Homestead Rd, Mon-Thu 11:30 am-10:00 pm, Fri 11:30 am-10:30 pm, Sat-Sun 5:30 pm-10:00/10:30 pm, geo",
+            "url": "https://www.yellowpages.com/santa-clara-ca/mip/sumiya-japanese-yakitori-restaurant-17820815"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/sumiya-santa-clara",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Sumiya+2634+Homestead+Rd+Santa+Clara"
+      },
+      "flags": [
+        "WEEKLY-HOURS CONFLICT: the menu feed prints 'Thursday 11:30am-10:00pm' and 'Friday 5:30pm-10:30pm', while Yelp, Restaurantji and Restaurant Guru all print Mon-Fri 11:30 AM-1:30 PM with a 5:30 PM dinner opening. The majority reading is used; the outlier is printed.",
+        "The lunch window is only two hours (11:30 AM-1:30 PM) and the dinner block does not start until 5:30 PM - arriving after 1:30 PM means no food until evening.",
+        "No lunch-only pricing is published, so the price column is blank; the a la carte prices are quoted in the row instead."
+      ]
+    },
+    {
+      "name": "Honō Izakaya & Sushi",
+      "city": "Campbell",
+      "area": "Downtown Campbell (S Central Ave)",
+      "address": "33 S Central Ave, Campbell, CA 95008",
+      "coords": [37.286582, -121.943825],
+      "coords_source": "Roadtrippers listing geo",
+      "cuisine": "Japanese izakaya / sushi",
+      "phone": "(408) 963-6534",
+      "lunch_special": {
+        "name": "Weekday lunch service block (11:30 AM opening on the weekday block) - no lunch-only price published",
+        "price_from": null,
+        "price_to": null,
+        "days": "Monday-Thursday per the one listing that publishes hours (Friday is not stated)",
+        "window": "11:30 AM opening (weekday block closes 9:30 PM)",
+        "includes": "Izakaya and sushi. No lunch menu or lunch price was published on any page retrieved."
+      },
+      "hours_tuesday": "11:30 AM - 9:30 PM",
+      "days_open": "Sun 12:00 pm-9:30 pm; Mon-Thu 11:30 am-9:30 pm; Sat 12:00 pm-10:30 pm; Friday not stated (Roadtrippers listing)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Campbell is ~7 mi from 20387 Gillick Way: a there-and-back bus trip does not fit the 11:50 AM departure and 3:30 PM home deadline."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {
+            "label": "Roadtrippers listing - Honō Izakaya & Sushi, 33 S Central Ave, Campbell: Sun 12:00 pm-9:30 pm, Mon-Thu 11:30 am-9:30 pm, Sat 12:00 pm-10:30 pm; geo; phone",
+            "url": "https://maps.roadtrippers.com/us/campbell-ca/food-drink/hono-izakaya-sushi-campbell-ca--0"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/search?find_desc=Hono+Izakaya&find_loc=Campbell%2C+CA",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Hono+Izakaya+33+S+Central+Ave+Campbell"
+      },
+      "flags": [
+        "NAME-TWIN WARNING: a same-named Honō Izakaya operates at 670 Rue Saint-Joseph E, Quebec City, Canada, and dominates search results for this brand. Only the 33 S Central Ave, Campbell address and phone are used here.",
+        "INCOMPLETE WEEK: Friday hours are not published on the only page retrieved, and the weekend blocks differ from the weekday block. Friday is recorded as unverified rather than closed.",
+        "No lunch menu or price is published, so the price column is blank."
+      ]
+    }
+  ]
+}

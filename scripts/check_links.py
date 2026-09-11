@@ -57,7 +57,10 @@ def check(entry_list, load):
                 problems.append(f"{where}: scheme is {p.scheme or 'none'!r}, want https - {u}")
             if not p.netloc or "." not in p.netloc:
                 problems.append(f"{where}: no real host - {u}")
-            if any(b in u for b in BANNED_HOST_BITS):
+            # Match the banned patterns against the HOST only. Scanning the whole URL
+            # produced a false positive on pass 11: "miniboss-" in a path contains the
+            # substring "oss-", which is a banned CDN host fragment, not a proxy.
+            if any(b in p.netloc.lower() for b in BANNED_HOST_BITS):
                 problems.append(f"{where}: looks like a proxy/cache/expiring URL - {u}")
             host = p.netloc.lower().replace("www.", "")
             if host in ALLOWED_AGENCY_HOSTS and not p.path.strip("/"):

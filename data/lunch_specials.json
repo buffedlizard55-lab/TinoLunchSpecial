@@ -1,10 +1,10 @@
 {
   "search_protocol": {
-    "requirement": "Verify line by line before adding anything to the master list; keep official/review links for manual review. Tenth pass (2026-09-11): ~30 new candidates screened - Cupertino first, then the 10-15 mile ring - and 10 of them verified well enough to enter the master list with a citable street address and weekly hours; 17 more were recorded as rejects or deferred leads with the URL that proves the rejection, including two out-of-state name traps and three venues whose directory pages advertise 'Lunch Specials' but which do not serve lunch. No candidate entered on an unverified price.",
-    "queries_run": 400,
-    "candidates_found": 553,
-    "added_to_master": 533,
-    "rejected_or_deferred": 133,
+    "requirement": "Verify line by line before adding anything to the master list; keep official/review links for manual review. Eleventh pass (2026-09-11): 115 candidate names were first run through an automated name|city dedupe against both the master list and the rejects file (85 new, 30 already listed) before any page was opened, then ~90 more candidates came out of the final city sweeps; 59 of them verified well enough to enter the master list with a citable street address and weekly hours, and 21 more were recorded as rejects or deferred leads with the URL that proves the rejection. No candidate entered on an unverified price, and two rows that survived the merge were withdrawn on a same-day self-audit as duplicates.",
+    "queries_run": 506,
+    "candidates_found": 764,
+    "added_to_master": 596,
+    "rejected_or_deferred": 154,
     "search_date": "2026-09-07 through 2026-09-11",
     "cities_covered": [
       "Campbell",
@@ -46,14 +46,18 @@
       "2026-09-07 seventh pass: 100 new master rows L253-L352 across six batch files (batch7a-7g; Cupertino, Sunnyvale, Santa Clara, Mountain View, Los Altos, Palo Alto, Menlo Park, Milpitas, Campbell, Los Gatos, Saratoga, San Jose/Willow Glen/Berryessa). 9 rejects this pass (closed: Pasta Q MV, Lira Campbell; no lunch deal: Pizza My Heart Sunnyvale, Panera Cupertino; HH/dinner-only: El Torito Milpitas, Yokohama LG; unresolved: Blue Sky Cafe; evening-only: Los Pambazos; same-campus dedupe: Backyard Cafe).",
       "2026-09-07 seventh pass dedupe outcomes: Rice Junky SC re-found but already L159 (skipped); Mr Bao Kitchen MV (357 Castro St) and Little Sky Kitchen MP (1010 El Camino Real) are VERIFIED restaurants excluded by the address-dedupe because Sakoon L149 / Cafe Borrone L246 hold those street addresses - flagged in flags.json for manual review. Backyard Cafe (1100 N Mathilda) yielded its row to Valley Goat at the same Treehouse campus address.",
       "2026-09-07 seventh pass corrections: Eureka! Cupertino L33 upgraded from no-special to the $13 Lunch Specials Every Day Open-till-3PM Yelp highlight (matches L113); Zareen Palo Alto row coords fixed pre-merge; Sweet Maple Cupertino (20010 Stevens Creek) and J&J Hawaiian BBQ Menlo Park discovered as new rows; Hobee Mountain View confirmed CLOSED while the Sunnyvale branch stays open.",
-      "2026-09-07 seventh pass short-window rows worth noting for the 2:30-3:00 PM return: It is Lunch Time SC (Mon-Fri 9:30-1:30), Sumiya SC (Mon-Fri 11:30-1:30), So Gong Dong PA (11:30-1:45), Xiaoman SV (8-1:30, Thu closed), Sweet Maple both branches (till 2:30), Backyard Cafe dropped (see dedupe note), Kung Sil SC (till 1:30)."
+      "2026-09-07 seventh pass short-window rows worth noting for the 2:30-3:00 PM return: It is Lunch Time SC (Mon-Fri 9:30-1:30), Sumiya SC (Mon-Fri 11:30-1:30), So Gong Dong PA (11:30-1:45), Xiaoman SV (8-1:30, Thu closed), Sweet Maple both branches (till 2:30), Backyard Cafe dropped (see dedupe note), Kung Sil SC (till 1:30).",
+      "2026-09-11 eleventh pass: 59 new master rows L534-L592. Two merged rows were self-audited out after the merge (see note_eleventh_pass) because they were duplicates of rows already in the list. Four Santana Row / Castro Street closures (Left Bank, Rosie McCann's, Yankee Pier, Vida Tapas) were recorded as rejects with the URL that proves each closure, and downtown Sushi Confidential (26 N San Pedro St) was rejected for having no Tuesday service while its Willow Glen room was merged.",
+      "2026-09-11 pass 12 follow-up: four additional lunch-service rows (Last Chance Restaurant, Nar Restaurant, Delarosa Palo Alto, and Madera at Rosewood Sand Hill) were independently checked for address and weekly hours; prices remain blank where no lunch-special price was printed."
     ],
     "note_fourth_pass": "Fourth search pass added 49 rows (L102-L150): Lazy Dog $8.95+, Tomatina Pick Two $13.50, The Hut Taco Tuesday $9, Pasta Market Gourmet Lunch $14.95, Urban Grill weekday buffet $16.99 (two-domain conflict), Local Kitchens combos $13.00-$17.50, Sakoon buffet $19.99-$24.99 (Wed-Sun only), plus hours-verified rows with no published lunch special. 9 candidates were rejected this pass (closed, dinner-only, or no verifiable address).",
     "note_seventh_pass": "Seventh search pass added 100 rows (L253-L352). Only fully verified rows were written: 48 listing-level, 27 review-level, 20 official-level, 4 conflicting, 1 unverified (Taiwan Restaurant SJ - no hours captured). Three verified venues remain unmerged due to address-key collisions (see notes) and are listed in flags.json.",
     "note_ninth_pass": "Ninth search pass (2026-09-10) added 68 rows (L456-L523) from five incoming files batch9a-9e: Cupertino/Sunnyvale/Santa Clara/Mountain View core first (Mandarin Gourmet official lunch prices, Sankranti/Bombay-to-Goa conflict row, 3 Kingdoms, Gobi, Brundavan), then the cities the earlier passes never reached - Fremont/Newark/Union City (14 rows incl. Roll N Crust, Taipei Station, Texas Roadhouse, Mr. Taco, Mi Lindo) - then the Peninsula edge of the ring (San Mateo / Redwood City / San Carlos / Foster City) and the Willow Glen / Almaden / Los Gatos tail. 30 further ninth-pass candidates became rejects or deferred leads (4 outright closures: Pot Sticker King, Su Zhe Eatery, La Strada, China Delight). One candidate (The Diner of Los Gatos) turned out to be already listed - the dedupe caught it and recorded the near-duplicate. All rows carry per-row sources; prices appear only where a restaurant's own page printed them.",
-    "queries_run_note": "cumulative ~400 searches across ten passes (~15 in the tenth)",
-    "candidates_found_note": "all passes documented plus ~30 new tenth-pass candidates screened line by line; 424 dedupe hits against the master list were also checked and dropped",
-    "note_tenth_pass": "Tenth search pass (2026-09-11) added 10 rows (L524-L533) from data/incoming/batch10a_pass10_verified.json: Teleferic Barcelona Los Gatos with its $28-$34 weekday lunch menu; three Hummus Mediterranean Kitchen rooms (Palo Alto at Stanford Shopping Center, 185 Castro St Mountain View, 150 E 4th Ave San Mateo) from the chain's own locations index; Falafel Flare, Empire Armadillo BBQ & Deli and Delhi to Kathmandu in Sunnyvale from the chamber's restaurant-week page with per-item prices; Asian Box Mountain View and Opa! Campbell with verified weekday lunch hours; and Shake Shack at the Stanford Shopping Center end of the ring. This pass is deliberately smaller than earlier ones: the merge was capped by the number of candidates whose street address AND weekly hours could be pinned to a citable page, not by the number of names found. Yelp pages return HTTP 403 to direct fetch here, which removed the highest-yield bulk source used by pass 9."
+    "queries_run_note": "cumulative ~502 searches across eleven passes (~102 in the eleventh)",
+    "candidates_found_note": "all passes documented plus ~205 new eleventh-pass candidates screened line by line (115 run through an automated name|city dedupe against the master and reject files before any page was opened, then ~90 more surfaced by the final city sweeps); ~424 dedupe hits against the master list were also checked and dropped",
+    "note_tenth_pass": "Tenth search pass (2026-09-11) added 10 rows (L524-L533) from data/incoming/batch10a_pass10_verified.json: Teleferic Barcelona Los Gatos with its $28-$34 weekday lunch menu; three Hummus Mediterranean Kitchen rooms (Palo Alto at Stanford Shopping Center, 185 Castro St Mountain View, 150 E 4th Ave San Mateo) from the chain's own locations index; Falafel Flare, Empire Armadillo BBQ & Deli and Delhi to Kathmandu in Sunnyvale from the chamber's restaurant-week page with per-item prices; Asian Box Mountain View and Opa! Campbell with verified weekday lunch hours; and Shake Shack at the Stanford Shopping Center end of the ring. This pass is deliberately smaller than earlier ones: the merge was capped by the number of candidates whose street address AND weekly hours could be pinned to a citable page, not by the number of names found. Yelp pages return HTTP 403 to direct fetch here, which removed the highest-yield bulk source used by pass 9.",
+    "note_eleventh_pass": "Eleventh search pass (2026-09-11) added 59 rows (L534-L592) from eight incoming files batch11a-11h. Order of work: an automated dedupe of 115 candidate names against the master and reject files first (85 new, 30 already listed), then Milpitas (12), Fremont/Newark (8), Santa Clara and the San Jose Korean row (14), Los Gatos / Los Altos / Palo Alto (8), the Cupertino-Sunnyvale core (12), San Jose cheap eats (8), Santana Row and the chain row (10), and a final sweep for restaurants that actually publish a lunch price (8). Two rows were withdrawn immediately after the merge and are recorded as rejects: Inchin's Bamboo Garden - Sunnyvale (a ZIP spelling of the existing L43 row that slipped past the address dedupe) and Opa! Willow Glen (a 2018-stamped listing whose street address is already held by Burma Roots L348). Five closures were caught and rejected rather than published: Left Bank Brasserie, Rosie McCann's and Yankee Pier (all Santana Row) and Vida Tapas Y Cocteles (Mountain View), plus Sushi Confidential's downtown room, which is closed Mon-Wed and has no Tuesday lunch at all. Fourteenth-hour finds worth the manual click: Boda (2868 Story Rd, San Jose) publishes a $5.99 weekday lunch plate on its own site - the cheapest verified lunch in the master list - and Home Eat Santa Clara, Tatami Buffet (a Cupertino room whose entire week is a 11:30-2:30 lunch service) and Lotus Thai Bistro all came with a citable address and weekly hours. Prices were printed only where the restaurant's own page printed them; Reddit, Yelp-Q&A and aggregator figures (Milpitas Buffet $19.99, Sizzler $5.49-$6.99, Don Giovanni $19.95, Olive Garden $5.99) are described inside the rows and deliberately left out of price_from/price_to.",
+    "note_twelfth_pass": "Pass 12 follow-up added 4 rows (L593-L596) after the 59-row pass-11 result. These are lunch-service/menu rows, not invented discount claims: published prices are carried only for Delarosa and Last Chance, while Nar and Madera remain unpriced."
   },
   "entries": [
     {
@@ -25901,6 +25905,3338 @@
       "id": "L533",
       "added_in": "batch10a_pass10_verified.json",
       "distance_mi": 11.92
+    },
+    {
+      "name": "Wagyu Grill AYCE (牛浪人 Wagyu Grill)",
+      "city": "Milpitas",
+      "area": "Barber Lane (McCarthy Ranch area)",
+      "address": "500 Barber Ln, Milpitas, CA 95035",
+      "coords": [
+        37.4209735,
+        -121.9159418
+      ],
+      "coords_source": "official site JSON-LD",
+      "cuisine": "Japanese yakiniku / AYCE wagyu, sushi",
+      "phone": "(408) 649-3106",
+      "lunch_special": {
+        "name": "Lunch AYCE tier - $25.95 per person",
+        "price_from": 25.95,
+        "price_to": 25.95,
+        "days": "Monday-Friday",
+        "window": "11:00 AM - 4:00 PM",
+        "includes": "Select wagyu cuts, sushi rolls, appetizers and sides. The all-day tiers are higher: Silver $35.95, Gold $43.95, Premium $65.95 (Japanese A5)."
+      },
+      "hours_tuesday": "11:00 AM - 9:30 PM",
+      "days_open": "Mon-Thu 11:00-21:30, Fri 11:00-22:30, Sat 11:30-22:30, Sun 11:30-21:30 (official site)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Milpitas is ~10 mi from 20387 Gillick Way, so it sits outside what the 11:50 AM departure and 3:30 PM home deadline can absorb on the VTA 55 chain. The lunch tier itself runs to 4:00 PM."
+      },
+      "verification": {
+        "level": "official",
+        "sources": [
+          {
+            "label": "Wagyu Grill official site - pricing tiers (Lunch $25.95/person Mon-Fri 11am-4pm; Silver $35.95, Gold $43.95, Premium $65.95), address, weekly hours, geo",
+            "url": "https://wagyu-grill.com/"
+          },
+          {
+            "label": "Yelp business page - 500 Barber Ln, Mon-Thu 11:00 AM-9:30 PM, cross-check of the weekly hours",
+            "url": "https://www.yelp.com/biz/wagyu-grill-ayce-milpitas"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/wagyu-grill-ayce-milpitas",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Wagyu+Grill+500+Barber+Ln+Milpitas"
+      },
+      "flags": [
+        "Social-video captions quote an older lunch figure ($25) and different tier names ($45/$58/$75) - only the restaurant's own pricing page is printed here.",
+        "AYCE price is per person and the page does not say whether tax, gratuity or a shared-grill surcharge applies."
+      ],
+      "id": "L534",
+      "added_in": "batch11a_milpitas.json",
+      "distance_mi": 9.76
+    },
+    {
+      "name": "Annapoorna Authentic Indian Cuisine",
+      "city": "Milpitas",
+      "area": "E Tasman Dr",
+      "address": "770 E Tasman Dr, Milpitas, CA 95035",
+      "coords": [
+        37.4120292,
+        -121.9183208
+      ],
+      "coords_source": "Restaurant Guru / listing geo",
+      "cuisine": "Indian (Maharashtrian), vegetarian",
+      "phone": "(408) 834-4933",
+      "lunch_special": {
+        "name": "Thali / combo meals printed on the restaurant's own menu",
+        "price_from": 12.0,
+        "price_to": 23.0,
+        "days": "daily (the combos are all-day menu items, not a time-limited lunch offer)",
+        "window": "served through the lunch service: indoor dining Sun-Thu 11:00 AM-2:30 PM",
+        "includes": "Rice Combo $12.00 (white rice 16 oz, tadka daal 12 oz, pickle, raita, ghee); Express Thali $15.00 (2 rotis, 1 veg, daal, rice, raita); Paratha Meal $18.50; Full Combo with 2 entrees $20.00; Combo Thali $21.00; Misal Thali $23.00."
+      },
+      "hours_tuesday": "11:00 AM - 2:30 PM and 5:00 PM - 8:30 PM (indoor dining, own menu page)",
+      "days_open": "Indoor dining: Sun-Thu 11:00-14:30 and 17:00-20:30; Fri-Sat 11:00-14:30 and 17:30-21:30. Takeaway/outdoor: Mon-Thu 11:00-21:00, Fri-Sat 11:00-22:00, Sun 11:30-21:00 (all from the restaurant's own menu page)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "~10 mi from 20387 Gillick Way: outside the 11:50 AM departure / 3:30 PM home deadline. The lunch service itself closes at 2:30 PM, so a seated lunch would have to start by about 11:30 AM."
+      },
+      "verification": {
+        "level": "official",
+        "sources": [
+          {
+            "label": "Annapoorna official menu page - Combo Thali $21.00, Rice Combo $12.00, Misal Thali $23.00, indoor-dining and takeaway hours, 770 East Tasman Dr address",
+            "url": "https://myannapoorna.com/menu/"
+          },
+          {
+            "label": "Annapoorna own Toast ordering page - Express Thali $15.00, Paratha Meal $18.50, Full Combo with 2 entrees $20.00, daily 10:45 am-9:00/10:00 pm hours",
+            "url": "https://www.toasttab.com/local/order/annapoorna-770-east-tasman-dr"
+          },
+          {
+            "label": "Yelp business page - 770 E Tasman Dr, Mon-Thu 11:00 am-9:00 pm, cross-check of the weekly hours",
+            "url": "https://www.yelp.com/biz/annapoorna-authentic-indian-cuisine-milpitas-4"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/annapoorna-authentic-indian-cuisine-milpitas-4",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Annapoorna+770+E+Tasman+Dr+Milpitas"
+      },
+      "flags": [
+        "CONFLICT inside the restaurant's own site: the menu page prints 'Take Away/Outdoor Timings MON - THU 11:00AM - 9:00PM' in one block and 'MON - FRI 11:00 AM Through Midnight' in a second block on the same page. Both are printed; nothing was averaged.",
+        "These thali/combo prices are all-day menu items, not a lunch-only promotion - the row is listed because the indoor lunch service (11:00 AM-2:30 PM) is the window in which they can be ordered, and the price is printed on the restaurant's own menu.",
+        "A different Annapoorna (14450 Culver Dr, Irvine, CA) shares the brand name; only the Milpitas room's address and prices are used here."
+      ],
+      "id": "L535",
+      "added_in": "batch11a_milpitas.json",
+      "distance_mi": 9.2
+    },
+    {
+      "name": "Biryani Junction",
+      "city": "Milpitas",
+      "area": "S Abel St (Ranch Dr corridor)",
+      "address": "68 S Abel St, Milpitas, CA 95035",
+      "coords": [
+        37.429493,
+        -121.90757
+      ],
+      "coords_source": "Roadtrippers listing geo",
+      "cuisine": "Indian (Hyderabadi / Andhra biryani)",
+      "phone": "(408) 262-1128",
+      "lunch_special": {
+        "name": "Weekday lunch buffet (served 11:30 AM - 3:00 PM)",
+        "price_from": null,
+        "price_to": null,
+        "days": "weekdays (a Yelp photo on this business page is captioned 'Weekday lunch buffet items')",
+        "window": "11:30 AM - 3:00 PM",
+        "includes": "Buffet during the 11:30 AM-3:00 PM lunch block. A Reddit thread quotes 'Milpitas Buffet is $21 weekdays before 3:15pm', which is a diner figure, not a published menu price, so no price is printed in the price column."
+      },
+      "hours_tuesday": "11:30 AM - 3:00 PM and 5:00 PM - 10:00 PM",
+      "days_open": "Mon-Sun 11:30 AM-3:00 PM and 5:00 PM-10:00 PM (Yelp business page, updated over 3 months ago)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "~9 mi from 20387 Gillick Way: outside the 11:50 AM departure / 3:30 PM home deadline."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {
+            "label": "Yelp business page - Biryani Junction, 68 S Abel St: daily 11:30 am-3:00 pm / 5:00 pm-10:00 pm, phone, website, 'Weekday lunch buffet items' photo caption",
+            "url": "https://www.yelp.com/biz/biryani-junction-milpitas-2"
+          },
+          {
+            "label": "Roadtrippers listing - 68 S Abel St address and geo cross-check",
+            "url": "https://maps.roadtrippers.com/us/milpitas-ca/food-drink/biryani-junction-milpitas-ca"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/biryani-junction-milpitas-2",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Biryani+Junction+68+S+Abel+St+Milpitas"
+      },
+      "flags": [
+        "SAME-BRAND SECOND ADDRESS: Yelp also lists a Biryani Junction at 131 Ranch Dr, Milpitas, 95035 with identical 11:30 am-3:00 pm / 5:00 pm-10:00 pm hours and the same website (biryanijunctionmilpitas.com). Only the 68 S Abel St room is merged; the duplicate address is recorded here so the two are not counted as two independent finds.",
+        "The only lunch-buffet price found ($21 weekdays before 3:15 pm) is a Reddit diner quote, so the price column is left blank."
+      ],
+      "id": "L536",
+      "added_in": "batch11a_milpitas.json",
+      "distance_mi": 10.5
+    },
+    {
+      "name": "Sri Radha's Veg Cuisine",
+      "city": "Milpitas",
+      "area": "E Calaveras Blvd",
+      "address": "680 E Calaveras Blvd, Milpitas, CA 95035",
+      "coords": [
+        37.4323341,
+        -121.8995741
+      ],
+      "coords_source": "Zmenu listing geo",
+      "cuisine": "Indian, vegetarian (pay-by-weight buffet)",
+      "phone": "(510) 771-7759",
+      "lunch_special": {
+        "name": "Lunch buffet (a 'Buffet' line item appears on the delivery menu; the dining room buffet is priced by weight)",
+        "price_from": null,
+        "price_to": null,
+        "days": "Monday-Saturday",
+        "window": "11:30 AM - 2:30 PM (dinner block 5:00 PM-8:30 PM)",
+        "includes": "Delivery-menu line items captured: Buffet $6.99, Appetizer of the day 16 oz $7.99, Dal of the day 16 oz $7.99, Dry Curry of the day 16 oz $7.99, Dessert of the day 16 oz $8.99. A listing site describes the dining-room buffet as pay-by-weight at $5.99 per pound. Those are listing/delivery-app figures, so no price is printed in the price column."
+      },
+      "hours_tuesday": "11:30 AM - 2:30 PM and 5:00 PM - 8:30 PM",
+      "days_open": "Mon-Sat 11:30-14:30 and 17:00-20:30; Sunday not listed (Zmenu). UberEats lists Mon-Sat 11:30 AM-2:10 PM and 5:00 PM-8:10 PM.",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "~10 mi from 20387 Gillick Way: outside the 11:50 AM departure / 3:30 PM home deadline."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {
+            "label": "Zmenu - Sri Radha's Veg Cuisine, 680 E Calaveras Blvd: address, geo, phone, Mon-Sat 11:30 am-2:30 pm / 5:00 pm-8:30 pm",
+            "url": "https://www.zmenu.com/sri-radhas-veg-cuisine-milpitas-online-menu/"
+          },
+          {
+            "label": "UberEats store page - 680 East Calaveras Blvd, Mon-Sat 11:30 AM-2:10 PM / 5:00 PM-8:10 PM, Buffet $6.99 line item",
+            "url": "https://www.ubereats.com/store/sri-radhas-veg-cuisine-milpitas/ohqDYmANQZOuEs4M5Qje2w"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/search?find_desc=Sri+Radha%27s+Veg+Cuisine&find_loc=Milpitas%2C+CA",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Sri+Radha%27s+Veg+Cuisine+680+E+Calaveras+Blvd+Milpitas"
+      },
+      "flags": [
+        "No street-address page from the business itself was found; address and hours come from two listing/delivery pages that agree on the street address and the 11:30 AM lunch opening but differ by 20 minutes on the closing times (2:30 PM vs 2:10 PM, 8:30 PM vs 8:10 PM). Both are printed.",
+        "Every price seen for this room is on a delivery app or a listing site, so per this project's rule (aggregator prices are leads, not verified) no price is printed."
+      ],
+      "id": "L537",
+      "added_in": "batch11a_milpitas.json",
+      "distance_mi": 10.94
+    },
+    {
+      "name": "Hansang Tofu",
+      "city": "Milpitas",
+      "area": "Beresford Square Shopping Center, N Milpitas Blvd",
+      "address": "57 N Milpitas Blvd, Milpitas, CA 95035",
+      "coords": [
+        37.434014,
+        -121.9017723
+      ],
+      "coords_source": "Restaurant Guru / businessyab listing geo",
+      "cuisine": "Korean tofu house (soon dubu), BBQ",
+      "phone": "(408) 770-2107",
+      "lunch_special": {
+        "name": "Weekday lunch service - a Yelp reviewer cites 'good lunch specials, endless banchan'; no published lunch price found",
+        "price_from": null,
+        "price_to": null,
+        "days": "daily (the room opens 11:30 AM every day)",
+        "window": "opens 11:30 AM",
+        "includes": "Korean tofu soups, kalbi, bulgogi, K-chicken, army stew per the business description on its own site."
+      },
+      "hours_tuesday": "11:30 AM - 9:00 PM",
+      "days_open": "Mon-Sun 11:30 AM - 9:00 PM (agreed by Yelp, Restaurant Guru, Restaurantji and the listing that mirrors the business's own site)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "~10 mi from 20387 Gillick Way: outside the 11:50 AM departure / 3:30 PM home deadline."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {
+            "label": "Restaurantji - Hansang Tofu, 57 N Milpitas Blvd: address, phone, daily 11:30 AM-9 PM",
+            "url": "https://www.restaurantji.com/ca/milpitas/hansang-tofu-/"
+          },
+          {
+            "label": "Yelp business page - 57 N Milpitas Blvd, Mon-Sun 11:30 am-9:00 pm, and the reviewer line 'Good service, good lunch specials, endless banchan, good barley tea'",
+            "url": "https://www.yelp.com/biz/hansang-tofu-milpitas"
+          },
+          {
+            "label": "Restaurant Guru - 57 N Milpitas Blvd, daily 11:30 AM-9 PM, geo",
+            "url": "https://restaurantguru.com/Hansang-Tofu-Milpitas"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/hansang-tofu-milpitas",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Hansang+Tofu+57+N+Milpitas+Blvd+Milpitas"
+      },
+      "flags": [
+        "The existence of a lunch special rests on a Yelp review quote, not on a published menu, so the row is levelled 'listing' and no price is printed."
+      ],
+      "id": "L538",
+      "added_in": "batch11a_milpitas.json",
+      "distance_mi": 10.95
+    },
+    {
+      "name": "Ushiya Grill",
+      "city": "Milpitas",
+      "area": "N Milpitas Blvd",
+      "address": "1792 N Milpitas Blvd, Milpitas, CA 95035",
+      "cuisine": "Japanese / Korean BBQ, premium wagyu",
+      "phone": "(669) 260-2988",
+      "lunch_special": {
+        "name": "Weekday lunch service block (11:30 AM - 2:30 PM) - no lunch price published on any page retrieved",
+        "price_from": null,
+        "price_to": null,
+        "days": "Monday-Friday",
+        "window": "11:30 AM - 2:30 PM",
+        "includes": "The lunch block is a distinct service period on the Yelp hours table; the menu itself was not published on any page retrieved this pass."
+      },
+      "hours_tuesday": "11:30 AM - 2:30 PM and 5:30 PM - 10:00 PM",
+      "days_open": "Mon-Thu 11:30-14:30 and 17:30-22:00; Fri 11:30-14:30 and 16:30-22:30; Sat 11:30-22:30; Sun 11:30-22:00 (Yelp business page)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "~10 mi from 20387 Gillick Way: outside the 11:50 AM departure / 3:30 PM home deadline."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {
+            "label": "Yelp business page - Ushiya Grill, 1792 N Milpitas Blvd: Mon-Thu 11:30 am-2:30 pm / 5:30 pm-10:00 pm, Fri 11:30 am-2:30 pm / 4:30 pm-10:30 pm, Sat-Sun hours, phone",
+            "url": "https://www.yelp.com/biz/ushiya-grill-milpitas"
+          },
+          {
+            "label": "Corner.inc listing - 1792 N Milpitas Blvd, same weekly hours, links ushiyagrill.com as the business site",
+            "url": "https://www.corner.inc/place/549433"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/ushiya-grill-milpitas",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Ushiya+Grill+1792+N+Milpitas+Blvd+Milpitas"
+      },
+      "flags": [
+        "Social-video captions quote AYCE figures for this address ($35 Signature / $55 Premium); those are TikTok captions, not citable menu prices, so they are not printed in the price column.",
+        "No published lunch price: the row records the verified weekday lunch service block only."
+      ],
+      "id": "L539",
+      "coords": null,
+      "added_in": "batch11a_milpitas.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Ramen 101",
+      "city": "Milpitas",
+      "area": "Ranch Dr",
+      "address": "133 Ranch Dr, Milpitas, CA 95035",
+      "cuisine": "Hawaiian / ramen",
+      "phone": "(408) 649-3151",
+      "lunch_special": {
+        "name": "No lunch special published - full-price lunch service from 11:00 AM",
+        "price_from": null,
+        "price_to": null,
+        "days": "daily",
+        "window": "opens 11:00 AM",
+        "includes": "Menu prices captured from the Yelp menu module: Black Garlic Ramen $17.95, Tonkotsu Ramen $16.95, Chicken Katsu $15.00, Teriyaki Chicken $15.00, BBQ Mix $19.00. These are regular menu prices, not a lunch deal."
+      },
+      "hours_tuesday": "11:00 AM - 9:00 PM (Yelp) / 11:00 AM - 8:00 PM (Zmenu) - see flag",
+      "days_open": "Mon-Sun 11:00 AM-9:00 PM (Yelp business page and the business's own mirror page); Zmenu lists Mon-Sun 11:00 am-8:00 pm",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "~10 mi from 20387 Gillick Way: outside the 11:50 AM departure / 3:30 PM home deadline."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {
+            "label": "Yelp business page - Ramen 101, 133 Ranch Dr: daily 11:00 am-9:00 pm, menu prices (Black Garlic Ramen $17.95, Tonkotsu Ramen $16.95, Chicken Katsu $15.00)",
+            "url": "https://www.yelp.com/biz/ramen-101-milpitas-2"
+          },
+          {
+            "label": "Ramen 101 business page (ramen-101.res-menu.net) - 133 Ranch Dr, daily 11:00 AM-9:00 PM",
+            "url": "https://ramen-101.res-menu.net/"
+          },
+          {
+            "label": "Zmenu - 133 Ranch Dr, Mon-Sun 11:00 am-8:00 pm (conflicting closing time)",
+            "url": "https://www.zmenu.com/ramen-101-milpitas-2-online-menu/"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/ramen-101-milpitas-2",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Ramen+101+133+Ranch+Dr+Milpitas"
+      },
+      "flags": [
+        "Closing-time conflict: Yelp and the business's own mirror page say 9:00 PM daily, Zmenu says 8:00 PM daily. Both are printed; nothing averaged.",
+        "A same-brand Ramen 101 exists in Modesto - only the Milpitas room is listed."
+      ],
+      "id": "L540",
+      "coords": null,
+      "added_in": "batch11a_milpitas.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Tayyibaat Meat & Grill",
+      "city": "Milpitas",
+      "area": "S Abbott Ave",
+      "address": "10 S Abbott Ave, Milpitas, CA 95035",
+      "cuisine": "Mediterranean / halal butcher, kebabs, burgers",
+      "phone": "(408) 586-9700",
+      "lunch_special": {
+        "name": "No lunch special published - open through lunch from 11:00 AM",
+        "price_from": null,
+        "price_to": null,
+        "days": "daily",
+        "window": "opens 11:00 AM",
+        "includes": "Business description on its Yelp page: kebabs with a Mediterranean/South Asian fusion, live-flame rotisserie chicken, and a specials menu of open-face NY steak sandwich, 1/2 lb wagyu burger and ribeye steak. No lunch-only pricing was found."
+      },
+      "hours_tuesday": "11:00 AM - 9:00 PM",
+      "days_open": "Mon-Sun 11:00 AM - 9:00 PM (Yelp business page)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "~10 mi from 20387 Gillick Way: outside the 11:50 AM departure / 3:30 PM home deadline."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {
+            "label": "Yelp business page - Tayyibaat Meat & Grill, 10 S Abbott Ave: Mon-Sun 11:00 am-9:00 pm, phone, business description, tayyibaat.com",
+            "url": "https://www.yelp.com/biz/tayyibaat-meat-and-grill-milpitas-4"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/tayyibaat-meat-and-grill-milpitas-4",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Tayyibaat+Meat+and+Grill+10+S+Abbott+Ave+Milpitas"
+      },
+      "flags": [
+        "Sunday Steak Night and the specials menu are described on the business's Yelp page, not on the business's own site, and neither is a lunch offer. No price is printed."
+      ],
+      "id": "L541",
+      "coords": null,
+      "added_in": "batch11a_milpitas.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Super Potato (粉阿姐超级土豆粉)",
+      "city": "Milpitas",
+      "area": "W Calaveras Blvd",
+      "address": "177 W Calaveras Blvd, Milpitas, CA 95035",
+      "cuisine": "Chinese - potato noodles, fruit teas",
+      "phone": "(408) 618-8502",
+      "lunch_special": {
+        "name": "Weekday lunch service block (11:00 AM - 2:30 PM) - no lunch-only price published",
+        "price_from": null,
+        "price_to": null,
+        "days": "Mon, Wed, Thu, Fri (CLOSED TUESDAY)",
+        "window": "11:00 AM - 2:30 PM (dinner block 5:00 PM-9:30 PM)",
+        "includes": "Potato-noodle bowls and fruit teas. A listing site describes prices as 'reasonable, with large portions for under $10'; that is a listing claim, not a published menu price, so no price is printed."
+      },
+      "hours_tuesday": "CLOSED on Tuesday (Yelp and Corner.inc both show Tuesday Closed)",
+      "days_open": "Mon 11:00-14:30 and 17:00-21:30; Tue closed; Wed-Fri 11:00-14:30 and 17:00-21:30; Sat-Sun 11:00-21:30 (Yelp and Corner.inc)",
+      "open_on_trip_date": false,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "CLOSED TUESDAYS - out for 2026-09-08 - and ~10 mi from the destination besides."
+      },
+      "verification": {
+        "level": "conflicting",
+        "sources": [
+          {
+            "label": "Yelp business page - Super Potato, 177 W Calaveras Blvd: Tue Closed; Mon/Wed/Thu/Fri 11:00 am-2:30 pm and 5:00 pm-9:30 pm; Sat-Sun 11:00 am-9:30 pm",
+            "url": "https://www.yelp.com/biz/super-potato-milpitas"
+          },
+          {
+            "label": "Corner.inc listing - 177 W Calaveras Blvd, Tuesday: Closed, same remaining days",
+            "url": "https://www.corner.inc/place/272528"
+          },
+          {
+            "label": "Zmenu - 177 W Calaveras Blvd, every day 11:00am-9:30pm including Tuesday (conflicting)",
+            "url": "https://www.zmenu.com/%E7%B2%89%E9%98%BF%E5%A7%90%E8%B6%85%E7%BA%A7%E5%9C%9F%E8%B1%86%E7%B2%89super-potato-milpitas-milpitas-online-menu/"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/super-potato-milpitas",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Super+Potato+177+W+Calaveras+Blvd+Milpitas"
+      },
+      "flags": [
+        "TUESDAY CONFLICT: Yelp and Corner.inc both list Tuesday as Closed; Zmenu lists 11:00 am-9:30 pm every day including Tuesday, and Beyondmenu lists 11:00 am-9:15 pm every day. Two independent sources say closed, two aggregators say open. The row is levelled 'conflicting' and open_on_trip_date is set to false - confirm by phone before relying on a Tuesday visit.",
+        "No lunch-only price is published, so the price column stays blank."
+      ],
+      "id": "L542",
+      "coords": null,
+      "added_in": "batch11a_milpitas.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Masala Dosa Vegetarian Restaurant",
+      "city": "Milpitas",
+      "area": "E Calaveras Blvd",
+      "address": "1231 E Calaveras Blvd, Milpitas, CA 95035",
+      "cuisine": "South Indian vegetarian (dosa, idli)",
+      "phone": "(669) 284-9129",
+      "lunch_special": {
+        "name": "Breakfast happy-hour combo 9:00-10:00 AM at $10 per one listing site; no lunch-only special published",
+        "price_from": null,
+        "price_to": null,
+        "days": "not stated for the combo; the room is CLOSED TUESDAY in any case",
+        "window": "9:00 AM - 10:00 AM for the breakfast combo",
+        "includes": "Menu prices captured from the Yelp menu module: Idli $8.99, Plain Dosa $10.99, Ghee Dosa $11.99, Mysore Masala Dosa $12.99, Onion Masala Dosa $12.99, Davangere Benne Masala Dosa $13.99, Kanchipuram Vegetable Masala Dosa $13.99, Kids Ghee Dosa $9.99, Extra Bun Parotta $5.99 (evening from 6 pm). These are regular menu prices.",
+        "price_note": "The only discounted item found ($10 breakfast happy-hour combo, 9-10 AM) comes from a listing site, not the business, so it is not printed in the price column."
+      },
+      "hours_tuesday": "CLOSED on Tuesday (Yelp and the wheree listing both show Tuesday Closed)",
+      "days_open": "Mon 9:00-21:00; Tue closed; Wed-Thu 9:00-21:00; Fri-Sat 9:00-22:00; Sun 9:00-22:00 (Yelp business page)",
+      "open_on_trip_date": false,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "CLOSED TUESDAYS - out for 2026-09-08 - and ~10 mi from the destination besides."
+      },
+      "verification": {
+        "level": "conflicting",
+        "sources": [
+          {
+            "label": "Yelp business page - Masala Dosa Vegetarian Restaurant, 1231 East Calaveras Blvd: Tue Closed, Mon 9-9, Wed-Thu 9-9, Fri-Sat 9-10, Sun 9-10, phone, menu prices",
+            "url": "https://www.yelp.com/biz/masala-dosa-vegetarian-restaurant-milpitas"
+          },
+          {
+            "label": "Wheree listing - 1251 E Calaveras Blvd (address differs by 20 street numbers), Tuesday Close, same remaining days",
+            "url": "https://masala-dosa-vegetarian-restaurant.wheree.com/"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/masala-dosa-vegetarian-restaurant-milpitas",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Masala+Dosa+Vegetarian+Restaurant+1231+E+Calaveras+Blvd+Milpitas"
+      },
+      "flags": [
+        "ADDRESS CONFLICT: Yelp gives 1231 E Calaveras Blvd, the wheree listing and DoorDash give 1251 E Calaveras Blvd. Both are printed; the Yelp street number is used because it is the claimed business page.",
+        "CLOSED ON TUESDAY per both sources - the trip date 2026-09-08 is a Tuesday, so open_on_trip_date is false.",
+        "The $10 breakfast happy-hour combo (9-10 AM) comes from a listing site only and is not a lunch offer, so no price is printed."
+      ],
+      "id": "L543",
+      "coords": null,
+      "added_in": "batch11a_milpitas.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Los Jefes Taqueria",
+      "city": "Milpitas",
+      "area": "S Park Victoria Dr",
+      "address": "1350 S Park Victoria Dr Ste 43, Milpitas, CA 95035",
+      "coords": [
+        37.417397,
+        -121.87398
+      ],
+      "coords_source": "TripAdvisor listing geo",
+      "cuisine": "Mexican / New Mexican, tacos",
+      "phone": "(669) 249-1947",
+      "lunch_special": {
+        "name": "No lunch special published - open from breakfast through the lunch block",
+        "price_from": null,
+        "price_to": null,
+        "days": "daily",
+        "window": "opens 7:30-8:00 AM depending on the source (see flag)",
+        "includes": "A listing site quotes the menu: 'a bean and cheese burrito costs about $6, with an additional $1.49 for rice'. That is a listing claim, not a published menu price, so no price is printed."
+      },
+      "hours_tuesday": "8:00 AM - 10:00 PM (Yelp, updated 2 months ago) / 7:30 AM - 9:00 PM (Wanderlog) / 8:00 AM - 8:00 PM (TripAdvisor) - three values, see flag",
+      "days_open": "Yelp: Mon 7:30 am-9:00 pm, Tue-Fri 7:30 am-10:00 pm, Sat 9:00 am-10:00 pm, Sun 9:00 am-8:00 pm. TripAdvisor: Mon-Tue 8-8, Wed 8-8, Thu 8-9, Fri 8-10, Sat 10-10, Sun 10-8.",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "~11 mi from 20387 Gillick Way: outside the 11:50 AM departure / 3:30 PM home deadline."
+      },
+      "verification": {
+        "level": "conflicting",
+        "sources": [
+          {
+            "label": "Yelp business page - Los Jefes Taqueria, 1350 S Park Victoria Dr Ste 43: Mon 7:30 am-9:00 pm, Tue-Fri 7:30 am-10:00 pm, Sat 9:00 am-10:00 pm, Sun 9:00 am-8:00 pm",
+            "url": "https://www.yelp.com/biz/los-jefes-taqueria-milpitas"
+          },
+          {
+            "label": "TripAdvisor listing - 1350 South Park Victoria Drive #43, structured per-day hours (Tue 08:00-20:00), geo",
+            "url": "https://www.tripadvisor.ca/Restaurant_Review-g32717-d34198009-Reviews-Los_Jefes_Taqueria-Milpitas_California.html"
+          },
+          {
+            "label": "Wanderlog - same address, Tuesday 7:30AM-9PM (third value)",
+            "url": "https://wanderlog.com/place/details/14169569/los-jefes-taqueria"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/los-jefes-taqueria-milpitas",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Los+Jefes+Taqueria+1350+S+Park+Victoria+Dr+Milpitas"
+      },
+      "flags": [
+        "THREE-WAY HOURS CONFLICT for Tuesday (8:00 AM-10:00 PM on Yelp, 7:30 AM-9:00 PM on Wanderlog, 8:00 AM-8:00 PM on TripAdvisor). All three are printed; the Yelp value is used for the Tuesday field because it is the most recently updated (2 months ago) and the other two agree it is open Tuesday.",
+        "No published lunch special; the ~$6 bean-and-cheese burrito figure is a listing-site claim and is not printed as a price."
+      ],
+      "id": "L544",
+      "added_in": "batch11a_milpitas.json",
+      "distance_mi": 11.22
+    },
+    {
+      "name": "Chuan Xiang Spicy Cuisine (川湘阁)",
+      "city": "Newark",
+      "area": "Mowry Ave",
+      "address": "6092 Mowry Ave, Newark, CA 94560",
+      "coords": [
+        37.52399,
+        -122.0080432
+      ],
+      "coords_source": "official site JSON-LD",
+      "cuisine": "Szechuan / Hunan Chinese",
+      "phone": "(510) 998-0888",
+      "lunch_special": {
+        "name": "Weekday lunch service block (11:00 AM - 2:30 PM) - a Yelp reviewer cites 'Good lunch special. Good price. 4 dishes and soup'; no published lunch price",
+        "price_from": null,
+        "price_to": null,
+        "days": "Monday-Friday",
+        "window": "11:00 AM - 2:30 PM (dinner block from 4:30 PM)",
+        "includes": "Szechuan/Hunan menu; the lunch block is a distinct service period on the restaurant's own ordering site and on Yelp."
+      },
+      "hours_tuesday": "11:00 AM - 2:30 PM and 4:30 PM - 9:30 PM",
+      "days_open": "Mon-Thu 11:00-14:30 and 16:30-21:30; Fri 11:00-14:30 and 16:30-24:00; Sat 11:30-24:00; Sun 11:30-21:30 (restaurant's own ordering site, matched by Yelp and Beyondmenu)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "~14 mi from 20387 Gillick Way: far outside the 11:50 AM departure / 3:30 PM home deadline."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {
+            "label": "Chuan Xiang Spicy Cuisine official ordering site - 6092 Mowry Ave, Newark; takeout hours Mon-Thu 11:00 am-2:30 pm and 4:30 pm-9:30 pm, Fri to midnight, Sat-Sun blocks; geo",
+            "url": "https://www.chuanxiangspicycuisine.com/"
+          },
+          {
+            "label": "Yelp business page - 6092 Mowry Ave, same weekly hours, and the reviewer line 'Good lunch special. Good price. 4 dishes and soup.'",
+            "url": "https://www.yelp.com/biz/chuan-xiang-spicy-cuisine-newark-2"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/chuan-xiang-spicy-cuisine-newark-2",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Chuan+Xiang+Spicy+Cuisine+6092+Mowry+Ave+Newark"
+      },
+      "flags": [
+        "The existence of a lunch special rests on one Yelp review; the restaurant's own site shows a weekday 11:00 AM-2:30 PM service block but publishes no lunch price. No price is printed.",
+        "The restaurant's own structured data on the ordering sub-page prints a slightly different Friday/Saturday close (23:59:59) than the takeout-hours block on its homepage (midnight). Both are printed."
+      ],
+      "id": "L545",
+      "added_in": "batch11b_fremont_newark.json",
+      "distance_mi": 14.64
+    },
+    {
+      "name": "Dosa Express",
+      "city": "Fremont",
+      "area": "Thornton Ave",
+      "address": "3625 Thornton Ave, Fremont, CA 94536",
+      "coords": [
+        37.563137,
+        -122.0101418
+      ],
+      "coords_source": "Restaurant Guru listing geo",
+      "cuisine": "South Indian vegetarian (dosa, idli, thali)",
+      "phone": "(510) 275-5676",
+      "lunch_special": {
+        "name": "$8.45 Mega Combo (Masala Dosa, Idli, Medu Vada, Sambar, 3 chutneys) - written in the business's own Yelp 'Specialties' blurb",
+        "price_from": 8.45,
+        "price_to": 8.45,
+        "days": "not stated; the room is CLOSED TUESDAY in any case",
+        "window": "served during the 8:00 AM-2:30 PM block per the hours on the business page",
+        "includes": "Masala Dosa, Idli, Medu Vada, Sambar and 3 chutneys. Regular menu prices from the Yelp menu module: Masala Dosa $14.75, Ghee Butter Masala Dosa $12.99, Onion Masala Dosa $12.99, Kids Cone Dosa $9.99."
+      },
+      "hours_tuesday": "CLOSED on Tuesday (Yelp business page and Restaurant Guru both show Tuesday Closed)",
+      "days_open": "Mon 8:00-14:30 and 17:30-21:00; Tue closed; Wed-Thu 8:00-14:30 and 17:30-21:00; Fri-Sat 8:00-14:30 and 17:30-21:30; Sun 8:00-14:30 and 17:30-21:30 (Yelp business page structured hours)",
+      "open_on_trip_date": false,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "CLOSED TUESDAYS - out for 2026-09-08 - and ~14 mi from the destination besides."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {
+            "label": "Yelp business page - Dosa Express, 3625 Thornton Ave: Tuesday Closed, daily 8:00 am-2:30 pm / 5:30 pm-9:00-9:30 pm, and the business-written Specialties blurb naming the $8.45 Mega Combo",
+            "url": "https://www.yelp.com/biz/dosa-express-fremont-4"
+          },
+          {
+            "label": "Fremont Restaurant Week page for Dosa Express - Dosa Combo $14.99 and Hot Thali Meal $18.99, 'Availability: Fremont Location Only! 8am to 230pm, 530pm to 9pm'",
+            "url": "https://www.fremontrestaurantweek.com/dosa-express.html"
+          },
+          {
+            "label": "Restaurant Guru - 3625 Thornton Ave, Tuesday Closed, $10-$20 per person range, geo",
+            "url": "https://restaurantguru.com/Dosa-Express-Sri-Annapoorna-Bhavan-Fremont"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/dosa-express-fremont-4",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Dosa+Express+3625+Thornton+Ave+Fremont"
+      },
+      "flags": [
+        "CLOSED ON TUESDAY per both sources that publish per-day hours - the trip date 2026-09-08 is a Tuesday, so open_on_trip_date is false.",
+        "TWO DIFFERENT PRICES: the business's own Yelp Specialties blurb prices its Mega Combo at $8.45, while the Fremont Restaurant Week page lists a Dosa Combo at $14.99 and a Hot Thali Meal at $18.99 for the same address. Both are printed; they may be different combos, and the lower figure is used as price_from because it is the business's own wording.",
+        "Fremont Restaurant Week is an event page with no date range on the restaurant's own sub-page - the event price is not assumed to be available on 2026-09-08.",
+        "ADDRESS/NAME VARIANT: Restaurant Guru lists the same phone under 'Dosa-i-x'press, 3625 Thornton Ave'; Yelp also carries a 'DOSA EXPRESS / Sri Annapoorna Bhavan' duplicate page for the same street address."
+      ],
+      "id": "L546",
+      "added_in": "batch11b_fremont_newark.json",
+      "distance_mi": 17.33
+    },
+    {
+      "name": "Zaitoon Restaurant",
+      "city": "Fremont",
+      "area": "Paseo Padre Pkwy",
+      "address": "39006 Paseo Padre Pkwy, Fremont, CA 94538",
+      "cuisine": "South Indian, non-vegetarian, halal",
+      "phone": "(510) 260-0088",
+      "lunch_special": {
+        "name": "Weekday lunch service / thali - no lunch-only price published on the business's own menu",
+        "price_from": null,
+        "price_to": null,
+        "days": "Mon, Wed, Thu, Fri (CLOSED TUESDAY)",
+        "window": "11:30 AM - 2:30 PM",
+        "includes": "Menu prices from the Yelp menu module: Madurai Parotta Salna $14.50, Chicken 65 Biryani $19.35, Chicken Thali $20.55, Mutton Thali $21.80, Mutton Biryani $21.80. The Fremont Restaurant Week page prices Chicken 65 Biryani at $11.99 for the event."
+      },
+      "hours_tuesday": "CLOSED on Tuesday (Yelp business page and Wanderlog both show Tuesday Closed)",
+      "days_open": "Mon 11:30-14:30 and 17:30-21:30; Tue closed; Wed-Thu 11:30-14:30 and 17:30-21:30; Fri 11:30-14:30 and 17:30-22:00; Sat 11:30-22:00; Sun 11:30-21:30 (Yelp business page)",
+      "open_on_trip_date": false,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "CLOSED TUESDAYS - out for 2026-09-08 - and ~14 mi from the destination besides."
+      },
+      "verification": {
+        "level": "conflicting",
+        "sources": [
+          {
+            "label": "Yelp business page - Zaitoon Restaurant, 39006 Paseo Padre Pkwy: Tuesday Closed, Mon 11:30 am-2:30 pm / 5:30 pm-9:30 pm, menu prices (Chicken Thali $20.55, Chicken 65 Biryani $19.35)",
+            "url": "https://www.yelp.com/biz/zaitoon-restaurant-fremont"
+          },
+          {
+            "label": "Wanderlog - 39006 Paseo Padre Pkwy, Tuesday Closed, but a 4:30 PM (not 5:30 PM) afternoon opening on Mon/Fri/Sat",
+            "url": "https://wanderlog.com/place/details/14299316/zaitoon-south-indian-non-vegetarian-restaurant-halal"
+          },
+          {
+            "label": "Roadtrippers listing - 39006 Paseo Padre Pkwy, a fourth set of daily hours (Mon 11:30 am-9:30 pm, Wed 11:30 am-10:30 pm)",
+            "url": "https://maps.roadtrippers.com/us/fremont-ca/food-drink/zaitoon-restaurant-fremont"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/zaitoon-restaurant-fremont",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Zaitoon+Restaurant+39006+Paseo+Padre+Pkwy+Fremont"
+      },
+      "flags": [
+        "CLOSED ON TUESDAY per the two sources that publish per-day hours; the trip date 2026-09-08 is a Tuesday, so open_on_trip_date is false.",
+        "HOURS CONFLICT: Yelp says the afternoon block opens 5:30 PM, Wanderlog says 4:30 PM, and Roadtrippers prints a third and fourth variant. All are printed; the Yelp per-day table is used because it is the claimed business page.",
+        "The $11.99 Chicken 65 Biryani is Fremont Restaurant Week event pricing, not a standing menu price, so it is not printed in the price column."
+      ],
+      "id": "L547",
+      "coords": null,
+      "added_in": "batch11b_fremont_newark.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Papasan Rolls & Bowls Revolving Sushi",
+      "city": "Fremont",
+      "area": "Walnut Ave",
+      "address": "3353 Walnut Ave, Fremont, CA 94538",
+      "cuisine": "Japanese revolving sushi",
+      "phone": "(510) 795-8638",
+      "lunch_special": {
+        "name": "Weekday lunch service block (11:30 AM - 2:30 PM); Fremont Restaurant Week priced plates at $3.99 during the event",
+        "price_from": null,
+        "price_to": null,
+        "days": "Tuesday-Sunday (CLOSED MONDAY)",
+        "window": "11:30 AM - 2:30 PM",
+        "includes": "Revolving-sushi service. The $3.99-per-plate figure comes from the Fremont Restaurant Week listing, i.e. event pricing with no published date range, so it is not printed in the price column."
+      },
+      "hours_tuesday": "11:30 AM - 2:30 PM and 5:30 PM - 8:30 PM",
+      "days_open": "Mon closed; Tue-Thu 11:30-14:30 and 17:30-20:30; Fri-Sat 11:30-14:30 and 17:30-21:00; Sun 11:30-14:30 and 17:30-20:30 (Yelp business page, corroborated by Roadtrippers)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "~14 mi from 20387 Gillick Way: far outside the 11:50 AM departure / 3:30 PM home deadline."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {
+            "label": "Yelp business page - Papasan Rolls & Bowls Revolving Sushi, 3353 Walnut Ave: Mon Closed, Tue-Thu 11:30 am-2:30 pm and 5:30 pm-8:30 pm, Fri-Sat to 9:00 pm, Sun to 8:30 pm; papasan883.com",
+            "url": "https://www.yelp.com/biz/papasan-rolls-and-bowls-revolving-sushi-fremont-2"
+          },
+          {
+            "label": "Roadtrippers listing - 3353 Walnut Ave, same weekday blocks, cross-check",
+            "url": "https://maps.roadtrippers.com/us/fremont-ca/food-drink/papasan-rolls-bowls-revolving-sushi"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/papasan-rolls-and-bowls-revolving-sushi-fremont-2",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Papasan+Rolls+and+Bowls+3353+Walnut+Ave+Fremont"
+      },
+      "flags": [
+        "The $3.99-per-plate figure reported for this restaurant comes from the Fremont Restaurant Week 2025 line-up in the Mercury News, i.e. event pricing with no published date range; it is not a standing lunch price and is not printed.",
+        "CLOSED MONDAYS - irrelevant to a Tuesday trip but recorded for completeness."
+      ],
+      "id": "L548",
+      "coords": null,
+      "added_in": "batch11b_fremont_newark.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Saki's Spin A Yarn Restaurant",
+      "city": "Fremont",
+      "area": "Warm Springs Blvd",
+      "address": "45915 Warm Springs Blvd, Fremont, CA 94539",
+      "coords": [
+        37.4951359,
+        -121.9336795
+      ],
+      "coords_source": "Restaurant Guru listing geo",
+      "cuisine": "Steakhouse / seafood",
+      "phone": "(510) 656-9141",
+      "lunch_special": {
+        "name": "Fremont Restaurant Week lunch special - 20% off all food items (event pricing)",
+        "price_from": null,
+        "price_to": null,
+        "days": "event days only; the room serves lunch Monday-Saturday",
+        "window": "opens 11:00 AM",
+        "includes": "The Mercury News Fremont Restaurant Week line-up lists 'Spin A Yarn: Lunch special, 20% off all food items.' No dollar price, and the event has no published date range, so no price is printed."
+      },
+      "hours_tuesday": "11:00 AM - 9:00 PM (Yelp) / 11:00 AM - 10:00 PM (Restaurant Guru and Waze) - see flag",
+      "days_open": "Yelp: Mon-Thu 11:00 am-9:00 pm, Fri-Sat 11:00 am-11:00 pm, Sun closed. Restaurant Guru/Waze: Mon-Sat 11:00-22:00, Sun closed.",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "~13 mi from 20387 Gillick Way: far outside the 11:50 AM departure / 3:30 PM home deadline."
+      },
+      "verification": {
+        "level": "conflicting",
+        "sources": [
+          {
+            "label": "Yelp business page - Saki's Spin A Yarn Restaurant, 45915 Warm Springs Blvd: Mon-Thu 11:00 am-9:00 pm, Fri-Sat 11:00 am-11:00 pm, Sun closed",
+            "url": "https://www.yelp.com/biz/sakis-spin-a-yarn-restaurant-fremont"
+          },
+          {
+            "label": "Restaurant Guru - 45915 Warm Springs Blvd, Mon-Sat 11AM-10PM, Sun closed, $50-$100 per person range, geo",
+            "url": "https://restaurantguru.com/Spin-A-Yarn-Steakhouse-San-Jose"
+          },
+          {
+            "label": "Waze listing - 45915 Warm Springs Blvd, structured Mon-Sat 11:00-22:00 hours (third variant)",
+            "url": "https://www.waze.com/live-map/directions/spin-a-yarn-steakhouse-warm-springs-blvd-45915-fremont?to=place.w.156041591.1560219302.847466"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/sakis-spin-a-yarn-restaurant-fremont",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Spin+A+Yarn+45915+Warm+Springs+Blvd+Fremont"
+      },
+      "flags": [
+        "THREE-WAY CLOSING-TIME CONFLICT (9:00 PM on Yelp vs 10:00 PM on Restaurant Guru/Waze vs 11:00 PM for Fri-Sat on Yelp). All are printed; nothing averaged. All three agree the restaurant is open Tuesday lunch and closed Sunday.",
+        "The '20% off all food items' lunch figure is Fremont Restaurant Week event pricing with no date range, so no dollar price is printed."
+      ],
+      "id": "L549",
+      "added_in": "batch11b_fremont_newark.json",
+      "distance_mi": 13.66
+    },
+    {
+      "name": "Massimo's",
+      "city": "Fremont",
+      "area": "Mowry Ave (Los Arboles Shopping Center)",
+      "address": "5200 Mowry Ave Ste M, Fremont, CA 94538",
+      "coords": [
+        37.5335162,
+        -121.999071
+      ],
+      "coords_source": "OpenTable listing geo",
+      "cuisine": "Italian / American",
+      "phone": "(510) 792-2000",
+      "lunch_special": {
+        "name": "Weekday lunch service (11:30 AM - 3:00 PM) per KQED and a 2014 East Bay Times column - but current listing pages show dinner only",
+        "price_from": null,
+        "price_to": null,
+        "days": "Tuesday-Friday per the lunch-serving sources; see flag",
+        "window": "11:30 AM - 3:00 PM per KQED; 11:00 AM - 3:00 PM per the 2014 East Bay Times column",
+        "includes": "No lunch menu price was published on any page retrieved. OpenTable and Restaurant Guru show only dinner hours."
+      },
+      "hours_tuesday": "5:00 PM - 9:00 PM dinner only (OpenTable, TripAdvisor, Restaurant Guru) vs 11:30 AM - 3:00 PM lunch plus 5:00 PM - 9:30 PM dinner (KQED) - see flag",
+      "days_open": "OpenTable: dinner Tue-Thu 5:00 pm-9:00 pm, Fri-Sat 5:00 pm-9:30 pm. TripAdvisor: Tue-Thu 5-9 PM, Fri-Sat 5-9:30 PM, Sun-Mon closed. Restaurant Guru: Tue-Thu 5PM-8:30PM, Fri-Sat 5PM-9:30PM. KQED: Mon dinner only; Tue-Fri lunch 11:30am-3:00pm plus dinner; Sat dinner only (private luncheons); Sun closed.",
+      "open_on_trip_date": false,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "~14 mi from 20387 Gillick Way, and the current listing hours show no lunch service at all - out either way."
+      },
+      "verification": {
+        "level": "conflicting",
+        "sources": [
+          {
+            "label": "OpenTable - Massimo's Fremont, 5200 Mowry Avenue Suite M: 'Hours of operation Fri, Sat 5:00 pm-9:30 pm Dinner Tue-Thu 5:00 pm-9:00 pm' - no lunch listed",
+            "url": "https://www.opentable.com/r/massimos-fremont"
+          },
+          {
+            "label": "KQED Check, Please! restaurant page - 'Tuesday 11:30am-3:00pm (lunch), 5:00pm-9:30pm (dinner)' through Friday; Saturday dinner only; Sunday closed",
+            "url": "https://www.kqed.org/checkplease/10885/massimos-restaurant-info"
+          },
+          {
+            "label": "TripAdvisor listing - 5200 Mowry Ave Suite M, structured Tue 17:00-21:00 ... Sat 17:00-21:30, geo",
+            "url": "https://www.tripadvisor.com/Restaurant_Review-g32411-d608424-Reviews-Massimo_s-Fremont_California.html"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/search?find_desc=Massimo%27s&find_loc=Fremont%2C+CA",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Massimo%27s+5200+Mowry+Ave+Fremont"
+      },
+      "flags": [
+        "MATERIAL CONFLICT - LUNCH MAY NOT EXIST ANY MORE: three current listing sources (OpenTable, TripAdvisor, Restaurant Guru) show dinner-only hours for Tuesday, while KQED's restaurant page and a 2014 East Bay Times column describe a Tue-Fri lunch service. The current-reading is used (open_on_trip_date false), both readings are printed, and the row is levelled 'conflicting'.",
+        "No lunch price is published anywhere, so the price column stays blank even if the lunch service still runs.",
+        "This restaurant is a Fremont Restaurant Week participant, but the event line-up quotes only a prix-fixe dinner."
+      ],
+      "id": "L550",
+      "added_in": "batch11b_fremont_newark.json",
+      "distance_mi": 15.34
+    },
+    {
+      "name": "Cantaritos Restaurant & Bar",
+      "city": "Fremont",
+      "area": "Washington Blvd",
+      "address": "1530 Washington Blvd, Fremont, CA 94539",
+      "coords": [
+        37.530848,
+        -121.93645
+      ],
+      "coords_source": "official site JSON-LD",
+      "cuisine": "Mexican",
+      "phone": "(510) 770-9661",
+      "lunch_special": {
+        "name": "No lunch special published - open through lunch from 11:00 AM Tuesday-Saturday",
+        "price_from": null,
+        "price_to": null,
+        "days": "Tuesday-Saturday (the official site lists no Sunday)",
+        "window": "opens 11:00 AM",
+        "includes": "Fremont Restaurant Week lists Chile Colorado, Chicken Caesar and Carne en su jugo as this restaurant's event dishes; no dollar price was published and those are event, not standing, items."
+      },
+      "hours_tuesday": "11:00 AM - 9:00 PM",
+      "days_open": "Mon-Thu 11:00-21:00, Fri-Sat 11:00-21:30 (official site structured hours; no Sunday listed)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "~14 mi from 20387 Gillick Way: far outside the 11:50 AM departure / 3:30 PM home deadline."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {
+            "label": "Cantaritos Restaurant & Bar official contact page - 1530 Washington Blvd, Fremont 94539, structured hours Mo-Th 11:00-21:00 and Fr-Sa 11:00-21:30, phone, geo",
+            "url": "https://www.cantaritosrestaurantandbar.com/contact-us"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/search?find_desc=Cantaritos&find_loc=Fremont%2C+CA",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Cantaritos+Restaurant+1530+Washington+Blvd+Fremont"
+      },
+      "flags": [
+        "The official site's structured hours list Monday-Saturday with no Sunday entry; a Sunday visit is unverified rather than stated as closed.",
+        "No lunch-only pricing is published, so the price column is blank."
+      ],
+      "id": "L551",
+      "added_in": "batch11b_fremont_newark.json",
+      "distance_mi": 15.91
+    },
+    {
+      "name": "El Patio Original",
+      "city": "Fremont",
+      "area": "Fremont Blvd",
+      "address": "37311 Fremont Blvd, Fremont, CA 94536",
+      "coords": [
+        37.558044,
+        -122.0074
+      ],
+      "coords_source": "TripAdvisor listing geo",
+      "cuisine": "Mexican",
+      "phone": "(510) 796-1733",
+      "lunch_special": {
+        "name": "No lunch special published - open from 9:00 AM through the lunch block; the site advertises happy-hour food and drink specials",
+        "price_from": null,
+        "price_to": null,
+        "days": "daily",
+        "window": "opens 9:00 AM (10:30 AM per TripAdvisor - see flag)",
+        "includes": "Own site: full bar, happy hour 'with great food and drink specials', catering. No lunch-only price published."
+      },
+      "hours_tuesday": "9:00 AM - 9:00 PM (own site) / 9:00 AM - 8:00 PM (Zmenu) / 10:30 AM - 9:00 PM (TripAdvisor) - see flag",
+      "days_open": "Own site: Mon-Thu 9am-9pm, Fri-Sat 9am-10pm, Sun 9am-8pm. Zmenu: Mon-Thu 9-8, Fri-Sat 9-9, Sun 9-8. TripAdvisor: Sun-Thu 10:30 am-9:00 pm, Fri-Sat 10:30 am-11:00 pm. Findglocal: Tue-Wed 10:30-19:00, Thu-Sat 10:00-19:00.",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "~14 mi from 20387 Gillick Way: far outside the 11:50 AM departure / 3:30 PM home deadline."
+      },
+      "verification": {
+        "level": "conflicting",
+        "sources": [
+          {
+            "label": "El Patio Original official site - 37311 Fremont Blvd, Mon-Thu 9am-9pm, Fri-Sat 9am-10pm, Sun 9am-8pm, happy-hour note",
+            "url": "https://www.elpatiofremont.com/"
+          },
+          {
+            "label": "Zmenu - 37311 Fremont Blvd, Mon-Thu 9:00am-8:00pm, Fri-Sat 9:00am-9:00pm, Sun 9:00am-8:00pm",
+            "url": "https://www.zmenu.com/el-patio-original-online-menu/"
+          },
+          {
+            "label": "TripAdvisor - 37311 Fremont Blvd, structured Sun-Thu 10:30-21:00, Fri-Sat 10:30-23:00, geo",
+            "url": "https://www.tripadvisor.com/Restaurant_Review-g32411-d3247938-Reviews-El_Patio-Fremont_California.html"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/search?find_desc=El+Patio+Original&find_loc=Fremont%2C+CA",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=El+Patio+Original+37311+Fremont+Blvd+Fremont"
+      },
+      "flags": [
+        "FOUR SOURCES, FOUR DIFFERENT TUESDAY CLOSING TIMES (9:00 PM own site, 8:00 PM Zmenu, 9:00 PM TripAdvisor from a 10:30 AM opening, 7:00 PM Findglocal) and two different opening times (9:00 AM vs 10:30 AM). All are printed; nothing averaged.",
+        "No lunch-only pricing is published, so the price column is blank."
+      ],
+      "id": "L552",
+      "added_in": "batch11b_fremont_newark.json",
+      "distance_mi": 16.98
+    },
+    {
+      "name": "Chungdam",
+      "city": "Santa Clara",
+      "area": "El Camino Real",
+      "address": "3180 El Camino Real, Santa Clara, CA 95051",
+      "coords": [
+        37.3541079,
+        -121.9552356
+      ],
+      "coords_source": "Zmenu listing geo",
+      "cuisine": "Korean BBQ",
+      "phone": "(408) 246-1208",
+      "lunch_special": {
+        "name": "Lunch BBQ combos - Lunch BBQ For Two $60, Lunch BBQ For Three $99",
+        "price_from": 60.0,
+        "price_to": 99.0,
+        "days": "weekday lunch service (Yelp lists the 11:30 AM-2:30 PM block every day)",
+        "window": "11:30 AM - 2:15 PM (the restaurant's own lunch-menu page states 'lunch specials from 11:30am to 2:15pm')",
+        "includes": "Lunch BBQ For Two $60 - 8 oz marinated short rib / lightly marinated short rib / prime unmarinated short rib (+$35 options listed). Lunch BBQ For Three $99 - 16 oz of the same cuts. All side dishes and rice included. 'No substitutions allowed for Lunch Combos.'"
+      },
+      "hours_tuesday": "11:30 AM - 2:30 PM and 5:00 PM - 9:00 PM",
+      "days_open": "Mon-Thu 11:30-14:30 and 17:00-21:00; Fri-Sat 11:30-14:30 and 17:00-22:00 (Yelp business page; Zmenu gives a 9:30 PM close Mon-Fri)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": true,
+        "note": "Santa Clara is ~4 mi from 20387 Gillick Way and the lunch block opens 11:30 AM, so a 12:06 PM or 12:36 PM bus still leaves a seated lunch. The 11:50 AM departure would cut lunch to under 20 minutes."
+      },
+      "verification": {
+        "level": "official",
+        "sources": [
+          {
+            "label": "Chungdam official lunch-menu page - 'lunch specials from 11:30am to 2:15pm', Lunch BBQ For Two $60, Lunch BBQ For Three $99, no substitutions",
+            "url": "https://chungdamsv.com/lunch-menu"
+          },
+          {
+            "label": "Yelp business page - Chungdam, 3180 El Camino Real: Tue 11:30 am-2:30 pm and 5:00 pm-9:00 pm, chungdamsv.com, phone",
+            "url": "https://www.yelp.com/biz/chungdam-santa-clara-6"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/chungdam-santa-clara-6",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Chungdam+3180+El+Camino+Real+Santa+Clara"
+      },
+      "flags": [
+        "Prices are per combo for two / three people, not per head - a solo diner cannot order them.",
+        "The restaurant's own lunch page says the specials run to 2:15 PM while Yelp prints the lunch block to 2:30 PM; both are printed."
+      ],
+      "id": "L553",
+      "added_in": "batch11c_santaclara_sanjose.json",
+      "distance_mi": 5.01
+    },
+    {
+      "name": "Kunjip",
+      "city": "Santa Clara",
+      "area": "Kiely Blvd",
+      "address": "1066 Kiely Blvd, Santa Clara, CA 95051",
+      "coords": [
+        37.3457881,
+        -121.9787694
+      ],
+      "coords_source": "Restaurant Guru listing geo",
+      "cuisine": "Korean (soyook, naengmyun, galbijjim)",
+      "phone": "(408) 246-0025",
+      "lunch_special": {
+        "name": "No lunch special published - open from 10:00 AM with the full menu all day",
+        "price_from": null,
+        "price_to": null,
+        "days": "daily",
+        "window": "opens 10:00 AM",
+        "includes": "Menu prices captured from the business's own online-ordering storefront: Guk Bap $23.00, Bibim Naengmyun $24.00, Hwe Naengmyun $28.00, Modeum Sooyook $65.00, Dogani Sooyook $60.00, Kimchi $4.00. These are regular prices, not a lunch deal."
+      },
+      "hours_tuesday": "10:00 AM - 9:00 PM",
+      "days_open": "Mon-Thu and Sun 10:00-21:00; Fri-Sat 10:00-22:00 (Yelp business page, matched by Restaurantji and Restaurant Guru)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": true,
+        "note": "~4 mi from 20387 Gillick Way and open from 10:00 AM, so the 11:50 AM departure is achievable if the food is quick."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {
+            "label": "Kunjip online ordering storefront - 1066 Kiely Blvd, online ordering hours 10:00 AM-8:45 PM, item prices (Guk Bap $23, Bibim Naengmyun $24, Hwe Naengmyun $28)",
+            "url": "https://order.online/store/kunjip-santa-clara-29034336"
+          },
+          {
+            "label": "Yelp business page - Kunjip, 1066 Kiely Blvd: Mon-Thu 10:00 am-9:00 pm, Fri-Sat 10:00 am-10:00 pm, Sun 10:00 am-9:00 pm",
+            "url": "https://www.yelp.com/biz/kunjip-restaurant-santa-clara-2"
+          },
+          {
+            "label": "Restaurant Guru - 1066 Kiely Blvd, same weekly hours, $20-$30 per person range, geo",
+            "url": "https://restaurantguru.com/Kunjip-Santa-Clara"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/kunjip-restaurant-santa-clara-2",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Kunjip+1066+Kiely+Blvd+Santa+Clara"
+      },
+      "flags": [
+        "TripAdvisor's structured data for this address says the restaurant is open Monday and Tuesday only and closed Wednesday-Sunday, which contradicts Yelp, Restaurantji and Restaurant Guru. The outlier is printed here, not used.",
+        "No lunch-only pricing is published, so the price column is blank."
+      ],
+      "id": "L554",
+      "added_in": "batch11c_santaclara_sanjose.json",
+      "distance_mi": 3.63
+    },
+    {
+      "name": "SGD Tofu House",
+      "city": "Santa Clara",
+      "area": "El Camino Real",
+      "address": "3450 El Camino Real Ste 105, Santa Clara, CA 95051",
+      "cuisine": "Korean tofu house / BBQ",
+      "phone": "(408) 261-3030",
+      "lunch_special": {
+        "name": "No lunch special published - open from 11:00 AM with the full menu",
+        "price_from": null,
+        "price_to": null,
+        "days": "Monday-Saturday (CLOSED SUNDAY)",
+        "window": "opens 11:00 AM",
+        "includes": "Yelp menu-photo captions capture two prices: tofu salad appetizer $6 and #27 bibimbob with seafood and vegetables in stoneware $25. Those are regular menu prices, not a lunch deal."
+      },
+      "hours_tuesday": "11:00 AM - 9:00 PM",
+      "days_open": "Mon-Sat 11:00 AM-9:00 PM, Sun closed (Yelp business page)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": true,
+        "note": "~4 mi from 20387 Gillick Way and open from 11:00 AM; workable on either the 11:50 AM or 12:20 PM departure."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {
+            "label": "Yelp business page - SGD Tofu House, 3450 El Camino Real Ste 105: Mon-Sat 11:00 am-9:00 pm, Sun Closed, phone",
+            "url": "https://www.yelp.com/biz/sgd-tofu-house-santa-clara"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/sgd-tofu-house-santa-clara",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=SGD+Tofu+House+3450+El+Camino+Real+Santa+Clara"
+      },
+      "flags": [
+        "SAME BRAND, SECOND ADDRESS: SGD Tofu House also operates at 491 Saratoga Ave, San Jose 95129 with different hours - that room is listed as its own row in this batch, not merged into this one.",
+        "No lunch-only pricing is published, so the price column is blank."
+      ],
+      "id": "L555",
+      "coords": null,
+      "added_in": "batch11c_santaclara_sanjose.json",
+      "distance_mi": null
+    },
+    {
+      "name": "SGD Tofu House - Saratoga Ave",
+      "city": "San Jose",
+      "area": "Saratoga Ave (West San Jose, 95129)",
+      "address": "491 Saratoga Ave, San Jose, CA 95129",
+      "cuisine": "Korean tofu house / BBQ",
+      "phone": "(408) 261-3255",
+      "lunch_special": {
+        "name": "Weekday lunch service block (11:00 AM - 2:00 PM) - no lunch-only price published",
+        "price_from": null,
+        "price_to": null,
+        "days": "Monday-Saturday",
+        "window": "11:00 AM - 2:00 PM (dinner block from 5:00 PM)",
+        "includes": "The business's own menu page prints the daily lunch block; no lunch prices are published on it."
+      },
+      "hours_tuesday": "11:00 AM - 2:00 PM and 5:00 PM - 8:30 PM (own site) / 5:00 PM - 11:30 PM (Yelp) - see flag",
+      "days_open": "Own site: Mon-Sat 11am-2pm and 5:00pm-8:30pm, plus a footer line 'Monday-Saturday L: 11 AM-2 PM D: 5 PM-12 AM; Sunday 12 PM-8 PM'. Yelp: Mon-Sat 11:00 am-2:00 pm and 5:00 pm-11:30 pm, Sun 12:00-2:30 pm and 5:00-9:00 pm.",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": true,
+        "note": "~2 mi from 20387 Gillick Way - one of the closest rows in this batch, and the lunch block opens at 11:00 AM."
+      },
+      "verification": {
+        "level": "conflicting",
+        "sources": [
+          {
+            "label": "SGD Tofu House Saratoga official menu page - 491 Saratoga Avenue, Mon-Sat 11am-2pm and 5:00pm-8:30pm, plus the footer's own second version (L 11 AM-2 PM, D 5 PM-12 AM; Sunday 12 PM-8 PM)",
+            "url": "https://saratogatofuhouse.com/original-menu"
+          },
+          {
+            "label": "Yelp business page - SGD Tofu House, 491 Saratoga Ave: Mon-Sat 11:00 am-2:00 pm and 5:00 pm-11:30 pm, Sun 12:00 pm-2:30 pm and 5:00 pm-9:00 pm",
+            "url": "https://www.yelp.com/biz/sgd-tofu-house-san-jose-3"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/sgd-tofu-house-san-jose-3",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=SGD+Tofu+House+491+Saratoga+Ave+San+Jose"
+      },
+      "flags": [
+        "CONFLICT INSIDE THE RESTAURANT'S OWN PAGE: the hours block says dinner ends 8:30 PM while the footer of the same page says dinner runs to 12 AM; Yelp agrees with the footer (5:00 pm-11:30 pm). All are printed.",
+        "Distinct street address from the Santa Clara room at 3450 El Camino Real - kept as a separate row.",
+        "No lunch-only pricing is published, so the price column is blank."
+      ],
+      "id": "L556",
+      "coords": null,
+      "added_in": "batch11c_santaclara_sanjose.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Korean Spring BBQ",
+      "city": "Santa Clara",
+      "area": "Kiely Blvd (Kiely Plaza)",
+      "address": "1062 Kiely Blvd, Santa Clara, CA 95051",
+      "coords": [
+        37.3457886,
+        -121.978511
+      ],
+      "coords_source": "Checkle listing geo",
+      "cuisine": "Korean charcoal BBQ",
+      "phone": "(408) 985-8808",
+      "lunch_special": {
+        "name": "Weekday lunch service block (11:00 AM - 2:00 PM) - a listing summarises reviewers as praising 'delicious lunch specials'; no published lunch price",
+        "price_from": null,
+        "price_to": null,
+        "days": "Monday-Friday",
+        "window": "11:00 AM - 2:00 PM",
+        "includes": "Charcoal-grilled BBQ, tofu soup and noodle dishes. KQED describes a $200 'Midnight Menu' combo served after 9 PM, which is not a lunch offer and is not printed as a price."
+      },
+      "hours_tuesday": "11:00 AM - 2:00 PM and 5:00 PM - 12:00 AM (next day)",
+      "days_open": "Mon 11:00-14:00 and 17:00-21:00; Tue-Fri 11:00-14:00 and 17:00-24:00; Sat-Sun 11:00-24:00 (Yelp business page, matched by KQED)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": true,
+        "note": "~4 mi from 20387 Gillick Way; the lunch block ends at 2:00 PM so a 12:20 PM departure still works."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {
+            "label": "Yelp business page - Korean Spring BBQ, 1062 Kiely Blvd: Mon 11:00 am-2:00 pm / 5:00 pm-9:00 pm, Tue-Fri 11:00 am-2:00 pm / 5:00 pm-12:00 am, Sat-Sun 11:00 am-12:00 am",
+            "url": "https://www.yelp.com/biz/korean-spring-bbq-santa-clara"
+          },
+          {
+            "label": "KQED - 'Korean Spring BBQ is open Monday 11 a.m.-2 p.m. and 5-9 p.m., Tuesday to Friday 11 a.m.-2 p.m. and 5 p.m.-midnight, Saturday to Sunday 11 a.m.-midnight at 1062 Kiely Blvd'",
+            "url": "https://www.kqed.org/arts/13988444/best-korean-barbecue-santa-clara-charcoal-grill-korean-spring-late-night"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/korean-spring-bbq-santa-clara",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Korean+Spring+BBQ+1062+Kiely+Blvd+Santa+Clara"
+      },
+      "flags": [
+        "A third listing (Checkle) prints 11:00 AM-10:00 PM every day for this address, contradicting both Yelp and KQED. Printed, not used.",
+        "The phrase 'lunch specials' comes from a listing's summary of reviews, not from a published menu; no price is printed."
+      ],
+      "id": "L557",
+      "added_in": "batch11c_santaclara_sanjose.json",
+      "distance_mi": 3.64
+    },
+    {
+      "name": "Shu's Korean Restaurant",
+      "city": "Santa Clara",
+      "area": "El Camino Real (near Central Park)",
+      "address": "3258 El Camino Real, Santa Clara, CA 95051",
+      "coords": [
+        37.352167,
+        -121.9859889
+      ],
+      "coords_source": "official ordering site JSON-LD",
+      "cuisine": "Korean",
+      "phone": "(408) 244-8531",
+      "lunch_special": {
+        "name": "No lunch special published - open from 11:00 AM Tuesday-Sunday",
+        "price_from": null,
+        "price_to": null,
+        "days": "Tuesday-Sunday (CLOSED MONDAY)",
+        "window": "opens 11:00 AM",
+        "includes": "Menu prices captured from the Yelp menu module: Ramen $19.99, Bul Go Gi $30.99, Deep-fried Chicken Wings $28.99, Ssam Bab $49.99. A Yelp photo caption prices 'dweji bulgogi ... $21 total after tax and tip during lunch' - a diner figure, so it is not printed as the row price."
+      },
+      "hours_tuesday": "11:00 AM - 10:00 PM",
+      "days_open": "Mon closed; Tue-Sun 11:00 AM-10:00 PM (own ordering-site structured data, matched by Yelp, Yahoo Local and Restaurant Guru)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": true,
+        "note": "~4 mi from 20387 Gillick Way and open all afternoon; no lunch-window risk."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {
+            "label": "Shu's Korean Restaurant official ordering site - 3258 El Camino Real, structured hours Tue-Sun 11:00-22:00 (Monday 00:00-00:00, i.e. closed), geo, phone",
+            "url": "https://www.shuskoreansantaclara.com/order"
+          },
+          {
+            "label": "Yelp business page - 3258 El Camino Real, Mon Closed, Tue-Sun 11:00 am-10:00 pm, menu prices and the $21 lunch photo caption",
+            "url": "https://www.yelp.com/biz/shus-korean-restaurant-santa-clara"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/shus-korean-restaurant-santa-clara",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Shu%27s+Korean+Restaurant+3258+El+Camino+Real+Santa+Clara"
+      },
+      "flags": [
+        "The only lunch figure found ($21 for dweji bulgogi, after tax and tip) is a diner photo caption, so the price column stays blank."
+      ],
+      "id": "L558",
+      "added_in": "batch11c_santaclara_sanjose.json",
+      "distance_mi": 3.65
+    },
+    {
+      "name": "Great Indian Cuisine",
+      "city": "Santa Clara",
+      "area": "Agnew Rd (Rivermark area)",
+      "address": "2026 Agnew Rd, Santa Clara, CA 95054",
+      "coords": [
+        37.394295,
+        -121.95974
+      ],
+      "coords_source": "Yellowpages listing geo",
+      "cuisine": "North Indian, halal, buffet",
+      "phone": "(408) 654-9894",
+      "lunch_special": {
+        "name": "All-day buffet (a Reddit diner quotes '$18 all day, closed on Sunday') - no price published by the business",
+        "price_from": null,
+        "price_to": null,
+        "days": "Monday-Saturday (CLOSED SUNDAY)",
+        "window": "from the 11:00 AM opening",
+        "includes": "Buffet-style North Indian service; the business's own Yelp blurb describes a 'wide selection of freshly prepared vegetarian and non-vegetarian dishes'. The $18 figure is a diner quote, so it is not printed in the price column."
+      },
+      "hours_tuesday": "11:00 AM - 10:00 PM (Yelp) / 11:00 AM - 8:30 PM (Zmenu) / 10:00 AM - 10:00 PM (Yellowpages) - see flag",
+      "days_open": "Yelp: Mon-Sat 11:00 am-10:00 pm, Sun closed. Zmenu: Mon-Sat 11:00am-8:30pm, Sun closed. Yellowpages: Mon-Sun 10:00 am-10:00 pm.",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "~7 mi north of 20387 Gillick Way in the Rivermark area: a bus there and back does not fit inside the 11:50 AM departure and 3:30 PM home deadline."
+      },
+      "verification": {
+        "level": "conflicting",
+        "sources": [
+          {
+            "label": "Yelp business page - Great Indian Cuisine, 2026 Agnew Rd: Mon-Sat 11:00 am-10:00 pm, Sun Closed, business blurb",
+            "url": "https://www.yelp.com/biz/great-indian-cuisine-santa-clara"
+          },
+          {
+            "label": "Zmenu - 2026 Agnew Rd, Mon-Sat 11:00am-8:30pm, Sun Closed",
+            "url": "https://www.zmenu.com/great-indian-cuisine-santa-clara-online-menu/"
+          },
+          {
+            "label": "Yellowpages - 2026 Agnew Rd, Mon-Sun 10:00 am-10:00 pm (third value), geo",
+            "url": "https://www.yellowpages.com/santa-clara-ca/mip/great-indian-cuisine-473938836"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/great-indian-cuisine-santa-clara",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Great+Indian+Cuisine+2026+Agnew+Rd+Santa+Clara"
+      },
+      "flags": [
+        "THREE-WAY HOURS CONFLICT including a Sunday disagreement (Yelp and Zmenu say closed Sunday, Yellowpages says open). All three are printed.",
+        "The $18 buffet figure is a Reddit diner quote from a 2026 thread, not a published menu price, so it is described in the row but not printed as the price."
+      ],
+      "id": "L559",
+      "added_in": "batch11c_santaclara_sanjose.json",
+      "distance_mi": 6.83
+    },
+    {
+      "name": "Goku Korean BBQ and Hot Pot",
+      "city": "San Jose",
+      "area": "Meridian Ave (Cambrian Park)",
+      "address": "3085 Meridian Ave, San Jose, CA 95124",
+      "coords": [
+        37.26929,
+        -121.9067
+      ],
+      "coords_source": "Postmates/UberEats storefront geo",
+      "cuisine": "Korean BBQ and hot pot, AYCE",
+      "phone": "(408) 784-3228",
+      "lunch_special": {
+        "name": "Weekday AYCE lunch special - Reddit diners quote $19.99; no price is published by the business",
+        "price_from": null,
+        "price_to": null,
+        "days": "weekdays",
+        "window": "from the 11:00 AM opening",
+        "includes": "AYCE Korean BBQ and hot pot. The Yelp Q&A answer dated September 2024 gives only dinner pricing ('$31.99 per person for either Hot Pot or KBBQ + $5 per person if you want both'). Both figures are diner quotes, so the price column stays blank."
+      },
+      "hours_tuesday": "11:00 AM - 10:00 PM (Yelp) / 11:00 AM - 8:30 PM (delivery storefront) - see flag",
+      "days_open": "Yelp: Mon-Thu and Sun 11:00 am-10:00 pm, Fri-Sat 11:00 am-10:00 pm. Zmenu: Mon-Thu/Sun 11:00am-9:00pm, Fri-Sat 11:00am-10:00pm. Delivery storefront: Sun-Thu 11:00-20:30, Fri-Sat 11:00-21:30.",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "~7 mi south of 20387 Gillick Way in Cambrian Park: a there-and-back bus trip does not fit the 11:50 AM departure and 3:30 PM home deadline."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {
+            "label": "Yelp business page - Goku Korean BBQ and Hot Pot, 3085 Meridian Ave: daily 11:00 am-10:00 pm, gokusanjose.com, and the Sept-2024 Q&A answer on per-person pricing",
+            "url": "https://www.yelp.com/biz/goku-korean-bbq-and-hot-pot-san-jose-3"
+          },
+          {
+            "label": "Zmenu - 3085 Meridian Ave, Mon-Thu/Sun 11:00am-9:00pm, Fri-Sat 11:00am-10:00pm",
+            "url": "https://www.zmenu.com/goku-hotpot-korean-bbq-san-jose-online-menu/"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/goku-korean-bbq-and-hot-pot-san-jose-3",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Goku+Korean+BBQ+3085+Meridian+Ave+San+Jose"
+      },
+      "flags": [
+        "HOURS CONFLICT: Yelp says 10:00 PM nightly, Zmenu says 9:00 PM on Sun-Thu, and the delivery storefront says 8:30 PM. All printed.",
+        "Every price found for this restaurant is a diner quote (Reddit $19.99 weekday lunch, Yelp Q&A $31.99 dinner), so none is printed in the price column."
+      ],
+      "id": "L560",
+      "added_in": "batch11c_santaclara_sanjose.json",
+      "distance_mi": 7.43
+    },
+    {
+      "name": "Punjab Cafe",
+      "city": "San Jose",
+      "area": "Downtown San Jose (E Santa Clara St)",
+      "address": "322-324 E Santa Clara St, San Jose, CA 95113",
+      "coords": [
+        37.3392286,
+        -121.8836339
+      ],
+      "coords_source": "Restaurant Guru listing geo",
+      "cuisine": "Indian / Punjabi",
+      "phone": "(408) 295-5470",
+      "lunch_special": {
+        "name": "AYCE lunch buffet - but the buffet is a Friday/Saturday offer, so there is no Tuesday buffet",
+        "price_from": null,
+        "price_to": null,
+        "days": "buffet Friday and Saturday per the Yelp Q&A; the restaurant is open for lunch Tuesday",
+        "window": "11:30 AM - 2:30 PM lunch block on Tuesday",
+        "includes": "The most recent buffet price found is a Reddit diner quote ('Thursday-Sunday ... $20.88 AFTER tax'), which conflicts with the Yelp Q&A answer that says Friday and Saturday. No price is published by the business, so the price column is blank."
+      },
+      "hours_tuesday": "11:30 AM - 2:30 PM and 5:00 PM - 9:00 PM (most recent Yelp snapshot) / 11:30 AM - 9:30 PM (earlier snapshots) - see flag",
+      "days_open": "Most recent Yelp: Mon-Tue 11:30-14:30 and 17:00-21:00; Wed-Fri 11:30-21:30; Sat-Sun 12:00-21:30. Earlier Yelp snapshots show Tue 11:30 am-9:30 pm. Restaurant Guru matches the most recent Yelp table.",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Downtown San Jose is ~11 mi from 20387 Gillick Way: outside the 11:50 AM departure / 3:30 PM home deadline."
+      },
+      "verification": {
+        "level": "conflicting",
+        "sources": [
+          {
+            "label": "Yelp business page - Punjab Cafe, 322-324 E Santa Clara St: most recent snapshot Mon-Tue 11:30 am-2:30 pm / 5:00 pm-9:00 pm, Wed-Fri 11:30 am-9:30 pm, Sat-Sun 12:00 pm-9:30 pm, punjabcafesanjose.com",
+            "url": "https://www.yelp.com/biz/punjab-cafe-san-jose"
+          },
+          {
+            "label": "Yelp Q&A on the same page - 'Do they serve the buffet every day? If not, what day?' answered 'Friday and Saturday'; a second user says 'It's been back for a bit, I can't remember the price'",
+            "url": "https://www.yelp.com/biz/punjab-cafe-san-jose?start=320"
+          },
+          {
+            "label": "Restaurant Guru - 322-324 E Santa Clara St, Mon-Tue 11:30-14:30 / 17:00-21:00, Wed-Fri 11:30-21:30, Sat-Sun 12:00-21:30, geo",
+            "url": "https://restaurantguru.com/Punjab-Cafe-San-Jose"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/punjab-cafe-san-jose",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Punjab+Cafe+322+E+Santa+Clara+St+San+Jose"
+      },
+      "flags": [
+        "NO TUESDAY BUFFET: the Yelp Q&A answer says the buffet runs Friday and Saturday. A Reddit thread says Thursday-Sunday at $20.88 after tax. The two disagree and neither is published by the business, so no buffet is claimed for Tuesday and no price is printed.",
+        "HOURS CONFLICT BETWEEN YELP SNAPSHOTS of the same page (Tue 11:30 am-2:30 pm/5-9 pm in the newest vs Tue 11:30 am-9:30 pm in older ones). Both printed; the newest is used."
+      ],
+      "id": "L561",
+      "added_in": "batch11c_santaclara_sanjose.json",
+      "distance_mi": 8.26
+    },
+    {
+      "name": "Poppy & Claro",
+      "city": "San Jose",
+      "area": "Downtown San Jose (50 West building)",
+      "address": "50 W San Fernando St, San Jose, CA 95113",
+      "coords": [
+        37.3337278,
+        -121.8894294
+      ],
+      "coords_source": "Postcard listing geo",
+      "cuisine": "Californian all-day restaurant and bar",
+      "phone": "(408) 408-7777",
+      "lunch_special": {
+        "name": "$29 prix-fixe lunch (Dine Downtown event, July 2026) - not a standing offer",
+        "price_from": null,
+        "price_to": null,
+        "days": "the restaurant serves lunch Monday-Friday",
+        "window": "restaurant open 8:00 AM-8:00 PM Mon-Fri per the listing; 7:30 AM-7:30 PM per Eater SF",
+        "includes": "The Dine Downtown menu was Little Gem Caesar, Meatballs Pomodoro or Trio of Dips, then Roasted Beet & Hummus Bowl, Spicy Vodka Pasta, Chicken Club or Hot Rosa pizza, then Walnut Cheesecake or Cast-Iron Chocolate Chip Cookie, at $29. That was an event menu, so it is not printed as the row price."
+      },
+      "hours_tuesday": "8:00 AM - 8:00 PM (listing) / 7:30 AM - 7:30 PM (Eater SF) - see flag",
+      "days_open": "Mon-Tue-Wed-Thu 8:00 AM-8:00 PM per the Postcard listing's structured hours (no Friday-Sunday entry captured); Eater SF describes it as running Monday through Friday 7:30 a.m.-7:30 p.m.",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Downtown San Jose is ~11 mi from 20387 Gillick Way: outside the 11:50 AM departure / 3:30 PM home deadline."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {
+            "label": "Postcard listing - Poppy & Claro, 50 W San Fernando St, structured Mon/Tue/Wed/Thu 8 AM-8 PM, geo, poppyandclaro.com, $20-$30",
+            "url": "https://www.postcard.inc/places/poppy-and-claro-san-jose-43rV4IWAiYm"
+          },
+          {
+            "label": "Eater SF - 'runs Monday through Friday from 7:30 a.m. to 7:30 p.m.' (second value for the daily hours)",
+            "url": "https://sf.eater.com/2025/10/14/poppy-claro-san-jose-open"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/search?find_desc=Poppy+and+Claro&find_loc=San+Jose%2C+CA",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Poppy+and+Claro+50+W+San+Fernando+St+San+Jose"
+      },
+      "flags": [
+        "HOURS CONFLICT (8 AM-8 PM vs 7:30 AM-7:30 PM) and no captured weekend entry - Friday-Sunday hours are unverified rather than stated.",
+        "The $29 prix-fixe lunch comes from the Mercury News Dine Downtown coverage, i.e. an event menu for a July 2026 window, not a standing lunch offer; it is not printed as the row price."
+      ],
+      "id": "L562",
+      "added_in": "batch11c_santaclara_sanjose.json",
+      "distance_mi": 7.87
+    },
+    {
+      "name": "Grace Deli & Cafe",
+      "city": "San Jose",
+      "area": "Downtown San Jose (Almaden Blvd, EY building)",
+      "address": "303 S Almaden Blvd Ste 160, San Jose, CA 95110",
+      "cuisine": "Deli / sandwiches, breakfast burritos",
+      "phone": "(408) 795-1200",
+      "lunch_special": {
+        "name": "Sandwich/wrap/salad + chips + beverage for $16.50 (Dine Downtown event, July 2026) - not a standing offer",
+        "price_from": null,
+        "price_to": null,
+        "days": "Monday-Friday (closed Saturday and Sunday)",
+        "window": "7:00 AM - 2:00 PM",
+        "includes": "The Dine Downtown offer is 'Pick a sandwich (grilled or cold), wrap or salad and get that, plus a bag of chips and a beverage, for $16.50', with Reuben, Tuna Avo Cheddar Melt and Chicken Caesar named, plus a free cookie with any lunch-menu purchase. That is event pricing, so it is not printed as the row price."
+      },
+      "hours_tuesday": "7:00 AM - 2:00 PM",
+      "days_open": "Mon-Fri 7:00 AM-2:00 PM; Sat-Sun closed (Yelp business page, Apple Maps, Wanderlog and the wheree listing all agree)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Downtown San Jose is ~11 mi from 20387 Gillick Way: outside the 11:50 AM departure / 3:30 PM home deadline. The 2:00 PM close would end lunch early in any case."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {
+            "label": "Yelp business page - Grace Deli & Cafe, 303 Almaden Blvd Ste 160: Mon-Fri 7:00 am-2:00 pm, Sat-Sun closed, grace303.com",
+            "url": "https://www.yelp.com/biz/grace-deli-and-cafe-san-jose"
+          },
+          {
+            "label": "Wanderlog - 303 S Almaden Blvd, Mon-Fri 7AM-2PM, Sat-Sun closed, grace303.com",
+            "url": "https://wanderlog.com/place/details/978436/grace-deli--cafe"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/grace-deli-and-cafe-san-jose",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Grace+Deli+and+Cafe+303+S+Almaden+Blvd+San+Jose"
+      },
+      "flags": [
+        "The $16.50 combo and the free-cookie offer are Dine Downtown event pricing (July 2026) reported by the Mercury News, not a standing menu offer; the price column is left blank.",
+        "Closes at 2:00 PM on weekdays."
+      ],
+      "id": "L563",
+      "coords": null,
+      "added_in": "batch11c_santaclara_sanjose.json",
+      "distance_mi": null
+    },
+    {
+      "name": "The Old Spaghetti Factory",
+      "city": "San Jose",
+      "area": "Downtown San Jose (N San Pedro St)",
+      "address": "51 N San Pedro St, San Jose, CA 95110",
+      "coords": [
+        37.335922,
+        -121.89396
+      ],
+      "coords_source": "TripAdvisor listing geo",
+      "cuisine": "Italian-American",
+      "phone": "(408) 288-7488",
+      "lunch_special": {
+        "name": "Weekday Lunch menu served Mon-Fri 11:30 AM-4:00 PM; the bar's 'Appy Hour' prices a la carte pasta classics at $10",
+        "price_from": null,
+        "price_to": null,
+        "days": "Monday-Friday",
+        "window": "11:30 AM - 4:00 PM for the lunch menu; Appy Hour Mon-Thu 3:30-5:30 PM and 8:30-9:30 PM",
+        "includes": "The official location page prints 'Weekday Lunch Mon-Fri 11:30am-4:00pm' and the bar offer '50% off appetizers and $10 a la carte pasta classics' during Appy Hour. No lunch-menu price is published, so the price column is blank."
+      },
+      "hours_tuesday": "11:30 AM - 9:30 PM",
+      "days_open": "Sun-Thu 11:30am-9:30pm; Fri-Sat 11:30am-10:30pm (official location page, matched by Yelp and TripAdvisor)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Downtown San Jose is ~11 mi from 20387 Gillick Way: outside the 11:50 AM departure / 3:30 PM home deadline."
+      },
+      "verification": {
+        "level": "official",
+        "sources": [
+          {
+            "label": "The Old Spaghetti Factory official San Jose location page - 'Weekday Lunch Mon-Fri 11:30am-4:00pm', Sun-Thu 11:30am-9:30pm / Fri-Sat 11:30am-10:30pm, and the Appy Hour '$10 a la carte pasta classics' bar offer",
+            "url": "https://www.osf.com/location/san-jose-ca/"
+          },
+          {
+            "label": "TripAdvisor - 51 N San Pedro St, structured Tue 11:30-21:30, geo, osf.com menu link",
+            "url": "https://www.tripadvisor.com/Restaurant_Review-g33020-d347407-Reviews-The_Old_Spaghetti_Factory-San_Jose_California.html"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/the-old-spaghetti-factory-san-jose-2",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Old+Spaghetti+Factory+51+N+San+Pedro+St+San+Jose"
+      },
+      "flags": [
+        "The $10 pasta figure is an Appy Hour bar offer that starts at 3:30 PM, not a lunch price; the row prints a blank price because no lunch-menu price is published.",
+        "Dine Downtown offered a free Sicilian Garlic Cheese Bread with an adult dinner purchase - a dinner offer, not a lunch one."
+      ],
+      "id": "L564",
+      "added_in": "batch11c_santaclara_sanjose.json",
+      "distance_mi": 7.66
+    },
+    {
+      "name": "Taste of Thai Los Gatos",
+      "city": "Los Gatos",
+      "area": "Downtown Los Gatos (N Santa Cruz Ave)",
+      "address": "337 N Santa Cruz Ave, Los Gatos, CA 95030",
+      "cuisine": "Thai",
+      "phone": "(408) 354-2785",
+      "lunch_special": {
+        "name": "Daily lunch service 11:00 AM-2:30 PM - no lunch-only price published",
+        "price_from": null,
+        "price_to": null,
+        "days": "Tuesday-Sunday (CLOSED MONDAY)",
+        "window": "11:00 AM - 2:30 PM (dinner 5:00 PM-9:30 PM)",
+        "includes": "Full Thai menu; the restaurant's own FAQ names only the lunch and dinner blocks, not a lunch menu or price."
+      },
+      "hours_tuesday": "11:00 AM - 2:30 PM and 5:00 PM - 9:30 PM",
+      "days_open": "Tue-Sun 11:00 AM-2:30 PM and 5:00 PM-9:30 PM; Monday closed (official site footer and contact block)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Los Gatos is ~9 mi from 20387 Gillick Way: outside the 11:50 AM departure / 3:30 PM home deadline."
+      },
+      "verification": {
+        "level": "official",
+        "sources": [
+          {
+            "label": "Taste of Thai Los Gatos official site - 337 N Santa Cruz Ave, 'Tuesday - Sunday: Lunch 11:00 AM - 2:30 PM, Dinner 05:00 PM - 9:30 PM; Monday: Closed', and an FAQ answering '11:00 AM - 2:00 PM and 5:00 PM - 9:00 PM' (second value)",
+            "url": "https://tasteofthailosgatos.com/"
+          },
+          {
+            "label": "Business's own online-ordering storefront (kwickmenu) - 337 N Santa Cruz Ave, Tue-Sun 11:00 am-2:30 pm and 5:00 pm-9:30 pm, Mon closed",
+            "url": "https://tasteofthailosgatos.kwickmenu.com/"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/search?find_desc=Taste+of+Thai&find_loc=Los+Gatos%2C+CA",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Taste+of+Thai+337+N+Santa+Cruz+Ave+Los+Gatos"
+      },
+      "flags": [
+        "CONFLICT INSIDE THE BUSINESS'S OWN SITE: the FAQ says lunch ends 2:00 PM and dinner ends 9:00 PM, while the footer on the same site says 2:30 PM and 9:30 PM. Both are printed; the ordering storefront agrees with the footer.",
+        "CLOSED MONDAYS - irrelevant to a Tuesday trip but recorded.",
+        "Yelp notes this address was previously Thai Spice and is now under new management."
+      ],
+      "id": "L565",
+      "coords": null,
+      "added_in": "batch11d_gatos_altos_paloalto.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Son & Garden",
+      "city": "Menlo Park",
+      "area": "Downtown Menlo Park (Merrill St)",
+      "address": "1195 Merrill St, Menlo Park, CA 94025",
+      "coords": [
+        37.45475,
+        -122.18298
+      ],
+      "coords_source": "Toast listing geo",
+      "cuisine": "American breakfast/brunch/lunch",
+      "phone": "(650) 665-7963",
+      "lunch_special": {
+        "name": "No lunch special published - daytime service that ends in early afternoon",
+        "price_from": null,
+        "price_to": null,
+        "days": "daily",
+        "window": "9:00 AM opening, closing between 2:00 PM and 3:00 PM depending on the source (see flag)",
+        "includes": "Breakfast and brunch plates, omelets, eggs Benedict, pancakes, plus lunch items. OpenTable's own 'About' text calls it 'a charming brunch restaurant', and its hours table there shows dinner-only service, which conflicts with the ordering pages."
+      },
+      "hours_tuesday": "9:00 AM - 2:00 PM (Toast ordering page) vs 5:00 PM - 11:00 PM dinner only (OpenTable) - see flag",
+      "days_open": "Toast ordering page: Mon-Thu 9:00 am-2:00 pm, Fri 9:00 am-2:00 pm, Sat-Sun 9:00 am-2:30 pm. RestaurantJump: daily 9 AM-2 PM (Sat-Sun to 3 PM). OpenTable: Mon-Wed/Fri/Sun 5:00 pm-11:00 pm, Thu-Sat 5:00 pm-12:00 am, plus Sat-Sun 11:00 am-3:00 pm.",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Menlo Park is ~15 mi from 20387 Gillick Way: outside the 11:50 AM departure / 3:30 PM home deadline."
+      },
+      "verification": {
+        "level": "conflicting",
+        "sources": [
+          {
+            "label": "Toast ordering page for Son and Garden - 1195 Merrill St, Sun 9:00 am-2:30 pm, Mon-Fri 9:00 am-2:00 pm, Sat 9:00 am-2:30 pm, phone, geo",
+            "url": "https://www.toasttab.com/local/order/son-garden-menlopark"
+          },
+          {
+            "label": "OpenTable - Son & Garden Menlo Park, 1195 Merrill St: 'Mon-Wed, Fri, Sun 5:00 pm-11:00 pm; Thu, Sat 5:00 pm-12:00 am; Sat, Sun 11:00 am-3:00 pm' - dinner-led, no weekday lunch",
+            "url": "https://www.opentable.com/r/son-and-garden-menlo-park"
+          },
+          {
+            "label": "RestaurantJump - 1195 Merrill St, daily 9 AM-2 PM (Sat-Sun 9 AM-3 PM), sonandgarden.com",
+            "url": "https://restaurantjump.com/son-garden-94025/"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/search?find_desc=Son+and+Garden&find_loc=Menlo+Park%2C+CA",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Son+and+Garden+1195+Merrill+St+Menlo+Park"
+      },
+      "flags": [
+        "MAJOR HOURS CONFLICT: the ordering pages (Toast, RestaurantJump, HappyCow) show a 9:00 AM-2:00/3:00 PM daytime service seven days a week, while OpenTable's hours table for the same address shows dinner-only Mon-Fri with brunch only on Saturday and Sunday. Both readings are printed; the row is levelled 'conflicting' and no weekday lunch is asserted - call ahead.",
+        "No lunch-only pricing is published, so the price column is blank.",
+        "HappyCow lists the same address as 'Open Mon-Sun 9:00am-3:00pm', a fourth variant."
+      ],
+      "id": "L566",
+      "added_in": "batch11d_gatos_altos_paloalto.json",
+      "distance_mi": 12.9
+    },
+    {
+      "name": "Schaub's Meat Fish & Poultry",
+      "city": "Palo Alto",
+      "area": "Stanford Shopping Center",
+      "address": "395 Stanford Shopping Ctr, Palo Alto, CA 94304",
+      "coords": [
+        37.44225,
+        -122.17311
+      ],
+      "coords_source": "Foodeist listing geo",
+      "cuisine": "Butcher / seafood market with made-to-order sandwiches",
+      "phone": "(650) 325-6328",
+      "lunch_special": {
+        "name": "No lunch special published - a Yelp reviewer cites 'Lunch Special Bulgogi and rice'; no price is published",
+        "price_from": null,
+        "price_to": null,
+        "days": "daily",
+        "window": "opens 10:00 AM Mon-Sat, 11:00 AM Sunday",
+        "includes": "Sandwiches and grilled meats to order (a reviewer names the 'Stanford Melt' and the 'Fred Steak'); the business also sells butcher cuts to take home."
+      },
+      "hours_tuesday": "10:00 AM - 7:00 PM",
+      "days_open": "Mon-Sat 10:00 AM-7:00 PM; Sun 11:00 AM-6:00 PM (Yelp business page, matched by Restaurantji, Restaurant Guru and Zmenu)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Palo Alto is ~11 mi from 20387 Gillick Way: outside the 11:50 AM departure / 3:30 PM home deadline."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {
+            "label": "Yelp business page - Schaub's Meat Fish & Poultry, 395 Stanford Shopping Ctr: Mon-Sat 10:00 am-7:00 pm, Sun 11:00 am-6:00 pm, and the reviewer line naming a 'Lunch Special Bulgogi and rice'",
+            "url": "https://www.yelp.com/biz/schaubs-meat-fish-and-poultry-palo-alto"
+          },
+          {
+            "label": "Restaurantji - 395 Stanford Shopping Center, Mon-Sat 10AM-7PM, Sun 11AM-6PM; a listing-site review mentions the lettuce-wrap sandwich",
+            "url": "https://www.restaurantji.com/ca/palo-alto/schaubs-meat-fish-and-poultry-/"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/schaubs-meat-fish-and-poultry-palo-alto",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Schaub%27s+395+Stanford+Shopping+Center+Palo+Alto"
+      },
+      "flags": [
+        "The words 'Lunch Special' come from a Yelp review quote; the business publishes no lunch menu or price, so the price column is blank.",
+        "One listing (Foodeist) prints Saturday as 9:00-19:00 rather than 10:00-19:00, and Zmenu's geo for this address is ~0.02 degrees off the other listings. Printed, not used."
+      ],
+      "id": "L567",
+      "added_in": "batch11d_gatos_altos_paloalto.json",
+      "distance_mi": 11.89
+    },
+    {
+      "name": "Tasty Pot",
+      "city": "Palo Alto",
+      "area": "Emerson St (University Ave corridor)",
+      "address": "443 Emerson St, Palo Alto, CA 94301",
+      "coords": [
+        37.4451522,
+        -122.1630299
+      ],
+      "coords_source": "official site JSON-LD",
+      "cuisine": "Taiwanese individual hot pot",
+      "phone": "(650) 380-6975",
+      "lunch_special": {
+        "name": "No lunch special published - open from 11:00 AM, with a 3:00 PM-4:30 PM break per Yelp",
+        "price_from": null,
+        "price_to": null,
+        "days": "daily",
+        "window": "opens 11:00 AM",
+        "includes": "Individual Taiwanese hot pots (kimchi dumpling, Thai flavour, stinky tofu, beef), sizzling plates and boba. No lunch-only price is published."
+      },
+      "hours_tuesday": "11:00 AM - 3:00 PM and 4:30 PM - 9:30 PM (Yelp) / 11:00 AM - 9:30 PM continuous (own site) - see flag",
+      "days_open": "Own site takeout hours: Mon-Thu 11:00 am-9:30 pm, Fri-Sat 11:00 am-10:00 pm, Sun 11:00 am-9:30 pm. Yelp: Mon-Thu 11:00 am-3:00 pm and 4:30 pm-9:30 pm, Fri 11:00 am-3:00 pm and 4:30 pm-10:00 pm, Sat-Sun 11:00 am-10:00 pm/9:30 pm continuous.",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Palo Alto is ~11 mi from 20387 Gillick Way: outside the 11:50 AM departure / 3:30 PM home deadline."
+      },
+      "verification": {
+        "level": "conflicting",
+        "sources": [
+          {
+            "label": "Tasty Pot official site - 443 Emerson St, Palo Alto; takeout hours Mon-Thu 11:00 am-9:30 pm, Fri-Sat 11:00 am-10:00 pm, Sun 11:00 am-9:30 pm; JSON-LD 'Su,Mo,Tu,We,Th 11:00-21:30, Fr,Sa 11:00-22:00'; geo",
+            "url": "https://www.tastypotcalifornia.com/"
+          },
+          {
+            "label": "Yelp business page - Tasty Pot, 443 Emerson St: Mon-Thu 11:00 am-3:00 pm and 4:30 pm-9:30 pm (i.e. an afternoon break the official site does not show)",
+            "url": "https://www.yelp.com/biz/tasty-pot-palo-alto-2"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/tasty-pot-palo-alto-2",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Tasty+Pot+443+Emerson+St+Palo+Alto"
+      },
+      "flags": [
+        "AFTERNOON-BREAK CONFLICT: Yelp shows a 3:00 PM-4:30 PM break on weekdays; the restaurant's own site shows continuous 11:00 AM-9:30 PM service. Both are printed - if the break is real, a late lunch after 3:00 PM is impossible.",
+        "SAME BRAND: Tasty Pot also operates at 222 Barber Ct, Milpitas; only the Palo Alto room is listed here.",
+        "No lunch-only pricing is published, so the price column is blank."
+      ],
+      "id": "L568",
+      "added_in": "batch11d_gatos_altos_paloalto.json",
+      "distance_mi": 11.69
+    },
+    {
+      "name": "Campbell Cafe & More",
+      "city": "Campbell",
+      "area": "S Bascom Ave (Cambrian Park)",
+      "address": "2425 S Bascom Ave, Campbell, CA 95008",
+      "cuisine": "Cambodian / Thai",
+      "phone": "(408) 628-4363",
+      "lunch_special": {
+        "name": "Khmer Box $15.95 and Cambodian plates $13.95 - written in the business's own description on its Yelp page",
+        "price_from": 13.95,
+        "price_to": 15.95,
+        "days": "Monday-Friday per the hours table (the business's own text says the lunch runs 11am to 9pm - see flag)",
+        "window": "from 11:00 AM",
+        "includes": "Khmer Box $15.95 with rice, one kabob, salad, soup and 3 pieces of appetizer (veggie eggrolls, shrimp eggrolls or crispy chicken dumplings; steak, chicken or shrimp kabob). Cambodian plates $13.95 with garlic rice, tomatoes, cucumbers and pickled veggies plus a choice of steak, pork or chicken."
+      },
+      "hours_tuesday": "7:30 AM - 4:30 PM",
+      "days_open": "Mon-Fri 7:30 AM-4:30 PM; Sat-Sun 8:00 AM-4:30 PM (Yelp business page, updated 2 weeks ago)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Campbell is ~7 mi from 20387 Gillick Way: a there-and-back bus trip does not fit the 11:50 AM departure and 3:30 PM home deadline."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {
+            "label": "Yelp business page - Campbell Cafe & More, 2425 S Bascom Ave: Mon-Fri 7:30 am-4:30 pm, Sat-Sun 8:00 am-4:30 pm, and the business-written description naming the $15.95 Khmer Box and $13.95 Cambodian plates",
+            "url": "https://www.yelp.com/biz/campbell-cafe-and-more-campbell"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/campbell-cafe-and-more-campbell",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Campbell+Cafe+and+More+2425+S+Bascom+Ave+Campbell"
+      },
+      "flags": [
+        "CONTRADICTION INSIDE THE BUSINESS'S OWN TEXT: it says 'Special lunch served from 11am to 9pm', but the same page's hours table closes the shop at 4:30 PM every day. Both are printed; the 4:30 PM close is used for the hours field.",
+        "The lunch prices come from the business's own description on Yelp, not from a menu page on its own domain, so the row is levelled 'listing' rather than 'official'."
+      ],
+      "id": "L569",
+      "coords": null,
+      "added_in": "batch11e_cupertino_sunnyvale_ring.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Cook's Seafood",
+      "city": "Menlo Park",
+      "area": "El Camino Real",
+      "address": "751 El Camino Real, Menlo Park, CA 94025",
+      "cuisine": "Seafood / fish and chips (with a retail fish market)",
+      "phone": "(650) 325-0604",
+      "lunch_special": {
+        "name": "No lunch special published - open from 10:30 AM for lunch",
+        "price_from": null,
+        "price_to": null,
+        "days": "Monday-Saturday, plus Sunday since the business reopened Sundays (see flag)",
+        "window": "opens 10:30 AM",
+        "includes": "Fish and chips, halibut and chips, seafood pasta per the business's own description on its Yelp page. No lunch-only price is published."
+      },
+      "hours_tuesday": "10:30 AM - 8:00 PM",
+      "days_open": "Restaurant: Mon-Thu and Sat 10:30 am-8:00 pm, Fri 10:30 am-8:30 pm, Sun 11:30 am-7:00 pm (the business's own 'About' text on Yelp, matched by Restaurantji and the newest Yelp snapshots). Separate fish-market hours: Mon-Sat 9:00 am-7:00 pm, Sun 10:00 am-6:00 pm.",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Menlo Park is ~15 mi from 20387 Gillick Way: outside the 11:50 AM departure / 3:30 PM home deadline."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {
+            "label": "Yelp business page - Cook's Seafood, 751 El Camino Real: the business's own About text 'Restaurant Hours: Monday-Thursday & Saturday 10:30am-8pm, Friday 10:30am-8:30pm, Sunday 11:30am-7pm' plus 'Now Open Sundays'",
+            "url": "https://www.yelp.com/biz/cook-s-seafood-menlo-park"
+          },
+          {
+            "label": "Restaurantji - 751 El Camino Real, Mon-Thu 10:30AM-8PM, Fri 10:30AM-8:30PM, Sat 10:30AM-8PM, Sun 11:30AM-7PM",
+            "url": "https://www.restaurantji.com/ca/menlo-park/cooks-seafood-/"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/cook-s-seafood-menlo-park",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Cook%27s+Seafood+751+El+Camino+Real+Menlo+Park"
+      },
+      "flags": [
+        "SUNDAY CONFLICT RESOLVED IN THE BUSINESS'S FAVOUR: older Yelp snapshots say Sunday closed, while the business's own About text and newer snapshots say Sunday 11:30 am-7:00 pm under a 'Now Open Sundays' note. Both readings are printed; the newer one is used.",
+        "The in-house fish market keeps different hours (Mon-Sat 9:00 am-7:00 pm, Sun 10:00 am-6:00 pm) from the restaurant - printed separately so the two are not confused.",
+        "No lunch-only pricing is published, so the price column is blank."
+      ],
+      "id": "L570",
+      "coords": null,
+      "added_in": "batch11e_cupertino_sunnyvale_ring.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Masu Japanese Bistro",
+      "city": "Saratoga",
+      "area": "Big Basin Way",
+      "address": "14510 Big Basin Way Ste 6, Saratoga, CA 95070",
+      "cuisine": "Japanese",
+      "phone": "(408) 868-0600",
+      "lunch_special": {
+        "name": "Weekday lunch service block (11:30 AM - 2:00 PM) - no lunch-only price published",
+        "price_from": null,
+        "price_to": null,
+        "days": "Tuesday-Friday (CLOSED MONDAY)",
+        "window": "11:30 AM - 2:00 PM (Saturday 12:00-2:00 PM)",
+        "includes": "Sushi rolls, miso, fried rice and udon per the listing's summary of reviews. No lunch menu or price was published on any page retrieved."
+      },
+      "hours_tuesday": "11:30 AM - 2:00 PM and 5:00 PM - 9:00 PM",
+      "days_open": "Mon closed; Tue-Fri 11:30-14:00 and 17:00-21:00; Sat 12:00-14:00 and 15:00-21:00; Sun 13:00-20:30 (Yelp business page, matched by Restaurantji)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Saratoga is ~8 mi from 20387 Gillick Way: a there-and-back bus trip does not fit the 11:50 AM departure and 3:30 PM home deadline."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {
+            "label": "Yelp business page - Masu Japanese Bistro, 14510 Big Basin Way Ste 6: Mon closed, Tue-Fri 11:30 am-2:00 pm and 5:00 pm-9:00 pm, Sat 12:00 pm-2:00 pm and 3:00 pm-9:00 pm, Sun 1:00 pm-8:30 pm",
+            "url": "https://www.yelp.com/biz/masu-japanese-bistro-saratoga"
+          },
+          {
+            "label": "Restaurantji - 14510 Big Basin Wy #6, same weekly hours, address and phone cross-check",
+            "url": "https://www.restaurantji.com/ca/saratoga/masu-japanese-bistro-/"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/masu-japanese-bistro-saratoga",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Masu+Japanese+Bistro+14510+Big+Basin+Way+Saratoga"
+      },
+      "flags": [
+        "CLOSED MONDAYS - irrelevant to a Tuesday trip but recorded.",
+        "No lunch-only pricing is published, so the price column is blank."
+      ],
+      "id": "L571",
+      "coords": null,
+      "added_in": "batch11e_cupertino_sunnyvale_ring.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Sue's Gallery Cafe",
+      "city": "Saratoga",
+      "area": "Big Basin Way (downtown Saratoga)",
+      "address": "14665 Big Basin Way, Saratoga, CA 95070",
+      "coords": [
+        37.2558028,
+        -122.0374028
+      ],
+      "coords_source": "Joe Coffee listing geo",
+      "cuisine": "Cafe - coffee, tea, pastries",
+      "phone": "(408) 636-8145",
+      "lunch_special": {
+        "name": "No lunch special published - all-day cafe open 8:00 AM-6:00 PM",
+        "price_from": null,
+        "price_to": null,
+        "days": "daily",
+        "window": "8:00 AM - 6:00 PM",
+        "includes": "Speciality coffee, tea and snacks served in handmade ceramics per the business's own Yelp Specialties text. No lunch menu or price was published on any page retrieved."
+      },
+      "hours_tuesday": "8:00 AM - 6:00 PM",
+      "days_open": "Mon-Sun 8:00 AM - 6:00 PM (Yelp business page, Joe Coffee listing and the business's own site link all agree)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Saratoga is ~8 mi from 20387 Gillick Way: a there-and-back bus trip does not fit the 11:50 AM departure and 3:30 PM home deadline."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {
+            "label": "Yelp business page - Sue's Gallery Cafe, 14665 Big Basin Way: Mon-Sun 8:00 am-6:00 pm, speciality coffee/tea/snacks, suesgallerycafe.com",
+            "url": "https://www.yelp.com/biz/sues-gallery-cafe-saratoga-2"
+          },
+          {
+            "label": "Joe Coffee listing - 14665 Big Basin Wy, Mon-Sun 8 AM-6 PM, geo, menu link to suesgallerycafe.com",
+            "url": "https://joe.coffee/locations/ca/saratoga/sue-s-gallery-cafe-saratoga/"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/sues-gallery-cafe-saratoga-2",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Sue%27s+Gallery+Cafe+14665+Big+Basin+Way+Saratoga"
+      },
+      "flags": [
+        "This is a cafe, not a lunch-special venue: it is listed because it is open through the whole lunch block in downtown Saratoga, and no lunch-only price is published."
+      ],
+      "id": "L572",
+      "added_in": "batch11e_cupertino_sunnyvale_ring.json",
+      "distance_mi": 3.96
+    },
+    {
+      "name": "Golden Palace Restaurant",
+      "city": "San Jose",
+      "area": "S De Anza Blvd (West San Jose, 95129)",
+      "address": "1146 S De Anza Blvd, San Jose, CA 95129",
+      "cuisine": "Cantonese dim sum / seafood",
+      "phone": "(408) 257-8877",
+      "lunch_special": {
+        "name": "Weekday dim-sum lunch service - a Reddit diner quotes 'around $4.50/item on weekdays'; nothing is published by the business",
+        "price_from": null,
+        "price_to": null,
+        "days": "daily (dim sum is a daytime service)",
+        "window": "10:30 AM - 2:30 PM Mon-Fri (10:00 AM - 3:00 PM Sat-Sun)",
+        "includes": "Cantonese dim sum and seafood. A listing site gives a $20-$30 per-person range for this address; that is a listing-derived range, not a published lunch price, so the price column is blank."
+      },
+      "hours_tuesday": "10:30 AM - 2:30 PM and 5:00 PM - 9:00 PM",
+      "days_open": "Mon-Thu 10:30-14:30 and 17:00-21:00; Fri 10:30-14:30 and 17:00-21:30; Sat-Sun 10:00-15:00 and 17:00-21:30/21:00 (Yelp business page, matched by the listing's structured hours)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": true,
+        "note": "~2 mi from 20387 Gillick Way - one of the closest rows in this batch - and dim sum starts at 10:30 AM, so either departure works."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {
+            "label": "Yelp business page - Golden Palace, 1146 S De Anza Blvd: Mon-Thu 10:30 am-2:30 pm and 5:00 pm-9:00 pm, Fri to 9:30 pm, Sat-Sun 10:00 am-3:00 pm, dim sum/seafood/Cantonese",
+            "url": "https://www.yelp.com/biz/golden-palace-san-jose"
+          },
+          {
+            "label": "Listing with structured hours - 1146 S De Anza Blvd, Mon-Fri 10:30 AM-2:30 PM and 5:00 PM-9:00/9:30 PM, Sat-Sun 10:00 AM-3:00 PM, $20-$30 per person, phone",
+            "url": "https://goldenpalacerestaurant.restaurants-us.com/"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/golden-palace-san-jose",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Golden+Palace+1146+S+De+Anza+Blvd+San+Jose"
+      },
+      "flags": [
+        "The only dim-sum price found ('around $4.50/item on weekdays', and '$4 an item for all size categories' in an older Reddit thread) is a diner quote, so the price column is blank.",
+        "An older Reddit thread says the restaurant 'close[s] in the afternoons at 2:30' and does not serve dim sum for dinner - consistent with the hours above.",
+        "A wheree listing prints the same address with a 10:30 AM-2:30 PM / 5:00 PM-9:30 PM block; the Yelp table is used for the day-by-day values."
+      ],
+      "id": "L573",
+      "coords": null,
+      "added_in": "batch11f_sanjose_cheapeats.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Sushi Town",
+      "city": "San Jose",
+      "area": "Alum Rock Ave (East Foothills)",
+      "address": "3116 Alum Rock Ave, San Jose, CA 95127",
+      "coords": [
+        37.3658,
+        -121.827412
+      ],
+      "coords_source": "Roadtrippers listing geo",
+      "cuisine": "Japanese / sushi",
+      "phone": "(408) 649-3094",
+      "lunch_special": {
+        "name": "Lunch bento box - a Yelp Q&A answer confirms a lunch bento box exists and says it is offered 'for now including weekend'; no price is published",
+        "price_from": null,
+        "price_to": null,
+        "days": "daily per the Q&A answer (a diner describes it as a weekday offer)",
+        "window": "from the 11:30 AM opening",
+        "includes": "A Reddit diner describes it as 'chicken teriyaki or chicken katsu or beef teriyaki, rice, salad, tempura veggies & 1 shrimp, and 2 pieces of California roll' at $10.95, with miso soup for $1.95. That is a diner quote, so the price column is blank."
+      },
+      "hours_tuesday": "11:30 AM - 9:00 PM",
+      "days_open": "Tue-Sun 11:30 am-9:00 pm; Monday appears as Closed on the newest Yelp snapshot and 11:30 am-9:00 pm on an older one (see flag)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "East San Jose is ~14 mi from 20387 Gillick Way: outside the 11:50 AM departure / 3:30 PM home deadline."
+      },
+      "verification": {
+        "level": "conflicting",
+        "sources": [
+          {
+            "label": "Yelp business page - Sushi Town, 3116 Alum Rock Ave: Tue-Sun 11:30 am-9:00 pm (newest snapshot Monday Closed) and the Q&A answer 'For now including weekend' to 'Is the lunch bento box only Monday - Friday? Or weekends too?'",
+            "url": "https://www.yelp.com/biz/sushi-town-san-jose"
+          },
+          {
+            "label": "Yelp (older snapshot) - 3116 Alum Rock Ave, Mon-Sun 11:30 am-9:00 pm, sushitownsj.com",
+            "url": "https://www.yelp.com/biz/sushi-town-san-jose?start=5"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/sushi-town-san-jose",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Sushi+Town+3116+Alum+Rock+Ave+San+Jose"
+      },
+      "flags": [
+        "MONDAY CONFLICT: the newest Yelp snapshot says Monday Closed, an older one says Monday 11:30 am-9:00 pm. Tuesday is unaffected; both readings printed.",
+        "The bento box's existence is confirmed by a Yelp Q&A answer but no price is published; the $10.95 figure is a Reddit diner quote and is not printed as the row price."
+      ],
+      "id": "L574",
+      "added_in": "batch11f_sanjose_cheapeats.json",
+      "distance_mi": 11.73
+    },
+    {
+      "name": "Jade China Restaurant",
+      "city": "San Jose",
+      "area": "Berryessa Rd",
+      "address": "2524 Berryessa Rd, San Jose, CA 95132",
+      "cuisine": "Chinese takeout / dine-in",
+      "phone": "(408) 923-6288",
+      "lunch_special": {
+        "name": "Combo plates - a Reddit diner quotes 'a solid 2 item combo for 13 bucks'; nothing is published by the business",
+        "price_from": null,
+        "price_to": null,
+        "days": "daily (open 11:00 AM-9:00 PM seven days)",
+        "window": "opens 11:00 AM",
+        "includes": "Combination plates. No combo price is published on the restaurant's own site, so the price column is blank."
+      },
+      "hours_tuesday": "11:00 AM - 9:00 PM",
+      "days_open": "Mon-Sun 11:00 AM - 9:00 PM (the restaurant's own site and its structured data, matched by Yelp)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Berryessa is ~12 mi from 20387 Gillick Way: outside the 11:50 AM departure / 3:30 PM home deadline."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {
+            "label": "Jade China Restaurant official site - 2524 Berryessa Rd, San Jose; 'Monday - Sunday 11am - 9pm', phone",
+            "url": "https://www.jadechinarestaurant.com/"
+          },
+          {
+            "label": "Jade China official contact page - structured opening hours Mo-Su 11:00-21:00, address, email",
+            "url": "https://www.jadechinarestaurant.com/contact-us"
+          },
+          {
+            "label": "Yelp business page - 2524 Berryessa Rd, Mon-Sun 11:00 am-9:00 pm",
+            "url": "https://www.yelp.com/biz/jade-china-san-jose-4"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/jade-china-san-jose-4",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Jade+China+2524+Berryessa+Rd+San+Jose"
+      },
+      "flags": [
+        "The restaurant's own site prints '2524 Berryessa Dr' on the homepage and '2524 Berryessa Road' in its structured data - same street number, different suffix spelling. Printed as the Road form.",
+        "The '$13 two-item combo' figure is a Reddit diner quote; the restaurant's own site publishes no combo price, so the price column is blank.",
+        "A Reddit thread notes a same-family 'New Jade' on Monterey Rd; that is a different address and is not merged here."
+      ],
+      "id": "L575",
+      "coords": null,
+      "added_in": "batch11f_sanjose_cheapeats.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Sun-Ly Chinese Restaurant",
+      "city": "San Jose",
+      "area": "Tully Rd",
+      "address": "1075 Tully Rd Ste G, San Jose, CA 95122",
+      "coords": [
+        37.315014,
+        -121.83792
+      ],
+      "coords_source": "TripAdvisor listing geo",
+      "cuisine": "Chinese / Japanese",
+      "phone": "(408) 295-8566",
+      "lunch_special": {
+        "name": "All-day lunch special - a Reddit diner writes 'Sun Ly Chinese food has an all day lunch special! Good prices and food'; nothing is published by the business",
+        "price_from": null,
+        "price_to": null,
+        "days": "daily (open 11:00 AM-9:00 PM seven days)",
+        "window": "from the 11:00 AM opening (the diner describes it as all-day)",
+        "includes": "No lunch-menu content or price was published on any page retrieved, so the price column is blank."
+      },
+      "hours_tuesday": "11:00 AM - 9:00 PM",
+      "days_open": "Mon-Sun 11:00 AM - 9:00 PM (TripAdvisor structured hours, matched by the business's own ordering page)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "East San Jose is ~12 mi from 20387 Gillick Way: outside the 11:50 AM departure / 3:30 PM home deadline."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {
+            "label": "TripAdvisor - Sun-Ly Chinese Restaurant, 1075 Tully Rd Ste G: structured Mon-Sun 11:00-21:00, geo, phone",
+            "url": "https://www.tripadvisor.com/Restaurant_Review-g33020-d468176-Reviews-Sun_Ly_Chinese_Restaurant-San_Jose_California.html"
+          },
+          {
+            "label": "Sun-Ly ordering page - 1075 Tully Rd Ste G, San Jose CA 95122, hotline (408) 295-8566",
+            "url": "https://sun-ly-chinese-foods.res-menu.net/"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/search?find_desc=Sun+Ly+Chinese&find_loc=San+Jose%2C+CA",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Sun+Ly+Chinese+Restaurant+1075+Tully+Rd+San+Jose"
+      },
+      "flags": [
+        "Lunch-special existence and pricing rest entirely on a Reddit diner quote; no menu or price was published on any page retrieved, so the price column is blank.",
+        "TripAdvisor lists this address as 'Chinese, Japanese' with only four reviews - the cuisine mix is unverified beyond that label."
+      ],
+      "id": "L576",
+      "added_in": "batch11f_sanjose_cheapeats.json",
+      "distance_mi": 10.57
+    },
+    {
+      "name": "Golden House Restaurant",
+      "city": "San Jose",
+      "area": "Santa Teresa Blvd (South San Jose)",
+      "address": "7108 Santa Teresa Blvd, San Jose, CA 95139",
+      "coords": [
+        37.2267185,
+        -121.7734253
+      ],
+      "coords_source": "Restaurant Guru listing geo",
+      "cuisine": "Chinese (mostly Cantonese)",
+      "phone": "(408) 225-8001",
+      "lunch_special": {
+        "name": "Lunch specials - a 2009 Mercury News Quick Bite column says 'Lunch specials served daily' with an average meal price of $6-$11; no current price is published",
+        "price_from": null,
+        "price_to": null,
+        "days": "daily per the 2009 column; TripAdvisor's structured hours show a distinct 11:00 AM-2:30 PM lunch block Tue-Fri",
+        "window": "11:00 AM - 2:30 PM (Tue-Fri per TripAdvisor)",
+        "includes": "Cantonese plates; the 2009 column says soup is included with to-go lunch orders. No current lunch price is published anywhere, so the price column is blank."
+      },
+      "hours_tuesday": "11:00 AM - 2:30 PM and 4:30 PM - 8:30 PM (TripAdvisor) / 11:00 AM - 8:00 PM continuous (Zmenu and Restaurant Guru) - see flag",
+      "days_open": "TripAdvisor: Mon closed; Tue-Fri 11:00-14:30 and 16:30-20:30; Sat 12:00-20:30; Sun 12:00-20:30. Zmenu and Restaurant Guru: Mon closed; Tue-Fri 11:00-20:00; Sat-Sun 12:00-20:00.",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "South San Jose is ~14 mi from 20387 Gillick Way: outside the 11:50 AM departure / 3:30 PM home deadline."
+      },
+      "verification": {
+        "level": "conflicting",
+        "sources": [
+          {
+            "label": "TripAdvisor - Golden House Chinese Restaurant, 7108 Santa Teresa Blvd: structured Tue-Fri 11:00-14:30 and 16:30-20:30, Sat-Sun 12:00-20:30, Mon closed; geo",
+            "url": "https://www.tripadvisor.com/Restaurant_Review-g33020-d2310991-Reviews-Golden_House_Chinese_Restaurant-San_Jose_California.html"
+          },
+          {
+            "label": "Zmenu - 7108 Santa Teresa Blvd, Mon closed, Tue-Fri 11:00am-8:00pm, Sat-Sun from 12:00pm, geo",
+            "url": "https://www.zmenu.com/golden-house-chinese-restaurant-san-jose-online-menu/"
+          },
+          {
+            "label": "Restaurant Guru - 7108 Santa Teresa Blvd, Tu-Fr 11:00-20:00, Sa-Su 12:00-20:00, $11-$30 per person, geo",
+            "url": "https://restaurantguru.com/Golden-House-San-Jose"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/search?find_desc=Golden+House+Restaurant&find_loc=San+Jose%2C+CA",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Golden+House+Restaurant+7108+Santa+Teresa+Blvd+San+Jose"
+      },
+      "flags": [
+        "STALE PRICE: the only lunch price found for this address is a 2009 Mercury News column ($6-$11 average meal, 'lunch specials served daily'). It is 17 years old and is not printed as the row price.",
+        "HOURS CONFLICT: TripAdvisor shows a 2:30 PM-4:30 PM afternoon break Tue-Fri, while Zmenu and Restaurant Guru show continuous 11:00 AM-8:00 PM service. Both printed.",
+        "GEO CONFLICT: Zmenu's coordinates for this address (37.3393, -121.8949) are about 10 miles from the coordinates the other listings give (37.2267, -121.7734); the latter matches Santa Teresa Blvd in 95139. Printed, and the closer coordinates are used.",
+        "A separate business, Indian Sizzler (4150 Great America Pkwy, Santa Clara), is unrelated to the Sizzler row in this batch."
+      ],
+      "id": "L577",
+      "added_in": "batch11f_sanjose_cheapeats.json",
+      "distance_mi": 15.33
+    },
+    {
+      "name": "Freshly Baked Eatery",
+      "city": "San Jose",
+      "area": "Downtown San Jose (N 3rd St)",
+      "address": "152 N 3rd St Ste 101, San Jose, CA 95112",
+      "cuisine": "Sandwiches / deli",
+      "phone": "(408) 298-9370",
+      "lunch_special": {
+        "name": "No lunch special published - every sandwich on the menu is $8.00",
+        "price_from": null,
+        "price_to": null,
+        "days": "Monday-Friday (CLOSED SATURDAY AND SUNDAY)",
+        "window": "10:30 AM - 2:30 PM",
+        "includes": "Menu prices captured from the Yelp menu module: Roast Beef $8.00, Classic $8.00, Pastrami and Turkey $8.00, Ham and Pastrami $8.00. The whole sandwich list prices at $8.00; that is the regular menu, not a lunch-only offer, so the price column stays blank."
+      },
+      "hours_tuesday": "10:30 AM - 2:30 PM",
+      "days_open": "Mon-Fri 10:30 AM-2:30 PM; Sat-Sun closed (Yelp business page and Restaurantji agree, including the structured hours block)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Downtown San Jose is ~11 mi from 20387 Gillick Way: outside the 11:50 AM departure / 3:30 PM home deadline. The 2:30 PM close would end lunch early in any case."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {
+            "label": "Yelp business page - Freshly Baked Eatery, 152 N 3rd St Ste 101: Mon-Fri 10:30 am-2:30 pm, Sat-Sun closed, and menu prices (Roast Beef $8.00, Classic $8.00, Pastrami and Turkey $8.00, Ham and Pastrami $8.00)",
+            "url": "https://www.yelp.com/biz/freshly-baked-eatery-san-jose"
+          },
+          {
+            "label": "Restaurantji - 152 N 3rd St #101, Mon-Fri 10:30AM-2:30PM, Sat-Sun closed",
+            "url": "https://www.restaurantji.com/ca/san-jose/freshly-baked-eatery-/"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/freshly-baked-eatery-san-jose",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Freshly+Baked+Eatery+152+N+3rd+St+San+Jose"
+      },
+      "flags": [
+        "No lunch-only promotion is published; the $8.00 flat sandwich prices are the regular menu and are quoted in the row rather than in the price column.",
+        "CLOSED WEEKENDS and closes at 2:30 PM on weekdays."
+      ],
+      "id": "L578",
+      "coords": null,
+      "added_in": "batch11f_sanjose_cheapeats.json",
+      "distance_mi": null
+    },
+    {
+      "name": "California Sourdough",
+      "city": "San Jose",
+      "area": "Murphy Ave (North Valley)",
+      "address": "1150 Murphy Ave Ste A, San Jose, CA 95131",
+      "coords": [
+        37.3823934,
+        -121.8951912
+      ],
+      "coords_source": "Restaurant Guru listing geo",
+      "cuisine": "Deli / sandwiches on sourdough",
+      "phone": "(408) 437-1045",
+      "lunch_special": {
+        "name": "No lunch special published - a Yelp photo caption prices a sandwich at $14",
+        "price_from": null,
+        "price_to": null,
+        "days": "Monday-Saturday (CLOSED SUNDAY)",
+        "window": "10:30 AM - 3:30 PM",
+        "includes": "Sourdough sandwiches: spicy mustard turkey, roast beef, pastrami, garlic herb turkey, veggie. The $14 figure comes from a Yelp photo caption ('$14 a sandwich now with considerably less meat'), and the listing's per-person range is $10-$20; neither is a published lunch price, so the price column is blank."
+      },
+      "hours_tuesday": "10:30 AM - 3:30 PM",
+      "days_open": "Mon-Sat 10:30 AM-3:30 PM; Sun closed (Yelp business page, Restaurant Guru and Restaurantji all agree)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "North San Jose is ~9 mi from 20387 Gillick Way: a there-and-back bus trip does not fit the 11:50 AM departure and 3:30 PM home deadline."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {
+            "label": "Yelp business page - California Sourdough, 1150 Murphy Ave Ste A: Mon-Sat 10:30 am-3:30 pm, Sun closed, and the photo caption '$14 a sandwich now with considerably less meat'",
+            "url": "https://www.yelp.com/biz/california-sourdough-san-jose"
+          },
+          {
+            "label": "Restaurant Guru - 1150 Murphy Ave #A, Mon-Sat 10:30AM-3:30PM, Sun closed, $10-$20 per person, geo",
+            "url": "https://restaurantguru.com/California-Sourdough-San-Jose"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/california-sourdough-san-jose",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=California+Sourdough+1150+Murphy+Ave+San+Jose"
+      },
+      "flags": [
+        "No lunch-only promotion is published. The $14 sandwich figure is a Yelp photo caption and the $10-$20 range is listing-derived, so the price column is blank.",
+        "CLOSED SUNDAY."
+      ],
+      "id": "L579",
+      "added_in": "batch11f_sanjose_cheapeats.json",
+      "distance_mi": 8.84
+    },
+    {
+      "name": "Sizzler",
+      "city": "San Jose",
+      "area": "Aborn Square Rd (Evergreen)",
+      "address": "2910 Aborn Square Rd, San Jose, CA 95121",
+      "coords": [
+        37.3135363,
+        -121.8084387
+      ],
+      "coords_source": "order.online storefront geo",
+      "cuisine": "American steakhouse / salad bar",
+      "phone": "(408) 274-2600",
+      "lunch_special": {
+        "name": "A dedicated Lunch Menu is listed for this store (steak lunch, chicken lunches, sandwiches, salad bar) - but every price seen is on menu-aggregator pages, so none is printed",
+        "price_from": null,
+        "price_to": null,
+        "days": "daily",
+        "window": "the store's ordering page shows 11:00 am - 8:40 pm",
+        "includes": "Aggregator lunch-menu items named for this store: Steak Lunch $6.99, Teriyaki Steak Lunch $6.99, Malibu Chicken Lunch $6.99, Hibachi Chicken Lunch $6.49, Lemon Herb Chicken Lunch $6.49, Bistro Steak Sandwich $5.99, Mushroom Swiss Burger $5.99, Shrimp Fry Lunch $5.49, Fresh Fruit and Salad Bar $6.59 - each with a choice of baked potato, fries or seasoned rice plus cheese toast. These come from an aggregator, not the business, so they are not printed in the price column."
+      },
+      "hours_tuesday": "11:00 AM - 8:40 PM (own ordering page)",
+      "days_open": "The ordering page shows 11:00 am-8:40 pm; the aggregator listing's store hours were not captured as a per-day table, so only the daily ordering window is asserted",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Evergreen is ~13 mi from 20387 Gillick Way: outside the 11:50 AM departure / 3:30 PM home deadline."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {
+            "label": "Sizzler own ordering storefront - 2910 Aborn Square Rd, San Jose; full menu and '11:00 am - 8:40 pm' ordering window; geo",
+            "url": "https://order.online/store/sizzler-san-jose-544714"
+          },
+          {
+            "label": "Allmenus aggregator listing for the same store - the Lunch Menu section with the items and prices named in this row",
+            "url": "https://www.allmenus.com/ca/san-jose/94939-sizzler/menu/"
+          },
+          {
+            "label": "SinglePlatform menu feed - 2910 Aborn Square Rd, phone (408) 274-2600, current dinner-side prices (8 oz tri-tip $14.49, etc.)",
+            "url": "https://places.singleplatform.com/sizzler-25/menu"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/search?find_desc=Sizzler&find_loc=San+Jose%2C+CA",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Sizzler+2910+Aborn+Square+Rd+San+Jose"
+      },
+      "flags": [
+        "AGGREGATOR-ONLY PRICES: the lunch prices ($5.49-$6.99) appear only on allmenus, an aggregator, while the current official-feed prices for this store are much higher (8 oz tri-tip $14.49, steak & jumbo crispy shrimp $15.79). The two do not agree, so no lunch price is printed and the row is levelled 'listing'.",
+        "No per-day hours table was captured - only the 11:00 am-8:40 pm daily ordering window from the store's own ordering page.",
+        "A different business, Indian Sizzler (Santa Clara), shares part of the name and is not related."
+      ],
+      "id": "L580",
+      "added_in": "batch11f_sanjose_cheapeats.json",
+      "distance_mi": 12.19
+    },
+    {
+      "name": "The Farmers Union",
+      "city": "San Jose",
+      "area": "San Pedro Square (W Santa Clara St)",
+      "address": "151 W Santa Clara St, San Jose, CA 95113",
+      "cuisine": "American gastropub",
+      "phone": "(408) 277-0545",
+      "lunch_special": {
+        "name": "No lunch special published - open for lunch from 11:30 AM",
+        "price_from": null,
+        "price_to": null,
+        "days": "Monday-Friday, plus Sunday from 11:00 AM; Saturday opens 4:00 PM",
+        "window": "11:30 AM opening",
+        "includes": "Gastropub menu (BBQ beef brisket, ribs, mac and cheese named in the listing's summary). Dine Downtown offered a three-course prix fixe at $48 for this restaurant in July 2026 - that is event pricing for a promotion whose dates are not attached to a Tuesday, so it is not printed as the row price."
+      },
+      "hours_tuesday": "11:30 AM - 9:00 PM",
+      "days_open": "Mon-Thu 11:30-21:00; Fri 11:30-22:00; Sat 16:00-22:00; Sun 11:00-21:00 (Yelp business page, matched by Restaurantji)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Downtown San Jose is ~11 mi from 20387 Gillick Way: outside the 11:50 AM departure / 3:30 PM home deadline."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {
+            "label": "Yelp business page - The Farmers Union, 151 W Santa Clara St: Mon-Thu 11:30 am-9:00 pm, Fri 11:30 am-10:00 pm, Sat 4:00 pm-10:00 pm, Sun 11:00 am-9:00 pm",
+            "url": "https://www.yelp.com/biz/the-farmers-union-san-jose"
+          },
+          {
+            "label": "Restaurantji - 151 West Santa Clara Street, same weekly hours, address and phone cross-check",
+            "url": "https://www.restaurantji.com/ca/san-jose/the-farmers-union-/"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/the-farmers-union-san-jose",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=The+Farmers+Union+151+W+Santa+Clara+St+San+Jose"
+      },
+      "flags": [
+        "The $48 three-course figure is Dine Downtown event pricing reported by the Mercury News for a July 2026 window; it is not a standing lunch offer and is not printed as the row price.",
+        "No lunch-only pricing is published by the restaurant, so the price column is blank."
+      ],
+      "id": "L581",
+      "coords": null,
+      "added_in": "batch11f_sanjose_cheapeats.json",
+      "distance_mi": null
+    },
+    {
+      "name": "LB Steak",
+      "city": "San Jose",
+      "area": "Santana Row",
+      "address": "334 Santana Row Ste 1000, San Jose, CA 95128",
+      "coords": [
+        37.322437,
+        -121.947533
+      ],
+      "coords_source": "official site JSON-LD",
+      "cuisine": "Steakhouse / modern American",
+      "phone": "(408) 244-1180",
+      "lunch_special": {
+        "name": "No lunch special published - open for lunch from 11:30 AM every day",
+        "price_from": null,
+        "price_to": null,
+        "days": "daily",
+        "window": "from the 11:30 AM opening",
+        "includes": "Menu prices captured from the Yelp menu module: Maine Lobster Bisque $22.00, Boneless Rib Eye 14 oz $79.00, Lindsay Farms NY Strip 12 oz $110.00. These are high-end dinner-scale prices, not lunch deals."
+      },
+      "hours_tuesday": "11:30 AM - 9:00 PM",
+      "days_open": "Sun-Thu 11:30-21:00; Fri-Sat 11:30-22:00 (restaurant's own site structured hours, matched by Yelp and Wanderlog)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Santana Row is ~5 mi from 20387 Gillick Way but sits outside the return-bus window for the 11:50 AM departure / 3:30 PM home deadline on this itinerary."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {
+            "label": "LB Steak official site - 334 Santana Row #1000, San Jose; structured hours Su-Th 11:30-21:00 and Fr-Sa 11:30-22:00; geo; phone",
+            "url": "https://www.lbsteak.com/menus/all-day-menu"
+          },
+          {
+            "label": "Yelp business page - LB Steak, 334 Santana Row Ste 1000: Mon-Thu 11:30 am-9:00 pm, Fri-Sat 11:30 am-10:00 pm, Sun 11:30 am-9:00 pm, menu prices",
+            "url": "https://www.yelp.com/biz/lb-steak-santana-row-san-jose"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/lb-steak-santana-row-san-jose",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=LB+Steak+334+Santana+Row+San+Jose"
+      },
+      "flags": [
+        "No lunch-only pricing is published; the prices captured are the regular menu, so the price column is blank.",
+        "The same official page also carries a second LB Steak at 6000 Bollinger Canyon Rd, San Ramon - only the Santana Row room is used here."
+      ],
+      "id": "L582",
+      "added_in": "batch11g_santana_row_chains.json",
+      "distance_mi": 4.6
+    },
+    {
+      "name": "The Counter Santana Row",
+      "city": "San Jose",
+      "area": "Santana Row (Olin Ave)",
+      "address": "3055 Olin Ave Ste 1035, San Jose, CA 95128",
+      "cuisine": "Build-your-own burgers",
+      "phone": "(408) 423-9200",
+      "lunch_special": {
+        "name": "No lunch special published - open from 11:15 AM every day",
+        "price_from": null,
+        "price_to": null,
+        "days": "daily",
+        "window": "from the 11:15 AM opening",
+        "includes": "Custom burgers and sandwiches. A Reddit diner says ordering 'off the menu and not the build it worksheet, plus get some fries or something to share, drink water' keeps a meal under $30; that is a diner strategy, not a published offer."
+      },
+      "hours_tuesday": "11:15 AM - 9:00 PM",
+      "days_open": "Mon-Thu and Sun 11:15-21:00; Fri-Sat 11:15-22:00 (Yelp business page, consistent across every snapshot retrieved)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Santana Row is ~5 mi from 20387 Gillick Way but sits outside the return-bus window for the 11:50 AM departure / 3:30 PM home deadline."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {
+            "label": "Yelp business page - The Counter Santana Row, 3055 Olin Ave Ste 1035: Mon-Thu and Sun 11:15 am-9:00 pm, Fri-Sat 11:15 am-10:00 pm, thecounter.com",
+            "url": "https://www.yelp.com/biz/the-counter-santana-row-san-jose-3"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/the-counter-santana-row-san-jose-3",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=The+Counter+3055+Olin+Ave+San+Jose"
+      },
+      "flags": [
+        "PHONE CONFLICT on the same Yelp page: two snapshots list (408) 610-1362 and two list (408) 423-9200 for this suite. Both printed.",
+        "No lunch-only pricing is published, so the price column is blank."
+      ],
+      "id": "L583",
+      "coords": null,
+      "added_in": "batch11g_santana_row_chains.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Veggie Grill - Santana Row",
+      "city": "San Jose",
+      "area": "Santana Row (Olin Ave)",
+      "address": "3055 Olin Ave Ste 1030, San Jose, CA 95128",
+      "coords": [
+        37.320587,
+        -121.94808
+      ],
+      "coords_source": "Yellowpages listing geo",
+      "cuisine": "Vegan American",
+      "phone": "(408) 493-0777",
+      "lunch_special": {
+        "name": "No lunch special published - open from 11:00 AM every day; a Reddit diner prices the menu at $10-$15 a plate",
+        "price_from": null,
+        "price_to": null,
+        "days": "daily",
+        "window": "from the 11:00 AM opening",
+        "includes": "100% vegan menu of burgers, sandwiches and bowls. The $10-$15 figure is a Reddit diner quote, not a published lunch price, so the price column is blank."
+      },
+      "hours_tuesday": "11:00 AM - 10:00 PM (Yellowpages, vkind, 4leaflabs and UberEats) / 11:00 AM - 11:00 PM (TripAdvisor) - see flag",
+      "days_open": "Mon-Sun 11:00-22:00 (Yellowpages, vkind, 4leaflabs); UberEats Sun-Thu 11:00-22:00 and Fri-Sat 11:00-22:30; TripAdvisor 11:00-23:00 daily",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Santana Row is ~5 mi from 20387 Gillick Way but sits outside the return-bus window for the 11:50 AM departure / 3:30 PM home deadline."
+      },
+      "verification": {
+        "level": "conflicting",
+        "sources": [
+          {
+            "label": "Yellowpages - Veggie Grill - Santana Row, 3055 Olin Ave Ste 1030: Mon-Sun 11:00 am-10:00 pm, geo, phone, veggiegrill.com",
+            "url": "https://www.yellowpages.com/san-jose-ca/mip/veggie-grill-473528072"
+          },
+          {
+            "label": "vkind listing - 3055 Olin Ave #1030, structured Mon-Sun 11:00-22:00, geo",
+            "url": "https://www.vkind.com/vegan-businesses/veggie-grill-santana-row/"
+          },
+          {
+            "label": "TripAdvisor - 3055 Olin Ave #1030, structured Tue 11:00-23:00 (later close, conflicting), geo",
+            "url": "https://www.tripadvisor.ca/Restaurant_Review-g33020-d3955311-Reviews-Veggie_Grill_Santana_Row-San_Jose_California.html"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/search?find_desc=Veggie+Grill&find_loc=San+Jose%2C+CA",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Veggie+Grill+3055+Olin+Ave+San+Jose"
+      },
+      "flags": [
+        "CLOSING-TIME CONFLICT: four sources say 10:00 PM, TripAdvisor says 11:00 PM and UberEats says 10:30 PM on Fri-Sat. All printed.",
+        "PHONE CONFLICT: Yellowpages and TripAdvisor list (408) 493-0777, the vkind listing lists (408) 296-6473 for the same suite. Both printed.",
+        "No lunch-only pricing is published, so the price column is blank."
+      ],
+      "id": "L584",
+      "added_in": "batch11g_santana_row_chains.json",
+      "distance_mi": 4.55
+    },
+    {
+      "name": "Mezcal",
+      "city": "San Jose",
+      "area": "Downtown San Jose (W San Fernando St)",
+      "address": "25 W San Fernando St, San Jose, CA 95113",
+      "coords": [
+        37.3342803,
+        -121.8897689
+      ],
+      "coords_source": "OpenTable listing geo",
+      "cuisine": "Regional Mexican",
+      "phone": "(408) 283-9595",
+      "lunch_special": {
+        "name": "No lunch special published - a short weekday lunch service 11:30 AM-1:30 PM per Yelp, or continuous 11:30 AM-9:00 PM per OpenTable (see flag)",
+        "price_from": null,
+        "price_to": null,
+        "days": "Tuesday-Sunday (CLOSED MONDAY)",
+        "window": "11:30 AM - 1:30 PM per Yelp",
+        "includes": "Mexican menu; Dine Downtown offered a three-course prix fixe with ribeye steak or branzino at $49 for this restaurant in July 2026 - that is event pricing, not a standing lunch offer, so it is not printed."
+      },
+      "hours_tuesday": "11:30 AM - 1:30 PM and 5:00 PM - 9:00 PM (Yelp) vs 11:30 AM - 9:00 PM continuous (OpenTable) - see flag",
+      "days_open": "Yelp: Mon closed; Tue-Thu 11:30-13:30 and 17:00-21:00; Fri 11:30-13:30 and 17:00-21:30; Sat 12:00-21:30; Sun 12:00-20:00. OpenTable: Tue-Thu 11:30 am-9:00 pm; Fri 11:30 am-9:30 pm; Sat 12:00-9:30 pm; Sun 12:00-8:00 pm.",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Downtown San Jose is ~11 mi from 20387 Gillick Way: outside the 11:50 AM departure / 3:30 PM home deadline."
+      },
+      "verification": {
+        "level": "conflicting",
+        "sources": [
+          {
+            "label": "OpenTable - Mezcal, 25 W San Fernando St: 'Hours of operation Tue-Thu 11:30 am-9:00 pm, Fri 11:30 am-9:30 pm, Sat 12:00 pm-9:30 pm, Sun 12:00 pm-8:00 pm', $30 and under, geo",
+            "url": "https://www.opentable.com/mezcal-san-jose"
+          },
+          {
+            "label": "Yelp business page - Mezcal, 25 W San Fernando St: Mon closed, Tue-Thu 11:30 am-1:30 pm and 5:00 pm-9:00 pm, Fri-Sun blocks - a two-hour lunch window the OpenTable entry does not show",
+            "url": "https://www.yelp.com/biz/mezcal-san-jose"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/mezcal-san-jose",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Mezcal+25+W+San+Fernando+St+San+Jose"
+      },
+      "flags": [
+        "MATERIAL HOURS CONFLICT: OpenTable shows continuous 11:30 AM-9:00 PM service Tue-Thu; Yelp shows a two-hour lunch (11:30 AM-1:30 PM) then a 5:00 PM reopen. If Yelp is right, arriving after 1:30 PM means no food until 5:00 PM. Both printed; the row is levelled 'conflicting'.",
+        "The $49 three-course figure is Dine Downtown event pricing from a July 2026 window, not a standing lunch offer, so it is not printed as the row price.",
+        "CLOSED MONDAY."
+      ],
+      "id": "L585",
+      "added_in": "batch11g_santana_row_chains.json",
+      "distance_mi": 7.86
+    },
+    {
+      "name": "Strata (Strāta)",
+      "city": "San Jose",
+      "area": "Downtown San Jose (E Santa Clara St, across from City Hall)",
+      "address": "181 E Santa Clara St, San Jose, CA 95113",
+      "coords": [
+        37.3386646,
+        -121.8869102
+      ],
+      "coords_source": "OpenTable listing geo",
+      "cuisine": "Contemporary American (a la carte lounge + prix-fixe dining room)",
+      "phone": "(408) 520-3893",
+      "lunch_special": {
+        "name": "Lunch served Tue-Fri 11:00 AM-2:00 PM per OpenTable's hours table (opening coverage said dinner-only) - no lunch price published",
+        "price_from": null,
+        "price_to": null,
+        "days": "Tuesday-Friday per OpenTable",
+        "window": "11:00 AM - 2:00 PM",
+        "includes": "OpenTable's lunch-menu listing for this restaurant names: bread & butter, potato pave, wings, crab lumpia, caviar service, rockfish crudo, steak tartare, burger (6 oz angus, garlic aioli, white cheddar, balsamic red onion), skirt-steak sandwich, short rib panuozzo, chicken panuozzo and shaved ice. No prices were rendered, so the price column is blank."
+      },
+      "hours_tuesday": "Lunch 11:00 AM - 2:00 PM, happy hour 2:00-6:00 PM, dinner 4:00 PM - 9:00 PM (OpenTable) vs 5:00 PM opening only (Eater SF and Metro) - see flag",
+      "days_open": "OpenTable: Bar Tue-Fri 11:00 am-9:00 pm; Lunch Tue-Fri 11:00 am-2:00 pm; Happy Hour Tue-Fri 2:00-6:00 pm; Dinner Tue-Thu 4:00-9:00 pm, Fri 4:00-10:00 pm, Sat 5:00-10:00 pm, Sun 5:00-9:00 pm. Eater SF and Metro (May 2026) describe a dinner-only room opening at 5:00 pm Tue-Sun; AAA lists bar Tue-Sun 5:00 pm-10:00 pm.",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Downtown San Jose is ~11 mi from 20387 Gillick Way: outside the 11:50 AM departure / 3:30 PM home deadline."
+      },
+      "verification": {
+        "level": "conflicting",
+        "sources": [
+          {
+            "label": "OpenTable - Strata, 181 E Santa Clara St: 'Lunch Tue-Fri 11:00 am-2:00 pm; Happy Hour Tue-Fri 2:00 pm-6:00 pm; Dinner Tue-Thu 4:00 pm-9:00 pm', $31 to $50, geo, and the lunch menu item list",
+            "url": "https://www.opentable.com/r/strata-san-jose"
+          },
+          {
+            "label": "Eater SF (May 2026) - 'open from 5 p.m. to 9 p.m. Tuesday through Wednesday, 5 p.m. to 10 p.m. Thursday through Saturday, and 5 p.m. to 9 p.m. on Sunday' - no lunch service",
+            "url": "https://sf.eater.com/restaurant-news/212357/strata-san-jose-restaurant-opening"
+          },
+          {
+            "label": "Metro Silicon Valley review - 'Tues and Wed 5pm to 9pm, Thurs through Sat 5pm to 10pm, Sun 5pm to 9pm, 181 E Santa Clara St.' - also dinner-only",
+            "url": "https://www.metrosiliconvalley.com/strata-restaurant-review-downtown-san-jose/"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/search?find_desc=Strata&find_loc=San+Jose%2C+CA",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Strata+181+E+Santa+Clara+St+San+Jose"
+      },
+      "flags": [
+        "MATERIAL CONFLICT: OpenTable's current hours table lists a Tue-Fri 11:00 AM-2:00 PM lunch (with its own lunch-menu items), while both opening-coverage pieces from May 2026 describe a dinner-only restaurant opening at 5:00 PM. The restaurant opened in May 2026, so the lunch service may have been added since. Both readings are printed and the row is levelled 'conflicting' - call ahead.",
+        "The Dine Downtown $50 three-course prix fixe quoted for Strata is event pricing for a July 2026 window, not a standing lunch price.",
+        "No lunch prices were rendered on the OpenTable menu listing, so the price column is blank."
+      ],
+      "id": "L586",
+      "added_in": "batch11g_santana_row_chains.json",
+      "distance_mi": 8.08
+    },
+    {
+      "name": "Habit Burger & Grill - San Jose (Almaden)",
+      "city": "San Jose",
+      "area": "Almaden Expressway (Blossom Valley)",
+      "address": "5018 Almaden Expressway Ste 10, San Jose, CA 95118",
+      "coords": [
+        37.258722,
+        -121.875617
+      ],
+      "coords_source": "official site JSON-LD",
+      "cuisine": "Chargrilled burgers / fast casual",
+      "phone": "(408) 613-2578",
+      "lunch_special": {
+        "name": "No lunch special published on this store's page - a Reddit diner quotes 'Habit Burger. $10. Half burger, side salad, drink, & chicken nuggets'",
+        "price_from": null,
+        "price_to": null,
+        "days": "daily",
+        "window": "from the 10:30 AM opening",
+        "includes": "Charburgers, salads and sandwiches. The $10 figure is a Reddit diner quote for a promo combo, not a price published by the chain, so the price column is blank."
+      },
+      "hours_tuesday": "10:30 AM - 9:30 PM",
+      "days_open": "Mon-Thu and Sun 10:30-21:30; Fri-Sat 10:30-22:00 (official store page structured hours, matched by Yelp and Restaurantji)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Blossom Valley is ~11 mi from 20387 Gillick Way: outside the 11:50 AM departure / 3:30 PM home deadline."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {
+            "label": "Habit Burger & Grill official store page - San Jose (Almaden), 5018 Almaden Expressway: 'Mon - Thur 10:30am - 9:30pm, Fri - Sat 10:30am - 10:00pm, Sun 10:30am - 9:30pm'; geo; phone",
+            "url": "https://www.habitburger.com/locations/san-jose-almaden/"
+          },
+          {
+            "label": "Yelp business page - Habit Burger & Grill, 5018 Almaden Expressway Ste 10: same weekly hours",
+            "url": "https://www.yelp.com/biz/habit-burger-and-grill-san-jose-3"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/habit-burger-and-grill-san-jose-3",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Habit+Burger+5018+Almaden+Expressway+San+Jose"
+      },
+      "flags": [
+        "The $10 combo is a Reddit diner quote; the chain's own store page publishes no lunch price, so the price column is blank.",
+        "A second San Jose Habit at 1510 Monterey Rd Unit 10 keeps different hours (daily 10:30 am-9:00 pm per its own store page) - not merged into this row."
+      ],
+      "id": "L587",
+      "added_in": "batch11g_santana_row_chains.json",
+      "distance_mi": 9.29
+    },
+    {
+      "name": "Red Robin Gourmet Burgers and Brews - Eastridge",
+      "city": "San Jose",
+      "area": "Eastridge (2200 Eastridge Loop)",
+      "address": "2200 Eastridge Loop, San Jose, CA 95122",
+      "coords": [
+        37.3257189,
+        -121.81257
+      ],
+      "coords_source": "Restaurant Guru listing geo",
+      "cuisine": "Burgers / American",
+      "phone": "(408) 223-1000",
+      "lunch_special": {
+        "name": "No lunch special published on this store's page - a Reddit diner quotes '$10 ... two burger, fries & drink deals' available for online order and pickup only",
+        "price_from": null,
+        "price_to": null,
+        "days": "daily",
+        "window": "from the 11:00 AM opening",
+        "includes": "Burgers and bottomless fries. The $10 figure is a Reddit diner quote describing an online pickup-only promotion, not a price published by the chain, so the price column is blank."
+      },
+      "hours_tuesday": "11:00 AM - 10:00 PM",
+      "days_open": "Mon-Thu 11:00-22:00; Fri-Sat 11:00-23:00; Sun 11:00-21:00 (Yelp business page, matched by Restaurant Guru and Apple Maps)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "East San Jose is ~13 mi from 20387 Gillick Way: outside the 11:50 AM departure / 3:30 PM home deadline."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {
+            "label": "Yelp business page - Red Robin, 2200 Eastridge Lp: Mon-Thu 11:00 am-10:00 pm, Fri-Sat 11:00 am-11:00 pm, Sun 11:00 am-9:00 pm; photo captions note 'New Happy Hour 3 - 6pm Weekdays'",
+            "url": "https://www.yelp.com/biz/red-robin-gourmet-burgers-and-brews-san-jose"
+          },
+          {
+            "label": "Restaurant Guru - 2200 Eastridge Loop, Mon-Thu 11:00-22:00, Fri-Sat 11:00-23:00, Sun 11:00-21:00, $10-$20 per person, geo",
+            "url": "https://restaurantguru.com/Red-Robin-Eastridge-San-Jose"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/red-robin-gourmet-burgers-and-brews-san-jose",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Red+Robin+2200+Eastridge+Loop+San+Jose"
+      },
+      "flags": [
+        "The $10 burger-fries-drink deal is quoted on Reddit as an online order-and-pickup promotion; the chain's store pages publish no lunch price, so the price column is blank.",
+        "A second San Jose Red Robin at 1000 El Paseo De Saratoga is listed on Yelp as CLOSED - not merged."
+      ],
+      "id": "L588",
+      "added_in": "batch11g_santana_row_chains.json",
+      "distance_mi": 12.0
+    },
+    {
+      "name": "Olive Garden Italian Restaurant - Milpitas",
+      "city": "Milpitas",
+      "area": "Great Mall Dr",
+      "address": "1350 Great Mall Dr, Milpitas, CA 95035",
+      "cuisine": "Italian-American chain",
+      "phone": "(408) 935-8176",
+      "lunch_special": {
+        "name": "A third-party 'specials' site advertises a $5.99 weekday lunch menu, Mon-Fri 11:00 AM-3:00 PM - not confirmed on the chain's own pages, so no price is printed",
+        "price_from": null,
+        "price_to": null,
+        "days": "Monday-Friday per the third-party site",
+        "window": "11:00 AM - 3:00 PM per the third-party site; the store opens 11:00 AM",
+        "includes": "The third-party site describes 'classic pasta, salads, sandwiches, or soups' at $5.99 with breadsticks or salad, plus a soup-and-salad combo and a 3:00-5:00 PM early-dinner discount. None of that appears on the chain's own store pages, so the price column is blank."
+      },
+      "hours_tuesday": "11:00 AM - 10:00 PM",
+      "days_open": "Mon-Thu 11:00-22:00; Fri-Sat 11:00-23:00; Sun 11:00-22:00 (Yelp business page and Yellowpages agree)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "The Great Mall is ~11 mi from 20387 Gillick Way: outside the 11:50 AM departure / 3:30 PM home deadline."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {
+            "label": "Yelp business page - Olive Garden, 1350 Great Mall Dr, Milpitas: Mon-Thu 11:00 am-10:00 pm, Fri-Sat 11:00 am-11:00 pm, Sun 11:00 am-10:00 pm",
+            "url": "https://www.yelp.com/biz/olive-garden-italian-restaurant-milpitas-3"
+          },
+          {
+            "label": "Yellowpages - Olive Garden, 1350 Great Mall Dr, Milpitas: structured Mo-Th 11:00-22:00, Fr-Sa 11:00-23:00, Su 11:00-22:00",
+            "url": "https://www.yellowpages.com/cupertino-ca/olive-garden"
+          },
+          {
+            "label": "olivegardenmenus.net - third-party 'specials' page claiming a $5.99 weekday lunch 11:00 AM-3:00 PM and a 3:00-5:00 PM early-dinner discount (NOT an official page - price not printed in this row)",
+            "url": "https://olivegardenmenus.net/olive-garden-specials-menu-2/"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/olive-garden-italian-restaurant-milpitas-3",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Olive+Garden+1350+Great+Mall+Dr+Milpitas"
+      },
+      "flags": [
+        "THIRD-PARTY PRICE REJECTED: the $5.99 weekday lunch figure comes from olivegardenmenus.net, an unofficial 'specials' site. It is not printed as the row price and is recorded here only so the claim is on the record.",
+        "NO CUPERTINO LOCATION: the chain has no Cupertino restaurant - the nearest rooms are Milpitas (1350 Great Mall Dr), San Jose (2226 Eastridge Loop and 940 Blossom Hill Rd) and Fremont (39145 Farwell Dr). Only the Milpitas room is merged.",
+        "A Reddit diner's 'unlimited soup/salad/breadsticks and entree for like 12 bucks' is a diner quote and is likewise not printed."
+      ],
+      "id": "L589",
+      "coords": null,
+      "added_in": "batch11g_santana_row_chains.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Togo's",
+      "city": "Cupertino",
+      "area": "Stevens Creek Blvd (Oaks Center, across from De Anza College)",
+      "address": "21265 Stevens Creek Blvd, Cupertino, CA 95014",
+      "coords": [
+        37.32349,
+        -122.0474
+      ],
+      "coords_source": "TripAdvisor listing geo",
+      "cuisine": "Sandwich shop",
+      "phone": "(408) 517-0475",
+      "lunch_special": {
+        "name": "No lunch special published - counter-service sandwiches from 10:00 AM",
+        "price_from": null,
+        "price_to": null,
+        "days": "daily",
+        "window": "opens 10:00 AM",
+        "includes": "Hot and cold sandwiches, salads, soups and wraps. No lunch-only price is published on any page retrieved."
+      },
+      "hours_tuesday": "10:00 AM - 8:30 PM (TripAdvisor and Yellowpages) / 9:30 AM - 9:00 PM (hours-locations.com) - see flag",
+      "days_open": "TripAdvisor and Yellowpages: Mon-Thu 10:00-20:30, Fri 10:00-20:00, Sat 10:00-18:00, Sun 10:00-17:00. hours-locations.com: Mon-Fri 9:30 am-9:00 pm, Sat 10:00 am-8:30 pm, Sun 10:00 am-8:00 pm.",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": true,
+        "note": "~1 mi from 20387 Gillick Way and a counter-service room: the fastest option in this batch, workable even on the 11:50 AM departure."
+      },
+      "verification": {
+        "level": "conflicting",
+        "sources": [
+          {
+            "label": "TripAdvisor - Togo's, 21265 Stevens Creek Blvd, Cupertino: structured Mon-Thu 10:00-20:30, Fri 10:00-20:00, Sat 10:00-18:00, Sun 10:00-17:00; geo",
+            "url": "https://www.tripadvisor.com/Restaurant_Review-g32273-d4467748-Reviews-Togo_s-Cupertino_California.html"
+          },
+          {
+            "label": "Yellowpages - Togo's Eatery, 21265 Stevens Creek Blvd, Cupertino: Mon-Thu 10:00 am-8:30 pm, Fri 10:00 am-8:00 pm, Sat 10:00 am-6:00 pm, Sun 10:00 am-5:00 pm",
+            "url": "https://www.yellowpages.com/cupertino-ca/mip/togos-eatery-1448907"
+          },
+          {
+            "label": "hours-locations.com - 21265 Stevens Creek Blvd, Mon-Fri 9:30 am-9:00 pm, Sat-Sun later (third value, conflicting)",
+            "url": "https://www.hours-locations.com/togos/ca/cupertino/21265-stevens-creek-blvd/"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/search?find_desc=Togo%27s&find_loc=Cupertino%2C+CA",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Togo%27s+21265+Stevens+Creek+Blvd+Cupertino"
+      },
+      "flags": [
+        "THREE-WAY HOURS CONFLICT (10:00 AM-8:30 PM on two sources vs 9:30 AM-9:00 PM on a directory). All printed; the two-source reading is used.",
+        "No lunch-only pricing is published, so the price column is blank.",
+        "A separate Togo's at 1200 Crossman Ave, Sunnyvale keeps different hours (Mon-Fri 9:00 am-7:00 pm, Sat 10:00 am-3:00 pm, Sun closed) and is not merged here."
+      ],
+      "id": "L590",
+      "added_in": "batch11g_santana_row_chains.json",
+      "distance_mi": 1.19
+    },
+    {
+      "name": "Tatami Buffet",
+      "city": "Cupertino",
+      "area": "N Wolfe Rd (Vallco Park South)",
+      "address": "10123 N Wolfe Rd, Cupertino, CA 95014",
+      "coords": [
+        37.326267,
+        -122.01459
+      ],
+      "coords_source": "Yellowpages listing geo",
+      "cuisine": "Sushi and seafood buffet",
+      "phone": "(408) 996-3444",
+      "lunch_special": {
+        "name": "Lunch-only buffet service - the restaurant opens for the lunch buffet and closes in mid-afternoon",
+        "price_from": null,
+        "price_to": null,
+        "days": "daily",
+        "window": "11:30 AM - 2:30 PM Mon-Fri (3:00 PM Sat-Sun) - the whole operating day",
+        "includes": "Sushi, seafood and meat buffet, 100+ varieties per the business description; a free birthday meal is advertised when accompanied by two paying adults. No buffet price is printed on any page retrieved."
+      },
+      "hours_tuesday": "11:30 AM - 2:30 PM",
+      "days_open": "Mon-Fri 11:30-14:30; Sat-Sun 11:30-15:00 (Yellowpages, allbiz and the restaurant's own localsearch page all agree)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": true,
+        "note": "~2 mi from 20387 Gillick Way and it is open the entire window: a 2:30 PM close fits the 11:50 AM departure / 3:30 PM home deadline."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {
+            "label": "Yellowpages - Tatami Buffet, 10123 N Wolfe Rd, Cupertino: Mon-Fri 11:30 am-2:30 pm, Sat-Sun 11:30 am-3:00 pm, geo, phone",
+            "url": "https://www.yellowpages.com/cupertino-ca/mip/tatami-buffet-460371458"
+          },
+          {
+            "label": "allbiz - Tatami Buffet, 10123 N Wolfe Rd #2001: day-by-day Mon-Fri 11:30 AM-2:30 PM, Sat-Sun 11:30 AM-3:00 PM; sameAs links to its Yelp and TripAdvisor pages",
+            "url": "https://www.allbiz.com/business/tatami-buffet-408-996-3444"
+          },
+          {
+            "label": "Tatami's own localsearch page (linked from Yellowpages) - 10123 N Wolfe Rd, Cupertino, Mon-Fri 11:30 am-2:30 pm, Sat-Sun 11:30 am-3:00 pm",
+            "url": "https://tatamibuffet.localsearch.com/"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/tatami-sushi-and-seafood-buffet-cupertino-2",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Tatami+Buffet+10123+N+Wolfe+Rd+Cupertino"
+      },
+      "flags": [
+        "LUNCH-ONLY OPERATING DAY: this is the one row in the master list whose entire weekly schedule sits inside the lunch window - it opens 11:30 AM and is shut by 2:30 PM on weekdays. Confirm before travelling.",
+        "No buffet price is printed anywhere retrieved (its own site tatamibuffet.com would not load), so the price column is blank.",
+        "Founding year is printed inconsistently by directories (2010 vs 2011) - not material, no value carried."
+      ],
+      "id": "L591",
+      "added_in": "batch11h_verified_lunch_specials.json",
+      "distance_mi": 1.26
+    },
+    {
+      "name": "Boda - Chinese and Vietnamese Restaurant",
+      "city": "San Jose",
+      "area": "Story Rd (East San Jose, at the outer edge of the 15-mile ring)",
+      "address": "2868 Story Rd, San Jose, CA 95127",
+      "coords": [
+        37.353368,
+        -121.822705
+      ],
+      "coords_source": "Franki listing geo",
+      "cuisine": "Chinese and Vietnamese",
+      "phone": "(408) 251-3855",
+      "lunch_special": {
+        "name": "Weekday Lunch Special - $5.99 plates ($6.50 for the prawn versions) printed on the restaurant's own site, which serves http only and therefore cannot be linked under the project's https-only source rule - see flag",
+        "price_from": null,
+        "price_to": null,
+        "days": "Monday-Friday",
+        "window": "11:00 AM - 2:00 PM Mon-Fri (printed on its own http-only site; treat as unconfirmed until called in)",
+        "includes": "All items served with egg roll, soup of the day, and steamed rice or shrimp fried rice (soup not included on to-go orders). $5.99 plates: Chicken with Black Bean Sauce, Chicken with Mixed Vegetables, Kung Pao Chicken, Almond Chicken, Cashew Chicken, Chicken with Broccoli, Sweet & Sour Chicken, Lemon Chicken, Beef with Broccoli, Beef with Black Bean Sauce, Beef with Mixed Vegetables, Pork with Mixed Vegetables, Sweet & Sour Pork, Vegetable Deluxe, Broccoli with Oyster Sauce, Bean Curd with Vegetables. $6.50 prawn plates: Prawns with Broccoli, Kung Pao Prawns, Sweet & Sour Prawns, Prawns with Chinese Broccoli, Almond Prawns, Prawns with Cashew Nuts, Prawns with Mixed Vegetables, Prawns with Black Bean Sauce."
+      },
+      "hours_tuesday": "11:00 AM - 10:00 PM",
+      "days_open": "Open 7 days a week, 11:00 am-10:00 pm (restaurant's own site 'Hours of Operation' section, matched day-by-day by the Franki listing)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "East San Jose is ~15 mi from 20387 Gillick Way - at the outer edge of the search ring and well outside the 11:50 AM departure / 3:30 PM home deadline."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {
+            "label": "Franki listing - Boda Chinese & Vietnamese Food, 2868 Story Rd, San Jose, CA 95127: day-by-day Mon-Sun 11:00-22:00, geo, phone, links bodarestaurant.com",
+            "url": "https://frankiapp.com/business/boda-chinese-vietnamese-food-284350"
+          },
+          {
+            "label": "Nextdoor business page - 2868 Story Road, San Jose, CA 95127, +1 408-251-3855, geo - corroborates the street address and phone",
+            "url": "https://nextdoor.com/pages/boda-chinese-vietnamese-food/"
+          },
+          {
+            "label": "Restaurant888 - Boda Chinese & Vietnamese Food, 2868 Story Rd, San Jose, CA 95127, (408) 251-3855, bodarestaurant.com - third address corroboration",
+            "url": "https://www.restaurant888.com/biz/boda-chinese-amp-vietnamese-food-san-jose-ca"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/search?find_desc=Boda&find_loc=San+Jose%2C+CA",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Boda+2868+Story+Rd+San+Jose"
+      },
+      "flags": [
+        "PRICE DESCRIBED BUT NOT PRINTED: the restaurant's own site (www.bodarestaurant.com) prints 'Weekday Lunch Special... From Mon. to Fri. 11:00 am to 2:00 pm... $5.99' with a $6.50 prawn section, but that site serves http only and refuses https, so it fails this project's https-only citation rule and cannot be linked. The price and the 11:00 am-2:00 pm window are reproduced in the row text as read, but the price columns are left blank and the row is levelled 'listing' rather than 'official'. Call (408) 251-3855 to confirm.",
+        "The street address is carried from three independent listings (Franki, Nextdoor, Restaurant888), all of which also match the phone number published on its own site; its own site prints only 'San Jose'.",
+        "Its own site also carries the caveat 'Menu and prices subject to change. Call restaurant for current prices and selections.' and notes lunch specials are not served on holidays.",
+        "East San Jose, ~15 mi from 20387 Gillick Way - the outer edge of the search ring."
+      ],
+      "id": "L592",
+      "added_in": "batch11h_verified_lunch_specials.json",
+      "distance_mi": 11.74
+    },
+    {
+      "name": "Last Chance Restaurant",
+      "city": "Santa Clara",
+      "area": "De La Cruz Boulevard",
+      "address": "3400 De La Cruz Blvd, Santa Clara, CA 95054",
+      "cuisine": "American, pizza, burgers",
+      "phone": "(408) 988-2768",
+      "lunch_special": {
+        "name": "Lunch menu with salads, sandwiches, burgers, pizza and lunch plates",
+        "price_from": 4.99,
+        "price_to": 16.99,
+        "days": "daily service; menu page does not give a separate lunch cutoff",
+        "window": "opens 7:30 AM daily",
+        "includes": "Published menu includes lunch-appropriate salads, sandwiches, burgers and pizza; examples include dinner salad $6.99, cheeseburger $14.99, Louisiana hot link sandwich $12.99 and rib-eye steak sandwich $16.99."
+      },
+      "hours_tuesday": "7:30 AM - 9:00 PM",
+      "days_open": "Monday-Sunday 7:30 AM-9:00 PM",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Santa Clara is outside the short Cupertino return-bus window; allow a separate trip buffer."
+      },
+      "verification": {
+        "level": "official",
+        "sources": [
+          {
+            "label": "Last Chance Restaurant menu and ordering site: 3400 De La Cruz Blvd, Santa Clara; published menu prices and address",
+            "url": "https://www.lastchancerestaurantmenu.com/"
+          },
+          {
+            "label": "Last Chance Restaurant structured listing: 3400 De La Cruz Blvd and Monday-Sunday 7:30 AM-9:00 PM",
+            "url": "https://www.lastchancerestaurantmenu.com/"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/last-chance-restaurant-santa-clara",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Last+Chance+Restaurant+3400+De+La+Cruz+Blvd+Santa+Clara"
+      },
+      "flags": [
+        "The menu is published, but the page does not label a separate lunch end time; the row is retained as a lunch-service lead, not a timed promotion."
+      ],
+      "id": "L593",
+      "coords": null,
+      "added_in": "batch12a_peninsula_southbay_verified.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Nar Restaurant",
+      "city": "Mountain View",
+      "area": "El Camino Real / downtown",
+      "address": "286 W El Camino Real, Mountain View, CA 94041",
+      "cuisine": "Azerbaijani, Georgian, Armenian",
+      "phone": "(650) 705-2007",
+      "lunch_special": {
+        "name": "Lunch service with South Caucasus menu",
+        "price_from": null,
+        "price_to": null,
+        "days": "Tuesday-Sunday",
+        "window": "11:30 AM - 2:00 PM",
+        "includes": "OpenTable identifies a dedicated lunch service and states the restaurant offers catering for corporate lunches. No separate lunch-special price was printed in the retrieved menu, so prices are blank."
+      },
+      "hours_tuesday": "11:30 AM - 2:00 PM; 5:00 PM - 10:00 PM",
+      "days_open": "Tuesday-Sunday lunch 11:30 AM-2:00 PM and dinner 5:00 PM-10:00 PM; closed Monday",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Mountain View is outside the short Cupertino return-bus window."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {
+            "label": "OpenTable Nar Restaurant: local address, Tuesday-Sunday lunch hours, dinner hours, phone and cuisine",
+            "url": "https://www.opentable.com/r/nar-restaurant-mountain-view"
+          },
+          {
+            "label": "OpenTable menu and restaurant page: lunch service and current menu metadata",
+            "url": "https://www.opentable.com/r/nar-restaurant-mountain-view"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/nar-restaurant-mountain-view",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Nar+Restaurant+286+W+El+Camino+Real+Mountain+View"
+      },
+      "flags": [
+        "Lunch service and hours are citable, but no lunch-special price was printed; do not budget a deal price without checking the current menu."
+      ],
+      "id": "L594",
+      "coords": null,
+      "added_in": "batch12a_peninsula_southbay_verified.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Delarosa - Palo Alto",
+      "city": "Palo Alto",
+      "area": "Stanford Shopping Center",
+      "address": "136 Stanford Shopping Center, Palo Alto, CA 94304",
+      "cuisine": "Italian, pizza",
+      "phone": "(650) 785-1221",
+      "lunch_special": {
+        "name": "All-day lunch/dinner menu",
+        "price_from": 6.0,
+        "price_to": 27.0,
+        "days": "daily",
+        "window": "11:00 AM opening daily",
+        "includes": "Official menu is labeled All Day Menu and includes pasta, pizza, salads and mains; examples include Caesar salad $9 small/$16 large, pappardelle $20, pizza from $18 and chicken saltimbocca $27."
+      },
+      "hours_tuesday": "11:00 AM - 9:00 PM",
+      "days_open": "Monday-Thursday and Sunday 11:00 AM-9:00 PM; Friday-Saturday 11:00 AM-10:00 PM",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Palo Alto is beyond the short Cupertino return-bus window."
+      },
+      "verification": {
+        "level": "official",
+        "sources": [
+          {
+            "label": "Delarosa Palo Alto official location page: 136 Stanford Shopping Center, hours and phone",
+            "url": "https://www.delarosasf.com/location/palo-alto/"
+          },
+          {
+            "label": "Delarosa Palo Alto official page: all-day menu and printed item prices",
+            "url": "https://www.delarosasf.com/location/palo-alto/"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/delarosa-palo-alto",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Delarosa+136+Stanford+Shopping+Center+Palo+Alto"
+      },
+      "flags": [
+        "The official page calls this an all-day menu rather than a separately discounted lunch special; price fields reflect printed menu items, not a promotional deal."
+      ],
+      "id": "L595",
+      "coords": null,
+      "added_in": "batch12a_peninsula_southbay_verified.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Madera at Rosewood Sand Hill",
+      "city": "Menlo Park",
+      "area": "Sand Hill Road",
+      "address": "2825 Sand Hill Rd, Menlo Park, CA 94025",
+      "cuisine": "California",
+      "phone": "(650) 561-1540",
+      "lunch_special": {
+        "name": "Weekday lunch service",
+        "price_from": null,
+        "price_to": null,
+        "days": "Monday-Friday",
+        "window": "11:30 AM - 2:00 PM",
+        "includes": "Rosewood's official page describes Madera's wood-fired Californian cuisine and publishes a weekday lunch service. The current fetched page did not expose lunch-item prices, so no price is carried."
+      },
+      "hours_tuesday": "11:30 AM - 2:00 PM; 5:00 PM - 9:00 PM",
+      "days_open": "Lunch Monday-Friday 11:30 AM-2:00 PM; dinner daily 5:00 PM-9:00 PM; weekend brunch 10:30 AM-2:00 PM",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Menlo Park is outside the short Cupertino return-bus window."
+      },
+      "verification": {
+        "level": "official",
+        "sources": [
+          {
+            "label": "Rosewood Sand Hill official Madera page: weekday lunch hours, daily dinner, weekend brunch and phone",
+            "url": "https://www.rosewoodhotels.com/en/sand-hill-menlo-park/dining/madera"
+          },
+          {
+            "label": "Rosewood official Madera page: Californian cuisine and restaurant identity",
+            "url": "https://www.rosewoodhotels.com/en/sand-hill-menlo-park/dining/madera"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/madera-menlo-park",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Madera+2825+Sand+Hill+Road+Menlo+Park"
+      },
+      "flags": [
+        "The official page confirms lunch service but does not print current lunch prices in the retrieved content; confirm menu and price before treating this as a budget special."
+      ],
+      "id": "L596",
+      "coords": null,
+      "added_in": "batch12a_peninsula_southbay_verified.json",
+      "distance_mi": null
     }
   ],
   "top_picks_for_tuesday_sept_8": [
