@@ -1,0 +1,490 @@
+{
+  "pass": "11",
+  "searched": "2026-09-11",
+  "method": "Eleventh lunch pass - San Jose value-lunch sweep (Alum Rock, Berryessa, Tully Rd, Santa Teresa, downtown, Murphy Ave, Aborn Square) plus West San Jose dim sum. Every field below was transcribed from a page actually retrieved this turn (URL in the row). Nothing was typed from memory. Prices that appear only in Reddit threads, Yelp Q&A answers or menu aggregators are described in the row and deliberately left out of the price column, per the standing project rule. Yelp business pages return HTTP 403 to direct fetch here, so Yelp facts come from the Yelp business-page URL as surfaced by search and are levelled 'listing'/'conflicting', never 'official'.",
+  "entries": [
+    {
+      "name": "Golden Palace Restaurant",
+      "city": "San Jose",
+      "area": "S De Anza Blvd (West San Jose, 95129)",
+      "address": "1146 S De Anza Blvd, San Jose, CA 95129",
+      "cuisine": "Cantonese dim sum / seafood",
+      "phone": "(408) 257-8877",
+      "lunch_special": {
+        "name": "Weekday dim-sum lunch service - a Reddit diner quotes 'around $4.50/item on weekdays'; nothing is published by the business",
+        "price_from": null,
+        "price_to": null,
+        "days": "daily (dim sum is a daytime service)",
+        "window": "10:30 AM - 2:30 PM Mon-Fri (10:00 AM - 3:00 PM Sat-Sun)",
+        "includes": "Cantonese dim sum and seafood. A listing site gives a $20-$30 per-person range for this address; that is a listing-derived range, not a published lunch price, so the price column is blank."
+      },
+      "hours_tuesday": "10:30 AM - 2:30 PM and 5:00 PM - 9:00 PM",
+      "days_open": "Mon-Thu 10:30-14:30 and 17:00-21:00; Fri 10:30-14:30 and 17:00-21:30; Sat-Sun 10:00-15:00 and 17:00-21:30/21:00 (Yelp business page, matched by the listing's structured hours)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": true,
+        "note": "~2 mi from 20387 Gillick Way - one of the closest rows in this batch - and dim sum starts at 10:30 AM, so either departure works."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {
+            "label": "Yelp business page - Golden Palace, 1146 S De Anza Blvd: Mon-Thu 10:30 am-2:30 pm and 5:00 pm-9:00 pm, Fri to 9:30 pm, Sat-Sun 10:00 am-3:00 pm, dim sum/seafood/Cantonese",
+            "url": "https://www.yelp.com/biz/golden-palace-san-jose"
+          },
+          {
+            "label": "Listing with structured hours - 1146 S De Anza Blvd, Mon-Fri 10:30 AM-2:30 PM and 5:00 PM-9:00/9:30 PM, Sat-Sun 10:00 AM-3:00 PM, $20-$30 per person, phone",
+            "url": "https://goldenpalacerestaurant.restaurants-us.com/"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/golden-palace-san-jose",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Golden+Palace+1146+S+De+Anza+Blvd+San+Jose"
+      },
+      "flags": [
+        "The only dim-sum price found ('around $4.50/item on weekdays', and '$4 an item for all size categories' in an older Reddit thread) is a diner quote, so the price column is blank.",
+        "An older Reddit thread says the restaurant 'close[s] in the afternoons at 2:30' and does not serve dim sum for dinner - consistent with the hours above.",
+        "A wheree listing prints the same address with a 10:30 AM-2:30 PM / 5:00 PM-9:30 PM block; the Yelp table is used for the day-by-day values."
+      ]
+    },
+    {
+      "name": "Sushi Town",
+      "city": "San Jose",
+      "area": "Alum Rock Ave (East Foothills)",
+      "address": "3116 Alum Rock Ave, San Jose, CA 95127",
+      "coords": [37.3658, -121.827412],
+      "coords_source": "Roadtrippers listing geo",
+      "cuisine": "Japanese / sushi",
+      "phone": "(408) 649-3094",
+      "lunch_special": {
+        "name": "Lunch bento box - a Yelp Q&A answer confirms a lunch bento box exists and says it is offered 'for now including weekend'; no price is published",
+        "price_from": null,
+        "price_to": null,
+        "days": "daily per the Q&A answer (a diner describes it as a weekday offer)",
+        "window": "from the 11:30 AM opening",
+        "includes": "A Reddit diner describes it as 'chicken teriyaki or chicken katsu or beef teriyaki, rice, salad, tempura veggies & 1 shrimp, and 2 pieces of California roll' at $10.95, with miso soup for $1.95. That is a diner quote, so the price column is blank."
+      },
+      "hours_tuesday": "11:30 AM - 9:00 PM",
+      "days_open": "Tue-Sun 11:30 am-9:00 pm; Monday appears as Closed on the newest Yelp snapshot and 11:30 am-9:00 pm on an older one (see flag)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "East San Jose is ~14 mi from 20387 Gillick Way: outside the 11:50 AM departure / 3:30 PM home deadline."
+      },
+      "verification": {
+        "level": "conflicting",
+        "sources": [
+          {
+            "label": "Yelp business page - Sushi Town, 3116 Alum Rock Ave: Tue-Sun 11:30 am-9:00 pm (newest snapshot Monday Closed) and the Q&A answer 'For now including weekend' to 'Is the lunch bento box only Monday - Friday? Or weekends too?'",
+            "url": "https://www.yelp.com/biz/sushi-town-san-jose"
+          },
+          {
+            "label": "Yelp (older snapshot) - 3116 Alum Rock Ave, Mon-Sun 11:30 am-9:00 pm, sushitownsj.com",
+            "url": "https://www.yelp.com/biz/sushi-town-san-jose?start=5"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/sushi-town-san-jose",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Sushi+Town+3116+Alum+Rock+Ave+San+Jose"
+      },
+      "flags": [
+        "MONDAY CONFLICT: the newest Yelp snapshot says Monday Closed, an older one says Monday 11:30 am-9:00 pm. Tuesday is unaffected; both readings printed.",
+        "The bento box's existence is confirmed by a Yelp Q&A answer but no price is published; the $10.95 figure is a Reddit diner quote and is not printed as the row price."
+      ]
+    },
+    {
+      "name": "Jade China Restaurant",
+      "city": "San Jose",
+      "area": "Berryessa Rd",
+      "address": "2524 Berryessa Rd, San Jose, CA 95132",
+      "cuisine": "Chinese takeout / dine-in",
+      "phone": "(408) 923-6288",
+      "lunch_special": {
+        "name": "Combo plates - a Reddit diner quotes 'a solid 2 item combo for 13 bucks'; nothing is published by the business",
+        "price_from": null,
+        "price_to": null,
+        "days": "daily (open 11:00 AM-9:00 PM seven days)",
+        "window": "opens 11:00 AM",
+        "includes": "Combination plates. No combo price is published on the restaurant's own site, so the price column is blank."
+      },
+      "hours_tuesday": "11:00 AM - 9:00 PM",
+      "days_open": "Mon-Sun 11:00 AM - 9:00 PM (the restaurant's own site and its structured data, matched by Yelp)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Berryessa is ~12 mi from 20387 Gillick Way: outside the 11:50 AM departure / 3:30 PM home deadline."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {
+            "label": "Jade China Restaurant official site - 2524 Berryessa Rd, San Jose; 'Monday - Sunday 11am - 9pm', phone",
+            "url": "https://www.jadechinarestaurant.com/"
+          },
+          {
+            "label": "Jade China official contact page - structured opening hours Mo-Su 11:00-21:00, address, email",
+            "url": "https://www.jadechinarestaurant.com/contact-us"
+          },
+          {
+            "label": "Yelp business page - 2524 Berryessa Rd, Mon-Sun 11:00 am-9:00 pm",
+            "url": "https://www.yelp.com/biz/jade-china-san-jose-4"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/jade-china-san-jose-4",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Jade+China+2524+Berryessa+Rd+San+Jose"
+      },
+      "flags": [
+        "The restaurant's own site prints '2524 Berryessa Dr' on the homepage and '2524 Berryessa Road' in its structured data - same street number, different suffix spelling. Printed as the Road form.",
+        "The '$13 two-item combo' figure is a Reddit diner quote; the restaurant's own site publishes no combo price, so the price column is blank.",
+        "A Reddit thread notes a same-family 'New Jade' on Monterey Rd; that is a different address and is not merged here."
+      ]
+    },
+    {
+      "name": "Sun-Ly Chinese Restaurant",
+      "city": "San Jose",
+      "area": "Tully Rd",
+      "address": "1075 Tully Rd Ste G, San Jose, CA 95122",
+      "coords": [37.315014, -121.83792],
+      "coords_source": "TripAdvisor listing geo",
+      "cuisine": "Chinese / Japanese",
+      "phone": "(408) 295-8566",
+      "lunch_special": {
+        "name": "All-day lunch special - a Reddit diner writes 'Sun Ly Chinese food has an all day lunch special! Good prices and food'; nothing is published by the business",
+        "price_from": null,
+        "price_to": null,
+        "days": "daily (open 11:00 AM-9:00 PM seven days)",
+        "window": "from the 11:00 AM opening (the diner describes it as all-day)",
+        "includes": "No lunch-menu content or price was published on any page retrieved, so the price column is blank."
+      },
+      "hours_tuesday": "11:00 AM - 9:00 PM",
+      "days_open": "Mon-Sun 11:00 AM - 9:00 PM (TripAdvisor structured hours, matched by the business's own ordering page)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "East San Jose is ~12 mi from 20387 Gillick Way: outside the 11:50 AM departure / 3:30 PM home deadline."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {
+            "label": "TripAdvisor - Sun-Ly Chinese Restaurant, 1075 Tully Rd Ste G: structured Mon-Sun 11:00-21:00, geo, phone",
+            "url": "https://www.tripadvisor.com/Restaurant_Review-g33020-d468176-Reviews-Sun_Ly_Chinese_Restaurant-San_Jose_California.html"
+          },
+          {
+            "label": "Sun-Ly ordering page - 1075 Tully Rd Ste G, San Jose CA 95122, hotline (408) 295-8566",
+            "url": "https://sun-ly-chinese-foods.res-menu.net/"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/search?find_desc=Sun+Ly+Chinese&find_loc=San+Jose%2C+CA",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Sun+Ly+Chinese+Restaurant+1075+Tully+Rd+San+Jose"
+      },
+      "flags": [
+        "Lunch-special existence and pricing rest entirely on a Reddit diner quote; no menu or price was published on any page retrieved, so the price column is blank.",
+        "TripAdvisor lists this address as 'Chinese, Japanese' with only four reviews - the cuisine mix is unverified beyond that label."
+      ]
+    },
+    {
+      "name": "Golden House Restaurant",
+      "city": "San Jose",
+      "area": "Santa Teresa Blvd (South San Jose)",
+      "address": "7108 Santa Teresa Blvd, San Jose, CA 95139",
+      "coords": [37.2267185, -121.7734253],
+      "coords_source": "Restaurant Guru listing geo",
+      "cuisine": "Chinese (mostly Cantonese)",
+      "phone": "(408) 225-8001",
+      "lunch_special": {
+        "name": "Lunch specials - a 2009 Mercury News Quick Bite column says 'Lunch specials served daily' with an average meal price of $6-$11; no current price is published",
+        "price_from": null,
+        "price_to": null,
+        "days": "daily per the 2009 column; TripAdvisor's structured hours show a distinct 11:00 AM-2:30 PM lunch block Tue-Fri",
+        "window": "11:00 AM - 2:30 PM (Tue-Fri per TripAdvisor)",
+        "includes": "Cantonese plates; the 2009 column says soup is included with to-go lunch orders. No current lunch price is published anywhere, so the price column is blank."
+      },
+      "hours_tuesday": "11:00 AM - 2:30 PM and 4:30 PM - 8:30 PM (TripAdvisor) / 11:00 AM - 8:00 PM continuous (Zmenu and Restaurant Guru) - see flag",
+      "days_open": "TripAdvisor: Mon closed; Tue-Fri 11:00-14:30 and 16:30-20:30; Sat 12:00-20:30; Sun 12:00-20:30. Zmenu and Restaurant Guru: Mon closed; Tue-Fri 11:00-20:00; Sat-Sun 12:00-20:00.",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "South San Jose is ~14 mi from 20387 Gillick Way: outside the 11:50 AM departure / 3:30 PM home deadline."
+      },
+      "verification": {
+        "level": "conflicting",
+        "sources": [
+          {
+            "label": "TripAdvisor - Golden House Chinese Restaurant, 7108 Santa Teresa Blvd: structured Tue-Fri 11:00-14:30 and 16:30-20:30, Sat-Sun 12:00-20:30, Mon closed; geo",
+            "url": "https://www.tripadvisor.com/Restaurant_Review-g33020-d2310991-Reviews-Golden_House_Chinese_Restaurant-San_Jose_California.html"
+          },
+          {
+            "label": "Zmenu - 7108 Santa Teresa Blvd, Mon closed, Tue-Fri 11:00am-8:00pm, Sat-Sun from 12:00pm, geo",
+            "url": "https://www.zmenu.com/golden-house-chinese-restaurant-san-jose-online-menu/"
+          },
+          {
+            "label": "Restaurant Guru - 7108 Santa Teresa Blvd, Tu-Fr 11:00-20:00, Sa-Su 12:00-20:00, $11-$30 per person, geo",
+            "url": "https://restaurantguru.com/Golden-House-San-Jose"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/search?find_desc=Golden+House+Restaurant&find_loc=San+Jose%2C+CA",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Golden+House+Restaurant+7108+Santa+Teresa+Blvd+San+Jose"
+      },
+      "flags": [
+        "STALE PRICE: the only lunch price found for this address is a 2009 Mercury News column ($6-$11 average meal, 'lunch specials served daily'). It is 17 years old and is not printed as the row price.",
+        "HOURS CONFLICT: TripAdvisor shows a 2:30 PM-4:30 PM afternoon break Tue-Fri, while Zmenu and Restaurant Guru show continuous 11:00 AM-8:00 PM service. Both printed.",
+        "GEO CONFLICT: Zmenu's coordinates for this address (37.3393, -121.8949) are about 10 miles from the coordinates the other listings give (37.2267, -121.7734); the latter matches Santa Teresa Blvd in 95139. Printed, and the closer coordinates are used.",
+        "A separate business, Indian Sizzler (4150 Great America Pkwy, Santa Clara), is unrelated to the Sizzler row in this batch."
+      ]
+    },
+    {
+      "name": "Freshly Baked Eatery",
+      "city": "San Jose",
+      "area": "Downtown San Jose (N 3rd St)",
+      "address": "152 N 3rd St Ste 101, San Jose, CA 95112",
+      "cuisine": "Sandwiches / deli",
+      "phone": "(408) 298-9370",
+      "lunch_special": {
+        "name": "No lunch special published - every sandwich on the menu is $8.00",
+        "price_from": null,
+        "price_to": null,
+        "days": "Monday-Friday (CLOSED SATURDAY AND SUNDAY)",
+        "window": "10:30 AM - 2:30 PM",
+        "includes": "Menu prices captured from the Yelp menu module: Roast Beef $8.00, Classic $8.00, Pastrami and Turkey $8.00, Ham and Pastrami $8.00. The whole sandwich list prices at $8.00; that is the regular menu, not a lunch-only offer, so the price column stays blank."
+      },
+      "hours_tuesday": "10:30 AM - 2:30 PM",
+      "days_open": "Mon-Fri 10:30 AM-2:30 PM; Sat-Sun closed (Yelp business page and Restaurantji agree, including the structured hours block)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Downtown San Jose is ~11 mi from 20387 Gillick Way: outside the 11:50 AM departure / 3:30 PM home deadline. The 2:30 PM close would end lunch early in any case."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {
+            "label": "Yelp business page - Freshly Baked Eatery, 152 N 3rd St Ste 101: Mon-Fri 10:30 am-2:30 pm, Sat-Sun closed, and menu prices (Roast Beef $8.00, Classic $8.00, Pastrami and Turkey $8.00, Ham and Pastrami $8.00)",
+            "url": "https://www.yelp.com/biz/freshly-baked-eatery-san-jose"
+          },
+          {
+            "label": "Restaurantji - 152 N 3rd St #101, Mon-Fri 10:30AM-2:30PM, Sat-Sun closed",
+            "url": "https://www.restaurantji.com/ca/san-jose/freshly-baked-eatery-/"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/freshly-baked-eatery-san-jose",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Freshly+Baked+Eatery+152+N+3rd+St+San+Jose"
+      },
+      "flags": [
+        "No lunch-only promotion is published; the $8.00 flat sandwich prices are the regular menu and are quoted in the row rather than in the price column.",
+        "CLOSED WEEKENDS and closes at 2:30 PM on weekdays."
+      ]
+    },
+    {
+      "name": "California Sourdough",
+      "city": "San Jose",
+      "area": "Murphy Ave (North Valley)",
+      "address": "1150 Murphy Ave Ste A, San Jose, CA 95131",
+      "coords": [37.3823934, -121.8951912],
+      "coords_source": "Restaurant Guru listing geo",
+      "cuisine": "Deli / sandwiches on sourdough",
+      "phone": "(408) 437-1045",
+      "lunch_special": {
+        "name": "No lunch special published - a Yelp photo caption prices a sandwich at $14",
+        "price_from": null,
+        "price_to": null,
+        "days": "Monday-Saturday (CLOSED SUNDAY)",
+        "window": "10:30 AM - 3:30 PM",
+        "includes": "Sourdough sandwiches: spicy mustard turkey, roast beef, pastrami, garlic herb turkey, veggie. The $14 figure comes from a Yelp photo caption ('$14 a sandwich now with considerably less meat'), and the listing's per-person range is $10-$20; neither is a published lunch price, so the price column is blank."
+      },
+      "hours_tuesday": "10:30 AM - 3:30 PM",
+      "days_open": "Mon-Sat 10:30 AM-3:30 PM; Sun closed (Yelp business page, Restaurant Guru and Restaurantji all agree)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "North San Jose is ~9 mi from 20387 Gillick Way: a there-and-back bus trip does not fit the 11:50 AM departure and 3:30 PM home deadline."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {
+            "label": "Yelp business page - California Sourdough, 1150 Murphy Ave Ste A: Mon-Sat 10:30 am-3:30 pm, Sun closed, and the photo caption '$14 a sandwich now with considerably less meat'",
+            "url": "https://www.yelp.com/biz/california-sourdough-san-jose"
+          },
+          {
+            "label": "Restaurant Guru - 1150 Murphy Ave #A, Mon-Sat 10:30AM-3:30PM, Sun closed, $10-$20 per person, geo",
+            "url": "https://restaurantguru.com/California-Sourdough-San-Jose"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/california-sourdough-san-jose",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=California+Sourdough+1150+Murphy+Ave+San+Jose"
+      },
+      "flags": [
+        "No lunch-only promotion is published. The $14 sandwich figure is a Yelp photo caption and the $10-$20 range is listing-derived, so the price column is blank.",
+        "CLOSED SUNDAY."
+      ]
+    },
+    {
+      "name": "Sizzler",
+      "city": "San Jose",
+      "area": "Aborn Square Rd (Evergreen)",
+      "address": "2910 Aborn Square Rd, San Jose, CA 95121",
+      "coords": [37.3135363, -121.8084387],
+      "coords_source": "order.online storefront geo",
+      "cuisine": "American steakhouse / salad bar",
+      "phone": "(408) 274-2600",
+      "lunch_special": {
+        "name": "A dedicated Lunch Menu is listed for this store (steak lunch, chicken lunches, sandwiches, salad bar) - but every price seen is on menu-aggregator pages, so none is printed",
+        "price_from": null,
+        "price_to": null,
+        "days": "daily",
+        "window": "the store's ordering page shows 11:00 am - 8:40 pm",
+        "includes": "Aggregator lunch-menu items named for this store: Steak Lunch $6.99, Teriyaki Steak Lunch $6.99, Malibu Chicken Lunch $6.99, Hibachi Chicken Lunch $6.49, Lemon Herb Chicken Lunch $6.49, Bistro Steak Sandwich $5.99, Mushroom Swiss Burger $5.99, Shrimp Fry Lunch $5.49, Fresh Fruit and Salad Bar $6.59 - each with a choice of baked potato, fries or seasoned rice plus cheese toast. These come from an aggregator, not the business, so they are not printed in the price column."
+      },
+      "hours_tuesday": "11:00 AM - 8:40 PM (own ordering page)",
+      "days_open": "The ordering page shows 11:00 am-8:40 pm; the aggregator listing's store hours were not captured as a per-day table, so only the daily ordering window is asserted",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Evergreen is ~13 mi from 20387 Gillick Way: outside the 11:50 AM departure / 3:30 PM home deadline."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {
+            "label": "Sizzler own ordering storefront - 2910 Aborn Square Rd, San Jose; full menu and '11:00 am - 8:40 pm' ordering window; geo",
+            "url": "https://order.online/store/sizzler-san-jose-544714"
+          },
+          {
+            "label": "Allmenus aggregator listing for the same store - the Lunch Menu section with the items and prices named in this row",
+            "url": "https://www.allmenus.com/ca/san-jose/94939-sizzler/menu/"
+          },
+          {
+            "label": "SinglePlatform menu feed - 2910 Aborn Square Rd, phone (408) 274-2600, current dinner-side prices (8 oz tri-tip $14.49, etc.)",
+            "url": "http://places.singleplatform.com/sizzler-25/menu"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/search?find_desc=Sizzler&find_loc=San+Jose%2C+CA",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Sizzler+2910+Aborn+Square+Rd+San+Jose"
+      },
+      "flags": [
+        "AGGREGATOR-ONLY PRICES: the lunch prices ($5.49-$6.99) appear only on allmenus, an aggregator, while the current official-feed prices for this store are much higher (8 oz tri-tip $14.49, steak & jumbo crispy shrimp $15.79). The two do not agree, so no lunch price is printed and the row is levelled 'listing'.",
+        "No per-day hours table was captured - only the 11:00 am-8:40 pm daily ordering window from the store's own ordering page.",
+        "A different business, Indian Sizzler (Santa Clara), shares part of the name and is not related."
+      ]
+    },
+    {
+      "name": "The Farmers Union",
+      "city": "San Jose",
+      "area": "San Pedro Square (W Santa Clara St)",
+      "address": "151 W Santa Clara St, San Jose, CA 95113",
+      "cuisine": "American gastropub",
+      "phone": "(408) 277-0545",
+      "lunch_special": {
+        "name": "No lunch special published - open for lunch from 11:30 AM",
+        "price_from": null,
+        "price_to": null,
+        "days": "Monday-Friday, plus Sunday from 11:00 AM; Saturday opens 4:00 PM",
+        "window": "11:30 AM opening",
+        "includes": "Gastropub menu (BBQ beef brisket, ribs, mac and cheese named in the listing's summary). Dine Downtown offered a three-course prix fixe at $48 for this restaurant in July 2026 - that is event pricing for a promotion whose dates are not attached to a Tuesday, so it is not printed as the row price."
+      },
+      "hours_tuesday": "11:30 AM - 9:00 PM",
+      "days_open": "Mon-Thu 11:30-21:00; Fri 11:30-22:00; Sat 16:00-22:00; Sun 11:00-21:00 (Yelp business page, matched by Restaurantji)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Downtown San Jose is ~11 mi from 20387 Gillick Way: outside the 11:50 AM departure / 3:30 PM home deadline."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {
+            "label": "Yelp business page - The Farmers Union, 151 W Santa Clara St: Mon-Thu 11:30 am-9:00 pm, Fri 11:30 am-10:00 pm, Sat 4:00 pm-10:00 pm, Sun 11:00 am-9:00 pm",
+            "url": "https://www.yelp.com/biz/the-farmers-union-san-jose"
+          },
+          {
+            "label": "Restaurantji - 151 West Santa Clara Street, same weekly hours, address and phone cross-check",
+            "url": "https://www.restaurantji.com/ca/san-jose/the-farmers-union-/"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/the-farmers-union-san-jose",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=The+Farmers+Union+151+W+Santa+Clara+St+San+Jose"
+      },
+      "flags": [
+        "The $48 three-course figure is Dine Downtown event pricing reported by the Mercury News for a July 2026 window; it is not a standing lunch offer and is not printed as the row price.",
+        "No lunch-only pricing is published by the restaurant, so the price column is blank."
+      ]
+    }
+  ],
+  "rejected": [
+    {
+      "name": "Adega",
+      "city": "San Jose",
+      "why": "REJECTED - dinner-only and closed Tuesday. The restaurant's own site says 'Open for DINNER only Wed - Sun (5:00PM - close). Closed on Monday & Tuesday' at 1614 Alum Rock Ave, San Jose, CA 95116. It appeared in the Dine Downtown line-up with a $99 Portuguese prix fixe, which is a dinner offer for a Michelin-starred room and has no lunch component.",
+      "links": [
+        {"label": "Adega official site - 'Open for DINNER only Wed - Sun (5:00PM - close). Closed on Monday & Tuesday', 1614 Alum Rock Ave", "url": "https://www.adegarest.com/"},
+        {"label": "TripAdvisor - ADEGA, 1614 Alum Rock Ave, Mon-Tue closed, Wed-Sun 5:00 PM-9:30 PM", "url": "https://www.tripadvisor.com/Restaurant_Review-g33020-d9591148-Reviews-ADEGA-San_Jose_California.html"}
+      ],
+      "searched": "2026-09-11"
+    },
+    {
+      "name": "Nomikai",
+      "city": "San Jose",
+      "why": "REJECTED - dinner-only. Its own contact page at 48 S 1st St, San Jose, CA 95113 prints 'Kitchen Hours: Tues - Thurs: 5:30 - 10pm; Fri - Sat: 5:30-11:30pm', and Yelp's current snapshots show doors opening at 6:30 PM Wednesday-Saturday with Monday, Tuesday and Sunday closed. No lunch service exists. It appeared in the Dine Downtown line-up with chef's-special pizzas, which is why it was screened.",
+      "links": [
+        {"label": "Nomikai official contact page - 48 S 1st St; kitchen Tues-Thurs 5:30-10pm, Fri-Sat 5:30-11:30pm", "url": "http://www.nomikaisj.com/contact-us"},
+        {"label": "Yelp business page - Nomikai, 48 S 1st St: Mon-Tue and Sun closed, Wed-Sat 6:30 pm open", "url": "https://www.yelp.com/biz/nomikai-san-jose-2"}
+      ],
+      "searched": "2026-09-11"
+    },
+    {
+      "name": "Miniboss",
+      "city": "San Jose",
+      "why": "REJECTED - dinner-only on Tuesday. At 52 E Santa Clara St, San Jose, CA 95113 the Yelp hours table and Restaurantji both open the doors at 5:00 PM Tuesday through Saturday (Sunday 2:00 PM, Monday closed), so there is no Tuesday lunch. Its Dine Downtown offer of 'six Pizza Bites for $15' is a bar-food promotion with no published lunch window.",
+      "links": [
+        {"label": "Yelp business page - Miniboss, 52 E Santa Clara St: Mon closed, Tue-Wed 5:00 pm-12:00 am, Thu-Sat 5:00 pm-2:00 am, Sun 2:00-10:00 pm", "url": "https://www.yelp.com/biz/miniboss-san-jose-2"},
+        {"label": "Restaurantji - 52 E Santa Clara St, Tue-Wed 5PM-12AM, Thu-Sat 5PM-2AM, Sun 2-10PM, Mon closed", "url": "https://www.restaurantji.com/ca/san-jose/miniboss-/"}
+      ],
+      "searched": "2026-09-11"
+    },
+    {
+      "name": "Sizzling Plate (San Jose)",
+      "city": "San Jose",
+      "why": "DEFERRED - not identified. A Reddit thread names a 'Sizzling Plate' across the street from California Sourdough on Murphy Ave, but the searches run this pass surfaced only Sizzling Lunch (1085 E Brokaw Rd, a chain already represented in the master list by its Cupertino room) and Sizzling House / Sizzling Dumpling House (a different business again). No page retrieved gave a verified street address and per-day hours for a restaurant actually named Sizzling Plate, so nothing was merged.",
+      "links": [
+        {"label": "Yelp - Sizzling Lunch, 1085 E Brokaw Rd Ste 30, San Jose (chain; Cupertino room already in the master list)", "url": "https://www.yelp.com/biz/sizzling-lunch-san-jose-3"},
+        {"label": "Yelp - Sizzling House, San Jose (a different, similarly named business)", "url": "https://www.yelp.com/biz/sizzling-house-san-jose-2"}
+      ],
+      "searched": "2026-09-11"
+    },
+    {
+      "name": "Gens Korean Barbeque",
+      "city": "San Jose",
+      "why": "DEFERRED - no address or hours verified. The only evidence found is a Reddit diner quote ('weekday lunch at Gens Korean Barbeque on Hostetter Rd is $21'). No official page, ordering page or listing with a street address and per-day hours was retrieved this pass, so it fails the project's address-plus-hours bar and is held rather than guessed.",
+      "links": [
+        {"label": "Reddit r/SanJose - diner quote naming Gens Korean Barbeque on Hostetter Rd at $21 weekday lunch (diner figure, not a published menu price)", "url": "https://www.reddit.com/r/SanJose/comments/1sgdv8f/good_all_you_can_eat/"}
+      ],
+      "searched": "2026-09-11"
+    }
+  ]
+}

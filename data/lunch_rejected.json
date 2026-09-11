@@ -1532,12 +1532,329 @@
         }
       ],
       "searched": "2026-09-11"
+    },
+    {
+      "name": "Taverna Vesuvio Pizzeria & Ristorante",
+      "city": "Fremont",
+      "why": "REJECTED - closure. Its Yelp business page is titled 'TAVERNA VESUVIO PIZZERIA & RISTORANTE - CLOSED' at 39965 Mission Blvd, Fremont, CA 94539, and the hours it still prints (Mon-Thu 4:00 pm-8:30 pm, Fri-Sat 12:00 pm-9:30 pm) are dinner-led with no lunch window. It appeared in the Fremont Restaurant Week line-up with new menu items, which is why it was screened.",
+      "links": [
+        {
+          "label": "Yelp - Taverna Vesuvio Pizzeria & Ristorante - CLOSED (39965 Mission Blvd, Fremont)",
+          "url": "https://www.yelp.com/biz/taverna-vesuvio-pizzeria-and-ristorante-fremont"
+        },
+        {
+          "label": "SanFranSecrets - Fremont Italian restaurant round-up listing Taverna Vesuvio with 2 PM openings and no lunch hours",
+          "url": "https://sanfransecrets.com/best-italian-restaurants-in-fremont-ca"
+        }
+      ],
+      "searched": "2026-09-11"
+    },
+    {
+      "name": "Papillon Restaurant",
+      "city": "Fremont",
+      "why": "REJECTED - dinner-only. The restaurant's own About page prints 'Tue 5pm - 9pm, Wed 5pm - 9pm, Thu 5pm - 9pm, Fri 5pm - 9pm, Sat 5pm - 9pm, Sun 5pm - 9pm' at 37296 Mission Blvd, Fremont, CA 94536, i.e. it opens at 5:00 PM every day it is open and serves no lunch. It is a Fremont Restaurant Week participant (prix-fixe dinner), which is why it surfaced.",
+      "links": [
+        {
+          "label": "Papillon Restaurant official About page (37296 Mission Blvd; Tue-Sun 5pm-9pm)",
+          "url": "https://papillonrestaurant.com/about-papillon"
+        },
+        {
+          "label": "Restaurantji - Papillon, 37296 Mission Blvd, Monday Closed, Tue-Sun 5-9PM",
+          "url": "https://www.restaurantji.com/ca/fremont/papillon-restaurant-/"
+        }
+      ],
+      "searched": "2026-09-11"
+    },
+    {
+      "name": "Kyoto Ramen Hawaiian BBQ",
+      "city": "Fremont (unverified in Fremont)",
+      "why": "DEFERRED - out-of-area name collision. The brand's pages that could be retrieved this pass place it at 1029 Arnold Dr Ste 2, Martinez, CA 94553 (daily 10:00 AM-9:00 PM) and in Hercules; every 'Fremont' hit in the Yelp lunch-special list resolves to those rooms, not to a Fremont street address. No Fremont address or hours were verified, so nothing was merged.",
+      "links": [
+        {
+          "label": "Yelp - Kyoto Ramen Hawaiian BBQ, 1029 Arnold Dr Ste 2, Martinez (daily 10:00 am-9:00 pm)",
+          "url": "https://www.yelp.com/biz/kyoto-ramen-hawaiian-bbq-martinez"
+        },
+        {
+          "label": "TripAdvisor - Kyoto Ramen and Hawaiian BBQ, Martinez, daily 10:00 AM-9:00 PM",
+          "url": "https://www.tripadvisor.com/Restaurant_Review-g60868-d23970299-Reviews-Kyoto_Ramen_And_Hawaiian_BBQ-Martinez_California.html"
+        }
+      ],
+      "searched": "2026-09-11"
+    },
+    {
+      "name": "Gaboja",
+      "city": "Santa Clara",
+      "why": "REJECTED - closure plus dinner-only. Its Yelp business page is titled 'GABOJA - CLOSED' at 2333 El Camino Real, Santa Clara, CA 95050, and the hours that remain on the listing and on the ordering mirror are 5:00 PM-midnight Monday-Saturday with Sunday closed - i.e. no lunch service even before the closure. It surfaced on a 'Korean lunch special' list, which is why it was screened.",
+      "links": [
+        {
+          "label": "Yelp - GABOJA - CLOSED, 2333 El Camino Real, Santa Clara",
+          "url": "https://www.yelp.com/biz/gaboja-santa-clara"
+        },
+        {
+          "label": "Gaboja ordering mirror - 2333 El Camino Real, Mon-Sat 5:00pm-12:00am, Sunday closed",
+          "url": "https://gaboja.netwaiter.com/santa-clara/about/"
+        }
+      ],
+      "searched": "2026-09-11"
+    },
+    {
+      "name": "Tony & Alba's Pizza and Pasta",
+      "city": "San Jose",
+      "why": "DEFERRED - incomplete hours. Its address (3137 Stevens Creek Blvd, San Jose, CA 95117) and lunch-menu prices are verifiable - the waiter.com menu prints a 'SANDWICHES - LUNCH' section at $18.00 and pasta meals at $17.00, and a Yelp review and a Reddit thread both mention a Tony & Alba's lunch special - but no page retrieved this pass printed a complete per-day hours table (the TripAdvisor hours block cuts off at Tuesday and Yelp's list page for the name shows only 'Open until 8:00 PM'). Held back rather than guessed; revisit with a direct fetch of the restaurant's own site.",
+      "links": [
+        {
+          "label": "Waiter.com menu for Tony & Alba's, 3137 Stevens Creek Blvd - lunch sandwiches $18.00, pasta meals $17.00",
+          "url": "https://www.waiter.com/takeout-delivery/tonyalba/san-jose-ca/3137-stevens-creek-boulevard"
+        },
+        {
+          "label": "TripAdvisor - Tony & Alba's Pizza and Pasta, 3137 Stevens Creek Blvd (hours table truncated at Tuesday)",
+          "url": "https://www.tripadvisor.com/Restaurant_Review-g33020-d347390-Reviews-Tony_Alba_s_Pizza_and_Pasta-San_Jose_California.html"
+        }
+      ],
+      "searched": "2026-09-11"
+    },
+    {
+      "name": "Adega",
+      "city": "San Jose",
+      "why": "REJECTED - dinner-only and closed Tuesday. The restaurant's own site says 'Open for DINNER only Wed - Sun (5:00PM - close). Closed on Monday & Tuesday' at 1614 Alum Rock Ave, San Jose, CA 95116. It appeared in the Dine Downtown line-up with a $99 Portuguese prix fixe, which is a dinner offer for a Michelin-starred room and has no lunch component.",
+      "links": [
+        {
+          "label": "Adega official site - 'Open for DINNER only Wed - Sun (5:00PM - close). Closed on Monday & Tuesday', 1614 Alum Rock Ave",
+          "url": "https://www.adegarest.com/"
+        },
+        {
+          "label": "TripAdvisor - ADEGA, 1614 Alum Rock Ave, Mon-Tue closed, Wed-Sun 5:00 PM-9:30 PM",
+          "url": "https://www.tripadvisor.com/Restaurant_Review-g33020-d9591148-Reviews-ADEGA-San_Jose_California.html"
+        }
+      ],
+      "searched": "2026-09-11"
+    },
+    {
+      "name": "Nomikai",
+      "city": "San Jose",
+      "why": "REJECTED - dinner-only. Its own contact page at 48 S 1st St, San Jose, CA 95113 prints 'Kitchen Hours: Tues - Thurs: 5:30 - 10pm; Fri - Sat: 5:30-11:30pm', and Yelp's current snapshots show doors opening at 6:30 PM Wednesday-Saturday with Monday, Tuesday and Sunday closed. No lunch service exists. It appeared in the Dine Downtown line-up with chef's-special pizzas, which is why it was screened.",
+      "links": [
+        {
+          "label": "Nomikai official contact page - 48 S 1st St; kitchen Tues-Thurs 5:30-10pm, Fri-Sat 5:30-11:30pm",
+          "url": "https://www.nomikaisj.com/contact-us"
+        },
+        {
+          "label": "Yelp business page - Nomikai, 48 S 1st St: Mon-Tue and Sun closed, Wed-Sat 6:30 pm open",
+          "url": "https://www.yelp.com/biz/nomikai-san-jose-2"
+        }
+      ],
+      "searched": "2026-09-11"
+    },
+    {
+      "name": "Miniboss",
+      "city": "San Jose",
+      "why": "REJECTED - dinner-only on Tuesday. At 52 E Santa Clara St, San Jose, CA 95113 the Yelp hours table and Restaurantji both open the doors at 5:00 PM Tuesday through Saturday (Sunday 2:00 PM, Monday closed), so there is no Tuesday lunch. Its Dine Downtown offer of 'six Pizza Bites for $15' is a bar-food promotion with no published lunch window.",
+      "links": [
+        {
+          "label": "Yelp business page - Miniboss, 52 E Santa Clara St: Mon closed, Tue-Wed 5:00 pm-12:00 am, Thu-Sat 5:00 pm-2:00 am, Sun 2:00-10:00 pm",
+          "url": "https://www.yelp.com/biz/miniboss-san-jose-2"
+        },
+        {
+          "label": "Restaurantji - 52 E Santa Clara St, Tue-Wed 5PM-12AM, Thu-Sat 5PM-2AM, Sun 2-10PM, Mon closed",
+          "url": "https://www.restaurantji.com/ca/san-jose/miniboss-/"
+        }
+      ],
+      "searched": "2026-09-11"
+    },
+    {
+      "name": "Sizzling Plate (San Jose)",
+      "city": "San Jose",
+      "why": "DEFERRED - not identified. A Reddit thread names a 'Sizzling Plate' across the street from California Sourdough on Murphy Ave, but the searches run this pass surfaced only Sizzling Lunch (1085 E Brokaw Rd, a chain already represented in the master list by its Cupertino room) and Sizzling House / Sizzling Dumpling House (a different business again). No page retrieved gave a verified street address and per-day hours for a restaurant actually named Sizzling Plate, so nothing was merged.",
+      "links": [
+        {
+          "label": "Yelp - Sizzling Lunch, 1085 E Brokaw Rd Ste 30, San Jose (chain; Cupertino room already in the master list)",
+          "url": "https://www.yelp.com/biz/sizzling-lunch-san-jose-3"
+        },
+        {
+          "label": "Yelp - Sizzling House, San Jose (a different, similarly named business)",
+          "url": "https://www.yelp.com/biz/sizzling-house-san-jose-2"
+        }
+      ],
+      "searched": "2026-09-11"
+    },
+    {
+      "name": "Gens Korean Barbeque",
+      "city": "San Jose",
+      "why": "DEFERRED - no address or hours verified. The only evidence found is a Reddit diner quote ('weekday lunch at Gens Korean Barbeque on Hostetter Rd is $21'). No official page, ordering page or listing with a street address and per-day hours was retrieved this pass, so it fails the project's address-plus-hours bar and is held rather than guessed.",
+      "links": [
+        {
+          "label": "Reddit r/SanJose - diner quote naming Gens Korean Barbeque on Hostetter Rd at $21 weekday lunch (diner figure, not a published menu price)",
+          "url": "https://www.reddit.com/r/SanJose/comments/1sgdv8f/good_all_you_can_eat/"
+        }
+      ],
+      "searched": "2026-09-11"
+    },
+    {
+      "name": "Left Bank Brasserie - Santana Row",
+      "city": "San Jose",
+      "why": "REJECTED - closure. Its Yelp business page is now titled 'LEFT BANK BRASSERIE - SANTANA ROW - CLOSED' at 377 Santana Row Ste 1100, San Jose, CA 95128. The hours still printed there (Mon-Thu 11:30 am-9:00 pm) and on TripAdvisor are stale listing data for a room that has closed; nothing was merged.",
+      "links": [
+        {
+          "label": "Yelp - LEFT BANK BRASSERIE - SANTANA ROW - CLOSED, 377 Santana Row Ste 1100",
+          "url": "https://www.yelp.com/biz/left-bank-san-jose-san-jose"
+        },
+        {
+          "label": "TripAdvisor - Left Bank Santana Row, 377 Santana Row Suite #1100 (stale hours)",
+          "url": "https://www.tripadvisor.co.uk/Restaurant_Review-g33020-d1370371-Reviews-Left_Bank_Santana_Row-San_Jose_California.html"
+        }
+      ],
+      "searched": "2026-09-11"
+    },
+    {
+      "name": "Rosie McCann's Irish Pub & Restaurant - Santana Row",
+      "city": "San Jose",
+      "why": "REJECTED - closure. Yelp titles it 'CLOSED', TripAdvisor titles it 'Rosie McCann's - Santana Row - CLOSED', and Restaurant Guru says 'Permanently closed' for 355 Santana Row Ste 1060, San Jose, CA 95128. Two of its own menu pages also disagree about hours (one says Mon-Thu 5:00 pm-12:00 am, another says Mon 4:00 pm / Tue-Thu 12:00 pm), so even the stale data conflicts.",
+      "links": [
+        {
+          "label": "Yelp - ROSIE MCCANN'S IRISH PUB & RESTAURANT - SANTANA ROW - CLOSED, 355 Santana Row Ste 1060",
+          "url": "https://www.yelp.com/biz/rosie-mccanns-irish-pub-and-restaurant-santana-row-san-jose"
+        },
+        {
+          "label": "Restaurant Guru - Rosie McCann's Santana Row: 'Permanently closed'",
+          "url": "https://restaurantguru.com/Rosie-McCanns-Santana-Row-San-Jose"
+        }
+      ],
+      "searched": "2026-09-11"
+    },
+    {
+      "name": "Yankee Pier",
+      "city": "San Jose",
+      "why": "REJECTED - closure. Its Yelp business page is titled 'YANKEE PIER - CLOSED' at 378 Santana Row Ste 1100, San Jose, CA 95128. A third listing (manta.com) even prints dinner-only 5:00 PM openings, so no current hours could be trusted even ignoring the closure.",
+      "links": [
+        {
+          "label": "Yelp - YANKEE PIER - CLOSED, 378 Santana Row Ste 1100, San Jose",
+          "url": "https://www.yelp.com/biz/yankee-pier-san-jose"
+        }
+      ],
+      "searched": "2026-09-11"
+    },
+    {
+      "name": "Sushi Confidential - San Jose (downtown)",
+      "city": "San Jose",
+      "why": "REJECTED - no Tuesday service. At 26 N San Pedro St, San Jose, CA 95113 the Yelp hours table and its structured data agree: Monday, Tuesday and Wednesday closed, Thursday 4:00 pm-9:00 pm, Friday-Saturday 4:00 pm-11:00 pm, Sunday 11:00 am-10:00 pm. There is no lunch at all on the trip date. Its Willow Glen room has normal lunch hours and is merged separately.",
+      "links": [
+        {
+          "label": "Yelp - Sushi Confidential - San Jose, 26 N San Pedro St: Mon-Tue-Wed closed, Thu-Fri 4:00 pm open",
+          "url": "https://www.yelp.com/biz/sushi-confidential-san-jose-san-jose"
+        }
+      ],
+      "searched": "2026-09-11"
+    },
+    {
+      "name": "Osha Thai - Santana Row",
+      "city": "San Jose",
+      "why": "DEFERRED - not identified. The searches run this pass surfaced only Osha Thai rooms in San Francisco (4 Embarcadero Ctr, 696 Geary St and 149 2nd St) with their hours; no Santana Row address, phone or per-day hours for an Osha Thai in San Jose could be retrieved. Held rather than guessed.",
+      "links": [
+        {
+          "label": "Osha Thai official site (SF locations only; no Santana Row page found)",
+          "url": "https://oshathai.com/embarcadero/menu/"
+        }
+      ],
+      "searched": "2026-09-11"
+    },
+    {
+      "name": "Vida Tapas Y Cocteles",
+      "city": "Mountain View",
+      "why": "REJECTED - closure. Its Yelp business page (110 Castro St, Mountain View, CA 94041) carries 'Yelpers report this location has closed', and the order.online storefront for the same address renders 'Unavailable'. A 2024 blog post and a 2024 Yelp review both praised a $25 '2 tapas + 1 dessert' lunch special, but that offer belongs to a restaurant that is no longer trading, so nothing was merged.",
+      "links": [
+        {
+          "label": "Yelp - Vida Tapas Y Cocteles, Mountain View: 'Yelpers report this location has closed'",
+          "url": "https://www.yelp.com/biz/vida-tapas-y-cocteles-mountain-view"
+        },
+        {
+          "label": "order.online - Vida Tapas Y Cocteles, 110 Castro St, Mountain View: Unavailable",
+          "url": "https://order.online/store/vida-tapas-y-cocteles-24929383"
+        }
+      ],
+      "searched": "2026-09-11"
+    },
+    {
+      "name": "John's of Willow Glen / Johns Xlnt Foods",
+      "city": "San Jose",
+      "why": "DEFERRED - incomplete weekly hours. The address (1238 Lincoln Ave, San Jose, CA 95125) is confirmed by both its OpenTable listing and a menu directory, and a full priced 'Lunch' menu exists ($8.00 grilled cheese up to $17.50 seafood-salad lunch), but no per-day hours table was retrieved this pass.",
+      "links": [
+        {
+          "label": "OpenTable - Johns Xlnt Foods, 1238 Lincoln Ave, San Jose: $30 and under",
+          "url": "https://www.opentable.com/r/johns-xlnt-foods-san-jose"
+        },
+        {
+          "label": "MenuPages - John's of Willow Glen, 1238 Lincoln Ave: priced lunch-salad, lunch-burger and lunch-lo-cal-plate sections",
+          "url": "https://menupages.com/johns-of-willow-glen/1238-lincoln-ave-san-jose"
+        }
+      ],
+      "searched": "2026-09-11"
+    },
+    {
+      "name": "Taiwan Restaurant - Willow Glen",
+      "city": "San Jose",
+      "why": "DEFERRED - incomplete weekly hours. Only Sunday 11:30 AM-2:00 PM was visible on the ordering page for 1306 Lincoln Ave, San Jose, CA 95125; no other day was printed, so it fails the weekly-hours rule. Its plates are $17-27, above a lunch-deal budget anyway.",
+      "links": [
+        {
+          "label": "Postmates - Taiwan Restaurant Willow Glen, 1306 Lincoln Ave, San Jose: Sunday 11:30 AM-2:00 PM only",
+          "url": "https://postmates.com/store/taiwan-restaurant-willow-glen-1306-lincoln-ave/Jy_ykyh3XtiNZZ41ZH7iFg"
+        }
+      ],
+      "searched": "2026-09-11"
+    },
+    {
+      "name": "Aqui Cal Mex (Campbell and Willow Glen)",
+      "city": "Campbell",
+      "why": "DEFERRED - no street address. Its own site published full Campbell and Willow Glen menus with prices (a $16.49 daily special plate, $11.59 smaller eats, $13.99-$15.79 bowls), but neither page printed a street address or per-day hours this pass.",
+      "links": [
+        {
+          "label": "Aqui Cal Mex official site - Campbell menu with prices",
+          "url": "https://www.aquicalmex.com/campbell-menu/"
+        },
+        {
+          "label": "Aqui Cal Mex official site - Willow Glen menu with prices",
+          "url": "https://www.aquicalmex.com/willow-glen-menu/"
+        }
+      ],
+      "searched": "2026-09-11"
+    },
+    {
+      "name": "Inchin's Bamboo Garden - Sunnyvale",
+      "city": "Sunnyvale",
+      "address": "151 W Washington Ave, Sunnyvale, CA 94087",
+      "why": "DUPLICATE - withdrawn after merge. This row was merged in pass 11 with the ZIP printed as 94087, which let it slip past the address de-duplication next to the existing row L43 Inchin's Bamboo Garden at '151 W Washington Ave, Sunnyvale, CA 94086'. Same street, same city, same phone, same weekly hours - one restaurant, not two. The pass-11 row is deleted and only L43 is kept.",
+      "links": [
+        {
+          "label": "Yelp business page - Inchin's Bamboo Garden, 151 W Washington Ave, Sunnyvale",
+          "url": "https://www.yelp.com/biz/inchins-bamboo-garden-sunnyvale-3"
+        },
+        {
+          "label": "Restaurantji - 151 W Washington Ave, Sunnyvale (ZIP printed 94087)",
+          "url": "https://www.restaurantji.com/ca/sunnyvale/inchins-bamboo-garden-/"
+        }
+      ],
+      "searched": "2026-09-11",
+      "pass": "11",
+      "superseded_by": "L43"
+    },
+    {
+      "name": "Opa! Willow Glen",
+      "city": "San Jose",
+      "address": "1100 Lincoln Ave, San Jose, CA 95125",
+      "why": "WITHDRAWN - unreliable. The only source for this row was a TripAdvisor listing carrying a 2018 date stamp, and the street address it prints, 1100 Lincoln Ave, is already occupied by Burma Roots (row L348, 1100 Lincoln Ave Ste 101, San Jose). With a stale listing, a duplicate street address and an unresolved weekend-hours conflict on the page itself, the row does not meet the project's verification bar and was deleted rather than published.",
+      "links": [
+        {
+          "label": "TripAdvisor - Opa! Willow Glen, 1100 Lincoln Ave, San Jose (2018-stamped listing, weekend blocks printed twice)",
+          "url": "https://www.tripadvisor.com/Restaurant_Review-g33020-d2234576-Reviews-Opa_Willow_Glen-San_Jose_California.html"
+        }
+      ],
+      "searched": "2026-09-11",
+      "pass": "11"
     }
   ],
   "notes": [
     "Reddit was searched for Cupertino / Sunnyvale / Los Gatos lunch specials and returned only threads about other cities, so no Reddit citation is used (see LUNCH-FLAG-8).",
     "Every rejection above is a source-of-truth decision, not a judgement about the food. Anything here can be promoted into the master list as soon as hours, days and a price are confirmed."
   ],
-  "distinct_businesses_rejected": 132,
+  "distinct_businesses_rejected": 154,
   "note": "133 rows covering 132 distinct businesses. R14 (first pass) groups the near-miss candidates surfaced by the same queries and rejected for the same reason (no published lunch special found in that pass); later passes appended one row per candidate or per grouped reason - 30 rows from the ninth pass on 2026-09-10 and 17 from the tenth pass on 2026-09-11. Every row carries the URL that proves the rejection, including three out-of-state name traps and two dinner-only venues whose directory pages still advertise 'Lunch Specials'."
 }

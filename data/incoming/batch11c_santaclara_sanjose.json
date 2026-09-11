@@ -1,0 +1,680 @@
+{
+  "pass": "11",
+  "searched": "2026-09-11",
+  "method": "Eleventh lunch pass - Santa Clara Korean row, downtown San Jose and Cambrian Park. Every field below was transcribed from a page actually retrieved this turn (URL in the row). Nothing was typed from memory. Where a price exists only as a diner quote (Reddit, Yelp Q&A, Yelp review) it is described in the row's includes/flags and left out of the price column, per this project's rule. Yelp business pages return HTTP 403 to direct fetch here, so Yelp facts come from the Yelp business-page URL as surfaced by search and are levelled 'listing'/'conflicting', never 'official'.",
+  "entries": [
+    {
+      "name": "Chungdam",
+      "city": "Santa Clara",
+      "area": "El Camino Real",
+      "address": "3180 El Camino Real, Santa Clara, CA 95051",
+      "coords": [37.3541079, -121.9552356],
+      "coords_source": "Zmenu listing geo",
+      "cuisine": "Korean BBQ",
+      "phone": "(408) 246-1208",
+      "lunch_special": {
+        "name": "Lunch BBQ combos - Lunch BBQ For Two $60, Lunch BBQ For Three $99",
+        "price_from": 60.0,
+        "price_to": 99.0,
+        "days": "weekday lunch service (Yelp lists the 11:30 AM-2:30 PM block every day)",
+        "window": "11:30 AM - 2:15 PM (the restaurant's own lunch-menu page states 'lunch specials from 11:30am to 2:15pm')",
+        "includes": "Lunch BBQ For Two $60 - 8 oz marinated short rib / lightly marinated short rib / prime unmarinated short rib (+$35 options listed). Lunch BBQ For Three $99 - 16 oz of the same cuts. All side dishes and rice included. 'No substitutions allowed for Lunch Combos.'"
+      },
+      "hours_tuesday": "11:30 AM - 2:30 PM and 5:00 PM - 9:00 PM",
+      "days_open": "Mon-Thu 11:30-14:30 and 17:00-21:00; Fri-Sat 11:30-14:30 and 17:00-22:00 (Yelp business page; Zmenu gives a 9:30 PM close Mon-Fri)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": true,
+        "note": "Santa Clara is ~4 mi from 20387 Gillick Way and the lunch block opens 11:30 AM, so a 12:06 PM or 12:36 PM bus still leaves a seated lunch. The 11:50 AM departure would cut lunch to under 20 minutes."
+      },
+      "verification": {
+        "level": "official",
+        "sources": [
+          {
+            "label": "Chungdam official lunch-menu page - 'lunch specials from 11:30am to 2:15pm', Lunch BBQ For Two $60, Lunch BBQ For Three $99, no substitutions",
+            "url": "https://chungdamsv.com/lunch-menu"
+          },
+          {
+            "label": "Yelp business page - Chungdam, 3180 El Camino Real: Tue 11:30 am-2:30 pm and 5:00 pm-9:00 pm, chungdamsv.com, phone",
+            "url": "https://www.yelp.com/biz/chungdam-santa-clara-6"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/chungdam-santa-clara-6",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Chungdam+3180+El+Camino+Real+Santa+Clara"
+      },
+      "flags": [
+        "Prices are per combo for two / three people, not per head - a solo diner cannot order them.",
+        "The restaurant's own lunch page says the specials run to 2:15 PM while Yelp prints the lunch block to 2:30 PM; both are printed."
+      ]
+    },
+    {
+      "name": "Kunjip",
+      "city": "Santa Clara",
+      "area": "Kiely Blvd",
+      "address": "1066 Kiely Blvd, Santa Clara, CA 95051",
+      "coords": [37.3457881, -121.9787694],
+      "coords_source": "Restaurant Guru listing geo",
+      "cuisine": "Korean (soyook, naengmyun, galbijjim)",
+      "phone": "(408) 246-0025",
+      "lunch_special": {
+        "name": "No lunch special published - open from 10:00 AM with the full menu all day",
+        "price_from": null,
+        "price_to": null,
+        "days": "daily",
+        "window": "opens 10:00 AM",
+        "includes": "Menu prices captured from the business's own online-ordering storefront: Guk Bap $23.00, Bibim Naengmyun $24.00, Hwe Naengmyun $28.00, Modeum Sooyook $65.00, Dogani Sooyook $60.00, Kimchi $4.00. These are regular prices, not a lunch deal."
+      },
+      "hours_tuesday": "10:00 AM - 9:00 PM",
+      "days_open": "Mon-Thu and Sun 10:00-21:00; Fri-Sat 10:00-22:00 (Yelp business page, matched by Restaurantji and Restaurant Guru)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": true,
+        "note": "~4 mi from 20387 Gillick Way and open from 10:00 AM, so the 11:50 AM departure is achievable if the food is quick."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {
+            "label": "Kunjip online ordering storefront - 1066 Kiely Blvd, online ordering hours 10:00 AM-8:45 PM, item prices (Guk Bap $23, Bibim Naengmyun $24, Hwe Naengmyun $28)",
+            "url": "https://order.online/store/kunjip-santa-clara-29034336"
+          },
+          {
+            "label": "Yelp business page - Kunjip, 1066 Kiely Blvd: Mon-Thu 10:00 am-9:00 pm, Fri-Sat 10:00 am-10:00 pm, Sun 10:00 am-9:00 pm",
+            "url": "https://www.yelp.com/biz/kunjip-restaurant-santa-clara-2"
+          },
+          {
+            "label": "Restaurant Guru - 1066 Kiely Blvd, same weekly hours, $20-$30 per person range, geo",
+            "url": "https://restaurantguru.com/Kunjip-Santa-Clara"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/kunjip-restaurant-santa-clara-2",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Kunjip+1066+Kiely+Blvd+Santa+Clara"
+      },
+      "flags": [
+        "TripAdvisor's structured data for this address says the restaurant is open Monday and Tuesday only and closed Wednesday-Sunday, which contradicts Yelp, Restaurantji and Restaurant Guru. The outlier is printed here, not used.",
+        "No lunch-only pricing is published, so the price column is blank."
+      ]
+    },
+    {
+      "name": "SGD Tofu House",
+      "city": "Santa Clara",
+      "area": "El Camino Real",
+      "address": "3450 El Camino Real Ste 105, Santa Clara, CA 95051",
+      "cuisine": "Korean tofu house / BBQ",
+      "phone": "(408) 261-3030",
+      "lunch_special": {
+        "name": "No lunch special published - open from 11:00 AM with the full menu",
+        "price_from": null,
+        "price_to": null,
+        "days": "Monday-Saturday (CLOSED SUNDAY)",
+        "window": "opens 11:00 AM",
+        "includes": "Yelp menu-photo captions capture two prices: tofu salad appetizer $6 and #27 bibimbob with seafood and vegetables in stoneware $25. Those are regular menu prices, not a lunch deal."
+      },
+      "hours_tuesday": "11:00 AM - 9:00 PM",
+      "days_open": "Mon-Sat 11:00 AM-9:00 PM, Sun closed (Yelp business page)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": true,
+        "note": "~4 mi from 20387 Gillick Way and open from 11:00 AM; workable on either the 11:50 AM or 12:20 PM departure."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {
+            "label": "Yelp business page - SGD Tofu House, 3450 El Camino Real Ste 105: Mon-Sat 11:00 am-9:00 pm, Sun Closed, phone",
+            "url": "https://www.yelp.com/biz/sgd-tofu-house-santa-clara"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/sgd-tofu-house-santa-clara",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=SGD+Tofu+House+3450+El+Camino+Real+Santa+Clara"
+      },
+      "flags": [
+        "SAME BRAND, SECOND ADDRESS: SGD Tofu House also operates at 491 Saratoga Ave, San Jose 95129 with different hours - that room is listed as its own row in this batch, not merged into this one.",
+        "No lunch-only pricing is published, so the price column is blank."
+      ]
+    },
+    {
+      "name": "SGD Tofu House - Saratoga Ave",
+      "city": "San Jose",
+      "area": "Saratoga Ave (West San Jose, 95129)",
+      "address": "491 Saratoga Ave, San Jose, CA 95129",
+      "cuisine": "Korean tofu house / BBQ",
+      "phone": "(408) 261-3255",
+      "lunch_special": {
+        "name": "Weekday lunch service block (11:00 AM - 2:00 PM) - no lunch-only price published",
+        "price_from": null,
+        "price_to": null,
+        "days": "Monday-Saturday",
+        "window": "11:00 AM - 2:00 PM (dinner block from 5:00 PM)",
+        "includes": "The business's own menu page prints the daily lunch block; no lunch prices are published on it."
+      },
+      "hours_tuesday": "11:00 AM - 2:00 PM and 5:00 PM - 8:30 PM (own site) / 5:00 PM - 11:30 PM (Yelp) - see flag",
+      "days_open": "Own site: Mon-Sat 11am-2pm and 5:00pm-8:30pm, plus a footer line 'Monday-Saturday L: 11 AM-2 PM D: 5 PM-12 AM; Sunday 12 PM-8 PM'. Yelp: Mon-Sat 11:00 am-2:00 pm and 5:00 pm-11:30 pm, Sun 12:00-2:30 pm and 5:00-9:00 pm.",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": true,
+        "note": "~2 mi from 20387 Gillick Way - one of the closest rows in this batch, and the lunch block opens at 11:00 AM."
+      },
+      "verification": {
+        "level": "conflicting",
+        "sources": [
+          {
+            "label": "SGD Tofu House Saratoga official menu page - 491 Saratoga Avenue, Mon-Sat 11am-2pm and 5:00pm-8:30pm, plus the footer's own second version (L 11 AM-2 PM, D 5 PM-12 AM; Sunday 12 PM-8 PM)",
+            "url": "http://saratogatofuhouse.com/original-menu"
+          },
+          {
+            "label": "Yelp business page - SGD Tofu House, 491 Saratoga Ave: Mon-Sat 11:00 am-2:00 pm and 5:00 pm-11:30 pm, Sun 12:00 pm-2:30 pm and 5:00 pm-9:00 pm",
+            "url": "https://www.yelp.com/biz/sgd-tofu-house-san-jose-3"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/sgd-tofu-house-san-jose-3",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=SGD+Tofu+House+491+Saratoga+Ave+San+Jose"
+      },
+      "flags": [
+        "CONFLICT INSIDE THE RESTAURANT'S OWN PAGE: the hours block says dinner ends 8:30 PM while the footer of the same page says dinner runs to 12 AM; Yelp agrees with the footer (5:00 pm-11:30 pm). All are printed.",
+        "Distinct street address from the Santa Clara room at 3450 El Camino Real - kept as a separate row.",
+        "No lunch-only pricing is published, so the price column is blank."
+      ]
+    },
+    {
+      "name": "Korean Spring BBQ",
+      "city": "Santa Clara",
+      "area": "Kiely Blvd (Kiely Plaza)",
+      "address": "1062 Kiely Blvd, Santa Clara, CA 95051",
+      "coords": [37.3457886, -121.978511],
+      "coords_source": "Checkle listing geo",
+      "cuisine": "Korean charcoal BBQ",
+      "phone": "(408) 985-8808",
+      "lunch_special": {
+        "name": "Weekday lunch service block (11:00 AM - 2:00 PM) - a listing summarises reviewers as praising 'delicious lunch specials'; no published lunch price",
+        "price_from": null,
+        "price_to": null,
+        "days": "Monday-Friday",
+        "window": "11:00 AM - 2:00 PM",
+        "includes": "Charcoal-grilled BBQ, tofu soup and noodle dishes. KQED describes a $200 'Midnight Menu' combo served after 9 PM, which is not a lunch offer and is not printed as a price."
+      },
+      "hours_tuesday": "11:00 AM - 2:00 PM and 5:00 PM - 12:00 AM (next day)",
+      "days_open": "Mon 11:00-14:00 and 17:00-21:00; Tue-Fri 11:00-14:00 and 17:00-24:00; Sat-Sun 11:00-24:00 (Yelp business page, matched by KQED)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": true,
+        "note": "~4 mi from 20387 Gillick Way; the lunch block ends at 2:00 PM so a 12:20 PM departure still works."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {
+            "label": "Yelp business page - Korean Spring BBQ, 1062 Kiely Blvd: Mon 11:00 am-2:00 pm / 5:00 pm-9:00 pm, Tue-Fri 11:00 am-2:00 pm / 5:00 pm-12:00 am, Sat-Sun 11:00 am-12:00 am",
+            "url": "https://www.yelp.com/biz/korean-spring-bbq-santa-clara"
+          },
+          {
+            "label": "KQED - 'Korean Spring BBQ is open Monday 11 a.m.-2 p.m. and 5-9 p.m., Tuesday to Friday 11 a.m.-2 p.m. and 5 p.m.-midnight, Saturday to Sunday 11 a.m.-midnight at 1062 Kiely Blvd'",
+            "url": "https://www.kqed.org/arts/13988444/best-korean-barbecue-santa-clara-charcoal-grill-korean-spring-late-night"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/korean-spring-bbq-santa-clara",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Korean+Spring+BBQ+1062+Kiely+Blvd+Santa+Clara"
+      },
+      "flags": [
+        "A third listing (Checkle) prints 11:00 AM-10:00 PM every day for this address, contradicting both Yelp and KQED. Printed, not used.",
+        "The phrase 'lunch specials' comes from a listing's summary of reviews, not from a published menu; no price is printed."
+      ]
+    },
+    {
+      "name": "Shu's Korean Restaurant",
+      "city": "Santa Clara",
+      "area": "El Camino Real (near Central Park)",
+      "address": "3258 El Camino Real, Santa Clara, CA 95051",
+      "coords": [37.352167, -121.9859889],
+      "coords_source": "official ordering site JSON-LD",
+      "cuisine": "Korean",
+      "phone": "(408) 244-8531",
+      "lunch_special": {
+        "name": "No lunch special published - open from 11:00 AM Tuesday-Sunday",
+        "price_from": null,
+        "price_to": null,
+        "days": "Tuesday-Sunday (CLOSED MONDAY)",
+        "window": "opens 11:00 AM",
+        "includes": "Menu prices captured from the Yelp menu module: Ramen $19.99, Bul Go Gi $30.99, Deep-fried Chicken Wings $28.99, Ssam Bab $49.99. A Yelp photo caption prices 'dweji bulgogi ... $21 total after tax and tip during lunch' - a diner figure, so it is not printed as the row price."
+      },
+      "hours_tuesday": "11:00 AM - 10:00 PM",
+      "days_open": "Mon closed; Tue-Sun 11:00 AM-10:00 PM (own ordering-site structured data, matched by Yelp, Yahoo Local and Restaurant Guru)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": true,
+        "note": "~4 mi from 20387 Gillick Way and open all afternoon; no lunch-window risk."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {
+            "label": "Shu's Korean Restaurant official ordering site - 3258 El Camino Real, structured hours Tue-Sun 11:00-22:00 (Monday 00:00-00:00, i.e. closed), geo, phone",
+            "url": "https://www.shuskoreansantaclara.com/order"
+          },
+          {
+            "label": "Yelp business page - 3258 El Camino Real, Mon Closed, Tue-Sun 11:00 am-10:00 pm, menu prices and the $21 lunch photo caption",
+            "url": "https://www.yelp.com/biz/shus-korean-restaurant-santa-clara"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/shus-korean-restaurant-santa-clara",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Shu%27s+Korean+Restaurant+3258+El+Camino+Real+Santa+Clara"
+      },
+      "flags": [
+        "The only lunch figure found ($21 for dweji bulgogi, after tax and tip) is a diner photo caption, so the price column stays blank."
+      ]
+    },
+    {
+      "name": "bb.q Chicken Sunnyvale",
+      "city": "Sunnyvale",
+      "area": "E El Camino Real",
+      "address": "561 E El Camino Real, Sunnyvale, CA 94087",
+      "coords": [37.3637082, -122.0266861],
+      "coords_source": "Restaurant Guru listing geo",
+      "cuisine": "Korean fried chicken",
+      "phone": "(408) 743-5787",
+      "lunch_special": {
+        "name": "Lunch specials combos - a Yelp reviewer writes 'Lunch specials special (combo...)'; no published lunch price",
+        "price_from": null,
+        "price_to": null,
+        "days": "daily (open 11:00 AM every day)",
+        "window": "opens 11:00 AM",
+        "includes": "Menu prices captured from the Yelp menu module: Ddeok-bokki $19.54, Kimchi Fried Rice $19.54, Rose Ddeok-bokki $20.69, Half & Half Whole Chicken $41.39. These are regular prices."
+      },
+      "hours_tuesday": "11:00 AM - 9:30 PM (Yelp, Apple Maps and Restaurant Guru) / 11:00 AM - 6:30 PM (weeblyte mirror) - see flag",
+      "days_open": "Mon-Sun 11:00 AM-9:30 PM (Yelp business page, Apple Maps, Restaurant Guru)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": true,
+        "note": "~2 mi from 20387 Gillick Way and open from 11:00 AM - workable on either departure."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {
+            "label": "Yelp business page - bb.q Chicken Sunnyvale, 561 E El Camino Real: daily 11:00 am-9:30 pm, menu prices, 'Lunch specials' tag",
+            "url": "https://www.yelp.com/biz/bb-q-chicken-sunnyvale-sunnyvale-5"
+          },
+          {
+            "label": "Apple Maps listing - 561 E El Camino Real, every day 11:00 AM-9:30 PM, bbqchicken.com",
+            "url": "https://maps.apple.com/place?place-id=I97BB39B7DA5DA78F"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/bb-q-chicken-sunnyvale-sunnyvale-5",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=bb.q+Chicken+561+E+El+Camino+Real+Sunnyvale"
+      },
+      "flags": [
+        "HOURS CONFLICT: three sources say 11:00 AM-9:30 PM daily; a menu mirror site (weeblyte) prints Tuesday 11:00 AM-6:30 PM and Wednesday 11:00 AM-8:30 PM, and omits Thursday-Saturday entirely. Printed, not used.",
+        "The 'lunch specials' wording comes from a Yelp review snippet; no lunch-only price is published, so the price column is blank."
+      ]
+    },
+    {
+      "name": "Great Indian Cuisine",
+      "city": "Santa Clara",
+      "area": "Agnew Rd (Rivermark area)",
+      "address": "2026 Agnew Rd, Santa Clara, CA 95054",
+      "coords": [37.394295, -121.95974],
+      "coords_source": "Yellowpages listing geo",
+      "cuisine": "North Indian, halal, buffet",
+      "phone": "(408) 654-9894",
+      "lunch_special": {
+        "name": "All-day buffet (a Reddit diner quotes '$18 all day, closed on Sunday') - no price published by the business",
+        "price_from": null,
+        "price_to": null,
+        "days": "Monday-Saturday (CLOSED SUNDAY)",
+        "window": "from the 11:00 AM opening",
+        "includes": "Buffet-style North Indian service; the business's own Yelp blurb describes a 'wide selection of freshly prepared vegetarian and non-vegetarian dishes'. The $18 figure is a diner quote, so it is not printed in the price column."
+      },
+      "hours_tuesday": "11:00 AM - 10:00 PM (Yelp) / 11:00 AM - 8:30 PM (Zmenu) / 10:00 AM - 10:00 PM (Yellowpages) - see flag",
+      "days_open": "Yelp: Mon-Sat 11:00 am-10:00 pm, Sun closed. Zmenu: Mon-Sat 11:00am-8:30pm, Sun closed. Yellowpages: Mon-Sun 10:00 am-10:00 pm.",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "~7 mi north of 20387 Gillick Way in the Rivermark area: a bus there and back does not fit inside the 11:50 AM departure and 3:30 PM home deadline."
+      },
+      "verification": {
+        "level": "conflicting",
+        "sources": [
+          {
+            "label": "Yelp business page - Great Indian Cuisine, 2026 Agnew Rd: Mon-Sat 11:00 am-10:00 pm, Sun Closed, business blurb",
+            "url": "https://www.yelp.com/biz/great-indian-cuisine-santa-clara"
+          },
+          {
+            "label": "Zmenu - 2026 Agnew Rd, Mon-Sat 11:00am-8:30pm, Sun Closed",
+            "url": "https://www.zmenu.com/great-indian-cuisine-santa-clara-online-menu/"
+          },
+          {
+            "label": "Yellowpages - 2026 Agnew Rd, Mon-Sun 10:00 am-10:00 pm (third value), geo",
+            "url": "https://www.yellowpages.com/santa-clara-ca/mip/great-indian-cuisine-473938836"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/great-indian-cuisine-santa-clara",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Great+Indian+Cuisine+2026+Agnew+Rd+Santa+Clara"
+      },
+      "flags": [
+        "THREE-WAY HOURS CONFLICT including a Sunday disagreement (Yelp and Zmenu say closed Sunday, Yellowpages says open). All three are printed.",
+        "The $18 buffet figure is a Reddit diner quote from a 2026 thread, not a published menu price, so it is described in the row but not printed as the price."
+      ]
+    },
+    {
+      "name": "Goku Korean BBQ and Hot Pot",
+      "city": "San Jose",
+      "area": "Meridian Ave (Cambrian Park)",
+      "address": "3085 Meridian Ave, San Jose, CA 95124",
+      "coords": [37.26929, -121.9067],
+      "coords_source": "Postmates/UberEats storefront geo",
+      "cuisine": "Korean BBQ and hot pot, AYCE",
+      "phone": "(408) 784-3228",
+      "lunch_special": {
+        "name": "Weekday AYCE lunch special - Reddit diners quote $19.99; no price is published by the business",
+        "price_from": null,
+        "price_to": null,
+        "days": "weekdays",
+        "window": "from the 11:00 AM opening",
+        "includes": "AYCE Korean BBQ and hot pot. The Yelp Q&A answer dated September 2024 gives only dinner pricing ('$31.99 per person for either Hot Pot or KBBQ + $5 per person if you want both'). Both figures are diner quotes, so the price column stays blank."
+      },
+      "hours_tuesday": "11:00 AM - 10:00 PM (Yelp) / 11:00 AM - 8:30 PM (delivery storefront) - see flag",
+      "days_open": "Yelp: Mon-Thu and Sun 11:00 am-10:00 pm, Fri-Sat 11:00 am-10:00 pm. Zmenu: Mon-Thu/Sun 11:00am-9:00pm, Fri-Sat 11:00am-10:00pm. Delivery storefront: Sun-Thu 11:00-20:30, Fri-Sat 11:00-21:30.",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "~7 mi south of 20387 Gillick Way in Cambrian Park: a there-and-back bus trip does not fit the 11:50 AM departure and 3:30 PM home deadline."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {
+            "label": "Yelp business page - Goku Korean BBQ and Hot Pot, 3085 Meridian Ave: daily 11:00 am-10:00 pm, gokusanjose.com, and the Sept-2024 Q&A answer on per-person pricing",
+            "url": "https://www.yelp.com/biz/goku-korean-bbq-and-hot-pot-san-jose-3"
+          },
+          {
+            "label": "Zmenu - 3085 Meridian Ave, Mon-Thu/Sun 11:00am-9:00pm, Fri-Sat 11:00am-10:00pm",
+            "url": "https://www.zmenu.com/goku-hotpot-korean-bbq-san-jose-online-menu/"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/goku-korean-bbq-and-hot-pot-san-jose-3",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Goku+Korean+BBQ+3085+Meridian+Ave+San+Jose"
+      },
+      "flags": [
+        "HOURS CONFLICT: Yelp says 10:00 PM nightly, Zmenu says 9:00 PM on Sun-Thu, and the delivery storefront says 8:30 PM. All printed.",
+        "Every price found for this restaurant is a diner quote (Reddit $19.99 weekday lunch, Yelp Q&A $31.99 dinner), so none is printed in the price column."
+      ]
+    },
+    {
+      "name": "Punjab Cafe",
+      "city": "San Jose",
+      "area": "Downtown San Jose (E Santa Clara St)",
+      "address": "322-324 E Santa Clara St, San Jose, CA 95113",
+      "coords": [37.3392286, -121.8836339],
+      "coords_source": "Restaurant Guru listing geo",
+      "cuisine": "Indian / Punjabi",
+      "phone": "(408) 295-5470",
+      "lunch_special": {
+        "name": "AYCE lunch buffet - but the buffet is a Friday/Saturday offer, so there is no Tuesday buffet",
+        "price_from": null,
+        "price_to": null,
+        "days": "buffet Friday and Saturday per the Yelp Q&A; the restaurant is open for lunch Tuesday",
+        "window": "11:30 AM - 2:30 PM lunch block on Tuesday",
+        "includes": "The most recent buffet price found is a Reddit diner quote ('Thursday-Sunday ... $20.88 AFTER tax'), which conflicts with the Yelp Q&A answer that says Friday and Saturday. No price is published by the business, so the price column is blank."
+      },
+      "hours_tuesday": "11:30 AM - 2:30 PM and 5:00 PM - 9:00 PM (most recent Yelp snapshot) / 11:30 AM - 9:30 PM (earlier snapshots) - see flag",
+      "days_open": "Most recent Yelp: Mon-Tue 11:30-14:30 and 17:00-21:00; Wed-Fri 11:30-21:30; Sat-Sun 12:00-21:30. Earlier Yelp snapshots show Tue 11:30 am-9:30 pm. Restaurant Guru matches the most recent Yelp table.",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Downtown San Jose is ~11 mi from 20387 Gillick Way: outside the 11:50 AM departure / 3:30 PM home deadline."
+      },
+      "verification": {
+        "level": "conflicting",
+        "sources": [
+          {
+            "label": "Yelp business page - Punjab Cafe, 322-324 E Santa Clara St: most recent snapshot Mon-Tue 11:30 am-2:30 pm / 5:00 pm-9:00 pm, Wed-Fri 11:30 am-9:30 pm, Sat-Sun 12:00 pm-9:30 pm, punjabcafesanjose.com",
+            "url": "https://www.yelp.com/biz/punjab-cafe-san-jose"
+          },
+          {
+            "label": "Yelp Q&A on the same page - 'Do they serve the buffet every day? If not, what day?' answered 'Friday and Saturday'; a second user says 'It's been back for a bit, I can't remember the price'",
+            "url": "https://www.yelp.com/biz/punjab-cafe-san-jose?start=320"
+          },
+          {
+            "label": "Restaurant Guru - 322-324 E Santa Clara St, Mon-Tue 11:30-14:30 / 17:00-21:00, Wed-Fri 11:30-21:30, Sat-Sun 12:00-21:30, geo",
+            "url": "https://restaurantguru.com/Punjab-Cafe-San-Jose"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/punjab-cafe-san-jose",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Punjab+Cafe+322+E+Santa+Clara+St+San+Jose"
+      },
+      "flags": [
+        "NO TUESDAY BUFFET: the Yelp Q&A answer says the buffet runs Friday and Saturday. A Reddit thread says Thursday-Sunday at $20.88 after tax. The two disagree and neither is published by the business, so no buffet is claimed for Tuesday and no price is printed.",
+        "HOURS CONFLICT BETWEEN YELP SNAPSHOTS of the same page (Tue 11:30 am-2:30 pm/5-9 pm in the newest vs Tue 11:30 am-9:30 pm in older ones). Both printed; the newest is used."
+      ]
+    },
+    {
+      "name": "Poppy & Claro",
+      "city": "San Jose",
+      "area": "Downtown San Jose (50 West building)",
+      "address": "50 W San Fernando St, San Jose, CA 95113",
+      "coords": [37.3337278, -121.8894294],
+      "coords_source": "Postcard listing geo",
+      "cuisine": "Californian all-day restaurant and bar",
+      "phone": "(408) 408-7777",
+      "lunch_special": {
+        "name": "$29 prix-fixe lunch (Dine Downtown event, July 2026) - not a standing offer",
+        "price_from": null,
+        "price_to": null,
+        "days": "the restaurant serves lunch Monday-Friday",
+        "window": "restaurant open 8:00 AM-8:00 PM Mon-Fri per the listing; 7:30 AM-7:30 PM per Eater SF",
+        "includes": "The Dine Downtown menu was Little Gem Caesar, Meatballs Pomodoro or Trio of Dips, then Roasted Beet & Hummus Bowl, Spicy Vodka Pasta, Chicken Club or Hot Rosa pizza, then Walnut Cheesecake or Cast-Iron Chocolate Chip Cookie, at $29. That was an event menu, so it is not printed as the row price."
+      },
+      "hours_tuesday": "8:00 AM - 8:00 PM (listing) / 7:30 AM - 7:30 PM (Eater SF) - see flag",
+      "days_open": "Mon-Tue-Wed-Thu 8:00 AM-8:00 PM per the Postcard listing's structured hours (no Friday-Sunday entry captured); Eater SF describes it as running Monday through Friday 7:30 a.m.-7:30 p.m.",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Downtown San Jose is ~11 mi from 20387 Gillick Way: outside the 11:50 AM departure / 3:30 PM home deadline."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {
+            "label": "Postcard listing - Poppy & Claro, 50 W San Fernando St, structured Mon/Tue/Wed/Thu 8 AM-8 PM, geo, poppyandclaro.com, $20-$30",
+            "url": "https://www.postcard.inc/places/poppy-and-claro-san-jose-43rV4IWAiYm"
+          },
+          {
+            "label": "Eater SF - 'runs Monday through Friday from 7:30 a.m. to 7:30 p.m.' (second value for the daily hours)",
+            "url": "https://sf.eater.com/2025/10/14/poppy-claro-san-jose-open"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/search?find_desc=Poppy+and+Claro&find_loc=San+Jose%2C+CA",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Poppy+and+Claro+50+W+San+Fernando+St+San+Jose"
+      },
+      "flags": [
+        "HOURS CONFLICT (8 AM-8 PM vs 7:30 AM-7:30 PM) and no captured weekend entry - Friday-Sunday hours are unverified rather than stated.",
+        "The $29 prix-fixe lunch comes from the Mercury News Dine Downtown coverage, i.e. an event menu for a July 2026 window, not a standing lunch offer; it is not printed as the row price."
+      ]
+    },
+    {
+      "name": "Grace Deli & Cafe",
+      "city": "San Jose",
+      "area": "Downtown San Jose (Almaden Blvd, EY building)",
+      "address": "303 S Almaden Blvd Ste 160, San Jose, CA 95110",
+      "cuisine": "Deli / sandwiches, breakfast burritos",
+      "phone": "(408) 795-1200",
+      "lunch_special": {
+        "name": "Sandwich/wrap/salad + chips + beverage for $16.50 (Dine Downtown event, July 2026) - not a standing offer",
+        "price_from": null,
+        "price_to": null,
+        "days": "Monday-Friday (closed Saturday and Sunday)",
+        "window": "7:00 AM - 2:00 PM",
+        "includes": "The Dine Downtown offer is 'Pick a sandwich (grilled or cold), wrap or salad and get that, plus a bag of chips and a beverage, for $16.50', with Reuben, Tuna Avo Cheddar Melt and Chicken Caesar named, plus a free cookie with any lunch-menu purchase. That is event pricing, so it is not printed as the row price."
+      },
+      "hours_tuesday": "7:00 AM - 2:00 PM",
+      "days_open": "Mon-Fri 7:00 AM-2:00 PM; Sat-Sun closed (Yelp business page, Apple Maps, Wanderlog and the wheree listing all agree)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Downtown San Jose is ~11 mi from 20387 Gillick Way: outside the 11:50 AM departure / 3:30 PM home deadline. The 2:00 PM close would end lunch early in any case."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {
+            "label": "Yelp business page - Grace Deli & Cafe, 303 Almaden Blvd Ste 160: Mon-Fri 7:00 am-2:00 pm, Sat-Sun closed, grace303.com",
+            "url": "https://www.yelp.com/biz/grace-deli-and-cafe-san-jose"
+          },
+          {
+            "label": "Wanderlog - 303 S Almaden Blvd, Mon-Fri 7AM-2PM, Sat-Sun closed, grace303.com",
+            "url": "https://wanderlog.com/place/details/978436/grace-deli--cafe"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/grace-deli-and-cafe-san-jose",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Grace+Deli+and+Cafe+303+S+Almaden+Blvd+San+Jose"
+      },
+      "flags": [
+        "The $16.50 combo and the free-cookie offer are Dine Downtown event pricing (July 2026) reported by the Mercury News, not a standing menu offer; the price column is left blank.",
+        "Closes at 2:00 PM on weekdays."
+      ]
+    },
+    {
+      "name": "The Old Spaghetti Factory",
+      "city": "San Jose",
+      "area": "Downtown San Jose (N San Pedro St)",
+      "address": "51 N San Pedro St, San Jose, CA 95110",
+      "coords": [37.335922, -121.89396],
+      "coords_source": "TripAdvisor listing geo",
+      "cuisine": "Italian-American",
+      "phone": "(408) 288-7488",
+      "lunch_special": {
+        "name": "Weekday Lunch menu served Mon-Fri 11:30 AM-4:00 PM; the bar's 'Appy Hour' prices a la carte pasta classics at $10",
+        "price_from": null,
+        "price_to": null,
+        "days": "Monday-Friday",
+        "window": "11:30 AM - 4:00 PM for the lunch menu; Appy Hour Mon-Thu 3:30-5:30 PM and 8:30-9:30 PM",
+        "includes": "The official location page prints 'Weekday Lunch Mon-Fri 11:30am-4:00pm' and the bar offer '50% off appetizers and $10 a la carte pasta classics' during Appy Hour. No lunch-menu price is published, so the price column is blank."
+      },
+      "hours_tuesday": "11:30 AM - 9:30 PM",
+      "days_open": "Sun-Thu 11:30am-9:30pm; Fri-Sat 11:30am-10:30pm (official location page, matched by Yelp and TripAdvisor)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Downtown San Jose is ~11 mi from 20387 Gillick Way: outside the 11:50 AM departure / 3:30 PM home deadline."
+      },
+      "verification": {
+        "level": "official",
+        "sources": [
+          {
+            "label": "The Old Spaghetti Factory official San Jose location page - 'Weekday Lunch Mon-Fri 11:30am-4:00pm', Sun-Thu 11:30am-9:30pm / Fri-Sat 11:30am-10:30pm, and the Appy Hour '$10 a la carte pasta classics' bar offer",
+            "url": "https://www.osf.com/location/san-jose-ca/"
+          },
+          {
+            "label": "TripAdvisor - 51 N San Pedro St, structured Tue 11:30-21:30, geo, osf.com menu link",
+            "url": "https://www.tripadvisor.com/Restaurant_Review-g33020-d347407-Reviews-The_Old_Spaghetti_Factory-San_Jose_California.html"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/the-old-spaghetti-factory-san-jose-2",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Old+Spaghetti+Factory+51+N+San+Pedro+St+San+Jose"
+      },
+      "flags": [
+        "The $10 pasta figure is an Appy Hour bar offer that starts at 3:30 PM, not a lunch price; the row prints a blank price because no lunch-menu price is published.",
+        "Dine Downtown offered a free Sicilian Garlic Cheese Bread with an adult dinner purchase - a dinner offer, not a lunch one."
+      ]
+    },
+    {
+      "name": "Cam Hung Sandwich and Coffee",
+      "city": "Sunnyvale",
+      "area": "Reed Ave",
+      "address": "903 Reed Ave, Sunnyvale, CA 94086",
+      "coords": [37.366986, -122.013303],
+      "coords_source": "Wanderboat listing geo",
+      "cuisine": "Vietnamese banh mi / coffee",
+      "phone": "(408) 735-8989",
+      "lunch_special": {
+        "name": "No lunch special published - banh mi priced from $7.25 on the full menu, which is the cheapest sit-down-or-takeaway lunch found in this batch",
+        "price_from": null,
+        "price_to": null,
+        "days": "Monday-Saturday (Yelp lists Sunday hours incompletely; see flag)",
+        "window": "opens 8:00 AM Mon-Fri, 9:00 AM Saturday",
+        "includes": "Menu prices captured: Mixed Veggies Sandwich $7.25, Steamed Tofu Sandwich $7.75, Grilled Pork / Grilled Chicken / Tender Chicken / Sardine / Ham / Shredded Pork / Egg / Fried Tofu Sandwich $8.00, BBQ Pork Sandwich $8.25, Shredded Beef and Grilled Beef $8.50, Pork Roll $8.50, Combination $9.00, Fish Cake Sandwich $8.75, Eggroll $1.25, Pate Chaud $2.75, rice plates $12.00. Reddit diners quote '$10 double meat Banh mi'."
+      },
+      "hours_tuesday": "8:00 AM - 8:00 PM",
+      "days_open": "Mon-Fri 8:00 AM-8:00 PM; Sat 9:00 AM-8:00 PM; Sunday not listed on the Yelp page retrieved (see flag)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": true,
+        "note": "~2 mi from 20387 Gillick Way and a counter-service room: the fastest lunch option in this batch, workable even on the 11:50 AM departure."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {
+            "label": "Yelp business page - Cam Hung, 903 Reed Ave: Mon-Fri 8:00 am-8:00 pm, Sat 9:00 am-8:00 pm; menu prices (BBQ Pork Sandwich $8.25, Grilled Pork $8.00, Pork Roll $8.50, Pate Chaud $2.75)",
+            "url": "https://www.yelp.com/biz/cam-hung-sunnyvale"
+          },
+          {
+            "label": "Cam Hung menu mirror - full sandwich price list ($7.25 Mixed Veggies through $9.00 Combination, sides, rice plates $12.00)",
+            "url": "https://cam-hung.res-menu.org/menu"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/cam-hung-sunnyvale",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Cam+Hung+903+Reed+Ave+Sunnyvale"
+      },
+      "flags": [
+        "Sunday hours were not captured on any page retrieved - Sunday is recorded as unverified rather than stated as closed.",
+        "No lunch-only promotion is published; the $8-9 banh mi prices are the full menu, so the price column is blank and the prices are quoted in the row instead.",
+        "The '$10 double meat banh mi' figure is a Reddit diner quote."
+      ]
+    }
+  ],
+  "rejected": [
+    {
+      "name": "Gaboja",
+      "city": "Santa Clara",
+      "why": "REJECTED - closure plus dinner-only. Its Yelp business page is titled 'GABOJA - CLOSED' at 2333 El Camino Real, Santa Clara, CA 95050, and the hours that remain on the listing and on the ordering mirror are 5:00 PM-midnight Monday-Saturday with Sunday closed - i.e. no lunch service even before the closure. It surfaced on a 'Korean lunch special' list, which is why it was screened.",
+      "links": [
+        {"label": "Yelp - GABOJA - CLOSED, 2333 El Camino Real, Santa Clara", "url": "https://www.yelp.com/biz/gaboja-santa-clara"},
+        {"label": "Gaboja ordering mirror - 2333 El Camino Real, Mon-Sat 5:00pm-12:00am, Sunday closed", "url": "https://gaboja.netwaiter.com/santa-clara/about/"}
+      ],
+      "searched": "2026-09-11"
+    }
+  ]
+}

@@ -777,6 +777,156 @@
         "url": "https://casalupelosaltos.com/"
       },
       "manual_review": "If the trip ever moves to a Thursday, resolve a street address and add it."
+    },
+    {
+      "id": "LUNCH-FLAG-34",
+      "severity": "important",
+      "title": "Five closures caught on pass 11 - Santana Row is thinning out",
+      "what_we_found": "Four restaurants surfaced by the pass-11 Santana Row / Castro Street sweeps are closed: Left Bank Brasserie (377 Santana Row Ste 1100 - Yelp now titles the page 'LEFT BANK BRASSERIE - SANTANA ROW - CLOSED'), Rosie McCann's (355 Santana Row Ste 1060 - Yelp 'CLOSED', TripAdvisor 'CLOSED', Restaurant Guru 'Permanently closed'), Yankee Pier (378 Santana Row Ste 1100 - Yelp 'YANKEE PIER - CLOSED') and Vida Tapas Y Cocteles (110 Castro St, Mountain View - 'Yelpers report this location has closed', order.online storefront 'Unavailable'). A fifth, Sushi Confidential's downtown room at 26 N San Pedro St, is not closed but has no Tuesday service at all (Mon/Tue/Wed closed, Thu opens 4:00 pm).",
+      "what_we_did": "All five are recorded in data/lunch_rejected.json with the page that proves the closure or the missing Tuesday; none was merged. Only the Willow Glen Sushi Confidential (1140 Lincoln Ave, Mon-Thu 11:30 am-8:30 pm) entered the master list.",
+      "rows": [],
+      "link": {
+        "label": "Yelp - Left Bank Brasserie - Santana Row - CLOSED",
+        "url": "https://www.yelp.com/biz/left-bank-san-jose-san-jose"
+      },
+      "manual_review": "The three Santana Row closures sit within a couple of blocks of each other. If the trip is re-planned around Santana Row, re-check the whole row before building an itinerary."
+    },
+    {
+      "id": "LUNCH-FLAG-35",
+      "severity": "important",
+      "title": "Two rows were merged and then withdrawn on a same-day self-audit",
+      "what_we_found": "After the pass-11 merge, an address re-check found two rows that should never have been added. Inchin's Bamboo Garden - Sunnyvale (L-was 593) is the same restaurant as row L43: identical street, city and phone, but the ZIP was printed 94087 on the new row and 94086 on the old one, so the address de-duplication did not catch it. Opa! Willow Glen (L-was 594) came from a TripAdvisor listing stamped 2018 whose street address, 1100 Lincoln Ave, is already held by Burma Roots (row L348, Ste 101).",
+      "what_we_did": "Both rows were deleted from the master list and rewritten as rejects in data/lunch_rejected.json ('superseded_by': 'L43' on the Inchin's entry). The master list is 592 rows, not 594. check_links.py was also corrected: its proxy-host ban was matching the whole URL, so 'miniboss-' in a path tripped the 'oss-' rule.",
+      "rows": [
+        "L43",
+        "L348"
+      ],
+      "link": {
+        "label": "Restaurantji - Inchin's Bamboo Garden, 151 W Washington Ave, Sunnyvale (ZIP printed 94087)",
+        "url": "https://www.restaurantji.com/ca/sunnyvale/inchins-bamboo-garden-/"
+      },
+      "manual_review": "Any future pass should de-duplicate on street + city with the ZIP stripped and with 'Street'/'St' normalised - that is exactly the pair of slips that let these two through."
+    },
+    {
+      "id": "LUNCH-FLAG-36",
+      "severity": "info",
+      "title": "Pre-existing duplicate in the master list: Don Giovanni's and Ristorante Don Giovanni",
+      "what_we_found": "Row L89 'Don Giovanni's' (235 Castro St, Mountain View) and row L116 'Ristorante Don Giovanni' (235 Castro Street, Mountain View) are the same restaurant at the same address, entered on two different passes because one page spells the street 'Castro St' and the other 'Castro Street'.",
+      "what_we_did": "Left both rows in place and flagged them rather than deleting one - the merge script owns row identity and neither row contains a wrong fact. The pass-11 entry that would have been a third copy was correctly turned away by the address de-duplication, and its OpenTable page is kept as source S104 for the record.",
+      "rows": [
+        "L89",
+        "L116"
+      ],
+      "link": {
+        "label": "OpenTable - Ristorante Don Giovanni, 235 Castro Street (the page that was NOT merged a third time)",
+        "url": "https://www.opentable.com/ristorante-don-giovanni-mountain-view"
+      },
+      "manual_review": "Pick whichever row has the better hours evidence and retire the other; the two rows currently disagree on nothing but the spelling of the street."
+    },
+    {
+      "id": "LUNCH-FLAG-37",
+      "severity": "important",
+      "title": "Boda's $5.99 lunch is real but its own site is http-only, so the price is not printed",
+      "what_we_found": "Boda (2868 Story Rd, San Jose) prints on its own site: 'Weekday Lunch Special... All items are served with Egg Roll, Soup of the Day, Steamed Rice or Shrimp Fried Rice... From Mon. to Fri. 11:00 am to 2:00 pm. Lunch Special are not served during Holiday. $5.99', with a $6.50 prawn section. That site refuses https (HTTP 500 on both www and bare domain), so it fails the project's https-only citation rule and cannot be linked from a row.",
+      "what_we_did": "The row was merged at 'listing' level with the price columns deliberately blank; the $5.99 / $6.50 figures and the 11:00 am-2:00 pm window are reproduced verbatim in the row's lunch_special text with a flag telling the reader to call (408) 251-3855. Address and hours are cited over https from three independent listings (S117 Franki, plus Nextdoor and Restaurant888).",
+      "rows": [
+        "L592"
+      ],
+      "link": {
+        "label": "Franki - Boda Chinese & Vietnamese Food, 2868 Story Rd (the https stand-in source)",
+        "url": "https://frankiapp.com/business/boda-chinese-vietnamese-food-284350"
+      },
+      "manual_review": "Cheapest verified lunch found anywhere in eleven passes. Worth one phone call to confirm before it is treated as bookable."
+    },
+    {
+      "id": "LUNCH-FLAG-38",
+      "severity": "info",
+      "title": "Six pass-11 restaurants publish two different hours blocks for the same day",
+      "what_we_found": "Mezcal (25 W San Fernando St, San Jose) - OpenTable shows continuous Tue-Thu 11:30 am-9:00 pm while Yelp shows a two-hour 11:30 am-1:30 pm lunch then a 5:00 pm reopen. Strata (181 E Santa Clara St) - OpenTable lists a Tue-Fri 11:00 am-2:00 pm lunch with its own menu, while Eater SF and Metro both describe a dinner-only room opening at 5:00 pm. Togo's Cupertino - 10:00 am-8:30 pm on TripAdvisor and Yellowpages versus 9:30 am-9:00 pm on a directory. Veggie Grill Santana Row - 10:00 pm close on four sources, 11:00 pm on TripAdvisor, 10:30 pm on UberEats. Lotus Thai Bistro - Saturday printed three different ways. Opa! Willow Glen - weekend blocks duplicated (row since withdrawn, FLAG-35).",
+      "what_we_did": "Nothing was averaged or guessed. Every conflicting value is written out in the row's hours_tuesday / days_open fields and the row is levelled 'conflicting' so the site renders it in the conflicts band.",
+      "rows": [
+        "L538",
+        "L539",
+        "L590",
+        "L537",
+        "L536"
+      ],
+      "link": {
+        "label": "OpenTable - Mezcal, San Jose (continuous service) versus Yelp (two-hour lunch)",
+        "url": "https://www.opentable.com/mezcal-san-jose"
+      },
+      "manual_review": "Mezcal and Strata are the two that matter operationally: if Yelp's two-hour lunch is right for Mezcal, arriving after 1:30 pm means no food until 5:00 pm."
+    },
+    {
+      "id": "LUNCH-FLAG-39",
+      "severity": "info",
+      "title": "Eight Reddit and aggregator lunch prices were recorded and then deliberately not printed",
+      "what_we_found": "Pass 11 surfaced cheap-lunch claims from Reddit threads and third-party 'specials' sites: Habit Burger '$10 - half burger, side salad, drink & chicken nuggets'; Red Robin '$10 ... two burger, fries & drink deals' (online pickup only); Olive Garden '$5.99 weekday lunch 11:00 AM-3:00 PM' on olivegardenmenus.net and 'unlimited soup/salad/breadsticks and entree for like 12 bucks' on Reddit; Milpitas Buffet '$19.99' weekday lunch on atly.com and '$20' in a Google review; Sizzler '$5.49-$6.99' on allmenus versus '$14.49+' in its own order feed; Ristorante Don Giovanni '$19.95-$19.99 three-course lunch' inside OpenTable's review summary; Veggie Grill '$10-$15' on Reddit.",
+      "what_we_did": "Every one of these is quoted inside the relevant row's lunch_special.includes or flags text, and every one of them leaves price_from / price_to empty. The project prints a price only where the restaurant's own page printed it.",
+      "rows": [
+        "L543",
+        "L587",
+        "L588",
+        "L589",
+        "L580",
+        "L537"
+      ],
+      "link": {
+        "label": "olivegardenmenus.net - third-party 'specials' page (NOT an official page, price not printed in the row)",
+        "url": "https://olivegardenmenus.net/olive-garden-specials-menu-2/"
+      },
+      "manual_review": "Confirm any of these by phone before budgeting for them - several are pickup-only or event pricing."
+    },
+    {
+      "id": "LUNCH-FLAG-40",
+      "severity": "info",
+      "title": "The Santana Row and downtown San Jose rows are outside the return-bus window",
+      "what_we_found": "Nine pass-11 rows (LB Steak, The Counter, Veggie Grill, Mezcal, Strata, Sushi Confidential Willow Glen, Habit Almaden, Red Robin Eastridge, Olive Garden Milpitas) are open on the trip date and open at lunchtime, but none of them fits the 11:50 AM departure / 3:30 PM home deadline from 20387 Gillick Way - Santana Row is ~5 mi out and the others 10-15 mi.",
+      "what_we_did": "Each row carries fits_return_bus.ok = false with the distance and the reason. They stay in the table because the user asked for the whole 10-15 mile ring, not just the walkable core.",
+      "rows": [
+        "L535",
+        "L537",
+        "L538",
+        "L539",
+        "L588",
+        "L589",
+        "L590",
+        "L543",
+        "L587"
+      ],
+      "link": {
+        "label": "Project transit-fit note (rendered on both pages)",
+        "url": "https://www.google.com/maps/search/?api=1&query=20387+Gillick+Way+Cupertino"
+      },
+      "manual_review": "Use the 'fits the return bus' filter on the lunch page to hide these when planning the actual trip day."
+    },
+    {
+      "id": "LUNCH-FLAG-41",
+      "severity": "info",
+      "title": "Tatami Buffet's entire week is a lunch service",
+      "what_we_found": "Tatami Buffet, 10123 N Wolfe Rd, Cupertino, opens 11:30 AM and closes 2:30 PM Monday-Friday (3:00 PM Saturday and Sunday). It is the only row in the master list whose whole operating day sits inside the lunch window, and it is ~2 mi from 20387 Gillick Way, so it is also one of the few pass-11 rows that fits the return bus.",
+      "what_we_did": "Merged as L591 with fits_return_bus.ok = true and a flag on the row itself. No buffet price could be verified - its own domain would not load - so the price column is blank.",
+      "rows": [
+        "L591"
+      ],
+      "link": {
+        "label": "Yellowpages - Tatami Buffet, 10123 N Wolfe Rd, Cupertino: Mon-Fri 11:30 am-2:30 pm",
+        "url": "https://www.yellowpages.com/cupertino-ca/mip/tatami-buffet-460371458"
+      },
+      "manual_review": "Call (408) 996-3444 for the buffet price; it is the closest unverified price to the trip destination."
+    },
+    {
+      "id": "LUNCH-FLAG-42",
+      "severity": "info",
+      "title": "Pass 11 added 59 rows against a 100-row target",
+      "what_we_found": "The standing request is 100 new verified rows per search pass. Pass 11 produced 59 (L534-L592): 75 candidates were written to data/incoming/, 14 of them turned out to be restaurants already in the master list under a slightly different name (Home Eat Santa Clara, Tai Pan Dim Sum Fremont, Cam Hung, Tofu Plus, Kabab & Curry's, Tamarine, Ramen Nagi, Pho Nguyen, Desi Dhaba, Sumiya Yakitori, The Sandwich Maker, bb.q Chicken, Asia Village, Masa Sushi Japan), and 2 more were withdrawn on the post-merge audit (FLAG-35).",
+      "what_we_did": "The shortfall is reported rather than padded. Every published row has a citable street address and weekly hours; no row was invented to reach a round number, and no price was printed without a page that shows it.",
+      "rows": [],
+      "link": {
+        "label": "data/incoming/ - the eight batch11 files this pass",
+        "url": "https://github.com/buffedlizard55-lab/TinoLunchSpecial/tree/main/data/incoming"
+      },
+      "manual_review": "Reaching 100 in one pass now needs a bulk source: Yelp returns HTTP 403 to direct fetch here (LUNCH-FLAG-32), which removed the highest-yield listing source the earlier passes used."
     }
   ]
 }
