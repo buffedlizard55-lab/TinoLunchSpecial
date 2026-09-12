@@ -1,0 +1,341 @@
+{
+  "batch": "batch14",
+  "pass": 14,
+  "notes": "Pass 14 - Santa Clara (El Camino Real) + San Jose. All rows verified 2026-09-12.",
+  "entries": [
+    {
+      "name": "Chennai Tiffins",
+      "city": "Santa Clara",
+      "area": "El Camino Real (2600 block)",
+      "address": "2690 El Camino Real, Santa Clara, CA 95051",
+      "cuisine": "South Indian (tiffin / dosa)",
+      "phone": "(408) 243-8866",
+      "lunch_special": {
+        "name": "Lunch service (tiffin counter); no discounted lunch price published",
+        "price_from": null,
+        "price_to": null,
+        "days": "daily",
+        "window": "11:00 AM - 3:00 PM lunch block",
+        "includes": "No priced lunch special found."
+      },
+      "hours_tuesday": "11:00 AM - 3:00 PM, 5:00 - 9:30 PM (Yelp) vs 11:30 AM - 3:00 PM, 4:30 - 10:00 PM (wheree) - conflict",
+      "days_open": "Yelp: daily 11:00 am-3:00 pm, 5:00-9:30 pm; wheree: daily 11:30 am-3:00 pm, 4:30 pm-10:00 pm; Restaurant Guru: 11:00 am-3:00 pm, 4:30-9:30 pm. All agree Tuesday has a lunch block.",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Santa Clara El Camino Real - off the return walk; VTA bus or a ride."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {"label": "Yelp business page - 2690 El Camino Real: daily 11:00 am-3:00 pm, 5:00-9:30 pm", "url": "https://www.yelp.com/search?find_desc=Chennai+Tiffins&find_loc=Santa+Clara%2C+CA"},
+          {"label": "Google Maps search - Chennai Tiffins, 2690 El Camino Real, Santa Clara (conflicting captured hours: 11:30 open / 4:30 or 5:00 close variants across listings)", "url": "https://www.google.com/maps/search/?api=1&query=Chennai+Tiffins+2690+El+Camino+Real+Santa+Clara"}
+        ],
+        "accessed": "2026-09-12"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/search?find_desc=Chennai+Tiffins&find_loc=Santa+Clara%2C+CA",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Chennai+Tiffins+2690+El+Camino+Real+Santa+Clara"
+      },
+      "flags": [
+        "LUNCH-FLAG-47: two-hour systems disagree on exact open/close (11:00/9:30 vs 11:30/10:00); Tuesday lunch block is consistent across all three."
+      ]
+    },
+    {
+      "name": "Su's Mongolian Cuisine",
+      "city": "Santa Clara",
+      "area": "El Camino Real (1100 block)",
+      "address": "1111 El Camino Real, Santa Clara, CA 95051",
+      "cuisine": "Mongolian / hot pot",
+      "phone": "(408) 244-6699",
+      "lunch_special": {
+        "name": "No published lunch special - à la carte Mongolian plates",
+        "price_from": null,
+        "price_to": null,
+        "days": "daily",
+        "window": "11:00 AM - 1:45 PM lunch block",
+        "includes": "No priced lunch special found."
+      },
+      "hours_tuesday": "11:00 AM - 1:45 PM, 5:00 - 8:45 PM (Restaurantji) vs 11:00 AM - 2:00 PM, 5:00 - 9:00 PM (Menupix, Yelp) - minor delta",
+      "days_open": "Daily 11:00 AM - 1:45/2:00 PM, 5:00 - 8:45/9:00 PM (Restaurantji, Menupix and Yelp captures all agree Tuesday is open with a lunch block)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Santa Clara El Camino Real - off the return walk; VTA bus or a ride."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {"label": "Google Maps search - Su's Mongolian Cuisine, 1111 El Camino Real, Santa Clara (captured 11:00-13:45/14:00 and 17:00-20:45/21:00 across listings)", "url": "https://www.google.com/maps/search/?api=1&query=Su%27s+Mongolian+Cuisine+1111+El+Camino+Real+Santa+Clara"}
+        ],
+        "accessed": "2026-09-12"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/search?find_desc=Su%27s+Mongolian&find_loc=Santa+Clara%2C+CA",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Su%27s+Mongolian+Cuisine+1111+El+Camino+Real+Santa+Clara"
+      },
+      "flags": [
+        "LUNCH-FLAG-60: closing times differ by 15 min across listings (20:45 vs 21:00); no practical impact on lunch."
+      ]
+    },
+    {
+      "name": "Chikin Drip",
+      "city": "San Jose",
+      "area": "Newhall (N 1st St area)",
+      "address": "530 Newhall Dr, San Jose, CA 95110",
+      "cuisine": "Hot chicken / sandwiches",
+      "phone": "(669) 900-3829",
+      "lunch_special": {
+        "name": "No published lunch special - à la carte hot chicken plates",
+        "price_from": null,
+        "price_to": null,
+        "days": "daily",
+        "window": "11:00 AM - 1:00 AM",
+        "includes": "No priced lunch special found."
+      },
+      "hours_tuesday": "11:00 AM - 1:00 AM",
+      "days_open": "Sun-Thu 11:00 AM - 1:00 AM; Fri-Sat 11:00 AM - 1:30 AM (corner.inc, Apple Maps and chikindrip.com all agree)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "San Jose Newhall - ~10 mi from Cupertino; VTA 60/71 + transfer or a ride."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {"label": "corner.inc - 530 Newhall Dr, San Jose: daily 11:00 am-1:00 am (Fri-Sat 1:30 am)", "url": "https://www.corner.inc/place/87545?listId=743bded2-17e0-42c0-b24f-fe116aa04f96"},
+          {"label": "Apple Maps - 530 Newhall Dr, San Jose: Sun-Thu 11:00 am-1:00 am, Fri-Sat 11:00 am-1:30 am, website chikindrip.com", "url": "https://maps.apple.com/place?place-id=I56DB9B500284E25A"},
+          {"label": "goto-restaurants.com (business site) - 530 Newhall Dr: Mon 11:00 am-1:00 am etc.", "url": "https://chikin-drip.goto-restaurants.com/"}
+        ],
+        "accessed": "2026-09-12"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/search?find_desc=Chikin+Drip&find_loc=San+Jose%2C+CA",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Chikin+Drip+530+Newhall+Dr+San+Jose"
+      },
+      "flags": ["Candidate was labeled Mountain View; the real location is San Jose (LUNCH-FLAG-65)."]
+    },
+    {
+      "name": "Everest Cuisine",
+      "city": "San Jose",
+      "area": "Concourse (near Eastridge)",
+      "address": "2092 Concourse Dr, San Jose, CA 95133",
+      "cuisine": "Nepali / Tibetan / Chinese",
+      "phone": "(408) 327-5295",
+      "lunch_special": {
+        "name": "No published lunch special - à la carte and buffet plates",
+        "price_from": null,
+        "price_to": null,
+        "days": "Tue-Sun",
+        "window": "11:00 AM - 1:00 AM",
+        "includes": "No priced lunch special found."
+      },
+      "hours_tuesday": "11:00 AM - 1:00 AM",
+      "days_open": "Mon closed; Tue-Sun 11:00 AM - 1:00 AM (neweverestcuisine.com and Yelp agree; older Yelp capture showed 24h)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "San Jose Concourse - ~9 mi from Cupertino; VTA or a ride."
+      },
+      "verification": {
+        "level": "official",
+        "sources": [
+          {"label": "Official site neweverestcuisine.com - 2092 Concourse Dr: Tue-Sun 11:00 am-1:00 am, Mon closed", "url": "https://neweverestcuisine.com/"},
+          {"label": "Yelp business page - 2092 Concourse Dr: Mon Closed, Tue-Sun 11:00 am-1:00 am", "url": "https://www.yelp.com/search?find_desc=Everest+Cuisine&find_loc=San+Jose%2C+CA"}
+        ],
+        "accessed": "2026-09-12"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/search?find_desc=Everest+Cuisine&find_loc=San+Jose%2C+CA",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Everest+Cuisine+2092+Concourse+Dr+San+Jose"
+      },
+      "flags": ["Closed Monday only; Tuesday is fine."]
+    },
+    {
+      "name": "Hokkaido Seafood",
+      "city": "San Jose",
+      "area": "Stevens Creek Blvd (Willow Glen side)",
+      "address": "3830 Stevens Creek Blvd, San Jose, CA 95117",
+      "cuisine": "Japanese seafood / sushi",
+      "phone": "(408) 287-3838",
+      "lunch_special": {
+        "name": "Lunch omakase/combo service per business site; no published discounted price",
+        "price_from": null,
+        "price_to": null,
+        "days": "Tue-Sat per hokkaidoseafood.com (Monday and Sunday varies by capture)",
+        "window": "11:00 AM - 2:00 PM lunch block",
+        "includes": "hokkaidoseafood.com lists a lunch omakase service; no price printed on the captured page."
+      },
+      "hours_tuesday": "11:00 AM - 2:00 PM, 5:00 - 9:00 PM (hokkaidoseafood.com, Restaurant Guru) vs closed (one Restaurantji capture) - conflict",
+      "days_open": "Official hokkaidoseafood.com and Restaurant Guru show Tue-Sat 11:00 am-2:00 pm and 5:00-9:00 pm; a Restaurantji capture lists Tuesday closed - conflict",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "San Jose Stevens Creek - ~9 mi from Cupertino; VTA 71 or a ride."
+      },
+      "verification": {
+        "level": "official",
+        "sources": [
+          {"label": "Official site hokkaidoseafood.com - 3830 Stevens Creek Blvd: Tue-Sat 11:00 am-2:00 pm, 5:00-9:00 pm; lunch omakase listed", "url": "https://hokkaidoseafood.com/"},
+          {"label": "Yelp search - Hokkaido Seafood, 3830 Stevens Creek Blvd, San Jose (one capture lists Tuesday closed - the conflicting capture)", "url": "https://www.yelp.com/search?find_desc=Hokkaido+Seafood&find_loc=San+Jose%2C+CA"},
+          {"label": "Google Maps search - Hokkaido Seafood, 3830 Stevens Creek Blvd, San Jose", "url": "https://www.google.com/maps/search/?api=1&query=Hokkaido+Seafood+3830+Stevens+Creek+Blvd+San+Jose"}
+        ],
+        "accessed": "2026-09-12"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/search?find_desc=Hokkaido+Seafood&find_loc=San+Jose%2C+CA",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Hokkaido+Seafood+3830+Stevens+Creek+Blvd+San+Jose"
+      },
+      "flags": [
+        "LUNCH-FLAG-53: official site and Restaurant Guru show Tuesday lunch 11:00-2:00; one Restaurantji capture says Tuesday closed. Call (408) 287-3838 to confirm before planning on it."
+      ]
+    },
+    {
+      "name": "King's Fish House",
+      "city": "San Jose",
+      "area": "Stevens Creek Blvd",
+      "address": "2855 Stevens Creek Blvd, San Jose, CA 95148",
+      "cuisine": "Fish & chips / British pub",
+      "phone": "(408) 297-8318",
+      "lunch_special": {
+        "name": "No published lunch special - all-day menu",
+        "price_from": null,
+        "price_to": null,
+        "days": "daily",
+        "window": "11:00 AM - 10:00 PM",
+        "includes": "No priced lunch special found."
+      },
+      "hours_tuesday": "11:00 AM - 10:00 PM",
+      "days_open": "Daily 11:00 AM - 10:00 PM (Restaurant Guru, Checkle and Restaurantji agree)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "San Jose Stevens Creek - ~10 mi from Cupertino; VTA or a ride."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {"label": "Yelp search - King's Fish House, 2855 Stevens Creek Blvd, San Jose (captured daily 11:00 am-10:00 pm)", "url": "https://www.yelp.com/search?find_desc=King%27s+Fish+House&find_loc=San+Jose%2C+CA"},
+          {"label": "Google Maps search - King's Fish House, 2855 Stevens Creek Blvd, San Jose", "url": "https://www.google.com/maps/search/?api=1&query=King%27s+Fish+House+2855+Stevens+Creek+Blvd+San+Jose"}
+        ],
+        "accessed": "2026-09-12"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/search?find_desc=Kings+Fish+House&find_loc=San+Jose%2C+CA",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Kings+Fish+House+2855+Stevens+Creek+Blvd+San+Jose"
+      },
+      "flags": []
+    },
+    {
+      "name": "Tomi Buffet (Eastridge)",
+      "city": "San Jose",
+      "area": "Eastridge Center",
+      "address": "2200 Eastridge Loop, Ste 2074, San Jose, CA 95135",
+      "cuisine": "Japanese buffet",
+      "phone": "(408) 449-8888",
+      "lunch_special": {
+        "name": "Lunch buffet (distinct from dinner pricing per the business site)",
+        "price_from": null,
+        "price_to": null,
+        "days": "daily",
+        "window": "11:00 AM - 2:30 PM lunch block",
+        "includes": "tomibuffet.com lists a lunch buffet service; the captured page did not print a current price, so the price field stays blank."
+      },
+      "hours_tuesday": "11:00 AM - 2:30 PM, 5:30 - 9:00 PM",
+      "days_open": "Daily 11:00 AM - 2:30 PM, 5:30 - 9:00 PM (Yelp captures and tomibuffet.com agree)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "San Jose Eastridge - ~9 mi from Cupertino; VTA or a ride."
+      },
+      "verification": {
+        "level": "official",
+        "sources": [
+          {"label": "Official site tomibuffet.com - Eastridge Loop location: daily 11:00 am-2:30 pm, 5:30-9:00 pm; lunch buffet listed", "url": "https://tomibuffet.com/"},
+          {"label": "Yelp business page - 2200 Eastridge Loop Ste 2074: same per-day hours", "url": "https://www.yelp.com/search?find_desc=Tomi+Buffet&find_loc=San+Jose%2C+CA"}
+        ],
+        "accessed": "2026-09-12"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/search?find_desc=Tomi+Buffet&find_loc=San+Jose%2C+CA",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Tomi+Buffet+2200+Eastridge+Loop+San+Jose"
+      },
+      "flags": ["Distinct from L205 Sushi Tomi (Mountain View)."]
+    },
+    {
+      "name": "Dough Burger",
+      "city": "San Jose",
+      "area": "N First St (downtown)",
+      "address": "1751 N First St, San Jose, CA 95112",
+      "cuisine": "Burgers / doughnut shop fusion",
+      "phone": "(408) 295-5856",
+      "lunch_special": {
+        "name": "No published lunch special - à la carte burgers",
+        "price_from": null,
+        "price_to": null,
+        "days": "daily",
+        "window": "11:00 AM - 1:30 AM",
+        "includes": "No priced lunch special found."
+      },
+      "hours_tuesday": "11:00 AM - 1:30 AM",
+      "days_open": "Daily 11:00 AM - 1:30 AM (doughburger.com, Yelp x2 and Apple Maps agree)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "San Jose downtown - ~9 mi from Cupertino; VTA 57/61 or a ride."
+      },
+      "verification": {
+        "level": "official",
+        "sources": [
+          {"label": "Yelp search - Dough Burger, 1751 N First St, San Jose (two captures, both daily 11:00 am-1:30 am)", "url": "https://www.yelp.com/search?find_desc=Dough+Burger&find_loc=San+Jose%2C+CA"},
+          {"label": "Google Maps search - Dough Burger, 1751 N First St, San Jose (11:00 am-1:30 am)", "url": "https://www.google.com/maps/search/?api=1&query=Dough+Burger+1751+N+First+St+San+Jose"}
+        ],
+        "accessed": "2026-09-12"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/search?find_desc=Dough+Burger&find_loc=San+Jose%2C+CA",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Dough+Burger+1751+N+First+St+San+Jose"
+      },
+      "flags": ["Candidate was labeled Cupertino; the real location is San Jose downtown (LUNCH-FLAG-65)."]
+    },
+    {
+      "name": "Inka's Restaurant",
+      "city": "San Jose",
+      "area": "S Winchester Blvd (Willow Glen)",
+      "address": "700 S Winchester Blvd, Ste 25, San Jose, CA 95128",
+      "cuisine": "Peruvian",
+      "phone": "(408) 297-8515",
+      "lunch_special": {
+        "name": "No published lunch special - à la carte Peruvian plates",
+        "price_from": null,
+        "price_to": null,
+        "days": "Tue-Sun",
+        "window": "11:30 AM - 9:00 PM",
+        "includes": "No priced lunch special found."
+      },
+      "hours_tuesday": "11:30 AM - 9:00 PM",
+      "days_open": "Mon and Sun closed (Yelp May-2026 capture); Tue-Sat 11:30 AM - 9:00 PM",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "San Jose Willow Glen - ~11 mi from Cupertino; VTA or a ride."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {"label": "Yelp business page (May-2026 capture) - 700 S Winchester Blvd Ste 25: Tue-Sat 11:30 am-9:00 pm, Sun-Mon closed", "url": "https://www.yelp.com/biz/inkas-restaurant-san-jose"},
+          {"label": "Yelp business page (Oct-2025 capture) - same per-day hours", "url": "https://www.yelp.com/biz/inkas-restaurant-san-jose?start=10"}
+        ],
+        "accessed": "2026-09-12"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/inkas-restaurant-san-jose",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Inka%27s+Restaurant+700+S+Winchester+Blvd+San+Jose"
+      },
+      "flags": [
+        "Candidate was labeled Cupertino; no Cupertino Inka's was found, and the only verified Inka's is in San Jose (LUNCH-FLAG-65).",
+        "Closed Monday and Sunday."
+      ]
+    }
+  ]
+}

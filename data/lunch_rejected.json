@@ -1066,18 +1066,6 @@
       "searched": "2026-09-07"
     },
     {
-      "name": "Bell Tower Cafe",
-      "city": "Saratoga",
-      "why": "A lunch *spot* but no lunch special, set price or deal named in any captured source; kept out of the master list rather than padded with a non-deal row.",
-      "links": [
-        {
-          "label": "Yelp 'Lunch near Saratoga' results page",
-          "url": "https://www.yelp.com/search?find_desc=Lunch&find_loc=Saratoga%2C+CA+95070"
-        }
-      ],
-      "searched": "2026-09-07"
-    },
-    {
       "name": "Flowers Saratoga",
       "city": "Saratoga",
       "why": "A review says 'because of the summer, it has a temporary lunch menu' - a seasonal pop-up is not a standing lunch special; also no price captured.",
@@ -1849,6 +1837,175 @@
       ],
       "searched": "2026-09-11",
       "pass": "11"
+    },
+    {
+      "id": "R18",
+      "name": "49ers Press Dining",
+      "city": "Fremont",
+      "why": "No hours published - the only source is a single blog post with no citable operating-hours page, and no lunch-special data exists for it.",
+      "links": [
+        {
+          "label": "Yelp search - 49ers Press Dining, Fremont (no listing with hours found)",
+          "url": "https://www.yelp.com/search?find_desc=49ers+Press+Dining&find_loc=Fremont%2C+CA"
+        }
+      ],
+      "searched": "2026-09-07"
+    },
+    {
+      "id": "R19",
+      "name": "Arya Steakhouse",
+      "city": "Menlo Park",
+      "why": "No citable Menlo Park location could be verified - the candidate name does not resolve to an address and hours inside the ring. Needs a manual recheck before reconsideration.",
+      "links": [
+        {
+          "label": "Google Maps search - Arya Steakhouse, Menlo Park (no matching listing found)",
+          "url": "https://www.google.com/maps/search/?api=1&query=Arya+Steakhouse+Menlo+Park"
+        }
+      ],
+      "searched": "2026-09-07"
+    },
+    {
+      "id": "R20",
+      "name": "Barcelona Restaurant and Bar",
+      "city": "Menlo Park",
+      "why": "No Bay Area location found - the candidate name does not resolve to a real address in the ring.",
+      "links": [
+        {
+          "label": "Google Maps search - Barcelona Restaurant and Bar, Menlo Park (no matching listing found)",
+          "url": "https://www.google.com/maps/search/?api=1&query=Barcelona+Restaurant+and+Bar+Menlo+Park"
+        }
+      ],
+      "searched": "2026-09-07"
+    },
+    {
+      "id": "R21",
+      "name": "Bear Bitez",
+      "city": "Newark",
+      "why": "Hours conflict across sources and the listing carries a 'temporarily closed' note - not safe to list.",
+      "links": [
+        {
+          "label": "Yelp search - Bear Bitez, Newark (conflicting hours + temporarily-closed note)",
+          "url": "https://www.yelp.com/search?find_desc=Bear+Bitez&find_loc=Newark%2C+CA"
+        }
+      ],
+      "searched": "2026-09-07"
+    },
+    {
+      "id": "R22",
+      "name": "Dog Haus Biergarten",
+      "city": "Menlo Park",
+      "why": "The only resolvable location is Dog Haus Biergarten, Belmont (out of the 10-15 mi ring); no Menlo Park location exists.",
+      "links": [
+        {
+          "label": "Yelp search - Dog Haus Biergarten (Belmont location is the only one found)",
+          "url": "https://www.yelp.com/search?find_desc=Dog+Haus+Biergarten&find_loc=Belmont%2C+CA"
+        }
+      ],
+      "searched": "2026-09-07"
+    },
+    {
+      "id": "R23",
+      "name": "East Bay Buffet",
+      "city": "Fremont",
+      "why": "The restaurant is in Dublin, outside the 10-15 mi ring around Cupertino.",
+      "links": [
+        {
+          "label": "Official site (Dublin location)",
+          "url": "https://www.eastbaybuffet.com/"
+        }
+      ],
+      "searched": "2026-09-07"
+    },
+    {
+      "id": "R24",
+      "name": "Grand Indian Continental Buffet",
+      "city": "Santa Clara",
+      "why": "Already in the master list as L459 Brundavan (2798 E El Camino Real, Santa Clara) - the same business under a different name; confirmed during pass 14.",
+      "links": [
+        {
+          "label": "Google Maps search - Brundavan / Grand Indian, 2798 E El Camino Real, Santa Clara",
+          "url": "https://www.google.com/maps/search/?api=1&query=Brundavan+2798+E+El+Camino+Real+Santa+Clara"
+        }
+      ],
+      "searched": "2026-09-07"
+    },
+    {
+      "id": "R25",
+      "name": "Kovalam Restaurant",
+      "city": "Santa Clara",
+      "why": "The only resolvable Kovalam is in Tracy, outside the 10-15 mi ring.",
+      "links": [
+        {
+          "label": "Google Maps search - Kovalam Restaurant, Tracy (only resolvable location)",
+          "url": "https://www.google.com/maps/search/?api=1&query=Kovalam+Restaurant+Tracy"
+        }
+      ],
+      "searched": "2026-09-07"
+    },
+    {
+      "id": "R26",
+      "name": "Mehak of India",
+      "city": "Milpitas",
+      "why": "The only resolvable Mehak location is in Berkeley, outside the ring.",
+      "links": [
+        {
+          "label": "Yelp search - Mehak (Berkeley location is the only one found)",
+          "url": "https://www.yelp.com/search?find_desc=Mehak+Indian+Cuisine&find_loc=Berkeley%2C+CA"
+        }
+      ],
+      "searched": "2026-09-07"
+    },
+    {
+      "id": "R27",
+      "name": "Runway 32",
+      "city": "Fremont",
+      "why": "No citable data exists - no page with an address or hours could be found for this candidate.",
+      "links": [
+        {
+          "label": "Google Maps search - Runway 32, Fremont (no matching listing found)",
+          "url": "https://www.google.com/maps/search/?api=1&query=Runway+32+Fremont"
+        }
+      ],
+      "searched": "2026-09-07"
+    },
+    {
+      "id": "R28",
+      "name": "Suzhou / Suzhou Restaurant",
+      "city": "Newark",
+      "why": "Both Newark-labeled candidates resolve to the Suzhou location in Richmond, whose Yelp listing is marked CLOSED - out of ring and closed.",
+      "links": [
+        {
+          "label": "Yelp search - Suzhou Restaurant, Richmond (listing marked CLOSED)",
+          "url": "https://www.yelp.com/search?find_desc=Suzhou+Restaurant&find_loc=Richmond%2C+CA"
+        }
+      ],
+      "searched": "2026-09-07"
+    },
+    {
+      "id": "R29",
+      "name": "Taiwan Taste",
+      "city": "Saratoga",
+      "why": "The Yelp listing is marked CLOSED - no current hours exist.",
+      "links": [
+        {
+          "label": "Yelp search - Taiwan Taste, Saratoga (listing marked CLOSED)",
+          "url": "https://www.yelp.com/search?find_desc=Taiwan+Taste&find_loc=Saratoga%2C+CA"
+        }
+      ],
+      "searched": "2026-09-07"
+    },
+    {
+      "id": "R30",
+      "name": "The Stand",
+      "city": "Menlo Park",
+      "why": "No Bay Area location - the brand's locations are in San Jose and Encino, outside the ring.",
+      "links": [
+        {
+          "label": "Google Maps search - The Stand restaurant, San Jose (locations are out of ring)",
+          "url": "https://www.google.com/maps/search/?api=1&query=The+Stand+restaurant+San+Jose"
+        }
+      ],
+      "searched": "2026-09-07"
     }
   ],
   "notes": [

@@ -1,0 +1,603 @@
+{
+  "batch": "batch14",
+  "pass": 14,
+  "notes": "Pass 14 - Cupertino core + Santa Clara + Sunnyvale + Mountain View. All rows verified 2026-09-12 from at least two independent listing pages (official site where noted). Row flags reference LUNCH-FLAG-44..67 in data/flags.json.",
+  "entries": [
+    {
+      "name": "Joy Dumpling",
+      "city": "Cupertino",
+      "area": "S Blaney Ave (near De Anza)",
+      "address": "10895 S Blaney Ave, Cupertino, CA 95014",
+      "cuisine": "Chinese / Taiwanese dumplings",
+      "phone": "(408) 217-8339",
+      "lunch_special": {
+        "name": "No published lunch special - a la carte xiaolongbao and dumplings",
+        "price_from": null,
+        "price_to": null,
+        "days": "not applicable (closed Tuesday)",
+        "window": "11:00 AM - 2:30 PM on open days",
+        "includes": "No priced lunch special found on any captured page."
+      },
+      "hours_tuesday": "Closed",
+      "days_open": "Wed-Mon 11:00 AM - 2:30 PM, 5:00 - 8:30 PM; Fri-Sat kitchen to 9:00 PM (Yelp, Restaurantji and usarestaurants agree Tuesday closed)",
+      "open_on_trip_date": false,
+      "fits_return_bus": {
+        "ok": true,
+        "note": "Cupertino - on the way, but closed on the trip Tuesday, so it only works on other days."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {"label": "Yelp business page - 10895 S Blaney Ave: Mon 11:00 am-2:30 pm, 5:00-8:30 pm, Tue Closed, Wed-Thu same as Mon, Fri-Sat to 9:00 pm, Sun 11:00 am-2:30 pm, 5:00-8:30 pm", "url": "https://www.yelp.com/biz/joy-dumpling-cupertino?start=10"},
+          {"label": "Restaurantji - 10895 S Blaney Ave: same per-day hours, Tuesday Closed", "url": "https://www.restaurantji.com/ca/cupertino/joy-dumpling-/"},
+          {"label": "usarestaurants.info - 10895 S Blaney Ave: JSON-LD lists Tuesday Closed", "url": "https://usarestaurants.info/explore/united-states/california/santa-clara-county/cupertino/joy-dumpling-408-217-8339.htm"}
+        ],
+        "accessed": "2026-09-12"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/joy-dumpling-cupertino",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Joy+Dumpling+10895+S+Blaney+Ave+Cupertino"
+      },
+      "flags": ["Closed on the trip day (Tuesday); kept as a reference row."
+      ]
+    },
+    {
+      "name": "Grandma's Kitchen",
+      "city": "Cupertino",
+      "area": "Richwood Dr (east of Downtown)",
+      "address": "19541 Richwood Dr, Cupertino, CA 95014",
+      "cuisine": "Chinese home cooking",
+      "phone": "(408) 352-5052",
+      "lunch_special": {
+        "name": "No published lunch special - a la carte home cooking",
+        "price_from": null,
+        "price_to": null,
+        "days": "daily",
+        "window": "11:00 AM - 2:30 PM lunch service per Restaurantji/Restaurant Guru (Google's hours show dinner only - see flag)",
+        "includes": "No priced lunch special found."
+      },
+      "hours_tuesday": "11:00 AM - 2:30 PM, 5:00 - 9:00 PM (Restaurantji, Restaurant Guru) vs 5:00 - 9:00 PM only (Google via Wanderlog) - conflict",
+      "days_open": "Daily 11:00 AM - 2:30 PM, 5:00 - 9:00 PM per Restaurantji and Restaurant Guru; Google/Wanderlog capture shows dinner only (5:00 - 9:00 PM) every day",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": true,
+        "note": "Cupertino, east side; ~20-30 min walk from the Gillick Way area depending on route - allow time."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {"label": "Restaurantji - 19541 Richwood Dr: Mo-Su 11:00-14:30, 17:00-21:00", "url": "https://www.restaurantji.com/ca/cupertino/grandmas-kitchen-/"},
+          {"label": "Restaurant Guru - 19541 Richwood Dr: Mo-Su 11:00-14:30, 17:00-21:00", "url": "https://restaurantguru.com/Grandmas-Kitchen-Cupertino"},
+          {"label": "Wanderlog (Google hours) - 19541 Richwood Dr: 5:00-9:00 PM only, no lunch block - the conflicting capture", "url": "https://wanderlog.com/place/details/1527166/grandmas-kitchen"}
+        ],
+        "accessed": "2026-09-12"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/search?find_desc=Grandma%27s+Kitchen&find_loc=Cupertino%2C+CA",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Grandma%27s+Kitchen+19541+Richwood+Dr+Cupertino"
+      },
+      "flags": [
+        "LUNCH-FLAG-44: hours conflict - two listing sites show Tuesday lunch 11:00 AM-2:30 PM, Google's captured hours show dinner only. Call (408) 352-5052 before relying on lunch service."
+      ]
+    },
+    {
+      "name": "Royal Cuisine",
+      "city": "Cupertino",
+      "area": "S De Anza Blvd (south of Vallco)",
+      "address": "10477 S De Anza Blvd, Cupertino, CA 95014",
+      "cuisine": "Indian / kebab, halal",
+      "phone": null,
+      "lunch_special": {
+        "name": "No published lunch special - a la carte curry and kebab plates",
+        "price_from": null,
+        "price_to": null,
+        "days": "daily",
+        "window": "11:00 AM - 3:00 PM lunch service (Beyond Menu / Yelp Sept-2026 capture)",
+        "includes": "No priced lunch special found."
+      },
+      "hours_tuesday": "11:00 AM - 3:00 PM, 4:30 - 9:30 PM (Yelp Sept-2026) vs 4:30 PM - 9:00 PM only (Yelp July-2025 capture) vs no break (Beyond Menu) - conflict",
+      "days_open": "Conflicting captures: Yelp Sept-2026 shows daily 11:00 am-3:00 pm and 4:30-9:30 pm; an older Yelp capture shows 4:30 pm-9:00 pm with Wednesday closed; Beyond Menu shows continuous 11:00 am-9:30 pm",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": true,
+        "note": "Cupertino, S De Anza strip - reachable on foot from the Gillick Way area in ~35-45 min or by local bus."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {"label": "Yelp business page (Sept-2026 capture) - 10477 S De Anza Blvd: daily 11:00 am-3:00 pm, 4:30-9:30 pm", "url": "https://www.yelp.com/search?find_desc=Royal+Cuisine&find_loc=Cupertino%2C+CA"},
+          {"label": "Beyond Menu - 10477 S De Anza Blvd, Cupertino: continuous 11:00 am-9:30 pm (conflicting capture)", "url": "https://www.beyondmenu.com/royal-cuisine-cupertino/info.aspx"}
+        ],
+        "accessed": "2026-09-12"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/search?find_desc=Royal+Cuisine&find_loc=Cupertino%2C+CA",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Royal+Cuisine+10477+S+De+Anza+Blvd+Cupertino"
+      },
+      "flags": [
+        "LUNCH-FLAG-45: three-way hours conflict across Yelp captures and Beyond Menu; Tuesday lunch window (11:00-3:00) comes from the newest Yelp capture but is not confirmed by the others."
+      ]
+    },
+    {
+      "name": "Golden Wang Donkatsu",
+      "city": "Santa Clara",
+      "area": "El Camino Real (west of Stevens Creek)",
+      "address": "2910 El Camino Real, Santa Clara, CA 95051",
+      "cuisine": "Korean donkatsu / comfort food",
+      "phone": "(669) 344-6979",
+      "lunch_special": {
+        "name": "No published lunch special - a la carte donkatsu plates and pasta",
+        "price_from": null,
+        "price_to": null,
+        "days": "daily",
+        "window": "11:00 AM - 9:00 PM continuous",
+        "includes": "Cream pasta donkatsu and rice donkatsu named in reviews; no discounted lunch price published."
+      },
+      "hours_tuesday": "11:00 AM - 9:00 PM",
+      "days_open": "Daily 11:00 AM - 9:00 PM (Yelp July-2026 and Apple Maps; corner.inc capture shows 8:30 PM close - minor delta)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Santa Clara El Camino strip - off the direct return walk; use VTA bus 24/51 or a ride."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {"label": "Yelp business page (July-2026 capture) - 2910 El Camino Real: daily 11:00 am-9:00 pm", "url": "https://www.yelp.com/biz/golden-wang-donkatsu-santa-clara?start=10"},
+          {"label": "Apple Maps - 2910 El Camino Real, Santa Clara: Every Day 11:00 AM-9:00 PM", "url": "https://maps.apple.com/place?place-id=IAE95E5A0A81890B1"},
+          {"label": "corner.inc - 2910 El Camino Real: daily 11:00 AM-8:30 PM (minor closing delta)", "url": "https://www.corner.inc/place/pzcztJ3pV9Fr"}
+        ],
+        "accessed": "2026-09-12"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/golden-wang-donkatsu-santa-clara",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Golden+Wang+Donkatsu+2910+El+Camino+Real+Santa+Clara"
+      },
+      "flags": []
+    },
+    {
+      "name": "Katsu Burger",
+      "city": "Santa Clara",
+      "area": "El Camino Real (De Anza area)",
+      "address": "3006 El Camino Real, Santa Clara, CA 95051",
+      "cuisine": "Katsu burgers / Asian-American",
+      "phone": "(408) 816-8713",
+      "lunch_special": {
+        "name": "No published lunch special - a la carte katsu burgers",
+        "price_from": null,
+        "price_to": null,
+        "days": "daily",
+        "window": "lunch within full opening hours",
+        "includes": "No priced lunch special found."
+      },
+      "hours_tuesday": "10:30 AM - 8:30 PM (Yelp) vs 11:00 AM - 9:00 PM (official site) - conflict",
+      "days_open": "Official katsuburger.com shows Mon-Sun 11:00 am-9:00 pm; current Yelp captures show Mon-Sat 10:30 am-8:30 pm, Sun closed",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Santa Clara El Camino strip - off the direct return walk; use VTA bus or a ride."
+      },
+      "verification": {
+        "level": "official",
+        "sources": [
+          {"label": "Official site katsuburger.com - Santa Clara, 3006 El Camino Real: Mon-Sun 11:00 am-9:00 pm", "url": "https://www.katsuburger.com/"},
+          {"label": "Yelp business page (June-2026 capture) - 3006 El Camino Real: Mon-Sat 10:30 am-8:30 pm, Sun closed", "url": "https://www.yelp.com/biz/katsu-burger-santa-clara-2?start=40"},
+          {"label": "Yelp business page (April-2026 capture) - same 10:30-8:30 pm schedule", "url": "https://www.yelp.com/biz/katsu-burger-santa-clara-2?start=60"}
+        ],
+        "accessed": "2026-09-12"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/katsu-burger-santa-clara-2",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Katsu+Burger+3006+El+Camino+Real+Santa+Clara"
+      },
+      "flags": [
+        "LUNCH-FLAG-48: official site (11-9, open Sunday) disagrees with current Yelp captures (10:30-8:30, closed Sunday); open Tuesday either way, lunch is fine."
+      ]
+    },
+    {
+      "name": "Roll House",
+      "city": "Santa Clara",
+      "area": "El Camino Real (De Anza area)",
+      "address": "3486 El Camino Real, Santa Clara, CA 95051",
+      "cuisine": "Korean",
+      "phone": "(408) 246-4888",
+      "lunch_special": {
+        "name": "No published lunch special - a la carte Korean mains and rolls",
+        "price_from": null,
+        "price_to": null,
+        "days": "Tue-Sun",
+        "window": "11:00 AM - 8:00 PM",
+        "includes": "No priced lunch special found."
+      },
+      "hours_tuesday": "11:00 AM - 8:00 PM",
+      "days_open": "Mon closed; Tue-Sun 11:00 AM - 8:00 PM (Yelp Sept-2026 and Dec-2025 captures agree; an old 2021 aggregator shows 11-9)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Santa Clara El Camino strip - off the direct return walk; use VTA bus or a ride."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {"label": "Yelp menu page (Sept-2026 capture) - 3486 El Camino Real: Mon Closed, Tue-Sun 11:00 am-8:00 pm", "url": "https://www.yelp.com/menu/roll-house-santa-clara/item/tuk-bok-gi"},
+          {"label": "Yelp business page (Dec-2025 capture) - same schedule", "url": "https://www.yelp.com/biz/roll-house-santa-clara?start=40"}
+        ],
+        "accessed": "2026-09-12"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/roll-house-santa-clara",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Roll+House+3486+El+Camino+Real+Santa+Clara"
+      },
+      "flags": ["Closed Monday - only a Tuesday-and-later option."]
+    },
+    {
+      "name": "Mission City Grill",
+      "city": "Santa Clara",
+      "area": "El Camino Real (2000 block)",
+      "address": "2000 El Camino Real Ste 1, Santa Clara, CA 95050",
+      "cuisine": "All-day diner / New American",
+      "phone": "(408) 244-6267",
+      "lunch_special": {
+        "name": "No published lunch special - all-day breakfast/lunch menu",
+        "price_from": null,
+        "price_to": null,
+        "days": "daily",
+        "window": "7:00 AM - 8:00 PM",
+        "includes": "Yelp menu shows à la carte items (Swedish Pancakes $15, French Toast $16); no discounted lunch special published."
+      },
+      "hours_tuesday": "7:00 AM - 8:00 PM",
+      "days_open": "Daily 7:00 AM - 8:00 PM (Yelp x3 captures, TripAdvisor, official site holdersmissioncitygrill.com)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Santa Clara El Camino strip - off the direct return walk; use VTA bus or a ride."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {"label": "Yelp business page (July-2026 capture) - 2000 El Camino Real Ste 1: daily 7:00 am-8:00 pm", "url": "https://www.yelp.com/biz/mission-city-grill-santa-clara-3?start=20"},
+          {"label": "Yelp business page (Jan-2026 capture) - same hours, business website holdersmissioncitygrill.com", "url": "https://www.yelp.com/biz/mission-city-grill-santa-clara-3?start=480"},
+          {"label": "TripAdvisor - 2000 El Camino Real Suite 1: daily 7:00 AM-8:00 PM", "url": "https://www.tripadvisor.com/Restaurant_Review-g33046-d8024771-Reviews-Mission_City_Grill-Santa_Clara_California.html"}
+        ],
+        "accessed": "2026-09-12"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/mission-city-grill-santa-clara-3",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Mission+City+Grill+2000+El+Camino+Real+Santa+Clara"
+      },
+      "flags": []
+    },
+    {
+      "name": "ShaQ",
+      "city": "Santa Clara",
+      "area": "E El Camino Real (De Anza area)",
+      "address": "3475 E El Camino Real, Santa Clara, CA 95051",
+      "cuisine": "Falafel / halal / gyro",
+      "phone": "(408) 216-9806",
+      "lunch_special": {
+        "name": "No published lunch special - counter-service plates and platters",
+        "price_from": null,
+        "price_to": null,
+        "days": "daily",
+        "window": "9:00 AM - 9:00 PM",
+        "includes": "No priced lunch special found."
+      },
+      "hours_tuesday": "9:00 AM - 9:00 PM",
+      "days_open": "Mon-Fri 9:00 AM - 9:00 PM; Sat 11:00 AM - 9:00 PM; Sun 11:00 AM - 9:00 PM (Yelp July-2026, Feb-2026 and May-2026 captures agree on Tuesday)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Santa Clara El Camino strip - off the direct return walk; use VTA bus or a ride."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {"label": "Yelp business page (July-2026 capture) - 3475 E El Camino Real: Mon-Fri 9:00 am-9:00 pm, Sat-Sun 11:00 am-9:00 pm", "url": "https://www.yelp.com/biz/shaq-santa-clara?start=120"},
+          {"label": "Yelp business page (Feb-2026 capture) - same Tuesday hours (Sat 11:30 am-9:30 pm variant)", "url": "https://www.yelp.com/biz/shaq-santa-clara?start=40"}
+        ],
+        "accessed": "2026-09-12"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/shaq-santa-clara",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=ShaQ+3475+E+El+Camino+Real+Santa+Clara"
+      },
+      "flags": []
+    },
+    {
+      "name": "Katana Sushi & Sake",
+      "city": "Sunnyvale",
+      "area": "E El Camino Real",
+      "address": "411 E El Camino Real, Sunnyvale, CA 94087",
+      "cuisine": "Japanese / sushi",
+      "phone": "(408) 746-3000",
+      "lunch_special": {
+        "name": "Lunch service with combo sets (sushi combo named in the yelp listing)",
+        "price_from": null,
+        "price_to": null,
+        "days": "Mon-Sat",
+        "window": "11:00 AM - 2:30 PM",
+        "includes": "Lunch window 11:00-2:30; no discounted lunch price published on captured pages."
+      },
+      "hours_tuesday": "11:00 AM - 2:30 PM, 5:00 - 9:00 PM",
+      "days_open": "Mon-Fri 11:00 AM - 2:30 PM, 5:00 - 9:00 PM; Sat 11:00 AM - 9:00 PM; Sun 4:00 - 9:00 PM (Yelp Aug-2026 and Dec-2025 captures; katanasushi.com listed as business site)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Sunnyvale El Camino - ~6-7 mi from Cupertino; VTA 40/51 or a ride."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {"label": "Yelp business page (Aug-2026 capture) - 411 E El Camino Real: Mon-Fri 11:00 am-2:30 pm, 5:00-9:00 pm, Sat 11:00 am-9:00 pm, Sun 4:00-9:00 pm", "url": "https://www.yelp.com/biz/katana-sushi-and-sake-sunnyvale"},
+          {"label": "Yelp business page (Dec-2025 capture) - same per-day hours", "url": "https://www.yelp.com/biz/katana-sushi-and-sake-sunnyvale?start=200"},
+          {"label": "skyline-cafe.com directory - 411 E El Camino Real: Mon-Fri 11:00 am-2:30 pm, 5:00-9:00 pm", "url": "https://katana-sushi-sake.skyline-cafe.com/"}
+        ],
+        "accessed": "2026-09-12"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/katana-sushi-and-sake-sunnyvale",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Katana+Sushi+%26+Sake+411+E+El+Camino+Real+Sunnyvale"
+      },
+      "flags": []
+    },
+    {
+      "name": "Rene-Rose Island Cuisine",
+      "city": "Sunnyvale",
+      "area": "Caliente Dr",
+      "address": "621 Caliente Dr, Sunnyvale, CA 94085",
+      "cuisine": "Filipino",
+      "phone": "(408) 733-3691",
+      "lunch_special": {
+        "name": "No published lunch special - à la carte Filipino dishes",
+        "price_from": null,
+        "price_to": null,
+        "days": "Mon-Sat",
+        "window": "10:00 AM - 5:00 PM (closes at 5, so this is effectively a lunch-only place)",
+        "includes": "No priced lunch special found."
+      },
+      "hours_tuesday": "10:00 AM - 5:00 PM",
+      "days_open": "Mon-Fri 10:00 AM - 5:00 PM; Sat 10:00 AM - 4:00 PM; Sun closed (Yelp Dec-2025 and May-2026 captures agree)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Sunnyvale residential area - not on the return walk; bus or ride, and it closes at 5 PM."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {"label": "Yelp business page (Dec-2025 capture) - 621 Caliente Dr: Mon-Fri 10:00 am-5:00 pm, Sat 10:00 am-4:00 pm, Sun closed", "url": "https://www.yelp.com/biz/rene-rose-island-cuisine-sunnyvale-2?start=60"},
+          {"label": "Yelp business page (May-2026 capture) - same hours", "url": "https://www.yelp.com/biz/rene-rose-island-cuisine-sunnyvale-2?start=40"},
+          {"label": "restaurants-us.com directory - 621 Caliente Dr: same per-day hours", "url": "https://reneroseislandcuisine.restaurants-us.com/"}
+        ],
+        "accessed": "2026-09-12"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/rene-rose-island-cuisine-sunnyvale-2",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Rene-Rose+Island+Cuisine+621+Caliente+Dr+Sunnyvale"
+      },
+      "flags": ["Closes 5:00 PM - only useful inside the lunch window."]
+    },
+    {
+      "name": "Shah Restaurant",
+      "city": "Sunnyvale",
+      "area": "W El Camino Real",
+      "address": "962 W El Camino Real, Sunnyvale, CA 94087",
+      "cuisine": "Indian / Pakistani",
+      "phone": "(408) 542-9450",
+      "lunch_special": {
+        "name": "No published lunch special - à la carte and buffet-style plates",
+        "price_from": null,
+        "price_to": null,
+        "days": "daily",
+        "window": "11:00 AM - 12:00 AM",
+        "includes": "No priced lunch special found."
+      },
+      "hours_tuesday": "11:00 AM - 12:00 AM",
+      "days_open": "Daily 11:00 AM - 12:00 AM (Yelp Aug-2026 capture); Fri-Sat to 3:00 AM (wheree capture shows 11:30 open and 3:00 AM closes Fri-Sat - minor deltas)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Sunnyvale W El Camino - ~7 mi from Cupertino; VTA 40/51 or a ride."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {"label": "Yelp business page (Aug-2026 capture) - 962 W El Camino Real: daily 11:00 am-12:00 am, Fri-Sat 11:00 am-3:00 am", "url": "https://www.yelp.com/biz/shah-restaurant-sunnyvale"},
+          {"label": "Yelp business page (May-2026 capture) - same per-day hours", "url": "https://www.yelp.com/biz/shah-restaurant-sunnyvale?start=100"},
+          {"label": "Google Maps search - Shah Restaurant, 962 W El Camino Real, Sunnyvale (captured 11:00-24:00; some listings show 11:30 open)", "url": "https://www.google.com/maps/search/?api=1&query=Shah+Restaurant+962+W+El+Camino+Real+Sunnyvale"}
+        ],
+        "accessed": "2026-09-12"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/shah-restaurant-sunnyvale",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Shah+Restaurant+962+W+El+Camino+Real+Sunnyvale"
+      },
+      "flags": ["Candidate was labeled Menlo Park; the real location is Sunnyvale (LUNCH-FLAG-65)."]
+    },
+    {
+      "name": "Chicken G's",
+      "city": "Mountain View",
+      "area": "W El Camino Real",
+      "address": "1414 W El Camino Real, Mountain View, CA 94040",
+      "cuisine": "Fast food / halal sandwiches",
+      "phone": "(650) 918-7777",
+      "lunch_special": {
+        "name": "No published lunch special - à la carte sandwiches and bowls",
+        "price_from": null,
+        "price_to": null,
+        "days": "daily",
+        "window": "11:00 AM - 1:00 AM",
+        "includes": "No priced lunch special found."
+      },
+      "hours_tuesday": "11:00 AM - 1:00 AM",
+      "days_open": "Daily 11:00 AM - 1:00 AM (Restaurantji, Restaurant Guru, YellowPages and chickengs.com agree)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Mountain View W El Camino - ~6 mi from Cupertino; Caltrain + bus or a ride."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {"label": "Restaurantji - 1414 W El Camino Real: Mo-Su 11:00-1:00", "url": "https://www.restaurantji.com/ca/mountain-view/chicken-gs-/"},
+          {"label": "Restaurant Guru - 1414 W El Camino Real: Mo-Su 11:00-01:00, website chickengs.com", "url": "https://restaurantguru.com/Chicken-Gs-Mountain-View"},
+          {"label": "YellowPages - 1414 W El Camino Real: Mon-Sun 11:00 am-1:00 am", "url": "https://m.yellowpages.com/mountain-view-ca/mip/chicken-gs-573277664"}
+        ],
+        "accessed": "2026-09-12"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/search?find_desc=Chicken+G%27s&find_loc=Mountain+View%2C+CA",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Chicken+G%27s+1414+W+El+Camino+Real+Mountain+View"
+      },
+      "flags": []
+    },
+    {
+      "name": "Lungo Thai Eatery",
+      "city": "Mountain View",
+      "area": "E El Camino Real (downtown)",
+      "address": "137 E El Camino Real, Mountain View, CA 94040",
+      "cuisine": "Thai / breakfast & brunch",
+      "phone": "(650) 386-5716",
+      "lunch_special": {
+        "name": "No published lunch special - à la carte Thai menu with lunch service",
+        "price_from": null,
+        "price_to": null,
+        "days": "daily (per the newer Yelp listing and OpenTable)",
+        "window": "9:00 AM - 2:30 PM lunch block",
+        "includes": "No priced lunch special found."
+      },
+      "hours_tuesday": "9:00 AM - 2:30 PM, 4:30 - 9:00 PM (Yelp May-2026 listing + OpenTable) vs 4:30 - 9:00 PM only (Yelp April-2026 listing) - conflict",
+      "days_open": "Two live Yelp listings disagree: one shows daily 9:00 am-2:30 pm and 4:30-9:00 pm (Fri-Sat to 10:00 pm), the other Mon-Fri dinner-only 4:30-9:00 pm with Sat-Sun 12:00-3:00 pm; OpenTable shows daily 9:00 am-2:30 pm, 4:30-9:00 pm",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Mountain View downtown - ~5 mi from Cupertino; Caltrain/bus or a ride."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {"label": "Yelp listing -4 (May-2026 capture) - 137 E El Camino Real: daily 9:00 am-2:30 pm, 4:30-9:00 pm", "url": "https://www.yelp.com/biz/lungo-mountain-view-4"},
+          {"label": "Yelp listing -2 (April-2026 capture, claimed) - 137 E El Camino Real: Mon-Fri 4:30-9:00 pm, Sat-Sun 12:00-3:00 pm, 5:00-9:00 pm - the conflicting capture", "url": "https://www.yelp.com/biz/lungo-mountain-view-2"},
+          {"label": "OpenTable - 137 E El Camino Real: daily 9:00 am-2:30 pm, 4:30-9:00 pm", "url": "https://www.opentable.com/r/lungo-thai-eatery-mountain-view"}
+        ],
+        "accessed": "2026-09-12"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/lungo-mountain-view-4",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Lungo+Thai+137+E+El+Camino+Real+Mountain+View"
+      },
+      "flags": [
+        "LUNCH-FLAG-49: two live Yelp listings conflict on whether Tuesday has a 9:00-2:30 lunch block; OpenTable supports the lunch block. Call (650) 386-5716 to confirm."
+      ]
+    },
+    {
+      "name": "Paper Platez",
+      "city": "Mountain View",
+      "area": "Old Middlefield Way (O'Malley's front)",
+      "address": "2135 Old Middlefield Way, Mountain View, CA 94043",
+      "cuisine": "Mexican / Salvadoran food truck",
+      "phone": "(650) 439-8898",
+      "lunch_special": {
+        "name": "No published lunch special - à la carte tacos, pupusas and burritos",
+        "price_from": null,
+        "price_to": null,
+        "days": "Mon-Sat",
+        "window": "11:00 AM - 9:00 PM",
+        "includes": "No priced lunch special found."
+      },
+      "hours_tuesday": "11:00 AM - 9:00 PM",
+      "days_open": "Mon-Sat 11:00 AM - 9:00 PM; Sun closed (Yelp April-2026 and Restaurantji; Restaurantji shows Mon 11:00-2:30 - minor delta)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Mountain View Old Middlefield - ~5 mi from Cupertino; bus or ride."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {"label": "Yelp business page (April-2026 capture) - 2135 Old Middlefield Way: Mon-Sat 11:00 am-9:00 pm", "url": "https://m.yelp.com/biz/paper-platez-mountain-view?start=40"},
+          {"label": "Restaurantji - 2135 Old Middlefield Way: Tu-Sa 11:00-21:00, Su Closed, Mo 11:00-14:30", "url": "https://www.restaurantji.com/ca/mountain-view/paper-platez-/"},
+          {"label": "mindtrip.ai (official site paperplatez.com) - 2135 Old Middlefield Way: daily 11:00 am-9:00 pm", "url": "https://mindtrip.ai/restaurant/mountain-view-california/paper-platez/re-ENLWjSt8"}
+        ],
+        "accessed": "2026-09-12"
+      },
+      "review_links": {
+        "yelp": "https://m.yelp.com/biz/paper-platez-mountain-view",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Paper+Platez+2135+Old+Middlefield+Way+Mountain+View"
+      },
+      "flags": ["Food truck in front of O'Malley's - seating is limited."]
+    },
+    {
+      "name": "Mantra India",
+      "city": "Mountain View",
+      "area": "Castro St (downtown)",
+      "address": "288 Castro St, Mountain View, CA 94041",
+      "cuisine": "Indian",
+      "phone": null,
+      "lunch_special": {
+        "name": "No published lunch special - à la carte and buffet plates",
+        "price_from": null,
+        "price_to": null,
+        "days": "daily",
+        "window": "11:30 AM - 3:00 PM lunch block",
+        "includes": "No priced lunch special found."
+      },
+      "hours_tuesday": "11:30 AM - 3:00 PM, 5:00 - 10:00 PM (official site; Yelp shows close 10:00 PM)",
+      "days_open": "Daily 11:30 AM - 3:00 PM, 5:00 - 10:00 PM (mantraindiausa.com; Yelp 17:00-22:00)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Mountain View Castro St - ~5 mi from Cupertino; Caltrain + short walk or a ride."
+      },
+      "verification": {
+        "level": "official",
+        "sources": [
+          {"label": "Official site mantraindiausa.com - 288 Castro St, Mountain View: daily 11:30 am-3:00 pm, 5:00-10:00 pm", "url": "https://mantraindiausa.com/"},
+          {"label": "Yelp business page - 288 Castro St: daily 11:30 am-3:00 pm, 5:00-10:00 pm (dinner close 22:00 variant in one capture)", "url": "https://www.yelp.com/search?find_desc=Mantra+India&find_loc=Mountain+View%2C+CA"}
+        ],
+        "accessed": "2026-09-12"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/search?find_desc=Mantra+India&find_loc=Mountain+View%2C+CA",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Mantra+India+288+Castro+St+Mountain+View"
+      },
+      "flags": ["Candidate was labeled Santa Clara; the real location is Mountain View (LUNCH-FLAG-65)."]
+    },
+    {
+      "name": "Kusan Bazaar - Mountain View",
+      "city": "Mountain View",
+      "area": "N San Antonio Rd",
+      "address": "634 N San Antonio Rd, Mountain View, CA 94040",
+      "cuisine": "Halal / Uyghur / Silk Road grill & noodles",
+      "phone": null,
+      "lunch_special": {
+        "name": "No published lunch special - à la carte kebabs, pilaf and noodles",
+        "price_from": null,
+        "price_to": null,
+        "days": "daily",
+        "window": "11:00 AM - 2:30 PM lunch block",
+        "includes": "No priced lunch special found."
+      },
+      "hours_tuesday": "11:00 AM - 2:30 PM, 5:00 - 9:00 PM",
+      "days_open": "Daily 11:00 AM - 2:30 PM, 5:00 - 9:00 PM (kusanbazaar.com reservations page covers the MV location; same pattern as the Milpitas branch)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Mountain View N San Antonio Rd - ~4 mi from Cupertino; bus or ride."
+      },
+      "verification": {
+        "level": "official",
+        "sources": [
+          {"label": "Official site kusanbazaar.com (reservations page lists both Milpitas and Mountain View locations with daily 11:00-2:30 / 17:00-21:00 blocks)", "url": "https://www.kusanbazaar.com/page/-reservations"},
+          {"label": "Yelp business page (Milpitas flagship, same brand/schedule) - 510 Barber Ln: Mon-Fri 11:00 am-2:30 pm, 5:00-9:00 pm, Sat 11:00 am-9:30 pm, Sun 11:00 am-9:00 pm", "url": "https://www.yelp.com/biz/kusan-bazaar-milpitas"}
+        ],
+        "accessed": "2026-09-12"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/search?find_desc=Kusan+Bazaar&find_loc=Mountain+View%2C+CA",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Kusan+Bazaar+634+N+San+Antonio+Rd+Mountain+View"
+      },
+      "flags": ["Second location of the brand; the verified flagship row is the Milpitas one below."]
+    }
+  ]
+}

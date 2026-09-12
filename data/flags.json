@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-11",
+  "updated": "2026-09-12",
   "transit": [
     {
       "id": "FLAG-1",
@@ -945,6 +945,412 @@
         "url": "https://github.com/buffedlizard55-lab/TinoLunchSpecial/tree/main/data/incoming"
       },
       "manual_review": "Check the current lunch menu before treating any of these as a discounted lunch special."
+    },
+    {
+      "id": "LUNCH-FLAG-44",
+      "severity": "warning",
+      "title": "Grandma's Kitchen (Cupertino): Tuesday lunch disputed between listings",
+      "what_we_found": "Two listing sites show Tuesday lunch 11:00 AM - 2:30 PM, but the captured Google hours show dinner only.",
+      "what_we_did": "Added as L708 with the conflict printed on the row; lunch treated as unconfirmed until a phone call.",
+      "rows": [
+        "L708"
+      ],
+      "link": {
+        "label": "Yelp search - Grandma's Kitchen, Cupertino",
+        "url": "https://www.yelp.com/search?find_desc=Grandma%27s+Kitchen&find_loc=Cupertino%2C+CA"
+      },
+      "manual_review": "Call (408) 352-5052 before planning on Tuesday lunch."
+    },
+    {
+      "id": "LUNCH-FLAG-45",
+      "severity": "warning",
+      "title": "Royal Cuisine (Cupertino): three-way hours conflict",
+      "what_we_found": "Yelp captures and Beyond Menu disagree; the Tuesday lunch window (11:00 - 3:00) comes from the newest Yelp capture only.",
+      "what_we_did": "Added as L709 with the newest capture's window; conflict flagged on the row.",
+      "rows": [
+        "L709"
+      ],
+      "link": {
+        "label": "Yelp search - Royal Cuisine, Cupertino",
+        "url": "https://www.yelp.com/search?find_desc=Royal+Cuisine&find_loc=Cupertino%2C+CA"
+      },
+      "manual_review": "Confirm the Tuesday lunch window by phone before relying on it."
+    },
+    {
+      "id": "LUNCH-FLAG-46",
+      "severity": "warning",
+      "title": "Mari Mari (Milpitas): official site says daily, current listings say Tuesday closed",
+      "what_we_found": "marimariusa.com shows daily 11:00 am - 3:00 pm, 5:00 - 9:00 pm, while current Yelp and corner.inc captures list Tuesday closed.",
+      "what_we_did": "Added as L726 with open_on_trip_date = null and both values printed.",
+      "rows": [
+        "L726"
+      ],
+      "link": {
+        "label": "Official site",
+        "url": "https://marimariusa.com/"
+      },
+      "manual_review": "Call (408) 946-3030 before planning on it."
+    },
+    {
+      "id": "LUNCH-FLAG-47",
+      "severity": "info",
+      "title": "Chennai Tiffins (Santa Clara): two-hour systems disagree on exact open/close",
+      "what_we_found": "Sources split 11:00/9:30 vs 11:30/10:00; the Tuesday lunch block is consistent across all three.",
+      "what_we_did": "Added as L801 with the lunch block as the planning window.",
+      "rows": [
+        "L801"
+      ],
+      "link": {
+        "label": "Yelp search - Chennai Tiffins, Santa Clara",
+        "url": "https://www.yelp.com/search?find_desc=Chennai+Tiffins&find_loc=Santa+Clara%2C+CA"
+      },
+      "manual_review": "None - lunch window agrees everywhere."
+    },
+    {
+      "id": "LUNCH-FLAG-48",
+      "severity": "info",
+      "title": "Katsu Burger (Santa Clara): official site disagrees with current Yelp captures",
+      "what_we_found": "Official site shows 11:00 - 21:00 open Sunday; current Yelp captures show 10:30 - 8:30 and closed Sunday.",
+      "what_we_did": "Added as L710; open Tuesday either way, so lunch is safe regardless of which capture is current.",
+      "rows": [
+        "L710"
+      ],
+      "link": {
+        "label": "Yelp search - Katsu Burger, Santa Clara",
+        "url": "https://www.yelp.com/search?find_desc=Katsu+Burger&find_loc=Santa+Clara%2C+CA"
+      },
+      "manual_review": "None for the trip day."
+    },
+    {
+      "id": "LUNCH-FLAG-49",
+      "severity": "warning",
+      "title": "Lungo Thai Eatery (Mountain View): two live Yelp listings conflict on Tuesday lunch",
+      "what_we_found": "One listing shows a Tuesday 9:00 - 2:30 lunch block, the other does not; OpenTable supports the lunch block.",
+      "what_we_did": "Added as L717 with the conflict printed on the row.",
+      "rows": [
+        "L717"
+      ],
+      "link": {
+        "label": "Yelp search - Lungo Thai Eatery, Mountain View",
+        "url": "https://www.yelp.com/search?find_desc=Lungo+Thai+Eatery&find_loc=Mountain+View%2C+CA"
+      },
+      "manual_review": "Call (650) 386-5716 to confirm Tuesday lunch."
+    },
+    {
+      "id": "LUNCH-FLAG-50",
+      "severity": "info",
+      "title": "Horsefeather (Palo Alto): newer capture shows a kitchen gap, not a different close",
+      "what_we_found": "The newest capture shows split lunch/dinner service (kitchen gap 3:00 - 4:00 PM); the opening-day schedule was continuous.",
+      "what_we_did": "Added as L782; the lunch window 11:00 - 3:00 is consistent in both captures.",
+      "rows": [
+        "L782"
+      ],
+      "link": {
+        "label": "Yelp search - Horsefeather, Palo Alto",
+        "url": "https://www.yelp.com/search?find_desc=Horsefeather&find_loc=Palo+Alto%2C+CA"
+      },
+      "manual_review": "None - lunch window consistent."
+    },
+    {
+      "id": "LUNCH-FLAG-51",
+      "severity": "critical",
+      "title": "Pronto Wood Fired Pizzeria (Redwood City): live sources disagree on Tuesday lunch",
+      "what_we_found": "Two live Yelp captures disagree on whether Pronto serves Tuesday lunch (11:00 am open vs 4:00 pm open).",
+      "what_we_did": "Added as L794 with open_on_trip_date = null and both values printed; candidate mislabel (Mountain View) noted under LUNCH-FLAG-65.",
+      "rows": [
+        "L794"
+      ],
+      "link": {
+        "label": "Yelp search - Pronto Wood Fired, Redwood City",
+        "url": "https://www.yelp.com/search?find_desc=Pronto+Wood+Fired&find_loc=Redwood+City%2C+CA"
+      },
+      "manual_review": "Call (650) 365-9978 before planning on Tuesday lunch."
+    },
+    {
+      "id": "LUNCH-FLAG-52",
+      "severity": "warning",
+      "title": "Simmer Huang (Newark): three-way hours conflict",
+      "what_we_found": "Three listing captures disagree (daily 11:00 - 2:00, daily 11:00 - midnight, and Mon-Thu dinner-only 5:00 - 9:00).",
+      "what_we_did": "Added as L753; the 11:00 AM lunch start appears in two of the three captures, so lunch is treated as likely but unconfirmed.",
+      "rows": [
+        "L753"
+      ],
+      "link": {
+        "label": "Yelp search - Simmer Huang, Newark",
+        "url": "https://www.yelp.com/search?find_desc=Simmer+Huang&find_loc=Newark%2C+CA"
+      },
+      "manual_review": "Call before planning on it."
+    },
+    {
+      "id": "LUNCH-FLAG-53",
+      "severity": "warning",
+      "title": "Hokkaido Seafood (San Jose): one capture says Tuesday closed",
+      "what_we_found": "The official site and Restaurant Guru show Tuesday lunch 11:00 - 2:00; one Restaurantji capture says Tuesday closed.",
+      "what_we_did": "Added as L805 with the conflict printed on the row.",
+      "rows": [
+        "L805"
+      ],
+      "link": {
+        "label": "Yelp search - Hokkaido Seafood, San Jose",
+        "url": "https://www.yelp.com/search?find_desc=Hokkaido+Seafood&find_loc=San+Jose%2C+CA"
+      },
+      "manual_review": "Call (408) 287-3838 to confirm Tuesday before planning on it."
+    },
+    {
+      "id": "LUNCH-FLAG-54",
+      "severity": "critical",
+      "title": "Timog (Newark): newest capture lists Tuesday closed, two earlier show a lunch block",
+      "what_we_found": "The newest Yelp capture lists Mon and Tue closed; two earlier captures show a Tuesday 11:00 - 3:00 lunch block. The owner actively answers questions on Yelp.",
+      "what_we_did": "Added as L756 with open_on_trip_date = null; the newest capture is trusted but unconfirmed.",
+      "rows": [
+        "L756"
+      ],
+      "link": {
+        "label": "Yelp search - Timog, Newark",
+        "url": "https://www.yelp.com/search?find_desc=Timog&find_loc=Newark%2C+CA"
+      },
+      "manual_review": "Call before planning on Tuesday lunch."
+    },
+    {
+      "id": "LUNCH-FLAG-55",
+      "severity": "critical",
+      "title": "Ping's Bistro (Fremont): sources split on whether Tuesday is open",
+      "what_we_found": "The most recent capture (Checkle, Nov-2025) shows Tuesday 11:00 - 2:00 + 5:00 - 8:15; the Waze schedule omits Tuesday entirely; Restaurantjump shows Tuesday Closed.",
+      "what_we_did": "Added as L774 with open_on_trip_date = null and all three positions printed.",
+      "rows": [
+        "L774"
+      ],
+      "link": {
+        "label": "Yelp search - Ping's Bistro, Fremont",
+        "url": "https://www.yelp.com/search?find_desc=Ping%27s+Bistro&find_loc=Fremont%2C+CA"
+      },
+      "manual_review": "Treat as unconfirmed for the trip day; call first."
+    },
+    {
+      "id": "LUNCH-FLAG-56",
+      "severity": "info",
+      "title": "Northwest China Cuisine (Fremont): three sources give three schedules",
+      "what_we_found": "Official site shows Tue-Fri 9:00 - 2:30 + 5:30 - 8:00 with Monday closed; one aggregator shows Tue-Sun 9:00 - 4:00 with Thursday closed; another shows daily 11:00 - 21:00.",
+      "what_we_did": "Added as L772 using the official site; the candidate name 'NW China / Ningxia' resolved to the same restaurant.",
+      "rows": [
+        "L772"
+      ],
+      "link": {
+        "label": "Official site",
+        "url": "https://northwestchinacuisine.com/"
+      },
+      "manual_review": "None - the official schedule is self-consistent."
+    },
+    {
+      "id": "LUNCH-FLAG-57",
+      "severity": "warning",
+      "title": "Bing's Dumpling House (Fremont): 'Temporarily Closed' badge over normal listed hours",
+      "what_we_found": "Apple Maps displays 'Temporarily Closed' while the underlying listed hours are the normal daily 11:00 - 3:00, 4:30 - 9:30.",
+      "what_we_did": "Added as L775 with open_on_trip_date = null.",
+      "rows": [
+        "L775"
+      ],
+      "link": {
+        "label": "Google Maps search - Bing's Dumpling House, 34360 Fremont Blvd, Fremont",
+        "url": "https://www.google.com/maps/search/?api=1&query=Bing%27s+Dumpling+House+34360+Fremont+Blvd+Fremont"
+      },
+      "manual_review": "Treat as possibly closed until confirmed by phone."
+    },
+    {
+      "id": "LUNCH-FLAG-58",
+      "severity": "warning",
+      "title": "Camper (Menlo Park): the restaurant's own page contradicts itself on Tuesday lunch",
+      "what_we_found": "The site's JSON-LD says Tue 12:00 - 15:00 + 17:00 - 23:00; the homepage body says 'kitchen opens 5 PM, closed Sunday' with no lunch mention.",
+      "what_we_did": "Added as L734 with open_on_trip_date = null and both values printed.",
+      "rows": [
+        "L734"
+      ],
+      "link": {
+        "label": "Official site",
+        "url": "https://campermp.com/"
+      },
+      "manual_review": "Call (650) 328-8882 before planning on Tuesday lunch."
+    },
+    {
+      "id": "LUNCH-FLAG-59",
+      "severity": "info",
+      "title": "Newark Buffet (Newark): lunch buffet price rose since the Jan-2026 archive",
+      "what_we_found": "The live official menu page (captured 2026-09-12) prices the Mon-Fri 11:00 am - 3:30 pm lunch buffet at $19.99; the Jan-2026 archive of the same page shows $18.99.",
+      "what_we_did": "L758 carries price_from = 19.99 (the live figure). The live page is http-only, so the https Wayback capture of the same page is the citable source and documents the price history.",
+      "rows": [
+        "L758"
+      ],
+      "link": {
+        "label": "Wayback Machine - newarkbuffet.com menu page (2026-01-17)",
+        "url": "https://web.archive.org/web/20260117073154/http://newarkbuffet.com/page/menu"
+      },
+      "manual_review": "None - the live figure is current as of 2026-09-12."
+    },
+    {
+      "id": "LUNCH-FLAG-60",
+      "severity": "info",
+      "title": "Su's Mongolian Cuisine (Santa Clara): 15-minute closing-time delta across listings",
+      "what_we_found": "Listings split 20:45 vs 21:00 dinner close; lunch is unaffected.",
+      "what_we_did": "Added as L802; the delta is printed on the row.",
+      "rows": [
+        "L802"
+      ],
+      "link": {
+        "label": "Yelp search - Su's Mongolian Cuisine, Santa Clara",
+        "url": "https://www.yelp.com/search?find_desc=Su%27s+Mongolian+Cuisine&find_loc=Santa+Clara%2C+CA"
+      },
+      "manual_review": "None for lunch."
+    },
+    {
+      "id": "LUNCH-FLAG-61",
+      "severity": "info",
+      "title": "Coconuts Cafe & Bakery (Palo Alto): candidate mislabel resolved",
+      "what_we_found": "The candidate list labeled Coconuts as San Jose; the only verified Coconuts is in Palo Alto.",
+      "what_we_did": "Added as L791 with the corrected city; also listed under LUNCH-FLAG-65.",
+      "rows": [
+        "L791"
+      ],
+      "link": {
+        "label": "Yelp search - Coconuts Cafe & Bakery, Palo Alto",
+        "url": "https://www.yelp.com/search?find_desc=Coconuts+Cafe+%26+Bakery&find_loc=Palo+Alto%2C+CA"
+      },
+      "manual_review": "None."
+    },
+    {
+      "id": "LUNCH-FLAG-62",
+      "severity": "info",
+      "title": "Mikado Los Altos Sushi (L670): lunch close 2:00 vs 2:30 PM across sources",
+      "what_we_found": "Pass-14 re-verification found corner.inc (with the official mikadolosaltos.com) showing a 2:00 PM lunch close and zmenu showing 2:30 PM. The pass-14 row was a duplicate of L670 and was not re-merged.",
+      "what_we_did": "L670 kept as-is; the earlier close is the safe planning value.",
+      "rows": [
+        "L670"
+      ],
+      "link": {
+        "label": "Yelp search - Mikado, Los Altos",
+        "url": "https://www.yelp.com/search?find_desc=Mikado&find_loc=Los+Altos%2C+CA"
+      },
+      "manual_review": "None - 30-minute delta, no practical impact."
+    },
+    {
+      "id": "LUNCH-FLAG-63",
+      "severity": "critical",
+      "title": "Tasty Chinese Kitchen (Newark): newest capture lists Tuesday closed",
+      "what_we_found": "The newest Yelp capture lists Mon Closed, Tue Closed, Wed-Sun service; the April-2026 capture shows a Tuesday 12:30 - 3:00 lunch block. The same phone number is shared with the neighboring Tasty Restaurant.",
+      "what_we_did": "Added as L751 with open_on_trip_date = null and both captures printed.",
+      "rows": [
+        "L751"
+      ],
+      "link": {
+        "label": "Yelp business page (two captures)",
+        "url": "https://www.yelp.com/biz/tasty-chinese-kitchen-newark"
+      },
+      "manual_review": "Call (510) 505-9981 before planning on Tuesday lunch."
+    },
+    {
+      "id": "LUNCH-FLAG-64",
+      "severity": "info",
+      "title": "Dino's Family Restaurant (Fremont): stale 'Tuesday closed' capture superseded",
+      "what_we_found": "An earlier pass-14 capture said Tuesday closed; the most recent Yelp capture (days old) plus two other sources all show daily 7:00 - 3:00.",
+      "what_we_did": "L773 reads open Tuesday (daily 7:00 - 3:00); the row itself carries the supersession note.",
+      "rows": [
+        "L773"
+      ],
+      "link": {
+        "label": "Yelp search - Dino's Family Restaurant, Fremont",
+        "url": "https://www.yelp.com/search?find_desc=Dino%27s+Family+Restaurant&find_loc=Fremont%2C+CA"
+      },
+      "manual_review": "Re-verify by phone if a Tuesday plan depends on it."
+    },
+    {
+      "id": "LUNCH-FLAG-65",
+      "severity": "info",
+      "title": "Sixteen pass-14 candidates were mislabeled by the discovery pass and verified at a different location",
+      "what_we_found": "Shah = Sunnyvale (L716), Mantra = Mountain View (L719), Hanmaru = Milpitas (L727), Hungry Cow = Fremont (L763), New Pizza Italia = Fremont (L771), Forest & Flour = Fremont (L776), Tamper Room = Fremont (L777), Coconuts = Palo Alto (L791, see LUNCH-FLAG-61), MAZRA / Nomadic / Comalito / Vesta = Redwood City (L795 - L798), Chikin Drip = San Jose (L803), Dough Burger = San Jose (L808), Inka's = San Jose (L809), Terun = Palo Alto (candidate 'Terun Pizza & Wine Bar' verified at 448 California Ave and deduped to existing row L79 Terun Pizzeria).",
+      "what_we_did": "Each row carries its own corrected city and a note on the row; no row was added under a wrong city.",
+      "rows": [
+        "L716",
+        "L719",
+        "L727",
+        "L763",
+        "L771",
+        "L776",
+        "L777",
+        "L791",
+        "L795",
+        "L796",
+        "L797",
+        "L798",
+        "L803",
+        "L808",
+        "L809",
+        "L79"
+      ],
+      "link": {
+        "label": "data/incoming/ - the six pass-14 batch files",
+        "url": "https://github.com/buffedlizard55-lab/TinoLunchSpecial/tree/main/data/incoming"
+      },
+      "manual_review": "None - the corrections are in the rows."
+    },
+    {
+      "id": "LUNCH-FLAG-66",
+      "severity": "info",
+      "title": "Pass 14 merged 102 rows (L708 - L809) against the 100-row target",
+      "what_we_found": "118 new candidates came out of the ring-city sweeps (216 candidates checked, 98 already listed or rejected). 116 verified rows were written across six incoming files; 13 candidates were recorded as rejects (out-of-ring locations, closures, no-data, one duplicate of L459).",
+      "what_we_did": "102 rows merged (L708 - L809). Ten verified rows turned out to be duplicates of existing master rows and were re-verification only (Sultana L498, Farmhouse L305, Su-Dam L310, Mikado L670, Yoshi L393, Kathmandu L664, Kiya L477, Momo Grill L323, Chuan Chim L487, Terun L79). Four verified rows were held back by street-number collisions (LUNCH-FLAG-69). The pass-1 Bell Tower Cafe deferral was superseded (merged as L799). Only Newark Buffet (L758) carries a price ($19.99 lunch buffet). Seven rows have open_on_trip_date = null: Pronto L794, Mari Mari L726, Camper L734, Tasty Chinese L751, Timog L756, Ping's L774, Bing's L775.",
+      "rows": [],
+      "link": {
+        "label": "data/incoming/ - the six pass-14 batch files",
+        "url": "https://github.com/buffedlizard55-lab/TinoLunchSpecial/tree/main/data/incoming"
+      },
+      "manual_review": "The seven null rows need a phone call before being used for a Tuesday plan."
+    },
+    {
+      "id": "LUNCH-FLAG-67",
+      "severity": "info",
+      "title": "Joyful Dim Sum Bistro (L641): pass-14 capture shows a different street number",
+      "what_we_found": "A pass-14 listing capture showed Joyful Dim Sum at 129 Anza, Fremont, while L641 (verified in an earlier pass) sits at 39218 Fremont Hub. No page was found that states both addresses belong to the same business.",
+      "what_we_did": "L641 kept unchanged; the discrepancy is recorded here for manual review. The business may have moved, in which case the old address is stale.",
+      "rows": [
+        "L641"
+      ],
+      "link": {
+        "label": "Yelp search - Joyful Dim Sum Bistro, Fremont",
+        "url": "https://www.yelp.com/search?find_desc=Joyful+Dim+Sum+Bistro&find_loc=Fremont%2C+CA"
+      },
+      "manual_review": "Call the business to confirm its current address."
+    },
+    {
+      "id": "LUNCH-FLAG-68",
+      "severity": "info",
+      "title": "Mantra India (L719): candidate mislabel resolved, minor deltas only",
+      "what_we_found": "The candidate list labeled Mantra as Santa Clara; the only verified Mantra India is in Mountain View (official mantraindiausa.com plus a Yelp capture). Hours agree between the official site and Yelp (dinner close 22:00); no lunch price is published anywhere.",
+      "what_we_did": "Added as L719; the mislabel is documented under LUNCH-FLAG-65. No data conflict beyond the city label.",
+      "rows": [
+        "L719"
+      ],
+      "link": {
+        "label": "Official site",
+        "url": "https://mantraindiausa.com/"
+      },
+      "manual_review": "None."
+    },
+    {
+      "id": "LUNCH-FLAG-69",
+      "severity": "warning",
+      "title": "Four verified pass-14 rows are held back by street-number collisions (manual review)",
+      "what_we_found": "The merge dedupes on the full street address. Four pass-14 rows share their street number with an existing master row, but each pair looks like distinct businesses at that address (strip centers) or an ambiguous overlap: Joy Dumpling (Cupertino, 10895 S Blaney Ave) vs L700 Shanghai Dumpling; Golden Wang Donkatsu (Santa Clara, 2910 El Camino Real - re-confirmed 2026-09-12 that both it and L511 Restaurant Silla are listed at 2910 El Camino Real) vs L511; Chicken G's (Mountain View, 1414 W El Camino Real - both it and L503 Best Bite are listed at 1414 W El Camino Real) vs L503; Hono Izakaya & Sushi (Campbell, 33 S Central Ave per its own site) vs L122 A Bellagio (also 33 S Central Ave; the Restaurantji page for A Bellagio currently displays CLOSED).",
+      "what_we_did": "Following the pass-7 precedent, the four rows were left in data/incoming/ unmerged rather than forced past the dedupe. No master row was edited.",
+      "rows": [
+        "L700",
+        "L511",
+        "L503",
+        "L122"
+      ],
+      "link": {
+        "label": "data/incoming/ - the six pass-14 batch files",
+        "url": "https://github.com/buffedlizard55-lab/TinoLunchSpecial/tree/main/data/incoming"
+      },
+      "manual_review": "Confirm each pair. If both businesses are distinct co-tenants, add the new row manually with a suite number. If A Bellagio (L122) has closed, archive that row and merge the Hono row."
     }
   ]
 }
