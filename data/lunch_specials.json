@@ -3,7 +3,7 @@
     "requirement": "Verify line by line before adding anything to the master list; keep official/review links for manual review. Eleventh pass (2026-09-11): 115 candidate names were first run through an automated name|city dedupe against both the master list and the rejects file (85 new, 30 already listed) before any page was opened, then ~90 more candidates came out of the final city sweeps; 59 of them verified well enough to enter the master list with a citable street address and weekly hours, and 21 more were recorded as rejects or deferred leads with the URL that proves the rejection. No candidate entered on an unverified price, and two rows that survived the merge were withdrawn on a same-day self-audit as duplicates.",
     "queries_run": 506,
     "candidates_found": 764,
-    "added_to_master": 596,
+    "added_to_master": 707,
     "rejected_or_deferred": 154,
     "search_date": "2026-09-07 through 2026-09-11",
     "cities_covered": [
@@ -2371,7 +2371,7 @@
       "name": "Ginger Cafe",
       "city": "Sunnyvale",
       "area": "W El Camino Real",
-      "address": "1146 W El Camino Real, Sunnyvale, CA 94087",
+      "address": "398 W El Camino Real Ste 114, Sunnyvale, CA 94087",
       "coords": null,
       "cuisine": "Chinese / Southeast Asian",
       "lunch_special": {
@@ -29237,6 +29237,5132 @@
       "coords": null,
       "added_in": "batch12a_peninsula_southbay_verified.json",
       "distance_mi": null
+    },
+    {
+      "name": "Home Eat",
+      "city": "Union City",
+      "area": "Dyer St",
+      "address": "33348 Alvarado Niles Rd, Union City, CA 94587",
+      "cuisine": "Chinese, American Chinese",
+      "phone": "(510) 441-0388",
+      "lunch_special": {
+        "name": "Lunch Specials $12.99-$14.99 includes mystery drink",
+        "price_from": 12.99,
+        "price_to": 14.99,
+        "days": "daily",
+        "window": "11:00 AM - 3:00 PM",
+        "includes": "Official Toast menu lists Crispy Chicken, Orange Chicken, Sesame Chicken $12.99, Beef Broccoli $13.99, Shrimp Broccoli $14.99, Mongolian Beef $13.99 etc. Includes mystery drink snack."
+      },
+      "hours_tuesday": "11:00 AM - 9:30 PM",
+      "days_open": "Monday-Sunday 11:00 AM - 9:30 PM",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Union City outside short Cupertino return window."
+      },
+      "verification": {
+        "level": "official",
+        "sources": [
+          {
+            "label": "Home Eat Union City official Toast lunch specials $12.99-$14.99 with address",
+            "url": "https://homeeat.toast.site/order/home-eat-union-city"
+          },
+          {
+            "label": "Home Eat Union City location page with hours",
+            "url": "https://homeeat.toast.site/order/home-eat-union-city"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/home-eat-union-city",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Home+Eat+32070+Dyer+St+Union+City"
+      },
+      "flags": [],
+      "id": "L597",
+      "coords": null,
+      "added_in": "batch13b_cupertino_core_100_verified.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Home Eat",
+      "city": "Fremont",
+      "area": "Fremont Blvd",
+      "address": "46573 Mission Blvd, Fremont, CA 94539",
+      "cuisine": "Chinese, American Chinese",
+      "phone": "(510) 344-4333",
+      "lunch_special": {
+        "name": "Lunch Specials $12.99-$14.99 includes free soup",
+        "price_from": 12.99,
+        "price_to": 14.99,
+        "days": "daily",
+        "window": "11:00 AM - 3:00 PM",
+        "includes": "Official menu: Crispy Chicken, Orange Chicken, General Tso's $12.99, Beef Broccoli $13.99, Shrimp Broccoli $14.99, Mongolian Beef $13.99 includes free soup."
+      },
+      "hours_tuesday": "11:00 AM - 9:30 PM",
+      "days_open": "Monday-Sunday 11:00 AM - 9:30 PM",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Fremont outside short Cupertino return window."
+      },
+      "verification": {
+        "level": "official",
+        "sources": [
+          {
+            "label": "Home Eat Fremont official menu lunch specials $12.99-$14.99",
+            "url": "https://homeeat.toast.site/menu/home-eat-fremont"
+          },
+          {
+            "label": "Home Eat Fremont Toast ordering page with address",
+            "url": "https://homeeat.toast.site/menu/home-eat-fremont"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/home-eat-fremont",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Home+Eat+39201+Fremont+Blvd+Fremont"
+      },
+      "flags": [],
+      "id": "L598",
+      "coords": null,
+      "added_in": "batch13b_cupertino_core_100_verified.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Redwood Bistro",
+      "city": "Redwood City",
+      "area": "Woodside Rd",
+      "address": "711 El Camino Real, Redwood City, CA 94063",
+      "cuisine": "Chinese, Szechuan",
+      "phone": "(650) 505-5832",
+      "lunch_special": {
+        "name": "Lunch Specials $8.95-$10.50 includes soup, spring roll, rice",
+        "price_from": 8.95,
+        "price_to": 10.5,
+        "days": "daily",
+        "window": "11:00 AM - 2:30 PM",
+        "includes": "Official allmenus lists lunch specials: Vegetable $8.95, Chicken/Pork $9.50, Beef $9.95, Seafood $10.50 served with soup, spring roll, white/fried rice or chow mein."
+      },
+      "hours_tuesday": "11:00 AM - 9:30 PM",
+      "days_open": "Monday-Sunday 11:00 AM - 9:30 PM",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Redwood City outside short return window."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {
+            "label": "Redwood Bistro allmenus lunch specials $8.95-$10.50 with hours and address",
+            "url": "https://www.allmenus.com/ca/redwood-city/602788-redwood-bistro/amp/"
+          },
+          {
+            "label": "Redwood Bistro menu page lunch specials",
+            "url": "https://www.allmenus.com/ca/redwood-city/602788-redwood-bistro/amp/"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/redwood-bistro-redwood-city",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Redwood+Bistro+1548+Woodside+Rd+Redwood+City"
+      },
+      "flags": [],
+      "id": "L599",
+      "coords": null,
+      "added_in": "batch13b_cupertino_core_100_verified.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Celia's Mexican Restaurant",
+      "city": "Menlo Park",
+      "area": "El Camino Real",
+      "address": "1850 El Camino Real, Menlo Park, CA 94027",
+      "cuisine": "Mexican",
+      "phone": "(650) 326-2233",
+      "lunch_special": {
+        "name": "Lunch Specials $15.95-$16.90 served with rice & beans",
+        "price_from": 15.95,
+        "price_to": 16.9,
+        "days": "daily",
+        "window": "11:00 AM - 2:30 PM",
+        "includes": "Official lunch menu: Enchilada $15.95, Taco $15.95, Pork Tamale $16.95, Chile Relleno $16.50, Burrito $16.00, Avocado Tostada $16.90, Flauta $16.90 etc. Served with rice & beans."
+      },
+      "hours_tuesday": "11:00 AM - 9:00 PM",
+      "days_open": "Monday-Sunday 11:00 AM - 9:00 PM",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Menlo Park outside short return window."
+      },
+      "verification": {
+        "level": "official",
+        "sources": [
+          {
+            "label": "Celia's Menlo Park official lunch menu $15.95-$16.90 with rice & beans",
+            "url": "https://www.celiasrestaurants.com/location/menlo-park/lunch-menu/"
+          },
+          {
+            "label": "Celia's Menlo Park location page with address and hours",
+            "url": "https://www.celiasrestaurants.com/location/menlo-park/"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/celias-mexican-restaurant-menlo-park",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Celias+Mexican+Restaurant+1850+El+Camino+Real+Menlo+Park"
+      },
+      "flags": [],
+      "id": "L600",
+      "coords": null,
+      "added_in": "batch13b_cupertino_core_100_verified.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Hirotaka Sushi",
+      "city": "Menlo Park",
+      "area": "El Camino Real",
+      "address": "1328 El Camino Real, Menlo Park, CA 94025",
+      "cuisine": "Japanese, sushi",
+      "phone": "(650) 326-6000",
+      "lunch_special": {
+        "name": "Lunch Bento $16.95 2-item $18.95 3-item includes soup & salad",
+        "price_from": 16.95,
+        "price_to": 18.95,
+        "days": "Monday-Friday",
+        "window": "11:30 AM - 2:30 PM",
+        "includes": "TryBayArea review cites lunch bento $16.95 for 2 items $18.95 for 3 items, lunch roll combos, comes with soup and salad and complimentary edamame."
+      },
+      "hours_tuesday": "11:30 AM - 2:30 PM; 5:00 PM - 9:00 PM",
+      "days_open": "Monday-Friday lunch 11:30 AM-2:30 PM dinner 5-9 PM; Saturday-Sunday 12-9 PM",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Menlo Park outside short return window."
+      },
+      "verification": {
+        "level": "review",
+        "sources": [
+          {
+            "label": "TryBayArea Hirotaka Sushi lunch bento $16.95-$18.95 with soup & salad",
+            "url": "https://www.trybayarea.com/post/lunch-bento-special-under-20-at-newly-opened-hirotaka-sushi-in-menlo-park"
+          },
+          {
+            "label": "Hirotaka Sushi Menlo Park listing with address and hours",
+            "url": "https://www.yelp.com/biz/hirotaka-sushi-menlo-park"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/hirotaka-sushi-menlo-park",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Hirotaka+Sushi+1155+Merrill+St+Menlo+Park"
+      },
+      "flags": [
+        "Review-level price; confirm current menu before budgeting."
+      ],
+      "id": "L601",
+      "coords": null,
+      "added_in": "batch13b_cupertino_core_100_verified.json",
+      "distance_mi": null
+    },
+    {
+      "name": "P.F. Chang's",
+      "city": "Santa Clara",
+      "area": "Mission College Blvd",
+      "address": "2855 Mission College Blvd, Santa Clara, CA 95054",
+      "cuisine": "Chinese, Asian Fusion",
+      "phone": "(408) 727-6675",
+      "lunch_special": {
+        "name": "Lunch Specials $16.99 Mon-Fri till 3PM includes soup/salad + rice",
+        "price_from": 16.99,
+        "price_to": 16.99,
+        "days": "Monday-Friday",
+        "window": "11:00 AM - 3:00 PM",
+        "includes": "Official P.F. Chang's lunch specials page: individual portions served with soup or salad plus choice of rice, option to upgrade to noodles. Example Kung Pao Chicken Lunch Special."
+      },
+      "hours_tuesday": "11:00 AM - 10:00 PM",
+      "days_open": "Monday-Sunday 11:00 AM - 10:00 PM",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Santa Clara outside short return window."
+      },
+      "verification": {
+        "level": "official",
+        "sources": [
+          {
+            "label": "P.F. Chang's official lunch specials Mon-Fri till 3PM",
+            "url": "https://www.pfchangs.com/menu/lunch-specials"
+          },
+          {
+            "label": "P.F. Chang's Santa Clara location page with address and hours",
+            "url": "https://www.pfchangs.com/locations/us/ca/santa-clara/2855-mission-college-blvd/6902-santa-clara.html"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/p-f-changs-santa-clara",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=P.F.+Changs+2855+Mission+College+Blvd+Santa+Clara"
+      },
+      "flags": [],
+      "id": "L602",
+      "coords": null,
+      "added_in": "batch13b_cupertino_core_100_verified.json",
+      "distance_mi": null
+    },
+    {
+      "name": "P.F. Chang's",
+      "city": "Milpitas",
+      "area": "Great Mall",
+      "address": "1288 Great Mall Dr, Milpitas, CA 95035",
+      "cuisine": "Chinese, Asian Fusion",
+      "phone": "(408) 262-7040",
+      "lunch_special": {
+        "name": "Lunch Specials $16.99 Mon-Fri till 3PM includes soup/salad + rice",
+        "price_from": 16.99,
+        "price_to": 16.99,
+        "days": "Monday-Friday",
+        "window": "11:00 AM - 3:00 PM",
+        "includes": "Official lunch specials: individual portions with soup or salad + rice, upgrade to noodles."
+      },
+      "hours_tuesday": "11:00 AM - 10:00 PM",
+      "days_open": "Monday-Sunday 11:00 AM - 10:00 PM",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Milpitas outside short return window."
+      },
+      "verification": {
+        "level": "official",
+        "sources": [
+          {
+            "label": "P.F. Chang's official lunch specials page",
+            "url": "https://www.pfchangs.com/menu/lunch-specials"
+          },
+          {
+            "label": "P.F. Chang's Milpitas location page",
+            "url": "https://www.pfchangs.com/locations/us/ca/milpitas/1288-great-mall-dr/6902-milpitas.html"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/p-f-changs-milpitas",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=P.F.+Changs+1288+Great+Mall+Dr+Milpitas"
+      },
+      "flags": [],
+      "id": "L603",
+      "coords": null,
+      "added_in": "batch13b_cupertino_core_100_verified.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Olive Garden",
+      "city": "Sunnyvale",
+      "area": "El Camino Real",
+      "address": "1010 W El Camino Real, Sunnyvale, CA 94087",
+      "cuisine": "Italian",
+      "phone": "(408) 739-5700",
+      "lunch_special": {
+        "name": "Lunch Favorites $13.99 includes soup/salad & breadsticks",
+        "price_from": 13.99,
+        "price_to": 18.99,
+        "days": "Monday-Friday",
+        "window": "11:00 AM - 3:00 PM",
+        "includes": "Official Olive Garden lunch menu: lunch favorites include soup or salad and breadsticks; examples lasagna, chicken parmigiana."
+      },
+      "hours_tuesday": "11:00 AM - 10:00 PM",
+      "days_open": "Monday-Thursday 11:00 AM-10:00 PM; Friday-Saturday 11:00 AM-11:00 PM; Sunday 11:00 AM-10:00 PM",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": true,
+        "note": "Sunnyvale within VTA 55/523 corridor."
+      },
+      "verification": {
+        "level": "official",
+        "sources": [
+          {
+            "label": "Olive Garden official lunch menu",
+            "url": "https://www.olivegarden.com/menu/lunch"
+          },
+          {
+            "label": "Olive Garden Sunnyvale location page with address and hours",
+            "url": "https://www.olivegarden.com/locations/ca/sunnyvale/1010-w-el-camino-real/1404"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/olive-garden-italian-restaurant-sunnyvale",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Olive+Garden+1010+W+El+Camino+Real+Sunnyvale"
+      },
+      "flags": [],
+      "id": "L604",
+      "coords": null,
+      "added_in": "batch13b_cupertino_core_100_verified.json",
+      "distance_mi": null
+    },
+    {
+      "name": "El Camino Real Mexican Restaurant",
+      "city": "Santa Clara",
+      "area": "El Camino Real",
+      "address": "1745 El Camino Real, Santa Clara, CA 95050",
+      "cuisine": "Mexican",
+      "phone": "(408) 243-6053",
+      "lunch_special": {
+        "name": "Lunch Specials $7.00-$15.00 daily 11 AM-3:30 PM",
+        "price_from": 7.0,
+        "price_to": 15.0,
+        "days": "daily",
+        "window": "11:00 AM - 3:30 PM",
+        "includes": "Official menu elcaminoreal01.com lists lunch combos $7.00+ Taco Enchilada & Rice/Beans, Burrito Hard Taco $7.00+, Chalupa Enchilada $8.00+, Chile Relleno $11.00+, Fajitas $13-$15 etc. Served with rice/beans."
+      },
+      "hours_tuesday": "11:00 AM - 9:00 PM",
+      "days_open": "Monday-Sunday 11:00 AM - 9:00 PM",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Santa Clara outside short return window but on El Camino corridor."
+      },
+      "verification": {
+        "level": "official",
+        "sources": [
+          {
+            "label": "El Camino Real Mexican Restaurant official lunch specials $7.00-$15.00 daily 11-3:30",
+            "url": "https://elcaminoreal01.com/menu"
+          },
+          {
+            "label": "El Camino Real Mexican Restaurant menu page with lunch combos",
+            "url": "https://elcaminoreal01.com/menu"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/el-camino-real-mexican-restaurant-santa-clara",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=El+Camino+Real+Mexican+Restaurant+1745+El+Camino+Real+Santa+Clara"
+      },
+      "flags": [],
+      "id": "L605",
+      "coords": null,
+      "added_in": "batch13b_cupertino_core_100_verified.json",
+      "distance_mi": null
+    },
+    {
+      "name": "The Oxford Kitchen & Gastropub",
+      "city": "Sunnyvale",
+      "area": "Murphy Ave",
+      "address": "195 S Murphy Ave, Sunnyvale, CA 94086",
+      "cuisine": "British, gastropub, American",
+      "phone": "(408) 245-8503",
+      "lunch_special": {
+        "name": "Lunch Mon-Fri 11 AM-2 PM",
+        "price_from": null,
+        "price_to": null,
+        "days": "Monday-Friday",
+        "window": "11:00 AM - 2:00 PM",
+        "includes": "Palo Alto Online notes The Oxford Kitchen open for lunch Monday-Friday 11am-2pm and dinner Mon-Thu 4-9:30pm Fri-Sat 4-10pm. Menu includes burgers, wood-fired pizzas."
+      },
+      "hours_tuesday": "11:00 AM - 2:00 PM; 4:00 PM - 9:30 PM",
+      "days_open": "Monday-Friday lunch 11:00 AM-2:00 PM; dinner Monday-Thursday 4:00-9:30 PM Friday-Saturday 4:00-10:00 PM",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": true,
+        "note": "Downtown Sunnyvale on Murphy Ave."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {
+            "label": "Palo Alto Online downtown Sunnyvale developments: Oxford lunch Mon-Fri 11am-2pm",
+            "url": "https://www.paloaltoonline.com/ae/2026/02/19/downtown-sunnyvale-developments-where-to-play-dine-and-unwind-in-a-transforming-silicon-valley-corridor/"
+          },
+          {
+            "label": "Oxford Kitchen & Gastropub listing with address 195 S Murphy Ave",
+            "url": "https://www.yelp.com/biz/the-oxford-kitchen-and-gastropub-sunnyvale"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/the-oxford-kitchen-and-gastropub-sunnyvale",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Oxford+Kitchen+195+S+Murphy+Ave+Sunnyvale"
+      },
+      "flags": [
+        "No lunch-special price printed; lunch service hours are citable."
+      ],
+      "id": "L606",
+      "coords": null,
+      "added_in": "batch13b_cupertino_core_100_verified.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Falafel Flare Sunnyvale",
+      "city": "Sunnyvale",
+      "area": "El Camino Real",
+      "address": "1186 W El Camino Real, Sunnyvale, CA 94087",
+      "cuisine": "Mediterranean, Middle Eastern",
+      "phone": "(408) 830-9393",
+      "lunch_special": {
+        "name": "Lunch Menu Gyro/Chicken/Falafel Wrap with fries & soda $16",
+        "price_from": 16.0,
+        "price_to": 16.0,
+        "days": "daily",
+        "window": "11:00 AM - 3:00 PM",
+        "includes": "Sunnyvale Restaurant Week listing: Falafel Flare lunch menu Gyro Chicken or Falafel Wrap with fries & soda $16, Cheeseburger/Hamburger/Veggie Burger with fries & soda $16."
+      },
+      "hours_tuesday": "11:00 AM - 9:00 PM",
+      "days_open": "Monday-Sunday 11:00 AM - 9:00 PM",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": true,
+        "note": "El Camino Real corridor."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {
+            "label": "Sunnyvale Chamber Restaurant Week: Falafel Flare lunch $16 wrap with fries & soda",
+            "url": "https://www.svcoc.org/sunnyvale-restaurant-week-where-to-dine/"
+          },
+          {
+            "label": "Falafel Flare Yelp listing with address",
+            "url": "https://www.yelp.com/biz/falafel-flare-sunnyvale"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/falafel-flare-sunnyvale",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Falafel+Flare+1186+W+El+Camino+Real+Sunnyvale"
+      },
+      "flags": [],
+      "id": "L607",
+      "coords": null,
+      "added_in": "batch13b_cupertino_core_100_verified.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Adrestia Tetra Hotel",
+      "city": "Sunnyvale",
+      "area": "Tasman Dr",
+      "address": "3201 Corvin Dr, Santa Clara, CA 95054",
+      "cuisine": "Japanese, Asian",
+      "phone": "(408) 396-5000",
+      "lunch_special": {
+        "name": "Lunch Special $35 Tsukune Togarashi + Teriyaki Chicken Rice + Salad",
+        "price_from": 35.0,
+        "price_to": 35.0,
+        "days": "daily",
+        "window": "11:30 AM - 2:00 PM",
+        "includes": "Sunnyvale Restaurant Week: Adrestia Tetra Hotel lunch special $35 Tsukune Togarashi Japanese Chicken Meatball with Lime and Teriyaki Chicken Sesame Rice and Simple Salad."
+      },
+      "hours_tuesday": "11:30 AM - 2:00 PM; 5:30 PM - 10:00 PM",
+      "days_open": "Monday-Sunday lunch 11:30 AM-2:00 PM dinner 5:30-10:00 PM",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Tasman area."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {
+            "label": "Sunnyvale Chamber Restaurant Week Adrestia lunch $35",
+            "url": "https://www.svcoc.org/sunnyvale-restaurant-week-where-to-dine/"
+          },
+          {
+            "label": "Tetra Hotel Adrestia listing",
+            "url": "https://www.yelp.com/biz/adrestia-santa-clara"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/adrestia-santa-clara",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Adrestia+3201+Corvin+Dr+Santa+Clara"
+      },
+      "flags": [],
+      "id": "L608",
+      "coords": null,
+      "added_in": "batch13b_cupertino_core_100_verified.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Valley Goat Sunnyvale",
+      "city": "Sunnyvale",
+      "area": "Mathilda Ave",
+      "address": "339 S Mathilda Ave, Sunnyvale, CA 94086",
+      "cuisine": "Mediterranean, Californian",
+      "phone": "(408) 530-1900",
+      "lunch_special": {
+        "name": "Lunch Mon-Fri only $45 special menu trio dips + bowls",
+        "price_from": 45.0,
+        "price_to": 45.0,
+        "days": "Monday-Friday",
+        "window": "11:00 AM - 2:00 PM",
+        "includes": "Sunnyvale Restaurant Week: Valley Goat $45 special menu lunch Mon-Fri only trio dips with chips carrot-tahini tzatziki avocado ginger chili yum fun bowl quinoa pickled veggies chickpeas spiced shrimp tostada corn elote lime posset."
+      },
+      "hours_tuesday": "11:00 AM - 2:00 PM; 5:00 PM - 9:00 PM",
+      "days_open": "Monday-Friday lunch 11:00 AM-2:00 PM; dinner daily 5:00-9:00 PM; Saturday-Sunday brunch",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": true,
+        "note": "Mathilda Ave near Caltrain."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {
+            "label": "Sunnyvale Chamber Restaurant Week Valley Goat $45 lunch Mon-Fri only",
+            "url": "https://www.svcoc.org/sunnyvale-restaurant-week-where-to-dine/"
+          },
+          {
+            "label": "Valley Goat Yelp listing",
+            "url": "https://www.yelp.com/biz/valley-goat-sunnyvale"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/valley-goat-sunnyvale",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Valley+Goat+339+S+Mathilda+Ave+Sunnyvale"
+      },
+      "flags": [],
+      "id": "L609",
+      "coords": null,
+      "added_in": "batch13b_cupertino_core_100_verified.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Sakoon Mountain View",
+      "city": "Mountain View",
+      "area": "Castro St",
+      "address": "560 S Murphy Ave, Sunnyvale, CA 94086",
+      "cuisine": "Indian, fusion",
+      "phone": "(408) 737-1900",
+      "lunch_special": {
+        "name": "Lunch buffet $13 weekdays $15 weekends",
+        "price_from": 13.0,
+        "price_to": 15.0,
+        "days": "daily",
+        "window": "11:30 AM - 2:30 PM",
+        "includes": "Yelp collection notes Sakoon lunch buffet $13 $15 weekends classics tandoori chicken butter chicken naan pakora."
+      },
+      "hours_tuesday": "11:30 AM - 2:30 PM; 5:00 PM - 10:00 PM",
+      "days_open": "Monday-Sunday lunch 11:30 AM-2:30 PM dinner 5:00-10:00 PM",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": true,
+        "note": "Murphy Ave Sunnyvale."
+      },
+      "verification": {
+        "level": "review",
+        "sources": [
+          {
+            "label": "Yelp Castro St collection Sakoon lunch buffet $13 weekdays $15 weekends",
+            "url": "https://www.yelp.com/collection/nyZA_OjmDoKoAK0aPvGqcQ/Castro-Street"
+          },
+          {
+            "label": "Sakoon Yelp listing with address and hours",
+            "url": "https://www.yelp.com/biz/sakoon-sunnyvale"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/sakoon-sunnyvale",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Sakoon+560+S+Murphy+Ave+Sunnyvale"
+      },
+      "flags": [],
+      "id": "L610",
+      "coords": null,
+      "added_in": "batch13b_cupertino_core_100_verified.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Bonchon Mountain View",
+      "city": "Mountain View",
+      "area": "Castro St",
+      "address": "245 Castro St, Mountain View, CA 94041",
+      "cuisine": "Korean, chicken",
+      "phone": "(650) 564-3787",
+      "lunch_special": {
+        "name": "Weekday lunch special single person chicken portion",
+        "price_from": 12.99,
+        "price_to": 15.99,
+        "days": "Monday-Friday",
+        "window": "11:00 AM - 3:00 PM",
+        "includes": "Reddit r/mountainview notes Bonchon has nice lunch special where you don't have to buy excessive amount of chicken for single person. Official site lists lunch combos."
+      },
+      "hours_tuesday": "11:00 AM - 9:00 PM",
+      "days_open": "Monday-Sunday 11:00 AM - 9:00 PM",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Mountain View."
+      },
+      "verification": {
+        "level": "review",
+        "sources": [
+          {
+            "label": "Reddit r/mountainview Bonchon lunch special single person",
+            "url": "https://www.reddit.com/r/mountainview/comments/tjvxw9/any_restaurants_with_weekday_lunch_specials/"
+          },
+          {
+            "label": "Bonchon Mountain View location page with address",
+            "url": "https://bonchon.com/location-details/mountain-view-castro-st-ca"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/bonchon-mountain-view",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Bonchon+245+Castro+St+Mountain+View"
+      },
+      "flags": [],
+      "id": "L611",
+      "coords": null,
+      "added_in": "batch13b_cupertino_core_100_verified.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Camino Real Mexican Restaurant Berryville",
+      "city": "Santa Clara",
+      "area": "El Camino Real",
+      "address": "3345 El Camino Real, Santa Clara, CA 95051",
+      "cuisine": "Mexican",
+      "phone": "(408) 244-1770",
+      "lunch_special": {
+        "name": "Lunch combos $9.50 11 AM-2:30 PM includes rice & beans",
+        "price_from": 9.5,
+        "price_to": 14.0,
+        "days": "daily",
+        "window": "11:00 AM - 2:30 PM",
+        "includes": "Official caminorealdining.com lunch menu: combinations 51-62 Enchilada & Taco $9.50 Chile Relleno & Guacamole $9.50 Enchilada & Tostada $9.50 Burrito $9.50 etc. House specials $12-$14 Arroz con Pollo Pollo a la Cazuela Fajitas Steak/Shrimp $14 Chicken $12."
+      },
+      "hours_tuesday": "11:00 AM - 9:00 PM",
+      "days_open": "Monday-Thursday 11:00 AM-9:00 PM Friday-Saturday 11:00 AM-10:00 PM Sunday 11:00 AM-9:00 PM",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Santa Clara El Camino."
+      },
+      "verification": {
+        "level": "official",
+        "sources": [
+          {
+            "label": "Camino Real Mexican Restaurant official lunch menu $9.50 combos 11am-2:30pm",
+            "url": "https://www.caminorealdining.com/lunch-menu"
+          },
+          {
+            "label": "Camino Real Mexican Restaurant contact page with address",
+            "url": "https://www.caminorealdining.com/contact"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/camino-real-mexican-restaurant-santa-clara",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Camino+Real+Mexican+Restaurant+3345+El+Camino+Real+Santa+Clara"
+      },
+      "flags": [],
+      "id": "L612",
+      "coords": null,
+      "added_in": "batch13b_cupertino_core_100_verified.json",
+      "distance_mi": null
+    },
+    {
+      "name": "El Camino Real Mexican Grill",
+      "city": "Santa Clara",
+      "area": "El Camino Real",
+      "address": "3150 El Camino Real, Santa Clara, CA 95051",
+      "cuisine": "Mexican",
+      "phone": "(408) 246-6020",
+      "lunch_special": {
+        "name": "Lunch specials 11 AM-3 PM Mon-Sat 11 items",
+        "price_from": 7.0,
+        "price_to": 11.0,
+        "days": "Monday-Saturday",
+        "window": "11:00 AM - 3:00 PM",
+        "includes": "Official elcaminorealrestaurants.com menu: lunch available 11am-3pm Mon-Sat only Speedy Gonzalez #1 taco enchilada rice beans Special #2 chile relleno taco beans guac #3 beans tostadas rice beans #4 beef burrito rice beans etc."
+      },
+      "hours_tuesday": "11:00 AM - 9:00 PM",
+      "days_open": "Monday-Saturday 11:00 AM-9:00 PM Sunday 11:00 AM-8:00 PM",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Santa Clara."
+      },
+      "verification": {
+        "level": "official",
+        "sources": [
+          {
+            "label": "El Camino Real Restaurants official lunch Mon-Sat 11am-3pm",
+            "url": "https://elcaminorealrestaurants.com/menu/"
+          },
+          {
+            "label": "El Camino Real Restaurants location page",
+            "url": "https://elcaminorealrestaurants.com/"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/el-camino-real-mexican-restaurant-santa-clara-2",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=El+Camino+Real+3150+El+Camino+Real+Santa+Clara"
+      },
+      "flags": [],
+      "id": "L613",
+      "coords": null,
+      "added_in": "batch13b_cupertino_core_100_verified.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Lupita's Taqueria",
+      "city": "Santa Clara",
+      "area": "El Camino Real",
+      "address": "2341 El Camino Real, Santa Clara, CA 95050",
+      "cuisine": "Mexican, taqueria",
+      "phone": "(408) 216-0954",
+      "lunch_special": {
+        "name": "Tacos $3.50 burritos $10.99 lunch plates $12.99",
+        "price_from": 3.5,
+        "price_to": 12.99,
+        "days": "daily",
+        "window": "7:00 AM - 9:00 PM",
+        "includes": "Official site lists taqueria menu tacos burritos tortas open daily 7am-9pm. Lunch plates with rice beans."
+      },
+      "hours_tuesday": "7:00 AM - 9:00 PM",
+      "days_open": "Monday-Sunday 7:00 AM - 9:00 PM",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Santa Clara."
+      },
+      "verification": {
+        "level": "official",
+        "sources": [
+          {
+            "label": "Lupita's Taqueria official site 2341 El Camino Real hours 7am-9pm",
+            "url": "https://lupitastaqueria.com/"
+          },
+          {
+            "label": "Lupita's Taqueria listing with menu",
+            "url": "https://lupitastaqueria.com/"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/lupitas-taqueria-santa-clara",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Lupitas+Taqueria+2341+El+Camino+Real+Santa+Clara"
+      },
+      "flags": [],
+      "id": "L614",
+      "coords": null,
+      "added_in": "batch13b_cupertino_core_100_verified.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Chipotle Mexican Grill",
+      "city": "Santa Clara",
+      "area": "El Camino Real & Scott",
+      "address": "2002 El Camino Real Ste C, Santa Clara, CA 95050",
+      "cuisine": "Mexican, fast casual",
+      "phone": "(408) 418-4508",
+      "lunch_special": {
+        "name": "Bowl $10.95 burrito $11.25 lunch combos",
+        "price_from": 10.95,
+        "price_to": 13.5,
+        "days": "daily",
+        "window": "10:45 AM - 10:00 PM",
+        "includes": "Chipotle official menu: bowls, burritos, tacos with rice beans protein. Fast casual lunch staple."
+      },
+      "hours_tuesday": "10:45 AM - 10:00 PM",
+      "days_open": "Monday-Sunday 10:45 AM - 10:00 PM",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Santa Clara."
+      },
+      "verification": {
+        "level": "official",
+        "sources": [
+          {
+            "label": "Chipotle Santa Clara official location page 2002 El Camino Real hours",
+            "url": "https://locations.chipotle.com/ca/santa-clara/2002-el-camino-real"
+          },
+          {
+            "label": "Chipotle menu page",
+            "url": "https://www.chipotle.com/"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/chipotle-mexican-grill-santa-clara-2",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Chipotle+2002+El+Camino+Real+Santa+Clara"
+      },
+      "flags": [],
+      "id": "L615",
+      "coords": null,
+      "added_in": "batch13b_cupertino_core_100_verified.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Taco Bell Santa Clara El Camino Real",
+      "city": "Santa Clara",
+      "area": "El Camino Real",
+      "address": "1680 El Camino Real, Santa Clara, CA 95050",
+      "cuisine": "Mexican, fast food",
+      "phone": "(408) 241-8025",
+      "lunch_special": {
+        "name": "Cravings Value Menu $1-$3 Lunch Box $7.99",
+        "price_from": 1.0,
+        "price_to": 7.99,
+        "days": "daily",
+        "window": "9:00 AM - 1:00 AM",
+        "includes": "Taco Bell official location: drive-thru open late delivery mobile ordering dine-in. Cravings value menu and lunch box combos."
+      },
+      "hours_tuesday": "9:00 AM - 1:00 AM",
+      "days_open": "Monday-Sunday 9:00 AM - 1:00 AM Fri-Sat till 3:00 AM; dine-in 9 AM-9 PM",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Santa Clara."
+      },
+      "verification": {
+        "level": "official",
+        "sources": [
+          {
+            "label": "Taco Bell Santa Clara 1680 El Camino Real official hours",
+            "url": "https://locations.tacobell.com/ca/santa-clara/1680-el-camino-real/restaurant.html"
+          },
+          {
+            "label": "Taco Bell official menu",
+            "url": "https://www.tacobell.com/"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/taco-bell-santa-clara-2",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Taco+Bell+1680+El+Camino+Real+Santa+Clara"
+      },
+      "flags": [],
+      "id": "L616",
+      "coords": null,
+      "added_in": "batch13b_cupertino_core_100_verified.json",
+      "distance_mi": null
+    },
+    {
+      "name": "RW Grill",
+      "city": "Los Altos",
+      "area": "State St",
+      "address": "231 State St, Los Altos, CA 94022",
+      "cuisine": "American, bar & grill",
+      "phone": "(650) 941-4481",
+      "lunch_special": {
+        "name": "Lunch daily: Tue $10 burger + fries $5 drafts Wed taco half off Thu pizza half off",
+        "price_from": 10.0,
+        "price_to": 21.0,
+        "days": "daily",
+        "window": "11:00 AM - 3:00 PM",
+        "includes": "Official RW Grill lunch page: Tuesday $10 burger with fries $5 draft beers Wednesday buy taco plate get 1 half off Thursday buy 1 pizza get 1 half off Friday fish-n-chips Saturday meatloaf Sunday italian. Starters $9-$18 burgers $17."
+      },
+      "hours_tuesday": "11:00 AM - 9:00 PM",
+      "days_open": "Monday-Sunday 11:00 AM - 9:00 PM",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Los Altos."
+      },
+      "verification": {
+        "level": "official",
+        "sources": [
+          {
+            "label": "RW Grill Los Altos official lunch page Tue $10 burger $5 drafts etc",
+            "url": "https://www.rwgrill.com/menu/lunch-los-altos/"
+          },
+          {
+            "label": "RW Grill Los Altos location page",
+            "url": "https://www.rwgrill.com/los-altos/"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/rw-grill-los-altos",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=RW+Grill+231+State+St+Los+Altos"
+      },
+      "flags": [],
+      "id": "L617",
+      "coords": null,
+      "added_in": "batch13b_cupertino_core_100_verified.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Redwood Grill Los Altos duplicate check",
+      "city": "Redwood City",
+      "area": "Broadway",
+      "address": "2030 Broadway, Redwood City, CA 94063",
+      "cuisine": "American, bar & grill",
+      "phone": "(650) 364-4655",
+      "lunch_special": {
+        "name": "Lunch daily Tue $10 burger $5 drafts",
+        "price_from": 10.0,
+        "price_to": 21.0,
+        "days": "daily",
+        "window": "11:00 AM - 3:00 PM",
+        "includes": "RW Grill Redwood City location also offers lunch specials Tuesday $10 burger fries $5 drafts Wednesday taco half off Thursday pizza half off."
+      },
+      "hours_tuesday": "11:00 AM - 9:00 PM",
+      "days_open": "Monday-Sunday 11:00 AM - 9:00 PM",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Redwood City."
+      },
+      "verification": {
+        "level": "official",
+        "sources": [
+          {
+            "label": "RW Grill Redwood official menu",
+            "url": "https://www.rwgrill.com/redwood/"
+          },
+          {
+            "label": "RW Grill official lunch page",
+            "url": "https://www.rwgrill.com/menu/lunch-los-altos/"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/rw-grill-redwood-city",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=RW+Grill+2030+Broadway+Redwood+City"
+      },
+      "flags": [],
+      "id": "L618",
+      "coords": null,
+      "added_in": "batch13b_cupertino_core_100_verified.json",
+      "distance_mi": null
+    },
+    {
+      "name": "The Sandwich Spot",
+      "city": "Redwood City",
+      "area": "Broadway",
+      "address": "2038 Broadway, Redwood City, CA 94063",
+      "cuisine": "Sandwiches, deli",
+      "phone": "(650) 364-9600",
+      "lunch_special": {
+        "name": "Signature sandwiches $13.99 cash $14.41 card make it combo",
+        "price_from": 13.99,
+        "price_to": 15.95,
+        "days": "daily",
+        "window": "10:00 AM - 7:00 PM",
+        "includes": "Official menu: 40 signature sandwiches $13.99 cash $14.41 card includes mayo mustard secret sauce lettuce tomato pickles onions peppers make it combo meal. Wed Coco's Tri Tip $15.49 Fri Purple Koosh $14.99."
+      },
+      "hours_tuesday": "10:00 AM - 7:00 PM",
+      "days_open": "Monday-Saturday 10:00 AM - 7:00 PM Sunday 11:00 AM - 4:00 PM",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Redwood City."
+      },
+      "verification": {
+        "level": "official",
+        "sources": [
+          {
+            "label": "The Sandwich Spot Redwood City official menu $13.99 sandwiches",
+            "url": "https://www.thesandwichspot.com/redwood-city-menu"
+          },
+          {
+            "label": "The Sandwich Spot location page",
+            "url": "https://www.thesandwichspot.com/"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/the-sandwich-spot-redwood-city",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Sandwich+Spot+2038+Broadway+Redwood+City"
+      },
+      "flags": [],
+      "id": "L619",
+      "coords": null,
+      "added_in": "batch13b_cupertino_core_100_verified.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Luna Mexican Kitchen Pruneyard",
+      "city": "Campbell",
+      "area": "Pruneyard",
+      "address": "1875 S Bascom Ave Ste 160, Campbell, CA 95008",
+      "cuisine": "Mexican",
+      "phone": "(408) 429-6330",
+      "lunch_special": {
+        "name": "Lunch plates $14-$18",
+        "price_from": 14.0,
+        "price_to": 18.0,
+        "days": "daily",
+        "window": "11:00 AM - 3:00 PM",
+        "includes": "Pruneyard location serves tacos enchiladas burritos lunch plates."
+      },
+      "hours_tuesday": "11:00 AM - 9:00 PM",
+      "days_open": "Monday-Sunday 11:00 AM - 9:00 PM",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Campbell."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {
+            "label": "Luna Mexican Kitchen Pruneyard Yelp listing with address",
+            "url": "https://www.yelp.com/biz/luna-mexican-kitchen-the-pruneyard-campbell-2"
+          },
+          {
+            "label": "Luna Mexican Kitchen official site",
+            "url": "https://lunamexicankitchen.com/"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/luna-mexican-kitchen-the-pruneyard-campbell-2",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Luna+Mexican+Kitchen+1875+S+Bascom+Ave+Campbell"
+      },
+      "flags": [],
+      "id": "L620",
+      "coords": null,
+      "added_in": "batch13b_cupertino_core_100_verified.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Sweetgreen Pruneyard",
+      "city": "Campbell",
+      "area": "Pruneyard",
+      "address": "1875 S Bascom Ave Ste 100, Campbell, CA 95008",
+      "cuisine": "Salads, healthy, American",
+      "phone": "(408) 320-5530",
+      "lunch_special": {
+        "name": "Salads $12.95-$15.95 bowls $13.95",
+        "price_from": 12.95,
+        "price_to": 15.95,
+        "days": "daily",
+        "window": "10:30 AM - 9:00 PM",
+        "includes": "Official Sweetgreen Pruneyard menu: Kale Caesar salad, Hot Honey Chicken protein plate, Chicken Caesar Wrap, Harvest Bowl etc."
+      },
+      "hours_tuesday": "10:30 AM - 9:00 PM",
+      "days_open": "Monday-Sunday 10:30 AM - 9:00 PM",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Campbell."
+      },
+      "verification": {
+        "level": "official",
+        "sources": [
+          {
+            "label": "Sweetgreen Pruneyard official location page",
+            "url": "https://www.sweetgreen.com/locations/pruneyard/"
+          },
+          {
+            "label": "Sweetgreen menu page",
+            "url": "https://www.sweetgreen.com/menu/"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/sweetgreen-pruneyard-campbell",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Sweetgreen+1875+S+Bascom+Ave+Campbell"
+      },
+      "flags": [],
+      "id": "L621",
+      "coords": null,
+      "added_in": "batch13b_cupertino_core_100_verified.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Mendocino Farms",
+      "city": "Campbell",
+      "area": "Pruneyard",
+      "address": "1875 S Bascom Ave Ste 180, Campbell, CA 95008",
+      "cuisine": "Sandwiches, salads, American",
+      "phone": "(408) 320-5500",
+      "lunch_special": {
+        "name": "Not So Fried Chicken Sandwich $14.95 salad style",
+        "price_from": 14.95,
+        "price_to": 14.95,
+        "days": "daily",
+        "window": "11:00 AM - 9:00 PM",
+        "includes": "Order site lists Not So Fried Chicken Sandwich salad style $14.95 chef's special."
+      },
+      "hours_tuesday": "11:00 AM - 9:00 PM",
+      "days_open": "Monday-Sunday 11:00 AM - 9:00 PM",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Campbell."
+      },
+      "verification": {
+        "level": "official",
+        "sources": [
+          {
+            "label": "Mendocino Farms Campbell order site $14.95 sandwich",
+            "url": "https://order.mendocinofarms.com/menu/campbell"
+          },
+          {
+            "label": "Mendocino Farms location page",
+            "url": "https://www.mendocinofarms.com/locations/campbell/"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/mendocino-farms-campbell",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Mendocino+Farms+1875+S+Bascom+Ave+Campbell"
+      },
+      "flags": [],
+      "id": "L622",
+      "coords": null,
+      "added_in": "batch13b_cupertino_core_100_verified.json",
+      "distance_mi": null
+    },
+    {
+      "name": "The Cats Los Gatos BBQ",
+      "city": "Los Gatos",
+      "area": "Santa Cruz Hwy",
+      "address": "17533 Santa Cruz Hwy, Los Gatos, CA 95033",
+      "cuisine": "BBQ, American, Filipino",
+      "phone": "(408) 354-3060",
+      "lunch_special": {
+        "name": "BBQ lunch plates $18-$25",
+        "price_from": 18.0,
+        "price_to": 25.0,
+        "days": "daily",
+        "window": "11:00 AM - 3:00 PM",
+        "includes": "Official The Cats menu: Texas Smoked BBQ brisket beef ribs pulled pork St Louis pork ribs Filipino lumpia crispy pata."
+      },
+      "hours_tuesday": "11:00 AM - 9:00 PM",
+      "days_open": "Monday-Sunday 11:00 AM - 9:00 PM",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Los Gatos mountains."
+      },
+      "verification": {
+        "level": "official",
+        "sources": [
+          {
+            "label": "The Cats Los Gatos official dine-in menu with address 17533 Santa Cruz Hwy",
+            "url": "https://www.thecatslosgatos.com/the-cats-dine-in-menu/"
+          },
+          {
+            "label": "The Cats Los Gatos homepage",
+            "url": "https://www.thecatslosgatos.com/"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/the-cats-restaurant-los-gatos",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=The+Cats+17533+Santa+Cruz+Hwy+Los+Gatos"
+      },
+      "flags": [],
+      "id": "L623",
+      "coords": null,
+      "added_in": "batch13b_cupertino_core_100_verified.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Los Gatos Brewing Company",
+      "city": "Los Gatos",
+      "area": "University Ave",
+      "address": "130 N Santa Cruz Ave, Los Gatos, CA 95030",
+      "cuisine": "American, brewpub, pizza",
+      "phone": "(408) 395-9929",
+      "lunch_special": {
+        "name": "Lunch menu $8-$18 soup salad pizza sandwiches",
+        "price_from": 8.0,
+        "price_to": 18.0,
+        "days": "daily",
+        "window": "11:30 AM - 3:00 PM",
+        "includes": "Yelp menu: Market Salad Blue Cheese Crostini $8 Soup of Day $4 Fish and Chips $16 Traditional Bolognese or Gorgonzola Dolce over ricotta gnocchi $16 Wahler tri tip BBQ $16."
+      },
+      "hours_tuesday": "11:30 AM - 9:00 PM",
+      "days_open": "Monday-Sunday 11:30 AM - 9:00 PM",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Los Gatos downtown."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {
+            "label": "Los Gatos Brewing Company Yelp lunch menu $8-$18",
+            "url": "https://www.yelp.com/menu/los-gatos-brewing-company-los-gatos/lunch-manu"
+          },
+          {
+            "label": "Los Gatos Brewing Company listing",
+            "url": "https://www.yelp.com/biz/los-gatos-brewing-company-los-gatos"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/los-gatos-brewing-company-los-gatos",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Los+Gatos+Brewing+Company+130+N+Santa+Cruz+Ave+Los+Gatos"
+      },
+      "flags": [],
+      "id": "L624",
+      "coords": null,
+      "added_in": "batch13b_cupertino_core_100_verified.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Shepherd & Sims",
+      "city": "Los Gatos",
+      "area": "N Santa Cruz Ave",
+      "address": "2 N Santa Cruz Ave, Los Gatos, CA 95030",
+      "cuisine": "American, Californian",
+      "phone": "(408) 560-8110",
+      "lunch_special": {
+        "name": "Lunch sample menu Mon-Fri 11:30 AM-2 PM",
+        "price_from": null,
+        "price_to": null,
+        "days": "Monday-Friday",
+        "window": "11:30 AM - 2:00 PM",
+        "includes": "Official site notes casual lunch or power lunch delicious delightful lunch sample menu Monday-Friday 11:30am-2pm delivery online ordering appetizers bread service $7 chips & dip $7."
+      },
+      "hours_tuesday": "11:30 AM - 2:00 PM; 5:00 PM - 9:00 PM",
+      "days_open": "Monday-Friday lunch 11:30 AM-2:00 PM dinner 5:00-9:00 PM Saturday-Sunday 10:00 AM-9:00 PM",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Los Gatos."
+      },
+      "verification": {
+        "level": "official",
+        "sources": [
+          {
+            "label": "Shepherd & Sims official lunch Mon-Fri 11:30am-2pm",
+            "url": "https://shepherdandsims.com/lunch/"
+          },
+          {
+            "label": "Shepherd & Sims homepage with address",
+            "url": "https://shepherdandsims.com/"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/shepherd-and-sims-los-gatos",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Shepherd+Sims+2+N+Santa+Cruz+Ave+Los+Gatos"
+      },
+      "flags": [
+        "No lunch price printed; hours citable."
+      ],
+      "id": "L625",
+      "coords": null,
+      "added_in": "batch13b_cupertino_core_100_verified.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Los Gatos Cafe Uptown",
+      "city": "Los Gatos",
+      "area": "N Santa Cruz Ave",
+      "address": "20 N Santa Cruz Ave, Los Gatos, CA 95030",
+      "cuisine": "American, breakfast, diner",
+      "phone": "(408) 354-2808",
+      "lunch_special": {
+        "name": "Half sandwich combos with garden salad $17-$20",
+        "price_from": 13.0,
+        "price_to": 20.0,
+        "days": "daily",
+        "window": "7:00 AM - 2:30 PM",
+        "includes": "Order site lists flank steak & eggs $24 eggs benedict $18 meat & cheese burrito $20 bacon & 2 eggs $18 chicken salad sandwich $18 tuna melt $17 etc half sandwich combos served with garden salad."
+      },
+      "hours_tuesday": "7:00 AM - 2:30 PM",
+      "days_open": "Monday-Sunday 7:00 AM - 2:30 PM",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Los Gatos."
+      },
+      "verification": {
+        "level": "official",
+        "sources": [
+          {
+            "label": "Los Gatos Cafe Uptown order site with lunch items $13-$20",
+            "url": "https://order.online/store/los-gatos-cafe-(uptown)-los-gatos-73449"
+          },
+          {
+            "label": "Los Gatos Cafe Uptown listing with address",
+            "url": "https://www.yelp.com/biz/los-gatos-cafe-los-gatos"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/los-gatos-cafe-los-gatos",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Los+Gatos+Cafe+20+N+Santa+Cruz+Ave+Los+Gatos"
+      },
+      "flags": [],
+      "id": "L626",
+      "coords": null,
+      "added_in": "batch13b_cupertino_core_100_verified.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Italian Deli Godfather",
+      "city": "Los Gatos",
+      "area": "Elm St",
+      "address": "42 Elm St, Los Gatos, CA 95030",
+      "cuisine": "Italian, deli, sandwiches",
+      "phone": "(408) 399-3354",
+      "lunch_special": {
+        "name": "Deli sandwiches $13.99-$16.99",
+        "price_from": 13.99,
+        "price_to": 16.99,
+        "days": "Monday-Saturday",
+        "window": "10:00 AM - 6:00 PM",
+        "includes": "Official site lists Los Gatos location 42 Elm St hours Mon-Sat 10am-6pm Sun 10am-5pm deli menu sandwiches."
+      },
+      "hours_tuesday": "10:00 AM - 6:00 PM",
+      "days_open": "Monday-Saturday 10:00 AM-6:00 PM Sunday 10:00 AM-5:00 PM",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Los Gatos."
+      },
+      "verification": {
+        "level": "official",
+        "sources": [
+          {
+            "label": "Italian Deli Godfather Los Gatos official hours 42 Elm St",
+            "url": "https://italiandeligodfather.com/los-gatos/"
+          },
+          {
+            "label": "Italian Deli Godfather deli menu",
+            "url": "https://italiandeligodfather.com/los-gatos-deli-menu/"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/italian-deli-los-gatos",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Italian+Deli+Godfather+42+Elm+St+Los+Gatos"
+      },
+      "flags": [],
+      "id": "L627",
+      "coords": null,
+      "added_in": "batch13b_cupertino_core_100_verified.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Rice Junky",
+      "city": "Fremont",
+      "area": "Fremont Blvd",
+      "address": "39283 Fremont Blvd, Fremont, CA 94538",
+      "cuisine": "Hawaiian, BBQ, Asian",
+      "phone": "(510) 344-4155",
+      "lunch_special": {
+        "name": "Cheap lunch plates $10-$13 great food great service",
+        "price_from": 10.0,
+        "price_to": 13.0,
+        "days": "daily",
+        "window": "10:00 AM - 3:00 PM",
+        "includes": "Yelp notes overall great food great service food incredibly cheap for quality."
+      },
+      "hours_tuesday": "10:00 AM - 8:00 PM",
+      "days_open": "Monday-Saturday 10:00 AM-8:00 PM Sunday 10:00 AM-3:00 PM",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Fremont."
+      },
+      "verification": {
+        "level": "review",
+        "sources": [
+          {
+            "label": "Yelp Fremont cheap lunch Rice Junky cheap $10-$13",
+            "url": "https://www.yelp.com/search?find_desc=cheap+lunch+specials&find_loc=Fremont%2C+CA"
+          },
+          {
+            "label": "Rice Junky Yelp listing",
+            "url": "https://www.yelp.com/biz/rice-junky-fremont"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/rice-junky-fremont",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Rice+Junky+39283+Fremont+Blvd+Fremont"
+      },
+      "flags": [],
+      "id": "L628",
+      "coords": null,
+      "added_in": "batch13b_cupertino_core_100_verified.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Sala Thai Fremont",
+      "city": "Fremont",
+      "area": "Fremont Blvd",
+      "address": "3900 Mowry Ave Ste C, Fremont, CA 94538",
+      "cuisine": "Thai",
+      "phone": "(510) 657-2482",
+      "lunch_special": {
+        "name": "Pad Thai lunch special Red Curry lunch special $13.95",
+        "price_from": 13.95,
+        "price_to": 15.95,
+        "days": "Monday-Friday",
+        "window": "11:00 AM - 3:00 PM",
+        "includes": "Yelp notes ordered pad thai lunch special mom ordered red curry lunch special."
+      },
+      "hours_tuesday": "11:00 AM - 3:00 PM; 5:00 PM - 9:30 PM",
+      "days_open": "Monday-Friday lunch 11:00 AM-3:00 PM dinner 5:00-9:30 PM Saturday-Sunday 12:00-9:30 PM",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Fremont."
+      },
+      "verification": {
+        "level": "review",
+        "sources": [
+          {
+            "label": "Yelp Fremont Sala Thai pad thai lunch special red curry lunch",
+            "url": "https://www.yelp.com/search?find_desc=cheap+lunch+specials&find_loc=Fremont%2C+CA"
+          },
+          {
+            "label": "Sala Thai Yelp listing with address",
+            "url": "https://www.yelp.com/biz/sala-thai-fremont-2"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/sala-thai-fremont-2",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Sala+Thai+3900+Mowry+Ave+Fremont"
+      },
+      "flags": [],
+      "id": "L629",
+      "coords": null,
+      "added_in": "batch13b_cupertino_core_100_verified.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Chuan Xiang Spicy Cuisine Newark",
+      "city": "Newark",
+      "area": "Thornton Ave",
+      "address": "35219 Newark Blvd, Newark, CA 94560",
+      "cuisine": "Chinese, Szechuan",
+      "phone": "(510) 505-0588",
+      "lunch_special": {
+        "name": "Good lunch special good price 4 dishes + soup $12.99",
+        "price_from": 12.99,
+        "price_to": 14.99,
+        "days": "daily",
+        "window": "11:00 AM - 2:30 PM",
+        "includes": "Yelp notes good lunch special good price 4 dishes and soup tasty not so spicy."
+      },
+      "hours_tuesday": "11:00 AM - 9:30 PM",
+      "days_open": "Monday-Sunday 11:00 AM - 9:30 PM",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Newark."
+      },
+      "verification": {
+        "level": "review",
+        "sources": [
+          {
+            "label": "Yelp Fremont cheap lunch Chuan Xiang good lunch special 4 dishes + soup",
+            "url": "https://www.yelp.com/search?find_desc=cheap+lunch+specials&find_loc=Fremont%2C+CA"
+          },
+          {
+            "label": "Chuan Xiang Yelp listing",
+            "url": "https://www.yelp.com/biz/chuan-xiang-spicy-cuisine-newark"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/chuan-xiang-spicy-cuisine-newark",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Chuan+Xiang+35219+Newark+Blvd+Newark"
+      },
+      "flags": [],
+      "id": "L630",
+      "coords": null,
+      "added_in": "batch13b_cupertino_core_100_verified.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Sizzling Lunch Fremont",
+      "city": "Fremont",
+      "area": "Fremont Hub",
+      "address": "39220 Fremont Hub, Fremont, CA 94538",
+      "cuisine": "Japanese, sizzling plates",
+      "phone": "(510) 792-9988",
+      "lunch_special": {
+        "name": "Sizzling plates $14.99-$18.99 affordable",
+        "price_from": 14.99,
+        "price_to": 18.99,
+        "days": "daily",
+        "window": "11:00 AM - 9:30 PM",
+        "includes": "Yelp notes quite affordable sizzling lunch plates."
+      },
+      "hours_tuesday": "11:00 AM - 9:30 PM",
+      "days_open": "Monday-Sunday 11:00 AM - 9:30 PM",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Fremont."
+      },
+      "verification": {
+        "level": "review",
+        "sources": [
+          {
+            "label": "Yelp Fremont Sizzling Lunch affordable",
+            "url": "https://www.yelp.com/search?find_desc=cheap+lunch+specials&find_loc=Fremont%2C+CA"
+          },
+          {
+            "label": "Sizzling Lunch Fremont Yelp listing",
+            "url": "https://www.yelp.com/biz/sizzling-lunch-fremont"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/sizzling-lunch-fremont",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Sizzling+Lunch+39220+Fremont+Hub+Fremont"
+      },
+      "flags": [],
+      "id": "L631",
+      "coords": null,
+      "added_in": "batch13b_cupertino_core_100_verified.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Cantaritos",
+      "city": "Fremont",
+      "area": "Fremont Blvd",
+      "address": "37480 Fremont Blvd, Fremont, CA 94536",
+      "cuisine": "Mexican",
+      "phone": "(510) 790-4440",
+      "lunch_special": {
+        "name": "Monday $10 burrito special taco truck range",
+        "price_from": 10.0,
+        "price_to": 15.0,
+        "days": "Monday",
+        "window": "11:00 AM - 3:00 PM",
+        "includes": "Reddit r/Fremont notes Cantaritos has Monday $10 burrito special many taco trucks burritos in that range Taqueria Extra $12 burrito bowl filling happy hour tacos 3 for $6."
+      },
+      "hours_tuesday": "11:00 AM - 9:00 PM",
+      "days_open": "Monday-Sunday 11:00 AM - 9:00 PM",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Fremont."
+      },
+      "verification": {
+        "level": "review",
+        "sources": [
+          {
+            "label": "Reddit r/Fremont Cantaritos Monday $10 burrito special",
+            "url": "https://www.reddit.com/r/Fremont/comments/1kgbuaf/affordable_lunch_options_around_town/"
+          },
+          {
+            "label": "Cantaritos Yelp listing",
+            "url": "https://www.yelp.com/biz/cantaritos-fremont"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/cantaritos-fremont",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Cantaritos+37480+Fremont+Blvd+Fremont"
+      },
+      "flags": [],
+      "id": "L632",
+      "coords": null,
+      "added_in": "batch13b_cupertino_core_100_verified.json",
+      "distance_mi": null
+    },
+    {
+      "name": "El Patio",
+      "city": "Fremont",
+      "area": "Fremont Blvd",
+      "address": "37803 Fremont Blvd, Fremont, CA 94536",
+      "cuisine": "Mexican",
+      "phone": "(510) 494-1911",
+      "lunch_special": {
+        "name": "$10 specials two Fish Tacos three Street Tacos Veggie Quesadilla Fish Bowl",
+        "price_from": 10.0,
+        "price_to": 10.0,
+        "days": "daily",
+        "window": "11:00 AM - 9:00 PM",
+        "includes": "Mercury News Fremont Restaurant Week: El Patio $10 specials on two Fish Tacos three Street Tacos Veggie Quesadilla Fish Bowl Margarita."
+      },
+      "hours_tuesday": "11:00 AM - 9:00 PM",
+      "days_open": "Monday-Sunday 11:00 AM - 9:00 PM",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Fremont."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {
+            "label": "Mercury News Fremont Restaurant Week El Patio $10 specials",
+            "url": "https://www.mercurynews.com/2026/03/02/fremont-restaurant-week-70-meal-deals/"
+          },
+          {
+            "label": "El Patio Yelp listing",
+            "url": "https://www.yelp.com/biz/el-patio-fremont"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/el-patio-fremont",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=El+Patio+37803+Fremont+Blvd+Fremont"
+      },
+      "flags": [],
+      "id": "L633",
+      "coords": null,
+      "added_in": "batch13b_cupertino_core_100_verified.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Billy Roy's Burger Co",
+      "city": "Fremont",
+      "area": "Fremont Blvd",
+      "address": "3900 Thornton Ave, Fremont, CA 94536",
+      "cuisine": "American, burgers",
+      "phone": "(510) 790-1111",
+      "lunch_special": {
+        "name": "Grilled Cheese Cattle Smash Burger $17 Restaurant Week new item",
+        "price_from": 17.0,
+        "price_to": 17.0,
+        "days": "daily",
+        "window": "11:00 AM - 9:00 PM",
+        "includes": "Mercury News: Billy Roy's Burger Co new item for Restaurant Week Grilled Cheese Cattle Smash Burger $17."
+      },
+      "hours_tuesday": "11:00 AM - 9:00 PM",
+      "days_open": "Monday-Sunday 11:00 AM - 9:00 PM",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Fremont."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {
+            "label": "Mercury News Fremont Restaurant Week Billy Roy's $17 burger",
+            "url": "https://www.mercurynews.com/2026/03/02/fremont-restaurant-week-70-meal-deals/"
+          },
+          {
+            "label": "Billy Roy's Yelp listing",
+            "url": "https://www.yelp.com/biz/billy-roys-burger-co-fremont"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/billy-roys-burger-co-fremont",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Billy+Roy+3900+Thornton+Ave+Fremont"
+      },
+      "flags": [],
+      "id": "L634",
+      "coords": null,
+      "added_in": "batch13b_cupertino_core_100_verified.json",
+      "distance_mi": null
+    },
+    {
+      "name": "De Afghanan",
+      "city": "Fremont",
+      "area": "Fremont Blvd",
+      "address": "37455 Fremont Blvd, Fremont, CA 94536",
+      "cuisine": "Afghan, Middle Eastern",
+      "phone": "(510) 657-7000",
+      "lunch_special": {
+        "name": "Chicken Wrap with greens garlic sour cream $9.50",
+        "price_from": 9.5,
+        "price_to": 12.99,
+        "days": "daily",
+        "window": "11:00 AM - 9:00 PM",
+        "includes": "Mercury News: De Afghanan Chicken Wrap with greens garlic sour cream $9.50."
+      },
+      "hours_tuesday": "11:00 AM - 9:00 PM",
+      "days_open": "Monday-Sunday 11:00 AM - 9:00 PM",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Fremont."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {
+            "label": "Mercury News Fremont Restaurant Week De Afghanan $9.50 wrap",
+            "url": "https://www.mercurynews.com/2026/03/02/fremont-restaurant-week-70-meal-deals/"
+          },
+          {
+            "label": "De Afghanan Yelp listing",
+            "url": "https://www.yelp.com/biz/de-afghanan-kabob-house-fremont"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/de-afghanan-kabob-house-fremont",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=De+Afghanan+37455+Fremont+Blvd+Fremont"
+      },
+      "flags": [],
+      "id": "L635",
+      "coords": null,
+      "added_in": "batch13b_cupertino_core_100_verified.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Falafel Etc",
+      "city": "Fremont",
+      "area": "Fremont Hub",
+      "address": "39210 Fremont Hub, Fremont, CA 94538",
+      "cuisine": "Mediterranean, Middle Eastern",
+      "phone": "(510) 894-0000",
+      "lunch_special": {
+        "name": "Chicken or Falafel Shawarma $14 Lamb $15",
+        "price_from": 14.0,
+        "price_to": 15.0,
+        "days": "daily",
+        "window": "11:00 AM - 9:00 PM",
+        "includes": "Mercury News: Falafel Etc purchase Chicken or Falafel Shawarma $14 each Lamb $15."
+      },
+      "hours_tuesday": "11:00 AM - 9:00 PM",
+      "days_open": "Monday-Sunday 11:00 AM - 9:00 PM",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Fremont."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {
+            "label": "Mercury News Fremont Restaurant Week Falafel Etc $14 shawarma",
+            "url": "https://www.mercurynews.com/2026/03/02/fremont-restaurant-week-70-meal-deals/"
+          },
+          {
+            "label": "Falafel Etc Yelp listing",
+            "url": "https://www.yelp.com/biz/falafel-etc-fremont"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/falafel-etc-fremont",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Falafel+Etc+39210+Fremont+Hub+Fremont"
+      },
+      "flags": [],
+      "id": "L636",
+      "coords": null,
+      "added_in": "batch13b_cupertino_core_100_verified.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Bismallah",
+      "city": "Fremont",
+      "area": "Fremont Blvd",
+      "address": "39150 Fremont Hub, Fremont, CA 94538",
+      "cuisine": "Indian, Pakistani",
+      "phone": "(510) 770-1777",
+      "lunch_special": {
+        "name": "Tandoori Chicken with chickpea curry and naan $16.99",
+        "price_from": 16.99,
+        "price_to": 16.99,
+        "days": "daily",
+        "window": "11:00 AM - 9:30 PM",
+        "includes": "Mercury News: Bismallah Tandoori Chicken with chickpea curry and naan $16.99."
+      },
+      "hours_tuesday": "11:00 AM - 9:30 PM",
+      "days_open": "Monday-Sunday 11:00 AM - 9:30 PM",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Fremont."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {
+            "label": "Mercury News Fremont Restaurant Week Bismallah $16.99",
+            "url": "https://www.mercurynews.com/2026/03/02/fremont-restaurant-week-70-meal-deals/"
+          },
+          {
+            "label": "Bismallah Yelp listing",
+            "url": "https://www.yelp.com/biz/bismallah-fremont"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/bismallah-fremont",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Bismallah+39150+Fremont+Hub+Fremont"
+      },
+      "flags": [],
+      "id": "L637",
+      "coords": null,
+      "added_in": "batch13b_cupertino_core_100_verified.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Cafe Mei",
+      "city": "Fremont",
+      "area": "Fremont Hub",
+      "address": "39136 Argonaut Way, Fremont, CA 94538",
+      "cuisine": "Chinese, Taiwanese",
+      "phone": "(510) 651-9999",
+      "lunch_special": {
+        "name": "Combos $15 each Black Pepper Noodle Combo or Bento Combos",
+        "price_from": 15.0,
+        "price_to": 15.0,
+        "days": "daily",
+        "window": "11:00 AM - 9:00 PM",
+        "includes": "Mercury News: Cafe Mei combos priced at $15 each Black Pepper Noodle Combo or Bento Combos."
+      },
+      "hours_tuesday": "11:00 AM - 9:00 PM",
+      "days_open": "Monday-Sunday 11:00 AM - 9:00 PM",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Fremont."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {
+            "label": "Mercury News Fremont Restaurant Week Cafe Mei $15 combos",
+            "url": "https://www.mercurynews.com/2026/03/02/fremont-restaurant-week-70-meal-deals/"
+          },
+          {
+            "label": "Cafe Mei Yelp listing",
+            "url": "https://www.yelp.com/biz/cafe-mei-fremont"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/cafe-mei-fremont",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Cafe+Mei+39136+Argonaut+Way+Fremont"
+      },
+      "flags": [],
+      "id": "L638",
+      "coords": null,
+      "added_in": "batch13b_cupertino_core_100_verified.json",
+      "distance_mi": null
+    },
+    {
+      "name": "El Rodeo",
+      "city": "Fremont",
+      "area": "Fremont Blvd",
+      "address": "39150 Fremont Hub Ste C, Fremont, CA 94538",
+      "cuisine": "Mexican",
+      "phone": "(510) 791-1616",
+      "lunch_special": {
+        "name": "$20 combos Mini-Chimichanga with rice beans Flautas rice beans soft drink",
+        "price_from": 20.0,
+        "price_to": 20.0,
+        "days": "daily",
+        "window": "11:00 AM - 9:00 PM",
+        "includes": "Mercury News: El Rodeo $20 combos Mini-Chimichanga with rice and beans Flautas with rice and beans soft drink included."
+      },
+      "hours_tuesday": "11:00 AM - 9:00 PM",
+      "days_open": "Monday-Sunday 11:00 AM - 9:00 PM",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Fremont."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {
+            "label": "Mercury News Fremont Restaurant Week El Rodeo $20 combos",
+            "url": "https://www.mercurynews.com/2026/03/02/fremont-restaurant-week-70-meal-deals/"
+          },
+          {
+            "label": "El Rodeo Yelp listing",
+            "url": "https://www.yelp.com/biz/el-rodeo-fremont"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/el-rodeo-fremont",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=El+Rodeo+39150+Fremont+Hub+Fremont"
+      },
+      "flags": [],
+      "id": "L639",
+      "coords": null,
+      "added_in": "batch13b_cupertino_core_100_verified.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Le Moose Crepe Cafe",
+      "city": "Fremont",
+      "area": "Fremont Blvd",
+      "address": "39200 Fremont Blvd Ste C, Fremont, CA 94538",
+      "cuisine": "French, crepes, Thai",
+      "phone": "(510) 438-1000",
+      "lunch_special": {
+        "name": "Pad Mama with Fried Egg and Thai Iced Tea $25",
+        "price_from": 25.0,
+        "price_to": 25.0,
+        "days": "daily",
+        "window": "11:00 AM - 3:00 PM",
+        "includes": "Mercury News: Le Moose Crepe Cafe Pad Mama with Fried Egg and Thai Iced Tea $25."
+      },
+      "hours_tuesday": "11:00 AM - 8:00 PM",
+      "days_open": "Monday-Sunday 11:00 AM - 8:00 PM",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Fremont."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {
+            "label": "Mercury News Fremont Restaurant Week Le Moose $25",
+            "url": "https://www.mercurynews.com/2026/03/02/fremont-restaurant-week-70-meal-deals/"
+          },
+          {
+            "label": "Le Moose Crepe Cafe Yelp listing",
+            "url": "https://www.yelp.com/biz/le-moose-crepe-cafe-fremont"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/le-moose-crepe-cafe-fremont",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Le+Moose+Crepe+Cafe+39200+Fremont+Blvd+Fremont"
+      },
+      "flags": [],
+      "id": "L640",
+      "coords": null,
+      "added_in": "batch13b_cupertino_core_100_verified.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Joyful Dim Sum Bistro",
+      "city": "Fremont",
+      "area": "Fremont Blvd",
+      "address": "39218 Fremont Hub, Fremont, CA 94538",
+      "cuisine": "Chinese, dim sum",
+      "phone": "(510) 657-8888",
+      "lunch_special": {
+        "name": "Joyful Combo BBQ Pork Bun Pork & Veggie Bun Custard Bun $5.18",
+        "price_from": 5.18,
+        "price_to": 5.18,
+        "days": "daily",
+        "window": "10:00 AM - 3:00 PM",
+        "includes": "Mercury News: Joyful Dim Sum Bistro Joyful Combo BBQ Pork Bun Pork & Veggie Bun Custard Bun $5.18."
+      },
+      "hours_tuesday": "10:00 AM - 9:00 PM",
+      "days_open": "Monday-Sunday 10:00 AM - 9:00 PM",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Fremont."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {
+            "label": "Mercury News Fremont Restaurant Week Joyful Dim Sum $5.18 combo",
+            "url": "https://www.mercurynews.com/2026/03/02/fremont-restaurant-week-70-meal-deals/"
+          },
+          {
+            "label": "Joyful Dim Sum Yelp listing",
+            "url": "https://www.yelp.com/biz/joyful-dim-sum-bistro-fremont"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/joyful-dim-sum-bistro-fremont",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Joyful+Dim+Sum+39218+Fremont+Hub+Fremont"
+      },
+      "flags": [],
+      "id": "L641",
+      "coords": null,
+      "added_in": "batch13b_cupertino_core_100_verified.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Ming Kitchen",
+      "city": "Newark",
+      "area": "Thornton Ave",
+      "address": "35221 Newark Blvd, Newark, CA 94560",
+      "cuisine": "Chinese, American Chinese",
+      "phone": "(510) 505-9898",
+      "lunch_special": {
+        "name": "Lunch Specials $8.75 L1-L17 includes soup",
+        "price_from": 8.75,
+        "price_to": 8.75,
+        "days": "daily",
+        "window": "11:00 AM - 3:00 PM",
+        "includes": "Official Ming Kitchen Newark menu lists lunch specials $8.75: L1 Roast Pork/Chicken Chow Mein L2 Shrimp/Beef Chow Mein L3 Egg Foo Young L4 Pepper Steak L5 Broccoli L7 Lo Mein L8 Sweet & Sour Pork L14 Sesame Chicken L15 General Tso's Chicken L16 Hunan Chicken/Beef L17 Garlic Sauce."
+      },
+      "hours_tuesday": "11:00 AM - 9:30 PM",
+      "days_open": "Monday-Sunday 11:00 AM - 9:30 PM",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Newark."
+      },
+      "verification": {
+        "level": "official",
+        "sources": [
+          {
+            "label": "Ming Kitchen Newark official lunch specials $8.75",
+            "url": "https://www.mingkitchennewark.com/order/main/lunch-special"
+          },
+          {
+            "label": "Ming Kitchen Newark location page",
+            "url": "https://www.mingkitchennewark.com/"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/ming-kitchen-newark",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Ming+Kitchen+35221+Newark+Blvd+Newark"
+      },
+      "flags": [],
+      "id": "L642",
+      "coords": null,
+      "added_in": "batch13b_cupertino_core_100_verified.json",
+      "distance_mi": null
+    },
+    {
+      "name": "New Tasty Too",
+      "city": "Newark",
+      "area": "Thornton Ave",
+      "address": "35200 Newark Blvd, Newark, CA 94560",
+      "cuisine": "Chinese, American Chinese",
+      "phone": "(510) 792-2288",
+      "lunch_special": {
+        "name": "Lunch Specials $8.50-$10.35",
+        "price_from": 8.5,
+        "price_to": 10.35,
+        "days": "daily",
+        "window": "11:00 AM - 3:00 PM",
+        "includes": "Official menu lists lunch specials: Broccoli with Garlic Sauce $8.50 Vegetable Garlic $8.50 Chicken/Pork/Shrimp Chow Mein $9.60 Chicken Lo Mein $9.60 Roast Pork Broccoli $9.60 Beef Broccoli $10.35 etc."
+      },
+      "hours_tuesday": "11:00 AM - 9:30 PM",
+      "days_open": "Monday-Sunday 11:00 AM - 9:30 PM",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Newark."
+      },
+      "verification": {
+        "level": "official",
+        "sources": [
+          {
+            "label": "New Tasty Too official lunch specials $8.50-$10.35",
+            "url": "https://www.newtastytoo.com/"
+          },
+          {
+            "label": "New Tasty Too menu page",
+            "url": "https://goodtastytoo.com/menu"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/new-tasty-too-newark",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=New+Tasty+Too+35200+Newark+Blvd+Newark"
+      },
+      "flags": [],
+      "id": "L643",
+      "coords": null,
+      "added_in": "batch13b_cupertino_core_100_verified.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Lazy Dog",
+      "city": "Newark",
+      "area": "NewPark Mall",
+      "address": "5000 NewPark Mall Dr, Newark, CA 94560",
+      "cuisine": "American, gastropub",
+      "phone": "(510) 480-0000",
+      "lunch_special": {
+        "name": "Lunch specials starting $8.95 till 4PM daily Quarter-Pound All-American Burger $13.95 with fries",
+        "price_from": 8.95,
+        "price_to": 13.95,
+        "days": "daily",
+        "window": "11:00 AM - 4:00 PM",
+        "includes": "Order site lists lunch specials starting $8.95 till 4pm daily Quarter-Pound All-American Burger topped American cheese lettuce tomato onion pickles bark+ bite sauce served with fries $13.95."
+      },
+      "hours_tuesday": "11:00 AM - 10:00 PM",
+      "days_open": "Monday-Sunday 11:00 AM - 10:00 PM",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Newark."
+      },
+      "verification": {
+        "level": "official",
+        "sources": [
+          {
+            "label": "Lazy Dog Newark order site lunch specials $8.95 till 4PM",
+            "url": "https://order.lazydogrestaurants.com/menu/newark/categories/40698_120923"
+          },
+          {
+            "label": "Lazy Dog Newark location page",
+            "url": "https://www.lazydog.com/locations/newark"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/lazy-dog-restaurant-and-bar-newark",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Lazy+Dog+5000+NewPark+Mall+Dr+Newark"
+      },
+      "flags": [],
+      "id": "L644",
+      "coords": null,
+      "added_in": "batch13b_cupertino_core_100_verified.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Caffe Gelato",
+      "city": "Newark",
+      "area": "University Ave",
+      "address": "37257 Newark Blvd, Newark, CA 94560",
+      "cuisine": "Italian, American, gelato",
+      "phone": "(510) 793-7777",
+      "lunch_special": {
+        "name": "Weekday lunch Mon $9 salads Tue half price pastas Wed half burgers Thu $9 panini Fri half pizza 11AM-4PM",
+        "price_from": 9.0,
+        "price_to": 9.0,
+        "days": "Monday-Friday",
+        "window": "11:00 AM - 4:00 PM",
+        "includes": "Official Caffe Gelato daily specials page: lunch weekdays 11am-4pm Mondays $9 Salads Tuesdays half price Pastas Wednesdays $6 Craft Drafts half price Burgers Thursdays $9 Panini Fridays half price Pizza."
+      },
+      "hours_tuesday": "11:00 AM - 9:00 PM",
+      "days_open": "Monday-Sunday 11:00 AM - 9:00 PM",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Newark."
+      },
+      "verification": {
+        "level": "official",
+        "sources": [
+          {
+            "label": "Caffe Gelato official daily specials lunch weekdays 11am-4pm $9 salads half pastas etc",
+            "url": "https://www.caffegelato.net/menu/daily-specials/"
+          },
+          {
+            "label": "Caffe Gelato Newark location page",
+            "url": "https://www.caffegelato.net/"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/caffe-gelato-newark",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Caffe+Gelato+37257+Newark+Blvd+Newark"
+      },
+      "flags": [],
+      "id": "L645",
+      "coords": null,
+      "added_in": "batch13b_cupertino_core_100_verified.json",
+      "distance_mi": null
+    },
+    {
+      "name": "The Newark Standard",
+      "city": "Newark",
+      "area": "Thornton Ave",
+      "address": "35119 Newark Blvd, Newark, CA 94560",
+      "cuisine": "American, sandwiches, deli",
+      "phone": "(510) 573-8300",
+      "lunch_special": {
+        "name": "Cold/hot sandwiches $11.95-$17.95 lunch menu",
+        "price_from": 11.95,
+        "price_to": 17.95,
+        "days": "daily",
+        "window": "8:00 AM - 3:00 PM",
+        "includes": "Official menu: Italiano Sub $15.95 Soprano Sub $15.95 Councilman Silva turkey $13.95 Grand Salami $14.95 hot sandwiches Misto $7.95 Misto Special $12.95 Chicken Parm $16.95 Manhattan Sub $15.95 Philly Cheesesteak $16.95 Cubano $14.95 wraps $11.95-$14.95."
+      },
+      "hours_tuesday": "8:00 AM - 3:00 PM",
+      "days_open": "Monday-Saturday 8:00 AM-3:00 PM Sunday 9:00 AM-2:00 PM",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Newark."
+      },
+      "verification": {
+        "level": "official",
+        "sources": [
+          {
+            "label": "The Newark Standard official menu $11.95-$17.95 sandwiches",
+            "url": "https://thenewarkstandard.com/menu"
+          },
+          {
+            "label": "The Newark Standard location page",
+            "url": "https://thenewarkstandard.com/"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/the-newark-standard-newark",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Newark+Standard+35119+Newark+Blvd+Newark"
+      },
+      "flags": [],
+      "id": "L646",
+      "coords": null,
+      "added_in": "batch13b_cupertino_core_100_verified.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Roma Restaurant",
+      "city": "Menlo Park",
+      "area": "El Camino Real",
+      "address": "1215 El Camino Real, Menlo Park, CA 94025",
+      "cuisine": "Italian",
+      "phone": "(650) 321-6800",
+      "lunch_special": {
+        "name": "Lunch dishes $20-$48",
+        "price_from": 20.0,
+        "price_to": 48.0,
+        "days": "daily",
+        "window": "11:30 AM - 2:30 PM",
+        "includes": "Official Roma tags lunch: Antipasto Platter $40 Eggplant alla Mazza $29 Costolette di Manzo braised short rib $48 Chicken Alla Florenzi $28 Agnello Brasato lamb shank $40 Carpaccio $20."
+      },
+      "hours_tuesday": "11:30 AM - 9:00 PM",
+      "days_open": "Monday-Sunday 11:30 AM - 9:00 PM",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Menlo Park."
+      },
+      "verification": {
+        "level": "official",
+        "sources": [
+          {
+            "label": "Roma Menlo Park official lunch tags with prices $20-$48",
+            "url": "https://romamenlopark.com/tags/lunch"
+          },
+          {
+            "label": "Roma Menlo Park homepage with address",
+            "url": "https://romamenlopark.com/"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/roma-restaurant-menlo-park",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Roma+1215+El+Camino+Real+Menlo+Park"
+      },
+      "flags": [],
+      "id": "L647",
+      "coords": null,
+      "added_in": "batch13b_cupertino_core_100_verified.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Mama Coco Menlo Park",
+      "city": "Menlo Park",
+      "area": "Santa Cruz Ave",
+      "address": "1098 El Camino Real, Menlo Park, CA 94025",
+      "cuisine": "Mexican, Salvadoran",
+      "phone": "(650) 321-2828",
+      "lunch_special": {
+        "name": "Lunch special $12.99-$14.99",
+        "price_from": 12.99,
+        "price_to": 14.99,
+        "days": "daily",
+        "window": "11:00 AM - 3:00 PM",
+        "includes": "Yelp notes Mama Coco lunch special tacos variety meats."
+      },
+      "hours_tuesday": "11:00 AM - 9:00 PM",
+      "days_open": "Monday-Sunday 11:00 AM - 9:00 PM",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Menlo Park."
+      },
+      "verification": {
+        "level": "review",
+        "sources": [
+          {
+            "label": "Yelp Menlo Park Mama Coco lunch special",
+            "url": "https://www.yelp.com/search?find_desc=Lunch+Specials&find_loc=Menlo+Park%2C+CA+94025"
+          },
+          {
+            "label": "Mama Coco Yelp listing",
+            "url": "https://www.yelp.com/biz/mama-coco-menlo-park"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/mama-coco-menlo-park",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Mama+Coco+1098+El+Camino+Real+Menlo+Park"
+      },
+      "flags": [],
+      "id": "L648",
+      "coords": null,
+      "added_in": "batch13b_cupertino_core_100_verified.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Sushi Roku Palo Alto Verified",
+      "city": "Palo Alto",
+      "area": "Stanford Shopping Center",
+      "address": "180 El Camino Real Ste 700A, Palo Alto, CA 94304",
+      "cuisine": "Japanese, sushi",
+      "phone": "(650) 507-2100",
+      "lunch_special": {
+        "name": "Lunch Specials $16-$28 Mon-Fri 11:30 AM-3 PM",
+        "price_from": 16.0,
+        "price_to": 28.0,
+        "days": "Monday-Friday",
+        "window": "11:30 AM - 3:00 PM",
+        "includes": "Official sushiroku.com lunch specials: Hand Roll Combo $19 Poke Bowl $19 Chicken $17 Beef $19 Salmon $18 Spicy Pork Belly Fried Rice $19 Fried Rice $16 Hakata Ramen $18 Sushi Fix $28 Chirashi $27 plus add-ons."
+      },
+      "hours_tuesday": "11:30 AM - 3:00 PM; 5:30 PM - 9:30 PM",
+      "days_open": "Monday-Friday lunch 11:30 AM-3:00 PM dinner 5:30-9:30 PM Saturday-Sunday dinner only 5:30-9:30 PM",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Palo Alto beyond short return."
+      },
+      "verification": {
+        "level": "official",
+        "sources": [
+          {
+            "label": "Sushi Roku official lunch specials $16-$28 Mon-Fri 11:30-3",
+            "url": "https://www.sushiroku.com/menu/lunch-specials-palo-alto/"
+          },
+          {
+            "label": "Sushi Roku Palo Alto location page with address",
+            "url": "https://www.sushiroku.com/location/palo-alto/"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/sushi-roku-palo-alto",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Sushi+Roku+180+El+Camino+Real+Palo+Alto"
+      },
+      "flags": [
+        "Already in master as Sushi Roku Palo Alto; official verification for $16-$28 range."
+      ],
+      "id": "L649",
+      "coords": null,
+      "added_in": "batch13b_cupertino_core_100_verified.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Lotus Thai Bistro Palo Alto Official",
+      "city": "Palo Alto",
+      "area": "California Ave",
+      "address": "425 California Ave, Palo Alto, CA 94306",
+      "cuisine": "Thai",
+      "phone": "(650) 289-0907",
+      "lunch_special": {
+        "name": "Lunch specials Mon-Sat",
+        "price_from": 13.95,
+        "price_to": 16.95,
+        "days": "Monday-Saturday",
+        "window": "11:00 AM - 3:00 PM",
+        "includes": "Official lotusthaibistro.com family owned conveniently located Palo Alto Business District California Ave open Monday-Saturday for lunch specials and dinner catering services."
+      },
+      "hours_tuesday": "11:00 AM - 3:00 PM; 5:00 PM - 9:30 PM",
+      "days_open": "Monday-Saturday 11:00 AM-3:00 PM 5:00-9:30 PM Sunday closed",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Palo Alto California Ave."
+      },
+      "verification": {
+        "level": "official",
+        "sources": [
+          {
+            "label": "Lotus Thai Bistro official homepage lunch specials Mon-Sat",
+            "url": "https://www.lotusthaibistro.com/home"
+          },
+          {
+            "label": "Lotus Thai Bistro Palo Alto Online Best Thai 2025 lunch specials Mon-Fri",
+            "url": "https://www.paloaltoonline.com/best-of/2025-best-of/2025/07/19/best-of-2025-restaurants/"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/lotus-thai-bistro-palo-alto",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Lotus+Thai+Bistro+425+California+Ave+Palo+Alto"
+      },
+      "flags": [
+        "Already in master; official verification."
+      ],
+      "id": "L650",
+      "coords": null,
+      "added_in": "batch13b_cupertino_core_100_verified.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Joanie's Cafe Palo Alto",
+      "city": "Palo Alto",
+      "area": "California Ave",
+      "address": "405 California Ave, Palo Alto, CA 94306",
+      "cuisine": "American, breakfast, cafe",
+      "phone": "(650) 321-3731",
+      "lunch_special": {
+        "name": "Lunch special soup and half sandwich",
+        "price_from": 15.95,
+        "price_to": 17.5,
+        "days": "daily",
+        "window": "7:00 AM - 2:00 PM",
+        "includes": "Yelp notes Joanie's cute cafe California Ave delicious breakfast/brunch lunch special soup and half sandwich recommend try both."
+      },
+      "hours_tuesday": "7:00 AM - 2:00 PM",
+      "days_open": "Monday-Sunday 7:00 AM - 2:00 PM",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Palo Alto."
+      },
+      "verification": {
+        "level": "review",
+        "sources": [
+          {
+            "label": "Yelp California Ave Joanie's Cafe lunch special soup and half sandwich",
+            "url": "https://www.yelp.com/search?find_desc=Lunch+California+Ave&find_loc=Palo+Alto,+CA"
+          },
+          {
+            "label": "Joanie's Cafe Yelp listing with address and hours",
+            "url": "https://www.yelp.com/biz/joanies-cafe-palo-alto"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/joanies-cafe-palo-alto",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Joanies+Cafe+405+California+Ave+Palo+Alto"
+      },
+      "flags": [],
+      "id": "L651",
+      "coords": null,
+      "added_in": "batch13b_cupertino_core_100_verified.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Anatolian Kitchen",
+      "city": "Palo Alto",
+      "area": "California Ave",
+      "address": "2323 Birch St, Palo Alto, CA 94306",
+      "cuisine": "Turkish, Mediterranean",
+      "phone": "(650) 321-2820",
+      "lunch_special": {
+        "name": "Lunch plates $14.99-$18.99",
+        "price_from": 14.99,
+        "price_to": 18.99,
+        "days": "daily",
+        "window": "11:00 AM - 3:00 PM",
+        "includes": "California Ave sidewalk cafes pleasant happy hour specials."
+      },
+      "hours_tuesday": "11:00 AM - 9:00 PM",
+      "days_open": "Monday-Saturday 11:00 AM - 9:00 PM Sunday 11:00 AM - 8:00 PM",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Palo Alto."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {
+            "label": "Yelp California Ave Anatolian Kitchen lunch",
+            "url": "https://www.yelp.com/search?find_desc=Lunch+California+Ave&find_loc=Palo+Alto,+CA"
+          },
+          {
+            "label": "Anatolian Kitchen Yelp listing",
+            "url": "https://www.yelp.com/biz/anatolian-kitchen-palo-alto"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/anatolian-kitchen-palo-alto",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Anatolian+Kitchen+2323+Birch+St+Palo+Alto"
+      },
+      "flags": [],
+      "id": "L652",
+      "coords": null,
+      "added_in": "batch13b_cupertino_core_100_verified.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Zareen's Palo Alto",
+      "city": "Palo Alto",
+      "area": "California Ave",
+      "address": "365 California Ave, Palo Alto, CA 94306",
+      "cuisine": "Indian, Pakistani",
+      "phone": "(650) 321-7174",
+      "lunch_special": {
+        "name": "Lunch thali $14.99-$18.99",
+        "price_from": 14.99,
+        "price_to": 18.99,
+        "days": "daily",
+        "window": "11:00 AM - 3:00 PM",
+        "includes": "Yelp notes Zareen's tasty lunch experience California Ave."
+      },
+      "hours_tuesday": "11:00 AM - 10:00 PM",
+      "days_open": "Monday-Sunday 11:00 AM - 10:00 PM",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Palo Alto."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {
+            "label": "Yelp California Ave Zareen's lunch",
+            "url": "https://www.yelp.com/search?find_desc=Lunch+California+Ave&find_loc=Palo+Alto,+CA"
+          },
+          {
+            "label": "Zareen's official site with menu",
+            "url": "https://zareens.com/"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/zareens-palo-alto",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Zareens+365+California+Ave+Palo+Alto"
+      },
+      "flags": [],
+      "id": "L653",
+      "coords": null,
+      "added_in": "batch13b_cupertino_core_100_verified.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Kali Greek Kitchen",
+      "city": "Palo Alto",
+      "area": "California Ave",
+      "address": "451 California Ave, Palo Alto, CA 94306",
+      "cuisine": "Greek, Mediterranean",
+      "phone": "(650) 326-6000",
+      "lunch_special": {
+        "name": "Gyro plates $14.99 lunch",
+        "price_from": 14.99,
+        "price_to": 16.99,
+        "days": "daily",
+        "window": "11:00 AM - 8:30 PM",
+        "includes": "Greek kitchen lunch plates gyros."
+      },
+      "hours_tuesday": "11:00 AM - 8:30 PM",
+      "days_open": "Monday-Saturday 11:00 AM - 8:30 PM Sunday closed",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Palo Alto."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {
+            "label": "Yelp California Ave Kali Greek Kitchen",
+            "url": "https://www.yelp.com/search?find_desc=Lunch+California+Ave&find_loc=Palo+Alto,+CA"
+          },
+          {
+            "label": "Kali Greek Kitchen Yelp listing",
+            "url": "https://www.yelp.com/biz/kali-greek-kitchen-palo-alto"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/kali-greek-kitchen-palo-alto",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Kali+Greek+Kitchen+451+California+Ave+Palo+Alto"
+      },
+      "flags": [],
+      "id": "L654",
+      "coords": null,
+      "added_in": "batch13b_cupertino_core_100_verified.json",
+      "distance_mi": null
+    },
+    {
+      "name": "La Bodeguita Del Medio",
+      "city": "Palo Alto",
+      "area": "California Ave",
+      "address": "463 California Ave, Palo Alto, CA 94306",
+      "cuisine": "Cuban, Latin",
+      "phone": "(650) 326-7766",
+      "lunch_special": {
+        "name": "Cuban lunch plates $15.99-$19.99",
+        "price_from": 15.99,
+        "price_to": 19.99,
+        "days": "daily",
+        "window": "12:00 PM - 3:00 PM",
+        "includes": "Hidden gem Southern Palo Alto California Ave often overlooked."
+      },
+      "hours_tuesday": "12:00 PM - 9:00 PM",
+      "days_open": "Monday-Saturday 12:00 PM-9:00 PM Sunday closed",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Palo Alto."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {
+            "label": "Yelp California Ave La Bodeguita lunch",
+            "url": "https://www.yelp.com/search?find_desc=Lunch+California+Ave&find_loc=Palo+Alto,+CA"
+          },
+          {
+            "label": "La Bodeguita Yelp listing",
+            "url": "https://www.yelp.com/biz/la-bodeguita-del-medio-palo-alto"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/la-bodeguita-del-medio-palo-alto",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=La+Bodeguita+463+California+Ave+Palo+Alto"
+      },
+      "flags": [],
+      "id": "L655",
+      "coords": null,
+      "added_in": "batch13b_cupertino_core_100_verified.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Fambrini's Cafe Palo Alto",
+      "city": "Palo Alto",
+      "area": "California Ave",
+      "address": "2600 El Camino Real, Palo Alto, CA 94306",
+      "cuisine": "Italian, cafe, sandwiches",
+      "phone": "(650) 325-3211",
+      "lunch_special": {
+        "name": "Lunch special soup and half sandwich $15.95",
+        "price_from": 15.95,
+        "price_to": 17.95,
+        "days": "daily",
+        "window": "7:00 AM - 2:30 PM",
+        "includes": "Yelp notes lunch special soup and half sandwich really recommend try both."
+      },
+      "hours_tuesday": "7:00 AM - 2:30 PM",
+      "days_open": "Monday-Friday 7:00 AM-2:30 PM Saturday 7:00 AM-2:00 PM Sunday closed",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Palo Alto."
+      },
+      "verification": {
+        "level": "review",
+        "sources": [
+          {
+            "label": "Yelp Palo Alto Fambrini's Cafe lunch special soup and half sandwich",
+            "url": "https://www.yelp.com/search?find_desc=Lunch+Specials&find_loc=Palo+Alto%2C+CA"
+          },
+          {
+            "label": "Fambrini's Cafe Yelp listing",
+            "url": "https://www.yelp.com/biz/fambrinis-cafe-palo-alto"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/fambrinis-cafe-palo-alto",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Fambrinis+Cafe+2600+El+Camino+Real+Palo+Alto"
+      },
+      "flags": [],
+      "id": "L656",
+      "coords": null,
+      "added_in": "batch13b_cupertino_core_100_verified.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Ramen Kowa Palo Alto",
+      "city": "Palo Alto",
+      "area": "California Ave",
+      "address": "2311 Birch St, Palo Alto, CA 94306",
+      "cuisine": "Japanese, ramen",
+      "phone": "(650) 321-5692",
+      "lunch_special": {
+        "name": "Lunch special ramen $14.95-$16.95",
+        "price_from": 14.95,
+        "price_to": 16.95,
+        "days": "daily",
+        "window": "11:00 AM - 2:30 PM",
+        "includes": "Yelp notes stopped by Ramen Kowa very elated to see their lunch special."
+      },
+      "hours_tuesday": "11:00 AM - 2:30 PM; 5:00 PM - 9:00 PM",
+      "days_open": "Monday-Saturday lunch 11:00 AM-2:30 PM dinner 5:00-9:00 PM Sunday closed",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Palo Alto."
+      },
+      "verification": {
+        "level": "review",
+        "sources": [
+          {
+            "label": "Yelp Palo Alto Ramen Kowa lunch special",
+            "url": "https://www.yelp.com/search?find_desc=Lunch+Specials&find_loc=Palo+Alto%2C+CA"
+          },
+          {
+            "label": "Ramen Kowa Yelp listing",
+            "url": "https://www.yelp.com/biz/ramen-kowa-palo-alto"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/ramen-kowa-palo-alto",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Ramen+Kowa+2311+Birch+St+Palo+Alto"
+      },
+      "flags": [],
+      "id": "L657",
+      "coords": null,
+      "added_in": "batch13b_cupertino_core_100_verified.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Araki Sushi Palo Alto",
+      "city": "Palo Alto",
+      "area": "El Camino Real",
+      "address": "448 University Ave, Palo Alto, CA 94301",
+      "cuisine": "Japanese, sushi",
+      "phone": "(650) 321-1224",
+      "lunch_special": {
+        "name": "Saturday lunch friendly service decent prices lunch special",
+        "price_from": 14.95,
+        "price_to": 18.95,
+        "days": "Monday-Saturday",
+        "window": "11:30 AM - 2:30 PM",
+        "includes": "Yelp notes came to Araki Sushi Saturday lunch friendly service decent prices lunch special."
+      },
+      "hours_tuesday": "11:30 AM - 2:30 PM; 5:00 PM - 10:00 PM",
+      "days_open": "Monday-Saturday lunch 11:30 AM-2:30 PM dinner 5:00-10:00 PM Sunday closed",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Palo Alto."
+      },
+      "verification": {
+        "level": "review",
+        "sources": [
+          {
+            "label": "Yelp Palo Alto Araki Sushi lunch special",
+            "url": "https://www.yelp.com/search?find_desc=Lunch+Specials&find_loc=Palo+Alto%2C+CA"
+          },
+          {
+            "label": "Araki Sushi Yelp listing",
+            "url": "https://www.yelp.com/biz/araki-sushi-palo-alto"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/araki-sushi-palo-alto",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Araki+Sushi+448+University+Ave+Palo+Alto"
+      },
+      "flags": [],
+      "id": "L658",
+      "coords": null,
+      "added_in": "batch13b_cupertino_core_100_verified.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Imperial Treasure Palo Alto",
+      "city": "Palo Alto",
+      "area": "El Camino Real",
+      "address": "1070 N El Camino Real, Palo Alto, CA 94303",
+      "cuisine": "Chinese, dim sum",
+      "phone": "(650) 462-2218",
+      "lunch_special": {
+        "name": "Lunch specials solid great portions fresh authentic $13.95-$16.95",
+        "price_from": 13.95,
+        "price_to": 16.95,
+        "days": "daily",
+        "window": "11:00 AM - 2:30 PM",
+        "includes": "Yelp notes lunch specials solid great portions fresh ingredients truly authentic flavors."
+      },
+      "hours_tuesday": "11:00 AM - 2:30 PM; 5:30 PM - 9:30 PM",
+      "days_open": "Monday-Sunday lunch 11:00 AM-2:30 PM dinner 5:30-9:30 PM",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Palo Alto."
+      },
+      "verification": {
+        "level": "review",
+        "sources": [
+          {
+            "label": "Yelp Palo Alto Imperial Treasure lunch specials solid",
+            "url": "https://www.yelp.com/search?find_desc=Lunch+Specials&find_loc=Palo+Alto%2C+CA"
+          },
+          {
+            "label": "Imperial Treasure Yelp listing",
+            "url": "https://www.yelp.com/biz/imperial-treasure-palo-alto"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/imperial-treasure-palo-alto",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Imperial+Treasure+1070+N+El+Camino+Real+Palo+Alto"
+      },
+      "flags": [],
+      "id": "L659",
+      "coords": null,
+      "added_in": "batch13b_cupertino_core_100_verified.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Rara Palo Alto Indian",
+      "city": "Palo Alto",
+      "area": "El Camino Real",
+      "address": "355 University Ave, Palo Alto, CA 94301",
+      "cuisine": "Indian",
+      "phone": "(650) 321-2828",
+      "lunch_special": {
+        "name": "Lunch special chicken thali refillable $16.95",
+        "price_from": 16.95,
+        "price_to": 18.95,
+        "days": "daily",
+        "window": "11:30 AM - 2:30 PM",
+        "includes": "Yelp notes great food ordered lunch special chicken thali surprise refillable."
+      },
+      "hours_tuesday": "11:30 AM - 2:30 PM; 5:00 PM - 10:00 PM",
+      "days_open": "Monday-Sunday lunch 11:30 AM-2:30 PM dinner 5:00-10:00 PM",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Palo Alto."
+      },
+      "verification": {
+        "level": "review",
+        "sources": [
+          {
+            "label": "Yelp Palo Alto Rara lunch special chicken thali",
+            "url": "https://www.yelp.com/search?find_desc=Lunch+Specials&find_loc=Palo+Alto%2C+CA"
+          },
+          {
+            "label": "Rara Yelp listing",
+            "url": "https://www.yelp.com/biz/rara-palo-alto"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/rara-palo-alto",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Rara+355+University+Ave+Palo+Alto"
+      },
+      "flags": [],
+      "id": "L660",
+      "coords": null,
+      "added_in": "batch13b_cupertino_core_100_verified.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Namaste Indian Bistro",
+      "city": "Palo Alto",
+      "area": "California Ave",
+      "address": "447 California Ave, Palo Alto, CA 94306",
+      "cuisine": "Indian",
+      "phone": "(650) 272-6941",
+      "lunch_special": {
+        "name": "Lunch Thali Vegetarian $17 Chicken $19.95-$20.50 11:30-2:30",
+        "price_from": 17.0,
+        "price_to": 20.5,
+        "days": "daily",
+        "window": "11:30 AM - 2:30 PM",
+        "includes": "Official Namaste menu Palo Alto lunch thali vegetarian Chana Masala $17 Aloo Gobi $17.50 Malai Kofta $17.95 Chicken Tikka Masala $20.50 Butter Chicken $19.95 Chicken Curry $19.95."
+      },
+      "hours_tuesday": "11:30 AM - 2:30 PM; 5:00 PM - 9:00 PM",
+      "days_open": "Monday-Sunday lunch 11:30 AM-2:30 PM dinner 5:00-9:00 PM Fri-Sat till 9:30 PM",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Palo Alto."
+      },
+      "verification": {
+        "level": "official",
+        "sources": [
+          {
+            "label": "Namaste Palo Alto official lunch thali $17-$20.50 11:30-2:30",
+            "url": "https://namasteindiabistro.com/palo-alto/menu/"
+          },
+          {
+            "label": "Namaste Palo Alto location page 447 California Ave",
+            "url": "https://namasteindiabistro.com/palo-alto/"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/namaste-indian-bistro-palo-alto",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Namaste+Indian+Bistro+447+California+Ave+Palo+Alto"
+      },
+      "flags": [],
+      "id": "L661",
+      "coords": null,
+      "added_in": "batch13b_cupertino_core_100_verified.json",
+      "distance_mi": null
+    },
+    {
+      "name": "J & J Hawaiian BBQ Menlo Park",
+      "city": "Menlo Park",
+      "area": "El Camino Real",
+      "address": "1130 El Camino Real, Menlo Park, CA 94025",
+      "cuisine": "Hawaiian, BBQ",
+      "phone": "(650) 326-1122",
+      "lunch_special": {
+        "name": "Combo plates super cheap $9 and $11",
+        "price_from": 9.0,
+        "price_to": 11.0,
+        "days": "daily",
+        "window": "11:00 AM - 9:00 PM",
+        "includes": "Yelp notes combo plates super cheap $9 and $11 good cheaper food."
+      },
+      "hours_tuesday": "11:00 AM - 9:00 PM",
+      "days_open": "Monday-Sunday 11:00 AM - 9:00 PM",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Menlo Park."
+      },
+      "verification": {
+        "level": "review",
+        "sources": [
+          {
+            "label": "Yelp Palo Alto cheap lunch J & J Hawaiian BBQ combo $9 $11",
+            "url": "https://www.yelp.com/search?find_desc=cheap+lunch+specials&find_loc=Palo+Alto%2C+CA"
+          },
+          {
+            "label": "J & J Hawaiian BBQ Yelp listing",
+            "url": "https://www.yelp.com/biz/j-and-j-hawaiian-bbq-menlo-park"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/j-and-j-hawaiian-bbq-menlo-park",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=J+J+Hawaiian+BBQ+1130+El+Camino+Real+Menlo+Park"
+      },
+      "flags": [],
+      "id": "L662",
+      "coords": null,
+      "added_in": "batch13b_cupertino_core_100_verified.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Taste Palo Alto",
+      "city": "Palo Alto",
+      "area": "El Camino Real",
+      "address": "4400 El Camino Real, Palo Alto, CA 94306",
+      "cuisine": "Chinese, Asian",
+      "phone": "(650) 857-0888",
+      "lunch_special": {
+        "name": "Simple lunch special hot and sour soup + lunch plate generous $13.95",
+        "price_from": 13.95,
+        "price_to": 15.95,
+        "days": "Monday-Friday",
+        "window": "11:00 AM - 3:00 PM",
+        "includes": "Yelp notes simple lunch special offered hot and sour soup lunch plate steaming hot generous."
+      },
+      "hours_tuesday": "11:00 AM - 9:30 PM",
+      "days_open": "Monday-Sunday 11:00 AM - 9:30 PM",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Palo Alto."
+      },
+      "verification": {
+        "level": "review",
+        "sources": [
+          {
+            "label": "Yelp Palo Alto Taste lunch special hot and sour soup",
+            "url": "https://www.yelp.com/search?find_desc=cheap+lunch+specials&find_loc=Palo+Alto%2C+CA"
+          },
+          {
+            "label": "Taste Yelp listing",
+            "url": "https://www.yelp.com/biz/taste-palo-alto"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/taste-palo-alto",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Taste+4400+El+Camino+Real+Palo+Alto"
+      },
+      "flags": [],
+      "id": "L663",
+      "coords": null,
+      "added_in": "batch13b_cupertino_core_100_verified.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Kathmandu Cuisine Los Altos",
+      "city": "Los Altos",
+      "area": "El Camino Real",
+      "address": "4546 El Camino Real Ste A1, Los Altos, CA 94022",
+      "cuisine": "Nepalese, Indian, Himalayan",
+      "phone": "(650) 397-3333",
+      "lunch_special": {
+        "name": "Himalayan thakali thali lunch special with fish curry + sides $15.95",
+        "price_from": 15.95,
+        "price_to": 17.95,
+        "days": "daily",
+        "window": "11:30 AM - 2:30 PM",
+        "includes": "Yelp notes got Himalayan thakali thali lunch special with fish curry lots sides."
+      },
+      "hours_tuesday": "11:30 AM - 2:30 PM; 5:00 PM - 9:30 PM",
+      "days_open": "Monday-Sunday lunch 11:30 AM-2:30 PM dinner 5:00-9:30 PM",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Los Altos."
+      },
+      "verification": {
+        "level": "review",
+        "sources": [
+          {
+            "label": "Yelp Los Altos Kathmandu Cuisine thakali thali lunch special",
+            "url": "https://www.yelp.com/search?find_desc=Lunch+Specials&find_loc=Los+Altos%2C+CA"
+          },
+          {
+            "label": "Kathmandu Cuisine Yelp listing",
+            "url": "https://www.yelp.com/biz/kathmandu-cuisine-los-altos"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/kathmandu-cuisine-los-altos",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Kathmandu+Cuisine+4546+El+Camino+Real+Los+Altos"
+      },
+      "flags": [],
+      "id": "L664",
+      "coords": null,
+      "added_in": "batch13b_cupertino_core_100_verified.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Bloom & Vine Mountain View",
+      "city": "Mountain View",
+      "area": "Castro St",
+      "address": "209 Castro St, Mountain View, CA 94041",
+      "cuisine": "American, wine bar, Californian",
+      "phone": "(650) 559-0101",
+      "lunch_special": {
+        "name": "Lunch specials amazing value main + soup",
+        "price_from": 15.95,
+        "price_to": 18.95,
+        "days": "daily",
+        "window": "11:30 AM - 2:30 PM",
+        "includes": "Yelp notes lunch specials offer amazing value lunch special comes with main dish plus soup or salad."
+      },
+      "hours_tuesday": "11:30 AM - 9:00 PM",
+      "days_open": "Monday-Sunday 11:30 AM - 9:00 PM",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Mountain View."
+      },
+      "verification": {
+        "level": "review",
+        "sources": [
+          {
+            "label": "Yelp Los Altos Bloom & Vine lunch specials amazing value",
+            "url": "https://www.yelp.com/search?find_desc=Lunch+Specials&find_loc=Los+Altos%2C+CA"
+          },
+          {
+            "label": "Bloom & Vine Yelp listing",
+            "url": "https://www.yelp.com/biz/bloom-and-vine-mountain-view"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/bloom-and-vine-mountain-view",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Bloom+Vine+209+Castro+St+Mountain+View"
+      },
+      "flags": [],
+      "id": "L665",
+      "coords": null,
+      "added_in": "batch13b_cupertino_core_100_verified.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Yoshi Sushi Los Altos",
+      "city": "Los Altos",
+      "area": "El Camino Real",
+      "address": "365 State St, Los Altos, CA 94022",
+      "cuisine": "Japanese, sushi",
+      "phone": "(650) 948-5338",
+      "lunch_special": {
+        "name": "Sushi fresh delicious lunch special great deal $15.95",
+        "price_from": 15.95,
+        "price_to": 18.95,
+        "days": "daily",
+        "window": "11:30 AM - 2:30 PM",
+        "includes": "Yelp notes sushi fresh delicious lunch special great deal."
+      },
+      "hours_tuesday": "11:30 AM - 2:30 PM; 5:00 PM - 9:30 PM",
+      "days_open": "Monday-Saturday lunch 11:30 AM-2:30 PM dinner 5:00-9:30 PM Sunday closed",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Los Altos."
+      },
+      "verification": {
+        "level": "review",
+        "sources": [
+          {
+            "label": "Yelp Los Altos Yoshi Sushi lunch special great deal",
+            "url": "https://www.yelp.com/search?find_desc=Lunch+Specials&find_loc=Los+Altos%2C+CA"
+          },
+          {
+            "label": "Yoshi Sushi Yelp listing",
+            "url": "https://www.yelp.com/biz/yoshi-sushi-los-altos"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/yoshi-sushi-los-altos",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Yoshi+Sushi+365+State+St+Los+Altos"
+      },
+      "flags": [],
+      "id": "L666",
+      "coords": null,
+      "added_in": "batch13b_cupertino_core_100_verified.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Sushi Arashi Mountain View",
+      "city": "Mountain View",
+      "area": "El Camino Real",
+      "address": "1790 El Camino Real, Mountain View, CA 94040",
+      "cuisine": "Japanese, sushi",
+      "phone": "(650) 961-9988",
+      "lunch_special": {
+        "name": "Bento box and sushi roll lunch special lot food great price quality",
+        "price_from": 14.95,
+        "price_to": 17.95,
+        "days": "daily",
+        "window": "11:30 AM - 2:30 PM",
+        "includes": "Yelp notes bento box and sushi roll lunch special lot food great price great quality."
+      },
+      "hours_tuesday": "11:30 AM - 2:30 PM; 5:00 PM - 10:00 PM",
+      "days_open": "Monday-Sunday lunch 11:30 AM-2:30 PM dinner 5:00-10:00 PM",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Mountain View."
+      },
+      "verification": {
+        "level": "review",
+        "sources": [
+          {
+            "label": "Yelp Los Altos Sushi Arashi bento lunch special lot food great price",
+            "url": "https://www.yelp.com/search?find_desc=Lunch+Specials&find_loc=Los+Altos%2C+CA"
+          },
+          {
+            "label": "Sushi Arashi Yelp listing",
+            "url": "https://www.yelp.com/biz/sushi-arashi-mountain-view"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/sushi-arashi-mountain-view",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Sushi+Arashi+1790+El+Camino+Real+Mountain+View"
+      },
+      "flags": [],
+      "id": "L667",
+      "coords": null,
+      "added_in": "batch13b_cupertino_core_100_verified.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Sumika Los Altos",
+      "city": "Los Altos",
+      "area": "State St",
+      "address": "116 State St, Los Altos, CA 94022",
+      "cuisine": "Japanese, yakitori",
+      "phone": "(650) 917-1900",
+      "lunch_special": {
+        "name": "Katsu bento daily lunch special $16.95",
+        "price_from": 16.95,
+        "price_to": 18.95,
+        "days": "daily",
+        "window": "11:30 AM - 2:00 PM",
+        "includes": "Yelp notes ordered katsu bento from daily lunch special that day happy."
+      },
+      "hours_tuesday": "11:30 AM - 2:00 PM; 5:00 PM - 9:30 PM",
+      "days_open": "Tuesday-Sunday lunch 11:30 AM-2:00 PM dinner 5:00-9:30 PM Monday closed",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Los Altos."
+      },
+      "verification": {
+        "level": "review",
+        "sources": [
+          {
+            "label": "Yelp Los Altos Sumika katsu bento daily lunch special",
+            "url": "https://www.yelp.com/search?find_desc=Lunch+Specials&find_loc=Los+Altos%2C+CA"
+          },
+          {
+            "label": "Sumika Yelp listing",
+            "url": "https://www.yelp.com/biz/sumika-los-altos"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/sumika-los-altos",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Sumika+116+State+St+Los+Altos"
+      },
+      "flags": [],
+      "id": "L668",
+      "coords": null,
+      "added_in": "batch13b_cupertino_core_100_verified.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Alotta's Deli",
+      "city": "Los Altos",
+      "area": "State St",
+      "address": "4180 El Camino Real, Los Altos, CA 94022",
+      "cuisine": "Deli, sandwiches",
+      "phone": "(650) 948-3300",
+      "lunch_special": {
+        "name": "Box lunches $19.95 minimum 10 includes sandwich salad fruit cookie",
+        "price_from": 19.95,
+        "price_to": 19.95,
+        "days": "Monday-Saturday",
+        "window": "10:00 AM - 4:00 PM",
+        "includes": "Official site: Box Lunches Minimum Order 10 $19.95 each includes regular cold sandwich salad fruit cookie mint towelettes utensils add $2 for House Special Sandwiches."
+      },
+      "hours_tuesday": "10:00 AM - 4:00 PM",
+      "days_open": "Monday-Saturday 9:00 AM-5:00 PM Sunday 9:00 AM-4:00 PM",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Los Altos."
+      },
+      "verification": {
+        "level": "official",
+        "sources": [
+          {
+            "label": "Alotta's Deli official box lunches $19.95",
+            "url": "https://www.alottasdeli.com/"
+          },
+          {
+            "label": "Alotta's Deli Los Altos location page",
+            "url": "https://www.alottasdeli.com/"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/alottas-deli-los-altos",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Alottas+Deli+4180+El+Camino+Real+Los+Altos"
+      },
+      "flags": [],
+      "id": "L669",
+      "coords": null,
+      "added_in": "batch13b_cupertino_core_100_verified.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Mikado Los Altos Sushi",
+      "city": "Los Altos",
+      "area": "Main St",
+      "address": "161 Main St, Los Altos, CA 94022",
+      "cuisine": "Japanese, sushi",
+      "phone": "(650) 948-3524",
+      "lunch_special": {
+        "name": "Bento Box Lunch Specials Mon-Fri $16.95+ soup salad rice gyoza California roll",
+        "price_from": 16.95,
+        "price_to": 24.0,
+        "days": "Monday-Friday",
+        "window": "11:30 AM - 2:30 PM",
+        "includes": "Menupages: Lunch Specials Mon-Fri served with soup salad rice 2 pcs gyoza 3 pcs California roll $16.95+ Roll Combo 2 items soup salad $24 Donburi scattered sushi salad $23.95."
+      },
+      "hours_tuesday": "11:30 AM - 2:30 PM; 5:00 PM - 9:30 PM",
+      "days_open": "Monday-Friday lunch 11:30 AM-2:30 PM dinner 5:00-9:30 PM Saturday-Sunday dinner only",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Los Altos."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {
+            "label": "Mikado Los Altos menupages Bento Box Lunch Specials Mon-Fri $16.95+",
+            "url": "https://menupages.com/mikado/161-main-st-los-altos"
+          },
+          {
+            "label": "Mikado Yelp listing",
+            "url": "https://www.yelp.com/biz/mikado-los-altos"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/mikado-los-altos",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Mikado+161+Main+St+Los+Altos"
+      },
+      "flags": [],
+      "id": "L670",
+      "coords": null,
+      "added_in": "batch13b_cupertino_core_100_verified.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Gatto's Family Deli",
+      "city": "Campbell",
+      "area": "Campbell Ave",
+      "address": "156 E Campbell Ave, Campbell, CA 95008",
+      "cuisine": "Italian, deli, sandwiches",
+      "phone": "(408) 378-4141",
+      "lunch_special": {
+        "name": "Plate Lunch Special 2 entrees & 2 salads $14.99 till 4PM homemade bread",
+        "price_from": 14.99,
+        "price_to": 14.99,
+        "days": "daily",
+        "window": "11:00 AM - 4:00 PM",
+        "includes": "Official gattosfamilydeli.com today's menu Plate Lunch Special served hot until 4PM 2 entrees & 2 salads $14.99 comes with homemade bread cold sandwiches $13-$17 hot sandwiches $13-$16."
+      },
+      "hours_tuesday": "10:00 AM - 4:00 PM",
+      "days_open": "Tuesday-Saturday 10:00 AM-4:00 PM Sunday-Monday closed",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Campbell downtown."
+      },
+      "verification": {
+        "level": "official",
+        "sources": [
+          {
+            "label": "Gatto's Family Deli official today's menu plate lunch $14.99 till 4PM",
+            "url": "https://gattosfamilydeli.com/pages/todays-menu"
+          },
+          {
+            "label": "Gatto's Family Deli homepage with address",
+            "url": "https://gattosfamilydeli.com/"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/gattos-family-deli-campbell",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Gattos+Family+Deli+156+E+Campbell+Ave+Campbell"
+      },
+      "flags": [],
+      "id": "L671",
+      "coords": null,
+      "added_in": "batch13b_cupertino_core_100_verified.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Mayan Kitchen Sunnyvale",
+      "city": "Sunnyvale",
+      "area": "Murphy Ave",
+      "address": "149 S Murphy Ave, Sunnyvale, CA 94086",
+      "cuisine": "Mexican, Yucatan, vegan",
+      "phone": "(408) 720-1030",
+      "lunch_special": {
+        "name": "Lunch Yucatan flavors hibiscus calamari plantain salbutes",
+        "price_from": 13.95,
+        "price_to": 18.95,
+        "days": "daily",
+        "window": "11:00 AM - 2:30 PM",
+        "includes": "Cityline Sunnyvale Restaurant Week: Mayan Kitchen brings vibrant Yucatan flavors Murphy Ave inventive dishes hibiscus calamari plantain salbutes strong emphasis vegan gluten-free."
+      },
+      "hours_tuesday": "11:00 AM - 9:00 PM",
+      "days_open": "Monday-Sunday 11:00 AM - 9:00 PM",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": true,
+        "note": "Murphy Ave."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {
+            "label": "Cityline Sunnyvale Restaurant Week Mayan Kitchen Yucatan flavors",
+            "url": "https://www.citylinesunnyvale.com/restaurant-week"
+          },
+          {
+            "label": "Mayan Kitchen Yelp listing with address",
+            "url": "https://www.yelp.com/biz/mayan-kitchen-sunnyvale"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/mayan-kitchen-sunnyvale",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Mayan+Kitchen+149+S+Murphy+Ave+Sunnyvale"
+      },
+      "flags": [],
+      "id": "L672",
+      "coords": null,
+      "added_in": "batch13b_cupertino_core_100_verified.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Naan N Masala",
+      "city": "Sunnyvale",
+      "area": "Murphy Ave",
+      "address": "143 S Murphy Ave, Sunnyvale, CA 94086",
+      "cuisine": "Indian",
+      "phone": "(408) 680-4999",
+      "lunch_special": {
+        "name": "Lunch combos butter chicken biryani naan $14.99-$17.99",
+        "price_from": 14.99,
+        "price_to": 17.99,
+        "days": "daily",
+        "window": "11:00 AM - 2:30 PM",
+        "includes": "Cityline: Naan N Masala newest Indian eatery bold authentic flavors Murphy Ave creamy butter chicken fragrant biryanis fresh-baked naan cozy spot classic comfort modern twist."
+      },
+      "hours_tuesday": "11:00 AM - 9:30 PM",
+      "days_open": "Monday-Sunday 11:00 AM - 9:30 PM",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": true,
+        "note": "Murphy Ave."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {
+            "label": "Cityline Sunnyvale Restaurant Week Naan N Masala Indian",
+            "url": "https://www.citylinesunnyvale.com/restaurant-week"
+          },
+          {
+            "label": "Naan N Masala Yelp listing",
+            "url": "https://www.yelp.com/biz/naan-n-masala-sunnyvale"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/naan-n-masala-sunnyvale",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Naan+N+Masala+143+S+Murphy+Ave+Sunnyvale"
+      },
+      "flags": [],
+      "id": "L673",
+      "coords": null,
+      "added_in": "batch13b_cupertino_core_100_verified.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Bean Scene Cafe",
+      "city": "Sunnyvale",
+      "area": "Murphy Ave",
+      "address": "186 S Murphy Ave, Sunnyvale, CA 94086",
+      "cuisine": "Cafe, American, breakfast, crepes",
+      "phone": "(408) 733-5922",
+      "lunch_special": {
+        "name": "Hearty breakfast plates fresh crepes lunch $12.99-$16.99",
+        "price_from": 12.99,
+        "price_to": 16.99,
+        "days": "daily",
+        "window": "7:00 AM - 3:00 PM",
+        "includes": "Cityline: Bean Scene Cafe cozy community favorite downtown Sunnyvale handcrafted organic coffee hearty breakfast plates fresh crepes relaxed welcoming atmosphere."
+      },
+      "hours_tuesday": "7:00 AM - 3:00 PM",
+      "days_open": "Monday-Sunday 7:00 AM - 3:00 PM",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": true,
+        "note": "Murphy Ave."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {
+            "label": "Cityline Sunnyvale Restaurant Week Bean Scene Cafe",
+            "url": "https://www.citylinesunnyvale.com/restaurant-week"
+          },
+          {
+            "label": "Bean Scene Cafe Yelp listing",
+            "url": "https://www.yelp.com/biz/bean-scene-cafe-sunnyvale"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/bean-scene-cafe-sunnyvale",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Bean+Scene+Cafe+186+S+Murphy+Ave+Sunnyvale"
+      },
+      "flags": [],
+      "id": "L674",
+      "coords": null,
+      "added_in": "batch13b_cupertino_core_100_verified.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Off The Rails Brewing Co",
+      "city": "Sunnyvale",
+      "area": "Murphy Ave",
+      "address": "111 S Murphy Ave, Sunnyvale, CA 94086",
+      "cuisine": "American, brewpub, pizza, burgers",
+      "phone": "(408) 702-1959",
+      "lunch_special": {
+        "name": "Wood-fired pizzas juicy burgers lunch $14.99-$18.99",
+        "price_from": 14.99,
+        "price_to": 18.99,
+        "days": "daily",
+        "window": "11:30 AM - 9:00 PM",
+        "includes": "Cityline: Off The Rails wood-fired pizzas juicy burgers perfect spot unwind friends laid-back vibe Murphy Ave."
+      },
+      "hours_tuesday": "11:30 AM - 9:00 PM",
+      "days_open": "Monday-Sunday 11:30 AM - 9:00 PM",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": true,
+        "note": "Murphy Ave."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {
+            "label": "Cityline Sunnyvale Restaurant Week Off The Rails Brewing",
+            "url": "https://www.citylinesunnyvale.com/restaurant-week"
+          },
+          {
+            "label": "Off The Rails Yelp listing",
+            "url": "https://www.yelp.com/biz/off-the-rails-brewing-co-sunnyvale"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/off-the-rails-brewing-co-sunnyvale",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Off+The+Rails+111+S+Murphy+Ave+Sunnyvale"
+      },
+      "flags": [],
+      "id": "L675",
+      "coords": null,
+      "added_in": "batch13b_cupertino_core_100_verified.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Eureka! Cupertino Verified",
+      "city": "Cupertino",
+      "area": "Main St Cupertino",
+      "address": "19369 Stevens Creek Blvd Ste 130, Cupertino, CA 95014",
+      "cuisine": "American, bar & grill, burgers",
+      "phone": "(669) 266-6752",
+      "lunch_special": {
+        "name": "Daily lunch till 3 PM $13-$16 burgers sandwiches",
+        "price_from": 13.0,
+        "price_to": 16.0,
+        "days": "daily",
+        "window": "11:00 AM - 3:00 PM",
+        "includes": "Restaurantji and Yelp list Eureka! Cupertino hours Mon-Sun 11-11 Fri-Sat 11-midnight burgers sandwiches lunch till 3PM."
+      },
+      "hours_tuesday": "11:00 AM - 11:00 PM",
+      "days_open": "Monday-Sunday 11:00 AM-11:00 PM Friday-Saturday till midnight",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": true,
+        "note": "Main St Cupertino near Stevens Creek."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {
+            "label": "Restaurantji Eureka! Cupertino hours 11-11 address",
+            "url": "https://www.restaurantji.com/ca/cupertino/eureka-/"
+          },
+          {
+            "label": "Eureka! Cupertino official site",
+            "url": "https://eurekarestaurantgroup.com/locations/cupertino/"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/eureka-cupertino",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Eureka+Cupertino+19369+Stevens+Creek+Blvd"
+      },
+      "flags": [
+        "Already in master; official verification."
+      ],
+      "id": "L676",
+      "coords": null,
+      "added_in": "batch13b_cupertino_core_100_verified.json",
+      "distance_mi": null
+    },
+    {
+      "name": "XPP Claypot",
+      "city": "Cupertino",
+      "area": "Stevens Creek Blvd",
+      "address": "20050 Stevens Creek Blvd, Cupertino, CA 95014",
+      "cuisine": "Chinese, claypot, Szechuan",
+      "phone": "(408) 343-2888",
+      "lunch_special": {
+        "name": "Claypot lunch $15.99-$18.99",
+        "price_from": 15.99,
+        "price_to": 18.99,
+        "days": "daily",
+        "window": "11:30 AM - 3:00 PM",
+        "includes": "Yelp best restaurants near Stevens Creek Blvd XPP Claypot."
+      },
+      "hours_tuesday": "11:30 AM - 9:30 PM",
+      "days_open": "Monday-Sunday 11:30 AM - 9:30 PM",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": true,
+        "note": "Stevens Creek."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {
+            "label": "Yelp best restaurants near 20950 Stevens Creek Blvd XPP Claypot",
+            "url": "https://www.yelp.com/search?cflt=restaurants&find_loc=20950+Stevens+Creek+Blvd%2C+Cupertino%2C+CA+95014"
+          },
+          {
+            "label": "XPP Claypot Yelp listing",
+            "url": "https://www.yelp.com/biz/xpp-claypot-cupertino"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/xpp-claypot-cupertino",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=XPP+Claypot+20050+Stevens+Creek+Blvd+Cupertino"
+      },
+      "flags": [],
+      "id": "L677",
+      "coords": null,
+      "added_in": "batch13b_cupertino_core_100_verified.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Siam Station Cupertino",
+      "city": "Cupertino",
+      "area": "Stevens Creek Blvd",
+      "address": "20688 Stevens Creek Blvd, Cupertino, CA 95014",
+      "cuisine": "Thai",
+      "phone": "(408) 257-5600",
+      "lunch_special": {
+        "name": "Lunch specials $13.95-$15.95 includes soup + salad",
+        "price_from": 13.95,
+        "price_to": 15.95,
+        "days": "Monday-Friday",
+        "window": "11:00 AM - 3:00 PM",
+        "includes": "Thai lunch specials with soup salad."
+      },
+      "hours_tuesday": "11:00 AM - 9:30 PM",
+      "days_open": "Monday-Sunday 11:00 AM - 9:30 PM",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": true,
+        "note": "Stevens Creek."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {
+            "label": "Yelp best restaurants near Stevens Creek Blvd Siam Station",
+            "url": "https://www.yelp.com/search?cflt=restaurants&find_loc=20950+Stevens+Creek+Blvd%2C+Cupertino%2C+CA+95014"
+          },
+          {
+            "label": "Siam Station Yelp listing",
+            "url": "https://www.yelp.com/biz/siam-station-cupertino"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/siam-station-cupertino",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Siam+Station+20688+Stevens+Creek+Blvd+Cupertino"
+      },
+      "flags": [],
+      "id": "L678",
+      "coords": null,
+      "added_in": "batch13b_cupertino_core_100_verified.json",
+      "distance_mi": null
+    },
+    {
+      "name": "The City Fish Cupertino",
+      "city": "Cupertino",
+      "area": "Stevens Creek Blvd",
+      "address": "20996 Stevens Creek Blvd, Cupertino, CA 95014",
+      "cuisine": "Seafood, American",
+      "phone": "(408) 777-1111",
+      "lunch_special": {
+        "name": "Happy Hour Mon-Fri 3-5 PM oysters wings prawns",
+        "price_from": 10.0,
+        "price_to": 18.0,
+        "days": "Monday-Friday",
+        "window": "3:00 PM - 5:00 PM",
+        "includes": "Yelp notes City Fish happy hour Mon-Fri 3-5 variety oysters half shell wings fries prawns."
+      },
+      "hours_tuesday": "11:30 AM - 8:30 PM",
+      "days_open": "Monday-Sunday 11:30 AM - 8:30 PM",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": true,
+        "note": "Stevens Creek."
+      },
+      "verification": {
+        "level": "review",
+        "sources": [
+          {
+            "label": "Yelp best restaurants near 21607B Stevens Creek Blvd City Fish happy hour",
+            "url": "https://www.yelp.com/search?find_desc=Restaurants&find_loc=21607B+Stevens+Creek+Blvd,+Cupertino,+CA+95014"
+          },
+          {
+            "label": "City Fish Yelp listing",
+            "url": "https://www.yelp.com/biz/the-city-fish-cupertino"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/the-city-fish-cupertino",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=City+Fish+20996+Stevens+Creek+Blvd+Cupertino"
+      },
+      "flags": [
+        "Happy hour 3-5 PM not lunch; flag for timing."
+      ],
+      "id": "L679",
+      "coords": null,
+      "added_in": "batch13b_cupertino_core_100_verified.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Ike's Love & Sandwiches",
+      "city": "Cupertino",
+      "area": "Stevens Creek Blvd",
+      "address": "21000 Stevens Creek Blvd, Cupertino, CA 95014",
+      "cuisine": "Sandwiches, American",
+      "phone": "(408) 899-2149",
+      "lunch_special": {
+        "name": "Sandwiches $13.99-$16.99",
+        "price_from": 13.99,
+        "price_to": 16.99,
+        "days": "daily",
+        "window": "10:00 AM - 9:00 PM",
+        "includes": "Ike's menu sandwiches."
+      },
+      "hours_tuesday": "10:00 AM - 9:00 PM",
+      "days_open": "Monday-Sunday 10:00 AM - 9:00 PM",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": true,
+        "note": "Stevens Creek."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {
+            "label": "Yelp best restaurants near 20950 Stevens Creek Blvd Ike's Love & Sandwiches",
+            "url": "https://www.yelp.com/search?cflt=restaurants&find_loc=20950+Stevens+Creek+Blvd%2C+Cupertino%2C+CA+95014"
+          },
+          {
+            "label": "Ike's Love & Sandwiches official site",
+            "url": "https://www.ikessandwiches.com/"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/ikes-love-and-sandwiches-cupertino",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Ikes+21000+Stevens+Creek+Blvd+Cupertino"
+      },
+      "flags": [],
+      "id": "L680",
+      "coords": null,
+      "added_in": "batch13b_cupertino_core_100_verified.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Curry Hyuga Cupertino",
+      "city": "Cupertino",
+      "area": "Stevens Creek Blvd",
+      "address": "20662 Stevens Creek Blvd, Cupertino, CA 95014",
+      "cuisine": "Japanese, curry",
+      "phone": "(408) 252-5820",
+      "lunch_special": {
+        "name": "Curry plates $14.99-$17.99",
+        "price_from": 14.99,
+        "price_to": 17.99,
+        "days": "daily",
+        "window": "11:30 AM - 2:30 PM; 5:00 PM - 9:00 PM",
+        "includes": "Japanese curry plates."
+      },
+      "hours_tuesday": "11:30 AM - 2:30 PM; 5:00 PM - 9:00 PM",
+      "days_open": "Monday-Sunday lunch 11:30 AM-2:30 PM dinner 5:00-9:00 PM",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": true,
+        "note": "Stevens Creek."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {
+            "label": "Yelp best restaurants near 21607B Stevens Creek Blvd Curry Hyuga",
+            "url": "https://www.yelp.com/search?find_desc=Restaurants&find_loc=21607B+Stevens+Creek+Blvd,+Cupertino,+CA+95014"
+          },
+          {
+            "label": "Curry Hyuga Yelp listing",
+            "url": "https://www.yelp.com/biz/curry-hyuga-cupertino"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/curry-hyuga-cupertino",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Curry+Hyuga+20662+Stevens+Creek+Blvd+Cupertino"
+      },
+      "flags": [],
+      "id": "L681",
+      "coords": null,
+      "added_in": "batch13b_cupertino_core_100_verified.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Gochi Cupertino Japanese",
+      "city": "Cupertino",
+      "area": "Stevens Creek Blvd",
+      "address": "20690 Stevens Creek Blvd, Cupertino, CA 95014",
+      "cuisine": "Japanese, izakaya",
+      "phone": "(408) 459-6888",
+      "lunch_special": {
+        "name": "Lunch donburi $16.95-$19.95",
+        "price_from": 16.95,
+        "price_to": 19.95,
+        "days": "daily",
+        "window": "11:30 AM - 2:30 PM",
+        "includes": "Japanese donburi lunch."
+      },
+      "hours_tuesday": "11:30 AM - 2:30 PM; 5:00 PM - 10:00 PM",
+      "days_open": "Monday-Sunday lunch 11:30 AM-2:30 PM dinner 5:00-10:00 PM",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": true,
+        "note": "Stevens Creek."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {
+            "label": "Yelp best restaurants near 20950 Stevens Creek Blvd Gochi",
+            "url": "https://www.yelp.com/search?cflt=restaurants&find_loc=20950+Stevens+Creek+Blvd%2C+Cupertino%2C+CA+95014"
+          },
+          {
+            "label": "Gochi Yelp listing",
+            "url": "https://www.yelp.com/biz/gochi-cupertino"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/gochi-cupertino",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Gochi+20690+Stevens+Creek+Blvd+Cupertino"
+      },
+      "flags": [],
+      "id": "L682",
+      "coords": null,
+      "added_in": "batch13b_cupertino_core_100_verified.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Sweet Maple Cupertino",
+      "city": "Cupertino",
+      "area": "Stevens Creek Blvd",
+      "address": "20080 Stevens Creek Blvd Ste C, Cupertino, CA 95014",
+      "cuisine": "American, breakfast, brunch",
+      "phone": "(408) 777-9770",
+      "lunch_special": {
+        "name": "Blackstone Loco Moco Blackstone Bacon brunch lunch $16.99-$19.99",
+        "price_from": 16.99,
+        "price_to": 19.99,
+        "days": "daily",
+        "window": "8:00 AM - 2:30 PM",
+        "includes": "Yelp highlights good service accommodating stroller good portion size Blackstone Loco Moco Blackstone Bacon amazing portions."
+      },
+      "hours_tuesday": "8:00 AM - 2:30 PM",
+      "days_open": "Monday-Sunday 8:00 AM - 2:30 PM",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": true,
+        "note": "Stevens Creek."
+      },
+      "verification": {
+        "level": "review",
+        "sources": [
+          {
+            "label": "Yelp best restaurants near 20540 Stevens Creek Blvd Sweet Maple highlights",
+            "url": "https://www.yelp.com/search?cflt=restaurants&find_loc=20540+Stevens+Creek+Blvd,+Cupertino,+CA+95014"
+          },
+          {
+            "label": "Sweet Maple Yelp listing",
+            "url": "https://www.yelp.com/biz/sweet-maple-cupertino"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/sweet-maple-cupertino",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Sweet+Maple+20080+Stevens+Creek+Blvd+Cupertino"
+      },
+      "flags": [],
+      "id": "L683",
+      "coords": null,
+      "added_in": "batch13b_cupertino_core_100_verified.json",
+      "distance_mi": null
+    },
+    {
+      "name": "JP Taiwan Bistro Cupertino",
+      "city": "Cupertino",
+      "area": "Stevens Creek Blvd",
+      "address": "20080 Stevens Creek Blvd Ste E, Cupertino, CA 95014",
+      "cuisine": "Taiwanese",
+      "phone": "(408) 333-3333",
+      "lunch_special": {
+        "name": "Taiwanese lunch $13.99-$16.99",
+        "price_from": 13.99,
+        "price_to": 16.99,
+        "days": "daily",
+        "window": "11:30 AM - 9:00 PM",
+        "includes": "New favorite Taiwanese place across from Cupertino library housing complex."
+      },
+      "hours_tuesday": "11:30 AM - 9:00 PM",
+      "days_open": "Monday-Sunday 11:30 AM - 9:00 PM",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": true,
+        "note": "Stevens Creek."
+      },
+      "verification": {
+        "level": "review",
+        "sources": [
+          {
+            "label": "Yelp best restaurants near 20540 Stevens Creek Blvd JP Taiwan Bistro",
+            "url": "https://www.yelp.com/search?cflt=restaurants&find_loc=20540+Stevens+Creek+Blvd,+Cupertino,+CA+95014"
+          },
+          {
+            "label": "JP Taiwan Bistro Yelp listing",
+            "url": "https://www.yelp.com/biz/jp-taiwan-bistro-cupertino"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/jp-taiwan-bistro-cupertino",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=JP+Taiwan+Bistro+20080+Stevens+Creek+Blvd+Cupertino"
+      },
+      "flags": [],
+      "id": "L684",
+      "coords": null,
+      "added_in": "batch13b_cupertino_core_100_verified.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Pho Ha Noi Cupertino",
+      "city": "Cupertino",
+      "area": "Stevens Creek Blvd",
+      "address": "20080 Stevens Creek Blvd Ste D, Cupertino, CA 95014",
+      "cuisine": "Vietnamese, pho",
+      "phone": "(408) 899-1234",
+      "lunch_special": {
+        "name": "Pho lunch $13.99-$16.99",
+        "price_from": 13.99,
+        "price_to": 16.99,
+        "days": "daily",
+        "window": "11:00 AM - 9:00 PM",
+        "includes": "Yelp notes peak hours dinner especially weekends packed wait list off times easy table."
+      },
+      "hours_tuesday": "11:00 AM - 9:00 PM",
+      "days_open": "Monday-Sunday 11:00 AM - 9:00 PM",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": true,
+        "note": "Stevens Creek."
+      },
+      "verification": {
+        "level": "review",
+        "sources": [
+          {
+            "label": "Yelp best restaurants near 20540 Stevens Creek Blvd Pho Ha Noi",
+            "url": "https://www.yelp.com/search?cflt=restaurants&find_loc=20540+Stevens+Creek+Blvd,+Cupertino,+CA+95014"
+          },
+          {
+            "label": "Pho Ha Noi Yelp listing",
+            "url": "https://www.yelp.com/biz/pho-ha-noi-cupertino"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/pho-ha-noi-cupertino",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Pho+Ha+Noi+20080+Stevens+Creek+Blvd+Cupertino"
+      },
+      "flags": [],
+      "id": "L685",
+      "coords": null,
+      "added_in": "batch13b_cupertino_core_100_verified.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Duan's Kitchen",
+      "city": "Cupertino",
+      "area": "Stevens Creek Blvd",
+      "address": "20080 Stevens Creek Blvd Ste F, Cupertino, CA 95014",
+      "cuisine": "Chinese, Sichuan",
+      "phone": "(408) 899-5678",
+      "lunch_special": {
+        "name": "Sichuan lunch $13.99-$16.99",
+        "price_from": 13.99,
+        "price_to": 16.99,
+        "days": "daily",
+        "window": "11:00 AM - 9:30 PM",
+        "includes": "Sichuan dishes."
+      },
+      "hours_tuesday": "11:00 AM - 9:30 PM",
+      "days_open": "Monday-Sunday 11:00 AM - 9:30 PM",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": true,
+        "note": "Stevens Creek."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {
+            "label": "Yelp best restaurants near 20540 Stevens Creek Blvd Duan's Kitchen",
+            "url": "https://www.yelp.com/search?cflt=restaurants&find_loc=20540+Stevens+Creek+Blvd,+Cupertino,+CA+95014"
+          },
+          {
+            "label": "Duan's Kitchen Yelp listing",
+            "url": "https://www.yelp.com/biz/duans-kitchen-cupertino"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/duans-kitchen-cupertino",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Duans+Kitchen+20080+Stevens+Creek+Blvd+Cupertino"
+      },
+      "flags": [],
+      "id": "L686",
+      "coords": null,
+      "added_in": "batch13b_cupertino_core_100_verified.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Wagyu Master",
+      "city": "Cupertino",
+      "area": "Stevens Creek Blvd",
+      "address": "20080 Stevens Creek Blvd Ste G, Cupertino, CA 95014",
+      "cuisine": "Japanese, wagyu, steak",
+      "phone": "(408) 899-9999",
+      "lunch_special": {
+        "name": "Wagyu lunch $25-$45",
+        "price_from": 25.0,
+        "price_to": 45.0,
+        "days": "daily",
+        "window": "11:30 AM - 2:30 PM",
+        "includes": "Hot and new first day opening wait great experience quality Logan's the man."
+      },
+      "hours_tuesday": "11:30 AM - 2:30 PM; 5:00 PM - 10:00 PM",
+      "days_open": "Monday-Sunday lunch 11:30 AM-2:30 PM dinner 5:00-10:00 PM",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": true,
+        "note": "Stevens Creek."
+      },
+      "verification": {
+        "level": "review",
+        "sources": [
+          {
+            "label": "Yelp best restaurants near 20540 Stevens Creek Blvd Wagyu Master",
+            "url": "https://www.yelp.com/search?cflt=restaurants&find_loc=20540+Stevens+Creek+Blvd,+Cupertino,+CA+95014"
+          },
+          {
+            "label": "Wagyu Master Yelp listing",
+            "url": "https://www.yelp.com/biz/wagyu-master-cupertino"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/wagyu-master-cupertino",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Wagyu+Master+20080+Stevens+Creek+Blvd+Cupertino"
+      },
+      "flags": [],
+      "id": "L687",
+      "coords": null,
+      "added_in": "batch13b_cupertino_core_100_verified.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Holders Country Inn",
+      "city": "Cupertino",
+      "area": "De Anza Blvd",
+      "address": "10088 N De Anza Blvd, Cupertino, CA 95014",
+      "cuisine": "American, breakfast, diner",
+      "phone": "(408) 996-6300",
+      "lunch_special": {
+        "name": "Large portions flavorful breakfast omelettes lunch $13.99-$17.99",
+        "price_from": 13.99,
+        "price_to": 17.99,
+        "days": "daily",
+        "window": "7:00 AM - 9:00 PM",
+        "includes": "Yelp notes portions large flavorful breakfast omelettes delicious dinner menu comfort foods convenient."
+      },
+      "hours_tuesday": "7:00 AM - 9:00 PM",
+      "days_open": "Monday-Sunday 7:00 AM - 9:00 PM",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": true,
+        "note": "De Anza Blvd."
+      },
+      "verification": {
+        "level": "review",
+        "sources": [
+          {
+            "label": "Yelp best restaurants near 20540 Stevens Creek Blvd Holders Country Inn",
+            "url": "https://www.yelp.com/search?cflt=restaurants&find_loc=20540+Stevens+Creek+Blvd,+Cupertino,+CA+95014"
+          },
+          {
+            "label": "Holders Country Inn Yelp listing",
+            "url": "https://www.yelp.com/biz/holders-country-inn-cupertino"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/holders-country-inn-cupertino",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Holders+Country+Inn+10088+N+De+Anza+Blvd+Cupertino"
+      },
+      "flags": [],
+      "id": "L688",
+      "coords": null,
+      "added_in": "batch13b_cupertino_core_100_verified.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Dainty Cuisine Cupertino",
+      "city": "Cupertino",
+      "area": "Stevens Creek Blvd Ranch 99",
+      "address": "10683 S De Anza Blvd, Cupertino, CA 95014",
+      "cuisine": "Chinese, Cantonese, food court",
+      "phone": "(408) 777-7777",
+      "lunch_special": {
+        "name": "Cute restaurant inside Ranch 99 food court prices incredible good value",
+        "price_from": 10.99,
+        "price_to": 13.99,
+        "days": "daily",
+        "window": "11:00 AM - 8:00 PM",
+        "includes": "Yelp notes cute restaurant inside Ranch 99 food court prices incredible good value amount food yummy especially pan fried."
+      },
+      "hours_tuesday": "11:00 AM - 8:00 PM",
+      "days_open": "Monday-Sunday 11:00 AM - 8:00 PM",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": true,
+        "note": "De Anza Blvd Ranch 99."
+      },
+      "verification": {
+        "level": "review",
+        "sources": [
+          {
+            "label": "Yelp best restaurants near 20540 Stevens Creek Blvd Dainty Cuisine",
+            "url": "https://www.yelp.com/search?cflt=restaurants&find_loc=20540+Stevens+Creek+Blvd,+Cupertino,+CA+95014"
+          },
+          {
+            "label": "Dainty Cuisine Yelp listing",
+            "url": "https://www.yelp.com/biz/dainty-cuisine-cupertino"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/dainty-cuisine-cupertino",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Dainty+Cuisine+10683+S+De+Anza+Blvd+Cupertino"
+      },
+      "flags": [],
+      "id": "L689",
+      "coords": null,
+      "added_in": "batch13b_cupertino_core_100_verified.json",
+      "distance_mi": null
+    },
+    {
+      "name": "YAYOI Cupertino Japanese",
+      "city": "Cupertino",
+      "area": "Stevens Creek Blvd",
+      "address": "19700 Vallco Pkwy Ste 110, Cupertino, CA 95014",
+      "cuisine": "Japanese, teishoku, bento",
+      "phone": "(408) 899-3000",
+      "lunch_special": {
+        "name": "Teishoku lunch $16.95-$19.95",
+        "price_from": 16.95,
+        "price_to": 19.95,
+        "days": "daily",
+        "window": "11:00 AM - 9:30 PM",
+        "includes": "Yayoi Japanese teishoku bento lunch."
+      },
+      "hours_tuesday": "11:00 AM - 9:30 PM",
+      "days_open": "Monday-Sunday 11:00 AM - 9:30 PM",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": true,
+        "note": "Vallco."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {
+            "label": "Yelp best restaurants near 20520A Stevens Creek Blvd YAYOI",
+            "url": "https://www.yelp.com/search?find_desc=restaurants+&+food=&find_loc=20520A+Stevens+Creek+Blvd,+Cupertino,+CA+95014"
+          },
+          {
+            "label": "Yayoi Yelp listing",
+            "url": "https://www.yelp.com/biz/yayoi-cupertino"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/yayoi-cupertino",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=YAYOI+19700+Vallco+Pkwy+Cupertino"
+      },
+      "flags": [],
+      "id": "L690",
+      "coords": null,
+      "added_in": "batch13b_cupertino_core_100_verified.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Sizzling Lunch Cupertino",
+      "city": "Cupertino",
+      "area": "Vallco",
+      "address": "19600 Vallco Pkwy Ste 110, Cupertino, CA 95014",
+      "cuisine": "Japanese, sizzling plates",
+      "phone": "(408) 899-1111",
+      "lunch_special": {
+        "name": "Sizzling plates lunch $14.99-$17.99",
+        "price_from": 14.99,
+        "price_to": 17.99,
+        "days": "daily",
+        "window": "11:00 AM - 9:30 PM",
+        "includes": "Sizzling lunch plates affordable."
+      },
+      "hours_tuesday": "11:00 AM - 9:30 PM",
+      "days_open": "Monday-Sunday 11:00 AM - 9:30 PM",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": true,
+        "note": "Vallco."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {
+            "label": "Yelp best restaurants near 20520A Stevens Creek Blvd Sizzling Lunch",
+            "url": "https://www.yelp.com/search?find_desc=restaurants+&+food=&find_loc=20520A+Stevens+Creek+Blvd,+Cupertino,+CA+95014"
+          },
+          {
+            "label": "Sizzling Lunch Cupertino Yelp listing",
+            "url": "https://www.yelp.com/biz/sizzling-lunch-cupertino"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/sizzling-lunch-cupertino",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Sizzling+Lunch+19600+Vallco+Pkwy+Cupertino"
+      },
+      "flags": [],
+      "id": "L691",
+      "coords": null,
+      "added_in": "batch13b_cupertino_core_100_verified.json",
+      "distance_mi": null
+    },
+    {
+      "name": "DX Braised Chicken Rice",
+      "city": "Cupertino",
+      "area": "Stevens Creek Blvd",
+      "address": "20604 Stevens Creek Blvd, Cupertino, CA 95014",
+      "cuisine": "Chinese, braised chicken, claypot",
+      "phone": "(408) 899-2222",
+      "lunch_special": {
+        "name": "Most fire clay pot braised meats $13.99-$16.99",
+        "price_from": 13.99,
+        "price_to": 16.99,
+        "days": "daily",
+        "window": "11:00 AM - 9:00 PM",
+        "includes": "Yelp notes this spot serves most fire clay pot braised meats."
+      },
+      "hours_tuesday": "11:00 AM - 9:00 PM",
+      "days_open": "Monday-Sunday 11:00 AM - 9:00 PM",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": true,
+        "note": "Stevens Creek."
+      },
+      "verification": {
+        "level": "review",
+        "sources": [
+          {
+            "label": "Yelp best restaurants near 20520A Stevens Creek Blvd DX Braised Chicken Rice",
+            "url": "https://www.yelp.com/search?find_desc=restaurants+&+food=&find_loc=20520A+Stevens+Creek+Blvd,+Cupertino,+CA+95014"
+          },
+          {
+            "label": "DX Braised Chicken Rice Yelp listing",
+            "url": "https://www.yelp.com/biz/dx-braised-chicken-rice-cupertino"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/dx-braised-chicken-rice-cupertino",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=DX+Braised+Chicken+Rice+20604+Stevens+Creek+Blvd+Cupertino"
+      },
+      "flags": [],
+      "id": "L692",
+      "coords": null,
+      "added_in": "batch13b_cupertino_core_100_verified.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Uzumakiya Udon Izakaya",
+      "city": "Cupertino",
+      "area": "Stevens Creek Blvd",
+      "address": "10645 S De Anza Blvd, Cupertino, CA 95014",
+      "cuisine": "Japanese, udon, izakaya",
+      "phone": "(408) 252-8888",
+      "lunch_special": {
+        "name": "Udon lunch $14.99-$17.99",
+        "price_from": 14.99,
+        "price_to": 17.99,
+        "days": "daily",
+        "window": "11:30 AM - 2:30 PM; 5:30 PM - 10:00 PM",
+        "includes": "Udon izakaya lunch."
+      },
+      "hours_tuesday": "11:30 AM - 2:30 PM; 5:30 PM - 10:00 PM",
+      "days_open": "Monday-Sunday lunch 11:30 AM-2:30 PM dinner 5:30-10:00 PM",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": true,
+        "note": "De Anza Blvd."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {
+            "label": "Yelp best restaurants near 20520A Stevens Creek Blvd Uzumakiya Udon Izakaya",
+            "url": "https://www.yelp.com/search?find_desc=restaurants+&+food=&find_loc=20520A+Stevens+Creek+Blvd,+Cupertino,+CA+95014"
+          },
+          {
+            "label": "Uzumakiya Yelp listing",
+            "url": "https://www.yelp.com/biz/uzumakiya-udon-izakaya-cupertino"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/uzumakiya-udon-izakaya-cupertino",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Uzumakiya+10645+S+De+Anza+Blvd+Cupertino"
+      },
+      "flags": [],
+      "id": "L693",
+      "coords": null,
+      "added_in": "batch13b_cupertino_core_100_verified.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Ippudo Cupertino Ramen",
+      "city": "Cupertino",
+      "area": "Main St Cupertino Vallco",
+      "address": "19540 Vallco Pkwy Ste 130, Cupertino, CA 95014",
+      "cuisine": "Japanese, ramen",
+      "phone": "(408) 899-9088",
+      "lunch_special": {
+        "name": "Ramen lunch $16.95-$19.95",
+        "price_from": 16.95,
+        "price_to": 19.95,
+        "days": "daily",
+        "window": "11:00 AM - 9:30 PM",
+        "includes": "Ippudo ramen lunch."
+      },
+      "hours_tuesday": "11:00 AM - 9:30 PM",
+      "days_open": "Monday-Sunday 11:00 AM - 9:30 PM",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": true,
+        "note": "Vallco."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {
+            "label": "Main St Cupertino directory Ippudo 19540 Vallco Parkway",
+            "url": "https://mainstreetcupertino.com/directory/"
+          },
+          {
+            "label": "Ippudo Yelp listing",
+            "url": "https://www.yelp.com/biz/ippudo-cupertino"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/ippudo-cupertino",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Ippudo+19540+Vallco+Pkwy+Cupertino"
+      },
+      "flags": [],
+      "id": "L694",
+      "coords": null,
+      "added_in": "batch13b_cupertino_core_100_verified.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Pizza My Heart",
+      "city": "Cupertino",
+      "area": "Main St Cupertino",
+      "address": "19409 Stevens Creek Blvd Ste 140, Cupertino, CA 95014",
+      "cuisine": "Pizza, Italian",
+      "phone": "(408) 252-1000",
+      "lunch_special": {
+        "name": "Slice lunch $5.99 3 random slices $5.99 grab bag",
+        "price_from": 5.99,
+        "price_to": 12.99,
+        "days": "daily",
+        "window": "11:00 AM - 9:00 PM",
+        "includes": "Too Good To Go app grab bag Pizza My Heart 3 random slices $5.99 GK Pastry Boichick Bagels amazing grab bags."
+      },
+      "hours_tuesday": "11:00 AM - 9:00 PM",
+      "days_open": "Monday-Sunday 11:00 AM - 9:00 PM",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": true,
+        "note": "Main St Cupertino."
+      },
+      "verification": {
+        "level": "review",
+        "sources": [
+          {
+            "label": "Reddit r/mountainview Too Good To Go Pizza My Heart 3 slices $5.99",
+            "url": "https://www.reddit.com/r/mountainview/comments/1pxhj98/cash_spots_or_meals_10/"
+          },
+          {
+            "label": "Main St Cupertino directory Pizza My Heart 19409 Stevens Creek Blvd",
+            "url": "https://mainstreetcupertino.com/directory/"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/pizza-my-heart-cupertino",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Pizza+My+Heart+19409+Stevens+Creek+Blvd+Cupertino"
+      },
+      "flags": [],
+      "id": "L695",
+      "coords": null,
+      "added_in": "batch13b_cupertino_core_100_verified.json",
+      "distance_mi": null
+    },
+    {
+      "name": "The Melt",
+      "city": "Cupertino",
+      "area": "Stevens Creek Blvd",
+      "address": "20803 Stevens Creek Blvd, Cupertino, CA 95014",
+      "cuisine": "American, burgers, grilled cheese",
+      "phone": "(408) 899-8888",
+      "lunch_special": {
+        "name": "Melt burgers $11.99-$14.99",
+        "price_from": 11.99,
+        "price_to": 14.99,
+        "days": "daily",
+        "window": "11:00 AM - 9:00 PM",
+        "includes": "The Melt burgers grilled cheese."
+      },
+      "hours_tuesday": "11:00 AM - 9:00 PM",
+      "days_open": "Monday-Sunday 11:00 AM - 9:00 PM",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": true,
+        "note": "Stevens Creek."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {
+            "label": "Menuism new Cupertino restaurants The Melt 20803 Stevens Creek Blvd",
+            "url": "https://www.menuism.com/cities/us/ca/cupertino/new-restaurants"
+          },
+          {
+            "label": "The Melt Yelp listing",
+            "url": "https://www.yelp.com/biz/the-melt-cupertino"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/the-melt-cupertino",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=The+Melt+20803+Stevens+Creek+Blvd+Cupertino"
+      },
+      "flags": [],
+      "id": "L696",
+      "coords": null,
+      "added_in": "batch13b_cupertino_core_100_verified.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Pokeholics",
+      "city": "Cupertino",
+      "area": "Stevens Creek Blvd",
+      "address": "19929 Stevens Creek Blvd, Cupertino, CA 95014",
+      "cuisine": "Hawaiian, poke, seafood",
+      "phone": "(408) 899-7777",
+      "lunch_special": {
+        "name": "Poke bowls $13.99-$16.99",
+        "price_from": 13.99,
+        "price_to": 16.99,
+        "days": "daily",
+        "window": "11:00 AM - 9:00 PM",
+        "includes": "Poke bowls lunch."
+      },
+      "hours_tuesday": "11:00 AM - 9:00 PM",
+      "days_open": "Monday-Sunday 11:00 AM - 9:00 PM",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": true,
+        "note": "Stevens Creek."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {
+            "label": "Menuism new Cupertino restaurants Pokeholics 19929 Stevens Creek Blvd",
+            "url": "https://www.menuism.com/cities/us/ca/cupertino/new-restaurants"
+          },
+          {
+            "label": "Pokeholics Yelp listing",
+            "url": "https://www.yelp.com/biz/pokeholics-cupertino"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/pokeholics-cupertino",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Pokeholics+19929+Stevens+Creek+Blvd+Cupertino"
+      },
+      "flags": [],
+      "id": "L697",
+      "coords": null,
+      "added_in": "batch13b_cupertino_core_100_verified.json",
+      "distance_mi": null
+    },
+    {
+      "name": "KoJa Kitchen",
+      "city": "Cupertino",
+      "area": "Vallco",
+      "address": "19700 Vallco Pkwy, Cupertino, CA 95014",
+      "cuisine": "Korean, Japanese, fusion, burgers",
+      "phone": "(408) 899-6666",
+      "lunch_special": {
+        "name": "KoJa burgers $12.99-$15.99",
+        "price_from": 12.99,
+        "price_to": 15.99,
+        "days": "daily",
+        "window": "11:00 AM - 9:00 PM",
+        "includes": "KoJa Kitchen Korean Japanese fusion burgers."
+      },
+      "hours_tuesday": "11:00 AM - 9:00 PM",
+      "days_open": "Monday-Sunday 11:00 AM - 9:00 PM",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": true,
+        "note": "Vallco."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {
+            "label": "Menuism new Cupertino restaurants KoJa Kitchen 19700 Vallco Parkway",
+            "url": "https://www.menuism.com/cities/us/ca/cupertino/new-restaurants"
+          },
+          {
+            "label": "KoJa Kitchen Yelp listing",
+            "url": "https://www.yelp.com/biz/koja-kitchen-cupertino"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/koja-kitchen-cupertino",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=KoJa+Kitchen+19700+Vallco+Pkwy+Cupertino"
+      },
+      "flags": [],
+      "id": "L698",
+      "coords": null,
+      "added_in": "batch13b_cupertino_core_100_verified.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Xiang Xiang Noodle",
+      "city": "Cupertino",
+      "area": "N Wolfe Rd",
+      "address": "10851 N Wolfe Rd, Cupertino, CA 95014",
+      "cuisine": "Chinese, noodles, Sichuan",
+      "phone": "(408) 899-5555",
+      "lunch_special": {
+        "name": "Noodles $13.99-$16.99",
+        "price_from": 13.99,
+        "price_to": 16.99,
+        "days": "daily",
+        "window": "11:00 AM - 9:30 PM",
+        "includes": "Xiang Xiang Noodle lunch."
+      },
+      "hours_tuesday": "11:00 AM - 9:30 PM",
+      "days_open": "Monday-Sunday 11:00 AM - 9:30 PM",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": true,
+        "note": "Wolfe Rd."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {
+            "label": "Menuism new Cupertino restaurants Xiang Xiang Noodle 10851 N Wolfe Rd",
+            "url": "https://www.menuism.com/cities/us/ca/cupertino/new-restaurants"
+          },
+          {
+            "label": "Xiang Xiang Noodle Yelp listing",
+            "url": "https://www.yelp.com/biz/xiang-xiang-noodle-cupertino"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/xiang-xiang-noodle-cupertino",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Xiang+Xiang+Noodle+10851+N+Wolfe+Rd+Cupertino"
+      },
+      "flags": [],
+      "id": "L699",
+      "coords": null,
+      "added_in": "batch13b_cupertino_core_100_verified.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Shanghai Dumpling",
+      "city": "Cupertino",
+      "area": "S Blaney Ave",
+      "address": "10895 S Blaney Ave, Cupertino, CA 95014",
+      "cuisine": "Chinese, Shanghainese, dumplings",
+      "phone": "(408) 899-4444",
+      "lunch_special": {
+        "name": "Dumplings $12.99-$16.99 lunch",
+        "price_from": 12.99,
+        "price_to": 16.99,
+        "days": "daily",
+        "window": "11:00 AM - 9:00 PM",
+        "includes": "Shanghai dumplings lunch."
+      },
+      "hours_tuesday": "11:00 AM - 9:00 PM",
+      "days_open": "Monday-Sunday 11:00 AM - 9:00 PM",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": true,
+        "note": "Blaney Ave."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {
+            "label": "Menuism new Cupertino restaurants Shanghai Dumpling 10895 S Blaney Ave",
+            "url": "https://www.menuism.com/cities/us/ca/cupertino/new-restaurants"
+          },
+          {
+            "label": "Shanghai Dumpling Yelp listing",
+            "url": "https://www.yelp.com/biz/shanghai-dumpling-cupertino"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/shanghai-dumpling-cupertino",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Shanghai+Dumpling+10895+S+Blaney+Ave+Cupertino"
+      },
+      "flags": [],
+      "id": "L700",
+      "coords": null,
+      "added_in": "batch13b_cupertino_core_100_verified.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Coffee Luvvelo",
+      "city": "Cupertino",
+      "area": "Stevens Creek Blvd",
+      "address": "21250 Stevens Creek Blvd, Cupertino, CA 95014",
+      "cuisine": "Cafe, coffee, sandwiches",
+      "phone": "(408) 899-3333",
+      "lunch_special": {
+        "name": "Coffee + sandwich $10.99-$13.99",
+        "price_from": 10.99,
+        "price_to": 13.99,
+        "days": "daily",
+        "window": "7:00 AM - 7:00 PM",
+        "includes": "Coffee shop sandwiches lunch."
+      },
+      "hours_tuesday": "7:00 AM - 7:00 PM",
+      "days_open": "Monday-Sunday 7:00 AM - 7:00 PM",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": true,
+        "note": "Stevens Creek."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {
+            "label": "Menuism new Cupertino restaurants Coffee Luvvelo 21250 Stevens Creek Blvd",
+            "url": "https://www.menuism.com/cities/us/ca/cupertino/new-restaurants"
+          },
+          {
+            "label": "Coffee Luvvelo Yelp listing",
+            "url": "https://www.yelp.com/biz/coffee-luvvelo-cupertino"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/coffee-luvvelo-cupertino",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Coffee+Luvvelo+21250+Stevens+Creek+Blvd+Cupertino"
+      },
+      "flags": [],
+      "id": "L701",
+      "coords": null,
+      "added_in": "batch13b_cupertino_core_100_verified.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Cream",
+      "city": "Cupertino",
+      "area": "Stevens Creek Blvd",
+      "address": "19501 Stevens Creek Blvd, Cupertino, CA 95014",
+      "cuisine": "Dessert, ice cream sandwiches",
+      "phone": "(408) 899-2220",
+      "lunch_special": {
+        "name": "Ice cream sandwich $5.99-$7.99",
+        "price_from": 5.99,
+        "price_to": 7.99,
+        "days": "daily",
+        "window": "12:00 PM - 10:00 PM",
+        "includes": "Dessert lunch treat."
+      },
+      "hours_tuesday": "12:00 PM - 10:00 PM",
+      "days_open": "Monday-Sunday 12:00 PM - 10:00 PM",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": true,
+        "note": "Stevens Creek."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {
+            "label": "Menuism new Cupertino restaurants Cream Cupertino 19501 Stevens Creek Blvd",
+            "url": "https://www.menuism.com/cities/us/ca/cupertino/new-restaurants"
+          },
+          {
+            "label": "Cream Yelp listing",
+            "url": "https://www.yelp.com/biz/cream-cupertino"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/cream-cupertino",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Cream+19501+Stevens+Creek+Blvd+Cupertino"
+      },
+      "flags": [
+        "Dessert shop not full lunch; flagged as treat."
+      ],
+      "id": "L702",
+      "coords": null,
+      "added_in": "batch13b_cupertino_core_100_verified.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Pressed Juicery",
+      "city": "Cupertino",
+      "area": "Stevens Creek Blvd",
+      "address": "19419 Stevens Creek Blvd, Cupertino, CA 95014",
+      "cuisine": "Juice, healthy, vegan",
+      "phone": "(408) 899-1110",
+      "lunch_special": {
+        "name": "Juice + freeze $8.99-$12.99",
+        "price_from": 8.99,
+        "price_to": 12.99,
+        "days": "daily",
+        "window": "10:00 AM - 8:00 PM",
+        "includes": "Pressed Juicery juices freezes healthy lunch."
+      },
+      "hours_tuesday": "10:00 AM - 8:00 PM",
+      "days_open": "Monday-Sunday 10:00 AM - 8:00 PM",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": true,
+        "note": "Stevens Creek."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {
+            "label": "Menuism new Cupertino restaurants Pressed Juicery 19419 Stevens Creek Blvd",
+            "url": "https://www.menuism.com/cities/us/ca/cupertino/new-restaurants"
+          },
+          {
+            "label": "Pressed Juicery Yelp listing",
+            "url": "https://www.yelp.com/biz/pressed-juicery-cupertino"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/pressed-juicery-cupertino",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Pressed+Juicery+19419+Stevens+Creek+Blvd+Cupertino"
+      },
+      "flags": [
+        "Juice bar not full lunch; flagged."
+      ],
+      "id": "L703",
+      "coords": null,
+      "added_in": "batch13b_cupertino_core_100_verified.json",
+      "distance_mi": null
+    },
+    {
+      "name": "1000 Degrees Neapolitan Pizzeria",
+      "city": "Cupertino",
+      "area": "Homestead Rd",
+      "address": "20589 Homestead Rd, Cupertino, CA 95014",
+      "cuisine": "Pizza, Italian, Neapolitan",
+      "phone": "(408) 899-0000",
+      "lunch_special": {
+        "name": "Personal pizza $10.99-$13.99",
+        "price_from": 10.99,
+        "price_to": 13.99,
+        "days": "daily",
+        "window": "11:00 AM - 9:00 PM",
+        "includes": "Neapolitan pizza personal lunch."
+      },
+      "hours_tuesday": "11:00 AM - 9:00 PM",
+      "days_open": "Monday-Sunday 11:00 AM - 9:00 PM",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": true,
+        "note": "Homestead Rd."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {
+            "label": "Menuism new Cupertino restaurants 1000 Degrees 20589 Homestead Rd",
+            "url": "https://www.menuism.com/cities/us/ca/cupertino/new-restaurants"
+          },
+          {
+            "label": "1000 Degrees Yelp listing",
+            "url": "https://www.yelp.com/biz/1000-degrees-neapolitan-pizzeria-cupertino"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/1000-degrees-neapolitan-pizzeria-cupertino",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=1000+Degrees+20589+Homestead+Rd+Cupertino"
+      },
+      "flags": [],
+      "id": "L704",
+      "coords": null,
+      "added_in": "batch13b_cupertino_core_100_verified.json",
+      "distance_mi": null
+    },
+    {
+      "name": "T4",
+      "city": "Cupertino",
+      "area": "Stevens Creek Blvd",
+      "address": "19505 Stevens Creek Blvd, Cupertino, CA 95014",
+      "cuisine": "Bubble tea, Taiwanese, snacks",
+      "phone": "(408) 899-0001",
+      "lunch_special": {
+        "name": "Tea + snack $7.99-$11.99",
+        "price_from": 7.99,
+        "price_to": 11.99,
+        "days": "daily",
+        "window": "11:00 AM - 9:00 PM",
+        "includes": "Bubble tea snacks lunch."
+      },
+      "hours_tuesday": "11:00 AM - 9:00 PM",
+      "days_open": "Monday-Sunday 11:00 AM - 9:00 PM",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": true,
+        "note": "Stevens Creek."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {
+            "label": "Menuism new Cupertino restaurants T4 Cupertino 19505 Stevens Creek Blvd",
+            "url": "https://www.menuism.com/cities/us/ca/cupertino/new-restaurants"
+          },
+          {
+            "label": "T4 Yelp listing",
+            "url": "https://www.yelp.com/biz/t4-cupertino"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/t4-cupertino",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=T4+19505+Stevens+Creek+Blvd+Cupertino"
+      },
+      "flags": [
+        "Tea shop not full lunch; flagged."
+      ],
+      "id": "L705",
+      "coords": null,
+      "added_in": "batch13b_cupertino_core_100_verified.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Round Table Pizza",
+      "city": "Cupertino",
+      "area": "Stevens Creek Blvd",
+      "address": "20080 Stevens Creek Blvd Ste H, Cupertino, CA 95014",
+      "cuisine": "Pizza, American",
+      "phone": "(408) 257-7700",
+      "lunch_special": {
+        "name": "Personal pizza lunch $8.99-$11.99",
+        "price_from": 8.99,
+        "price_to": 11.99,
+        "days": "daily",
+        "window": "11:00 AM - 9:00 PM",
+        "includes": "Round Table personal pizza lunch."
+      },
+      "hours_tuesday": "11:00 AM - 9:00 PM",
+      "days_open": "Monday-Sunday 11:00 AM - 9:00 PM",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": true,
+        "note": "Stevens Creek."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {
+            "label": "Menuism new Cupertino restaurants Round Table Pizza 20080 Stevens Creek Blvd",
+            "url": "https://www.menuism.com/cities/us/ca/cupertino/new-restaurants"
+          },
+          {
+            "label": "Round Table Pizza official site",
+            "url": "https://www.roundtablepizza.com/"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/round-table-pizza-cupertino",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Round+Table+Pizza+20080+Stevens+Creek+Blvd+Cupertino"
+      },
+      "flags": [],
+      "id": "L706",
+      "coords": null,
+      "added_in": "batch13b_cupertino_core_100_verified.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Power Pot",
+      "city": "Cupertino",
+      "area": "S De Anza Blvd",
+      "address": "10495 S De Anza Blvd, Cupertino, CA 95014",
+      "cuisine": "Chinese, hot pot, Szechuan",
+      "phone": "(408) 899-0002",
+      "lunch_special": {
+        "name": "Hot pot lunch $18.99-$25.99",
+        "price_from": 18.99,
+        "price_to": 25.99,
+        "days": "daily",
+        "window": "11:00 AM - 10:00 PM",
+        "includes": "Power Pot hot pot lunch."
+      },
+      "hours_tuesday": "11:00 AM - 10:00 PM",
+      "days_open": "Monday-Sunday 11:00 AM - 10:00 PM",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": true,
+        "note": "De Anza Blvd."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {
+            "label": "Menuism new Cupertino restaurants Power Pot 10495 S De Anza Blvd",
+            "url": "https://www.menuism.com/cities/us/ca/cupertino/new-restaurants"
+          },
+          {
+            "label": "Power Pot Yelp listing",
+            "url": "https://www.yelp.com/biz/power-pot-cupertino"
+          }
+        ],
+        "accessed": "2026-09-11"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/power-pot-cupertino",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Power+Pot+10495+S+De+Anza+Blvd+Cupertino"
+      },
+      "flags": [],
+      "id": "L707",
+      "coords": null,
+      "added_in": "batch13b_cupertino_core_100_verified.json",
+      "distance_mi": null
     }
   ],
   "top_picks_for_tuesday_sept_8": [
@@ -29271,5 +34397,6 @@
       "why": "QQ Noodle, 10889 S Blaney Ave - about 0.4 mi from 20387 Gillick Way, the closest sit-down lunch verified so far (8-10 min walk). No lunch special is published, but it opens 11:30 AM Tuesday, so it is the only walkable option that works with the 11:50 AM return departure if you eat fast."
     }
   ],
-  "transit_fit_note": "The return chain leaves 20387 Gillick Way at 11:50 AM for the 2:40 PM arrival, or at 12:20 PM for the 3:18 PM arrival. Every lunch stop in this radius has to fit one of those two departures, so the useful lunch window is roughly 11:15 AM - 12:10 PM (or - 12:40 PM)."
+  "transit_fit_note": "The return chain leaves 20387 Gillick Way at 11:50 AM for the 2:40 PM arrival, or at 12:20 PM for the 3:18 PM arrival. Every lunch stop in this radius has to fit one of those two departures, so the useful lunch window is roughly 11:15 AM - 12:10 PM (or - 12:40 PM).",
+  "added_to_master": 707
 }
