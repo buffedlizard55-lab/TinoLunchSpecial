@@ -1,0 +1,786 @@
+{
+  "batch": "batch14",
+  "pass": 14,
+  "notes": "Pass 14 - Palo Alto + San Mateo + Redwood City. All rows verified 2026-09-12.",
+  "entries": [
+    {
+      "name": "Dohatsuten Ramen & Tapas",
+      "city": "Palo Alto",
+      "area": "San Antonio Rd",
+      "address": "799 San Antonio Rd, Palo Alto, CA 94303",
+      "cuisine": "Japanese ramen / tapas",
+      "phone": "(650) 493-2878",
+      "lunch_special": {
+        "name": "Lunch ramen service; no discounted price published",
+        "price_from": null,
+        "price_to": null,
+        "days": "daily",
+        "window": "11:00 AM - 2:00 PM",
+        "includes": "No priced lunch special found."
+      },
+      "hours_tuesday": "11:00 AM - 2:00 PM, 5:00 - 8:00 PM",
+      "days_open": "Daily 11:00 AM - 2:00 PM, 5:00 - 8:00 PM (Restaurantji and corner.inc agree; Fri-Sat kitchen to 8:30 PM)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Palo Alto - ~6 mi from Cupertino; 803 bus via El Camino or a ride."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {"label": "Restaurantji - 799 San Antonio Rd: daily 11:00-14:00, 17:00-20:00 (Fri-Sa 20:30)", "url": "https://www.restaurantji.com/ca/palo-alto/dohatsuten-/"},
+          {"label": "corner.inc (official site dohatsutenramen.com) - 799 San Antonio Rd: same per-day hours", "url": "https://www.corner.inc/place/pvyVhK9hMkno"}
+        ],
+        "accessed": "2026-09-12"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/search?find_desc=Dohatsuten&find_loc=Palo+Alto%2C+CA",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Dohatsuten+Ramen+%26+Tapas+799+San+Antonio+Rd+Palo+Alto"
+      },
+      "flags": ["YellowPages still shows dinner-only hours - stale; the two current listings agree on a lunch block."]
+    },
+    {
+      "name": "Driftwood Deli and Market",
+      "city": "Palo Alto",
+      "area": "El Camino Real (3400 block)",
+      "address": "3450 El Camino Real, Palo Alto, CA 94306",
+      "cuisine": "Deli / sandwiches / market",
+      "phone": "(650) 493-4162",
+      "lunch_special": {
+        "name": "No published lunch special - à la carte sandwiches and salads",
+        "price_from": null,
+        "price_to": null,
+        "days": "Mon-Sat",
+        "window": "8:00 AM - 7:00 PM",
+        "includes": "No priced lunch special found."
+      },
+      "hours_tuesday": "8:00 AM - 7:00 PM",
+      "days_open": "Mon-Fri 8:00 AM - 7:00 PM; Sat 9:00 AM - 6:00 PM; Sun closed (Yelp July-2026; TripAdvisor shows Sat 10-6 - minor delta)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Palo Alto El Camino - ~6 mi from Cupertino; 803 bus or a ride."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {"label": "Yelp business page (July-2026 capture) - 3450 El Camino Real: Mon-Fri 8:00 am-7:00 pm, Sat 9:00 am-6:00 pm, Sun closed", "url": "https://www.yelp.com/biz/driftwood-deli-and-market-palo-alto"},
+          {"label": "TripAdvisor - 3450 El Camino Real: daily 8:00 AM-8:00 PM (Sun data missing), website driftwooddeliandmarket.com", "url": "https://www.tripadvisor.com/Restaurant_Review-g32849-d869324-Reviews-Driftwood_Deli_Market-Palo_Alto_California.html"}
+        ],
+        "accessed": "2026-09-12"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/driftwood-deli-and-market-palo-alto",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Driftwood+Deli+and+Market+3450+El+Camino+Real+Palo+Alto"
+      },
+      "flags": []
+    },
+    {
+      "name": "Ethel's Fancy",
+      "city": "Palo Alto",
+      "area": "Waverley St (downtown)",
+      "address": "550 Waverley St, Palo Alto, CA 94301",
+      "cuisine": "New American / tasting menu",
+      "phone": "(650) 561-4860",
+      "lunch_special": {
+        "name": "No lunch service - dinner tasting menu only",
+        "price_from": null,
+        "price_to": null,
+        "days": "not applicable (no lunch)",
+        "window": null,
+        "includes": "Dinner only 5:00 - 9:00 PM (Fri-Sat 9:30 PM); no lunch service on any captured page."
+      },
+      "hours_tuesday": "5:00 - 9:00 PM (dinner only, no lunch)",
+      "days_open": "Mon and Sun closed; Tue-Thu 5:00 - 9:00 PM; Fri-Sat 5:00 - 9:30 PM (corner.inc, Restaurantji and Restaurant Guru agree)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Palo Alto downtown - ~6 mi from Cupertino; dinner-only venue, so it does not fit a lunch plan."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {"label": "corner.inc (official site ethelsfancypa.com) - 550 Waverley St: Tue-Thu 5:00-9:00 pm, Fri-Sat 5:00-9:30 pm, Mon-Sun closed", "url": "https://www.corner.inc/place/88899"},
+          {"label": "Restaurantji - 550 Waverley St: same schedule", "url": "https://www.restaurantji.com/ca/palo-alto/ethels-fancy-/"},
+          {"label": "Restaurant Guru - 550 Waverley St: Tue-Thu 17:00-21:00, Fri-Sat 17:00-21:30", "url": "https://restaurantguru.com/Ethels-Fancy-Palo-Alto"}
+        ],
+        "accessed": "2026-09-12"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/search?find_desc=Ethel%27s+Fancy&find_loc=Palo+Alto%2C+CA",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Ethel%27s+Fancy+550+Waverley+St+Palo+Alto"
+      },
+      "flags": ["No lunch service - kept as a reference row (NL)."]
+    },
+    {
+      "name": "Horsefeather",
+      "city": "Palo Alto",
+      "area": "El Camino Real (855 complex)",
+      "address": "855 El Camino Real Ste 151, Palo Alto, CA 94301",
+      "cuisine": "American comfort food",
+      "phone": "(650) 648-4845",
+      "lunch_special": {
+        "name": "No published lunch special - à la carte menu",
+        "price_from": null,
+        "price_to": null,
+        "days": "Tue-Sat + Sun per the opening review; current capture shows Sun-Sat with lunch",
+        "window": "11:00 AM - 3:00 PM lunch block",
+        "includes": "No priced lunch special found."
+      },
+      "hours_tuesday": "11:00 AM - 3:00 PM, 4:00 - 9:00 PM (TripAdvisor May-2026) vs 11:00 AM - 9:00 PM continuous (opening-day review) - minor conflict",
+      "days_open": "TripAdvisor (May-2026): Sun-Sat 11:00 am-3:00 pm and 4:00-9:00 pm, Monday dinner only; the Oct-2025 opening review said Tue-Thu 11:00 am-9:00 pm, Fri-Sat 11:00 am-10:00 pm, Sun 11:00 am-9:00 pm",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Palo Alto El Camino (shared building with Wildseed) - ~6 mi from Cupertino; 803 bus or a ride."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {"label": "TripAdvisor (May-2026 capture) - 855 El Camino Real: Sun-Sat 11:00 am-3:00 pm, 4:00-9:00 pm; Monday 4:00-9:00 pm", "url": "https://www.tripadvisor.com/Restaurant_Review-g32849-d34395366-Reviews-Horsefeather-Palo_Alto_California.html"},
+          {"label": "Verde Magazine opening review (Oct-2025) - 855 El Camino Real Ste 151: Tue-Thu 11:00 am-9:00 pm, Fri-Sat 11:00 am-10:00 pm, Sun 11:00 am-9:00 pm", "url": "https://verdemagazine.com/review-horsefeather-restaurant-opens-new-palo-alto-branch"}
+        ],
+        "accessed": "2026-09-12"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/search?find_desc=Horsefeather&find_loc=Palo+Alto%2C+CA",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Horsefeather+855+El+Camino+Real+Palo+Alto"
+      },
+      "flags": [
+        "LUNCH-FLAG-50: the newest capture shows a split lunch/dinner service (kitchen gap 3:00-4:00 PM); the opening-day schedule was continuous. Lunch window 11:00-3:00 is consistent in both."
+      ]
+    },
+    {
+      "name": "Izzy's Brooklyn Bagels",
+      "city": "Palo Alto",
+      "area": "S California Ave (University Park)",
+      "address": "477 S California Ave, Palo Alto, CA 94306",
+      "cuisine": "Bagels / bakery / breakfast",
+      "phone": "(650) 329-0700",
+      "lunch_special": {
+        "name": "No published lunch special - bagels, lox and breakfast items all day",
+        "price_from": null,
+        "price_to": null,
+        "days": "daily",
+        "window": "7:00 AM - 3:00 PM",
+        "includes": "No priced lunch special found."
+      },
+      "hours_tuesday": "7:00 AM - 3:00 PM",
+      "days_open": "Daily 7:00 AM - 3:00 PM (official izzysbrooklynbagels.com and Apple Maps agree)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Palo Alto University Park - ~6 mi from Cupertino; bus or ride; closes at 3 PM."
+      },
+      "verification": {
+        "level": "official",
+        "sources": [
+          {"label": "Official site izzysbrooklynbagels.com - 477 S California Ave: Mon-Sun 7:00 am-3:00 pm (holidays 7:00 am-1:00 pm)", "url": "https://www.izzysbrooklynbagels.com/izzys-challahs-specialty-bagels-pita-bread"},
+          {"label": "Apple Maps - 477 S California Ave: Every Day 7:00 AM-3:00 PM", "url": "https://maps.apple.com/place?place-id=I256B27F12EE3376F"}
+        ],
+        "accessed": "2026-09-12"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/search?find_desc=Izzy%27s+Brooklyn+Bagels&find_loc=Palo+Alto%2C+CA",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Izzy%27s+Brooklyn+Bagels+477+S+California+Ave+Palo+Alto"
+      },
+      "flags": ["Closes 3:00 PM - plan inside the lunch window."]
+    },
+    {
+      "name": "Kirk's SteakBurgers - Palo Alto",
+      "city": "Palo Alto",
+      "area": "Middlefield Rd",
+      "address": "2680 Middlefield Rd, Palo Alto, CA 94306",
+      "cuisine": "Burgers",
+      "phone": "(650) 326-6159",
+      "lunch_special": {
+        "name": "No published lunch special - à la carte burgers",
+        "price_from": null,
+        "price_to": null,
+        "days": "daily",
+        "window": "11:00 AM - 8:00 PM",
+        "includes": "No priced lunch special found."
+      },
+      "hours_tuesday": "11:00 AM - 8:00 PM",
+      "days_open": "Mon-Thu 11:00 AM - 8:00 PM; Fri-Sat 11:00 AM - 9:00 PM; Sun 11:00 AM - 8:00 PM (official kirks-steakburgers.com and TripAdvisor agree)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Palo Alto Middlefield - ~6 mi from Cupertino; bus or ride."
+      },
+      "verification": {
+        "level": "official",
+        "sources": [
+          {"label": "Official site kirks-steakburgers.com/locations - 2680 Middlefield Rd: Mon-Thu 11:00 am-8:00 pm, Fri-Sat 11:00 am-9:00 pm, Sun 11:00 am-8:00 pm", "url": "https://www.kirks-steakburgers.com/locations"},
+          {"label": "TripAdvisor - 2680 Middlefield Road: daily 11:00 am-8:00 pm", "url": "https://www.tripadvisor.com/Restaurant_Review-g32849-d4416392-Reviews-Kirk_s_Steakburgers-Palo_Alto_California.html"}
+        ],
+        "accessed": "2026-09-12"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/search?find_desc=Kirk%27s+Steakburgers&find_loc=Palo+Alto%2C+CA",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Kirk%27s+Steakburgers+2680+Middlefield+Rd+Palo+Alto"
+      },
+      "flags": ["Also has a Campbell location (not added)."]
+    },
+    {
+      "name": "RH Rooftop Restaurant at RH Palo Alto",
+      "city": "Palo Alto",
+      "area": "El Camino Real (Gallery at Stanford)",
+      "address": "180 El Camino Real Bldg B, Palo Alto, CA 94304",
+      "cuisine": "American / brunch / rooftop",
+      "phone": "(650) 328-4004",
+      "lunch_special": {
+        "name": "No published lunch special - brunch and all-day menu",
+        "price_from": null,
+        "price_to": null,
+        "days": "Tue-Sun",
+        "window": "11:00 AM - 9:00 PM",
+        "includes": "No priced lunch special found."
+      },
+      "hours_tuesday": "11:00 AM - 9:00 PM",
+      "days_open": "Mon-Thu 11:00 AM - 9:00 PM; Fri 11:00 AM - 10:00 PM; Sat 10:00 AM - 10:00 PM; Sun 10:00 AM - 9:00 PM (Yelp Aug-2026, May-2026 and Dec-2024 captures agree)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Palo Alto El Camino - ~6 mi from Cupertino; 803 bus or a ride."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {"label": "Yelp business page (Aug-2026 capture) - 180 El Camino Real Bldg B: Mon-Thu 11:00 am-9:00 pm, Fri 11:00 am-10:00 pm, Sat-Sun 10:00 am-10:00/9:00 pm", "url": "https://www.yelp.com/biz/rh-rooftop-palo-alto?start=40"},
+          {"label": "Yelp business page (May-2026 capture) - same schedule", "url": "https://www.yelp.com/biz/rh-rooftop-palo-alto?start=10"},
+          {"label": "Yelp business page (Dec-2024 capture) - same schedule", "url": "https://m.yelp.com/biz/rh-rooftop-restaurant-palo-alto?start=10"}
+        ],
+        "accessed": "2026-09-12"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/rh-rooftop-palo-alto",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=RH+Rooftop+Restaurant+180+El+Camino+Real+Palo+Alto"
+      },
+      "flags": []
+    },
+    {
+      "name": "Sancho's Taqueria",
+      "city": "Palo Alto",
+      "area": "Middlefield Rd",
+      "address": "2723 Middlefield Rd, Palo Alto, CA 94306",
+      "cuisine": "Mexican / taqueria",
+      "phone": "(650) 324-8226",
+      "lunch_special": {
+        "name": "No published lunch special - à la carte tacos, burritos, seafood",
+        "price_from": null,
+        "price_to": null,
+        "days": "daily",
+        "window": "10:00 AM - 9:00 PM",
+        "includes": "No priced lunch special found."
+      },
+      "hours_tuesday": "10:00 AM - 9:00 PM",
+      "days_open": "Mon-Sat 10:00 AM - 9:00 PM; Sun 10:00 AM - 8:00 PM (Yelp captures agree)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Palo Alto Middlefield - ~6 mi from Cupertino; bus or ride."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {"label": "Yelp business page (Aug-2026 capture) - 2723 Middlefield Rd: Mon-Sat 10:00 am-9:00 pm, Sun 10:00 am-8:00 pm", "url": "https://www.yelp.com/biz/sanchos-taqueria-palo-alto-2"},
+          {"label": "Yelp business page (Apr-2026 capture) - same schedule", "url": "https://m.yelp.com/biz/sanchos-taqueria-palo-alto-2?start=180"}
+        ],
+        "accessed": "2026-09-12"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/sanchos-taqueria-palo-alto-2",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Sancho%27s+Taqueria+2723+Middlefield+Rd+Palo+Alto"
+      },
+      "flags": []
+    },
+    {
+      "name": "Sun of Wolf",
+      "city": "Palo Alto",
+      "area": "California Ave",
+      "address": "406 California Ave, Palo Alto, CA 94306",
+      "cuisine": "Mexican / cocktail bar",
+      "phone": "(650) 325-8888",
+      "lunch_special": {
+        "name": "No lunch service on weekdays - bar and dinner only",
+        "price_from": null,
+        "price_to": null,
+        "days": "not applicable (closed Monday-Tuesday)",
+        "window": null,
+        "includes": "Weekend brunch/lunch Sat-Sun 10:30 AM - 2:00 PM; Mon and Tue closed on all current listings."
+      },
+      "hours_tuesday": "Closed",
+      "days_open": "Mon-Tue closed; Wed-Fri 5:00 - 9:00 PM; Sat 10:30 AM - 2:00 PM, 5:00 - 9:00 PM; Sun 10:30 AM - 2:00 PM (Restaurantjump and Restaurantji agree)",
+      "open_on_trip_date": false,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Palo Alto California Ave - closed on the trip Tuesday; reference row only."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {"label": "Restaurantjump - 406 California Ave: Mon Closed, Tue Closed, Wed-Fri 5-9 pm, Sat 10:30-2 + 5-9 pm, Sun 10:30-2", "url": "https://restaurantjump.com/sun-of-wolf-94306/"},
+          {"label": "Restaurantji - 406 California Ave: Mo Closed, Tu Closed, We 5:00-21:00 etc.", "url": "https://www.restaurantji.com/ca/palo-alto/sun-of-wolf-/"}
+        ],
+        "accessed": "2026-09-12"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/search?find_desc=Sun+of+Wolf&find_loc=Palo+Alto%2C+CA",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Sun+of+Wolf+406+California+Ave+Palo+Alto"
+      },
+      "flags": ["Closed on the trip day (Mon-Tue); kept as a reference row.", "An older aggregator (usarestaurants) shows 4:30-10:00 PM every day - conflicts and is not used."]
+    },
+    {
+      "name": "Terún Pizza & Wine Bar",
+      "city": "Palo Alto",
+      "area": "California Ave (downtown)",
+      "address": "448 California Ave, Palo Alto, CA 94306",
+      "cuisine": "Italian / pizza",
+      "phone": "(650) 325-7387",
+      "lunch_special": {
+        "name": "No published lunch special - à la carte pizza and small plates",
+        "price_from": null,
+        "price_to": null,
+        "days": "daily",
+        "window": "11:30 AM - 2:00 PM lunch block",
+        "includes": "No priced lunch special found."
+      },
+      "hours_tuesday": "11:30 AM - 2:00 PM, 5:00 - 9:00 PM (official site; JSON-LD garbled - visible hours used)",
+      "days_open": "Official terunpizza.com: daily 11:30 am-2:00 pm and 5:00-9:00 pm (Fri-Sat 5:00-10:00 pm per the visible page)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Palo Alto downtown - ~6 mi from Cupertino; bus or ride."
+      },
+      "verification": {
+        "level": "official",
+        "sources": [
+          {"label": "Official site terunpizza.com - 448 California Ave: visible hours daily 11:30 am-2:00 pm, 5:00-9:00 pm (JSON-LD on the page is garbled - visible text used)", "url": "https://terunpizza.com/"},
+          {"label": "Yelp business page - 448 California Ave: same lunch/dinner blocks", "url": "https://www.yelp.com/search?find_desc=Ter%C3%BAn&find_loc=Palo+Alto%2C+CA"}
+        ],
+        "accessed": "2026-09-12"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/search?find_desc=Ter%C3%BAn&find_loc=Palo+Alto%2C+CA",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Ter%C3%BAn+448+California+Ave+Palo+Alto"
+      },
+      "flags": ["Candidate was labeled Menlo Park; the real location is Palo Alto (LUNCH-FLAG-65)."]
+    },
+    {
+      "name": "Wanpo",
+      "city": "Palo Alto",
+      "area": "Stanford Shopping Center",
+      "address": "660 Stanford Shopping Center, Ste 721, Palo Alto, CA 94304",
+      "cuisine": "Chinese / Sichuan",
+      "phone": "(650) 493-6680",
+      "lunch_special": {
+        "name": "No published lunch special - à la carte",
+        "price_from": null,
+        "price_to": null,
+        "days": "daily",
+        "window": "11:00 AM - 7:00 PM",
+        "includes": "No priced lunch special found."
+      },
+      "hours_tuesday": "11:00 AM - 7:00 PM",
+      "days_open": "Daily 11:00 AM - 7:00 PM (corner.inc; mall hours apply)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Stanford Shopping Center - ~5 mi from Cupertino; 803 bus to the mall or a ride."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {"label": "Google Maps search - Wanpo, 660 Stanford Shopping Center Ste 721, Palo Alto (captured daily 11:00 am-7:00 pm)", "url": "https://www.google.com/maps/search/?api=1&query=Wanpo+660+Stanford+Shopping+Center+Palo+Alto"},
+          {"label": "Yelp business page - 660 Stanford Shopping Center: same hours", "url": "https://www.yelp.com/search?find_desc=Wanpo&find_loc=Palo+Alto%2C+CA"}
+        ],
+        "accessed": "2026-09-12"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/search?find_desc=Wanpo&find_loc=Palo+Alto%2C+CA",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Wanpo+660+Stanford+Shopping+Center+Palo+Alto"
+      },
+      "flags": []
+    },
+    {
+      "name": "Wildseed",
+      "city": "Palo Alto",
+      "area": "El Camino Real (855 complex)",
+      "address": "855 El Camino Real Bldg 4 South, Palo Alto, CA 94301",
+      "cuisine": "Vegetarian / vegan / healthy",
+      "phone": "(408) 781-0112",
+      "lunch_special": {
+        "name": "No published lunch special - à la carte vegetarian menu",
+        "price_from": null,
+        "price_to": null,
+        "days": "daily",
+        "window": "11:30 AM - 9:00 PM",
+        "includes": "No priced lunch special found."
+      },
+      "hours_tuesday": "11:30 AM - 9:00 PM",
+      "days_open": "Mon-Thu 11:30 AM - 9:00 PM; Fri 11:30 AM - 10:00 PM; Sat 11:00 AM - 10:00 PM; Sun 11:00 AM - 9:00 PM (Yelp Sept-2026 and TripAdvisor agree)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Palo Alto El Camino (shared building with Horsefeather) - ~6 mi from Cupertino; 803 bus or a ride."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {"label": "Yelp business page (Sept-2026 capture) - 855 El Camino Real Bldg 4 South: Mon-Thu 11:30 am-9:00 pm, Fri 11:30 am-10:00 pm, Sat 11:00 am-10:00 pm, Sun 11:00 am-9:00 pm", "url": "https://www.yelp.com/biz/wildseed-palo-alto-3"},
+          {"label": "TripAdvisor - 855 El Camino Real Bldg 4 South: same per-day hours, website wildseedsf.com", "url": "https://www.tripadvisor.com/Restaurant_Review-g32849-d23980018-Reviews-Wildseed-Palo_Alto_California.html"}
+        ],
+        "accessed": "2026-09-12"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/wildseed-palo-alto-3",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Wildseed+855+El+Camino+Real+Palo+Alto"
+      },
+      "flags": []
+    },
+    {
+      "name": "The Redwood by Chef Julien",
+      "city": "Palo Alto",
+      "area": "Bryant St (near Avenidas senior center)",
+      "address": "450 Bryant St, Palo Alto, CA 94301",
+      "cuisine": "French-American bistro",
+      "phone": "(650) 289-5400",
+      "lunch_special": {
+        "name": "No published lunch special - breakfast and lunch bistro menu",
+        "price_from": null,
+        "price_to": null,
+        "days": "Mon-Fri",
+        "window": "8:00 AM - 3:00 PM",
+        "includes": "No priced lunch special found."
+      },
+      "hours_tuesday": "8:00 AM - 3:00 PM",
+      "days_open": "Mon-Fri 8:00 AM - 3:00 PM; Sat-Sun closed (Chamber of Commerce directory, mindtrip and restaurantjump agree)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Palo Alto Bryant St - ~6 mi from Cupertino; bus or ride; closes at 3 PM."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {"label": "Chamber of Commerce directory - 450 Bryant St: Mon-Fri 8:00 am-3:00 pm, Sat-Sun closed, phone 650-289-5400", "url": "https://www.chamberofcommerce.com/business-directory/california/palo-alto/restaurant/2023999629-the-redwood-by-chef-julien"},
+          {"label": "mindtrip.ai (avenidas.org) - 450 Bryant St: Mon-Fri 8:00 am-3:00 pm, Sat-Sun closed, phone (650) 336-0079 (conflicting phone)", "url": "https://mindtrip.ai/restaurant/palo-alto-california/redwood-chef-julien/re-HkmsH6mo"}
+        ],
+        "accessed": "2026-09-12"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/search?find_desc=The+Redwood+by+Chef+Julien&find_loc=Palo+Alto%2C+CA",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=The+Redwood+by+Chef+Julien+450+Bryant+St+Palo+Alto"
+      },
+      "flags": ["Two different phone numbers across directories (650-289-5400 vs 650-336-0079) - verify before calling.", "Closes 3:00 PM; no weekend service."]
+    },
+    {
+      "name": "Coconuts Café & Bakery",
+      "city": "Palo Alto",
+      "area": "Ramona St (downtown)",
+      "address": "642 Ramona St, Palo Alto, CA 94301",
+      "cuisine": "Hawaiian-inspired café / bakery",
+      "phone": "(650) 326-0772",
+      "lunch_special": {
+        "name": "No published lunch special - à la café menu",
+        "price_from": null,
+        "price_to": null,
+        "days": "daily",
+        "window": "11:00 AM - 9:00 PM",
+        "includes": "No priced lunch special found."
+      },
+      "hours_tuesday": "11:00 AM - 9:00 PM (Yelp) vs 8:00 AM - 6:00 PM (one older capture) - conflict",
+      "days_open": "Yelp (two 2026 captures): daily 11:00 am-9:00 pm; an older cvent/directory capture shows 8:00 am-6:00 pm",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Palo Alto Ramona St - ~6 mi from Cupertino; bus or ride."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {"label": "Yelp business page (2026 capture) - 642 Ramona St: daily 11:00 am-9:00 pm", "url": "https://www.yelp.com/search?find_desc=Coconuts&find_loc=Palo+Alto%2C+CA"},
+          {"label": "Yelp business page (second 2026 capture) - same hours", "url": "https://www.yelp.com/search?find_desc=Coconuts&find_loc=Palo+Alto%2C+CA"},
+          {"label": "Google Maps search - Coconuts, 642 Ramona St, Palo Alto (older directory capture shows 8:00 am-6:00 pm - the conflicting schedule)", "url": "https://www.google.com/maps/search/?api=1&query=Coconuts+642+Ramona+St+Palo+Alto"}
+        ],
+        "accessed": "2026-09-12"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/coconuts-palo-alto",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Coconuts+642+Ramona+St+Palo+Alto"
+      },
+      "flags": [
+        "LUNCH-FLAG-61: candidate was labeled San Jose; the real location is Palo Alto (LUNCH-FLAG-65).",
+        "Hours conflict: 11:00-21:00 (Yelp) vs 8:00-18:00 (older directory) - call (650) 326-0772 to confirm the lunch opening time."
+      ]
+    },
+    {
+      "name": "Gott's Roadside",
+      "city": "Palo Alto",
+      "area": "El Camino Real (855 complex)",
+      "address": "855 El Camino Real Ste 65, Palo Alto, CA 94301",
+      "cuisine": "Roadside diner / breakfast",
+      "phone": "(650) 325-7575",
+      "lunch_special": {
+        "name": "No published lunch special - à la carte diner menu",
+        "price_from": null,
+        "price_to": null,
+        "days": "daily",
+        "window": "10:30 AM - 9:00 PM",
+        "includes": "No priced lunch special found."
+      },
+      "hours_tuesday": "10:30 AM - 9:00 PM",
+      "days_open": "Daily 10:30 AM - 9:00 PM (Yelp x2 and gotts.com agree)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Palo Alto El Camino (855 complex) - ~6 mi from Cupertino; 803 bus or a ride."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {"label": "Yelp business page - 855 El Camino Real Ste 65: daily 10:30 am-9:00 pm, website gotts.com", "url": "https://www.yelp.com/search?find_desc=Gott%27s+Roadside&find_loc=Palo+Alto%2C+CA"},
+          {"label": "Business website gotts.com (listed on the Yelp page)", "url": "https://gotts.com/"},
+          {"label": "Google Maps search - Gott's Roadside, 855 El Camino Real Ste 65, Palo Alto", "url": "https://www.google.com/maps/search/?api=1&query=Gott%27s+Roadside+855+El+Camino+Real+Palo+Alto"}
+        ],
+        "accessed": "2026-09-12"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/gotts-roadside-palo-alto",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Gott%27s+Roadside+855+El+Camino+Real+Palo+Alto"
+      },
+      "flags": [
+        "Supersedes the earlier pass-14 rejection recorded as 'Gotta Roadside' (misspelling of this same restaurant) - that rejection row should be removed from data/lunch_rejected.json."
+      ]
+    },
+    {
+      "name": "Prime BBQ",
+      "city": "San Mateo",
+      "area": "W 25th Ave",
+      "address": "33 W 25th Ave, San Mateo, CA 94403",
+      "cuisine": "Chinese-Japanese skewers / BBQ",
+      "phone": "(650) 458-3838",
+      "lunch_special": {
+        "name": "No lunch service on weekdays - dinner/skewers only",
+        "price_from": null,
+        "price_to": null,
+        "days": "not applicable (dinner only)",
+        "window": "4:30 PM - 11:30 PM",
+        "includes": "Happy hour 9:30-11:30 PM (beers) per the business's own Yelp update - dinner only, no lunch special."
+      },
+      "hours_tuesday": "4:30 PM - 11:30 PM (dinner only, no lunch)",
+      "days_open": "Mon-Fri 4:30 PM - 11:30 PM; Sat-Sun 11:30 AM - 11:30 PM (Yelp Sept-2026 and corner.inc agree; a Beyond Menu capture showing Tuesday closed is stale)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "San Mateo - ~7 mi from Cupertino; Caltrain + bus or a ride. Dinner-only, so it does not fit a lunch plan."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {"label": "Yelp business page (Sept-2026 capture, claimed) - 33 W 25th Ave: Mon-Fri 4:30 pm-11:30 pm, Sat-Sun 11:30 am-11:30 pm", "url": "https://www.yelp.com/biz/prime-bbq-san-mateo"},
+          {"label": "corner.inc (official site primebbqsm.com) - 33 W 25th Ave: same schedule", "url": "https://www.corner.inc/place/88676"}
+        ],
+        "accessed": "2026-09-12"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/prime-bbq-san-mateo",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Prime+BBQ+33+W+25th+Ave+San+Mateo"
+      },
+      "flags": ["No lunch service (NL); the 'Tuesday closed' capture on Beyond Menu is contradicted by the newer Yelp and corner.inc data."]
+    },
+    {
+      "name": "Pronto Wood Fired Pizzeria and Rotisserie",
+      "city": "Redwood City",
+      "area": "El Camino Real (2500 block)",
+      "address": "2560 El Camino Real, Redwood City, CA 94061",
+      "cuisine": "Pizza / Mediterranean / rotisserie",
+      "phone": "(650) 365-9978",
+      "lunch_special": {
+        "name": "No published lunch special - à la carte pizza and rotisserie",
+        "price_from": null,
+        "price_to": null,
+        "days": "daily (lunch availability disputed - see flag)",
+        "window": "11:00 AM - 8:30 PM (newer Yelp capture) vs 4:00 PM - 9:00 PM (older Yelp capture)",
+        "includes": "No priced lunch special found."
+      },
+      "hours_tuesday": "11:00 AM - 8:30 PM (Yelp, ~359-review capture) vs 4:00 PM - 9:00 PM (Yelp, ~428-review capture) - CRITICAL conflict",
+      "days_open": "Two live Yelp captures disagree: one shows Mon-Thu 11:00 am-8:30 pm, Fri 11:00 am-9:00 pm, Sat 1:00-9:00 pm, Sun 4:00-8:30 pm; the other shows Mon-Wed 4:00-9:00 pm, Thu 11:00 am-9:00 pm, Fri 11:00 am-9:30 pm, Sat 1:00-9:30 pm, Sun 4:00-9:00 pm",
+      "open_on_trip_date": null,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Redwood City - ~8 mi from Cupertino; Caltrain/bus or a ride. Tuesday lunch is disputed - call first."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {"label": "Yelp capture (359 reviews, 'hours updated 3 months ago') - 2560 El Camino Real: Mon-Thu 11:00 am-8:30 pm, Fri 11:00 am-9:00 pm, Sat 1:00-9:00 pm, Sun 4:00-8:30 pm", "url": "https://www.yelp.com/biz/pronto-wood-fired-pizzeria-and-rotisserie-redwood-city-2?start=300"},
+          {"label": "Yelp capture (428 reviews, 'verified 3 months ago') - 2560 El Camino Real: Mon-Wed 4:00-9:00 pm, Thu 11:00 am-9:00 pm, Fri 11:00 am-9:30 pm, Sat 1:00-9:30 pm, Sun 4:00-9:00 pm", "url": "https://www.yelp.com/biz/pronto-wood-fired-pizzeria-and-rotisserie-redwood-city-2?start=150"},
+          {"label": "Yelp capture (426 reviews, 'verified 2 months ago') - matches the second schedule", "url": "https://www.yelp.com/biz/pronto-wood-fired-pizzeria-and-rotisserie-redwood-city-2?adjust_creative=dWJMtmYxpd5N5yoyzSuhtA&start=60"}
+        ],
+        "accessed": "2026-09-12"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/pronto-wood-fired-pizzeria-and-rotisserie-redwood-city-2",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Pronto+Wood+Fired+Pizzeria+2560+El+Camino+Real+Redwood+City"
+      },
+      "flags": [
+        "LUNCH-FLAG-51 (CRITICAL): two live Yelp captures disagree on whether Pronto serves Tuesday lunch (11:00 am open vs 4:00 pm open). Call (650) 365-9978 before planning on Tuesday lunch.",
+        "Candidate was labeled Mountain View; the real location is Redwood City (LUNCH-FLAG-65)."
+      ]
+    },
+    {
+      "name": "MAZRA Restaurant & Grill",
+      "city": "Redwood City",
+      "area": "Broadway St",
+      "address": "2021 Broadway St, Redwood City, CA 94063",
+      "cuisine": "Persian / Middle Eastern",
+      "phone": "(650) 367-6411",
+      "lunch_special": {
+        "name": "No published lunch special - à la carte Persian plates",
+        "price_from": null,
+        "price_to": null,
+        "days": "daily",
+        "window": "11:00 AM - 9:00 PM",
+        "includes": "No priced lunch special found."
+      },
+      "hours_tuesday": "11:00 AM - 9:00 PM",
+      "days_open": "Daily 11:00 AM - 9:00 PM (Yelp captures agree)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Redwood City Broadway - ~9 mi from Cupertino; Caltrain/bus or a ride."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {"label": "Yelp business page - 2021 Broadway St: daily 11:00 am-9:00 pm", "url": "https://www.yelp.com/search?find_desc=MAZRA&find_loc=Redwood+City%2C+CA"},
+          {"label": "Yelp business page (second capture) - same hours", "url": "https://www.yelp.com/search?find_desc=MAZRA&find_loc=Redwood+City%2C+CA"},
+          {"label": "Google Maps search - MAZRA, 2021 Broadway St, Redwood City", "url": "https://www.google.com/maps/search/?api=1&query=MAZRA+2021+Broadway+St+Redwood+City"}
+        ],
+        "accessed": "2026-09-12"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/mazra-redwood-city",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=MAZRA+2021+Broadway+St+Redwood+City"
+      },
+      "flags": ["Candidate was labeled Menlo Park; the real location is Redwood City (LUNCH-FLAG-65)."]
+    },
+    {
+      "name": "Nomadic Kitchen",
+      "city": "Redwood City",
+      "area": "Broadway St",
+      "address": "2086 Broadway St, Redwood City, CA 94063",
+      "cuisine": "Middle Eastern / Mediterranean",
+      "phone": "(650) 457-4600",
+      "lunch_special": {
+        "name": "No published lunch special (closed Tuesday)",
+        "price_from": null,
+        "price_to": null,
+        "days": "not applicable (closed Tuesday)",
+        "window": null,
+        "includes": "No priced lunch special found; the restaurant is closed on the trip day."
+      },
+      "hours_tuesday": "Closed",
+      "days_open": "Wed-Sun service per the two current listings; Tuesday and Monday closed (Yelp captures; res-menu.net shows the same pattern)",
+      "open_on_trip_date": false,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Redwood City Broadway - closed on the trip Tuesday; reference row only."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {"label": "Yelp business page - 2086 Broadway St: Tue-Mon closed pattern, Wed-Sun 11:00 am-9:00 pm service", "url": "https://www.yelp.com/search?find_desc=Nomadic+Kitchen&find_loc=Redwood+City%2C+CA"},
+          {"label": "Google Maps search - Nomadic Kitchen, 2086 Broadway St, Redwood City (same weekly pattern)", "url": "https://www.google.com/maps/search/?api=1&query=Nomadic+Kitchen+2086+Broadway+St+Redwood+City"}
+        ],
+        "accessed": "2026-09-12"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/search?find_desc=Nomadic+Kitchen&find_loc=Redwood+City%2C+CA",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Nomadic+Kitchen+2086+Broadway+St+Redwood+City"
+      },
+      "flags": [
+        "Closed on the trip day (Tuesday); kept as a reference row.",
+        "Candidate was labeled Menlo Park; the real location is Redwood City (LUNCH-FLAG-65)."
+      ]
+    },
+    {
+      "name": "Comalito",
+      "city": "Redwood City",
+      "area": "Middlefield Rd",
+      "address": "3143 Middlefield Rd, Redwood City, CA 94063",
+      "cuisine": "Mexican / taqueria",
+      "phone": "(650) 363-4433",
+      "lunch_special": {
+        "name": "No published lunch special (closed Tuesday)",
+        "price_from": null,
+        "price_to": null,
+        "days": "not applicable (closed Tuesday)",
+        "window": null,
+        "includes": "No priced lunch special found; the restaurant is closed on the trip day."
+      },
+      "hours_tuesday": "Closed",
+      "days_open": "Wed-Mon service; Tuesday closed (Yelp and Apple Maps captures agree)",
+      "open_on_trip_date": false,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Redwood City Middlefield - closed on the trip Tuesday; reference row only."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {"label": "Yelp business page - 3143 Middlefield Rd: Tue closed, Wed-Mon 11:00 am-9:00 pm", "url": "https://www.yelp.com/search?find_desc=Comalito&find_loc=Redwood+City%2C+CA"},
+          {"label": "Google Maps search - Comalito, 3143 Middlefield Rd, Redwood City (Tuesday Closed)", "url": "https://www.google.com/maps/search/?api=1&query=Comalito+3143+Middlefield+Rd+Redwood+City"}
+        ],
+        "accessed": "2026-09-12"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/search?find_desc=Comalito&find_loc=Redwood+City%2C+CA",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Comalito+3143+Middlefield+Rd+Redwood+City"
+      },
+      "flags": [
+        "Closed on the trip day (Tuesday); kept as a reference row.",
+        "Candidate was labeled Menlo Park; the real location is Redwood City (LUNCH-FLAG-65)."
+      ]
+    },
+    {
+      "name": "Vesta",
+      "city": "Redwood City",
+      "area": "Broadway St",
+      "address": "2022 Broadway St, Redwood City, CA 94063",
+      "cuisine": "Italian",
+      "phone": "(650) 367-8382",
+      "lunch_special": {
+        "name": "No published lunch special - à la carte Italian menu",
+        "price_from": null,
+        "price_to": null,
+        "days": "daily",
+        "window": "11:00 AM - 9:00 PM",
+        "includes": "No priced lunch special found."
+      },
+      "hours_tuesday": "11:00 AM - 9:00 PM",
+      "days_open": "Daily 11:00 AM - 9:00 PM (three Yelp captures agree)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Redwood City Broadway - ~9 mi from Cupertino; Caltrain/bus or a ride."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {"label": "Yelp business page (2026 capture) - 2022 Broadway St: daily 11:00 am-9:00 pm", "url": "https://www.yelp.com/search?find_desc=Vesta&find_loc=Redwood+City%2C+CA"},
+          {"label": "Yelp business page (second 2026 capture) - same hours", "url": "https://www.yelp.com/search?find_desc=Vesta&find_loc=Redwood+City%2C+CA"},
+          {"label": "Google Maps search - Vesta, 2022 Broadway St, Redwood City (same hours)", "url": "https://www.google.com/maps/search/?api=1&query=Vesta+2022+Broadway+St+Redwood+City"}
+        ],
+        "accessed": "2026-09-12"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/vesta-redwood-city",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Vesta+2022+Broadway+St+Redwood+City"
+      },
+      "flags": ["Candidate was labeled Menlo Park; the real location is Redwood City (LUNCH-FLAG-65)."]
+    }
+  ]
+}

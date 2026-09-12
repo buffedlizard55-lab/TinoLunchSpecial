@@ -1,0 +1,271 @@
+{
+  "batch": "batch14",
+  "pass": 14,
+  "notes": "Pass 14 - Saratoga/Sunnyvale/Foster City wrap-up (4 rows) plus the pass-14 rejection log (13 candidates). All rows verified 2026-09-12; Bell Tower Cafe and Chuan Chim Thai Cuisine were re-verified this session with the exact listing URLs cited.",
+  "entries": [
+    {
+      "name": "Bell Tower Cafe",
+      "city": "Saratoga",
+      "supersedes_rejection": "Pass-1 (2026-09-07) deferral said 'no lunch special named - kept out rather than padded with a non-deal row'. Re-verified 2026-09-12 with address, phone and full weekly hours (two fresh sources); the project has carried verified no-price lunch-service rows since pass 7, so the deferral no longer applies.",
+      "area": "Saratoga-Los Gatos Rd (south Saratoga)",
+      "address": "20490 Saratoga-Los Gatos Rd, Saratoga, CA",
+      "cuisine": "American / breakfast & brunch cafe",
+      "phone": "(408) 741-1104",
+      "lunch_special": {
+        "name": "No published lunch special - breakfast, brunch and lunch menu",
+        "price_from": null,
+        "price_to": null,
+        "days": "Tue-Sun",
+        "window": "8:00 AM - 2:30 PM",
+        "includes": "No priced lunch special found."
+      },
+      "hours_tuesday": "8:00 AM - 2:30 PM",
+      "days_open": "Mon closed; Tue-Sun 8:00 AM - 2:30 PM (Yelp business page, verified 2 months ago, and Restaurantji both fetched 2026-09-12; an earlier TripAdvisor capture from this pass showed a 7:00 AM open - the fresher 8:00 AM open is used, lunch window unaffected)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "South Saratoga - ~13 mi from Cupertino; a ride or VTA 40 to Campbell + a short ride. Closes 2:30 PM."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {"label": "Yelp business page (fetched 2026-09-12, 'verified 2 months ago') - 20490 Saratoga-Los Gatos Rd: Mon Closed, Tue-Sun 8:00 am-2:30 pm; business website belltowercafe.com", "url": "https://www.yelp.com/biz/bell-tower-cafe-saratoga"},
+          {"label": "Restaurantji (fetched 2026-09-12) - 20490 Saratoga-Los Gatos Rd: Tu-Su 8:00-14:30, Mo Closed, phone (408) 741-1104", "url": "https://www.restaurantji.com/ca/saratoga/bell-tower-cafe-/"},
+          {"label": "Google Maps search - Bell Tower Cafe, 20490 Saratoga-Los Gatos Rd, Saratoga", "url": "https://www.google.com/maps/search/?api=1&query=Bell+Tower+Cafe+20490+Saratoga-Los+Gatos+Rd+Saratoga"}
+        ],
+        "accessed": "2026-09-12"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/bell-tower-cafe-saratoga",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Bell+Tower+Cafe+20490+Saratoga-Los+Gatos+Rd+Saratoga"
+      },
+      "flags": ["Closes 2:30 PM - lunch only."]
+    },
+    {
+      "name": "CA Fish Grill",
+      "city": "Saratoga",
+      "area": "El Paseo (Coast Plaza)",
+      "address": "1200 El Paseo, Saratoga, CA",
+      "cuisine": "American / fish & chips",
+      "lunch_special": {
+        "name": "No published lunch special price - lunch service daily",
+        "price_from": null,
+        "price_to": null,
+        "days": "daily",
+        "window": "11:00 AM - 9:00 PM",
+        "includes": "No priced lunch special found on the captured pages."
+      },
+      "hours_tuesday": "11:00 AM - 9:00 PM",
+      "days_open": "Daily 11:00 AM - 9:00 PM (two Yelp captures and the order.online capture agree)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Saratoga Coast Plaza - ~13 mi from Cupertino; a ride or bus."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {"label": "Yelp search - CA Fish Grill, 1200 El Paseo, Saratoga (two business-page captures captured 2026-09-12: daily 11:00 am-9:00 pm)", "url": "https://www.yelp.com/search?find_desc=CA+Fish+Grill&find_loc=Saratoga%2C+CA"},
+          {"label": "Google Maps search - CA Fish Grill, 1200 El Paseo, Saratoga", "url": "https://www.google.com/maps/search/?api=1&query=CA+Fish+Grill+1200+El+Paseo+Saratoga"}
+        ],
+        "accessed": "2026-09-12"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/search?find_desc=CA+Fish+Grill&find_loc=Saratoga%2C+CA",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=CA+Fish+Grill+1200+El+Paseo+Saratoga"
+      },
+      "flags": []
+    },
+    {
+      "name": "Momo Grill",
+      "city": "Sunnyvale",
+      "area": "Saratoga Ave (12000 block)",
+      "address": "12100 Saratoga Ave, Sunnyvale, CA",
+      "cuisine": "Nepali / momo",
+      "lunch_special": {
+        "name": "No published lunch special - lunch block with momo plates",
+        "price_from": null,
+        "price_to": null,
+        "days": "daily",
+        "window": "11:00 AM - 2:30 PM",
+        "includes": "No priced lunch special found."
+      },
+      "hours_tuesday": "11:00 AM - 2:30 PM, 5:00 - 9:30 PM",
+      "days_open": "Daily 11:00 AM - 2:30 PM, 5:00 - 9:30 PM (Wheree and Restaurantji captures agree)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Sunnyvale Saratoga Ave - ~11 mi from Cupertino; VTA or a ride."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {"label": "Yelp search - Momo Grill, 12100 Saratoga Ave, Sunnyvale (directory captures captured 2026-09-12: daily 11:00 am-2:30 pm, 5:00-9:30 pm)", "url": "https://www.yelp.com/search?find_desc=Momo+Grill&find_loc=12100+Saratoga+Ave%2C+Sunnyvale%2C+CA"},
+          {"label": "Google Maps search - Momo Grill, 12100 Saratoga Ave, Sunnyvale", "url": "https://www.google.com/maps/search/?api=1&query=Momo+Grill+12100+Saratoga+Ave+Sunnyvale"}
+        ],
+        "accessed": "2026-09-12"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/search?find_desc=Momo+Grill&find_loc=12100+Saratoga+Ave%2C+Sunnyvale%2C+CA",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Momo+Grill+12100+Saratoga+Ave+Sunnyvale"
+      },
+      "flags": []
+    },
+    {
+      "name": "Chuan Chim Thai Cuisine",
+      "city": "Foster City",
+      "area": "Foster Square",
+      "address": "1099 Foster Square Ln Ste 125, Foster City, CA",
+      "cuisine": "Thai",
+      "phone": "(650) 581-1297",
+      "lunch_special": {
+        "name": "No published lunch special - lunch block with Thai plates",
+        "price_from": null,
+        "price_to": null,
+        "days": "daily",
+        "window": "11:00 AM - 3:00 PM (Sat-Sun from 11:30 AM)",
+        "includes": "No priced lunch special found."
+      },
+      "hours_tuesday": "11:00 AM - 3:00 PM, 5:00 - 9:00 PM",
+      "days_open": "Mon-Fri 11:00 AM - 3:00 PM, 5:00 - 9:00 PM; Sat-Sun 11:30 AM - 3:00 PM, 5:00 - 9:00 PM (Yelp business page, Restaurantji and res-pick all fetched 2026-09-12 and agree)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Foster City - ~18 mi from Cupertino, the farthest row this pass; bus/ride, does not fit the return bus."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {"label": "Yelp business page (fetched 2026-09-12) - 1099 Foster Square Ln Unit 125: Mon-Fri 11:00 am-3:00 pm, 5:00-9:00 pm; Sat-Sun 11:30 am-3:00 pm, 5:00-9:00 pm; phone (650) 581-1297", "url": "https://www.yelp.com/biz/chuan-chim-thai-cuisine-foster-city"},
+          {"label": "Restaurantji (fetched 2026-09-12) - 1099 Foster Square Ln STE 125: Tu 11:00-15:00, 17:00-21:00, full weekly table", "url": "https://www.restaurantji.com/ca/foster-city/chuan-chim-thai-cuisine-/"},
+          {"label": "res-pick.com business page (fetched 2026-09-12) - 1099 Foster Square Ln STE 125: Tue 11:00 am-3:00 pm", "url": "https://chuan-chim-thai-cuisine.res-pick.com/"}
+        ],
+        "accessed": "2026-09-12"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/chuan-chim-thai-cuisine-foster-city",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Chuan+Chim+Thai+Cuisine+1099+Foster+Square+Ln+Foster+City"
+      },
+      "flags": ["Upgraded to three agreeing sources in this pass - the earlier single-source flag was dropped."]
+    }
+  ],
+  "rejected": [
+    {
+      "id": "R18",
+      "name": "49ers Press Dining",
+      "city": "Fremont",
+      "why": "No hours published - the only source is a single blog post with no citable operating-hours page, and no lunch-special data exists for it.",
+      "links": [
+        {"label": "Yelp search - 49ers Press Dining, Fremont (no listing with hours found)", "url": "https://www.yelp.com/search?find_desc=49ers+Press+Dining&find_loc=Fremont%2C+CA"}
+      ]
+    },
+    {
+      "id": "R19",
+      "name": "Arya Steakhouse",
+      "city": "Menlo Park",
+      "why": "No citable Menlo Park location could be verified - the candidate name does not resolve to an address and hours inside the ring. Needs a manual recheck before reconsideration.",
+      "links": [
+        {"label": "Google Maps search - Arya Steakhouse, Menlo Park (no matching listing found)", "url": "https://www.google.com/maps/search/?api=1&query=Arya+Steakhouse+Menlo+Park"}
+      ]
+    },
+    {
+      "id": "R20",
+      "name": "Barcelona Restaurant and Bar",
+      "city": "Menlo Park",
+      "why": "No Bay Area location found - the candidate name does not resolve to a real address in the ring.",
+      "links": [
+        {"label": "Google Maps search - Barcelona Restaurant and Bar, Menlo Park (no matching listing found)", "url": "https://www.google.com/maps/search/?api=1&query=Barcelona+Restaurant+and+Bar+Menlo+Park"}
+      ]
+    },
+    {
+      "id": "R21",
+      "name": "Bear Bitez",
+      "city": "Newark",
+      "why": "Hours conflict across sources and the listing carries a 'temporarily closed' note - not safe to list.",
+      "links": [
+        {"label": "Yelp search - Bear Bitez, Newark (conflicting hours + temporarily-closed note)", "url": "https://www.yelp.com/search?find_desc=Bear+Bitez&find_loc=Newark%2C+CA"}
+      ]
+    },
+    {
+      "id": "R22",
+      "name": "Dog Haus Biergarten",
+      "city": "Menlo Park",
+      "why": "The only resolvable location is Dog Haus Biergarten, Belmont (out of the 10-15 mi ring); no Menlo Park location exists.",
+      "links": [
+        {"label": "Yelp search - Dog Haus Biergarten (Belmont location is the only one found)", "url": "https://www.yelp.com/search?find_desc=Dog+Haus+Biergarten&find_loc=Belmont%2C+CA"}
+      ]
+    },
+    {
+      "id": "R23",
+      "name": "East Bay Buffet",
+      "city": "Fremont",
+      "why": "The restaurant is in Dublin, outside the 10-15 mi ring around Cupertino.",
+      "links": [
+        {"label": "Official site (Dublin location)", "url": "https://www.eastbaybuffet.com/"}
+      ]
+    },
+    {
+      "id": "R24",
+      "name": "Grand Indian Continental Buffet",
+      "city": "Santa Clara",
+      "why": "Already in the master list as L459 Brundavan (2798 E El Camino Real, Santa Clara) - the same business under a different name; confirmed during pass 14.",
+      "links": [
+        {"label": "Google Maps search - Brundavan / Grand Indian, 2798 E El Camino Real, Santa Clara", "url": "https://www.google.com/maps/search/?api=1&query=Brundavan+2798+E+El+Camino+Real+Santa+Clara"}
+      ]
+    },
+    {
+      "id": "R25",
+      "name": "Kovalam Restaurant",
+      "city": "Santa Clara",
+      "why": "The only resolvable Kovalam is in Tracy, outside the 10-15 mi ring.",
+      "links": [
+        {"label": "Google Maps search - Kovalam Restaurant, Tracy (only resolvable location)", "url": "https://www.google.com/maps/search/?api=1&query=Kovalam+Restaurant+Tracy"}
+      ]
+    },
+    {
+      "id": "R26",
+      "name": "Mehak of India",
+      "city": "Milpitas",
+      "why": "The only resolvable Mehak location is in Berkeley, outside the ring.",
+      "links": [
+        {"label": "Yelp search - Mehak (Berkeley location is the only one found)", "url": "https://www.yelp.com/search?find_desc=Mehak+Indian+Cuisine&find_loc=Berkeley%2C+CA"}
+      ]
+    },
+    {
+      "id": "R27",
+      "name": "Runway 32",
+      "city": "Fremont",
+      "why": "No citable data exists - no page with an address or hours could be found for this candidate.",
+      "links": [
+        {"label": "Google Maps search - Runway 32, Fremont (no matching listing found)", "url": "https://www.google.com/maps/search/?api=1&query=Runway+32+Fremont"}
+      ]
+    },
+    {
+      "id": "R28",
+      "name": "Suzhou / Suzhou Restaurant",
+      "city": "Newark",
+      "why": "Both Newark-labeled candidates resolve to the Suzhou location in Richmond, whose Yelp listing is marked CLOSED - out of ring and closed.",
+      "links": [
+        {"label": "Yelp search - Suzhou Restaurant, Richmond (listing marked CLOSED)", "url": "https://www.yelp.com/search?find_desc=Suzhou+Restaurant&find_loc=Richmond%2C+CA"}
+      ]
+    },
+    {
+      "id": "R29",
+      "name": "Taiwan Taste",
+      "city": "Saratoga",
+      "why": "The Yelp listing is marked CLOSED - no current hours exist.",
+      "links": [
+        {"label": "Yelp search - Taiwan Taste, Saratoga (listing marked CLOSED)", "url": "https://www.yelp.com/search?find_desc=Taiwan+Taste&find_loc=Saratoga%2C+CA"}
+      ]
+    },
+    {
+      "id": "R30",
+      "name": "The Stand",
+      "city": "Menlo Park",
+      "why": "No Bay Area location - the brand's locations are in San Jose and Encino, outside the ring.",
+      "links": [
+        {"label": "Google Maps search - The Stand restaurant, San Jose (locations are out of ring)", "url": "https://www.google.com/maps/search/?api=1&query=The+Stand+restaurant+San+Jose"}
+      ]
+    }
+  ]
+}

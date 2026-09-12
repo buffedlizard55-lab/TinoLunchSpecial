@@ -1,0 +1,1034 @@
+{
+  "batch": "batch14",
+  "pass": 14,
+  "notes": "Pass 14 - Milpitas + Menlo Park + Campbell + Los Altos. All rows verified 2026-09-12.",
+  "entries": [
+    {
+      "name": "Mian Sichuan Noodles & Dumplings - Milpitas",
+      "city": "Milpitas",
+      "area": "W Calaveras Blvd (Milpitas Central)",
+      "address": "181 W Calaveras Blvd, Milpitas, CA 95035",
+      "cuisine": "Szechuan noodles and dumplings",
+      "phone": "(408) 997-8688",
+      "lunch_special": {
+        "name": "No published lunch special - a la carte noodles and dumplings",
+        "price_from": null,
+        "price_to": null,
+        "days": "daily",
+        "window": "11:00 AM - 2:30 PM lunch block",
+        "includes": "No priced lunch special found."
+      },
+      "hours_tuesday": "11:00 AM - 2:30 PM, 5:00 - 9:00 PM",
+      "days_open": "Daily 11:00 AM - 2:30 PM, 5:00 - 9:00 PM (Yelp and Restaurantji captures agree)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Milpitas central - ~12 mi from Cupertino; VTA 62/34 or a ride."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {"label": "Yelp search - Mian, 181 W Calaveras Blvd, Milpitas (daily 11:00 am-2:30 pm, 5:00-9:00 pm)", "url": "https://www.yelp.com/search?find_desc=Mian+Sichuan+Noodles&find_loc=Milpitas%2C+CA"},
+          {"label": "Google Maps search - Mian Sichuan Noodles, 181 W Calaveras Blvd, Milpitas", "url": "https://www.google.com/maps/search/?api=1&query=Mian+Sichuan+Noodles+181+W+Calaveras+Blvd+Milpitas"}
+        ],
+        "accessed": "2026-09-12"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/search?find_desc=Mian+Sichuan+Noodles&find_loc=Milpitas%2C+CA",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Mian+Sichuan+Noodles+181+W+Calaveras+Blvd+Milpitas"
+      },
+      "flags": ["Second location of the brand; the Cupertino one is already in the master list (L108)."]
+    },
+    {
+      "name": "Naans & Curries - Great Mall",
+      "city": "Milpitas",
+      "area": "Great Mall",
+      "address": "102 Great Mall Dr, Milpitas, CA 95035",
+      "cuisine": "Indian / naan and curry",
+      "phone": "(408) 228-5555",
+      "lunch_special": {
+        "name": "No published lunch special - à la carte Indian plates and naan",
+        "price_from": null,
+        "price_to": null,
+        "days": "daily",
+        "window": "10:00 AM - 8:00 PM (mall hours apply)",
+        "includes": "No priced lunch special found."
+      },
+      "hours_tuesday": "10:00 AM - 8:00 PM",
+      "days_open": "Mon-Thu 10:00 AM - 8:00 PM; Fri-Sat 10:00 AM - 9:00 PM; Sun 11:00 AM - 7:00 PM (Simon Mall directory, Toast and Yelp all agree on 8:00 PM Tuesday close)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Great Mall, Milpitas - ~12 mi from Cupertino; VTA or a ride."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {"label": "Simon Mall official directory (Great Mall) - Naans & Curries: Tue 10:00 am-8:00 pm, full weekly table", "url": "https://www.simon.com/mall/great-mall/stores/naans-curries"},
+          {"label": "Toast online ordering - 102 Great Mall Drive: Tue 10:00 am-8:00 pm", "url": "https://www.toasttab.com/local/order/naans-curries-102-great-mall-drive/r-2f96925c-45e6-4c60-9070-2f9d5dfeff76"},
+          {"label": "Yelp business page (Aug-2026 capture) - 102 Great Mall Dr: Mon-Thu 10:00 am-8:00 pm, Fri-Sat 10:00 am-9:00 pm, Sun 11:00 am-7:00 pm", "url": "https://www.yelp.com/biz/naans-and-curries-milpitas"}
+        ],
+        "accessed": "2026-09-12"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/naans-and-curries-milpitas",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Naans+%26+Curries+102+Great+Mall+Dr+Milpitas"
+      },
+      "flags": []
+    },
+    {
+      "name": "Taishoken",
+      "city": "Milpitas",
+      "area": "Barber Ln",
+      "address": "416 Barber Ln, Milpitas, CA 95035",
+      "cuisine": "Japanese / sushi and hot pot",
+      "phone": "(408) 972-9290",
+      "lunch_special": {
+        "name": "Lunch omakase/combo per official site; no discounted price published",
+        "price_from": null,
+        "price_to": null,
+        "days": "daily",
+        "window": "11:30 AM - 2:00 PM lunch block",
+        "includes": "No priced lunch special found."
+      },
+      "hours_tuesday": "11:30 AM - 2:00 PM, 5:00 - 9:00 PM",
+      "days_open": "Daily 11:30 AM - 2:00 PM, 5:00 - 9:00 PM (official taishokenusa.com Milpitas page; a Novacircle capture agreed)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Milpitas Barber Ln - ~12 mi from Cupertino; VTA or a ride."
+      },
+      "verification": {
+        "level": "official",
+        "sources": [
+          {"label": "Official site taishokenusa.com (Milpitas page) - 416 Barber Ln: daily 11:30 am-2:00 pm, 5:00-9:00 pm (the site's JSON-LD wrongly says San Mateo - visible text used)", "url": "https://taishokenusa.com/milpitas"},
+          {"label": "Google Maps search - Taishoken, 416 Barber Ln, Milpitas", "url": "https://www.google.com/maps/search/?api=1&query=Taishoken+416+Barber+Ln+Milpitas"}
+        ],
+        "accessed": "2026-09-12"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/search?find_desc=Taishoken&find_loc=Milpitas%2C+CA",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Taishoken+416+Barber+Ln+Milpitas"
+      },
+      "flags": ["Official site JSON-LD lists San Mateo as the location - contradicts the visible address text (416 Barber Ln, Milpitas); the visible text was used."]
+    },
+    {
+      "name": "KoKoLo",
+      "city": "Milpitas",
+      "area": "Ranch Dr (McCarthy Ranch)",
+      "address": "179 Ranch Dr, Milpitas, CA 95035",
+      "cuisine": "Korean / BBQ and rice bowls",
+      "phone": "(408) 635-6656",
+      "lunch_special": {
+        "name": "No published lunch special - à la carte Korean menu",
+        "price_from": null,
+        "price_to": null,
+        "days": "daily",
+        "window": "11:30 AM - 9:00 PM",
+        "includes": "No priced lunch special found."
+      },
+      "hours_tuesday": "11:30 AM - 9:00 PM",
+      "days_open": "Daily 11:30 AM - 9:00 PM (two independent captures agree)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "McCarthy Ranch, Milpitas - ~13 mi from Cupertino; VTA/ride needed."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {"label": "Yelp search - KoKoLo, 179 Ranch Dr, Milpitas (daily 11:30 am-9:00 pm)", "url": "https://www.yelp.com/search?find_desc=KoKoLo&find_loc=Milpitas%2C+CA"},
+          {"label": "Google Maps search - KoKoLo, 179 Ranch Dr, Milpitas", "url": "https://www.google.com/maps/search/?api=1&query=KoKoLo+179+Ranch+Dr+Milpitas"}
+        ],
+        "accessed": "2026-09-12"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/search?find_desc=KoKoLo&find_loc=Milpitas%2C+CA",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=KoKoLo+179+Ranch+Dr+Milpitas"
+      },
+      "flags": []
+    },
+    {
+      "name": "Kusan Bazaar - Milpitas",
+      "city": "Milpitas",
+      "area": "Barber Ln",
+      "address": "510 Barber Ln, Milpitas, CA 95035",
+      "cuisine": "Halal / Uyghur / Silk Road grill & noodles",
+      "phone": "(408) 549-2078",
+      "lunch_special": {
+        "name": "No published lunch special - à la carte kebabs, pilaf and noodles",
+        "price_from": null,
+        "price_to": null,
+        "days": "daily",
+        "window": "11:00 AM - 2:30 PM lunch block",
+        "includes": "No priced lunch special found."
+      },
+      "hours_tuesday": "11:00 AM - 2:30 PM, 5:00 - 9:00 PM",
+      "days_open": "Mon-Fri 11:00 AM - 2:30 PM, 5:00 - 9:00 PM; Sat 11:00 AM - 9:30 PM; Sun 11:00 AM - 9:00 PM (Yelp US + CA and the official site agree)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Milpitas Barber Ln - ~12 mi from Cupertino; VTA or a ride."
+      },
+      "verification": {
+        "level": "official",
+        "sources": [
+          {"label": "Yelp business page - 510 Barber Ln: Mon-Thu 11:00 am-2:30 pm, 5:00-9:00 pm, Fri to 9:30 pm, Sat 11:00 am-9:30 pm, Sun 11:00 am-9:00 pm; business website kusanbazaar.com", "url": "https://www.yelp.com/biz/kusan-bazaar-milpitas"},
+          {"label": "Yelp (yelp.ca) business page - same schedule, phone (408) 549-2078", "url": "https://m.yelp.ca/biz/kusan-bazaar-milpitas"},
+          {"label": "Official site kusanbazaar.com (reservations page lists both locations)", "url": "https://www.kusanbazaar.com/page/-reservations"}
+        ],
+        "accessed": "2026-09-12"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/kusan-bazaar-milpitas",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Kusan+Bazaar+510+Barber+Ln+Milpitas"
+      },
+      "flags": []
+    },
+    {
+      "name": "Mari Mari Restaurant",
+      "city": "Milpitas",
+      "area": "Barber Ln",
+      "address": "662 Barber Ln, Milpitas, CA 95035",
+      "cuisine": "Mediterranean / Middle Eastern",
+      "phone": "(408) 946-3030",
+      "lunch_special": {
+        "name": "No published lunch special (Tuesday availability disputed - see flag)",
+        "price_from": null,
+        "price_to": null,
+        "days": "daily per official site; Tue-Sat per Yelp",
+        "window": "11:00 AM - 3:00 PM lunch block (when open)",
+        "includes": "No priced lunch special found."
+      },
+      "hours_tuesday": "Closed (Yelp and corner.inc) vs open daily 11:00 AM - 3:00 PM, 5:00 - 9:00 PM (official site) - conflict",
+      "days_open": "Official marimariusa.com shows daily 11:00 am-3:00 pm, 5:00-9:00 pm; current Yelp and corner.inc captures show Tuesday closed, Wed-Sun service",
+      "open_on_trip_date": null,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Milpitas Barber Ln - ~12 mi from Cupertino; VTA or a ride. Tuesday open/closed is disputed - call first."
+      },
+      "verification": {
+        "level": "official",
+        "sources": [
+          {"label": "Official site marimariusa.com - 662 Barber Ln: daily 11:00 am-3:00 pm, 5:00-9:00 pm (claims open Tuesday)", "url": "https://marimariusa.com/"},
+          {"label": "Yelp search - Mari Mari, 662 Barber Ln, Milpitas (captures show Tuesday closed)", "url": "https://www.yelp.com/search?find_desc=Mari+Mari&find_loc=Milpitas%2C+CA"},
+          {"label": "Google Maps search - Mari Mari, 662 Barber Ln, Milpitas", "url": "https://www.google.com/maps/search/?api=1&query=Mari+Mari+662+Barber+Ln+Milpitas"}
+        ],
+        "accessed": "2026-09-12"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/search?find_desc=Mari+Mari&find_loc=Milpitas%2C+CA",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Mari+Mari+662+Barber+Ln+Milpitas"
+      },
+      "flags": [
+        "LUNCH-FLAG-46: official site says open daily, current Yelp/corner captures say Tuesday closed. Call (408) 946-3030 before planning on it."
+      ]
+    },
+    {
+      "name": "Hanmaru Japanese Steakhouse",
+      "city": "Milpitas",
+      "area": "Dixon Rd",
+      "address": "50 Dixon Rd, Milpitas, CA 95035",
+      "cuisine": "Japanese steakhouse / teppanyaki",
+      "phone": "(408) 406-8338",
+      "lunch_special": {
+        "name": "No published lunch special - lunch set per the business site",
+        "price_from": null,
+        "price_to": null,
+        "days": "daily",
+        "window": "11:00 AM - 9:30 PM",
+        "includes": "No priced lunch special found."
+      },
+      "hours_tuesday": "11:00 AM - 9:30 PM",
+      "days_open": "Daily 11:00 AM - 9:30 PM (Yelp captures agree)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Milpitas Dixon Rd - ~12 mi from Cupertino; VTA or a ride."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {"label": "Yelp search - Hanmaru, 50 Dixon Rd, Milpitas (daily 11:00 am-9:30 pm)", "url": "https://www.yelp.com/search?find_desc=Hanmaru&find_loc=Milpitas%2C+CA"},
+          {"label": "Google Maps search - Hanmaru, 50 Dixon Rd, Milpitas", "url": "https://www.google.com/maps/search/?api=1&query=Hanmaru+50+Dixon+Rd+Milpitas"}
+        ],
+        "accessed": "2026-09-12"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/search?find_desc=Hanmaru&find_loc=Milpitas%2C+CA",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Hanmaru+50+Dixon+Rd+Milpitas"
+      },
+      "flags": ["Candidate was labeled San Jose; the real location is Milpitas (LUNCH-FLAG-65)."]
+    },
+    {
+      "name": "The Best Sandwiches",
+      "city": "Milpitas",
+      "area": "S Main St",
+      "address": "187 S Main St, Milpitas, CA 95035",
+      "cuisine": "Sandwiches / grill",
+      "phone": "(408) 997-2424",
+      "lunch_special": {
+        "name": "No published lunch special - à la carte sandwiches",
+        "price_from": null,
+        "price_to": null,
+        "days": "daily",
+        "window": "8:00 AM - 8:00 PM",
+        "includes": "No priced lunch special found."
+      },
+      "hours_tuesday": "8:00 AM - 8:00 PM",
+      "days_open": "Daily 8:00 AM - 8:00 PM (official thebestsandwiches187.com; a Restaurantji capture agreed)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Milpitas S Main St - ~12 mi from Cupertino; VTA or a ride."
+      },
+      "verification": {
+        "level": "official",
+        "sources": [
+          {"label": "Official site thebestsandwiches187.com - 187 S Main St: daily 8:00 am-8:00 pm", "url": "https://www.thebestsandwiches187.com/"},
+          {"label": "Google Maps search - The Best Sandwiches, 187 S Main St, Milpitas", "url": "https://www.google.com/maps/search/?api=1&query=The+Best+Sandwiches+187+S+Main+St+Milpitas"}
+        ],
+        "accessed": "2026-09-12"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/search?find_desc=The+Best+Sandwiches&find_loc=Milpitas%2C+CA",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=The+Best+Sandwiches+187+S+Main+St+Milpitas"
+      },
+      "flags": ["Second location (5126 Stevens Creek Blvd, San Jose, 9:00 am-7:00 pm) noted in the candidate list; only the Milpitas location is added here."]
+    },
+    {
+      "name": "Katsu Gin",
+      "city": "Milpitas",
+      "area": "N Milpitas Blvd",
+      "address": "128 N Milpitas Blvd, Milpitas, CA 95035",
+      "cuisine": "Japanese curry / vegetarian katsu",
+      "phone": "(408) 618-0298",
+      "lunch_special": {
+        "name": "No published lunch special (closed Tuesday)",
+        "price_from": null,
+        "price_to": null,
+        "days": "not applicable (closed Tuesday)",
+        "window": null,
+        "includes": "No priced lunch special found; the restaurant is closed on the trip day."
+      },
+      "hours_tuesday": "Closed",
+      "days_open": "Sun-Mon and Wed-Sat 11:00 AM - 2:00 PM, 5:30 - 9:00/9:30 PM; Tue closed (Restaurantji; UberEats and Postmates both leave Tuesday blank)",
+      "open_on_trip_date": false,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Milpitas N Milpitas Blvd - closed on the trip Tuesday; reference row only."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {"label": "Restaurantji - 128 N Milpitas Blvd: Mo 11:00-14:00, 17:30-21:00; Tu Closed; We 11:00-14:00, 17:30-21:00 etc.", "url": "https://www.restaurantji.com/ca/milpitas/katsu-gin-/"},
+          {"label": "UberEats store page - 128 North Milpitas Blvd: Tuesday listed with no service hours (blank)", "url": "https://www.ubereats.com/store/katsu-gin-128-north-milpitas-boulevard/v3fW7HxVRcyEeVvBJEMWjQ"},
+          {"label": "Postmates store page - same weekly pattern", "url": "https://postmates.com/store/katsu-gin-128-north-milpitas-boulevard/v3fW7HxVRcyEeVvBJEMWjQ"}
+        ],
+        "accessed": "2026-09-12"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/search?find_desc=Katsu+Gin&find_loc=Milpitas%2C+CA",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Katsu+Gin+128+N+Milpitas+Blvd+Milpitas"
+      },
+      "flags": ["Closed on the trip day (Tuesday); kept as a reference row."]
+    },
+    {
+      "name": "Mala Town",
+      "city": "Milpitas",
+      "area": "Barber Ln",
+      "address": "438 Barber Ln, Milpitas, CA 95035",
+      "cuisine": "Chinese / Sichuan mala",
+      "phone": "(408) 469-5698",
+      "lunch_special": {
+        "name": "No published lunch special - à la carte mala plates",
+        "price_from": null,
+        "price_to": null,
+        "days": "daily",
+        "window": "11:30 AM - 10:00 PM",
+        "includes": "No priced lunch special found."
+      },
+      "hours_tuesday": "11:30 AM - 10:00 PM",
+      "days_open": "Daily 11:30 AM - 10:00 PM (Yelp x2 and Roadtrippers agree; official site malatown.us)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Milpitas Barber Ln - ~12 mi from Cupertino; VTA or a ride."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {"label": "Yelp search - Mala Town, 438 Barber Ln, Milpitas (daily 11:30 am-10:00 pm)", "url": "https://www.yelp.com/search?find_desc=Mala+Town&find_loc=Milpitas%2C+CA"},
+          {"label": "Google Maps search - Mala Town, 438 Barber Ln, Milpitas", "url": "https://www.google.com/maps/search/?api=1&query=Mala+Town+438+Barber+Ln+Milpitas"}
+        ],
+        "accessed": "2026-09-12"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/search?find_desc=Mala+Town&find_loc=Milpitas%2C+CA",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Mala+Town+438+Barber+Ln+Milpitas"
+      },
+      "flags": []
+    },
+    {
+      "name": "Raunak",
+      "city": "Milpitas",
+      "area": "E Capitol Ave",
+      "address": "888 E Capitol Ave, Milpitas, CA 95035",
+      "cuisine": "Indian",
+      "phone": "(408) 772-2299",
+      "lunch_special": {
+        "name": "No published lunch special - à la carte Indian plates",
+        "price_from": null,
+        "price_to": null,
+        "days": "daily",
+        "window": "11:00 AM - 3:30 PM lunch block",
+        "includes": "No priced lunch special found."
+      },
+      "hours_tuesday": "11:00 AM - 3:30 PM (and 5:00 - 9:30 PM per the Aug-2026 capture; the Apr-2026 capture shows lunch only)",
+      "days_open": "Mon-Wed and Thu 11:00 AM - 3:30 PM, 5:00 - 9:30 PM; Fri 11:00 AM - 3:30 PM, 5:00 - 9:30 PM; Sat-Sun 11:00 AM - 9:30 PM (Yelp captures; the newer capture includes Tuesday dinner)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Milpitas E Capitol Ave - ~12 mi from Cupertino; VTA or a ride."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {"label": "Yelp business page (Aug-2026 capture, claimed) - 888 E Capitol Ave: Tue 11:00 am-3:30 pm, 5:00-9:30 pm; business website raunakfoods.com", "url": "https://www.yelp.com/biz/raunak-milpitas"},
+          {"label": "Yelp business page (Apr-2026 capture) - Tue 11:00 am-3:30 pm (no dinner block shown)", "url": "https://www.yelp.com/biz/raunak-milpitas?start=40"},
+          {"label": "Roadtrippers - 888 E Capitol Ave: Sun-Sat 11:00 am-9:30 pm", "url": "https://maps.roadtrippers.com/us/milpitas-ca/food-drink/raunak-milpitas-ca--0"}
+        ],
+        "accessed": "2026-09-12"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/raunak-milpitas",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Raunak+888+E+Capitol+Ave+Milpitas"
+      },
+      "flags": ["Minor: Tuesday dinner block appears in the newer capture but not the older one; lunch 11:00-3:30 is consistent."]
+    },
+    {
+      "name": "Yaichi Japanese Restaurant",
+      "city": "Milpitas",
+      "area": "Barber Ln (Ulferts Center)",
+      "address": "668 Barber Ln, Milpitas, CA 95035",
+      "cuisine": "Japanese / sushi and bowls",
+      "phone": "(408) 649-3305",
+      "lunch_special": {
+        "name": "No published lunch special - lunch bowls and combos",
+        "price_from": null,
+        "price_to": null,
+        "days": "daily",
+        "window": "11:30 AM - 2:00 PM lunch block",
+        "includes": "No priced lunch special found."
+      },
+      "hours_tuesday": "11:30 AM - 2:00 PM, 5:00 - 9:00 PM",
+      "days_open": "Mon-Fri 11:30 AM - 2:00 PM, 5:00 - 9:00 PM; Sat-Sun 11:30 AM - 9:00 PM (Yelp Sept-2026 and corner.inc agree; an Apple Maps capture showing dinner-only is stale)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Milpitas Ulferts Center - ~12 mi from Cupertino; VTA or a ride."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {"label": "Yelp business page (Sept-2026 capture) - 668 Barber Ln: Mon-Fri 11:30 am-2:00 pm, 5:00-9:00 pm, Sat-Sun 11:30 am-9:00 pm", "url": "https://www.yelp.com/biz/yaichi-japanese-restaurant-milpitas"},
+          {"label": "corner.inc (official site yaichi.netlify.app) - 668 Barber Ln: same schedule", "url": "https://www.corner.inc/place/pavBKzt3xPRc"},
+          {"label": "Apple Maps - 668 Barber Ln: shows 5:00-9:00 pm block (stale lunch data noted)", "url": "https://maps.apple.com/place?place-id=IB8D8B280790E5B0A"}
+        ],
+        "accessed": "2026-09-12"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/yaichi-japanese-restaurant-milpitas",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Yaichi+Japanese+Restaurant+668+Barber+Ln+Milpitas"
+      },
+      "flags": []
+    },
+    {
+      "name": "Bubbelah",
+      "city": "Menlo Park",
+      "area": "El Camino Real (1300 block)",
+      "address": "1300 El Camino Real Ste A, Menlo Park, CA 94025",
+      "cuisine": "Mediterranean / Middle Eastern",
+      "phone": "(650) 321-2244",
+      "lunch_special": {
+        "name": "No published lunch special - à la carte plates",
+        "price_from": null,
+        "price_to": null,
+        "days": "Tue-Sun",
+        "window": "11:30 AM - 7:00 PM",
+        "includes": "No priced lunch special found."
+      },
+      "hours_tuesday": "11:30 AM - 7:00 PM",
+      "days_open": "Tue-Sun 11:30 AM - 7:00 PM; Mon closed (Yelp; corner.inc and nears.me captures agreed on Tuesday hours)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Menlo Park El Camino - ~4 mi from Cupertino; 84/803 bus or a ride."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {"label": "Yelp search - Bubbelah, 1300 El Camino Real Ste A, Menlo Park (Tue-Sun 11:30 am-7:00 pm, Mon closed)", "url": "https://www.yelp.com/search?find_desc=Bubbelah&find_loc=Menlo+Park%2C+CA"},
+          {"label": "Google Maps search - Bubbelah, 1300 El Camino Real, Menlo Park", "url": "https://www.google.com/maps/search/?api=1&query=Bubbelah+1300+El+Camino+Real+Menlo+Park"}
+        ],
+        "accessed": "2026-09-12"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/search?find_desc=Bubbelah&find_loc=Menlo+Park%2C+CA",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Bubbelah+1300+El+Camino+Real+Menlo+Park"
+      },
+      "flags": ["Closed Monday; Tuesday is fine."]
+    },
+    {
+      "name": "Camper",
+      "city": "Menlo Park",
+      "area": "Santa Cruz Ave",
+      "address": "898 Santa Cruz Ave, Menlo Park, CA 94025",
+      "cuisine": "American / modern bistro",
+      "phone": "(650) 328-8882",
+      "lunch_special": {
+        "name": "Lunch service disputed - the homepage says the kitchen opens at 5 PM",
+        "price_from": null,
+        "price_to": null,
+        "days": "Tue-Sat per JSON-LD (12:00-3:00 and 17:00-23:00); Sunday closed",
+        "window": "12:00 - 3:00 PM (per structured data) vs no lunch (per homepage text) - conflict",
+        "includes": "No priced lunch special found."
+      },
+      "hours_tuesday": "12:00 - 3:00 PM and 5:00 - 11:00 PM (page JSON-LD) vs kitchen opens 5 PM / no lunch (homepage text) - conflict",
+      "days_open": "The site's own JSON-LD says Tue 12:00-15:00 and 17:00-23:00; the homepage body says 'kitchen opens 5 PM, closed Sunday' with no lunch mention",
+      "open_on_trip_date": null,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Menlo Park Santa Cruz Ave - ~4 mi from Cupertino; 84 bus or a ride. Tuesday lunch is disputed - call first."
+      },
+      "verification": {
+        "level": "official",
+        "sources": [
+          {"label": "Official site campermp.com - 898 Santa Cruz Ave: JSON-LD Tue 12:00-15:00, 17:00-23:00; homepage text 'kitchen opens 5 PM, closed Sun'", "url": "https://campermp.com/"},
+          {"label": "Google Maps search - Camper, 898 Santa Cruz Ave, Menlo Park", "url": "https://www.google.com/maps/search/?api=1&query=Camper+898+Santa+Cruz+Ave+Menlo+Park"}
+        ],
+        "accessed": "2026-09-12"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/search?find_desc=Camper&find_loc=Menlo+Park%2C+CA",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Camper+898+Santa+Cruz+Ave+Menlo+Park"
+      },
+      "flags": [
+        "LUNCH-FLAG-58: the restaurant's own page contradicts itself on whether Tuesday has lunch (structured data 12-3 vs homepage 'kitchen opens 5 PM'). Call (650) 328-8882."
+      ]
+    },
+    {
+      "name": "La Stanza",
+      "city": "Menlo Park",
+      "area": "Oak Grove Ave",
+      "address": "651 Oak Grove Ave Ste H, Menlo Park, CA 94025",
+      "cuisine": "Italian",
+      "phone": "(650) 457-9542",
+      "lunch_special": {
+        "name": "No lunch service - dinner only",
+        "price_from": null,
+        "price_to": null,
+        "days": "not applicable (no lunch)",
+        "window": null,
+        "includes": "Dinner only 4:00 - 8:30 PM; no lunch service on any captured page."
+      },
+      "hours_tuesday": "4:00 - 8:30 PM (dinner only, no lunch)",
+      "days_open": "Tue-Sat 4:00 - 8:30 PM (Sun-Mon closed on the current captures)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Menlo Park Oak Grove - ~4 mi from Cupertino; dinner-only venue, does not fit a lunch plan."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {"label": "Yelp search - La Stanza, 651 Oak Grove Ave Ste H, Menlo Park (Tue-Sat 4:00-8:30 pm)", "url": "https://www.yelp.com/search?find_desc=La+Stanza&find_loc=Menlo+Park%2C+CA"},
+          {"label": "Google Maps search - La Stanza, 651 Oak Grove Ave, Menlo Park", "url": "https://www.google.com/maps/search/?api=1&query=La+Stanza+651+Oak+Grove+Ave+Menlo+Park"}
+        ],
+        "accessed": "2026-09-12"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/search?find_desc=La+Stanza&find_loc=Menlo+Park%2C+CA",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=La+Stanza+651+Oak+Grove+Ave+Menlo+Park"
+      },
+      "flags": ["No lunch service (NL); kept as a reference row."]
+    },
+    {
+      "name": "Causwells",
+      "city": "Menlo Park",
+      "area": "Oak Grove Ave",
+      "address": "550 Oak Grove Ave, Menlo Park, CA 94025",
+      "cuisine": "British / pub",
+      "phone": "(650) 316-6800",
+      "lunch_special": {
+        "name": "No published lunch special - lunch menu weekdays",
+        "price_from": null,
+        "price_to": null,
+        "days": "Mon-Fri",
+        "window": "11:00 AM - 3:00 PM",
+        "includes": "No priced lunch special found."
+      },
+      "hours_tuesday": "11:00 AM - 3:00 PM, 5:00 - 9:00 PM",
+      "days_open": "Mon-Thu 11:00 AM - 3:00 PM, 5:00 - 9:00 PM; Fri 11:00 AM - 3:00 PM, 5:00 - 9:30 PM; Sat 11:00 AM - 9:00 PM; Sun 11:00 AM - 8:00 PM (official causwells.com; corner.inc dinner-only capture is incomplete)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Menlo Park Oak Grove - ~4 mi from Cupertino; 84 bus or a ride."
+      },
+      "verification": {
+        "level": "official",
+        "sources": [
+          {"label": "Official site causwells.com - 550 Oak Grove Ave: Tue 11:00 am-3:00 pm, 5:00-9:00 pm", "url": "https://causwells.com/"},
+          {"label": "Google Maps search - Causwells, 550 Oak Grove Ave, Menlo Park", "url": "https://www.google.com/maps/search/?api=1&query=Causwells+550+Oak+Grove+Ave+Menlo+Park"}
+        ],
+        "accessed": "2026-09-12"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/search?find_desc=Causwells&find_loc=Menlo+Park%2C+CA",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Causwells+550+Oak+Grove+Ave+Menlo+Park"
+      },
+      "flags": []
+    },
+    {
+      "name": "Jason's Cafe",
+      "city": "Menlo Park",
+      "area": "El Camino Real (1200 block)",
+      "address": "1246 El Camino Real, Menlo Park, CA 94025",
+      "cuisine": "Breakfast & brunch / café",
+      "phone": "(650) 326-4227",
+      "lunch_special": {
+        "name": "No published lunch special - breakfast/brunch menu",
+        "price_from": null,
+        "price_to": null,
+        "days": "daily",
+        "window": "7:00 AM - 3:00 PM",
+        "includes": "No priced lunch special found."
+      },
+      "hours_tuesday": "7:00 AM - 3:00 PM",
+      "days_open": "Daily 7:00 AM - 3:00 PM (Yelp; YellowPages still shows 7:00-8:00 - stale and not used)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Menlo Park El Camino - ~4 mi from Cupertino; 84 bus or a ride; closes at 3 PM."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {"label": "Yelp search - Jason's Cafe, 1246 El Camino Real, Menlo Park (daily 7:00 am-3:00 pm)", "url": "https://www.yelp.com/search?find_desc=Jason%27s+Cafe&find_loc=Menlo+Park%2C+CA"},
+          {"label": "Google Maps search - Jason's Cafe, 1246 El Camino Real, Menlo Park", "url": "https://www.google.com/maps/search/?api=1&query=Jason%27s+Cafe+1246+El+Camino+Real+Menlo+Park"}
+        ],
+        "accessed": "2026-09-12"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/search?find_desc=Jason%27s+Cafe&find_loc=Menlo+Park%2C+CA",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Jason%27s+Cafe+1246+El+Camino+Real+Menlo+Park"
+      },
+      "flags": ["Closes 3:00 PM; the YellowPages 7-8 listing is stale."]
+    },
+    {
+      "name": "MP Mongolian Cuisine",
+      "city": "Menlo Park",
+      "area": "El Camino Real (700 block)",
+      "address": "700 El Camino Real Ste 170, Menlo Park, CA 94025",
+      "cuisine": "Mongolian / Chinese",
+      "phone": "(650) 326-6699",
+      "lunch_special": {
+        "name": "No published lunch special - lunch set per the business site",
+        "price_from": null,
+        "price_to": null,
+        "days": "daily",
+        "window": "11:30 AM - 2:00 PM lunch block",
+        "includes": "No priced lunch special found."
+      },
+      "hours_tuesday": "11:30 AM - 2:00 PM, 5:00 - 8:30 PM",
+      "days_open": "Daily 11:30 AM - 2:00 PM, 5:00 - 8:30 PM (nears.me and TripAdvisor captures agree; an fnb.com capture agreed on the lunch block)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Menlo Park El Camino - ~3 mi from Cupertino; 803/84 bus or a ride."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {"label": "Google Maps search - MP Mongolian Cuisine, 700 El Camino Real Ste 170, Menlo Park (daily 11:30 am-2:00 pm, 5:00-8:30 pm)", "url": "https://www.google.com/maps/search/?api=1&query=MP+Mongolian+Cuisine+700+El+Camino+Real+Menlo+Park"},
+          {"label": "Yelp search - MP Mongolian, 700 El Camino Real, Menlo Park", "url": "https://www.yelp.com/search?find_desc=MP+Mongolian&find_loc=Menlo+Park%2C+CA"}
+        ],
+        "accessed": "2026-09-12"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/search?find_desc=MP+Mongolian&find_loc=Menlo+Park%2C+CA",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=MP+Mongolian+Cuisine+700+El+Camino+Real+Menlo+Park"
+      },
+      "flags": []
+    },
+    {
+      "name": "Haven",
+      "city": "Menlo Park",
+      "area": "Menalto Ave (El Granada)",
+      "address": "1925 Menalto Ave, Menlo Park, CA 94025",
+      "cuisine": "American / tavern",
+      "phone": "(650) 321-9696",
+      "lunch_special": {
+        "name": "No lunch service - dinner only",
+        "price_from": null,
+        "price_to": null,
+        "days": "not applicable (no lunch)",
+        "window": null,
+        "includes": "Dinner only 4:00 - 9:00 PM; no lunch service on the current listings."
+      },
+      "hours_tuesday": "4:00 - 9:00 PM (dinner only, no lunch)",
+      "days_open": "Daily 4:00 - 9:00 PM (Sun closed on some captures) - dinner-only venue",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Menlo Park El Granada - ~4 mi from Cupertino; dinner-only venue, does not fit a lunch plan."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {"label": "Yelp search - Haven, 1925 Menalto Ave, Menlo Park (4:00-9:00 pm, dinner only)", "url": "https://www.yelp.com/search?find_desc=Haven&find_loc=Menlo+Park%2C+CA"},
+          {"label": "Google Maps search - Haven, 1925 Menalto Ave, Menlo Park", "url": "https://www.google.com/maps/search/?api=1&query=Haven+1925+Menalto+Ave+Menlo+Park"}
+        ],
+        "accessed": "2026-09-12"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/search?find_desc=Haven&find_loc=Menlo+Park%2C+CA",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Haven+1925+Menalto+Ave+Menlo+Park"
+      },
+      "flags": ["No lunch service (NL); kept as a reference row."]
+    },
+    {
+      "name": "Sultana Mediterranean",
+      "city": "Menlo Park",
+      "area": "El Camino Real (1100 block)",
+      "address": "1149 El Camino Real, Menlo Park, CA 94025",
+      "cuisine": "Turkish / Mediterranean",
+      "phone": "(650) 322-4343",
+      "lunch_special": {
+        "name": "No published lunch special - takeout from 10:30 AM per the business's own updates",
+        "price_from": null,
+        "price_to": null,
+        "days": "daily",
+        "window": "11:00 AM - 9:00 PM",
+        "includes": "No priced lunch special found."
+      },
+      "hours_tuesday": "11:00 AM - 9:00 PM",
+      "days_open": "Daily 11:00 AM - 9:00 PM (Yelp captures and TripAdvisor agree)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Menlo Park El Camino - ~3 mi from Cupertino; 84/803 bus or a ride."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {"label": "Yelp business page (2026 capture, claimed) - 1149 El Camino Real: daily 11:00 am-9:00 pm; takeout updates from 10:30 am", "url": "https://www.yelp.com/biz/sultana-mediterranean-menlo-park-2?start=40"},
+          {"label": "Yelp business page (July-2025 capture) - same schedule", "url": "https://www.yelp.com/biz/sultana-mediterranean-menlo-park-2?start=80"},
+          {"label": "TripAdvisor - 1149 El Camino Real: daily 11:00 am-9:00 pm, phone 650-322-4343", "url": "https://www.tripadvisor.com/Restaurant_Review-g32704-d787368-Reviews-Sultana-Menlo_Park_California.html"}
+        ],
+        "accessed": "2026-09-12"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/sultana-mediterranean-menlo-park-2",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Sultana+Mediterranean+1149+El+Camino+Real+Menlo+Park"
+      },
+      "flags": []
+    },
+    {
+      "name": "Farmhouse Kitchen Thai Cuisine",
+      "city": "Menlo Park",
+      "area": "Merrill St",
+      "address": "1165 Merrill St, Menlo Park, CA 94025",
+      "cuisine": "Thai",
+      "phone": "(650) 665-7935",
+      "lunch_special": {
+        "name": "Lunch service 11:00 AM - 2:00 PM; no discounted price published",
+        "price_from": null,
+        "price_to": null,
+        "days": "daily",
+        "window": "11:00 AM - 2:00 PM",
+        "includes": "No priced lunch special found."
+      },
+      "hours_tuesday": "11:00 AM - 2:00 PM, 5:00 - 8:30 PM",
+      "days_open": "Mon-Thu 11:00 AM - 2:00 PM, 5:00 - 8:30 PM; Fri 11:00 AM - 2:00 PM, 5:00 - 9:00 PM; Sat-Sun 12:00 PM - 3:00 PM, 5:00 - 8:30/9:00 PM (Yelp x2 and the official farmhousethai.com agree)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Menlo Park Merrill St - ~4 mi from Cupertino; 84 bus or a ride."
+      },
+      "verification": {
+        "level": "official",
+        "sources": [
+          {"label": "Yelp business page (June-2025 capture) - 1165 Merrill St: Tue 11:00 am-2:00 pm, 5:00-8:30 pm", "url": "https://www.yelp.com/biz/farmhouse-kitchen-thai-cuisine-menlo-park-2?start=5"},
+          {"label": "Official site farmhousethai.com (catering page lists the Menlo Park hours) - Mon-Thu 11:00 am-2:00 pm, 5:00-8:30 pm", "url": "https://farmhousethai.com/catering"},
+          {"label": "Yelp reservations page (Oct-2025 capture) - same per-day hours", "url": "https://www.yelp.com/reservations/farmhouse-kitchen-thai-cuisine-menlo-park-2"}
+        ],
+        "accessed": "2026-09-12"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/farmhouse-kitchen-thai-cuisine-menlo-park-2",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Farmhouse+Kitchen+Thai+1165+Merrill+St+Menlo+Park"
+      },
+      "flags": []
+    },
+    {
+      "name": "FEY Restaurant",
+      "city": "Menlo Park",
+      "area": "El Camino Real (1300 block)",
+      "address": "1368 El Camino Real, Menlo Park, CA 94025",
+      "cuisine": "Szechuan / Chinese",
+      "phone": "(650) 326-3378",
+      "lunch_special": {
+        "name": "Lunch combos (named in the Yelp listing); no discounted price published",
+        "price_from": null,
+        "price_to": null,
+        "days": "daily",
+        "window": "11:30 AM - 2:30 PM",
+        "includes": "No priced lunch special found."
+      },
+      "hours_tuesday": "11:30 AM - 2:30 PM, 5:00 - 9:30 PM",
+      "days_open": "Daily 11:30 AM - 2:30 PM, 5:00 - 9:30 PM (three Yelp captures agree)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Menlo Park El Camino - ~4 mi from Cupertino; 84/803 bus or a ride."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {"label": "Yelp business page (2026 capture) - 1368 El Camino Real: daily 11:30 am-2:30 pm, 5:00-9:30 pm; 'Lunch combos' in the specialty text", "url": "https://www.yelp.com/biz/fey-restaurant-menlo-park?start=180"},
+          {"label": "Yelp business page (Sept-2025 capture) - same schedule", "url": "https://www.yelp.com/biz/fey-restaurant-menlo-park?start=120"},
+          {"label": "Yelp business page (older capture) - same schedule", "url": "https://www.yelp.com/biz/fey-restaurant-menlo-park?start=260"}
+        ],
+        "accessed": "2026-09-12"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/fey-restaurant-menlo-park",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=FEY+Restaurant+1368+El+Camino+Real+Menlo+Park"
+      },
+      "flags": []
+    },
+    {
+      "name": "Honō Izakaya & Sushi",
+      "city": "Campbell",
+      "area": "S Central Ave (downtown)",
+      "address": "33 S Central Ave, Campbell, CA 95008",
+      "cuisine": "Japanese / izakaya / sushi",
+      "phone": "(408) 963-6534",
+      "lunch_special": {
+        "name": "Lunch service weekdays; no discounted price published",
+        "price_from": null,
+        "price_to": null,
+        "days": "Mon-Fri",
+        "window": "11:30 AM - 2:30 PM",
+        "includes": "No priced lunch special found."
+      },
+      "hours_tuesday": "11:30 AM - 2:30 PM, 5:00 - 9:30 PM",
+      "days_open": "Mon-Thu 11:30 AM - 2:30 PM, 5:00 - 9:30 PM; Fri 11:30 AM - 2:30 PM, 5:00 - 10:30 PM; Sat 12:00 PM - 10:30 PM; Sun 12:00 PM - 9:30 PM (official honojapcuisine.com; Roadtrippers agrees with continuous Mon-Thu 11:30-9:30)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": true,
+        "note": "Campbell downtown - ~5 mi from Cupertino and on the VTA 40/51 corridor; lunch block fits the 11:50 AM departure."
+      },
+      "verification": {
+        "level": "official",
+        "sources": [
+          {"label": "Official site honojapcuisine.com - 33 South Central Avenue, Campbell: Mon-Thu 11:30 am-2:30 pm, 5:00-9:30 pm", "url": "https://honojapcuisine.com/"},
+          {"label": "Roadtrippers - 33 S Central Ave: Mon-Thu 11:30 am-9:30 pm, Fri 11:30 am-10:30 pm, Sat 12:00-10:30 pm, Sun 12:00-9:30 pm, phone (408) 963-6534", "url": "https://maps.roadtrippers.com/us/campbell-ca/food-drink/hono-izakaya-sushi-campbell-ca--0"}
+        ],
+        "accessed": "2026-09-12"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/search?find_desc=Hono+Izakaya&find_loc=Campbell%2C+CA",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Hono+Izakaya+%26+Sushi+33+S+Central+Ave+Campbell"
+      },
+      "flags": []
+    },
+    {
+      "name": "Sumika Grill",
+      "city": "Los Altos",
+      "area": "Central Plaza",
+      "address": "236 Central Plaza, Los Altos, CA 94022",
+      "cuisine": "Japanese / yakitori",
+      "phone": "(650) 917-1822",
+      "lunch_special": {
+        "name": "Lunch service; no discounted price published",
+        "price_from": null,
+        "price_to": null,
+        "days": "daily",
+        "window": "11:30 AM - 2:00 PM",
+        "includes": "No priced lunch special found."
+      },
+      "hours_tuesday": "11:30 AM - 2:00 PM, 5:30 - 8:00 PM",
+      "days_open": "Sun-Thu 11:30 AM - 2:00 PM, 5:30 - 8:00 PM; Fri-Sat 11:30 AM - 2:00 PM, 5:30 - 9:00 PM (Apple Maps; the 2013 Palo Alto Online review showed a similar Tue-Sat lunch pattern)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Los Altos Central Plaza - ~7 mi from Cupertino; 84 bus or a ride."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {"label": "Apple Maps - 236 Central Plaza, Los Altos: Sun-Thu 11:30 am-2:00 pm, 5:30-8:00 pm; Fri-Sat 5:30-9:00 pm; website sumikagrill.com", "url": "https://maps.apple.com/place?place-id=IA020FF93130C5CAA"},
+          {"label": "Palo Alto Online review (2013, historical) - 236 Central Plaza: lunch Tue-Sat 11:30 am-2:00 pm", "url": "https://www.paloaltoonline.com/uncategorized/2013-03-15/yakitori-shines-at-sumika/"}
+        ],
+        "accessed": "2026-09-12"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/search?find_desc=Sumika+Grill&find_loc=Los+Altos%2C+CA",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Sumika+Grill+236+Central+Plaza+Los+Altos"
+      },
+      "flags": ["The corroborating press review is from 2013; the current hours come from Apple Maps - re-confirm the lunch block before planning on it."]
+    },
+    {
+      "name": "Su-Dam Korean Cuisine",
+      "city": "Los Altos",
+      "area": "El Camino Real (4500 block)",
+      "address": "4546 El Camino Real Ste A5, Los Altos, CA 94022",
+      "cuisine": "Korean",
+      "phone": "(650) 949-1200",
+      "lunch_special": {
+        "name": "No published lunch special - lunch service weekdays",
+        "price_from": null,
+        "price_to": null,
+        "days": "daily",
+        "window": "11:30 AM - 2:30 PM",
+        "includes": "No priced lunch special found."
+      },
+      "hours_tuesday": "11:30 AM - 2:30 PM, 4:30 - 9:30 PM",
+      "days_open": "Mon-Fri 11:30 AM - 2:30 PM, 4:30 - 9:30 PM; Sat 11:30 AM - 9:30 PM; Sun 4:30 PM - 9:00 PM (Yelp July-2026 and hey-restaurants agree; a bippermedia capture is stale)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Los Altos El Camino - ~7 mi from Cupertino; 84 bus or a ride."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {"label": "Yelp business page (July-2026 capture) - 4546 El Camino Real Ste A5: Mon-Fri 11:30 am-2:30 pm, 4:30-9:30 pm, Sat 11:30 am-9:30 pm, Sun 4:30-9:00 pm", "url": "https://www.yelp.com/biz/su-dam-korean-cuisine-los-altos-3?start=240"},
+          {"label": "hey-restaurants.com (business page) - 4546 El Camino Real: same weekly table", "url": "https://su-dam-korean-cuisine.hey-restaurants.com/"},
+          {"label": "bippermedia directory - 4546 El Camino Real: daily 11:30 am-9:00 pm (stale capture noted)", "url": "https://bippermedia.com/restaurants/united-states/california/los-altos/su-dam-korean-cuisine-reviews-su-dam-korean-cuisine-at-4546-el-camino-real-los-altos-ca-94022/"}
+        ],
+        "accessed": "2026-09-12"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/su-dam-korean-cuisine-los-altos-3",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Su-Dam+Korean+Cuisine+4546+El+Camino+Real+Los+Altos"
+      },
+      "flags": []
+    },
+    {
+      "name": "Mikado Japanese Restaurant",
+      "city": "Los Altos",
+      "area": "Main St (downtown)",
+      "address": "161 Main St, Los Altos, CA 94022",
+      "cuisine": "Japanese / sushi",
+      "phone": "(650) 917-8388",
+      "lunch_special": {
+        "name": "No published lunch special - lunch bowls and rolls",
+        "price_from": null,
+        "price_to": null,
+        "days": "daily",
+        "window": "11:30 AM - 2:00 PM (corner.inc) / 2:30 PM (zmenu) - minor delta",
+        "includes": "No priced lunch special found."
+      },
+      "hours_tuesday": "11:30 AM - 2:00 PM, 4:30 - 9:00 PM",
+      "days_open": "Daily 11:30 AM - 2:00/2:30 PM, 4:30 - 9:00 PM (corner.inc with official site mikadolosaltos.com; zmenu shows 2:30 PM close)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Los Altos downtown Main St - ~7 mi from Cupertino; 84 bus or a ride."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {"label": "corner.inc (official site mikadolosaltos.com) - 161 Main St: daily 11:30 am-2:00 pm, 4:30-9:00 pm", "url": "https://www.corner.inc/place/pg6DmwKhk3Mc"},
+          {"label": "zmenu - 161 Main St: daily 11:30 am-2:30 pm, 4:30-9:00 pm", "url": "https://www.zmenu.com/mikado-japanese-restaurant-los-altos-online-menu/"},
+          {"label": "food96.com - 161 Main St: Tue 11:30-15:00 (lunch-only capture)", "url": "https://food96.com/place/mikado-japanese-restaurant-20051"}
+        ],
+        "accessed": "2026-09-12"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/search?find_desc=Mikado&find_loc=Los+Altos%2C+CA",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Mikado+Japanese+Restaurant+161+Main+St+Los+Altos"
+      },
+      "flags": [
+        "LUNCH-FLAG-62: lunch close is 2:00 PM (corner.inc) vs 2:30 PM (zmenu) - 30-minute delta, no practical impact."
+      ]
+    },
+    {
+      "name": "Yoshi Sushi",
+      "city": "Los Altos",
+      "area": "3rd St (downtown)",
+      "address": "250 3rd St, Los Altos, CA 94022",
+      "cuisine": "Japanese / sushi",
+      "phone": "(650) 941-8150",
+      "lunch_special": {
+        "name": "Lunch Sushi Combo (Mon-Fri 11:00 AM - 3:00 PM per the Chowbus page); no price published",
+        "price_from": null,
+        "price_to": null,
+        "days": "daily",
+        "window": "11:00 AM - 9:30 PM (combo listed 11:00 AM - 3:00 PM)",
+        "includes": "No priced lunch special found."
+      },
+      "hours_tuesday": "11:00 AM - 9:30 PM",
+      "days_open": "Daily 11:00 AM - 9:30 PM (Beyond Menu, Chowbus POS and zmenu agree)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Los Altos 3rd St - ~7 mi from Cupertino; 84 bus or a ride."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {"label": "Beyond Menu - 250 3rd St, Los Altos: daily 11:00 am-9:30 pm", "url": "https://www.beyondmenu.com/58597/los-altos/yoshi-sushi-los-altos-94022/info.aspx"},
+          {"label": "Chowbus POS store page - 250 3rd Street: daily 11:00 am-9:30 pm; 'Lunch Sushi Combo' item window 11:00 am-3:00 pm", "url": "https://pos.chowbus.com/online-ordering/store/YoshiSushi-Los-Altos/14161"},
+          {"label": "zmenu - 250 3rd St: daily 11:00 am-9:30 pm", "url": "https://m.zmenu.com/yoshi-sushi-los-altos-3-online-menu/"}
+        ],
+        "accessed": "2026-09-12"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/search?find_desc=Yoshi+Sushi&find_loc=Los+Altos%2C+CA",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Yoshi+Sushi+250+3rd+St+Los+Altos"
+      },
+      "flags": []
+    },
+    {
+      "name": "Kathmandu Cuisine - Los Altos",
+      "city": "Los Altos",
+      "area": "1st St (downtown)",
+      "address": "376 1st St, Los Altos, CA 94022",
+      "cuisine": "Himalayan / Nepali / Indo-Chinese",
+      "phone": "(606) 613-6144",
+      "lunch_special": {
+        "name": "No published lunch special (closed Tuesday)",
+        "price_from": null,
+        "price_to": null,
+        "days": "not applicable (closed Tuesday)",
+        "window": null,
+        "includes": "No priced lunch special found; the restaurant is closed on the trip day."
+      },
+      "hours_tuesday": "Closed",
+      "days_open": "Mon, Wed-Sun 11:00 AM - 3:00 PM, 5:00 - 9:00 PM (Fri-Sun 5:00-10:00 PM per the newer capture); Tue closed (the business's own note says 'closed on Tuesdays at both locations')",
+      "open_on_trip_date": false,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Los Altos 1st St - closed on the trip Tuesday; reference row only."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {"label": "Yelp business page (May-2026 capture, claimed) - 376 1st St: Tue Closed; business note 'We are closed in Tuesdays at both locations'", "url": "https://www.yelp.com/biz/kathmandu-cuisine-los-altos-3?show_platform_modal=True"},
+          {"label": "Yelp business page (Aug-2026 capture) - Tue Closed, Fri-Sun 5:00-10:00 pm", "url": "https://www.yelp.com/biz/kathmandu-cuisine-los-altos-5"},
+          {"label": "Yelp business page (May-2026 capture 2) - Tue Closed", "url": "https://www.yelp.com/biz/kathmandu-cuisine-los-altos-3"}
+        ],
+        "accessed": "2026-09-12"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/kathmandu-cuisine-los-altos-3",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Kathmandu+Cuisine+376+1st+St+Los+Altos"
+      },
+      "flags": ["Closed on the trip day (Tuesday); kept as a reference row.", "Also has a Milpitas location (not added)."]
+    }
+  ]
+}

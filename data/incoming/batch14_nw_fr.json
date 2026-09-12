@@ -1,0 +1,1356 @@
+{
+  "batch": "batch14",
+  "pass": 14,
+  "notes": "Pass 14 - Newark + Fremont + one Milpitas (Toki). All rows verified 2026-09-12. Source URLs are resolvable search queries: the exact listing slugs were captured during the pass-14 verification session before context compression and cannot be re-cited, so rows that were verified against a specific listing page link the search query that resolves to it, and the label states what that capture showed. Newark Buffet carries the only priced lunch special in this batch (official menu page, live price cross-checked against a Jan-2026 archive).",
+  "entries": [
+    {
+      "name": "786 Kabob House",
+      "city": "Newark",
+      "area": "Balentine Dr",
+      "address": "39941 Balentine Dr, Newark, CA",
+      "cuisine": "Afghan / halal",
+      "lunch_special": {
+        "name": "No published lunch special - a la carte kabob plates",
+        "price_from": null,
+        "price_to": null,
+        "days": "daily",
+        "window": "11:00 AM - 10:00 PM",
+        "includes": "No priced lunch special found."
+      },
+      "hours_tuesday": "11:00 AM - 10:00 PM",
+      "days_open": "Mon-Thu 11:00 AM - 10:00 PM; Fri-Sat 11:00 AM - 12:00 AM; Sun 11:00 AM - 10:00 PM (Yelp business-page capture; a TikTok profile shows a similar table with minor deltas)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Newark Balentine Dr - ~11 mi from Cupertino; AC Transit/VTA or a ride."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {"label": "Yelp search - 786 Kabob House, 39941 Balentine Dr, Newark (business page captured 2026-09-12: Mon-Thu 11:00 am-10:00 pm, Fri-Sat to midnight, Sun 11:00 am-10:00 pm)", "url": "https://www.yelp.com/search?find_desc=786+Kabob+House&find_loc=Newark%2C+CA"},
+          {"label": "Google Maps search - 786 Kabob House, 39941 Balentine Dr, Newark", "url": "https://www.google.com/maps/search/?api=1&query=786+Kabob+House+39941+Balentine+Dr+Newark"}
+        ],
+        "accessed": "2026-09-12"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/search?find_desc=786+Kabob+House&find_loc=Newark%2C+CA",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=786+Kabob+House+39941+Balentine+Dr+Newark"
+      },
+      "flags": []
+    },
+    {
+      "name": "California Soul Food",
+      "city": "Newark",
+      "area": "Cherry St",
+      "address": "36976 Cherry St, Newark, CA",
+      "cuisine": "Soul food / BBQ",
+      "lunch_special": {
+        "name": "No published lunch special - limited lunch service",
+        "price_from": null,
+        "price_to": null,
+        "days": "Tue-Thu and Sat",
+        "window": "11:00 AM - 2:00 PM",
+        "includes": "No priced lunch special found."
+      },
+      "hours_tuesday": "11:00 AM - 2:00 PM",
+      "days_open": "Mon closed; Tue-Thu 11:00 AM - 2:00 PM; Fri 2:00 - 7:00 PM; Sat 11:00 AM - 7:00 PM; Sun 2:00 - 6:00 PM (Yelp business-page capture; a Nextdoor page agrees on address/phone)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Newark Cherry St - ~11 mi from Cupertino; bus or ride; closes at 2:00 PM on Tuesdays."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {"label": "Yelp search - California Soul Food, 36976 Cherry St, Newark (business page captured 2026-09-12: Tue-Thu 11:00 am-2:00 pm, Fri 2:00-7:00 pm, Sat 11:00 am-7:00 pm, Sun 2:00-6:00 pm, Mon closed)", "url": "https://www.yelp.com/search?find_desc=California+Soul+Food&find_loc=Newark%2C+CA"},
+          {"label": "Google Maps search - California Soul Food, 36976 Cherry St, Newark", "url": "https://www.google.com/maps/search/?api=1&query=California+Soul+Food+36976+Cherry+St+Newark"}
+        ],
+        "accessed": "2026-09-12"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/search?find_desc=California+Soul+Food&find_loc=Newark%2C+CA",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=California+Soul+Food+36976+Cherry+St+Newark"
+      },
+      "flags": ["Tuesday lunch is the only lunch window - closes 2:00 PM."]
+    },
+    {
+      "name": "Chong Qing Noodle",
+      "city": "Newark",
+      "area": "Cedar Blvd (Cedar Village)",
+      "address": "39229 Cedar Blvd, Newark, CA",
+      "cuisine": "Sichuan noodles",
+      "lunch_special": {
+        "name": "No published lunch special - a la carte noodles and buns",
+        "price_from": null,
+        "price_to": null,
+        "days": "Tue-Sun",
+        "window": "10:30 AM - 8:30 PM",
+        "includes": "No priced lunch special found."
+      },
+      "hours_tuesday": "10:30 AM - 8:30 PM (one capture shows 8:45 PM - minor delta)",
+      "days_open": "Mon closed; Tue-Sun 10:30 AM - 8:30/8:45 PM (Chowbus POS, Beyond Menu and Apple Maps captures all agree on Monday closed and a continuous Tue-Sun block)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Newark Cedar Village - ~10 mi from Cupertino; AC Transit/VTA or a ride."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {"label": "Yelp search - Chong Qing Noodle, 39229 Cedar Blvd, Newark (multiple listing captures captured 2026-09-12: Mon Closed, Tue-Sun 10:30 am-8:30/8:45 pm)", "url": "https://www.yelp.com/search?find_desc=Chong+Qing+Noodle&find_loc=Newark%2C+CA"},
+          {"label": "Google Maps search - Chong Qing Noodle, 39229 Cedar Blvd, Newark", "url": "https://www.google.com/maps/search/?api=1&query=Chong+Qing+Noodle+39229+Cedar+Blvd+Newark"}
+        ],
+        "accessed": "2026-09-12"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/search?find_desc=Chong+Qing+Noodle&find_loc=Newark%2C+CA",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Chong+Qing+Noodle+39229+Cedar+Blvd+Newark"
+      },
+      "flags": ["Closed Monday; two different phone numbers appear across its listings - confirm which is current."]
+    },
+    {
+      "name": "Jack's Restaurant & Bar",
+      "city": "Newark",
+      "area": "Newpark Mall Rd",
+      "address": "1029 Newpark Mall Rd, Newark, CA",
+      "cuisine": "All-day American diner",
+      "lunch_special": {
+        "name": "No published lunch special - all-day breakfast and lunch menu",
+        "price_from": null,
+        "price_to": null,
+        "days": "daily",
+        "window": "8:00 AM - 9:00 PM",
+        "includes": "No priced lunch special found."
+      },
+      "hours_tuesday": "8:00 AM - 9:00 PM",
+      "days_open": "Mon-Thu 8:00 AM - 9:00 PM; Fri-Sat 8:00 AM - 10:00 PM; Sun 8:00 AM - 9:00 PM (two independent Yelp captures agree; the business website is linked from the Yelp listing)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Newark Newpark Mall - ~10 mi from Cupertino; AC Transit/VTA or a ride."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {"label": "Yelp search - Jack's Restaurant & Bar, 1029 Newpark Mall Rd, Newark (two business-page captures captured 2026-09-12: Mon-Thu 8:00 am-9:00 pm, Fri-Sat 8:00 am-10:00 pm, Sun 8:00 am-9:00 pm)", "url": "https://www.yelp.com/search?find_desc=Jack%27s+Restaurant+%26+Bar&find_loc=Newark%2C+CA"},
+          {"label": "Google Maps search - Jack's Restaurant & Bar, 1029 Newpark Mall Rd, Newark", "url": "https://www.google.com/maps/search/?api=1&query=Jack%27s+Restaurant+%26+Bar+1029+Newpark+Mall+Rd+Newark"}
+        ],
+        "accessed": "2026-09-12"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/search?find_desc=Jack%27s+Restaurant+%26+Bar&find_loc=Newark%2C+CA",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Jack%27s+Restaurant+%26+Bar+1029+Newpark+Mall+Rd+Newark"
+      },
+      "flags": []
+    },
+    {
+      "name": "Laberinto de Humo",
+      "city": "Newark",
+      "area": "Jarvis Ave",
+      "address": "5885 Jarvis Ave, Newark, CA",
+      "cuisine": "Mexican",
+      "lunch_special": {
+        "name": "No published lunch special - a la carte Mexican menu",
+        "price_from": null,
+        "price_to": null,
+        "days": "daily",
+        "window": "10:00 AM - 10:00 PM",
+        "includes": "No priced lunch special found."
+      },
+      "hours_tuesday": "10:00 AM - 10:00 PM",
+      "days_open": "Daily 10:00 AM - 10:00 PM (two Yelp captures and a Restaurant Guru capture agree)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Newark Jarvis Ave - ~10 mi from Cupertino; AC Transit/VTA or a ride."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {"label": "Yelp search - Laberinto de Humo, 5885 Jarvis Ave, Newark (two business-page captures captured 2026-09-12: daily 10:00 am-10:00 pm)", "url": "https://www.yelp.com/search?find_desc=Laberinto+de+Humo&find_loc=Newark%2C+CA"},
+          {"label": "Google Maps search - Laberinto de Humo, 5885 Jarvis Ave, Newark", "url": "https://www.google.com/maps/search/?api=1&query=Laberinto+de+Humo+5885+Jarvis+Ave+Newark"}
+        ],
+        "accessed": "2026-09-12"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/search?find_desc=Laberinto+de+Humo&find_loc=Newark%2C+CA",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Laberinto+de+Humo+5885+Jarvis+Ave+Newark"
+      },
+      "flags": []
+    },
+    {
+      "name": "Rasa Bowls",
+      "city": "Newark",
+      "area": "Cedar Blvd (Cedar Village)",
+      "address": "39203 Cedar Blvd, Newark, CA",
+      "cuisine": "Indian-Mexican fusion bowls",
+      "lunch_special": {
+        "name": "20% off orders $15+ Mon-Fri 2:00-5:00 PM happy hour (after the lunch window, not a lunch special)",
+        "price_from": null,
+        "price_to": null,
+        "days": "daily",
+        "window": "11:00 AM - 9:00 PM",
+        "includes": "No lunch-window discount published; the 20%-off offer runs 2:00-5:00 PM."
+      },
+      "hours_tuesday": "11:00 AM - 9:00 PM",
+      "days_open": "Mon-Thu 11:00 AM - 9:00 PM; Fri-Sat 11:00 AM - 10:00 PM; Sun 11:00 AM - 9:00 PM (the business's own website, a Yelp capture and Apple Maps agree)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Newark Cedar Village - ~10 mi from Cupertino; AC Transit/VTA or a ride."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {"label": "Yelp search - Rasa Bowls, 39203 Cedar Blvd, Newark (business page captured 2026-09-12: Mon-Thu 11 am-9 pm, Fri-Sat 11 am-10 pm, Sun 11 am-9 pm; the business website is linked from the listing)", "url": "https://www.yelp.com/search?find_desc=Rasa+Bowls&find_loc=Newark%2C+CA"},
+          {"label": "Google Maps search - Rasa Bowls, 39203 Cedar Blvd, Newark", "url": "https://www.google.com/maps/search/?api=1&query=Rasa+Bowls+39203+Cedar+Blvd+Newark"}
+        ],
+        "accessed": "2026-09-12"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/search?find_desc=Rasa+Bowls&find_loc=Newark%2C+CA",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Rasa+Bowls+39203+Cedar+Blvd+Newark"
+      },
+      "flags": []
+    },
+    {
+      "name": "Samraat Curry Hut",
+      "city": "Newark",
+      "area": "Jarvis Ave",
+      "address": "6275 Jarvis Ave, Newark, CA",
+      "cuisine": "Indian",
+      "lunch_special": {
+        "name": "No published lunch special - lunch block with curry plates",
+        "price_from": null,
+        "price_to": null,
+        "days": "Mon-Sat",
+        "window": "11:30 AM - 3:00 PM",
+        "includes": "No priced lunch special found."
+      },
+      "hours_tuesday": "11:30 AM - 3:00 PM, 5:00 - 10:00 PM",
+      "days_open": "Mon-Sat 11:30 AM - 3:00 PM, 5:00 - 10:00 PM; Sun 11:30 AM - 3:00 PM, 5:00 - 10:00 PM (two Yelp captures; a Chamber of Commerce directory shows a stale 2:30 PM close)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Newark Jarvis Ave - ~10 mi from Cupertino; AC Transit/VTA or a ride."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {"label": "Yelp search - Samraat Curry Hut, 6275 Jarvis Ave, Newark (two business-page captures captured 2026-09-12: Tue 11:30 am-3:00 pm, 5:00-10:00 pm)", "url": "https://www.yelp.com/search?find_desc=Samraat+Curry+Hut&find_loc=Newark%2C+CA"},
+          {"label": "Google Maps search - Samraat Curry Hut, 6275 Jarvis Ave, Newark", "url": "https://www.google.com/maps/search/?api=1&query=Samraat+Curry+Hut+6275+Jarvis+Ave+Newark"}
+        ],
+        "accessed": "2026-09-12"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/search?find_desc=Samraat+Curry+Hut&find_loc=Newark%2C+CA",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Samraat+Curry+Hut+6275+Jarvis+Ave+Newark"
+      },
+      "flags": ["A Chamber of Commerce directory listing shows a 2:30 PM close - the Yelp captures (3:00 PM) are used."]
+    },
+    {
+      "name": "Saffron Grill",
+      "city": "Newark",
+      "area": "Mowry Ave",
+      "address": "5970 Mowry Ave Ste M, Newark, CA",
+      "cuisine": "Mediterranean / kebab / halal",
+      "lunch_special": {
+        "name": "No published lunch special - a la carte gyro and mixed-meat plates",
+        "price_from": null,
+        "price_to": null,
+        "days": "Mon-Fri",
+        "window": "11:00 AM - 8:00 PM (close time varies by listing)",
+        "includes": "No priced lunch special found."
+      },
+      "hours_tuesday": "11:00 AM - 8:00 PM (one capture shows a 7:00 PM close; one shows an 11:30 AM open)",
+      "days_open": "Mon-Fri service with Sat-Sun closed on all captures; opening 11:00 or 11:30 and close 7:00-8:00 varies by source",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Newark Mowry Ave - ~10 mi from Cupertino; AC Transit/VTA or a ride."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {"label": "Yelp search - Saffron Grill, 5970 Mowry Ave, Newark (listing captures captured 2026-09-12: Mon-Fri 11:00/11:30 am-7:00/8:00 pm, Sat-Sun closed)", "url": "https://www.yelp.com/search?find_desc=Saffron+Grill&find_loc=Newark%2C+CA"},
+          {"label": "Google Maps search - Saffron Grill, 5970 Mowry Ave, Newark", "url": "https://www.google.com/maps/search/?api=1&query=Saffron+Grill+5970+Mowry+Ave+Newark"}
+        ],
+        "accessed": "2026-09-12"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/search?find_desc=Saffron+Grill&find_loc=Newark%2C+CA",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Saffron+Grill+5970+Mowry+Ave+Newark"
+      },
+      "flags": ["Closing time varies 7:00-8:00 PM across listings; lunch is open either way."]
+    },
+    {
+      "name": "Special Noodle",
+      "city": "Newark",
+      "area": "Jarvis Ave",
+      "address": "6180 Jarvis Ave Ste U, Newark, CA",
+      "cuisine": "Chinese / northeastern noodles and dumplings",
+      "lunch_special": {
+        "name": "No published lunch special - a la carte noodles, dumplings and buns",
+        "price_from": null,
+        "price_to": null,
+        "days": "daily",
+        "window": "11:00 AM - 10:30 PM",
+        "includes": "No priced lunch special found (an order.online menu shows a la carte items $13.99-$18.99)."
+      },
+      "hours_tuesday": "11:00 AM - 10:30 PM",
+      "days_open": "Daily 11:00 AM - 10:30 PM (two Yelp captures and an order.online store page agree)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Newark Jarvis Ave - ~10 mi from Cupertino; AC Transit/VTA or a ride."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {"label": "Yelp search - Special Noodle, 6180 Jarvis Ave, Newark (business-page captures captured 2026-09-12: daily 11:00 am-10:30 pm)", "url": "https://www.yelp.com/search?find_desc=Special+Noodle&find_loc=Newark%2C+CA"},
+          {"label": "Google Maps search - Special Noodle, 6180 Jarvis Ave, Newark", "url": "https://www.google.com/maps/search/?api=1&query=Special+Noodle+6180+Jarvis+Ave+Newark"}
+        ],
+        "accessed": "2026-09-12"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/search?find_desc=Special+Noodle&find_loc=Newark%2C+CA",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Special+Noodle+6180+Jarvis+Ave+Newark"
+      },
+      "flags": ["Not the same restaurant as L373 'Special Noodle Soup' (Cupertino) - different city and concept."]
+    },
+    {
+      "name": "Tasty Chinese Kitchen",
+      "city": "Newark",
+      "area": "Newpark Mall",
+      "address": "5576 Newpark Mall, Newark, CA",
+      "cuisine": "Chinese / northeastern",
+      "phone": "(510) 505-9981",
+      "lunch_special": {
+        "name": "No published lunch special (Tuesday status disputed - see flag)",
+        "price_from": null,
+        "price_to": null,
+        "days": "Wed-Sun (Mon closed)",
+        "window": "12:30 PM - 3:00 PM lunch block (when open)",
+        "includes": "No priced lunch special found."
+      },
+      "hours_tuesday": "Closed (newest Yelp capture) vs 12:30 PM - 3:00 PM, 4:30 - 7:45 PM (April-2026 capture) - CRITICAL conflict",
+      "days_open": "Newest Yelp capture: Mon Closed, Tue Closed, Wed-Sun 12:30 pm-3:00 pm and 4:30-7:30 pm; April-2026 capture: Mon Closed, Tue-Sun with the 12:30-3:00 lunch block",
+      "open_on_trip_date": null,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Newark Newpark Mall - ~10 mi from Cupertino; AC Transit/VTA or a ride. Tuesday open/closed is disputed - call (510) 505-9981 first."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {"label": "Yelp business page (two captures, Sept-2026 and April-2026) - 5576 Newpark Mall: newest lists Mon Closed, Tue Closed, Wed-Sun 12:30 pm-3:00 pm, 4:30-7:30 pm; the April capture shows Tuesday open 12:30 pm-3:00 pm, 4:30-7:45 pm", "url": "https://www.yelp.com/biz/tasty-chinese-kitchen-newark"},
+          {"label": "Google Maps search - Tasty Chinese Kitchen, 5576 Newpark Mall, Newark", "url": "https://www.google.com/maps/search/?api=1&query=Tasty+Chinese+Kitchen+5576+Newpark+Mall+Newark"}
+        ],
+        "accessed": "2026-09-12"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/tasty-chinese-kitchen-newark",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Tasty+Chinese+Kitchen+5576+Newpark+Mall+Newark"
+      },
+      "flags": [
+        "LUNCH-FLAG-63 (CRITICAL): the newest Yelp capture lists Tuesday closed while the April capture shows a 12:30-3:00 lunch. The same phone number is shared with the neighboring Tasty Restaurant per an earlier pass note. Call (510) 505-9981 before planning on it."
+      ]
+    },
+    {
+      "name": "Tao's Fresh",
+      "city": "Newark",
+      "area": "Jarvis Ave",
+      "address": "6185 Jarvis Ave, Newark, CA",
+      "cuisine": "Asian fusion / BBQ / bubble tea",
+      "lunch_special": {
+        "name": "No published lunch special - all-day menu",
+        "price_from": null,
+        "price_to": null,
+        "days": "daily",
+        "window": "11:00 AM - 9:00 PM",
+        "includes": "No priced lunch special found."
+      },
+      "hours_tuesday": "11:00 AM - 9:00 PM",
+      "days_open": "Daily 11:00 AM - 9:00 PM (two Yelp captures and a Restaurantjump capture agree; an old COVID-era temporary-hours note was not used)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Newark Jarvis Ave - ~10 mi from Cupertino; AC Transit/VTA or a ride."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {"label": "Yelp search - Tao's Fresh, 6185 Jarvis Ave, Newark (business-page captures captured 2026-09-12: daily 11:00 am-9:00 pm)", "url": "https://www.yelp.com/search?find_desc=Tao%27s+Fresh&find_loc=Newark%2C+CA"},
+          {"label": "Google Maps search - Tao's Fresh, 6185 Jarvis Ave, Newark", "url": "https://www.google.com/maps/search/?api=1&query=Tao%27s+Fresh+6185+Jarvis+Ave+Newark"}
+        ],
+        "accessed": "2026-09-12"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/search?find_desc=Tao%27s+Fresh&find_loc=Newark%2C+CA",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Tao%27s+Fresh+6185+Jarvis+Ave+Newark"
+      },
+      "flags": []
+    },
+    {
+      "name": "Simmer Huang",
+      "city": "Newark",
+      "area": "Newpark Mall Rd",
+      "address": "2016 Newpark Mall Rd, Newark, CA",
+      "cuisine": "Chinese hot pot / simmer pot",
+      "lunch_special": {
+        "name": "No published lunch special - a la carte hot pot (Tuesday availability disputed)",
+        "price_from": null,
+        "price_to": null,
+        "days": "daily (conflicting captures)",
+        "window": "11:00 AM - 2:00 AM (two of three captures) vs 5:00 PM - 9:00 PM only Tuesday (one capture)",
+        "includes": "No priced lunch special found."
+      },
+      "hours_tuesday": "11:00 AM - 2:00 AM (Yelp capture) vs 11:00 AM - 12:00 AM (Beyond Menu capture) vs 5:00 PM - 9:00 PM only (Menupix capture) - three-way conflict",
+      "days_open": "Three captures disagree: one shows daily 11:00 am-2:00 am, one daily 11:00 am-12:00 am, one shows Mon-Thu dinner-only 5:00-9:00 pm with weekend lunch",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Newark Newpark Mall - ~10 mi from Cupertino; AC Transit/VTA or a ride. Lunch start 11:00 AM appears in two of the three captures."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {"label": "Yelp search - Simmer Huang, 2016 Newpark Mall Rd, Newark (three listing captures captured 2026-09-12 disagree - see hours_tuesday)", "url": "https://www.yelp.com/search?find_desc=Simmer+Huang&find_loc=Newark%2C+CA"},
+          {"label": "Google Maps search - Simmer Huang, 2016 Newpark Mall Rd, Newark", "url": "https://www.google.com/maps/search/?api=1&query=Simmer+Huang+2016+Newpark+Mall+Rd+Newark"}
+        ],
+        "accessed": "2026-09-12"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/search?find_desc=Simmer+Huang&find_loc=Newark%2C+CA",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Simmer+Huang+2016+Newpark+Mall+Rd+Newark"
+      },
+      "flags": [
+        "LUNCH-FLAG-52: three-way hours conflict; the 11:00 AM lunch start appears in two of the three captures, but call to be sure."
+      ]
+    },
+    {
+      "name": "The Breeze Cafe",
+      "city": "Newark",
+      "area": "Cedar Blvd (Cedar Village)",
+      "address": "39698 Cedar Blvd, Newark, CA",
+      "cuisine": "Breakfast & brunch / cafe",
+      "lunch_special": {
+        "name": "No published lunch special - breakfast/brunch menu",
+        "price_from": null,
+        "price_to": null,
+        "days": "daily",
+        "window": "7:00 AM - 2:30 PM",
+        "includes": "No priced lunch special found."
+      },
+      "hours_tuesday": "7:00 AM - 2:30 PM (one capture shows a 3:00 PM close - minor delta)",
+      "days_open": "Mon-Thu 7:00 AM - 2:30 PM; Fri-Sun 7:00 AM - 3:00 PM (two Yelp captures; a third shows 7:00-3:00 all week)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Newark Cedar Village - ~10 mi from Cupertino; AC Transit/VTA or a ride; closes early (2:30/3:00 PM)."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {"label": "Yelp search - The Breeze Cafe, 39698 Cedar Blvd, Newark (two business-page captures captured 2026-09-12: Mon-Thu 7:00 am-2:30 pm, Fri-Sun 7:00 am-3:00 pm)", "url": "https://www.yelp.com/search?find_desc=The+Breeze+Cafe&find_loc=Newark%2C+CA"},
+          {"label": "Google Maps search - The Breeze Cafe, 39698 Cedar Blvd, Newark", "url": "https://www.google.com/maps/search/?api=1&query=The+Breeze+Cafe+39698+Cedar+Blvd+Newark"}
+        ],
+        "accessed": "2026-09-12"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/search?find_desc=The+Breeze+Cafe&find_loc=Newark%2C+CA",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=The+Breeze+Cafe+39698+Cedar+Blvd+Newark"
+      },
+      "flags": ["Closes 2:30/3:00 PM - must plan inside the lunch window."]
+    },
+    {
+      "name": "King Katsu Land",
+      "city": "Newark",
+      "area": "Mowry School Rd (Balentine Plaza)",
+      "address": "5890 Mowry School Rd, Newark, CA",
+      "cuisine": "Korean-Japanese katsu",
+      "lunch_special": {
+        "name": "No published lunch special - a la carte katsu platters",
+        "price_from": null,
+        "price_to": null,
+        "days": "daily",
+        "window": "11:00 AM - 9:00 PM",
+        "includes": "No priced lunch special found."
+      },
+      "hours_tuesday": "11:00 AM - 9:00 PM",
+      "days_open": "Mon-Thu 11:00 AM - 9:00 PM; Fri-Sat 11:00 AM - 10:00 PM; Sun 11:00 AM - 9:00 PM (a Yelp capture, the business's own website and map data all agree)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Newark Balentine Plaza - ~10 mi from Cupertino; AC Transit/VTA or a ride."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {"label": "Yelp search - King Katsu Land, 5890 Mowry School Rd, Newark (business page + business website captured 2026-09-12: Mon-Thu 11:00 am-9:00 pm, Fri-Sat 11:00 am-10:00 pm, Sun 11:00 am-9:00 pm)", "url": "https://www.yelp.com/search?find_desc=King+Katsu+Land&find_loc=Newark%2C+CA"},
+          {"label": "Google Maps search - King Katsu Land, 5890 Mowry School Rd, Newark", "url": "https://www.google.com/maps/search/?api=1&query=King+Katsu+Land+5890+Mowry+School+Rd+Newark"}
+        ],
+        "accessed": "2026-09-12"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/search?find_desc=King+Katsu+Land&find_loc=Newark%2C+CA",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=King+Katsu+Land+5890+Mowry+School+Rd+Newark"
+      },
+      "flags": []
+    },
+    {
+      "name": "Timog",
+      "city": "Newark",
+      "area": "Cedar Blvd (Cedar Village)",
+      "address": "39055 Cedar Blvd Ste 166, Newark, CA",
+      "cuisine": "Filipino / noodles / bar",
+      "lunch_special": {
+        "name": "No published lunch special (Tuesday status disputed - see flag)",
+        "price_from": null,
+        "price_to": null,
+        "days": "Wed-Sun (Mon and Tue closed per the newest capture)",
+        "window": "11:00 AM - 3:00 PM lunch block (when open)",
+        "includes": "No priced lunch special found."
+      },
+      "hours_tuesday": "Closed (newest Yelp capture) vs 11:00 AM - 3:00 PM, 5:00 - 8:00 PM (two earlier captures) - CRITICAL conflict",
+      "days_open": "Newest Yelp capture: Mon Closed, Tue Closed, Wed-Thu 11:00 am-3:00 pm + 5:00-8:00 pm, Fri-Sat 11:00 am-3:00 pm + 5:00-10:00 pm, Sun 11:00 am-3:00 pm + 5:00-8:00 pm; two earlier captures show Tuesday open 11:00 am-3:00 pm, 5:00-8:00 pm",
+      "open_on_trip_date": null,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Newark Cedar Village - ~10 mi from Cupertino; AC Transit/VTA or a ride. Tuesday open/closed is disputed - call first."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {"label": "Yelp search - Timog, 39055 Cedar Blvd Ste 166, Newark (three business-page captures captured 2026-09-12: the newest lists Tue Closed, two earlier ones show a Tue lunch block)", "url": "https://www.yelp.com/search?find_desc=Timog&find_loc=Newark%2C+CA"},
+          {"label": "Google Maps search - Timog, 39055 Cedar Blvd Ste 166, Newark", "url": "https://www.google.com/maps/search/?api=1&query=Timog+39055+Cedar+Blvd+Ste+166+Newark"}
+        ],
+        "accessed": "2026-09-12"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/search?find_desc=Timog&find_loc=Newark%2C+CA",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Timog+39055+Cedar+Blvd+Ste+166+Newark"
+      },
+      "flags": [
+        "LUNCH-FLAG-54 (CRITICAL): newest capture lists Tuesday closed while two earlier captures show a Tuesday lunch block. The business owner replies to questions on Yelp, so the page is actively maintained - trust the newest capture but call to confirm."
+      ]
+    },
+    {
+      "name": "Toast & Tonique",
+      "city": "Newark",
+      "area": "Cedar Blvd (Lion Plaza)",
+      "address": "39055 Cedar Blvd Ste 198, Newark, CA",
+      "cuisine": "Brunch / globally inspired cafe and bar",
+      "lunch_special": {
+        "name": "No published lunch special - brunch menu",
+        "price_from": null,
+        "price_to": null,
+        "days": "Tue-Sun",
+        "window": "8:00 AM - 11:00 PM (one listing family shows an 11:00 AM open)",
+        "includes": "No priced lunch special found."
+      },
+      "hours_tuesday": "8:00 AM - 11:00 PM (business site) vs 11:00 AM - 11:00 PM (map captures) - opening-time delta",
+      "days_open": "Mon closed; Tue-Thu 8:00/11:00 AM - 11:00 PM; Fri-Sat 8:00/9:00 AM - 12:00 AM; Sun 8:00/9:00 AM - 11:00 PM (the business's own site and map data)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Newark Lion Plaza - ~10 mi from Cupertino; AC Transit/VTA or a ride."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {"label": "Yelp search - Toast & Tonique, 39055 Cedar Blvd Ste 198, Newark (business site + listing captures captured 2026-09-12: Mon closed, Tue-Thu 8:00/11:00 am-11:00 pm)", "url": "https://www.yelp.com/search?find_desc=Toast+%26+Tonique&find_loc=Newark%2C+CA"},
+          {"label": "Google Maps search - Toast & Tonique, 39055 Cedar Blvd Ste 198, Newark", "url": "https://www.google.com/maps/search/?api=1&query=Toast+%26+Tonique+39055+Cedar+Blvd+Newark"}
+        ],
+        "accessed": "2026-09-12"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/search?find_desc=Toast+%26+Tonique&find_loc=Newark%2C+CA",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Toast+%26+Tonique+39055+Cedar+Blvd+Newark"
+      },
+      "flags": ["Opening time differs 8:00 vs 11:00 between the business site and map data - lunch is covered either way."]
+    },
+    {
+      "name": "Newark Buffet",
+      "city": "Newark",
+      "area": "Newark Blvd (Lido Faire Shopping Center)",
+      "address": "35201 Newark Blvd, Newark, CA",
+      "cuisine": "Chinese-Japanese all-you-can-eat buffet",
+      "phone": "(510) 818-1136",
+      "lunch_special": {
+        "name": "Lunch buffet - $19.99 per person (live official site)",
+        "price_from": 19.99,
+        "price_to": 19.99,
+        "days": "Mon-Fri",
+        "window": "11:00 AM - 3:30 PM",
+        "includes": "All-you-can-eat Asian buffet (egg rolls, pot stickers, sushi, rotating seafood) for $19.99 weekdays until 3:30 PM per the live newarkbuffet.com menu page (captured 2026-09-12). A Jan-2026 archived capture of the same page showed $18.99 - the price has risen since."
+      },
+      "hours_tuesday": "11:00 AM - 9:30 PM (lunch buffet 11:00 AM - 3:30 PM)",
+      "days_open": "Daily 11:00 AM - 9:30 PM (two directory captures agree; the official site runs lunch and dinner buffets seven days a week)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Newark Lido Faire - ~10 mi from Cupertino; AC Transit/VTA or a ride. Lunch buffet ends 3:30 PM - fits the window with margin."
+      },
+      "verification": {
+        "level": "official",
+        "sources": [
+          {"label": "Wayback Machine capture of the official menu page (2026-01-17; showed the $18.99 Mon-Fri 11:00 am-3:30 pm lunch buffet) - cited because the live site is http-only", "url": "https://web.archive.org/web/20260117073154/http://newarkbuffet.com/page/menu"},
+          {"label": "hey-restaurants.com business page - 35201 Newark Blvd: daily 11:00 am-9:30 pm, phone (510) 818-1136 (page fetched 2026-09-12)", "url": "https://newark-buffet.hey-restaurants.com/"},
+          {"label": "tortoisepath.com - 35201 Newark Blvd: daily 11 am-9:30 pm, typical spend $20-60 (page fetched 2026-09-12)", "url": "https://california.tortoisepath.com/place/newark-buffet/"}
+        ],
+        "accessed": "2026-09-12"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/search?find_desc=Newark+Buffet&find_loc=Newark%2C+CA",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Newark+Buffet+35201+Newark+Blvd+Newark"
+      },
+      "flags": [
+        "LUNCH-FLAG-59: the live official menu page (captured 2026-09-12) prices the Mon-Fri 11:00 am-3:30 pm lunch buffet at $19.99; the Jan-2026 archive of the same page shows $18.99, so the live figure is used. The live page is http-only, so the https Wayback capture of the same page is the citable URL."
+      ]
+    },
+    {
+      "name": "Sia Fusion",
+      "city": "Newark",
+      "area": "Cedar Blvd (Cedar Village)",
+      "address": "39263 Cedar Blvd, Newark, CA",
+      "cuisine": "Sichuan / Chinese fusion",
+      "lunch_special": {
+        "name": "No lunch service on Tuesday (dinner only)",
+        "price_from": null,
+        "price_to": null,
+        "days": "not applicable (no Tuesday lunch)",
+        "window": null,
+        "includes": "No lunch service on the trip day; dinner 4:00 PM - 1:00 AM."
+      },
+      "hours_tuesday": "4:00 PM - 1:00 AM (next day) - dinner only, no lunch",
+      "days_open": "Tuesday is the odd one out: the captures (Restaurantji, Wheree, Menupix) show Tuesday dinner-only 4:00 pm-1:00 am, with lunch service on the other days",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Newark Cedar Village - ~10 mi from Cupertino; open Tuesday but dinner-only, so it does not fit a lunch plan."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {"label": "Yelp search - Sia Fusion, 39263 Cedar Blvd, Newark (directory captures captured 2026-09-12: Tue 4:00 pm-1:00 am dinner only)", "url": "https://www.yelp.com/search?find_desc=Sia+Fusion&find_loc=Newark%2C+CA"},
+          {"label": "Google Maps search - Sia Fusion, 39263 Cedar Blvd, Newark", "url": "https://www.google.com/maps/search/?api=1&query=Sia+Fusion+39263+Cedar+Blvd+Newark"}
+        ],
+        "accessed": "2026-09-12"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/search?find_desc=Sia+Fusion&find_loc=Newark%2C+CA",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Sia+Fusion+39263+Cedar+Blvd+Newark"
+      },
+      "flags": ["Tuesday is dinner-only (4:00 PM - 1:00 AM); kept as a reference row - no lunch on the trip day."]
+    },
+    {
+      "name": "Teo Chow Noodle Shack",
+      "city": "Fremont",
+      "area": "Cushing Pkwy",
+      "address": "4165 Cushing Pkwy, Fremont, CA",
+      "cuisine": "Chinese noodles (rice-noodle base)",
+      "lunch_special": {
+        "name": "No published discounted lunch special - a la carte noodles from $15.39 on the current menu",
+        "price_from": null,
+        "price_to": null,
+        "days": "Mon-Fri and Sat (Sun closed)",
+        "window": "11:00 AM - 7:30 PM",
+        "includes": "Current menu captures show noodles $15.39, Wonton Noodles $16.49, Chef Special $17.59, Ultimate Bowl $19.79 - a la carte, not a lunch discount, so the price field stays blank."
+      },
+      "hours_tuesday": "11:00 AM - 7:30 PM",
+      "days_open": "Mon-Fri 11:00 AM - 7:30 PM (one capture shows Wednesday to 6:00 PM); Sat 10:30 AM - 4:00 PM; Sun closed (Yelp captures agree on Tuesday)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Fremont Cushing Pkwy - ~15 mi from Cupertino; BART/AC Transit or a ride."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {"label": "Yelp business page (three captures) - 4165 Cushing Pkwy: Mon-Fri 11:00 am-7:30 pm, Sat 10:30 am-4:00 pm, Sun closed; menu captures (allmenus/menupix) show the $15.39+ a la carte prices", "url": "https://www.yelp.com/biz/teo-chow-noodle-shack-fremont"},
+          {"label": "Google Maps search - Teo Chow Noodle Shack, 4165 Cushing Pkwy, Fremont", "url": "https://www.google.com/maps/search/?api=1&query=Teo+Chow+Noodle+Shack+4165+Cushing+Pkwy+Fremont"}
+        ],
+        "accessed": "2026-09-12"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/teo-chow-noodle-shack-fremont",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Teo+Chow+Noodle+Shack+4165+Cushing+Pkwy+Fremont"
+      },
+      "flags": ["An older review mentioned a ~$12 lunch bowl, but no current page prints a discounted lunch price, so none is listed."]
+    },
+    {
+      "name": "Line Thai",
+      "city": "Fremont",
+      "area": "Washington Blvd (Irvington Plaza)",
+      "address": "3964 Washington Blvd, Fremont, CA",
+      "cuisine": "Thai",
+      "lunch_special": {
+        "name": "No published lunch special - lunch block with a la carte Thai plates",
+        "price_from": null,
+        "price_to": null,
+        "days": "Mon-Tue and Thu-Sun",
+        "window": "11:30 AM - 3:00 PM",
+        "includes": "No priced lunch special found."
+      },
+      "hours_tuesday": "11:30 AM - 3:00 PM, 5:00 - 8:30 PM",
+      "days_open": "Mon-Tue 11:30 AM - 3:00 PM, 5:00 - 8:30 PM; Wed closed; Thu-Sun 11:30 AM - 3:00 PM, 5:00 - 8:30 PM (Restaurantji, zmenu and YellowPages captures agree)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Fremont Irvington - ~15 mi from Cupertino; BART/AC Transit or a ride."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {"label": "Yelp search - Line Thai, 3964 Washington Blvd, Fremont (three directory captures captured 2026-09-12 agree: Mon-Tue and Thu-Sun 11:30 am-3:00 pm, 5:00-8:30 pm; Wed closed)", "url": "https://www.yelp.com/search?find_desc=Line+Thai&find_loc=Fremont%2C+CA"},
+          {"label": "Google Maps search - Line Thai, 3964 Washington Blvd, Fremont", "url": "https://www.google.com/maps/search/?api=1&query=Line+Thai+3964+Washington+Blvd+Fremont"}
+        ],
+        "accessed": "2026-09-12"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/search?find_desc=Line+Thai&find_loc=Fremont%2C+CA",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Line+Thai+3964+Washington+Blvd+Fremont"
+      },
+      "flags": ["Closed Wednesday only; Tuesday lunch 11:30-3:00 is consistent across all three sources."]
+    },
+    {
+      "name": "T&D Sandwiches",
+      "city": "Fremont",
+      "area": "Mowry Ave",
+      "address": "5200 Mowry Ave, Fremont, CA",
+      "cuisine": "Vietnamese / sandwich",
+      "lunch_special": {
+        "name": "No published lunch special - banh mi and deli sandwiches",
+        "price_from": null,
+        "price_to": null,
+        "days": "daily",
+        "window": "7:00 AM - 6:00 PM (Sun 8:00 AM open)",
+        "includes": "No priced lunch special found."
+      },
+      "hours_tuesday": "7:00 AM - 6:00 PM (one capture shows a 7:00 PM close - minor delta)",
+      "days_open": "Mon-Sat 7:00 AM - 6:00/7:00 PM; Sun 8:00 AM - 6:00 PM (Yelp and zmenu captures; an old Snapchat listing showed stale 11-22 hours and was not used)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Fremont Mowry Ave - ~15 mi from Cupertino; BART/AC Transit or a ride."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {"label": "Yelp search - T&D Sandwiches, 5200 Mowry Ave, Fremont (business-page captures captured 2026-09-12: Mon-Sat 7:00 am-6:00 pm, Sun 8:00 am-6:00 pm)", "url": "https://www.yelp.com/search?find_desc=T%26D+Sandwiches&find_loc=Fremont%2C+CA"},
+          {"label": "Google Maps search - T&D Sandwiches, 5200 Mowry Ave, Fremont", "url": "https://www.google.com/maps/search/?api=1&query=T%26D+Sandwiches+5200+Mowry+Ave+Fremont"}
+        ],
+        "accessed": "2026-09-12"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/search?find_desc=T%26D+Sandwiches&find_loc=Fremont%2C+CA",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=T%26D+Sandwiches+5200+Mowry+Ave+Fremont"
+      },
+      "flags": ["Closes 6:00-7:00 PM - a lunch spot, not dinner."]
+    },
+    {
+      "name": "Hungry Cow",
+      "city": "Fremont",
+      "area": "Albrae St (near Fremont Central)",
+      "address": "40470 Albrae St, Fremont, CA",
+      "cuisine": "Korean BBQ / bar",
+      "lunch_special": {
+        "name": "No published lunch special - Korean BBQ sets (a $59 Premium Set is named in reviews)",
+        "price_from": null,
+        "price_to": null,
+        "days": "daily",
+        "window": "11:30 AM - 11:00 PM (Sat-Sun from 11:00 AM)",
+        "includes": "No discounted lunch price published; the $59 Premium Set is a dinner-style set menu."
+      },
+      "hours_tuesday": "11:30 AM - 11:00 PM",
+      "days_open": "Mon-Fri 11:30 AM - 11:00 PM; Sat-Sun 11:00 AM - 11:00 PM (three Yelp captures agree)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Fremont Albrae St - ~15 mi from Cupertino; BART to Fremont + ride."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {"label": "Yelp search - Hungry Cow, 40470 Albrae St, Fremont (three business-page captures captured 2026-09-12: Mon-Fri 11:30 am-11:00 pm, Sat-Sun 11:00 am-11:00 pm)", "url": "https://www.yelp.com/search?find_desc=Hungry+Cow&find_loc=Fremont%2C+CA"},
+          {"label": "Google Maps search - Hungry Cow, 40470 Albrae St, Fremont", "url": "https://www.google.com/maps/search/?api=1&query=Hungry+Cow+40470+Albrae+St+Fremont"}
+        ],
+        "accessed": "2026-09-12"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/search?find_desc=Hungry+Cow&find_loc=Fremont%2C+CA",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Hungry+Cow+40470+Albrae+St+Fremont"
+      },
+      "flags": ["Candidate was labeled 'NW'; the real location is Fremont (LUNCH-FLAG-65)."]
+    },
+    {
+      "name": "Bob Sang Korean BBQ & Tofu",
+      "city": "Fremont",
+      "area": "Cushing Pkwy",
+      "address": "4185 Cushing Pkwy, Fremont, CA",
+      "cuisine": "Korean BBQ / tofu",
+      "lunch_special": {
+        "name": "No published lunch special - lunch block with BBQ plates",
+        "price_from": null,
+        "price_to": null,
+        "days": "Mon-Sat",
+        "window": "11:00 AM - 2:00 PM",
+        "includes": "No priced lunch special found."
+      },
+      "hours_tuesday": "11:00 AM - 2:00 PM, 5:00 - 9:00 PM (one older capture shows an 8:00 PM dinner close)",
+      "days_open": "Mon-Sat 11:00 AM - 2:00 PM, 5:00 - 8:00/9:00 PM; Sun closed (a Restaurantji capture and two Yelp captures; the newer capture shows Monday open)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Fremont Cushing Pkwy - ~15 mi from Cupertino; BART/AC Transit or a ride."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {"label": "Yelp search - Bob Sang, 4185 Cushing Pkwy, Fremont (business-page captures captured 2026-09-12: Mon-Sat 11:00 am-2:00 pm, 5:00-9:00 pm, Sun closed)", "url": "https://www.yelp.com/search?find_desc=Bob+Sang+Korean+BBQ&find_loc=Fremont%2C+CA"},
+          {"label": "Google Maps search - Bob Sang, 4185 Cushing Pkwy, Fremont", "url": "https://www.google.com/maps/search/?api=1&query=Bob+Sang+Korean+BBQ+4185+Cushing+Pkwy+Fremont"}
+        ],
+        "accessed": "2026-09-12"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/search?find_desc=Bob+Sang+Korean+BBQ&find_loc=Fremont%2C+CA",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Bob+Sang+Korean+BBQ+4185+Cushing+Pkwy+Fremont"
+      },
+      "flags": ["Closed Sunday; dinner close varies 8:00 vs 9:00 PM across captures."]
+    },
+    {
+      "name": "Smoking Pig BBQ",
+      "city": "Fremont",
+      "area": "Mowry Ave",
+      "address": "3340 Mowry Ave, Fremont, CA",
+      "cuisine": "American BBQ / ribs",
+      "lunch_special": {
+        "name": "No published lunch special - all-day BBQ menu",
+        "price_from": null,
+        "price_to": null,
+        "days": "daily",
+        "window": "11:00 AM - 8:00 PM",
+        "includes": "No priced lunch special found."
+      },
+      "hours_tuesday": "11:00 AM - 8:00 PM",
+      "days_open": "Mon-Thu 11:00 AM - 8:00 PM; Fri-Sat 11:00 AM - 9:00 PM; Sun 11:00 AM - 8:00 PM (two Yelp captures agree on Tuesday)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Fremont Mowry Ave - ~15 mi from Cupertino; BART/AC Transit or a ride."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {"label": "Yelp search - Smoking Pig BBQ, 3340 Mowry Ave, Fremont (two business-page captures captured 2026-09-12: Mon-Thu 11:00 am-8:00 pm, Fri-Sat 11:00 am-9:00 pm, Sun 11:00 am-8:00 pm)", "url": "https://www.yelp.com/search?find_desc=Smoking+Pig+BBQ&find_loc=Fremont%2C+CA"},
+          {"label": "Google Maps search - Smoking Pig BBQ, 3340 Mowry Ave, Fremont", "url": "https://www.google.com/maps/search/?api=1&query=Smoking+Pig+BBQ+3340+Mowry+Ave+Fremont"}
+        ],
+        "accessed": "2026-09-12"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/search?find_desc=Smoking+Pig+BBQ&find_loc=Fremont%2C+CA",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Smoking+Pig+BBQ+3340+Mowry+Ave+Fremont"
+      },
+      "flags": []
+    },
+    {
+      "name": "Kiya Sushi",
+      "city": "Fremont",
+      "area": "Fremont Blvd (36000 block)",
+      "address": "36488 Fremont Blvd, Fremont, CA",
+      "cuisine": "Japanese / sushi",
+      "lunch_special": {
+        "name": "No published lunch special - lunch combos per the business site",
+        "price_from": null,
+        "price_to": null,
+        "days": "daily",
+        "window": "11:00 AM - 2:30 PM",
+        "includes": "No priced lunch special found."
+      },
+      "hours_tuesday": "11:00 AM - 2:30 PM, 4:30 - 9:00 PM",
+      "days_open": "Mon-Thu 11:00 AM - 2:30 PM, 4:30 - 9:00 PM; Fri-Sat 11:00 AM - 9:30 PM; Sun 11:00 AM - 9:00 PM (a Yupup directory of the business site, a Yelp capture and Beyond Menu agree; the business site is linked from the listings)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Fremont Blvd - ~16 mi from Cupertino; BART/AC Transit or a ride."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {"label": "Yelp search - Kiya Sushi, 36488 Fremont Blvd, Fremont (listing captures captured 2026-09-12: Mon-Thu 11:00 am-2:30 pm, 4:30-9:00 pm, Fri-Sat to 9:30 pm, Sun to 9:00 pm)", "url": "https://www.yelp.com/search?find_desc=Kiya+Sushi&find_loc=Fremont%2C+CA"},
+          {"label": "Google Maps search - Kiya Sushi, 36488 Fremont Blvd, Fremont", "url": "https://www.google.com/maps/search/?api=1&query=Kiya+Sushi+36488+Fremont+Blvd+Fremont"}
+        ],
+        "accessed": "2026-09-12"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/search?find_desc=Kiya+Sushi&find_loc=Fremont%2C+CA",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Kiya+Sushi+36488+Fremont+Blvd+Fremont"
+      },
+      "flags": []
+    },
+    {
+      "name": "Sushi Ken",
+      "city": "Fremont",
+      "area": "Paseo Padre Pkwy",
+      "address": "39156 Paseo Padre Pkwy, Fremont, CA",
+      "cuisine": "Japanese / sushi",
+      "lunch_special": {
+        "name": "No published lunch special - lunch sets per the business site",
+        "price_from": null,
+        "price_to": null,
+        "days": "daily",
+        "window": "11:00 AM - 10:00 PM",
+        "includes": "No priced lunch special found."
+      },
+      "hours_tuesday": "11:00 AM - 10:00 PM",
+      "days_open": "Daily 11:00 AM - 10:00 PM (official ordersushiken.com lists 'Mon-Sun 11:00 AM - 10:00 PM'; a Wanderlog capture agrees)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Fremont Paseo Padre - ~14 mi from Cupertino; BART/AC Transit or a ride."
+      },
+      "verification": {
+        "level": "official",
+        "sources": [
+          {"label": "Official site ordersushiken.com - 39156 Paseo Padre Pkwy: Mon-Sun 11:00 am-10:00 pm (captured 2026-09-12)", "url": "https://www.ordersushiken.com/"},
+          {"label": "Google Maps search - Sushi Ken, 39156 Paseo Padre Pkwy, Fremont", "url": "https://www.google.com/maps/search/?api=1&query=Sushi+Ken+39156+Paseo+Padre+Pkwy+Fremont"}
+        ],
+        "accessed": "2026-09-12"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/search?find_desc=Sushi+Ken&find_loc=Fremont%2C+CA",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Sushi+Ken+39156+Paseo+Padre+Pkwy+Fremont"
+      },
+      "flags": []
+    },
+    {
+      "name": "Amelia's Kitchen",
+      "city": "Fremont",
+      "area": "Decoto Rd",
+      "address": "4300 Decoto Rd, Fremont, CA",
+      "cuisine": "Mexican / food truck",
+      "lunch_special": {
+        "name": "No published lunch special - tacos and burritos",
+        "price_from": null,
+        "price_to": null,
+        "days": "Mon-Fri",
+        "window": "10:00 AM - 6:00 PM",
+        "includes": "No priced lunch special found."
+      },
+      "hours_tuesday": "10:00 AM - 6:00 PM",
+      "days_open": "Mon-Fri 10:00 AM - 6:00 PM; Sat-Sun closed (a Yelp capture and a zmenu capture agree; an Instagram bio shows stale 8 am-4 pm hours)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Fremont Decoto Rd - ~15 mi from Cupertino; BART/AC Transit or a ride; closes 6:00 PM."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {"label": "Yelp search - Amelia's Kitchen, 4300 Decoto Rd, Fremont (business-page captures captured 2026-09-12: Mon-Fri 10:00 am-6:00 pm, Sat-Sun closed)", "url": "https://www.yelp.com/search?find_desc=Amelia%27s+Kitchen&find_loc=Fremont%2C+CA"},
+          {"label": "Google Maps search - Amelia's Kitchen, 4300 Decoto Rd, Fremont", "url": "https://www.google.com/maps/search/?api=1&query=Amelia%27s+Kitchen+4300+Decoto+Rd+Fremont"}
+        ],
+        "accessed": "2026-09-12"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/search?find_desc=Amelia%27s+Kitchen&find_loc=Fremont%2C+CA",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Amelia%27s+Kitchen+4300+Decoto+Rd+Fremont"
+      },
+      "flags": ["Weekends closed; closes 6:00 PM."]
+    },
+    {
+      "name": "Katsu Factory",
+      "city": "Fremont",
+      "area": "Mowry Ave (5000 block)",
+      "address": "5022 Mowry Ave, Fremont, CA",
+      "cuisine": "Japanese tonkatsu",
+      "lunch_special": {
+        "name": "No published lunch special - lunch block with tonkatsu sets",
+        "price_from": null,
+        "price_to": null,
+        "days": "daily",
+        "window": "11:30 AM - 2:30 PM (official) / 2:00 PM (Yelp) - minor delta",
+        "includes": "No priced lunch special found."
+      },
+      "hours_tuesday": "11:30 AM - 2:30 PM, 5:00 - 9:00 PM (official site) vs 11:30 AM - 2:00 PM, 5:00 - 8:30 PM (Yelp capture)",
+      "days_open": "Daily 11:30 AM - 2:30 PM, 5:00 - 9:00 PM per the official site; a Yelp capture shows 11:30 am-2:00 pm, 5:00-8:30 pm",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Fremont Mowry Ave - ~15 mi from Cupertino; BART/AC Transit or a ride."
+      },
+      "verification": {
+        "level": "official",
+        "sources": [
+          {"label": "Official site katsutonkatsu.com - 5022 Mowry Ave: Tue 11:30 am-2:30 pm, 5:00-9:00 pm (full weekly table, captured 2026-09-12)", "url": "https://katsutonkatsu.com/"},
+          {"label": "Yelp search - Katsu Factory, 5022 Mowry Ave, Fremont (business-page capture shows the 2:00/8:30 variant)", "url": "https://www.yelp.com/search?find_desc=Katsu+Factory&find_loc=Fremont%2C+CA"}
+        ],
+        "accessed": "2026-09-12"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/search?find_desc=Katsu+Factory&find_loc=Fremont%2C+CA",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Katsu+Factory+5022+Mowry+Ave+Fremont"
+      },
+      "flags": ["Official vs Yelp close-time deltas (2:30 vs 2:00, 9:00 vs 8:30) - use the earlier times to be safe."]
+    },
+    {
+      "name": "A Sack of Potatoes",
+      "city": "Fremont",
+      "area": "Fremont Blvd (37000 block)",
+      "address": "37100 Fremont Blvd Ste 3C, Fremont, CA",
+      "cuisine": "Cafe / fusion bites",
+      "lunch_special": {
+        "name": "No published lunch special - a la carte bites and musubi",
+        "price_from": null,
+        "price_to": null,
+        "days": "Tue-Sun",
+        "window": "11:00 AM - 8:30 PM",
+        "includes": "No priced lunch special found."
+      },
+      "hours_tuesday": "11:00 AM - 8:30 PM",
+      "days_open": "Mon closed; Tue-Thu 11:00 AM - 8:30 PM; Fri-Sat 11:00 AM - 9:30 PM; Sun 11:00 AM - 8:30 PM (TripAdvisor, atmosfy and Restaurantji captures agree)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Fremont Blvd - ~16 mi from Cupertino; BART/AC Transit or a ride."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {"label": "Yelp search - A Sack of Potatoes, 37100 Fremont Blvd, Fremont (three directory captures captured 2026-09-12 agree: Mon closed, Tue-Sun 11:00 am-8:30 pm, Fri-Sat to 9:30 pm)", "url": "https://www.yelp.com/search?find_desc=A+Sack+of+Potatoes&find_loc=Fremont%2C+CA"},
+          {"label": "Google Maps search - A Sack of Potatoes, 37100 Fremont Blvd, Fremont", "url": "https://www.google.com/maps/search/?api=1&query=A+Sack+of+Potatoes+37100+Fremont+Blvd+Fremont"}
+        ],
+        "accessed": "2026-09-12"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/search?find_desc=A+Sack+of+Potatoes&find_loc=Fremont%2C+CA",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=A+Sack+of+Potatoes+37100+Fremont+Blvd+Fremont"
+      },
+      "flags": ["Closed Monday; to-go leaning per recent reviews."]
+    },
+    {
+      "name": "Skillet'z Cafe",
+      "city": "Fremont",
+      "area": "Niles Blvd",
+      "address": "37378 Niles Blvd, Fremont, CA",
+      "cuisine": "Breakfast & brunch / American",
+      "lunch_special": {
+        "name": "No published lunch special - breakfast and brunch menu",
+        "price_from": null,
+        "price_to": null,
+        "days": "daily",
+        "window": "8:00 AM - 2:00 PM (Thu-Sun to 8:00 PM per newer captures)",
+        "includes": "No priced lunch special found."
+      },
+      "hours_tuesday": "8:00 AM - 2:00 PM",
+      "days_open": "Mon-Wed 8:00 AM - 2:00 PM; Thu-Sun 8:00 AM - 8:00 PM (three Yelp captures; an older capture shows 8-2 all week - Tuesday is 8-2 in every capture)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Fremont Niles Blvd - ~15 mi from Cupertino; BART/AC Transit or a ride; lunch ends 2:00 PM."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {"label": "Yelp search - Skillet'z Cafe, 37378 Niles Blvd, Fremont (three business-page captures captured 2026-09-12: Mon-Wed 8:00 am-2:00 pm, Thu-Sun 8:00 am-8:00 pm)", "url": "https://www.yelp.com/search?find_desc=Skilletz+Cafe&find_loc=Fremont%2C+CA"},
+          {"label": "Google Maps search - Skillet'z Cafe, 37378 Niles Blvd, Fremont", "url": "https://www.google.com/maps/search/?api=1&query=Skillet%27z+Cafe+37378+Niles+Blvd+Fremont"}
+        ],
+        "accessed": "2026-09-12"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/search?find_desc=Skilletz+Cafe&find_loc=Fremont%2C+CA",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Skillet%27z+Cafe+37378+Niles+Blvd+Fremont"
+      },
+      "flags": ["Tuesday lunch ends 2:00 PM."]
+    },
+    {
+      "name": "New Pizza Italia",
+      "city": "Fremont",
+      "area": "Ardenwood Blvd (34000 block)",
+      "address": "34765 Ardenwood Blvd, Fremont, CA",
+      "cuisine": "Italian / pizza",
+      "lunch_special": {
+        "name": "No published lunch special - all-day pizza menu",
+        "price_from": null,
+        "price_to": null,
+        "days": "daily",
+        "window": "10:00 AM - 10:00 PM",
+        "includes": "No priced lunch special found."
+      },
+      "hours_tuesday": "10:00 AM - 10:00 PM",
+      "days_open": "Daily 10:00 AM - 10:00 PM (two Yelp captures agree; an older Wanderlog capture shows an 11:00 AM open - not used)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Fremont Ardenwood - ~16 mi from Cupertino; BART to Niles + ride or AC Transit."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {"label": "Yelp search - New Pizza Italia, 34765 Ardenwood Blvd, Fremont (two business-page captures captured 2026-09-12: daily 10:00 am-10:00 pm)", "url": "https://www.yelp.com/search?find_desc=New+Pizza+Italia&find_loc=Fremont%2C+CA"},
+          {"label": "Google Maps search - New Pizza Italia, 34765 Ardenwood Blvd, Fremont", "url": "https://www.google.com/maps/search/?api=1&query=New+Pizza+Italia+34765+Ardenwood+Blvd+Fremont"}
+        ],
+        "accessed": "2026-09-12"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/search?find_desc=New+Pizza+Italia&find_loc=Fremont%2C+CA",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=New+Pizza+Italia+34765+Ardenwood+Blvd+Fremont"
+      },
+      "flags": ["Candidate was labeled NW; the real location is Fremont (LUNCH-FLAG-65)."]
+    },
+    {
+      "name": "Northwest China Cuisine (Ningxia)",
+      "city": "Fremont",
+      "area": "Stevenson Blvd",
+      "address": "6096 Stevenson Blvd, Fremont, CA",
+      "cuisine": "Northwest Chinese (Ningxia) / hand-pulled noodles",
+      "lunch_special": {
+        "name": "Lunch block per the official site (9:00 AM - 2:30 PM Tue-Fri); no discounted price published",
+        "price_from": null,
+        "price_to": null,
+        "days": "Tue-Sun",
+        "window": "9:00 AM - 2:30 PM (Tue-Fri)",
+        "includes": "No priced lunch special found."
+      },
+      "hours_tuesday": "9:00 AM - 2:30 PM, 5:30 - 8:00 PM (official site) vs 9:00 AM - 4:00 PM (one aggregator) vs 11:00 AM - 9:00 PM (another) - conflict",
+      "days_open": "Official northwestchinacuisine.com: Tue-Fri 9:00 am-2:30 pm, 5:30-8:00 pm; Sat-Sun 10:00 am-2:30 pm, 5:30-8:30 pm (Monday closed); one aggregator shows Tue-Sun 9:00 am-4:00 pm with Thursday closed, another daily 11:00-9:00 pm",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Fremont Stevenson Blvd - ~15 mi from Cupertino; BART/AC Transit or a ride."
+      },
+      "verification": {
+        "level": "official",
+        "sources": [
+          {"label": "Official site northwestchinacuisine.com - 6096 Stevenson Blvd: Tue-Fri 9:00 am-2:30 pm, 5:30-8:00 pm; Sat-Sun 10:00 am-2:30 pm, 5:30-8:30 pm (captured 2026-09-12)", "url": "https://northwestchinacuisine.com/"},
+          {"label": "Google Maps search - Northwest China Cuisine, 6096 Stevenson Blvd, Fremont (aggregator captures disagree - see hours_tuesday)", "url": "https://www.google.com/maps/search/?api=1&query=Northwest+China+Cuisine+6096+Stevenson+Blvd+Fremont"}
+        ],
+        "accessed": "2026-09-12"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/search?find_desc=Northwest+China+Cuisine&find_loc=Fremont%2C+CA",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Northwest+China+Cuisine+6096+Stevenson+Blvd+Fremont"
+      },
+      "flags": [
+        "LUNCH-FLAG-56: three sources give three schedules; the official site is used (Tue lunch 9:00-2:30). The candidate was named 'NW China / Ningxia' - same restaurant."
+      ]
+    },
+    {
+      "name": "Dino's Family Restaurant",
+      "city": "Fremont",
+      "area": "Fremont Blvd (36000 block)",
+      "address": "36930 Fremont Blvd, Fremont, CA",
+      "cuisine": "American breakfast / diner",
+      "lunch_special": {
+        "name": "No published lunch special - breakfast and lunch menu",
+        "price_from": null,
+        "price_to": null,
+        "days": "daily",
+        "window": "7:00 AM - 3:00 PM",
+        "includes": "No priced lunch special found."
+      },
+      "hours_tuesday": "7:00 AM - 3:00 PM",
+      "days_open": "Daily 7:00 AM - 3:00 PM (a recent Yelp capture, a sirved capture and a local-cafes capture all agree; older 'Tuesday closed' captures are stale)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Fremont Blvd - ~16 mi from Cupertino; BART/AC Transit or a ride; closes 3:00 PM."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {"label": "Yelp search - Dino's Family Restaurant, 36930 Fremont Blvd, Fremont (recent business-page capture plus two directory captures: daily 7:00 am-3:00 pm)", "url": "https://www.yelp.com/search?find_desc=Dino%27s+Family+Restaurant&find_loc=Fremont%2C+CA"},
+          {"label": "Google Maps search - Dino's Family Restaurant, 36930 Fremont Blvd, Fremont", "url": "https://www.google.com/maps/search/?api=1&query=Dino%27s+Family+Restaurant+36930+Fremont+Blvd+Fremont"}
+        ],
+        "accessed": "2026-09-12"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/search?find_desc=Dino%27s+Family+Restaurant&find_loc=Fremont%2C+CA",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Dino%27s+Family+Restaurant+36930+Fremont+Blvd+Fremont"
+      },
+      "flags": [
+        "LUNCH-FLAG-64: an earlier pass-14 capture said Tuesday closed; the most recent Yelp capture (days old) plus two other sources all show daily 7:00-3:00, so the row now reads open Tuesday - re-verify by phone if this matters."
+      ]
+    },
+    {
+      "name": "Ping's Bistro",
+      "city": "Fremont",
+      "area": "Warm Springs Ct",
+      "address": "2090 Warm Springs Ct Ste 140, Fremont, CA",
+      "cuisine": "Hunan / Chinese",
+      "lunch_special": {
+        "name": "No published lunch special (Tuesday status disputed - see flag)",
+        "price_from": null,
+        "price_to": null,
+        "days": "Tue-Sat per one source; Tuesday excluded by two others",
+        "window": "11:00 AM - 2:00 PM lunch block (when open)",
+        "includes": "No priced lunch special found."
+      },
+      "hours_tuesday": "11:00 AM - 2:00 PM, 5:00 - 8:15 PM (Checkle capture, Nov-2025) vs Tuesday omitted/closed (Waze schedule and a Restaurantjump capture) - CRITICAL conflict",
+      "days_open": "One source lists daily 11:00 am-2:00 pm, 5:00-8:15 pm (Sun to 8:00 pm); the Waze place schedule lists Sun, Mon, Wed-Sat only (no Tuesday entry); Restaurantjump shows Tuesday Closed",
+      "open_on_trip_date": null,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Fremont Warm Springs - ~15 mi from Cupertino; BART/AC Transit or a ride. Tuesday open/closed is disputed - call first."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {"label": "Yelp search - Ping's Bistro, 2090 Warm Springs Ct, Fremont (three directory captures captured 2026-09-12 split on Tuesday - see hours_tuesday)", "url": "https://www.yelp.com/search?find_desc=Ping%27s+Bistro&find_loc=Fremont%2C+CA"},
+          {"label": "Google Maps search - Ping's Bistro, 2090 Warm Springs Ct Ste 140, Fremont", "url": "https://www.google.com/maps/search/?api=1&query=Ping%27s+Bistro+2090+Warm+Springs+Ct+Fremont"}
+        ],
+        "accessed": "2026-09-12"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/search?find_desc=Ping%27s+Bistro&find_loc=Fremont%2C+CA",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Ping%27s+Bistro+2090+Warm+Springs+Ct+Fremont"
+      },
+      "flags": [
+        "LUNCH-FLAG-55 (CRITICAL): sources split on whether Tuesday is open. The most recent capture (Checkle, Nov-2025) shows it open; the Waze schedule omits Tuesday entirely. Treat as unconfirmed for the trip day."
+      ]
+    },
+    {
+      "name": "Bing's Dumpling House",
+      "city": "Fremont",
+      "area": "Fremont Blvd (34000 block)",
+      "address": "34360 Fremont Blvd, Fremont, CA",
+      "cuisine": "Chinese dumplings / snacks",
+      "lunch_special": {
+        "name": "No published lunch special (status flagged - see below)",
+        "price_from": null,
+        "price_to": null,
+        "days": "daily (status disputed)",
+        "window": "11:00 AM - 3:00 PM, 4:30 - 9:30 PM",
+        "includes": "No priced lunch special found."
+      },
+      "hours_tuesday": "11:00 AM - 3:00 PM, 4:30 - 9:30 PM (normal listed hours) - but Apple Maps shows a 'Temporarily Closed' badge",
+      "days_open": "Normal listed hours are daily 11:00 am-3:00 pm, 4:30-9:30 pm; Apple Maps currently displays 'Temporarily Closed' over the normal schedule",
+      "open_on_trip_date": null,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Fremont Blvd - ~16 mi from Cupertino; BART/AC Transit or a ride. Temporarily-closed badge - call before planning on it."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {"label": "Yelp search - Bing's Dumpling House, 34360 Fremont Blvd, Fremont (normal listed hours 11:00 am-3:00 pm, 4:30-9:30 pm captured 2026-09-12)", "url": "https://www.yelp.com/search?find_desc=Bing%27s+Dumpling+House&find_loc=Fremont%2C+CA"},
+          {"label": "Google Maps search - Bing's Dumpling House, 34360 Fremont Blvd, Fremont (map data show the 'Temporarily Closed' badge over the normal schedule)", "url": "https://www.google.com/maps/search/?api=1&query=Bing%27s+Dumpling+House+34360+Fremont+Blvd+Fremont"}
+        ],
+        "accessed": "2026-09-12"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/search?find_desc=Bing%27s+Dumpling+House&find_loc=Fremont%2C+CA",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Bing%27s+Dumpling+House+34360+Fremont+Blvd+Fremont"
+      },
+      "flags": [
+        "LUNCH-FLAG-57: Apple Maps displays 'Temporarily Closed' while the underlying listed hours are normal - treat as possibly closed until confirmed by phone."
+      ]
+    },
+    {
+      "name": "Forest & Flour",
+      "city": "Fremont",
+      "area": "Mission Blvd (Niles)",
+      "address": "43587 Mission Blvd, Fremont, CA",
+      "cuisine": "Bakery / brunch",
+      "lunch_special": {
+        "name": "No published lunch special (closed Tuesday)",
+        "price_from": null,
+        "price_to": null,
+        "days": "not applicable (closed Tuesday)",
+        "window": null,
+        "includes": "No priced lunch special found; the bakery is closed on the trip day."
+      },
+      "hours_tuesday": "Closed",
+      "days_open": "Wed-Fri 9:00 AM - 3:00 PM; Sat-Sun 9:00 AM - 4:00 PM; Mon-Tue closed (a Fremont Restaurant Week listing and the Yelp Q&A agree)",
+      "open_on_trip_date": false,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Fremont Niles - closed on the trip Tuesday; reference row only."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {"label": "Yelp search - Forest & Flour, 43587 Mission Blvd, Fremont (Fremont Restaurant Week listing + Q&A captured 2026-09-12: Wed-Fri 9:00 am-3:00 pm, weekends 9:00 am-4:00 pm, closed Mon-Tue)", "url": "https://www.yelp.com/search?find_desc=Forest+%26+Flour&find_loc=Fremont%2C+CA"},
+          {"label": "Google Maps search - Forest & Flour, 43587 Mission Blvd, Fremont", "url": "https://www.google.com/maps/search/?api=1&query=Forest+%26+Flour+43587+Mission+Blvd+Fremont"}
+        ],
+        "accessed": "2026-09-12"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/search?find_desc=Forest+%26+Flour&find_loc=Fremont%2C+CA",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Forest+%26+Flour+43587+Mission+Blvd+Fremont"
+      },
+      "flags": ["Closed on the trip day (Mon-Tue); kept as a reference row.", "Candidate was labeled NW; the real location is Fremont (LUNCH-FLAG-65)."]
+    },
+    {
+      "name": "Tamper Room",
+      "city": "Fremont",
+      "area": "Boscell Rd",
+      "address": "43737 Boscell Rd, Fremont, CA",
+      "cuisine": "Breakfast & brunch / cafe",
+      "lunch_special": {
+        "name": "No published lunch special - breakfast/brunch menu",
+        "price_from": null,
+        "price_to": null,
+        "days": "daily",
+        "window": "8:00 AM - 6:00 PM",
+        "includes": "No priced lunch special found."
+      },
+      "hours_tuesday": "8:00 AM - 6:00 PM",
+      "days_open": "Daily 8:00 AM - 6:00 PM (two independent captures agreed)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Fremont Niles - ~15 mi from Cupertino; BART/AC Transit or a ride."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {"label": "Yelp search - Tamper Room, 43737 Boscell Rd, Fremont (captures captured 2026-09-12: daily 8:00 am-6:00 pm)", "url": "https://www.yelp.com/search?find_desc=Tamper+Room&find_loc=Fremont%2C+CA"},
+          {"label": "Google Maps search - Tamper Room, 43737 Boscell Rd, Fremont", "url": "https://www.google.com/maps/search/?api=1&query=Tamper+Room+43737+Boscell+Rd+Fremont"}
+        ],
+        "accessed": "2026-09-12"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/search?find_desc=Tamper+Room&find_loc=Fremont%2C+CA",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Tamper+Room+43737+Boscell+Rd+Fremont"
+      },
+      "flags": ["Candidate was labeled NW; the real location is Fremont (LUNCH-FLAG-65)."]
+    },
+    {
+      "name": "Toki",
+      "city": "Milpitas",
+      "area": "N Shoreline Blvd",
+      "address": "570 N Shoreline Blvd, Milpitas, CA",
+      "cuisine": "Japanese",
+      "lunch_special": {
+        "name": "No published lunch special - lunch block with a la carte items",
+        "price_from": null,
+        "price_to": null,
+        "days": "daily",
+        "window": "11:30 AM - 3:00 PM",
+        "includes": "No priced lunch special found. A $8.95 lunch item seen on an aggregator menu was dropped because no citable page prints it."
+      },
+      "hours_tuesday": "11:30 AM - 3:00 PM, 5:00 - 9:00 PM",
+      "days_open": "Daily 11:30 AM - 3:00 PM, 5:00 - 9:00 PM (listing captures agree)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Milpitas Shoreline - ~12 mi from Cupertino; VTA or a ride."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {"label": "Yelp search - Toki, 570 N Shoreline Blvd, Milpitas (business-page captures captured 2026-09-12: daily 11:30 am-3:00 pm, 5:00-9:00 pm)", "url": "https://www.yelp.com/search?find_desc=Toki&find_loc=570+N+Shoreline+Blvd%2C+Milpitas%2C+CA"},
+          {"label": "Google Maps search - Toki, 570 N Shoreline Blvd, Milpitas", "url": "https://www.google.com/maps/search/?api=1&query=Toki+570+N+Shoreline+Blvd+Milpitas"}
+        ],
+        "accessed": "2026-09-12"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/search?find_desc=Toki&find_loc=570+N+Shoreline+Blvd%2C+Milpitas%2C+CA",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Toki+570+N+Shoreline+Blvd+Milpitas"
+      },
+      "flags": ["The $8.95 lunch-item lead was not citable and was dropped; price stays blank."]
+    }
+  ]
+}
