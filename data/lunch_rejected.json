@@ -2006,6 +2006,66 @@
         }
       ],
       "searched": "2026-09-07"
+    },
+    {
+      "name": "Bobbi's Coffee Shop & Cafe",
+      "city": "Cupertino",
+      "links": [
+        "https://www.sfgate.com/food/article/50-years-classic-bay-area-diner-is-closing-21259678.php",
+        "https://m.yelp.com/biz/bobbis-coffee-shop-and-cafe-cupertino",
+        "https://www.reddit.com/r/Cupertino/comments/1pxw924/after_over_50_years_bobbis_coffee_shop_cafe_is/"
+      ],
+      "searched": "2026-09-14",
+      "why": "Permanently closed on 2025-12-31 after 50+ years. SFGATE broke the closure on 2025-12-27 with a manager confirming it; Yelp now labels the page CLOSED ('Yelpers report this location has closed'); r/Cupertino carries the same story. No 2026 hours or lunch service exist, so no row is listed."
+    },
+    {
+      "name": "Konbini Club",
+      "city": "Cupertino",
+      "links": [
+        "https://yelp.com/search?amp=&cflt=restaurants&find_near=de-anza-college-cupertino-2"
+      ],
+      "searched": "2026-09-14",
+      "why": "Only source is a Yelp ranking capture (5.0, 6 reviews, 'Closed until Sunday'); no street address, phone or weekly hours could be found in a follow-up search, so nothing could be verified line by line."
+    },
+    {
+      "name": "Hearth BBQ",
+      "city": "Cupertino",
+      "links": [
+        "https://yelp.com/search?amp=&cflt=restaurants&find_near=de-anza-college-cupertino-2"
+      ],
+      "searched": "2026-09-14",
+      "why": "Name appears only in a Yelp ranking capture. A follow-up search for 'Hearth BBQ Cupertino hours lunch special' returns Hearth and Harrow (Connecticut) and Hearth (Peoria, Illinois) - no Cupertino business page, address or hours."
+    },
+    {
+      "name": "Layang Layang Malaysian Cuisine",
+      "city": "Cupertino / Milpitas",
+      "links": [
+        "https://www.tripadvisor.com/Restaurant_Review-g32717-d4339539-Reviews-Layang_layang-Milpitas_California.html",
+        "https://layang-layang-malaysian-cuisine.wheree.com/",
+        "https://www.yellowpages.com/cupertino-ca/layang-layang"
+      ],
+      "searched": "2026-09-14",
+      "why": "The Cupertino-area store is gone (TripAdvisor review: 'Unfortunately they only have their Milpitas store now'). The remaining pages disagree on the surviving address: 181 W Calaveras Blvd, Milpitas (wheree, yellowpages) versus 11 Butler St, Milpitas (TripAdvisor JSON-LD) versus 1480 S De Anza Blvd, San Jose (yellowpages, second listing). No single address could be verified, so the candidate is deferred rather than listed."
+    },
+    {
+      "name": "Di Paolo's",
+      "city": "out of ring (Penns Grove, NJ)",
+      "links": [
+        "https://dipaolosrestaurant.com/restaurant-menus-and-specials/",
+        "https://www.opentable.com/r/dipaolos-penns-grove"
+      ],
+      "searched": "2026-09-14",
+      "why": "A '3 Course for $20 Lunch Special 11am-3:30pm' page surfaced in a Palo Alto-area search, but dipaolosrestaurant.com belongs to Di Paolo's Ristorante Italiano, 28 S Broad St, Penns Grove, NJ (OpenTable listing), ~2,500 miles outside the 10-15 mile Cupertino ring. Rejected as out of ring rather than omitted silently."
+    },
+    {
+      "name": "Mountain View Chalet",
+      "city": "out of ring (Asbury, NJ)",
+      "links": [
+        "https://mountainviewchalet.com/menu/",
+        "https://www.yelp.com/biz/mountain-view-chalet-asbury"
+      ],
+      "searched": "2026-09-14",
+      "why": "mountainviewchalet.com publishes 'LUNCH SPECIALS: 11:30 am - 4:00 pm Tuesday - Saturday', but the business is Mountain View Chalet, 154 State Route 173, Asbury, NJ - the name is a New Jersey restaurant, not the California city. Rejected as out of ring."
     }
   ],
   "notes": [
