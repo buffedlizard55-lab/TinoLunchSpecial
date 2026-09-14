@@ -1,11 +1,11 @@
 {
   "search_protocol": {
-    "requirement": "Verify line by line before adding anything to the master list; keep official/review links for manual review. Fourteenth pass (2026-09-12): 118 new candidates from ring-city sweeps (Cupertino, Sunnyvale, Santa Clara, Mountain View, San Jose, Palo Alto, San Mateo, Redwood City, Milpitas, Menlo Park, Campbell, Los Altos, Newark, Fremont, Saratoga, Foster City) were each resolved against two or more pages before any row was written; 102 verified rows entered the master list (L708-L809), 10 were re-verification of rows already listed, 4 were held back by street-number collisions (LUNCH-FLAG-69) and 13 were recorded as rejects with the reason that proves each. Only one row carries a price (Newark Buffet's $19.99 lunch buffet, official menu page); every other row keeps a blank price until a page prints one. Seven rows whose Tuesday status is disputed between live captures carry open_on_trip_date = null rather than a guess.",
-    "queries_run": 846,
-    "candidates_found": 882,
-    "added_to_master": 809,
-    "rejected_or_deferred": 166,
-    "search_date": "2026-09-07 through 2026-09-12",
+    "requirement": "Verify line by line before adding anything to the master list; keep official/review links for manual review. Pass 15 (2026-09-14, approximate counts): about 70 fresh candidates were screened with about 60 new searches, Cupertino first and then the 10-15 mile ring. 27 candidates were written up with sources; 10 merged as new rows (L810-L819) and 17 proved to be rows the master list already carried, so they were merged as cross-checks instead of duplicates. 6 candidates were rejected with the page that produced the name (two of them turned out to be out-of-ring restaurants in New Jersey, one a Cupertino diner that closed permanently on 2025-12-31). Prices were printed only where a business' own page or an attached news/review quote gives one; photo captions and aggregator numbers never became prices. Pass 14 (2026-09-12): 118 new candidates from ring-city sweeps were each resolved against two or more pages before any row was written; 102 verified rows entered the master list (L708-L809). Seven rows whose Tuesday status is disputed between live captures carry open_on_trip_date = null rather than a guess.",
+    "queries_run": 906,
+    "candidates_found": 952,
+    "added_to_master": 819,
+    "rejected_or_deferred": 172,
+    "search_date": "2026-09-07 through 2026-09-14",
     "cities_covered": [
       "Campbell",
       "Cupertino",
@@ -39281,6 +39281,533 @@
       "coords": null,
       "added_in": "batch14_sc_sj.json",
       "distance_mi": null
+    },
+    {
+      "name": "Pings Bistro",
+      "city": "Cupertino",
+      "area": "S De Anza Blvd",
+      "address": "10700 S De Anza Blvd, Cupertino, CA 95014",
+      "cuisine": "Chinese / Yunnan",
+      "phone": "(408) 564-5134",
+      "lunch_special": {
+        "name": "No published lunch special - a la carte Yunnan plates; lunch service 11:00 AM - 2:00 PM",
+        "price_from": null,
+        "price_to": null,
+        "days": "not applicable (closed Tuesday)",
+        "window": "11:00 AM - 2:00 PM lunch, 5:00 - 8:15 PM dinner",
+        "includes": "Yelp menu capture prices: Beef Roll with Mint $21.25, Stir-fried Chinese Flowering Cabbage $22.50, Rice Topped with House Special Braised Pork Knuckle $24.99, Sauteed Beef with Pickled Mustard $34.99. No discounted lunch menu is published."
+      },
+      "hours_tuesday": "Closed",
+      "days_open": "Mon 11:00 AM - 2:00 PM and 5:00 - 8:00 PM, Tue Closed, Wed-Sun 11:00 AM - 2:00 PM and 5:00 - 8:15 PM (Yelp Sep-2026 capture).",
+      "open_on_trip_date": false,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "On De Anza Blvd but closed on the trip Tuesday; open the other weekdays for lunch."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {
+            "label": "Yelp business page capture - 10700 S De Anza Blvd, (408) 564-5134: Mon 11:00 am-2:00 pm, 5:00-8:00 pm; Tue Closed; Wed-Sun 11:00 am-2:00 pm, 5:00-8:15 pm; menu prices",
+            "url": "https://www.yelp.com/biz/pings-bistro-cupertino"
+          },
+          {
+            "label": "wheree listing - 10700 S De Anza Blvd; Mon 11:00 AM-2:00 PM, Tue closed",
+            "url": "https://ping-s-bistro-cupertino.wheree.com/"
+          }
+        ],
+        "accessed": "2026-09-14"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/pings-bistro-cupertino",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Pings+Bistro+10700+S+De+Anza+Blvd+Cupertino"
+      },
+      "flags": [
+        "Closed on the trip day (Tuesday)."
+      ],
+      "id": "L810",
+      "coords": null,
+      "added_in": "batch15_cupertino_core_independents.json",
+      "distance_mi": null
+    },
+    {
+      "name": "DC Tap House",
+      "city": "Cupertino",
+      "area": "Deep Cliff Golf Course, Club House Ln",
+      "address": "10700 Club House Ln, Cupertino, CA 95014",
+      "coords": [
+        37.311493,
+        -122.06576
+      ],
+      "cuisine": "American pub / bar grill",
+      "phone": "(408) 253-5357",
+      "lunch_special": {
+        "name": "No published lunch special - pub menu; full menu Fri-Sun, reduced weekday menu",
+        "price_from": null,
+        "price_to": null,
+        "days": "not applicable",
+        "window": "opens 11:00 AM weekdays, 7:00 AM weekends",
+        "includes": "The wheree FAQ capture for this venue states there is 'no mention of a happy hour' and that the venue offers 'a reduced menu during weekdays, while offering a full menu from Friday to Sunday'."
+      },
+      "hours_tuesday": "11:00 AM - 8:00 PM",
+      "days_open": "Mon-Fri 11:00 AM - 8:00 PM, Sat-Sun 7:00 AM - 8:00 PM (Yelp, TripAdvisor and wheree all agree). zmenu still shows a stale 6:00 AM - 5:00 PM daily block.",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Deep Cliff golf course, ~1.8 mi west of the destination - VTA 51/rails plus a walk."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {
+            "label": "Yelp business page capture - 10700 Club House Ln, (408) 253-5357: Mon-Fri 11:00 am-8:00 pm, Sat-Sun 7:00 am-8:00 pm",
+            "url": "https://www.yelp.com/biz/dc-tap-house-cupertino-5"
+          },
+          {
+            "label": "TripAdvisor listing - same address, JSON-LD hours Mon-Fri 11:00-20:00, Sat-Sun 07:00-20:00",
+            "url": "https://www.tripadvisor.com/Restaurant_Review-g32273-d12531074-Reviews-DC_Tap_House-Cupertino_California.html"
+          },
+          {
+            "label": "wheree listing - same address and hours; FAQ says no happy hour published and a reduced weekday menu",
+            "url": "https://dc-tap-house.wheree.com/"
+          }
+        ],
+        "accessed": "2026-09-14"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/dc-tap-house-cupertino-5",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=DC+Tap+House+10700+Club+House+Ln+Cupertino"
+      },
+      "flags": [
+        "zmenu's hours block (6:00 AM - 5:00 PM daily) disagrees with three other sources; the three agreeing sources were used (LUNCH-FLAG-81)."
+      ],
+      "id": "L811",
+      "added_in": "batch15_cupertino_core_independents.json",
+      "distance_mi": 1.95
+    },
+    {
+      "name": "Tessora's Barra di Vino",
+      "city": "Campbell",
+      "area": "Downtown Campbell, E Campbell Ave",
+      "address": "390 E Campbell Ave, Campbell, CA 95008",
+      "cuisine": "Wine bar / small plates",
+      "lunch_special": {
+        "name": "Tuesday tacos promotion - two barbacoa beef tacos, black bean and corn salad, crunchy slaw plus a beer for $15",
+        "price_from": 15.0,
+        "price_to": null,
+        "days": "Tuesdays only",
+        "window": "evening - the venue opens at 4:00 PM, so this is not a lunch-window deal",
+        "includes": "Downtown Campbell's own business association posts the deal: 'Enjoy two Barbacoa Beef tacos with Chipotle Salsa, Crunchy Slaw, Black Bean and Corn salad sides + a beer for $15.' Because the venue's first seating is 4:00 PM, the promotion cannot be used for a midday lunch break."
+      },
+      "hours_tuesday": "4:00 PM - 9:00 PM",
+      "days_open": "Mon-Wed 4:00 PM - 9:00 PM, Thu-Fri 4:00 PM - 11:00 PM, Sat 2:00 PM - 11:00 PM, Sun 10:00 AM - 6:00 PM (OpenTable). TripAdvisor shows Mon-Wed 4:00-9:00 PM and Sun from 10:00 AM.",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Campbell (~8 mi) and it opens at 4:00 PM - unusable inside a lunch window."
+      },
+      "verification": {
+        "level": "official",
+        "sources": [
+          {
+            "label": "Downtown Campbell business association page - 'Tuesdays is for Taco's at Tessora's ... two Barbacoa Beef tacos with Chipotle Salsa, Crunchy Slaw, Black Bean and Corn salad sides + a beer for $15'",
+            "url": "https://www.downtowncampbell.com/tags/outdoor-dining"
+          },
+          {
+            "label": "OpenTable profile - Mon-Wed 4:00 pm-9:00 pm, Thu-Fri 4:00-11:00 pm, Sat 2:00-11:00 pm, Sun 10:00 am-6:00 pm, (408) 626-7711",
+            "url": "https://www.opentable.com/r/tessoras-campbell"
+          },
+          {
+            "label": "TripAdvisor listing - Sun 10:00 AM-6:00 PM, Mon-Wed 4:00 PM-9:00 PM",
+            "url": "https://www.tripadvisor.com/Restaurant_Review-g32154-d1380161-Reviews-Tessora_s_Barra_di_Vino-Campbell_California.html"
+          }
+        ],
+        "accessed": "2026-09-14"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/tessoras-barra-di-vino-campbell",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Tessora%27s+Barra+di+Vino+390+E+Campbell+Ave+Campbell"
+      },
+      "flags": [
+        "A genuine $15 Tuesday deal, but the venue opens at 4:00 PM: filed as an evening promotion, not a lunch special (LUNCH-FLAG-83)."
+      ],
+      "id": "L812",
+      "coords": null,
+      "added_in": "batch15_cupertino_core_independents.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Dos Burros",
+      "city": "Saratoga",
+      "area": "Saratoga Village, Big Basin Way",
+      "address": "14560 Big Basin Way, Suite B, Saratoga, CA 95070",
+      "cuisine": "Mexican / modern Southwestern",
+      "phone": "(408) 673-6769",
+      "lunch_special": {
+        "name": "No weekday lunch service - dinner Tue-Sun, brunch Sat-Sun 11:00 AM - 2:00 PM",
+        "price_from": null,
+        "price_to": null,
+        "days": "Brunch Saturday and Sunday only",
+        "window": "Tue-Sun dinner 5:00 PM onward; Sat-Sun brunch 11:00 AM - 2:00 PM",
+        "includes": "Official menu prices for the brunch period: Guacamole & Chips $14, Elote $12, signature tacos $7-$9, Enchiladas Suizas $24. No discounted lunch special is published."
+      },
+      "hours_tuesday": "5:00 PM - 8:30 PM",
+      "days_open": "Dinner Tue-Thu 5:00 - 8:30 PM, Fri-Sat 5:00 - 9:00 PM, Sun 5:00 - 8:00 PM; brunch Sat-Sun 11:00 AM - 2:00 PM; closed Monday (official site).",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Saratoga Village (~6 mi) - only dinner on the trip Tuesday, so no lunch window applies."
+      },
+      "verification": {
+        "level": "conflicting",
+        "sources": [
+          {
+            "label": "Official site - 14560 Big Basin Way Suite B, (408) 673-6769: dinner Tue-Thu 5-8:30 PM, Fri-Sat 5-9 PM, Sun 5-8 PM; brunch Sat & Sun 11am-2pm; menu prices",
+            "url": "https://www.dosburros-saratoga.com/menu"
+          },
+          {
+            "label": "Yelp business page capture - Tue-Thu 5:00-9:15 pm, Fri 5:00-10:15 pm, Sat 11:00 am-2:00 pm and 5:00-10:15 pm, Sun 11:00 am-3:00 pm and 5:00-9:00 pm, Mon Closed",
+            "url": "https://www.yelp.com/biz/dos-burros-saratoga"
+          },
+          {
+            "label": "Toast ordering page for 14560 Big Basin Way - Tue-Thu 5:00-8:30 pm, Fri 5:00-9:00 pm (third set of times)",
+            "url": "https://www.toasttab.com/local/order/dos-burros-14560-big-basin-way/item-guacamole-chips_363201f0-a8ec-4ccd-b2c8-1a2cad383fa5"
+          }
+        ],
+        "accessed": "2026-09-14"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/dos-burros-saratoga",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Dos+Burros+14560+Big+Basin+Way+Saratoga"
+      },
+      "flags": [
+        "Three sources, three different closing times per night (Yelp 9:15 PM Tue vs official 8:30 PM Tue vs Toast 8:30 PM Tue) - all three stored, none asserted (LUNCH-FLAG-84).",
+        "Weekday lunch does not exist here; only weekend brunch reaches midday."
+      ],
+      "id": "L813",
+      "coords": null,
+      "added_in": "batch15_cupertino_core_independents.json",
+      "distance_mi": null
+    },
+    {
+      "name": "MoDak Korean Chicken",
+      "city": "San Jose",
+      "area": "Saratoga Ave near Moorpark",
+      "address": "405 Saratoga Ave, Ste 20, San Jose, CA 95129",
+      "coords": [
+        37.3199073,
+        -121.9732498
+      ],
+      "cuisine": "Korean fried chicken / rice plates",
+      "phone": "(408) 490-4019",
+      "lunch_special": {
+        "name": "Lunch Menu served 11:00 AM - 3:00 PM (own ordering site); Yelp review headline mentions a 'Lunch Special Deluxe Box'",
+        "price_from": null,
+        "price_to": null,
+        "days": "Tue-Sun (the site's lunch window runs through the afternoon)",
+        "window": "11:00 AM - 3:00 PM",
+        "includes": "The business' own order page opens with a 'Lunch Menu 11:00 AM - 3:00 PM' section; dinner bibimbap/ramen sections are marked 'Tuesday-Friday from 3PM, Saturday-Sunday ALL DAY'. No lunch price is printed there, and the Yelp photo caption '$18 lunch plate' is a photo caption only, so no price is asserted."
+      },
+      "hours_tuesday": "11:30 AM - 9:00 PM",
+      "days_open": "Tue-Thu 11:30 AM - 9:00 PM, Fri 11:30 AM - 9:30 PM, Sat 12:00 PM - 9:30 PM, Sun 12:00 PM - 8:00 PM, Mon 12:00 PM - 8:00 PM (Yelp). The own-site JSON-LD shows Su,Mo 12:30-20:00 and Tu,We,Th 11:30-21:00.",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Saratoga Ave, San Jose (~6 mi) - VTA 25/57 area, off the Cupertino-SF chain but reachable."
+      },
+      "verification": {
+        "level": "mixed",
+        "sources": [
+          {
+            "label": "Own online-ordering site - 405 Saratoga Ave, (408) 490-4019; 'Lunch Menu 11:00 AM - 3:00 PM'; JSON-LD hours",
+            "url": "https://www.modakkoreanchickenca.com/zlfl128b/modak-korean-chicken--san-jose-95129/order-online"
+          },
+          {
+            "label": "Yelp business page capture - 405 Saratoga Ave Ste 20: Mon 12:00-8:00 pm, Tue-Thu 11:30 am-9:00 pm, Fri 11:30 am-9:30 pm, Sat 12:00-9:30 pm, Sun 12:00-8:00 pm; photo caption '$18 lunch plate'",
+            "url": "https://www.yelp.com/biz/modak-korean-chicken-san-jose-3"
+          },
+          {
+            "label": "Yelp 'Lunch Specials near Saratoga' capture - reviewer text 'I'd particularly recommend the Jiajangmyun or the Lunch Special Deluxe Box'",
+            "url": "https://www.yelp.com/search?find_desc=lunch+specials&find_loc=Saratoga%2C+CA+95070"
+          }
+        ],
+        "accessed": "2026-09-14"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/modak-korean-chicken-san-jose-3",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=MoDak+Korean+Chicken+405+Saratoga+Ave+San+Jose"
+      },
+      "flags": [
+        "A lunch menu is real but unpriced on every citable page; the only $ figure seen is a Yelp photo caption, so no price is printed (LUNCH-FLAG-85).",
+        "Monday opening time differs by 30 minutes between Yelp (12:00 PM) and the venue's own ordering page (12:30 PM)."
+      ],
+      "id": "L814",
+      "added_in": "batch15_cupertino_core_independents.json",
+      "distance_mi": 3.17
+    },
+    {
+      "name": "Toki Sushi (Mountain View)",
+      "city": "Mountain View",
+      "area": "N Shoreline Blvd",
+      "address": "570 N Shoreline Blvd, Ste J, Mountain View, CA 94043",
+      "coords": [
+        37.40277387982767,
+        -122.07937865875114
+      ],
+      "cuisine": "Japanese sushi, bento",
+      "phone": "(650) 887-6368",
+      "lunch_special": {
+        "name": "Bento lunch priced at $8.95 per the Mountain View Voice's opening report",
+        "price_from": 8.95,
+        "price_to": null,
+        "days": "daily (lunch block)",
+        "window": "11:00 AM - 2:30 PM (Yelp) / 11:30 AM - 3:00 PM (Mountain View Voice)",
+        "includes": "The local paper's December 2025 opening story headline reads 'this new Japanese restaurant offers bentos for just $8.95'; Yelp's lunch-special capture quotes a diner: 'We had the lunch special that runs from 11-3 pm every day'."
+      },
+      "hours_tuesday": "11:00 AM - 2:30 PM, 4:30 PM - 8:30 PM",
+      "days_open": "Yelp: daily 11:00 AM-2:30 PM with dinner 4:30-8:30 PM Mon-Thu and 4:30-9:00 PM Fri-Sun. Mountain View Voice (Dec 2025): Mon-Thu 11:30 AM-3:00 PM and 5:00-9:00 PM, Fri-Sun 11:30 AM-9:30 PM.",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "N Shoreline Blvd, Mountain View - ~9 mi from Cupertino; VTA 40/51 area."
+      },
+      "verification": {
+        "level": "conflicting",
+        "sources": [
+          {
+            "label": "Mountain View Voice - 'Casual family-run restaurant Toki Sushi opens in Mountain View' (Dec 9, 2025): 570 N. Shoreline Blvd., 650-887-6368; 'offers bentos for just $8.95'; hours block",
+            "url": "https://www.mv-voice.com/mountain-view/2025/12/09/this-new-japanese-restaurant-offers-bentos-for-just-8-95/"
+          },
+          {
+            "label": "Yelp business page capture - 570 North Shoreline Blvd Ste J: daily 11:00 am-2:30 pm, 4:30-8:30 pm (Fri-Sun to 9:00 pm)",
+            "url": "https://www.yelp.com/biz/toki-sushi-mountain-view"
+          },
+          {
+            "label": "Yelp 'Lunch Specials in Mountain View' capture - 'We had the lunch special that runs from 11-3 pm every day'",
+            "url": "https://yelp.com/search?amp=&find_desc=Lunch+Specials&find_loc=Mountain+View%2C+CA"
+          }
+        ],
+        "accessed": "2026-09-14"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/toki-sushi-mountain-view",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Toki+Sushi+570+N+Shoreline+Blvd+Mountain+View"
+      },
+      "flags": [
+        "Two different day-schedules (Yelp vs the Mountain View Voice) - both published, neither asserted (LUNCH-FLAG-87).",
+        "$8.95 bento comes from a news article at opening (Dec 2025), not from a current menu page, so it is labelled as the opening price."
+      ],
+      "id": "L815",
+      "added_in": "batch15_cupertino_core_independents.json",
+      "distance_mi": 6.77
+    },
+    {
+      "name": "Speedy's Tacos",
+      "city": "Sunnyvale",
+      "area": "E Duane Ave",
+      "address": "929 E Duane Ave, Sunnyvale, CA 94085",
+      "cuisine": "Mexican taqueria",
+      "phone": "(408) 685-2791",
+      "lunch_special": {
+        "name": "No published lunch special - taqueria a la carte",
+        "price_from": null,
+        "price_to": null,
+        "days": "not applicable",
+        "window": "opens 11:00 AM Mon-Sat",
+        "includes": "Yelp's menu capture prices items individually: Al Pastor Taco $4.87, Carne Asada Taco $4.87, Fish Taco $6.30, Chicken Burrito $15.16, Enchiladas $18.31. No combo or lunch-special price is published."
+      },
+      "hours_tuesday": "11:00 AM - 8:30 PM",
+      "days_open": "Mon-Sat 11:00 AM - 8:30 PM, Sun 1:30 PM - 7:00 PM (Yelp). cake.net's third-party ordering page still says 'Open 24 Hours'. ",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Duane Ave, Sunnyvale (~7 mi)."
+      },
+      "verification": {
+        "level": "conflicting",
+        "sources": [
+          {
+            "label": "Yelp business page capture - 929 E Duane Ave, (408) 685-2791: Mon-Sat 11:00 am-8:30 pm, Sun 1:30-7:00 pm; menu prices",
+            "url": "https://www.yelp.com/biz/speedys-tacos-sunnyvale"
+          },
+          {
+            "label": "cake.net ordering page for the same address - claims 'Open 24 Hours' every day (contradicts Yelp)",
+            "url": "https://orders.cake.net/09000399"
+          }
+        ],
+        "accessed": "2026-09-14"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/speedys-tacos-sunnyvale",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Speedy%27s+Tacos+929+E+Duane+Ave+Sunnyvale"
+      },
+      "flags": [
+        "The 'Open 24 Hours' claim on the third-party ordering page is almost certainly wrong for a taqueria with a 1:30 PM Sunday opening; both blocks are stored and neither is trusted silently (LUNCH-FLAG-91)."
+      ],
+      "id": "L816",
+      "coords": null,
+      "added_in": "batch15_cupertino_core_independents.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Tonkatsu Sakuton",
+      "city": "San Jose",
+      "area": "Inside Mitsuwa Marketplace, Saratoga Ave",
+      "address": "675 Saratoga Ave, San Jose, CA 95129",
+      "coords": [
+        37.3149586,
+        -121.9776563
+      ],
+      "cuisine": "Japanese tonkatsu counter",
+      "phone": "(650) 484-6049",
+      "lunch_special": {
+        "name": "No published lunch special - katsu rice plates and sandwiches, counter inside Mitsuwa",
+        "price_from": null,
+        "price_to": null,
+        "days": "not applicable",
+        "window": "opens 11:00 AM",
+        "includes": "No lunch-special price is published on any captured page. Reviews describe 'katsu rice plates and katsu sandwiches' inside the Mitsuwa food hall."
+      },
+      "hours_tuesday": "11:00 AM - 5:00 PM (corner.inc) or 11:00 AM - 8:00 PM (Yelp/Uber Eats) - disputed, see flags",
+      "days_open": "corner.inc: Tue-Sat 11:00 AM-5:00 PM, Mon and Sun closed. Yelp, Uber Eats and Postmates: daily 11:00 AM-8:00 PM.",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Saratoga Ave, San Jose (~6 mi) - VTA 25/57 area."
+      },
+      "verification": {
+        "level": "conflicting",
+        "sources": [
+          {
+            "label": "corner.inc listing - 675 Saratoga Ave (Mitsuwa): Mon Closed, Tue-Sat 11:00 AM-5:00 PM, Sun Closed",
+            "url": "https://www.corner.inc/place/p5B9JDSAcdrz"
+          },
+          {
+            "label": "Yelp business page capture - 675 Saratoga Ave, (650) 484-6049: daily 11:00 am-8:00 pm (14 reviews)",
+            "url": "https://www.yelp.com/biz/tonkatsu-sakuton-san-jose"
+          },
+          {
+            "label": "Uber Eats store page - same address, JSON-LD opening hours 11:00-20:00 every day",
+            "url": "https://www.ubereats.com/store/tonkatsu-sakuton-san-jose/pzph7IgEQz-DYgc8tgtsgg"
+          }
+        ],
+        "accessed": "2026-09-14"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/tonkatsu-sakuton-san-jose",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Tonkatsu+Sakuton+675+Saratoga+Ave+San+Jose"
+      },
+      "flags": [
+        "Closing time is 5:00 PM on one listing and 8:00 PM on two others, and two listings mark Monday/Sunday closed; both readings kept, no hours asserted (LUNCH-FLAG-92).",
+        "Yelp average for this counter is 2.7 stars against 4.8 on Uber Eats - the review scores disagree, so both are noted and neither is presented as representative."
+      ],
+      "id": "L817",
+      "added_in": "batch15_cupertino_core_independents.json",
+      "distance_mi": 2.9
+    },
+    {
+      "name": "Yuki Sushi (Santa Clara)",
+      "city": "Santa Clara",
+      "area": "Pruneridge Ave",
+      "address": "1827 Pruneridge Ave, Santa Clara, CA 95050",
+      "cuisine": "Japanese / sushi",
+      "phone": "(408) 248-9144",
+      "lunch_special": {
+        "name": "No published lunch special captured - weekday sushi lunch service only",
+        "price_from": null,
+        "price_to": null,
+        "days": "Tue-Fri",
+        "window": "11:30 AM - 2:00 PM lunch",
+        "includes": "Yelp's Sunnyvale sushi-lunch-special ranking lists a Yuki Sushi, but the only Yuki Sushi inside the ring is this Pruneridge Ave location, whose captured page prints no lunch-special price or combo."
+      },
+      "hours_tuesday": "11:30 AM - 2:00 PM, 4:30 PM - 8:00 PM",
+      "days_open": "Mon Closed; Tue-Thu 11:30 AM-2:00 PM and 4:30-8:00 PM; Fri to 8:30 PM; Sat and Sun dinner only from 4:30 PM (Yelp, Sep-2026 capture).",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": true,
+        "note": "Pruneridge Ave, Santa Clara - 1.2 mi east of the destination; close enough for a short ride or walk."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {
+            "label": "Yelp business page capture - 1827 Pruneridge Ave, (408) 248-9144: Mon Closed; Tue-Fri 11:30 am-2:00 pm lunch; Sat-Sun dinner only",
+            "url": "https://www.yelp.com/biz/yuki-sushi-santa-clara-3"
+          },
+          {
+            "label": "Yelp 'sushi lunch special near Sunnyvale' ranking capture - lists a Yuki Sushi among sushi lunch specials",
+            "url": "https://www.yelp.com/search?find_desc=sushi+lunch+special&find_loc=Sunnyvale%2C+CA"
+          }
+        ],
+        "accessed": "2026-09-14"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/yuki-sushi-santa-clara-3",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Yuki+Sushi+1827+Pruneridge+Ave+Santa+Clara"
+      },
+      "flags": [
+        "The Yelp ranking that produced this candidate labeled it 'Sunnyvale' while the verifiable branch is on Pruneridge Ave in Santa Clara; the row uses the verified address (LUNCH-FLAG-93).",
+        "A second Yuki Sushi on Lincoln Ave in San Jose is marked CLOSED on Yelp, and yukisushi.com belongs to that Willow Glen business - not used as a source for this branch."
+      ],
+      "id": "L818",
+      "coords": null,
+      "added_in": "batch15_cupertino_core_independents.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Vishnuji Ki Rasoi",
+      "city": "Sunnyvale",
+      "area": "S Wolfe Rd (an older listing shows E El Camino Real)",
+      "address": "731 S Wolfe Rd, Sunnyvale, CA 94086",
+      "coords": [
+        37.3660974,
+        -122.0153449
+      ],
+      "cuisine": "Indian (Maharashtrian / Punjabi, vegetarian)",
+      "phone": "(408) 245-9999",
+      "lunch_special": {
+        "name": "Buffet and thali menus exist; no current lunch-special price published",
+        "price_from": null,
+        "price_to": null,
+        "days": "daily",
+        "window": "lunch from 11:30 AM",
+        "includes": "The OpenTable profile for 731 S Wolfe Rd describes 'delicious weekend buffet' and 'various thalis' but prints no lunch price; the reservation page for the older 151 E El Camino Real listing shows a la carte items only (Masala Fries $5.99, Vada Pav $3.99, Zunka Bhakar $12.99)."
+      },
+      "hours_tuesday": "11:30 AM - 10:00 PM",
+      "days_open": "Daily 11:30 AM - 10:00 PM (OpenTable profile for the S Wolfe Rd address; zmenu lists the same block).",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "S Wolfe Rd, Sunnyvale (~7 mi) - VTA 55/26 area."
+      },
+      "verification": {
+        "level": "conflicting",
+        "sources": [
+          {
+            "label": "OpenTable profile (current address) - 731 S Wolfe Rd, (408) 245-9999, daily 11:30 am-10:00 pm, weekend buffet and thalis described",
+            "url": "https://www.opentable.com/r/vishnuji-ki-rasoi-usa-sunnyvale"
+          },
+          {
+            "label": "OpenTable profile (older address) - 151 E El Camino Real with lunch Mon-Fri 11:30 am-2:30 pm, Sat-Sun 12:00-2:30 pm, dinner daily 6:00-10:00 pm plus a priced a la carte list",
+            "url": "https://www.opentable.com/r/vishnuji-ki-rasoi-sunnyvale"
+          },
+          {
+            "label": "zmenu listing - 731 S Wolfe Rd, Mon-Sun 11:30am-10:00pm",
+            "url": "https://www.zmenu.com/vishnuji-ki-rasoi-sunnyvale-2-online-menu/"
+          }
+        ],
+        "accessed": "2026-09-14"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/vishnuji-ki-rasoi-sunnyvale",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Vishnuji+Ki+Rasoi+731+S+Wolfe+Rd+Sunnyvale"
+      },
+      "flags": [
+        "Two live OpenTable profiles carry two different Sunnyvale addresses (151 E El Camino Real and 731 S Wolfe Rd) and two different hours systems - probably a move; the S Wolfe Rd address is used because a third listing (zmenu) matches it, and the El Camino listing is kept as history (LUNCH-FLAG-94)."
+      ],
+      "id": "L819",
+      "added_in": "batch15_cupertino_core_independents.json",
+      "distance_mi": 3.77
     }
   ],
   "top_picks_for_tuesday_sept_8": [
@@ -39316,5 +39843,5 @@
     }
   ],
   "transit_fit_note": "The return chain leaves 20387 Gillick Way at 11:50 AM for the 2:40 PM arrival, or at 12:20 PM for the 3:18 PM arrival. Every lunch stop in this radius has to fit one of those two departures, so the useful lunch window is roughly 11:15 AM - 12:10 PM (or - 12:40 PM).",
-  "added_to_master": 707
+  "added_to_master": 819
 }
