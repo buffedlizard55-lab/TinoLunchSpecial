@@ -1,0 +1,545 @@
+{
+  "batch": "batch17a_pass17_ring_verified",
+  "researched": "2026-09-15",
+  "pass": 17,
+  "scope": "Cupertino-first, then the 10-15 mile ring: Campbell, Los Gatos, Los Altos, Portola Valley, Palo Alto, Santa Clara, Sunnyvale, Milpitas, Saratoga. Only rows whose lunch service was read on a page that was actually fetched this pass are listed; every other candidate is recorded as a cross-check or a rejection.",
+  "method": "Every candidate name was first grepped against a 1031-key dedupe index built from the master list plus the rejected list. Survivors were searched ('<name> <city> lunch menu'), then the restaurant's own site or its own online-ordering menu was fetched. Prices are printed only where they were read on the restaurant's own page; prices seen only in press or review text are quoted in flags and left out of the price columns.",
+  "entries": [
+    {
+      "name": "Birk's Restaurant",
+      "city": "Santa Clara",
+      "area": "Freedom Circle / Techmart",
+      "address": "3955 Freedom Circle, Santa Clara, CA 95054",
+      "coords": [37.385473, -121.9732193],
+      "coords_source": "Google Maps link published on birksrestaurant.com footer",
+      "cuisine": "Steakhouse / American (hardwood grill, steaks, chops, seafood)",
+      "phone": "(408) 980-6400",
+      "lunch_special": {
+        "name": "Separate printed Lunch menu (Lunch_SP2026.pdf) served Mon-Fri only - lunch-only sandwiches and entree salads well below the dinner card",
+        "price_from": 14.0,
+        "price_to": 27.0,
+        "days": "Monday - Friday",
+        "window": "11:00 AM - 2:30 PM",
+        "includes": "Read on Birk's own lunch PDF: Organic Mixed Greens $14, Caesar / Chop House / Baby Spinach $16, Wedge $18, Clam Chowder cup $9 / bowl $11, Flatbread $20, Prime House-Ground Beef Burger & Fries $22, Impossible Burger $24, Ahi Tuna Sandwich $26, Lobster-Crab Roll $26, Cheesesteak Sandwich $27. Birk's Executive entree salad is priced by protein: chicken $24, blackened shrimp $28, salmon / crab croquettes / ahi $32, filet mignon $34. The same PDF also carries full-price steaks ($60-$96), so the $14-$27 band is the lunch-only portion, not a fixed-price special."
+      },
+      "hours_tuesday": "11:00 AM - 2:30 PM (lunch), then dinner from 5:00 PM",
+      "days_open": "Own website header and footer: Lunch Mon-Fri 11:00 AM - 2:30 PM; Dinner daily from 5:00 PM; Happy Hour Mon-Fri 3:30-6:00 PM and Sat 5:00-7:00 PM. No lunch service Saturday or Sunday.",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Freedom Circle, north Santa Clara - roughly 6 miles from the destination and away from the return-bus corridor."
+      },
+      "verification": {
+        "level": "official",
+        "sources": [
+          {
+            "label": "Birk's own website home page - '3955 Freedom Circle, Santa Clara, CA 95054', 'Lunch Mon-Fri: 11am - 2:30pm, Dinner Daily from 5pm, Happy Hour Mon-Fri: 3:30-6pm, Sat: 5-7pm', phone 408.980.6400",
+            "url": "https://birksrestaurant.com/"
+          },
+          {
+            "label": "Birk's own Lunch menu page (links the downloadable lunch card)",
+            "url": "https://birksrestaurant.com/menu/lunch/"
+          },
+          {
+            "label": "Birk's own lunch menu PDF Lunch_SP2026.pdf - every price quoted above was read on this file (mixed greens 14, Caesar 16, wedge 18, flatbread 20, burger 22, Impossible 24, ahi sandwich 26, lobster-crab roll 26, cheesesteak 27, Birk's Executive 24-34)",
+            "url": "https://birksrestaurant.com/wp-content/uploads/2026/04/Lunch_SP2026.pdf"
+          }
+        ],
+        "accessed": "2026-09-15"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/menu/birks-restaurant-santa-clara-3/lunch",
+        "google_maps": "https://www.google.com/maps/place/Birks/@37.385473,-121.9754133,17z"
+      },
+      "flags": [
+        "Not a fixed-price lunch special: Birk's publishes a separate lunch card whose sandwich/salad half is cheaper than dinner, while the steak half stays at dinner prices ($60-$96). The $14-$27 range recorded here is the lunch-only portion. Third-party menu mirrors (Yelp, allmenus, Uber Eats) show an older price set (burger $20-$22, Birk's Executive chicken $23-$24, flatbread $20) - the figures above are from the restaurant's own April 2026 PDF."
+      ],
+      "distance_mi": null,
+      "added_in": "batch17a_pass17_ring_verified.json"
+    },
+    {
+      "name": "Barbayani Greek Taverna",
+      "city": "Los Altos",
+      "area": "Downtown Los Altos - Main Street",
+      "address": "388 Main Street, Los Altos, CA 94022",
+      "coords": [37.3781039, -122.1176991],
+      "coords_source": "OpenTable JSON-LD geo for Barbayani Greek Taverna",
+      "cuisine": "Greek / Mediterranean taverna",
+      "phone": "(650) 405-6087",
+      "lunch_special": {
+        "name": "Dedicated 'Barbayani Lunch Menu' served daily 11:30 AM - 2:30 PM, separate from the dinner card",
+        "price_from": 23.0,
+        "price_to": 42.0,
+        "days": "daily (7 days)",
+        "window": "11:30 AM - 2:30 PM",
+        "includes": "Read on the restaurant's own Toast ordering page under the heading 'Barbayani Lunch Menu' (Kria Piata): Kotopoulo Gyro $23.00, Vegetarian Risotto $25.00, Moschari Gyro $27.00, Pastisio $28.00, Mousakka $28.00, Kotopoulo Souvlaki $31.50, Moschari Souvlaki $33.00, Solomos $37.00, Lavraki $39.50, Barba Burger $24.95, Lobster Linguine $42.00. Sides: Greek Fries / Barba Pat. / Braised Greens / Orzo Pilavi $10 each, pita 4pc $4. Several of these undercut the dinner card for the same dish (e.g. Moschari Souvlaki $33.00 at lunch vs $34.00 at dinner; Mousakka $28.00 vs $31.50)."
+      },
+      "hours_tuesday": "11:30 AM - 2:30 PM (lunch) and 5:00 PM - 9:00 PM (dinner)",
+      "days_open": "Own website: 'LUNCH Daily: 11:30 - 2:30 pm. DINNER Daily: 5 - 9 pm, Fri & Sat: 5 - 9:30'. Yelp's hour grid agrees exactly for all seven days.",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Downtown Los Altos, about 7 miles north-west of the destination."
+      },
+      "verification": {
+        "level": "official",
+        "sources": [
+          {
+            "label": "Barbayani's own website - '388 Main Street Los Altos CA 94022 - (650) 405-6087', 'LUNCH Daily: 11:30 - 2:30 pm', 'DINNER Daily: 5 - 9 pm, Fri & Sat: 5 - 9:30'",
+            "url": "https://barbayanitaverna.com/"
+          },
+          {
+            "label": "The restaurant's own Toast online-ordering menu (Barbayani Greek Taverna Los Altos 388 Main Street) - carries a distinct 'Barbayani Lunch Menu' section; all lunch prices quoted above were read here alongside the separate 'Barbayani Dinner Menu'",
+            "url": "https://order.toasttab.com/online/anatolian-expansion-los-altos-388-main-street"
+          },
+          {
+            "label": "OpenTable listing - 388 Main St, geo 37.3781039/-122.1176991, 'Hours of operation Daily 11:30 am-2:30 pm', price band '$30 and under', links menu to barbayanitaverna.com/menu/",
+            "url": "https://www.opentable.com/r/barbayani-greek-taverna-los-altos"
+          },
+          {
+            "label": "Yelp business page - 388 Main St, (650) 405-6087, 11:30 AM - 2:30 PM plus evening service every day, 'Established in 2023'",
+            "url": "https://www.yelp.com/biz/barbayani-taverna-los-altos-2"
+          }
+        ],
+        "accessed": "2026-09-15"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/barbayani-taverna-los-altos-2",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Barbayani+Greek+Taverna+388+Main+St+Los+Altos"
+      },
+      "flags": [
+        "The menu link OpenTable publishes for this restaurant, https://barbayanitaverna.com/menu/, returns the site's own 404 page ('The page you are looking for was moved, removed, renamed or never existed'). The live lunch prices are only reachable through the restaurant's Toast ordering page, which is marked 'Pickup Only' - a dine-in lunch card may differ. Worth a phone check before relying on a specific price.",
+        "This is an a-la-carte lunch menu, not a discounted prix fixe: entrees run $23-$42, so it is a 'lunch menu' row rather than a cheap-lunch row."
+      ],
+      "distance_mi": null,
+      "added_in": "batch17a_pass17_ring_verified.json"
+    },
+    {
+      "name": "The Courtyard Long Bar & Bistro",
+      "city": "Los Altos",
+      "area": "El Camino Real (Courtyard by Marriott Los Altos)",
+      "address": "4320 El Camino Real, Suite 101, Los Altos, CA 94022",
+      "coords": [37.4048436, -122.1192062],
+      "coords_source": "RestaurantGuru JSON-LD geo for The Courtyard Long Bar & Bistro",
+      "cuisine": "New American / California bistro (hotel restaurant)",
+      "phone": "(650) 770-0425",
+      "lunch_special": {
+        "name": "Lunch service Mon-Sat 11:00 AM - 1:30 PM; the printed lunch card carries a named 'Soup & Sandwich Special'",
+        "price_from": 7.0,
+        "price_to": 28.0,
+        "days": "Monday - Saturday (Sunday is brunch 10:00 AM - 2:00 PM instead)",
+        "window": "11:00 AM - 1:30 PM",
+        "includes": "Read on the restaurant's own menu page: 'Soup & Sandwich Special $17 - A Toasted Grilled Cheese with a Cup of Rich Tomato Basil Soup with House-Made Potato Chips'. Other lunch-card items: Hot Dog & house chips $7 (chili dog $9), Grilled Cheese $10, 7-inch one-topping pizza $10, Tuna Melt $11, Chicken Caesar Wrap $14, Spaghetti & Meatballs $15, Super Chicken Quesadilla $16, 'Just The Right Size' two chicken skewers with rice and broccoli $16, Bistro Burger $17, French Dip $17, BBQ Pulled Pork $17, Butter Chicken Curry $17, Portobello Sandwich $18, Eggplant Parmigiana $18, Chicken Sandwich / Chicken Pesto $19, Turkey Club $22, The Long Bar Burger $22, Angel Hair with Jumbo Prawns $26, Steak Salad $28, Poke Bowl $28."
+      },
+      "hours_tuesday": "6:00 AM - 11:00 AM (breakfast), 11:00 AM - 1:30 PM (lunch), 4:30 PM - 10:00 PM (dinner)",
+      "days_open": "Own website JSON-LD: Breakfast Mon-Fri 6:00-11:00, Sat 7:00-11:00, Sun 7:00-10:00; Lunch Mon-Sat 11:00-13:30; Dinner Mon-Sat 16:30-22:00; Sunday Brunch 10:00-14:00; Happy Hour daily 16:30-18:30. Open seven days; Sunday has brunch in place of the lunch card.",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "North Los Altos on El Camino Real, roughly 8 miles from the destination."
+      },
+      "verification": {
+        "level": "official",
+        "sources": [
+          {
+            "label": "Restaurant's own 'About Us' page with structured hours - '4320 El Camino Real Suite 101, Los Altos, California 94022', telephone +16507700425, named service windows including Lunch Mon-Sat 11:00-13:30 and Sunday Brunch 10:00-14:00",
+            "url": "https://www.longbarandbistro.com/about-us"
+          },
+          {
+            "label": "Restaurant's own menus page - breakfast, lunch, dinner and beverage cards; the 'Soup & Sandwich Special $17' and every other lunch price quoted above were read here",
+            "url": "https://www.longbarandbistro.com/our-menus"
+          },
+          {
+            "label": "Yelp business page - 4320 El Camino Real, (650) 770-0425, hour grid showing the 11:01 AM - 1:30 PM lunch block and 4:30 PM - 10:00 PM dinner, 'Open for breakfast, lunch, and dinner'",
+            "url": "https://www.yelp.com/biz/the-courtyard-long-bar-and-bistro-los-altos-2"
+          }
+        ],
+        "accessed": "2026-09-15"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/the-courtyard-long-bar-and-bistro-los-altos-2",
+        "google_maps": "https://maps.app.goo.gl/QLv8gNKxoUEEUj368"
+      },
+      "flags": [
+        "Lunch closes at 1:30 PM - one of the earliest lunch cut-offs on this list, and a RestaurantGuru reviewer specifically notes 'The restaurant closes at 1:30 after lunch.' Arrive before 1:00 PM.",
+        "Three different lunch-window readings exist: the restaurant's own JSON-LD says 11:00-13:30, Yelp renders it as 11:01 AM - 1:30 PM, and zmenu (last updated June 2025) says 11:30am-1:30pm. The restaurant's own 11:00 start is the one recorded.",
+        "The restaurant's own path /menus 404s; the working menu page is /our-menus. Noted so a future link check does not chase the dead path."
+      ],
+      "distance_mi": null,
+      "added_in": "batch17a_pass17_ring_verified.json"
+    },
+    {
+      "name": "Sorelle Italian Bistro",
+      "city": "Campbell",
+      "area": "S San Tomas Aquino Rd",
+      "address": "915 S San Tomas Aquino Rd, Campbell, CA 95008",
+      "coords": null,
+      "coords_source": "no coordinate captured from a source that was actually fetched",
+      "cuisine": "Italian",
+      "phone": "(408) 374-1800",
+      "lunch_special": {
+        "name": "Lunch service only three days a week - Wednesday, Thursday and Friday 11:30 AM - 2:00 PM. No lunch prices are published on the restaurant's own site.",
+        "price_from": null,
+        "price_to": null,
+        "days": "Wednesday, Thursday, Friday",
+        "window": "11:30 AM - 2:00 PM",
+        "includes": "The restaurant's own menu page lists only a dinner menu, a dessert menu and a catering menu - there is no lunch menu link and no lunch price anywhere on the site. Hours are printed twice on the site in identical terms: 'Lunch: Wed Thurs and Friday 11:30-2:00' and 'Closed Monday!!!'."
+      },
+      "hours_tuesday": "5:00 PM - 8:00 PM (dinner only - no Tuesday lunch)",
+      "days_open": "Own website: Lunch Wed/Thu/Fri 11:30-2:00. Dinner Tue/Wed/Thu 5:00-8:00 PM, Fri & Sat 4:30-8:30 PM, Sun 4:30-8:00 PM. Closed Monday. Yelp's grid matches day for day.",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "West Campbell, about 5 miles from the destination - and closed for lunch on a Tuesday in any case."
+      },
+      "verification": {
+        "level": "official",
+        "sources": [
+          {
+            "label": "Sorelle's own menu page - 'Lunch: Wed Thurs and Friday 11:30-2:00 Dinner Tuesday Weds and Thursday 5:00-8:00pm and Friday and Saturday 4:30-8:30pm Sunday 4:30-8:00pm', 'Closed Monday', phone 408-374-1800; only dinner/dessert/catering menus are linked",
+            "url": "https://sorelleitalianbistro.com/menu/"
+          },
+          {
+            "label": "Sorelle's own About Us page - repeats 'Lunch weds thurs friday 11:30-2' and 'Closed Monday!!!'",
+            "url": "https://sorelleitalianbistro.com/about-us/"
+          },
+          {
+            "label": "Yelp business page - 915 S San Tomas Aquino Rd, Campbell CA 95008, (408) 374-1800, Mon closed, Tue 5-8 PM, Wed/Thu 11:30-2 and 5-8, Fri 11:30-2 and 4:30-8:30, Sat 4:30-8:30, Sun 4:30-8",
+            "url": "https://www.yelp.com/biz/sorelle-italian-bistro-campbell"
+          }
+        ],
+        "accessed": "2026-09-15"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/sorelle-italian-bistro-campbell",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Sorelle+Italian+Bistro+915+S+San+Tomas+Aquino+Rd+Campbell"
+      },
+      "flags": [
+        "Listed for the verified lunch window only. Sorelle publishes no lunch prices at all - the site's only priced card is the dinner menu - so the price columns are deliberately empty rather than filled from a third-party mirror.",
+        "Closed for lunch on Monday, Tuesday, Saturday and Sunday. On the Tuesday trip date this venue is dinner-only."
+      ],
+      "distance_mi": null,
+      "added_in": "batch17a_pass17_ring_verified.json"
+    },
+    {
+      "name": "Senza Italian Kitchen",
+      "city": "Los Gatos",
+      "area": "Downtown Los Gatos - Victory Lane",
+      "address": "10 Victory Ln, Los Gatos, CA 95030",
+      "coords": [37.222976, -121.9839972],
+      "coords_source": "OpenTable / AAA Trip Canvas JSON-LD geo for Senza Italian Kitchen",
+      "cuisine": "Italian - entirely gluten-free kitchen and bakery (formerly The Polenteria)",
+      "phone": "(408) 827-4146",
+      "lunch_special": {
+        "name": "Weekday lunch service Wed-Fri 11:00 AM - 2:00 PM (weekend brunch 10:00 AM - 2:00 PM instead). No separate lunch price list is published on the restaurant's own menu.",
+        "price_from": null,
+        "price_to": null,
+        "days": "Wednesday, Thursday, Friday (lunch); Saturday and Sunday are brunch",
+        "window": "11:00 AM - 2:00 PM",
+        "includes": "The restaurant's own Toast-backed menu at senzalosgatos.com/menu is split into 'Dinner' and 'Brunch' only - there is no lunch tab and no lunch pricing. The brunch card (Sat & Sun 10:00am-2:00pm) is priced: Beets & Seasonal Fruit $18, Biscuits and Gravy $18, Lemon Ricotta Pancakes $19, bacon and eggs breakfast $20, Avocado Toast $22, Italian Skillet $25, Vegetarian Polenta & Eggs $25, Chicken and Waffles $25, Crab Cake Benedetto $28, Piccola Steak & Eggs $40. Weekday lunch pricing is not published."
+      },
+      "hours_tuesday": "4:30 PM - 9:00 PM (dinner only - no Tuesday lunch)",
+      "days_open": "Own Instagram bio: 'Lunch: Wed - Fri 11AM - 2PM. Brunch: Sat - Sun 10AM - 2PM. Dinner: Tue - Sun 4:30PM - 9PM'. Yelp: Mon closed; Tue 4:30-9; Wed/Thu 11-2 and 4:30-9; Fri 11-2 and 4:30-9:30; Sat 10-2 and 4:30-9:30; Sun 10-2 and 4:30-9. The gluten-free bakery runs Thu-Sun 9AM-2PM.",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Downtown Los Gatos, roughly 9 miles south of the destination."
+      },
+      "verification": {
+        "level": "conflicting",
+        "sources": [
+          {
+            "label": "Senza's own online menu (senzalosgatos.com/menu) - Dinner and Brunch sections only, 'Brunch Saturday & Sunday from 10:00am to 2:00pm'; all brunch prices quoted above read here. No lunch section exists.",
+            "url": "https://senzalosgatos.com/menu"
+          },
+          {
+            "label": "Senza's own Instagram profile - 'Gluten Free Restaurant & Bakery 408 827 4146, Los Gatos, Lunch: Wed - Fri 11AM - 2PM, Brunch: Sat - Sun 10AM - 2PM, Dinner: Tue - Sun 4:30PM - 9PM'",
+            "url": "https://www.instagram.com/senzalosgatos/"
+          },
+          {
+            "label": "Yelp business page - 10 Victory Ln, (408) 827-4146, Mon closed, Wed-Fri 11:00 am - 2:00 pm lunch block, Sat/Sun 10:00 am - 2:00 pm",
+            "url": "https://www.yelp.com/biz/senza-los-gatos"
+          },
+          {
+            "label": "OpenTable listing (still filed under the former name 'polenteria-los-gatos') - 'Senza Italian Kitchen, formerly known as The Polenteria', 10 Victory Ln, geo 37.222976/-121.9839972",
+            "url": "https://www.opentable.com/r/polenteria-los-gatos"
+          }
+        ],
+        "accessed": "2026-09-15"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/senza-los-gatos",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Senza+Italian+Kitchen+10+Victory+Ln+Los+Gatos"
+      },
+      "flags": [
+        "Marked conflicting on hours: OpenTable and AAA both render the lunch block as 'Wed-Fri 11:00 am-2:00 am' - a clear typo for 2:00 pm - while AAA's own JSON-LD omits the lunch block entirely and lists only 16:30 openings. The restaurant's own Instagram (Wed-Fri 11AM-2PM) and Yelp agree with each other and are what is recorded.",
+        "No lunch prices published anywhere official, so the price columns are empty. A reviewer quoted on Postcard reports a verbally-announced special billed at $40 ('There's no specials menu, the server told us the specials verbally. On the bill, it was $40.') - recorded here as a quote only, not as a price.",
+        "Rebrand: this venue was The Polenteria and OpenTable still routes under that slug. Check the master list does not later acquire a second row under the old name."
+      ],
+      "distance_mi": null,
+      "added_in": "batch17a_pass17_ring_verified.json"
+    },
+    {
+      "name": "Hibari",
+      "city": "Portola Valley",
+      "area": "Ladera Country Shopper, Alpine Road",
+      "address": "3130 Alpine Road, Suite 240, Portola Valley, CA 94028",
+      "coords": null,
+      "coords_source": "no coordinate captured from a source that was actually fetched",
+      "cuisine": "Japanese kappo / sushi (chef Takashi 'Taka' Sega, ex-Nobu Palo Alto)",
+      "phone": "(650) 656-9243",
+      "lunch_special": {
+        "name": "A la carte lunch sets built on the 'one soup, three dishes' format, served Wed-Sun 11:30 AM - 2:00 PM; walk-ins accepted at lunch",
+        "price_from": null,
+        "price_to": null,
+        "days": "Wednesday - Sunday (Yelp); Tuesday - Sunday (press at opening)",
+        "window": "11:30 AM - 2:00 PM",
+        "includes": "Yelp's business description, written by the restaurant, says 'Lunch inspired by \"one soup, three dishes,\" a traditional Japanese balance of comfort and seasonality. Dinner transforms into sushi omakase at the counter and prefix at tables.' Press coverage describes named lunch sets (Yurinchi fried-chicken set, dashimaki tamago set, seafood donburi sets) - see flags for the figures. No price is recorded in the price columns because the restaurant's own menu site could not be read (see flags)."
+      },
+      "hours_tuesday": "Closed (Yelp) - press at opening said Tuesday-Sunday, so Tuesday service is unconfirmed; see flags",
+      "days_open": "Yelp (two captures, July 2026): Mon closed, Tue closed, Wed-Sun 11:30 AM - 2:00 PM and 5:00 PM - 9:00 PM, with occasional Sunday closures posted as special hours. Palo Alto Online and the Mercury News both wrote at opening that Hibari runs 'Tuesday to Sunday from 11:30 a.m. to 2 p.m. and 5-9 p.m.'",
+      "open_on_trip_date": false,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Portola Valley, roughly 13 miles north-west of the destination and off the transit corridor entirely."
+      },
+      "verification": {
+        "level": "review",
+        "sources": [
+          {
+            "label": "Yelp business page - 3130 Alpine Rd Ste 240, Portola Valley CA 94028, (650) 656-9243, Mon/Tue closed, Wed-Sun 11:30 AM - 2:00 PM and 5:00 PM - 9:00 PM; business-written description of the 'one soup, three dishes' lunch",
+            "url": "https://www.yelp.com/biz/hibari-portola-valley-2"
+          },
+          {
+            "label": "Palo Alto Online (Dec 16 2025) - 'Hibari, 3130 Alpine Road #240, Portola Valley... Open Tuesday to Sunday from 11:30 a.m. to 2 p.m. and 5-9 p.m.'; describes the Yurinchi set ($18) and dashimaki tamago set ($28)",
+            "url": "https://www.paloaltoonline.com/portola-valley/2025/12/16/hibari-brings-kappo-style-dining-to-portola-valley/"
+          },
+          {
+            "label": "Mercury News (Dec 23 2025) - 'Lunch sets range from $18-$66, with walk-ins accepted'; 'Open 11:30-2 p.m. and 5-9 p.m. Tuesdays-Sundays at 3130 Alpine Road, Suite 240'",
+            "url": "https://www.mercurynews.com/2025/12/23/portola-valley-has-a-new-kappo-style-japanese-restaurant/"
+          }
+        ],
+        "accessed": "2026-09-15"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/hibari-portola-valley-2",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Hibari+3130+Alpine+Road+Portola+Valley"
+      },
+      "flags": [
+        "Price columns left empty on purpose. The only menu the restaurant publishes is a Canva micro-site (hibariportolavalley.my.canva.site) that renders as an image slideshow with no machine-readable text, so no price could be read from an official page. Press figures - lunch sets $18-$66, Yurinchi set $18, dashimaki tamago set $28, kids set $18-$22 (Mercury News and Palo Alto Online, Dec 2025) - are quoted here only.",
+        "Day-of-week conflict: Yelp shows Monday AND Tuesday closed; both December 2025 news write-ups say Tuesday-Sunday. Yelp is the more recent capture, so open_on_trip_date is set false for the Tuesday trip date. Phone before travelling.",
+        "Dinner figures are moving: the six-seat counter omakase was $200 during the soft opening and Resy indicated $250 regularly. Lunch is the only walk-in-friendly service."
+      ],
+      "distance_mi": null,
+      "added_in": "batch17a_pass17_ring_verified.json"
+    },
+    {
+      "name": "Crepevine Restaurants",
+      "city": "Palo Alto",
+      "area": "Downtown Palo Alto - University Avenue",
+      "address": "367 University Avenue, Palo Alto, CA 94301",
+      "coords": null,
+      "coords_source": "no coordinate captured from a source that was actually fetched",
+      "cuisine": "Creperie / American breakfast-brunch-lunch",
+      "phone": "(650) 323-3900",
+      "lunch_special": {
+        "name": "No lunch special published - one all-day menu, open from 8:00 AM so the whole lunch window is served at regular prices",
+        "price_from": null,
+        "price_to": null,
+        "days": "daily",
+        "window": "8:00 AM - 9:00 PM Sun-Thu, 8:00 AM - 10:00 PM Fri-Sat",
+        "includes": "The Palo Alto location page carries the full priced menu with no lunch section or lunch discount. Sample midday prices read there: savory crepes $17.95-$19.95 (Florentine / Greek / California $17.95, Milano / Kyoto $18.95, Tuscany / The Philly $19.95), sandwiches $17.95-$20.95 (Mediterranean $17.95, Carolina / Fish Filet PO'Boy / El Dorado Burger $18.95, Chicken Shawerma $19.50, Crepevine Club $20.95), salads $13.95-$19.95 (small Tossed Greens / Caesar / Athena $13.95, large $15.95), pasta $17.95-$19.95. Soup-and-salad 'Combination' plate $18.50 is the cheapest composed midday plate."
+      },
+      "hours_tuesday": "8:00 AM - 9:00 PM",
+      "days_open": "Own location page: Sunday - Thursday 8 AM - 9 PM; Friday & Saturday 8 AM - 10 PM. Open seven days. Yelp's grid matches.",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Downtown Palo Alto, roughly 10 miles north-west of the destination."
+      },
+      "verification": {
+        "level": "official",
+        "sources": [
+          {
+            "label": "Crepevine's own Palo Alto location page - '367 University Avenue, Palo Alto, CA 94301', '(650) 323-3900', 'Sunday - Thursday: 8 Am - 9 PM', 'Friday & Saturday: 8 AM - 10 PM', plus the complete priced menu quoted above",
+            "url": "https://www.crepevine.com/location/crepe-vine-palo-alto/"
+          },
+          {
+            "label": "Yelp business page - 367 University Ave, Palo Alto CA 94301, (650) 323-3900, Mon-Thu 8:00 am - 9:00 pm, Fri-Sat 8:00 am - 10:00 pm, Sun 8:00 am - 9:00 pm",
+            "url": "https://www.yelp.com/biz/crepevine-restaurants-palo-alto-2"
+          }
+        ],
+        "accessed": "2026-09-15"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/crepevine-restaurants-palo-alto-2",
+        "google_maps": "https://maps.google.com/?cid=15572298774614316838"
+      },
+      "flags": [
+        "Absence result, recorded deliberately: Crepevine publishes one menu with no lunch special, no midday discount and no time-limited pricing. It is listed because the master list already carries the Mountain View Crepevine and the Palo Alto store is a separate address with its own hours and its own price card.",
+        "Prices on this chain's location pages differ store to store; the figures above are from the Palo Alto page only and should not be reused for the Mountain View row."
+      ],
+      "distance_mi": null,
+      "added_in": "batch17a_pass17_ring_verified.json"
+    },
+    {
+      "name": "The Good Salad",
+      "city": "Campbell",
+      "area": "Downtown Campbell - E Campbell Ave",
+      "address": "397 E Campbell Ave, Campbell, CA 95008",
+      "coords": null,
+      "coords_source": "no coordinate captured from a source that was actually fetched",
+      "cuisine": "Salads / halal fast-casual",
+      "phone": "(408) 628-4036",
+      "lunch_special": {
+        "name": "No lunch special published - flat all-day pricing on signature salads, open right through the lunch window",
+        "price_from": 15.0,
+        "price_to": 16.0,
+        "days": "daily",
+        "window": "10:00 AM - 8:00 PM Mon-Fri, 11:00 AM - 8:00 PM Sat-Sun",
+        "includes": "Read on the company's own menu page: Blazing Bird Salad $15 (Cajun halal chicken thigh, romaine, black bean and corn pico, crispy onions, mashed avocado, chipotle ranch), Steak Supreme Salad $16 (halal grass-fed flank steak, romaine, bacon, blue cheese, pickled red onion, cranberries, buttermilk ranch), Samurai Steak Salad $16 (halal flank steak, dynamite mayo, spring mix, sesame, edamame, peanuts, sweet sesame dressing). Salads can be customised or built from scratch. Same prices apply all day - there is no midday-only rate."
+      },
+      "hours_tuesday": "10:00 AM - 8:00 PM",
+      "days_open": "Company's own Campbell location page: 'Monday to Friday: 10am - 8pm. Weekend: 11am - 8pm'. Yelp and Apple Maps both agree (Mon-Fri 10:00 AM - 8:00 PM, Sat & Sun 11:00 AM - 8:00 PM). Open seven days.",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Downtown Campbell, about 5 miles from the destination."
+      },
+      "verification": {
+        "level": "official",
+        "sources": [
+          {
+            "label": "The Good Salad's own Campbell location page - 'Monday to Friday: 10am - 8pm, Weekend: 11am - 8pm', '(408) 628-4036', '397 E Campbell Ave, Campbell CA 95008'",
+            "url": "https://www.thegoodsalad.com/restaurants/campbell"
+          },
+          {
+            "label": "The Good Salad's own menu page - Blazing Bird $15, Steak Supreme $16, Samurai Steak $16 with full ingredient lists and allergen icons; no lunch-only section anywhere on the card",
+            "url": "https://www.thegoodsalad.com/menu"
+          },
+          {
+            "label": "Yelp business page - 397 E Campbell Ave, (408) 628-4036, Mon-Fri 10:00 AM - 8:00 PM, Sat-Sun 11:00 AM - 8:00 PM, 'Established in 2021', business update 'We are now open on Saturday and Sunday until 8pm!'",
+            "url": "https://www.yelp.com/biz/the-good-salad-campbell"
+          }
+        ],
+        "accessed": "2026-09-15"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/the-good-salad-campbell",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=The+Good+Salad+397+E+Campbell+Ave+Campbell"
+      },
+      "flags": [
+        "Absence result: no lunch special exists. The row is kept because the prices are flat, cheap by local standards and fully readable on the company's own menu, which makes it a usable midday option even without a discount.",
+        "Hours conflict on the start time: downtowncampbell.com (a chamber-style directory, last touched Nov 2024) prints 'Monday-Friday: 11am-8pm', while the company's own page, Yelp and Apple Maps all say 10am. The company's own 10am is recorded.",
+        "The company also runs Santa Clara, Los Altos and Palo Alto stores with different hours (Santa Clara opens 9am, closes 6pm at weekends). Only the Campbell address is covered by this row."
+      ],
+      "distance_mi": null,
+      "added_in": "batch17a_pass17_ring_verified.json"
+    }
+  ],
+  "rejected": [
+    {
+      "name": "Tal Palo",
+      "city": "Los Altos",
+      "why": "No restaurant-controlled web page could be found and no menu is published anywhere - the venue deliberately runs without a fixed menu. Yelp files it under 'Cafes, Accessories, Home Decor' and a Yelp Q&A answer states 'They have a very small and selective menu and every day I believe they have some kind of a special! You should call them and ask them.' Nothing verifiable to print: no special name, no price, no confirmed window. Hours also disagree across mirrors (Yelp Tue-Thu 11-5; res-menu.net 9-5; wheree.com 11-2:30 Wed-Sat).",
+      "price_hint": "A Yelp photo caption prices a cactus-and-cheese quesadilla at $15 - a single reviewer datum, not a menu price.",
+      "searched": "2026-09-15",
+      "links": [
+        {"label": "Yelp - Tal Palo, 149 Main St, Los Altos CA 94022; Mon & Sun closed; unanswered community question about set-menu pricing", "url": "https://www.yelp.com/biz/tal-palo-los-altos"}
+      ]
+    },
+    {
+      "name": "The Vesper",
+      "city": "Campbell",
+      "why": "No lunch service at all. Every hours source agrees the doors open at 4:00 PM Tue-Sat and 3:00 PM Sunday, closed Monday. It is a cocktail bar with small plates, so there is no midday window to record.",
+      "price_hint": "Evening small plates $9-$30 (OpenTable card); irrelevant to lunch.",
+      "searched": "2026-09-15",
+      "links": [
+        {"label": "OpenTable - The Vesper, 394 E Campbell Ave, 'Hours of operation Tue 4:00 pm-10:30 pm ... Sun 3:00 pm-9:00 pm'", "url": "https://www.opentable.com/r/the-vesper-campbell"},
+        {"label": "Restaurantji hours grid - Monday closed, Tue-Thu 4-9PM, Fri-Sat 4PM-12AM, Sun 3-9PM", "url": "https://www.restaurantji.com/ca/campbell/the-vesper-/"}
+      ]
+    },
+    {
+      "name": "Maruwu Seicha",
+      "city": "Campbell",
+      "why": "Wrong-location trap. The name was carried into this pass as a possible Campbell venue, but every Maruwu Seicha that exists is elsewhere - Culver City, San Francisco (1737 Post St) and Honolulu. No Campbell or Silicon Valley branch appears in any search. It is also a tea and dessert bar, not a lunch restaurant.",
+      "price_hint": "none",
+      "searched": "2026-09-15",
+      "links": [
+        {"label": "Yelp - Maruwu Seicha, 1737 Post St, San Francisco CA 94115 (the nearest real location)", "url": "https://www.yelp.com/biz/maruwu-seicha-san-francisco-3"},
+        {"label": "Yelp - Maruwu Seicha, 9426 Washington Blvd, Culver City CA 90232", "url": "https://www.yelp.com/biz/maruwu-seicha-culver-city-5"}
+      ]
+    },
+    {
+      "name": "Olivia Bros",
+      "city": "Los Altos",
+      "why": "Filed under Los Altos in Yelp's 'Best Lunch in Los Altos' roundup, but the business is actually at 286 W El Camino Real, Mountain View - a city already covered. No restaurant-owned website was found; the only priced menu is a third-party delivery card, and the hour sets disagree badly (Yelp: Mon closed, Tue-Fri 11:30am-10pm; Uber Eats: Mon 11:30am-9:30pm open; res-menu.net: Tuesday closed instead of Monday). Not enough agreement to print a row.",
+      "price_hint": "Uber Eats card lists combo deals - Shawarma + Cola + Fries $17.99, Cheesesteak Sub + Fries + Cola $19.99 - but these are delivery-platform prices, not a verified in-store lunch special.",
+      "searched": "2026-09-15",
+      "links": [
+        {"label": "Yelp - Olivia Bros, 286 W El Camino Real, Mountain View CA 94041, (650) 705-2007", "url": "https://www.yelp.com/biz/olivia-bros-mountain-view-2"},
+        {"label": "Uber Eats store page with JSON-LD hours and combo prices", "url": "https://www.ubereats.com/store/olivia-bros-286-w-el-camino-real/eBWQ_vrXSKSGGKDcK_l53g"}
+      ]
+    },
+    {
+      "name": "Discover Saratoga Restaurant Week",
+      "city": "Saratoga",
+      "why": "Wrong-state trap, and an event rather than a standing special. A search for 'Saratoga CA restaurant lunch special' returns discoversaratoga.org promoting '$15 Breakfast/Lunch Specials' for November 2-8 2026 - that is Saratoga County, NEW YORK ('the 21st Annual Saratoga County's Original Restaurant Week'), not Saratoga, California. Recorded so a later pass does not re-import it.",
+      "price_hint": "$15 breakfast/lunch, $25/$35/$45 dinners - New York pricing, irrelevant here.",
+      "searched": "2026-09-15",
+      "links": [
+        {"label": "Discover Saratoga (NY) Restaurant Week page - 'November 2-8, 2026 ... Saratoga County's Original Restaurant Week'", "url": "https://www.discoversaratoga.org/events/restaurant-week/"}
+      ]
+    },
+    {
+      "name": "Kakuna Sushi (menu11 ordering domain)",
+      "city": "Milpitas",
+      "why": "Not a new venue - Kakuna Sushi Milpitas is already in the master list - but the ordering domain linked for it is wrong and is logged here so nobody trusts it. corner.inc publishes 'sameAs: https://kakuna.menu11.com/' for the Milpitas store; that page actually serves '43472 GRIMMER BLVD, FREMONT CA 94538, Order By Phone: (510) 252-1289'. Two different addresses and two different phone numbers behind one link.",
+      "price_hint": "An aggregator (atly.com) claims a '$11.99 two 6-piece roll lunch special', which could not be confirmed on any restaurant-controlled page.",
+      "searched": "2026-09-15",
+      "links": [
+        {"label": "corner.inc record linking the Milpitas store to kakuna.menu11.com, with 11:15 AM - 2:15 PM lunch blocks Mon-Thu", "url": "https://www.corner.inc/place/223354"},
+        {"label": "kakuna.menu11.com - resolves to the Fremont Grimmer Blvd store, not Milpitas", "url": "https://kakuna.menu11.com/"}
+      ]
+    },
+    {
+      "name": "Surmai (own-site menu path)",
+      "city": "Sunnyvale",
+      "why": "Already in the master list; logged as a broken-source note. Surmai's own site has no readable menu - surmai.us/menu returns 'Page Not Found', and the only navigation offered is Home, Catering Menu and Shop. Any Surmai lunch pricing therefore cannot be raised to official level from the restaurant's own site at this time.",
+      "price_hint": "Yelp popular-dish tiles show a la carte items ($15.99 chicken tikka kebab, $17.99 machi cha kalvan) and a 'Special Thali' with no published price.",
+      "searched": "2026-09-15",
+      "links": [
+        {"label": "surmai.us/menu - the restaurant's own menu path returns 'Page Not Found'", "url": "https://surmai.us/menu"},
+        {"label": "Yelp - Surmai, 500 Lawrence Expy Ste C, Sunnyvale CA 94085; note Tuesday shows as Closed on one capture", "url": "https://www.yelp.com/biz/surmai-sunnyvale"}
+      ]
+    },
+    {
+      "name": "10 Butchers Korean BBQ (own-site menu path)",
+      "city": "Sunnyvale",
+      "why": "Already in the master list; logged as a broken-source note. The restaurant's own menu path 10butchers.net/menu returns a 404 ('This page isn't available'), so the lunch-service pricing cannot be verified at official level. The 11:30 AM - 2:30 PM weekday lunch block itself is consistent across Yelp, Thrillist, RestaurantGuru and autoreserve.",
+      "price_hint": "Price bands only, and they disagree wildly: Yelp $$$$, RestaurantGuru $50-$100 per person, autoreserve 'USD 75'.",
+      "searched": "2026-09-15",
+      "links": [
+        {"label": "10butchers.net/menu - 404 on the restaurant's own site", "url": "https://www.10butchers.net/menu"},
+        {"label": "Yelp - 10 Butchers Korean BBQ, 595 E El Camino Real, Sunnyvale CA 94087; Mon-Fri 11:30 am - 2:30 pm lunch block", "url": "https://www.yelp.com/biz/10-butchers-korean-bbq-sunnyvale"}
+      ]
+    },
+    {
+      "name": "TripAdvisor hours for 10 Butchers Korean BBQ",
+      "city": "Sunnyvale",
+      "why": "Bad-data note. TripAdvisor's Irish mirror publishes JSON-LD opening hours of '05:00-23:00' Sunday and Wednesday-Saturday, '09:00-23:00' Monday and '05:00-17:00' Tuesday for this Korean BBQ restaurant - a 5 AM open is not credible and contradicts every other source including the restaurant's reservation partner. Logged so the figures are never merged.",
+      "price_hint": "n/a",
+      "searched": "2026-09-15",
+      "links": [
+        {"label": "TripAdvisor.ie listing with the implausible 05:00 opening times", "url": "https://www.tripadvisor.ie/Restaurant_Review-g33146-d19500888-Reviews-10_Butchers_Korean_BBQ-Sunnyvale_California.html"}
+      ]
+    }
+  ],
+  "cross_checks": [
+    "Dedupe index (1031 keys of norm(name)|norm(city) built from the 850 master rows plus the 183 rejected rows) was grepped before any row was written. Confirmed already-present and therefore NOT re-added: Hinodeya Ramen Bar (Campbell), Sultan's Kebab (Campbell), The Breakfast Club (Campbell), Casa Lupe (Campbell / Los Altos / Mountain View), 10 Butchers Korean BBQ (Sunnyvale), Surmai (Sunnyvale), Seapot Hot Pot & KBBQ (Sunnyvale), Madras Cafe (Sunnyvale), Udon Mugizo, Blue Line Pizza, Yugen Ramen, Ludwig's Biergarten, Queen House, Cascal, Limon, Doppio Zero, Sushi Tomi, Fu Lam Mum, Stein's Beer Garden, La Fiesta, Gyros House, Agave Mexican Bistro, Maison Alyzee, Eureka (Mountain View), Crepevine (Mountain View), Bloom & Vine (Mountain View), Oren's Hummus (Mountain View), Cafe Baklava (Palo Alto), Alexander's Steakhouse (Cupertino), Ocean Pearl (Milpitas), Kakuna Sushi (Milpitas), Ushiya Grill (Milpitas), Wagyu Grill AYCE (Milpitas), China Rose (Milpitas), Bella Saratoga, Big Basin Cafe, Big Basin Burger Bar, The Basin (Saratoga), RH Rooftop (Palo Alto), Shake Shack Stanford Shopping Center, P.F. Chang's (four locations), Clara's Junction (Santa Clara), Tomatina (Santa Clara), Puesto (Santa Clara), Sumiya Yakitori (Santa Clara), Il Fornaio (Santa Clara), Pacific Catch (Cupertino), Pedro's (Santa Clara / Los Gatos), Fish's Wild (Cupertino), Royal Cuisine (Cupertino), Red Hot Wok (Cupertino / Palo Alto), DX Braised Chicken Rice (Cupertino), Joey Valley Fair, The Stand (Menlo Park), Home Eat (Cupertino / Santa Clara / Sunnyvale).",
+    "Oren's Hummus Palo Alto (261 University Ave) and Oren's Hummus Express (855 El Camino Real, Ste 162) are genuinely absent from the master list, which carries only the Mountain View store. They were NOT added this pass because no page controlled by the restaurant was fetched and no lunch special was evidenced - only Yelp hour grids. Held for a later pass rather than guessed at.",
+    "Clara's Junction (Santa Clara) advertises a $19 two-course lunch Mon-Fri 11am-3pm on its own site, which is a textbook qualifying special - but the venue is already row-for-row in the master list, so it was left alone rather than duplicated. The current official wording and PDF link were re-read this pass and match: 'Includes soda, lemonade or iced tea plus your choice of one Starter and one Main. Available Monday - Friday from 11am - 3pm.'",
+    "Elia (276 E Campbell Ave, Campbell) remains deliberately unlisted: LUNCH-FLAG-98 holds it as a possible rebrand of Opa! (row L532). No new evidence either way was found this pass, so it stays a flag and not a row.",
+    "Saratoga, California was searched directly and produced no new qualifying venue - the four Saratoga restaurants that surfaced (Bella Saratoga, Big Basin Cafe, Big Basin Burger Bar, The Basin) are all already listed, and The Basin's own hours are dinner-only ('Monday - Sunday: 5:00pm - Close'), so it has no lunch service to record."
+  ]
+}
