@@ -1539,11 +1539,11 @@ window.TINO_DATA = {
  },
  "specials":{
   "search_protocol":{
-   "requirement":"Pass 17 (2026-09-15): roughly 100 candidate names were screened Cupertino-first and then across the 10-15 mile ring (Sunnyvale, Santa Clara, Campbell, Los Gatos, Los Altos, Mountain View, Palo Alto, Portola Valley, Milpitas, Saratoga, west San Jose). Every name was grepped against a 1031-key norm(name)|norm(city) dedupe index built from the master and reject files before any page was opened; the great majority were already listed, which is the expected result after sixteen prior passes. 8 rows merged (L851-L858): Birk's Restaurant (Santa Clara) with its own April 2026 lunch PDF ($14-$27 lunch-only band, Mon-Fri 11:00 AM - 2:30 PM); Barbayani Greek Taverna (Los Altos) with a distinct 'Barbayani Lunch Menu' on its own Toast page ($23-$42, daily 11:30 AM - 2:30 PM); The Courtyard Long Bar & Bistro (Los Altos) with a named $17 Soup & Sandwich Special and a $7-$28 lunch card, Mon-Sat 11:00 AM - 1:30 PM; Sorelle Italian Bistro (Campbell, Wed-Fri 11:30-2:00, no prices published); Senza Italian Kitchen (Los Gatos, Wed-Fri 11:00-2:00, no lunch prices published); Hibari (Portola Valley, Wed-Sun 11:30-2:00, menu published only as an image); Crepevine Palo Alto (no lunch special - one all-day card, priced); and The Good Salad Campbell (no lunch special - flat $15-$16 salads, priced). Nine findings were logged as rejections or bad-source notes (R184-R192), including a wrong-state trap (Discover Saratoga = Saratoga County, NEW YORK), an aggregator link that routes Kakuna Sushi Milpitas to the Fremont store, and a TripAdvisor record claiming a 5:00 AM opening for a Sunnyvale Korean BBQ restaurant. Eight new flags were filed (LUNCH-FLAG-104 through 111). No price was printed unless the restaurant's own site or its own ordering menu carried it: press figures for Hibari ($18-$66 lunch sets) and a reviewer's $40 for Senza are held in row flags as quotes, never in price columns. The pass therefore delivered 8 new rows against a 100-candidate screen and reports that shortfall rather than padding it. Pass 16 (2026-09-14): about 45 searches plus 6 page fetches screened roughly 192 new candidate names across Cupertino, Palo Alto, Menlo Park, Mountain View, Los Altos, Los Gatos, Saratoga, Campbell, Sunnyvale, Santa Clara, San Jose (Willow Glen and west San Jose), Milpitas and Fremont. 56 candidates were written up with sources in eight batch files (16a-16h); 31 merged as new rows (L820-L850) and 25 proved to be venues the master list already carried, so their captures were filed as cross-checks and duplicate detections instead of second rows. 11 candidates were rejected (R156-R166): four are permanently closed listings that still print full weekly hours (Pho & Bun, Kitayama Yoichi, Bierhaus, the Square Pie Guys Local Kitchens unit), one is a New York Restaurant Week trap for Saratoga Springs NY, three are out-of-area name traps for 'Los Altos' (Salinas, Goleta, San Bernardino), one is a Mountain View venue that closed, and one could not be resolved to any street address. Six further verified rows are held back by street-address collisions (LUNCH-FLAG-98) rather than forced past the dedupe, and one row (Willow Street Pizza) plus five existing rows (L477, L463, L478, L208, L544) received fresh contradictory captures filed as cross-checks. No price was printed unless a business' own site or menu carried it; reviewer-quoted prices such as Kiya Sushi's $14.99 trio-roll lunch and Country Way's $7.95 bacon-burger lunch stayed out of the price columns. The pass therefore delivered 31 new rows against a 100-row target and reports the shortfall rather than padding it. Verify line by line before adding anything to the master list; keep official/review links for manual review. Pass 15 (2026-09-14, approximate counts): about 70 fresh candidates were screened with about 60 new searches, Cupertino first and then the 10-15 mile ring. 27 candidates were written up with sources; 10 merged as new rows (L810-L819) and 17 proved to be rows the master list already carried, so they were merged as cross-checks instead of duplicates. 6 candidates were rejected with the page that produced the name (two of them turned out to be out-of-ring restaurants in New Jersey, one a Cupertino diner that closed permanently on 2025-12-31). Prices were printed only where a business' own page or an attached news/review quote gives one; photo captions and aggregator numbers never became prices. Pass 14 (2026-09-12): 118 new candidates from ring-city sweeps were each resolved against two or more pages before any row was written; 102 verified rows entered the master list (L708-L809). Seven rows whose Tuesday status is disputed between live captures carry open_on_trip_date = null rather than a guess.",
-   "queries_run":1051,
-   "candidates_found":1244,
-   "added_to_master":858,
-   "rejected_or_deferred":192,
+   "requirement":"Pass 18 (2026-09-15): screened the Cupertino core first, then the 10-15 mi ring (Sunnyvale, Santa Clara, Los Gatos, Los Altos, Mountain View, Palo Alto, Campbell, Saratoga). Every candidate name was checked against the 1048-key dedupe index before any page fetch. Result: 3 new rows (1 priced-window row, 2 verified-absence rows) and 8 new rejections, including the permanent closure of Oren's Hummus Cupertino effective 9/12/26 per the company's own site. The 100-entry target was NOT met and is reported honestly rather than padded: at this verification standard the Cupertino core is saturated. Pass 17 (2026-09-15): roughly 100 candidate names were screened Cupertino-first and then across the 10-15 mile ring (Sunnyvale, Santa Clara, Campbell, Los Gatos, Los Altos, Mountain View, Palo Alto, Portola Valley, Milpitas, Saratoga, west San Jose). Every name was grepped against a 1031-key norm(name)|norm(city) dedupe index built from the master and reject files before any page was opened; the great majority were already listed, which is the expected result after sixteen prior passes. 8 rows merged (L851-L858): Birk's Restaurant (Santa Clara) with its own April 2026 lunch PDF ($14-$27 lunch-only band, Mon-Fri 11:00 AM - 2:30 PM); Barbayani Greek Taverna (Los Altos) with a distinct 'Barbayani Lunch Menu' on its own Toast page ($23-$42, daily 11:30 AM - 2:30 PM); The Courtyard Long Bar & Bistro (Los Altos) with a named $17 Soup & Sandwich Special and a $7-$28 lunch card, Mon-Sat 11:00 AM - 1:30 PM; Sorelle Italian Bistro (Campbell, Wed-Fri 11:30-2:00, no prices published); Senza Italian Kitchen (Los Gatos, Wed-Fri 11:00-2:00, no lunch prices published); Hibari (Portola Valley, Wed-Sun 11:30-2:00, menu published only as an image); Crepevine Palo Alto (no lunch special - one all-day card, priced); and The Good Salad Campbell (no lunch special - flat $15-$16 salads, priced). Nine findings were logged as rejections or bad-source notes (R184-R192), including a wrong-state trap (Discover Saratoga = Saratoga County, NEW YORK), an aggregator link that routes Kakuna Sushi Milpitas to the Fremont store, and a TripAdvisor record claiming a 5:00 AM opening for a Sunnyvale Korean BBQ restaurant. Eight new flags were filed (LUNCH-FLAG-104 through 111). No price was printed unless the restaurant's own site or its own ordering menu carried it: press figures for Hibari ($18-$66 lunch sets) and a reviewer's $40 for Senza are held in row flags as quotes, never in price columns. The pass therefore delivered 8 new rows against a 100-candidate screen and reports that shortfall rather than padding it. Pass 16 (2026-09-14): about 45 searches plus 6 page fetches screened roughly 192 new candidate names across Cupertino, Palo Alto, Menlo Park, Mountain View, Los Altos, Los Gatos, Saratoga, Campbell, Sunnyvale, Santa Clara, San Jose (Willow Glen and west San Jose), Milpitas and Fremont. 56 candidates were written up with sources in eight batch files (16a-16h); 31 merged as new rows (L820-L850) and 25 proved to be venues the master list already carried, so their captures were filed as cross-checks and duplicate detections instead of second rows. 11 candidates were rejected (R156-R166): four are permanently closed listings that still print full weekly hours (Pho & Bun, Kitayama Yoichi, Bierhaus, the Square Pie Guys Local Kitchens unit), one is a New York Restaurant Week trap for Saratoga Springs NY, three are out-of-area name traps for 'Los Altos' (Salinas, Goleta, San Bernardino), one is a Mountain View venue that closed, and one could not be resolved to any street address. Six further verified rows are held back by street-address collisions (LUNCH-FLAG-98) rather than forced past the dedupe, and one row (Willow Street Pizza) plus five existing rows (L477, L463, L478, L208, L544) received fresh contradictory captures filed as cross-checks. No price was printed unless a business' own site or menu carried it; reviewer-quoted prices such as Kiya Sushi's $14.99 trio-roll lunch and Country Way's $7.95 bacon-burger lunch stayed out of the price columns. The pass therefore delivered 31 new rows against a 100-row target and reports the shortfall rather than padding it. Verify line by line before adding anything to the master list; keep official/review links for manual review. Pass 15 (2026-09-14, approximate counts): about 70 fresh candidates were screened with about 60 new searches, Cupertino first and then the 10-15 mile ring. 27 candidates were written up with sources; 10 merged as new rows (L810-L819) and 17 proved to be rows the master list already carried, so they were merged as cross-checks instead of duplicates. 6 candidates were rejected with the page that produced the name (two of them turned out to be out-of-ring restaurants in New Jersey, one a Cupertino diner that closed permanently on 2025-12-31). Prices were printed only where a business' own page or an attached news/review quote gives one; photo captions and aggregator numbers never became prices. Pass 14 (2026-09-12): 118 new candidates from ring-city sweeps were each resolved against two or more pages before any row was written; 102 verified rows entered the master list (L708-L809). Seven rows whose Tuesday status is disputed between live captures carry open_on_trip_date = null rather than a guess.",
+   "queries_run":1109,
+   "candidates_found":1305,
+   "added_to_master":861,
+   "rejected_or_deferred":200,
    "search_date":"2026-09-07 through 2026-09-15",
    "cities_covered":[
     "Campbell",
@@ -43366,6 +43366,159 @@ window.TINO_DATA = {
     "distance_mi":null,
     "added_in":"batch17a_pass17_ring_verified.json",
     "id":"L858"
+   },
+   {
+    "name":"La Pizzeria Cupertino",
+    "city":"Cupertino",
+    "area":"Main Street Cupertino / N Wolfe Rd",
+    "address":"10088 N Wolfe Rd Ste 120, Cupertino, CA 95014",
+    "coords":[
+     37.3248476,
+     -122.0139049
+    ],
+    "cuisine":"Italian / Roman-style pizza",
+    "lunch_special":{
+     "name":"Lunch service (dedicated midday window) - no Cupertino-specific lunch price published",
+     "price_from":null,
+     "price_to":null,
+     "days":"Tue-Thu lunch 11:30 AM - 2:00 PM; Fri-Sun continuous from 11:30 AM",
+     "window":"11:30 AM - 2:00 PM",
+     "includes":"The lapizzeria.us group site publishes a Lunch Special (panini $16-$18, half panino + soup $13, half panino + half salad $14, served until 2pm) but every price page is labelled CAMPBELL. No Cupertino-specific price sheet exists, so no price is claimed for this row."
+    },
+    "hours_tuesday":"11:30 AM - 2:00 PM, 5:00 PM - 8:30 PM",
+    "days_open":"Mon dinner only 5-8:30 PM; Tue-Thu 11:30 AM-2 PM & 5-8:30 PM; Fri-Sat 11:30 AM-9:30 PM; Sun 11:30 AM-8:30 PM",
+    "open_on_trip_date":true,
+    "fits_return_bus":true,
+    "verification":{
+     "level":"listing",
+     "sources":[
+      {
+       "label":"La Pizzeria group official site - Lunch Special page (Campbell-priced)",
+       "url":"https://lapizzeria.us/lunch-menu/"
+      },
+      {
+       "label":"OpenTable - La Pizzeria Cupertino hours of operation",
+       "url":"https://www.opentable.com/r/la-pizzeria-cupertino"
+      },
+      {
+       "label":"Yelp - La Pizzeria Cupertino, 10088 N Wolfe Rd Ste 120, full week hours",
+       "url":"https://www.yelp.com/biz/la-pizzeria-cupertino-cupertino"
+      }
+     ],
+     "accessed":"2026-09-15"
+    },
+    "review_links":{
+     "yelp":"https://www.yelp.com/biz/la-pizzeria-cupertino-cupertino",
+     "google_maps":"https://www.google.com/maps/search/La+Pizzeria+Cupertino+10088+N+Wolfe+Rd"
+    },
+    "flags":[
+     "Distinct from L226 La Pizzeria / Campbell (373 E Campbell Ave) - same ownership group, different address.",
+     "lapizzeriacupertino.com redirects to lapizzeria.us, which lists ONLY the Campbell address, phone and prices. Cupertino lunch pricing is therefore NOT verified.",
+     "Owner reply on Yelp says 'Tuesday closed' while the Yelp/OpenTable hour blocks show Tue 11:30-2 & 5-8:30. Tuesday availability is unreliable - call ahead."
+    ],
+    "distance_mi":1.4,
+    "id":"L859",
+    "added_in":"batch18a_pass18_closure_and_ring.json"
+   },
+   {
+    "name":"Metro City Restaurant & Bar (Murphy)",
+    "city":"Sunnyvale",
+    "area":"Downtown Sunnyvale / S Murphy Ave",
+    "address":"151 S Murphy Ave, Sunnyvale, CA 94086",
+    "coords":[
+     37.37688,
+     -122.0303
+    ],
+    "cuisine":"American / all-day breakfast, sandwiches, burgers",
+    "lunch_special":{
+     "name":"No discounted lunch special - single all-day menu",
+     "price_from":12.0,
+     "price_to":21.0,
+     "days":"Every day",
+     "window":"8:00 AM - 9:00 PM",
+     "includes":"Official menu is explicitly 'Served all day' - no separate lunch pricing. Midday-relevant band from the official menu: Grilled Cheese $12, Fried Egg BLT $16, Meatball Sandwich $16, Tuna Melt $16, Manhattan Reuben $17, Washington Melt $17, BBQ Pulled Pork Sandwich $18, Turkey Club $20, Chicken Club $21."
+    },
+    "hours_tuesday":"8:00 AM - 9:00 PM",
+    "days_open":"Open 7 days a week, 8:00 AM - 9:00 PM (official locations page)",
+    "open_on_trip_date":true,
+    "fits_return_bus":true,
+    "verification":{
+     "level":"official",
+     "sources":[
+      {
+       "label":"Metro City official site - food menu ('Served all day') with prices",
+       "url":"https://metrocitysunnyvale.com/food-menu"
+      },
+      {
+       "label":"Metro City official site - locations & hours (Murphy + Duane)",
+       "url":"https://metrocitysunnyvale.com/locations"
+      },
+      {
+       "label":"Metro City official site - about / address & phone",
+       "url":"https://metrocitysunnyvale.com/about"
+      }
+     ],
+     "accessed":"2026-09-15"
+    },
+    "review_links":{
+     "yelp":"https://www.yelp.com/biz/metro-city-restaurant-and-bar-sunnyvale",
+     "google_maps":"https://www.google.com/maps/search/Metro+City+Restaurant+Bar+151+S+Murphy+Ave+Sunnyvale"
+    },
+    "flags":[
+     "Absence row: confirmed NO lunch special. Listed so the same venue is not re-screened next pass.",
+     "Sister location at 919 E Duane Ave, Sunnyvale. The group site gives Duane 'open 7 days 8 AM-9 PM' while metrocityduane.com shows Tue-Fri 11-8 / Sat 9-8 / Sun 9-3. Duane hours conflict - not added."
+    ],
+    "distance_mi":4.42,
+    "id":"L860",
+    "added_in":"batch18a_pass18_closure_and_ring.json"
+   },
+   {
+    "name":"Bistro Elan",
+    "city":"Palo Alto",
+    "area":"California Ave district / Birch St",
+    "address":"2363 Birch St A, Palo Alto, CA 94306",
+    "coords":[
+     37.4258,
+     -122.1449
+    ],
+    "cuisine":"French / Californian",
+    "lunch_special":{
+     "name":"No lunch special - single seasonal menu, fine-dining priced",
+     "price_from":15.0,
+     "price_to":50.0,
+     "days":"Tuesday-Saturday",
+     "window":"11:30 AM - 8:30 PM",
+     "includes":"Summer 2026 official menu, no separate midday pricing: Cream of Mushroom Soup $15, California Pears $17, Little Gem Caesar $19, Apple Salad $20, Bucatini Bolognese $35, Local Lingcod $39, Pork Schnitzel $44, Skirt Steak $50. A 20% service charge is added in lieu of gratuity."
+    },
+    "hours_tuesday":"11:30 AM - 8:30 PM",
+    "days_open":"Tue-Sat 11:30 AM - 8:30 PM; closed Sun-Mon",
+    "open_on_trip_date":true,
+    "fits_return_bus":true,
+    "verification":{
+     "level":"official",
+     "sources":[
+      {
+       "label":"Bistro Elan official menu - Summer 2026 prices",
+       "url":"https://bistroelan.com/menu"
+      },
+      {
+       "label":"Bistro Elan official site - structured hours Tue-Sat 11:30-20:30 and address",
+       "url":"https://www.bistroelan.com/index"
+      }
+     ],
+     "accessed":"2026-09-15"
+    },
+    "review_links":{
+     "yelp":"https://www.yelp.com/biz/bistro-elan-palo-alto",
+     "google_maps":"https://www.google.com/maps/search/Bistro+Elan+2363+Birch+St+Palo+Alto"
+    },
+    "flags":[
+     "Absence row: confirmed NO lunch special despite opening at 11:30 AM.",
+     "Mandatory 20% service charge is stated on the official menu - budget accordingly."
+    ],
+    "distance_mi":10.02,
+    "id":"L861",
+    "added_in":"batch18a_pass18_closure_and_ring.json"
    }
   ],
   "top_picks_for_tuesday_sept_8":[
@@ -43405,7 +43558,7 @@ window.TINO_DATA = {
  },
  "rejected":{
   "purpose":"Line-by-line review log for candidates that were searched but NOT added to the master list. Recorded so nothing is silently dropped and so every rejection has a reason and a link.",
-  "search_date":"2026-09-07 through 2026-09-14",
+  "search_date":"2026-09-07 through 2026-09-15",
   "rejected":[
    {
     "id":"R01",
@@ -46396,13 +46549,133 @@ window.TINO_DATA = {
       "url":"https://www.tripadvisor.ie/Restaurant_Review-g33146-d19500888-Reviews-10_Butchers_Korean_BBQ-Sunnyvale_California.html"
      }
     ]
+   },
+   {
+    "name":"Oren's Hummus - Cupertino",
+    "city":"Cupertino",
+    "address":"19419 Stevens Creek Blvd, Cupertino, CA 95014",
+    "links":[
+     {
+      "label":"Oren's Hummus official locations page - Cupertino permanent closure notice",
+      "url":"https://www.orenshummus.com/locations/"
+     },
+     {
+      "label":"Oren's Hummus - CEO Cupertino closure letter (PDF)",
+      "url":"https://orenshummus.com/wp-content/uploads/2026/09/Cupertino-CLosure-letter.pdf"
+     }
+    ],
+    "searched":"2026-09-15",
+    "why":"PERMANENTLY CLOSED. Oren's Hummus' own locations page states this location 'will be permanently closed as of 9/12/26', three days before this pass. A CEO closure letter PDF is posted on the company site. Never added to master; recorded so it is never added in a future pass."
+   },
+   {
+    "name":"Oren's Hummus - Los Gatos",
+    "city":"Los Gatos",
+    "address":"1 N Santa Cruz Ave, Los Gatos, CA 95030",
+    "links":[
+     {
+      "label":"Oren's Hummus official locations page - Los Gatos hours",
+      "url":"https://www.orenshummus.com/locations/"
+     },
+     {
+      "label":"Oren's Hummus Los Gatos official Toast ordering menu",
+      "url":"https://order.toasttab.com/online/orens-hummus-los-gatos-1-n-santa-cruz-ave"
+     }
+    ],
+    "searched":"2026-09-15",
+    "why":"No lunch special exists. The official Toast menu is a single 'Lunch & Dinner Menu' with identical pricing all day (Hummus Classic $16.95, Pita Chicken $20.34, Chicken Skewer $30.51). The only sub-menu that is time/price distinct is a Student Menu ($12, student ID required), which is an eligibility discount, not a lunch special. Hours Mon-Sun 11 AM-9 PM are official."
+   },
+   {
+    "name":"Oren's Hummus - Palo Alto (University Ave) and Express (Town & Country)",
+    "city":"Palo Alto",
+    "address":"261 University Ave / 855 El Camino Real Ste 162, Palo Alto, CA",
+    "links":[
+     {
+      "label":"Oren's Hummus official locations page",
+      "url":"https://www.orenshummus.com/locations/"
+     },
+     {
+      "label":"Oren's Hummus official Lunch & Dinner menu hub (single all-day menu)",
+      "url":"https://orenshummus.com/lunch-dinner-menu/"
+     }
+    ],
+    "searched":"2026-09-15",
+    "why":"Resolves the pass-17 deferral LUNCH-FLAG-111. Official hours captured (University Sun-Thu 11 AM-11 PM, Fri-Sat 11 AM-11:30 PM; Express Sun-Thu 11 AM-8 PM, Fri-Sat 11 AM-9 PM) but no lunch special is advertised on any Oren's page. A-la-carte only. Not a lunch-special row."
+   },
+   {
+    "name":"Wasabi (all-you-can-eat lunch $19.50)",
+    "city":"Saratoga Springs, NY - NOT Saratoga, CA",
+    "address":"63 Putnam St, Saratoga Springs, NY 12866",
+    "links":[
+     {
+      "label":"Yelp - Wasabi, 63 Putnam St, Saratoga Springs, NY",
+      "url":"https://www.yelp.com/biz/wasabi-saratoga-springs-6"
+     }
+    ],
+    "searched":"2026-09-15",
+    "why":"OUT OF REGION. Surfaced from saratogaliving.com's '2026 Food + Drink Guide', which is a Saratoga Springs, NEW YORK publication, not Saratoga, California. Second occurrence of this trap (see LUNCH-FLAG-105)."
+   },
+   {
+    "name":"Duo Modern Japanese Cuisine & Hibachi (two/three-roll lunch specials)",
+    "city":"Saratoga Springs, NY - NOT Saratoga, CA",
+    "address":"175 S Broadway, Saratoga Springs, NY 12866",
+    "links":[
+     {
+      "label":"Duo Modern Japanese official contact page - Saratoga Springs, NY address",
+      "url":"https://www.duo-japanese.com/contact-us/"
+     }
+    ],
+    "searched":"2026-09-15",
+    "why":"OUT OF REGION. Same saratogaliving.com (Saratoga Springs NY) source as Wasabi above."
+   },
+   {
+    "name":"Spalti Ristorante",
+    "city":"Palo Alto",
+    "address":"417 S California Ave, Palo Alto, CA 94306",
+    "links":[
+     {
+      "label":"TripAdvisor - Spalti Ristorante (implausible 09:00-00:00 daily hours)",
+      "url":"https://www.tripadvisor.com/Restaurant_Review-g32849-d446702-Reviews-Spalti_Ristorante-Palo_Alto_California.html"
+     }
+    ],
+    "searched":"2026-09-15",
+    "why":"No usable official source. spalti.com is a parked GoDaddy for-sale domain. The only hours available (TripAdvisor: 09:00-00:00 every day) are implausible and self-evidently wrong. Not price- or hours-verifiable."
+   },
+   {
+    "name":"Ristorante Don Giovanni - three-course lunch special",
+    "city":"Mountain View",
+    "address":"235 Castro St, Mountain View, CA 94041",
+    "links":[
+     {
+      "label":"OpenTable - Ristorante Don Giovanni (review-sourced lunch special claim)",
+      "url":"https://www.opentable.com/ristorante-don-giovanni-mountain-view"
+     }
+    ],
+    "searched":"2026-09-15",
+    "why":"Already in master (two dedupe keys). The new signal - an OpenTable FAQ citing a '$19.95-$19.99 three-course lunch special' and a '$35 prix-fixe' - is explicitly attributed to guest reviews, not the restaurant. dongiovanni.com returned HTTP 500, so no official confirmation. Existing row left untouched; logged as a flag instead."
+   },
+   {
+    "name":"Metro City Restaurant & Bar - Duane Ave location",
+    "city":"Sunnyvale",
+    "address":"919 E Duane Ave, Sunnyvale, CA 94085",
+    "links":[
+     {
+      "label":"metrocitysunnyvale.com locations page",
+      "url":"https://metrocitysunnyvale.com/locations"
+     },
+     {
+      "label":"metrocityduane.com locations page (conflicting)",
+      "url":"https://metrocityduane.com/sunnyvale-metro-city-restaurant-and-bar-duane-locations"
+     }
+    ],
+    "searched":"2026-09-15",
+    "why":"Hours conflict between the chain's own two sites: metrocitysunnyvale.com/locations says 'Open 7 Days a week from 8AM to 9PM' while metrocityduane.com says Tue-Fri 11 AM-8 PM, Sat 9 AM-8 PM, Sun 9 AM-3 PM (Mon absent). Not resolvable from official sources."
    }
   ],
   "notes":[
    "Reddit was searched for Cupertino / Sunnyvale / Los Gatos lunch specials and returned only threads about other cities, so no Reddit citation is used (see LUNCH-FLAG-8).",
    "Every rejection above is a source-of-truth decision, not a judgement about the food. Anything here can be promoted into the master list as soon as hours, days and a price are confirmed."
   ],
-  "distinct_businesses_rejected":183,
+  "distinct_businesses_rejected":200,
   "note":"133 rows covering 132 distinct businesses. R14 (first pass) groups the near-miss candidates surfaced by the same queries and rejected for the same reason (no published lunch special found in that pass); later passes appended one row per candidate or per grouped reason - 30 rows from the ninth pass on 2026-09-10 and 17 from the tenth pass on 2026-09-11. Every row carries the URL that proves the rejection, including three out-of-state name traps and two dinner-only venues whose directory pages still advertise 'Lunch Specials'."
  },
  "flags":{
@@ -48390,7 +48663,145 @@ window.TINO_DATA = {
      "label":"Yelp - Oren's Hummus, 261 University Ave, Palo Alto",
      "url":"https://www.yelp.com/biz/orens-hummus-palo-alto"
     },
-    "manual_review":"Next pass: fetch orenshummus.com directly for the Palo Alto and Express location pages and their menus, then add both with real prices."
+    "manual_review":"Next pass: fetch orenshummus.com directly for the Palo Alto and Express location pages and their menus, then add both with real prices.",
+    "status":"resolved",
+    "resolution":"Resolved in pass 18: Oren's Hummus official locations page + all-day Toast menus confirm NO lunch special at any Oren's location (Palo Alto, Express, Los Gatos, Mountain View). A-la-carte only. Recorded as rejections, not rows."
+   },
+   {
+    "id":"LUNCH-FLAG-112",
+    "note":"Oren's Hummus Cupertino (19419 Stevens Creek Blvd) is PERMANENTLY CLOSED as of 9/12/26 per the company's own locations page and a CEO closure letter PDF. Never in master; recorded as rejection R193. Note L703 Pressed Juicery shares that street address and is unaffected.",
+    "date":"2026-09-15",
+    "status":"open",
+    "severity":"high",
+    "title":"Oren's Hummus Cupertino permanently closed as of 9/12/26",
+    "what_we_found":"Oren's Hummus' own locations page states the Cupertino store at 19419 Stevens Creek Blvd 'will be permanently closed as of 9/12/26', with a CEO closure letter PDF posted on the company site. The closure date is three days before this pass.",
+    "what_we_did":"Logged as a rejection instead of a master row (it was never in master). Verified that L703 Pressed Juicery shares the same street address and is unaffected; L703 left untouched.",
+    "rows":[
+     "L703"
+    ],
+    "manual_review":"Re-check in a later pass in case a new tenant occupies 19419 Stevens Creek Blvd.",
+    "link":{
+     "label":"Oren's Hummus Cupertino permanently closed as of 9/12/26",
+     "url":"https://www.orenshummus.com/locations/"
+    }
+   },
+   {
+    "id":"LUNCH-FLAG-113",
+    "note":"Saratoga NY trap recurred: saratogaliving.com '2026 Food + Drink Guide' (Wasabi $19.50 AYCE lunch, Duo roll lunch specials) is a Saratoga Springs, NEW YORK publication. Both rejected. Second occurrence after LUNCH-FLAG-105 - treat any 'Saratoga' result as NY until a CA address is confirmed.",
+    "date":"2026-09-15",
+    "status":"open",
+    "severity":"warn",
+    "title":"Saratoga NY trap recurred via saratogaliving.com",
+    "what_we_found":"saratogaliving.com's '2026 Food + Drink Guide' surfaced Wasabi ($19.50 all-you-can-eat lunch) and Duo Modern Japanese roll lunch specials. Both are in Saratoga Springs, NEW YORK (63 Putnam St and 175 S Broadway), not Saratoga, California.",
+    "what_we_did":"Both rejected as out of region. Second occurrence after LUNCH-FLAG-105.",
+    "rows":[],
+    "manual_review":"Standing rule: treat any 'Saratoga' search result as NY until a California street address is confirmed.",
+    "link":{
+     "label":"Saratoga NY trap recurred via saratogaliving.com",
+     "url":"https://saratogaliving.com/the-2026-food-drink-guide-lunch-and-happy-hour/"
+    }
+   },
+   {
+    "id":"LUNCH-FLAG-114",
+    "note":"La Pizzeria internal conflict on its own official site: the homepage Lunch Special card says 'Served from 11 AM to 4 PM' while /lunch-menu/ says 'Served every day until 2pm'. Also the itemised official lunch prices are $13-$18, not the flat $16.50 recorded on master row L226. L226 left unedited pending a tiebreak source.",
+    "date":"2026-09-15",
+    "status":"open",
+    "severity":"warn",
+    "title":"La Pizzeria (L226): official site contradicts itself on the lunch window and price",
+    "what_we_found":"The lapizzeria.us homepage Lunch Special card says 'Served from 11 AM to 4 PM' while /lunch-menu/ says 'Served every day until 2pm'. The itemised official lunch prices are $13-$18 (half panino + soup $13, half panino + half salad $14, panini $16-$18), not the flat $16.50 recorded on L226.",
+    "what_we_did":"L226 left unedited pending a tiebreak source, since changing it on a self-contradictory page would trade one unverified value for another.",
+    "rows":[
+     "L226"
+    ],
+    "manual_review":"Call La Pizzeria Campbell to confirm the lunch cutoff time and whether a flat $16.50 special exists.",
+    "link":{
+     "label":"La Pizzeria (L226): official site contradicts itself on the lunch window and price",
+     "url":"https://lapizzeria.us/lunch-menu/"
+    }
+   },
+   {
+    "id":"LUNCH-FLAG-115",
+    "note":"La Pizzeria Cupertino (10088 N Wolfe Rd Ste 120) added as a new row, but no Cupertino-specific prices exist anywhere - lapizzeriacupertino.com redirects to the group site which lists only the Campbell address, phone and prices. Price intentionally left null. Additionally the Yelp owner reply says 'Tuesday closed' while the posted hour blocks show Tue lunch 11:30-2.",
+    "date":"2026-09-15",
+    "status":"open",
+    "severity":"warn",
+    "title":"La Pizzeria Cupertino (new row): no location-specific price exists",
+    "what_we_found":"lapizzeriacupertino.com redirects to lapizzeria.us, which lists only the Campbell address, phone and prices. Separately, the Yelp owner reply says 'Tuesday closed' while the posted OpenTable/Yelp hour blocks show a Tue 11:30-2 lunch.",
+    "what_we_did":"Added the row with hours only and price_from/price_to left null rather than importing Campbell prices. Both caveats written into the row flags.",
+    "rows":[
+     "L859"
+    ],
+    "manual_review":"Call (408) 863-0308 to confirm Tuesday lunch service and Cupertino lunch pricing.",
+    "link":{
+     "label":"La Pizzeria Cupertino (new row): no location-specific price exists",
+     "url":"https://www.opentable.com/r/la-pizzeria-cupertino"
+    }
+   },
+   {
+    "id":"LUNCH-FLAG-116",
+    "note":"Metro City Duane Ave (919 E Duane) hours conflict between the chain's OWN two sites: metrocitysunnyvale.com/locations says open 7 days 8AM-9PM; metrocityduane.com says Tue-Fri 11-8, Sat 9-8, Sun 9-3. Duane location not added.",
+    "date":"2026-09-15",
+    "status":"open",
+    "severity":"warn",
+    "title":"Metro City Duane Ave: the chain's own two sites give different hours",
+    "what_we_found":"metrocitysunnyvale.com/locations says the Duane location is open 7 days 8AM-9PM; metrocityduane.com says Tue-Fri 11-8, Sat 9-8, Sun 9-3, with Monday absent.",
+    "what_we_did":"Duane location not added. The Murphy Ave location (L860) was added, since its hours agree across the official site and TripAdvisor structured data.",
+    "rows":[
+     "L860"
+    ],
+    "manual_review":"Call (408) 685-2331 to confirm Duane Ave hours.",
+    "link":{
+     "label":"Metro City Duane Ave: the chain's own two sites give different hours",
+     "url":"https://metrocityduane.com/sunnyvale-metro-city-restaurant-and-bar-duane-locations"
+    }
+   },
+   {
+    "id":"LUNCH-FLAG-117",
+    "note":"Ristorante Don Giovanni (Mountain View, already in master): OpenTable FAQ cites a $19.95-$19.99 three-course lunch special and a $35 prix-fixe, but explicitly attributes both to guest reviews. dongiovanni.com returned HTTP 500, so no official confirmation was possible. Master row NOT modified.",
+    "date":"2026-09-15",
+    "status":"open",
+    "severity":"info",
+    "title":"Ristorante Don Giovanni: review-sourced lunch special could not be confirmed officially",
+    "what_we_found":"An OpenTable FAQ cites a $19.95-$19.99 three-course lunch special and a $35 prix-fixe, but explicitly attributes both to guest reviews. dongiovanni.com returned HTTP 500.",
+    "what_we_did":"The existing master row was NOT modified. Recorded here so a future pass can retry the official site.",
+    "rows":[],
+    "manual_review":"Retry dongiovanni.com when the site is back up.",
+    "link":{
+     "label":"Ristorante Don Giovanni: review-sourced lunch special could not be confirmed officially",
+     "url":"https://www.opentable.com/ristorante-don-giovanni-mountain-view"
+    }
+   },
+   {
+    "id":"LUNCH-FLAG-118",
+    "note":"Spalti Ristorante (417 S California Ave, Palo Alto): official domain spalti.com is a parked GoDaddy for-sale page, and the only hours available (TripAdvisor 09:00-00:00 daily) are implausible. Rejected as unverifiable.",
+    "date":"2026-09-15",
+    "status":"open",
+    "severity":"info",
+    "title":"Spalti Ristorante unverifiable: official domain is parked and listing hours are implausible",
+    "what_we_found":"spalti.com is a parked GoDaddy for-sale page. The only hours available (TripAdvisor: 09:00-00:00 every day) are self-evidently wrong for a dinner-oriented Italian restaurant.",
+    "what_we_did":"Rejected rather than added at review level.",
+    "rows":[],
+    "manual_review":"Check whether the restaurant is still operating at 417 S California Ave.",
+    "link":{
+     "label":"Spalti Ristorante unverifiable: official domain is parked and listing hours are implausible",
+     "url":"https://www.tripadvisor.com/Restaurant_Review-g32849-d446702-Reviews-Spalti_Ristorante-Palo_Alto_California.html"
+    }
+   },
+   {
+    "id":"LUNCH-FLAG-119",
+    "note":"Pass-18 shortfall, reported honestly: the 100-entry target was not met. Screening surfaced overwhelmingly venues already among the 858 master rows / 192 rejects; only 3 new rows cleared verification (2 of them absence rows) plus 6 new rejections. Cupertino core is now effectively saturated at this verification standard.",
+    "date":"2026-09-15",
+    "status":"open",
+    "severity":"info",
+    "title":"Pass-18 shortfall reported honestly: 3 rows, not 100",
+    "what_we_found":"The pass-18 screen surfaced overwhelmingly venues already among the 858 master rows and 192 rejects. Only 3 new rows cleared verification (1 with a lunch window, 2 verified-absence rows), plus 8 new rejections.",
+    "what_we_did":"Reported the shortfall rather than padding the list with review-level or unsourced entries. At this verification standard the Cupertino core is effectively saturated; future passes should push further out or shift to re-verifying aging rows.",
+    "rows":[],
+    "manual_review":"Decide whether to widen the radius beyond 15 mi or pivot to a re-verification pass.",
+    "link":{
+     "label":"Pass-18 shortfall reported honestly: 3 rows, not 100",
+     "url":"https://buffedlizard55-lab.github.io/TinoLunchSpecial/"
+    }
    }
   ]
  },

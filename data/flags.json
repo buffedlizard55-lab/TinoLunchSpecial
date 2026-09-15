@@ -1983,7 +1983,145 @@
         "label": "Yelp - Oren's Hummus, 261 University Ave, Palo Alto",
         "url": "https://www.yelp.com/biz/orens-hummus-palo-alto"
       },
-      "manual_review": "Next pass: fetch orenshummus.com directly for the Palo Alto and Express location pages and their menus, then add both with real prices."
+      "manual_review": "Next pass: fetch orenshummus.com directly for the Palo Alto and Express location pages and their menus, then add both with real prices.",
+      "status": "resolved",
+      "resolution": "Resolved in pass 18: Oren's Hummus official locations page + all-day Toast menus confirm NO lunch special at any Oren's location (Palo Alto, Express, Los Gatos, Mountain View). A-la-carte only. Recorded as rejections, not rows."
+    },
+    {
+      "id": "LUNCH-FLAG-112",
+      "note": "Oren's Hummus Cupertino (19419 Stevens Creek Blvd) is PERMANENTLY CLOSED as of 9/12/26 per the company's own locations page and a CEO closure letter PDF. Never in master; recorded as rejection R193. Note L703 Pressed Juicery shares that street address and is unaffected.",
+      "date": "2026-09-15",
+      "status": "open",
+      "severity": "high",
+      "title": "Oren's Hummus Cupertino permanently closed as of 9/12/26",
+      "what_we_found": "Oren's Hummus' own locations page states the Cupertino store at 19419 Stevens Creek Blvd 'will be permanently closed as of 9/12/26', with a CEO closure letter PDF posted on the company site. The closure date is three days before this pass.",
+      "what_we_did": "Logged as a rejection instead of a master row (it was never in master). Verified that L703 Pressed Juicery shares the same street address and is unaffected; L703 left untouched.",
+      "rows": [
+        "L703"
+      ],
+      "manual_review": "Re-check in a later pass in case a new tenant occupies 19419 Stevens Creek Blvd.",
+      "link": {
+        "label": "Oren's Hummus Cupertino permanently closed as of 9/12/26",
+        "url": "https://www.orenshummus.com/locations/"
+      }
+    },
+    {
+      "id": "LUNCH-FLAG-113",
+      "note": "Saratoga NY trap recurred: saratogaliving.com '2026 Food + Drink Guide' (Wasabi $19.50 AYCE lunch, Duo roll lunch specials) is a Saratoga Springs, NEW YORK publication. Both rejected. Second occurrence after LUNCH-FLAG-105 - treat any 'Saratoga' result as NY until a CA address is confirmed.",
+      "date": "2026-09-15",
+      "status": "open",
+      "severity": "warn",
+      "title": "Saratoga NY trap recurred via saratogaliving.com",
+      "what_we_found": "saratogaliving.com's '2026 Food + Drink Guide' surfaced Wasabi ($19.50 all-you-can-eat lunch) and Duo Modern Japanese roll lunch specials. Both are in Saratoga Springs, NEW YORK (63 Putnam St and 175 S Broadway), not Saratoga, California.",
+      "what_we_did": "Both rejected as out of region. Second occurrence after LUNCH-FLAG-105.",
+      "rows": [],
+      "manual_review": "Standing rule: treat any 'Saratoga' search result as NY until a California street address is confirmed.",
+      "link": {
+        "label": "Saratoga NY trap recurred via saratogaliving.com",
+        "url": "https://saratogaliving.com/the-2026-food-drink-guide-lunch-and-happy-hour/"
+      }
+    },
+    {
+      "id": "LUNCH-FLAG-114",
+      "note": "La Pizzeria internal conflict on its own official site: the homepage Lunch Special card says 'Served from 11 AM to 4 PM' while /lunch-menu/ says 'Served every day until 2pm'. Also the itemised official lunch prices are $13-$18, not the flat $16.50 recorded on master row L226. L226 left unedited pending a tiebreak source.",
+      "date": "2026-09-15",
+      "status": "open",
+      "severity": "warn",
+      "title": "La Pizzeria (L226): official site contradicts itself on the lunch window and price",
+      "what_we_found": "The lapizzeria.us homepage Lunch Special card says 'Served from 11 AM to 4 PM' while /lunch-menu/ says 'Served every day until 2pm'. The itemised official lunch prices are $13-$18 (half panino + soup $13, half panino + half salad $14, panini $16-$18), not the flat $16.50 recorded on L226.",
+      "what_we_did": "L226 left unedited pending a tiebreak source, since changing it on a self-contradictory page would trade one unverified value for another.",
+      "rows": [
+        "L226"
+      ],
+      "manual_review": "Call La Pizzeria Campbell to confirm the lunch cutoff time and whether a flat $16.50 special exists.",
+      "link": {
+        "label": "La Pizzeria (L226): official site contradicts itself on the lunch window and price",
+        "url": "https://lapizzeria.us/lunch-menu/"
+      }
+    },
+    {
+      "id": "LUNCH-FLAG-115",
+      "note": "La Pizzeria Cupertino (10088 N Wolfe Rd Ste 120) added as a new row, but no Cupertino-specific prices exist anywhere - lapizzeriacupertino.com redirects to the group site which lists only the Campbell address, phone and prices. Price intentionally left null. Additionally the Yelp owner reply says 'Tuesday closed' while the posted hour blocks show Tue lunch 11:30-2.",
+      "date": "2026-09-15",
+      "status": "open",
+      "severity": "warn",
+      "title": "La Pizzeria Cupertino (new row): no location-specific price exists",
+      "what_we_found": "lapizzeriacupertino.com redirects to lapizzeria.us, which lists only the Campbell address, phone and prices. Separately, the Yelp owner reply says 'Tuesday closed' while the posted OpenTable/Yelp hour blocks show a Tue 11:30-2 lunch.",
+      "what_we_did": "Added the row with hours only and price_from/price_to left null rather than importing Campbell prices. Both caveats written into the row flags.",
+      "rows": [
+        "L859"
+      ],
+      "manual_review": "Call (408) 863-0308 to confirm Tuesday lunch service and Cupertino lunch pricing.",
+      "link": {
+        "label": "La Pizzeria Cupertino (new row): no location-specific price exists",
+        "url": "https://www.opentable.com/r/la-pizzeria-cupertino"
+      }
+    },
+    {
+      "id": "LUNCH-FLAG-116",
+      "note": "Metro City Duane Ave (919 E Duane) hours conflict between the chain's OWN two sites: metrocitysunnyvale.com/locations says open 7 days 8AM-9PM; metrocityduane.com says Tue-Fri 11-8, Sat 9-8, Sun 9-3. Duane location not added.",
+      "date": "2026-09-15",
+      "status": "open",
+      "severity": "warn",
+      "title": "Metro City Duane Ave: the chain's own two sites give different hours",
+      "what_we_found": "metrocitysunnyvale.com/locations says the Duane location is open 7 days 8AM-9PM; metrocityduane.com says Tue-Fri 11-8, Sat 9-8, Sun 9-3, with Monday absent.",
+      "what_we_did": "Duane location not added. The Murphy Ave location (L860) was added, since its hours agree across the official site and TripAdvisor structured data.",
+      "rows": [
+        "L860"
+      ],
+      "manual_review": "Call (408) 685-2331 to confirm Duane Ave hours.",
+      "link": {
+        "label": "Metro City Duane Ave: the chain's own two sites give different hours",
+        "url": "https://metrocityduane.com/sunnyvale-metro-city-restaurant-and-bar-duane-locations"
+      }
+    },
+    {
+      "id": "LUNCH-FLAG-117",
+      "note": "Ristorante Don Giovanni (Mountain View, already in master): OpenTable FAQ cites a $19.95-$19.99 three-course lunch special and a $35 prix-fixe, but explicitly attributes both to guest reviews. dongiovanni.com returned HTTP 500, so no official confirmation was possible. Master row NOT modified.",
+      "date": "2026-09-15",
+      "status": "open",
+      "severity": "info",
+      "title": "Ristorante Don Giovanni: review-sourced lunch special could not be confirmed officially",
+      "what_we_found": "An OpenTable FAQ cites a $19.95-$19.99 three-course lunch special and a $35 prix-fixe, but explicitly attributes both to guest reviews. dongiovanni.com returned HTTP 500.",
+      "what_we_did": "The existing master row was NOT modified. Recorded here so a future pass can retry the official site.",
+      "rows": [],
+      "manual_review": "Retry dongiovanni.com when the site is back up.",
+      "link": {
+        "label": "Ristorante Don Giovanni: review-sourced lunch special could not be confirmed officially",
+        "url": "https://www.opentable.com/ristorante-don-giovanni-mountain-view"
+      }
+    },
+    {
+      "id": "LUNCH-FLAG-118",
+      "note": "Spalti Ristorante (417 S California Ave, Palo Alto): official domain spalti.com is a parked GoDaddy for-sale page, and the only hours available (TripAdvisor 09:00-00:00 daily) are implausible. Rejected as unverifiable.",
+      "date": "2026-09-15",
+      "status": "open",
+      "severity": "info",
+      "title": "Spalti Ristorante unverifiable: official domain is parked and listing hours are implausible",
+      "what_we_found": "spalti.com is a parked GoDaddy for-sale page. The only hours available (TripAdvisor: 09:00-00:00 every day) are self-evidently wrong for a dinner-oriented Italian restaurant.",
+      "what_we_did": "Rejected rather than added at review level.",
+      "rows": [],
+      "manual_review": "Check whether the restaurant is still operating at 417 S California Ave.",
+      "link": {
+        "label": "Spalti Ristorante unverifiable: official domain is parked and listing hours are implausible",
+        "url": "https://www.tripadvisor.com/Restaurant_Review-g32849-d446702-Reviews-Spalti_Ristorante-Palo_Alto_California.html"
+      }
+    },
+    {
+      "id": "LUNCH-FLAG-119",
+      "note": "Pass-18 shortfall, reported honestly: the 100-entry target was not met. Screening surfaced overwhelmingly venues already among the 858 master rows / 192 rejects; only 3 new rows cleared verification (2 of them absence rows) plus 6 new rejections. Cupertino core is now effectively saturated at this verification standard.",
+      "date": "2026-09-15",
+      "status": "open",
+      "severity": "info",
+      "title": "Pass-18 shortfall reported honestly: 3 rows, not 100",
+      "what_we_found": "The pass-18 screen surfaced overwhelmingly venues already among the 858 master rows and 192 rejects. Only 3 new rows cleared verification (1 with a lunch window, 2 verified-absence rows), plus 8 new rejections.",
+      "what_we_did": "Reported the shortfall rather than padding the list with review-level or unsourced entries. At this verification standard the Cupertino core is effectively saturated; future passes should push further out or shift to re-verifying aging rows.",
+      "rows": [],
+      "manual_review": "Decide whether to widen the radius beyond 15 mi or pivot to a re-verification pass.",
+      "link": {
+        "label": "Pass-18 shortfall reported honestly: 3 rows, not 100",
+        "url": "https://buffedlizard55-lab.github.io/TinoLunchSpecial/"
+      }
     }
   ]
 }

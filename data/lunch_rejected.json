@@ -1,6 +1,6 @@
 {
   "purpose": "Line-by-line review log for candidates that were searched but NOT added to the master list. Recorded so nothing is silently dropped and so every rejection has a reason and a link.",
-  "search_date": "2026-09-07 through 2026-09-14",
+  "search_date": "2026-09-07 through 2026-09-15",
   "rejected": [
     {
       "id": "R01",
@@ -2991,12 +2991,132 @@
           "url": "https://www.tripadvisor.ie/Restaurant_Review-g33146-d19500888-Reviews-10_Butchers_Korean_BBQ-Sunnyvale_California.html"
         }
       ]
+    },
+    {
+      "name": "Oren's Hummus - Cupertino",
+      "city": "Cupertino",
+      "address": "19419 Stevens Creek Blvd, Cupertino, CA 95014",
+      "links": [
+        {
+          "label": "Oren's Hummus official locations page - Cupertino permanent closure notice",
+          "url": "https://www.orenshummus.com/locations/"
+        },
+        {
+          "label": "Oren's Hummus - CEO Cupertino closure letter (PDF)",
+          "url": "https://orenshummus.com/wp-content/uploads/2026/09/Cupertino-CLosure-letter.pdf"
+        }
+      ],
+      "searched": "2026-09-15",
+      "why": "PERMANENTLY CLOSED. Oren's Hummus' own locations page states this location 'will be permanently closed as of 9/12/26', three days before this pass. A CEO closure letter PDF is posted on the company site. Never added to master; recorded so it is never added in a future pass."
+    },
+    {
+      "name": "Oren's Hummus - Los Gatos",
+      "city": "Los Gatos",
+      "address": "1 N Santa Cruz Ave, Los Gatos, CA 95030",
+      "links": [
+        {
+          "label": "Oren's Hummus official locations page - Los Gatos hours",
+          "url": "https://www.orenshummus.com/locations/"
+        },
+        {
+          "label": "Oren's Hummus Los Gatos official Toast ordering menu",
+          "url": "https://order.toasttab.com/online/orens-hummus-los-gatos-1-n-santa-cruz-ave"
+        }
+      ],
+      "searched": "2026-09-15",
+      "why": "No lunch special exists. The official Toast menu is a single 'Lunch & Dinner Menu' with identical pricing all day (Hummus Classic $16.95, Pita Chicken $20.34, Chicken Skewer $30.51). The only sub-menu that is time/price distinct is a Student Menu ($12, student ID required), which is an eligibility discount, not a lunch special. Hours Mon-Sun 11 AM-9 PM are official."
+    },
+    {
+      "name": "Oren's Hummus - Palo Alto (University Ave) and Express (Town & Country)",
+      "city": "Palo Alto",
+      "address": "261 University Ave / 855 El Camino Real Ste 162, Palo Alto, CA",
+      "links": [
+        {
+          "label": "Oren's Hummus official locations page",
+          "url": "https://www.orenshummus.com/locations/"
+        },
+        {
+          "label": "Oren's Hummus official Lunch & Dinner menu hub (single all-day menu)",
+          "url": "https://orenshummus.com/lunch-dinner-menu/"
+        }
+      ],
+      "searched": "2026-09-15",
+      "why": "Resolves the pass-17 deferral LUNCH-FLAG-111. Official hours captured (University Sun-Thu 11 AM-11 PM, Fri-Sat 11 AM-11:30 PM; Express Sun-Thu 11 AM-8 PM, Fri-Sat 11 AM-9 PM) but no lunch special is advertised on any Oren's page. A-la-carte only. Not a lunch-special row."
+    },
+    {
+      "name": "Wasabi (all-you-can-eat lunch $19.50)",
+      "city": "Saratoga Springs, NY - NOT Saratoga, CA",
+      "address": "63 Putnam St, Saratoga Springs, NY 12866",
+      "links": [
+        {
+          "label": "Yelp - Wasabi, 63 Putnam St, Saratoga Springs, NY",
+          "url": "https://www.yelp.com/biz/wasabi-saratoga-springs-6"
+        }
+      ],
+      "searched": "2026-09-15",
+      "why": "OUT OF REGION. Surfaced from saratogaliving.com's '2026 Food + Drink Guide', which is a Saratoga Springs, NEW YORK publication, not Saratoga, California. Second occurrence of this trap (see LUNCH-FLAG-105)."
+    },
+    {
+      "name": "Duo Modern Japanese Cuisine & Hibachi (two/three-roll lunch specials)",
+      "city": "Saratoga Springs, NY - NOT Saratoga, CA",
+      "address": "175 S Broadway, Saratoga Springs, NY 12866",
+      "links": [
+        {
+          "label": "Duo Modern Japanese official contact page - Saratoga Springs, NY address",
+          "url": "https://www.duo-japanese.com/contact-us/"
+        }
+      ],
+      "searched": "2026-09-15",
+      "why": "OUT OF REGION. Same saratogaliving.com (Saratoga Springs NY) source as Wasabi above."
+    },
+    {
+      "name": "Spalti Ristorante",
+      "city": "Palo Alto",
+      "address": "417 S California Ave, Palo Alto, CA 94306",
+      "links": [
+        {
+          "label": "TripAdvisor - Spalti Ristorante (implausible 09:00-00:00 daily hours)",
+          "url": "https://www.tripadvisor.com/Restaurant_Review-g32849-d446702-Reviews-Spalti_Ristorante-Palo_Alto_California.html"
+        }
+      ],
+      "searched": "2026-09-15",
+      "why": "No usable official source. spalti.com is a parked GoDaddy for-sale domain. The only hours available (TripAdvisor: 09:00-00:00 every day) are implausible and self-evidently wrong. Not price- or hours-verifiable."
+    },
+    {
+      "name": "Ristorante Don Giovanni - three-course lunch special",
+      "city": "Mountain View",
+      "address": "235 Castro St, Mountain View, CA 94041",
+      "links": [
+        {
+          "label": "OpenTable - Ristorante Don Giovanni (review-sourced lunch special claim)",
+          "url": "https://www.opentable.com/ristorante-don-giovanni-mountain-view"
+        }
+      ],
+      "searched": "2026-09-15",
+      "why": "Already in master (two dedupe keys). The new signal - an OpenTable FAQ citing a '$19.95-$19.99 three-course lunch special' and a '$35 prix-fixe' - is explicitly attributed to guest reviews, not the restaurant. dongiovanni.com returned HTTP 500, so no official confirmation. Existing row left untouched; logged as a flag instead."
+    },
+    {
+      "name": "Metro City Restaurant & Bar - Duane Ave location",
+      "city": "Sunnyvale",
+      "address": "919 E Duane Ave, Sunnyvale, CA 94085",
+      "links": [
+        {
+          "label": "metrocitysunnyvale.com locations page",
+          "url": "https://metrocitysunnyvale.com/locations"
+        },
+        {
+          "label": "metrocityduane.com locations page (conflicting)",
+          "url": "https://metrocityduane.com/sunnyvale-metro-city-restaurant-and-bar-duane-locations"
+        }
+      ],
+      "searched": "2026-09-15",
+      "why": "Hours conflict between the chain's own two sites: metrocitysunnyvale.com/locations says 'Open 7 Days a week from 8AM to 9PM' while metrocityduane.com says Tue-Fri 11 AM-8 PM, Sat 9 AM-8 PM, Sun 9 AM-3 PM (Mon absent). Not resolvable from official sources."
     }
   ],
   "notes": [
     "Reddit was searched for Cupertino / Sunnyvale / Los Gatos lunch specials and returned only threads about other cities, so no Reddit citation is used (see LUNCH-FLAG-8).",
     "Every rejection above is a source-of-truth decision, not a judgement about the food. Anything here can be promoted into the master list as soon as hours, days and a price are confirmed."
   ],
-  "distinct_businesses_rejected": 183,
+  "distinct_businesses_rejected": 200,
   "note": "133 rows covering 132 distinct businesses. R14 (first pass) groups the near-miss candidates surfaced by the same queries and rejected for the same reason (no published lunch special found in that pass); later passes appended one row per candidate or per grouped reason - 30 rows from the ninth pass on 2026-09-10 and 17 from the tenth pass on 2026-09-11. Every row carries the URL that proves the rejection, including three out-of-state name traps and two dinner-only venues whose directory pages still advertise 'Lunch Specials'."
 }
