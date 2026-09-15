@@ -2850,6 +2850,147 @@
         }
       ],
       "searched": "2026-09-07"
+    },
+    {
+      "name": "Tal Palo",
+      "city": "Los Altos",
+      "why": "No restaurant-controlled web page could be found and no menu is published anywhere - the venue deliberately runs without a fixed menu. Yelp files it under 'Cafes, Accessories, Home Decor' and a Yelp Q&A answer states 'They have a very small and selective menu and every day I believe they have some kind of a special! You should call them and ask them.' Nothing verifiable to print: no special name, no price, no confirmed window. Hours also disagree across mirrors (Yelp Tue-Thu 11-5; res-menu.net 9-5; wheree.com 11-2:30 Wed-Sat).",
+      "price_hint": "A Yelp photo caption prices a cactus-and-cheese quesadilla at $15 - a single reviewer datum, not a menu price.",
+      "searched": "2026-09-15",
+      "links": [
+        {
+          "label": "Yelp - Tal Palo, 149 Main St, Los Altos CA 94022; Mon & Sun closed; unanswered community question about set-menu pricing",
+          "url": "https://www.yelp.com/biz/tal-palo-los-altos"
+        }
+      ]
+    },
+    {
+      "name": "The Vesper",
+      "city": "Campbell",
+      "why": "No lunch service at all. Every hours source agrees the doors open at 4:00 PM Tue-Sat and 3:00 PM Sunday, closed Monday. It is a cocktail bar with small plates, so there is no midday window to record.",
+      "price_hint": "Evening small plates $9-$30 (OpenTable card); irrelevant to lunch.",
+      "searched": "2026-09-15",
+      "links": [
+        {
+          "label": "OpenTable - The Vesper, 394 E Campbell Ave, 'Hours of operation Tue 4:00 pm-10:30 pm ... Sun 3:00 pm-9:00 pm'",
+          "url": "https://www.opentable.com/r/the-vesper-campbell"
+        },
+        {
+          "label": "Restaurantji hours grid - Monday closed, Tue-Thu 4-9PM, Fri-Sat 4PM-12AM, Sun 3-9PM",
+          "url": "https://www.restaurantji.com/ca/campbell/the-vesper-/"
+        }
+      ]
+    },
+    {
+      "name": "Maruwu Seicha",
+      "city": "Campbell",
+      "why": "Wrong-location trap. The name was carried into this pass as a possible Campbell venue, but every Maruwu Seicha that exists is elsewhere - Culver City, San Francisco (1737 Post St) and Honolulu. No Campbell or Silicon Valley branch appears in any search. It is also a tea and dessert bar, not a lunch restaurant.",
+      "price_hint": "none",
+      "searched": "2026-09-15",
+      "links": [
+        {
+          "label": "Yelp - Maruwu Seicha, 1737 Post St, San Francisco CA 94115 (the nearest real location)",
+          "url": "https://www.yelp.com/biz/maruwu-seicha-san-francisco-3"
+        },
+        {
+          "label": "Yelp - Maruwu Seicha, 9426 Washington Blvd, Culver City CA 90232",
+          "url": "https://www.yelp.com/biz/maruwu-seicha-culver-city-5"
+        }
+      ]
+    },
+    {
+      "name": "Olivia Bros",
+      "city": "Los Altos",
+      "why": "Filed under Los Altos in Yelp's 'Best Lunch in Los Altos' roundup, but the business is actually at 286 W El Camino Real, Mountain View - a city already covered. No restaurant-owned website was found; the only priced menu is a third-party delivery card, and the hour sets disagree badly (Yelp: Mon closed, Tue-Fri 11:30am-10pm; Uber Eats: Mon 11:30am-9:30pm open; res-menu.net: Tuesday closed instead of Monday). Not enough agreement to print a row.",
+      "price_hint": "Uber Eats card lists combo deals - Shawarma + Cola + Fries $17.99, Cheesesteak Sub + Fries + Cola $19.99 - but these are delivery-platform prices, not a verified in-store lunch special.",
+      "searched": "2026-09-15",
+      "links": [
+        {
+          "label": "Yelp - Olivia Bros, 286 W El Camino Real, Mountain View CA 94041, (650) 705-2007",
+          "url": "https://www.yelp.com/biz/olivia-bros-mountain-view-2"
+        },
+        {
+          "label": "Uber Eats store page with JSON-LD hours and combo prices",
+          "url": "https://www.ubereats.com/store/olivia-bros-286-w-el-camino-real/eBWQ_vrXSKSGGKDcK_l53g"
+        }
+      ]
+    },
+    {
+      "name": "Discover Saratoga Restaurant Week",
+      "city": "Saratoga",
+      "why": "Wrong-state trap, and an event rather than a standing special. A search for 'Saratoga CA restaurant lunch special' returns discoversaratoga.org promoting '$15 Breakfast/Lunch Specials' for November 2-8 2026 - that is Saratoga County, NEW YORK ('the 21st Annual Saratoga County's Original Restaurant Week'), not Saratoga, California. Recorded so a later pass does not re-import it.",
+      "price_hint": "$15 breakfast/lunch, $25/$35/$45 dinners - New York pricing, irrelevant here.",
+      "searched": "2026-09-15",
+      "links": [
+        {
+          "label": "Discover Saratoga (NY) Restaurant Week page - 'November 2-8, 2026 ... Saratoga County's Original Restaurant Week'",
+          "url": "https://www.discoversaratoga.org/events/restaurant-week/"
+        }
+      ]
+    },
+    {
+      "name": "Kakuna Sushi (menu11 ordering domain)",
+      "city": "Milpitas",
+      "why": "Not a new venue - Kakuna Sushi Milpitas is already in the master list - but the ordering domain linked for it is wrong and is logged here so nobody trusts it. corner.inc publishes 'sameAs: https://kakuna.menu11.com/' for the Milpitas store; that page actually serves '43472 GRIMMER BLVD, FREMONT CA 94538, Order By Phone: (510) 252-1289'. Two different addresses and two different phone numbers behind one link.",
+      "price_hint": "An aggregator (atly.com) claims a '$11.99 two 6-piece roll lunch special', which could not be confirmed on any restaurant-controlled page.",
+      "searched": "2026-09-15",
+      "links": [
+        {
+          "label": "corner.inc record linking the Milpitas store to kakuna.menu11.com, with 11:15 AM - 2:15 PM lunch blocks Mon-Thu",
+          "url": "https://www.corner.inc/place/223354"
+        },
+        {
+          "label": "kakuna.menu11.com - resolves to the Fremont Grimmer Blvd store, not Milpitas",
+          "url": "https://kakuna.menu11.com/"
+        }
+      ]
+    },
+    {
+      "name": "Surmai (own-site menu path)",
+      "city": "Sunnyvale",
+      "why": "Already in the master list; logged as a broken-source note. Surmai's own site has no readable menu - surmai.us/menu returns 'Page Not Found', and the only navigation offered is Home, Catering Menu and Shop. Any Surmai lunch pricing therefore cannot be raised to official level from the restaurant's own site at this time.",
+      "price_hint": "Yelp popular-dish tiles show a la carte items ($15.99 chicken tikka kebab, $17.99 machi cha kalvan) and a 'Special Thali' with no published price.",
+      "searched": "2026-09-15",
+      "links": [
+        {
+          "label": "surmai.us/menu - the restaurant's own menu path returns 'Page Not Found'",
+          "url": "https://surmai.us/menu"
+        },
+        {
+          "label": "Yelp - Surmai, 500 Lawrence Expy Ste C, Sunnyvale CA 94085; note Tuesday shows as Closed on one capture",
+          "url": "https://www.yelp.com/biz/surmai-sunnyvale"
+        }
+      ]
+    },
+    {
+      "name": "10 Butchers Korean BBQ (own-site menu path)",
+      "city": "Sunnyvale",
+      "why": "Already in the master list; logged as a broken-source note. The restaurant's own menu path 10butchers.net/menu returns a 404 ('This page isn't available'), so the lunch-service pricing cannot be verified at official level. The 11:30 AM - 2:30 PM weekday lunch block itself is consistent across Yelp, Thrillist, RestaurantGuru and autoreserve.",
+      "price_hint": "Price bands only, and they disagree wildly: Yelp $$$$, RestaurantGuru $50-$100 per person, autoreserve 'USD 75'.",
+      "searched": "2026-09-15",
+      "links": [
+        {
+          "label": "10butchers.net/menu - 404 on the restaurant's own site",
+          "url": "https://www.10butchers.net/menu"
+        },
+        {
+          "label": "Yelp - 10 Butchers Korean BBQ, 595 E El Camino Real, Sunnyvale CA 94087; Mon-Fri 11:30 am - 2:30 pm lunch block",
+          "url": "https://www.yelp.com/biz/10-butchers-korean-bbq-sunnyvale"
+        }
+      ]
+    },
+    {
+      "name": "TripAdvisor hours for 10 Butchers Korean BBQ",
+      "city": "Sunnyvale",
+      "why": "Bad-data note. TripAdvisor's Irish mirror publishes JSON-LD opening hours of '05:00-23:00' Sunday and Wednesday-Saturday, '09:00-23:00' Monday and '05:00-17:00' Tuesday for this Korean BBQ restaurant - a 5 AM open is not credible and contradicts every other source including the restaurant's reservation partner. Logged so the figures are never merged.",
+      "price_hint": "n/a",
+      "searched": "2026-09-15",
+      "links": [
+        {
+          "label": "TripAdvisor.ie listing with the implausible 05:00 opening times",
+          "url": "https://www.tripadvisor.ie/Restaurant_Review-g33146-d19500888-Reviews-10_Butchers_Korean_BBQ-Sunnyvale_California.html"
+        }
+      ]
     }
   ],
   "notes": [
