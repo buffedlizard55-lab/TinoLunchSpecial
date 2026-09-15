@@ -1,0 +1,209 @@
+{
+  "batch": "16e",
+  "researched": "2026-09-14",
+  "pass": 16,
+  "scope": "Mountain View (Castro St), Palo Alto (Stanford Shopping Center), Milpitas (Barber Ct, S Park Victoria Dr), Los Altos (State St)",
+  "method": "Dedupe against the master and rejected lists first (this batch drops four candidates already mastered and turns them into cross-checks), then require an address plus a per-day hours block from two or more dated captures. Coordinates only where a source printed them.",
+  "entries": [
+    {
+      "name": "Maison Alyzee",
+      "city": "Mountain View",
+      "area": "Castro St (downtown Mountain View)",
+      "address": "212 Castro St, Mountain View, CA 94041",
+      "cuisine": "French bakery, coffee & tea, pastries and light fare",
+      "phone": "(650) 960-1212",
+      "lunch_special": {
+        "name": "No published lunch special - a bakery cafe open 8:00 AM every day, so the full lunch window is served at regular prices",
+        "price_from": null, "price_to": null,
+        "days": "daily",
+        "window": "8:00 AM - 9:15 PM Mon; 8:00 AM - 9:30 PM Tue-Wed; 8:00 AM - 9:45 PM Thu; 8:00 AM - 10:00 PM Fri-Sat; 8:00 AM - 8:00 PM Sun",
+        "includes": "Own site maisonalyzee.com. No printed lunch price captured; listed as $$ Bakeries, French, Coffee & Tea on Yelp."
+      },
+      "hours_tuesday": "8:00 AM - 9:30 PM",
+      "days_open": "Mon 8:00 AM - 9:15 PM, Tue 8:00 AM - 9:30 PM, Wed 8:00 AM - 9:30 PM, Thu 8:00 AM - 9:45 PM, Fri 8:00 AM - 10:00 PM, Sat 8:00 AM - 10:00 PM, Sun 8:00 AM - 8:00 PM (Yelp capture updated September 2026)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {"ok": false, "note": "Castro St, Mountain View - about 9 miles from the Cupertino destination."},
+      "verification": {"level": "listing", "sources": [
+        {"label": "Yelp business page (Sept 2026) - 212 Castro St, Mountain View CA 94041, (650) 960-1212, per-day hours with five distinct closing times, website maisonalyzee.com, 4.0 (920 reviews), $$ Bakeries/French/Coffee & Tea", "url": "https://www.yelp.com/biz/maison-alyzee-mountain-view"}
+      ], "accessed": "2026-09-14"},
+      "review_links": {"yelp": "https://www.yelp.com/biz/maison-alyzee-mountain-view", "google_maps": "https://www.google.com/maps/search/?api=1&query=Maison+Alyzee+212+Castro+St+Mountain+View"},
+      "flags": ["Found in a Los Altos pool during discovery but every source places it at 212 Castro St in Mountain View - city corrected before merging. Unusual per-day closing times (9:15 / 9:30 / 9:45 / 10:00 / 8:00 PM) are recorded verbatim rather than rounded."]
+    },
+    {
+      "name": "Roja Los Altos",
+      "city": "Los Altos",
+      "area": "State St (downtown Los Altos)",
+      "address": "242 State St, Los Altos, CA 94022",
+      "cuisine": "Contemporary / Mediterranean-influenced, reservation-driven",
+      "phone": "+1 (650) 935-2372",
+      "lunch_special": {
+        "name": "NO LUNCH SERVICE - dinner only from 5:00 PM, and closed Sunday",
+        "price_from": null, "price_to": null,
+        "days": "Mon-Sat dinner only (Sun closed)",
+        "window": "5:00 PM - 9:00 PM Mon-Thu; 5:00 PM - 9:30 PM Fri-Sat; Sun Closed",
+        "includes": "Recorded deliberately with no lunch offer: the earliest opening of any day is 5:00 PM, so no lunch special can exist. Now accepting reservations per the Yelp capture."
+      },
+      "hours_tuesday": "5:00 PM - 9:00 PM (dinner only)",
+      "days_open": "Mon 5:00 PM - 9:00 PM, Tue 5:00 PM - 9:00 PM, Wed 5:00 PM - 9:00 PM, Thu 5:00 PM - 9:00 PM, Fri 5:00 PM - 9:30 PM, Sat 5:00 PM - 9:30 PM, Sun Closed (Yelp capture updated September 2026)",
+      "open_on_trip_date": false,
+      "fits_return_bus": {"ok": false, "note": "Dinner-only venue: opens at 5:00 PM, after the lunch window and after a typical return bus."},
+      "verification": {"level": "listing", "sources": [
+        {"label": "Yelp business page (Sept 2026) - 242 State St, Los Altos CA 94022, +16509352372, Mon-Thu 5:00 pm-9:00 pm, Fri-Sat 5:00 pm-9:30 pm, Sun Closed, 'Now Accepting Reservations', 57 reviews", "url": "https://www.yelp.com/biz/roja-los-altos-los-altos"}
+      ], "accessed": "2026-09-14"},
+      "review_links": {"yelp": "https://www.yelp.com/biz/roja-los-altos-los-altos", "google_maps": "https://www.google.com/maps/search/?api=1&query=Roja+Los+Altos+242+State+St"},
+      "flags": ["Kept as an explicit no-lunch row so a reader searching downtown Los Altos sees the reason it cannot host this trip's lunch, rather than the venue silently missing. Only one source resolved: single-source listing level."]
+    },
+    {
+      "name": "Taro San Japanese Noodle Bar",
+      "city": "Palo Alto",
+      "area": "Stanford Shopping Center, Level 1",
+      "address": "717 Stanford Shopping Ctr, Palo Alto, CA 94304",
+      "cuisine": "Japanese udon / noodle bar",
+      "phone": "(650) 815-2700",
+      "lunch_special": {
+        "name": "Continuous 11:00 AM open with no separate lunch price tier published",
+        "price_from": null, "price_to": null,
+        "days": "daily",
+        "window": "11:00 AM - 9:00 PM Sun-Thu; 11:00 AM - 10:00 PM Fri-Sat",
+        "includes": "Own site tarosanudon.com. Business update on its Yelp page: 'Taro San is currently open from 11am - 8pm for takeout/delivery' - a fourth, different close time. No printed lunch price captured."
+      },
+      "hours_tuesday": "11:00 AM - 9:00 PM",
+      "days_open": "Mon-Thu 11:00 AM - 9:00 PM, Fri-Sat 11:00 AM - 10:00 PM, Sun 11:00 AM - 9:00 PM (Yelp Aug 2026, wanderlog and Apple Maps agree). Eater's 2019 opening piece recorded Mon-Sat 11 am-9 pm, Sun 11 am-8 pm.",
+      "open_on_trip_date": true,
+      "fits_return_bus": {"ok": false, "note": "Stanford Shopping Center - roughly 11 miles from the Cupertino destination."},
+      "verification": {"level": "conflicting", "sources": [
+        {"label": "Yelp business page (Aug 2026) - 717 Stanford Shopping Ctr, Palo Alto CA 94304, (650) 815-2700, Mon-Thu and Sun 11:00 am-9:00 pm, Fri-Sat 11:00 am-10:00 pm, website tarosanudon.com, 3.7 (1.1k reviews), plus business update 'open from 11am - 8pm'", "url": "https://www.yelp.com/biz/taro-san-japanese-noodle-bar-palo-alto?start=200"},
+        {"label": "Apple Maps place record - 'Stanford Shopping Center, Level 1', Sun-Thu 11:00 am-9:00 pm, Fri-Sat 11:00 am-10:00 pm, but ALSO a second block 'Mon-Fri 3:00 pm-6:00 pm' and cost band $$$$ against Yelp's $$", "url": "https://maps.apple.com/place?place-id=IE3E7CDBF3E1006CA"},
+        {"label": "wanderlog place record repeating the 11AM-9PM / 11AM-10PM pattern and tarosanudon.com", "url": "https://wanderlog.com/place/details/393952/taro-san-japanese-noodle-bar"},
+        {"label": "Eater SF opening coverage (Jan 2019) - 717 Stanford Shopping Center, (650) 815-2700, 'Hours are Monday through Saturday 11 a.m. to 9 p.m. and Sunday 11 a.m. to 8 p.m.'", "url": "https://sf.eater.com/2019/1/8/18172340/taro-san-japanese-noodle-bar-opens-palo-alto-stanford-shopping-center-udon"}
+      ], "accessed": "2026-09-14"},
+      "review_links": {"yelp": "https://www.yelp.com/biz/taro-san-japanese-noodle-bar-palo-alto", "google_maps": "https://www.google.com/maps/search/?api=1&query=Taro+San+Japanese+Noodle+Bar+717+Stanford+Shopping+Ctr+Palo+Alto"},
+      "flags": ["Four different closing patterns across four sources (9 pm, 10 pm, 8 pm takeout, and an Apple Maps 3-6 pm block that contradicts an 11 am open). Current three sources agree on the lunch block, so the lunch window is usable; the evening close is not."]
+    },
+    {
+      "name": "Com Tam Long Xuyen",
+      "city": "Milpitas",
+      "area": "S Park Victoria Dr (plaza with Ocean Market)",
+      "address": "72 S Park Victoria Dr, Milpitas, CA 95035",
+      "coords": [37.431522, -121.882698],
+      "coords_source": "Yahoo Local JSON-LD geo",
+      "cuisine": "Vietnamese (broken-rice plates, grilled pork chop)",
+      "phone": "(408) 946-1937",
+      "lunch_special": {
+        "name": "A reviewer-documented promotion: 'if you buy 5 dishes, you get 1 dish free' - no printed lunch price",
+        "price_from": null, "price_to": null,
+        "days": "daily",
+        "window": "11:00 AM - 9:00 PM per Yelp; Yahoo Local shows a 9:00 AM - 3:00 PM lunch-then-dinner split on weekdays",
+        "includes": "Reviewer quote kept out of the price column: 'Each entree came with a free drink - I picked...' and 'They are still running the promotion where if you buy 5 dishes, you get 1 dish free' (Oct 2025). Online ordering shows 11:00 am - 8:25 pm."
+      },
+      "hours_tuesday": "11:00 AM - 9:00 PM (Yelp) vs 9:00 AM - 3:00 PM and 5:00 PM - 10:00 PM (Yahoo Local) - see flag",
+      "days_open": "Yelp (Aug 2026): Mon-Sun 11:00 AM - 9:00 PM. Yahoo Local: Sun 9:00 AM - 10:00 PM, Mon-Fri 9:00 AM - 3:00 PM and 5:00 PM - 10:00 PM, Sat 9:00 AM - 10:00 PM. Order platform: 11:00 am - 8:25 pm daily.",
+      "open_on_trip_date": true,
+      "fits_return_bus": {"ok": false, "note": "S Park Victoria Dr, Milpitas - about 13 miles from the destination."},
+      "verification": {"level": "conflicting", "sources": [
+        {"label": "Yelp business page (Aug 2026) - 72 S Park Victoria Dr, Milpitas CA 95035, (408) 946-1937, Mon-Sun 11:00 am-9:00 pm, 4.2 (90 reviews), Claimed", "url": "https://www.yelp.com/biz/com-tam-long-xuyen-milpitas-2"},
+        {"label": "Yahoo Local record with JSON-LD - same address and phone, geo 37.431522/-121.882698, openingHoursSpecification Mon-Fri 9:00 am open closing 3:00 pm and 5:00 pm, Sat-Sun 9:00 am-10:00 pm, 'Cross Streets: Near the intersection of S Park Victoria Dr and Dempsey Rd'", "url": "https://local.yahoo.com/info-238208840-com-tam-long-xuyen-milpitas/"},
+        {"label": "Ordering platform store page - '72 S Park Victoria Dr, Milpitas CA 95035-5723', online ordering hours 11:00 am - 8:25 pm", "url": "https://order.online/store/com-tam-long-xuyen-milpitas-32687085"},
+        {"label": "Yelp 'Cheap Lunch Specials near Milpitas' capture ranking it 3rd for lunch with the free-drink-with-entree reviewer quote", "url": "https://www.yelp.com/search?find_desc=cheap+lunch+specials&find_loc=Milpitas,+CA+95035"}
+      ], "accessed": "2026-09-14"},
+      "review_links": {"yelp": "https://www.yelp.com/biz/com-tam-long-xuyen-milpitas-2", "google_maps": "https://www.google.com/maps/search/?api=1&query=Com+Tam+Long+Xuyen+72+S+Park+Victoria+Dr+Milpitas"},
+      "flags": ["A genuine weekday-hours conflict: Yelp says continuous 11:00 am-9:00 pm, Yahoo Local says a 9:00 am-3:00 pm block with a 5:00-10:00 pm dinner service. Both agree the restaurant is open at 11:30-1:30, so the trip date works either way. The buy-5-get-1-free promotion is reviewer-reported, not printed on an official menu, so it stays out of the price column."]
+    },
+    {
+      "name": "Ocean Pearl",
+      "city": "Milpitas",
+      "area": "Barber Ct (Milpitas Square)",
+      "address": "206 Barber Ct, Milpitas, CA 95035",
+      "cuisine": "Cantonese / Chinese seafood",
+      "phone": "+1 (408) 383-9888",
+      "lunch_special": {
+        "name": "A reviewer-confirmed lunch special: 'Chicken & BBQ Pork combo - lunch special Stir fried ho fun...' - no printed price",
+        "price_from": null, "price_to": null,
+        "days": "daily",
+        "window": "10:30 AM - 9:30 PM every day",
+        "includes": "Reviewer quote kept out of the price column: 'good given the price is very affordable Chicken & BBQ Pork combo - lunch special Stir fried ho fun...'. A 10:30 AM open covers the whole lunch window."
+      },
+      "hours_tuesday": "10:30 AM - 9:30 PM",
+      "days_open": "Every day 10:30 AM - 9:30 PM (Apple Maps place record, 'Milpitas Square', Cantonese Cuisine; Yelp capture shows 'Closed' with a $$$$ cost band)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {"ok": false, "note": "Barber Ct, Milpitas - about 13 miles from the destination."},
+      "verification": {"level": "listing", "sources": [
+        {"label": "Apple Maps place record - Ocean Pearl, Cantonese Cuisine, Milpitas Square, 'Every Day 10:30 AM - 9:30 PM', +1 (408) 383-9888, 206 Barber Ct, Milpitas CA 95035, Yelp 3.4 (224), cost band $$$$", "url": "https://maps.apple.com/place?place-id=IA3AB13D958D809CB"},
+        {"label": "Yelp 'Cheap Lunch Specials near Milpitas' capture ranking Ocean Pearl 3rd, 3.6 (187 reviews), $$, with the lunch-special combo reviewer quote", "url": "https://www.yelp.com/search?find_desc=cheap+lunch+specials&find_loc=Milpitas,+CA+95035"}
+      ], "accessed": "2026-09-14"},
+      "review_links": {"yelp": "https://www.yelp.com/search?find_desc=Ocean+Pearl&find_loc=Milpitas%2C+CA", "google_maps": "https://www.google.com/maps/search/?api=1&query=Ocean+Pearl+206+Barber+Ct+Milpitas"},
+      "flags": ["Price band disagrees sharply: Apple Maps $$$$ against Yelp $$. Rating also drifts (3.4 on Apple Maps' Yelp feed vs 3.6 in a Yelp search capture). One named source for the per-day hours block, so listing level."]
+    }
+  ],
+  "rejected": [
+    {
+      "name": "Pho & Bun",
+      "city": "Milpitas",
+      "address": "1810 Milmont Dr, Milpitas, CA 95035",
+      "reason": "PERMANENTLY CLOSED - the Yelp page title itself now reads 'PHO & BUN - CLOSED - Updated September 2026'. It had been surfaced by a Milpitas lunch search as '4.5 (301 reviews)' and is still live on TripAdvisor with full per-day hours (Tue-Sun 11:00 AM - 9:30 PM, Mon closed) and geo 37.455196/-121.91602, which is exactly the kind of stale listing that produces a bad lunch plan.",
+      "links": [
+        {"label": "Yelp page showing CLOSED status with the last-known hours and website pho-bun.com", "url": "https://www.yelp.com/biz/pho-and-bun-milpitas-3"},
+        {"label": "TripAdvisor page still advertising 'Open until 9:30 PM' with JSON-LD hours Tue-Sun 11:00-21:30 and phone +1 669-226-5778", "url": "https://www.tripadvisor.com/Restaurant_Review-g32717-d25265356-Reviews-Pho_Bun-Milpitas_California.html"}
+      ]
+    },
+    {
+      "name": "Los Altos Restaurant",
+      "city": "Salinas",
+      "address": "107 Kern St, Salinas, CA 93905",
+      "reason": "OUT OF AREA (Monterey County, ~55 miles south) - a name trap. The query was for Los Altos (Santa Clara County) dining and returned this Salinas taqueria instead, complete with full per-day hours 9:00 AM - 10:00 PM. Not within the 10-15 mile radius.",
+      "links": [{"label": "Yelp page for the Salinas location - 107 Kern St, Salinas CA 93905, (831) 422-5297", "url": "https://www.yelp.com/biz/los-altos-restaurant-salinas"}]
+    },
+    {
+      "name": "Los Altos Restaurant",
+      "city": "Goleta",
+      "address": "5892 Hollister Ave, Goleta, CA 93117",
+      "reason": "OUT OF AREA (Santa Barbara County, ~280 miles south) - second instance of the same Los Altos name trap in one query.",
+      "links": [{"label": "Yelp page for the Goleta location - 5892 Hollister Ave, Goleta CA 93117, (805) 869-2436", "url": "https://www.yelp.com/biz/los-altos-restaurant-goleta"}]
+    },
+    {
+      "name": "Los Altos Mexican Food",
+      "city": "San Bernardino",
+      "address": "245 N Waterman Ave, Ste C, San Bernardino, CA 92408",
+      "reason": "OUT OF AREA (Southern California, ~380 miles) - third instance of the same trap. Rejected on geography alone despite complete hours data.",
+      "links": [{"label": "Yelp page for the San Bernardino location - 245 N Waterman Ave Ste C, (909) 888-8487", "url": "https://www.yelp.com/biz/los-altos-mexican-food-san-bernardino"}]
+    },
+    {
+      "name": "Xiang Bobo Hunan Cuisine",
+      "city": "Cupertino",
+      "reason": "INSUFFICIENT DATA - five separate Yelp captures name this Cupertino Hunan restaurant (ranked 6th-10th in Chinese/Xian-food searches) with the same reviewer quote 'The rice is free and tasty', but none printed a street address or a per-day hours block. The rating itself is unstable across captures of the same business: 4.7 (3 reviews), 3.6 (8), 3.7 (9), 4.4 (27), 4.4 (28). Not merged: no address means no distance and no verifiable open/closed answer.",
+      "links": [
+        {"label": "Yelp Cupertino Chinese search capture - 'Xiang Bobo Hunan Cuisine 3.6 (8 reviews) Cupertino Opens in 31 min'", "url": "https://www.yelp.com/search?cflt=chinese&find_loc=Cupertino%2C+CA+95014"},
+        {"label": "Yelp 'Xian Food near Cupertino' capture - 'Xiang Bobo Hunan Cuisine 4.7 (3 reviews) Cupertino Open until 9:00 PM - Hot and New'", "url": "https://www.yelp.com/search?find_desc=Xian+Food&find_loc=Cupertino,+CA"}
+      ]
+    }
+  ],
+  "cross_checks": [
+    {
+      "master_id": "L544",
+      "master_name": "Los Jefes Taqueria, 1350 S Park Victoria Dr Ste 43, Milpitas (already 'conflicting')",
+      "what_the_fresh_capture_says": "Three dated Yelp captures of the SAME page now disagree with each other, which widens the existing conflict instead of settling it: Sept 2026 shows Mon 8:00 AM-9:00 PM, Tue-Fri 8:00 AM-10:00 PM, Sat 9:00 AM-10:00 PM, Sun 9:00 AM-8:00 PM ('Updated 2 months ago'); June 2026 shows Mon 7:30 AM-9:00 PM and Tue-Fri 7:30 AM-10:00 PM; January 2026 shows Mon-Wed 8:00 AM-8:00 PM, Thu 8:00 AM-9:00 PM, Sat-Sun 10:00 AM. All three agree the restaurant is open well before lunch and past it on Tuesday, so open_on_trip_date stays true. Phone +1 (669) 249-1947 in all three; 'Now Accepting Reservations' appears only in the newest.",
+      "links": [
+        {"label": "Newest Yelp capture (Sept 2026) - Mon 8-9, Tue-Fri 8-10, Sat 9-10, Sun 9-8", "url": "https://www.yelp.com/biz/los-jefes-taqueria-milpitas"},
+        {"label": "June 2026 capture of the same page - Mon 7:30-9, Tue-Fri 7:30-10, Sat 9-10, Sun 9-8", "url": "https://www.yelp.com/biz/los-jefes-taqueria-milpitas?start=30"},
+        {"label": "January 2026 capture of the same page - Mon-Wed 8-8, Thu 8-9, Fri 8-10, Sat-Sun 10-10 / 10-8", "url": "https://www.yelp.com/biz/los-jefes-taqueria-milpitas?start=40"}
+      ]
+    },
+    {
+      "master_id": "L208",
+      "master_name": "Yugen Ramen, 152 Castro St, Mountain View (listing)",
+      "what_the_fresh_capture_says": "The business is listed as 'Ramen Izakaya Yu-Gen' on Yelp and YellowPages at the identical address and phone (650) 428-0888, with its own site yugen-us.com. Four Yelp captures (March, May, July x2 2026) all show Mon-Sun 11:30 AM - 10:00 PM, matching L208's Tuesday hours. YellowPages' JSON-LD shows only 'Mo-Sa 11:30-22:00', i.e. no Sunday, and its website field points at a localized Facebook URL rather than yugen-us.com. Coordinates from YellowPages JSON-LD: 37.394363, -122.07881. Recommend keeping L208's hours and adding the Sunday disagreement plus the coords.",
+      "links": [
+        {"label": "Yelp page (July 2026) - 152 Castro St, Mountain View CA 94041, (650) 428-0888, Mon-Sun 11:30 am-10:00 pm, website yugen-us.com, 3.8 (1.4k reviews)", "url": "https://www.yelp.com/biz/ramen-izakaya-yu-gen-mountain-view-6"},
+        {"label": "YellowPages record with JSON-LD geo 37.394363/-122.07881 and openingHours 'Mo-Sa 11:30-22:00' (Sunday absent)", "url": "https://www.yellowpages.com/mountain-view-ca/mip/ramen-izakaya-yu-gen-521030711"}
+      ]
+    },
+    {
+      "master_id": "L76 / L650",
+      "master_name": "Lotus Thai Bistro (L76, 'official') and Lotus Thai Bistro Palo Alto Official (L650, 'official') - the same venue at 425 California Ave appears TWICE in the master list",
+      "what_the_fresh_capture_says": "DUPLICATE MASTER ROWS CONFIRMED. Both L76 ('425 California Avenue, Palo Alto, CA') and L650 ('425 California Ave, Palo Alto, CA 94306') are the same restaurant; L76 carries no hours ('open Tuesday (hours of day not published)') while L650 carries 11:00 AM - 3:00 PM; 5:00 PM - 9:30 PM. A fresh Apple Maps capture for lotusthaibistro.com, +1 (650) 289-0907 shows Mon-Fri 11:00 AM - 3:00 PM and 5:00 PM - 9:30 PM, Sat 11:00 AM - 3:00 PM and 4:00 PM - 9:30 PM, Sun CLOSED - so L650's hours are corroborated and the Saturday dinner start is 4:00 PM, not 5:00 PM. The same Apple Maps page also renders a contradictory variant ('Mon-Sat 11:00 AM - 3:00 PM, 5:00 PM - 9:30 PM'). Recommend merging L76 into L650 in a future dedupe pass rather than adding a third row.",
+      "links": [
+        {"label": "Apple Maps place record for Lotus Thai Bistro - 425 California Ave, Palo Alto CA 94306, lotusthaibistro.com, +1 (650) 289-0907, Mon-Fri 11:00 am-3:00 pm + 5:00 pm-9:30 pm, Sat 11:00 am-3:00 pm + 4:00 pm-9:30 pm, Sun Closed", "url": "https://maps.apple.com/place?place-id=I98A2D6D592972098"}
+      ]
+    }
+  ]
+}

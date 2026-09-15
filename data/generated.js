@@ -1539,11 +1539,11 @@ window.TINO_DATA = {
  },
  "specials":{
   "search_protocol":{
-   "requirement":"Verify line by line before adding anything to the master list; keep official/review links for manual review. Pass 15 (2026-09-14, approximate counts): about 70 fresh candidates were screened with about 60 new searches, Cupertino first and then the 10-15 mile ring. 27 candidates were written up with sources; 10 merged as new rows (L810-L819) and 17 proved to be rows the master list already carried, so they were merged as cross-checks instead of duplicates. 6 candidates were rejected with the page that produced the name (two of them turned out to be out-of-ring restaurants in New Jersey, one a Cupertino diner that closed permanently on 2025-12-31). Prices were printed only where a business' own page or an attached news/review quote gives one; photo captions and aggregator numbers never became prices. Pass 14 (2026-09-12): 118 new candidates from ring-city sweeps were each resolved against two or more pages before any row was written; 102 verified rows entered the master list (L708-L809). Seven rows whose Tuesday status is disputed between live captures carry open_on_trip_date = null rather than a guess.",
-   "queries_run":906,
-   "candidates_found":952,
-   "added_to_master":819,
-   "rejected_or_deferred":172,
+   "requirement":"Pass 16 (2026-09-14): about 45 searches plus 6 page fetches screened roughly 192 new candidate names across Cupertino, Palo Alto, Menlo Park, Mountain View, Los Altos, Los Gatos, Saratoga, Campbell, Sunnyvale, Santa Clara, San Jose (Willow Glen and west San Jose), Milpitas and Fremont. 56 candidates were written up with sources in eight batch files (16a-16h); 31 merged as new rows (L820-L850) and 25 proved to be venues the master list already carried, so their captures were filed as cross-checks and duplicate detections instead of second rows. 11 candidates were rejected (R156-R166): four are permanently closed listings that still print full weekly hours (Pho & Bun, Kitayama Yoichi, Bierhaus, the Square Pie Guys Local Kitchens unit), one is a New York Restaurant Week trap for Saratoga Springs NY, three are out-of-area name traps for 'Los Altos' (Salinas, Goleta, San Bernardino), one is a Mountain View venue that closed, and one could not be resolved to any street address. Six further verified rows are held back by street-address collisions (LUNCH-FLAG-98) rather than forced past the dedupe, and one row (Willow Street Pizza) plus five existing rows (L477, L463, L478, L208, L544) received fresh contradictory captures filed as cross-checks. No price was printed unless a business' own site or menu carried it; reviewer-quoted prices such as Kiya Sushi's $14.99 trio-roll lunch and Country Way's $7.95 bacon-burger lunch stayed out of the price columns. The pass therefore delivered 31 new rows against a 100-row target and reports the shortfall rather than padding it. Verify line by line before adding anything to the master list; keep official/review links for manual review. Pass 15 (2026-09-14, approximate counts): about 70 fresh candidates were screened with about 60 new searches, Cupertino first and then the 10-15 mile ring. 27 candidates were written up with sources; 10 merged as new rows (L810-L819) and 17 proved to be rows the master list already carried, so they were merged as cross-checks instead of duplicates. 6 candidates were rejected with the page that produced the name (two of them turned out to be out-of-ring restaurants in New Jersey, one a Cupertino diner that closed permanently on 2025-12-31). Prices were printed only where a business' own page or an attached news/review quote gives one; photo captions and aggregator numbers never became prices. Pass 14 (2026-09-12): 118 new candidates from ring-city sweeps were each resolved against two or more pages before any row was written; 102 verified rows entered the master list (L708-L809). Seven rows whose Tuesday status is disputed between live captures carry open_on_trip_date = null rather than a guess.",
+   "queries_run":951,
+   "candidates_found":1144,
+   "added_to_master":850,
+   "rejected_or_deferred":183,
    "search_date":"2026-09-07 through 2026-09-14",
    "cities_covered":[
     "Campbell",
@@ -1588,7 +1588,8 @@ window.TINO_DATA = {
     "2026-09-07 seventh pass short-window rows worth noting for the 2:30-3:00 PM return: It is Lunch Time SC (Mon-Fri 9:30-1:30), Sumiya SC (Mon-Fri 11:30-1:30), So Gong Dong PA (11:30-1:45), Xiaoman SV (8-1:30, Thu closed), Sweet Maple both branches (till 2:30), Backyard Cafe dropped (see dedupe note), Kung Sil SC (till 1:30).",
     "2026-09-11 eleventh pass: 59 new master rows L534-L592. Two merged rows were self-audited out after the merge (see note_eleventh_pass) because they were duplicates of rows already in the list. Four Santana Row / Castro Street closures (Left Bank, Rosie McCann's, Yankee Pier, Vida Tapas) were recorded as rejects with the URL that proves each closure, and downtown Sushi Confidential (26 N San Pedro St) was rejected for having no Tuesday service while its Willow Glen room was merged.",
     "2026-09-11 pass 12 follow-up: four additional lunch-service rows (Last Chance Restaurant, Nar Restaurant, Delarosa Palo Alto, and Madera at Rosewood Sand Hill) were independently checked for address and weekly hours; prices remain blank where no lunch-special price was printed.",
-    "2026-09-12 fourteenth pass: 102 new master rows L708-L809 from six incoming files (batch14_cupertino_sv_sc_mv, batch14_mil_mp_la, batch14_nw_fr, batch14_pa_sm_rc, batch14_sar_fc, batch14_sc_sj). Newark + Fremont carry most of the weight (38 rows). 13 candidates recorded as rejects (out-of-ring, closures, no-data, one duplicate of L459). Bell Tower Cafe (L799) superseded its pass-1 deferral. Seven rows carry open_on_trip_date = null (disputed Tuesday status). Newark Buffet (L758) is the only new priced row ($19.99 lunch buffet). Four verified rows are held back by street-number collisions - see LUNCH-FLAG-69."
+    "2026-09-12 fourteenth pass: 102 new master rows L708-L809 from six incoming files (batch14_cupertino_sv_sc_mv, batch14_mil_mp_la, batch14_nw_fr, batch14_pa_sm_rc, batch14_sar_fc, batch14_sc_sj). Newark + Fremont carry most of the weight (38 rows). 13 candidates recorded as rejects (out-of-ring, closures, no-data, one duplicate of L459). Bell Tower Cafe (L799) superseded its pass-1 deferral. Seven rows carry open_on_trip_date = null (disputed Tuesday status). Newark Buffet (L758) is the only new priced row ($19.99 lunch buffet). Four verified rows are held back by street-number collisions - see LUNCH-FLAG-69.",
+    "Pass 16 method note: the fastest reliable capture pattern is one multi-business query - 'yelp <City> hours address \"Name1\" \"Name2\" \"Name3\" \"Name4\"' - which returns two or three complete Yelp business captures (per-day hours, address, phone, price band, website) per search. City-level 'TOP 10 BEST Lunch' queries are only good for discovery because they print names and review quotes without addresses. Yelp pages themselves return HTTP 403 to direct fetches, so every Yelp citation in this pass is a dated search capture, and the verification level says so."
    ],
    "note_fourth_pass":"Fourth search pass added 49 rows (L102-L150): Lazy Dog $8.95+, Tomatina Pick Two $13.50, The Hut Taco Tuesday $9, Pasta Market Gourmet Lunch $14.95, Urban Grill weekday buffet $16.99 (two-domain conflict), Local Kitchens combos $13.00-$17.50, Sakoon buffet $19.99-$24.99 (Wed-Sun only), plus hours-verified rows with no published lunch special. 9 candidates were rejected this pass (closed, dinner-only, or no verifiable address).",
    "note_seventh_pass":"Seventh search pass added 100 rows (L253-L352). Only fully verified rows were written: 48 listing-level, 27 review-level, 20 official-level, 4 conflicting, 1 unverified (Taiwan Restaurant SJ - no hours captured). Three verified venues remain unmerged due to address-key collisions (see notes) and are listed in flags.json.",
@@ -41347,6 +41348,1573 @@ window.TINO_DATA = {
     "id":"L819",
     "added_in":"batch15_cupertino_core_independents.json",
     "distance_mi":3.77
+   },
+   {
+    "name":"Protege",
+    "city":"Palo Alto",
+    "area":"California Ave corridor (south of El Camino Real)",
+    "address":"250 S California Ave, Palo Alto, CA 94306",
+    "cuisine":"Contemporary American, upscale casual (a la carte lounge/bar, 7-course tasting menu in the dining room)",
+    "lunch_special":{
+     "name":"No lunch service at all - the restaurant is closed Monday and Sunday and opens at 5:00 PM every other day",
+     "price_from":null,
+     "price_to":null,
+     "days":"Tue-Sat dinner only",
+     "window":"5:00 PM - 9:30 PM",
+     "includes":"Absence is the finding: a Tuesday lunch is impossible here, so nothing is priced."
+    },
+    "hours_tuesday":"5:00 PM - 9:30 PM",
+    "days_open":"Mon Closed, Tue-Sat 5:00 PM - 9:30 PM, Sun Closed (Yelp captures updated Aug 2026 and May 2026 agree)",
+    "open_on_trip_date":false,
+    "fits_return_bus":{
+     "ok":false,
+     "note":"Dinner-only venue in Palo Alto; no lunch window to fit the return bus."
+    },
+    "verification":{
+     "level":"listing",
+     "sources":[
+      {
+       "label":"Yelp business page - 250 S California Ave, Palo Alto CA 94306; Mon Closed, Tue-Sat 5:00 pm-9:30 pm, Sun Closed; 'a la carte menu is served in our Lounge and Bar ... 7-course tasting menu' (capture updated August 2026)",
+       "url":"https://www.yelp.com/biz/prot%C3%A9g%C3%A9-palo-alto-2?start=140"
+      },
+      {
+       "label":"Yelp mobile capture of the same page, $$$$ New American / Cocktail Bars / Wine Bars, 4.4 (560 reviews), 'By appointment only'",
+       "url":"https://m.yelp.com/biz/prot%C3%A9g%C3%A9-palo-alto-2"
+      }
+     ],
+     "accessed":"2026-09-14"
+    },
+    "review_links":{
+     "yelp":"https://www.yelp.com/biz/prot%C3%A9g%C3%A9-palo-alto-2",
+     "google_maps":"https://www.google.com/maps/search/?api=1&query=Protege+250+S+California+Ave+Palo Alto"
+    },
+    "flags":[
+     "Listed because a reader searching 'Palo Alto lunch' will find this name recommended for Stanford dinners (roamrecs.com, 2026); the honest answer is that it serves no lunch. Recorded as a closed-for-lunch row, not as a deal."
+    ],
+    "id":"L820",
+    "coords":null,
+    "added_in":"batch16a_paloalto_verified.json",
+    "distance_mi":null
+   },
+   {
+    "name":"Cafe Venetia",
+    "city":"Palo Alto",
+    "area":"University Ave at Bryant (downtown)",
+    "address":"419 University Ave, Palo Alto, CA 94301",
+    "cuisine":"Coffee & tea, cafe (Italian coffee house with lunch plates)",
+    "phone":"(650) 323-3600",
+    "lunch_special":{
+     "name":"No published lunch special - all-day cafe menu served through the lunch window",
+     "price_from":null,
+     "price_to":null,
+     "days":"daily",
+     "window":"open continuously 7:30 AM - 10:00 PM (11:00 PM Fri-Sat), so lunch is served whenever you arrive",
+     "includes":"No discounted lunch plate was published in any 2025-2026 capture; the row records the open-all-day lunch window instead."
+    },
+    "hours_tuesday":"7:30 AM - 10:00 PM",
+    "days_open":"Mon-Thu 7:30 AM - 10:00 PM, Fri-Sat 7:30 AM - 11:00 PM, Sun 7:30 AM - 10:00 PM (three separate Yelp captures agree: Dec 2025, May 2026 and an undated capture)",
+    "open_on_trip_date":true,
+    "fits_return_bus":{
+     "ok":false,
+     "note":"Downtown Palo Alto, not walkable from the Cupertino destination; useful only if the trip is re-routed through the Palo Alto Caltrain station."
+    },
+    "verification":{
+     "level":"listing",
+     "sources":[
+      {
+       "label":"Yelp business page - 419 University Ave, Palo Alto CA 94301, (650) 323-3600, Mon-Thu 7:30 am-10:00 pm, Fri-Sat 7:30 am-11:00 pm, Sun 7:30 am-10:00 pm; website cafevenetia.com",
+       "url":"https://www.yelp.com/biz/cafe-venetia-palo-alto-2?start=160"
+      },
+      {
+       "label":"Second Yelp capture of the same page with the identical 7-day hours block and phone number",
+       "url":"https://m.yelp.com/biz/cafe-venetia-palo-alto-2"
+      }
+     ],
+     "accessed":"2026-09-14"
+    },
+    "review_links":{
+     "yelp":"https://www.yelp.com/biz/cafe-venetia-palo-alto-2",
+     "google_maps":"https://www.google.com/maps/search/?api=1&query=Cafe+Venetia+419+University+Ave+Palo+Alto"
+    },
+    "flags":[
+     "Address correction to a widely repeated figure: the 2022 drewdoran.com 'power dining' list and stanfordparentsclub.org put Cafe Venetia on University Ave without a number; the Yelp captures all say 419 University Ave."
+    ],
+    "id":"L821",
+    "coords":null,
+    "added_in":"batch16a_paloalto_verified.json",
+    "distance_mi":null
+   },
+   {
+    "name":"Dumpling Hours",
+    "city":"Palo Alto",
+    "area":"Bryant St (downtown, one block from University Ave)",
+    "address":"530 Bryant St, Palo Alto, CA 94301",
+    "cuisine":"Shanghainese dim sum, dumplings, soup",
+    "phone":"(650) 323-1888",
+    "lunch_special":{
+     "name":"No discounted lunch special - continuous all-day service from 11:30 AM, with printed a la carte prices",
+     "price_from":null,
+     "price_to":null,
+     "days":"daily",
+     "window":"11:30 AM - 9:00 PM (Sun to 8:30 PM); the whole block covers lunch",
+     "includes":"Printed menu prices from the Yelp menu capture: Juicy Pan-fried Pork Buns $17.95, Dan Dan Sesame Paste Dry Noodles $18.95, Steamed Pork Bun $14.95. These are a la carte prices, not a lunch deal, so nothing is entered in the price columns."
+    },
+    "hours_tuesday":"11:30 AM - 9:00 PM",
+    "days_open":"Mon-Sat 11:30 AM - 9:00 PM, Sun 11:30 AM - 8:30 PM (Yelp captures updated June, July and September 2026 all agree)",
+    "open_on_trip_date":true,
+    "fits_return_bus":{
+     "ok":false,
+     "note":"Downtown Palo Alto; outside the walkable Cupertino lunch window."
+    },
+    "verification":{
+     "level":"listing",
+     "sources":[
+      {
+       "label":"Yelp business page - 530 Bryant St, Palo Alto CA 94301, (650) 323-1888, Mon-Sat 11:30 am-9:00 pm, Sun 11:30 am-8:30 pm, with menu prices $14.95-$18.95",
+       "url":"https://www.yelp.com/biz/dumpling-hours-palo-alto"
+      },
+      {
+       "label":"Second capture (June 2026) of the same page repeating the 7-day hours block and the three priced dishes",
+       "url":"https://www.yelp.com/biz/dumpling-hours-palo-alto?start=50"
+      }
+     ],
+     "accessed":"2026-09-14"
+    },
+    "review_links":{
+     "yelp":"https://www.yelp.com/biz/dumpling-hours-palo-alto",
+     "google_maps":"https://www.google.com/maps/search/?api=1&query=Dumpling+Hours+530+Bryant+St+Palo+Alto"
+    },
+    "flags":[
+     "Recommended by name in the r/paloalto 'Food Recs Near Stanford University' thread; the thread itself carries no prices, so the Reddit mention is context only and the hours/prices come from the Yelp captures."
+    ],
+    "id":"L822",
+    "coords":null,
+    "added_in":"batch16a_paloalto_verified.json",
+    "distance_mi":null
+   },
+   {
+    "name":"Bevri",
+    "city":"Palo Alto",
+    "area":"University Ave (downtown)",
+    "address":"335 University Ave, Palo Alto, CA 94301",
+    "cuisine":"Georgian (khachapuri, khinkali dumplings, grilled meats, Georgian wine)",
+    "phone":"(650) 600-0433",
+    "lunch_special":{
+     "name":"No published lunch special - single continuous service from 11:30 AM every day",
+     "price_from":null,
+     "price_to":null,
+     "days":"daily",
+     "window":"11:30 AM - 9:00 PM (one earlier capture shows 10:00 PM Fri-Sat)",
+     "includes":"No discounted lunch plate found; the venue is recommended in r/paloalto for dumplings and khachapuri. Website bevri.com."
+    },
+    "hours_tuesday":"11:30 AM - 9:00 PM",
+    "days_open":"Daily 11:30 AM - 9:00 PM (June 2026 and May 2026 captures); a December 2025 capture shows Fri-Sat to 10:00 PM plus holiday closures Wed Dec 31 2025 and Thu Jan 1 2026",
+    "open_on_trip_date":true,
+    "fits_return_bus":{
+     "ok":false,
+     "note":"Downtown Palo Alto; outside the walkable Cupertino lunch window."
+    },
+    "verification":{
+     "level":"conflicting",
+     "sources":[
+      {
+       "label":"Yelp business page (Dec 2025 capture) - 335 University Ave, (650) 600-0433, Mon-Thu 11:30 am-9:00 pm, Fri-Sat 11:30 am-10:00 pm, Sun 11:30 am-9:00 pm, holiday closures listed",
+       "url":"https://www.yelp.com/biz/bevri-palo-alto-3"
+      },
+      {
+       "label":"Yelp capture (June 2026) of the newer page id - daily 11:30 am-9:00 pm, 4.0 (844 reviews), 'Bay Area's only Georgian restaurant'",
+       "url":"https://www.yelp.com/biz/bevri-palo-alto-4?start=20"
+      }
+     ],
+     "accessed":"2026-09-14"
+    },
+    "review_links":{
+     "yelp":"https://www.yelp.com/biz/bevri-palo-alto-4",
+     "google_maps":"https://www.google.com/maps/search/?api=1&query=Bevri+335+University+Ave+Palo+Alto"
+    },
+    "flags":[
+     "Two live Yelp page ids for one restaurant (bevri-palo-alto-3 and bevri-palo-alto-4) with different Friday/Saturday closing times and different review counts (739 vs 844). The newer id is treated as current; the older one is kept as history. Same pattern as the Uzumakiya address conflict in pass 15 (LUNCH-FLAG-77)."
+    ],
+    "id":"L823",
+    "coords":null,
+    "added_in":"batch16a_paloalto_verified.json",
+    "distance_mi":null
+   },
+   {
+    "name":"NOLA Restaurant & Bar",
+    "city":"Palo Alto",
+    "area":"Ramona St (downtown)",
+    "address":"535 Ramona St, Palo Alto, CA 94301",
+    "cuisine":"Cajun / Creole, New American",
+    "phone":"(650) 328-2722",
+    "lunch_special":{
+     "name":"No published lunch special - a lunch service exists (opens 11:30 AM Tue-Fri) but no discounted lunch plate was printed",
+     "price_from":null,
+     "price_to":null,
+     "days":"Tue-Sun (closed Monday)",
+     "window":"11:30 AM - 9:00/10:00 PM Tue-Fri, 11:00 AM - 10:00 PM Sat, 11:00 AM - 8:00 PM Sun",
+     "includes":"Last call for food is 9:00 PM (8:00 PM Sunday) per the business' own answer in the Yelp Q&A. Website nolas.com."
+    },
+    "hours_tuesday":"11:30 AM - 9:00 PM",
+    "days_open":"Mon Closed, Tue-Thu 11:30 AM - 9:00 PM, Fri 11:30 AM - 10:00 PM, Sat 11:00 AM - 10:00 PM, Sun 11:00 AM - 8:00 PM (three 2026 Yelp captures agree)",
+    "open_on_trip_date":true,
+    "fits_return_bus":{
+     "ok":false,
+     "note":"Downtown Palo Alto; outside the walkable Cupertino lunch window."
+    },
+    "verification":{
+     "level":"listing",
+     "sources":[
+      {
+       "label":"Yelp business page (July 2026 capture) - 535 Ramona St, (650) 328-2722, Mon Closed, Tue-Thu 11:30 am-9:00 pm, Fri 11:30 am-10:00 pm, Sat 11:00 am-10:00 pm, Sun 11:00 am-8:00 pm",
+       "url":"https://www.yelp.com/biz/nola-restaurant-and-bar-palo-alto?start=2440"
+      },
+      {
+       "label":"Second capture (June 2026) with the business' own Q&A answer on last food call: '9pm except Sunday is 8pm'",
+       "url":"https://www.yelp.com/biz/nola-restaurant-and-bar-palo-alto?start=1820"
+      }
+     ],
+     "accessed":"2026-09-14"
+    },
+    "review_links":{
+     "yelp":"https://www.yelp.com/biz/nola-restaurant-and-bar-palo-alto",
+     "google_maps":"https://www.google.com/maps/search/?api=1&query=NOLA+Restaurant+and+Bar+535+Ramona+St+Palo+Alto"
+    },
+    "flags":[
+     "Named in the r/paloalto Stanford thread as 'Nola - southern food / fusion'; the Reddit post carries no prices or hours, so every figure here comes from the Yelp captures."
+    ],
+    "id":"L824",
+    "coords":null,
+    "added_in":"batch16a_paloalto_verified.json",
+    "distance_mi":null
+   },
+   {
+    "name":"Vina Enoteca",
+    "city":"Palo Alto",
+    "area":"Welch Rd (Stanford Medical Center corridor, off University Ave)",
+    "address":"700 Welch Rd, Ste 110, Palo Alto, CA 94305",
+    "cuisine":"Italian, wine bar",
+    "phone":"(650) 646-3477 and (650) 752-4757 (two numbers appear on two captures of the same page)",
+    "lunch_special":{
+     "name":"No lunch service - closed Monday and Sunday, dinner only from 5:00 PM",
+     "price_from":null,
+     "price_to":null,
+     "days":"Tue-Sat dinner only",
+     "window":"5:00 PM - 9:00 PM",
+     "includes":"A Tuesday lunch is impossible here. Listed so the recommendation that surfaces for 'Palo Alto Italian near Stanford' is answered with its real hours."
+    },
+    "hours_tuesday":"5:00 PM - 9:00 PM",
+    "days_open":"Mon Closed, Tue-Sat 5:00 PM - 9:00 PM, Sun Closed (three Yelp captures: Nov 2025 twice and July 2026)",
+    "open_on_trip_date":false,
+    "fits_return_bus":{
+     "ok":false,
+     "note":"Dinner-only venue; no lunch window."
+    },
+    "verification":{
+     "level":"conflicting",
+     "sources":[
+      {
+       "label":"Yelp business page (July 2026 capture) - 700 Welch Rd Ste 110, Palo Alto CA 94305, Mon Closed, Tue-Sat 5:00 pm-9:00 pm, Sun Closed, phone (650) 752-4757, website vinaenoteca.com",
+       "url":"https://www.yelp.com/biz/vina-enoteca-palo-alto-4?start=120"
+      },
+      {
+       "label":"Same page, Nov 2025 capture, identical hours but phone (650) 646-3477",
+       "url":"https://www.yelp.com/biz/vina-enoteca-palo-alto-4?start=165"
+      }
+     ],
+     "accessed":"2026-09-14"
+    },
+    "review_links":{
+     "yelp":"https://www.yelp.com/biz/vina-enoteca-palo-alto-4",
+     "google_maps":"https://www.google.com/maps/search/?api=1&query=Vina+Enoteca+700+Welch+Rd+Palo+Alto"
+    },
+    "flags":[
+     "Two different phone numbers on two captures of the same Yelp page and a rating that moved 3.9 (474) to 3.9 (481) - the contact number should be confirmed by phone before relying on it. Hours are identical in every capture, so the 'no lunch' finding is solid."
+    ],
+    "id":"L825",
+    "coords":null,
+    "added_in":"batch16a_paloalto_verified.json",
+    "distance_mi":null
+   },
+   {
+    "name":"Orange Bowl",
+    "city":"Campbell",
+    "area":"E Sunnyoaks Ave (off Winchester Blvd, downtown Campbell)",
+    "address":"186 E Sunnyoaks Ave, Ste F, Campbell, CA 95008",
+    "cuisine":"Burgers, sandwiches, Asian fusion (a long-running counter-order spot)",
+    "phone":"(408) 370-6755",
+    "lunch_special":{
+     "name":"Daytime lunch service every weekday from 6:00 AM to 3:00 PM - a breakfast-and-lunch counter with no published discount",
+     "price_from":null,
+     "price_to":null,
+     "days":"Mon-Sat (Sun closed)",
+     "window":"6:00 AM - 3:00 PM (7:00 AM Saturday), 5:00 PM - 8:00 PM",
+     "includes":"Reviewer quote kept out of the price column: 'Eating this meal reminded me of growing up...' Website orangebowls.com."
+    },
+    "hours_tuesday":"6:00 AM - 3:00 PM, 5:00 PM - 8:00 PM",
+    "days_open":"Mon-Fri 6:00 AM - 3:00 PM and 5:00 PM - 8:00 PM, Sat 7:00 AM - 3:00 PM and 5:00 PM - 8:00 PM, Sun Closed (Yelp capture, updated 3 months before access; 4.8 with 91-94 reviews across captures)",
+    "open_on_trip_date":true,
+    "fits_return_bus":{
+     "ok":false,
+     "note":"Downtown Campbell - the 3:00 PM daytime cutoff would fit an afternoon return, but the venue is not walkable from the Cupertino destination."
+    },
+    "verification":{
+     "level":"listing",
+     "sources":[
+      {
+       "label":"Yelp business page - 186 E Sunnyoaks Ave Ste F, Campbell CA 95008, (408) 370-6755, Mon-Fri 6:00 am-3:00 pm + 5:00 pm-8:00 pm, Sat 7:00 am-3:00 pm + 5:00 pm-8:00 pm, Sun Closed, website orangebowls.com",
+       "url":"https://www.yelp.com/biz/orange-bowl-campbell"
+      },
+      {
+       "label":"Yelp 'Food Places near Winchester Blvd, Campbell' capture ranking Orange Bowl 2nd, 4.8 (91 reviews), 'Open until 3:00 PM'",
+       "url":"https://www.yelp.com/search?find_desc=Food+Places&find_loc=Winchester+Boulevard%2C+Campbell%2C+CA"
+      }
+     ],
+     "accessed":"2026-09-14"
+    },
+    "review_links":{
+     "yelp":"https://www.yelp.com/biz/orange-bowl-campbell",
+     "google_maps":"https://www.google.com/maps/search/?api=1&query=Orange+Bowl+186+E+Sunnyoaks+Ave+Campbell"
+    },
+    "flags":[
+     "Opens at 6:00 AM, which makes it one of the earliest midday-food options in the ring; the 3:00 PM close means a late lunch is not possible."
+    ],
+    "id":"L826",
+    "coords":null,
+    "added_in":"batch16c_ring_verified.json",
+    "distance_mi":null
+   },
+   {
+    "name":"Super Bao",
+    "city":"Mountain View",
+    "area":"N Rengstorff Ave (north Mountain View, near Shoreline)",
+    "address":"108A N Rengstorff Ave, Mountain View, CA 94043",
+    "cuisine":"Dim sum, noodles, Szechuan",
+    "phone":"(650) 967-7334",
+    "lunch_special":{
+     "name":"Explicit lunch block - the restaurant closes between lunch and dinner every day (2:30 PM weekdays, 3:00 PM weekends)",
+     "price_from":null,
+     "price_to":null,
+     "days":"daily",
+     "window":"11:00 AM - 2:30 PM (Mon-Fri), 11:00 AM - 3:00 PM (Sat-Sun), then 5:00 PM - 9:00 PM",
+     "includes":"Reviewer quote kept out of the price column: 'A go to lunch spot for me! This place is consistently good...' Website superbaoca.com. Yelp's city capture adds 'Discounts available'."
+    },
+    "hours_tuesday":"11:00 AM - 2:30 PM, 5:00 PM - 9:00 PM",
+    "days_open":"Mon-Fri 11:00 AM - 2:30 PM and 5:00 PM - 9:00 PM, Sat-Sun 11:00 AM - 3:00 PM and 5:00 PM - 9:00 PM (Yelp September 2026 capture and the Apple Maps place record agree on every day)",
+    "open_on_trip_date":true,
+    "fits_return_bus":{
+     "ok":false,
+     "note":"N Rengstorff Ave, Mountain View; the 2:30 PM weekday cutoff is early and the venue is not walkable from the destination."
+    },
+    "verification":{
+     "level":"listing",
+     "sources":[
+      {
+       "label":"Yelp business page - 108A N Rengstorff Ave, Mountain View CA 94043, (650) 967-7334, Mon-Fri 11:00 am-2:30 pm + 5:00 pm-9:00 pm, Sat-Sun 11:00 am-3:00 pm + 5:00 pm-9:00 pm, website superbaoca.com, 4.4 (123 reviews)",
+       "url":"https://www.yelp.com/biz/super-bao-mountain-view-2"
+      },
+      {
+       "label":"Apple Maps place record - 108 N Rengstorff Ave (no suite letter), same phone and website, Mon-Fri 11:00 am-2:30 pm + 5:00 pm-9:00 pm, Sat-Sun 11:00 am-3:00 pm + 5:00 pm-9:00 pm, 4.4 from 78 Yelp reviews",
+       "url":"https://maps.apple.com/place?place-id=IB28745A2607F5C9F"
+      },
+      {
+       "label":"Yelp 'Lunch in Mountain View' capture ranking Super Bao 4th with 'Discounts available' and the 'go to lunch spot' quote",
+       "url":"https://www.yelp.com/search?find_desc=Lunch&find_loc=Mountain+View%2C+CA"
+      }
+     ],
+     "accessed":"2026-09-14"
+    },
+    "review_links":{
+     "yelp":"https://www.yelp.com/biz/super-bao-mountain-view-2",
+     "google_maps":"https://www.google.com/maps/search/?api=1&query=Super+Bao+108A+N+Rengstorff+Ave+Mountain+View"
+    },
+    "flags":[
+     "Street-number mismatch between sources: Yelp says 108A N Rengstorff Ave, Apple Maps says 108 N Rengstorff Ave. Same phone, same website, same hours - treated as one business with the suite letter dropped by one source."
+    ],
+    "id":"L827",
+    "coords":null,
+    "added_in":"batch16c_ring_verified.json",
+    "distance_mi":null
+   },
+   {
+    "name":"Mi Cocina Catracha",
+    "city":"San Jose",
+    "area":"S Winchester Blvd (west San Jose)",
+    "address":"1539 S Winchester Blvd, San Jose, CA 95128",
+    "cuisine":"Honduran and Salvadoran (pupusas, baleadas)",
+    "phone":"(408) 420-8789",
+    "lunch_special":{
+     "name":"No published lunch special - open 11:00 AM - 9:00 PM every day of the week",
+     "price_from":null,
+     "price_to":null,
+     "days":"daily",
+     "window":"11:00 AM - 9:00 PM",
+     "includes":"A very new listing (11 photos, 14 reviews, 'Claimed'); no menu prices captured. Yelp's Campbell-area Latin search places it 1.2 miles from Winchester Blvd."
+    },
+    "hours_tuesday":"11:00 AM - 9:00 PM",
+    "days_open":"Mon-Sun 11:00 AM - 9:00 PM (single Yelp capture, August 2026 - only one source found, so the row is listing-level)",
+    "open_on_trip_date":true,
+    "fits_return_bus":{
+     "ok":false,
+     "note":"S Winchester Blvd, San Jose - roughly 8-9 miles from the Cupertino destination; not a walk-up lunch."
+    },
+    "verification":{
+     "level":"listing",
+     "sources":[
+      {
+       "label":"Yelp business page (Aug 2026) - 1539 S Winchester Blvd, San Jose CA 95128 (West San Jose), (408) 420-8789, Mon-Sun 11:00 am-9:00 pm, 4.4 (14 reviews), Honduran/Salvadoran/Food Trucks",
+       "url":"https://www.yelp.com/biz/mi-cocina-catracha-san-jose"
+      },
+      {
+       "label":"Yelp 'Latin American Food near Winchester Blvd, Campbell' capture ranking it 6th, '1.2 Miles', 'Closes in 9 min'",
+       "url":"https://www.yelp.com/search?find_desc=Latin+American+Food&find_loc=Winchester+Boulevard%2C+Campbell%2C+CA"
+      }
+     ],
+     "accessed":"2026-09-14"
+    },
+    "review_links":{
+     "yelp":"https://www.yelp.com/biz/mi-cocina-catracha-san-jose",
+     "google_maps":"https://www.google.com/maps/search/?api=1&query=Mi+Cocina+Catracha+1539+S+Winchester+Blvd+San+Jose"
+    },
+    "flags":[
+     "Only 14 reviews and 11 photos at the time of capture - too new for a reliable hours record; verify by phone before relying on it."
+    ],
+    "id":"L828",
+    "coords":null,
+    "added_in":"batch16c_ring_verified.json",
+    "distance_mi":null
+   },
+   {
+    "name":"Maya's Cafe",
+    "city":"San Jose",
+    "area":"Union Ave, Cambrian Park",
+    "address":"2616 Union Ave, San Jose, CA 95124",
+    "cuisine":"Latin American / Honduran",
+    "phone":"(408) 559-8700",
+    "lunch_special":{
+     "name":"Closed on Tuesdays; open 10:00 AM - 9:00 PM the rest of the week with no published lunch discount",
+     "price_from":null,
+     "price_to":null,
+     "days":"Mon and Wed-Sun (Tue closed)",
+     "window":"10:00 AM - 9:00 PM (one capture shows Thursday to 10:00 PM)",
+     "includes":"A photo caption prices 'Camarones Aztecas ($24.50)' - a dinner-priced entree, not a lunch special. Two different website domains are attached to the same address in different captures."
+    },
+    "hours_tuesday":"CLOSED (Tuesday)",
+    "days_open":"Mon 10:00 AM - 9:00 PM, Tue CLOSED, Wed 10:00 AM - 9:00 PM, Thu 10:00 AM - 9:00 PM (one capture says 10:00 PM), Fri-Sun 10:00 AM - 9:00 PM (Yelp captures Jan, July and Aug 2026 plus the restaurant's own menu site)",
+    "open_on_trip_date":false,
+    "fits_return_bus":{
+     "ok":false,
+     "note":"Closed on the Tuesday trip date."
+    },
+    "verification":{
+     "level":"conflicting",
+     "sources":[
+      {
+       "label":"Restaurant's own menu site - Address 2616 Union Ave San Jose CA 95124, Phone (408) 559-8700, work hours MON 10:00 AM-9:00 PM, TUE Closed, WED-FRI 10:00 AM-9:00 PM, SAT-SUN 10:00 AM-9:00 PM",
+       "url":"https://mayas-cafe.wa-cafe.com/"
+      },
+      {
+       "label":"Yelp business page (Aug 2026) - 2616 Union Ave, Cambrian Park, Mon/Wed-Fri and Sun 10:00 am-9:00 pm, Tue Closed, 4.3 (757 reviews), photo caption 'Camaron\u00e9s Aztecas ($24.50)'",
+       "url":"https://www.yelp.com/biz/mayas-cafe-san-jose-2"
+      },
+      {
+       "label":"Yelp capture (July 2026) of the same page giving THU 10:00 am-10:00 pm and listing a SECOND website domain, mayas-cafe.cafes-city.com",
+       "url":"https://www.yelp.com/biz/mayas-cafe-san-jose-2?start=200"
+      }
+     ],
+     "accessed":"2026-09-14"
+    },
+    "review_links":{
+     "yelp":"https://www.yelp.com/biz/mayas-cafe-san-jose-2",
+     "google_maps":"https://www.google.com/maps/search/?api=1&query=Mayas+Cafe+2616+Union+Ave+San+Jose"
+    },
+    "flags":[
+     "Two irregularities: Thursday's close is 9:00 PM in three captures and 10:00 PM in one, and two different website domains (mayas-cafe.wa-cafe.com and mayas-cafe.cafes-city.com) are attached to the same address and phone in different captures - both look like generated menu-mirror sites rather than a restaurant-owned domain. The Tuesday closure is consistent everywhere, which is what matters for this trip."
+    ],
+    "id":"L829",
+    "coords":null,
+    "added_in":"batch16c_ring_verified.json",
+    "distance_mi":null
+   },
+   {
+    "name":"British Bankers Club",
+    "city":"Menlo Park",
+    "area":"Santa Cruz Ave (downtown Menlo Park)",
+    "address":"555 Santa Cruz Ave, Menlo Park, CA 94025",
+    "cuisine":"American, seafood, cocktail bar (rooftop patio)",
+    "phone":"(650) 382-3191",
+    "lunch_special":{
+     "name":"No lunch service - the restaurant opens at 4:00 PM every day of the week",
+     "price_from":null,
+     "price_to":null,
+     "days":"daily, from 4:00 PM",
+     "window":"4:00 PM - 9:00/9:30/10:00 PM",
+     "includes":"The business' own Yelp update: 'Happy Hour Monday - Friday 4 - 6pm excluding holidays. Roof Top Now Open Tuesday - Saturday, same business hours with Exclusive New Menu Items and Specialty Cocktails.' A happy hour, not a lunch special - and it starts after lunch. Own site britishbankersclub.com prints menu prices (Shrimp Roll $26, BBC Burger $28, Fish and Chips $20) but they are dinner prices."
+    },
+    "hours_tuesday":"4:00 PM - 9:30 PM",
+    "days_open":"Mon-Thu 4:00 PM - 9:30 PM, Fri-Sat 4:00 PM - 10:00 PM, Sun 4:00 PM - 9:00 PM (three Yelp captures March, July and August 2026 agree)",
+    "open_on_trip_date":false,
+    "fits_return_bus":{
+     "ok":false,
+     "note":"Opens at 4:00 PM - no lunch service at all."
+    },
+    "verification":{
+     "level":"official",
+     "sources":[
+      {
+       "label":"Restaurant's own site with a printed menu and prices (Shrimp Roll $26, BBC Burger $28, Fish and Chips $20, happy hour 'Everyday 4 pm to 6 pm', '$2 OFF on all House Made Sourdough Pizzas')",
+       "url":"https://www.britishbankersclub.com/"
+      },
+      {
+       "label":"Yelp business page (Aug 2026) - 555 Santa Cruz Ave, Menlo Park CA 94025, Mon-Thu 4:00 pm-9:30 pm, Fri-Sat 4:00 pm-10:00 pm, Sun 4:00 pm-9:00 pm, plus the owner's happy-hour/rooftop update",
+       "url":"https://www.yelp.com/biz/british-bankers-club-menlo-park-4"
+      },
+      {
+       "label":"Second capture (July 2026) repeating address, phone (650) 382-3191 and the identical 7-day block",
+       "url":"https://www.yelp.com/biz/british-bankers-club-menlo-park-4?start=80"
+      }
+     ],
+     "accessed":"2026-09-14"
+    },
+    "review_links":{
+     "yelp":"https://www.yelp.com/biz/british-bankers-club-menlo-park-4",
+     "google_maps":"https://www.google.com/maps/search/?api=1&query=British+Bankers+Club+555+Santa+Cruz+Ave+Menlo+Park"
+    },
+    "flags":[
+     "Listed as a no-lunch row because it surfaces in Menlo Park dining searches; the 4:00 PM daily open is confirmed by three captures and by the venue's own happy-hour text."
+    ],
+    "id":"L830",
+    "coords":null,
+    "added_in":"batch16c_ring_verified.json",
+    "distance_mi":null
+   },
+   {
+    "name":"Menlo Tavern",
+    "city":"Menlo Park",
+    "area":"El Camino Real, inside The Stanford Park Hotel",
+    "address":"100 El Camino Real, Menlo Park, CA 94025",
+    "cuisine":"American, breakfast and brunch, cocktail bar (hotel restaurant)",
+    "phone":"(650) 330-2790",
+    "lunch_special":{
+     "name":"A distinct weekday lunch service 11:00 AM - 2:30 PM (separate from breakfast and dinner); OpenTable prints priced breakfast items but no lunch-special price",
+     "price_from":null,
+     "price_to":null,
+     "days":"Mon-Fri lunch; Sat-Sun brunch runs continuously",
+     "window":"breakfast 7:00 AM - 10:30 AM, lunch 11:00 AM - 2:30 PM, dinner 5:00 PM - 10:00 PM (Mon-Fri); Sat-Sun 7:00 AM - 10:00 PM continuous",
+     "includes":"OpenTable 'Additional information' lists: Breakfast Daily 7:00 am-10:30 am, Lunch Mon-Fri 11:00 am-2:30 pm, Brunch Sat/Sun 11:00 am-2:00 pm, Bar Daily 4:00 pm-10:00 pm, Dinner Daily 5:00 pm-9:00 pm. OpenTable prints priced breakfast items ($23-$34) but no lunch price. Website menlotavern.com."
+    },
+    "hours_tuesday":"7:00 AM - 10:30 AM, 11:00 AM - 2:30 PM, 5:00 PM - 10:00 PM",
+    "days_open":"Mon-Fri 7:00 AM - 10:30 AM, 11:00 AM - 2:30 PM and 5:00 PM - 10:00 PM; Sat-Sun 7:00 AM - 10:00 PM (Yelp capture July 2026; OpenTable shows dinner to 9:00 PM)",
+    "open_on_trip_date":true,
+    "fits_return_bus":{
+     "ok":false,
+     "note":"Menlo Park on El Camino Real; not walkable from the Cupertino destination."
+    },
+    "verification":{
+     "level":"official",
+     "sources":[
+      {
+       "label":"OpenTable profile - 100 El Camino Real, Menlo Park CA 94025, 4.7 (580 reviews), $31 to $50, hours: Breakfast Daily 7:00 am-10:30 am, Lunch Mon-Fri 11:00 am-2:30 pm, Brunch Sat/Sun 11:00 am-2:00 pm, Bar Daily 4:00 pm-10:00 pm, Dinner Daily 5:00 pm-9:00 pm, plus a priced breakfast menu",
+       "url":"https://www.opentable.com/r/menlo-tavern-menlo-park"
+      },
+      {
+       "label":"Yelp business page (July 2026) - 100 El Camino Real, 'Located in: The Stanford Park Hotel', (650) 330-2790, three daily blocks Mon-Fri and continuous Sat-Sun, website menlotavern.com, 3.8 (172 reviews)",
+       "url":"https://www.yelp.com/biz/menlo-tavern-menlo-park"
+      }
+     ],
+     "accessed":"2026-09-14"
+    },
+    "review_links":{
+     "yelp":"https://www.yelp.com/biz/menlo-tavern-menlo-park",
+     "google_maps":"https://www.google.com/maps/search/?api=1&query=Menlo+Tavern+100+El+Camino+Real+Menlo+Park"
+    },
+    "flags":[
+     "Dinner close differs between the two sources (10:00 PM on Yelp, 9:00 PM on OpenTable) and OpenTable adds a separate 'Bar Daily 4:00 pm-10:00 pm' block that overlaps it. The lunch block itself (11:00 AM - 2:30 PM Mon-Fri) is identical in both, so only the evening is in dispute."
+    ],
+    "id":"L831",
+    "coords":null,
+    "added_in":"batch16c_ring_verified.json",
+    "distance_mi":null
+   },
+   {
+    "name":"The Pho Cabin",
+    "city":"Los Altos",
+    "area":"State St (downtown Los Altos)",
+    "address":"200 State St, Los Altos, CA 94022",
+    "cuisine":"Vietnamese (pho, banh mi, vermicelli)",
+    "phone":"(650) 917-1328",
+    "lunch_special":{
+     "name":"Lunch block 11:00 AM - 3:00 PM Tue-Sat; closed Monday and Sunday",
+     "price_from":null,
+     "price_to":null,
+     "days":"Tue-Sat",
+     "window":"11:00 AM - 3:00 PM lunch, 5:00 PM - 8:00 PM dinner",
+     "includes":"No lunch price captured. Business' own Yelp text: 'New Vietnamese Restaurant in Los Altos. Established in 2019.' Restaurantji lists Banh MI, Vegetarian Pho, Grilled Pork Vermicelli and a Large Combo Pho as customer favourites without prices."
+    },
+    "hours_tuesday":"11:00 AM - 3:00 PM, 5:00 PM - 8:00 PM",
+    "days_open":"Mon Closed, Tue-Sat 11:00 AM - 3:00 PM and 5:00 PM - 8:00 PM, Sun Closed (two Yelp captures, April and July 2026, agree exactly)",
+    "open_on_trip_date":true,
+    "fits_return_bus":{
+     "ok":false,
+     "note":"Downtown Los Altos; not walkable from the Cupertino destination."
+    },
+    "verification":{
+     "level":"listing",
+     "sources":[
+      {
+       "label":"Yelp business page (July 2026) - 200 State St, Los Altos CA 94022, (650) 917-1328, Mon Closed, Tue-Sat 11:00 am-3:00 pm + 5:00 pm-8:00 pm, Sun Closed, 4.3 (241 reviews), 'Established in 2019'",
+       "url":"https://www.yelp.com/biz/the-pho-cabin-los-altos"
+      },
+      {
+       "label":"Yelp mobile capture (April 2026) with the identical 7-day block and phone number",
+       "url":"https://m.yelp.com/biz/the-pho-cabin-los-altos?start=20"
+      },
+      {
+       "label":"Restaurantji Los Altos listing - 'The Pho Cabin 200 State St, Los Altos Vietnamese - $' with customer favourites Banh MI, Vegetarian Pho, Grilled Pork Vermicelli, Large Combo Pho",
+       "url":"https://www.restaurantji.com/ca/los-altos/"
+      }
+     ],
+     "accessed":"2026-09-14"
+    },
+    "review_links":{
+     "yelp":"https://www.yelp.com/biz/the-pho-cabin-los-altos",
+     "google_maps":"https://www.google.com/maps/search/?api=1&query=The+Pho+Cabin+200+State+St+Los+Altos"
+    },
+    "flags":[
+     "The 3:00 PM lunch cutoff is the earliest in Los Altos found this pass; combined with the Monday and Sunday closures the usable window is narrow."
+    ],
+    "id":"L832",
+    "coords":null,
+    "added_in":"batch16c_ring_verified.json",
+    "distance_mi":null
+   },
+   {
+    "name":"Sumo Japanese Restaurant",
+    "city":"Los Altos",
+    "area":"State St (downtown Los Altos)",
+    "address":"355 State St, Los Altos, CA 94022",
+    "cuisine":"Japanese, sushi bar (conveyor / 'revolving bar')",
+    "phone":"(650) 941-9898",
+    "lunch_special":{
+     "name":"No lunch on Monday, Tuesday or Wednesday - those three days open at 3:30 PM; lunch only exists Thu-Sat from 11:30 AM",
+     "price_from":null,
+     "price_to":null,
+     "days":"Thu-Sat lunch; Mon-Wed dinner only; Sun closed",
+     "window":"11:30 AM - 9:15 PM (Thu-Sat), 3:30 PM - 9:15 PM (Mon-Wed)",
+     "includes":"No lunch price captured. Website sumosushiboat.com."
+    },
+    "hours_tuesday":"3:30 PM - 9:15 PM (no lunch service on Tuesday)",
+    "days_open":"Mon-Wed 3:30 PM - 9:15 PM, Thu-Sat 11:30 AM - 9:15 PM, Sun Closed (three Yelp captures May, June and September 2026 agree exactly)",
+    "open_on_trip_date":false,
+    "fits_return_bus":{
+     "ok":false,
+     "note":"Opens at 3:30 PM on the Tuesday trip date - unusable for lunch."
+    },
+    "verification":{
+     "level":"listing",
+     "sources":[
+      {
+       "label":"Yelp business page (Sept 2026) - 355 State St, Los Altos CA 94022, +1 650 941 9898, Mon-Wed 3:30 pm-9:15 pm, Thu-Sat 11:30 am-9:15 pm, Sun Closed, website sumosushiboat.com, 3.6 (274 reviews), 'Now Accepting Reservations'",
+       "url":"https://www.yelp.com/biz/sumo-japanese-restaurant-los-altos-2"
+      },
+      {
+       "label":"Second capture (May 2026) with the identical 7-day block",
+       "url":"https://www.yelp.com/biz/sumo-japanese-restaurant-los-altos-2?start=40"
+      },
+      {
+       "label":"Restaurantji Los Altos listing - 'Sumo Japanese restaurant 355 State St, Los Altos Sushi - $$' with favourites Sushi, Mochi, Shrimp Tempura, Chicken Teriyaki, California Roll",
+       "url":"https://www.restaurantji.com/ca/los-altos/"
+      }
+     ],
+     "accessed":"2026-09-14"
+    },
+    "review_links":{
+     "yelp":"https://www.yelp.com/biz/sumo-japanese-restaurant-los-altos-2",
+     "google_maps":"https://www.google.com/maps/search/?api=1&query=Sumo+Japanese+Restaurant+355+State+St+Los+Altos"
+    },
+    "flags":[
+     "A split-week sushi bar: three days dinner-only, three days with lunch, one day closed. Restaurantji's Los Altos index describes it as a sushi bar with no mention of the Mon-Wed 3:30 PM open, which is how a lunch-seeker would be misled."
+    ],
+    "id":"L833",
+    "coords":null,
+    "added_in":"batch16c_ring_verified.json",
+    "distance_mi":null
+   },
+   {
+    "name":"La Cueva Mex Grill",
+    "city":"Saratoga",
+    "area":"Prospect Rd (Saratoga, near the Santa Cruz Mountains road)",
+    "address":"18486 Prospect Rd, Saratoga, CA 95070",
+    "cuisine":"Mexican, Latin American",
+    "phone":"(408) 517-8603",
+    "lunch_special":{
+     "name":"A long daily lunch window 10:00 AM - 3:00 PM, seven days a week; no published discount",
+     "price_from":null,
+     "price_to":null,
+     "days":"daily",
+     "window":"10:00 AM - 3:00 PM (lunch), 5:00 PM - 8:00 PM (dinner)",
+     "includes":"Reviewer quote kept out of the price column: 'which was the best latin food I've ever had!' Website lacuevamexgrill.net."
+    },
+    "hours_tuesday":"10:00 AM - 3:00 PM, 5:00 PM - 8:00 PM",
+    "days_open":"Mon-Sun 10:00 AM - 3:00 PM and 5:00 PM - 8:00 PM (five Yelp captures April-September 2026 all identical)",
+    "open_on_trip_date":true,
+    "fits_return_bus":{
+     "ok":false,
+     "note":"Prospect Rd, Saratoga - about 5-7 miles from the destination in the Santa Cruz Mountains direction; a car or long ride is needed, and the 3:00 PM close is firm."
+    },
+    "verification":{
+     "level":"listing",
+     "sources":[
+      {
+       "label":"Yelp business page (Sept 2026) - 18486 Prospect Rd, Saratoga CA 95070, +1 408 517 8603, every day listed twice (10:00 am-3:00 pm and 5:00 pm-8:00 pm), website lacuevamexgrill.net, 4.3 (1.4k reviews), 'Now Accepting Reservations'",
+       "url":"https://www.yelp.com/biz/la-cueva-mex-grill-saratoga-2"
+      },
+      {
+       "label":"Second capture (April 2026) with the same 7-day double block, 'Verified 3 months ago'",
+       "url":"https://www.yelp.com/biz/la-cueva-mex-grill-saratoga-2?start=60"
+      },
+      {
+       "label":"Yelp 'Latin American Food near Winchester Blvd, Campbell' capture ranking it 5th, 2.6 miles, 4.3 (1.4k reviews)",
+       "url":"https://www.yelp.com/search?find_desc=Latin+American+Food&find_loc=Winchester+Boulevard%2C+Campbell%2C+CA"
+      }
+     ],
+     "accessed":"2026-09-14"
+    },
+    "review_links":{
+     "yelp":"https://www.yelp.com/biz/la-cueva-mex-grill-saratoga-2",
+     "google_maps":"https://www.google.com/maps/search/?api=1&query=La+Cueva+Mex+Grill+18486+Prospect+Rd+Saratoga"
+    },
+    "flags":[
+     "This is the Saratoga row the pass-9 flag warned about ('Saratoga lunch special searches keep returning Saratoga Springs NY'). Here the Saratoga CA address is confirmed by five Yelp captures and the restaurant's own domain, and the discoversaratoga.org 'Restaurant Week' page that keeps surfacing is Saratoga County, New York - rejected separately in this pass."
+    ],
+    "id":"L834",
+    "coords":null,
+    "added_in":"batch16c_ring_verified.json",
+    "distance_mi":null
+   },
+   {
+    "name":"Taiwan Porridge - Milpitas",
+    "city":"Milpitas",
+    "area":"N Milpitas Blvd",
+    "address":"1706 N Milpitas Blvd, Milpitas, CA 95035",
+    "cuisine":"Taiwanese, Chinese (congee and small plates)",
+    "phone":"(408) 935-9369",
+    "lunch_special":{
+     "name":"Continuous 11:00 AM - 9:00 PM service seven days a week; a reviewer describes an actual lunch special but no price is printed",
+     "price_from":null,
+     "price_to":null,
+     "days":"daily",
+     "window":"11:00 AM - 9:00 PM",
+     "includes":"Reviewer quote kept out of the price column: 'Yay for said lunch special, which doesn't qualify for the rewards card but is much more affordable...' Website taiwanporridge.com."
+    },
+    "hours_tuesday":"11:00 AM - 9:00 PM",
+    "days_open":"Mon-Sun 11:00 AM - 9:00 PM (Yelp capture updated September 2026, 'Updated 2 weeks ago', 3.8 with 463-476 reviews)",
+    "open_on_trip_date":true,
+    "fits_return_bus":{
+     "ok":false,
+     "note":"N Milpitas Blvd - roughly 13 miles from the destination."
+    },
+    "verification":{
+     "level":"review",
+     "sources":[
+      {
+       "label":"Yelp business page (Sept 2026) - 1706 N Milpitas Blvd, Milpitas CA 95035, (408) 935-9369, Mon-Sun 11:00 am-9:00 pm, website taiwanporridge.com",
+       "url":"https://www.yelp.com/biz/taiwan-porridge-milpitas-milpitas-3"
+      },
+      {
+       "label":"Yelp 'Cheap Lunch Specials near Milpitas' capture ranking it 5th with the lunch-special reviewer quote",
+       "url":"https://www.yelp.com/search?find_desc=cheap+lunch+specials&find_loc=Milpitas,+CA+95035"
+      }
+     ],
+     "accessed":"2026-09-14"
+    },
+    "review_links":{
+     "yelp":"https://www.yelp.com/biz/taiwan-porridge-milpitas-milpitas-3",
+     "google_maps":"https://www.google.com/maps/search/?api=1&query=Taiwan+Porridge+1706+N+Milpitas+Blvd+Milpitas"
+    },
+    "flags":[
+     "The reviewer explicitly notes the lunch special 'doesn't qualify for the rewards card' - evidence a discounted lunch menu exists without a published price."
+    ],
+    "id":"L835",
+    "coords":null,
+    "added_in":"batch16d_milpitas_campbell_sj_verified.json",
+    "distance_mi":null
+   },
+   {
+    "name":"Best Desi Pizza",
+    "city":"Campbell",
+    "area":"S Bascom Ave (Campbell / San Jose border)",
+    "address":"2360 S Bascom Ave, Ste C, Campbell, CA 95008",
+    "cuisine":"Pizza (Indian-fusion toppings such as shahi paneer pizza)",
+    "phone":"(408) 963-6353",
+    "lunch_special":{
+     "name":"No published lunch special - opens at 10:00 AM every day, so the whole lunch window is covered at regular prices",
+     "price_from":null,
+     "price_to":null,
+     "days":"daily",
+     "window":"10:00 AM - 10:00 PM (Fri-Sat to 11:00 PM)",
+     "includes":"Reviewer quote kept out of the price column: 'Delicious Pizza every single time with reasonable prices. Great service in delivery and parties.' Ordering via slicelife.com."
+    },
+    "hours_tuesday":"10:00 AM - 10:00 PM",
+    "days_open":"Mon-Thu and Sun 10:00 AM - 10:00 PM, Fri-Sat 10:00 AM - 11:00 PM (four Yelp captures June-August 2026 agree, including JSON-LD photo records that repeat the street address '2360 S Bascom Ave, SteC')",
+    "open_on_trip_date":true,
+    "fits_return_bus":{
+     "ok":false,
+     "note":"S Bascom Ave, Campbell - not walkable from the Cupertino destination."
+    },
+    "verification":{
+     "level":"listing",
+     "sources":[
+      {
+       "label":"Yelp business page (July 2026) - 2360 S Bascom Ave SteC, Campbell CA 95008, (408) 963-6353, Mon-Thu 10:00 am-10:00 pm, Fri-Sat 10:00 am-11:00 pm, Sun 10:00 am-10:00 pm, 4.5 (440 reviews)",
+       "url":"https://www.yelp.com/biz/best-desi-pizza-campbell"
+      },
+      {
+       "label":"Second capture (Aug 2026) with the business website slicelife.com/restaurants/ca/c... and the same hours",
+       "url":"https://www.yelp.com/biz/best-desi-pizza-campbell?start=160"
+      },
+      {
+       "label":"Yelp 'Pizza near Winchester Blvd, Campbell' capture ranking it 10th, 4.5 (441 reviews), 'Open until 11:00 PM', 1.1 miles",
+       "url":"https://www.yelp.com/search?cflt=pizza&find_loc=Winchester+Blvd%2C+Campbell%2C+CA"
+      }
+     ],
+     "accessed":"2026-09-14"
+    },
+    "review_links":{
+     "yelp":"https://www.yelp.com/biz/best-desi-pizza-campbell",
+     "google_maps":"https://www.google.com/maps/search/?api=1&query=Best+Desi+Pizza+2360+S+Bascom+Ave+Campbell"
+    },
+    "flags":[
+     "The suite is written 'SteC' (no space) in the Yelp JSON-LD and 'Ste C' elsewhere - same unit. A 10:00 AM open makes it an early-lunch option."
+    ],
+    "id":"L836",
+    "coords":null,
+    "added_in":"batch16d_milpitas_campbell_sj_verified.json",
+    "distance_mi":null
+   },
+   {
+    "name":"La Callejera",
+    "city":"San Jose",
+    "area":"Lincoln Ave, Willow Glen",
+    "address":"1182 Lincoln Ave, San Jose, CA 95125",
+    "cuisine":"Colombian (arepas, chicharronada, tamales)",
+    "phone":"(408) 893-8109",
+    "lunch_special":{
+     "name":"Closed Tuesday, Wednesday and Thursday - and on the days it is open it closes at 1:00 PM (3:00 PM at weekends), so there is effectively no lunch service on the trip date",
+     "price_from":null,
+     "price_to":null,
+     "days":"Mon and Fri 8:00 AM - 1:00 PM; Sat-Sun 7:00 AM - 3:00 PM; Tue-Thu closed",
+     "window":"8:00 AM - 1:00 PM weekdays it is open (a breakfast-into-early-lunch window), 7:00 AM - 3:00 PM weekends",
+     "includes":"Photos on the page are captioned 'Menu on weekdays: Monday - Friday' and 'Menu on weekends: Saturday and Sunday', proving two different menus, but no prices were captured. Website lacallejeracolombianfoodca.com. Reviewer quote kept out of the price column: 'their popular tamales that stop selling @ 2PM'."
+    },
+    "hours_tuesday":"CLOSED (Tuesday)",
+    "days_open":"Mon 8:00 AM - 1:00 PM, Tue Closed, Wed Closed, Thu Closed, Fri 8:00 AM - 1:00 PM, Sat 7:00 AM - 3:00 PM, Sun 7:00 AM - 3:00 PM (Yelp capture July 2026, listing marked Unclaimed)",
+    "open_on_trip_date":false,
+    "fits_return_bus":{
+     "ok":false,
+     "note":"Closed Tuesday, and on open weekdays it closes at 1:00 PM - before the trip's lunch window starts."
+    },
+    "verification":{
+     "level":"listing",
+     "sources":[
+      {
+       "label":"Yelp business page (July 2026) - 1182 Lincoln Ave, San Jose CA 95125 (Willow Glen), (408) 893-8109, Mon and Fri 8:00 am-1:00 pm, Tue-Thu Closed, Sat-Sun 7:00 am-3:00 pm, website lacallejeracolombianfoodca.com, 4.2 (23 reviews), Unclaimed",
+       "url":"https://www.yelp.com/biz/la-callejera-san-jose"
+      },
+      {
+       "label":"Yelp 'Latin American Food near Winchester Blvd, Campbell' capture ranking it 8th, 3.4 miles, 'Closed until 8:00 AM tomorrow' with the tamales-stop-selling-at-2PM quote",
+       "url":"https://www.yelp.com/search?find_desc=Latin+American+Food&find_loc=Winchester+Boulevard%2C+Campbell%2C+CA"
+      }
+     ],
+     "accessed":"2026-09-14"
+    },
+    "review_links":{
+     "yelp":"https://www.yelp.com/biz/la-callejera-san-jose",
+     "google_maps":"https://www.google.com/maps/search/?api=1&query=La+Callejera+1182+Lincoln+Ave+San+Jose"
+    },
+    "flags":[
+     "An Unclaimed listing with 23 reviews: the three consecutive midweek closures and the 1:00 PM weekday stop mean it can never serve this trip's lunch. Recorded so the gap is visible rather than silently dropped."
+    ],
+    "id":"L837",
+    "coords":null,
+    "added_in":"batch16d_milpitas_campbell_sj_verified.json",
+    "distance_mi":null
+   },
+   {
+    "name":"La Pupusa Loca",
+    "city":"San Jose",
+    "area":"Winchester Blvd, west San Jose",
+    "address":"1025 S Winchester Blvd, San Jose, CA 95128",
+    "cuisine":"Salvadoran (pupusas), food truck / counter",
+    "phone":"(510) 481-6578",
+    "lunch_special":{
+     "name":"Weekday-only lunch service 11:00 AM - 7:00 PM; closed all weekend",
+     "price_from":null,
+     "price_to":null,
+     "days":"Mon-Fri (Sat and Sun closed)",
+     "window":"11:00 AM - 7:00 PM",
+     "includes":"Reviewer quote kept out of the price column: 'My husband went to the most amazing taco stand and brought me back 6 carne asada tacos.' No prices captured on either listing."
+    },
+    "hours_tuesday":"11:00 AM - 7:00 PM",
+    "days_open":"Mon-Fri 11:00 AM - 7:00 PM, Sat Closed, Sun Closed (Restaurantji JSON-LD openingHours 'Mo-Fr 11:00-19:00, Sa/Su Closed' and the Yelp capture agree exactly)",
+    "open_on_trip_date":true,
+    "fits_return_bus":{
+     "ok":false,
+     "note":"S Winchester Blvd, San Jose - about 8-9 miles from the destination."
+    },
+    "verification":{
+     "level":"listing",
+     "sources":[
+      {
+       "label":"Restaurantji place page with JSON-LD - 1025 S Winchester Blvd, San Jose CA 95128, telephone (510) 481-6578, openingHours Mo-Fr 11:00-19:00 and Sa/Su Closed, servesCuisine Salvadoran/Food Trucks/Tacos, ratingValue 4.9 from 16 ratings, photos dated 2024-11-11, 2026-03-05 and 2026-05-22",
+       "url":"https://www.restaurantji.com/ca/san-jose/la-pupusa-loca-/"
+      },
+      {
+       "label":"Yelp business page (Aug 2026) - '1025 Winchester Blvd' (the S directional dropped), Mon-Fri 11:00 am-7:00 pm, Sat-Sun Closed, 4.4 (40 reviews), Unclaimed",
+       "url":"https://www.yelp.com/biz/la-pupusa-loca-san-jose"
+      }
+     ],
+     "accessed":"2026-09-14"
+    },
+    "review_links":{
+     "yelp":"https://www.yelp.com/biz/la-pupusa-loca-san-jose",
+     "google_maps":"https://www.google.com/maps/search/?api=1&query=La+Pupusa+Loca+1025+S+Winchester+Blvd+San+Jose"
+    },
+    "flags":[
+     "An East Bay area code ((510) 481-6578) on a San Jose address, and Yelp writes the street as '1025 Winchester Blvd' while Restaurantji writes '1025 S Winchester Blvd'. Both listings are Unclaimed and the ratings diverge widely (4.9 from 16 vs 4.4 from 40). Photo timestamps on Restaurantji run to May 2026, so the business was operating recently."
+    ],
+    "id":"L838",
+    "coords":null,
+    "added_in":"batch16d_milpitas_campbell_sj_verified.json",
+    "distance_mi":null
+   },
+   {
+    "name":"Maison Alyzee",
+    "city":"Mountain View",
+    "area":"Castro St (downtown Mountain View)",
+    "address":"212 Castro St, Mountain View, CA 94041",
+    "cuisine":"French bakery, coffee & tea, pastries and light fare",
+    "phone":"(650) 960-1212",
+    "lunch_special":{
+     "name":"No published lunch special - a bakery cafe open 8:00 AM every day, so the full lunch window is served at regular prices",
+     "price_from":null,
+     "price_to":null,
+     "days":"daily",
+     "window":"8:00 AM - 9:15 PM Mon; 8:00 AM - 9:30 PM Tue-Wed; 8:00 AM - 9:45 PM Thu; 8:00 AM - 10:00 PM Fri-Sat; 8:00 AM - 8:00 PM Sun",
+     "includes":"Own site maisonalyzee.com. No printed lunch price captured; listed as $$ Bakeries, French, Coffee & Tea on Yelp."
+    },
+    "hours_tuesday":"8:00 AM - 9:30 PM",
+    "days_open":"Mon 8:00 AM - 9:15 PM, Tue 8:00 AM - 9:30 PM, Wed 8:00 AM - 9:30 PM, Thu 8:00 AM - 9:45 PM, Fri 8:00 AM - 10:00 PM, Sat 8:00 AM - 10:00 PM, Sun 8:00 AM - 8:00 PM (Yelp capture updated September 2026)",
+    "open_on_trip_date":true,
+    "fits_return_bus":{
+     "ok":false,
+     "note":"Castro St, Mountain View - about 9 miles from the Cupertino destination."
+    },
+    "verification":{
+     "level":"listing",
+     "sources":[
+      {
+       "label":"Yelp business page (Sept 2026) - 212 Castro St, Mountain View CA 94041, (650) 960-1212, per-day hours with five distinct closing times, website maisonalyzee.com, 4.0 (920 reviews), $$ Bakeries/French/Coffee & Tea",
+       "url":"https://www.yelp.com/biz/maison-alyzee-mountain-view"
+      }
+     ],
+     "accessed":"2026-09-14"
+    },
+    "review_links":{
+     "yelp":"https://www.yelp.com/biz/maison-alyzee-mountain-view",
+     "google_maps":"https://www.google.com/maps/search/?api=1&query=Maison+Alyzee+212+Castro+St+Mountain+View"
+    },
+    "flags":[
+     "Found in a Los Altos pool during discovery but every source places it at 212 Castro St in Mountain View - city corrected before merging. Unusual per-day closing times (9:15 / 9:30 / 9:45 / 10:00 / 8:00 PM) are recorded verbatim rather than rounded."
+    ],
+    "id":"L839",
+    "coords":null,
+    "added_in":"batch16e_mv_pa_milpitas_verified.json",
+    "distance_mi":null
+   },
+   {
+    "name":"Roja Los Altos",
+    "city":"Los Altos",
+    "area":"State St (downtown Los Altos)",
+    "address":"242 State St, Los Altos, CA 94022",
+    "cuisine":"Contemporary / Mediterranean-influenced, reservation-driven",
+    "phone":"+1 (650) 935-2372",
+    "lunch_special":{
+     "name":"NO LUNCH SERVICE - dinner only from 5:00 PM, and closed Sunday",
+     "price_from":null,
+     "price_to":null,
+     "days":"Mon-Sat dinner only (Sun closed)",
+     "window":"5:00 PM - 9:00 PM Mon-Thu; 5:00 PM - 9:30 PM Fri-Sat; Sun Closed",
+     "includes":"Recorded deliberately with no lunch offer: the earliest opening of any day is 5:00 PM, so no lunch special can exist. Now accepting reservations per the Yelp capture."
+    },
+    "hours_tuesday":"5:00 PM - 9:00 PM (dinner only)",
+    "days_open":"Mon 5:00 PM - 9:00 PM, Tue 5:00 PM - 9:00 PM, Wed 5:00 PM - 9:00 PM, Thu 5:00 PM - 9:00 PM, Fri 5:00 PM - 9:30 PM, Sat 5:00 PM - 9:30 PM, Sun Closed (Yelp capture updated September 2026)",
+    "open_on_trip_date":false,
+    "fits_return_bus":{
+     "ok":false,
+     "note":"Dinner-only venue: opens at 5:00 PM, after the lunch window and after a typical return bus."
+    },
+    "verification":{
+     "level":"listing",
+     "sources":[
+      {
+       "label":"Yelp business page (Sept 2026) - 242 State St, Los Altos CA 94022, +16509352372, Mon-Thu 5:00 pm-9:00 pm, Fri-Sat 5:00 pm-9:30 pm, Sun Closed, 'Now Accepting Reservations', 57 reviews",
+       "url":"https://www.yelp.com/biz/roja-los-altos-los-altos"
+      }
+     ],
+     "accessed":"2026-09-14"
+    },
+    "review_links":{
+     "yelp":"https://www.yelp.com/biz/roja-los-altos-los-altos",
+     "google_maps":"https://www.google.com/maps/search/?api=1&query=Roja+Los+Altos+242+State+St"
+    },
+    "flags":[
+     "Kept as an explicit no-lunch row so a reader searching downtown Los Altos sees the reason it cannot host this trip's lunch, rather than the venue silently missing. Only one source resolved: single-source listing level."
+    ],
+    "id":"L840",
+    "coords":null,
+    "added_in":"batch16e_mv_pa_milpitas_verified.json",
+    "distance_mi":null
+   },
+   {
+    "name":"Taro San Japanese Noodle Bar",
+    "city":"Palo Alto",
+    "area":"Stanford Shopping Center, Level 1",
+    "address":"717 Stanford Shopping Ctr, Palo Alto, CA 94304",
+    "cuisine":"Japanese udon / noodle bar",
+    "phone":"(650) 815-2700",
+    "lunch_special":{
+     "name":"Continuous 11:00 AM open with no separate lunch price tier published",
+     "price_from":null,
+     "price_to":null,
+     "days":"daily",
+     "window":"11:00 AM - 9:00 PM Sun-Thu; 11:00 AM - 10:00 PM Fri-Sat",
+     "includes":"Own site tarosanudon.com. Business update on its Yelp page: 'Taro San is currently open from 11am - 8pm for takeout/delivery' - a fourth, different close time. No printed lunch price captured."
+    },
+    "hours_tuesday":"11:00 AM - 9:00 PM",
+    "days_open":"Mon-Thu 11:00 AM - 9:00 PM, Fri-Sat 11:00 AM - 10:00 PM, Sun 11:00 AM - 9:00 PM (Yelp Aug 2026, wanderlog and Apple Maps agree). Eater's 2019 opening piece recorded Mon-Sat 11 am-9 pm, Sun 11 am-8 pm.",
+    "open_on_trip_date":true,
+    "fits_return_bus":{
+     "ok":false,
+     "note":"Stanford Shopping Center - roughly 11 miles from the Cupertino destination."
+    },
+    "verification":{
+     "level":"conflicting",
+     "sources":[
+      {
+       "label":"Yelp business page (Aug 2026) - 717 Stanford Shopping Ctr, Palo Alto CA 94304, (650) 815-2700, Mon-Thu and Sun 11:00 am-9:00 pm, Fri-Sat 11:00 am-10:00 pm, website tarosanudon.com, 3.7 (1.1k reviews), plus business update 'open from 11am - 8pm'",
+       "url":"https://www.yelp.com/biz/taro-san-japanese-noodle-bar-palo-alto?start=200"
+      },
+      {
+       "label":"Apple Maps place record - 'Stanford Shopping Center, Level 1', Sun-Thu 11:00 am-9:00 pm, Fri-Sat 11:00 am-10:00 pm, but ALSO a second block 'Mon-Fri 3:00 pm-6:00 pm' and cost band $$$$ against Yelp's $$",
+       "url":"https://maps.apple.com/place?place-id=IE3E7CDBF3E1006CA"
+      },
+      {
+       "label":"wanderlog place record repeating the 11AM-9PM / 11AM-10PM pattern and tarosanudon.com",
+       "url":"https://wanderlog.com/place/details/393952/taro-san-japanese-noodle-bar"
+      },
+      {
+       "label":"Eater SF opening coverage (Jan 2019) - 717 Stanford Shopping Center, (650) 815-2700, 'Hours are Monday through Saturday 11 a.m. to 9 p.m. and Sunday 11 a.m. to 8 p.m.'",
+       "url":"https://sf.eater.com/2019/1/8/18172340/taro-san-japanese-noodle-bar-opens-palo-alto-stanford-shopping-center-udon"
+      }
+     ],
+     "accessed":"2026-09-14"
+    },
+    "review_links":{
+     "yelp":"https://www.yelp.com/biz/taro-san-japanese-noodle-bar-palo-alto",
+     "google_maps":"https://www.google.com/maps/search/?api=1&query=Taro+San+Japanese+Noodle+Bar+717+Stanford+Shopping+Ctr+Palo+Alto"
+    },
+    "flags":[
+     "Four different closing patterns across four sources (9 pm, 10 pm, 8 pm takeout, and an Apple Maps 3-6 pm block that contradicts an 11 am open). Current three sources agree on the lunch block, so the lunch window is usable; the evening close is not."
+    ],
+    "id":"L841",
+    "coords":null,
+    "added_in":"batch16e_mv_pa_milpitas_verified.json",
+    "distance_mi":null
+   },
+   {
+    "name":"Com Tam Long Xuyen",
+    "city":"Milpitas",
+    "area":"S Park Victoria Dr (plaza with Ocean Market)",
+    "address":"72 S Park Victoria Dr, Milpitas, CA 95035",
+    "coords":[
+     37.431522,
+     -121.882698
+    ],
+    "coords_source":"Yahoo Local JSON-LD geo",
+    "cuisine":"Vietnamese (broken-rice plates, grilled pork chop)",
+    "phone":"(408) 946-1937",
+    "lunch_special":{
+     "name":"A reviewer-documented promotion: 'if you buy 5 dishes, you get 1 dish free' - no printed lunch price",
+     "price_from":null,
+     "price_to":null,
+     "days":"daily",
+     "window":"11:00 AM - 9:00 PM per Yelp; Yahoo Local shows a 9:00 AM - 3:00 PM lunch-then-dinner split on weekdays",
+     "includes":"Reviewer quote kept out of the price column: 'Each entree came with a free drink - I picked...' and 'They are still running the promotion where if you buy 5 dishes, you get 1 dish free' (Oct 2025). Online ordering shows 11:00 am - 8:25 pm."
+    },
+    "hours_tuesday":"11:00 AM - 9:00 PM (Yelp) vs 9:00 AM - 3:00 PM and 5:00 PM - 10:00 PM (Yahoo Local) - see flag",
+    "days_open":"Yelp (Aug 2026): Mon-Sun 11:00 AM - 9:00 PM. Yahoo Local: Sun 9:00 AM - 10:00 PM, Mon-Fri 9:00 AM - 3:00 PM and 5:00 PM - 10:00 PM, Sat 9:00 AM - 10:00 PM. Order platform: 11:00 am - 8:25 pm daily.",
+    "open_on_trip_date":true,
+    "fits_return_bus":{
+     "ok":false,
+     "note":"S Park Victoria Dr, Milpitas - about 13 miles from the destination."
+    },
+    "verification":{
+     "level":"conflicting",
+     "sources":[
+      {
+       "label":"Yelp business page (Aug 2026) - 72 S Park Victoria Dr, Milpitas CA 95035, (408) 946-1937, Mon-Sun 11:00 am-9:00 pm, 4.2 (90 reviews), Claimed",
+       "url":"https://www.yelp.com/biz/com-tam-long-xuyen-milpitas-2"
+      },
+      {
+       "label":"Yahoo Local record with JSON-LD - same address and phone, geo 37.431522/-121.882698, openingHoursSpecification Mon-Fri 9:00 am open closing 3:00 pm and 5:00 pm, Sat-Sun 9:00 am-10:00 pm, 'Cross Streets: Near the intersection of S Park Victoria Dr and Dempsey Rd'",
+       "url":"https://local.yahoo.com/info-238208840-com-tam-long-xuyen-milpitas/"
+      },
+      {
+       "label":"Ordering platform store page - '72 S Park Victoria Dr, Milpitas CA 95035-5723', online ordering hours 11:00 am - 8:25 pm",
+       "url":"https://order.online/store/com-tam-long-xuyen-milpitas-32687085"
+      },
+      {
+       "label":"Yelp 'Cheap Lunch Specials near Milpitas' capture ranking it 3rd for lunch with the free-drink-with-entree reviewer quote",
+       "url":"https://www.yelp.com/search?find_desc=cheap+lunch+specials&find_loc=Milpitas,+CA+95035"
+      }
+     ],
+     "accessed":"2026-09-14"
+    },
+    "review_links":{
+     "yelp":"https://www.yelp.com/biz/com-tam-long-xuyen-milpitas-2",
+     "google_maps":"https://www.google.com/maps/search/?api=1&query=Com+Tam+Long+Xuyen+72+S+Park+Victoria+Dr+Milpitas"
+    },
+    "flags":[
+     "A genuine weekday-hours conflict: Yelp says continuous 11:00 am-9:00 pm, Yahoo Local says a 9:00 am-3:00 pm block with a 5:00-10:00 pm dinner service. Both agree the restaurant is open at 11:30-1:30, so the trip date works either way. The buy-5-get-1-free promotion is reviewer-reported, not printed on an official menu, so it stays out of the price column."
+    ],
+    "id":"L842",
+    "added_in":"batch16e_mv_pa_milpitas_verified.json",
+    "distance_mi":11.53
+   },
+   {
+    "name":"Ocean Pearl",
+    "city":"Milpitas",
+    "area":"Barber Ct (Milpitas Square)",
+    "address":"206 Barber Ct, Milpitas, CA 95035",
+    "cuisine":"Cantonese / Chinese seafood",
+    "phone":"+1 (408) 383-9888",
+    "lunch_special":{
+     "name":"A reviewer-confirmed lunch special: 'Chicken & BBQ Pork combo - lunch special Stir fried ho fun...' - no printed price",
+     "price_from":null,
+     "price_to":null,
+     "days":"daily",
+     "window":"10:30 AM - 9:30 PM every day",
+     "includes":"Reviewer quote kept out of the price column: 'good given the price is very affordable Chicken & BBQ Pork combo - lunch special Stir fried ho fun...'. A 10:30 AM open covers the whole lunch window."
+    },
+    "hours_tuesday":"10:30 AM - 9:30 PM",
+    "days_open":"Every day 10:30 AM - 9:30 PM (Apple Maps place record, 'Milpitas Square', Cantonese Cuisine; Yelp capture shows 'Closed' with a $$$$ cost band)",
+    "open_on_trip_date":true,
+    "fits_return_bus":{
+     "ok":false,
+     "note":"Barber Ct, Milpitas - about 13 miles from the destination."
+    },
+    "verification":{
+     "level":"listing",
+     "sources":[
+      {
+       "label":"Apple Maps place record - Ocean Pearl, Cantonese Cuisine, Milpitas Square, 'Every Day 10:30 AM - 9:30 PM', +1 (408) 383-9888, 206 Barber Ct, Milpitas CA 95035, Yelp 3.4 (224), cost band $$$$",
+       "url":"https://maps.apple.com/place?place-id=IA3AB13D958D809CB"
+      },
+      {
+       "label":"Yelp 'Cheap Lunch Specials near Milpitas' capture ranking Ocean Pearl 3rd, 3.6 (187 reviews), $$, with the lunch-special combo reviewer quote",
+       "url":"https://www.yelp.com/search?find_desc=cheap+lunch+specials&find_loc=Milpitas,+CA+95035"
+      }
+     ],
+     "accessed":"2026-09-14"
+    },
+    "review_links":{
+     "yelp":"https://www.yelp.com/search?find_desc=Ocean+Pearl&find_loc=Milpitas%2C+CA",
+     "google_maps":"https://www.google.com/maps/search/?api=1&query=Ocean+Pearl+206+Barber+Ct+Milpitas"
+    },
+    "flags":[
+     "Price band disagrees sharply: Apple Maps $$$$ against Yelp $$. Rating also drifts (3.4 on Apple Maps' Yelp feed vs 3.6 in a Yelp search capture). One named source for the per-day hours block, so listing level."
+    ],
+    "id":"L843",
+    "coords":null,
+    "added_in":"batch16e_mv_pa_milpitas_verified.json",
+    "distance_mi":null
+   },
+   {
+    "name":"Hunan House",
+    "city":"Sunnyvale",
+    "area":"S Sunnyvale Ave (downtown Sunnyvale)",
+    "address":"122 S Sunnyvale Ave, Sunnyvale, CA 94086",
+    "cuisine":"Chinese, Hunan",
+    "phone":"(408) 481-9983",
+    "lunch_special":{
+     "name":"Weekday lunch block 11:00 AM - 2:30 PM with a 2-hour dinner break before 4:30 PM; no separate lunch price tier published",
+     "price_from":null,
+     "price_to":null,
+     "days":"Mon-Fri 11:00 AM - 2:30 PM lunch; Sat-Sun continuous",
+     "window":"11:00 AM - 2:30 PM (Mon-Fri, then 4:30 PM - 8:30/9:00 PM dinner); 11:00 AM - 9:00 PM Sat; 11:00 AM - 8:30 PM Sun",
+     "includes":"Own site hunanhouseca.com. Photo captions on the Yelp page print entree prices (e.g. 'Steamed Pork Belly W. Preserved Vegetable \u6885\u83dc\u6263\u8089\uff08\u9644\u8377\u53f6\u5305\uff09($22.99)'), which are diner prices, not a lunch special - so nothing is put in the price columns."
+    },
+    "hours_tuesday":"11:00 AM - 2:30 PM, 4:30 PM - 8:30 PM",
+    "days_open":"Mon-Thu 11:00 AM - 2:30 PM and 4:30 PM - 8:30 PM, Fri 11:00 AM - 2:30 PM and 4:30 PM - 9:00 PM, Sat 11:00 AM - 9:00 PM, Sun 11:00 AM - 8:30 PM (four sources agree exactly: Yelp Sept 2026, Apple Maps, corner.inc JSON-LD, wherevi)",
+    "open_on_trip_date":true,
+    "fits_return_bus":{
+     "ok":false,
+     "note":"S Sunnyvale Ave is about 7 miles from the destination; the 2:30 PM lunch cutoff is the binding constraint."
+    },
+    "verification":{
+     "level":"listing",
+     "sources":[
+      {
+       "label":"Yelp business page (Sept 2026) - 122 S Sunnyvale Ave, Sunnyvale CA 94086, +14084819983, Mon-Thu 11:00 am-2:30 pm + 4:30 pm-8:30 pm, Fri to 9:00 pm, Sat 11:00 am-9:00 pm, Sun 11:00 am-8:30 pm, website hunanhouseca.com, 4.2 (87 reviews), 'Now Accepting Reservations'",
+       "url":"https://www.yelp.com/biz/hunan-house-sunnyvale-2"
+      },
+      {
+       "label":"Apple Maps place record - Chinese Cuisine, Sunnyvale CA, same per-day hours, hunanhouseca.com, +1 (408) 481-9983, 122 S Sunnyvale Ave, cost band $$$$ vs Yelp's $$",
+       "url":"https://maps.apple.com/place?place-id=IAFA780C58AF03B10"
+      },
+      {
+       "label":"corner.inc place record with JSON-LD openingHours identical to Yelp, updated July 31st 2026, 'Family-run Hunan spot with flaming pots and generous portions'",
+       "url":"https://www.corner.inc/place/ps6QgfFRe4sh"
+      },
+      {
+       "label":"wherevi listing - 'Chinese restaurant $20-30, 4.6 (379)', same address and same seven-day hours block",
+       "url":"https://hunan-house.wherevi.com/"
+      }
+     ],
+     "accessed":"2026-09-14"
+    },
+    "review_links":{
+     "yelp":"https://www.yelp.com/biz/hunan-house-sunnyvale-2",
+     "google_maps":"https://www.google.com/maps/search/?api=1&query=Hunan+House+122+S+Sunnyvale+Ave+Sunnyvale"
+    },
+    "flags":[
+     "Hours agree across four sources (rare in this pass), but the rating and price band do not: Yelp 4.2 (87) / $$ vs wherevi 4.6 (379) / $20-30 vs Apple Maps $$$$. The lunch block ends at 2:30 PM on every weekday."
+    ],
+    "id":"L844",
+    "coords":null,
+    "added_in":"batch16f_sunnyvale_sc_lg_verified.json",
+    "distance_mi":null
+   },
+   {
+    "name":"Jang Su Jang",
+    "city":"Santa Clara",
+    "area":"El Camino Real (Santa Clara Koreatown corridor)",
+    "address":"3561 El Camino Real, Ste 10, Santa Clara, CA 95051",
+    "cuisine":"Korean barbecue (galbi jjim, pajeon)",
+    "phone":"(408) 246-1212",
+    "lunch_special":{
+     "name":"Continuous 11:00 AM service with no published lunch price tier; a photo caption warns the pancake is 'expensive' at $29",
+     "price_from":null,
+     "price_to":null,
+     "days":"daily",
+     "window":"11:00 AM - 7:30 PM (7:45 PM Fri-Sat in one capture)",
+     "includes":"Own site jangsujang.com. Prices appearing only in diner photo captions: 'Maeun Galbi Jjim ($75) Spicy Braised Beef Short Ribs', 'Haemul Pajeon aka Seafood Pancake ($29), expensive', 'Diet Coke ($3)' - kept out of the price columns because they are menu items photographed by reviewers, not a published lunch special. Business notes on Yelp advertise holiday hours."
+    },
+    "hours_tuesday":"11:00 AM - 7:30 PM",
+    "days_open":"Sept 2026 and June 2026 captures: Mon-Sun 11:00 AM - 7:30 PM. Aug 2026 capture: Mon-Thu and Sun 11:00 AM - 7:30 PM, Fri-Sat 11:00 AM - 7:45 PM. Oct 2025 capture: Mon-Sun 11:00 AM - 8:00 PM.",
+    "open_on_trip_date":true,
+    "fits_return_bus":{
+     "ok":false,
+     "note":"El Camino Real in Santa Clara, about 8 miles from the destination."
+    },
+    "verification":{
+     "level":"conflicting",
+     "sources":[
+      {
+       "label":"Yelp business page (Sept 2026) - 3561 El Camino Real Ste 10, Santa Clara CA 95051, (408) 246-1212, Mon-Sun 11:00 am-7:30 pm, website jangsujang.com, 3.8 (2.3k reviews), $$$ Korean/Barbeque, 'Updated 3 weeks ago'",
+       "url":"https://www.yelp.com/biz/jang-su-jang-santa-clara"
+      },
+      {
+       "label":"Aug 2026 capture of the same page showing Fri-Sat to 7:45 pm and the business' own holiday-hours note ('11/23 Thanksgiving Day 11AM - 3PM, 11/24 Black Friday 11AM - 9:30PM, 12/24 Christmas Eve 11AM - 9PM, 12/25 Christmas Day 11AM - 8:30PM, 12/31 New Year's Eve 11AM - 9PM, 1/1 New Year's Day 11AM - 9:30PM')",
+       "url":"https://www.yelp.com/biz/jang-su-jang-santa-clara?start=1960"
+      },
+      {
+       "label":"June 2026 capture - Mon-Sun 11:00 am-7:30 pm with the $75 galbi jjim and $29 pajeon photo captions",
+       "url":"https://www.yelp.com/biz/jang-su-jang-santa-clara?start=1560"
+      },
+      {
+       "label":"Oct 2025 capture - Mon-Sun 11:00 am-8:00 pm (30 minutes longer every day than the 2026 listings)",
+       "url":"https://www.yelp.com/biz/jang-su-jang-santa-clara?start=940"
+      }
+     ],
+     "accessed":"2026-09-14"
+    },
+    "review_links":{
+     "yelp":"https://www.yelp.com/biz/jang-su-jang-santa-clara",
+     "google_maps":"https://www.google.com/maps/search/?api=1&query=Jang+Su+Jang+3561+El+Camino+Real+Santa+Clara"
+    },
+    "flags":[
+     "Closing time has been shrinking: 8:00 PM (Oct 2025) to 7:30 PM (2026), with Fri-Sat variously 7:30 or 7:45 PM across two captures three weeks apart. Separately, the business' own holiday-hours note names 11/23 as Thanksgiving Day, which was true in 2023 but not in 2026 (Thanksgiving 2026 is Thursday Nov 26) - the note is stale and must not be used for holiday planning."
+    ],
+    "id":"L845",
+    "coords":null,
+    "added_in":"batch16f_sunnyvale_sc_lg_verified.json",
+    "distance_mi":null
+   },
+   {
+    "name":"First Born Los Gatos",
+    "city":"Los Gatos",
+    "area":"W Main St (downtown Los Gatos)",
+    "address":"160 W Main St, Los Gatos, CA 95030",
+    "cuisine":"Pan Asian / Vietnamese fusion, cocktail bar and event venue",
+    "phone":"(669) 297-9999",
+    "lunch_special":{
+     "name":"NO LUNCH SERVICE - the restaurant's own website opens at 3:00 PM, and it is closed Monday and Sunday",
+     "price_from":null,
+     "price_to":null,
+     "days":"Tue-Sat only",
+     "window":"3:00 PM - 9:00 PM Tue-Thu; 3:00 PM - 10:00 PM Fri-Sat; Mon and Sun Closed",
+     "includes":"Confirmed on firstbornlosgatos.com ('Monday - Closed, Tuesday - Thursday 3:00 PM - 9:00 PM, Friday - Saturday 3:00 PM - 10:00 PM, Sunday - Closed, Tel: (669) 297-9999, Email: contact@firstbornlosgatos.com'). No lunch menu and no lunch price exist to print."
+    },
+    "hours_tuesday":"3:00 PM - 9:00 PM (no lunch service)",
+    "days_open":"Mon Closed, Tue 3:00 PM - 9:00 PM, Wed 3:00 PM - 9:00 PM, Thu 3:00 PM - 9:00 PM, Fri 3:00 PM - 10:00 PM, Sat 3:00 PM - 10:00 PM, Sun Closed (restaurant's own website, corroborated by two Yelp captures and roadtrippers)",
+    "open_on_trip_date":false,
+    "fits_return_bus":{
+     "ok":false,
+     "note":"Opens at 3:00 PM, after the lunch window closes."
+    },
+    "verification":{
+     "level":"official",
+     "sources":[
+      {
+       "label":"Restaurant's own website - 160 W Main Street, Los Gatos CA 95030, Monday Closed, Tuesday-Thursday 3:00 PM-9:00 PM, Friday-Saturday 3:00 PM-10:00 PM, Sunday Closed, Tel (669) 297-9999",
+       "url":"https://www.firstbornlosgatos.com/"
+      },
+      {
+       "label":"Yelp business page (July 2026) - 160 W Main St, Los Gatos CA 95030, (669) 297-9999, Mon Closed, Tue-Thu 3:00 pm-9:00 pm, Fri-Sat 3:00 pm-10:00 pm, Sun Closed, website firstbornlosgatos.com",
+       "url":"https://www.yelp.com/biz/first-born-los-gatos-los-gatos"
+      },
+      {
+       "label":"Second Yelp capture (May 2026) - 4.3 (78 reviews), Claimed, '$$$ Venues & Event Spaces, Pan Asian, Cocktail Bars'",
+       "url":"https://www.yelp.com/biz/first-born-los-gatos-los-gatos?start=10"
+      },
+      {
+       "label":"roadtrippers capture - same address, website and phone, 'Tue-Thu 3:00 pm-9:00 pm, Fri/Sat 3:00 pm-10:00 pm', price band $$$",
+       "url":"https://maps.roadtrippers.com/us/los-gatos-ca/food-drink/first-born-los-gatos"
+      }
+     ],
+     "accessed":"2026-09-14"
+    },
+    "review_links":{
+     "yelp":"https://www.yelp.com/biz/first-born-los-gatos-los-gatos",
+     "google_maps":"https://www.google.com/maps/search/?api=1&query=First+Born+Los+Gatos+160+W+Main+St"
+    },
+    "flags":[
+     "Official-source confirmation that the venue has no lunch at all: four sources agree it opens at 3:00 PM. Kept as an explicit no-lunch row so downtown Los Gatos readers see why it is excluded."
+    ],
+    "id":"L846",
+    "coords":null,
+    "added_in":"batch16f_sunnyvale_sc_lg_verified.json",
+    "distance_mi":null
+   },
+   {
+    "name":"The Cantina",
+    "city":"Los Gatos",
+    "area":"Union Ave",
+    "address":"15529 Union Ave, Los Gatos, CA 95032",
+    "cuisine":"Tacos / Mexican, burgers, cocktail bar (self-described 'Tacos. Tequila. Tiki.')",
+    "phone":"(408) 963-6221",
+    "lunch_special":{
+     "name":"No lunch on Tuesday or Wednesday (dinner from 4:30 PM); lunch from 11:30 AM Thursday through Sunday. Business owner states a happy-hour discount, not a lunch special",
+     "price_from":null,
+     "price_to":null,
+     "days":"Thu-Sun lunch; Tue-Wed dinner only; Mon closed",
+     "window":"11:30 AM - 9:00 PM Thu-Sun; 4:30 PM - 9:00 PM Tue-Wed; Mon Closed. Happy hour per the business owner: Mon-Wed 4:00-5:30 PM, Thu-Sun 2:00-5:30 PM",
+     "includes":"Own site thecantinalosgatos.com. The owner's answer to a Yelp community question prints the only discounts found: '$2 Off menu cocktails $1 Off beers' during happy hour (Mon-Wed 4-5:30 PM, Thu-Sun 2-5:30 PM). These are drink discounts, not lunch prices, so the price columns stay empty."
+    },
+    "hours_tuesday":"4:30 PM - 9:00 PM (dinner only - no lunch on Tuesday)",
+    "days_open":"Mon Closed, Tue 4:30 PM - 9:00 PM, Wed 4:30 PM - 9:00 PM, Thu 11:30 AM - 9:00 PM, Fri 11:30 AM - 9:00 PM, Sat 11:30 AM - 9:00 PM, Sun 11:30 AM - 9:00 PM (Yelp capture updated August 2026, 'Verified 1 month ago')",
+    "open_on_trip_date":false,
+    "fits_return_bus":{
+     "ok":false,
+     "note":"Open on Tuesday but only from 4:30 PM - after the lunch window."
+    },
+    "verification":{
+     "level":"listing",
+     "sources":[
+      {
+       "label":"Yelp business page (Aug 2026) - 15529 Union Ave, Los Gatos CA 95032, (408) 963-6221, Mon Closed, Tue-Wed 4:30 pm-9:00 pm, Thu-Sun 11:30 am-9:00 pm, website thecantinalosgatos.com, 4.3 (90 reviews), $$ Cocktail Bars/Tacos/Burgers, 'Specialties: Tacos. Tequila. Tiki'",
+       "url":"https://www.yelp.com/biz/the-cantina-los-gatos-6"
+      },
+      {
+       "label":"Same page's community Q&A answered by Scott H., Business Owner: 'Mon - Wed: 4 - 5:30 PM, Thurs - Sun: 2 - 5:30 PM, $2 Off menu cocktails, $1 Off beers'",
+       "url":"https://www.yelp.com/biz/the-cantina-los-gatos-6"
+      }
+     ],
+     "accessed":"2026-09-14"
+    },
+    "review_links":{
+     "yelp":"https://www.yelp.com/biz/the-cantina-los-gatos-6",
+     "google_maps":"https://www.google.com/maps/search/?api=1&query=The+Cantina+15529+Union+Ave+Los+Gatos"
+    },
+    "flags":[
+     "The split personality is the finding: lunch exists Thu-Sun (11:30 AM) but not Tue-Wed (4:30 PM open), so a Tuesday lunch plan must skip it even though it is 'open'. The only printed discount is a happy-hour drink deal, and its Thu-Sun 2:00-5:30 PM window overlaps the restaurant's own 11:30 AM lunch open - an inconsistency worth a call."
+    ],
+    "id":"L847",
+    "coords":null,
+    "added_in":"batch16f_sunnyvale_sc_lg_verified.json",
+    "distance_mi":null
+   },
+   {
+    "name":"Square Pie Guys",
+    "city":"Campbell",
+    "area":"E Campbell Ave (downtown Campbell)",
+    "address":"501 E Campbell Ave, Campbell, CA 95008",
+    "cuisine":"Detroit-style pizza, salad, chicken wings",
+    "phone":"(408) 409-5955",
+    "lunch_special":{
+     "name":"No published lunch special - an 11:30 AM open covers the whole lunch window at regular prices",
+     "price_from":null,
+     "price_to":null,
+     "days":"daily",
+     "window":"11:30 AM - 8:30 / 9:00 / 9:30 / 10:30 PM depending on which capture is used (see flag)",
+     "includes":"Own site squarepieguys.com. Business description on Yelp: 'modern Detroit Style Pizza with a chef-driven twist ... shareable Detroit Style Pizzas, vegan options, and comfort food classics like Buffalo Wings'. No printed lunch price captured."
+    },
+    "hours_tuesday":"11:30 AM - 9:00 PM (newest capture; three other captures give 8:30, 9:30 PM)",
+    "days_open":"Four captures of the same business, four different closing patterns: Sept 2026 Mon-Sun 11:30 AM - 9:00 PM; May 2026 Mon-Thu and Sun 11:30 AM - 9:30 PM with Fri-Sat to 10:30 PM; April 2026 Mon-Thu and Sun 11:30 AM - 8:30 PM with Fri-Sat to 9:30 PM. All agree on the 11:30 AM open every day.",
+    "open_on_trip_date":true,
+    "fits_return_bus":{
+     "ok":false,
+     "note":"E Campbell Ave, Campbell - roughly 7 miles from the destination."
+    },
+    "verification":{
+     "level":"conflicting",
+     "sources":[
+      {
+       "label":"Yelp business page (Sept 2026) - 501 E Campbell Ave, Campbell CA 95008, (408) 409-5955, Mon-Sun 11:30 am-9:00 pm, website squarepieguys.com, 4.4 (243 reviews), 'Updated 2 months ago', plus the Detroit-style-pizza business description",
+       "url":"https://www.yelp.com/biz/square-pie-guys-campbell-campbell"
+      },
+      {
+       "label":"May 2026 capture of a second Yelp slug for the same address - Mon-Thu and Sun 11:30 am-9:30 pm, Fri-Sat 11:30 am-10:30 pm, 'Updated a few days ago', 4.4 (219 reviews)",
+       "url":"https://www.yelp.com/biz/square-pie-guys-campbell-4"
+      },
+      {
+       "label":"April 2026 capture - Mon-Thu and Sun 11:30 am-8:30 pm, Fri-Sat 11:30 am-9:30 pm, 4.4 (197 reviews)",
+       "url":"https://www.yelp.com/biz/square-pie-guys-campbell-campbell?start=60"
+      }
+     ],
+     "accessed":"2026-09-14"
+    },
+    "review_links":{
+     "yelp":"https://www.yelp.com/biz/square-pie-guys-campbell-campbell",
+     "google_maps":"https://www.google.com/maps/search/?api=1&query=Square+Pie+Guys+501+E+Campbell+Ave+Campbell"
+    },
+    "flags":[
+     "Two problems at once. (1) Closing time has drifted across 2026 captures (8:30 -> 9:00 -> 9:30 -> 10:30 PM variants) so only the 11:30 AM open is safe to plan on. (2) The business exists under TWO different Yelp slugs - 'square-pie-guys-campbell-campbell' and 'square-pie-guys-campbell-4' - with separate review counts (243 vs 219) for one physical address, which inflates apparent review volume."
+    ],
+    "id":"L848",
+    "coords":null,
+    "added_in":"batch16g_campbell_fremont_verified.json",
+    "distance_mi":null
+   },
+   {
+    "name":"Gelato Classico Italian Ice Cream",
+    "city":"Mountain View",
+    "area":"Castro St (downtown Mountain View)",
+    "address":"241 Castro St, Ste B, Mountain View, CA 94041",
+    "cuisine":"Gelato / ice cream & frozen yogurt (dessert venue, not a lunch restaurant)",
+    "phone":"(650) 969-2900",
+    "lunch_special":{
+     "name":"NO LUNCH OFFERING - dessert-only venue; recorded so it is not mistaken for a lunch option on the same block as other Castro St restaurants",
+     "price_from":null,
+     "price_to":null,
+     "days":"daily",
+     "window":"11:30 AM - 9:00 PM Mon-Thu and Sun; 11:30 AM - 10:30 PM Fri-Sat",
+     "includes":"Own site cafeclassicofoods.com. Photo captions describe portions ('Small scoops (up to 2 flavors)') but no prices were printed in any capture."
+    },
+    "hours_tuesday":"11:30 AM - 9:00 PM",
+    "days_open":"Mon-Thu 11:30 AM - 9:00 PM, Fri-Sat 11:30 AM - 10:30 PM, Sun 11:30 AM - 9:00 PM (two Yelp captures, February and April 2026, agree exactly; 'Verified 3 months ago')",
+    "open_on_trip_date":true,
+    "fits_return_bus":{
+     "ok":false,
+     "note":"Open during the lunch window but serves dessert only - usable as an after-lunch stop, not a lunch."
+    },
+    "verification":{
+     "level":"listing",
+     "sources":[
+      {
+       "label":"Yelp business page (Feb 2026) - 241 Castro St Ste B, Mountain View CA 94041, (650) 969-2900, Mon-Thu and Sun 11:30 am-9:00 pm, Fri-Sat 11:30 am-10:30 pm, website cafeclassicofoods.com, 3.7 (1.3k reviews)",
+       "url":"https://www.yelp.com/biz/gelato-classico-italian-ice-cream-mountain-view?start=180"
+      },
+      {
+       "label":"Second Yelp capture (April 2026) - same address, phone, hours and website, 'Verified over 3 months ago'",
+       "url":"https://www.yelp.com/biz/gelato-classico-italian-ice-cream-mountain-view?start=1060"
+      }
+     ],
+     "accessed":"2026-09-14"
+    },
+    "review_links":{
+     "yelp":"https://www.yelp.com/biz/gelato-classico-italian-ice-cream-mountain-view",
+     "google_maps":"https://www.google.com/maps/search/?api=1&query=Gelato+Classico+241+Castro+St+Mountain+View"
+    },
+    "flags":[
+     "Deliberately entered as a no-lunch row: it kept appearing in Castro St dining discovery alongside real lunch venues, so the absence of a lunch menu is stated explicitly instead of leaving readers to guess."
+    ],
+    "id":"L849",
+    "coords":null,
+    "added_in":"batch16h_mountainview_campbell_verified.json",
+    "distance_mi":null
+   },
+   {
+    "name":"Ricos Tacos",
+    "city":"Campbell",
+    "area":"Winchester Blvd",
+    "address":"2523 Winchester Blvd, Unit A, Campbell, CA 95008",
+    "coords":[
+     37.277905,
+     -121.95006
+    ],
+    "coords_source":"TripAdvisor JSON-LD geo",
+    "cuisine":"Mexican (tacos; specialty 'Super tacos crispy')",
+    "phone":"(408) 370-7168",
+    "lunch_special":{
+     "name":"No published lunch special - opens 10:00 AM daily, so the full lunch window is served at regular prices",
+     "price_from":null,
+     "price_to":null,
+     "days":"daily",
+     "window":"10:00 AM - 8:00 PM (own website and Apple Maps) vs 10:00 AM - 9:00 PM Mon-Sat (TripAdvisor)",
+     "includes":"Own site ricostacos.top prints 'Hours: Tuesday 10 AM-8 PM ... Monday 10 AM-8 PM' for all seven days and the address as '2523 S Winchester Blvd A Campbell, CA 95008' with email info@ricostacos.top. No menu price captured."
+    },
+    "hours_tuesday":"10:00 AM - 8:00 PM (own website) / 10:00 AM - 9:00 PM (TripAdvisor) - see flag",
+    "days_open":"Own website and Apple Maps: every day 10:00 AM - 8:00 PM. TripAdvisor: Sun 10:00 AM - 8:00 PM, Mon-Sat 10:00 AM - 9:00 PM. Two Yelp captures (June 2025, July 2026) agree with the 10:00 AM - 8:00 PM daily pattern.",
+    "open_on_trip_date":true,
+    "fits_return_bus":{
+     "ok":false,
+     "note":"Winchester Blvd, Campbell - about 7 miles from the destination."
+    },
+    "verification":{
+     "level":"conflicting",
+     "sources":[
+      {
+       "label":"Restaurant's own website - 2523 S Winchester Blvd A, Campbell CA 95008, (408) 370-7168, info@ricostacos.top, Hours listed as 10 AM-8 PM for every day Tuesday through Monday",
+       "url":"https://ricostacos.top/"
+      },
+      {
+       "label":"TripAdvisor listing with JSON-LD - 2523 Winchester Blvd Ste A, Campbell CA 95008-5337, +1 408-370-7168, geo 37.277905/-121.95006, Sun 10:00-20:00 and Mon-Sat 10:00-21:00, priceRange $, 'Features: Lunch, Dinner', 4.3 from 8 reviews",
+       "url":"https://www.tripadvisor.com/Restaurant_Review-g32154-d4438097-Reviews-Ricos_Tacos-Campbell_California.html"
+      },
+      {
+       "label":"Yelp business page (July 2026) - 2523 Winchester Blvd Ste A, (408) 370-7168, Mon-Sun 10:00 am-8:00 pm, 'Specialties: Super tacos crispy'",
+       "url":"https://www.yelp.com/biz/ricos-tacos-campbell"
+      },
+      {
+       "label":"Apple Maps place record - 'Every Day 10:00 AM - 8:00 PM', 2523 Winchester Blvd Unit A, Campbell CA 95008, Yelp 3.3 (472), cost band $$$$ against TripAdvisor's $",
+       "url":"https://maps.apple.com/place?place-id=ID9FEE224CF76812D"
+      }
+     ],
+     "accessed":"2026-09-14"
+    },
+    "review_links":{
+     "yelp":"https://www.yelp.com/biz/ricos-tacos-campbell",
+     "google_maps":"https://www.google.com/maps/search/?api=1&query=Ricos+Tacos+2523+Winchester+Blvd+Campbell"
+    },
+    "flags":[
+     "Three disagreements on one small taqueria: closing time (8:00 PM on the restaurant's own site, Yelp and Apple Maps vs 9:00 PM Mon-Sat on TripAdvisor), street directional ('2523 Winchester Blvd' on Yelp/TripAdvisor vs '2523 S Winchester Blvd' on the restaurant's own site), and price band ($ on TripAdvisor vs $$$$ on Apple Maps). Rating also splits: 3.3 from 472 (Apple Maps' Yelp feed) vs 4.3 from 8 (TripAdvisor). The 10:00 AM open is consistent everywhere."
+    ],
+    "id":"L850",
+    "added_in":"batch16h_mountainview_campbell_verified.json",
+    "distance_mi":5.03
    }
   ],
   "top_picks_for_tuesday_sept_8":[
@@ -41382,11 +42950,11 @@ window.TINO_DATA = {
    }
   ],
   "transit_fit_note":"The return chain leaves 20387 Gillick Way at 11:50 AM for the 2:40 PM arrival, or at 12:20 PM for the 3:18 PM arrival. Every lunch stop in this radius has to fit one of those two departures, so the useful lunch window is roughly 11:15 AM - 12:10 PM (or - 12:40 PM).",
-  "added_to_master":819
+  "added_to_master":850
  },
  "rejected":{
   "purpose":"Line-by-line review log for candidates that were searched but NOT added to the master list. Recorded so nothing is silently dropped and so every rejection has a reason and a link.",
-  "search_date":"2026-09-07 through 2026-09-11",
+  "search_date":"2026-09-07 through 2026-09-14",
   "rejected":[
    {
     "id":"R01",
@@ -41709,147 +43277,201 @@ window.TINO_DATA = {
     ]
    },
    {
+    "id":"R31",
+    "count":1,
+    "names":[
+     "Dishdash (Sunnyvale)"
+    ],
     "name":"Dishdash (Sunnyvale)",
     "city":"Sunnyvale",
     "why":"Lunch menu prices were captured from dishdash.com but no street address and no weekly hours were captured in this pass, so the row cannot be located or scheduled.",
-    "price_hint":"Lunch menu items $7-$28 (soups from $7, wraps $20-$27)",
-    "source":"https://www.dishdash.com/menu/sunnyvale-lunch/",
     "searched":"2026-09-07"
    },
    {
+    "id":"R32",
+    "count":1,
+    "names":[
+     "Aqui Cal Mex - Campbell"
+    ],
     "name":"Aqui Cal Mex - Campbell",
     "city":"Campbell",
     "why":"Only the rotating daily special plate was published and it was date-limited to August 19 - September 1, 2026, which ends before the September 8 trip date. No address captured.",
-    "price_hint":"Daily special plate $16.49 (Guajillo BBQ Chicken), soup $5.09 - valid 8/19-9/1/2026 only",
-    "source":"https://www.aquicalmex.com/campbell-menu/",
     "searched":"2026-09-07"
    },
    {
+    "id":"R33",
+    "count":1,
+    "names":[
+     "Wine Cellar (Los Gatos)"
+    ],
     "name":"Wine Cellar (Los Gatos)",
     "city":"Los Gatos",
     "why":"The 'Today's Lunch Specials' page is real and priced ($20-$24) but the specials rotate daily and no address or weekly hours were captured in this pass.",
-    "price_hint":"Today's Lunch Specials $20-$24",
-    "source":"https://www.winecellarlosgatos.com/menu/todays-specials/",
     "searched":"2026-09-07"
    },
    {
+    "id":"R34",
+    "count":1,
+    "names":[
+     "Los Altos Mexican Bar and Grill"
+    ],
     "name":"Los Altos Mexican Bar and Grill",
     "city":"Los Altos",
     "why":"The lunch menu that surfaced ($9.89-$15.38) is from menu.quickmunchi.com and could not be confirmed to be the Los Altos, California restaurant - several same-name restaurants exist in other states.",
-    "price_hint":"Lunch combos $9.89-$15.38 (unconfirmed location)",
-    "source":"https://menu.quickmunchi.com/order/location/LosAltos",
     "searched":"2026-09-07"
    },
    {
+    "id":"R35",
+    "count":1,
+    "names":[
+     "Krung Thai Mountain View"
+    ],
     "name":"Krung Thai Mountain View",
     "city":"Mountain View",
     "why":"Yelp flags this location as CLOSED ('Yelpers report this location has closed'), so it cannot be planned for September 8, 2026.",
-    "price_hint":"Older review mentions lunch specials a dollar more than a neighbour's $7.95-$8.95",
-    "source":"https://www.yelp.com/biz/krung-thai-mountain-view-mountain-view",
     "searched":"2026-09-07"
    },
    {
+    "id":"R36",
+    "count":1,
+    "names":[
+     "BCD Tofu House (Sunnyvale)"
+    ],
     "name":"BCD Tofu House (Sunnyvale)",
     "city":"Sunnyvale",
     "why":"No Sunnyvale/Santa Clara listing surfaced - the search returned only Rowland Heights, Fort Lee and Los Angeles branches, so a South Bay address could not be verified.",
-    "price_hint":null,
-    "source":"https://www.yelp.com/biz/bcd-tofu-house-rowland-heights",
     "searched":"2026-09-07"
    },
    {
+    "id":"R37",
+    "count":1,
+    "names":[
+     "Bushido Izakaya Restaurant"
+    ],
     "name":"Bushido Izakaya Restaurant",
     "city":"Mountain View",
     "why":"Dinner only - the listing shows 5:00 PM - 10:35 PM, so there is no lunch service on the trip date.",
-    "price_hint":"Ramen $18.15, small plates $6.60+",
-    "source":"https://www.doordash.com/store/bushido-izakaya-restaurant-mountain-view-64",
     "searched":"2026-09-07"
    },
    {
+    "id":"R38",
+    "count":1,
+    "names":[
+     "Capers Restaurant"
+    ],
     "name":"Capers Restaurant",
     "city":"Campbell",
     "why":"Not a lunch option on the trip date: OpenTable lists Tuesday hours as 4:00 PM - 8:00 PM, while its own offers block advertises Tue 11:00 AM - 10:00 PM - an unresolved conflict with no lunch menu published.",
-    "price_hint":null,
-    "source":"https://www.opentable.com/capers",
     "searched":"2026-09-07"
    },
    {
+    "id":"R39",
+    "count":1,
+    "names":[
+     "Hong Fu Gourmet Chinese Restaurant"
+    ],
     "name":"Hong Fu Gourmet Chinese Restaurant",
     "city":"Cupertino",
     "why":"Tripadvisor marks the business CLOSED; the menu prices there are historical.",
-    "price_hint":"Historic chow mein $7.50, entrees $12.95-$14.95",
-    "source":"https://www.tripadvisor.com/Restaurant_Review-g32273-d473148-Reviews-Hong_Fu_Gourmet_Chinese_Restaurant-Cupertino_California.html",
     "searched":"2026-09-07"
    },
    {
+    "id":"R40",
+    "count":1,
+    "names":[
+     "Korean Cuisine Bob Sang"
+    ],
     "name":"Korean Cuisine Bob Sang",
     "city":"Sunnyvale",
     "why":"The '$18 weekday lunch specials' figure comes only from a third-party listicle (eattheway.com), not the restaurant, Yelp, Google or Reddit, and no address was captured.",
-    "price_hint":"$18 weekday lunch special (listicle only)",
-    "source":"https://eattheway.com/korean-restaurants-in-sunnyvale-ca/",
     "searched":"2026-09-07"
    },
    {
+    "id":"R41",
+    "count":1,
+    "names":[
+     "The Basin"
+    ],
     "name":"The Basin",
     "city":"Saratoga",
     "why":"Dinner only - OpenTable lists 'Monday - Sunday: 5:00pm - Close' with no lunch service.",
-    "price_hint":"Cheeseburger and fries $15 on the happy-hour menu (4-6 PM)",
-    "source":"https://www.opentable.com/r/the-basin-saratoga",
     "searched":"2026-09-07"
    },
    {
+    "id":"R42",
+    "count":1,
+    "names":[
+     "Hachi Ju Hachi"
+    ],
     "name":"Hachi Ju Hachi",
     "city":"Saratoga",
     "why":"Dinner only - the Saratoga Chamber directory lists Tue-Sun 5:00 PM - 9:00 PM.",
-    "price_hint":null,
-    "source":"https://www.saratogachamber.org/copy-of-lodging",
     "searched":"2026-09-07"
    },
    {
+    "id":"R43",
+    "count":1,
+    "names":[
+     "The Hero Ranch Kitchen"
+    ],
     "name":"The Hero Ranch Kitchen",
     "city":"Saratoga",
     "why":"Opens at 4:00 PM Wednesday to Sunday, so there is no lunch service and it is closed on Tuesday.",
-    "price_hint":null,
-    "source":"https://www.saratogachamber.org/copy-of-lodging",
     "searched":"2026-09-07"
    },
    {
+    "id":"R44",
+    "count":1,
+    "names":[
+     "Florentine Trattoria"
+    ],
     "name":"Florentine Trattoria",
     "city":"Saratoga",
     "why":"Dinner only - the Saratoga Chamber directory lists Mon-Sun 4:00 PM - 7:30 PM.",
-    "price_hint":null,
-    "source":"https://www.saratogachamber.org/copy-of-lodging",
     "searched":"2026-09-07"
    },
    {
+    "id":"R45",
+    "count":1,
+    "names":[
+     "Mangia Mornings"
+    ],
     "name":"Mangia Mornings",
     "city":"Saratoga",
     "why":"Closed on Tuesdays - the directory lists Wednesday to Sunday 8:00 AM - 4:00 PM.",
-    "price_hint":null,
-    "source":"https://www.saratogachamber.org/copy-of-lodging",
     "searched":"2026-09-07"
    },
    {
+    "id":"R46",
+    "count":1,
+    "names":[
+     "Sushi Heaven"
+    ],
     "name":"Sushi Heaven",
     "city":"Saratoga",
     "why":"Dinner only - the directory lists 5:00 PM - 9:00 PM with 'call to confirm days'.",
-    "price_hint":null,
-    "source":"https://www.saratogachamber.org/copy-of-lodging",
     "searched":"2026-09-07"
    },
    {
+    "id":"R47",
+    "count":1,
+    "names":[
+     "TeaZenTea (Saratoga)"
+    ],
     "name":"TeaZenTea (Saratoga)",
     "city":"Saratoga",
     "why":"Boba tea shop, not a lunch special - no food menu or hours were published on the pages read.",
-    "price_hint":null,
-    "source":"https://www.teazentea.com/order/saratoga/menu",
     "searched":"2026-09-07"
    },
    {
+    "id":"R48",
+    "count":1,
+    "names":[
+     "Mandarin Gourmet Cupertino"
+    ],
     "name":"Mandarin Gourmet Cupertino",
     "city":"Cupertino",
     "why":"Yelp marks the N De Anza Blvd address as CLOSED, and the only hours available (11:30 AM - 1:30 PM lunch) come from a menu aggregator, so it cannot be planned for the trip date.",
-    "price_hint":null,
-    "source":"https://www.yelp.com/biz/mandarin-gourmet-cupertino-cupertino",
     "searched":"2026-09-07"
    },
    {
@@ -42025,6 +43647,11 @@ window.TINO_DATA = {
     "searched":"2026-09-07"
    },
    {
+    "id":"R49",
+    "count":1,
+    "names":[
+     "Blue Sky Cafe (Cupertino index hit)"
+    ],
     "name":"Blue Sky Cafe (Cupertino index hit)",
     "city":"not resolvable to the radius",
     "why":"Yelp's Cupertino cheap-lunch index lists 'Blue Sky Cafe' but every resolved listing is in another city (Diamond Bar CA, Pierceton IN, San Carlos listing of a different name) - no Cupertino-area business with published hours could be verified.",
@@ -42037,6 +43664,11 @@ window.TINO_DATA = {
     "searched":"2026-09-07"
    },
    {
+    "id":"R50",
+    "count":1,
+    "names":[
+     "El Torito Milpitas"
+    ],
     "name":"El Torito Milpitas",
     "city":"Milpitas",
     "why":"Official site shows daily 11 AM-10/11 PM service but the only deal is Cantina happy hour 3-7 PM - no lunch special on the trip window.",
@@ -42049,6 +43681,11 @@ window.TINO_DATA = {
     "searched":"2026-09-07"
    },
    {
+    "id":"R51",
+    "count":1,
+    "names":[
+     "Pasta Q"
+    ],
     "name":"Pasta Q",
     "city":"Mountain View",
     "why":"Yelp marks it CLOSED (April 2026 capture; the $10 soup+pasta+drink special in an old review is historical).",
@@ -42061,6 +43698,11 @@ window.TINO_DATA = {
     "searched":"2026-09-07"
    },
    {
+    "id":"R52",
+    "count":1,
+    "names":[
+     "Lira"
+    ],
     "name":"Lira",
     "city":"Campbell",
     "why":"Yelp marks it CLOSED (Apr 2026); the '$5 pint + burger happy-hour lunch special' quote predates closure; remaining directory hours are dinner-only.",
@@ -42077,6 +43719,11 @@ window.TINO_DATA = {
     "searched":"2026-09-07"
    },
    {
+    "id":"R53",
+    "count":1,
+    "names":[
+     "Pizza My Heart (Sunnyvale)"
+    ],
     "name":"Pizza My Heart (Sunnyvale)",
     "city":"Sunnyvale",
     "why":"Daily 11-9 verified at 110 E El Camino Real, but no published lunch special/price could be captured (only a Too Good To Go surplus-bag photo at $6.54, which is not a menu deal).",
@@ -42089,6 +43736,11 @@ window.TINO_DATA = {
     "searched":"2026-09-07"
    },
    {
+    "id":"R54",
+    "count":1,
+    "names":[
+     "Panera Bread (Cupertino)"
+    ],
     "name":"Panera Bread (Cupertino)",
     "city":"Cupertino",
     "why":"The 'You Pick Two' combo exists chainwide but the captured price guides are unofficial aggregator sites; the Cupertino cafe's own hours/price page was not retrievable in this pass, so nothing citable to panerabread.com was captured.",
@@ -42101,201 +43753,319 @@ window.TINO_DATA = {
     "searched":"2026-09-07"
    },
    {
+    "id":"R55",
+    "count":1,
+    "names":[
+     "Backyard Cafe"
+    ],
     "name":"Backyard Cafe",
     "city":"Sunnyvale",
     "why":"Real cafe (1100 N Mathilda, daily 6:30-2, verified) but shares the Treehouse Hotel campus street address with Valley Goat, which is also verified; the merge address-dedupe can only keep one row per street address. Dropped the cafe, kept the restaurant row.",
     "searched":"2026-09-07"
    },
    {
+    "id":"R56",
+    "count":1,
+    "names":[
+     "Los Pambazos"
+    ],
     "name":"Los Pambazos",
     "city":"San Jose",
     "why":"Evening-only: Tue-Sun 4:30 PM-12:30/1 AM, Monday closed (wheree listing). No lunch service. City correction: 1305 S Winchester Blvd is San Jose 95117, not Campbell as first pooled.",
-    "price_hint":null,
     "searched":"2026-09-07"
    },
    {
+    "id":"R57",
+    "count":1,
+    "names":[
+     "Arya Global Cuisine"
+    ],
     "name":"Arya Global Cuisine",
     "city":"Cupertino",
     "why":"Yelp marks the business CLOSED.",
-    "price_hint":null,
     "searched":"2026-09-07"
    },
    {
+    "id":"R58",
+    "count":1,
+    "names":[
+     "Bull Ohgane"
+    ],
     "name":"Bull Ohgane",
     "city":"Cupertino",
     "why":"Yelp marks 10493 S De Anza Blvd location CLOSED.",
-    "price_hint":null,
     "searched":"2026-09-07"
    },
    {
+    "id":"R59",
+    "count":1,
+    "names":[
+     "Arirang Tofu & BBQ"
+    ],
     "name":"Arirang Tofu & BBQ",
     "city":"Cupertino",
     "why":"Yelp marks 10310 S De Anza Blvd location CLOSED.",
-    "price_hint":null,
     "searched":"2026-09-07"
    },
    {
+    "id":"R60",
+    "count":1,
+    "names":[
+     "Islands Restaurant"
+    ],
     "name":"Islands Restaurant",
     "city":"Cupertino",
     "why":"Yelp marks 20750 Stevens Creek Blvd location CLOSED.",
-    "price_hint":null,
     "searched":"2026-09-07"
    },
    {
+    "id":"R61",
+    "count":1,
+    "names":[
+     "Chili's Grill & Bar"
+    ],
     "name":"Chili's Grill & Bar",
     "city":"Cupertino",
     "why":"Yelp marks 20060 Stevens Creek Blvd location CLOSED.",
-    "price_hint":null,
     "searched":"2026-09-07"
    },
    {
+    "id":"R62",
+    "count":1,
+    "names":[
+     "Turmeric"
+    ],
     "name":"Turmeric",
     "city":"Sunnyvale",
     "why":"Permanently closed per listings.",
-    "price_hint":null,
     "searched":"2026-09-07"
    },
    {
+    "id":"R63",
+    "count":1,
+    "names":[
+     "Tong Dumpling"
+    ],
     "name":"Tong Dumpling",
     "city":"Cupertino",
     "why":"Official site dead; could not confirm the business is still operating.",
-    "price_hint":null,
     "searched":"2026-09-07"
    },
    {
+    "id":"R64",
+    "count":1,
+    "names":[
+     "Beque Korean Grill"
+    ],
     "name":"Beque Korean Grill",
     "city":"Santa Clara",
     "why":"Dinner-only on weekdays (Mon-Fri opens 4 PM per Yelp); no Tuesday lunch.",
-    "price_hint":"dolsot $13-14 (review)",
     "searched":"2026-09-07"
    },
    {
+    "id":"R65",
+    "count":1,
+    "names":[
+     "Xanh"
+    ],
     "name":"Xanh",
     "city":"Mountain View",
     "why":"110 Castro St now lists as Bloom & Vine; Xanh appears replaced.",
-    "price_hint":null,
     "searched":"2026-09-07"
    },
    {
+    "id":"R66",
+    "count":1,
+    "names":[
+     "Amarin Thai Cuisine (174 Castro)"
+    ],
     "name":"Amarin Thai Cuisine (174 Castro)",
     "city":"Mountain View",
     "why":"Old location marked CLOSED on Yelp; replaced by the 147 Castro St row.",
-    "price_hint":null,
     "searched":"2026-09-07"
    },
    {
+    "id":"R67",
+    "count":1,
+    "names":[
+     "Amarin Thai Cuisine"
+    ],
     "name":"Amarin Thai Cuisine",
     "city":"San Jose",
     "why":"5205 Prospect Rd location marked CLOSED on Yelp (space now Suvai).",
-    "price_hint":null,
     "searched":"2026-09-07"
    },
    {
+    "id":"R68",
+    "count":1,
+    "names":[
+     "Chef Ko Chinese Cuisine"
+    ],
     "name":"Chef Ko Chinese Cuisine",
     "city":"Campbell",
     "why":"Yelp marks the business CLOSED.",
-    "price_hint":null,
     "searched":"2026-09-07"
    },
    {
+    "id":"R69",
+    "count":1,
+    "names":[
+     "Taste of Pho"
+    ],
     "name":"Taste of Pho",
     "city":"Santa Clara",
     "why":"Yelp marks the business CLOSED.",
-    "price_hint":null,
     "searched":"2026-09-07"
    },
    {
+    "id":"R70",
+    "count":1,
+    "names":[
+     "K-Star Doshirak"
+    ],
     "name":"K-Star Doshirak",
     "city":"Santa Clara",
     "why":"Yelp marks the business CLOSED.",
-    "price_hint":null,
     "searched":"2026-09-07"
    },
    {
+    "id":"R71",
+    "count":1,
+    "names":[
+     "Bierhaus"
+    ],
     "name":"Bierhaus",
     "city":"Mountain View",
     "why":"383 Castro St location marked CLOSED on Yelp (Das Bierhauz at 135 Castro is a different business).",
-    "price_hint":null,
     "searched":"2026-09-07"
    },
    {
+    "id":"R72",
+    "count":1,
+    "names":[
+     "El Alto"
+    ],
     "name":"El Alto",
     "city":"Los Altos",
     "why":"Yelp marks the business CLOSED; was dinner-only anyway.",
-    "price_hint":null,
     "searched":"2026-09-07"
    },
    {
+    "id":"R73",
+    "count":1,
+    "names":[
+     "The Menu"
+    ],
     "name":"The Menu",
     "city":"Mountain View",
     "why":"Yelp marks the business CLOSED.",
-    "price_hint":null,
     "searched":"2026-09-07"
    },
    {
+    "id":"R74",
+    "count":1,
+    "names":[
+     "Los Gatos Tavern"
+    ],
     "name":"Los Gatos Tavern",
     "city":"Los Gatos",
     "why":"Dinner-only (Tue-Sat from 5 PM).",
-    "price_hint":null,
     "searched":"2026-09-07"
    },
    {
+    "id":"R75",
+    "count":1,
+    "names":[
+     "The Cats Restaurant"
+    ],
     "name":"The Cats Restaurant",
     "city":"Los Gatos",
     "why":"Lunch only Sat-Sun brunch buffet ($29.95); closed Mon-Thu.",
-    "price_hint":"$29.95 weekend brunch buffet",
     "searched":"2026-09-07"
    },
    {
+    "id":"R76",
+    "count":1,
+    "names":[
+     "GOGA Restaurant (batch8 recheck)"
+    ],
     "name":"GOGA Restaurant (batch8 recheck)",
     "city":"Saratoga",
     "why":"Already in master; Yelp confirms closed Tue and lunch Sat-Sun only.",
-    "price_hint":null,
     "searched":"2026-09-07"
    },
    {
+    "id":"R77",
+    "count":1,
+    "names":[
+     "Yeobo Darling"
+    ],
     "name":"Yeobo Darling",
     "city":"Menlo Park",
     "why":"Dinner-only per Yelp (opens 5 PM).",
-    "price_hint":null,
     "searched":"2026-09-07"
    },
    {
+    "id":"R78",
+    "count":1,
+    "names":[
+     "Drunken Monk"
+    ],
     "name":"Drunken Monk",
     "city":"Menlo Park",
     "why":"Dinner-only per Yelp (opens 5 PM).",
-    "price_hint":null,
     "searched":"2026-09-07"
    },
    {
+    "id":"R79",
+    "count":1,
+    "names":[
+     "Chaat Bhavan Express"
+    ],
     "name":"Chaat Bhavan Express",
     "city":"Sunnyvale",
     "why":"Same 544 Lawrence Expy site as the Chaat Bhavan (Lawrence Expressway) row already in master.",
-    "price_hint":null,
     "searched":"2026-09-07"
    },
    {
+    "id":"R80",
+    "count":1,
+    "names":[
+     "Little Sky Kitchen"
+    ],
     "name":"Little Sky Kitchen",
     "city":"Menlo Park",
     "why":"Shares the 1010 El Camino Real parcel with Cafe Borrone (L246) with no suite number, so the address dedupe cannot separate them (see LUNCH-FLAG on address collisions); unclaimed listing, no phone.",
-    "price_hint":null,
     "searched":"2026-09-07"
    },
    {
+    "id":"R81",
+    "count":1,
+    "names":[
+     "Little Sky Bakery"
+    ],
     "name":"Little Sky Bakery",
     "city":"Menlo Park",
     "why":"Bakery (506 Santa Cruz Ave, 8-4 daily) - not a lunch-special venue; listed here only to avoid confusion with Little Sky Kitchen.",
-    "price_hint":null,
     "searched":"2026-09-07"
    },
    {
+    "id":"R82",
+    "count":1,
+    "names":[
+     "Mendocino Farms"
+    ],
     "name":"Mendocino Farms",
     "city":"Cupertino",
     "why":"Could not confirm a Cupertino location from official/Yelp sources (search returned other cities only).",
-    "price_hint":null,
     "searched":"2026-09-07"
    },
    {
+    "id":"R83",
+    "count":1,
+    "names":[
+     "Gen Korean BBQ House"
+    ],
     "name":"Gen Korean BBQ House",
     "city":"Milpitas",
     "why":"TripAdvisor listing for 190 Barber Ct is titled 'GEN KOREAN BBG HOUSE - CLOSED'; the chain's Fremont store is listed in the master instead.",
@@ -42308,6 +44078,11 @@ window.TINO_DATA = {
     "searched":"2026-09-07"
    },
    {
+    "id":"R84",
+    "count":1,
+    "names":[
+     "Fugetsu"
+    ],
     "name":"Fugetsu",
     "city":"Santa Clara",
     "why":"The Santa Clara storefront (2783 El Camino Real) closed in May 2021 and the business reopened inside Rokko in Sunnyvale; it is listed there instead.",
@@ -42320,6 +44095,11 @@ window.TINO_DATA = {
     "searched":"2026-09-07"
    },
    {
+    "id":"R85",
+    "count":1,
+    "names":[
+     "Toro Sushi (Stone Grill & Bar)"
+    ],
     "name":"Toro Sushi (Stone Grill & Bar)",
     "city":"Fremont",
     "why":"The deal quoted on its Yelp snippet is '$10 special rolls' on Monday NIGHTS - a dinner happy-hour promotion, not a lunch special.",
@@ -42332,6 +44112,11 @@ window.TINO_DATA = {
     "searched":"2026-09-07"
    },
    {
+    "id":"R86",
+    "count":1,
+    "names":[
+     "Dope Pho"
+    ],
     "name":"Dope Pho",
     "city":"Fremont",
     "why":"Only evidence is 'affordable since they have a happy hour menu' - a happy-hour menu is not a lunch special.",
@@ -42344,6 +44129,11 @@ window.TINO_DATA = {
     "searched":"2026-09-07"
    },
    {
+    "id":"R87",
+    "count":1,
+    "names":[
+     "Amazing Basil"
+    ],
     "name":"Amazing Basil",
     "city":"Fremont",
     "why":"Review wording is hedged ('They have kind of lunch specials and...'); no deal name, window or price could be pinned.",
@@ -42356,6 +44146,11 @@ window.TINO_DATA = {
     "searched":"2026-09-07"
    },
    {
+    "id":"R88",
+    "count":1,
+    "names":[
+     "Zaytinya"
+    ],
     "name":"Zaytinya",
     "city":"Palo Alto",
     "why":"The 'lunch special' phrase in the top Yelp quote refers to the server making a guest's birthday lunch special, not a recurring deal.",
@@ -42368,6 +44163,11 @@ window.TINO_DATA = {
     "searched":"2026-09-07"
    },
    {
+    "id":"R89",
+    "count":1,
+    "names":[
+     "Little Lamb Hot Pot & BBQ"
+    ],
     "name":"Little Lamb Hot Pot & BBQ",
     "city":"San Jose",
     "why":"The area deal captured on Reddit is '25$ off for spending 50$' (a spending discount, not a lunch special); lunch hours also conflict across aggregators (zmenu prints Tue dinner-only, beyondmenu prints Tue 11:00-21:30).",
@@ -42388,6 +44188,11 @@ window.TINO_DATA = {
     "searched":"2026-09-07"
    },
    {
+    "id":"R90",
+    "count":1,
+    "names":[
+     "Ahisushi & Steakhouse"
+    ],
     "name":"Ahisushi & Steakhouse",
     "city":"Redwood City",
     "why":"Deferred this pass: the lunch-special review exists ('has great lunch specials') but no address/hours page could be pinned before the search budget ran out.",
@@ -42400,6 +44205,11 @@ window.TINO_DATA = {
     "searched":"2026-09-07"
    },
    {
+    "id":"R91",
+    "count":1,
+    "names":[
+     "Blue Fin Sushi"
+    ],
     "name":"Blue Fin Sushi",
     "city":"Redwood City",
     "why":"Deferred this pass: lunch-special review exists but no locatable directory page was captured.",
@@ -42412,6 +44222,11 @@ window.TINO_DATA = {
     "searched":"2026-09-07"
    },
    {
+    "id":"R92",
+    "count":1,
+    "names":[
+     "Salt And Brine"
+    ],
     "name":"Salt And Brine",
     "city":"San Carlos",
     "why":"Only 6 reviews and no stable directory page; the '$10 lunch special smash burger' quote could not be corroborated - too thin to list.",
@@ -42424,6 +44239,11 @@ window.TINO_DATA = {
     "searched":"2026-09-07"
    },
    {
+    "id":"R93",
+    "count":1,
+    "names":[
+     "La Vigna Trattoria"
+    ],
     "name":"La Vigna Trattoria",
     "city":"Santa Clara",
     "why":"Search results for 'La Vigna menu/price' resolve to La Vigna in Forest Hills, Queens (lavignany.com, menuxp) and an Astoria OpenTable; no current Santa Clara (The Alameda) restaurant page or address could be found - likely long closed.",
@@ -42440,6 +44260,11 @@ window.TINO_DATA = {
     "searched":"2026-09-07"
    },
    {
+    "id":"R94",
+    "count":1,
+    "names":[
+     "True Food Kitchen"
+    ],
     "name":"True Food Kitchen",
     "city":"Menlo Park",
     "why":"The only 'lunch special' sentence about it is a reviewer wishing they had one ('what would be a great edition is for them to have a lunch special').",
@@ -42452,6 +44277,11 @@ window.TINO_DATA = {
     "searched":"2026-09-07"
    },
    {
+    "id":"R95",
+    "count":1,
+    "names":[
+     "Flowers Saratoga"
+    ],
     "name":"Flowers Saratoga",
     "city":"Saratoga",
     "why":"A review says 'because of the summer, it has a temporary lunch menu' - a seasonal pop-up is not a standing lunch special; also no price captured.",
@@ -42464,6 +44294,11 @@ window.TINO_DATA = {
     "searched":"2026-09-07"
    },
    {
+    "id":"R96",
+    "count":1,
+    "names":[
+     "West Coast Sourdough"
+    ],
     "name":"West Coast Sourdough",
     "city":"Newark",
     "why":"'combo options looked like good deals' is generic combo pricing, not a named lunch special.",
@@ -42476,6 +44311,11 @@ window.TINO_DATA = {
     "searched":"2026-09-07"
    },
    {
+    "id":"R97",
+    "count":1,
+    "names":[
+     "Su Zhe Eatery"
+    ],
     "name":"Su Zhe Eatery",
     "city":"Palo Alto",
     "why":"Yelp business page is marked 'SUZHE EATERY - CLOSED' (Jan 2026) even though menu mirrors still show a lunch block at 4256 El Camino Real - excluded; call it a ghost listing until the venue confirms reopening.",
@@ -42492,6 +44332,11 @@ window.TINO_DATA = {
     "searched":"2026-09-07"
    },
    {
+    "id":"R98",
+    "count":1,
+    "names":[
+     "Pot Sticker King"
+    ],
     "name":"Pot Sticker King",
     "city":"Cupertino",
     "why":"Yelp marks 'POT STICKER KING - CLOSED' (Dec 2025). Its old allmenus page showed a rich 'Lunch Special 11:00-2:30' block - recorded here so a reader can re-check; the closure page outranks it for now.",
@@ -42508,6 +44353,11 @@ window.TINO_DATA = {
     "searched":"2026-09-07"
    },
    {
+    "id":"R99",
+    "count":1,
+    "names":[
+     "La Strada Italian Restaurant"
+    ],
     "name":"La Strada Italian Restaurant",
     "city":"Palo Alto",
     "why":"Yelp page reads 'LA STRADA - CLOSED' (May 2026); a stale YellowPages hours block still prints open hours - excluded, per the closure page.",
@@ -42524,6 +44374,11 @@ window.TINO_DATA = {
     "searched":"2026-09-07"
    },
    {
+    "id":"R100",
+    "count":1,
+    "names":[
+     "China Delight"
+    ],
     "name":"China Delight",
     "city":"Palo Alto",
     "why":"Yelp: 'CHINA DELIGHT - CLOSED'; the '$7 lunch deal' only appears in a 2018 Reddit comment - two strikes (closure + staleness), excluded.",
@@ -42540,6 +44395,11 @@ window.TINO_DATA = {
     "searched":"2026-09-07"
    },
    {
+    "id":"R101",
+    "count":1,
+    "names":[
+     "Clarkes Burgers"
+    ],
     "name":"Clarkes Burgers",
     "city":"Mountain View",
     "why":"Deferred: the 2018 'lunch special $9.50' listicle interleaves two venues' addresses in the retrieved block ('650 Castro St' vs '615 W El Camino Real'), so the address attribution for the lunch special could not be pinned without a fresh source.",
@@ -42552,6 +44412,11 @@ window.TINO_DATA = {
     "searched":"2026-09-07"
    },
    {
+    "id":"R102",
+    "count":1,
+    "names":[
+     "Ping's Bistro"
+    ],
     "name":"Ping's Bistro",
     "city":"San Mateo",
     "why":"Deferred: the San Mateo search page lists a second 'Ping's Bistro' (4.1, 111 reviews) beside the Fremont one already in the master list; address could not be pinned this pass - re-check before adding a second row.",
@@ -42564,6 +44429,11 @@ window.TINO_DATA = {
     "searched":"2026-09-07"
    },
    {
+    "id":"R103",
+    "count":1,
+    "names":[
+     "Pho Ha Noi"
+    ],
     "name":"Pho Ha Noi",
     "city":"Palo Alto",
     "why":"Deferred: 'The lunch special was wonderful and a great deal!!' appears in the Palo Alto Lunch Specials index, but no address/hours were captured this pass; not to be confused with the two existing Pho Ha Noi rows (Cupertino, Milpitas).",
@@ -42576,6 +44446,11 @@ window.TINO_DATA = {
     "searched":"2026-09-07"
    },
    {
+    "id":"R104",
+    "count":1,
+    "names":[
+     "Tao Tao Restaurant"
+    ],
     "name":"Tao Tao Restaurant",
     "city":"Sunnyvale",
     "why":"Flagged for manual review: allmenus prints a rich 'Lunch Specials $9-$13 + group lunches' block for a 'Tao Tao Restaurant' in Sunnyvale while the master list carries 'Tao Tao Cafe | Sunnyvale'; likely the same venue under a different name. Deliberately not added to avoid a duplicate - a reviewer should decide whether to merge the menu data into the existing row.",
@@ -42588,6 +44463,11 @@ window.TINO_DATA = {
     "searched":"2026-09-07"
    },
    {
+    "id":"R105",
+    "count":1,
+    "names":[
+     "Empire Armadillo BBQ"
+    ],
     "name":"Empire Armadillo BBQ",
     "city":"Sunnyvale",
     "why":"Only source is the Sunnyvale chamber Restaurant Week page (Nov 2025): 'Lunch Special - $26.99' for a deli/BBQ plate. The venue's current address/hours were not confirmable this pass - deferred.",
@@ -42600,6 +44480,11 @@ window.TINO_DATA = {
     "searched":"2026-09-07"
    },
    {
+    "id":"R106",
+    "count":1,
+    "names":[
+     "Kitchen at Peery Park"
+    ],
     "name":"Kitchen at Peery Park",
     "city":"Sunnyvale",
     "why":"Its Restaurant Week special is explicitly 'Dinner Only' - out of scope for a lunch list.",
@@ -42612,6 +44497,11 @@ window.TINO_DATA = {
     "searched":"2026-09-07"
    },
    {
+    "id":"R107",
+    "count":1,
+    "names":[
+     "Saratoga Springs / Saratoga County listings"
+    ],
     "name":"Saratoga Springs / Saratoga County listings",
     "city":"Saratoga (NY trap)",
     "why":"IRREGULARITY GUARD: searching 'Saratoga lunch special' returns Saratoga Springs, NY results (saratoga.com '2 For $22 Lunch' at Morrissey's, Times-Union restaurant-week stories). None of those businesses are in California; they were excluded. The CA Saratoga candidates that surfaced (GOGA, Anchors, Darla, Mint Leaf, Bell Tower, Flowers, Hero Ranch) were all either already listed or had no lunch special.",
@@ -42628,6 +44518,11 @@ window.TINO_DATA = {
     "searched":"2026-09-07"
    },
    {
+    "id":"R108",
+    "count":1,
+    "names":[
+     "La Vigna-style New York listings"
+    ],
     "name":"La Vigna-style New York listings",
     "city":"Santa Clara (trap)",
     "why":"IRREGULARITY GUARD: the 'La Vigna' menu hits resolve to Forest Hills/Astoria NY venues; no Santa Clara page exists. Excluded (see the master reject entry).",
@@ -42640,6 +44535,11 @@ window.TINO_DATA = {
     "searched":"2026-09-07"
    },
    {
+    "id":"R109",
+    "count":1,
+    "names":[
+     "Delhi to Kathmandu"
+    ],
     "name":"Delhi to Kathmandu",
     "city":"Sunnyvale",
     "why":"Only found on the Sunnyvale chamber Restaurant Week page (special menu $11-$18); an event-week menu is not a standing lunch special, and the venue's address was not independently captured this pass.",
@@ -42652,6 +44552,11 @@ window.TINO_DATA = {
     "searched":"2026-09-07"
    },
    {
+    "id":"R110",
+    "count":1,
+    "names":[
+     "The Melt"
+    ],
     "name":"The Melt",
     "city":"Sunnyvale",
     "why":"Shown as sponsored in a 'Tuesday Specials in Sunnyvale' search with an 'On their website: specials' tag; no specific lunch deal, price or hours were captured - too thin to list.",
@@ -42664,6 +44569,11 @@ window.TINO_DATA = {
     "searched":"2026-09-07"
    },
    {
+    "id":"R111",
+    "count":1,
+    "names":[
+     "The Diner of Los Gatos"
+    ],
     "name":"The Diner of Los Gatos",
     "city":"Los Gatos (duplicate check)",
     "why":"Researched as new this pass and found ALREADY in the master list (address match). The merge pipeline rejected the batch9c copy automatically - recorded so the dedupe is visible rather than silent.",
@@ -42676,6 +44586,11 @@ window.TINO_DATA = {
     "searched":"2026-09-07"
    },
    {
+    "id":"R112",
+    "count":1,
+    "names":[
+     "Trattoria 360"
+    ],
     "name":"Trattoria 360",
     "city":"Campbell",
     "why":"Dinner only - no lunch service at all. TripAdvisor structured data for 360 E Campbell Avenue lists Sunday 17:00-21:30, Tuesday-Thursday 17:00-21:30, Friday-Saturday 17:00-22:00 and NO Monday entry. The restaurant's own site describes it as a dinner room with a full bar. A lunch special is impossible here.",
@@ -42692,6 +44607,11 @@ window.TINO_DATA = {
     "searched":"2026-09-11"
    },
    {
+    "id":"R113",
+    "count":1,
+    "names":[
+     "Capers Eat & Drink"
+    ],
     "name":"Capers Eat & Drink",
     "city":"Campbell",
     "why":"Dinner only. TripAdvisor structured data for 1710 W Campbell Ave lists Sunday 16:00-20:00 and Tuesday-Saturday 16:00-21:00, with no Monday entry and no lunch block. This is the current name of the business already rejected as 'Capers Restaurant' - recorded under the current name so the dedupe is visible.",
@@ -42708,6 +44628,11 @@ window.TINO_DATA = {
     "searched":"2026-09-11"
    },
    {
+    "id":"R114",
+    "count":1,
+    "names":[
+     "Keke's Breakfast Cafe"
+    ],
     "name":"Keke's Breakfast Cafe",
     "city":"Sunnyvale",
     "why":"DEFERRED, not refused on merit. The restaurant's own location page carries the banners 'COMING SOON' and 'Map Coming Soon' while still printing 311 S Mathilda Ave, Sunnyvale CA 94086 and 'Open Daily 7:00 AM - 2:30 PM'. It cannot be confirmed that this room is trading on 2026-09-08, and a 2:30 PM close would cut the return-bus margin anyway. Its Restaurant Week offer (free shortstack of pancakes with an entree or a $10 minimum purchase, dine-in, one per person) is recorded here for the next pass.",
@@ -42724,6 +44649,11 @@ window.TINO_DATA = {
     "searched":"2026-09-11"
    },
    {
+    "id":"R115",
+    "count":1,
+    "names":[
+     "Urban Plates"
+    ],
     "name":"Urban Plates",
     "city":"Sunnyvale",
     "why":"DEFERRED. The Sunnyvale Restaurant Week page lists a $59 three-course meal for two, but the entry links only to the brand's national homepage - no Sunnyvale street address or weekly hours could be pinned to a citable page this pass, so it was not merged with a placeholder address.",
@@ -42740,6 +44670,11 @@ window.TINO_DATA = {
     "searched":"2026-09-11"
    },
    {
+    "id":"R116",
+    "count":1,
+    "names":[
+     "Gurkha Kitchen"
+    ],
     "name":"Gurkha Kitchen",
     "city":"Sunnyvale",
     "why":"DEFERRED. Chamber page lists a $40 Lunch & Dinner Combo and $45 Indo-Chinese Combo (both serve 3), but no Sunnyvale street address or weekly hours could be verified this pass.",
@@ -42756,6 +44691,11 @@ window.TINO_DATA = {
     "searched":"2026-09-11"
    },
    {
+    "id":"R117",
+    "count":1,
+    "names":[
+     "RBG Bar & Grill"
+    ],
     "name":"RBG Bar & Grill",
     "city":"Sunnyvale",
     "why":"DEFERRED. The chamber page lists a $34.99 special menu (short ribs, whipped potatoes, sweet corn, Josh Cabernet; prawns +$8; cheesecake +$14) at the Radisson Sunnyvale, but no per-day hours and no street address were verified this pass, and the entry does not say the menu is a lunch menu.",
@@ -42772,6 +44712,11 @@ window.TINO_DATA = {
     "searched":"2026-09-11"
    },
    {
+    "id":"R118",
+    "count":1,
+    "names":[
+     "Teriyaki Madness"
+    ],
     "name":"Teriyaki Madness",
     "city":"Sunnyvale",
     "why":"DEFERRED. The chamber page lists a 'Buy 1 Bowl, Get 1 Free' offer (regular or large bowl, free JR or regular bowl, drinks must not be part of a combo) but no dollar price, address or hours were verified this pass.",
@@ -42788,6 +44733,11 @@ window.TINO_DATA = {
     "searched":"2026-09-11"
    },
    {
+    "id":"R119",
+    "count":1,
+    "names":[
+     "Casa Lupe"
+    ],
     "name":"Casa Lupe",
     "city":"Los Altos",
     "why":"DEFERRED with a strong irregularity. The Los Altos room's own website publishes 'OPEN MONDAY - SATURDAY: MONDAY, TUESDAY & WEDNESDAY 5:00PM-8:30P; THURSDAY 11:30AM-2:00PM' - i.e. the ONLY lunch service is Thursday, so it is closed for the Tuesday trip - and the page prints no street address at all, so it could not be merged as a locatable row. Distinct from the two Casa Lupe rows already in the master list (459 Castro St, Mountain View and 2165 Winchester Blvd, Campbell).",
@@ -42800,6 +44750,11 @@ window.TINO_DATA = {
     "searched":"2026-09-11"
    },
    {
+    "id":"R120",
+    "count":1,
+    "names":[
+     "Los Altos Breakfast and Lunch"
+    ],
     "name":"Los Altos Breakfast and Lunch",
     "city":"Los Altos (name trap - actually Sparks, NV)",
     "why":"REJECTED - geographic name trap. The name reads as Los Altos, California, but the business's own menu page carries structured data placing it at 5015 Pyramid Way Ste 107, Sparks, NV 89436 (geo 39.58242389999999, -119.7444019, phone (775) 425-8010, hours 7:00 AM - 2:30 PM daily). Out of state and roughly 200 miles outside the ring; its $10-$20 lunch prices must not be read as Los Altos prices.",
@@ -42812,6 +44767,11 @@ window.TINO_DATA = {
     "searched":"2026-09-11"
    },
    {
+    "id":"R121",
+    "count":1,
+    "names":[
+     "Camino Real Mexican Restaurant"
+    ],
     "name":"Camino Real Mexican Restaurant",
     "city":"Cupertino-area search hit (actually Berryville, VA)",
     "why":"REJECTED - geographic name trap surfaced by a Sunnyvale/El Camino Real query. Its lunch page is a genuine published lunch menu (13 combinations at $9.50 daily 11:00 AM - 2:30 PM, house specials $12-$14), but the same page's own footer places the restaurant at 16 Crow St., Berryville, VA 22611 with a 540 area-code phone. Not in the Bay Area; excluded so the $9.50 lunch figures never enter a Cupertino-area list.",
@@ -42824,6 +44784,11 @@ window.TINO_DATA = {
     "searched":"2026-09-11"
    },
    {
+    "id":"R122",
+    "count":1,
+    "names":[
+     "Bluestone Lane Los Altos Cafe"
+    ],
     "name":"Bluestone Lane Los Altos Cafe",
     "city":"Los Altos",
     "why":"DEFERRED. The brand's own Los Altos page prints 288 1st St, Los Altos CA 94022 and 7:30 AM - 5:30 PM daily, but its structured data still carries addressLocality 'coming_soon_city' and postalCode 'coming_soon_zip', and the page is a coffee/brunch room with no published lunch special. Refused as a placeholder rather than merged.",
@@ -42836,6 +44801,11 @@ window.TINO_DATA = {
     "searched":"2026-09-11"
    },
    {
+    "id":"R123",
+    "count":1,
+    "names":[
+     "Campbell Pizza"
+    ],
     "name":"Campbell Pizza",
     "city":"Campbell",
     "why":"REJECTED - closure. Its menu directory page for 3393 Winchester Blvd, Campbell, CA 95008-6844 advertises 'Lunch Specials' as a category but the same page states 'Restaurant closed' at the foot of the menu. Not merged; recorded so the stale 'Lunch Specials' tag is not mistaken for a live deal.",
@@ -42848,6 +44818,11 @@ window.TINO_DATA = {
     "searched":"2026-09-11"
    },
    {
+    "id":"R124",
+    "count":1,
+    "names":[
+     "Cafe Arbor"
+    ],
     "name":"Cafe Arbor",
     "city":"Palo Alto",
     "why":"DEFERRED. A Bay Area food blog describes an affordable Stanford Shopping Center lunch room open 7:00 AM - 2:00 PM on weekdays with entrees $15-$20 and a Stanford-employee discount, but no official menu, address or hours page could be verified this pass - a single blog is not a citable source for a master row.",
@@ -42860,6 +44835,11 @@ window.TINO_DATA = {
     "searched":"2026-09-11"
    },
    {
+    "id":"R125",
+    "count":1,
+    "names":[
+     "107 Bistro & Wine Bar"
+    ],
     "name":"107 Bistro & Wine Bar",
     "city":"Los Gatos",
     "why":"DEFERRED. A Yelp lunch search tags it 'Good for lunch' and describes it as inside the historic Testarossa Winery, but no street address, weekly hours or priced lunch special were verified this pass.",
@@ -42872,6 +44852,11 @@ window.TINO_DATA = {
     "searched":"2026-09-11"
    },
    {
+    "id":"R126",
+    "count":1,
+    "names":[
+     "Komala Vilas"
+    ],
     "name":"Komala Vilas",
     "city":"Sunnyvale",
     "why":"DEFERRED. A Yelp business page shows a 'Lunch Thali' dish and menu items from $6.00, and the page header begins an address at '1020 ...' that the retrieved snippet truncates, so the street address could not be verified. Not merged with a partial address.",
@@ -42884,6 +44869,11 @@ window.TINO_DATA = {
     "searched":"2026-09-11"
    },
    {
+    "id":"R127",
+    "count":1,
+    "names":[
+     "Indian Sizzler"
+    ],
     "name":"Indian Sizzler",
     "city":"Santa Clara",
     "why":"DEFERRED. A Yelp business page prints 'Closed 11:30 AM - 11:30 PM' and item prices from $7.00-$20.00, and a social post describes an all-you-can-eat buffet at roughly $25, but no street address and no lunch-specific price were verified this pass.",
@@ -42896,6 +44886,11 @@ window.TINO_DATA = {
     "searched":"2026-09-11"
    },
    {
+    "id":"R128",
+    "count":1,
+    "names":[
+     "Barracuda Japanese Restaurant"
+    ],
     "name":"Barracuda Japanese Restaurant",
     "city":"Mountain View",
     "why":"DEFERRED. A Yelp review collected on the Castro Street collection page describes a three-item bento box with salad, miso, rice and edamame at 'about $12 each, including tip & tax' - a reviewer figure with no street address or hours verified this pass.",
@@ -42908,6 +44903,11 @@ window.TINO_DATA = {
     "searched":"2026-09-11"
    },
    {
+    "id":"R129",
+    "count":1,
+    "names":[
+     "Taverna Vesuvio Pizzeria & Ristorante"
+    ],
     "name":"Taverna Vesuvio Pizzeria & Ristorante",
     "city":"Fremont",
     "why":"REJECTED - closure. Its Yelp business page is titled 'TAVERNA VESUVIO PIZZERIA & RISTORANTE - CLOSED' at 39965 Mission Blvd, Fremont, CA 94539, and the hours it still prints (Mon-Thu 4:00 pm-8:30 pm, Fri-Sat 12:00 pm-9:30 pm) are dinner-led with no lunch window. It appeared in the Fremont Restaurant Week line-up with new menu items, which is why it was screened.",
@@ -42924,6 +44924,11 @@ window.TINO_DATA = {
     "searched":"2026-09-11"
    },
    {
+    "id":"R130",
+    "count":1,
+    "names":[
+     "Papillon Restaurant"
+    ],
     "name":"Papillon Restaurant",
     "city":"Fremont",
     "why":"REJECTED - dinner-only. The restaurant's own About page prints 'Tue 5pm - 9pm, Wed 5pm - 9pm, Thu 5pm - 9pm, Fri 5pm - 9pm, Sat 5pm - 9pm, Sun 5pm - 9pm' at 37296 Mission Blvd, Fremont, CA 94536, i.e. it opens at 5:00 PM every day it is open and serves no lunch. It is a Fremont Restaurant Week participant (prix-fixe dinner), which is why it surfaced.",
@@ -42940,6 +44945,11 @@ window.TINO_DATA = {
     "searched":"2026-09-11"
    },
    {
+    "id":"R131",
+    "count":1,
+    "names":[
+     "Kyoto Ramen Hawaiian BBQ"
+    ],
     "name":"Kyoto Ramen Hawaiian BBQ",
     "city":"Fremont (unverified in Fremont)",
     "why":"DEFERRED - out-of-area name collision. The brand's pages that could be retrieved this pass place it at 1029 Arnold Dr Ste 2, Martinez, CA 94553 (daily 10:00 AM-9:00 PM) and in Hercules; every 'Fremont' hit in the Yelp lunch-special list resolves to those rooms, not to a Fremont street address. No Fremont address or hours were verified, so nothing was merged.",
@@ -42956,6 +44966,11 @@ window.TINO_DATA = {
     "searched":"2026-09-11"
    },
    {
+    "id":"R132",
+    "count":1,
+    "names":[
+     "Gaboja"
+    ],
     "name":"Gaboja",
     "city":"Santa Clara",
     "why":"REJECTED - closure plus dinner-only. Its Yelp business page is titled 'GABOJA - CLOSED' at 2333 El Camino Real, Santa Clara, CA 95050, and the hours that remain on the listing and on the ordering mirror are 5:00 PM-midnight Monday-Saturday with Sunday closed - i.e. no lunch service even before the closure. It surfaced on a 'Korean lunch special' list, which is why it was screened.",
@@ -42972,6 +44987,11 @@ window.TINO_DATA = {
     "searched":"2026-09-11"
    },
    {
+    "id":"R133",
+    "count":1,
+    "names":[
+     "Tony & Alba's Pizza and Pasta"
+    ],
     "name":"Tony & Alba's Pizza and Pasta",
     "city":"San Jose",
     "why":"DEFERRED - incomplete hours. Its address (3137 Stevens Creek Blvd, San Jose, CA 95117) and lunch-menu prices are verifiable - the waiter.com menu prints a 'SANDWICHES - LUNCH' section at $18.00 and pasta meals at $17.00, and a Yelp review and a Reddit thread both mention a Tony & Alba's lunch special - but no page retrieved this pass printed a complete per-day hours table (the TripAdvisor hours block cuts off at Tuesday and Yelp's list page for the name shows only 'Open until 8:00 PM'). Held back rather than guessed; revisit with a direct fetch of the restaurant's own site.",
@@ -42988,6 +45008,11 @@ window.TINO_DATA = {
     "searched":"2026-09-11"
    },
    {
+    "id":"R134",
+    "count":1,
+    "names":[
+     "Adega"
+    ],
     "name":"Adega",
     "city":"San Jose",
     "why":"REJECTED - dinner-only and closed Tuesday. The restaurant's own site says 'Open for DINNER only Wed - Sun (5:00PM - close). Closed on Monday & Tuesday' at 1614 Alum Rock Ave, San Jose, CA 95116. It appeared in the Dine Downtown line-up with a $99 Portuguese prix fixe, which is a dinner offer for a Michelin-starred room and has no lunch component.",
@@ -43004,6 +45029,11 @@ window.TINO_DATA = {
     "searched":"2026-09-11"
    },
    {
+    "id":"R135",
+    "count":1,
+    "names":[
+     "Nomikai"
+    ],
     "name":"Nomikai",
     "city":"San Jose",
     "why":"REJECTED - dinner-only. Its own contact page at 48 S 1st St, San Jose, CA 95113 prints 'Kitchen Hours: Tues - Thurs: 5:30 - 10pm; Fri - Sat: 5:30-11:30pm', and Yelp's current snapshots show doors opening at 6:30 PM Wednesday-Saturday with Monday, Tuesday and Sunday closed. No lunch service exists. It appeared in the Dine Downtown line-up with chef's-special pizzas, which is why it was screened.",
@@ -43020,6 +45050,11 @@ window.TINO_DATA = {
     "searched":"2026-09-11"
    },
    {
+    "id":"R136",
+    "count":1,
+    "names":[
+     "Miniboss"
+    ],
     "name":"Miniboss",
     "city":"San Jose",
     "why":"REJECTED - dinner-only on Tuesday. At 52 E Santa Clara St, San Jose, CA 95113 the Yelp hours table and Restaurantji both open the doors at 5:00 PM Tuesday through Saturday (Sunday 2:00 PM, Monday closed), so there is no Tuesday lunch. Its Dine Downtown offer of 'six Pizza Bites for $15' is a bar-food promotion with no published lunch window.",
@@ -43036,6 +45071,11 @@ window.TINO_DATA = {
     "searched":"2026-09-11"
    },
    {
+    "id":"R137",
+    "count":1,
+    "names":[
+     "Sizzling Plate (San Jose)"
+    ],
     "name":"Sizzling Plate (San Jose)",
     "city":"San Jose",
     "why":"DEFERRED - not identified. A Reddit thread names a 'Sizzling Plate' across the street from California Sourdough on Murphy Ave, but the searches run this pass surfaced only Sizzling Lunch (1085 E Brokaw Rd, a chain already represented in the master list by its Cupertino room) and Sizzling House / Sizzling Dumpling House (a different business again). No page retrieved gave a verified street address and per-day hours for a restaurant actually named Sizzling Plate, so nothing was merged.",
@@ -43052,6 +45092,11 @@ window.TINO_DATA = {
     "searched":"2026-09-11"
    },
    {
+    "id":"R138",
+    "count":1,
+    "names":[
+     "Gens Korean Barbeque"
+    ],
     "name":"Gens Korean Barbeque",
     "city":"San Jose",
     "why":"DEFERRED - no address or hours verified. The only evidence found is a Reddit diner quote ('weekday lunch at Gens Korean Barbeque on Hostetter Rd is $21'). No official page, ordering page or listing with a street address and per-day hours was retrieved this pass, so it fails the project's address-plus-hours bar and is held rather than guessed.",
@@ -43064,6 +45109,11 @@ window.TINO_DATA = {
     "searched":"2026-09-11"
    },
    {
+    "id":"R139",
+    "count":1,
+    "names":[
+     "Left Bank Brasserie - Santana Row"
+    ],
     "name":"Left Bank Brasserie - Santana Row",
     "city":"San Jose",
     "why":"REJECTED - closure. Its Yelp business page is now titled 'LEFT BANK BRASSERIE - SANTANA ROW - CLOSED' at 377 Santana Row Ste 1100, San Jose, CA 95128. The hours still printed there (Mon-Thu 11:30 am-9:00 pm) and on TripAdvisor are stale listing data for a room that has closed; nothing was merged.",
@@ -43080,6 +45130,11 @@ window.TINO_DATA = {
     "searched":"2026-09-11"
    },
    {
+    "id":"R140",
+    "count":1,
+    "names":[
+     "Rosie McCann's Irish Pub & Restaurant - Santana Row"
+    ],
     "name":"Rosie McCann's Irish Pub & Restaurant - Santana Row",
     "city":"San Jose",
     "why":"REJECTED - closure. Yelp titles it 'CLOSED', TripAdvisor titles it 'Rosie McCann's - Santana Row - CLOSED', and Restaurant Guru says 'Permanently closed' for 355 Santana Row Ste 1060, San Jose, CA 95128. Two of its own menu pages also disagree about hours (one says Mon-Thu 5:00 pm-12:00 am, another says Mon 4:00 pm / Tue-Thu 12:00 pm), so even the stale data conflicts.",
@@ -43096,6 +45151,11 @@ window.TINO_DATA = {
     "searched":"2026-09-11"
    },
    {
+    "id":"R141",
+    "count":1,
+    "names":[
+     "Yankee Pier"
+    ],
     "name":"Yankee Pier",
     "city":"San Jose",
     "why":"REJECTED - closure. Its Yelp business page is titled 'YANKEE PIER - CLOSED' at 378 Santana Row Ste 1100, San Jose, CA 95128. A third listing (manta.com) even prints dinner-only 5:00 PM openings, so no current hours could be trusted even ignoring the closure.",
@@ -43108,6 +45168,11 @@ window.TINO_DATA = {
     "searched":"2026-09-11"
    },
    {
+    "id":"R142",
+    "count":1,
+    "names":[
+     "Sushi Confidential - San Jose (downtown)"
+    ],
     "name":"Sushi Confidential - San Jose (downtown)",
     "city":"San Jose",
     "why":"REJECTED - no Tuesday service. At 26 N San Pedro St, San Jose, CA 95113 the Yelp hours table and its structured data agree: Monday, Tuesday and Wednesday closed, Thursday 4:00 pm-9:00 pm, Friday-Saturday 4:00 pm-11:00 pm, Sunday 11:00 am-10:00 pm. There is no lunch at all on the trip date. Its Willow Glen room has normal lunch hours and is merged separately.",
@@ -43120,6 +45185,11 @@ window.TINO_DATA = {
     "searched":"2026-09-11"
    },
    {
+    "id":"R143",
+    "count":1,
+    "names":[
+     "Osha Thai - Santana Row"
+    ],
     "name":"Osha Thai - Santana Row",
     "city":"San Jose",
     "why":"DEFERRED - not identified. The searches run this pass surfaced only Osha Thai rooms in San Francisco (4 Embarcadero Ctr, 696 Geary St and 149 2nd St) with their hours; no Santana Row address, phone or per-day hours for an Osha Thai in San Jose could be retrieved. Held rather than guessed.",
@@ -43132,6 +45202,11 @@ window.TINO_DATA = {
     "searched":"2026-09-11"
    },
    {
+    "id":"R144",
+    "count":1,
+    "names":[
+     "Vida Tapas Y Cocteles"
+    ],
     "name":"Vida Tapas Y Cocteles",
     "city":"Mountain View",
     "why":"REJECTED - closure. Its Yelp business page (110 Castro St, Mountain View, CA 94041) carries 'Yelpers report this location has closed', and the order.online storefront for the same address renders 'Unavailable'. A 2024 blog post and a 2024 Yelp review both praised a $25 '2 tapas + 1 dessert' lunch special, but that offer belongs to a restaurant that is no longer trading, so nothing was merged.",
@@ -43148,6 +45223,11 @@ window.TINO_DATA = {
     "searched":"2026-09-11"
    },
    {
+    "id":"R145",
+    "count":1,
+    "names":[
+     "John's of Willow Glen / Johns Xlnt Foods"
+    ],
     "name":"John's of Willow Glen / Johns Xlnt Foods",
     "city":"San Jose",
     "why":"DEFERRED - incomplete weekly hours. The address (1238 Lincoln Ave, San Jose, CA 95125) is confirmed by both its OpenTable listing and a menu directory, and a full priced 'Lunch' menu exists ($8.00 grilled cheese up to $17.50 seafood-salad lunch), but no per-day hours table was retrieved this pass.",
@@ -43164,6 +45244,11 @@ window.TINO_DATA = {
     "searched":"2026-09-11"
    },
    {
+    "id":"R146",
+    "count":1,
+    "names":[
+     "Taiwan Restaurant - Willow Glen"
+    ],
     "name":"Taiwan Restaurant - Willow Glen",
     "city":"San Jose",
     "why":"DEFERRED - incomplete weekly hours. Only Sunday 11:30 AM-2:00 PM was visible on the ordering page for 1306 Lincoln Ave, San Jose, CA 95125; no other day was printed, so it fails the weekly-hours rule. Its plates are $17-27, above a lunch-deal budget anyway.",
@@ -43176,6 +45261,11 @@ window.TINO_DATA = {
     "searched":"2026-09-11"
    },
    {
+    "id":"R147",
+    "count":1,
+    "names":[
+     "Aqui Cal Mex (Campbell and Willow Glen)"
+    ],
     "name":"Aqui Cal Mex (Campbell and Willow Glen)",
     "city":"Campbell",
     "why":"DEFERRED - no street address. Its own site published full Campbell and Willow Glen menus with prices (a $16.49 daily special plate, $11.59 smaller eats, $13.99-$15.79 bowls), but neither page printed a street address or per-day hours this pass.",
@@ -43192,10 +45282,15 @@ window.TINO_DATA = {
     "searched":"2026-09-11"
    },
    {
+    "id":"R148",
+    "count":1,
+    "names":[
+     "Inchin's Bamboo Garden - Sunnyvale"
+    ],
     "name":"Inchin's Bamboo Garden - Sunnyvale",
     "city":"Sunnyvale",
-    "address":"151 W Washington Ave, Sunnyvale, CA 94087",
     "why":"DUPLICATE - withdrawn after merge. This row was merged in pass 11 with the ZIP printed as 94087, which let it slip past the address de-duplication next to the existing row L43 Inchin's Bamboo Garden at '151 W Washington Ave, Sunnyvale, CA 94086'. Same street, same city, same phone, same weekly hours - one restaurant, not two. The pass-11 row is deleted and only L43 is kept.",
+    "address":"151 W Washington Ave, Sunnyvale, CA 94087",
     "links":[
      {
       "label":"Yelp business page - Inchin's Bamboo Garden, 151 W Washington Ave, Sunnyvale",
@@ -43206,23 +45301,25 @@ window.TINO_DATA = {
       "url":"https://www.restaurantji.com/ca/sunnyvale/inchins-bamboo-garden-/"
      }
     ],
-    "searched":"2026-09-11",
-    "pass":"11",
-    "superseded_by":"L43"
+    "searched":"2026-09-11"
    },
    {
+    "id":"R149",
+    "count":1,
+    "names":[
+     "Opa! Willow Glen"
+    ],
     "name":"Opa! Willow Glen",
     "city":"San Jose",
-    "address":"1100 Lincoln Ave, San Jose, CA 95125",
     "why":"WITHDRAWN - unreliable. The only source for this row was a TripAdvisor listing carrying a 2018 date stamp, and the street address it prints, 1100 Lincoln Ave, is already occupied by Burma Roots (row L348, 1100 Lincoln Ave Ste 101, San Jose). With a stale listing, a duplicate street address and an unresolved weekend-hours conflict on the page itself, the row does not meet the project's verification bar and was deleted rather than published.",
+    "address":"1100 Lincoln Ave, San Jose, CA 95125",
     "links":[
      {
       "label":"TripAdvisor - Opa! Willow Glen, 1100 Lincoln Ave, San Jose (2018-stamped listing, weekend blocks printed twice)",
       "url":"https://www.tripadvisor.com/Restaurant_Review-g33020-d2234576-Reviews-Opa_Willow_Glen-San_Jose_California.html"
      }
     ],
-    "searched":"2026-09-11",
-    "pass":"11"
+    "searched":"2026-09-11"
    },
    {
     "id":"R18",
@@ -43394,71 +45491,326 @@ window.TINO_DATA = {
     "searched":"2026-09-07"
    },
    {
+    "id":"R150",
+    "count":1,
+    "names":[
+     "Bobbi's Coffee Shop & Cafe"
+    ],
     "name":"Bobbi's Coffee Shop & Cafe",
     "city":"Cupertino",
+    "why":"Permanently closed on 2025-12-31 after 50+ years. SFGATE broke the closure on 2025-12-27 with a manager confirming it; Yelp now labels the page CLOSED ('Yelpers report this location has closed'); r/Cupertino carries the same story. No 2026 hours or lunch service exist, so no row is listed.",
     "links":[
      "https://www.sfgate.com/food/article/50-years-classic-bay-area-diner-is-closing-21259678.php",
      "https://m.yelp.com/biz/bobbis-coffee-shop-and-cafe-cupertino",
      "https://www.reddit.com/r/Cupertino/comments/1pxw924/after_over_50_years_bobbis_coffee_shop_cafe_is/"
     ],
-    "searched":"2026-09-14",
-    "why":"Permanently closed on 2025-12-31 after 50+ years. SFGATE broke the closure on 2025-12-27 with a manager confirming it; Yelp now labels the page CLOSED ('Yelpers report this location has closed'); r/Cupertino carries the same story. No 2026 hours or lunch service exist, so no row is listed."
+    "searched":"2026-09-14"
    },
    {
+    "id":"R151",
+    "count":1,
+    "names":[
+     "Konbini Club"
+    ],
     "name":"Konbini Club",
     "city":"Cupertino",
+    "why":"Only source is a Yelp ranking capture (5.0, 6 reviews, 'Closed until Sunday'); no street address, phone or weekly hours could be found in a follow-up search, so nothing could be verified line by line.",
     "links":[
      "https://yelp.com/search?amp=&cflt=restaurants&find_near=de-anza-college-cupertino-2"
     ],
-    "searched":"2026-09-14",
-    "why":"Only source is a Yelp ranking capture (5.0, 6 reviews, 'Closed until Sunday'); no street address, phone or weekly hours could be found in a follow-up search, so nothing could be verified line by line."
+    "searched":"2026-09-14"
    },
    {
+    "id":"R152",
+    "count":1,
+    "names":[
+     "Hearth BBQ"
+    ],
     "name":"Hearth BBQ",
     "city":"Cupertino",
+    "why":"Name appears only in a Yelp ranking capture. A follow-up search for 'Hearth BBQ Cupertino hours lunch special' returns Hearth and Harrow (Connecticut) and Hearth (Peoria, Illinois) - no Cupertino business page, address or hours.",
     "links":[
      "https://yelp.com/search?amp=&cflt=restaurants&find_near=de-anza-college-cupertino-2"
     ],
-    "searched":"2026-09-14",
-    "why":"Name appears only in a Yelp ranking capture. A follow-up search for 'Hearth BBQ Cupertino hours lunch special' returns Hearth and Harrow (Connecticut) and Hearth (Peoria, Illinois) - no Cupertino business page, address or hours."
+    "searched":"2026-09-14"
    },
    {
+    "id":"R153",
+    "count":1,
+    "names":[
+     "Layang Layang Malaysian Cuisine"
+    ],
     "name":"Layang Layang Malaysian Cuisine",
     "city":"Cupertino / Milpitas",
+    "why":"The Cupertino-area store is gone (TripAdvisor review: 'Unfortunately they only have their Milpitas store now'). The remaining pages disagree on the surviving address: 181 W Calaveras Blvd, Milpitas (wheree, yellowpages) versus 11 Butler St, Milpitas (TripAdvisor JSON-LD) versus 1480 S De Anza Blvd, San Jose (yellowpages, second listing). No single address could be verified, so the candidate is deferred rather than listed.",
     "links":[
      "https://www.tripadvisor.com/Restaurant_Review-g32717-d4339539-Reviews-Layang_layang-Milpitas_California.html",
      "https://layang-layang-malaysian-cuisine.wheree.com/",
      "https://www.yellowpages.com/cupertino-ca/layang-layang"
     ],
-    "searched":"2026-09-14",
-    "why":"The Cupertino-area store is gone (TripAdvisor review: 'Unfortunately they only have their Milpitas store now'). The remaining pages disagree on the surviving address: 181 W Calaveras Blvd, Milpitas (wheree, yellowpages) versus 11 Butler St, Milpitas (TripAdvisor JSON-LD) versus 1480 S De Anza Blvd, San Jose (yellowpages, second listing). No single address could be verified, so the candidate is deferred rather than listed."
+    "searched":"2026-09-14"
    },
    {
+    "id":"R154",
+    "count":1,
+    "names":[
+     "Di Paolo's"
+    ],
     "name":"Di Paolo's",
     "city":"out of ring (Penns Grove, NJ)",
+    "why":"A '3 Course for $20 Lunch Special 11am-3:30pm' page surfaced in a Palo Alto-area search, but dipaolosrestaurant.com belongs to Di Paolo's Ristorante Italiano, 28 S Broad St, Penns Grove, NJ (OpenTable listing), ~2,500 miles outside the 10-15 mile Cupertino ring. Rejected as out of ring rather than omitted silently.",
     "links":[
      "https://dipaolosrestaurant.com/restaurant-menus-and-specials/",
      "https://www.opentable.com/r/dipaolos-penns-grove"
     ],
-    "searched":"2026-09-14",
-    "why":"A '3 Course for $20 Lunch Special 11am-3:30pm' page surfaced in a Palo Alto-area search, but dipaolosrestaurant.com belongs to Di Paolo's Ristorante Italiano, 28 S Broad St, Penns Grove, NJ (OpenTable listing), ~2,500 miles outside the 10-15 mile Cupertino ring. Rejected as out of ring rather than omitted silently."
+    "searched":"2026-09-14"
    },
    {
+    "id":"R155",
+    "count":1,
+    "names":[
+     "Mountain View Chalet"
+    ],
     "name":"Mountain View Chalet",
     "city":"out of ring (Asbury, NJ)",
+    "why":"mountainviewchalet.com publishes 'LUNCH SPECIALS: 11:30 am - 4:00 pm Tuesday - Saturday', but the business is Mountain View Chalet, 154 State Route 173, Asbury, NJ - the name is a New Jersey restaurant, not the California city. Rejected as out of ring.",
     "links":[
      "https://mountainviewchalet.com/menu/",
      "https://www.yelp.com/biz/mountain-view-chalet-asbury"
     ],
-    "searched":"2026-09-14",
-    "why":"mountainviewchalet.com publishes 'LUNCH SPECIALS: 11:30 am - 4:00 pm Tuesday - Saturday', but the business is Mountain View Chalet, 154 State Route 173, Asbury, NJ - the name is a New Jersey restaurant, not the California city. Rejected as out of ring."
+    "searched":"2026-09-14"
+   },
+   {
+    "id":"R156",
+    "count":1,
+    "names":[
+     "Pastis"
+    ],
+    "name":"Pastis",
+    "city":"Palo Alto",
+    "why":"Permanently closed. The Yelp page is titled 'PASTIS - CLOSED' and the capture states 'Yelpers report this location has closed.' It still appears on the Stanford Parents Club restaurant list (447 S. California Ave, 650-324-1355) and in a 2022 'University Ave power dining' blog, which is why it keeps surfacing in searches - those pages are stale, not the closure report.",
+    "links":[
+     {
+      "label":"Yelp page titled 'PASTIS - CLOSED - Updated May 2026', 447 S California Ave, Palo Alto CA 94306, 'Yelpers report this location has closed.'",
+      "url":"https://m.yelp.com/biz/pastis-palo-alto?adjust_creative=trulia&start=140"
+     },
+     {
+      "label":"Second CLOSED capture (April 2026) with the full pre-closure hours block",
+      "url":"https://www.yelp.com/biz/pastis-palo-alto?start=120"
+     },
+     {
+      "label":"The stale Stanford Parents Club list that still recommends Pastis",
+      "url":"https://www.stanfordparentsclub.org/restaurants-fun-things-to-do"
+     }
+    ],
+    "searched":"2026-09-14"
+   },
+   {
+    "id":"R157",
+    "count":1,
+    "names":[
+     "Sushirrito (Palo Alto)"
+    ],
+    "name":"Sushirrito (Palo Alto)",
+    "city":"Palo Alto",
+    "why":"Permanently closed. Three 2026 Yelp captures (March, May, June) all title the page 'SUSHIRRITO - CLOSED' for 448 University Ave. The 2022 'University Ave power dining' blog still lists it as an open lunch spot, and its own Q&A shows the location was already reduced to a 'soft reopening from 11-3 on Wed-Sun' years earlier.",
+    "links":[
+     {
+      "label":"Yelp page titled 'SUSHIRRITO - CLOSED - Updated May 2026', 448 University Ave, Palo Alto CA 94301, (650) 600-9696",
+      "url":"https://www.yelp.com/biz/sushirrito-palo-alto-13?start=440"
+     },
+     {
+      "label":"Second CLOSED capture (March 2026) with the daily 11:00 am-7:00 pm block and the Local Kitchens Q&A",
+      "url":"https://www.yelp.com/biz/sushirrito-palo-alto-13?rh_count=3&rh_start=0&start=540&ylist=the-bay-palo-alto"
+     }
+    ],
+    "searched":"2026-09-14"
+   },
+   {
+    "id":"R158",
+    "count":1,
+    "names":[
+     "Gyros House"
+    ],
+    "name":"Gyros House",
+    "city":"Mountain View",
+    "why":"Permanently closed. Two 2026 Yelp captures (January and May) both title the page 'GYROS HOUSE - CLOSED' for 212 Castro St, Mountain View. It is still recommended in the r/mountainview Castro St lunch thread ('Time Machine and go to Gyros House'), which is why it keeps surfacing - the Reddit thread predates the closure.",
+    "links":[
+     {
+      "label":"Yelp page titled 'GYROS HOUSE - CLOSED - Updated January 2026', 212 Castro St, (650) 940-9316, daily 11:00 am-9:00 pm, with the owner's Specialties text",
+      "url":"https://www.yelp.com/biz/gyros-house-mountain-view?start=300"
+     },
+     {
+      "label":"Second CLOSED capture (May 2026) with the same address and hours block",
+      "url":"https://www.yelp.com/biz/gyros-house-mountain-view"
+     },
+     {
+      "label":"The stale r/mountainview recommendation that still sends readers to Gyros House",
+      "url":"https://www.reddit.com/r/mountainview/comments/1eekwoy/recommendations_lunch_castro_st/"
+     }
+    ],
+    "searched":"2026-09-14"
+   },
+   {
+    "id":"R159",
+    "count":1,
+    "names":[
+     "Saratoga Restaurant Week (Discover Saratoga)"
+    ],
+    "name":"Saratoga Restaurant Week (Discover Saratoga)",
+    "city":"Saratoga Springs, New York - NOT Saratoga, California",
+    "why":"Out-of-ring trap. Searching 'Saratoga restaurant week lunch special $15' returns discoversaratoga.org, which advertises 'Breakfast/Lunch Specials | $15 plus tax & tip' for November 2-8 2026 - but it is the 21st Annual Saratoga COUNTY (New York) Restaurant Week, covering Saratoga Springs, Wilton, Ballston Spa and Gansevoort, 2,900 miles from Cupertino. No California business is listed on it. Same trap as pass 9's LUNCH-FLAG-21..25 and pass 15's New Jersey 'Mountain View Chalet'.",
+    "links":[
+     {
+      "label":"Discover Saratoga 'Restaurant Week' page - 'Join us for the 21st Annual Saratoga County's Original Restaurant Week, November 2-8, 2026'",
+      "url":"https://www.discoversaratoga.org/events/restaurant-week/"
+     },
+     {
+      "label":"Albany Times Union listing of the same event's participating New York restaurants with addresses on Broadway, Jefferson St and Saratoga Road",
+      "url":"https://www.timesunion.com/food/article/eat-saratoga-county-restaurant-week-2026-21350016.php"
+     }
+    ],
+    "searched":"2026-09-14"
+   },
+   {
+    "id":"R160",
+    "count":1,
+    "names":[
+     "Pho & Bun"
+    ],
+    "name":"Pho & Bun",
+    "city":"Milpitas",
+    "why":"PERMANENTLY CLOSED - the Yelp page title itself now reads 'PHO & BUN - CLOSED - Updated September 2026'. It had been surfaced by a Milpitas lunch search as '4.5 (301 reviews)' and is still live on TripAdvisor with full per-day hours (Tue-Sun 11:00 AM - 9:30 PM, Mon closed) and geo 37.455196/-121.91602, which is exactly the kind of stale listing that produces a bad lunch plan.",
+    "address":"1810 Milmont Dr, Milpitas, CA 95035",
+    "links":[
+     {
+      "label":"Yelp page showing CLOSED status with the last-known hours and website pho-bun.com",
+      "url":"https://www.yelp.com/biz/pho-and-bun-milpitas-3"
+     },
+     {
+      "label":"TripAdvisor page still advertising 'Open until 9:30 PM' with JSON-LD hours Tue-Sun 11:00-21:30 and phone +1 669-226-5778",
+      "url":"https://www.tripadvisor.com/Restaurant_Review-g32717-d25265356-Reviews-Pho_Bun-Milpitas_California.html"
+     }
+    ],
+    "searched":"2026-09-07"
+   },
+   {
+    "id":"R161",
+    "count":1,
+    "names":[
+     "Los Altos Restaurant"
+    ],
+    "name":"Los Altos Restaurant",
+    "city":"Salinas",
+    "why":"OUT OF AREA (Monterey County, ~55 miles south) - a name trap. The query was for Los Altos (Santa Clara County) dining and returned this Salinas taqueria instead, complete with full per-day hours 9:00 AM - 10:00 PM. Not within the 10-15 mile radius.",
+    "address":"107 Kern St, Salinas, CA 93905",
+    "links":[
+     {
+      "label":"Yelp page for the Salinas location - 107 Kern St, Salinas CA 93905, (831) 422-5297",
+      "url":"https://www.yelp.com/biz/los-altos-restaurant-salinas"
+     }
+    ],
+    "searched":"2026-09-07"
+   },
+   {
+    "id":"R162",
+    "count":1,
+    "names":[
+     "Los Altos Restaurant"
+    ],
+    "name":"Los Altos Restaurant",
+    "city":"Goleta",
+    "why":"OUT OF AREA (Santa Barbara County, ~280 miles south) - second instance of the same Los Altos name trap in one query.",
+    "address":"5892 Hollister Ave, Goleta, CA 93117",
+    "links":[
+     {
+      "label":"Yelp page for the Goleta location - 5892 Hollister Ave, Goleta CA 93117, (805) 869-2436",
+      "url":"https://www.yelp.com/biz/los-altos-restaurant-goleta"
+     }
+    ],
+    "searched":"2026-09-07"
+   },
+   {
+    "id":"R163",
+    "count":1,
+    "names":[
+     "Los Altos Mexican Food"
+    ],
+    "name":"Los Altos Mexican Food",
+    "city":"San Bernardino",
+    "why":"OUT OF AREA (Southern California, ~380 miles) - third instance of the same trap. Rejected on geography alone despite complete hours data.",
+    "address":"245 N Waterman Ave, Ste C, San Bernardino, CA 92408",
+    "links":[
+     {
+      "label":"Yelp page for the San Bernardino location - 245 N Waterman Ave Ste C, (909) 888-8487",
+      "url":"https://www.yelp.com/biz/los-altos-mexican-food-san-bernardino"
+     }
+    ],
+    "searched":"2026-09-07"
+   },
+   {
+    "id":"R164",
+    "count":1,
+    "names":[
+     "Xiang Bobo Hunan Cuisine"
+    ],
+    "name":"Xiang Bobo Hunan Cuisine",
+    "city":"Cupertino",
+    "why":"INSUFFICIENT DATA - five separate Yelp captures name this Cupertino Hunan restaurant (ranked 6th-10th in Chinese/Xian-food searches) with the same reviewer quote 'The rice is free and tasty', but none printed a street address or a per-day hours block. The rating itself is unstable across captures of the same business: 4.7 (3 reviews), 3.6 (8), 3.7 (9), 4.4 (27), 4.4 (28). Not merged: no address means no distance and no verifiable open/closed answer.",
+    "links":[
+     {
+      "label":"Yelp Cupertino Chinese search capture - 'Xiang Bobo Hunan Cuisine 3.6 (8 reviews) Cupertino Opens in 31 min'",
+      "url":"https://www.yelp.com/search?cflt=chinese&find_loc=Cupertino%2C+CA+95014"
+     },
+     {
+      "label":"Yelp 'Xian Food near Cupertino' capture - 'Xiang Bobo Hunan Cuisine 4.7 (3 reviews) Cupertino Open until 9:00 PM - Hot and New'",
+      "url":"https://www.yelp.com/search?find_desc=Xian+Food&find_loc=Cupertino,+CA"
+     }
+    ],
+    "searched":"2026-09-07"
+   },
+   {
+    "id":"R165",
+    "count":1,
+    "names":[
+     "Square Pie Guys (Local Kitchens - Campbell)"
+    ],
+    "name":"Square Pie Guys (Local Kitchens - Campbell)",
+    "city":"Campbell",
+    "why":"PERMANENTLY CLOSED ghost-kitchen listing - the Yelp page title reads 'SQUARE PIE GUYS - CLOSED - Updated July 2026'. It is a separate listing from the real brick-and-mortar at 501 E Campbell Ave: different address, a San Francisco (415) 992-8206 phone, 'Located in: Local Kitchens-Campbell', and a link to localkitchens.com/order/store/. Its hours were printed as 11:00 am - 12:00 am seven days a week, which would have looked like an ideal all-day lunch option if taken at face value. Rejected so it cannot be confused with the live Campbell location.",
+    "address":"1640 S Bascom Ave, Ste A, Campbell, CA 95008",
+    "links":[
+     {
+      "label":"Yelp page showing CLOSED for the Local Kitchens unit - 1640 S Bascom Ave Ste A, Campbell CA 95008, (415) 992-8206, localkitchens.com/order/store/",
+      "url":"https://www.yelp.com/biz/square-pie-guys-campbell-3"
+     }
+    ],
+    "searched":"2026-09-07"
+   },
+   {
+    "id":"R166",
+    "count":1,
+    "names":[
+     "Kitayama Yoichi"
+    ],
+    "name":"Kitayama Yoichi",
+    "city":"Fremont",
+    "why":"PERMANENTLY CLOSED - Yelp page title reads 'KITAYAMA YOICHI - CLOSED - Updated July 2026', yet the page still prints a full seven-day hours block (Mon-Thu 11:30 am-7:30 pm, Fri-Sat 11:30 am-8:30 pm, Sun 11:30 am-8:00 pm) and an own-site link kitayamafremontca.com. A ramen lunch at 11:30 AM would have looked perfectly bookable. Surfaced by a Fremont lunch search, so the stale-hours risk is documented here rather than silently dropped.",
+    "address":"129 Anza St, Fremont, CA 94539",
+    "links":[
+     {
+      "label":"Yelp page showing CLOSED with the still-printed hours, 129 Anza St, Fremont CA 94539, (510) 270-8338",
+      "url":"https://www.yelp.com/biz/kitayama-yoichi-fremont-3"
+     }
+    ],
+    "searched":"2026-09-07"
    }
   ],
   "notes":[
    "Reddit was searched for Cupertino / Sunnyvale / Los Gatos lunch specials and returned only threads about other cities, so no Reddit citation is used (see LUNCH-FLAG-8).",
    "Every rejection above is a source-of-truth decision, not a judgement about the food. Anything here can be promoted into the master list as soon as hours, days and a price are confirmed."
   ],
-  "distinct_businesses_rejected":154,
+  "distinct_businesses_rejected":183,
   "note":"133 rows covering 132 distinct businesses. R14 (first pass) groups the near-miss candidates surfaced by the same queries and rejected for the same reason (no published lunch special found in that pass); later passes appended one row per candidate or per grouped reason - 30 rows from the ninth pass on 2026-09-10 and 17 from the tenth pass on 2026-09-11. Every row carries the URL that proves the rejection, including three out-of-state name traps and two dinner-only venues whose directory pages still advertise 'Lunch Specials'."
  },
  "flags":{
@@ -43606,6 +45958,134 @@ window.TINO_DATA = {
    }
   ],
   "lunch":[
+   {
+    "id":"LUNCH-FLAG-103",
+    "severity":"info",
+    "title":"Pass 16 delivered 31 new rows against a 100-row target: 25 of 56 researched venues were already mastered",
+    "what_we_found":"Pass 16 researched 56 candidate venues across eight batch files (16a-16h). The merge's dedupe showed 25 of them were already in the master list - all eight batch16b rows (Thai Spoons L49, Bento Express L13, Lee's Kitchen L267, First Wok L50, 10 Butchers L56, California MoMo Kitchen L381, Beijing Restaurant L300, Master Oh's L24) plus SGD Tofu House L555, Water Tower Kitchen L17, Wine Cellar Restaurant L488, Ludwig's Biergarten L88, Agave Mexican Bistro L212, Lungo Thai Eatery L717, Sumiya L301, Jun Bistro L440, Katsu Gin L729, Thai Orchid L426, Darbar L438 and Das Bierhauz L401. Net result: 31 new rows, 11 new rejections.",
+    "what_we_did":"Reported the shortfall instead of padding it. The duplicate captures were not discarded: each one re-confirms or contradicts the existing row and is written up in docs/REVIEW_2026-09-14_pass16.md with the master id it belongs to. Discovery screening was tightened mid-pass (candidates are now screened against data/lunch_specials.json before any verification search is spent on them).",
+    "rows":[
+     "L49",
+     "L13",
+     "L267",
+     "L50",
+     "L56",
+     "L381",
+     "L300",
+     "L24",
+     "L555",
+     "L17",
+     "L488",
+     "L88",
+     "L212",
+     "L717",
+     "L301",
+     "L440",
+     "L729",
+     "L426",
+     "L438",
+     "L401"
+    ],
+    "link":{
+     "label":"docs/REVIEW_2026-09-14_pass16.md - pass 16 QA log with the duplicate-detection table",
+     "url":"https://github.com/buffedlizard55-lab/TinoLunchSpecial/blob/main/docs/REVIEW_2026-09-14_pass16.md"
+    },
+    "manual_review":"No action needed on the data. If a future pass must reach a row target, budget discovery (screening) before verification: roughly 45% of pass-16 verification effort went to venues that were already listed."
+   },
+   {
+    "id":"LUNCH-FLAG-102",
+    "severity":"warning",
+    "title":"Square Pie Guys runs two live-looking Yelp listings and a closed ghost-kitchen listing for one brand",
+    "what_we_found":"Three separate Yelp listings exist: (1) 501 E Campbell Ave, Campbell - the real brick-and-mortar, (408) 409-5955, squarepieguys.com, 4.4 stars; (2) a SECOND slug for the same 501 E Campbell Ave address with its own review count (243 vs 219), which inflates apparent review volume; and (3) 1640 S Bascom Ave Ste A inside 'Local Kitchens-Campbell' - now CLOSED (rejected as R165) but still printing 11:00 am-12:00 am seven days a week with a San Francisco (415) 992-8206 phone. The live listing's closing time also drifts across 2026 captures: 8:30 PM (April), 9:00 PM (Sept), 9:30/10:30 PM (May).",
+    "what_we_did":"Added only the 501 E Campbell Ave row, marked 'conflicting' because the four captures disagree on the close time; recorded the 11:30 AM daily open (consistent in every capture) as the safe planning value; rejected the Local Kitchens unit as R165 so it cannot be mistaken for an all-day lunch option.",
+    "rows":[
+     "L848"
+    ],
+    "link":{
+     "label":"Yelp - Square Pie Guys, 501 E Campbell Ave, Campbell (Sept 2026 capture)",
+     "url":"https://www.yelp.com/biz/square-pie-guys-campbell-campbell"
+    },
+    "manual_review":"Pick one closing time by phone ((408) 409-5955) and report the duplicate Yelp slug to Yelp so review counts stop splitting."
+   },
+   {
+    "id":"LUNCH-FLAG-101",
+    "severity":"warning",
+    "title":"Jang Su Jang's own holiday-hours note is stale (names Nov 23 as Thanksgiving) and its closing time has shrunk",
+    "what_we_found":"The business note printed on Jang Su Jang's Yelp page reads '11/23 Thanksgiving Day 11AM - 3PM, 11/24 Black Friday 11AM - 9:30PM, 12/24 Christmas Eve 11AM - 9PM, 12/25 Christmas Day 11AM - 8:30PM, 12/31 New Year's Eve 11AM - 9PM, 1/1 New Year's Day 11AM - 9:30PM'. Thanksgiving was Nov 23 in 2023; in 2026 it is Thursday Nov 26, so the note would send a diner to a closed restaurant. Separately the weekly close has moved from 8:00 PM (Oct 2025 capture) to 7:30 PM (2026 captures), with Fri-Sat variously 7:30 or 7:45 PM in two captures three weeks apart.",
+    "what_we_did":"Added the row at 'conflicting' level with all four dated captures listed; kept the current 11:00 AM - 7:30 PM as hours_tuesday (11:00 AM open is consistent everywhere, so the trip date works); recorded the stale holiday note in the row's flags so nobody plans a holiday lunch from it.",
+    "rows":[
+     "L845"
+    ],
+    "link":{
+     "label":"Yelp - Jang Su Jang, 3561 El Camino Real Ste 10, Santa Clara (Aug 2026 capture carrying the business' holiday note)",
+     "url":"https://www.yelp.com/biz/jang-su-jang-santa-clara?start=1960"
+    },
+    "manual_review":"Ask the restaurant (408) 246-1212 for its 2026 holiday hours before publishing any November/December plan, and confirm whether the close is 7:30 or 7:45 PM on Fri-Sat."
+   },
+   {
+    "id":"LUNCH-FLAG-100",
+    "severity":"data_conflict",
+    "title":"Kiya Sushi's own ordering site advertises a lunch special until 3:00 PM but its own hours close at 2:30 PM Mon-Thu",
+    "what_we_found":"The restaurant's own ordering menu publishes 'Lunch Special - 11 am - 3 pm - Served with miso soup, green salad, white rice, 4 pieces California roll, two pieces gzyoa', immediately followed by 'Lunch items are only viewable on this page during lunch ordering hours', which is why no price could be captured outside that window. The same site's JSON-LD hours say Mon-Thu 11:00-14:30 and 16:30-21:00, so the last half hour of the advertised lunch special falls after closing on weekdays. A third source (beyondmenu) lists the weekday dinner block as 5:00 PM - 9:30 PM rather than Yelp's 4:30 PM - 9:00 PM. A Yelp reviewer prices 'the trio roll lunch special ... a good deal for 14.99' with free matcha ice cream.",
+    "what_we_did":"Left the existing master row's hours alone and filed the contradiction as a cross-check in data/incoming/batch16g_campbell_fremont_verified.json. The reviewer's $14.99 was NOT written into a price column because it is not on the restaurant's own published menu; the official lunch-special definition (what it includes, 11 am-3 pm) is recorded.",
+    "rows":[
+     "L477"
+    ],
+    "link":{
+     "label":"Kiya Sushi's own ordering menu publishing the Lunch Special definition and its JSON-LD hours",
+     "url":"https://order.kiyasushica.com/menu"
+    },
+    "manual_review":"Capture the lunch menu between 11:00 AM and 3:00 PM on a weekday to read the real lunch prices, and confirm whether the 2:30 PM close or the 3:00 PM lunch window is correct."
+   },
+   {
+    "id":"LUNCH-FLAG-99",
+    "severity":"warning",
+    "title":"Lotus Thai Bistro is listed TWICE in the master list (L76 and L650) for one address",
+    "what_we_found":"L76 'Lotus Thai Bistro' (425 California Avenue, Palo Alto, level 'official') carries no hours at all - 'open Tuesday (hours of day not published)' - while L650 'Lotus Thai Bistro Palo Alto Official' (425 California Ave, Palo Alto, CA 94306, level 'official') carries 11:00 AM - 3:00 PM and 5:00 PM - 9:30 PM. Both are the same restaurant. A fresh Apple Maps capture for lotusthaibistro.com, +1 (650) 289-0907 corroborates L650 and adds detail: Sat 11:00 AM - 3:00 PM and 4:00 PM - 9:30 PM (dinner starts an hour earlier on Saturday), Sun CLOSED. The same Apple Maps page also renders a contradictory variant, 'Mon-Sat 11:00 AM - 3:00 PM, 5:00 PM - 9:30 PM'.",
+    "what_we_did":"No third row was added. Filed as a cross-check in data/incoming/batch16e_mv_pa_milpitas_verified.json and flagged here. Master rows were not edited, per the rule that a pass adds rows and reports conflicts rather than rewriting history.",
+    "rows":[
+     "L76",
+     "L650"
+    ],
+    "link":{
+     "label":"Apple Maps record for Lotus Thai Bistro, 425 California Ave, Palo Alto",
+     "url":"https://maps.apple.com/place?place-id=I98A2D6D592972098"
+    },
+    "manual_review":"Merge L76 into L650 (keeping L650's hours and the Saturday 4:00 PM dinner start), then re-run scripts/build_data.py so the site stops showing the same restaurant twice."
+   },
+   {
+    "id":"LUNCH-FLAG-98",
+    "severity":"warning",
+    "title":"Six verified pass-16 rows are held back by street-address collisions, including one likely rebrand",
+    "what_we_found":"The merge dedupes on street address, so six pass-16 rows were blocked even though each looks like a distinct or renamed business: Elia (276 E Campbell Ave, Campbell, eliarestaurants.com, Mediterranean/Greek) vs L532 Opa! Authentic Greek Cuisine at the same address - a likely rebrand of the same Greek restaurant; Hono Izakaya & Sushi (33 S Central Ave, Campbell, confirmed on its own site with JSON-LD coords 37.286584/-121.943914) vs L122 A Bellagio (re-confirmation of LUNCH-FLAG-69); Mr Bao Kitchen Chinese Cuisine (357 Castro St, Mountain View) vs L149 Sakoon, an Indian restaurant at the same address - possibly a shared kitchen or a wrong address in one listing; Joya Restaurant & Lounge (339 University Ave, Palo Alto) vs L439 Khazana; Rangoon Ruby (445 Emerson St, Palo Alto) vs L504 Cafe Baklava; Sumiya (2634 Homestead Rd, Santa Clara) vs L301 Sumiya Yakitori, which is the same business under a fuller name.",
+    "what_we_did":"Following the pass-7 and pass-14 precedent (LUNCH-FLAG-69), the six rows stay in data/incoming/ unmerged rather than being forced past the dedupe. No master row was edited. Each pair is written up in docs/REVIEW_2026-09-14_pass16.md with the evidence captured for both sides.",
+    "rows":[
+     "L532",
+     "L122",
+     "L149",
+     "L439",
+     "L504",
+     "L301"
+    ],
+    "link":{
+     "label":"data/incoming/ - the pass-16 batch files holding the six blocked rows",
+     "url":"https://github.com/buffedlizard55-lab/TinoLunchSpecial/tree/main/data/incoming"
+    },
+    "manual_review":"Call or visit each pair. If Elia replaced Opa!, archive L532 and merge the Elia row; if Sakoon and Mr Bao Kitchen are co-tenants, add the new row with a suite number; if Sumiya is simply Sumiya Yakitori, add the new captures to L301 instead of creating a row."
+   },
+   {
+    "id":"LUNCH-FLAG-97",
+    "severity":"note",
+    "title":"Four of the eleven pass-16 rejections are stale listings that still print full weekly hours",
+    "what_we_found":"Pho & Bun (1810 Milmont Dr, Milpitas) is titled 'CLOSED' on Yelp yet still carries a live TripAdvisor page advertising 'Open until 9:30 PM' with JSON-LD hours and a phone number; Kitayama Yoichi (129 Anza St, Fremont) is 'CLOSED' on Yelp while still printing Mon-Sun 11:30 am-7:30/8:30 pm and its own site; Bierhaus (383 Castro St, Mountain View) is 'CLOSED' but still lists Tue-Sat 11:30 am-9:00 pm and bierha.us, and its name is one letter away from the OPEN Das Bierhauz two blocks away at 135 Castro St; Square Pie Guys' Local Kitchens unit (1640 S Bascom Ave Ste A, Campbell) is 'CLOSED' but printed 11:00 am-12:00 am daily.",
+    "what_we_did":"All four were written to data/lunch_rejected.json (R160, R166 and the Bierhaus/Square Pie Guys entries) with the closure evidence and the stale hours quoted, so a future pass does not re-research them and a reader can see why an apparently open restaurant is excluded.",
+    "rows":[],
+    "link":{
+     "label":"data/lunch_rejected.json - 183 rejections with reasons",
+     "url":"https://github.com/buffedlizard55-lab/TinoLunchSpecial/blob/main/data/lunch_rejected.json"
+    },
+    "manual_review":"None needed. If any of these reopens, use supersedes_rejection in a new batch file so the rejection is retired cleanly."
+   },
    {
     "id":"LUNCH-FLAG-96",
     "severity":"info",

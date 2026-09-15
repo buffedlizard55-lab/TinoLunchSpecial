@@ -1,0 +1,117 @@
+{
+  "batch": "16f",
+  "researched": "2026-09-14",
+  "pass": 16,
+  "scope": "Sunnyvale (S Sunnyvale Ave), Santa Clara (El Camino Real), Los Gatos (W Main St, Union Ave)",
+  "method": "Each row resolved to one street address and a per-day hours block from at least two independent dated captures; First Born is confirmed on its own website. Prices appear in the price columns only where a published menu or a business-owned page printed them.",
+  "entries": [
+    {
+      "name": "Hunan House",
+      "city": "Sunnyvale",
+      "area": "S Sunnyvale Ave (downtown Sunnyvale)",
+      "address": "122 S Sunnyvale Ave, Sunnyvale, CA 94086",
+      "cuisine": "Chinese, Hunan",
+      "phone": "(408) 481-9983",
+      "lunch_special": {
+        "name": "Weekday lunch block 11:00 AM - 2:30 PM with a 2-hour dinner break before 4:30 PM; no separate lunch price tier published",
+        "price_from": null, "price_to": null,
+        "days": "Mon-Fri 11:00 AM - 2:30 PM lunch; Sat-Sun continuous",
+        "window": "11:00 AM - 2:30 PM (Mon-Fri, then 4:30 PM - 8:30/9:00 PM dinner); 11:00 AM - 9:00 PM Sat; 11:00 AM - 8:30 PM Sun",
+        "includes": "Own site hunanhouseca.com. Photo captions on the Yelp page print entree prices (e.g. 'Steamed Pork Belly W. Preserved Vegetable 梅菜扣肉（附荷叶包）($22.99)'), which are diner prices, not a lunch special - so nothing is put in the price columns."
+      },
+      "hours_tuesday": "11:00 AM - 2:30 PM, 4:30 PM - 8:30 PM",
+      "days_open": "Mon-Thu 11:00 AM - 2:30 PM and 4:30 PM - 8:30 PM, Fri 11:00 AM - 2:30 PM and 4:30 PM - 9:00 PM, Sat 11:00 AM - 9:00 PM, Sun 11:00 AM - 8:30 PM (four sources agree exactly: Yelp Sept 2026, Apple Maps, corner.inc JSON-LD, wherevi)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {"ok": false, "note": "S Sunnyvale Ave is about 7 miles from the destination; the 2:30 PM lunch cutoff is the binding constraint."},
+      "verification": {"level": "listing", "sources": [
+        {"label": "Yelp business page (Sept 2026) - 122 S Sunnyvale Ave, Sunnyvale CA 94086, +14084819983, Mon-Thu 11:00 am-2:30 pm + 4:30 pm-8:30 pm, Fri to 9:00 pm, Sat 11:00 am-9:00 pm, Sun 11:00 am-8:30 pm, website hunanhouseca.com, 4.2 (87 reviews), 'Now Accepting Reservations'", "url": "https://www.yelp.com/biz/hunan-house-sunnyvale-2"},
+        {"label": "Apple Maps place record - Chinese Cuisine, Sunnyvale CA, same per-day hours, hunanhouseca.com, +1 (408) 481-9983, 122 S Sunnyvale Ave, cost band $$$$ vs Yelp's $$", "url": "https://maps.apple.com/place?place-id=IAFA780C58AF03B10"},
+        {"label": "corner.inc place record with JSON-LD openingHours identical to Yelp, updated July 31st 2026, 'Family-run Hunan spot with flaming pots and generous portions'", "url": "https://www.corner.inc/place/ps6QgfFRe4sh"},
+        {"label": "wherevi listing - 'Chinese restaurant $20-30, 4.6 (379)', same address and same seven-day hours block", "url": "https://hunan-house.wherevi.com/"}
+      ], "accessed": "2026-09-14"},
+      "review_links": {"yelp": "https://www.yelp.com/biz/hunan-house-sunnyvale-2", "google_maps": "https://www.google.com/maps/search/?api=1&query=Hunan+House+122+S+Sunnyvale+Ave+Sunnyvale"},
+      "flags": ["Hours agree across four sources (rare in this pass), but the rating and price band do not: Yelp 4.2 (87) / $$ vs wherevi 4.6 (379) / $20-30 vs Apple Maps $$$$. The lunch block ends at 2:30 PM on every weekday."]
+    },
+    {
+      "name": "Jang Su Jang",
+      "city": "Santa Clara",
+      "area": "El Camino Real (Santa Clara Koreatown corridor)",
+      "address": "3561 El Camino Real, Ste 10, Santa Clara, CA 95051",
+      "cuisine": "Korean barbecue (galbi jjim, pajeon)",
+      "phone": "(408) 246-1212",
+      "lunch_special": {
+        "name": "Continuous 11:00 AM service with no published lunch price tier; a photo caption warns the pancake is 'expensive' at $29",
+        "price_from": null, "price_to": null,
+        "days": "daily",
+        "window": "11:00 AM - 7:30 PM (7:45 PM Fri-Sat in one capture)",
+        "includes": "Own site jangsujang.com. Prices appearing only in diner photo captions: 'Maeun Galbi Jjim ($75) Spicy Braised Beef Short Ribs', 'Haemul Pajeon aka Seafood Pancake ($29), expensive', 'Diet Coke ($3)' - kept out of the price columns because they are menu items photographed by reviewers, not a published lunch special. Business notes on Yelp advertise holiday hours."
+      },
+      "hours_tuesday": "11:00 AM - 7:30 PM",
+      "days_open": "Sept 2026 and June 2026 captures: Mon-Sun 11:00 AM - 7:30 PM. Aug 2026 capture: Mon-Thu and Sun 11:00 AM - 7:30 PM, Fri-Sat 11:00 AM - 7:45 PM. Oct 2025 capture: Mon-Sun 11:00 AM - 8:00 PM.",
+      "open_on_trip_date": true,
+      "fits_return_bus": {"ok": false, "note": "El Camino Real in Santa Clara, about 8 miles from the destination."},
+      "verification": {"level": "conflicting", "sources": [
+        {"label": "Yelp business page (Sept 2026) - 3561 El Camino Real Ste 10, Santa Clara CA 95051, (408) 246-1212, Mon-Sun 11:00 am-7:30 pm, website jangsujang.com, 3.8 (2.3k reviews), $$$ Korean/Barbeque, 'Updated 3 weeks ago'", "url": "https://www.yelp.com/biz/jang-su-jang-santa-clara"},
+        {"label": "Aug 2026 capture of the same page showing Fri-Sat to 7:45 pm and the business' own holiday-hours note ('11/23 Thanksgiving Day 11AM - 3PM, 11/24 Black Friday 11AM - 9:30PM, 12/24 Christmas Eve 11AM - 9PM, 12/25 Christmas Day 11AM - 8:30PM, 12/31 New Year's Eve 11AM - 9PM, 1/1 New Year's Day 11AM - 9:30PM')", "url": "https://www.yelp.com/biz/jang-su-jang-santa-clara?start=1960"},
+        {"label": "June 2026 capture - Mon-Sun 11:00 am-7:30 pm with the $75 galbi jjim and $29 pajeon photo captions", "url": "https://www.yelp.com/biz/jang-su-jang-santa-clara?start=1560"},
+        {"label": "Oct 2025 capture - Mon-Sun 11:00 am-8:00 pm (30 minutes longer every day than the 2026 listings)", "url": "https://www.yelp.com/biz/jang-su-jang-santa-clara?start=940"}
+      ], "accessed": "2026-09-14"},
+      "review_links": {"yelp": "https://www.yelp.com/biz/jang-su-jang-santa-clara", "google_maps": "https://www.google.com/maps/search/?api=1&query=Jang+Su+Jang+3561+El+Camino+Real+Santa+Clara"},
+      "flags": ["Closing time has been shrinking: 8:00 PM (Oct 2025) to 7:30 PM (2026), with Fri-Sat variously 7:30 or 7:45 PM across two captures three weeks apart. Separately, the business' own holiday-hours note names 11/23 as Thanksgiving Day, which was true in 2023 but not in 2026 (Thanksgiving 2026 is Thursday Nov 26) - the note is stale and must not be used for holiday planning."]
+    },
+    {
+      "name": "First Born Los Gatos",
+      "city": "Los Gatos",
+      "area": "W Main St (downtown Los Gatos)",
+      "address": "160 W Main St, Los Gatos, CA 95030",
+      "cuisine": "Pan Asian / Vietnamese fusion, cocktail bar and event venue",
+      "phone": "(669) 297-9999",
+      "lunch_special": {
+        "name": "NO LUNCH SERVICE - the restaurant's own website opens at 3:00 PM, and it is closed Monday and Sunday",
+        "price_from": null, "price_to": null,
+        "days": "Tue-Sat only",
+        "window": "3:00 PM - 9:00 PM Tue-Thu; 3:00 PM - 10:00 PM Fri-Sat; Mon and Sun Closed",
+        "includes": "Confirmed on firstbornlosgatos.com ('Monday - Closed, Tuesday - Thursday 3:00 PM - 9:00 PM, Friday - Saturday 3:00 PM - 10:00 PM, Sunday - Closed, Tel: (669) 297-9999, Email: contact@firstbornlosgatos.com'). No lunch menu and no lunch price exist to print."
+      },
+      "hours_tuesday": "3:00 PM - 9:00 PM (no lunch service)",
+      "days_open": "Mon Closed, Tue 3:00 PM - 9:00 PM, Wed 3:00 PM - 9:00 PM, Thu 3:00 PM - 9:00 PM, Fri 3:00 PM - 10:00 PM, Sat 3:00 PM - 10:00 PM, Sun Closed (restaurant's own website, corroborated by two Yelp captures and roadtrippers)",
+      "open_on_trip_date": false,
+      "fits_return_bus": {"ok": false, "note": "Opens at 3:00 PM, after the lunch window closes."},
+      "verification": {"level": "official", "sources": [
+        {"label": "Restaurant's own website - 160 W Main Street, Los Gatos CA 95030, Monday Closed, Tuesday-Thursday 3:00 PM-9:00 PM, Friday-Saturday 3:00 PM-10:00 PM, Sunday Closed, Tel (669) 297-9999", "url": "https://www.firstbornlosgatos.com/"},
+        {"label": "Yelp business page (July 2026) - 160 W Main St, Los Gatos CA 95030, (669) 297-9999, Mon Closed, Tue-Thu 3:00 pm-9:00 pm, Fri-Sat 3:00 pm-10:00 pm, Sun Closed, website firstbornlosgatos.com", "url": "https://www.yelp.com/biz/first-born-los-gatos-los-gatos"},
+        {"label": "Second Yelp capture (May 2026) - 4.3 (78 reviews), Claimed, '$$$ Venues & Event Spaces, Pan Asian, Cocktail Bars'", "url": "https://www.yelp.com/biz/first-born-los-gatos-los-gatos?start=10"},
+        {"label": "roadtrippers capture - same address, website and phone, 'Tue-Thu 3:00 pm-9:00 pm, Fri/Sat 3:00 pm-10:00 pm', price band $$$", "url": "https://maps.roadtrippers.com/us/los-gatos-ca/food-drink/first-born-los-gatos"}
+      ], "accessed": "2026-09-14"},
+      "review_links": {"yelp": "https://www.yelp.com/biz/first-born-los-gatos-los-gatos", "google_maps": "https://www.google.com/maps/search/?api=1&query=First+Born+Los+Gatos+160+W+Main+St"},
+      "flags": ["Official-source confirmation that the venue has no lunch at all: four sources agree it opens at 3:00 PM. Kept as an explicit no-lunch row so downtown Los Gatos readers see why it is excluded."]
+    },
+    {
+      "name": "The Cantina",
+      "city": "Los Gatos",
+      "area": "Union Ave",
+      "address": "15529 Union Ave, Los Gatos, CA 95032",
+      "cuisine": "Tacos / Mexican, burgers, cocktail bar (self-described 'Tacos. Tequila. Tiki.')",
+      "phone": "(408) 963-6221",
+      "lunch_special": {
+        "name": "No lunch on Tuesday or Wednesday (dinner from 4:30 PM); lunch from 11:30 AM Thursday through Sunday. Business owner states a happy-hour discount, not a lunch special",
+        "price_from": null, "price_to": null,
+        "days": "Thu-Sun lunch; Tue-Wed dinner only; Mon closed",
+        "window": "11:30 AM - 9:00 PM Thu-Sun; 4:30 PM - 9:00 PM Tue-Wed; Mon Closed. Happy hour per the business owner: Mon-Wed 4:00-5:30 PM, Thu-Sun 2:00-5:30 PM",
+        "includes": "Own site thecantinalosgatos.com. The owner's answer to a Yelp community question prints the only discounts found: '$2 Off menu cocktails $1 Off beers' during happy hour (Mon-Wed 4-5:30 PM, Thu-Sun 2-5:30 PM). These are drink discounts, not lunch prices, so the price columns stay empty."
+      },
+      "hours_tuesday": "4:30 PM - 9:00 PM (dinner only - no lunch on Tuesday)",
+      "days_open": "Mon Closed, Tue 4:30 PM - 9:00 PM, Wed 4:30 PM - 9:00 PM, Thu 11:30 AM - 9:00 PM, Fri 11:30 AM - 9:00 PM, Sat 11:30 AM - 9:00 PM, Sun 11:30 AM - 9:00 PM (Yelp capture updated August 2026, 'Verified 1 month ago')",
+      "open_on_trip_date": false,
+      "fits_return_bus": {"ok": false, "note": "Open on Tuesday but only from 4:30 PM - after the lunch window."},
+      "verification": {"level": "listing", "sources": [
+        {"label": "Yelp business page (Aug 2026) - 15529 Union Ave, Los Gatos CA 95032, (408) 963-6221, Mon Closed, Tue-Wed 4:30 pm-9:00 pm, Thu-Sun 11:30 am-9:00 pm, website thecantinalosgatos.com, 4.3 (90 reviews), $$ Cocktail Bars/Tacos/Burgers, 'Specialties: Tacos. Tequila. Tiki'", "url": "https://www.yelp.com/biz/the-cantina-los-gatos-6"},
+        {"label": "Same page's community Q&A answered by Scott H., Business Owner: 'Mon - Wed: 4 - 5:30 PM, Thurs - Sun: 2 - 5:30 PM, $2 Off menu cocktails, $1 Off beers'", "url": "https://www.yelp.com/biz/the-cantina-los-gatos-6"}
+      ], "accessed": "2026-09-14"},
+      "review_links": {"yelp": "https://www.yelp.com/biz/the-cantina-los-gatos-6", "google_maps": "https://www.google.com/maps/search/?api=1&query=The+Cantina+15529+Union+Ave+Los+Gatos"},
+      "flags": ["The split personality is the finding: lunch exists Thu-Sun (11:30 AM) but not Tue-Wed (4:30 PM open), so a Tuesday lunch plan must skip it even though it is 'open'. The only printed discount is a happy-hour drink deal, and its Thu-Sun 2:00-5:30 PM window overlaps the restaurant's own 11:30 AM lunch open - an inconsistency worth a call."]
+    }
+  ],
+  "rejected": [],
+  "cross_checks": []
+}

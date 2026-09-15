@@ -1,0 +1,324 @@
+{
+  "batch": "16b",
+  "researched": "2026-09-14",
+  "pass": 16,
+  "scope": "Sunnyvale (W El Camino Real / Hollenbeck / Duane / Bernardo / E El Camino) and Santa Clara (Halford Ave / El Camino Real)",
+  "method": "Candidates came from dated Yelp city 'lunch specials' captures and a Reddit thread, were deduped against the master and rejected lists by name+city and by street address, then each one was re-read on its own business page. Hours are quoted from at least two captures where the captures disagree; a price is printed only when a page printed one.",
+  "entries": [
+    {
+      "name": "Thai Spoons",
+      "city": "Sunnyvale",
+      "area": "W El Camino Real (west Sunnyvale)",
+      "address": "909 W El Camino Real, Sunnyvale, CA 94087",
+      "cuisine": "Thai, seafood",
+      "phone": "(408) 739-1798",
+      "lunch_special": {
+        "name": "Lunch service every open day from 11:00 AM; reviewers call the lunch specials 'extremely affordable' but no price is published",
+        "price_from": null,
+        "price_to": null,
+        "days": "Mon-Sat (closed Sunday)",
+        "window": "11:00 AM - 9:00 PM continuous, so the whole lunch window is covered",
+        "includes": "No printed lunch-special price in any 2025-2026 capture. Website thaispoons.com. The Reddit answer is a quote only: r/Sunnyvale 'What are your favorite weekday lunch specials?' - first reply, 'Thai Spoons!!!'"
+      },
+      "hours_tuesday": "11:00 AM - 9:00 PM",
+      "days_open": "Mon-Sat 11:00 AM - 9:00 PM, Sun Closed (Yelp captures Nov 2025, June 2026 and Sept 2026 all agree); special-hours closures recorded for Fri Jul 3 2026 and Mon Sep 7 2026 (Labor Day)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "W El Camino Real, Sunnyvale - several miles from the Cupertino destination; not walkable inside the trip's lunch window."
+      },
+      "verification": {
+        "level": "review",
+        "sources": [
+          {"label": "Yelp business page (Sept 2026 capture) - 909 W El Camino Real, (408) 739-1798, Mon-Sat 11:00 am-9:00 pm, Sun Closed, website thaispoons.com, 'Closed today ... closed on September 7th, Labor Day'", "url": "https://www.yelp.com/biz/thai-spoons-sunnyvale-2?start=40"},
+          {"label": "Second capture (June 2026) with the same hours block, 4.0/3.9 (856 reviews) and the special-hours entry Fri Jul 3 2026 Closed", "url": "https://www.yelp.com/biz/thai-spoons-sunnyvale-2?start=200"},
+          {"label": "r/Sunnyvale thread 'What are your favorite weekday lunch specials?' - top answer names Thai Spoons (no price given)", "url": "https://www.reddit.com/r/Sunnyvale/comments/1kchplp/what_are_your_favorite_weekday_lunch_specials/"}
+        ],
+        "accessed": "2026-09-14"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/thai-spoons-sunnyvale-2",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Thai+Spoons+909+W+El+Camino+Real+Sunnyvale"
+      },
+      "flags": [
+        "A Yelp capture shows 'Thu: Closed - Special hours' and 'Sat: Closed - Special hours' with 'Normally 11:00 AM - 9:00 PM' underneath, i.e. one-off holiday closures rather than a weekly pattern; the weekly block is Mon-Sat 11:00 AM - 9:00 PM in every capture. Reviewer claim 'lunch specials are extremely affordable' has no dollar figure attached, so the price columns stay empty."
+      ]
+    },
+    {
+      "name": "Bento Express",
+      "city": "Sunnyvale",
+      "area": "Hollenbeck Ave (near W El Camino Real)",
+      "address": "1677 Hollenbeck Ave, Sunnyvale, CA 94087",
+      "cuisine": "Taiwanese bento / boxed lunch",
+      "phone": "(408) 720-0072",
+      "lunch_special": {
+        "name": "Lunch-only daytime service - the restaurant is closed between 2:00 PM and 4:10 PM every day, so the whole midday block is a lunch service",
+        "price_from": null,
+        "price_to": null,
+        "days": "Mon-Sat (closed Sunday)",
+        "window": "11:00 AM - 2:00 PM (lunch), 4:10 PM - 8:00 PM (dinner)",
+        "includes": "Reviewer quote kept out of the price column: 'Definitely a go to for me when I want a healthier, cheap, but still super delicious option' (Yelp 'cheap lunch specials' capture). No bento price was printed in the captures."
+      },
+      "hours_tuesday": "11:00 AM - 2:00 PM, 4:10 PM - 8:00 PM",
+      "days_open": "Mon-Sat 11:00 AM - 2:00 PM and 4:10 PM - 8:00 PM, Sun Closed (Yelp captures May, June and Sept 2026 agree exactly, including the unusual 4:10 PM dinner open)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Hollenbeck Ave, Sunnyvale - outside the walkable lunch window from the Cupertino destination."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {"label": "Yelp business page (Sept 2026) - 1677 Hollenbeck Ave, 4.4 (365 reviews), $$ Taiwanese, Mon-Sat 11:00 am-2:00 pm + 4:10 pm-8:00 pm, Sun Closed", "url": "https://www.yelp.com/biz/bento-express-sunnyvale"},
+          {"label": "Second capture (May 2026) repeating address, phone (408) 720-0072 and the identical 7-day hours block", "url": "https://www.yelp.com/biz/bento-express-sunnyvale?start=160"},
+          {"label": "Yelp 'Cheap Lunch Specials in Sunnyvale' capture ranking Bento Express 7th with the reviewer quote above", "url": "https://www.yelp.com/search?find_desc=Cheap+Lunch+Specials&find_loc=Sunnyvale%2C+CA"}
+        ],
+        "accessed": "2026-09-14"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/bento-express-sunnyvale",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Bento+Express+1677+Hollenbeck+Ave+Sunnyvale"
+      },
+      "flags": [
+        "The 4:10 PM dinner open is identical in three captures four months apart - unusual but consistent, so it is reported as printed rather than rounded to 4:00 PM."
+      ]
+    },
+    {
+      "name": "Lee's Kitchen",
+      "city": "Santa Clara",
+      "area": "El Camino Real at Halford (west Santa Clara)",
+      "address": "2767 El Camino Real, Santa Clara, CA 95051",
+      "cuisine": "Chinese",
+      "phone": "(408) 247-8662",
+      "lunch_special": {
+        "name": "Closed on Tuesdays - and a reviewer puts the lunch specials at 'a ridiculously cheap 5-6 dollars', a quote that is not printed on any menu page",
+        "price_from": null,
+        "price_to": null,
+        "days": "Mon and Wed-Sun (Tue closed)",
+        "window": "11:30 AM - 3:00 PM lunch, 4:00 PM - 8:00 PM dinner",
+        "includes": "Reviewer quote only (kept out of the price column): 'I am a fan of their lunch specials for a ridiculously cheap 5-6 dollars with generous portion size.' Three independent captures agree the restaurant is CLOSED on Tuesday."
+      },
+      "hours_tuesday": "CLOSED (Tuesday)",
+      "days_open": "Mon 11:30 AM - 3:00 PM and 4:00 PM - 8:00 PM, Tue CLOSED, Wed-Fri 11:30 AM - 3:00 PM and 4:00 PM - 8:00 PM, Sat 11:30 AM - 8:00 PM, Sun 12:00 PM - 8:00 PM",
+      "open_on_trip_date": false,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Closed on the Tuesday trip date - it cannot be used for this trip at all."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {"label": "Apple Maps place record - 2767 El Camino Real, Santa Clara CA 95051, +1 (408) 247-8662, Tuesday Closed, Mon/Wed-Fri 11:30 am-3:00 pm + 4:00 pm-8:00 pm, Sat 11:30 am-8:00 pm, Sun 12:00 pm-8:00 pm", "url": "https://maps.apple.com/place?place-id=IC524E828AA6B4369"},
+          {"label": "zmenu listing - same address and phone, same per-day hours with Tue Closed", "url": "https://www.zmenu.com/lees-kitchen-santa-clara-2-online-menu/"},
+          {"label": "Yelp business page (June 2026) - 2767 El Camino Real, (408) 247-8662, Tue Closed, 7-day block matching the other two", "url": "https://www.yelp.com/biz/lees-kitchen-santa-clara-2"}
+        ],
+        "accessed": "2026-09-14"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/lees-kitchen-santa-clara-2",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Lees+Kitchen+2767+El+Camino+Real+Santa+Clara"
+      },
+      "flags": [
+        "Apple Maps shows the cost band as '$$$$' for a restaurant that Yelp prices '$' and whose own reviewer calls lunch '5-6 dollars' - the Apple Maps cost field is wrong and is recorded here as an irregularity, not used. The Tuesday closure is the important finding for this trip: three sources agree."
+      ]
+    },
+    {
+      "name": "First Wok",
+      "city": "Sunnyvale",
+      "area": "S Bernardo Ave (west Sunnyvale, near I-280)",
+      "address": "653 S Bernardo Ave, Sunnyvale, CA 94087",
+      "cuisine": "Chinese (budget takeout and dine-in)",
+      "phone": "(408) 481-9888",
+      "lunch_special": {
+        "name": "Budget Chinese lunch service from 11:00 AM; described by reviewers as 'excellent budget Chinese food' with no published lunch price",
+        "price_from": null,
+        "price_to": null,
+        "days": "Mon-Sat (one capture says Sun Closed, another lists Sun 11:00 AM - 9:30 PM)",
+        "window": "11:00 AM - 9:30 PM continuous",
+        "includes": "Website firstwokcatogo.com. No lunch-special price appeared in any capture."
+      },
+      "hours_tuesday": "11:00 AM - 9:30 PM",
+      "days_open": "Mon-Sat 11:00 AM - 9:30 PM; Sunday is disputed - the Aug 2026 and Jan 2026 captures say 'Sun - Closed' while the July 2026 capture lists seven identical 11:00 am-9:30 pm days",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "S Bernardo Ave, Sunnyvale - outside the walkable lunch window from the Cupertino destination."
+      },
+      "verification": {
+        "level": "conflicting",
+        "sources": [
+          {"label": "Yelp business page (Aug 2026 capture) - 653 S Bernardo Ave, (408) 481-9888, Mon-Sat 11:00 am-9:30 pm, Sun Closed, website firstwokcatogo.com, plus the owner-community answer about an unannounced closure period", "url": "https://www.yelp.com/biz/first-wok-sunnyvale?start=95"},
+          {"label": "Yelp capture (July 2026) of the same page showing Mon-Sun 11:00 am-9:30 pm", "url": "https://www.yelp.com/biz/first-wok-sunnyvale"},
+          {"label": "Yelp capture (Jan 2026) - 'Sun: Closed'", "url": "https://www.yelp.com/biz/first-wok-sunnyvale?start=100"}
+        ],
+        "accessed": "2026-09-14"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/first-wok-sunnyvale",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=First+Wok+653+S+Bernardo+Ave+Sunnyvale"
+      },
+      "flags": [
+        "Sunday hours conflict between three captures of the same Yelp page (Closed vs 11:00 am-9:30 pm). The page also carries a community question 'Are they still in operation? They were closed when I came today around 6 pm, despite having a sign saying they were open 7 days' answered with 'Yes they are open although there was a small period of time they were not open (without any signage stating why)' - an unannounced closure, so call ahead."
+      ]
+    },
+    {
+      "name": "10 Butchers Korean BBQ",
+      "city": "Sunnyvale",
+      "area": "E El Camino Real (central Sunnyvale)",
+      "address": "595 E El Camino Real, Sunnyvale, CA 94087",
+      "cuisine": "Korean BBQ, wine bar",
+      "phone": "(408) 720-8889",
+      "lunch_special": {
+        "name": "Weekday lunch service 11:30 AM - 2:30 PM with a lunch special reviewers describe as satisfying; no price published on any capture",
+        "price_from": null,
+        "price_to": null,
+        "days": "Mon-Fri lunch block; Sat-Sun continuous service",
+        "window": "11:30 AM - 2:30 PM (Mon-Fri), 11:30 AM - 9:00/10:00 PM (Sat-Sun continuous)",
+        "includes": "Reviewer quote kept out of the price column: 'Came here three times so far, two BBQ meals and one lunch special, which were all highly satisfying.' Website 10butchers.net."
+      },
+      "hours_tuesday": "11:30 AM - 2:30 PM, 5:00 PM - 9:00 PM",
+      "days_open": "Mon-Thu 11:30 AM - 2:30 PM and 5:00 PM - 9:00 PM, Fri 11:30 AM - 2:30 PM and 5:00 PM - 10:00 PM, Sat 11:30 AM - 10:00 PM, Sun 11:30 AM - 9:00 PM (Yelp Sept 2026 capture and Apple Maps agree)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "E El Camino Real, Sunnyvale - the 2:30 PM lunch cutoff would fit an afternoon return, but the venue is not walkable from the Cupertino destination."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {"label": "Yelp business page (Sept 2026 capture) - 595 E El Camino Real, (408) 720-8889, full 7-day block with the 11:30 am-2:30 pm weekday lunch, website 10butchers.net", "url": "https://www.yelp.com/biz/10-butchers-korean-bbq-sunnyvale"},
+          {"label": "Apple Maps place record - same address, phone and hours (Mon-Thu 11:30 am-2:30 pm + 5:00 pm-9:00 pm, Fri to 10:00 pm, Sat 11:30 am-10:00 pm, Sun 11:30 am-9:00 pm)", "url": "https://maps.apple.com/place?place-id=I2A377369F64B23B0"},
+          {"label": "Yelp 'Cheap Lunch Specials in Santa Clara' capture carrying the lunch-special reviewer quote", "url": "https://www.yelp.com/search?find_desc=cheap+lunch+specials&find_loc=Santa+Clara%2C+CA"}
+        ],
+        "accessed": "2026-09-14"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/10-butchers-korean-bbq-sunnyvale",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=10+Butchers+Korean+BBQ+595+E+El+Camino+Real+Sunnyvale"
+      },
+      "flags": [
+        "A pass-11 flag already records a Reddit-quoted '$10' cheap-lunch figure for a 10 Butchers location; that number is still not printed on any page found in this pass and stays out of the price columns. Note also that the Apple Maps record lists this Sunnyvale address while the Yelp 'cheap lunch specials' ranking that quotes it was run for Santa Clara - the same business, different city index."
+      ]
+    },
+    {
+      "name": "California MoMo Kitchen",
+      "city": "Sunnyvale",
+      "area": "E Duane Ave (near N Fair Oaks / 101)",
+      "address": "913 E Duane Ave, Sunnyvale, CA 94085",
+      "cuisine": "Himalayan / Nepalese, halal, Indian (momo dumplings)",
+      "phone": "(408) 743-5857",
+      "lunch_special": {
+        "name": "Published lunch specials 11:00 AM - 3:00 PM, described by a reviewer as running 'from 11am-3pm'; no price printed",
+        "price_from": null,
+        "price_to": null,
+        "days": "daily",
+        "window": "11:00 AM - 3:00 PM lunch specials (the restaurant itself is open 11:00 AM - 9:00/10:00 PM)",
+        "includes": "Reviewer quote kept out of the price column: 'Noteworthy is that they have lunch specials from 11am-3pm. Momos are steamed fresh so they take...'"
+      },
+      "hours_tuesday": "11:00 AM - 9:00 PM",
+      "days_open": "Mon-Thu 11:00 AM - 9:00 PM, Fri 11:00 AM - 10:00 PM, Sat 11:30 AM - 10:00 PM, Sun 11:30 AM - 9:00 PM (three Yelp captures: Jan, March and May 2026, all identical); holiday closures Mon Sep 7 2026 and Thu Nov 26 2026, reduced hours Fri Nov 27 2026 12:00 PM - 10:00 PM",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "E Duane Ave, Sunnyvale - a short drive from the destination but not walkable inside the lunch window."
+      },
+      "verification": {
+        "level": "review",
+        "sources": [
+          {"label": "Yelp business page (May 2026 capture) - 913 E Duane Ave, (408) 743-5857, 7-day hours block, holiday closures listed, 'We've updated our hours!'", "url": "https://www.yelp.com/biz/california-momo-kitchen-sunnyvale?show_platform_modal=True&start=80"},
+          {"label": "Second capture (March 2026) with the business' own update 'We are now open on Sunday from 11:30 to 9Pm'", "url": "https://www.yelp.com/biz/california-momo-kitchen-sunnyvale?start=40"},
+          {"label": "Yelp 'Indian Lunch Special in Sunnyvale' capture ranking it 5th with the 11am-3pm lunch-special quote", "url": "https://www.yelp.com/search?find_desc=Indian+Lunch+Special&find_loc=Sunnyvale%2C+CA"}
+        ],
+        "accessed": "2026-09-14"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/california-momo-kitchen-sunnyvale",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=California+MoMo+Kitchen+913+E+Duane+Ave+Sunnyvale"
+      },
+      "flags": [
+        "Same street as Speedy's Tacos (L816, 929 E Duane Ave) added in pass 15 - two different businesses on one short block, both with a midday service. Not duplicates: different addresses, cuisines and phone numbers."
+      ]
+    },
+    {
+      "name": "Beijing Restaurant",
+      "city": "Santa Clara",
+      "area": "Halford Ave (west Santa Clara, near Lawrence Expressway)",
+      "address": "1460 Halford Ave, Santa Clara, CA 95051",
+      "cuisine": "Chinese and Korean noodle house (jjamppong, chow fun, sizzling rice)",
+      "phone": "(408) 423-0001",
+      "lunch_special": {
+        "name": "A reviewer reports 'more than 30 $8 to $10 lunch specials'; the restaurant's own ordering site prints a la carte prices of $15.95-$38.95 and no separate lunch menu",
+        "price_from": null,
+        "price_to": null,
+        "days": "daily",
+        "window": "11:00 AM - 9:00 PM per the restaurant's own site (a delivery app shows 11:00 AM - 8:30 PM)",
+        "includes": "Own-site prices printed on beijing-restaurant.hey-restaurants.com: F9 Beef With Garlic Sauce $23.95, F8 Orange Beef $23.95, F3 Broccoli Beef $23.95, priceRange '$20-30'. The $8-$10 lunch figure is a reviewer claim and is kept out of the price columns."
+      },
+      "hours_tuesday": "11:00 AM - 9:00 PM",
+      "days_open": "Mon-Sun 11:00 AM - 9:00 PM (restaurant's own site JSON-LD, Apple Maps, roadtrippers and the Yelp capture all agree); Postmates/Uber Eats shows 11:00 AM - 8:30 PM daily",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Halford Ave, Santa Clara - outside the walkable lunch window from the Cupertino destination."
+      },
+      "verification": {
+        "level": "conflicting",
+        "sources": [
+          {"label": "Restaurant's own ordering site with JSON-LD - 1460 Halford Ave, Santa Clara CA 95051, +1 408-423-0001, openingHoursSpecification Mon-Sun 11:00 AM-09:00 PM, priceRange $20-30, and printed entree prices $23.95-$27.95", "url": "https://beijing-restaurant.hey-restaurants.com/"},
+          {"label": "Apple Maps place record - same address and phone, 'Every Day 11:00 AM - 9:00 PM', website beijingmenu.com", "url": "https://maps.apple.com/place?place-id=I84CA729EAC2A7D97"},
+          {"label": "Yelp business page (Aug 2026) - 1460 Halford Ave, $$ Korean/Chinese/Noodles, 3.9 (454 reviews), with priced menu items J3 $17.95, E5 $24.95, F2 $26.95", "url": "https://www.yelp.com/biz/beijing-restaurant-santa-clara"},
+          {"label": "Postmates store page - same address but daily 11:00 AM - 8:30 PM, the conflicting close", "url": "https://postmates.com/store/beijing-restaurant/3eqqXg7STLK7rQ5Mj5SXMQ"}
+        ],
+        "accessed": "2026-09-14"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/beijing-restaurant-santa-clara",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Beijing+Restaurant+1460+Halford+Ave+Santa+Clara"
+      },
+      "flags": [
+        "Two irregularities: (1) the Yelp 'Lunch Specials in Santa Clara' capture quotes 'they have more than 30 $8 to $10 lunch specials' but neither the restaurant's own ordering site nor Apple Maps nor menupix shows any item below $15.95 - the cheapest printed prices found were C1 Vegetable Egg Rolls $7.95 and J2/J3 noodle dishes $15.95-$17.95, so the $8-$10 claim cannot be reproduced and is flagged, not printed; (2) the delivery app shows an 8:30 PM close against the 9:00 PM close on the restaurant's own site. Also note the Postmates page titles the store 'Beijing Restaurant Menu Sunnyvale' while its own FAQ answers 'Beijing Restaurant is located at: 1460 Halford Ave, Santa Clara' - a city-label error on the delivery app."
+      ]
+    },
+    {
+      "name": "Master Oh's",
+      "city": "Santa Clara",
+      "area": "Halford Ave (directly across the area from Beijing Restaurant)",
+      "address": "1484 Halford Ave, Santa Clara, CA 95051",
+      "cuisine": "Korean, seafood (raw fish, bossam)",
+      "phone": "(408) 246-1484",
+      "lunch_special": {
+        "name": "Weekday lunch block 11:00 AM - 2:30 PM with a lunch-special bossam set; reviewers confirm the set exists but no price is printed",
+        "price_from": null,
+        "price_to": null,
+        "days": "Mon-Thu have a distinct 11:00 AM - 2:30 PM lunch block; Fri-Sun run continuously from 11:00 AM",
+        "window": "11:00 AM - 2:30 PM (Mon-Thu), 11:00 AM - 10:00/11:00 PM (Fri-Sun)",
+        "includes": "Reviewer quote kept out of the price column: 'We also had their lunch special bossam set, which was also delicious.'"
+      },
+      "hours_tuesday": "11:00 AM - 2:30 PM, 5:00 PM - 10:00 PM",
+      "days_open": "Disputed between captures: the April 2026 capture says Mon-Fri 11:00 AM - 2:30 PM + 5:00 PM - 10:00 PM, Sat 11:00 AM - 10:00 PM, Sun 11:00 AM - 10:00 PM; the August and September 2026 captures say Mon-Wed 11:00 AM - 2:30 PM + 5:00 PM - 10:00 PM, Thu 5:00 PM - 11:00 PM, Fri-Sat 11:00 AM - 11:00 PM continuous, Sun 11:00 AM - 10:00 PM continuous",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Halford Ave, Santa Clara - outside the walkable lunch window; the Tuesday lunch block ends 2:30 PM."
+      },
+      "verification": {
+        "level": "conflicting",
+        "sources": [
+          {"label": "Yelp business page (Sept 2026 capture) - 1484 Halford Ave, (408) 246-1484, Mon-Wed 11:00 am-2:30 pm + 5:00 pm-10:00 pm, Thu +5:00 pm-11:00 pm, Fri-Sat 11:00 am-11:00 pm, Sun 11:00 am-10:00 pm", "url": "https://www.yelp.com/biz/master-ohs-santa-clara"},
+          {"label": "Second capture (Aug 2026) of the same page, 4.3 (190 reviews), 'Open 11:00 AM - 11:00 PM'", "url": "https://www.yelp.com/biz/master-ohs-santa-clara?start=40"},
+          {"label": "Third capture (April 2026) showing a DIFFERENT weekly pattern: Mon-Fri 11:00 am-2:30 pm + 5:00 pm-10:00 pm, Sat-Sun 11:00 am-10:00 pm, 4.3 (142 reviews)", "url": "https://www.yelp.com/biz/master-ohs-santa-clara?start=10"}
+        ],
+        "accessed": "2026-09-14"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/master-ohs-santa-clara",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Master+Ohs+1484+Halford+Ave+Santa+Clara"
+      },
+      "flags": [
+        "Two different weekly hours systems on three captures of one Yelp page (Apr 2026 vs Aug/Sept 2026) - the newer captures dropped the midday 2:30 PM close on Fri-Sun. Both are shown; neither is averaged. This is the same 'two hours blocks for the same day' pattern flagged for Mezcal, Strata, Togo's, Veggie Grill and Lotus Thai in pass 11 (LUNCH-FLAG-34..42)."
+      ]
+    }
+  ],
+  "rejected": [],
+  "cross_checks": []
+}

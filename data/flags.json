@@ -144,6 +144,134 @@
  ],
  "lunch": [
   {
+   "id": "LUNCH-FLAG-103",
+   "severity": "info",
+   "title": "Pass 16 delivered 31 new rows against a 100-row target: 25 of 56 researched venues were already mastered",
+   "what_we_found": "Pass 16 researched 56 candidate venues across eight batch files (16a-16h). The merge's dedupe showed 25 of them were already in the master list - all eight batch16b rows (Thai Spoons L49, Bento Express L13, Lee's Kitchen L267, First Wok L50, 10 Butchers L56, California MoMo Kitchen L381, Beijing Restaurant L300, Master Oh's L24) plus SGD Tofu House L555, Water Tower Kitchen L17, Wine Cellar Restaurant L488, Ludwig's Biergarten L88, Agave Mexican Bistro L212, Lungo Thai Eatery L717, Sumiya L301, Jun Bistro L440, Katsu Gin L729, Thai Orchid L426, Darbar L438 and Das Bierhauz L401. Net result: 31 new rows, 11 new rejections.",
+   "what_we_did": "Reported the shortfall instead of padding it. The duplicate captures were not discarded: each one re-confirms or contradicts the existing row and is written up in docs/REVIEW_2026-09-14_pass16.md with the master id it belongs to. Discovery screening was tightened mid-pass (candidates are now screened against data/lunch_specials.json before any verification search is spent on them).",
+   "rows": [
+    "L49",
+    "L13",
+    "L267",
+    "L50",
+    "L56",
+    "L381",
+    "L300",
+    "L24",
+    "L555",
+    "L17",
+    "L488",
+    "L88",
+    "L212",
+    "L717",
+    "L301",
+    "L440",
+    "L729",
+    "L426",
+    "L438",
+    "L401"
+   ],
+   "link": {
+    "label": "docs/REVIEW_2026-09-14_pass16.md - pass 16 QA log with the duplicate-detection table",
+    "url": "https://github.com/buffedlizard55-lab/TinoLunchSpecial/blob/main/docs/REVIEW_2026-09-14_pass16.md"
+   },
+   "manual_review": "No action needed on the data. If a future pass must reach a row target, budget discovery (screening) before verification: roughly 45% of pass-16 verification effort went to venues that were already listed."
+  },
+  {
+   "id": "LUNCH-FLAG-102",
+   "severity": "warning",
+   "title": "Square Pie Guys runs two live-looking Yelp listings and a closed ghost-kitchen listing for one brand",
+   "what_we_found": "Three separate Yelp listings exist: (1) 501 E Campbell Ave, Campbell - the real brick-and-mortar, (408) 409-5955, squarepieguys.com, 4.4 stars; (2) a SECOND slug for the same 501 E Campbell Ave address with its own review count (243 vs 219), which inflates apparent review volume; and (3) 1640 S Bascom Ave Ste A inside 'Local Kitchens-Campbell' - now CLOSED (rejected as R165) but still printing 11:00 am-12:00 am seven days a week with a San Francisco (415) 992-8206 phone. The live listing's closing time also drifts across 2026 captures: 8:30 PM (April), 9:00 PM (Sept), 9:30/10:30 PM (May).",
+   "what_we_did": "Added only the 501 E Campbell Ave row, marked 'conflicting' because the four captures disagree on the close time; recorded the 11:30 AM daily open (consistent in every capture) as the safe planning value; rejected the Local Kitchens unit as R165 so it cannot be mistaken for an all-day lunch option.",
+   "rows": [
+    "L848"
+   ],
+   "link": {
+    "label": "Yelp - Square Pie Guys, 501 E Campbell Ave, Campbell (Sept 2026 capture)",
+    "url": "https://www.yelp.com/biz/square-pie-guys-campbell-campbell"
+   },
+   "manual_review": "Pick one closing time by phone ((408) 409-5955) and report the duplicate Yelp slug to Yelp so review counts stop splitting."
+  },
+  {
+   "id": "LUNCH-FLAG-101",
+   "severity": "warning",
+   "title": "Jang Su Jang's own holiday-hours note is stale (names Nov 23 as Thanksgiving) and its closing time has shrunk",
+   "what_we_found": "The business note printed on Jang Su Jang's Yelp page reads '11/23 Thanksgiving Day 11AM - 3PM, 11/24 Black Friday 11AM - 9:30PM, 12/24 Christmas Eve 11AM - 9PM, 12/25 Christmas Day 11AM - 8:30PM, 12/31 New Year's Eve 11AM - 9PM, 1/1 New Year's Day 11AM - 9:30PM'. Thanksgiving was Nov 23 in 2023; in 2026 it is Thursday Nov 26, so the note would send a diner to a closed restaurant. Separately the weekly close has moved from 8:00 PM (Oct 2025 capture) to 7:30 PM (2026 captures), with Fri-Sat variously 7:30 or 7:45 PM in two captures three weeks apart.",
+   "what_we_did": "Added the row at 'conflicting' level with all four dated captures listed; kept the current 11:00 AM - 7:30 PM as hours_tuesday (11:00 AM open is consistent everywhere, so the trip date works); recorded the stale holiday note in the row's flags so nobody plans a holiday lunch from it.",
+   "rows": [
+    "L845"
+   ],
+   "link": {
+    "label": "Yelp - Jang Su Jang, 3561 El Camino Real Ste 10, Santa Clara (Aug 2026 capture carrying the business' holiday note)",
+    "url": "https://www.yelp.com/biz/jang-su-jang-santa-clara?start=1960"
+   },
+   "manual_review": "Ask the restaurant (408) 246-1212 for its 2026 holiday hours before publishing any November/December plan, and confirm whether the close is 7:30 or 7:45 PM on Fri-Sat."
+  },
+  {
+   "id": "LUNCH-FLAG-100",
+   "severity": "data_conflict",
+   "title": "Kiya Sushi's own ordering site advertises a lunch special until 3:00 PM but its own hours close at 2:30 PM Mon-Thu",
+   "what_we_found": "The restaurant's own ordering menu publishes 'Lunch Special - 11 am - 3 pm - Served with miso soup, green salad, white rice, 4 pieces California roll, two pieces gzyoa', immediately followed by 'Lunch items are only viewable on this page during lunch ordering hours', which is why no price could be captured outside that window. The same site's JSON-LD hours say Mon-Thu 11:00-14:30 and 16:30-21:00, so the last half hour of the advertised lunch special falls after closing on weekdays. A third source (beyondmenu) lists the weekday dinner block as 5:00 PM - 9:30 PM rather than Yelp's 4:30 PM - 9:00 PM. A Yelp reviewer prices 'the trio roll lunch special ... a good deal for 14.99' with free matcha ice cream.",
+   "what_we_did": "Left the existing master row's hours alone and filed the contradiction as a cross-check in data/incoming/batch16g_campbell_fremont_verified.json. The reviewer's $14.99 was NOT written into a price column because it is not on the restaurant's own published menu; the official lunch-special definition (what it includes, 11 am-3 pm) is recorded.",
+   "rows": [
+    "L477"
+   ],
+   "link": {
+    "label": "Kiya Sushi's own ordering menu publishing the Lunch Special definition and its JSON-LD hours",
+    "url": "https://order.kiyasushica.com/menu"
+   },
+   "manual_review": "Capture the lunch menu between 11:00 AM and 3:00 PM on a weekday to read the real lunch prices, and confirm whether the 2:30 PM close or the 3:00 PM lunch window is correct."
+  },
+  {
+   "id": "LUNCH-FLAG-99",
+   "severity": "warning",
+   "title": "Lotus Thai Bistro is listed TWICE in the master list (L76 and L650) for one address",
+   "what_we_found": "L76 'Lotus Thai Bistro' (425 California Avenue, Palo Alto, level 'official') carries no hours at all - 'open Tuesday (hours of day not published)' - while L650 'Lotus Thai Bistro Palo Alto Official' (425 California Ave, Palo Alto, CA 94306, level 'official') carries 11:00 AM - 3:00 PM and 5:00 PM - 9:30 PM. Both are the same restaurant. A fresh Apple Maps capture for lotusthaibistro.com, +1 (650) 289-0907 corroborates L650 and adds detail: Sat 11:00 AM - 3:00 PM and 4:00 PM - 9:30 PM (dinner starts an hour earlier on Saturday), Sun CLOSED. The same Apple Maps page also renders a contradictory variant, 'Mon-Sat 11:00 AM - 3:00 PM, 5:00 PM - 9:30 PM'.",
+   "what_we_did": "No third row was added. Filed as a cross-check in data/incoming/batch16e_mv_pa_milpitas_verified.json and flagged here. Master rows were not edited, per the rule that a pass adds rows and reports conflicts rather than rewriting history.",
+   "rows": [
+    "L76",
+    "L650"
+   ],
+   "link": {
+    "label": "Apple Maps record for Lotus Thai Bistro, 425 California Ave, Palo Alto",
+    "url": "https://maps.apple.com/place?place-id=I98A2D6D592972098"
+   },
+   "manual_review": "Merge L76 into L650 (keeping L650's hours and the Saturday 4:00 PM dinner start), then re-run scripts/build_data.py so the site stops showing the same restaurant twice."
+  },
+  {
+   "id": "LUNCH-FLAG-98",
+   "severity": "warning",
+   "title": "Six verified pass-16 rows are held back by street-address collisions, including one likely rebrand",
+   "what_we_found": "The merge dedupes on street address, so six pass-16 rows were blocked even though each looks like a distinct or renamed business: Elia (276 E Campbell Ave, Campbell, eliarestaurants.com, Mediterranean/Greek) vs L532 Opa! Authentic Greek Cuisine at the same address - a likely rebrand of the same Greek restaurant; Hono Izakaya & Sushi (33 S Central Ave, Campbell, confirmed on its own site with JSON-LD coords 37.286584/-121.943914) vs L122 A Bellagio (re-confirmation of LUNCH-FLAG-69); Mr Bao Kitchen Chinese Cuisine (357 Castro St, Mountain View) vs L149 Sakoon, an Indian restaurant at the same address - possibly a shared kitchen or a wrong address in one listing; Joya Restaurant & Lounge (339 University Ave, Palo Alto) vs L439 Khazana; Rangoon Ruby (445 Emerson St, Palo Alto) vs L504 Cafe Baklava; Sumiya (2634 Homestead Rd, Santa Clara) vs L301 Sumiya Yakitori, which is the same business under a fuller name.",
+   "what_we_did": "Following the pass-7 and pass-14 precedent (LUNCH-FLAG-69), the six rows stay in data/incoming/ unmerged rather than being forced past the dedupe. No master row was edited. Each pair is written up in docs/REVIEW_2026-09-14_pass16.md with the evidence captured for both sides.",
+   "rows": [
+    "L532",
+    "L122",
+    "L149",
+    "L439",
+    "L504",
+    "L301"
+   ],
+   "link": {
+    "label": "data/incoming/ - the pass-16 batch files holding the six blocked rows",
+    "url": "https://github.com/buffedlizard55-lab/TinoLunchSpecial/tree/main/data/incoming"
+   },
+   "manual_review": "Call or visit each pair. If Elia replaced Opa!, archive L532 and merge the Elia row; if Sakoon and Mr Bao Kitchen are co-tenants, add the new row with a suite number; if Sumiya is simply Sumiya Yakitori, add the new captures to L301 instead of creating a row."
+  },
+  {
+   "id": "LUNCH-FLAG-97",
+   "severity": "note",
+   "title": "Four of the eleven pass-16 rejections are stale listings that still print full weekly hours",
+   "what_we_found": "Pho & Bun (1810 Milmont Dr, Milpitas) is titled 'CLOSED' on Yelp yet still carries a live TripAdvisor page advertising 'Open until 9:30 PM' with JSON-LD hours and a phone number; Kitayama Yoichi (129 Anza St, Fremont) is 'CLOSED' on Yelp while still printing Mon-Sun 11:30 am-7:30/8:30 pm and its own site; Bierhaus (383 Castro St, Mountain View) is 'CLOSED' but still lists Tue-Sat 11:30 am-9:00 pm and bierha.us, and its name is one letter away from the OPEN Das Bierhauz two blocks away at 135 Castro St; Square Pie Guys' Local Kitchens unit (1640 S Bascom Ave Ste A, Campbell) is 'CLOSED' but printed 11:00 am-12:00 am daily.",
+   "what_we_did": "All four were written to data/lunch_rejected.json (R160, R166 and the Bierhaus/Square Pie Guys entries) with the closure evidence and the stale hours quoted, so a future pass does not re-research them and a reader can see why an apparently open restaurant is excluded.",
+   "rows": [],
+   "link": {
+    "label": "data/lunch_rejected.json - 183 rejections with reasons",
+    "url": "https://github.com/buffedlizard55-lab/TinoLunchSpecial/blob/main/data/lunch_rejected.json"
+   },
+   "manual_review": "None needed. If any of these reopens, use supersedes_rejection in a new batch file so the rejection is retired cleanly."
+  },
+  {
    "id": "LUNCH-FLAG-96",
    "severity": "info",
    "title": "Closed businesses confirmed during pass 15",

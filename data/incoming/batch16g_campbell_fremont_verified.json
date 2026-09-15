@@ -1,0 +1,109 @@
+{
+  "batch": "16g",
+  "researched": "2026-09-14",
+  "pass": 16,
+  "scope": "Campbell (E Campbell Ave) and Fremont (Fremont Blvd) - plus three cross-checks that add data to rows already in the master",
+  "method": "Dedupe first: Kiya Sushi, Tai Pan BBQ Express and Country Way are already mastered (L477, L478, L463) so their fresh captures are filed as cross-checks instead of duplicate rows. Two genuinely new Campbell businesses are added; two closed/ghost-kitchen listings are rejected.",
+  "entries": [
+    {
+      "name": "Square Pie Guys",
+      "city": "Campbell",
+      "area": "E Campbell Ave (downtown Campbell)",
+      "address": "501 E Campbell Ave, Campbell, CA 95008",
+      "cuisine": "Detroit-style pizza, salad, chicken wings",
+      "phone": "(408) 409-5955",
+      "lunch_special": {
+        "name": "No published lunch special - an 11:30 AM open covers the whole lunch window at regular prices",
+        "price_from": null, "price_to": null,
+        "days": "daily",
+        "window": "11:30 AM - 8:30 / 9:00 / 9:30 / 10:30 PM depending on which capture is used (see flag)",
+        "includes": "Own site squarepieguys.com. Business description on Yelp: 'modern Detroit Style Pizza with a chef-driven twist ... shareable Detroit Style Pizzas, vegan options, and comfort food classics like Buffalo Wings'. No printed lunch price captured."
+      },
+      "hours_tuesday": "11:30 AM - 9:00 PM (newest capture; three other captures give 8:30, 9:30 PM)",
+      "days_open": "Four captures of the same business, four different closing patterns: Sept 2026 Mon-Sun 11:30 AM - 9:00 PM; May 2026 Mon-Thu and Sun 11:30 AM - 9:30 PM with Fri-Sat to 10:30 PM; April 2026 Mon-Thu and Sun 11:30 AM - 8:30 PM with Fri-Sat to 9:30 PM. All agree on the 11:30 AM open every day.",
+      "open_on_trip_date": true,
+      "fits_return_bus": {"ok": false, "note": "E Campbell Ave, Campbell - roughly 7 miles from the destination."},
+      "verification": {"level": "conflicting", "sources": [
+        {"label": "Yelp business page (Sept 2026) - 501 E Campbell Ave, Campbell CA 95008, (408) 409-5955, Mon-Sun 11:30 am-9:00 pm, website squarepieguys.com, 4.4 (243 reviews), 'Updated 2 months ago', plus the Detroit-style-pizza business description", "url": "https://www.yelp.com/biz/square-pie-guys-campbell-campbell"},
+        {"label": "May 2026 capture of a second Yelp slug for the same address - Mon-Thu and Sun 11:30 am-9:30 pm, Fri-Sat 11:30 am-10:30 pm, 'Updated a few days ago', 4.4 (219 reviews)", "url": "https://www.yelp.com/biz/square-pie-guys-campbell-4"},
+        {"label": "April 2026 capture - Mon-Thu and Sun 11:30 am-8:30 pm, Fri-Sat 11:30 am-9:30 pm, 4.4 (197 reviews)", "url": "https://www.yelp.com/biz/square-pie-guys-campbell-campbell?start=60"}
+      ], "accessed": "2026-09-14"},
+      "review_links": {"yelp": "https://www.yelp.com/biz/square-pie-guys-campbell-campbell", "google_maps": "https://www.google.com/maps/search/?api=1&query=Square+Pie+Guys+501+E+Campbell+Ave+Campbell"},
+      "flags": ["Two problems at once. (1) Closing time has drifted across 2026 captures (8:30 -> 9:00 -> 9:30 -> 10:30 PM variants) so only the 11:30 AM open is safe to plan on. (2) The business exists under TWO different Yelp slugs - 'square-pie-guys-campbell-campbell' and 'square-pie-guys-campbell-4' - with separate review counts (243 vs 219) for one physical address, which inflates apparent review volume."]
+    },
+    {
+      "name": "Elia",
+      "city": "Campbell",
+      "area": "E Campbell Ave (downtown Campbell)",
+      "address": "276 E Campbell Ave, Campbell, CA 95008",
+      "cuisine": "Mediterranean, Greek, seafood",
+      "phone": "(408) 628-4323",
+      "lunch_special": {
+        "name": "No published lunch special - an 11:00 AM open on weekdays (10:00 AM at weekends) covers lunch at regular prices",
+        "price_from": null, "price_to": null,
+        "days": "daily",
+        "window": "11:00 AM - 10:00 PM Mon-Thu; 11:00 AM - 12:00 AM Fri; 10:00 AM - 12:00 AM Sat; 10:00 AM - 9:00 PM Sun",
+        "includes": "Own site eliarestaurants.com. A diner photo caption prices one entree ('Moussaka ($29)') but that is a menu item, not a lunch special, so the price columns stay empty."
+      },
+      "hours_tuesday": "11:00 AM - 10:00 PM",
+      "days_open": "Mon 11:00 AM - 10:00 PM, Tue 11:00 AM - 10:00 PM, Wed 11:00 AM - 10:00 PM, Thu 11:00 AM - 10:00 PM, Fri 11:00 AM - 12:00 AM (next day), Sat 10:00 AM - 12:00 AM (next day), Sun 10:00 AM - 9:00 PM (Yelp capture updated September 2026)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {"ok": false, "note": "E Campbell Ave, Campbell - not walkable from the Cupertino destination."},
+      "verification": {"level": "listing", "sources": [
+        {"label": "Yelp business page (Sept 2026) - 276 E Campbell Ave, Campbell CA 95008, (408) 628-4323, per-day hours as listed, website eliarestaurants.com, 4.0 (77 reviews), Mediterranean/Greek/Seafood, 'Updated 2 months ago'", "url": "https://www.yelp.com/biz/elia-campbell-4"}
+      ], "accessed": "2026-09-14"},
+      "review_links": {"yelp": "https://www.yelp.com/biz/elia-campbell-4", "google_maps": "https://www.google.com/maps/search/?api=1&query=Elia+276+E+Campbell+Ave+Campbell"},
+      "flags": ["Single-source listing. Friday and Saturday run past midnight, which makes the 'days_open' field cross calendar days - recorded as '12:00 AM (Next day)' exactly as the source prints it."]
+    }
+  ],
+  "rejected": [
+    {
+      "name": "Square Pie Guys (Local Kitchens - Campbell)",
+      "city": "Campbell",
+      "address": "1640 S Bascom Ave, Ste A, Campbell, CA 95008",
+      "reason": "PERMANENTLY CLOSED ghost-kitchen listing - the Yelp page title reads 'SQUARE PIE GUYS - CLOSED - Updated July 2026'. It is a separate listing from the real brick-and-mortar at 501 E Campbell Ave: different address, a San Francisco (415) 992-8206 phone, 'Located in: Local Kitchens-Campbell', and a link to localkitchens.com/order/store/. Its hours were printed as 11:00 am - 12:00 am seven days a week, which would have looked like an ideal all-day lunch option if taken at face value. Rejected so it cannot be confused with the live Campbell location.",
+      "links": [
+        {"label": "Yelp page showing CLOSED for the Local Kitchens unit - 1640 S Bascom Ave Ste A, Campbell CA 95008, (415) 992-8206, localkitchens.com/order/store/", "url": "https://www.yelp.com/biz/square-pie-guys-campbell-3"}
+      ]
+    },
+    {
+      "name": "Kitayama Yoichi",
+      "city": "Fremont",
+      "address": "129 Anza St, Fremont, CA 94539",
+      "reason": "PERMANENTLY CLOSED - Yelp page title reads 'KITAYAMA YOICHI - CLOSED - Updated July 2026', yet the page still prints a full seven-day hours block (Mon-Thu 11:30 am-7:30 pm, Fri-Sat 11:30 am-8:30 pm, Sun 11:30 am-8:00 pm) and an own-site link kitayamafremontca.com. A ramen lunch at 11:30 AM would have looked perfectly bookable. Surfaced by a Fremont lunch search, so the stale-hours risk is documented here rather than silently dropped.",
+      "links": [
+        {"label": "Yelp page showing CLOSED with the still-printed hours, 129 Anza St, Fremont CA 94539, (510) 270-8338", "url": "https://www.yelp.com/biz/kitayama-yoichi-fremont-3"}
+      ]
+    }
+  ],
+  "cross_checks": [
+    {
+      "master_id": "L477",
+      "master_name": "Kiya Sushi, Fremont",
+      "what_the_fresh_capture_says": "The restaurant's OWN ordering site publishes a Lunch Special definition: 'Lunch Special, 11 am - 3 pm, Served with miso soup, green salad, white rice, 4 pieces California roll, two pieces gzyoa. Lunch items are only viewable on this page during lunch ordering hours.' That last sentence is why no price could be captured - the items and prices are hidden outside 11 am-3 pm. Separately, a Yelp review states 'The trio roll lunch special is a good deal for 14.99 and it comes...' with free matcha ice cream; because $14.99 is reviewer-reported rather than printed on the official menu, it stays out of the price columns. IMPORTANT CONTRADICTION: the official lunch window runs to 3:00 PM but the official JSON-LD hours close the restaurant at 2:30 PM Mon-Thu (11:00-14:30 then 16:30-21:00), so the advertised lunch special cannot be served for its final half hour on weekdays. Address 36488 Fremont Blvd, Fremont CA 94536, phone (510) 894-1112, geo 37.562857/-122.0145387, priceRange $$, kiyasushifremont.com. A third source (beyondmenu) lists the weekday dinner block as 5:00 PM-9:30 PM rather than 4:30 PM-9:00 PM.",
+      "links": [
+        {"label": "Restaurant's own ordering menu page publishing the 'Lunch Special 11 am - 3 pm' definition with its JSON-LD (geo 37.562857/-122.0145387, Mon-Thu 11:00-14:30 and 16:30-21:00, Fri-Sat 11:00-21:30, Sun 11:00-21:00)", "url": "https://order.kiyasushica.com/menu"},
+        {"label": "Yelp business page (Sept 2026) - 36488 Fremont Blvd, (510) 894-1112, Mon-Thu 11:00 am-2:30 pm + 4:30 pm-9:00 pm, Fri-Sat 11:00 am-9:30 pm, Sun 11:00 am-9:00 pm, kiyasushifremont.com, 4.4 (602 reviews), plus a business-owner answer confirming 11 AM Saturday openings", "url": "https://www.yelp.com/biz/kiya-sushi-fremont-2"},
+        {"label": "beyondmenu info page - same address, but Mon-Thu '11:00 AM - 02:30 PM 05:00 PM - 09:30 PM' (dinner start 5:00 PM, close 9:30 PM)", "url": "https://www.beyondmenu.com/58981/fremont/kiya-sushi-fremont-94536/info.aspx"},
+        {"label": "Yelp Fremont 'Lunch Specials' capture ranking Kiya Sushi 4th with the '$14.99 trio roll lunch special' reviewer quote", "url": "https://www.yelp.com/search?find_desc=Lunch+Specials&find_loc=Fremont,+CA"}
+      ]
+    },
+    {
+      "master_id": "L478",
+      "master_name": "Tai Pan Dim Sum (Tai Pan BBQ Express), Fremont",
+      "what_the_fresh_capture_says": "Fresh September 2026 capture confirms 39486 Fremont Blvd, Fremont CA 94538, (510) 739-1868, and daily 10:00 AM - 7:00 PM seven days a week (no afternoon break), 3.7 with 452-456 reviews. Two diner-sourced deal details are now on record but neither is on an official menu: 'The sesame balls 5 for $1 are great' and 'Their daily specials are such a good deal'. One photo on the page is literally captioned 'prices'. Recommend keeping hours as-is and adding the 10:00 AM open plus the sesame-ball deal as a flagged lead.",
+      "links": [
+        {"label": "Yelp business page (Sept 2026) - 39486 Fremont Blvd, Fremont CA 94538, (510) 739-1868, Mon-Sun 10:00 am-7:00 pm, $$ Barbeque/Dim Sum, 3.7 (456 reviews)", "url": "https://www.yelp.com/biz/tai-pan-bbq-express-dim-sum-fremont-3"},
+        {"label": "Yelp Fremont 'Cheap Lunch Specials' capture ranking it 3rd - 'The sesame balls 5 for $1 are great and you should try it! They have daily lunch specials...'", "url": "https://www.yelp.com/search?find_desc=cheap+lunch+specials&find_loc=Fremont%2C+CA"}
+      ]
+    },
+    {
+      "master_id": "L463",
+      "master_name": "Country Way, Fremont",
+      "what_the_fresh_capture_says": "A Fremont 'Food Deals' capture (April 2026) prints a specific diner claim worth recording against L463: 'I ordered the Bacon Burger lunch special. It was a great deal for $7.95.' The listing shows 4.0 (2.9k reviews), $$ and 'Closed until 7:00 AM', i.e. a breakfast-lunch diner open early. The $7.95 figure is reviewer-reported, not from an official menu, so it must not be moved into a price column without a menu capture.",
+      "links": [
+        {"label": "Yelp Fremont 'Food Deals' capture - Country Way ranked 3rd, 4.0 (2.9k reviews), 'Closed until 7:00 AM', with the '$7.95 Bacon Burger lunch special' reviewer quote", "url": "https://www.yelp.com/search?find_desc=Food+Deals&find_loc=Fremont%2C+CA"}
+      ]
+    }
+  ]
+}

@@ -1,0 +1,386 @@
+{
+  "batch": "16a",
+  "researched": "2026-09-14",
+  "pass": 16,
+  "scope": "Palo Alto / Stanford - downtown University Ave, California Ave and the Welch Rd corridor",
+  "method": "Each candidate was screened against data/lunch_specials.json and data/lunch_rejected.json by name+city and by street address before any page was opened (scripts/screen.py). Only businesses whose address, per-day hours and phone were readable in a 2025-2026 capture were written up; a price is printed only where a capture printed one. Yelp returns HTTP 403 to a direct fetch from this environment, so every Yelp figure below is read from a dated search-engine capture of the business page and the capture URL is cited.",
+  "entries": [
+    {
+      "name": "Protege",
+      "city": "Palo Alto",
+      "area": "California Ave corridor (south of El Camino Real)",
+      "address": "250 S California Ave, Palo Alto, CA 94306",
+      "cuisine": "Contemporary American, upscale casual (a la carte lounge/bar, 7-course tasting menu in the dining room)",
+      "lunch_special": {
+        "name": "No lunch service at all - the restaurant is closed Monday and Sunday and opens at 5:00 PM every other day",
+        "price_from": null,
+        "price_to": null,
+        "days": "Tue-Sat dinner only",
+        "window": "5:00 PM - 9:30 PM",
+        "includes": "Absence is the finding: a Tuesday lunch is impossible here, so nothing is priced."
+      },
+      "hours_tuesday": "5:00 PM - 9:30 PM",
+      "days_open": "Mon Closed, Tue-Sat 5:00 PM - 9:30 PM, Sun Closed (Yelp captures updated Aug 2026 and May 2026 agree)",
+      "open_on_trip_date": false,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Dinner-only venue in Palo Alto; no lunch window to fit the return bus."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {"label": "Yelp business page - 250 S California Ave, Palo Alto CA 94306; Mon Closed, Tue-Sat 5:00 pm-9:30 pm, Sun Closed; 'a la carte menu is served in our Lounge and Bar ... 7-course tasting menu' (capture updated August 2026)", "url": "https://www.yelp.com/biz/prot%C3%A9g%C3%A9-palo-alto-2?start=140"},
+          {"label": "Yelp mobile capture of the same page, $$$$ New American / Cocktail Bars / Wine Bars, 4.4 (560 reviews), 'By appointment only'", "url": "https://m.yelp.com/biz/prot%C3%A9g%C3%A9-palo-alto-2"}
+        ],
+        "accessed": "2026-09-14"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/prot%C3%A9g%C3%A9-palo-alto-2",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Protege+250+S+California+Ave+Palo Alto"
+      },
+      "flags": [
+        "Listed because a reader searching 'Palo Alto lunch' will find this name recommended for Stanford dinners (roamrecs.com, 2026); the honest answer is that it serves no lunch. Recorded as a closed-for-lunch row, not as a deal."
+      ]
+    },
+    {
+      "name": "Cafe Venetia",
+      "city": "Palo Alto",
+      "area": "University Ave at Bryant (downtown)",
+      "address": "419 University Ave, Palo Alto, CA 94301",
+      "cuisine": "Coffee & tea, cafe (Italian coffee house with lunch plates)",
+      "phone": "(650) 323-3600",
+      "lunch_special": {
+        "name": "No published lunch special - all-day cafe menu served through the lunch window",
+        "price_from": null,
+        "price_to": null,
+        "days": "daily",
+        "window": "open continuously 7:30 AM - 10:00 PM (11:00 PM Fri-Sat), so lunch is served whenever you arrive",
+        "includes": "No discounted lunch plate was published in any 2025-2026 capture; the row records the open-all-day lunch window instead."
+      },
+      "hours_tuesday": "7:30 AM - 10:00 PM",
+      "days_open": "Mon-Thu 7:30 AM - 10:00 PM, Fri-Sat 7:30 AM - 11:00 PM, Sun 7:30 AM - 10:00 PM (three separate Yelp captures agree: Dec 2025, May 2026 and an undated capture)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Downtown Palo Alto, not walkable from the Cupertino destination; useful only if the trip is re-routed through the Palo Alto Caltrain station."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {"label": "Yelp business page - 419 University Ave, Palo Alto CA 94301, (650) 323-3600, Mon-Thu 7:30 am-10:00 pm, Fri-Sat 7:30 am-11:00 pm, Sun 7:30 am-10:00 pm; website cafevenetia.com", "url": "https://www.yelp.com/biz/cafe-venetia-palo-alto-2?start=160"},
+          {"label": "Second Yelp capture of the same page with the identical 7-day hours block and phone number", "url": "https://m.yelp.com/biz/cafe-venetia-palo-alto-2"}
+        ],
+        "accessed": "2026-09-14"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/cafe-venetia-palo-alto-2",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Cafe+Venetia+419+University+Ave+Palo+Alto"
+      },
+      "flags": [
+        "Address correction to a widely repeated figure: the 2022 drewdoran.com 'power dining' list and stanfordparentsclub.org put Cafe Venetia on University Ave without a number; the Yelp captures all say 419 University Ave."
+      ]
+    },
+    {
+      "name": "Rangoon Ruby",
+      "city": "Palo Alto",
+      "area": "Emerson St (one block off University Ave, downtown)",
+      "address": "445 Emerson St, Palo Alto, CA 94301",
+      "cuisine": "Burmese / Southeast Asian fusion",
+      "phone": "(650) 323-6543",
+      "lunch_special": {
+        "name": "Dedicated lunch service every day - the restaurant closes between lunch and dinner (2:30 PM - 4:30 PM), which is a published lunch block rather than a discount",
+        "price_from": null,
+        "price_to": null,
+        "days": "daily",
+        "window": "11:30 AM - 2:30 PM (lunch), 4:30 PM - 9:30/10:00 PM (dinner)",
+        "includes": "No priced lunch special appeared in the captures; the split hours prove a separate lunch menu exists. Website: rangoonrubypa.com"
+      },
+      "hours_tuesday": "11:30 AM - 2:30 PM, 4:30 PM - 9:30 PM",
+      "days_open": "Mon-Thu 11:30 AM - 2:30 PM and 4:30 PM - 9:30 PM, Fri-Sat 11:30 AM - 2:30 PM and 4:30 PM - 10:00 PM, Sun 11:30 AM - 2:30 PM and 4:30 PM - 9:00/9:30 PM (two Yelp captures, Sept 2026 and Feb 2026)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Downtown Palo Alto - the lunch block ends 2:30 PM, but the venue is not reachable from the Cupertino destination inside the trip's lunch window."
+      },
+      "verification": {
+        "level": "conflicting",
+        "sources": [
+          {"label": "Yelp business page (updated September 2026) - 445 Emerson St, (650) 323-6543, lunch 11:30 am-2:30 pm daily; shows Sun dinner ending 9:00 PM in one block and 9:30 PM in another", "url": "https://www.yelp.com/biz/rangoon-ruby-palo-alto"},
+          {"label": "Yelp mobile/reservations capture of the same page - Mon/Tue/Wed 11:30 am-2:30 pm + 4:30 pm-9:30 pm, website rangoonrubypa.com, Sun 11:30 am-2:30 pm + 4:30 pm-9:30 pm", "url": "https://m.yelp.com/reservations/rangoon-ruby-palo-alto"}
+        ],
+        "accessed": "2026-09-14"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/rangoon-ruby-palo-alto",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Rangoon+Ruby+445+Emerson+St+Palo+Alto"
+      },
+      "flags": [
+        "Sunday closing time differs between two captures of the same Yelp page (9:00 PM vs 9:30 PM) and the rating moved from 3.6 (1,874 reviews) to 3.6 (1,862) between captures - the review count going DOWN means Yelp is pruning reviews, so any rating quoted from these captures is a moving target. Recorded as conflicting rather than averaged."
+      ]
+    },
+    {
+      "name": "Dumpling Hours",
+      "city": "Palo Alto",
+      "area": "Bryant St (downtown, one block from University Ave)",
+      "address": "530 Bryant St, Palo Alto, CA 94301",
+      "cuisine": "Shanghainese dim sum, dumplings, soup",
+      "phone": "(650) 323-1888",
+      "lunch_special": {
+        "name": "No discounted lunch special - continuous all-day service from 11:30 AM, with printed a la carte prices",
+        "price_from": null,
+        "price_to": null,
+        "days": "daily",
+        "window": "11:30 AM - 9:00 PM (Sun to 8:30 PM); the whole block covers lunch",
+        "includes": "Printed menu prices from the Yelp menu capture: Juicy Pan-fried Pork Buns $17.95, Dan Dan Sesame Paste Dry Noodles $18.95, Steamed Pork Bun $14.95. These are a la carte prices, not a lunch deal, so nothing is entered in the price columns."
+      },
+      "hours_tuesday": "11:30 AM - 9:00 PM",
+      "days_open": "Mon-Sat 11:30 AM - 9:00 PM, Sun 11:30 AM - 8:30 PM (Yelp captures updated June, July and September 2026 all agree)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Downtown Palo Alto; outside the walkable Cupertino lunch window."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {"label": "Yelp business page - 530 Bryant St, Palo Alto CA 94301, (650) 323-1888, Mon-Sat 11:30 am-9:00 pm, Sun 11:30 am-8:30 pm, with menu prices $14.95-$18.95", "url": "https://www.yelp.com/biz/dumpling-hours-palo-alto"},
+          {"label": "Second capture (June 2026) of the same page repeating the 7-day hours block and the three priced dishes", "url": "https://www.yelp.com/biz/dumpling-hours-palo-alto?start=50"}
+        ],
+        "accessed": "2026-09-14"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/dumpling-hours-palo-alto",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Dumpling+Hours+530+Bryant+St+Palo+Alto"
+      },
+      "flags": [
+        "Recommended by name in the r/paloalto 'Food Recs Near Stanford University' thread; the thread itself carries no prices, so the Reddit mention is context only and the hours/prices come from the Yelp captures."
+      ]
+    },
+    {
+      "name": "Bevri",
+      "city": "Palo Alto",
+      "area": "University Ave (downtown)",
+      "address": "335 University Ave, Palo Alto, CA 94301",
+      "cuisine": "Georgian (khachapuri, khinkali dumplings, grilled meats, Georgian wine)",
+      "phone": "(650) 600-0433",
+      "lunch_special": {
+        "name": "No published lunch special - single continuous service from 11:30 AM every day",
+        "price_from": null,
+        "price_to": null,
+        "days": "daily",
+        "window": "11:30 AM - 9:00 PM (one earlier capture shows 10:00 PM Fri-Sat)",
+        "includes": "No discounted lunch plate found; the venue is recommended in r/paloalto for dumplings and khachapuri. Website bevri.com."
+      },
+      "hours_tuesday": "11:30 AM - 9:00 PM",
+      "days_open": "Daily 11:30 AM - 9:00 PM (June 2026 and May 2026 captures); a December 2025 capture shows Fri-Sat to 10:00 PM plus holiday closures Wed Dec 31 2025 and Thu Jan 1 2026",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Downtown Palo Alto; outside the walkable Cupertino lunch window."
+      },
+      "verification": {
+        "level": "conflicting",
+        "sources": [
+          {"label": "Yelp business page (Dec 2025 capture) - 335 University Ave, (650) 600-0433, Mon-Thu 11:30 am-9:00 pm, Fri-Sat 11:30 am-10:00 pm, Sun 11:30 am-9:00 pm, holiday closures listed", "url": "https://www.yelp.com/biz/bevri-palo-alto-3"},
+          {"label": "Yelp capture (June 2026) of the newer page id - daily 11:30 am-9:00 pm, 4.0 (844 reviews), 'Bay Area's only Georgian restaurant'", "url": "https://www.yelp.com/biz/bevri-palo-alto-4?start=20"}
+        ],
+        "accessed": "2026-09-14"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/bevri-palo-alto-4",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Bevri+335+University+Ave+Palo+Alto"
+      },
+      "flags": [
+        "Two live Yelp page ids for one restaurant (bevri-palo-alto-3 and bevri-palo-alto-4) with different Friday/Saturday closing times and different review counts (739 vs 844). The newer id is treated as current; the older one is kept as history. Same pattern as the Uzumakiya address conflict in pass 15 (LUNCH-FLAG-77)."
+      ]
+    },
+    {
+      "name": "Darbar Indian Cuisine",
+      "city": "Palo Alto",
+      "area": "Lytton Ave (downtown, behind University Ave)",
+      "address": "129 Lytton Ave, Palo Alto, CA 94301",
+      "cuisine": "Indian (northern and southern), weekday lunch buffet",
+      "phone": "(650) 321-6688",
+      "lunch_special": {
+        "name": "Weekday lunch buffet - the restaurant's own description: 'serves a generous lunch buffet from 11:00 a.m. to 2:30 p.m., Monday through Friday ... two dozen dishes, four vegetarian and four meat entrees, changing daily'",
+        "price_from": null,
+        "price_to": null,
+        "days": "Monday-Friday (and a Sat lunch block 11:30 AM - 2:30 PM)",
+        "window": "11:00 AM - 2:30 PM weekdays, 11:30 AM - 2:30 PM Saturday",
+        "includes": "Buffet with about two dozen dishes. No buffet price was printed in any 2026 capture, so the price columns stay empty rather than borrowing a reviewer's number."
+      },
+      "hours_tuesday": "11:00 AM - 2:30 PM, 5:00 PM - 9:30 PM",
+      "days_open": "Mon-Fri 11:00 AM - 2:30 PM and 5:00 PM - 9:30/10:00 PM, Sat 11:30 AM - 2:30 PM and 5:00 PM - 10:00 PM, Sun 5:00 PM - 9:30 PM (dinner only)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Downtown Palo Alto; the weekday buffet runs to 2:30 PM but the venue is outside the trip's walkable lunch window."
+      },
+      "verification": {
+        "level": "official",
+        "sources": [
+          {"label": "Yelp business page (September 2026 capture) - 129 Lytton Ave, (650) 321-6688, full 7-day hours block, 'Verified 3 weeks ago', ordering page order.online/business/darbar-5", "url": "https://www.yelp.com/biz/darbar-indian-cuisine-palo-alto"},
+          {"label": "Same page, earlier capture (July 2026) carrying the owner-written Specialties text that describes the Mon-Fri 11:00 am-2:30 pm lunch buffet and the two-dozen-dish rotation", "url": "https://www.yelp.com/biz/darbar-indian-cuisine-palo-alto?start=160"}
+        ],
+        "accessed": "2026-09-14"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/darbar-indian-cuisine-palo-alto",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Darbar+Indian+Cuisine+129+Lytton+Ave+Palo+Alto"
+      },
+      "flags": [
+        "The lunch buffet is described in the business' own Yelp 'Specialties' text (owner-written, so treated as official for existence and window) but no price is published there; two captures also disagree on the weekday dinner close (9:30 PM vs 10:00 PM) and list two phone numbers, (650) 321-6688 and (650) 407-1154. Price stays empty; both phones are shown."
+      ]
+    },
+    {
+      "name": "NOLA Restaurant & Bar",
+      "city": "Palo Alto",
+      "area": "Ramona St (downtown)",
+      "address": "535 Ramona St, Palo Alto, CA 94301",
+      "cuisine": "Cajun / Creole, New American",
+      "phone": "(650) 328-2722",
+      "lunch_special": {
+        "name": "No published lunch special - a lunch service exists (opens 11:30 AM Tue-Fri) but no discounted lunch plate was printed",
+        "price_from": null,
+        "price_to": null,
+        "days": "Tue-Sun (closed Monday)",
+        "window": "11:30 AM - 9:00/10:00 PM Tue-Fri, 11:00 AM - 10:00 PM Sat, 11:00 AM - 8:00 PM Sun",
+        "includes": "Last call for food is 9:00 PM (8:00 PM Sunday) per the business' own answer in the Yelp Q&A. Website nolas.com."
+      },
+      "hours_tuesday": "11:30 AM - 9:00 PM",
+      "days_open": "Mon Closed, Tue-Thu 11:30 AM - 9:00 PM, Fri 11:30 AM - 10:00 PM, Sat 11:00 AM - 10:00 PM, Sun 11:00 AM - 8:00 PM (three 2026 Yelp captures agree)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Downtown Palo Alto; outside the walkable Cupertino lunch window."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {"label": "Yelp business page (July 2026 capture) - 535 Ramona St, (650) 328-2722, Mon Closed, Tue-Thu 11:30 am-9:00 pm, Fri 11:30 am-10:00 pm, Sat 11:00 am-10:00 pm, Sun 11:00 am-8:00 pm", "url": "https://www.yelp.com/biz/nola-restaurant-and-bar-palo-alto?start=2440"},
+          {"label": "Second capture (June 2026) with the business' own Q&A answer on last food call: '9pm except Sunday is 8pm'", "url": "https://www.yelp.com/biz/nola-restaurant-and-bar-palo-alto?start=1820"}
+        ],
+        "accessed": "2026-09-14"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/nola-restaurant-and-bar-palo-alto",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=NOLA+Restaurant+and+Bar+535+Ramona+St+Palo+Alto"
+      },
+      "flags": [
+        "Named in the r/paloalto Stanford thread as 'Nola - southern food / fusion'; the Reddit post carries no prices or hours, so every figure here comes from the Yelp captures."
+      ]
+    },
+    {
+      "name": "Vina Enoteca",
+      "city": "Palo Alto",
+      "area": "Welch Rd (Stanford Medical Center corridor, off University Ave)",
+      "address": "700 Welch Rd, Ste 110, Palo Alto, CA 94305",
+      "cuisine": "Italian, wine bar",
+      "phone": "(650) 646-3477 and (650) 752-4757 (two numbers appear on two captures of the same page)",
+      "lunch_special": {
+        "name": "No lunch service - closed Monday and Sunday, dinner only from 5:00 PM",
+        "price_from": null,
+        "price_to": null,
+        "days": "Tue-Sat dinner only",
+        "window": "5:00 PM - 9:00 PM",
+        "includes": "A Tuesday lunch is impossible here. Listed so the recommendation that surfaces for 'Palo Alto Italian near Stanford' is answered with its real hours."
+      },
+      "hours_tuesday": "5:00 PM - 9:00 PM",
+      "days_open": "Mon Closed, Tue-Sat 5:00 PM - 9:00 PM, Sun Closed (three Yelp captures: Nov 2025 twice and July 2026)",
+      "open_on_trip_date": false,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Dinner-only venue; no lunch window."
+      },
+      "verification": {
+        "level": "conflicting",
+        "sources": [
+          {"label": "Yelp business page (July 2026 capture) - 700 Welch Rd Ste 110, Palo Alto CA 94305, Mon Closed, Tue-Sat 5:00 pm-9:00 pm, Sun Closed, phone (650) 752-4757, website vinaenoteca.com", "url": "https://www.yelp.com/biz/vina-enoteca-palo-alto-4?start=120"},
+          {"label": "Same page, Nov 2025 capture, identical hours but phone (650) 646-3477", "url": "https://www.yelp.com/biz/vina-enoteca-palo-alto-4?start=165"}
+        ],
+        "accessed": "2026-09-14"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/vina-enoteca-palo-alto-4",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Vina+Enoteca+700+Welch+Rd+Palo+Alto"
+      },
+      "flags": [
+        "Two different phone numbers on two captures of the same Yelp page and a rating that moved 3.9 (474) to 3.9 (481) - the contact number should be confirmed by phone before relying on it. Hours are identical in every capture, so the 'no lunch' finding is solid."
+      ]
+    },
+    {
+      "name": "Joya Restaurant & Lounge",
+      "city": "Palo Alto",
+      "area": "University Ave (downtown)",
+      "address": "339 University Ave, Palo Alto, CA 94301",
+      "cuisine": "Spanish / Latin American tapas, lounge",
+      "lunch_special": {
+        "name": "Conflicting open/closed status - one Yelp capture is titled 'TEMP. CLOSED', a 2025 capture is titled 'CLOSED', and a further capture shows live dinner-only hours (Mon and Sun closed, 4:00 PM open)",
+        "price_from": null,
+        "price_to": null,
+        "days": "unknown - status disputed",
+        "window": "the live-hours capture shows 4:00 PM - 9:00/10:00 PM, i.e. no lunch even when open; an older capture shows 11:30 AM - 10:00 PM daily",
+        "includes": "Historic priced items from the older capture (Braised Short Rib Tacos $11.50, Kobe Beef Mini-burgers $11.50, Ahi Tuna Tartare $15.50, Chipotle Chicken Tostadas $10.00) are tapas prices, not a lunch special, and predate the closure reports."
+      },
+      "hours_tuesday": "4:00 PM - 9:00 PM per the live-hours capture (an older capture says 11:30 AM - 10:00 PM); a third capture is titled CLOSED",
+      "days_open": "Disputed: (a) Mon Closed, Tue-Thu 4:00-9:00 PM, Fri-Sat 4:00-10:00 PM, Sun Closed; (b) Mon-Sun 11:30 AM - 9:00 PM/10:00 PM/midnight; (c) CLOSED / TEMP. CLOSED",
+      "open_on_trip_date": null,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Cannot be assessed while the open/closed status is disputed."
+      },
+      "verification": {
+        "level": "conflicting",
+        "sources": [
+          {"label": "Yelp capture titled 'JOYA RESTAURANT & LOUNGE - TEMP. CLOSED' with an 11:30 am-10:00 pm/midnight hours block and priced tapas ($10.00-$28.00)", "url": "https://www.yelp.com/biz/joya-restaurant-and-lounge-palo-alto?start=1500"},
+          {"label": "Yelp capture titled 'JOYA RESTAURANT & LOUNGE - CLOSED - Updated September 2025'", "url": "https://www.yelp.com/biz/joya-restaurant-and-lounge-palo-alto?start=700"},
+          {"label": "Yelp capture showing live hours Mon Closed, Tue-Thu 4:00 pm-9:00 pm, Fri-Sat 4:00 pm-10:00 pm, Sun Closed, 1,663 reviews, $$$ Spanish/Latin American/Tapas", "url": "https://www.yelp.com/biz/joya-restaurant-and-lounge-palo-alto?start=1280"}
+        ],
+        "accessed": "2026-09-14"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/joya-restaurant-and-lounge-palo-alto",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Joya+Restaurant+and+Lounge+339+University+Ave+Palo+Alto"
+      },
+      "flags": [
+        "Three captures of the same Yelp page disagree about whether Joya is open, and two of them are titled CLOSED / TEMP. CLOSED. It is listed with no asserted hours and no price, and flagged for manual review (phone confirmation) rather than being rejected outright, because the newest capture still shows a dinner service. Same treatment as the Yummee Sandwiches closure conflict in R01."
+      ]
+    }
+  ],
+  "rejected": [
+    {
+      "name": "Pastis",
+      "city": "Palo Alto",
+      "why": "Permanently closed. The Yelp page is titled 'PASTIS - CLOSED' and the capture states 'Yelpers report this location has closed.' It still appears on the Stanford Parents Club restaurant list (447 S. California Ave, 650-324-1355) and in a 2022 'University Ave power dining' blog, which is why it keeps surfacing in searches - those pages are stale, not the closure report.",
+      "price_hint": "Historic hours were Tue-Sun 10:00 am-3:00 pm and 5:00 pm-9:00 pm, Mon closed - a lunch window existed before closure but no price was captured",
+      "searched": "2026-09-14",
+      "links": [
+        {"label": "Yelp page titled 'PASTIS - CLOSED - Updated May 2026', 447 S California Ave, Palo Alto CA 94306, 'Yelpers report this location has closed.'", "url": "https://m.yelp.com/biz/pastis-palo-alto?adjust_creative=trulia&start=140"},
+        {"label": "Second CLOSED capture (April 2026) with the full pre-closure hours block", "url": "https://www.yelp.com/biz/pastis-palo-alto?start=120"},
+        {"label": "The stale Stanford Parents Club list that still recommends Pastis", "url": "https://www.stanfordparentsclub.org/restaurants-fun-things-to-do"}
+      ]
+    },
+    {
+      "name": "Sushirrito (Palo Alto)",
+      "city": "Palo Alto",
+      "why": "Permanently closed. Three 2026 Yelp captures (March, May, June) all title the page 'SUSHIRRITO - CLOSED' for 448 University Ave. The 2022 'University Ave power dining' blog still lists it as an open lunch spot, and its own Q&A shows the location was already reduced to a 'soft reopening from 11-3 on Wed-Sun' years earlier.",
+      "price_hint": "Pre-closure hours were daily 11:00 am-7:00 pm; no lunch price captured",
+      "searched": "2026-09-14",
+      "links": [
+        {"label": "Yelp page titled 'SUSHIRRITO - CLOSED - Updated May 2026', 448 University Ave, Palo Alto CA 94301, (650) 600-9696", "url": "https://www.yelp.com/biz/sushirrito-palo-alto-13?start=440"},
+        {"label": "Second CLOSED capture (March 2026) with the daily 11:00 am-7:00 pm block and the Local Kitchens Q&A", "url": "https://www.yelp.com/biz/sushirrito-palo-alto-13?rh_count=3&rh_start=0&start=540&ylist=the-bay-palo-alto"}
+      ]
+    }
+  ],
+  "cross_checks": [
+    {
+      "master_id": "L652",
+      "name": "Anatolian Kitchen",
+      "what_the_fresh_capture_says": "A September 2026 Yelp capture shows the LIVE page as 340 California Ave, Palo Alto CA 94306, (650) 853-9700, daily 11:30 am-9:00/9:30 pm, 4.4 (202 reviews). A separate page for the SAME phone number at 2323 Birch St, Palo Alto is titled 'ANATOLIAN KITCHEN - CLOSED' with 783 reviews and a website anatoliankitchenpaloalto.com. The business moved from Birch St to California Ave and Yelp kept both pages.",
+      "links": [
+        {"label": "Live page - 340 California Ave, daily 11:30 am-9:00/9:30 pm, anatoliankitchen.com", "url": "https://www.yelp.com/biz/anatolian-kitchen-palo-alto-6"},
+        {"label": "CLOSED page - 2323 Birch St, same phone (650) 853-9700, 'We are working Tuesday to Sunday From 10:30 AM to 8:30 PM'", "url": "https://www.yelp.com/biz/anatolian-kitchen-palo-alto-3"}
+      ]
+    }
+  ]
+}

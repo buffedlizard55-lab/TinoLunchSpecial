@@ -1,0 +1,206 @@
+{
+  "batch": "16d",
+  "researched": "2026-09-14",
+  "pass": 16,
+  "scope": "Milpitas (Barber Ct, N Milpitas Blvd), Campbell (S Bascom Ave, E Campbell Ave), Willow Glen / west San Jose (Lincoln Ave, Winchester Blvd)",
+  "method": "Same protocol as batch16c: dedupe by name+city and street address against the master and rejected lists, then resolve each business to one address plus a per-day hours block from at least two dated captures. Coordinates are taken only where a source printed them (roadtrippers and corner.inc JSON-LD).",
+  "entries": [
+    {
+      "name": "Jun Bistro",
+      "city": "Milpitas",
+      "area": "Barber Ct (Milpitas Square)",
+      "address": "290 Barber Ct, Milpitas, CA 95035",
+      "coords": [37.423661, -121.917413],
+      "coords_source": "roadtrippers JSON-LD geo",
+      "cuisine": "Yunnan / Chinese, Asian fusion",
+      "phone": "(408) 459-3379 (Yelp and Apple Maps) vs 669.629.0965 (Metro Silicon Valley) vs (669) 317-0029 (Yelp 'business website' field)",
+      "lunch_special": {
+        "name": "Weekday lunch block 11:30 AM - 2:00 PM (2:30 PM Friday); reviewers call the lunch special 'amazing ... huge portion for very fair price' but no price is published",
+        "price_from": null, "price_to": null,
+        "days": "Mon-Fri lunch block (one source says the restaurant is closed Monday); Sat-Sun continuous from 11:00 AM",
+        "window": "11:30 AM - 2:00 PM Mon-Thu, 11:30 AM - 2:30 PM Fri, 11:00 AM - 9:00 PM Sat-Sun; dinner 5:00 PM - 9:00 PM weekdays",
+        "includes": "Reviewer quote kept out of the price column: 'Their lunch special is amazing. Huge portion for very fair price, and it's quite authentic...' Website junbistro.us."
+      },
+      "hours_tuesday": "11:30 AM - 2:00 PM, 5:00 PM - 9:00 PM",
+      "days_open": "Yelp and Apple Maps: Mon-Thu 11:30 AM - 2:00 PM and 5:00 PM - 9:00 PM, Fri 11:00/11:30 AM - 2:30 PM and 5:00 PM - 9:00 PM, Sat-Sun 11:00 AM - 9:00 PM. Metro Silicon Valley (May 2026) says 'open Tues to Sun 11:30am-2:30pm and 5-9pm', i.e. closed Monday.",
+      "open_on_trip_date": true,
+      "fits_return_bus": {"ok": false, "note": "Barber Ct, Milpitas - about 13 miles from the destination; a car or a long VTA ride is needed."},
+      "verification": {"level": "conflicting", "sources": [
+        {"label": "Yelp business page (May 2026) - 290 Barber Ct, (408) 459-3379, Mon-Thu 11:30 am-2:00 pm + 5:00 pm-9:00 pm, Fri 11:30 am-2:30 pm + 5:00 pm-9:00 pm, Sat-Sun 11:00 am-9:00 pm, website junbistro.us, 4.7 (949 reviews), plus the business' own updates 'We've updated our hours!' and 'We're open on Halloween'", "url": "https://www.yelp.com/biz/jun-bistro-milpitas"},
+        {"label": "Apple Maps place record - 290 Barber Ct, 'Milpitas Square', Asian Fusion Cuisine, Mon-Thu 11:30 am-2:00 pm + 5:00 pm-9:00 pm, Friday 11:00 am-2:30 pm + 5:00 pm-9:00 pm, Sat-Sun 11:00 am-9:00 pm, cost band $$$$ against Yelp's $$", "url": "https://maps.apple.com/place?place-id=I9C0D2C1974C9A03F"},
+        {"label": "Metro Silicon Valley feature 'Jun Bistro Explores Yunnan Cuisine in Milpitas' - 'open Tues to Sun 11:30am-2:30pm and 5-9pm, 290 Barber Court, Milpitas. 669.629.0965. junbistro.us'", "url": "https://www.metrosiliconvalley.com/jun-bistro-explores-yunnan-cuisine-in-milpitas/"},
+        {"label": "roadtrippers capture with JSON-LD geo 37.423661/-121.917413, phone (408) 459-3379, but hours shown as Mon-Fri 11:30 am-9:00 pm continuous", "url": "https://maps.roadtrippers.com/us/milpitas-ca/food-drink/jun-bistro"}
+      ], "accessed": "2026-09-14"},
+      "review_links": {"yelp": "https://www.yelp.com/biz/jun-bistro-milpitas", "google_maps": "https://www.google.com/maps/search/?api=1&query=Jun+Bistro+290+Barber+Ct+Milpitas"},
+      "flags": ["Four sources, four different pictures: three phone numbers, a Monday open/closed disagreement (Yelp and Apple Maps open Monday, Metro Silicon Valley says Tues-Sun), a continuous-hours version on roadtrippers, and cost bands ranging from $$ to $$$$. The lunch block itself (11:30 AM - 2:00/2:30 PM) is consistent in all four. Flagged for manual review - the highest-ranked Milpitas lunch spot (4.7, ~950 reviews) with the least settled listing data."]
+    },
+    {
+      "name": "Katsu Gin",
+      "city": "Milpitas",
+      "area": "N Milpitas Blvd (Milpitas Civic Center)",
+      "address": "128 N Milpitas Blvd, Milpitas, CA 95035",
+      "coords": [37.434781, -121.900417],
+      "coords_source": "roadtrippers JSON-LD geo",
+      "cuisine": "Japanese katsu / curry (counter service)",
+      "phone": "(408) 618-0298",
+      "lunch_special": {
+        "name": "Closed on Tuesdays; on open days a lunch block 11:00 AM - 2:00 PM with katsu sets",
+        "price_from": null, "price_to": null,
+        "days": "Mon and Wed-Sun (Tue closed)",
+        "window": "11:00 AM - 2:00 PM lunch, 5:30 PM - 9:00/9:30 PM dinner",
+        "includes": "No printed lunch price found. Ordering site katsu-gin-milpitas.cloveronline.com; own domain katsugin.us. Reviewer quote kept out of the price column: 'I really like the way they fry and do their katsu here. for the affordable price you pay, the meal...'"
+      },
+      "hours_tuesday": "CLOSED (Tuesday)",
+      "days_open": "Mon 11:00 AM - 2:00 PM and 5:30 PM - 9:00 PM, Tue CLOSED, Wed-Thu 11:00 AM - 2:00 PM and 5:30 PM - 9:00 PM, Fri-Sat 11:00 AM - 2:00 PM and 5:30 PM - 9:30 PM, Sun 11:00 AM - 2:00 PM and 5:30 PM - 9:00 PM (Yelp, corner.inc JSON-LD and Apple Maps agree; roadtrippers shows a continuous 11:00 am-9:00 pm block and no Tuesday closure)",
+      "open_on_trip_date": false,
+      "fits_return_bus": {"ok": false, "note": "Closed on the Tuesday trip date."},
+      "verification": {"level": "conflicting", "sources": [
+        {"label": "Yelp business page (Sept 2026) - 128 N Milpitas Blvd, (408) 618-0298, Tue Closed, other days 11:00 am-2:00 pm + 5:30 pm-9:00/9:30 pm, 4.1 (282 reviews), 'modern Japanese pork cutlet restaurant located in Milpitas'", "url": "https://www.yelp.com/biz/katsu-gin-milpitas"},
+        {"label": "corner.inc place record with JSON-LD openingHours listing 'Tuesday: Closed' and the same daily blocks, sameAs http://katsugin.us/, updated August 21st 2026", "url": "https://www.corner.inc/place/pJA5aEKZYMGt"},
+        {"label": "roadtrippers capture with JSON-LD geo 37.434781/-121.900417 and the conflicting continuous hours (Sun/Mon/Wed/Thu 11:00 am-9:00 pm, Fri/Sat 11:00 am-9:30 pm) - no Tuesday closure shown", "url": "https://maps.roadtrippers.com/us/milpitas-ca/food-drink/katsu-gin-milpitas-ca--0"},
+        {"label": "Second Yelp capture (April 2026) repeating Tue Closed and the Clover ordering site katsu-gin-milpitas.cloveronline.com", "url": "https://www.yelp.com/biz/katsu-gin-milpitas?start=60"}
+      ], "accessed": "2026-09-14"},
+      "review_links": {"yelp": "https://www.yelp.com/biz/katsu-gin-milpitas", "google_maps": "https://www.google.com/maps/search/?api=1&query=Katsu+Gin+128+N+Milpitas+Blvd+Milpitas"},
+      "flags": ["The Tuesday closure is confirmed by two independent sources (Yelp and corner.inc's JSON-LD) but roadtrippers shows the restaurant open every day 11:00 am-9:00 pm. Three of four sources say Tuesday closed, so the row is marked closed on the trip date and the dissent is recorded. It was ranked #1 for 'Cheap Eats near Milpitas' in a May 2026 capture."]
+    },
+    {
+      "name": "Taiwan Porridge - Milpitas",
+      "city": "Milpitas",
+      "area": "N Milpitas Blvd",
+      "address": "1706 N Milpitas Blvd, Milpitas, CA 95035",
+      "cuisine": "Taiwanese, Chinese (congee and small plates)",
+      "phone": "(408) 935-9369",
+      "lunch_special": {
+        "name": "Continuous 11:00 AM - 9:00 PM service seven days a week; a reviewer describes an actual lunch special but no price is printed",
+        "price_from": null, "price_to": null,
+        "days": "daily",
+        "window": "11:00 AM - 9:00 PM",
+        "includes": "Reviewer quote kept out of the price column: 'Yay for said lunch special, which doesn't qualify for the rewards card but is much more affordable...' Website taiwanporridge.com."
+      },
+      "hours_tuesday": "11:00 AM - 9:00 PM",
+      "days_open": "Mon-Sun 11:00 AM - 9:00 PM (Yelp capture updated September 2026, 'Updated 2 weeks ago', 3.8 with 463-476 reviews)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {"ok": false, "note": "N Milpitas Blvd - roughly 13 miles from the destination."},
+      "verification": {"level": "review", "sources": [
+        {"label": "Yelp business page (Sept 2026) - 1706 N Milpitas Blvd, Milpitas CA 95035, (408) 935-9369, Mon-Sun 11:00 am-9:00 pm, website taiwanporridge.com", "url": "https://www.yelp.com/biz/taiwan-porridge-milpitas-milpitas-3"},
+        {"label": "Yelp 'Cheap Lunch Specials near Milpitas' capture ranking it 5th with the lunch-special reviewer quote", "url": "https://www.yelp.com/search?find_desc=cheap+lunch+specials&find_loc=Milpitas,+CA+95035"}
+      ], "accessed": "2026-09-14"},
+      "review_links": {"yelp": "https://www.yelp.com/biz/taiwan-porridge-milpitas-milpitas-3", "google_maps": "https://www.google.com/maps/search/?api=1&query=Taiwan+Porridge+1706+N+Milpitas+Blvd+Milpitas"},
+      "flags": ["The reviewer explicitly notes the lunch special 'doesn't qualify for the rewards card' - evidence a discounted lunch menu exists without a published price."]
+    },
+    {
+      "name": "Thai Orchid",
+      "city": "Campbell",
+      "area": "E Campbell Ave (east end of downtown Campbell)",
+      "address": "866 E Campbell Ave, Campbell, CA 95008",
+      "cuisine": "Thai",
+      "phone": "(408) 626-9779",
+      "lunch_special": {
+        "name": "Lunch menu 11:00 AM - 2:00 PM Tuesday to Friday; closed Monday and Sunday and no lunch on Saturday",
+        "price_from": null, "price_to": null,
+        "days": "Tue-Fri lunch; Sat dinner only; Mon and Sun closed",
+        "window": "11:00 AM - 2:00 PM lunch, 4:30 PM - 9:30 PM dinner",
+        "includes": "Reviewer quote kept out of the price column: 'The food here is pretty good and their lunch special menu makes this place affordable and...' Website eatthaiorchid.com."
+      },
+      "hours_tuesday": "11:00 AM - 2:00 PM, 4:30 PM - 9:30 PM",
+      "days_open": "Mon Closed, Tue-Fri 11:00 AM - 2:00 PM and 4:30 PM - 9:30 PM, Sat 4:30 PM - 9:30 PM, Sun Closed (Yelp capture updated August 2026)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {"ok": false, "note": "E Campbell Ave, Campbell - the 2:00 PM lunch cutoff is early and the venue is not walkable from the destination."},
+      "verification": {"level": "review", "sources": [
+        {"label": "Yelp business page (Aug 2026) - 866 E Campbell Ave, Campbell CA 95008, (408) 626-9779, Mon Closed, Tue-Fri 11:00 am-2:00 pm + 4:30 pm-9:30 pm, Sat 4:30 pm-9:30 pm, Sun Closed, website eatthaiorchid.com, 4.0 (763 reviews)", "url": "https://www.yelp.com/biz/thai-orchid-campbell?start=240"},
+        {"label": "Yelp 'Lunch Specials near Campbell' capture ranking Thai Orchid 7th with the 'lunch special menu makes this place affordable' quote", "url": "https://www.yelp.com/search?find_desc=Lunch+Specials&find_loc=Campbell%2C+CA"}
+      ], "accessed": "2026-09-14"},
+      "review_links": {"yelp": "https://www.yelp.com/biz/thai-orchid-campbell", "google_maps": "https://www.google.com/maps/search/?api=1&query=Thai+Orchid+866+E+Campbell+Ave+Campbell"},
+      "flags": ["Saturday has dinner only and Monday/Sunday are closed - four of seven days offer no lunch at all."]
+    },
+    {
+      "name": "Best Desi Pizza",
+      "city": "Campbell",
+      "area": "S Bascom Ave (Campbell / San Jose border)",
+      "address": "2360 S Bascom Ave, Ste C, Campbell, CA 95008",
+      "cuisine": "Pizza (Indian-fusion toppings such as shahi paneer pizza)",
+      "phone": "(408) 963-6353",
+      "lunch_special": {
+        "name": "No published lunch special - opens at 10:00 AM every day, so the whole lunch window is covered at regular prices",
+        "price_from": null, "price_to": null,
+        "days": "daily",
+        "window": "10:00 AM - 10:00 PM (Fri-Sat to 11:00 PM)",
+        "includes": "Reviewer quote kept out of the price column: 'Delicious Pizza every single time with reasonable prices. Great service in delivery and parties.' Ordering via slicelife.com."
+      },
+      "hours_tuesday": "10:00 AM - 10:00 PM",
+      "days_open": "Mon-Thu and Sun 10:00 AM - 10:00 PM, Fri-Sat 10:00 AM - 11:00 PM (four Yelp captures June-August 2026 agree, including JSON-LD photo records that repeat the street address '2360 S Bascom Ave, SteC')",
+      "open_on_trip_date": true,
+      "fits_return_bus": {"ok": false, "note": "S Bascom Ave, Campbell - not walkable from the Cupertino destination."},
+      "verification": {"level": "listing", "sources": [
+        {"label": "Yelp business page (July 2026) - 2360 S Bascom Ave SteC, Campbell CA 95008, (408) 963-6353, Mon-Thu 10:00 am-10:00 pm, Fri-Sat 10:00 am-11:00 pm, Sun 10:00 am-10:00 pm, 4.5 (440 reviews)", "url": "https://www.yelp.com/biz/best-desi-pizza-campbell"},
+        {"label": "Second capture (Aug 2026) with the business website slicelife.com/restaurants/ca/c... and the same hours", "url": "https://www.yelp.com/biz/best-desi-pizza-campbell?start=160"},
+        {"label": "Yelp 'Pizza near Winchester Blvd, Campbell' capture ranking it 10th, 4.5 (441 reviews), 'Open until 11:00 PM', 1.1 miles", "url": "https://www.yelp.com/search?cflt=pizza&find_loc=Winchester+Blvd%2C+Campbell%2C+CA"}
+      ], "accessed": "2026-09-14"},
+      "review_links": {"yelp": "https://www.yelp.com/biz/best-desi-pizza-campbell", "google_maps": "https://www.google.com/maps/search/?api=1&query=Best+Desi+Pizza+2360+S+Bascom+Ave+Campbell"},
+      "flags": ["The suite is written 'SteC' (no space) in the Yelp JSON-LD and 'Ste C' elsewhere - same unit. A 10:00 AM open makes it an early-lunch option."]
+    },
+    {
+      "name": "La Callejera",
+      "city": "San Jose",
+      "area": "Lincoln Ave, Willow Glen",
+      "address": "1182 Lincoln Ave, San Jose, CA 95125",
+      "cuisine": "Colombian (arepas, chicharronada, tamales)",
+      "phone": "(408) 893-8109",
+      "lunch_special": {
+        "name": "Closed Tuesday, Wednesday and Thursday - and on the days it is open it closes at 1:00 PM (3:00 PM at weekends), so there is effectively no lunch service on the trip date",
+        "price_from": null, "price_to": null,
+        "days": "Mon and Fri 8:00 AM - 1:00 PM; Sat-Sun 7:00 AM - 3:00 PM; Tue-Thu closed",
+        "window": "8:00 AM - 1:00 PM weekdays it is open (a breakfast-into-early-lunch window), 7:00 AM - 3:00 PM weekends",
+        "includes": "Photos on the page are captioned 'Menu on weekdays: Monday - Friday' and 'Menu on weekends: Saturday and Sunday', proving two different menus, but no prices were captured. Website lacallejeracolombianfoodca.com. Reviewer quote kept out of the price column: 'their popular tamales that stop selling @ 2PM'."
+      },
+      "hours_tuesday": "CLOSED (Tuesday)",
+      "days_open": "Mon 8:00 AM - 1:00 PM, Tue Closed, Wed Closed, Thu Closed, Fri 8:00 AM - 1:00 PM, Sat 7:00 AM - 3:00 PM, Sun 7:00 AM - 3:00 PM (Yelp capture July 2026, listing marked Unclaimed)",
+      "open_on_trip_date": false,
+      "fits_return_bus": {"ok": false, "note": "Closed Tuesday, and on open weekdays it closes at 1:00 PM - before the trip's lunch window starts."},
+      "verification": {"level": "listing", "sources": [
+        {"label": "Yelp business page (July 2026) - 1182 Lincoln Ave, San Jose CA 95125 (Willow Glen), (408) 893-8109, Mon and Fri 8:00 am-1:00 pm, Tue-Thu Closed, Sat-Sun 7:00 am-3:00 pm, website lacallejeracolombianfoodca.com, 4.2 (23 reviews), Unclaimed", "url": "https://www.yelp.com/biz/la-callejera-san-jose"},
+        {"label": "Yelp 'Latin American Food near Winchester Blvd, Campbell' capture ranking it 8th, 3.4 miles, 'Closed until 8:00 AM tomorrow' with the tamales-stop-selling-at-2PM quote", "url": "https://www.yelp.com/search?find_desc=Latin+American+Food&find_loc=Winchester+Boulevard%2C+Campbell%2C+CA"}
+      ], "accessed": "2026-09-14"},
+      "review_links": {"yelp": "https://www.yelp.com/biz/la-callejera-san-jose", "google_maps": "https://www.google.com/maps/search/?api=1&query=La+Callejera+1182+Lincoln+Ave+San+Jose"},
+      "flags": ["An Unclaimed listing with 23 reviews: the three consecutive midweek closures and the 1:00 PM weekday stop mean it can never serve this trip's lunch. Recorded so the gap is visible rather than silently dropped."]
+    },
+    {
+      "name": "La Pupusa Loca",
+      "city": "San Jose",
+      "area": "Winchester Blvd, west San Jose",
+      "address": "1025 S Winchester Blvd, San Jose, CA 95128",
+      "cuisine": "Salvadoran (pupusas), food truck / counter",
+      "phone": "(510) 481-6578",
+      "lunch_special": {
+        "name": "Weekday-only lunch service 11:00 AM - 7:00 PM; closed all weekend",
+        "price_from": null, "price_to": null,
+        "days": "Mon-Fri (Sat and Sun closed)",
+        "window": "11:00 AM - 7:00 PM",
+        "includes": "Reviewer quote kept out of the price column: 'My husband went to the most amazing taco stand and brought me back 6 carne asada tacos.' No prices captured on either listing."
+      },
+      "hours_tuesday": "11:00 AM - 7:00 PM",
+      "days_open": "Mon-Fri 11:00 AM - 7:00 PM, Sat Closed, Sun Closed (Restaurantji JSON-LD openingHours 'Mo-Fr 11:00-19:00, Sa/Su Closed' and the Yelp capture agree exactly)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {"ok": false, "note": "S Winchester Blvd, San Jose - about 8-9 miles from the destination."},
+      "verification": {"level": "listing", "sources": [
+        {"label": "Restaurantji place page with JSON-LD - 1025 S Winchester Blvd, San Jose CA 95128, telephone (510) 481-6578, openingHours Mo-Fr 11:00-19:00 and Sa/Su Closed, servesCuisine Salvadoran/Food Trucks/Tacos, ratingValue 4.9 from 16 ratings, photos dated 2024-11-11, 2026-03-05 and 2026-05-22", "url": "https://www.restaurantji.com/ca/san-jose/la-pupusa-loca-/"},
+        {"label": "Yelp business page (Aug 2026) - '1025 Winchester Blvd' (the S directional dropped), Mon-Fri 11:00 am-7:00 pm, Sat-Sun Closed, 4.4 (40 reviews), Unclaimed", "url": "https://www.yelp.com/biz/la-pupusa-loca-san-jose"}
+      ], "accessed": "2026-09-14"},
+      "review_links": {"yelp": "https://www.yelp.com/biz/la-pupusa-loca-san-jose", "google_maps": "https://www.google.com/maps/search/?api=1&query=La+Pupusa+Loca+1025+S+Winchester+Blvd+San+Jose"},
+      "flags": ["An East Bay area code ((510) 481-6578) on a San Jose address, and Yelp writes the street as '1025 Winchester Blvd' while Restaurantji writes '1025 S Winchester Blvd'. Both listings are Unclaimed and the ratings diverge widely (4.9 from 16 vs 4.4 from 40). Photo timestamps on Restaurantji run to May 2026, so the business was operating recently."]
+    }
+  ],
+  "rejected": [],
+  "cross_checks": [
+    {
+      "master_id": "L491",
+      "master_name": "Willow Street Pizza, 1072 Willow St, San Jose (already 'hours conflict - see flags' from pass 9)",
+      "name": "Willow Street Pizza & Taproom",
+      "what_the_fresh_capture_says": "The San Jose/Willow Glen branch at 1072 Willow St is now listed by TripAdvisor with JSON-LD openingHours of Sun-Thu 4:00 pm-8:30 pm and Fri-Sat 11:30 am-9:00 pm - i.e. NO weekday lunch - while the same TripAdvisor page's own 'Features' line says 'Lunch, Dinner' and its OpenTable profile says 'Dinner Mon-Thu, Sun 4:00 pm-8:30 pm; Fri, Sat 4:00 pm-9:00 pm' (no 11:30 am open at all). Three mutually inconsistent lunch claims on two pages, plus geo 37.30841/-121.90045 and phone +1 408-971-7080. This confirms and extends the pass-9 finding rather than adding a row.",
+      "links": [
+        {"label": "TripAdvisor listing with JSON-LD - 1072 Willow St, San Jose CA 95125-2349, Sun-Thu 16:00-20:30, Fri-Sat 11:30-21:00, 'Features: Lunch, Dinner', geo 37.30841/-121.90045", "url": "https://www.tripadvisor.com/Restaurant_Review-g33020-d484185-Reviews-Willow_Street_Pizza_Taproom-San_Jose_California.html"},
+        {"label": "OpenTable profile for the same venue - 'Hours of operation Dinner Mon-Thu, Sun 4:00 pm-8:30 pm; Fri, Sat 4:00 pm-9:00 pm', website willowstreet.com/willow-glen/", "url": "https://www.opentable.com/r/willow-street-pizza-and-taproom-san-jose"}
+      ]
+    }
+  ]
+}
