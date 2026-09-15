@@ -1,0 +1,100 @@
+{
+  "batch": "16h",
+  "researched": "2026-09-14",
+  "pass": 16,
+  "scope": "Mountain View (Castro St corridor) and Campbell (Winchester Blvd)",
+  "method": "Two dated captures minimum per row; where the restaurant has its own site, its own hours text is quoted. Phone, price-band and rating disagreements between sources are recorded rather than averaged away.",
+  "entries": [
+    {
+      "name": "Das Bierhauz - Mountain View",
+      "city": "Mountain View",
+      "area": "Castro St (downtown Mountain View)",
+      "address": "135 Castro St, Mountain View, CA 94041",
+      "cuisine": "German, beer garden, breakfast & brunch",
+      "phone": "(650) 744-2854 (Yelp phone field) vs (650) 336-7613 (June 2026 capture header) - see flag",
+      "lunch_special": {
+        "name": "No published lunch special - an 11:00 AM weekday open (9:00 AM weekends) covers lunch at regular prices",
+        "price_from": null, "price_to": null,
+        "days": "daily",
+        "window": "11:00 AM - 10:00 PM Mon-Thu; 11:00 AM - 11:00 PM Fri; 9:00 AM - 11:00 PM Sat; 9:00 AM - 10:00 PM Sun",
+        "includes": "Own site dasbierhauz.com. Listed as '$$ Beer Gardens, German, Breakfast & Brunch' with 'Accepts Credit Cards' on the business page. No printed lunch price captured."
+      },
+      "hours_tuesday": "11:00 AM - 10:00 PM",
+      "days_open": "Mon 11:00 AM - 10:00 PM, Tue 11:00 AM - 10:00 PM, Wed 11:00 AM - 10:00 PM, Thu 11:00 AM - 10:00 PM, Fri 11:00 AM - 11:00 PM, Sat 9:00 AM - 11:00 PM, Sun 9:00 AM - 10:00 PM (two Yelp captures, June and August 2026, agree exactly)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {"ok": false, "note": "Castro St, Mountain View - about 9 miles from the Cupertino destination."},
+      "verification": {"level": "listing", "sources": [
+        {"label": "Yelp business page (June 2026) - 135 Castro St, Mountain View CA 94041, (650) 336-7613, Mon-Thu 11:00 am-10:00 pm, Fri 11:00 am-11:00 pm, Sat 9:00 am-11:00 pm, Sun 9:00 am-10:00 pm, website dasbierhauz.com, 4.3 (324 reviews), 'Verified over 3 months ago'", "url": "https://www.yelp.com/biz/das-bierhauz-mountain-view-mountain-view-2?start=10"},
+        {"label": "Second Yelp capture (Aug 2026) - identical per-day hours, 'Accepts Credit Cards', 4.3 (329 reviews)", "url": "https://www.yelp.com/biz/das-bierhauz-mountain-view-mountain-view-2"}
+      ], "accessed": "2026-09-14"},
+      "review_links": {"yelp": "https://www.yelp.com/biz/das-bierhauz-mountain-view-mountain-view-2", "google_maps": "https://www.google.com/maps/search/?api=1&query=Das+Bierhauz+135+Castro+St+Mountain+View"},
+      "flags": ["Two irregularities. (1) The business spells itself 'Das Bierhauz' (with a z), not 'Beerhaus'/'Bierhaus' - discovery searches for the common spelling return a DIFFERENT, now-closed venue at 383 Castro St (see rejection). (2) The phone number differs between the June 2026 capture header ((650) 336-7613) and the 'Phone number' field on the same page ((650) 744-2854). Both are recorded; neither is trusted enough to print as the sole number."]
+    },
+    {
+      "name": "Gelato Classico Italian Ice Cream",
+      "city": "Mountain View",
+      "area": "Castro St (downtown Mountain View)",
+      "address": "241 Castro St, Ste B, Mountain View, CA 94041",
+      "cuisine": "Gelato / ice cream & frozen yogurt (dessert venue, not a lunch restaurant)",
+      "phone": "(650) 969-2900",
+      "lunch_special": {
+        "name": "NO LUNCH OFFERING - dessert-only venue; recorded so it is not mistaken for a lunch option on the same block as other Castro St restaurants",
+        "price_from": null, "price_to": null,
+        "days": "daily",
+        "window": "11:30 AM - 9:00 PM Mon-Thu and Sun; 11:30 AM - 10:30 PM Fri-Sat",
+        "includes": "Own site cafeclassicofoods.com. Photo captions describe portions ('Small scoops (up to 2 flavors)') but no prices were printed in any capture."
+      },
+      "hours_tuesday": "11:30 AM - 9:00 PM",
+      "days_open": "Mon-Thu 11:30 AM - 9:00 PM, Fri-Sat 11:30 AM - 10:30 PM, Sun 11:30 AM - 9:00 PM (two Yelp captures, February and April 2026, agree exactly; 'Verified 3 months ago')",
+      "open_on_trip_date": true,
+      "fits_return_bus": {"ok": false, "note": "Open during the lunch window but serves dessert only - usable as an after-lunch stop, not a lunch."},
+      "verification": {"level": "listing", "sources": [
+        {"label": "Yelp business page (Feb 2026) - 241 Castro St Ste B, Mountain View CA 94041, (650) 969-2900, Mon-Thu and Sun 11:30 am-9:00 pm, Fri-Sat 11:30 am-10:30 pm, website cafeclassicofoods.com, 3.7 (1.3k reviews)", "url": "https://www.yelp.com/biz/gelato-classico-italian-ice-cream-mountain-view?start=180"},
+        {"label": "Second Yelp capture (April 2026) - same address, phone, hours and website, 'Verified over 3 months ago'", "url": "https://www.yelp.com/biz/gelato-classico-italian-ice-cream-mountain-view?start=1060"}
+      ], "accessed": "2026-09-14"},
+      "review_links": {"yelp": "https://www.yelp.com/biz/gelato-classico-italian-ice-cream-mountain-view", "google_maps": "https://www.google.com/maps/search/?api=1&query=Gelato+Classico+241+Castro+St+Mountain+View"},
+      "flags": ["Deliberately entered as a no-lunch row: it kept appearing in Castro St dining discovery alongside real lunch venues, so the absence of a lunch menu is stated explicitly instead of leaving readers to guess."]
+    },
+    {
+      "name": "Ricos Tacos",
+      "city": "Campbell",
+      "area": "Winchester Blvd",
+      "address": "2523 Winchester Blvd, Unit A, Campbell, CA 95008",
+      "coords": [37.277905, -121.95006],
+      "coords_source": "TripAdvisor JSON-LD geo",
+      "cuisine": "Mexican (tacos; specialty 'Super tacos crispy')",
+      "phone": "(408) 370-7168",
+      "lunch_special": {
+        "name": "No published lunch special - opens 10:00 AM daily, so the full lunch window is served at regular prices",
+        "price_from": null, "price_to": null,
+        "days": "daily",
+        "window": "10:00 AM - 8:00 PM (own website and Apple Maps) vs 10:00 AM - 9:00 PM Mon-Sat (TripAdvisor)",
+        "includes": "Own site ricostacos.top prints 'Hours: Tuesday 10 AM-8 PM ... Monday 10 AM-8 PM' for all seven days and the address as '2523 S Winchester Blvd A Campbell, CA 95008' with email info@ricostacos.top. No menu price captured."
+      },
+      "hours_tuesday": "10:00 AM - 8:00 PM (own website) / 10:00 AM - 9:00 PM (TripAdvisor) - see flag",
+      "days_open": "Own website and Apple Maps: every day 10:00 AM - 8:00 PM. TripAdvisor: Sun 10:00 AM - 8:00 PM, Mon-Sat 10:00 AM - 9:00 PM. Two Yelp captures (June 2025, July 2026) agree with the 10:00 AM - 8:00 PM daily pattern.",
+      "open_on_trip_date": true,
+      "fits_return_bus": {"ok": false, "note": "Winchester Blvd, Campbell - about 7 miles from the destination."},
+      "verification": {"level": "conflicting", "sources": [
+        {"label": "Restaurant's own website - 2523 S Winchester Blvd A, Campbell CA 95008, (408) 370-7168, info@ricostacos.top, Hours listed as 10 AM-8 PM for every day Tuesday through Monday", "url": "https://ricostacos.top/"},
+        {"label": "TripAdvisor listing with JSON-LD - 2523 Winchester Blvd Ste A, Campbell CA 95008-5337, +1 408-370-7168, geo 37.277905/-121.95006, Sun 10:00-20:00 and Mon-Sat 10:00-21:00, priceRange $, 'Features: Lunch, Dinner', 4.3 from 8 reviews", "url": "https://www.tripadvisor.com/Restaurant_Review-g32154-d4438097-Reviews-Ricos_Tacos-Campbell_California.html"},
+        {"label": "Yelp business page (July 2026) - 2523 Winchester Blvd Ste A, (408) 370-7168, Mon-Sun 10:00 am-8:00 pm, 'Specialties: Super tacos crispy'", "url": "https://www.yelp.com/biz/ricos-tacos-campbell"},
+        {"label": "Apple Maps place record - 'Every Day 10:00 AM - 8:00 PM', 2523 Winchester Blvd Unit A, Campbell CA 95008, Yelp 3.3 (472), cost band $$$$ against TripAdvisor's $", "url": "https://maps.apple.com/place?place-id=ID9FEE224CF76812D"}
+      ], "accessed": "2026-09-14"},
+      "review_links": {"yelp": "https://www.yelp.com/biz/ricos-tacos-campbell", "google_maps": "https://www.google.com/maps/search/?api=1&query=Ricos+Tacos+2523+Winchester+Blvd+Campbell"},
+      "flags": ["Three disagreements on one small taqueria: closing time (8:00 PM on the restaurant's own site, Yelp and Apple Maps vs 9:00 PM Mon-Sat on TripAdvisor), street directional ('2523 Winchester Blvd' on Yelp/TripAdvisor vs '2523 S Winchester Blvd' on the restaurant's own site), and price band ($ on TripAdvisor vs $$$$ on Apple Maps). Rating also splits: 3.3 from 472 (Apple Maps' Yelp feed) vs 4.3 from 8 (TripAdvisor). The 10:00 AM open is consistent everywhere."]
+    }
+  ],
+  "rejected": [
+    {
+      "name": "Bierhaus",
+      "city": "Mountain View",
+      "address": "383 Castro St, Mountain View, CA 94041",
+      "reason": "PERMANENTLY CLOSED, and a near-name collision with the live 'Das Bierhauz' at 135 Castro St two blocks away. The Yelp page title reads 'BIERHAUS - CLOSED - Updated August 2026' while still printing a full weekly schedule (Mon Closed, Tue-Sat 11:30 am-9:00 pm, Sun 12:00 pm-9:00 pm), an own-site link bierha.us and phone (650) 395-8209. A German-lunch search can surface either venue; only 135 Castro St is open.",
+      "links": [
+        {"label": "Yelp page showing CLOSED - 383 Castro St, Mountain View CA 94041, (650) 395-8209, bierha.us, with stale hours still printed", "url": "https://www.yelp.com/biz/bierhaus-mountain-view"}
+      ]
+    }
+  ],
+  "cross_checks": []
+}
