@@ -3111,6 +3111,126 @@
       ],
       "searched": "2026-09-15",
       "why": "Hours conflict between the chain's own two sites: metrocitysunnyvale.com/locations says 'Open 7 Days a week from 8AM to 9PM' while metrocityduane.com says Tue-Fri 11 AM-8 PM, Sat 9 AM-8 PM, Sun 9 AM-3 PM (Mon absent). Not resolvable from official sources."
+    },
+    {
+      "name": "Erthya",
+      "city": "Cupertino",
+      "why": "Yelp tags it 'Good for lunch, Lunch Special' but no restaurant-controlled website or menu was found. Only aggregator/Yelp mentions exist. Price and lunch special details could not be verified from an official source.",
+      "links": [
+        {
+          "label": "Yelp search result",
+          "url": "https://www.yelp.com/search?find_desc=Indian+Lunch+Special&find_loc=Sunnyvale%2C+CA&start=80"
+        }
+      ],
+      "searched": "2026-09-07"
+    },
+    {
+      "name": "Peppermint",
+      "city": "Sunnyvale",
+      "why": "Yelp tags it 'Good for lunch, Lunch Special' but no official menu, price, or lunch special details could be verified from a restaurant-controlled source.",
+      "links": [
+        {
+          "label": "Yelp search result",
+          "url": "https://www.yelp.com/search?find_desc=Indian+Lunch+Special&find_loc=Sunnyvale%2C+CA&start=80"
+        }
+      ],
+      "searched": "2026-09-07"
+    },
+    {
+      "name": "Happy Flower Eatery & Boba",
+      "city": "Sunnyvale",
+      "why": "Yelp tags it 'Good for lunch, Lunch Special' but no official menu or price could be verified. The restaurant appears to be primarily a boba tea shop with food.",
+      "links": [
+        {
+          "label": "Yelp search result",
+          "url": "https://www.yelp.com/search?find_desc=Indian+Lunch+Special&find_loc=Sunnyvale%2C+CA&start=80"
+        }
+      ],
+      "searched": "2026-09-07"
+    },
+    {
+      "name": "Chaat House",
+      "city": "Sunnyvale",
+      "why": "Yelp tags it 'Good for lunch' but no specific lunch special or discount was found. Appears to have regular-priced Indian street food menu all day.",
+      "links": [
+        {
+          "label": "Yelp search result",
+          "url": "https://www.yelp.com/search?find_desc=Indian+Lunch+Special&find_loc=Sunnyvale%2C+CA&start=80"
+        }
+      ],
+      "searched": "2026-09-07"
+    },
+    {
+      "name": "ZhangFei Hot Pot",
+      "city": "Fremont",
+      "why": "Reddit reviewer quotes AYCE lunch at $24.99 and dinner at $34.99, but no restaurant-controlled website or official menu was found to verify these prices. Reviewer quotes are not accepted as prices per project policy.",
+      "links": [
+        {
+          "label": "Reddit r/Fremont - buffets thread",
+          "url": "https://www.reddit.com/r/Fremont/comments/1l1qwss/buffets_not_world_gourmet/"
+        }
+      ],
+      "searched": "2026-09-07"
+    },
+    {
+      "name": "Naga's Kitchen",
+      "city": "Fremont",
+      "why": "Listing data shows lunch hours (11:30 AM - 2:30/3:00 PM) but no lunch special or discount was found. Regular-priced South Indian menu.",
+      "links": [
+        {
+          "label": "withbites.com listing data",
+          "url": "https://withbites.com/locations/unioncity"
+        }
+      ],
+      "searched": "2026-09-07"
+    },
+    {
+      "name": "Taiwan Porridge",
+      "city": "Fremont",
+      "why": "Listing data shows open 11:00 AM - 9:00 PM daily but no lunch special or discount was found. Regular-priced Taiwanese porridge menu.",
+      "links": [
+        {
+          "label": "withbites.com listing data",
+          "url": "https://withbites.com/locations/unioncity"
+        }
+      ],
+      "searched": "2026-09-07"
+    },
+    {
+      "name": "Pier 98 Sushi Bar & Grill",
+      "city": "Newark",
+      "why": "Yelp review mentions 'weekday lunch special' with saba shioyaki $8.95 and salmon teriyaki $9.50, but these are old reviewer-quoted prices (2014-era per the review text) from a single Yelp review. No restaurant-controlled menu or current price was found.",
+      "links": [
+        {
+          "label": "Yelp collection - Fremont/Union City/Newark",
+          "url": "https://www.yelp.com/collection/eDH3FT5b-AJ8fnz-J1htpQ/Places-to-eat-in-Fremont-Union-City-Newark"
+        }
+      ],
+      "searched": "2026-09-07"
+    },
+    {
+      "name": "Sake2Sushi",
+      "city": "Fremont",
+      "why": "Reddit reviewer quotes AYCE lunch at $35.99 and dinner at $42.99-$49.99, but no restaurant-controlled website or official menu was found to verify. Reviewer quotes are not accepted as prices per project policy.",
+      "links": [
+        {
+          "label": "Reddit r/Fremont - buffets thread",
+          "url": "https://www.reddit.com/r/Fremont/comments/1l1qwss/buffets_not_world_gourmet/"
+        }
+      ],
+      "searched": "2026-09-07"
+    },
+    {
+      "name": "Los Altos Taqueria (Los Altos, CA)",
+      "city": "Los Altos",
+      "why": "The search result for 'Los Altos Taqueria' with 'Lunch Specials served 11AM to 3PM Monday - Friday' belongs to a restaurant in Goose Creek (Northern California, 180 miles away), not Los Altos, CA. Already in rejected list as R02.",
+      "links": [
+        {
+          "label": "losaltosmexicangrill.com menu",
+          "url": "https://losaltosmexicangrill.com/goose-creek-los-altos-taqueria-food-menu"
+        }
+      ],
+      "searched": "2026-09-07"
     }
   ],
   "notes": [
