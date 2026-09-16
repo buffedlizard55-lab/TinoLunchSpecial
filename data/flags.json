@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-15",
+ "updated": "2026-09-16",
  "transit": [
   {
    "id": "FLAG-1",
@@ -2366,6 +2366,168 @@
    "link": {
     "label": "Official lunch PDF",
     "url": "https://www.townsc.com/s/Current-Lunch-Menu.pdf"
+   }
+  },
+  {
+   "id": "LUNCH-FLAG-133",
+   "note": "",
+   "date": "2026-09-16",
+   "status": "open",
+   "severity": "warning",
+   "title": "Page-fetch proxy outage (InvalidAccessKeyId) for most of pass 22 - some official pages verified via search extraction only",
+   "what_we_found": "The sandbox page-fetch proxy failed with an OSS InvalidAccessKeyId error from roughly the 10th fetch of the pass until the pass ended. Pages fetched successfully before the outage: stanfords.com/promotions/ (direct), losaltosmexicangrill.com (3 pages, direct, incl. the Goose Creek SC address), noburestaurants.com/paloalto/menus (direct, Lunch section page 1). All other sources in the four new rows and in the 22 rejections were captured via search-engine extraction of the linked page the same day.",
+   "what_we_did": "Source labels say 'search extraction 2026-09-16; re-fetch needed' where applicable. Affected rows L880 (Maverick Jack's - the $15 Weekday Lunch Special section on its own ordering page), L881 (Espetus - the $27.95/$39.95 rodizio lunch prices on its menu mirror) and L882 (Central Park Bistro - the priced Lunch Menu on its menu mirror) must be re-fetched directly next pass; L879's menu was fetched directly but its address/hours listing sources still deserve a re-fetch.",
+   "rows": [
+    "L879",
+    "L880",
+    "L881",
+    "L882"
+   ],
+   "manual_review": true,
+   "link": {
+    "label": "Maverick Jack's San Mateo ordering page (first re-fetch target)",
+    "url": "https://maverickjacks.com/order/maverickjacks-san-mateo"
+   }
+  },
+  {
+   "id": "LUNCH-FLAG-134",
+   "note": "",
+   "date": "2026-09-16",
+   "status": "open",
+   "severity": "info",
+   "title": "Nobu Palo Alto lunch hours conflict across three sources",
+   "what_we_found": "2017 Palo Alto Online: 'Lunch, daily 11 a.m. to 3 p.m.' Current Yelp (2026): one continuous daily block '12:00 PM - 10:00 PM' (breakfast 7-11). usmenuguide: lunch only Wed-Sun 12:00-2:30, Mon-Tu dinner only. The official menu page (fetched) shows a full separate Lunch menu but prints no lunch window.",
+   "what_we_did": "Row L879 records the Yelp 2026 block for hours_tuesday, keeps all three readings visible in the window field, and does not assert a lunch window the official site does not print.",
+   "rows": [
+    "L879"
+   ],
+   "manual_review": true,
+   "link": {
+    "label": "Nobu Palo Alto menus (no lunch window printed)",
+    "url": "https://noburestaurants.com/paloalto/menus"
+   }
+  },
+  {
+   "id": "LUNCH-FLAG-135",
+   "note": "",
+   "date": "2026-09-16",
+   "status": "open",
+   "severity": "info",
+   "title": "Espetus San Mateo lunch close time conflicts (2:30 vs 2:00) and menu read via mirror",
+   "what_we_found": "Yelp (2026-updated) shows lunch 11:30-2:30 Mon-Fri; the restaurant's own menu (mirrored on SinglePlatform) shows 11:30-2:00. Weekend blocks also differ slightly (Yelp Sat 12-3 + 5-9, Sun 12-9 vs menu Sat 12-3 + 5-11, Sun 12-9). The $27.95/$39.95/$56.95 prices came from the menu mirror, not a direct fetch of espetus.com (proxy outage).",
+   "what_we_did": "Row L881 carries both readings in hours_tuesday, prices are level 'listing' rather than 'official' until the restaurant site is fetched directly (LUNCH-FLAG-133).",
+   "rows": [
+    "L881"
+   ],
+   "manual_review": true,
+   "link": {
+    "label": "Espetus menu mirror with the price line",
+    "url": "https://places.singleplatform.com/espetus-churrascaria-brazilian-steak-house-1/menu"
+   }
+  },
+  {
+   "id": "LUNCH-FLAG-136",
+   "note": "",
+   "date": "2026-09-16",
+   "status": "open",
+   "severity": "info",
+   "title": "Central Park Bistro San Mateo hours conflict and two price generations on the menu",
+   "what_we_found": "TripAdvisor: lunch Mon-Sat 11:30-2:15, dinner to 9:30/9:45, Sun dinner 5-9. restaurantji (2026 photo uploads): 11-2 + 4:30-9, Sat 5-9, Sun 4:30-9. restaurantguru also hosts a 'menu from owner 4 years ago' with pre-increase lunch prices ($12-$18) next to the current mirror ($14-$30).",
+   "what_we_did": "Row L882 uses the current mirror prices, keeps both hours blocks visible, and flags the stale menu rather than choosing silently.",
+   "rows": [
+    "L882"
+   ],
+   "manual_review": true,
+   "link": {
+    "label": "Central Park Bistro current menu mirror",
+    "url": "https://places.singleplatform.com/central-park-bistro/menu"
+   }
+  },
+  {
+   "id": "LUNCH-FLAG-137",
+   "note": "",
+   "date": "2026-09-16",
+   "status": "open",
+   "severity": "info",
+   "title": "Maverick Jack's $15 Weekday Lunch Special - window not printed, item wording garbled in the extraction",
+   "what_we_found": "The 'Weekday Lunch' section on maverickjacks.com/order/maverickjacks-san-mateo shows '$15 Lunch Special - Classic Cheeseburger, Classic Chicken or Classic with Fries or Salad' (a '$19.95' sits adjacent in the extraction and could not be attributed to the special). A Wanderlog reviewer independently quotes 'the $15 lunch special'. No page states the hours the $15 price runs.",
+   "what_we_did": "Row L880 prints $15.00-$15.00 (two-source corroboration, restaurant's own page), days Monday-Friday, window deliberately left unasserted. The $19.95 figure is NOT used.",
+   "rows": [
+    "L880"
+   ],
+   "manual_review": true,
+   "link": {
+    "label": "Maverick Jack's San Mateo ordering page",
+    "url": "https://maverickjacks.com/order/maverickjacks-san-mateo"
+   }
+  },
+  {
+   "id": "LUNCH-FLAG-138",
+   "note": "",
+   "date": "2026-09-16",
+   "status": "open",
+   "severity": "info",
+   "title": "Three 'Mountain View' restaurant domains resolve to Tennessee, Massachusetts and Colorado",
+   "what_we_found": "mountainviewseafood.com = Mountain View Seafoods, 3241 US-11E N, Telford, TN. mtviewrestaurant.com = Mountain View Drive-In, 25 Allen St, Hampden, MA. mountainviewdinerco.com = Mountain View Diner, 403 Miranda Ave, Fort Garland, CO. All three printed appealing $5.95-$19 lunch/dinner menus in search results for 'Mountain View lunch special'.",
+   "what_we_did": "All three rejected with the proving address links; recorded so a later pass does not import a name-collision as a Mountain View, CA row.",
+   "rows": [],
+   "manual_review": true,
+   "link": {
+    "label": "mtviewrestaurant.com (Hampden MA footer)",
+    "url": "https://www.mtviewrestaurant.com/"
+   }
+  },
+  {
+   "id": "LUNCH-FLAG-139",
+   "note": "",
+   "date": "2026-09-16",
+   "status": "open",
+   "severity": "info",
+   "title": "Saratoga Springs, New York trap - fourth occurrence - plus a correction to reject R02",
+   "what_we_found": "warrensaratoga.com (The Saratoga Restaurant, Economos family), saratoga.com (Morrissey's '2 For $22 Lunch', The Iron's Edge, The Brook Tavern - all 518 area codes) and discoversaratoga.org (Saratoga County Restaurant Week Nov 2-8 2026, $15 breakfast/lunch) all belong to Saratoga, New York. Also: reject R02 (Los Altos Taqueria 'Goose Creek') described the location as 'Northern California, 180 miles away'; the fetched homepage proves 1316 Red Bank Road, Goose Creek, SC 29445 - South Carolina.",
+   "what_we_did": "Four rejects recorded for the NY venues; the R02 correction is noted here rather than editing the historical reject row. discoversaratoga.org was already rejected as R159 and is not re-added.",
+   "rows": [],
+   "manual_review": true,
+   "link": {
+    "label": "losaltosmexicangrill.com homepage (Goose Creek SC address)",
+    "url": "https://losaltosmexicangrill.com/"
+   }
+  },
+  {
+   "id": "LUNCH-FLAG-140",
+   "note": "",
+   "date": "2026-09-16",
+   "status": "open",
+   "severity": "info",
+   "title": "Two Florida 'San Jose' Mexican restaurants masquerade as San Jose, CA results",
+   "what_we_found": "sanjosesoriginal.com = San Jose's Original Mexican Restaurant, a 5-store Florida chain (Altamonte Springs/Ocoee/Orlando/Winter Garden/Clermont) whose real Lunch Combos are $12.90 (dinner $15.90). sanjoselutz.com = San Jose Mexican Restaurant at 16540 Pointe Village Dr, Lutz, FL, with a real $9.00-$14.50 'LUNCH SPECIAL NO. 1-8' menu. Neither has a Bay Area location.",
+   "what_we_did": "Both rejected with Yelp links tying each domain to its Florida store; the FL prices are recorded as price hints, never as ring entries.",
+   "rows": [],
+   "manual_review": true,
+   "link": {
+    "label": "Yelp - San Jose's Original, Altamonte Springs (FL) citing sanjosesoriginal.com",
+    "url": "https://www.yelp.com/biz/san-joses-original-mexican-restaurant-altamonte-springs-4"
+   }
+  },
+  {
+   "id": "LUNCH-FLAG-141",
+   "note": "",
+   "date": "2026-09-16",
+   "status": "open",
+   "severity": "info",
+   "title": "Pass-22 yield honesty: 4 net-new rows against the 100-net-new target",
+   "what_we_found": "45 queries resolved 129 candidates: 86 hits were already in the master or reject data (dedupe caught them before any fetch), 38 were new - 4 cleared verification (L879-L882), 22 became rejects, 12 remain leads with partial evidence (Honō Izakaya & Sushi Campbell, Golden Wang Donkatsu Santa Clara, Boltiful Santa Clara, Shabuway San Mateo, Mingalaba San Mateo, Luceti's on 25th San Mateo, B Street & Vine San Mateo, Triple Seven Pizzeria Saratoga, Pop Haus Saratoga, La Fondue Saratoga, Little Belmont Cafe San Mateo, Pasta Moon Half Moon Bay which is ~25 mi out of ring).",
+   "what_we_did": "The target is reported as a shortfall, not padded: the Cupertino core (114 rows) and the dense ring cities are saturated after 21 prior passes, and the remaining candidates are chains without lunch programs, fine dining without lunch service, or closures. Next pass: direct re-fetch of the LUNCH-FLAG-133 rows, then the 12 leads, then Menlo Park / Los Altos Hills / San Mateo city deep screens.",
+   "rows": [
+    "L879",
+    "L880",
+    "L881",
+    "L882"
+   ],
+   "manual_review": true,
+   "link": {
+    "label": "Pass 22 review document",
+    "url": "https://github.com/buffedlizard55-lab/TinoLunchSpecial/blob/main/docs/REVIEW_2026-09-16_pass22.md"
    }
   }
  ]

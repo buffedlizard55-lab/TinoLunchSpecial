@@ -1,11 +1,11 @@
 {
   "search_protocol": {
-    "requirement": "Pass 19 (2026-09-16): ran a fresh official-menu-first search sweep and resolved 14 named candidates after dedupe. Two genuinely new, explicitly labelled lunch menus cleared verification: Namaste Indian Cuisine Los Gatos ($15.95-$18 Lunch Special Thali, daily lunch window) and ROOH Palo Alto ($18-$38 Weekday Lunch Menu, Mon-Fri). Twelve results were already represented in master/reject data and were not duplicated. Wrong-region search results (including Spring Valley, Texas and Mountain View, Maryland) were excluded. The 100-new-entry target was not padded: after 1,319 cumulative candidates, verifiable net-new inventory in the 10-15 mile ring is scarce. Pass 18 (2026-09-15): screened the Cupertino core first, then the 10-15 mi ring (Sunnyvale, Santa Clara, Los Gatos, Los Altos, Mountain View, Palo Alto, Campbell, Saratoga). Every candidate name was checked against the 1048-key dedupe index before any page fetch. Result: 3 new rows (1 priced-window row, 2 verified-absence rows) and 8 new rejections, including the permanent closure of Oren's Hummus Cupertino effective 9/12/26 per the company's own site. The 100-entry target was NOT met and is reported honestly rather than padded: at this verification standard the Cupertino core is saturated. Pass 17 (2026-09-15): roughly 100 candidate names were screened Cupertino-first and then across the 10-15 mile ring (Sunnyvale, Santa Clara, Campbell, Los Gatos, Los Altos, Mountain View, Palo Alto, Portola Valley, Milpitas, Saratoga, west San Jose). Every name was grepped against a 1031-key norm(name)|norm(city) dedupe index built from the master and reject files before any page was opened; the great majority were already listed, which is the expected result after sixteen prior passes. 8 rows merged (L851-L858): Birk's Restaurant (Santa Clara) with its own April 2026 lunch PDF ($14-$27 lunch-only band, Mon-Fri 11:00 AM - 2:30 PM); Barbayani Greek Taverna (Los Altos) with a distinct 'Barbayani Lunch Menu' on its own Toast page ($23-$42, daily 11:30 AM - 2:30 PM); The Courtyard Long Bar & Bistro (Los Altos) with a named $17 Soup & Sandwich Special and a $7-$28 lunch card, Mon-Sat 11:00 AM - 1:30 PM; Sorelle Italian Bistro (Campbell, Wed-Fri 11:30-2:00, no prices published); Senza Italian Kitchen (Los Gatos, Wed-Fri 11:00-2:00, no lunch prices published); Hibari (Portola Valley, Wed-Sun 11:30-2:00, menu published only as an image); Crepevine Palo Alto (no lunch special - one all-day card, priced); and The Good Salad Campbell (no lunch special - flat $15-$16 salads, priced). Nine findings were logged as rejections or bad-source notes (R184-R192), including a wrong-state trap (Discover Saratoga = Saratoga County, NEW YORK), an aggregator link that routes Kakuna Sushi Milpitas to the Fremont store, and a TripAdvisor record claiming a 5:00 AM opening for a Sunnyvale Korean BBQ restaurant. Eight new flags were filed (LUNCH-FLAG-104 through 111). No price was printed unless the restaurant's own site or its own ordering menu carried it: press figures for Hibari ($18-$66 lunch sets) and a reviewer's $40 for Senza are held in row flags as quotes, never in price columns. The pass therefore delivered 8 new rows against a 100-candidate screen and reports that shortfall rather than padding it. Pass 16 (2026-09-14): about 45 searches plus 6 page fetches screened roughly 192 new candidate names across Cupertino, Palo Alto, Menlo Park, Mountain View, Los Altos, Los Gatos, Saratoga, Campbell, Sunnyvale, Santa Clara, San Jose (Willow Glen and west San Jose), Milpitas and Fremont. 56 candidates were written up with sources in eight batch files (16a-16h); 31 merged as new rows (L820-L850) and 25 proved to be venues the master list already carried, so their captures were filed as cross-checks and duplicate detections instead of second rows. 11 candidates were rejected (R156-R166): four are permanently closed listings that still print full weekly hours (Pho & Bun, Kitayama Yoichi, Bierhaus, the Square Pie Guys Local Kitchens unit), one is a New York Restaurant Week trap for Saratoga Springs NY, three are out-of-area name traps for 'Los Altos' (Salinas, Goleta, San Bernardino), one is a Mountain View venue that closed, and one could not be resolved to any street address. Six further verified rows are held back by street-address collisions (LUNCH-FLAG-98) rather than forced past the dedupe, and one row (Willow Street Pizza) plus five existing rows (L477, L463, L478, L208, L544) received fresh contradictory captures filed as cross-checks. No price was printed unless a business' own site or menu carried it; reviewer-quoted prices such as Kiya Sushi's $14.99 trio-roll lunch and Country Way's $7.95 bacon-burger lunch stayed out of the price columns. The pass therefore delivered 31 new rows against a 100-row target and reports the shortfall rather than padding it. Verify line by line before adding anything to the master list; keep official/review links for manual review. Pass 15 (2026-09-14, approximate counts): about 70 fresh candidates were screened with about 60 new searches, Cupertino first and then the 10-15 mile ring. 27 candidates were written up with sources; 10 merged as new rows (L810-L819) and 17 proved to be rows the master list already carried, so they were merged as cross-checks instead of duplicates. 6 candidates were rejected with the page that produced the name (two of them turned out to be out-of-ring restaurants in New Jersey, one a Cupertino diner that closed permanently on 2025-12-31). Prices were printed only where a business' own page or an attached news/review quote gives one; photo captions and aggregator numbers never became prices. Pass 14 (2026-09-12): 118 new candidates from ring-city sweeps were each resolved against two or more pages before any row was written; 102 verified rows entered the master list (L708-L809). Seven rows whose Tuesday status is disputed between live captures carry open_on_trip_date = null rather than a guess.",
-    "queries_run": 1129,
-    "candidates_found": 1415,
-    "added_to_master": 878,
-    "rejected_or_deferred": 235,
-    "search_date": "2026-09-16 (pass 21)",
+    "requirement": "Pass 22 (2026-09-16): 45 queries, Cupertino core first then the ring (San Mateo/Peninsula, Palo Alto/Stanford, Santa Clara, Saratoga, San Jose, plus wrong-region screens). Every candidate name was grepped against the 1,111-key name|city dedupe index before any page work. Result: 4 net-new rows (L879-L882) and 22 rejections. The net-new rows are the first additions from the San Mateo core since the pass-9 sweep: Nobu Palo Alto (separate priced official Lunch menu, fetched directly), Maverick Jack's San Mateo ($15 Weekday Lunch Special on its own ordering page), Espetus Churrascaria (rodizio lunch $27.95/$39.95) and Central Park Bistro (separate priced lunch menu). The page-fetch proxy failed with InvalidAccessKeyId for most of the pass, so every source captured via search extraction is labelled as such and queued for direct re-fetch (LUNCH-FLAG-133). Traps caught: three out-of-state 'Mountain View' restaurant domains (TN/MA/CO, LUNCH-FLAG-138), two Florida 'San Jose' Mexican chains (LUNCH-FLAG-140), the Saratoga Springs NY trap for a fourth time (LUNCH-FLAG-139), an expired Stanford's lunch special with no current CA location, and a delivery-aggregator 'Cupertino' listing that is really Jingege & Yaoyao Milpitas. 86 candidate hits were already in the master/reject data and were not re-added; 12 candidates remain honest leads with partial evidence. The 100-net-new target was not met and is reported in LUNCH-FLAG-141 rather than padded: after 21 passes the dense core of the 10-15 mile ring is close to exhausted and the remaining candidates are chains without lunch programs, fine dining without lunch, or closures. The route-planning system was not touched. Pass 21 (2026-09-16): 14 net-new rows (L865-L878) from the Foster City / San Carlos / Belmont / Union City / Redwood City sweep against an 84-candidate screen; see docs/REVIEW_2026-09-16_pass21.md.",
+    "queries_run": 1174,
+    "candidates_found": 1544,
+    "added_to_master": 882,
+    "rejected_or_deferred": 257,
+    "search_date": "2026-09-16 (pass 22)",
     "cities_covered": [
       "Campbell",
       "Cupertino",
@@ -42908,6 +42908,227 @@
       },
       "id": "L878",
       "added_in": "batch21_pass21_ring_verified.json"
+    },
+    {
+      "name": "Nobu",
+      "city": "Palo Alto",
+      "area": "Downtown Palo Alto (Nobu Hotel), across from the Stanford campus",
+      "address": "180 Hamilton Ave, Palo Alto, CA 94301",
+      "coords": [
+        37.4435871,
+        -122.1615219
+      ],
+      "coords_source": "usmenuguide geo for 180 Hamilton Ave (matches Yelp listing)",
+      "cuisine": "Japanese (Nobu style) - sushi, bento, donburi",
+      "lunch_special": {
+        "name": "Separate priced Lunch Menu (Nobu Classic / Nobu Now / Bento Boxes / Nobu-style Tacos)",
+        "price_from": 8,
+        "price_to": 95,
+        "days": "Daily",
+        "window": "not printed on the menu page - sources conflict (LUNCH-FLAG-134): 2017 press says lunch 11 AM-3 PM daily; current Yelp shows one continuous 12 PM-10 PM block; usmenuguide shows Wed-Sun 12-2:30",
+        "includes": "Bento boxes $39-$80 (Signature $44, Chicken Katsu $46, Vegetarian $39, Japanese $78, Sushi $80); Nobu-style tacos $8-$19; shuko apps $9-$18; lunch items up to $95 (Toro Jalapeno). Menu captured on page 1 of the official Lunch section; it continues beyond."
+      },
+      "hours_tuesday": "7:00 AM - 11:00 AM, 12:00 PM - 10:00 PM (Yelp, 2026-updated listing)",
+      "days_open": "Daily 7:00 AM - 11:00 AM, 12:00 PM - 10:00 PM (Yelp; the 11 AM-12 PM gap is the restaurant's own split between breakfast and lunch service)",
+      "open_on_trip_date": true,
+      "phone": "(650) 798-8396",
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Palo Alto (~14 mi) - not on the Cupertino VTA 55 corridor; a car or BART-to-24-bus detour. Listed for completeness, not for the trip day."
+      },
+      "flags": [
+        "Level official for the menu (fetched directly 2026-09-16); address/hours come from the Yelp listing and conflict across sources - see LUNCH-FLAG-134.",
+        "Price range spans the whole separate Lunch menu, not a single named special; the bento boxes are the closest thing to a lunch 'deal'.",
+        "$$$$ fine-dining context: the lunch menu is distinct from dinner (different items) but is not discounted to a flat lunch price."
+      ],
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/nobu-palo-alto-palo-alto",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Nobu+Palo+Alto+180+Hamilton+Ave"
+      },
+      "verification": {
+        "level": "official",
+        "accessed": "2026-09-16",
+        "sources": [
+          {
+            "label": "Nobu Palo Alto official menus page - separate 'Lunch' section with prices (fetched directly 2026-09-16)",
+            "url": "https://noburestaurants.com/paloalto/menus"
+          },
+          {
+            "label": "Yelp listing - 180 Hamilton Ave, (650) 798-8396, daily 7-11 AM / 12 PM-10 PM (2026-updated)",
+            "url": "https://www.yelp.com/biz/nobu-palo-alto-palo-alto"
+          },
+          {
+            "label": "Palo Alto Online 'High hopes' (2017-12-07) - lunch daily 11-3 (conflicting hours, kept for review)",
+            "url": "https://www.paloaltoonline.com/ae/2017/12/07/high-hopes/"
+          }
+        ]
+      },
+      "id": "L879",
+      "added_in": "batch22_pass22_ring_verified.json",
+      "distance_mi": 11.55
+    },
+    {
+      "name": "Maverick Jack's",
+      "city": "San Mateo",
+      "area": "S El Camino Real, south downtown San Mateo",
+      "address": "4000 S El Camino Real, San Mateo, CA 94403",
+      "coords": null,
+      "coords_source": "not geocoded (address from the restaurant's own Toast ordering page)",
+      "cuisine": "American - burgers, chicken, salads",
+      "lunch_special": {
+        "name": "$15 Weekday Lunch Special",
+        "price_from": 15,
+        "price_to": 15,
+        "days": "Monday-Friday",
+        "window": "not printed on the captured pages - LUNCH-FLAG-137",
+        "includes": "Classic burger choice (Classic Cheeseburger or Classic Chicken) with fries or salad, per the 'Weekday Lunch' section on the restaurant's own ordering page; wording captured from a search extraction (LUNCH-FLAG-133)"
+      },
+      "hours_tuesday": "11:00 AM - 8:00 PM",
+      "days_open": "Daily 11:00 AM - 8:00 PM; Fri-Sat until 10:00 PM (official Toast ordering page)",
+      "open_on_trip_date": true,
+      "phone": "(650) 638-1479",
+      "fits_return_bus": {
+        "ok": false,
+        "note": "San Mateo (~18 mi) - not on the trip route; needs the 511/BART-to-Bus leg. Listed for the list, not the trip day."
+      },
+      "flags": [
+        "Price $15.00 read from the restaurant's own ordering page (maverickjacks.com) via search extraction during the fetch-proxy outage - direct re-fetch required (LUNCH-FLAG-133, LUNCH-FLAG-137).",
+        "A Wanderlog reviewer quote ('The $15 lunch special is a great deal imo') corroborates the price but is kept out of the price column per policy.",
+        "Service window for the $15 special is not printed; assumed weekday lunch until the standard 3 PM close - not asserted in the data."
+      ],
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/maverick-jacks-san-mateo-san-mateo",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Maverick+Jacks+4000+S+El+Camino+Real+San+Mateo"
+      },
+      "verification": {
+        "level": "official",
+        "accessed": "2026-09-16",
+        "sources": [
+          {
+            "label": "Maverick Jack's San Mateo official ordering page - 'Weekday Lunch: $15 Lunch Special' section (search extraction 2026-09-16; re-fetch needed)",
+            "url": "https://maverickjacks.com/order/maverickjacks-san-mateo"
+          },
+          {
+            "label": "Toast local ordering page - 4000 S El Camino Real, daily 11-8, Fri-Sat until 10",
+            "url": "https://www.toasttab.com/local/order/maverickjacks-san-mateo"
+          },
+          {
+            "label": "Yelp listing - address, hours (2026)",
+            "url": "https://www.yelp.com/biz/maverick-jacks-san-mateo-san-mateo"
+          }
+        ]
+      },
+      "id": "L880",
+      "added_in": "batch22_pass22_ring_verified.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Espetus Churrascaria",
+      "city": "San Mateo",
+      "area": "Downtown San Mateo (S B St, near Central Park)",
+      "address": "710 S B St, San Mateo, CA 94401",
+      "coords": null,
+      "coords_source": "not geocoded (address from Yelp listing; direct fetch of the restaurant site failed this pass)",
+      "cuisine": "Brazilian churrascaria (rodizio)",
+      "lunch_special": {
+        "name": "Rodizio lunch - seven cuts of meat with salad bar",
+        "price_from": 27.95,
+        "price_to": 39.95,
+        "days": "Daily - Mon-Fri $27.95 (seven cuts); Sat-Sun $39.95 (12-14 cuts)",
+        "window": "11:30 AM - 2:30 PM Mon-Fri (Yelp) vs until 2:00 PM (restaurant's own menu) - LUNCH-FLAG-135",
+        "includes": "Unlimited rodizio lunch: 7 cuts weekday, 12-14 cuts weekend lunch, Brazilian salad bar, blazed pineapple; desserts and beverages a la carte; dinner is $56.95 per person"
+      },
+      "hours_tuesday": "11:30 AM - 2:30 PM, 5:00 PM - 9:00 PM (Yelp; the menu page says lunch until 2:00 PM - see flag)",
+      "days_open": "Mon-Fri 11:30 AM lunch + 5 PM dinner; Sat 12 PM - 3 PM + 5 PM; Sun 12 PM - 9 PM (Yelp)",
+      "open_on_trip_date": true,
+      "phone": "(650) 342-8700",
+      "fits_return_bus": {
+        "ok": false,
+        "note": "San Mateo (~18 mi) - not on the trip route."
+      },
+      "flags": [
+        "Menu prices ($27.95/$39.95/$56.95) come from the restaurant's own menu as mirrored on SinglePlatform; direct fetch of espetus.com failed during the proxy outage - re-fetch next pass (LUNCH-FLAG-133).",
+        "Lunch close time conflicts: Yelp 2:30 PM vs the menu's 2:00 PM (LUNCH-FLAG-135)."
+      ],
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/espetus-san-mateo-san-mateo-7",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Espetus+Churrascaria+710+S+B+St+San+Mateo"
+      },
+      "verification": {
+        "level": "listing",
+        "accessed": "2026-09-16",
+        "sources": [
+          {
+            "label": "Espetus menu (restaurant's own menu mirrored on SinglePlatform) - 'Lunch (Monday-Friday): $27.95 per person (Seven cuts of meat) / Lunch (Saturday-Sunday): $39.95 / Dinner: $56.95' (search extraction 2026-09-16; re-fetch needed)",
+            "url": "https://places.singleplatform.com/espetus-churrascaria-brazilian-steak-house-1/menu"
+          },
+          {
+            "label": "Yelp listing - 710 S B St, hours (2026)",
+            "url": "https://www.yelp.com/biz/espetus-san-mateo-san-mateo-7"
+          }
+        ]
+      },
+      "id": "L881",
+      "added_in": "batch22_pass22_ring_verified.json",
+      "distance_mi": null
+    },
+    {
+      "name": "Central Park Bistro",
+      "city": "San Mateo",
+      "area": "Downtown San Mateo (E 4th Ave)",
+      "address": "181 E 4th Ave, San Mateo, CA 94401",
+      "coords": [
+        37.56423,
+        -122.32282
+      ],
+      "coords_source": "TripAdvisor geo for 181 E 4th Ave",
+      "cuisine": "American / French-leaning bistro, wood-oven pizzas",
+      "lunch_special": {
+        "name": "Separate Lunch Menu (starters, sandwiches, entrées)",
+        "price_from": 14,
+        "price_to": 30,
+        "days": "Mon-Sat (Sunday is dinner only)",
+        "window": "11:30 AM - 2:15 PM (TripAdvisor) vs 11:00 AM - 2:00 PM (restaurantji) - LUNCH-FLAG-136",
+        "includes": "Current menu: salads from $14 (Caesar $14), lunch sandwiches $22-$24 (petrale sole $22, skirt steak $24), starters $15-$18, entrées $30 (paella, seasonal veg plate). An older owner-uploaded menu on restaurantguru shows $12-$18 (pre-increase)."
+      },
+      "hours_tuesday": "11:30 AM - 2:15 PM, 5:00 PM - 9:00 PM (TripAdvisor; restaurantji says 11:00 AM - 2:00 PM, 4:30 PM - 9:00 PM - see flag)",
+      "days_open": "Mon-Sat lunch + dinner; Fri-Sat until 9:45 PM, Sun dinner 5-9 PM (TripAdvisor)",
+      "open_on_trip_date": true,
+      "phone": "(650) 558-8401",
+      "fits_return_bus": {
+        "ok": false,
+        "note": "San Mateo (~18 mi) - not on the trip route."
+      },
+      "flags": [
+        "Menu prices from the restaurant's menu mirrored on SinglePlatform (current) - direct fetch of the official site failed this pass (LUNCH-FLAG-133).",
+        "Hours conflict across TripAdvisor (11:30-2:15) and restaurantji (11-2; Sat 5-9, Sun 4:30-9); both kept (LUNCH-FLAG-136).",
+        "Older 'menu from owner 4 years ago' on restaurantguru prices the lunch items lower ($12-$18); the current mirror is used."
+      ],
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/central-park-bistro-san-mateo",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Central+Park+Bistro+181+E+4th+Ave+San+Mateo"
+      },
+      "verification": {
+        "level": "listing",
+        "accessed": "2026-09-16",
+        "sources": [
+          {
+            "label": "Central Park Bistro menu (restaurant's menu mirrored on SinglePlatform) - 'Lunch Menu' section with prices (search extraction 2026-09-16; re-fetch needed)",
+            "url": "https://places.singleplatform.com/central-park-bistro/menu"
+          },
+          {
+            "label": "TripAdvisor - 181 E 4th Ave, phone, hours (lunch Mon-Sat 11:30-2:15)",
+            "url": "https://www.tripadvisor.com/Restaurant_Review-g33031-d364887-Reviews-Central_Park_Bistro-San_Mateo_California.html"
+          },
+          {
+            "label": "Yelp listing - dishes and hours (2026)",
+            "url": "https://www.yelp.com/biz/central-park-bistro-san-mateo"
+          }
+        ]
+      },
+      "id": "L882",
+      "added_in": "batch22_pass22_ring_verified.json",
+      "distance_mi": 23.65
     }
   ],
   "top_picks_for_tuesday_sept_8": [

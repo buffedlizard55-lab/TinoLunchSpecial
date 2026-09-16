@@ -994,6 +994,294 @@
       "url": "https://www.rosewoodhotels.com/en/sand-hill-menlo-park/dining/madera",
       "fetch_status": "ok",
       "used_for": "L596: weekday lunch 11:30 am-2:00 pm, daily dinner, restaurant identity."
+    },
+    {
+      "id": "S125",
+      "agency": "Nobu",
+      "label": "Nobu Palo Alto official menus page (separate priced Lunch section)",
+      "url": "https://noburestaurants.com/paloalto/menus",
+      "fetch_status": "ok",
+      "used_for": "L879: separate Lunch menu - bento $39-$80, tacos $8-$19, items to $95; no lunch window printed."
+    },
+    {
+      "id": "S126",
+      "agency": "Yelp",
+      "label": "Nobu Palo Alto listing (address, phone, 2026 hours)",
+      "url": "https://www.yelp.com/biz/nobu-palo-alto-palo-alto",
+      "fetch_status": "snippet 2026-09-16",
+      "used_for": "L879: 180 Hamilton Ave, daily 7-11 AM / 12 PM-10 PM."
+    },
+    {
+      "id": "S127",
+      "agency": "Palo Alto Online",
+      "label": "High hopes (2017-12-07) - Nobu Palo Alto opening hours",
+      "url": "https://www.paloaltoonline.com/ae/2017/12/07/high-hopes/",
+      "fetch_status": "snippet 2026-09-16",
+      "used_for": "L879/LUNCH-FLAG-134: lunch daily 11-3 (conflicting reading)."
+    },
+    {
+      "id": "S128",
+      "agency": "Maverick Jack's",
+      "label": "Maverick Jack's San Mateo official ordering page - Weekday Lunch section",
+      "url": "https://maverickjacks.com/order/maverickjacks-san-mateo",
+      "fetch_status": "snippet 2026-09-16",
+      "used_for": "L880: $15 Weekday Lunch Special (classic cheeseburger/chicken + fries or salad); window not printed."
+    },
+    {
+      "id": "S129",
+      "agency": "Toast (restaurant ordering platform)",
+      "label": "Toast local ordering - Maverick Jack's San Mateo",
+      "url": "https://www.toasttab.com/local/order/maverickjacks-san-mateo",
+      "fetch_status": "snippet 2026-09-16",
+      "used_for": "L880: 4000 S El Camino Real; daily 11-8, Fri-Sat until 10."
+    },
+    {
+      "id": "S130",
+      "agency": "Yelp",
+      "label": "Maverick Jack's San Mateo listing",
+      "url": "https://www.yelp.com/biz/maverick-jacks-san-mateo-san-mateo",
+      "fetch_status": "snippet 2026-09-16",
+      "used_for": "L880: address/hours cross-check (2026)."
+    },
+    {
+      "id": "S131",
+      "agency": "SinglePlatform (mirror of the restaurant's own menu)",
+      "label": "Espetus Churrascaria San Mateo menu",
+      "url": "https://places.singleplatform.com/espetus-churrascaria-brazilian-steak-house-1/menu",
+      "fetch_status": "snippet 2026-09-16",
+      "used_for": "L881: rodizio lunch $27.95 (Mon-Fri, seven cuts) / $39.95 (Sat-Sun) / dinner $56.95; lunch 11:30-2."
+    },
+    {
+      "id": "S132",
+      "agency": "Yelp",
+      "label": "Espetus - San Mateo listing",
+      "url": "https://www.yelp.com/biz/espetus-san-mateo-san-mateo-7",
+      "fetch_status": "snippet 2026-09-16",
+      "used_for": "L881: 710 S B St; Mon-Fri 11:30-2:30 + 5-9 (conflicts with menu's 2:00 close - LUNCH-FLAG-135)."
+    },
+    {
+      "id": "S133",
+      "agency": "SinglePlatform (mirror of the restaurant's own menu)",
+      "label": "Central Park Bistro San Mateo menu",
+      "url": "https://places.singleplatform.com/central-park-bistro/menu",
+      "fetch_status": "snippet 2026-09-16",
+      "used_for": "L882: current priced Lunch Menu - salads from $14, sandwiches $22-$24, starters $15-$18, entrees $30."
+    },
+    {
+      "id": "S134",
+      "agency": "TripAdvisor",
+      "label": "Central Park Bistro San Mateo record",
+      "url": "https://www.tripadvisor.com/Restaurant_Review-g33031-d364887-Reviews-Central_Park_Bistro-San_Mateo_California.html",
+      "fetch_status": "snippet 2026-09-16",
+      "used_for": "L882: 181 E 4th Ave, phone, lunch Mon-Sat 11:30-2:15 (conflicts with restaurantji - LUNCH-FLAG-136)."
+    },
+    {
+      "id": "S135",
+      "agency": "Yelp",
+      "label": "Central Park Bistro San Mateo listing",
+      "url": "https://www.yelp.com/biz/central-park-bistro-san-mateo",
+      "fetch_status": "snippet 2026-09-16",
+      "used_for": "L882: dishes/hours cross-check (2026)."
+    },
+    {
+      "id": "S136",
+      "agency": "Stanford's",
+      "label": "Stanford's promotions page (current offers; no CA locations; no lunch special)",
+      "url": "https://stanfords.com/promotions/",
+      "fetch_status": "ok",
+      "used_for": "Reject: chain lists only OR/WA; $16 Summer Stack lunch special expired 8/31/26; only $10-off-$40 to-go through 9/30."
+    },
+    {
+      "id": "S137",
+      "agency": "Los Altos Mexican Grill (SpotHopper site)",
+      "label": "losaltosmexicangrill.com homepage - location block",
+      "url": "https://losaltosmexicangrill.com/",
+      "fetch_status": "ok",
+      "used_for": "Reject R02 correction: 1316 Red Bank Road, Goose Creek, SC 29445 (South Carolina, not the Bay Area) - LUNCH-FLAG-139."
+    },
+    {
+      "id": "S138",
+      "agency": "warrensaratoga.com",
+      "label": "The Saratoga Restaurant page",
+      "url": "https://www.warrensaratoga.com/restaurant",
+      "fetch_status": "snippet 2026-09-16",
+      "used_for": "Reject: Saratoga Springs NY diner (Economos family) - wrong state."
+    },
+    {
+      "id": "S139",
+      "agency": "saratoga.com",
+      "label": "Food & Drink Specials guide",
+      "url": "https://www.saratoga.com/food-drink-specials/",
+      "fetch_status": "snippet 2026-09-16",
+      "used_for": "Rejects: Morrissey's '2 For $22 Lunch', The Iron's Edge, The Brook Tavern - all Saratoga Springs NY (518 area codes)."
+    },
+    {
+      "id": "S140",
+      "agency": "mtviewrestaurant.com (Squarespace)",
+      "label": "Mountain View Drive-In homepage",
+      "url": "https://www.mtviewrestaurant.com/",
+      "fetch_status": "snippet 2026-09-16",
+      "used_for": "Reject: 25 Allen Street, Hampden, MA - the $5.95 lunch/dinner menu is Massachusetts."
+    },
+    {
+      "id": "S141",
+      "agency": "mymenuweb",
+      "label": "Mountain View Diner record",
+      "url": "https://mymenuweb.com/us/restaurants/1193793/",
+      "fetch_status": "snippet 2026-09-16",
+      "used_for": "Reject: 403 Miranda Ave, Fort Garland, CO ties mountainviewdinerco.com to Colorado."
+    },
+    {
+      "id": "S142",
+      "agency": "Apple Maps",
+      "label": "Mountain View Seafoods place record",
+      "url": "https://maps.apple.com/place?place-id=I9ECF8D539B5AC6F9",
+      "fetch_status": "snippet 2026-09-16",
+      "used_for": "Reject: 3241 US-11E N, Telford, TN ties mountainviewseafood.com to Tennessee."
+    },
+    {
+      "id": "S143",
+      "agency": "Yelp",
+      "label": "San Jose's Original Mexican Restaurant - Altamonte Springs FL",
+      "url": "https://www.yelp.com/biz/san-joses-original-mexican-restaurant-altamonte-springs-4",
+      "fetch_status": "snippet 2026-09-16",
+      "used_for": "Reject: sanjosesoriginal.com is a 5-store Florida chain, not San Jose CA - LUNCH-FLAG-140."
+    },
+    {
+      "id": "S144",
+      "agency": "Yelp",
+      "label": "San Jose Mexican Restaurant - Lutz FL",
+      "url": "https://www.yelp.com/biz/san-jose-mexican-restaurant-lutz",
+      "fetch_status": "snippet 2026-09-16",
+      "used_for": "Reject: sanjoselutz.com is Lutz, Florida - LUNCH-FLAG-140."
+    },
+    {
+      "id": "S145",
+      "agency": "theheroranchkitchen.com",
+      "label": "The Hero Ranch Kitchen (Saratoga CA) - hours",
+      "url": "https://theheroranchkitchen.com/",
+      "fetch_status": "snippet 2026-09-16",
+      "used_for": "Cross-check for the existing Saratoga row: dinner-only service (Tue-Sun 5 PM on), no lunch."
+    },
+    {
+      "id": "S146",
+      "agency": "porterhousesanmateo.com",
+      "label": "Porterhouse San Mateo - visit/hours",
+      "url": "https://www.porterhousesanmateo.com/",
+      "fetch_status": "snippet 2026-09-16",
+      "used_for": "Reject: 164 S B Street; dinner every night; 'LUNCH - OPEN FOR PRIVATE EVENTS' only."
+    },
+    {
+      "id": "S147",
+      "agency": "Yelp",
+      "label": "Sushi Sam's Edomata - San Mateo (CLOSED)",
+      "url": "https://www.yelp.com/biz/sushi-sams-edomata-san-mateo-2?start=960",
+      "fetch_status": "snippet 2026-09-16",
+      "used_for": "Reject: 218 E 3rd Ave CLOSED (two 2026-updated pages)."
+    },
+    {
+      "id": "S148",
+      "agency": "Yelp",
+      "label": "Indo Cafe - Saratoga (CLOSED)",
+      "url": "https://www.yelp.com/biz/indo-cafe-saratoga-3",
+      "fetch_status": "snippet 2026-09-16",
+      "used_for": "Reject: 14443 Big Basin Way CLOSED; owner moved to Alabama per community answer."
+    },
+    {
+      "id": "S149",
+      "agency": "allmenus",
+      "label": "La Fontana (Hilton Santa Clara) menu",
+      "url": "https://www.allmenus.com/ca/santa-clara/370995-la-fontana/menu/",
+      "fetch_status": "snippet 2026-09-16",
+      "used_for": "Reject: single all-day menu, no separate lunch section or special."
+    },
+    {
+      "id": "S150",
+      "agency": "restaurantguru",
+      "label": "Great Buffet Cupertino record",
+      "url": "https://restaurantguru.com/Great-Buffet-Cupertino",
+      "fetch_status": "snippet 2026-09-16",
+      "used_for": "Reject: 'May be permanently closed', no hours, no reviews, no menu to verify."
+    },
+    {
+      "id": "S151",
+      "agency": "Yelp",
+      "label": "Foreigner (Foreigner Cafe) San Mateo",
+      "url": "https://www.yelp.com/biz/foreigner-san-mateo",
+      "fetch_status": "snippet 2026-09-16",
+      "used_for": "Reject: 60 E 3rd Ave; breakfast/brunch 8-4 daily; no named or priced lunch special; high tea Wed-Sun 2:30-5."
+    },
+    {
+      "id": "S152",
+      "agency": "Yelp",
+      "label": "All Spice San Mateo",
+      "url": "https://www.yelp.com/biz/all-spice-san-mateo-2",
+      "fetch_status": "snippet 2026-09-16",
+      "used_for": "Reject: 1602 S El Camino Real; pre-fixe dinner $85-$125; 'Sunday lunch service is on hiatus' (owner)."
+    },
+    {
+      "id": "S153",
+      "agency": "OpenTable",
+      "label": "Parkview Kitchen and Spirits (Cupertino, Juniper Hotel)",
+      "url": "https://www.opentable.com/r/park-place?page=2",
+      "fetch_status": "snippet 2026-09-16",
+      "used_for": "Reject: hours block 'Lunch Daily 11-2' but published menu has no priced lunch section (see res-menu.net)."
+    },
+    {
+      "id": "S154",
+      "agency": "res-menu.net (restaurant-published menu)",
+      "label": "Parkview Kitchen and Spirits menu",
+      "url": "https://parkview-kitchen-spirits.res-menu.net/menu",
+      "fetch_status": "snippet 2026-09-16",
+      "used_for": "Reject: Breakfast (daily) + Dinner sections only - no lunch section, no lunch special."
+    },
+    {
+      "id": "S155",
+      "agency": "Yelp",
+      "label": "Jingege & Yaoyao - Milpitas",
+      "url": "https://www.yelp.com/biz/jingege-and-yaoyao-milpitas",
+      "fetch_status": "snippet 2026-09-16",
+      "used_for": "Reject: 516 Barber Ln Milpitas (the 'Cupertino' hit is a fantuan delivery listing); a la carte menu, no lunch special."
+    },
+    {
+      "id": "S156",
+      "agency": "roadtrippers",
+      "label": "Jingege & Yaoyao Milpitas record",
+      "url": "https://maps.roadtrippers.com/us/milpitas-ca/food-drink/jingege-yaoyao-milpitas-ca--0",
+      "fetch_status": "snippet 2026-09-16",
+      "used_for": "Reject: address/phone cross-check (516 Barber Ln, (408) 943-0250)."
+    },
+    {
+      "id": "S157",
+      "agency": "losaltosrestaurant.com",
+      "label": "Los Altos Restaurant (Santa Barbara) menus",
+      "url": "https://www.losaltosrestaurant.com/menus/",
+      "fetch_status": "snippet 2026-09-16",
+      "used_for": "Reject: Santa Barbara, CA - 320+ miles out of ring."
+    },
+    {
+      "id": "S158",
+      "agency": "ranzan.weeblyte.com",
+      "label": "Ranzan (Redwood City, CA) profile",
+      "url": "https://ranzan.weeblyte.com/",
+      "fetch_status": "snippet 2026-09-16",
+      "used_for": "Reject: kaiseki $228/pp (May menu) - no walk-in lunch; the 'San Mateo' Ranzan hit is a misfile."
+    },
+    {
+      "id": "S159",
+      "agency": "jmbcommunications.com",
+      "label": "Ran Zan (Providence, RI) lunch menu",
+      "url": "https://www.jmbcommunications.com/ranzan/lunch-menu.html",
+      "fetch_status": "snippet 2026-09-16",
+      "used_for": "Reject: the $4-$10 lunch menu belongs to Providence, Rhode Island."
+    },
+    {
+      "id": "S160",
+      "agency": "losaltosmenu.com",
+      "label": "Los Altos Mexican Restaurant 'stuart' page",
+      "url": "https://losaltosmenu.com/stuart-los-altos-mexican-restaurant-food-menu",
+      "fetch_status": "snippet 2026-09-16",
+      "used_for": "Reject: no Bay Area address could be established."
     }
   ],
   "dead_ends": [
