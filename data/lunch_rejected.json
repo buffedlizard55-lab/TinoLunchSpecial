@@ -3231,6 +3231,398 @@
         }
       ],
       "searched": "2026-09-07"
+    },
+    {
+      "city": "Foster City",
+      "links": [
+        {
+          "label": "rickshawcorner.com menu - item prices, no lunch section",
+          "url": "https://rickshawcorner.com/menu/"
+        },
+        {
+          "label": "TripAdvisor - $8.50/$9.50 lunch special reviewer quotes (undated)",
+          "url": "https://www.tripadvisor.com/Restaurant_Review-g32405-d928697-Reviews-Rickshaw_Corner_Restaurant-Foster_City_California.html"
+        }
+      ],
+      "name": "Rickshaw Corner",
+      "why": "No verified lunch special: the restaurant site menu shows item prices (General Tso's $12.99 etc.) with no lunch section. The $8.50 1-item / $9.50 2-item lunch specials are TripAdvisor reviewer quotes only, undated and unverifiable.",
+      "searched": "2026-09-07"
+    },
+    {
+      "city": "Union City",
+      "links": [
+        {
+          "label": "Yelp listing - 1779 Decoto Rd, lunch/dinner hours",
+          "url": "https://m.yelp.com/biz/din-ding-dumpling-house-union-city-union-city?start=20"
+        },
+        {
+          "label": "zmenu listing - matching address and hours",
+          "url": "https://www.zmenu.com/din-ding-dumpling-house-union-city-union-city-online-menu/"
+        }
+      ],
+      "name": "Din Ding Dumpling House",
+      "why": "Open for lunch (Mon-Fri 11-2:30/5-9, Sat 11-9:30, Sun 11-9) but no lunch special or discount found on any citable page.",
+      "searched": "2026-09-07"
+    },
+    {
+      "city": "Union City",
+      "links": [
+        {
+          "label": "Official menu (read in full, 3 pages) - no lunch section",
+          "url": "https://pacificpourhouse.com/menu"
+        },
+        {
+          "label": "Yelp listing - 32216 Dyer St, Mon closed, Tue-Sun from 12 PM",
+          "url": "https://www.yelp.com/biz/pacific-pourhouse-union-city"
+        }
+      ],
+      "name": "Pacific PourHouse",
+      "why": "Full official menu read (Popular, Appetizers, Entrees, Rice/Noodles/Breads, Biryani, Beverages) - no lunch section or lunch special. Also note Evendo says Mon 5-9:30 PM vs Yelp Mon closed (conflict, moot for rejection).",
+      "searched": "2026-09-07"
+    },
+    {
+      "city": "Union City",
+      "links": [
+        {
+          "label": "Official ordering site - priced items, no lunch section",
+          "url": "https://houseofdumplingsrestaurant.com/"
+        },
+        {
+          "label": "Yelp listing - 109 Appian Way, Tue closed",
+          "url": "https://www.yelp.com/biz/house-of-dumplings-union-city-2?start=70"
+        }
+      ],
+      "name": "House of Dumplings",
+      "why": "Official ordering site shows one all-day priced menu ($9.25-$17.95 items), no lunch special. Closed Tuesdays.",
+      "searched": "2026-09-07"
+    },
+    {
+      "city": "Union City",
+      "links": [
+        {
+          "label": "Official Toast ordering page - menu gated, no items visible",
+          "url": "https://kapow.toast.site/order"
+        },
+        {
+          "label": "Yelp listing - 34571 Alvarado-Niles Rd, split hours",
+          "url": "https://www.yelp.com/biz/kapow-thai-eatery-union-city"
+        }
+      ],
+      "name": "Kapow Thai Eatery",
+      "why": "No verifiable menu or lunch special: the official Toast ordering page is login-gated with no items visible, and no citable lunch-special page exists.",
+      "searched": "2026-09-07"
+    },
+    {
+      "city": "Foster City",
+      "links": [
+        {
+          "label": "Official Foster City store page - address, hours, no buffet mention",
+          "url": "https://tandooripizza.com/foster-city/"
+        },
+        {
+          "label": "Official chain menu - pizzas, no prices, no buffet",
+          "url": "https://tandooripizza.com/menu/"
+        },
+        {
+          "label": "East Bay Times - April 2026 opening, address",
+          "url": "https://www.eastbaytimes.com/2026/04/22/tandoori-pizza-now-open-in-foster-city/"
+        }
+      ],
+      "name": "Tandoori Pizza",
+      "why": "The $13.95 weekday lunch buffet is a Yelp reviewer quote only; no lunch buffet or special appears on the official store page or chain menu. (Also: official Fri-Sat close 11 PM vs Yelp 10 PM.)",
+      "searched": "2026-09-07"
+    },
+    {
+      "city": "Foster City",
+      "links": [
+        {
+          "label": "zmenu listing - 1099 Foster Square Ln #135, hours",
+          "url": "https://www.zmenu.com/mumu-hot-pot-now-open-foster-city-online-menu/"
+        },
+        {
+          "label": "Caviar delivery menu - combos, no lunch section",
+          "url": "https://www.trycaviar.com/store/mumu-hot-pot-foster-city-864410/"
+        }
+      ],
+      "name": "Mumu Hot Pot",
+      "why": "Open for lunch but no lunch special found; only a delivery/app menu with combos ($26-$75), no lunch section or pricing.",
+      "searched": "2026-09-07"
+    },
+    {
+      "city": "San Mateo",
+      "links": [
+        {
+          "label": "Yelp listing - 1208 S El Camino Real San Mateo (not Foster City), brunch hours",
+          "url": "https://www.yelp.com/biz/taste-and-glory-san-mateo"
+        }
+      ],
+      "name": "Taste & Glory",
+      "why": "Breakfast/brunch spot (9 AM - 2/2:30 PM) in San Mateo, not Foster City as the FC search implied. No lunch special found.",
+      "searched": "2026-09-07"
+    },
+    {
+      "city": "San Carlos",
+      "links": [
+        {
+          "label": "Yelp lunch search - 'Good for lunch' tag plus reviewer bento quote only",
+          "url": "https://www.yelp.com/search?find_desc=Lunch&find_loc=San+Carlos%2C+CA+94070"
+        }
+      ],
+      "name": "Soko Soko Japanese Cuisine",
+      "why": "No official site or citable lunch-special menu found. Only evidence is a Yelp 'Good for lunch' tag and one reviewer quote about 'bento lunch specials' - reviewer quotes are not prices.",
+      "searched": "2026-09-07"
+    },
+    {
+      "city": "Belmont",
+      "links": [
+        {
+          "label": "Yelp listing - 1480 El Camino Real, daily split hours",
+          "url": "https://www.yelp.com/biz/dara-thai-belmont"
+        }
+      ],
+      "name": "Dara Thai",
+      "why": "No citable lunch special: only a Yelp reviewer mention. Note: the wheree.com 'Dara Thai Restaurant Menu' result is a Flagstaff, ARIZONA restaurant - wrong-state trap, not cited.",
+      "searched": "2026-09-07"
+    },
+    {
+      "city": "San Carlos",
+      "links": [
+        {
+          "label": "Official homepage - address, phone, ordering link",
+          "url": "https://isarngarden.com/"
+        },
+        {
+          "label": "SmileDining ordering - menu gated behind T&Cs/app",
+          "url": "https://isarngardenca.smiledining.com/"
+        },
+        {
+          "label": "Yelp listing - 1050 El Camino Real, daily 11-3/5-9",
+          "url": "https://www.yelp.com/biz/isarn-garden-thai-cuisine-san-carlos-2"
+        }
+      ],
+      "name": "Isarn Garden Thai Cuisine",
+      "why": "Yelp-tagged Lunch Specials but no citable lunch-special page: the official ordering menu (SmileDining) is app-gated and exposes only terms text. No prices verifiable.",
+      "searched": "2026-09-07"
+    },
+    {
+      "city": "San Carlos",
+      "links": [
+        {
+          "label": "Yelp listing - 663 Laurel St, Tue-Fri lunch window, Mon/Sun closed",
+          "url": "https://www.yelp.com/biz/number5-kitchen-san-carlos?start=80"
+        }
+      ],
+      "name": "Number5 Kitchen",
+      "why": "Lunch window exists (Tue-Fri 11 AM - 2 PM) but no lunch special, lunch menu, or prices published on any citable page. No official site found.",
+      "searched": "2026-09-07"
+    },
+    {
+      "city": "San Carlos",
+      "links": [
+        {
+          "label": "zmenu listing - 1105 San Carlos Ave, hours, geo",
+          "url": "https://www.zmenu.com/esnaf-san-carlos-3-online-menu/"
+        },
+        {
+          "label": "Palo Alto Online - June 2024 opening, address, hours",
+          "url": "https://www.paloaltoonline.com/san-carlos/2024/06/26/turkish-restaurant-esnaf-opens-in-san-carlos/"
+        }
+      ],
+      "name": "Esnaf",
+      "why": "Open for lunch (daily split hours) but no lunch special found and no official site. (Minor: Sat/Sun open 10 AM per zmenu vs 11 AM per Palo Alto Online.)",
+      "searched": "2026-09-07"
+    },
+    {
+      "city": "Foster City",
+      "links": [
+        {
+          "label": "Official site - Daily Special = featured bowl, no discount/price",
+          "url": "https://tsukiraramen.com/"
+        },
+        {
+          "label": "Yelp listing - 3 Plaza View Ln, Wed closed; phone conflict",
+          "url": "https://www.yelp.com/biz/tsukira-ramen-foster-city-2?start=40"
+        },
+        {
+          "label": "Mercury News Jan 2026 - opening, address, hours",
+          "url": "https://www.mercurynews.com/2026/01/21/9-special-bowls-ramen-worth-chasing-down-around-the-bay-area/"
+        }
+      ],
+      "name": "Tsukira Ramen",
+      "why": "No lunch special: the official 'Daily Special' (Mon Black Garlic / Tue Classic / Thu Spicy Tonkotsu) names a featured $18 bowl with no discount or special price. Also: Yelp header phone (415) 689-0638 vs Yelp phone field (628) 286-2021; business update claims everyday 11:30-8:30 vs hours grid Wed closed.",
+      "searched": "2026-09-07"
+    },
+    {
+      "city": "Foster City",
+      "links": [
+        {
+          "label": "Yelp listing - 1100 Foster Square Ln Ste 145, daily 9/8 AM - 2:30 PM",
+          "url": "https://www.yelp.com/biz/toast-in-town-foster-city"
+        },
+        {
+          "label": "Instagram profile - brunch hours, no menu/prices",
+          "url": "https://www.instagram.com/toastintown/"
+        }
+      ],
+      "name": "Toast In Town",
+      "why": "Asian-fusion brunch spot (closes 2:30 PM daily) with no lunch special and no official site - Instagram only.",
+      "searched": "2026-09-07"
+    },
+    {
+      "city": "Foster City",
+      "links": [
+        {
+          "label": "Yelp listing - 969J Edgewater Blvd, Mon-Tue closed",
+          "url": "https://www.yelp.com/biz/nina-s-cafe-foster-city?start=40"
+        }
+      ],
+      "name": "Nina's Cafe",
+      "why": "Closed Monday-Tuesday (incl. the trip date) and no lunch special found - empanada/brunch cafe with no citable lunch-special page.",
+      "searched": "2026-09-07"
+    },
+    {
+      "city": "Foster City",
+      "links": [
+        {
+          "label": "Official menu (read in full) - one all-day menu, no lunch section",
+          "url": "https://falafeltazah.com/menu/"
+        },
+        {
+          "label": "Official homepage - 3 locations, hours",
+          "url": "https://falafeltazah.com/"
+        }
+      ],
+      "name": "Falafel Tazah",
+      "why": "Full official menu read: one all-day priced menu (wraps $10.95-$12.95, plates $16.95-$25.95), no lunch section at any of the 3 locations (Redwood City, Foster City, NEW San Carlos 1135-B Industrial Rd). Oddities for the record: Falafel Dozen and Half Dozen both $10.95; Yelp shows Sun 11-6 vs official site silent on Sunday.",
+      "searched": "2026-09-07"
+    },
+    {
+      "city": "Foster City",
+      "links": [
+        {
+          "label": "Official chain lunch-special page - codes, participation varies by location",
+          "url": "https://currypizzahouse.com/best-pizza-lunch-specials/"
+        },
+        {
+          "label": "Yelp listing - 1100 Foster Square Ln Ste 150, hours",
+          "url": "https://www.yelp.com/biz/curry-pizza-house-foster-city-2"
+        }
+      ],
+      "name": "Curry Pizza House Foster City",
+      "why": "Chain lunch specials are verified at Cupertino (L369: $13.99 Mon-Fri to 4 PM) and advertised chain-wide, but the official page says participation varies by location and no Foster City-specific lunch special was evidenced. Not duplicated on assumption.",
+      "searched": "2026-09-07"
+    },
+    {
+      "city": "Union City",
+      "links": [
+        {
+          "label": "Official PDF menu (read in full) - priced, no lunch section",
+          "url": "https://www.shcunioncity.com/s/SHU-Menu-Union-City-compressed.pdf"
+        },
+        {
+          "label": "Official homepage - 1771 Decoto Rd, daily 11-8:30, happy hour 2:30-5",
+          "url": "https://www.shcunioncity.com/"
+        }
+      ],
+      "name": "Special Hainan Chicken",
+      "why": "Full official PDF menu read ($2-$32.99): no lunch section or lunch special. Dine-in Happy Hour 2:30-5 PM exists but is not lunch. Sister locations incl. Cupertino 10275 S De Anza noted for cross-reference.",
+      "searched": "2026-09-07"
+    },
+    {
+      "city": "Union City",
+      "links": [
+        {
+          "label": "Official site phoga88.com - HTTP 500 on fetch",
+          "url": "https://phoga88.com/"
+        },
+        {
+          "label": "Yelp listing - 1719 Decoto Rd, daily 11-8:30/9",
+          "url": "https://m.yelp.com/biz/pho-ga-88-union-city-3"
+        }
+      ],
+      "name": "Pho Ga 88",
+      "why": "Official site phoga88.com returned HTTP 500; no other citable lunch-special page exists.",
+      "searched": "2026-09-07"
+    },
+    {
+      "city": "Belmont",
+      "links": [
+        {
+          "label": "Official menu page - NO menu items, contact/hours only",
+          "url": "https://www.kirorosushi.com/menu/"
+        },
+        {
+          "label": "Yelp listing - 1200 El Camino Real Ste A-2, hours, ~$20 reviewer quote",
+          "url": "https://www.yelp.com/biz/kiroro-sushi-belmont?start=120"
+        }
+      ],
+      "name": "Kiroro Sushi",
+      "why": "Official menu page publishes no menu at all (contact/hours only). The '~$20 lunch special' is a Yelp reviewer quote. Also: official site says 'Mon: 4:30 AM - 9 PM', an obvious typo for 4:30 PM (Yelp: Mon 4:30-9 PM).",
+      "searched": "2026-09-07"
+    },
+    {
+      "city": "Foster City",
+      "links": [
+        {
+          "label": "Official site cafekazka.com - fetch failed",
+          "url": "https://cafekazka.com/"
+        },
+        {
+          "label": "Yelp listing - 929 Edgewater Blvd Ste B, Mon closed",
+          "url": "https://www.yelp.com/biz/cafe-kazka-foster-city-4"
+        }
+      ],
+      "name": "Cafe Kazka",
+      "why": "HK-style cafe; official site cafekazka.com failed to fetch and no citable lunch-special menu exists elsewhere.",
+      "searched": "2026-09-07"
+    },
+    {
+      "city": "Fremont",
+      "links": [
+        {
+          "label": "Toast ordering - 3909 Thornton Ave Fremont (already listed)",
+          "url": "https://toast.app/r/billy-roys-burgers/order"
+        },
+        {
+          "label": "Yelp listing - same Fremont address",
+          "url": "https://www.yelp.com/biz/billy-roys-burger-fremont-4?start=20"
+        }
+      ],
+      "name": "Billy Roys Burger",
+      "why": "DUPLICATE: the Union City hit resolves to Billy Roy's Burger Co FREMONT (3909 Thornton Ave), already listed. CROSS-CHECK for manual review: its Toast page advertises 'LUNCH MENU 11:00am-4:00pm M-F' - the existing row may be missing this window.",
+      "searched": "2026-09-07"
+    },
+    {
+      "city": "San Mateo",
+      "links": [
+        {
+          "label": "Yelp listing - 2208 Bridgepoint Pkwy San Mateo (nearest; no Foster City store)",
+          "url": "https://www.yelp.com/biz/lazy-dog-restaurant-and-bar-san-mateo"
+        },
+        {
+          "label": "Los Cerritos mall directory - 'lunch specials until 4pm' (Southern California, not local)",
+          "url": "https://www.shoploscerritos.com/Directory/Details/682473"
+        }
+      ],
+      "name": "Lazy Dog Restaurant & Bar",
+      "why": "No Foster City location exists (nearest is San Mateo 2208 Bridgepoint Pkwy). The only 'lunch specials until 4pm' citation is a Southern California mall directory - not usable for a Bay Area row. Cupertino and Newark stores already listed.",
+      "searched": "2026-09-07"
+    },
+    {
+      "city": "Union City",
+      "links": [
+        {
+          "label": "Official Toast site - 31834B Alvarado Blvd, featured item $15.99, no lunch section",
+          "url": "https://guitaste.toast.site/order"
+        },
+        {
+          "label": "Yelp listing - 31834 Alvarado Blvd, Tue closed",
+          "url": "https://www.yelp.com/biz/gui-taste-union-city"
+        }
+      ],
+      "name": "Gui Taste",
+      "why": "Closed Tuesdays; official Toast ordering shows items (featured $15.99 Guilin noodles) but no lunch section or lunch special.",
+      "searched": "2026-09-07"
     }
   ],
   "notes": [
