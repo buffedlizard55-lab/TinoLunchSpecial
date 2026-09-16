@@ -1541,10 +1541,10 @@ window.TINO_DATA = {
   "search_protocol":{
    "requirement":"Pass 19 (2026-09-16): ran a fresh official-menu-first search sweep and resolved 14 named candidates after dedupe. Two genuinely new, explicitly labelled lunch menus cleared verification: Namaste Indian Cuisine Los Gatos ($15.95-$18 Lunch Special Thali, daily lunch window) and ROOH Palo Alto ($18-$38 Weekday Lunch Menu, Mon-Fri). Twelve results were already represented in master/reject data and were not duplicated. Wrong-region search results (including Spring Valley, Texas and Mountain View, Maryland) were excluded. The 100-new-entry target was not padded: after 1,319 cumulative candidates, verifiable net-new inventory in the 10-15 mile ring is scarce. Pass 18 (2026-09-15): screened the Cupertino core first, then the 10-15 mi ring (Sunnyvale, Santa Clara, Los Gatos, Los Altos, Mountain View, Palo Alto, Campbell, Saratoga). Every candidate name was checked against the 1048-key dedupe index before any page fetch. Result: 3 new rows (1 priced-window row, 2 verified-absence rows) and 8 new rejections, including the permanent closure of Oren's Hummus Cupertino effective 9/12/26 per the company's own site. The 100-entry target was NOT met and is reported honestly rather than padded: at this verification standard the Cupertino core is saturated. Pass 17 (2026-09-15): roughly 100 candidate names were screened Cupertino-first and then across the 10-15 mile ring (Sunnyvale, Santa Clara, Campbell, Los Gatos, Los Altos, Mountain View, Palo Alto, Portola Valley, Milpitas, Saratoga, west San Jose). Every name was grepped against a 1031-key norm(name)|norm(city) dedupe index built from the master and reject files before any page was opened; the great majority were already listed, which is the expected result after sixteen prior passes. 8 rows merged (L851-L858): Birk's Restaurant (Santa Clara) with its own April 2026 lunch PDF ($14-$27 lunch-only band, Mon-Fri 11:00 AM - 2:30 PM); Barbayani Greek Taverna (Los Altos) with a distinct 'Barbayani Lunch Menu' on its own Toast page ($23-$42, daily 11:30 AM - 2:30 PM); The Courtyard Long Bar & Bistro (Los Altos) with a named $17 Soup & Sandwich Special and a $7-$28 lunch card, Mon-Sat 11:00 AM - 1:30 PM; Sorelle Italian Bistro (Campbell, Wed-Fri 11:30-2:00, no prices published); Senza Italian Kitchen (Los Gatos, Wed-Fri 11:00-2:00, no lunch prices published); Hibari (Portola Valley, Wed-Sun 11:30-2:00, menu published only as an image); Crepevine Palo Alto (no lunch special - one all-day card, priced); and The Good Salad Campbell (no lunch special - flat $15-$16 salads, priced). Nine findings were logged as rejections or bad-source notes (R184-R192), including a wrong-state trap (Discover Saratoga = Saratoga County, NEW YORK), an aggregator link that routes Kakuna Sushi Milpitas to the Fremont store, and a TripAdvisor record claiming a 5:00 AM opening for a Sunnyvale Korean BBQ restaurant. Eight new flags were filed (LUNCH-FLAG-104 through 111). No price was printed unless the restaurant's own site or its own ordering menu carried it: press figures for Hibari ($18-$66 lunch sets) and a reviewer's $40 for Senza are held in row flags as quotes, never in price columns. The pass therefore delivered 8 new rows against a 100-candidate screen and reports that shortfall rather than padding it. Pass 16 (2026-09-14): about 45 searches plus 6 page fetches screened roughly 192 new candidate names across Cupertino, Palo Alto, Menlo Park, Mountain View, Los Altos, Los Gatos, Saratoga, Campbell, Sunnyvale, Santa Clara, San Jose (Willow Glen and west San Jose), Milpitas and Fremont. 56 candidates were written up with sources in eight batch files (16a-16h); 31 merged as new rows (L820-L850) and 25 proved to be venues the master list already carried, so their captures were filed as cross-checks and duplicate detections instead of second rows. 11 candidates were rejected (R156-R166): four are permanently closed listings that still print full weekly hours (Pho & Bun, Kitayama Yoichi, Bierhaus, the Square Pie Guys Local Kitchens unit), one is a New York Restaurant Week trap for Saratoga Springs NY, three are out-of-area name traps for 'Los Altos' (Salinas, Goleta, San Bernardino), one is a Mountain View venue that closed, and one could not be resolved to any street address. Six further verified rows are held back by street-address collisions (LUNCH-FLAG-98) rather than forced past the dedupe, and one row (Willow Street Pizza) plus five existing rows (L477, L463, L478, L208, L544) received fresh contradictory captures filed as cross-checks. No price was printed unless a business' own site or menu carried it; reviewer-quoted prices such as Kiya Sushi's $14.99 trio-roll lunch and Country Way's $7.95 bacon-burger lunch stayed out of the price columns. The pass therefore delivered 31 new rows against a 100-row target and reports the shortfall rather than padding it. Verify line by line before adding anything to the master list; keep official/review links for manual review. Pass 15 (2026-09-14, approximate counts): about 70 fresh candidates were screened with about 60 new searches, Cupertino first and then the 10-15 mile ring. 27 candidates were written up with sources; 10 merged as new rows (L810-L819) and 17 proved to be rows the master list already carried, so they were merged as cross-checks instead of duplicates. 6 candidates were rejected with the page that produced the name (two of them turned out to be out-of-ring restaurants in New Jersey, one a Cupertino diner that closed permanently on 2025-12-31). Prices were printed only where a business' own page or an attached news/review quote gives one; photo captions and aggregator numbers never became prices. Pass 14 (2026-09-12): 118 new candidates from ring-city sweeps were each resolved against two or more pages before any row was written; 102 verified rows entered the master list (L708-L809). Seven rows whose Tuesday status is disputed between live captures carry open_on_trip_date = null rather than a guess.",
    "queries_run":1129,
-   "candidates_found":1331,
-   "added_to_master":864,
-   "rejected_or_deferred":210,
-   "search_date":"2026-09-07 through 2026-09-16",
+   "candidates_found":1415,
+   "added_to_master":878,
+   "rejected_or_deferred":235,
+   "search_date":"2026-09-16 (pass 21)",
    "cities_covered":[
     "Campbell",
     "Cupertino",
@@ -1565,7 +1565,8 @@ window.TINO_DATA = {
     "San Mateo",
     "Redwood City",
     "San Carlos",
-    "Foster City"
+    "Foster City",
+    "Belmont"
    ],
    "radius_note":"Cupertino first, then the 10-15 mi radius (Sunnyvale, Santa Clara, Campbell, West San Jose, Mountain View, Los Altos, Palo Alto, Menlo Park, Los Gatos, Saratoga, Milpitas); far entries are marked and do not fit the return bus.",
    "levels":{
@@ -1590,7 +1591,8 @@ window.TINO_DATA = {
     "2026-09-11 pass 12 follow-up: four additional lunch-service rows (Last Chance Restaurant, Nar Restaurant, Delarosa Palo Alto, and Madera at Rosewood Sand Hill) were independently checked for address and weekly hours; prices remain blank where no lunch-special price was printed.",
     "2026-09-12 fourteenth pass: 102 new master rows L708-L809 from six incoming files (batch14_cupertino_sv_sc_mv, batch14_mil_mp_la, batch14_nw_fr, batch14_pa_sm_rc, batch14_sar_fc, batch14_sc_sj). Newark + Fremont carry most of the weight (38 rows). 13 candidates recorded as rejects (out-of-ring, closures, no-data, one duplicate of L459). Bell Tower Cafe (L799) superseded its pass-1 deferral. Seven rows carry open_on_trip_date = null (disputed Tuesday status). Newark Buffet (L758) is the only new priced row ($19.99 lunch buffet). Four verified rows are held back by street-number collisions - see LUNCH-FLAG-69.",
     "Pass 16 method note: the fastest reliable capture pattern is one multi-business query - 'yelp <City> hours address \"Name1\" \"Name2\" \"Name3\" \"Name4\"' - which returns two or three complete Yelp business captures (per-day hours, address, phone, price band, website) per search. City-level 'TOP 10 BEST Lunch' queries are only good for discovery because they print names and review quotes without addresses. Yelp pages themselves return HTTP 403 to direct fetches, so every Yelp citation in this pass is a dated search capture, and the verification level says so.",
-    "Pass 20 (2026-09-16): swept the ring (Cupertino, Sunnyvale, Santa Clara, Mountain View, Palo Alto, Los Altos, Campbell, Los Gatos, Milpitas, Fremont, Newark, Union City, Saratoga, San Jose). Screened ~859 existing dedupe keys against the master and reject lists before opening a single page. 1 net-new row merged (L864 Mastro's Steakhouse Santa Clara - official lunch menu 2-2, 12 PM - 4 PM). 10 new rejections (R201-R210): Erthya, Peppermint, Happy Flower Eatery, Chaat House (no official sources), ZhangFei Hot Pot, Sake2Sushi (reviewer-quoted AYCE prices only), Naga's Kitchen, Taiwan Porridge (no lunch special), Pier 98 Sushi (old reviewer prices), Los Altos Taqueria (wrong state). The 10-15 mile ring is saturated at this verification standard after 20 passes and 1,319+ candidates."
+    "Pass 20 (2026-09-16): swept the ring (Cupertino, Sunnyvale, Santa Clara, Mountain View, Palo Alto, Los Altos, Campbell, Los Gatos, Milpitas, Fremont, Newark, Union City, Saratoga, San Jose). Screened ~859 existing dedupe keys against the master and reject lists before opening a single page. 1 net-new row merged (L864 Mastro's Steakhouse Santa Clara - official lunch menu 2-2, 12 PM - 4 PM). 10 new rejections (R201-R210): Erthya, Peppermint, Happy Flower Eatery, Chaat House (no official sources), ZhangFei Hot Pot, Sake2Sushi (reviewer-quoted AYCE prices only), Naga's Kitchen, Taiwan Porridge (no lunch special), Pier 98 Sushi (old reviewer prices), Los Altos Taqueria (wrong state). The 10-15 mile ring is saturated at this verification standard after 20 passes and 1,319+ candidates.",
+    "Pass 21 (2026-09-16): opened Foster City and San Carlos cores plus Belmont, Union City and a Redwood City dedupe sweep. 84 candidates resolved against a 1072-key dedupe index (1,415 cumulative); queries not tallied this pass so queries_run is unchanged. 14 net-new rows merged (L865-L878: 7 official-priced, 2 official-unpriced, 1 official absence, 3 listing-priced, 1 listing-unpriced) and 25 new rejections. Reviewer-quoted prices held out throughout; traps caught include a hijacked restaurant domain (Joy, gambling spam), a satellite-domain lunch page that redirects (Yan's Garden), and a $13-14 vs $16 price conflict (Hot Wok Bistro Too). LUNCH-FLAG-120-132. See docs/REVIEW_2026-09-16_pass21.md."
    ],
    "note_fourth_pass":"Fourth search pass added 49 rows (L102-L150): Lazy Dog $8.95+, Tomatina Pick Two $13.50, The Hut Taco Tuesday $9, Pasta Market Gourmet Lunch $14.95, Urban Grill weekday buffet $16.99 (two-domain conflict), Local Kitchens combos $13.00-$17.50, Sakoon buffet $19.99-$24.99 (Wed-Sun only), plus hours-verified rows with no published lunch special. 9 candidates were rejected this pass (closed, dinner-only, or no verifiable address).",
    "note_seventh_pass":"Seventh search pass added 100 rows (L253-L352). Only fully verified rows were written: 48 listing-level, 27 review-level, 20 official-level, 4 conflicting, 1 unverified (Taiwan Restaurant SJ - no hours captured). Three verified venues remain unmerged due to address-key collisions (see notes) and are listed in flags.json.",
@@ -43673,6 +43675,778 @@ window.TINO_DATA = {
     "phone":"(408) 735-1777",
     "id":"L864",
     "added_in":"batch20_pass20_ring_sweep.json"
+   },
+   {
+    "address":"421 Warner Street, San Carlos, CA 94070",
+    "area":"Downtown San Carlos (Laurel St)",
+    "city":"San Carlos",
+    "coords":[
+     37.504105,
+     -122.258514
+    ],
+    "coords_source":"TripAdvisor map pin for The Cask",
+    "cuisine":"American / Californian wine bar",
+    "days_open":"Daily: Mon-Sat 11:00 AM - 10:00 PM, Sun 11:00 AM - 9:00 PM (own site; TripAdvisor says Mon-Thu close 9:00 PM)",
+    "distance_mi":18.2,
+    "fits_return_bus":{
+     "note":"San Carlos, not on the Cupertino VTA 55 walk. ~11 mi from destination.",
+     "ok":false
+    },
+    "flags":[
+     "CONFLICT: own site says Mon-Sat 11am-10pm; TripAdvisor hours grid says Mon-Thu 11:00 AM - 9:00 PM, Fri-Sat 11:00 AM - 10:00 PM. Tuesday close is 9 PM or 10 PM depending on source.",
+     "Phone (650) 610-0438 matches on own site and TripAdvisor; address 421 Warner Street confirmed by TripAdvisor."
+    ],
+    "hours_tuesday":"11:00 AM - 10:00 PM",
+    "lunch_special":{
+     "days":"Monday-Friday",
+     "includes":"3 courses: starter (mixed green salad or cup of soup), main (pan seared salmon, cheese ravioli, chicken piccata, Cask's sliders, or linguini pomodoro), gelato dessert. $5 wine (chardonnay/cabernet, limit 2/person) with lunch.",
+     "name":"3 Course Lunch Special",
+     "price_from":20.0,
+     "price_to":null,
+     "window":"11:00 AM - 3:00 PM"
+    },
+    "name":"The Cask Wine Bar",
+    "open_on_trip_date":true,
+    "phone":"(650) 610-0438",
+    "review_links":{
+     "google_maps":"https://www.google.com/maps/search/?api=1&query=The+Cask+Wine+Bar+421+Warner+Street+San+Carlos+CA",
+     "yelp":"https://www.yelp.com/search?find_desc=The+Cask+Wine+Bar&find_loc=San+Carlos%2C+CA"
+    },
+    "verification":{
+     "accessed":"2026-09-16",
+     "level":"official",
+     "sources":[
+      {
+       "label":"Official site - 3 Course Lunch Special $20 Mon-Fri 11AM-3PM",
+       "url":"https://www.thecaskwinebar.com/3-course-lunch-special/"
+      },
+      {
+       "label":"Official site homepage - daily hours Mon-Sat 11am-10pm, Sun 11am-9pm",
+       "url":"https://www.thecaskwinebar.com/"
+      },
+      {
+       "label":"TripAdvisor - 421 Warner Street address, phone, hours grid",
+       "url":"https://www.tripadvisor.com/Restaurant_Review-g33011-d4649757-Reviews-The_Cask-San_Carlos_California.html"
+      }
+     ]
+    },
+    "id":"L865",
+    "added_in":"batch21_pass21_ring_verified.json"
+   },
+   {
+    "address":"1473 Beach Park Blvd, Foster City, CA 94404",
+    "area":"Beach Park Blvd",
+    "city":"Foster City",
+    "coords":null,
+    "coords_source":"not geocoded",
+    "cuisine":"Thai",
+    "days_open":"Mon-Fri 11:00 AM - 2:30 PM, 5:00 PM - 9:30 PM; Sat 12:00 PM - 3:30 PM, 5:00 PM - 9:30 PM; Sun lunch from 12:00 PM (Yelp; Sunday close not captured)",
+    "distance_mi":null,
+    "fits_return_bus":{
+     "note":"Foster City, not on the Cupertino VTA 55 walk.",
+     "ok":false
+    },
+    "flags":[
+     "Official menu carries a 'Price Increase Notice' - lunch prices may rise; re-verify before visiting.",
+     "Sunday closing time was cut off in the Yelp hours listing and is not restated here.",
+     "Address and hours from Yelp listing; prices and lunch-special days from the restaurant's own menu page."
+    ],
+    "hours_tuesday":"11:00 AM - 2:30 PM, 5:00 PM - 9:30 PM",
+    "lunch_special":{
+     "days":"Monday-Friday",
+     "includes":"OVER RICE PLATE LUNCH SPECIAL $15.95 each (Sweet Basil, Garlic & Pepper, Pad Eggplant, String Beans, Pad Ginger, Pad Ped, Pad Prik Sod, Vegetable Combination); LUNCH CHEF'S SUGGESTIONS RICE PLATE $16.50-$19.95 (L-Pumpkin Curry $16.50 through L-Bangkok Duck $19.95).",
+     "name":"Lunch Special (over-rice plates and chef's lunch plates)",
+     "price_from":15.95,
+     "price_to":19.95,
+     "window":"Mon-Fri lunch (lunch service 11:00 AM - 2:30 PM per Yelp)"
+    },
+    "name":"Sweet Basil Thai Cuisine",
+    "open_on_trip_date":true,
+    "phone":"(650) 212-5788",
+    "review_links":{
+     "google_maps":"https://www.google.com/maps/search/?api=1&query=Sweet+Basil+Thai+Cuisine+1473+Beach+Park+Blvd+Foster+City+CA",
+     "yelp":"https://www.yelp.com/biz/sweet-basil-thai-cuisine-foster-city?start=1040"
+    },
+    "verification":{
+     "accessed":"2026-09-16",
+     "level":"official",
+     "sources":[
+      {
+       "label":"Official site menu - Lunch Special Only Mon-Fri with prices $15.95-$19.95",
+       "url":"https://www.sweetbasilthaifostercity.com/menu"
+      },
+      {
+       "label":"Official site homepage - restaurant identity and phone",
+       "url":"https://www.sweetbasilthaifostercity.com/"
+      },
+      {
+       "label":"Yelp listing - 1473 Beach Park Blvd address and weekly hours",
+       "url":"https://www.yelp.com/biz/sweet-basil-thai-cuisine-foster-city?start=1040"
+      }
+     ]
+    },
+    "id":"L866",
+    "added_in":"batch21_pass21_ring_verified.json"
+   },
+   {
+    "address":"1000 Metro Center Blvd Ste A, Foster City, CA 94404",
+    "area":"Metro Center",
+    "city":"Foster City",
+    "coords":null,
+    "coords_source":"not geocoded (zmenu geo for this address duplicates its Foster City fallback point, so it was not used)",
+    "cuisine":"Chinese",
+    "days_open":"Mon-Thu lunch 11:30 AM - 2:15 PM, dinner 5:00 PM - 9:00 PM; Fri-Sun lunch 11:00 AM - 2:30 PM, dinner 5:00 PM - 9:00 PM (official, open daily incl. holidays)",
+    "distance_mi":null,
+    "fits_return_bus":{
+     "note":"Foster City, not on the Cupertino VTA 55 walk.",
+     "ok":false
+    },
+    "flags":[
+     "No-tipping restaurant: 7% takeout / 18% dine-in service charge is added to all bills (official menu page).",
+     "Lunchboxes are explicitly 'not sold at dinner' per the official menu structured data."
+    ],
+    "hours_tuesday":"11:30 AM - 2:15 PM, 5:00 PM - 9:00 PM",
+    "lunch_special":{
+     "days":"Daily (lunch service hours)",
+     "includes":"7 lunchbox options, each $15.00: Mapo Tofu, Broccoli Beef, Orange Chicken, General Zwuh's Chicken, Eggplant Garlic Sauce, Kung Pao Chicken, Mongolian Beef. Add two egg rolls $2.00.",
+     "name":"Lunchboxes (not sold at dinner)",
+     "price_from":15.0,
+     "price_to":null,
+     "window":"Tue-Thu lunch 11:30 AM - 2:15 PM; Fri-Sun lunch 11:00 AM - 2:30 PM"
+    },
+    "name":"Chez Xue",
+    "open_on_trip_date":true,
+    "phone":"(650) 267-8888",
+    "review_links":{
+     "google_maps":"https://www.google.com/maps/search/?api=1&query=Chez+Xue+1000+Metro+Center+Blvd+Foster+City+CA",
+     "yelp":"https://www.yelp.com/search?find_desc=Chez+Xue&find_loc=Foster+City%2C+CA"
+    },
+    "verification":{
+     "accessed":"2026-09-16",
+     "level":"official",
+     "sources":[
+      {
+       "label":"Official menu - Lunchboxes section, all $15.00",
+       "url":"https://chezxue.com/menu/"
+      },
+      {
+       "label":"Official homepage - full weekly hours, address, phone",
+       "url":"https://chezxue.com/"
+      },
+      {
+       "label":"zmenu listing - 1000 Metro Center Blvd A address and matching hours",
+       "url":"https://www.zmenu.com/chez-xue-foster-city-2-online-menu/"
+      }
+     ]
+    },
+    "id":"L867",
+    "added_in":"batch21_pass21_ring_verified.json"
+   },
+   {
+    "address":"716 Laurel Street, San Carlos, CA 94070",
+    "area":"Downtown San Carlos (Tivoli building)",
+    "city":"San Carlos",
+    "coords":null,
+    "coords_source":"not geocoded",
+    "cuisine":"American steakhouse / regional American",
+    "days_open":"Mon-Thu 11:30 AM - 9:00 PM; Fri 11:30 AM - 10:00 PM; Sat 10:00 AM - 10:00 PM; Sun 10:00 AM - 9:00 PM; brunch Sat-Sun 10 AM - 2:30 PM (official)",
+    "distance_mi":null,
+    "fits_return_bus":{
+     "note":"San Carlos, not on the Cupertino VTA 55 walk.",
+     "ok":false
+    },
+    "flags":[
+     "The lunch PDF does not state Power Lunch days/hours; it is the restaurant's standing lunch menu served from the 11:30 AM open. Window below is the lunch-service open, not a printed special window.",
+     "First-come first-served, no reservations (official site)."
+    ],
+    "hours_tuesday":"11:30 AM - 9:00 PM",
+    "lunch_special":{
+     "days":"Daily (standing lunch menu; days not restricted on the PDF)",
+     "includes":"Choice of one starter (cup of soup, BLT wedge, spring mix, warm napa cabbage salad, spicy tuna roll, vegetable roll) + one entree (Super Bowl, Shaking Beef, Chicken Enchiladas, Mom's Meatloaf, NY Steak Tacos, Hot Chicken Sliders, Half Salmon BLT).",
+     "name":"Power Lunch",
+     "price_from":25.0,
+     "price_to":null,
+     "window":"Lunch service from 11:30 AM (window not printed on menu)"
+    },
+    "name":"TOWN",
+    "open_on_trip_date":true,
+    "phone":"(650) 595-3003",
+    "review_links":{
+     "google_maps":"https://www.google.com/maps/search/?api=1&query=TOWN+restaurant+716+Laurel+Street+San+Carlos+CA",
+     "yelp":"https://www.yelp.com/biz/town-san-carlos-4"
+    },
+    "verification":{
+     "accessed":"2026-09-16",
+     "level":"official",
+     "sources":[
+      {
+       "label":"Official Current Lunch Menu PDF - Power Lunch $25 starter+entree",
+       "url":"https://www.townsc.com/s/Current-Lunch-Menu.pdf"
+      },
+      {
+       "label":"Official homepage - 716 Laurel St address, hours, menu links",
+       "url":"https://www.townsc.com/"
+      },
+      {
+       "label":"Yelp listing - matching address and hours",
+       "url":"https://www.yelp.com/biz/town-san-carlos-4"
+      }
+     ]
+    },
+    "id":"L868",
+    "added_in":"batch21_pass21_ring_verified.json"
+   },
+   {
+    "address":"777 Laurel St, San Carlos, CA 94070",
+    "area":"Downtown San Carlos (Laurel St)",
+    "city":"San Carlos",
+    "coords":null,
+    "coords_source":"not geocoded",
+    "cuisine":"Italian",
+    "days_open":"Mon-Thu 11:00 AM - 9:00 PM; Fri-Sat 11:00 AM - 9:30 PM; Sun 11:00 AM - 9:00 PM (Yelp)",
+    "distance_mi":null,
+    "fits_return_bus":{
+     "note":"San Carlos, not on the Cupertino VTA 55 walk.",
+     "ok":false
+    },
+    "flags":[
+     "Official lunch page lists dishes but NO prices - price columns deliberately left empty.",
+     "Address and hours from Yelp; lunch menu existence from the restaurant's own site."
+    ],
+    "hours_tuesday":"11:00 AM - 9:00 PM",
+    "lunch_special":{
+     "days":"Daily (lunch menu; no day restriction published)",
+     "includes":"Appetizers, salads, sandwiches (choice of ciabatta or lettuce wrap with greens or garlic fries), pastas, entrees. No prices published on the official lunch page.",
+     "name":"Lunch menu (no prices published)",
+     "price_from":null,
+     "price_to":null,
+     "window":"Lunch service from 11:00 AM (window not published)"
+    },
+    "name":"Pranzi",
+    "open_on_trip_date":true,
+    "phone":"(650) 453-3768",
+    "review_links":{
+     "google_maps":"https://www.google.com/maps/search/?api=1&query=Pranzi+777+Laurel+St+San+Carlos+CA",
+     "yelp":"https://www.yelp.com/biz/pranzi-san-carlos-5"
+    },
+    "verification":{
+     "accessed":"2026-09-16",
+     "level":"official",
+     "sources":[
+      {
+       "label":"Official site lunch page - full lunch menu, no prices",
+       "url":"https://www.pranzisc.com/menu/"
+      },
+      {
+       "label":"Yelp listing - 777 Laurel St address and weekly hours",
+       "url":"https://www.yelp.com/biz/pranzi-san-carlos-5"
+      }
+     ]
+    },
+    "id":"L869",
+    "added_in":"batch21_pass21_ring_verified.json"
+   },
+   {
+    "address":"1489 Beach Park Blvd, Foster City, CA 94404",
+    "area":"Beach Park Blvd",
+    "city":"Foster City",
+    "coords":[
+     37.563442,
+     -122.25059
+    ],
+    "coords_source":"TripAdvisor geo for Joy Restaurant",
+    "cuisine":"Taiwanese / Chinese",
+    "days_open":"Mon, Wed-Sun 11:00 AM - 2:30 PM, 5:00 PM - 9:00 PM; Tue CLOSED (Yelp + restaurantji agree)",
+    "distance_mi":21.11,
+    "fits_return_bus":{
+     "note":"CLOSED on Tuesdays, so not usable on the Tuesday trip date. Foster City in any case.",
+     "ok":false
+    },
+    "flags":[
+     "CLOSED ON TUESDAYS - the trip date. Listed for the master lunch-special list, not for the trip.",
+     "Price is aggregator-sourced (menuweb.menu), NOT from a restaurant-controlled page. Do not treat as officially verified pricing.",
+     "The domain 5joyrestaurant.com, listed as the restaurant website on aggregators, now serves Indonesian gambling/slot content - domain hijacked or lapsed. Not cited as a source.",
+     "TripAdvisor Thursday dinner runs to 9:30 PM in JSON-LD vs 9:00 PM elsewhere - minor conflict."
+    ],
+    "hours_tuesday":"Closed",
+    "lunch_special":{
+     "days":"Mon, Wed-Sun (lunch service; Tue closed)",
+     "includes":"Aggregator menu shows Lunch Special items at $13.00: Beef with Satay Sauce (Taiwanese style), Fried Tofu with Black Bean Sauce, Sweet and Sour Chicken, Shrimp with Sweet and Sour Sauce, Shrimp with Hot Garlic Sauce, Ma-Po Tofu.",
+     "name":"Lunch Special (aggregator menu)",
+     "price_from":13.0,
+     "price_to":null,
+     "window":"11:00 AM - 2:30 PM (lunch service)"
+    },
+    "name":"Joy Restaurant",
+    "open_on_trip_date":false,
+    "phone":"(650) 345-1762",
+    "review_links":{
+     "google_maps":"https://www.google.com/maps/search/?api=1&query=Joy+Restaurant+1489+Beach+Park+Blvd+Foster+City+CA",
+     "yelp":"https://www.yelp.com/biz/joy-restaurant-foster-city-4"
+    },
+    "verification":{
+     "accessed":"2026-09-16",
+     "level":"listing",
+     "sources":[
+      {
+       "label":"menuweb.menu aggregator - Lunch Special items $13.00",
+       "url":"https://menuweb.menu/restaurants/foster-city/joy-18"
+      },
+      {
+       "label":"Yelp listing - 1489 Beach Park Blvd, Tue closed, lunch/dinner hours",
+       "url":"https://www.yelp.com/biz/joy-restaurant-foster-city-4"
+      },
+      {
+       "label":"restaurantji listing - matching address, Tue closed, hours",
+       "url":"https://www.restaurantji.com/ca/foster-city/joy-restaurant-/"
+      }
+     ]
+    },
+    "id":"L870",
+    "added_in":"batch21_pass21_ring_verified.json"
+   },
+   {
+    "address":"1541 Laurel Street, San Carlos, CA 94070",
+    "area":"Downtown San Carlos (Laurel St)",
+    "city":"San Carlos",
+    "coords":null,
+    "coords_source":"not geocoded",
+    "cuisine":"Chinese (Szechuan / Cantonese)",
+    "days_open":"Mon-Sat 11:30 AM - 8:00 PM; Sun Closed (beyondmenu info page)",
+    "distance_mi":null,
+    "fits_return_bus":{
+     "note":"San Carlos, not on the Cupertino VTA 55 walk.",
+     "ok":false
+    },
+    "flags":[
+     "CONFLICT: beyondmenu lunch specials are $13.00-$14.00, but the musteatfood San Carlos guide (2026) says the lunch special is $16. Aggregator price kept; blog figure held out.",
+     "Beyondmenu says 'Not accepting online orders' - menu may be stale. Re-verify before visiting.",
+     "No restaurant-controlled website found; priced from the published beyondmenu menu only."
+    ],
+    "hours_tuesday":"11:30 AM - 8:00 PM",
+    "lunch_special":{
+     "days":"Mon-Sat (lunch service days)",
+     "includes":"20 lunch specials served with steamed or fried rice and soup (brown rice or chow mein +$1): items 1-14 at $13.00 (vegetable, tofu, chicken, pork, beef), items 15-20 at $14.00 (beef stew, shrimp, fish).",
+     "name":"Lunch Specials (beyondmenu published menu)",
+     "price_from":13.0,
+     "price_to":14.0,
+     "window":"11:30 AM - 3:00 PM"
+    },
+    "name":"Hot Wok Bistro Too",
+    "open_on_trip_date":true,
+    "phone":"not captured",
+    "review_links":{
+     "google_maps":"https://www.google.com/maps/search/?api=1&query=Hot+Wok+Bistro+Too+1541+Laurel+Street+San+Carlos+CA"
+    },
+    "verification":{
+     "accessed":"2026-09-16",
+     "level":"listing",
+     "sources":[
+      {
+       "label":"beyondmenu published menu - Lunch Specials $13-$14, served 11:30am-3pm",
+       "url":"https://www.beyondmenu.com/48599/san-carlos/hot-wok-bistro-too-san-carlos-94070.aspx"
+      },
+      {
+       "label":"beyondmenu info page - 1541 Laurel St address, Mon-Sat 11:30-8, Sun closed",
+       "url":"https://www.beyondmenu.com/48599/san-carlos/hot-wok-bistro-too-san-carlos-94070/info.aspx"
+      }
+     ]
+    },
+    "id":"L871",
+    "added_in":"batch21_pass21_ring_verified.json"
+   },
+   {
+    "address":"773 Laurel St, San Carlos, CA 94070",
+    "area":"Downtown San Carlos (Laurel St)",
+    "city":"San Carlos",
+    "coords":null,
+    "coords_source":"not geocoded",
+    "cuisine":"New American fusion / bar & grill",
+    "days_open":"Sun-Thu 11:30 AM - 9:00 PM; Fri-Sat 11:30 AM - 9:30 PM (own site; Yelp says 11:00 AM open daily)",
+    "distance_mi":null,
+    "fits_return_bus":{
+     "note":"San Carlos, not on the Cupertino VTA 55 walk.",
+     "ok":false
+    },
+    "flags":[
+     "VERIFIED ABSENCE: the official site publishes one all-day menu (no lunch section, no lunch special) plus banquet menus. Listed so it is not re-screened.",
+     "CONFLICT: own site opens 11:30 AM; Yelp says 11:00 AM open daily with matching closes.",
+     "Yelp reviewer-quoted '$19.95 lunch special' held out - no lunch special on any restaurant-controlled page.",
+     "3% credit-card processing fee; 20% service fee on parties of 6+ (official menu footer)."
+    ],
+    "hours_tuesday":"11:30 AM - 9:00 PM",
+    "lunch_special":{
+     "days":null,
+     "includes":"One all-day priced menu (appetizers $16.95-$22.95, pastas, salads, sandwiches $20.95-$28.95 with fries/salad/soup, meats, seafood, pizza). No lunch-specific section or pricing.",
+     "name":"No lunch special published (one all-day menu)",
+     "price_from":null,
+     "price_to":null,
+     "window":null
+    },
+    "name":"Stamp Bar & Grill",
+    "open_on_trip_date":true,
+    "phone":"(650) 226-5164",
+    "review_links":{
+     "google_maps":"https://www.google.com/maps/search/?api=1&query=Stamp+Bar+Grill+773+Laurel+St+San+Carlos+CA",
+     "yelp":"https://www.yelp.com/biz/stamp-bar-and-grill-san-carlos"
+    },
+    "verification":{
+     "accessed":"2026-09-16",
+     "level":"official",
+     "sources":[
+      {
+       "label":"Official all-day menu - full priced menu, no lunch section",
+       "url":"https://www.stampbarandgrill.com/all-day-menu"
+      },
+      {
+       "label":"Official homepage - hours Sun-Thu 11:30-9, Fri-Sat 11:30-9:30, phone",
+       "url":"https://www.stampbarandgrill.com/"
+      },
+      {
+       "label":"Yelp listing - 773 Laurel St, conflicting 11:00 AM open",
+       "url":"https://www.yelp.com/biz/stamp-bar-and-grill-san-carlos"
+      }
+     ]
+    },
+    "id":"L872",
+    "added_in":"batch21_pass21_ring_verified.json"
+   },
+   {
+    "address":"950 Tower Ln Ste 100, Foster City, CA 94404",
+    "area":"San Mateo Center / Tower Ln",
+    "city":"Foster City",
+    "coords":[
+     37.558334,
+     -122.27656
+    ],
+    "coords_source":"YellowPages geo for Cafe Savini",
+    "cuisine":"Italian cafeteria / sandwiches / salads",
+    "days_open":"Mon-Fri 7:30 AM - 2:00 PM; Sat-Sun Closed (Yelp + restaurantji; YellowPages says close 2:30 PM)",
+    "distance_mi":21.68,
+    "fits_return_bus":{
+     "note":"Foster City, not on the Cupertino VTA 55 walk.",
+     "ok":false
+    },
+    "flags":[
+     "CONFLICT: weekday close is 2:00 PM (Yelp, restaurantji) vs 2:30 PM (YellowPages).",
+     "Suite conflict: Ste 100 (Yelp, YellowPages) vs #1775 (restaurantji).",
+     "Family-owned cafeteria serving Foster City 20+ years; weekday lunch-only operation (official homepage)."
+    ],
+    "hours_tuesday":"7:30 AM - 2:00 PM",
+    "lunch_special":{
+     "days":"Monday-Friday",
+     "includes":"Lunch sandwiches all $8.95 with side salad (ham & swiss, chicken, turkey, prosciutto, tuna, eggplant, pork loin); Combo Meals $8.95 (1/2 sandwich + soup/salad); Entrees of the Day $9.95 (lasagne, penne chicken, penne sausage) with side salad; salads $7.50-$9.25.",
+     "name":"Lunch sandwiches, combos and entrees of the day",
+     "price_from":8.95,
+     "price_to":9.95,
+     "window":"Lunch service (opens 7:30 AM; breakfast served to 10:30 AM)"
+    },
+    "name":"Cafe Savini",
+    "open_on_trip_date":true,
+    "phone":"(650) 572-0330",
+    "review_links":{
+     "google_maps":"https://www.google.com/maps/search/?api=1&query=Cafe+Savini+950+Tower+Ln+Foster+City+CA",
+     "yelp":"https://www.yelp.com/biz/cafe-savini-foster-city-2"
+    },
+    "verification":{
+     "accessed":"2026-09-16",
+     "level":"official",
+     "sources":[
+      {
+       "label":"Official menu - lunch sandwiches/combos/entrees with prices",
+       "url":"https://cafesavini.com/menu/"
+      },
+      {
+       "label":"Official homepage - family cafeteria identity",
+       "url":"https://cafesavini.com/"
+      },
+      {
+       "label":"Yelp listing - 950 Tower Ln Ste 100, Mon-Fri 7:30-2, Sat-Sun closed",
+       "url":"https://www.yelp.com/biz/cafe-savini-foster-city-2"
+      }
+     ]
+    },
+    "id":"L873",
+    "added_in":"batch21_pass21_ring_verified.json"
+   },
+   {
+    "address":"1457 Beach Park Blvd, Foster City, CA 94404",
+    "area":"Beach Park Blvd",
+    "city":"Foster City",
+    "coords":null,
+    "coords_source":"not geocoded",
+    "cuisine":"Japanese / sushi",
+    "days_open":"Mon Closed; Tue-Thu 11:00 AM - 2:30 PM, 5:00 PM - 9:00 PM; Fri 11:00 AM - 2:30 PM, 5:00 PM - 9:30 PM; Sat 12:00 PM - 3:00 PM, 4:30 PM - 9:00 PM; Sun 12:00 PM - 3:00 PM, 4:30 PM - 9:00 PM (Yelp; OpenTable differs on Sat/Sun dinner)",
+    "distance_mi":null,
+    "fits_return_bus":{
+     "note":"Foster City, not on the Cupertino VTA 55 walk.",
+     "ok":false
+    },
+    "flags":[
+     "CONFLICT: Saturday/Sunday dinner - Yelp shows split 12-3 / 4:30-9, OpenTable shows Sat 12-9:30 and Sun 12-9 straight through.",
+     "Serving Foster City since 2007 (official homepage).",
+     "Yelp community notes the old AYCE deal ended under the previous owner - not offered now."
+    ],
+    "hours_tuesday":"11:00 AM - 2:30 PM, 5:00 PM - 9:00 PM",
+    "lunch_special":{
+     "days":"Tue-Sun (lunch service days; Mon closed)",
+     "includes":"Sushi Lunch served with miso soup: Nigiri (5pc)+California Roll $21.95, Special Mixed Sashimi $26.95/10pc, Unagi+California+Shrimp Tempura rolls $24.95, Nigiri (5pc)+Sashimi (5pc) $26.95. Bento Box Lunch with salad, miso soup, rice $17.95-$20.95 (12 combos).",
+     "name":"Sushi Lunch and Bento Box Lunch",
+     "price_from":17.95,
+     "price_to":26.95,
+     "window":"Tue-Fri 11:00 AM - 2:30 PM; Sat-Sun 12:00 PM - 3:00 PM"
+    },
+    "name":"Akizu Sushi Bar & Grill",
+    "open_on_trip_date":true,
+    "phone":"(650) 235-9356",
+    "review_links":{
+     "google_maps":"https://www.google.com/maps/search/?api=1&query=Akizu+Sushi+Bar+Grill+1457+Beach+Park+Blvd+Foster+City+CA",
+     "yelp":"https://www.yelp.com/biz/akizu-sushi-bar-and-grill-foster-city-5"
+    },
+    "verification":{
+     "accessed":"2026-09-16",
+     "level":"official",
+     "sources":[
+      {
+       "label":"Official lunch menu - Sushi Lunch $21.95-$26.95, Bento Box Lunch $17.95-$20.95",
+       "url":"https://akizusushibargrillca.com/food-menu?menu_id=1575795"
+      },
+      {
+       "label":"Official homepage - restaurant identity, online ordering",
+       "url":"https://akizusushibargrillca.com/"
+      },
+      {
+       "label":"OpenTable listing - lunch/dinner daypart hours, Mon closed",
+       "url":"https://www.opentable.com/r/akizu-sushi-bar-and-grill-foster-city"
+      },
+      {
+       "label":"Yelp listing - 1457 Beach Park Blvd, weekly hours",
+       "url":"https://www.yelp.com/biz/akizu-sushi-bar-and-grill-foster-city-5"
+      }
+     ]
+    },
+    "id":"L874",
+    "added_in":"batch21_pass21_ring_verified.json"
+   },
+   {
+    "address":"1696 Laurel Street, San Carlos, CA 94070",
+    "area":"South Laurel St (St. Francis cross-street)",
+    "city":"San Carlos",
+    "coords":null,
+    "coords_source":"not geocoded",
+    "cuisine":"Californian comfort / seasonal",
+    "days_open":"Lunch Tue-Fri 11:30 AM - 2:00 PM; dinner Tue-Sat 5:00 PM - 8:30 PM; brunch Sat-Sun 10:00 AM - 2:00 PM; Mon Closed (official)",
+    "distance_mi":null,
+    "fits_return_bus":{
+     "note":"San Carlos, not on the Cupertino VTA 55 walk.",
+     "ok":false
+    },
+    "flags":[
+     "No prices published on any official page - price columns deliberately left empty.",
+     "No reservations; takeout via web-menu link (official)."
+    ],
+    "hours_tuesday":"11:30 AM - 2:00 PM, 5:00 PM - 8:30 PM",
+    "lunch_special":{
+     "days":"Tuesday-Friday",
+     "includes":"Weekday lunch service (salads, sandwiches, daily-changing tartine per 2014 local press; current menu behind online-ordering link). No lunch prices published.",
+     "name":"Weekday lunch (no prices published)",
+     "price_from":null,
+     "price_to":null,
+     "window":"11:30 AM - 2:00 PM"
+    },
+    "name":"Johnston's Saltbox",
+    "open_on_trip_date":true,
+    "phone":"650-592-7258",
+    "review_links":{
+     "google_maps":"https://www.google.com/maps/search/?api=1&query=Johnston+s+Saltbox+1696+Laurel+Street+San+Carlos+CA"
+    },
+    "verification":{
+     "accessed":"2026-09-16",
+     "level":"official",
+     "sources":[
+      {
+       "label":"Official visit-us page - 1696 Laurel St, lunch Tue-Fri 11:30-2, dinner, brunch, Mon closed",
+       "url":"https://johnstonsaltbox.com/visitus"
+      },
+      {
+       "label":"2014 local press writeup - lunch menu description, same address",
+       "url":"https://650food.com/2014/05/09/eat-local-johnstons-saltbox-in-san-carlos/"
+      }
+     ]
+    },
+    "id":"L875",
+    "added_in":"batch21_pass21_ring_verified.json"
+   },
+   {
+    "address":"885 Laurel St, San Carlos, CA 94070",
+    "area":"Downtown San Carlos (Laurel St)",
+    "city":"San Carlos",
+    "coords":[
+     37.5029497,
+     -122.2565564
+    ],
+    "coords_source":"ordering-page JSON-LD geo for Yan's Garden San Carlos",
+    "cuisine":"Chinese + boba",
+    "days_open":"Daily 11:00 AM - 3:00 PM, 4:30 PM - 9:00 PM (Yelp; ordering-page JSON-LD differs - see flags)",
+    "distance_mi":18.07,
+    "fits_return_bus":{
+     "note":"San Carlos, not on the Cupertino VTA 55 walk.",
+     "ok":false
+    },
+    "flags":[
+     "IRREGULAR: the San Carlos lunch-special page lives on the Pleasant Hill sister store's ordering domain (pleasanthillyansgarden.com) and that URL now redirects to the Pleasant Hill homepage - re-verify.",
+     "CONFLICT: Yelp shows daily 11-3/4:30-9; the ordering page JSON-LD shows no Tuesday at all, dinner 4:30-8:30, Sat lunch from 12:00.",
+     "Only the first lunch item price ($16.99 Beef Stew) was captured before the redirect; full range unverified so price_to is null.",
+     "Official Wix site confirms 885 Laurel St but carries no menu prices."
+    ],
+    "hours_tuesday":"11:00 AM - 3:00 PM, 4:30 PM - 9:00 PM",
+    "lunch_special":{
+     "days":"Monday-Saturday",
+     "includes":"Lunch Special served with soup of the day, fried zucchini, steamed or fried rice (+$0.75 for chow mein/brown rice; no soup on takeout). Item 1 Beef Stew (Lunch) $16.99; further items unverified.",
+     "name":"Lunch Special (satellite ordering page)",
+     "price_from":16.99,
+     "price_to":null,
+     "window":"11:30 AM - 3:00 PM"
+    },
+    "name":"Yan's Garden",
+    "open_on_trip_date":true,
+    "phone":"(650) 593-9777",
+    "review_links":{
+     "google_maps":"https://www.google.com/maps/search/?api=1&query=Yan+s+Garden+885+Laurel+St+San+Carlos+CA",
+     "yelp":"https://www.yelp.com/biz/yans-garden-san-carlos"
+    },
+    "verification":{
+     "accessed":"2026-09-16",
+     "level":"listing",
+     "sources":[
+      {
+       "label":"Satellite ordering lunch page - Lunch Special Mon-Sat 11:30-3, Beef Stew $16.99",
+       "url":"https://www.pleasanthillyansgarden.com/xa9opkq5/yans-garden-san-carlos-94070/menu?menu=Lunch+Menu"
+      },
+      {
+       "label":"Official Wix site - 885 Laurel St San Carlos identity",
+       "url":"https://www.yansgarden.com/"
+      },
+      {
+       "label":"Yelp listing - matching address, phone, daily hours",
+       "url":"https://www.yelp.com/biz/yans-garden-san-carlos"
+      }
+     ]
+    },
+    "id":"L876",
+    "added_in":"batch21_pass21_ring_verified.json"
+   },
+   {
+    "address":"1625 El Camino Real Ste 9, Belmont, CA 94002",
+    "area":"El Camino Real, Belmont",
+    "city":"Belmont",
+    "coords":null,
+    "coords_source":"not geocoded",
+    "cuisine":"Cantonese / Chinese cafe",
+    "days_open":"Tue-Sun 11:00 AM - 2:30 PM, 4:00 PM - 8:30 PM; Mon Closed (majority of 3 sources; conflicts flagged)",
+    "distance_mi":null,
+    "fits_return_bus":{
+     "note":"Belmont, not on the Cupertino VTA 55 walk.",
+     "ok":false
+    },
+    "flags":[
+     "CONFLICT: Monday - beyondmenu and wherevi say Closed, restaurantji says open 11-2:30/4-8:30.",
+     "CONFLICT: Sunday - beyondmenu and wherevi say open, restaurantji says Closed.",
+     "CONFLICT: lunch close 2:30 PM (restaurantji, wherevi) vs 3:00 PM (beyondmenu hours; lunch sets served to 3 PM).",
+     "Beyondmenu says 'Not accepting online orders' - menu may be stale. No restaurant-controlled site found.",
+     "Yelp tags it Lunch Specials; reviewer quote on lunch specials held out of the price column."
+    ],
+    "hours_tuesday":"11:00 AM - 2:30 PM, 4:00 PM - 8:30 PM",
+    "lunch_special":{
+     "days":"Tuesday-Sunday",
+     "includes":"Lunch Combination Set $10.95-$16.95 (baked meats/seafood with rice or spaghetti + house soup; +$1 milk/lemon tea); Lunch Rice Plate from $8.50 (Kung Pao/Cashew chicken, tofu plates $8.50; beef/fish plates $8.95).",
+     "name":"Lunch Combination Set and Lunch Rice Plate",
+     "price_from":8.5,
+     "price_to":16.95,
+     "window":"11:00 AM - 3:00 PM"
+    },
+    "name":"Blue Sky Cafe",
+    "open_on_trip_date":true,
+    "phone":"(650) 595-0228",
+    "review_links":{
+     "google_maps":"https://www.google.com/maps/search/?api=1&query=Blue+Sky+Cafe+1625+El+Camino+Real+Belmont+CA",
+     "yelp":"https://www.yelp.com/search?find_desc=Blue+Sky+Cafe&find_loc=Belmont%2C+CA"
+    },
+    "verification":{
+     "accessed":"2026-09-16",
+     "level":"listing",
+     "sources":[
+      {
+       "label":"beyondmenu published menu - lunch sets $10.95-$16.95, lunch plates from $8.50, Tue-Sun 11-3",
+       "url":"https://www.beyondmenu.com/54844/belmont/blue-sky-cafe-belmont-94002.aspx"
+      },
+      {
+       "label":"beyondmenu info page - 1625 El Camino Real Ste 9, hours, Mon closed",
+       "url":"https://www.beyondmenu.com/54844/belmont/blue-sky-cafe-belmont-94002/info.aspx"
+      },
+      {
+       "label":"restaurantji listing - conflicting Mon-open/Sun-closed hours",
+       "url":"https://www.restaurantji.com/ca/belmont/blue-sky-cafe-/"
+      }
+     ]
+    },
+    "id":"L877",
+    "added_in":"batch21_pass21_ring_verified.json"
+   },
+   {
+    "address":"1099 Foster Square Ln Ste 120, Foster City, CA 94404",
+    "area":"Foster Square",
+    "city":"Foster City",
+    "coords":null,
+    "coords_source":"not geocoded (zmenu geo duplicates its Foster City fallback point, so it was not used)",
+    "cuisine":"Japanese fusion / sizzling teppan plates",
+    "days_open":"Daily 11:00 AM - 9:00 PM (Yelp + zmenu + restaurantji agree)",
+    "distance_mi":null,
+    "fits_return_bus":{
+     "note":"Foster City, not on the Cupertino VTA 55 walk.",
+     "ok":false
+    },
+    "flags":[
+     "No Foster City-specific plate prices published - price columns deliberately left empty (chain pattern L691 Cupertino Vallco is $14.99-$17.99, not asserted here).",
+     "CONFLICT: suite 120 (Yelp, zmenu) vs STE 125 (restaurantji).",
+     "L26 (Cupertino Saich Way) records 'no lunch special on the menu despite the name' - the FC row follows the L523/L691 listing precedent (lunch from open daily) instead of duplicating that absence claim for a different store."
+    ],
+    "hours_tuesday":"11:00 AM - 9:00 PM",
+    "lunch_special":{
+     "days":"Daily",
+     "includes":"Sizzling teppan lunch plates (beef teriyaki, chicken katsu, seafood yakisoba per zmenu tips); FC-specific prices unpublished. Official homepage has no menu prices (orders via Chowbus).",
+     "name":"Sizzling lunch plates from open (no FC prices published)",
+     "price_from":null,
+     "price_to":null,
+     "window":"11:00 AM - 9:00 PM (lunch served from open)"
+    },
+    "name":"Sizzling Lunch - Foster City",
+    "open_on_trip_date":true,
+    "phone":"(650) 781-3338",
+    "review_links":{
+     "google_maps":"https://www.google.com/maps/search/?api=1&query=Sizzling+Lunch+Foster+City+1099+Foster+Square+Ln",
+     "yelp":"https://www.yelp.com/biz/sizzling-lunch-foster-city-foster-city"
+    },
+    "verification":{
+     "accessed":"2026-09-16",
+     "level":"listing",
+     "sources":[
+      {
+       "label":"Official homepage - brand, no menu prices, Chowbus ordering",
+       "url":"https://www.sizzlinglunch.com/"
+      },
+      {
+       "label":"Yelp listing - 1099 Foster Square Ln Ste 120, daily 11-9",
+       "url":"https://www.yelp.com/biz/sizzling-lunch-foster-city-foster-city"
+      },
+      {
+       "label":"restaurantji listing - 1099 Foster Square Ln STE 125, daily 11-9",
+       "url":"https://www.restaurantji.com/ca/foster-city/sizzling-lunch-/"
+      }
+     ]
+    },
+    "id":"L878",
+    "added_in":"batch21_pass21_ring_verified.json"
    }
   ],
   "top_picks_for_tuesday_sept_8":[
@@ -46943,6 +47717,398 @@ window.TINO_DATA = {
      }
     ],
     "searched":"2026-09-07"
+   },
+   {
+    "city":"Foster City",
+    "links":[
+     {
+      "label":"rickshawcorner.com menu - item prices, no lunch section",
+      "url":"https://rickshawcorner.com/menu/"
+     },
+     {
+      "label":"TripAdvisor - $8.50/$9.50 lunch special reviewer quotes (undated)",
+      "url":"https://www.tripadvisor.com/Restaurant_Review-g32405-d928697-Reviews-Rickshaw_Corner_Restaurant-Foster_City_California.html"
+     }
+    ],
+    "name":"Rickshaw Corner",
+    "why":"No verified lunch special: the restaurant site menu shows item prices (General Tso's $12.99 etc.) with no lunch section. The $8.50 1-item / $9.50 2-item lunch specials are TripAdvisor reviewer quotes only, undated and unverifiable.",
+    "searched":"2026-09-07"
+   },
+   {
+    "city":"Union City",
+    "links":[
+     {
+      "label":"Yelp listing - 1779 Decoto Rd, lunch/dinner hours",
+      "url":"https://m.yelp.com/biz/din-ding-dumpling-house-union-city-union-city?start=20"
+     },
+     {
+      "label":"zmenu listing - matching address and hours",
+      "url":"https://www.zmenu.com/din-ding-dumpling-house-union-city-union-city-online-menu/"
+     }
+    ],
+    "name":"Din Ding Dumpling House",
+    "why":"Open for lunch (Mon-Fri 11-2:30/5-9, Sat 11-9:30, Sun 11-9) but no lunch special or discount found on any citable page.",
+    "searched":"2026-09-07"
+   },
+   {
+    "city":"Union City",
+    "links":[
+     {
+      "label":"Official menu (read in full, 3 pages) - no lunch section",
+      "url":"https://pacificpourhouse.com/menu"
+     },
+     {
+      "label":"Yelp listing - 32216 Dyer St, Mon closed, Tue-Sun from 12 PM",
+      "url":"https://www.yelp.com/biz/pacific-pourhouse-union-city"
+     }
+    ],
+    "name":"Pacific PourHouse",
+    "why":"Full official menu read (Popular, Appetizers, Entrees, Rice/Noodles/Breads, Biryani, Beverages) - no lunch section or lunch special. Also note Evendo says Mon 5-9:30 PM vs Yelp Mon closed (conflict, moot for rejection).",
+    "searched":"2026-09-07"
+   },
+   {
+    "city":"Union City",
+    "links":[
+     {
+      "label":"Official ordering site - priced items, no lunch section",
+      "url":"https://houseofdumplingsrestaurant.com/"
+     },
+     {
+      "label":"Yelp listing - 109 Appian Way, Tue closed",
+      "url":"https://www.yelp.com/biz/house-of-dumplings-union-city-2?start=70"
+     }
+    ],
+    "name":"House of Dumplings",
+    "why":"Official ordering site shows one all-day priced menu ($9.25-$17.95 items), no lunch special. Closed Tuesdays.",
+    "searched":"2026-09-07"
+   },
+   {
+    "city":"Union City",
+    "links":[
+     {
+      "label":"Official Toast ordering page - menu gated, no items visible",
+      "url":"https://kapow.toast.site/order"
+     },
+     {
+      "label":"Yelp listing - 34571 Alvarado-Niles Rd, split hours",
+      "url":"https://www.yelp.com/biz/kapow-thai-eatery-union-city"
+     }
+    ],
+    "name":"Kapow Thai Eatery",
+    "why":"No verifiable menu or lunch special: the official Toast ordering page is login-gated with no items visible, and no citable lunch-special page exists.",
+    "searched":"2026-09-07"
+   },
+   {
+    "city":"Foster City",
+    "links":[
+     {
+      "label":"Official Foster City store page - address, hours, no buffet mention",
+      "url":"https://tandooripizza.com/foster-city/"
+     },
+     {
+      "label":"Official chain menu - pizzas, no prices, no buffet",
+      "url":"https://tandooripizza.com/menu/"
+     },
+     {
+      "label":"East Bay Times - April 2026 opening, address",
+      "url":"https://www.eastbaytimes.com/2026/04/22/tandoori-pizza-now-open-in-foster-city/"
+     }
+    ],
+    "name":"Tandoori Pizza",
+    "why":"The $13.95 weekday lunch buffet is a Yelp reviewer quote only; no lunch buffet or special appears on the official store page or chain menu. (Also: official Fri-Sat close 11 PM vs Yelp 10 PM.)",
+    "searched":"2026-09-07"
+   },
+   {
+    "city":"Foster City",
+    "links":[
+     {
+      "label":"zmenu listing - 1099 Foster Square Ln #135, hours",
+      "url":"https://www.zmenu.com/mumu-hot-pot-now-open-foster-city-online-menu/"
+     },
+     {
+      "label":"Caviar delivery menu - combos, no lunch section",
+      "url":"https://www.trycaviar.com/store/mumu-hot-pot-foster-city-864410/"
+     }
+    ],
+    "name":"Mumu Hot Pot",
+    "why":"Open for lunch but no lunch special found; only a delivery/app menu with combos ($26-$75), no lunch section or pricing.",
+    "searched":"2026-09-07"
+   },
+   {
+    "city":"San Mateo",
+    "links":[
+     {
+      "label":"Yelp listing - 1208 S El Camino Real San Mateo (not Foster City), brunch hours",
+      "url":"https://www.yelp.com/biz/taste-and-glory-san-mateo"
+     }
+    ],
+    "name":"Taste & Glory",
+    "why":"Breakfast/brunch spot (9 AM - 2/2:30 PM) in San Mateo, not Foster City as the FC search implied. No lunch special found.",
+    "searched":"2026-09-07"
+   },
+   {
+    "city":"San Carlos",
+    "links":[
+     {
+      "label":"Yelp lunch search - 'Good for lunch' tag plus reviewer bento quote only",
+      "url":"https://www.yelp.com/search?find_desc=Lunch&find_loc=San+Carlos%2C+CA+94070"
+     }
+    ],
+    "name":"Soko Soko Japanese Cuisine",
+    "why":"No official site or citable lunch-special menu found. Only evidence is a Yelp 'Good for lunch' tag and one reviewer quote about 'bento lunch specials' - reviewer quotes are not prices.",
+    "searched":"2026-09-07"
+   },
+   {
+    "city":"Belmont",
+    "links":[
+     {
+      "label":"Yelp listing - 1480 El Camino Real, daily split hours",
+      "url":"https://www.yelp.com/biz/dara-thai-belmont"
+     }
+    ],
+    "name":"Dara Thai",
+    "why":"No citable lunch special: only a Yelp reviewer mention. Note: the wheree.com 'Dara Thai Restaurant Menu' result is a Flagstaff, ARIZONA restaurant - wrong-state trap, not cited.",
+    "searched":"2026-09-07"
+   },
+   {
+    "city":"San Carlos",
+    "links":[
+     {
+      "label":"Official homepage - address, phone, ordering link",
+      "url":"https://isarngarden.com/"
+     },
+     {
+      "label":"SmileDining ordering - menu gated behind T&Cs/app",
+      "url":"https://isarngardenca.smiledining.com/"
+     },
+     {
+      "label":"Yelp listing - 1050 El Camino Real, daily 11-3/5-9",
+      "url":"https://www.yelp.com/biz/isarn-garden-thai-cuisine-san-carlos-2"
+     }
+    ],
+    "name":"Isarn Garden Thai Cuisine",
+    "why":"Yelp-tagged Lunch Specials but no citable lunch-special page: the official ordering menu (SmileDining) is app-gated and exposes only terms text. No prices verifiable.",
+    "searched":"2026-09-07"
+   },
+   {
+    "city":"San Carlos",
+    "links":[
+     {
+      "label":"Yelp listing - 663 Laurel St, Tue-Fri lunch window, Mon/Sun closed",
+      "url":"https://www.yelp.com/biz/number5-kitchen-san-carlos?start=80"
+     }
+    ],
+    "name":"Number5 Kitchen",
+    "why":"Lunch window exists (Tue-Fri 11 AM - 2 PM) but no lunch special, lunch menu, or prices published on any citable page. No official site found.",
+    "searched":"2026-09-07"
+   },
+   {
+    "city":"San Carlos",
+    "links":[
+     {
+      "label":"zmenu listing - 1105 San Carlos Ave, hours, geo",
+      "url":"https://www.zmenu.com/esnaf-san-carlos-3-online-menu/"
+     },
+     {
+      "label":"Palo Alto Online - June 2024 opening, address, hours",
+      "url":"https://www.paloaltoonline.com/san-carlos/2024/06/26/turkish-restaurant-esnaf-opens-in-san-carlos/"
+     }
+    ],
+    "name":"Esnaf",
+    "why":"Open for lunch (daily split hours) but no lunch special found and no official site. (Minor: Sat/Sun open 10 AM per zmenu vs 11 AM per Palo Alto Online.)",
+    "searched":"2026-09-07"
+   },
+   {
+    "city":"Foster City",
+    "links":[
+     {
+      "label":"Official site - Daily Special = featured bowl, no discount/price",
+      "url":"https://tsukiraramen.com/"
+     },
+     {
+      "label":"Yelp listing - 3 Plaza View Ln, Wed closed; phone conflict",
+      "url":"https://www.yelp.com/biz/tsukira-ramen-foster-city-2?start=40"
+     },
+     {
+      "label":"Mercury News Jan 2026 - opening, address, hours",
+      "url":"https://www.mercurynews.com/2026/01/21/9-special-bowls-ramen-worth-chasing-down-around-the-bay-area/"
+     }
+    ],
+    "name":"Tsukira Ramen",
+    "why":"No lunch special: the official 'Daily Special' (Mon Black Garlic / Tue Classic / Thu Spicy Tonkotsu) names a featured $18 bowl with no discount or special price. Also: Yelp header phone (415) 689-0638 vs Yelp phone field (628) 286-2021; business update claims everyday 11:30-8:30 vs hours grid Wed closed.",
+    "searched":"2026-09-07"
+   },
+   {
+    "city":"Foster City",
+    "links":[
+     {
+      "label":"Yelp listing - 1100 Foster Square Ln Ste 145, daily 9/8 AM - 2:30 PM",
+      "url":"https://www.yelp.com/biz/toast-in-town-foster-city"
+     },
+     {
+      "label":"Instagram profile - brunch hours, no menu/prices",
+      "url":"https://www.instagram.com/toastintown/"
+     }
+    ],
+    "name":"Toast In Town",
+    "why":"Asian-fusion brunch spot (closes 2:30 PM daily) with no lunch special and no official site - Instagram only.",
+    "searched":"2026-09-07"
+   },
+   {
+    "city":"Foster City",
+    "links":[
+     {
+      "label":"Yelp listing - 969J Edgewater Blvd, Mon-Tue closed",
+      "url":"https://www.yelp.com/biz/nina-s-cafe-foster-city?start=40"
+     }
+    ],
+    "name":"Nina's Cafe",
+    "why":"Closed Monday-Tuesday (incl. the trip date) and no lunch special found - empanada/brunch cafe with no citable lunch-special page.",
+    "searched":"2026-09-07"
+   },
+   {
+    "city":"Foster City",
+    "links":[
+     {
+      "label":"Official menu (read in full) - one all-day menu, no lunch section",
+      "url":"https://falafeltazah.com/menu/"
+     },
+     {
+      "label":"Official homepage - 3 locations, hours",
+      "url":"https://falafeltazah.com/"
+     }
+    ],
+    "name":"Falafel Tazah",
+    "why":"Full official menu read: one all-day priced menu (wraps $10.95-$12.95, plates $16.95-$25.95), no lunch section at any of the 3 locations (Redwood City, Foster City, NEW San Carlos 1135-B Industrial Rd). Oddities for the record: Falafel Dozen and Half Dozen both $10.95; Yelp shows Sun 11-6 vs official site silent on Sunday.",
+    "searched":"2026-09-07"
+   },
+   {
+    "city":"Foster City",
+    "links":[
+     {
+      "label":"Official chain lunch-special page - codes, participation varies by location",
+      "url":"https://currypizzahouse.com/best-pizza-lunch-specials/"
+     },
+     {
+      "label":"Yelp listing - 1100 Foster Square Ln Ste 150, hours",
+      "url":"https://www.yelp.com/biz/curry-pizza-house-foster-city-2"
+     }
+    ],
+    "name":"Curry Pizza House Foster City",
+    "why":"Chain lunch specials are verified at Cupertino (L369: $13.99 Mon-Fri to 4 PM) and advertised chain-wide, but the official page says participation varies by location and no Foster City-specific lunch special was evidenced. Not duplicated on assumption.",
+    "searched":"2026-09-07"
+   },
+   {
+    "city":"Union City",
+    "links":[
+     {
+      "label":"Official PDF menu (read in full) - priced, no lunch section",
+      "url":"https://www.shcunioncity.com/s/SHU-Menu-Union-City-compressed.pdf"
+     },
+     {
+      "label":"Official homepage - 1771 Decoto Rd, daily 11-8:30, happy hour 2:30-5",
+      "url":"https://www.shcunioncity.com/"
+     }
+    ],
+    "name":"Special Hainan Chicken",
+    "why":"Full official PDF menu read ($2-$32.99): no lunch section or lunch special. Dine-in Happy Hour 2:30-5 PM exists but is not lunch. Sister locations incl. Cupertino 10275 S De Anza noted for cross-reference.",
+    "searched":"2026-09-07"
+   },
+   {
+    "city":"Union City",
+    "links":[
+     {
+      "label":"Official site phoga88.com - HTTP 500 on fetch",
+      "url":"https://phoga88.com/"
+     },
+     {
+      "label":"Yelp listing - 1719 Decoto Rd, daily 11-8:30/9",
+      "url":"https://m.yelp.com/biz/pho-ga-88-union-city-3"
+     }
+    ],
+    "name":"Pho Ga 88",
+    "why":"Official site phoga88.com returned HTTP 500; no other citable lunch-special page exists.",
+    "searched":"2026-09-07"
+   },
+   {
+    "city":"Belmont",
+    "links":[
+     {
+      "label":"Official menu page - NO menu items, contact/hours only",
+      "url":"https://www.kirorosushi.com/menu/"
+     },
+     {
+      "label":"Yelp listing - 1200 El Camino Real Ste A-2, hours, ~$20 reviewer quote",
+      "url":"https://www.yelp.com/biz/kiroro-sushi-belmont?start=120"
+     }
+    ],
+    "name":"Kiroro Sushi",
+    "why":"Official menu page publishes no menu at all (contact/hours only). The '~$20 lunch special' is a Yelp reviewer quote. Also: official site says 'Mon: 4:30 AM - 9 PM', an obvious typo for 4:30 PM (Yelp: Mon 4:30-9 PM).",
+    "searched":"2026-09-07"
+   },
+   {
+    "city":"Foster City",
+    "links":[
+     {
+      "label":"Official site cafekazka.com - fetch failed",
+      "url":"https://cafekazka.com/"
+     },
+     {
+      "label":"Yelp listing - 929 Edgewater Blvd Ste B, Mon closed",
+      "url":"https://www.yelp.com/biz/cafe-kazka-foster-city-4"
+     }
+    ],
+    "name":"Cafe Kazka",
+    "why":"HK-style cafe; official site cafekazka.com failed to fetch and no citable lunch-special menu exists elsewhere.",
+    "searched":"2026-09-07"
+   },
+   {
+    "city":"Fremont",
+    "links":[
+     {
+      "label":"Toast ordering - 3909 Thornton Ave Fremont (already listed)",
+      "url":"https://toast.app/r/billy-roys-burgers/order"
+     },
+     {
+      "label":"Yelp listing - same Fremont address",
+      "url":"https://www.yelp.com/biz/billy-roys-burger-fremont-4?start=20"
+     }
+    ],
+    "name":"Billy Roys Burger",
+    "why":"DUPLICATE: the Union City hit resolves to Billy Roy's Burger Co FREMONT (3909 Thornton Ave), already listed. CROSS-CHECK for manual review: its Toast page advertises 'LUNCH MENU 11:00am-4:00pm M-F' - the existing row may be missing this window.",
+    "searched":"2026-09-07"
+   },
+   {
+    "city":"San Mateo",
+    "links":[
+     {
+      "label":"Yelp listing - 2208 Bridgepoint Pkwy San Mateo (nearest; no Foster City store)",
+      "url":"https://www.yelp.com/biz/lazy-dog-restaurant-and-bar-san-mateo"
+     },
+     {
+      "label":"Los Cerritos mall directory - 'lunch specials until 4pm' (Southern California, not local)",
+      "url":"https://www.shoploscerritos.com/Directory/Details/682473"
+     }
+    ],
+    "name":"Lazy Dog Restaurant & Bar",
+    "why":"No Foster City location exists (nearest is San Mateo 2208 Bridgepoint Pkwy). The only 'lunch specials until 4pm' citation is a Southern California mall directory - not usable for a Bay Area row. Cupertino and Newark stores already listed.",
+    "searched":"2026-09-07"
+   },
+   {
+    "city":"Union City",
+    "links":[
+     {
+      "label":"Official Toast site - 31834B Alvarado Blvd, featured item $15.99, no lunch section",
+      "url":"https://guitaste.toast.site/order"
+     },
+     {
+      "label":"Yelp listing - 31834 Alvarado Blvd, Tue closed",
+      "url":"https://www.yelp.com/biz/gui-taste-union-city"
+     }
+    ],
+    "name":"Gui Taste",
+    "why":"Closed Tuesdays; official Toast ordering shows items (featured $15.99 Guilin noodles) but no lunch section or lunch special.",
+    "searched":"2026-09-07"
    }
   ],
   "notes":[
@@ -49075,6 +50241,251 @@ window.TINO_DATA = {
     "link":{
      "label":"Pass-18 shortfall reported honestly: 3 rows, not 100",
      "url":"https://buffedlizard55-lab.github.io/TinoLunchSpecial/"
+    }
+   },
+   {
+    "id":"LUNCH-FLAG-120",
+    "note":"",
+    "date":"2026-09-16",
+    "status":"open",
+    "severity":"info",
+    "title":"Pass-21 yield honesty note (14 verified rows, ring near saturation)",
+    "what_we_found":"Pass 21 screened 100+ candidates across Foster City, San Carlos, Belmont, Union City and Redwood City and netted 14 rows: Foster City and San Carlos cores are nearly exhausted; most Yelp 'lunch' hits are duplicates, brunch spots, or reviewer-quote-only.",
+    "what_we_did":"Capped the pass at genuinely verifiable rows instead of padding with reviewer quotes; recorded 25 rejections with reasons. Continuing to new cities (Menlo Park, Saratoga, Campbell, Los Gatos, Palo Alto, San Mateo) in later passes.",
+    "rows":[
+     "L865",
+     "L866",
+     "L867",
+     "L868",
+     "L869",
+     "L870",
+     "L871",
+     "L872",
+     "L873",
+     "L874",
+     "L875",
+     "L876",
+     "L877",
+     "L878"
+    ],
+    "manual_review":true,
+    "link":{
+     "label":"Pass-21 review doc (after merge to main)",
+     "url":"https://github.com/buffedlizard55-lab/TinoLunchSpecial/blob/main/docs/REVIEW_2026-09-16_pass21.md"
+    }
+   },
+   {
+    "id":"LUNCH-FLAG-121",
+    "note":"",
+    "date":"2026-09-16",
+    "status":"open",
+    "severity":"warn",
+    "title":"Joy Restaurant official domain serves gambling content",
+    "what_we_found":"5joyrestaurant.com, listed as the restaurant website on aggregators, now serves Indonesian slot/gambling spam. Unclear whether hijacked, lapsed, or mis-listed.",
+    "what_we_did":"Did not cite the domain. Priced the L870 row from the menuweb.menu aggregator menu (level listing) and flagged.",
+    "rows":[
+     "L870"
+    ],
+    "manual_review":true,
+    "link":{
+     "label":"menuweb Joy menu",
+     "url":"https://menuweb.menu/restaurants/foster-city/joy-18"
+    }
+   },
+   {
+    "id":"LUNCH-FLAG-122",
+    "note":"",
+    "date":"2026-09-16",
+    "status":"open",
+    "severity":"warn",
+    "title":"Stamp Bar & Grill opening-time conflict 11:30 vs 11:00",
+    "what_we_found":"Own site says daily open 11:30 AM; Yelp listing says 11:00 AM open daily with matching closes (Sun-Thu 9 PM, Fri-Sat 9:30 PM).",
+    "what_we_did":"Kept the own-site 11:30 AM open on the L872 absence row and flagged the conflict.",
+    "rows":[
+     "L872"
+    ],
+    "manual_review":true,
+    "link":{
+     "label":"Official homepage",
+     "url":"https://www.stampbarandgrill.com/"
+    }
+   },
+   {
+    "id":"LUNCH-FLAG-123",
+    "note":"",
+    "date":"2026-09-16",
+    "status":"open",
+    "severity":"warn",
+    "title":"The Cask Wine Bar Tuesday close conflict 10 PM vs 9 PM",
+    "what_we_found":"Own site says Mon-Sat 11 AM - 10 PM; TripAdvisor hours grid says Mon-Thu 11 AM - 9 PM, Fri-Sat 11-10, Sun 11-9.",
+    "what_we_did":"Kept own-site hours on the L865 row and flagged; Tuesday close may be 9 PM.",
+    "rows":[
+     "L865"
+    ],
+    "manual_review":true,
+    "link":{
+     "label":"TripAdvisor The Cask",
+     "url":"https://www.tripadvisor.com/Restaurant_Review-g33011-d4649757-Reviews-The_Cask-San_Carlos_California.html"
+    }
+   },
+   {
+    "id":"LUNCH-FLAG-124",
+    "note":"",
+    "date":"2026-09-16",
+    "status":"open",
+    "severity":"warn",
+    "title":"Hot Wok Bistro Too lunch price conflict $13-14 vs $16 + stale-ordering risk",
+    "what_we_found":"beyondmenu lunch specials are $13-$14 served 11:30-3, but a 2026 San Carlos food blog says the lunch special is $16. beyondmenu also says 'Not accepting online orders', so the menu may be stale.",
+    "what_we_did":"Priced the L871 row from the beyondmenu menu (level listing) and flagged both issues.",
+    "rows":[
+     "L871"
+    ],
+    "manual_review":true,
+    "link":{
+     "label":"beyondmenu menu",
+     "url":"https://www.beyondmenu.com/48599/san-carlos/hot-wok-bistro-too-san-carlos-94070.aspx"
+    }
+   },
+   {
+    "id":"LUNCH-FLAG-125",
+    "note":"",
+    "date":"2026-09-16",
+    "status":"open",
+    "severity":"warn",
+    "title":"Yan's Garden lunch page sits on Pleasant Hill sister domain and redirects",
+    "what_we_found":"The San Carlos lunch-special page (Mon-Sat 11:30-3, Beef Stew $16.99) lives on pleasanthillyansgarden.com and the URL now redirects to the Pleasant Hill homepage; only the first item price was captured. Yelp shows daily 11-3/4:30-9 vs ordering JSON-LD with no Tuesday, dinner 4:30-8:30, Sat lunch from 12.",
+    "what_we_did":"Added the L876 row as level listing with price_to null and flagged; needs re-verification.",
+    "rows":[
+     "L876"
+    ],
+    "manual_review":true,
+    "link":{
+     "label":"Yan's Garden official (Wix)",
+     "url":"https://www.yansgarden.com/"
+    }
+   },
+   {
+    "id":"LUNCH-FLAG-126",
+    "note":"",
+    "date":"2026-09-16",
+    "status":"open",
+    "severity":"warn",
+    "title":"Blue Sky Cafe Monday/Sunday/lunch-close conflicts across 3 sources",
+    "what_we_found":"beyondmenu + wherevi: Mon closed, Sun open; restaurantji: Mon open, Sun closed. Lunch close 2:30 (restaurantji, wherevi) vs 3:00 (beyondmenu). beyondmenu says 'Not accepting online orders'.",
+    "what_we_did":"Took the 2-of-3 majority (Mon closed, Sun open, L877 row) and flagged all three conflicts.",
+    "rows":[
+     "L877"
+    ],
+    "manual_review":true,
+    "link":{
+     "label":"beyondmenu menu",
+     "url":"https://www.beyondmenu.com/54844/belmont/blue-sky-cafe-belmont-94002.aspx"
+    }
+   },
+   {
+    "id":"LUNCH-FLAG-127",
+    "note":"",
+    "date":"2026-09-16",
+    "status":"open",
+    "severity":"info",
+    "title":"Cross-check: existing Billy Roy's Fremont row may miss Toast lunch menu",
+    "what_we_found":"While rejecting the Union City duplicate, the Fremont store's official Toast page was found to advertise 'LUNCH MENU 11:00am-4:00pm M-F' - verify whether the existing Billy Roy's Burger Co Fremont row captures it.",
+    "what_we_did":"Filed for manual review; no existing row edited.",
+    "rows":[],
+    "manual_review":true,
+    "link":{
+     "label":"Toast Billy Roy's",
+     "url":"https://toast.app/r/billy-roys-burgers/order"
+    }
+   },
+   {
+    "id":"LUNCH-FLAG-128",
+    "note":"",
+    "date":"2026-09-16",
+    "status":"open",
+    "severity":"warn",
+    "title":"Akizu Sushi Sat/Sun dinner conflict: split hours vs straight through",
+    "what_we_found":"Yelp: Sat/Sun 12-3 PM + 4:30-9 PM; OpenTable: Sat 12-9:30 PM, Sun 12-9 PM straight through. Tue-Fri agree (lunch 11-2:30, dinner 5-9/9:30 Fri).",
+    "what_we_did":"Kept Yelp split hours on the L874 row and flagged.",
+    "rows":[
+     "L874"
+    ],
+    "manual_review":true,
+    "link":{
+     "label":"OpenTable Akizu",
+     "url":"https://www.opentable.com/r/akizu-sushi-bar-and-grill-foster-city"
+    }
+   },
+   {
+    "id":"LUNCH-FLAG-129",
+    "note":"",
+    "date":"2026-09-16",
+    "status":"open",
+    "severity":"warn",
+    "title":"Cafe Savini close-time and suite conflicts",
+    "what_we_found":"Weekday close 2:00 PM (Yelp, restaurantji) vs 2:30 PM (YellowPages). Suite 100 (Yelp, YellowPages) vs #1775 (restaurantji), 950 Tower Ln.",
+    "what_we_did":"Kept the 2-of-3 majority on the L873 row and flagged.",
+    "rows":[
+     "L873"
+    ],
+    "manual_review":true,
+    "link":{
+     "label":"Yelp Cafe Savini",
+     "url":"https://www.yelp.com/biz/cafe-savini-foster-city-2"
+    }
+   },
+   {
+    "id":"LUNCH-FLAG-130",
+    "note":"",
+    "date":"2026-09-16",
+    "status":"open",
+    "severity":"warn",
+    "title":"Sizzling Lunch Foster City suite conflict 120 vs 125",
+    "what_we_found":"Yelp and zmenu: 1099 Foster Square Ln Ste 120; restaurantji: STE 125. Hours agree (daily 11-9).",
+    "what_we_did":"Kept Ste 120 on the L878 row and flagged.",
+    "rows":[
+     "L878"
+    ],
+    "manual_review":true,
+    "link":{
+     "label":"Yelp Sizzling Lunch FC",
+     "url":"https://www.yelp.com/biz/sizzling-lunch-foster-city-foster-city"
+    }
+   },
+   {
+    "id":"LUNCH-FLAG-131",
+    "note":"",
+    "date":"2026-09-16",
+    "status":"open",
+    "severity":"info",
+    "title":"Sweet Basil Thai price-increase notice on official menu",
+    "what_we_found":"The official menu page carries a 'Price Increase Notice' - the $15.95-$19.95 Mon-Fri lunch prices may rise.",
+    "what_we_did":"Priced the L866 row from the official menu (level official) and flagged for re-verification.",
+    "rows":[
+     "L866"
+    ],
+    "manual_review":true,
+    "link":{
+     "label":"Official menu",
+     "url":"https://www.sweetbasilthaifostercity.com/menu"
+    }
+   },
+   {
+    "id":"LUNCH-FLAG-132",
+    "note":"",
+    "date":"2026-09-16",
+    "status":"open",
+    "severity":"info",
+    "title":"TOWN Power Lunch window not printed on the official menu PDF",
+    "what_we_found":"The official lunch PDF prices Power Lunch at $25 (starter + entree) but states no days or hours; window inferred from the 11:30 AM restaurant open.",
+    "what_we_did":"Added the L868 row as level official with the window caveat in flags.",
+    "rows":[
+     "L868"
+    ],
+    "manual_review":true,
+    "link":{
+     "label":"Official lunch PDF",
+     "url":"https://www.townsc.com/s/Current-Lunch-Menu.pdf"
     }
    }
   ]
