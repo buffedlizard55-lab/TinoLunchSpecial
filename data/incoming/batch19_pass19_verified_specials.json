@@ -1,0 +1,73 @@
+{
+  "entries": [
+    {
+      "name": "Namaste Indian Cuisine",
+      "city": "Los Gatos",
+      "area": "Downtown Los Gatos / E Main St",
+      "address": "35 E Main St, Los Gatos, CA 95030",
+      "coords": [37.221504, -121.98063],
+      "cuisine": "Indian",
+      "lunch_special": {
+        "name": "Lunch Special Thali — vegetarian, non-vegetarian, and tandoori lunch thalis",
+        "price_from": 15.95,
+        "price_to": 18.0,
+        "days": "Daily lunch service; Toast labels these items Lunch Special Thali",
+        "window": "11:30 AM - 2:30 PM",
+        "includes": "Official first-party Toast menu: Chana Masala thali $15.95, Mushroom Masala $16, Tofu Moilee $17.50, Matar Paneer $18; separate Non-Veg Thali and Tandoori Lunch Thali sections are also published."
+      },
+      "hours_tuesday": "11:30 AM - 2:30 PM, 5:00 PM - 9:00 PM",
+      "days_open": "Mon-Thu 11:30 AM-2:30 PM & 5-9 PM; Fri-Sat 11:30 AM-2:30 PM & 5-9:30 PM; Sun 11:30 AM-2:30 PM & 5-9 PM",
+      "open_on_trip_date": true,
+      "fits_return_bus": {"ok": false, "note": "Verified deal, but Los Gatos is not compatible with the Cupertino destination's 11:50 AM transit departure."},
+      "verification": {
+        "level": "official",
+        "accessed": "2026-09-16",
+        "sources": [
+          {"label": "Namaste first-party Toast menu — Lunch Special Thali and current prices", "url": "https://order.toasttab.com/online/namaste-indian-cuisine-los-gatos-35-east-main-street"},
+          {"label": "Namaste official Los Gatos page — address and full weekly hours", "url": "https://namasteindiabistro.com/los-gatos/"}
+        ]
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/namaste-indian-cuisine-los-gatos",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Namaste+Indian+Cuisine+35+E+Main+St+Los+Gatos"
+      },
+      "flags": ["The official menu names the thalis as lunch specials but does not print item-level availability days; the daily 11:30 AM-2:30 PM lunch window comes from the restaurant's own location page.", "A 3% credit-card surcharge is disclosed on the first-party Toast ordering page."],
+      "distance_mi": null
+    },
+    {
+      "name": "ROOH Palo Alto",
+      "city": "Palo Alto",
+      "area": "Downtown Palo Alto / University Ave",
+      "address": "473 University Ave, Palo Alto, CA 94301",
+      "coords": [37.44813, -122.15981],
+      "cuisine": "Contemporary Indian",
+      "lunch_special": {
+        "name": "Weekday Lunch Menu — distinct Monday-Friday midday menu",
+        "price_from": 18.0,
+        "price_to": 38.0,
+        "days": "Monday-Friday",
+        "window": "11:30 AM - 2:30 PM",
+        "includes": "First-party Toast menu publishes a distinct Weekday Lunch Menu: Dahi Puri $18, Paneer Chili Roll $20, Gun Powder Paniyaram $20, Broccoli and Mascarpone Kofta $30, Paneer Pinwheel $33, Fish Poli Chattu $38."
+      },
+      "hours_tuesday": "11:30 AM - 2:30 PM, 5:00 PM - 9:30 PM",
+      "days_open": "Mon-Thu 11:30 AM-2:30 PM & 5-9:30 PM; Fri 11:30 AM-2:30 PM & 5:30-10:30 PM; Sat 11 AM-2:30 PM & 5:30-10:30 PM; Sun 11 AM-2:30 PM & 5-9:30 PM",
+      "open_on_trip_date": true,
+      "fits_return_bus": {"ok": false, "note": "Verified lunch menu, but downtown Palo Alto is not compatible with the Cupertino destination's 11:50 AM transit departure."},
+      "verification": {
+        "level": "official",
+        "accessed": "2026-09-16",
+        "sources": [
+          {"label": "ROOH first-party Toast ordering menu — weekday lunch dishes and prices", "url": "https://order.toasttab.com/online/rooh-palo-alto"},
+          {"label": "Tripadvisor structured listing — address and complete weekly split hours", "url": "https://www.tripadvisor.com/Restaurant_Review-g32849-d20152851-Reviews-Rooh-Palo_Alto_California.html"}
+        ]
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/rooh-palo-alto-palo-alto",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=ROOH+473+University+Ave+Palo+Alto"
+      },
+      "flags": ["This is a dedicated weekday lunch menu, not necessarily a discount versus dinner; only the lunch menu's own printed prices are shown.", "Hours are listing-sourced because the first-party ordering page exposes the menu/address but not a complete weekly hours grid in a directly fetchable page."],
+      "distance_mi": null
+    }
+  ],
+  "rejected": []
+}

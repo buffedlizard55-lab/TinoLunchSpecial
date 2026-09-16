@@ -1,11 +1,11 @@
 {
   "search_protocol": {
-    "requirement": "Pass 18 (2026-09-15): screened the Cupertino core first, then the 10-15 mi ring (Sunnyvale, Santa Clara, Los Gatos, Los Altos, Mountain View, Palo Alto, Campbell, Saratoga). Every candidate name was checked against the 1048-key dedupe index before any page fetch. Result: 3 new rows (1 priced-window row, 2 verified-absence rows) and 8 new rejections, including the permanent closure of Oren's Hummus Cupertino effective 9/12/26 per the company's own site. The 100-entry target was NOT met and is reported honestly rather than padded: at this verification standard the Cupertino core is saturated. Pass 17 (2026-09-15): roughly 100 candidate names were screened Cupertino-first and then across the 10-15 mile ring (Sunnyvale, Santa Clara, Campbell, Los Gatos, Los Altos, Mountain View, Palo Alto, Portola Valley, Milpitas, Saratoga, west San Jose). Every name was grepped against a 1031-key norm(name)|norm(city) dedupe index built from the master and reject files before any page was opened; the great majority were already listed, which is the expected result after sixteen prior passes. 8 rows merged (L851-L858): Birk's Restaurant (Santa Clara) with its own April 2026 lunch PDF ($14-$27 lunch-only band, Mon-Fri 11:00 AM - 2:30 PM); Barbayani Greek Taverna (Los Altos) with a distinct 'Barbayani Lunch Menu' on its own Toast page ($23-$42, daily 11:30 AM - 2:30 PM); The Courtyard Long Bar & Bistro (Los Altos) with a named $17 Soup & Sandwich Special and a $7-$28 lunch card, Mon-Sat 11:00 AM - 1:30 PM; Sorelle Italian Bistro (Campbell, Wed-Fri 11:30-2:00, no prices published); Senza Italian Kitchen (Los Gatos, Wed-Fri 11:00-2:00, no lunch prices published); Hibari (Portola Valley, Wed-Sun 11:30-2:00, menu published only as an image); Crepevine Palo Alto (no lunch special - one all-day card, priced); and The Good Salad Campbell (no lunch special - flat $15-$16 salads, priced). Nine findings were logged as rejections or bad-source notes (R184-R192), including a wrong-state trap (Discover Saratoga = Saratoga County, NEW YORK), an aggregator link that routes Kakuna Sushi Milpitas to the Fremont store, and a TripAdvisor record claiming a 5:00 AM opening for a Sunnyvale Korean BBQ restaurant. Eight new flags were filed (LUNCH-FLAG-104 through 111). No price was printed unless the restaurant's own site or its own ordering menu carried it: press figures for Hibari ($18-$66 lunch sets) and a reviewer's $40 for Senza are held in row flags as quotes, never in price columns. The pass therefore delivered 8 new rows against a 100-candidate screen and reports that shortfall rather than padding it. Pass 16 (2026-09-14): about 45 searches plus 6 page fetches screened roughly 192 new candidate names across Cupertino, Palo Alto, Menlo Park, Mountain View, Los Altos, Los Gatos, Saratoga, Campbell, Sunnyvale, Santa Clara, San Jose (Willow Glen and west San Jose), Milpitas and Fremont. 56 candidates were written up with sources in eight batch files (16a-16h); 31 merged as new rows (L820-L850) and 25 proved to be venues the master list already carried, so their captures were filed as cross-checks and duplicate detections instead of second rows. 11 candidates were rejected (R156-R166): four are permanently closed listings that still print full weekly hours (Pho & Bun, Kitayama Yoichi, Bierhaus, the Square Pie Guys Local Kitchens unit), one is a New York Restaurant Week trap for Saratoga Springs NY, three are out-of-area name traps for 'Los Altos' (Salinas, Goleta, San Bernardino), one is a Mountain View venue that closed, and one could not be resolved to any street address. Six further verified rows are held back by street-address collisions (LUNCH-FLAG-98) rather than forced past the dedupe, and one row (Willow Street Pizza) plus five existing rows (L477, L463, L478, L208, L544) received fresh contradictory captures filed as cross-checks. No price was printed unless a business' own site or menu carried it; reviewer-quoted prices such as Kiya Sushi's $14.99 trio-roll lunch and Country Way's $7.95 bacon-burger lunch stayed out of the price columns. The pass therefore delivered 31 new rows against a 100-row target and reports the shortfall rather than padding it. Verify line by line before adding anything to the master list; keep official/review links for manual review. Pass 15 (2026-09-14, approximate counts): about 70 fresh candidates were screened with about 60 new searches, Cupertino first and then the 10-15 mile ring. 27 candidates were written up with sources; 10 merged as new rows (L810-L819) and 17 proved to be rows the master list already carried, so they were merged as cross-checks instead of duplicates. 6 candidates were rejected with the page that produced the name (two of them turned out to be out-of-ring restaurants in New Jersey, one a Cupertino diner that closed permanently on 2025-12-31). Prices were printed only where a business' own page or an attached news/review quote gives one; photo captions and aggregator numbers never became prices. Pass 14 (2026-09-12): 118 new candidates from ring-city sweeps were each resolved against two or more pages before any row was written; 102 verified rows entered the master list (L708-L809). Seven rows whose Tuesday status is disputed between live captures carry open_on_trip_date = null rather than a guess.",
-    "queries_run": 1109,
-    "candidates_found": 1305,
-    "added_to_master": 861,
+    "requirement": "Pass 19 (2026-09-16): ran a fresh official-menu-first search sweep and resolved 14 named candidates after dedupe. Two genuinely new, explicitly labelled lunch menus cleared verification: Namaste Indian Cuisine Los Gatos ($15.95-$18 Lunch Special Thali, daily lunch window) and ROOH Palo Alto ($18-$38 Weekday Lunch Menu, Mon-Fri). Twelve results were already represented in master/reject data and were not duplicated. Wrong-region search results (including Spring Valley, Texas and Mountain View, Maryland) were excluded. The 100-new-entry target was not padded: after 1,319 cumulative candidates, verifiable net-new inventory in the 10-15 mile ring is scarce. Pass 18 (2026-09-15): screened the Cupertino core first, then the 10-15 mi ring (Sunnyvale, Santa Clara, Los Gatos, Los Altos, Mountain View, Palo Alto, Campbell, Saratoga). Every candidate name was checked against the 1048-key dedupe index before any page fetch. Result: 3 new rows (1 priced-window row, 2 verified-absence rows) and 8 new rejections, including the permanent closure of Oren's Hummus Cupertino effective 9/12/26 per the company's own site. The 100-entry target was NOT met and is reported honestly rather than padded: at this verification standard the Cupertino core is saturated. Pass 17 (2026-09-15): roughly 100 candidate names were screened Cupertino-first and then across the 10-15 mile ring (Sunnyvale, Santa Clara, Campbell, Los Gatos, Los Altos, Mountain View, Palo Alto, Portola Valley, Milpitas, Saratoga, west San Jose). Every name was grepped against a 1031-key norm(name)|norm(city) dedupe index built from the master and reject files before any page was opened; the great majority were already listed, which is the expected result after sixteen prior passes. 8 rows merged (L851-L858): Birk's Restaurant (Santa Clara) with its own April 2026 lunch PDF ($14-$27 lunch-only band, Mon-Fri 11:00 AM - 2:30 PM); Barbayani Greek Taverna (Los Altos) with a distinct 'Barbayani Lunch Menu' on its own Toast page ($23-$42, daily 11:30 AM - 2:30 PM); The Courtyard Long Bar & Bistro (Los Altos) with a named $17 Soup & Sandwich Special and a $7-$28 lunch card, Mon-Sat 11:00 AM - 1:30 PM; Sorelle Italian Bistro (Campbell, Wed-Fri 11:30-2:00, no prices published); Senza Italian Kitchen (Los Gatos, Wed-Fri 11:00-2:00, no lunch prices published); Hibari (Portola Valley, Wed-Sun 11:30-2:00, menu published only as an image); Crepevine Palo Alto (no lunch special - one all-day card, priced); and The Good Salad Campbell (no lunch special - flat $15-$16 salads, priced). Nine findings were logged as rejections or bad-source notes (R184-R192), including a wrong-state trap (Discover Saratoga = Saratoga County, NEW YORK), an aggregator link that routes Kakuna Sushi Milpitas to the Fremont store, and a TripAdvisor record claiming a 5:00 AM opening for a Sunnyvale Korean BBQ restaurant. Eight new flags were filed (LUNCH-FLAG-104 through 111). No price was printed unless the restaurant's own site or its own ordering menu carried it: press figures for Hibari ($18-$66 lunch sets) and a reviewer's $40 for Senza are held in row flags as quotes, never in price columns. The pass therefore delivered 8 new rows against a 100-candidate screen and reports that shortfall rather than padding it. Pass 16 (2026-09-14): about 45 searches plus 6 page fetches screened roughly 192 new candidate names across Cupertino, Palo Alto, Menlo Park, Mountain View, Los Altos, Los Gatos, Saratoga, Campbell, Sunnyvale, Santa Clara, San Jose (Willow Glen and west San Jose), Milpitas and Fremont. 56 candidates were written up with sources in eight batch files (16a-16h); 31 merged as new rows (L820-L850) and 25 proved to be venues the master list already carried, so their captures were filed as cross-checks and duplicate detections instead of second rows. 11 candidates were rejected (R156-R166): four are permanently closed listings that still print full weekly hours (Pho & Bun, Kitayama Yoichi, Bierhaus, the Square Pie Guys Local Kitchens unit), one is a New York Restaurant Week trap for Saratoga Springs NY, three are out-of-area name traps for 'Los Altos' (Salinas, Goleta, San Bernardino), one is a Mountain View venue that closed, and one could not be resolved to any street address. Six further verified rows are held back by street-address collisions (LUNCH-FLAG-98) rather than forced past the dedupe, and one row (Willow Street Pizza) plus five existing rows (L477, L463, L478, L208, L544) received fresh contradictory captures filed as cross-checks. No price was printed unless a business' own site or menu carried it; reviewer-quoted prices such as Kiya Sushi's $14.99 trio-roll lunch and Country Way's $7.95 bacon-burger lunch stayed out of the price columns. The pass therefore delivered 31 new rows against a 100-row target and reports the shortfall rather than padding it. Verify line by line before adding anything to the master list; keep official/review links for manual review. Pass 15 (2026-09-14, approximate counts): about 70 fresh candidates were screened with about 60 new searches, Cupertino first and then the 10-15 mile ring. 27 candidates were written up with sources; 10 merged as new rows (L810-L819) and 17 proved to be rows the master list already carried, so they were merged as cross-checks instead of duplicates. 6 candidates were rejected with the page that produced the name (two of them turned out to be out-of-ring restaurants in New Jersey, one a Cupertino diner that closed permanently on 2025-12-31). Prices were printed only where a business' own page or an attached news/review quote gives one; photo captions and aggregator numbers never became prices. Pass 14 (2026-09-12): 118 new candidates from ring-city sweeps were each resolved against two or more pages before any row was written; 102 verified rows entered the master list (L708-L809). Seven rows whose Tuesday status is disputed between live captures carry open_on_trip_date = null rather than a guess.",
+    "queries_run": 1119,
+    "candidates_found": 1319,
+    "added_to_master": 863,
     "rejected_or_deferred": 200,
-    "search_date": "2026-09-07 through 2026-09-15",
+    "search_date": "2026-09-07 through 2026-09-16",
     "cities_covered": [
       "Campbell",
       "Cupertino",
@@ -41980,6 +41980,108 @@
       "distance_mi": 10.02,
       "id": "L861",
       "added_in": "batch18a_pass18_closure_and_ring.json"
+    },
+    {
+      "name": "Namaste Indian Cuisine",
+      "city": "Los Gatos",
+      "area": "Downtown Los Gatos / E Main St",
+      "address": "35 E Main St, Los Gatos, CA 95030",
+      "coords": [
+        37.221504,
+        -121.98063
+      ],
+      "cuisine": "Indian",
+      "lunch_special": {
+        "name": "Lunch Special Thali — vegetarian, non-vegetarian, and tandoori lunch thalis",
+        "price_from": 15.95,
+        "price_to": 18.0,
+        "days": "Daily lunch service; Toast labels these items Lunch Special Thali",
+        "window": "11:30 AM - 2:30 PM",
+        "includes": "Official first-party Toast menu: Chana Masala thali $15.95, Mushroom Masala $16, Tofu Moilee $17.50, Matar Paneer $18; separate Non-Veg Thali and Tandoori Lunch Thali sections are also published."
+      },
+      "hours_tuesday": "11:30 AM - 2:30 PM, 5:00 PM - 9:00 PM",
+      "days_open": "Mon-Thu 11:30 AM-2:30 PM & 5-9 PM; Fri-Sat 11:30 AM-2:30 PM & 5-9:30 PM; Sun 11:30 AM-2:30 PM & 5-9 PM",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Verified deal, but Los Gatos is not compatible with the Cupertino destination's 11:50 AM transit departure."
+      },
+      "verification": {
+        "level": "official",
+        "accessed": "2026-09-16",
+        "sources": [
+          {
+            "label": "Namaste first-party Toast menu — Lunch Special Thali and current prices",
+            "url": "https://order.toasttab.com/online/namaste-indian-cuisine-los-gatos-35-east-main-street"
+          },
+          {
+            "label": "Namaste official Los Gatos page — address and full weekly hours",
+            "url": "https://namasteindiabistro.com/los-gatos/"
+          }
+        ]
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/namaste-indian-cuisine-los-gatos",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Namaste+Indian+Cuisine+35+E+Main+St+Los+Gatos"
+      },
+      "flags": [
+        "The official menu names the thalis as lunch specials but does not print item-level availability days; the daily 11:30 AM-2:30 PM lunch window comes from the restaurant's own location page.",
+        "A 3% credit-card surcharge is disclosed on the first-party Toast ordering page."
+      ],
+      "distance_mi": 6.88,
+      "id": "L862",
+      "added_in": "batch19_pass19_verified_specials.json"
+    },
+    {
+      "name": "ROOH Palo Alto",
+      "city": "Palo Alto",
+      "area": "Downtown Palo Alto / University Ave",
+      "address": "473 University Ave, Palo Alto, CA 94301",
+      "coords": [
+        37.44813,
+        -122.15981
+      ],
+      "cuisine": "Contemporary Indian",
+      "lunch_special": {
+        "name": "Weekday Lunch Menu — distinct Monday-Friday midday menu",
+        "price_from": 18.0,
+        "price_to": 38.0,
+        "days": "Monday-Friday",
+        "window": "11:30 AM - 2:30 PM",
+        "includes": "First-party Toast menu publishes a distinct Weekday Lunch Menu: Dahi Puri $18, Paneer Chili Roll $20, Gun Powder Paniyaram $20, Broccoli and Mascarpone Kofta $30, Paneer Pinwheel $33, Fish Poli Chattu $38."
+      },
+      "hours_tuesday": "11:30 AM - 2:30 PM, 5:00 PM - 9:30 PM",
+      "days_open": "Mon-Thu 11:30 AM-2:30 PM & 5-9:30 PM; Fri 11:30 AM-2:30 PM & 5:30-10:30 PM; Sat 11 AM-2:30 PM & 5:30-10:30 PM; Sun 11 AM-2:30 PM & 5-9:30 PM",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Verified lunch menu, but downtown Palo Alto is not compatible with the Cupertino destination's 11:50 AM transit departure."
+      },
+      "verification": {
+        "level": "official",
+        "accessed": "2026-09-16",
+        "sources": [
+          {
+            "label": "ROOH first-party Toast ordering menu — weekday lunch dishes and prices",
+            "url": "https://order.toasttab.com/online/rooh-palo-alto"
+          },
+          {
+            "label": "Tripadvisor structured listing — address and complete weekly split hours",
+            "url": "https://www.tripadvisor.com/Restaurant_Review-g32849-d20152851-Reviews-Rooh-Palo_Alto_California.html"
+          }
+        ]
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/rooh-palo-alto-palo-alto",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=ROOH+473+University+Ave+Palo+Alto"
+      },
+      "flags": [
+        "This is a dedicated weekday lunch menu, not necessarily a discount versus dinner; only the lunch menu's own printed prices are shown.",
+        "Hours are listing-sourced because the first-party ordering page exposes the menu/address but not a complete weekly hours grid in a directly fetchable page."
+      ],
+      "distance_mi": 11.74,
+      "id": "L863",
+      "added_in": "batch19_pass19_verified_specials.json"
     }
   ],
   "top_picks_for_tuesday_sept_8": [
