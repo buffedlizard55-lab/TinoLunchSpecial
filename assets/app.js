@@ -147,10 +147,20 @@
     return '<span class="badge ' + (map[key] || 'flat') + '">' + esc(level || 'n/a') + '</span>';
   }
 
+  /* A row belongs in the deal-first views only when the source actually names a
+     lunch/menu special. The master also preserves useful negative research rows;
+     never let those masquerade as deals merely because an all-day price exists. */
+  function isLunchDeal(e) {
+    const n = String(e.lunch_special && e.lunch_special.name || '').toLowerCase();
+    return !/^(no |regular menu|lunch service \(no|all-day menu)/.test(n) &&
+      !/no (discounted )?lunch special|no lunch-only|without (a )?lunch special/.test(n) &&
+      /(lunch|midday|weekday|daily special|prix fixe|buffet|thali|power lunch|taco tuesday)/.test(n);
+  }
+
   /* ---------- top deals strip (lunch page, above everything) ---------- */
   function renderDeals(D) {
     const m = D.specials;
-    const priced = m.entries.filter((e) => e.lunch_special.price_from != null);
+    const priced = m.entries.filter((e) => isLunchDeal(e) && e.lunch_special.price_from != null);
     const best = priced
       .filter((e) => (e.verification.level || '').indexOf('official') === 0)
       .sort((a, b) => {
@@ -290,7 +300,7 @@
   }
 
   /* ---------- lunch ---------- */
-  const FILTERS = { q: '', city: 'all', verifiedOnly: false, cheap: false, openTue: false, fitsBus: false };
+  const FILTERS = { q: '', city: 'all', dealsOnly: true, verifiedOnly: false, cheap: false, openTue: false, fitsBus: false };
   const SORT = { key: 'dist', dir: 1 };
   const SORTVAL = {
     name: (e) => String(e.name || '').toLowerCase(),
@@ -368,6 +378,7 @@
       '</div>' +
       '<div class="filters">' +
       '<input id="lq" type="search" placeholder="Search name, city, dish, flag..." />' +
+      '<label><input type="checkbox" id="ldeals" checked /> Actual lunch specials only</label>' +
       '<select id="lcity"><option value="all">All cities (' + m.entries.length + ')</option>' +
       Object.keys(cities).sort().map((c) => '<option value="' + esc(c) + '">' + esc(c) + ' (' + cities[c] + ')</option>').join('') + '</select>' +
       '<label><input type="checkbox" id="lopen" /> Open on Tuesday Sept 8</label>' +
@@ -410,6 +421,7 @@
     const paint = () => {
       const rows = m.entries.filter((e) => {
         if (FILTERS.city !== 'all' && e.city !== FILTERS.city) return false;
+        if (FILTERS.dealsOnly && !isLunchDeal(e)) return false;
         if (FILTERS.openTue && e.open_on_trip_date !== true) return false;
         if (FILTERS.fitsBus && !(e.fits_return_bus && e.fits_return_bus.ok === true)) return false;
         if (FILTERS.verifiedOnly && (e.verification.level || '').indexOf('official') !== 0) return false;
@@ -438,6 +450,7 @@
     const bind = (id, fn) => { const el = document.getElementById(id); if (el) el.addEventListener('input', fn) || el.addEventListener('change', fn); };
     document.getElementById('lq').addEventListener('input', (ev) => { FILTERS.q = ev.target.value; paint(); });
     document.getElementById('lcity').addEventListener('change', (ev) => { FILTERS.city = ev.target.value; paint(); });
+    document.getElementById('ldeals').addEventListener('change', (ev) => { FILTERS.dealsOnly = ev.target.checked; paint(); });
     document.getElementById('lopen').addEventListener('change', (ev) => { FILTERS.openTue = ev.target.checked; paint(); });
     document.getElementById('lfits').addEventListener('change', (ev) => { FILTERS.fitsBus = ev.target.checked; paint(); });
     document.getElementById('lofficial').addEventListener('change', (ev) => { FILTERS.verifiedOnly = ev.target.checked; paint(); });
@@ -452,9 +465,10 @@
       SORT.key = b.dataset.sortkey; SORT.dir = 1; paint();
     }));
     document.getElementById('lreset').addEventListener('click', () => {
-      Object.keys(FILTERS).forEach((k) => { FILTERS[k] = k === 'city' ? 'all' : (k === 'q' ? '' : false); });
+      Object.keys(FILTERS).forEach((k) => { FILTERS[k] = k === 'city' ? 'all' : (k === 'q' ? '' : k === 'dealsOnly'); });
       ['lq'].forEach((i) => document.getElementById(i).value = '');
       ['lopen', 'lfits', 'lofficial', 'lcheap'].forEach((i) => document.getElementById(i).checked = false);
+      document.getElementById('ldeals').checked = true;
       document.getElementById('lcity').value = 'all';
       paint();
     });
