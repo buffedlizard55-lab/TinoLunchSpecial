@@ -3623,6 +3623,311 @@
       "name": "Gui Taste",
       "why": "Closed Tuesdays; official Toast ordering shows items (featured $15.99 Guilin noodles) but no lunch section or lunch special.",
       "searched": "2026-09-07"
+    },
+    {
+      "name": "Stanford's",
+      "city": "no California location listed",
+      "why": "The chain's current promotions page lists only Clackamas OR, Northgate (Seattle) WA and Tanasbourne OR, and its only active offer is $10 off $40 to-go through Sept 30. The $16 'Summer Stack Special' (lunch, dine-in only) that search snippets still surface ran 'through 8/31' and is no longer posted - expired before this pass. The Northgate menu PDF served by the chain references San Jose neighborhoods, but no CA location or standing lunch special is currently published.",
+      "price_hint": "$16 Summer Stack lunch special - expired 8/31/26 per the chain's own page",
+      "links": [
+        {
+          "label": "Stanford's promotions page (current offers, no CA locations, no lunch special)",
+          "url": "https://stanfords.com/promotions/"
+        }
+      ],
+      "searched": "2026-09-16"
+    },
+    {
+      "name": "The Saratoga Restaurant",
+      "city": "Saratoga Springs, NY (trap)",
+      "why": "warrensaratoga.com ('The Economos Family') is a Saratoga Springs, NEW YORK diner (breakfast/lunch/dinner, daily specials on Facebook). Wrong state - the fourth Saratoga NY trap this project has caught after LUNCH-FLAG-105 and R107/R159. None of its content belongs to Saratoga, CA 95070.",
+      "links": [
+        {
+          "label": "warrensaratoga.com restaurant page",
+          "url": "https://www.warrensaratoga.com/restaurant"
+        }
+      ],
+      "searched": "2026-09-16"
+    },
+    {
+      "name": "Morrissey's Lounge & Bistro",
+      "city": "Saratoga Springs, NY (trap)",
+      "why": "The '2 For $22 Lunch Mon-Fri 11-3' appears in saratoga.com's 'Food & Drink Specials' guide, which is a Saratoga Springs, New York publication (518 area codes throughout). Wrong state; not the California Saratoga.",
+      "links": [
+        {
+          "label": "saratoga.com specials guide (Saratoga Springs NY)",
+          "url": "https://www.saratoga.com/food-drink-specials/"
+        }
+      ],
+      "searched": "2026-09-16"
+    },
+    {
+      "name": "The Iron's Edge",
+      "city": "Saratoga Springs, NY (trap)",
+      "why": "Same saratoga.com Saratoga Springs NY guide (Thursday wings/tacos special). Wrong state.",
+      "links": [
+        {
+          "label": "saratoga.com specials guide (Saratoga Springs NY)",
+          "url": "https://www.saratoga.com/food-drink-specials/"
+        }
+      ],
+      "searched": "2026-09-16"
+    },
+    {
+      "name": "The Brook Tavern",
+      "city": "Saratoga Springs, NY (trap)",
+      "why": "Same saratoga.com Saratoga Springs NY guide ('Tuesdays To Go' $32/$59 dinners). Wrong state.",
+      "links": [
+        {
+          "label": "saratoga.com specials guide (Saratoga Springs NY)",
+          "url": "https://www.saratoga.com/food-drink-specials/"
+        }
+      ],
+      "searched": "2026-09-16"
+    },
+    {
+      "name": "Los Altos Restaurant",
+      "city": "Santa Barbara, CA (out of ring)",
+      "why": "losaltosrestaurant.com's menus page is the Los Altos Mexican restaurant in Santa Barbara - 320+ miles from Cupertino. Out of the 10-15 mile ring.",
+      "links": [
+        {
+          "label": "losaltosrestaurant.com menus (Santa Barbara)",
+          "url": "https://www.losaltosrestaurant.com/menus/"
+        }
+      ],
+      "searched": "2026-09-16"
+    },
+    {
+      "name": "Los Altos Mexican Restaurant (losaltosmenu.com 'stuart' page)",
+      "city": "not in the ring",
+      "why": "losaltosmenu.com serves a 'Stuart' location page for a Los Altos Mexican Restaurant with no Bay Area address; no in-ring address could be established from any fetched or linked page. Rejected rather than guessed.",
+      "links": [
+        {
+          "label": "losaltosmenu.com 'stuart' menu page",
+          "url": "https://losaltosmenu.com/stuart-los-altos-mexican-restaurant-food-menu"
+        }
+      ],
+      "searched": "2026-09-16"
+    },
+    {
+      "name": "Mountain View Seafoods Restaurant",
+      "city": "Telford, TN (trap)",
+      "why": "mountainviewseafood.com (the domain behind the 2022 'Mountain View Restaurant Menu' PDF) is Mountain View Seafoods in Telford, Tennessee (3241 US-11E N, 423 area code). Wrong state - part of the 'Mountain View' name cluster caught this pass (LUNCH-FLAG-138).",
+      "links": [
+        {
+          "label": "Apple Maps place record - 3241 US-11E N, Telford, TN",
+          "url": "https://maps.apple.com/place?place-id=I9ECF8D539B5AC6F9"
+        }
+      ],
+      "searched": "2026-09-16"
+    },
+    {
+      "name": "Mountain View Drive-In Restaurant",
+      "city": "Hampden, MA (trap)",
+      "why": "mtviewrestaurant.com is the Mountain View Drive-In at 25 Allen Street, Hampden, MA (413 area code). The $5.95 lunch/dinner menu seen in search belongs to Massachusetts, not Mountain View, CA. Part of LUNCH-FLAG-138.",
+      "links": [
+        {
+          "label": "mtviewrestaurant.com (Squarespace footer + JSON-LD address: Hampden MA)",
+          "url": "https://www.mtviewrestaurant.com/"
+        }
+      ],
+      "searched": "2026-09-16"
+    },
+    {
+      "name": "Mountain View Diner",
+      "city": "Fort Garland, CO (trap)",
+      "why": "mountainviewdinerco.com is the Mountain View Diner at 403 Miranda Ave, Fort Garland, CO (719 area code). The $11-$19 lunch/dinner menu belongs to Colorado. Part of LUNCH-FLAG-138.",
+      "links": [
+        {
+          "label": "mymenuweb record linking mountainviewdinerco.com to Fort Garland CO",
+          "url": "https://mymenuweb.com/us/restaurants/1193793/"
+        }
+      ],
+      "searched": "2026-09-16"
+    },
+    {
+      "name": "San Jose's Original Mexican Restaurant",
+      "city": "Orlando area, FL (trap)",
+      "why": "sanjosesoriginal.com is a Florida chain (Altamonte Springs, Ocoee, Orlando, Winter Garden, Clermont - all 407/352 area codes, opened in Orlando in 2000). Its real Lunch Combos at $12.90 (dinner $15.90) belong to Florida, not San Jose, CA. No 'San Jose's Original' exists in the ring. Part of LUNCH-FLAG-140.",
+      "links": [
+        {
+          "label": "Yelp - Altamonte Springs store listing sanjosesoriginal.com as its business website",
+          "url": "https://www.yelp.com/biz/san-joses-original-mexican-restaurant-altamonte-springs-4"
+        },
+        {
+          "label": "sanjosesoriginal.com menus (FL chain lunch combos $12.90)",
+          "url": "https://www.sanjosesoriginal.com/menus/"
+        }
+      ],
+      "searched": "2026-09-16"
+    },
+    {
+      "name": "San Jose Mexican Restaurant (Lutz)",
+      "city": "Lutz, FL (trap)",
+      "why": "sanjoselutz.com is the San Jose Mexican Restaurant at 16540 Pointe Village Dr, Lutz, Florida (813 area code, 'famous in Tampa Florida' per its own profile). Its $9.00-$14.50 'LUNCH SPECIAL NO. 1-8' menu belongs to Florida. Part of LUNCH-FLAG-140.",
+      "links": [
+        {
+          "label": "Yelp - San Jose Mexican Restaurant, Lutz FL",
+          "url": "https://www.yelp.com/biz/san-jose-mexican-restaurant-lutz"
+        },
+        {
+          "label": "sanjoselutz.com lunch combos (FL)",
+          "url": "https://sanjoselutz.com/menu/lunch-combos/"
+        }
+      ],
+      "searched": "2026-09-16"
+    },
+    {
+      "name": "Jingege & Yaoyao (Cupertino hit)",
+      "city": "Milpitas",
+      "why": "The 'Cupertino' hit is a delivery-aggregator listing (fantuan) for the real Jingege & Yaoyao at 516 Barber Ln, Milpitas, CA 95035 (Yelp + roadtrippers agree, daily 11:00 AM-9:30 PM). Its menu is a standard a la carte Cantonese menu with no lunch special. Not a Cupertino business and no special to verify - rejected so a later pass does not re-import the delivery listing as a Cupertino row.",
+      "links": [
+        {
+          "label": "Yelp - Jingege & Yaoyao, 516 Barber Ln Milpitas, hours",
+          "url": "https://www.yelp.com/biz/jingege-and-yaoyao-milpitas"
+        },
+        {
+          "label": "roadtrippers record - 516 Barber Ln Milpitas (408) 943-0250",
+          "url": "https://maps.roadtrippers.com/us/milpitas-ca/food-drink/jingege-yaoyao-milpitas-ca--0"
+        },
+        {
+          "label": "fantuan delivery listing that produced the 'Cupertino' hit",
+          "url": "https://www.fantuanorder.com/store/jingege-yaoyao/us-4805885"
+        }
+      ],
+      "searched": "2026-09-16"
+    },
+    {
+      "name": "Parkview Kitchen and Spirits",
+      "city": "Cupertino",
+      "why": "Juniper Hotel restaurant at 10050 N De Anza Blvd. OpenTable's own hours block says 'Lunch Daily 11:00 am-2:00 pm', but every published menu read (the restaurant's res-menu.net menu, allmenus, OpenTable's menu tab) shows only a Breakfast section (daily 6:30/7:30-2) and a Dinner section (Mon-Sat 5-9/10) - no priced lunch section and no named lunch special. Absence recorded from the published menu rather than guessed.",
+      "links": [
+        {
+          "label": "OpenTable - Parkview Kitchen and Spirits, hours incl. 'Lunch Daily 11-2' (Cupertino, adjacent to Juniper Hotel)",
+          "url": "https://www.opentable.com/r/park-place?page=2"
+        },
+        {
+          "label": "Restaurant's res-menu.net menu - Breakfast + Dinner sections only, no lunch section",
+          "url": "https://parkview-kitchen-spirits.res-menu.net/menu"
+        },
+        {
+          "label": "allmenus - Cupertino menu (breakfast/dinner items)",
+          "url": "https://www.allmenus.com/ca/cupertino/806229-parkview-kitchen-spirits/menu/"
+        }
+      ],
+      "searched": "2026-09-16"
+    },
+    {
+      "name": "Great Buffet",
+      "city": "Cupertino",
+      "why": "restaurantguru's Cupertino listing (408-255-2828, Chinese) says 'May be permanently closed', has no opening hours and no reviews. No official site or menu page exists to verify any lunch special. Closure suspected but not confirmed by a primary source - rejected with the proving link rather than listed.",
+      "links": [
+        {
+          "label": "restaurantguru - Great Buffet Cupertino, 'May be permanently closed', no hours",
+          "url": "https://restaurantguru.com/Great-Buffet-Cupertino"
+        }
+      ],
+      "searched": "2026-09-16"
+    },
+    {
+      "name": "Foreigner Cafe (Foreigner)",
+      "city": "San Mateo",
+      "why": "60 E 3rd Ave Ste 108 - a breakfast/brunch cafe, served daily 8:00 AM-4:00 PM (Yelp). The full captured menu is toasts/brunch items (avocado toast, eggs benedict, croissants, sandwiches); there is no named or priced lunch special - a Yelp review's 'lunch specials' phrase is a reviewer's words, held out of the list per policy. Merienda/high tea runs Wed-Sun 2:30-5.",
+      "links": [
+        {
+          "label": "Yelp - Foreigner, 60E 3rd Ave, full menu + 'served daily 8 AM-4 PM'",
+          "url": "https://www.yelp.com/biz/foreigner-san-mateo"
+        },
+        {
+          "label": "Yelp deep page - menu + high tea hours",
+          "url": "https://www.yelp.com/biz/foreigner-san-mateo?start=80"
+        }
+      ],
+      "searched": "2026-09-16"
+    },
+    {
+      "name": "Porterhouse",
+      "city": "San Mateo",
+      "why": "Official site (164 S B Street, relocated there Jan 2023): 'We are open for dinner every night' (Sun-Thu 5-9, Fri-Sat 5-10, happy hour 4:30-6) and 'LUNCH - OPEN FOR PRIVATE EVENTS'. No walk-in lunch service, so no lunch special exists to list.",
+      "links": [
+        {
+          "label": "porterhousesanmateo.com - dinner-only hours, lunch private events only",
+          "url": "https://www.porterhousesanmateo.com/"
+        }
+      ],
+      "searched": "2026-09-16"
+    },
+    {
+      "name": "All Spice",
+      "city": "San Mateo",
+      "why": "1602 S El Camino Real - fine dining with a 3/4/5-course pre-fixe dinner (owner-quoted $85/$105/$125). Owner note on the current Yelp listing: 'Sunday lunch service is on hiatus.' Closed Mondays; dinner Tue-Sat. No standing lunch special.",
+      "links": [
+        {
+          "label": "Yelp - All Spice, 1602 S El Camino Real, pre-fixe pricing + 'Sunday lunch service is on hiatus'",
+          "url": "https://www.yelp.com/biz/all-spice-san-mateo-2"
+        }
+      ],
+      "searched": "2026-09-16"
+    },
+    {
+      "name": "Sushi Sam's Edomata",
+      "city": "San Mateo",
+      "why": "218 E 3rd Ave - CLOSED. Two current Yelp pages (updated 2026) carry the CLOSED badge; the old Friday 11:30-1:30 lunch block is gone. Historical lunch menu only - not a live entry.",
+      "links": [
+        {
+          "label": "Yelp - Sushi Sam's Edomata CLOSED (April 2026 update)",
+          "url": "https://www.yelp.com/biz/sushi-sams-edomata-san-mateo-2?start=960"
+        },
+        {
+          "label": "Yelp - Sushi Sam's Edomata CLOSED (August 2026 update)",
+          "url": "https://www.yelp.com/biz/sushi-sams-edomata-san-mateo-2?start=1040"
+        }
+      ],
+      "searched": "2026-09-16"
+    },
+    {
+      "name": "Indo Cafe",
+      "city": "Saratoga",
+      "why": "14443 Big Basin Way - CLOSED. Current Yelp pages (March 2026) are titled 'INDO CAFE - CLOSED' and a community answer from a former regular says 'Yes, the owner moved to Alabama.' Its rice-plate lunch ($15 before increase per a reviewer) is not verifiable at a live location.",
+      "links": [
+        {
+          "label": "Yelp - INDO CAFE - CLOSED (March 2026) with closure Q&A",
+          "url": "https://www.yelp.com/biz/indo-cafe-saratoga-3"
+        }
+      ],
+      "searched": "2026-09-16"
+    },
+    {
+      "name": "La Fontana",
+      "city": "Santa Clara",
+      "why": "The Hilton Santa Clara's all-day dining room. The published menu (SinglePlatform mirror + allmenus) is one all-day menu - breakfast, handhelds, entrées, pizza - with no separate lunch section and no lunch special. 'All-day dining room' is the Hilton's own description; absence recorded rather than guessed.",
+      "links": [
+        {
+          "label": "allmenus - La Fontana Santa Clara (single all-day menu, no lunch section)",
+          "url": "https://www.allmenus.com/ca/santa-clara/370995-la-fontana/menu/"
+        },
+        {
+          "label": "Yelp - La Fontana, Santa Clara (dining room)",
+          "url": "https://www.yelp.com/biz/la-fontana-santa-clara"
+        }
+      ],
+      "searched": "2026-09-16"
+    },
+    {
+      "name": "Ranzan",
+      "city": "Redwood City (misfiled as San Mateo)",
+      "why": "The Peninsula 'Ranzan' that surfaced in business-meal lists is the kaiseki fine-dining restaurant in Redwood City ($228 per person May menu per its weeblyte profile) - no lunch service at that price point. The other 'Ran Zan Japanese Restaurant' with a real $4-$10 lunch menu (lunch 11:30-2:30 Tue-Fri + Sun) is in Providence, Rhode Island. Neither is a walk-in lunch special in the ring.",
+      "links": [
+        {
+          "label": "weeblyte profile - Ranzan (Redwood City, CA) kaiseki, $228/pp May menu",
+          "url": "https://ranzan.weeblyte.com/"
+        },
+        {
+          "label": "jmbcommunications.com - Ran Zan (Providence) lunch menu, wrong state",
+          "url": "https://www.jmbcommunications.com/ranzan/lunch-menu.html"
+        }
+      ],
+      "searched": "2026-09-16"
     }
   ],
   "notes": [
