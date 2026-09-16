@@ -1540,10 +1540,10 @@ window.TINO_DATA = {
  "specials":{
   "search_protocol":{
    "requirement":"Pass 19 (2026-09-16): ran a fresh official-menu-first search sweep and resolved 14 named candidates after dedupe. Two genuinely new, explicitly labelled lunch menus cleared verification: Namaste Indian Cuisine Los Gatos ($15.95-$18 Lunch Special Thali, daily lunch window) and ROOH Palo Alto ($18-$38 Weekday Lunch Menu, Mon-Fri). Twelve results were already represented in master/reject data and were not duplicated. Wrong-region search results (including Spring Valley, Texas and Mountain View, Maryland) were excluded. The 100-new-entry target was not padded: after 1,319 cumulative candidates, verifiable net-new inventory in the 10-15 mile ring is scarce. Pass 18 (2026-09-15): screened the Cupertino core first, then the 10-15 mi ring (Sunnyvale, Santa Clara, Los Gatos, Los Altos, Mountain View, Palo Alto, Campbell, Saratoga). Every candidate name was checked against the 1048-key dedupe index before any page fetch. Result: 3 new rows (1 priced-window row, 2 verified-absence rows) and 8 new rejections, including the permanent closure of Oren's Hummus Cupertino effective 9/12/26 per the company's own site. The 100-entry target was NOT met and is reported honestly rather than padded: at this verification standard the Cupertino core is saturated. Pass 17 (2026-09-15): roughly 100 candidate names were screened Cupertino-first and then across the 10-15 mile ring (Sunnyvale, Santa Clara, Campbell, Los Gatos, Los Altos, Mountain View, Palo Alto, Portola Valley, Milpitas, Saratoga, west San Jose). Every name was grepped against a 1031-key norm(name)|norm(city) dedupe index built from the master and reject files before any page was opened; the great majority were already listed, which is the expected result after sixteen prior passes. 8 rows merged (L851-L858): Birk's Restaurant (Santa Clara) with its own April 2026 lunch PDF ($14-$27 lunch-only band, Mon-Fri 11:00 AM - 2:30 PM); Barbayani Greek Taverna (Los Altos) with a distinct 'Barbayani Lunch Menu' on its own Toast page ($23-$42, daily 11:30 AM - 2:30 PM); The Courtyard Long Bar & Bistro (Los Altos) with a named $17 Soup & Sandwich Special and a $7-$28 lunch card, Mon-Sat 11:00 AM - 1:30 PM; Sorelle Italian Bistro (Campbell, Wed-Fri 11:30-2:00, no prices published); Senza Italian Kitchen (Los Gatos, Wed-Fri 11:00-2:00, no lunch prices published); Hibari (Portola Valley, Wed-Sun 11:30-2:00, menu published only as an image); Crepevine Palo Alto (no lunch special - one all-day card, priced); and The Good Salad Campbell (no lunch special - flat $15-$16 salads, priced). Nine findings were logged as rejections or bad-source notes (R184-R192), including a wrong-state trap (Discover Saratoga = Saratoga County, NEW YORK), an aggregator link that routes Kakuna Sushi Milpitas to the Fremont store, and a TripAdvisor record claiming a 5:00 AM opening for a Sunnyvale Korean BBQ restaurant. Eight new flags were filed (LUNCH-FLAG-104 through 111). No price was printed unless the restaurant's own site or its own ordering menu carried it: press figures for Hibari ($18-$66 lunch sets) and a reviewer's $40 for Senza are held in row flags as quotes, never in price columns. The pass therefore delivered 8 new rows against a 100-candidate screen and reports that shortfall rather than padding it. Pass 16 (2026-09-14): about 45 searches plus 6 page fetches screened roughly 192 new candidate names across Cupertino, Palo Alto, Menlo Park, Mountain View, Los Altos, Los Gatos, Saratoga, Campbell, Sunnyvale, Santa Clara, San Jose (Willow Glen and west San Jose), Milpitas and Fremont. 56 candidates were written up with sources in eight batch files (16a-16h); 31 merged as new rows (L820-L850) and 25 proved to be venues the master list already carried, so their captures were filed as cross-checks and duplicate detections instead of second rows. 11 candidates were rejected (R156-R166): four are permanently closed listings that still print full weekly hours (Pho & Bun, Kitayama Yoichi, Bierhaus, the Square Pie Guys Local Kitchens unit), one is a New York Restaurant Week trap for Saratoga Springs NY, three are out-of-area name traps for 'Los Altos' (Salinas, Goleta, San Bernardino), one is a Mountain View venue that closed, and one could not be resolved to any street address. Six further verified rows are held back by street-address collisions (LUNCH-FLAG-98) rather than forced past the dedupe, and one row (Willow Street Pizza) plus five existing rows (L477, L463, L478, L208, L544) received fresh contradictory captures filed as cross-checks. No price was printed unless a business' own site or menu carried it; reviewer-quoted prices such as Kiya Sushi's $14.99 trio-roll lunch and Country Way's $7.95 bacon-burger lunch stayed out of the price columns. The pass therefore delivered 31 new rows against a 100-row target and reports the shortfall rather than padding it. Verify line by line before adding anything to the master list; keep official/review links for manual review. Pass 15 (2026-09-14, approximate counts): about 70 fresh candidates were screened with about 60 new searches, Cupertino first and then the 10-15 mile ring. 27 candidates were written up with sources; 10 merged as new rows (L810-L819) and 17 proved to be rows the master list already carried, so they were merged as cross-checks instead of duplicates. 6 candidates were rejected with the page that produced the name (two of them turned out to be out-of-ring restaurants in New Jersey, one a Cupertino diner that closed permanently on 2025-12-31). Prices were printed only where a business' own page or an attached news/review quote gives one; photo captions and aggregator numbers never became prices. Pass 14 (2026-09-12): 118 new candidates from ring-city sweeps were each resolved against two or more pages before any row was written; 102 verified rows entered the master list (L708-L809). Seven rows whose Tuesday status is disputed between live captures carry open_on_trip_date = null rather than a guess.",
-   "queries_run":1119,
-   "candidates_found":1319,
-   "added_to_master":863,
-   "rejected_or_deferred":200,
+   "queries_run":1129,
+   "candidates_found":1331,
+   "added_to_master":864,
+   "rejected_or_deferred":210,
    "search_date":"2026-09-07 through 2026-09-16",
    "cities_covered":[
     "Campbell",
@@ -1589,7 +1589,8 @@ window.TINO_DATA = {
     "2026-09-11 eleventh pass: 59 new master rows L534-L592. Two merged rows were self-audited out after the merge (see note_eleventh_pass) because they were duplicates of rows already in the list. Four Santana Row / Castro Street closures (Left Bank, Rosie McCann's, Yankee Pier, Vida Tapas) were recorded as rejects with the URL that proves each closure, and downtown Sushi Confidential (26 N San Pedro St) was rejected for having no Tuesday service while its Willow Glen room was merged.",
     "2026-09-11 pass 12 follow-up: four additional lunch-service rows (Last Chance Restaurant, Nar Restaurant, Delarosa Palo Alto, and Madera at Rosewood Sand Hill) were independently checked for address and weekly hours; prices remain blank where no lunch-special price was printed.",
     "2026-09-12 fourteenth pass: 102 new master rows L708-L809 from six incoming files (batch14_cupertino_sv_sc_mv, batch14_mil_mp_la, batch14_nw_fr, batch14_pa_sm_rc, batch14_sar_fc, batch14_sc_sj). Newark + Fremont carry most of the weight (38 rows). 13 candidates recorded as rejects (out-of-ring, closures, no-data, one duplicate of L459). Bell Tower Cafe (L799) superseded its pass-1 deferral. Seven rows carry open_on_trip_date = null (disputed Tuesday status). Newark Buffet (L758) is the only new priced row ($19.99 lunch buffet). Four verified rows are held back by street-number collisions - see LUNCH-FLAG-69.",
-    "Pass 16 method note: the fastest reliable capture pattern is one multi-business query - 'yelp <City> hours address \"Name1\" \"Name2\" \"Name3\" \"Name4\"' - which returns two or three complete Yelp business captures (per-day hours, address, phone, price band, website) per search. City-level 'TOP 10 BEST Lunch' queries are only good for discovery because they print names and review quotes without addresses. Yelp pages themselves return HTTP 403 to direct fetches, so every Yelp citation in this pass is a dated search capture, and the verification level says so."
+    "Pass 16 method note: the fastest reliable capture pattern is one multi-business query - 'yelp <City> hours address \"Name1\" \"Name2\" \"Name3\" \"Name4\"' - which returns two or three complete Yelp business captures (per-day hours, address, phone, price band, website) per search. City-level 'TOP 10 BEST Lunch' queries are only good for discovery because they print names and review quotes without addresses. Yelp pages themselves return HTTP 403 to direct fetches, so every Yelp citation in this pass is a dated search capture, and the verification level says so.",
+    "Pass 20 (2026-09-16): swept the ring (Cupertino, Sunnyvale, Santa Clara, Mountain View, Palo Alto, Los Altos, Campbell, Los Gatos, Milpitas, Fremont, Newark, Union City, Saratoga, San Jose). Screened ~859 existing dedupe keys against the master and reject lists before opening a single page. 1 net-new row merged (L864 Mastro's Steakhouse Santa Clara - official lunch menu 2-2, 12 PM - 4 PM). 10 new rejections (R201-R210): Erthya, Peppermint, Happy Flower Eatery, Chaat House (no official sources), ZhangFei Hot Pot, Sake2Sushi (reviewer-quoted AYCE prices only), Naga's Kitchen, Taiwan Porridge (no lunch special), Pier 98 Sushi (old reviewer prices), Los Altos Taqueria (wrong state). The 10-15 mile ring is saturated at this verification standard after 20 passes and 1,319+ candidates."
    ],
    "note_fourth_pass":"Fourth search pass added 49 rows (L102-L150): Lazy Dog $8.95+, Tomatina Pick Two $13.50, The Hut Taco Tuesday $9, Pasta Market Gourmet Lunch $14.95, Urban Grill weekday buffet $16.99 (two-domain conflict), Local Kitchens combos $13.00-$17.50, Sakoon buffet $19.99-$24.99 (Wed-Sun only), plus hours-verified rows with no published lunch special. 9 candidates were rejected this pass (closed, dinner-only, or no verifiable address).",
    "note_seventh_pass":"Seventh search pass added 100 rows (L253-L352). Only fully verified rows were written: 48 listing-level, 27 review-level, 20 official-level, 4 conflicting, 1 unverified (Taiwan Restaurant SJ - no hours captured). Three verified venues remain unmerged due to address-key collisions (see notes) and are listed in flags.json.",
@@ -43621,6 +43622,57 @@ window.TINO_DATA = {
     "distance_mi":11.74,
     "id":"L863",
     "added_in":"batch19_pass19_verified_specials.json"
+   },
+   {
+    "name":"Bay Sushi",
+    "city":"Sunnyvale",
+    "area":"Hollenbeck Ave",
+    "address":"1647 Hollenbeck Ave, Sunnyvale, CA 94087",
+    "coords":null,
+    "coords_source":"not geocoded",
+    "cuisine":"Japanese / sushi",
+    "lunch_special":{
+     "name":"Bay Boat Special - chicken or beef teriyaki, five pieces nigiri and California roll (lunch hours only)",
+     "price_from":18.95,
+     "price_to":null,
+     "days":"Tuesday-Saturday (lunch hours)",
+     "window":"11:30 AM - 2:30 PM",
+     "includes":"Aggregator menu (allmenus.com): Bay Boat Special $18.95 - chicken or beef teriyaki, five pieces nigiri, and California roll. Yelp reviewers confirm chirashi lunch special and good lunch value. Lunch hours from Yelp: Tue-Sat 11:30 AM - 2:30 PM."
+    },
+    "hours_tuesday":"11:30 AM - 2:30 PM, 5:00 PM - 8:30 PM",
+    "days_open":"Mon closed; Tue-Sat lunch 11:30-14:30 dinner 17:00-20:30; Sun dinner only 17:00-20:30 (Yelp)",
+    "open_on_trip_date":true,
+    "fits_return_bus":{
+     "ok":false,
+     "note":"Sunnyvale, not on the Cupertino VTA 55 walk."
+    },
+    "verification":{
+     "level":"listing",
+     "sources":[
+      {
+       "label":"allmenus.com - Bay Boat Special $18.95 (aggregator, not official)",
+       "url":"https://www.allmenus.com/ca/sunnyvale/279238-bay-sushi/menu/"
+      },
+      {
+       "label":"Yelp Bay Sushi - hours, address, lunch reviews",
+       "url":"https://www.yelp.com/biz/bay-sushi-sunnyvale-2"
+      }
+     ],
+     "accessed":"2026-09-16"
+    },
+    "review_links":{
+     "yelp":"https://www.yelp.com/biz/bay-sushi-sunnyvale-2",
+     "google_maps":"https://www.google.com/maps/search/?api=1&query=Bay+Sushi+1647+Hollenbeck+Ave+Sunnyvale"
+    },
+    "flags":[
+     "Price is from allmenus.com aggregator, not the restaurant's own website. Do not treat as officially verified pricing.",
+     "Restaurant does not appear to have its own website. Phone: (408) 735-1777.",
+     "Closed Mondays. Sunday is dinner only (5 PM - 8:30 PM)."
+    ],
+    "distance_mi":null,
+    "phone":"(408) 735-1777",
+    "id":"L864",
+    "added_in":"batch20_pass20_ring_sweep.json"
    }
   ],
   "top_picks_for_tuesday_sept_8":[
@@ -46771,6 +46823,126 @@ window.TINO_DATA = {
     ],
     "searched":"2026-09-15",
     "why":"Hours conflict between the chain's own two sites: metrocitysunnyvale.com/locations says 'Open 7 Days a week from 8AM to 9PM' while metrocityduane.com says Tue-Fri 11 AM-8 PM, Sat 9 AM-8 PM, Sun 9 AM-3 PM (Mon absent). Not resolvable from official sources."
+   },
+   {
+    "name":"Erthya",
+    "city":"Cupertino",
+    "why":"Yelp tags it 'Good for lunch, Lunch Special' but no restaurant-controlled website or menu was found. Only aggregator/Yelp mentions exist. Price and lunch special details could not be verified from an official source.",
+    "links":[
+     {
+      "label":"Yelp search result",
+      "url":"https://www.yelp.com/search?find_desc=Indian+Lunch+Special&find_loc=Sunnyvale%2C+CA&start=80"
+     }
+    ],
+    "searched":"2026-09-07"
+   },
+   {
+    "name":"Peppermint",
+    "city":"Sunnyvale",
+    "why":"Yelp tags it 'Good for lunch, Lunch Special' but no official menu, price, or lunch special details could be verified from a restaurant-controlled source.",
+    "links":[
+     {
+      "label":"Yelp search result",
+      "url":"https://www.yelp.com/search?find_desc=Indian+Lunch+Special&find_loc=Sunnyvale%2C+CA&start=80"
+     }
+    ],
+    "searched":"2026-09-07"
+   },
+   {
+    "name":"Happy Flower Eatery & Boba",
+    "city":"Sunnyvale",
+    "why":"Yelp tags it 'Good for lunch, Lunch Special' but no official menu or price could be verified. The restaurant appears to be primarily a boba tea shop with food.",
+    "links":[
+     {
+      "label":"Yelp search result",
+      "url":"https://www.yelp.com/search?find_desc=Indian+Lunch+Special&find_loc=Sunnyvale%2C+CA&start=80"
+     }
+    ],
+    "searched":"2026-09-07"
+   },
+   {
+    "name":"Chaat House",
+    "city":"Sunnyvale",
+    "why":"Yelp tags it 'Good for lunch' but no specific lunch special or discount was found. Appears to have regular-priced Indian street food menu all day.",
+    "links":[
+     {
+      "label":"Yelp search result",
+      "url":"https://www.yelp.com/search?find_desc=Indian+Lunch+Special&find_loc=Sunnyvale%2C+CA&start=80"
+     }
+    ],
+    "searched":"2026-09-07"
+   },
+   {
+    "name":"ZhangFei Hot Pot",
+    "city":"Fremont",
+    "why":"Reddit reviewer quotes AYCE lunch at $24.99 and dinner at $34.99, but no restaurant-controlled website or official menu was found to verify these prices. Reviewer quotes are not accepted as prices per project policy.",
+    "links":[
+     {
+      "label":"Reddit r/Fremont - buffets thread",
+      "url":"https://www.reddit.com/r/Fremont/comments/1l1qwss/buffets_not_world_gourmet/"
+     }
+    ],
+    "searched":"2026-09-07"
+   },
+   {
+    "name":"Naga's Kitchen",
+    "city":"Fremont",
+    "why":"Listing data shows lunch hours (11:30 AM - 2:30/3:00 PM) but no lunch special or discount was found. Regular-priced South Indian menu.",
+    "links":[
+     {
+      "label":"withbites.com listing data",
+      "url":"https://withbites.com/locations/unioncity"
+     }
+    ],
+    "searched":"2026-09-07"
+   },
+   {
+    "name":"Taiwan Porridge",
+    "city":"Fremont",
+    "why":"Listing data shows open 11:00 AM - 9:00 PM daily but no lunch special or discount was found. Regular-priced Taiwanese porridge menu.",
+    "links":[
+     {
+      "label":"withbites.com listing data",
+      "url":"https://withbites.com/locations/unioncity"
+     }
+    ],
+    "searched":"2026-09-07"
+   },
+   {
+    "name":"Pier 98 Sushi Bar & Grill",
+    "city":"Newark",
+    "why":"Yelp review mentions 'weekday lunch special' with saba shioyaki $8.95 and salmon teriyaki $9.50, but these are old reviewer-quoted prices (2014-era per the review text) from a single Yelp review. No restaurant-controlled menu or current price was found.",
+    "links":[
+     {
+      "label":"Yelp collection - Fremont/Union City/Newark",
+      "url":"https://www.yelp.com/collection/eDH3FT5b-AJ8fnz-J1htpQ/Places-to-eat-in-Fremont-Union-City-Newark"
+     }
+    ],
+    "searched":"2026-09-07"
+   },
+   {
+    "name":"Sake2Sushi",
+    "city":"Fremont",
+    "why":"Reddit reviewer quotes AYCE lunch at $35.99 and dinner at $42.99-$49.99, but no restaurant-controlled website or official menu was found to verify. Reviewer quotes are not accepted as prices per project policy.",
+    "links":[
+     {
+      "label":"Reddit r/Fremont - buffets thread",
+      "url":"https://www.reddit.com/r/Fremont/comments/1l1qwss/buffets_not_world_gourmet/"
+     }
+    ],
+    "searched":"2026-09-07"
+   },
+   {
+    "name":"Los Altos Taqueria (Los Altos, CA)",
+    "city":"Los Altos",
+    "why":"The search result for 'Los Altos Taqueria' with 'Lunch Specials served 11AM to 3PM Monday - Friday' belongs to a restaurant in Goose Creek (Northern California, 180 miles away), not Los Altos, CA. Already in rejected list as R02.",
+    "links":[
+     {
+      "label":"losaltosmexicangrill.com menu",
+      "url":"https://losaltosmexicangrill.com/goose-creek-los-altos-taqueria-food-menu"
+     }
+    ],
+    "searched":"2026-09-07"
    }
   ],
   "notes":[

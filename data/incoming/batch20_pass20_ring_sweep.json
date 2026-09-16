@@ -1,0 +1,146 @@
+{
+  "entries": [
+    {
+      "name": "Mastro's Steakhouse",
+      "city": "Santa Clara",
+      "area": "Westfield Valley Fair",
+      "address": "2855 Stevens Creek Blvd, Suite 1860, Santa Clara, CA 95050",
+      "coords": [37.3237, -121.9476],
+      "coords_source": "official Google Maps link on mastrosrestaurants.com",
+      "cuisine": "American steakhouse / seafood",
+      "lunch_special": {
+        "name": "Lunch Menu available 12 PM - 4 PM (sandwiches and entrées); Westfield Foodie Week $39 prix fixe (Sept 19-27, 2026 only)",
+        "price_from": 22.0,
+        "price_to": 42.0,
+        "days": "Every day 12:00 PM - 4:00 PM (lunch menu); Foodie Week Sept 19-27 is limited time only",
+        "window": "12:00 PM - 4:00 PM",
+        "includes": "Official lunch menu: Grilled Prime Burger $26, Chicken Piccata $22, Nueske's BLT $24, Prime Steak Frites $42, Shrimp Fettuccine $29, Crab Cake Sandwich $32, Poke Bowl $30. Foodie Week prix fixe $39: appetizer + entree (limited time Sept 19-27)."
+      },
+      "hours_tuesday": "12:00 PM - 9:00 PM",
+      "days_open": "Sun-Thu 12:00 PM - 9:00 PM, Fri-Sat 12:00 PM - 10:00 PM (official)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {"ok": false, "note": "Santa Clara, not on the Cupertino VTA 55 walk. ~3.5 mi from destination."},
+      "verification": {
+        "level": "official",
+        "sources": [
+          {"label": "Mastro's Steakhouse Santa Clara official site - hours, address, lunch menu with prices", "url": "https://www.mastrosrestaurants.com/location/mastros-steakhouse-santa-clara/"},
+          {"label": "Mastro's Santa Clara lunch menu (full prices from official site)", "url": "https://www.mastrosrestaurants.com/location/mastros-steakhouse-santa-clara/#lunch-menu-masc"}
+        ],
+        "accessed": "2026-09-16"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/mastros-steakhouse-santa-clara",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Mastros+Steakhouse+2855+Stevens+Creek+Blvd+Santa+Clara"
+      },
+      "flags": [
+        "The $39 Foodie Week prix fixe is a limited-time event (Sept 19-27, 2026), not a permanent lunch special. Regular lunch menu prices are $22-$42 per item.",
+        "This is a high-end steakhouse; lunch pricing is premium. Not a budget lunch deal.",
+        "No distinct lunch discount vs dinner - the lunch menu is a separate card but prices are comparable to dinner."
+      ],
+      "distance_mi": null,
+      "phone": "(408) 538-4183"
+    },
+    {
+      "name": "Bay Sushi",
+      "city": "Sunnyvale",
+      "area": "Hollenbeck Ave",
+      "address": "1647 Hollenbeck Ave, Sunnyvale, CA 94087",
+      "coords": null,
+      "coords_source": "not geocoded",
+      "cuisine": "Japanese / sushi",
+      "lunch_special": {
+        "name": "Bay Boat Special - chicken or beef teriyaki, five pieces nigiri and California roll (lunch hours only)",
+        "price_from": 18.95,
+        "price_to": null,
+        "days": "Tuesday-Saturday (lunch hours)",
+        "window": "11:30 AM - 2:30 PM",
+        "includes": "Aggregator menu (allmenus.com): Bay Boat Special $18.95 - chicken or beef teriyaki, five pieces nigiri, and California roll. Yelp reviewers confirm chirashi lunch special and good lunch value. Lunch hours from Yelp: Tue-Sat 11:30 AM - 2:30 PM."
+      },
+      "hours_tuesday": "11:30 AM - 2:30 PM, 5:00 PM - 8:30 PM",
+      "days_open": "Mon closed; Tue-Sat lunch 11:30-14:30 dinner 17:00-20:30; Sun dinner only 17:00-20:30 (Yelp)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {"ok": false, "note": "Sunnyvale, not on the Cupertino VTA 55 walk."},
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {"label": "allmenus.com - Bay Boat Special $18.95 (aggregator, not official)", "url": "https://www.allmenus.com/ca/sunnyvale/279238-bay-sushi/menu/"},
+          {"label": "Yelp Bay Sushi - hours, address, lunch reviews", "url": "https://www.yelp.com/biz/bay-sushi-sunnyvale-2"}
+        ],
+        "accessed": "2026-09-16"
+      },
+      "review_links": {
+        "yelp": "https://www.yelp.com/biz/bay-sushi-sunnyvale-2",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Bay+Sushi+1647+Hollenbeck+Ave+Sunnyvale"
+      },
+      "flags": [
+        "Price is from allmenus.com aggregator, not the restaurant's own website. Do not treat as officially verified pricing.",
+        "Restaurant does not appear to have its own website. Phone: (408) 735-1777.",
+        "Closed Mondays. Sunday is dinner only (5 PM - 8:30 PM)."
+      ],
+      "distance_mi": null,
+      "phone": "(408) 735-1777"
+    }
+  ],
+  "rejected": [
+    {
+      "name": "Erthya",
+      "city": "Cupertino",
+      "why": "Yelp tags it 'Good for lunch, Lunch Special' but no restaurant-controlled website or menu was found. Only aggregator/Yelp mentions exist. Price and lunch special details could not be verified from an official source.",
+      "links": [{"label": "Yelp search result", "url": "https://www.yelp.com/search?find_desc=Indian+Lunch+Special&find_loc=Sunnyvale%2C+CA&start=80"}]
+    },
+    {
+      "name": "Peppermint",
+      "city": "Sunnyvale",
+      "why": "Yelp tags it 'Good for lunch, Lunch Special' but no official menu, price, or lunch special details could be verified from a restaurant-controlled source.",
+      "links": [{"label": "Yelp search result", "url": "https://www.yelp.com/search?find_desc=Indian+Lunch+Special&find_loc=Sunnyvale%2C+CA&start=80"}]
+    },
+    {
+      "name": "Happy Flower Eatery & Boba",
+      "city": "Sunnyvale",
+      "why": "Yelp tags it 'Good for lunch, Lunch Special' but no official menu or price could be verified. The restaurant appears to be primarily a boba tea shop with food.",
+      "links": [{"label": "Yelp search result", "url": "https://www.yelp.com/search?find_desc=Indian+Lunch+Special&find_loc=Sunnyvale%2C+CA&start=80"}]
+    },
+    {
+      "name": "Chaat House",
+      "city": "Sunnyvale",
+      "why": "Yelp tags it 'Good for lunch' but no specific lunch special or discount was found. Appears to have regular-priced Indian street food menu all day.",
+      "links": [{"label": "Yelp search result", "url": "https://www.yelp.com/search?find_desc=Indian+Lunch+Special&find_loc=Sunnyvale%2C+CA&start=80"}]
+    },
+    {
+      "name": "ZhangFei Hot Pot",
+      "city": "Fremont",
+      "why": "Reddit reviewer quotes AYCE lunch at $24.99 and dinner at $34.99, but no restaurant-controlled website or official menu was found to verify these prices. Reviewer quotes are not accepted as prices per project policy.",
+      "links": [{"label": "Reddit r/Fremont - buffets thread", "url": "https://www.reddit.com/r/Fremont/comments/1l1qwss/buffets_not_world_gourmet/"}]
+    },
+    {
+      "name": "Naga's Kitchen",
+      "city": "Fremont",
+      "why": "Listing data shows lunch hours (11:30 AM - 2:30/3:00 PM) but no lunch special or discount was found. Regular-priced South Indian menu.",
+      "links": [{"label": "withbites.com listing data", "url": "https://withbites.com/locations/unioncity"}]
+    },
+    {
+      "name": "Taiwan Porridge",
+      "city": "Fremont",
+      "why": "Listing data shows open 11:00 AM - 9:00 PM daily but no lunch special or discount was found. Regular-priced Taiwanese porridge menu.",
+      "links": [{"label": "withbites.com listing data", "url": "https://withbites.com/locations/unioncity"}]
+    },
+    {
+      "name": "Pier 98 Sushi Bar & Grill",
+      "city": "Newark",
+      "why": "Yelp review mentions 'weekday lunch special' with saba shioyaki $8.95 and salmon teriyaki $9.50, but these are old reviewer-quoted prices (2014-era per the review text) from a single Yelp review. No restaurant-controlled menu or current price was found.",
+      "links": [{"label": "Yelp collection - Fremont/Union City/Newark", "url": "https://www.yelp.com/collection/eDH3FT5b-AJ8fnz-J1htpQ/Places-to-eat-in-Fremont-Union-City-Newark"}]
+    },
+    {
+      "name": "Sake2Sushi",
+      "city": "Fremont",
+      "why": "Reddit reviewer quotes AYCE lunch at $35.99 and dinner at $42.99-$49.99, but no restaurant-controlled website or official menu was found to verify. Reviewer quotes are not accepted as prices per project policy.",
+      "links": [{"label": "Reddit r/Fremont - buffets thread", "url": "https://www.reddit.com/r/Fremont/comments/1l1qwss/buffets_not_world_gourmet/"}]
+    },
+    {
+      "name": "Los Altos Taqueria (Los Altos, CA)",
+      "city": "Los Altos",
+      "why": "The search result for 'Los Altos Taqueria' with 'Lunch Specials served 11AM to 3PM Monday - Friday' belongs to a restaurant in Goose Creek (Northern California, 180 miles away), not Los Altos, CA. Already in rejected list as R02.",
+      "links": [{"label": "losaltosmexicangrill.com menu", "url": "https://losaltosmexicangrill.com/goose-creek-los-altos-taqueria-food-menu"}]
+    }
+  ]
+}
