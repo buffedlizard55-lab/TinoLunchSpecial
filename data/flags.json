@@ -2790,6 +2790,99 @@
         "label": "Pass 23 review document",
         "url": "https://github.com/buffedlizard55-lab/TinoLunchSpecial/blob/main/docs/REVIEW_2026-09-17_pass23.md"
       }
+    },
+    {
+      "id": "LUNCH-FLAG-156",
+      "date": "2026-09-17",
+      "status": "open",
+      "severity": "warning",
+      "title": "Field-level audit replaces blanket official claims",
+      "what_we_found": "Only five rows have complete pass-24 primary-source evidence for special, price, schedule, location and operating hours. Two additional rows have priced specials but incomplete schedules. The other legacy rows are research, not newly verified deals.",
+      "what_we_did": "See pass 24 evidence and research log. Follow-up is queued; no unsupported promotion.",
+      "rows": [
+        "L01",
+        "L02",
+        "L31",
+        "L553",
+        "L260",
+        "L76",
+        "L184"
+      ],
+      "manual_review": true,
+      "link": {
+        "label": "Pass 24 review",
+        "url": "https://github.com/buffedlizard55-lab/TinoLunchSpecial/blob/main/docs/REVIEW_2026-09-17_pass24.md"
+      }
+    },
+    {
+      "id": "LUNCH-FLAG-157",
+      "date": "2026-09-17",
+      "status": "open",
+      "severity": "warning",
+      "title": "Two confirmed duplicates consolidated",
+      "what_we_found": "L649 -> L260 Sushi Roku: same official Palo Alto address and phone. L650 -> L76 Lotus Thai: same official address and phone. Old Lotus $13.95-$16.95 and 11 AM-3 PM claims were not supported by the reviewed official sources.",
+      "what_we_did": "See pass 24 evidence and research log. Follow-up is queued; no unsupported promotion.",
+      "rows": [
+        "L260",
+        "L76"
+      ],
+      "manual_review": true,
+      "link": {
+        "label": "Pass 24 review",
+        "url": "https://github.com/buffedlizard55-lab/TinoLunchSpecial/blob/main/docs/REVIEW_2026-09-17_pass24.md"
+      }
+    },
+    {
+      "id": "LUNCH-FLAG-158",
+      "date": "2026-09-17",
+      "status": "open",
+      "severity": "warning",
+      "title": "St. John’s lunch cutoff and hours conflict",
+      "what_we_found": "Official Tuesday sandwich $14.50 / $16.95 verified. Lunch cutoff not stated. Thursday closes 10 PM in the summer banner but 9 PM in the footer. Phone corrected from official site.",
+      "what_we_did": "See pass 24 evidence and research log. Follow-up is queued; no unsupported promotion.",
+      "rows": [
+        "L184"
+      ],
+      "manual_review": true,
+      "link": {
+        "label": "Pass 24 review",
+        "url": "https://github.com/buffedlizard55-lab/TinoLunchSpecial/blob/main/docs/REVIEW_2026-09-17_pass24.md"
+      }
+    },
+    {
+      "id": "LUNCH-FLAG-159",
+      "date": "2026-09-17",
+      "status": "open",
+      "severity": "warning",
+      "title": "Bulk source retrieval failed; 100-new target not met",
+      "what_we_found": "Two bulk runs attempted existing sources; the final geographically distributed 100-target run is logged. All 100 failed at TLS or network connection. These are attempts, not verified restaurants. 20 discovery queries and targeted page-reader checks did not identify a verified net-new business. No automatic promotions.",
+      "what_we_did": "See pass 24 evidence and research log. Follow-up is queued; no unsupported promotion.",
+      "rows": [],
+      "manual_review": true,
+      "link": {
+        "label": "Pass 24 review",
+        "url": "https://github.com/buffedlizard55-lab/TinoLunchSpecial/blob/main/docs/REVIEW_2026-09-17_pass24.md"
+      }
+    },
+    {
+      "id": "LUNCH-FLAG-160",
+      "date": "2026-09-17",
+      "status": "open",
+      "severity": "warning",
+      "title": "Ordering text and image-menu gaps",
+      "what_we_found": "Home Eat and Local Kitchens prices surfaced in search extracts but not direct Toast page text. Shabuya price was also absent from direct text. Pho Lyfe is now readable but menu images remain untranscribed. None earns a complete field-level audit.",
+      "what_we_did": "See pass 24 evidence and research log. Follow-up is queued; no unsupported promotion.",
+      "rows": [
+        "L03",
+        "L104",
+        "L255",
+        "L52"
+      ],
+      "manual_review": true,
+      "link": {
+        "label": "Pass 24 review",
+        "url": "https://github.com/buffedlizard55-lab/TinoLunchSpecial/blob/main/docs/REVIEW_2026-09-17_pass24.md"
+      }
     }
   ]
 }

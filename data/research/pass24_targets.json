@@ -1,0 +1,802 @@
+[
+  {
+    "sequence": 1,
+    "existing_id": "L01",
+    "name": "Benihana",
+    "city": "Cupertino",
+    "url": "https://www.benihana.com/locations/cupertino/",
+    "source_label": "Benihana Cupertino location page (Power Lunch price, days, window, hours, address)"
+  },
+  {
+    "sequence": 2,
+    "existing_id": "L02",
+    "name": "Gyu-Kaku Japanese BBQ",
+    "city": "Cupertino",
+    "url": "https://www.gyu-kaku.com/cupertino/",
+    "source_label": "Gyu-Kaku Cupertino page - hours, lunch-menu availability, address, phone"
+  },
+  {
+    "sequence": 3,
+    "existing_id": "L03",
+    "name": "Home Eat",
+    "city": "Cupertino",
+    "url": "https://homeeat.toast.site/order/home-eat-cupertino",
+    "source_label": "Home Eat official online menu - Lunch Specials section (prices)"
+  },
+  {
+    "sequence": 4,
+    "existing_id": "L04",
+    "name": "Ajito",
+    "city": "Cupertino",
+    "url": "https://restaurantguru.com/Ajito-Cupertino",
+    "source_label": "Google-derived listing with opening hours and coordinates"
+  },
+  {
+    "sequence": 5,
+    "existing_id": "L05",
+    "name": "Wooga Premium Korean BBQ",
+    "city": "Cupertino",
+    "url": "https://www.toasttab.com/local/order/wooga-korean-bbq-10493-s-de-anza-blvd",
+    "source_label": "Wooga's own online ordering menu (dinner pricing, for comparison)"
+  },
+  {
+    "sequence": 6,
+    "existing_id": "L06",
+    "name": "Red Hot Wok",
+    "city": "Cupertino",
+    "url": "https://www.redhotwokcupertino.com/",
+    "source_label": "Red Hot Wok official site - full menu with prices, address and open hours"
+  },
+  {
+    "sequence": 7,
+    "existing_id": "L08",
+    "name": "Fish's Wild",
+    "city": "Cupertino",
+    "url": "https://fishiswild.com/places/cupertino---southside",
+    "source_label": "Fish's Wild official site - Cupertino location hours"
+  },
+  {
+    "sequence": 8,
+    "existing_id": "L12",
+    "name": "Curry Hyuga",
+    "city": "Cupertino",
+    "url": "https://www.corner.inc/place/pz22rNwbMDj5",
+    "source_label": "Google-derived place page with per-day hours (Tuesday: Closed)"
+  },
+  {
+    "sequence": 9,
+    "existing_id": "L16",
+    "name": "Pho Ha Noi",
+    "city": "Cupertino",
+    "url": "https://phohanoi.com/",
+    "source_label": "Pho Ha Noi official site - Cupertino location block (10100 S De Anza Blvd + full weekly hours) fetched directly 2026-09-17"
+  },
+  {
+    "sequence": 10,
+    "existing_id": "L26",
+    "name": "Sizzling Lunch",
+    "city": "Cupertino",
+    "url": "https://toast.app/r/sizzlinglunch-cupertino/order",
+    "source_label": "Sizzling Lunch Cupertino official Toast ordering page - 10033 Saich Way + daily 11:00 am - 8:30 pm (fetched directly 2026-09-17)"
+  },
+  {
+    "sequence": 11,
+    "existing_id": "L27",
+    "name": "Yiassoo",
+    "city": "Cupertino",
+    "url": "https://yiassoocupertino.com/",
+    "source_label": "Official site"
+  },
+  {
+    "sequence": 12,
+    "existing_id": "L28",
+    "name": "Aqui Cal Mex",
+    "city": "Cupertino",
+    "url": "https://www.aquicalmex.com/",
+    "source_label": "Aqui official home - daily special plate price and Sept 2-15 window"
+  },
+  {
+    "sequence": 13,
+    "existing_id": "L29",
+    "name": "BJ's Restaurant & Brewhouse",
+    "city": "Cupertino",
+    "url": "https://www.bjsrestaurants.com/locations?fullSearchString=Cupertino%2C+California&lat=37.3229978&lng=-122.03218229999999&searchString=cupertino",
+    "source_label": "BJ's official locations (Cupertino 10690 N De Anza)"
+  },
+  {
+    "sequence": 14,
+    "existing_id": "L32",
+    "name": "Dish N Dash",
+    "city": "Cupertino",
+    "url": "https://www.dishdash.com/menu/dish-n-dash-cupertino-menu/",
+    "source_label": "Official Dish N Dash Cupertino menu with prices"
+  },
+  {
+    "sequence": 15,
+    "existing_id": "L36",
+    "name": "Galpao Gaucho Brazilian Steakhouse",
+    "city": "Cupertino",
+    "url": "https://galpaogauchousa.com/location/cupertino-ca/",
+    "source_label": "Official Galpao Cupertino pricing (lunch Mon-Fri $46/$59)"
+  },
+  {
+    "sequence": 16,
+    "existing_id": "L99",
+    "name": "Pacific Catch",
+    "city": "Cupertino",
+    "url": "https://usmenuguide.com/places/united-states/california/cupertino/pacific-catch-cupertino/",
+    "source_label": "usmenuguide - Pacific Catch hours/happy-hour cross-check"
+  },
+  {
+    "sequence": 17,
+    "existing_id": "L102",
+    "name": "Lazy Dog Restaurant & Bar",
+    "city": "Cupertino",
+    "url": "https://orders.lazydogrestaurants.com/order/cupertino",
+    "source_label": "Lazy Dog Cupertino official ordering page - 'Lunch Specials: Specials starting at $8.95 'til 4pm daily'"
+  },
+  {
+    "sequence": 18,
+    "existing_id": "L103",
+    "name": "Haidilao Hot Pot Cupertino",
+    "city": "Cupertino",
+    "url": "https://www.reddit.com/r/Cupertino/comments/1f9bixv/hotpot_discounts/",
+    "source_label": "Reddit r/Cupertino 'HotPot Discounts?' - Haidilao lunch 18.99 with entree, rice, broth, sauce"
+  },
+  {
+    "sequence": 19,
+    "existing_id": "L104",
+    "name": "Local Kitchens - Cupertino",
+    "city": "Cupertino",
+    "url": "https://localkitchens.toast.site/order/local-kitchens-cupertino",
+    "source_label": "Local Kitchens Cupertino official ordering page - full Lunch Specials list with prices"
+  },
+  {
+    "sequence": 20,
+    "existing_id": "L110",
+    "name": "Tofu Plus Korean BBQ",
+    "city": "Cupertino",
+    "url": "https://restaurantjump.com/tofu-plus-korean-bbq-95014/",
+    "source_label": "restaurantjump - Tofu Plus hours and reviews"
+  },
+  {
+    "sequence": 21,
+    "existing_id": "L38",
+    "name": "Bonchon",
+    "city": "Sunnyvale",
+    "url": "https://restaurants.bonchon.com/locations/ca/sunnyvale/572-e-el-camino-real",
+    "source_label": "Bonchon Sunnyvale official location page - hours and Lunch Specials section"
+  },
+  {
+    "sequence": 22,
+    "existing_id": "L43",
+    "name": "Inchin's Bamboo Garden",
+    "city": "Sunnyvale",
+    "url": "https://www.citylinesunnyvale.com/restaurant-week",
+    "source_label": "Cityline Sunnyvale restaurant-week listing (address)"
+  },
+  {
+    "sequence": 23,
+    "existing_id": "L48",
+    "name": "Ginger Cafe",
+    "city": "Sunnyvale",
+    "url": "https://gingercafe.net/menus/lunchmenu/",
+    "source_label": "Ginger Cafe official lunch menu - specials $16-$19, 11 AM-3 PM, soup + rice"
+  },
+  {
+    "sequence": 24,
+    "existing_id": "L49",
+    "name": "Thai Spoons",
+    "city": "Sunnyvale",
+    "url": "https://pos.chowbus.com/online-ordering/store/Thai-Spoons/22597",
+    "source_label": "Thai Spoons ordering storefront - address, hours, Lunch Combo Menu 10:30-2"
+  },
+  {
+    "sequence": 25,
+    "existing_id": "L50",
+    "name": "First Wok",
+    "city": "Sunnyvale",
+    "url": "https://www.smorefood.com/by3jcocr/first-wok-sunnyvale-94087/order-online",
+    "source_label": "First Wok ordering page - address/hours JSON-LD"
+  },
+  {
+    "sequence": 26,
+    "existing_id": "L51",
+    "name": "Asia Village Restaurant",
+    "city": "Sunnyvale",
+    "url": "https://restaurantguru.com/Asia-Village-Sunnyvale",
+    "source_label": "RestaurantGuru - Asia Village hours/geo cross-check"
+  },
+  {
+    "sequence": 27,
+    "existing_id": "L55",
+    "name": "Dumpling Depot",
+    "city": "Sunnyvale",
+    "url": "https://dumplingdepot-s.com/",
+    "source_label": "Dumpling Depot official site - address and weekly hours"
+  },
+  {
+    "sequence": 28,
+    "existing_id": "L56",
+    "name": "10 Butchers Korean BBQ",
+    "city": "Sunnyvale",
+    "url": "https://restaurantguru.com/10-Butchers-Korean-BBQ-Sunnyvale",
+    "source_label": "RestaurantGuru - 10 Butchers hours/geo cross-check"
+  },
+  {
+    "sequence": 29,
+    "existing_id": "L115",
+    "name": "The Pasta Market - Sunnyvale",
+    "city": "Sunnyvale",
+    "url": "https://losaltos.pastamarket.com/los-altos-pasta-market-los-altos-locations",
+    "source_label": "Pasta Market official locations page - Sunnyvale address and hours"
+  },
+  {
+    "sequence": 30,
+    "existing_id": "L147",
+    "name": "Chaat Bhavan - Sunnyvale (E El Camino Real)",
+    "city": "Sunnyvale",
+    "url": "https://www.chaatbhavan.com/",
+    "source_label": "Chaat Bhavan official site - address, coordinates, phone and daily 11:30-22:00 hours"
+  },
+  {
+    "sequence": 31,
+    "existing_id": "L24",
+    "name": "Master Oh's",
+    "city": "Santa Clara",
+    "url": "https://www.theinfatuation.com/san-francisco/guides/best-restaurants-santa-clara",
+    "source_label": "Infatuation - The 19 Best Restaurants in Santa Clara (Master Oh address, lunch note)"
+  },
+  {
+    "sequence": 32,
+    "existing_id": "L57",
+    "name": "Home Eat",
+    "city": "Santa Clara",
+    "url": "https://homeeat.toast.site/order/home-eat-santa-clara",
+    "source_label": "Home Eat Santa Clara official ordering - lunch specials $12.99-$14.99"
+  },
+  {
+    "sequence": 33,
+    "existing_id": "L58",
+    "name": "Dusita Thai Cuisine",
+    "city": "Santa Clara",
+    "url": "https://dusitathaicuisine.com/wp-content/uploads/Dusita_mainmenu_JL-1-10-no-bg-SM.pdf",
+    "source_label": "Dusita official menu PDF - lunch window, address, phone"
+  },
+  {
+    "sequence": 34,
+    "existing_id": "L59",
+    "name": "Il Fornaio",
+    "city": "Santa Clara",
+    "url": "https://il-fornaio-santa-clara.wheree.com/",
+    "source_label": "Wheree - Il Fornaio hours cross-check"
+  },
+  {
+    "sequence": 35,
+    "existing_id": "L60",
+    "name": "Mastro's Steakhouse",
+    "city": "Santa Clara",
+    "url": "https://www.mastrosrestaurants.com/location/santa-clara/",
+    "source_label": "Mastro's official Santa Clara page - address, hours"
+  },
+  {
+    "sequence": 36,
+    "existing_id": "L61",
+    "name": "Erik's DeliCafe",
+    "city": "Santa Clara",
+    "url": "https://www.eriksdelicafe.com/locations/",
+    "source_label": "Erik's DeliCafe official locations - Santa Clara Kiely address/hours"
+  },
+  {
+    "sequence": 37,
+    "existing_id": "L62",
+    "name": "Clara's Junction",
+    "city": "Santa Clara",
+    "url": "https://www.clarasjunction.com/",
+    "source_label": "Clara's Junction homepage - $19 lunch Wed-Fri 11-3"
+  },
+  {
+    "sequence": 38,
+    "existing_id": "L111",
+    "name": "Tomatina",
+    "city": "Santa Clara",
+    "url": "https://tomatina.com/menu/tomatina-santa-clara-3127-mission-college-blvd",
+    "source_label": "Tomatina official menu page for the Santa Clara store - Lunch Specials Pick Two $13.50"
+  },
+  {
+    "sequence": 39,
+    "existing_id": "L112",
+    "name": "The Hut",
+    "city": "Santa Clara",
+    "url": "https://thehutsantaclara.com/santa-clara-the-hut-food-menu",
+    "source_label": "The Hut Santa Clara official food menu - Tuesday Taco Tuesday $10.00"
+  },
+  {
+    "sequence": 40,
+    "existing_id": "L151",
+    "name": "Pav Bhaji and More",
+    "city": "Santa Clara",
+    "url": "https://www.theinfatuation.com/san-francisco/reviews/pav-bhaji-and-more",
+    "source_label": "Infatuation review - Pav Bhaji and More"
+  },
+  {
+    "sequence": 41,
+    "existing_id": "L17",
+    "name": "Water Tower Kitchen",
+    "city": "Campbell",
+    "url": "https://www.menupix.com/sanjose/restaurants/31814217/Water-Tower-Kitchen-Campbell-CA",
+    "source_label": "Directory listing with different closing times"
+  },
+  {
+    "sequence": 42,
+    "existing_id": "L18",
+    "name": "Brew City Grill",
+    "city": "Campbell",
+    "url": "https://www.brewcitygrill.com/",
+    "source_label": "Restaurant site listed from the reservations page"
+  },
+  {
+    "sequence": 43,
+    "existing_id": "L65",
+    "name": "City Pizza",
+    "city": "Campbell",
+    "url": "https://www.citypizzacampbell.com/",
+    "source_label": "City Pizza official site - menu prices, address, hours"
+  },
+  {
+    "sequence": 44,
+    "existing_id": "L67",
+    "name": "The Breakfast Club",
+    "city": "Campbell",
+    "url": "https://www.bcmidtown.com/location/unnamed-1/",
+    "source_label": "Breakfast Club official location page - address, daily 7-3"
+  },
+  {
+    "sequence": 45,
+    "existing_id": "L122",
+    "name": "A Bellagio",
+    "city": "Campbell",
+    "url": "https://www.abellagio.com/",
+    "source_label": "A Bellagio official site - address, phone and 'Lunch: Tuesday-Friday 11:30am-2:30pm'"
+  },
+  {
+    "sequence": 46,
+    "existing_id": "L123",
+    "name": "Buca di Beppo Italian Restaurant",
+    "city": "Campbell",
+    "url": "https://dineatbuca.com/locations/campbell/",
+    "source_label": "Buca di Beppo Campbell official location page - hours, address, coordinates and 'Lunch Combos available Monday-Friday until 3:00pm'"
+  },
+  {
+    "sequence": 47,
+    "existing_id": "L125",
+    "name": "Royal Taj India Cuisine",
+    "city": "Campbell",
+    "url": "https://royaltajcamdencampbell.com/",
+    "source_label": "royaltacamdencampbell.com - the restaurant's own current site, listing address, phone and Mon-Tue 11:30AM-3:00PM hours"
+  },
+  {
+    "sequence": 48,
+    "existing_id": "L226",
+    "name": "La Pizzeria",
+    "city": "Campbell",
+    "url": "https://www.lapizzeriacampbell.com/",
+    "source_label": "Official site - La Pizzeria $16.50 lunch special 11-4"
+  },
+  {
+    "sequence": 49,
+    "existing_id": "L284",
+    "name": "Be Wok & Hawaiian BBQ",
+    "city": "Campbell",
+    "url": "https://bewokhawaiianbbq.com/",
+    "source_label": "Official site - Be Wok Hawaiian BBQ (876 W Hamilton, daily 11-9)"
+  },
+  {
+    "sequence": 50,
+    "existing_id": "L286",
+    "name": "Marufuku Ramen - Campbell",
+    "city": "Campbell",
+    "url": "https://www.marufukuramen.com/campbell",
+    "source_label": "Official Marufuku Ramen Campbell page (hours per day)"
+  },
+  {
+    "sequence": 51,
+    "existing_id": "L86",
+    "name": "Mediterranean Grill House",
+    "city": "Mountain View",
+    "url": "https://mediterraneangrillhouse.com/",
+    "source_label": "Mediterranean Grill House official site - address, hours"
+  },
+  {
+    "sequence": 52,
+    "existing_id": "L88",
+    "name": "Ludwig's Biergarten",
+    "city": "Mountain View",
+    "url": "https://www.paloaltoonline.com/mountain-view/2024/10/07/ludwigs-mountain-view-transitions-to-new-ownership-under-creative-collective-founder-gisela-qasim/",
+    "source_label": "Palo Alto Online - Ludwig's address, phone, hours"
+  },
+  {
+    "sequence": 53,
+    "existing_id": "L89",
+    "name": "Don Giovanni's",
+    "city": "Mountain View",
+    "url": "https://dongiovannis.com/",
+    "source_label": "Don Giovanni official site - address, Tue-Fri lunch"
+  },
+  {
+    "sequence": 54,
+    "existing_id": "L90",
+    "name": "Toki Sushi",
+    "city": "Mountain View",
+    "url": "https://www.mv-voice.com/mountain-view/2025/12/09/this-new-japanese-restaurant-offers-bentos-for-just-8-95/",
+    "source_label": "MV Voice - Toki Sushi address, phone, hours, $8.95 bento"
+  },
+  {
+    "sequence": 55,
+    "existing_id": "L149",
+    "name": "Sakoon",
+    "city": "Mountain View",
+    "url": "https://sakoon.wheree.com/",
+    "source_label": "wheree directory - Sakoon address and a quoted $22.99 buffet price, which conflicts with the Yelp answer"
+  },
+  {
+    "sequence": 56,
+    "existing_id": "L204",
+    "name": "Udon Mugizo",
+    "city": "Mountain View",
+    "url": "https://www.udonmugizo.com/locations.html",
+    "source_label": "Official site - Mugizo locations page (180 Castro St address, hours)"
+  },
+  {
+    "sequence": 57,
+    "existing_id": "L205",
+    "name": "Sushi Tomi",
+    "city": "Mountain View",
+    "url": "https://www.reddit.com/r/mountainview/comments/1f2co8a/what_is_the_best_lunch_special_in_mountain_view/",
+    "source_label": "Reddit r/mountainview - best lunch specials thread (reviewer quotes)"
+  },
+  {
+    "sequence": 58,
+    "existing_id": "L213",
+    "name": "Ox 9 Lanzhou Handpulled Noodles",
+    "city": "Mountain View",
+    "url": "https://www.corner.com/ca/mountain-view/136547845-ox-9-lanzhou-noodles-mountain-view",
+    "source_label": "corner - Ox 9 hours cross-check"
+  },
+  {
+    "sequence": 59,
+    "existing_id": "L291",
+    "name": "Caspian Cuisine",
+    "city": "Mountain View",
+    "url": "https://caspiancuisineca.com/",
+    "source_label": "Official site - Caspian Cuisine (address, phone, Tue 10-8:30, Sun 11-3)"
+  },
+  {
+    "sequence": 60,
+    "existing_id": "L311",
+    "name": "Khao Kang Thai Kitchen",
+    "city": "Mountain View",
+    "url": "https://restaurantjump.com/khao-kang-thai-kitchen-94043/",
+    "source_label": "Restaurantjump - Khao Kang (hours cross-check)"
+  },
+  {
+    "sequence": 61,
+    "existing_id": "L22",
+    "name": "Los Altos Grill",
+    "city": "Los Altos",
+    "url": "https://downtownlosaltos.org/member/wpbdp_category/dining/",
+    "source_label": "Downtown Los Altos (LAVA) dining directory - Los Altos Grill dinner-only listing (conflicting)"
+  },
+  {
+    "sequence": 62,
+    "existing_id": "L82",
+    "name": "Urfa Bistro",
+    "city": "Los Altos",
+    "url": "https://urfabistro.com/",
+    "source_label": "Official site - Urfa Bistro lunch Mon-Sun 11-2, dinner hours"
+  },
+  {
+    "sequence": 63,
+    "existing_id": "L83",
+    "name": "Aurum",
+    "city": "Los Altos",
+    "url": "https://restaurantguru.com/Aurum-Los-Altos",
+    "source_label": "RestaurantGuru - Aurum (address, hours, geo)"
+  },
+  {
+    "sequence": 64,
+    "existing_id": "L114",
+    "name": "The Pasta Market",
+    "city": "Los Altos",
+    "url": "https://losaltos.pastamarket.com/los-altos-pasta-market-los-altos-food-menu",
+    "source_label": "Pasta Market Los Altos official menu page - Gourmet Lunch Special $14.95"
+  },
+  {
+    "sequence": 65,
+    "existing_id": "L129",
+    "name": "El Comal",
+    "city": "Los Altos",
+    "url": "https://www.paloaltoonline.com/los-altos/2025/02/06/el-comal-opens-in-los-altos-specializing-in-dishes-from-oaxaca-and-yucatan/",
+    "source_label": "Palo Alto Online (Feb 2025) - El Comal opening article with address, phone, hours and price ranges"
+  },
+  {
+    "sequence": 66,
+    "existing_id": "L175",
+    "name": "Rustic House Oyster Bar and Grill",
+    "city": "Los Altos",
+    "url": "https://downtownlosaltos.org/member/wpbdp_category/dining/page/2/",
+    "source_label": "Downtown Los Altos (LAVA) dining directory page 2 - Rustic House address, hours"
+  },
+  {
+    "sequence": 67,
+    "existing_id": "L263",
+    "name": "Chef Chu's",
+    "city": "Los Altos",
+    "url": "https://maps.apple.com/place?place-id=I329E6F0A9F6A99B7",
+    "source_label": "Apple Maps - Chef Chu's (Tue closed cross-check, chefchu.com)"
+  },
+  {
+    "sequence": 68,
+    "existing_id": "L308",
+    "name": "American Italian Delicatessen",
+    "city": "Los Altos",
+    "url": "https://italiandeligodfather.com/los-altos/",
+    "source_label": "Official site - American Italian Deli Los Altos (139 Main St, Mon-Sat 9-5, Sun 9-4)"
+  },
+  {
+    "sequence": 69,
+    "existing_id": "L21",
+    "name": "Gardenia",
+    "city": "Los Gatos",
+    "url": "https://gardenialosgatos.restaurants-us.com/",
+    "source_label": "Third-party menu snapshot (item prices, not a lunch special)"
+  },
+  {
+    "sequence": 70,
+    "existing_id": "L68",
+    "name": "Oak & Rye",
+    "city": "Los Gatos",
+    "url": "https://oak-rye.wheree.com/",
+    "source_label": "Wheree - Oak & Rye hours cross-check (Tue closed)"
+  },
+  {
+    "sequence": 71,
+    "existing_id": "L71",
+    "name": "La Esquina",
+    "city": "Los Gatos",
+    "url": "https://www.laesquinamexlosgatos.com/",
+    "source_label": "La Esquina official site - address, phone, Tue 9-8 hours"
+  },
+  {
+    "sequence": 72,
+    "existing_id": "L72",
+    "name": "The Bywater",
+    "city": "Los Gatos",
+    "url": "https://www.thebywaterca.com/",
+    "source_label": "Bywater official site - Tue closed, address, phone"
+  },
+  {
+    "sequence": 73,
+    "existing_id": "L73",
+    "name": "Italian Brothers Restaurant",
+    "city": "Los Gatos",
+    "url": "https://www.italianbrothers.restaurant/",
+    "source_label": "Italian Brothers official site - address, hours JSON-LD"
+  },
+  {
+    "sequence": 74,
+    "existing_id": "L74",
+    "name": "The Pastaria & Market",
+    "city": "Los Gatos",
+    "url": "https://www.thepastaria.com/menu",
+    "source_label": "Pastaria official menu - address, hours JSON-LD"
+  },
+  {
+    "sequence": 75,
+    "existing_id": "L75",
+    "name": "The Diner of Los Gatos",
+    "city": "Los Gatos",
+    "url": "https://www.toasttab.com/local/order/lgdiner",
+    "source_label": "Diner of Los Gatos Toast ordering - address/hours"
+  },
+  {
+    "sequence": 76,
+    "existing_id": "L127",
+    "name": "Chez Philippe",
+    "city": "Los Gatos",
+    "url": "https://www.chezphilippelosgatos.com/",
+    "source_label": "Chez Philippe official site - address, phone and 'Lunch: Tuesday-Friday 11:30am-2:00pm'"
+  },
+  {
+    "sequence": 77,
+    "existing_id": "L101",
+    "name": "GOGA Restaurant",
+    "city": "Saratoga",
+    "url": "https://nextdoor.com/pages/indo-cafe/",
+    "source_label": "Nextdoor - GOGA address/phone"
+  },
+  {
+    "sequence": 78,
+    "existing_id": "L135",
+    "name": "Big Basin Burger Bar",
+    "city": "Saratoga",
+    "url": "https://restaurantjump.com/big-basin-burger-bar-95070/",
+    "source_label": "restaurantjump - Big Basin Burger Bar address, phone and Tuesday 11 AM - 9 PM"
+  },
+  {
+    "sequence": 79,
+    "existing_id": "L136",
+    "name": "Big Basin Cafe",
+    "city": "Saratoga",
+    "url": "https://restaurantguru.com/Big-Basin-Cafe-Saratoga",
+    "source_label": "restaurantguru - Big Basin Cafe address, coordinates, phone and 7AM-7PM hours"
+  },
+  {
+    "sequence": 80,
+    "existing_id": "L137",
+    "name": "Darla Cafe",
+    "city": "Saratoga",
+    "url": "https://www.saratogachamber.org/copy-of-lodging",
+    "source_label": "Saratoga Chamber of Commerce dining directory - Darla Cafe address, phone and 'Breakfast/Lunch: Sun, Tue, Wed, Thur, Fri, Sat 8:30 am - 2:30 pm'"
+  },
+  {
+    "sequence": 81,
+    "existing_id": "L14",
+    "name": "Taste",
+    "city": "Palo Alto",
+    "url": "https://www.beyondmenu.com/50252/palo-alto/taste-palo-alto-94301/info.aspx",
+    "source_label": "Directory page with address and daily lunch/dinner windows"
+  },
+  {
+    "sequence": 82,
+    "existing_id": "L15",
+    "name": "Araki Sushi",
+    "city": "Palo Alto",
+    "url": "https://www.roostcafeandbistro.com/araki-sushi-94301/",
+    "source_label": "Third-party menu snapshot with a la carte roll prices $3.85-$18.65 (not a lunch special)"
+  },
+  {
+    "sequence": 83,
+    "existing_id": "L41",
+    "name": "P.F. Chang's",
+    "city": "Palo Alto",
+    "url": "https://locations.pfchangs.com/ca/paloalto/900-stanford-shopping-center-bldg-w.html",
+    "source_label": "P.F. Chang's Palo Alto official location page - hours, address"
+  },
+  {
+    "sequence": 84,
+    "existing_id": "L42",
+    "name": "Red Hot Wok",
+    "city": "Palo Alto",
+    "url": "https://www.redhotwokpaloalto.com/uvs503m5/restaurant/order-online?menu=Lunch+Menu",
+    "source_label": "Red Hot Wok Palo Alto official lunch menu with prices"
+  },
+  {
+    "sequence": 85,
+    "existing_id": "L46",
+    "name": "True Food Kitchen",
+    "city": "Palo Alto",
+    "url": "https://www.simon.com/mall/stanford-shopping-center/stores/true-food-kitchen",
+    "source_label": "Stanford Shopping Center store page - hours"
+  },
+  {
+    "sequence": 86,
+    "existing_id": "L76",
+    "name": "Lotus Thai Bistro",
+    "city": "Palo Alto",
+    "url": "https://www.lotusthaibistro.com/",
+    "source_label": "Lotus Thai Bistro official site - lunch specials Mon-Sat, address, phone"
+  },
+  {
+    "sequence": 87,
+    "existing_id": "L78",
+    "name": "La Boheme",
+    "city": "Palo Alto",
+    "url": "https://www.labohemepaloalto.com/",
+    "source_label": "La Boheme official homepage - lunch Tue-Fri 11-2, address, phone"
+  },
+  {
+    "sequence": 88,
+    "existing_id": "L79",
+    "name": "Terun Pizzeria",
+    "city": "Palo Alto",
+    "url": "https://www.terunpizza.com/",
+    "source_label": "Terun official site - address; page text vs JSON-LD hours conflict"
+  },
+  {
+    "sequence": 89,
+    "existing_id": "L80",
+    "name": "Local Union 271",
+    "city": "Palo Alto",
+    "url": "https://www.corner.inc/place/123161",
+    "source_label": "Corner - Local Union 271 (hours/address cross-check)"
+  },
+  {
+    "sequence": 90,
+    "existing_id": "L219",
+    "name": "Fleming's Prime Steakhouse & Wine Bar",
+    "city": "Palo Alto",
+    "url": "https://www.simon.com/mall/stanford-shopping-center/stores/flemings-prime-steakhouse-and-wine-bar",
+    "source_label": "Simon (Stanford Shopping Center) - Fleming's lunch-from-11 listing"
+  },
+  {
+    "sequence": 91,
+    "existing_id": "L255",
+    "name": "Shabuya",
+    "city": "Milpitas",
+    "url": "https://www.shabuyarestaurant.com/milpitas-online",
+    "source_label": "Official Shabuya Milpitas page - $22.99 Mon-Fri until 3 PM lunch special menu, address, phone, daily hours"
+  },
+  {
+    "sequence": 92,
+    "existing_id": "L271",
+    "name": "Milpitas Buffet",
+    "city": "Milpitas",
+    "url": "https://maps.apple.com/place?place-id=I947929D8FCCD677D",
+    "source_label": "Apple Maps - Milpitas Buffet (24 S Abbott Ave, Mon-Fri 11-9, Sat-Sun 11-9:30, milpitas-buffet.com)"
+  },
+  {
+    "sequence": 93,
+    "existing_id": "L272",
+    "name": "Orange Square",
+    "city": "Milpitas",
+    "url": "https://orange-square-2.wheree.com/",
+    "source_label": "wheree listing - Orange Square (hours cross-check daily 11-8)"
+  },
+  {
+    "sequence": 94,
+    "existing_id": "L273",
+    "name": "Kakuna Sushi",
+    "city": "Milpitas",
+    "url": "https://www.corner.inc/place/223354",
+    "source_label": "corner.inc - Kakuna Sushi (the conflicting 11:15-2:15/4-9 hours + kakuna.menu11.com)"
+  },
+  {
+    "sequence": 95,
+    "existing_id": "L282",
+    "name": "The Bento Box",
+    "city": "Milpitas",
+    "url": "https://usarestaurants.info/explore/united-states/california/santa-clara-county/milpitas/460040-the-bento-box.htm",
+    "source_label": "usarestaurants - The Bento Box (address, geo 37.42361/-121.91815, phone)"
+  },
+  {
+    "sequence": 96,
+    "existing_id": "L94",
+    "name": "Tony & Alba's Pizza & Pasta",
+    "city": "San Jose",
+    "url": "https://tonyandalbaspizza.com/menu",
+    "source_label": "Tony & Alba official menu - prices, address, Tue 11 AM open"
+  },
+  {
+    "sequence": 97,
+    "existing_id": "L95",
+    "name": "Soong Soong",
+    "city": "San Jose",
+    "url": "https://soongsoong.com/",
+    "source_label": "Soong Soong official site - address, Tue lunch, Wed closed"
+  },
+  {
+    "sequence": 98,
+    "existing_id": "L96",
+    "name": "Freedom Burrito",
+    "city": "San Jose",
+    "url": "https://freedomburrito.com/",
+    "source_label": "Freedom Burrito official site - address, Tue 8-22 hours"
+  },
+  {
+    "sequence": 99,
+    "existing_id": "L97",
+    "name": "Falafel's Drive-In",
+    "city": "San Jose",
+    "url": "https://order.online/store/falafels-drive-in-31486",
+    "source_label": "Falafel's online ordering menu - sandwich/shake prices"
+  },
+  {
+    "sequence": 100,
+    "existing_id": "L132",
+    "name": "Fogo de Chão Brazilian Steakhouse - San Jose",
+    "city": "San Jose",
+    "url": "https://fogodechao.com/location/san-jose/",
+    "source_label": "Fogo de Chão San Jose official location page - address, coordinates, and 'Lunch 11:30 AM - 3:00 PM, Dinner 3:00 PM - 9:30 PM'"
+  }
+]

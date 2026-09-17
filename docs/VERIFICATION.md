@@ -1,5 +1,9 @@
 # How to verify every row by hand
 
+## Current lunch promotion rule (pass 24)
+
+A legacy `verification.level: official` is not enough. `deal_audit` must contain primary-source evidence for **special, price, schedule, location and hours**. Unknown or conflicting fields make the audit partial. New importer promotions require a complete audit; existing legacy rows remain research-only by default. See [the latest review](REVIEW_2026-09-17_pass24.md), [research page](../research.html) and [CSV](../data/research/pass24_evidence.csv). Validators check evidence structure, not factual truth or future availability. The transit procedure below is historical and unchanged.
+
 `data/summary.md` prints each table with its links inline, so the fastest review is to open
 [the live site](https://buffedlizard55-lab.github.io/TinoLunchSpecial/) (or `data/summary.md`) and click a row's source.
 This page explains what was and was not possible to verify from the build environment, and gives a short pre-trip checklist.

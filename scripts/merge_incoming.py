@@ -14,6 +14,7 @@ import json
 import os
 import re
 import sys
+from lunch_evidence import evidence_errors, promotion_ready
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA = os.path.join(ROOT, "data")
@@ -52,6 +53,9 @@ def main():
     for path in sorted(glob.glob(os.path.join(INCOMING, "*.json"))):
         batch = load(path)
         for raw in batch.get("entries", []):
+            # Historical manifest files contain names, not importable rows.
+            if isinstance(raw, str):
+                continue
             missing = [k for k in REQUIRED if not raw.get(k)]
             if missing:
                 problems.append(f"{os.path.basename(path)}: {raw.get('name')} missing {missing}")
@@ -74,6 +78,9 @@ def main():
                 else:
                     skipped.append(f"{raw['name']} ({raw['city']}) - already in the rejected list")
                     continue
+            if not promotion_ready(raw):
+                problems.append(f"{raw['name']}: not promoted; complete field-level evidence required ({'; '.join(evidence_errors(raw)) or 'partial audit'})")
+                continue
             highest += 1
             e = dict(raw)
             e["id"] = "L%03d" % highest

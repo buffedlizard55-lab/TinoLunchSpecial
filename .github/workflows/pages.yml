@@ -29,13 +29,16 @@ jobs:
         with:
           python-version: "3.12"
       - name: Rebuild the browser bundle
-        run: python3 scripts/build_data.py
+        run: |
+          python3 scripts/build_data.py
+          python3 scripts/build_research.py
       - name: Stage only the files Pages should serve
         run: |
-          mkdir -p _site/assets _site/data
-          cp index.html transit.html _site/
+          mkdir -p _site/assets _site/data/research
+          cp index.html transit.html research.html _site/
           cp assets/styles.css assets/app.js _site/assets/
           cp data/generated.js _site/data/
+          cp data/research/*.json data/research/*.csv _site/data/research/
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:

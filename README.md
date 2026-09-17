@@ -1,6 +1,6 @@
 # Tino Lunch Special
 
-A verified lunch-special master list for Cupertino and its 10-15 mile ring, plus a verified transit plan for **Tuesday, September 8, 2026**.
+A source-backed lunch research directory for Cupertino and nearby cities. The existing September 8, 2026 transit plan is preserved separately.
 
 **Site layout (lunch front page since 2026-09-11, data refreshed 2026-09-17):** the front page (`index.html`) is the **lunch deals** - verified specials at the very top, then the full searchable table. The public-transit route plan lives on its own subpage, [`transit.html`](transit.html) - the trip-planning system itself was left untouched by this change.
 
@@ -10,6 +10,19 @@ A verified lunch-special master list for Cupertino and its 10-15 mile ring, plus
 * **Return:** home by 3:30 PM, target 2:30–3:00 PM to absorb rush-hour delay
 
 Live site: https://buffedlizard55-lab.github.io/TinoLunchSpecial/
+
+## Current lunch status — September 17, 2026 (pass 24)
+
+**877 research rows are not 877 verified lunch deals.** This pass recorded five complete field-level checks and two partial checks, corrected menu/price/hours claims, and consolidated two duplicate restaurants. The homepage defaults to complete evidence within a recorded 15-mile radius; unverified research remains inspectable.
+
+- [Live lunch site](https://buffedlizard55-lab.github.io/TinoLunchSpecial/) · [Research and evidence](https://buffedlizard55-lab.github.io/TinoLunchSpecial/research.html) · [Pass 24 review and next steps](docs/REVIEW_2026-09-17_pass24.md)
+- [35-row evidence CSV](data/research/pass24_evidence.csv) · [20-query discovery log](data/research/pass24_discovery.json) · [100-source failed-attempt log](data/research/pass24_screen.json)
+- **The 100-new-restaurant goal remains unmet: zero net-new businesses accepted this pass.** Bulk network failures are attempts, not successful verification. Targeted page-reader checks recovered the seven audits.
+- No changes to trip-planning logic, schedules or fares. The route planner remains at [transit.html](transit.html).
+
+Rebuild and test: `python3 scripts/build_data.py`, `python3 scripts/build_research.py`, `python3 scripts/test_lunch_evidence.py`, `node scripts/smoke_test.js lunch`, `node scripts/smoke_test.js transit`.
+
+**Historical material below:** previous-pass counts and broad “verified” wording are retained for context, not a claim that the entire archive passed the new five-field evidence gate.
 
 ## The answer, in four lines
 

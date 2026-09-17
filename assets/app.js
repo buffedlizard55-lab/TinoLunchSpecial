@@ -38,18 +38,18 @@
       'Verified on ' + esc(p.verification.accessed) + '. ' +
       link('https://github.com/buffedlizard55-lab/TinoLunchSpecial', 'Source data and check scripts on GitHub');
     if (PAGE === 'lunch') {
+      document.getElementById('footer-note').innerHTML = 'Lunch evidence audit: September 17, 2026. ' + link('research.html', 'Research log and limitations');
       const cities = {};
       D.specials.entries.forEach((e) => { cities[e.city] = 1; });
-      const priced = D.specials.entries.filter((e) => e.lunch_special.price_from != null);
+      const priced = D.specials.entries.filter(isVerifiedDeal);
       const cheapest = priced.length ? Math.min(...priced.map((e) => e.lunch_special.price_from)) : null;
       document.getElementById('subtitle').textContent =
-        D.specials.entries.length + ' restaurants checked line by line - Cupertino first, then a 10-15 mile ring ' +
-        '(Sunnyvale, Santa Clara, Mountain View, Palo Alto / Stanford, Los Altos, Campbell, Los Gatos, Saratoga, Milpitas, Menlo Park, west San Jose). ' +
-        'Every row links to the page it was read from. The trip plan itself is on the transit page.';
+        'Find the meal, price and serving window—not just a restaurant open at lunchtime. ' +
+        'Start in Cupertino, then explore nearby cities. Legacy research stays separate from complete official-source checks.';
       document.getElementById('headline-chips').innerHTML = [
-        { k: 'Verified entries', v: D.specials.entries.length, cls: 'go' },
-        { k: 'Priced on the restaurant\u2019s own menu', v: countLevel(D, 'official'), cls: 'go' },
-        { k: 'Cheapest printed lunch price', v: cheapest == null ? '-' : money(cheapest), cls: 'ok' },
+        { k: 'Research entries (not all verified)', v: D.specials.entries.length, cls: 'flat' },
+        { k: 'Complete field-level checks', v: priced.length, cls: 'go' },
+        { k: 'Lowest fully checked starting price', v: cheapest == null ? '-' : money(cheapest), cls: 'ok' },
         { k: 'Cities covered', v: Object.keys(cities).length, cls: 'flat' },
         { k: 'Searched and rejected, with reasons', v: D.lunch_rejected.distinct_businesses_rejected || D.lunch_rejected.rejected.length, cls: 'flat' },
         { k: 'Open flags', v: D.flags.lunch.length, cls: 'bad' }
@@ -157,34 +157,36 @@
       /(lunch|midday|weekday|daily special|prix fixe|buffet|thali|power lunch|taco tuesday)/.test(n);
   }
 
-  /* ---------- top deals strip (lunch page, above everything) ---------- */
+  // Only reviewed, field-level primary evidence may claim full verification.
+  function isVerifiedDeal(e) {
+    const a = e.deal_audit;
+    return !!a && a.status === 'complete' && e.lunch_special.price_from != null &&
+      ['special', 'price', 'schedule', 'location', 'hours'].every((k) =>
+        a.fields[k] && a.fields[k].status === 'verified' && a.fields[k].quote && a.fields[k].source_url);
+  }
+
+  /* ---------- top deals strip (lunch page only) ---------- */
   function renderDeals(D) {
-    const m = D.specials;
-    const priced = m.entries.filter((e) => isLunchDeal(e) && e.lunch_special.price_from != null);
-    const best = priced
-      .filter((e) => (e.verification.level || '').indexOf('official') === 0)
-      .sort((a, b) => {
-        const da = a.distance_mi == null ? 999 : a.distance_mi, db = b.distance_mi == null ? 999 : b.distance_mi;
-        return da - db || a.lunch_special.price_from - b.lunch_special.price_from;
-      })
-      .slice(0, 8);
+    const best = D.specials.entries.filter((e) => isVerifiedDeal(e) && e.distance_mi != null && e.distance_mi <= 15)
+      .sort((a, b) => (a.city === 'Cupertino' ? 0 : 1) - (b.city === 'Cupertino' ? 0 : 1) || a.distance_mi - b.distance_mi).slice(0, 8);
     const cards = best.map((e) => {
-      const ls = e.lunch_special;
-      const src = (e.verification.sources || [])[0];
-      return '<article class="dealcard">' +
-        '<div class="price">' + money(ls.price_from) + (ls.price_to != null && ls.price_to !== ls.price_from ? ' - ' + money(ls.price_to) : '') + '</div>' +
-        '<div class="dn">' + esc(e.name) + '<span class="rcity"> ' + esc(e.city) + '</span></div>' +
-        '<div class="tiny deal-name">' + esc(ls.name || 'lunch deal') + '</div>' +
-        '<div class="tiny">' + esc(e.hours_tuesday && e.hours_tuesday !== 'not captured' ? e.hours_tuesday : 'hours: see row') + '</div>' +
-        '<div class="tiny">' + esc(ls.days || 'days: see row') + (e.distance_mi != null ? ' - ' + e.distance_mi + ' mi from the Cupertino destination' : '') + '</div>' +
-        (src ? '<div class="links">' + link(src.url, src.label && src.label.length > 42 ? src.label.slice(0, 42) + '...' : src.label, 'srclink') + '</div>' : '') +
-        '</article>';
+      const ls = e.lunch_special, a = e.deal_audit;
+      return '<article class="dealcard"><span class="badge good">Official source checked</span>' +
+        '<div class="price">' + (ls.price_to == null ? 'From ' : '') + money(ls.price_from) +
+        (ls.price_to != null && ls.price_to !== ls.price_from ? '–' + money(ls.price_to) : '') + '</div>' +
+        '<div class="tiny">' + esc(a.price_basis) + ' · before tax/tip</div>' +
+        '<h3 class="dn">' + esc(e.name) + '</h3><div class="rcity">' + esc(e.city) + '</div>' +
+        '<p class="deal-name">' + esc(ls.name) + '</p>' +
+        '<p><b>' + esc(ls.days) + '</b><br>' + esc(ls.window) + '</p>' +
+        '<div class="tiny">' + esc(a.notes) + '</div>' +
+        '<div class="links">' + link(a.fields.price.source_url, 'Official menu & price ↗', 'srclink') + '</div></article>';
     }).join('');
     document.getElementById('panel-deals').innerHTML =
-      '<div class="deals-head"><h2>Verified lunch deals - the top of the list</h2>' +
-      '<p class="tiny">These rows have a lunch price printed on the restaurant\u2019s own menu, sorted by distance from 20387 Gillick Way. ' +
-      'Click through to the menu page to confirm before you go; the full table below also keeps review-level and unverified rows visible.</p></div>' +
-      '<div class="dealgrid">' + cards + '</div>';
+      '<div class="deals-head"><h2>Lunch worth planning around</h2>' +
+      '<p>Published lunch offers with a checked price, schedule, location and business hours. Cupertino first; featured locations have a recorded distance within 15 miles. Distances may be approximate.</p>' +
+      '<p class="tiny">Checked September 17, 2026. A published lunch menu does not necessarily mean a discount. ' +
+      'Prices can change; group combos and extra charges are labeled. <a href="research.html">Read the evidence & limitations</a>.</p></div>' +
+      '<div class="dealgrid">' + (cards || '<p>No complete local deals yet.</p>') + '</div>';
   }
 
   /* ---------- lunch method (lunch page) ---------- */
@@ -192,7 +194,7 @@
     const m = D.specials;
     document.getElementById('panel-lmethod').innerHTML =
       '<h2>How the deal list was built</h2>' +
-      '<p class="lead">' + esc(m.search_protocol.requirement) + '</p>' +
+      '<p class="lead">' + esc(m.pass24_note || m.search_protocol.requirement) + '</p>' +
       '<div class="grid g4">' +
       stat(m.search_protocol.queries_run, 'search queries run (all passes)') +
       stat(m.search_protocol.candidates_found, 'candidates found') +
@@ -300,7 +302,7 @@
   }
 
   /* ---------- lunch ---------- */
-  const FILTERS = { q: '', city: 'all', dealsOnly: true, verifiedOnly: false, cheap: false, openTue: false, fitsBus: false };
+  const FILTERS = { q: '', city: 'all', dealsOnly: true, verifiedOnly: true, cheap: false, radius: '15' };
   const SORT = { key: 'dist', dir: 1 };
   const SORTVAL = {
     name: (e) => String(e.name || '').toLowerCase(),
@@ -320,9 +322,9 @@
 
   function distCell(e) {
     if (e.distance_mi == null) return '<span class="tiny">not geocoded</span>';
-    const approx = /approximate|block, not/i.test(e.coords_source || '');
+    const approx = /approximate|block, not|neighbour/i.test(e.coords_source || '');
     return '<span class="dist">' + (approx ? '~' : '') + e.distance_mi + ' mi</span>' +
-      '<div class="tiny">' + (approx ? 'city-block estimate, not a geocoded address' : 'straight-line walk from 20387 Gillick Way') + '</div>';
+      '<div class="tiny">' + (approx ? 'city-block estimate, not a geocoded address' : 'straight-line distance from the Cupertino reference point; not walking distance') + '</div>';
   }
 
   function lunchRow(e, level) {
@@ -331,10 +333,6 @@
       ? '<span class="bad">not published</span>'
       : (ls.price_from != null ? '<span class="price">' + money(ls.price_from) + '</span>' : '') +
         (ls.price_to != null ? '<span class="price">' + (ls.price_from != null ? '- ' : '') + money(ls.price_to) + '</span>' : '');
-    const open = e.open_on_trip_date === false ? '<span class="badge bad">closed on Sept 8</span>' : (e.open_on_trip_date === null ? '<span class="badge unverified">open? unknown</span>' : '<span class="badge good">open Tuesday</span>');
-    const fits = e.fits_return_bus && e.fits_return_bus.ok === true ? '<span class="badge good">fits 11:50 departure</span>'
-      : e.fits_return_bus && e.fits_return_bus.ok === 'tight' ? '<span class="badge warn">tight</span>'
-      : e.fits_return_bus && e.fits_return_bus.ok === false ? '<span class="badge bad">does not fit</span>' : '<span class="badge unverified">unknown</span>';
     const srcs = (e.verification.sources || []).map((s) => link(s.url, s.label, 'srclink')).join('');
     const rev = [
       e.review_links && e.review_links.yelp ? link(e.review_links.yelp, 'Yelp', 'srclink') : '',
@@ -343,14 +341,15 @@
     return '<tr class="' + (level === 'official' ? 'row-official' : '') + '">' +
       '<td class="name"><span class="rid">' + esc(e.id) + '</span><span class="rname">' + esc(e.name) + '</span><span class="rcity">' + esc(e.city) + (e.area ? ' - ' + esc(e.area) : '') + '</span>' +
       '<span class="raddr">' + esc(e.address) + '</span>' +
-      '<span class="rtags">' + open + ' ' + fits + '</span></td>' +
+      '</td>' +
       '<td class="num">' + distCell(e) + '</td>' +
       '<td>' + esc(e.cuisine) + '</td>' +
       '<td class="deal">' + esc(ls.name) + (ls.includes ? '<div class="tiny">' + esc(ls.includes) + '</div>' : '') + '</td>' +
-      '<td>' + price + (ls.window ? '<div class="tiny">' + esc(ls.window) + '</div>' : '') + '</td>' +
+      '<td>' + price + (e.deal_audit ? '<div class="tiny">' + esc(e.deal_audit.price_basis) + '</div>' : '<div class="tiny">Legacy price; see source/flags</div>') + (ls.window ? '<div class="tiny">' + esc(ls.window) + '</div>' : '') + '</td>' +
       '<td>' + esc(ls.days) + '</td>' +
-      '<td class="tiny">' + esc(e.hours_tuesday) + '<div class="dowrow"><span>all days:</span> ' + esc(e.days_open) + '</div></td>' +
-      '<td class="ver">' + badge(level) + '<div class="tiny">verified ' + esc(e.verification.accessed || '') + '</div>' +
+      '<td class="tiny">' + esc(e.hours_open || e.days_open || 'Not captured') + '</td>' +
+      '<td class="ver">' + badge(isVerifiedDeal(e) ? 'verified' : e.deal_audit ? 'incomplete' : 'unverified') + '<div class="tiny">' + (e.deal_audit ? 'Field audit ' + esc(e.deal_audit.checked_on) : 'Legacy source label: ' + esc(level) + '; not field-audited') + '</div>' +
+      (e.deal_audit ? '<details><summary>Field-by-field evidence</summary>' + Object.entries(e.deal_audit.fields).map(([k, f]) => '<p><b>' + esc(k) + ': ' + esc(f.status) + '</b><br>' + esc(f.value) + (f.quote ? '<br><q>' + esc(f.quote) + '</q> ' + link(f.source_url, 'Source', 'srclink') : '') + '</p>').join('') + '<p>' + esc(e.deal_audit.notes) + '</p></details>' : '') +
       '<div class="links">' + srcs + '</div><div class="links">' + rev + '</div></td>' +
       '<td class="flagscell">' + (e.flags || []).map((f) => '<div class="flag-item">' + esc(f) + '</div>').join('') + '</td>' +
       '</tr>';
@@ -364,26 +363,18 @@
     m.entries.forEach((e) => { cities[e.city] = (cities[e.city] || 0) + 1; });
 
     document.getElementById('panel-lunch').innerHTML =
-      '<h2>The full lunch-special master list - Cupertino first, then the 10-15 mile ring</h2>' +
-      '<p class="lead">' + m.search_protocol.added_to_master + ' entries in the master list, selected from ' + m.search_protocol.candidates_found +
-      ' candidates checked line by line across ' + m.search_protocol.queries_run + ' queries on ' + esc(m.search_protocol.search_date) +
-      '. ' + esc(m.search_protocol.requirement) + '</p>' +
-      (m.search_protocol.candidates_found_note ? '<p class="tiny">' + esc(m.search_protocol.candidates_found_note) + '</p>' : '') +
-      '<p class="tiny">Radius: ' + esc(m.search_protocol.radius_note) + ' &nbsp;|&nbsp; Covered: ' +
-      esc((m.search_protocol.cities_covered || []).join(', ')) + ' &nbsp;|&nbsp; Rejected or deferred: ' +
-      m.search_protocol.rejected_or_deferred + ' (all listed below with reasons)</p>' +
-      '<div class="grid g4">' +
-      Object.keys(levels).sort((a, b) => levels[b] - levels[a]).map((k) =>
-        '<div class="card stat"><div class="n">' + levels[k] + '</div><div class="l">' + esc(k) + ' - ' + esc(m.search_protocol.levels[k] || 'see per-row notes') + '</div></div>').join('') +
-      '</div>' +
+      '<h2>Explore the lunch list</h2>' +
+      '<p class="lead">' + m.entries.filter(isVerifiedDeal).length + ' complete official-source checks in a research archive of ' + m.entries.length + ' entries. ' +
+      'The default view shows only fully checked deals with a recorded distance within 15 miles. Turn off filters to inspect partial evidence, unverified leads and farther locations.</p>' +
+      '<p class="tiny"><a href="research.html">Latest research: 20 discovery queries, 100 failed bulk-source attempts, seven field audits, zero new businesses.</a> ' +
+      'The 100-new-restaurant target remains unmet. Unknown distances are excluded by the radius filter; choose “Any / unknown” to include Stanford/Palo Alto entries not yet geocoded.</p>' +
       '<div class="filters">' +
-      '<input id="lq" type="search" placeholder="Search name, city, dish, flag..." />' +
-      '<label><input type="checkbox" id="ldeals" checked /> Actual lunch specials only</label>' +
-      '<select id="lcity"><option value="all">All cities (' + m.entries.length + ')</option>' +
+      '<input id="lq" aria-label="Search restaurants, dishes or notes" type="search" placeholder="Search name, city, dish, flag..." />' +
+      '<label><input type="checkbox" id="ldeals" checked /> Lunch-menu candidates only</label>' +
+      '<select id="lcity" aria-label="City"><option value="all">All cities (' + m.entries.length + ')</option>' +
       Object.keys(cities).sort().map((c) => '<option value="' + esc(c) + '">' + esc(c) + ' (' + cities[c] + ')</option>').join('') + '</select>' +
-      '<label><input type="checkbox" id="lopen" /> Open on Tuesday Sept 8</label>' +
-      '<label><input type="checkbox" id="lfits" /> Fits the 11:50 AM departure</label>' +
-      '<label><input type="checkbox" id="lofficial" /> Restaurant\'s own menu only</label>' +
+      '<label>Radius <select id="lradius"><option value="15">Within 15 mi</option><option value="10">Within 10 mi</option><option value="all">Any / unknown</option></select></label>' +
+      '<label><input type="checkbox" id="lofficial" checked /> Complete official evidence only</label>' +
       '<label><input type="checkbox" id="lcheap" /> $15 or less</label>' +
       '<button id="lreset" type="button">Reset</button>' +
       '<span id="lcount" class="tiny"></span>' +
@@ -395,17 +386,11 @@
       '<div class="scrollpanel"><table class="ltable"><thead><tr>' +
       [['name', 'Restaurant'], ['dist', 'Distance'], ['cuisine', 'Cuisine'], ['deal', 'What the special is'], ['price', 'Price'], ['days', 'Days']]
         .map(([k, l]) => '<th class="sortable" data-sort="' + k + '">' + l + '<span class="sortind" data-ind="' + k + '"></span></th>').join('') +
-      '<th>Tuesday hours / all days</th><th>Verification and links</th><th>Flags and notes</th>' +
+      '<th>Business days &amp; hours</th><th>Verification and links</th><th>Flags and notes</th>' +
       '</tr></thead><tbody id="lbody"></tbody></table></div>' +
 
-      '<h3>Top five for a Tuesday, September 8</h3>' +
-      '<ol class="picks">' + m.top_picks_for_tuesday_sept_8.map((t) => {
-        const e = m.entries.find((x) => x.id === t.id);
-        return '<li><b>' + esc(e ? e.name + ' - ' + e.address + ', ' + e.city : t.id) + '</b> - ' + esc(t.why) + '</li>';
-      }).join('') + '</ol>' +
-
       '<h3>Candidates that were searched and rejected, with reasons</h3>' +
-      '<p class="tiny">A candidate only earns a row if a person can check it in one click. Prices seen only on delivery-app or menu-aggregator pages are left out of the price column, and any business whose "lunch special" turned out to belong to a different city (a Las Vegas special, a Chico restaurant listed as "Los Altos") is rejected here rather than carried forward.</p>' +
+      '<p class="tiny">Historical research decisions, not a fresh verification of every linked page. A rejection means the recorded evidence did not meet the requirements, not necessarily that a restaurant has closed.</p>' +
       '<div class="scrollpanel"><table class="grid-table"><thead><tr><th>#</th><th>Name</th><th>Area</th><th>Why it is not in the master list</th><th>Links</th></tr></thead><tbody>' +
       D.lunch_rejected.rejected.map((r) => '<tr><td class="num">' + esc(r.id) + '</td><td class="strong">' + esc(r.name) +
         (r.count > 1 ? '<div class="tiny">' + r.count + ' businesses, one reason</div>' : '') + '</td><td>' + esc(r.city) + '</td>' +
@@ -415,16 +400,15 @@
 
       '<h3>What each verification level means</h3><ul class="tiny">' +
       Object.keys(m.search_protocol.levels).map((k) => '<li><b>' + esc(k) + '</b> - ' + esc(m.search_protocol.levels[k]) + '</li>').join('') +
-      '<li><b>Every row above carries a live link to the page it was read from</b>, so any entry can be re-checked in one click. Rows marked <span class="badge bad">unverified</span> or <span class="badge warn">review</span> are exactly that: no published menu price was found, so none is asserted.</li></ul>';
+      '<li>These historical source labels are not field-level verification. A source link alone does not prove a lunch offer, current price or availability. Complete checks require all five evidence fields.</li></ul>';
 
     const body = document.getElementById('lbody');
     const paint = () => {
       const rows = m.entries.filter((e) => {
         if (FILTERS.city !== 'all' && e.city !== FILTERS.city) return false;
         if (FILTERS.dealsOnly && !isLunchDeal(e)) return false;
-        if (FILTERS.openTue && e.open_on_trip_date !== true) return false;
-        if (FILTERS.fitsBus && !(e.fits_return_bus && e.fits_return_bus.ok === true)) return false;
-        if (FILTERS.verifiedOnly && (e.verification.level || '').indexOf('official') !== 0) return false;
+        if (FILTERS.radius !== 'all' && (e.distance_mi == null || e.distance_mi > Number(FILTERS.radius))) return false;
+        if (FILTERS.verifiedOnly && !isVerifiedDeal(e)) return false;
         if (FILTERS.cheap && !(e.lunch_special.price_from != null && e.lunch_special.price_from <= 15)) return false;
         if (FILTERS.q) {
           const hay = JSON.stringify([e,]).toLowerCase();
@@ -451,8 +435,7 @@
     document.getElementById('lq').addEventListener('input', (ev) => { FILTERS.q = ev.target.value; paint(); });
     document.getElementById('lcity').addEventListener('change', (ev) => { FILTERS.city = ev.target.value; paint(); });
     document.getElementById('ldeals').addEventListener('change', (ev) => { FILTERS.dealsOnly = ev.target.checked; paint(); });
-    document.getElementById('lopen').addEventListener('change', (ev) => { FILTERS.openTue = ev.target.checked; paint(); });
-    document.getElementById('lfits').addEventListener('change', (ev) => { FILTERS.fitsBus = ev.target.checked; paint(); });
+    document.getElementById('lradius').addEventListener('change', (ev) => { FILTERS.radius = ev.target.value; paint(); });
     document.getElementById('lofficial').addEventListener('change', (ev) => { FILTERS.verifiedOnly = ev.target.checked; paint(); });
     document.getElementById('lcheap').addEventListener('change', (ev) => { FILTERS.cheap = ev.target.checked; paint(); });
     document.querySelectorAll('#panel-lunch th.sortable').forEach((th) => th.addEventListener('click', () => {
@@ -465,10 +448,12 @@
       SORT.key = b.dataset.sortkey; SORT.dir = 1; paint();
     }));
     document.getElementById('lreset').addEventListener('click', () => {
-      Object.keys(FILTERS).forEach((k) => { FILTERS[k] = k === 'city' ? 'all' : (k === 'q' ? '' : k === 'dealsOnly'); });
+      Object.assign(FILTERS, { q: '', city: 'all', dealsOnly: true, verifiedOnly: true, cheap: false, radius: '15' });
       ['lq'].forEach((i) => document.getElementById(i).value = '');
-      ['lopen', 'lfits', 'lofficial', 'lcheap'].forEach((i) => document.getElementById(i).checked = false);
+      ['lcheap'].forEach((i) => document.getElementById(i).checked = false);
       document.getElementById('ldeals').checked = true;
+      document.getElementById('lofficial').checked = true;
+      document.getElementById('lradius').value = '15';
       document.getElementById('lcity').value = 'all';
       paint();
     });
