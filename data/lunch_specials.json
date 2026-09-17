@@ -1,11 +1,7 @@
 {
   "search_protocol": {
-    "requirement": "Pass 22 (2026-09-16): 45 queries, Cupertino core first then the ring (San Mateo/Peninsula, Palo Alto/Stanford, Santa Clara, Saratoga, San Jose, plus wrong-region screens). Every candidate name was grepped against the 1,111-key name|city dedupe index before any page work. Result: 4 net-new rows (L879-L882) and 22 rejections. The net-new rows are the first additions from the San Mateo core since the pass-9 sweep: Nobu Palo Alto (separate priced official Lunch menu, fetched directly), Maverick Jack's San Mateo ($15 Weekday Lunch Special on its own ordering page), Espetus Churrascaria (rodizio lunch $27.95/$39.95) and Central Park Bistro (separate priced lunch menu). The page-fetch proxy failed with InvalidAccessKeyId for most of the pass, so every source captured via search extraction is labelled as such and queued for direct re-fetch (LUNCH-FLAG-133). Traps caught: three out-of-state 'Mountain View' restaurant domains (TN/MA/CO, LUNCH-FLAG-138), two Florida 'San Jose' Mexican chains (LUNCH-FLAG-140), the Saratoga Springs NY trap for a fourth time (LUNCH-FLAG-139), an expired Stanford's lunch special with no current CA location, and a delivery-aggregator 'Cupertino' listing that is really Jingege & Yaoyao Milpitas. 86 candidate hits were already in the master/reject data and were not re-added; 12 candidates remain honest leads with partial evidence. The 100-net-new target was not met and is reported in LUNCH-FLAG-141 rather than padded: after 21 passes the dense core of the 10-15 mile ring is close to exhausted and the remaining candidates are chains without lunch programs, fine dining without lunch, or closures. The route-planning system was not touched. Pass 21 (2026-09-16): 14 net-new rows (L865-L878) from the Foster City / San Carlos / Belmont / Union City / Redwood City sweep against an 84-candidate screen; see docs/REVIEW_2026-09-16_pass21.md.",
-    "queries_run": 1174,
-    "candidates_found": 1544,
-    "added_to_master": 882,
-    "rejected_or_deferred": 257,
-    "search_date": "2026-09-16 (pass 22)",
+    "requirement": "Pass 23 (2026-09-17): carry-over verification of the four pass-22 proxy-outage rows (all re-fetched - proxy healthy), resolution of all 12 pass-22 leads, a master-wide duplicate audit that removed 8 wrong-address rows with primary-source evidence, and a ~60-candidate ring rescreen Cupertino-first (Cupertino core, Sunnyvale, Santa Clara, Campbell, Los Altos, Palo Alto/Stanford, Menlo Park, Redwood City, San Carlos, Belmont, Foster City, Saratoga, San Jose/Willow Glen, Milpitas). 20 fresh searches + 20 direct page fetches. Result: 5 net-new rows (L891-L895), 16 rejections, 9 rows upgraded/corrected, LUNCH-FLAG-133 resolved, 14 new flags. The master list went 882 -> 879 only because the 8 evidence-verified duplicate removals outweighed the 5 net-new additions - fewer rows, but every remaining row is more correct.",
+    "search_date": "2026-09-17 (pass 23)",
     "cities_covered": [
       "Campbell",
       "Cupertino",
@@ -62,7 +58,11 @@
     "candidates_found_note": "all passes documented plus ~205 new eleventh-pass candidates screened line by line (115 run through an automated name|city dedupe against the master and reject files before any page was opened, then ~90 more surfaced by the final city sweeps); ~424 dedupe hits against the master list were also checked and dropped; pass 14 (2026-09-12) added 118 new candidates (216 checked, 98 already listed or rejected)",
     "note_tenth_pass": "Tenth search pass (2026-09-11) added 10 rows (L524-L533) from data/incoming/batch10a_pass10_verified.json: Teleferic Barcelona Los Gatos with its $28-$34 weekday lunch menu; three Hummus Mediterranean Kitchen rooms (Palo Alto at Stanford Shopping Center, 185 Castro St Mountain View, 150 E 4th Ave San Mateo) from the chain's own locations index; Falafel Flare, Empire Armadillo BBQ & Deli and Delhi to Kathmandu in Sunnyvale from the chamber's restaurant-week page with per-item prices; Asian Box Mountain View and Opa! Campbell with verified weekday lunch hours; and Shake Shack at the Stanford Shopping Center end of the ring. This pass is deliberately smaller than earlier ones: the merge was capped by the number of candidates whose street address AND weekly hours could be pinned to a citable page, not by the number of names found. Yelp pages return HTTP 403 to direct fetch here, which removed the highest-yield bulk source used by pass 9.",
     "note_eleventh_pass": "Eleventh search pass (2026-09-11) added 59 rows (L534-L592) from eight incoming files batch11a-11h. Order of work: an automated dedupe of 115 candidate names against the master and reject files first (85 new, 30 already listed), then Milpitas (12), Fremont/Newark (8), Santa Clara and the San Jose Korean row (14), Los Gatos / Los Altos / Palo Alto (8), the Cupertino-Sunnyvale core (12), San Jose cheap eats (8), Santana Row and the chain row (10), and a final sweep for restaurants that actually publish a lunch price (8). Two rows were withdrawn immediately after the merge and are recorded as rejects: Inchin's Bamboo Garden - Sunnyvale (a ZIP spelling of the existing L43 row that slipped past the address dedupe) and Opa! Willow Glen (a 2018-stamped listing whose street address is already held by Burma Roots L348). Five closures were caught and rejected rather than published: Left Bank Brasserie, Rosie McCann's and Yankee Pier (all Santana Row) and Vida Tapas Y Cocteles (Mountain View), plus Sushi Confidential's downtown room, which is closed Mon-Wed and has no Tuesday lunch at all. Fourteenth-hour finds worth the manual click: Boda (2868 Story Rd, San Jose) publishes a $5.99 weekday lunch plate on its own site - the cheapest verified lunch in the master list - and Home Eat Santa Clara, Tatami Buffet (a Cupertino room whose entire week is a 11:30-2:30 lunch service) and Lotus Thai Bistro all came with a citable address and weekly hours. Prices were printed only where the restaurant's own page printed them; Reddit, Yelp-Q&A and aggregator figures (Milpitas Buffet $19.99, Sizzler $5.49-$6.99, Don Giovanni $19.95, Olive Garden $5.99) are described inside the rows and deliberately left out of price_from/price_to.",
-    "note_twelfth_pass": "Pass 12 follow-up added 4 rows (L593-L596) after the 59-row pass-11 result. These are lunch-service/menu rows, not invented discount claims: published prices are carried only for Delarosa and Last Chance, while Nar and Madera remain unpriced."
+    "note_twelfth_pass": "Pass 12 follow-up added 4 rows (L593-L596) after the 59-row pass-11 result. These are lunch-service/menu rows, not invented discount claims: published prices are carried only for Delarosa and Last Chance, while Nar and Madera remain unpriced.",
+    "queries_run": 1194,
+    "candidates_found": 1604,
+    "added_to_master": 879,
+    "rejected_or_deferred": 273
   },
   "entries": [
     {
@@ -832,31 +832,27 @@
         "price_from": null,
         "price_to": null,
         "days": null,
-        "window": "11:00-14:00 is the lunch service block",
-        "includes": "Menu shows a lunch service every day 11:00-14:00; no discounted lunch item is published, so nothing is claimed here.",
+        "window": "11:00 AM - 2:00 PM is the lunch service block (official site)",
+        "includes": "Official site menu (fetched 2026-09-17) is a la carte: pho $10.95-$19.80, rice/vermicelli plates $16-$25.50, apps $9-$15. A 'Spring Special' section header prints with no items and the home page shows an unpriced 'Summer Sale with Vermicelli - ALL LOCATIONS' banner; a Yelp business update quotes a $14.50 'September Special' Angus pho - quote only, no year printed, kept out of the price columns.",
         "source_status": "listing only"
       },
-      "hours_tuesday": "11:00-14:00 and 17:00-20:30",
-      "days_open": "Mon-Thu 11:00-14:00 / 17:00-20:30, Fri 11:00-14:00 / 17:00-21:00, Sat-Sun 11:00-15:00 / 16:30-21:00",
+      "hours_tuesday": "11:00 AM - 2:00 PM, 5:00 PM - 8:30 PM",
+      "days_open": "Mon-Thu 11:00-2:00 + 5:00-8:30; Fri 11:00-2:00 + 5:00-9:00; Sat 11:00-3:00 + 4:30-9:00; Sun 11:00-3:00 + 4:30-8:30 (official site)",
       "open_on_trip_date": true,
       "fits_return_bus": {
         "ok": "tight",
         "note": "A 2:00 PM close means the 12:06 PM return bus works only for a quick bowl; the 12:36 PM bus is safer."
       },
       "verification": {
-        "level": "listing (address and hours confirmed by three independent listings; no price found)",
+        "level": "official",
         "sources": [
           {
-            "label": "Tripadvisor listing (address, phone, 'Lunch, Dinner')",
-            "url": "https://www.tripadvisor.com/Restaurant_Review-g32273-d19141024-Reviews-Pho_Ha_Noi-Cupertino_California.html"
+            "label": "Pho Ha Noi official site - Cupertino location block (10100 S De Anza Blvd + full weekly hours) fetched directly 2026-09-17",
+            "url": "https://phohanoi.com/"
           },
           {
-            "label": "Yelp listing (10100 S De Anza Blvd, Tue 11:00 am-2:00 pm)",
-            "url": "https://www.yelp.com/biz/pho-ha-noi-cupertino"
-          },
-          {
-            "label": "Restaurant's own site",
-            "url": "https://phohanoi.com"
+            "label": "Pho Ha Noi official Cupertino menu page - current a-la-carte prices (fetched 2026-09-17)",
+            "url": "https://phohanoi.com/cupertino-en.html"
           }
         ],
         "accessed": "2026-09-07"
@@ -866,9 +862,8 @@
         "google_maps": "https://www.google.com/maps/search/?api=1&query=Pho+Ha+Noi+Cupertino+lunch"
       },
       "flags": [
-        "0.6 mi from 20387 Gillick Way (straight line), between the destination and Stevens Creek - walkable",
-        "Two listings agree on the Tue lunch window 11:00-14:00, which closes before the 11:50 AM bus leaves, so it fits",
-        "No lunch special published anywhere - listed so the gap is visible, not because a deal was found"
+        "Duplicate rows L685/L690 (this row) - L685 'Pho Ha Noi Cupertino' carried a wrong 20080 Stevens Creek Blvd Ste D address from batch 13b and was removed 2026-09-17; the official site confirms this address (LUNCH-FLAG-142).",
+        "Seasonal 'Spring/Summer Special' banners exist on the official site without printed prices; the $14.50 'September Special' is a Yelp business-update quote (LUNCH-FLAG-147)."
       ],
       "zip": "95014",
       "phone": "(408) 899-4164",
@@ -1352,8 +1347,8 @@
         "window": "n/a",
         "includes": "official online menu lists Chicken Katsu with Curry Sauce $17.00, Pork Katsu $18.00, Tempura Shrimp $17.00, Chicken Karaage with Curry $16.50, plus $4-$9.50 sides and appetizers; no lunch-priced line"
       },
-      "hours_tuesday": "11:00-21:00",
-      "days_open": "every day 11:00-21:00",
+      "hours_tuesday": "11:00 AM - 8:30 PM",
+      "days_open": "Daily 11:00 AM - 8:30 PM (official Toast ordering page)",
       "open_on_trip_date": true,
       "fits_return_bus": {
         "ok": null,
@@ -1363,12 +1358,12 @@
         "level": "official",
         "sources": [
           {
-            "label": "Sizzling Lunch official online menu (Cupertino) - entree prices, no lunch section",
-            "url": "https://www.toasttab.com/local/order/sizzlinglunch-cupertino"
+            "label": "Sizzling Lunch Cupertino official Toast ordering page - 10033 Saich Way + daily 11:00 am - 8:30 pm (fetched directly 2026-09-17)",
+            "url": "https://toast.app/r/sizzlinglunch-cupertino/order"
           },
           {
-            "label": "Yelp search listing for Cupertino lunch (Sizzling Lunch, 4.1 / 725 reviews)",
-            "url": "https://www.yelp.com/search?find_desc=lunch&find_loc=Cupertino%2C+CA+95014"
+            "label": "Yelp - Sizzling Lunch Cupertino",
+            "url": "https://www.yelp.com/biz/sizzling-lunch-cupertino"
           },
           {
             "label": "Google-review mirror with the structured hours block (Tue 11:00-21:00)",
@@ -1383,7 +1378,8 @@
       },
       "flags": [
         "Verified negative: this is a price check on the menu, not a deal. Recorded so the name does not cost you a trip.",
-        "Address and daily hours confirmed on 2026-09-07 (10033 Saich Way, in the Cupertino Shopping Center block off Stevens Creek Blvd)"
+        "Address and daily hours confirmed on 2026-09-07 (10033 Saich Way, in the Cupertino Shopping Center block off Stevens Creek Blvd)",
+        "Hours corrected 2026-09-17: old row data said 11:00 AM - 9:00 PM; the official Toast page prints 11:00 am - 8:30 pm daily. Duplicate row L691 (wrong 19600 Vallco Pkwy Ste 110 address, batch 13b) removed same day (LUNCH-FLAG-142)."
       ],
       "zip": "95014",
       "phone": "(408) 320-2444",
@@ -5127,55 +5123,6 @@
       "distance_mi": 0.74
     },
     {
-      "name": "Gochi - Cupertino",
-      "city": "Cupertino",
-      "area": "E Homestead Rd",
-      "address": "19980 E Homestead Rd, Cupertino, CA 95014",
-      "coords": [
-        37.3146,
-        -122.0409
-      ],
-      "coords_source": "approximate - E Homestead Rd block, not a captured geocode",
-      "cuisine": "Japanese izakaya / tapas",
-      "phone": "(408) 725-0542",
-      "lunch_special": {
-        "name": "No lunch special published - short 2-hour lunch service",
-        "price_from": null,
-        "price_to": null,
-        "days": "Tue-Sat lunch",
-        "window": "11:15 AM - 1:15 PM",
-        "includes": "No priced lunch special found. Lunch is a two-hour service; dinner 5:30/6:00 PM - 8:30/9:00 PM."
-      },
-      "hours_tuesday": "11:15 AM - 1:15 PM, 6:00 PM - 8:30 PM",
-      "days_open": "Mon closed; Tue-Sat 11:15 AM - 1:15 PM and 5:30/6:00 PM - 8:30/9:00 PM; Sun 5:30 PM - 8:30 PM (Yelp)",
-      "open_on_trip_date": true,
-      "fits_return_bus": {
-        "ok": "tight",
-        "note": "About 1.2 mi from the destination - a 25 min walk - and the lunch window closes at 1:15 PM, so it only works as an early lunch with a ride back."
-      },
-      "verification": {
-        "level": "listing",
-        "sources": [
-          {
-            "label": "Yelp - Gochi Cupertino address, phone and the Tue-Sat 11:15 AM - 1:15 PM lunch window",
-            "url": "https://www.yelp.com/biz/gochi-cupertino-cupertino"
-          }
-        ],
-        "accessed": "2026-09-07"
-      },
-      "review_links": {
-        "yelp": "https://www.yelp.com/biz/gochi-cupertino-cupertino",
-        "google_maps": "https://www.google.com/maps/search/?api=1&query=Gochi+19980+E+Homestead+Rd+Cupertino"
-      },
-      "flags": [
-        "Yelp shows recent special-hours closures (Sun Sep 6 2026 closed), so the posted hours move around - call ahead.",
-        "Closed Mondays; open Tuesday."
-      ],
-      "id": "L106",
-      "added_in": "batch1_cupertino_santaclara.json",
-      "distance_mi": 0.59
-    },
-    {
       "name": "XPP Claypot (XiaoPoPo)",
       "city": "Cupertino",
       "area": "Stevens Creek Blvd",
@@ -5321,7 +5268,8 @@
         "google_maps": "https://www.google.com/maps/search/?api=1&query=Pineapple+Thai+19369+Stevens+Creek+Blvd+Cupertino"
       },
       "flags": [
-        "No lunch special published on the pages read - the row records the lunch service window only."
+        "No lunch special published on the pages read - the row records the lunch service window only.",
+        "2026-09-17 rescreen conflict: DoorDash now lists a 'Lunch Menu' section for this restaurant (window 11:00 am - 2:25 pm) and OpenTable prints lunch hours Mon-Fri 11:00 AM - 2:30 PM, but no lunch-menu price could be captured; row stays 'no priced lunch special verified' until the section is read (LUNCH-FLAG-149)."
       ],
       "id": "L109",
       "added_in": "batch1_cupertino_santaclara.json",
@@ -13428,11 +13376,11 @@
       "days_open": "Mon 11:30-8; Wed-Sun 11:30-8:30 (closed Tuesday)",
       "hours_tuesday": "Closed",
       "lunch_special": {
-        "name": "Lunch dine-in special (owner-posted)",
+        "name": "'Special Time-Limited Menu' (chowbus ordering page), served 11:30 AM - 2:30 PM",
         "price_from": null,
         "price_to": null,
-        "days": "posted as a Yelp business update/photo; days not captured",
-        "window": "lunch service from 11:30 AM",
+        "days": "Days the store is open; closed Tuesdays (Yelp + beyondmenu agree)",
+        "window": "11:30 AM - 2:30 PM (chowbus menu section timing)",
         "includes": "Yelp business update 'Lunch Dine in Special' + photo 'LUNCH DINE IN SPCIAL'; price not published in the captured text."
       },
       "open_on_trip_date": false,
@@ -13441,7 +13389,9 @@
         "note": "Torre Ave - walkable from Memorial Park area, but closed on the trip Tuesday."
       },
       "flags": [
-        "IRREGULARITY: Closed Tuesdays per Yelp (both listing snapshots) - not usable on Tue Sept 8, 2026."
+        "Address resolved 2026-09-17: three sources (claimed Yelp, beyondmenu, chowbus POS) agree on 10271 Torre Ave; batch-13b duplicate L684 (wrong 20080 Stevens Creek Blvd Ste E) removed (LUNCH-FLAG-142).",
+        "The chowbus store slug is 'Golden-Bowl-Taipei-Cuisine' - the restaurant appears to be the former Golden Bowl Taipei Cuisine rebranded as JP Taiwan Bistro; same Torre Ave address.",
+        "Lunch-menu item prices not yet captured (chowbus section requires JS); the 11:30-2:30 time-limited menu is the verified fact. Hours conflict: beyondmenu prints a daily 11:30-2:30 lunch block while Yelp says closed Tuesdays - both kept (LUNCH-FLAG-148)."
       ],
       "phone": "(408) 320-1080",
       "review_links": {
@@ -13449,16 +13399,20 @@
         "google_maps": "https://www.google.com/maps/search/?api=1&query=JP+Taiwan+Bistro+10271+Torre+Ave+Cupertino"
       },
       "verification": {
-        "level": "listing",
+        "level": "official",
         "accessed": "2026-09-07",
         "sources": [
           {
-            "label": "Yelp - JP Taiwan Bistro (address, phone, Mon 11:30-8, Tue closed, Wed-Sun 11:30-8:30, lunch special update)",
-            "url": "https://www.yelp.com/biz/jp-taiwan-bistro-cupertino-5"
+            "label": "Chowbus POS online ordering - JP Taiwan Bistro, 10271 Torre Avenue: 'Special Time-Limited Menu 11:30 AM - 2:30 PM' + weekly hours (fetched via search capture 2026-09-17)",
+            "url": "https://pos.chowbus.com/online-ordering/store/Golden-Bowl-Taipei-Cuisine/21737"
           },
           {
-            "label": "Yelp (Dec 2025 snapshot) - LUNCH DINE IN SPECIAL photo update, same Tue-closed hours",
+            "label": "Yelp (claimed) - JP Taiwan Bistro, 10271 Torre Ave; Tue closed; happy hour 2:30-5:00 PM",
             "url": "https://www.yelp.com/biz/jp-taiwan-bistro-cupertino-2"
+          },
+          {
+            "label": "beyondmenu info page - 10271 Torre Ave + split lunch/dinner hours",
+            "url": "https://www.beyondmenu.com/65062/cupertino/jp-taiwan-bistro-cupertino-95014/info.aspx"
           }
         ]
       },
@@ -30193,12 +30147,12 @@
         "level": "official",
         "sources": [
           {
-            "label": "RW Grill Los Altos official lunch page Tue $10 burger $5 drafts etc",
-            "url": "https://www.rwgrill.com/menu/lunch-los-altos/"
+            "label": "Redwood Grill official site - Los Altos location page (live 2026-09-17)",
+            "url": "https://www.rwgrill.com/location/los-altos"
           },
           {
-            "label": "RW Grill Los Altos location page",
-            "url": "https://www.rwgrill.com/los-altos/"
+            "label": "Redwood Grill official site - Redwood City location page: 356 Woodside Plaza + hours (fetched 2026-09-17)",
+            "url": "https://www.rwgrill.com/location/redwood-grill/"
           }
         ],
         "accessed": "2026-09-11"
@@ -30207,7 +30161,9 @@
         "yelp": "https://www.yelp.com/biz/rw-grill-los-altos",
         "google_maps": "https://www.google.com/maps/search/?api=1&query=RW+Grill+231+State+St+Los+Altos"
       },
-      "flags": [],
+      "flags": [
+        "LINK ROT (2026-09-17): the previously cited rwgrill.com/menu/lunch-los-altos/ and /los-altos/ pages now 404 after a site redesign; the daily-specials evidence (Tue $10 burger + fries etc.) has not been re-located on the new site and is retained from the 2026-09-08 fetch pending re-verification (LUNCH-FLAG-143)."
+      ],
       "id": "L617",
       "coords": null,
       "added_in": "batch13b_cupertino_core_100_verified.json",
@@ -30239,12 +30195,8 @@
         "level": "official",
         "sources": [
           {
-            "label": "RW Grill Redwood official menu",
-            "url": "https://www.rwgrill.com/redwood/"
-          },
-          {
-            "label": "RW Grill official lunch page",
-            "url": "https://www.rwgrill.com/menu/lunch-los-altos/"
+            "label": "Redwood Grill official site - Redwood City location page: 356 Woodside Plaza, Redwood City + hours (fetched 2026-09-17)",
+            "url": "https://www.rwgrill.com/location/redwood-grill/"
           }
         ],
         "accessed": "2026-09-11"
@@ -30253,7 +30205,9 @@
         "yelp": "https://www.yelp.com/biz/rw-grill-redwood-city",
         "google_maps": "https://www.google.com/maps/search/?api=1&query=RW+Grill+2030+Broadway+Redwood+City"
       },
-      "flags": [],
+      "flags": [
+        "LINK ROT (2026-09-17): rwgrill.com/redwood/ and the old lunch-menu URL now 404 after a redesign; hours/address re-verified live (356 Woodside Plaza, Tue-Fri 11:30-9:00, Sat/Sun from 10:00, Mon closed) but the daily-specials menu has not been re-located (LUNCH-FLAG-143)."
+      ],
       "id": "L618",
       "coords": null,
       "added_in": "batch13b_cupertino_core_100_verified.json",
@@ -32428,52 +32382,6 @@
       "distance_mi": null
     },
     {
-      "name": "Yoshi Sushi Los Altos",
-      "city": "Los Altos",
-      "area": "El Camino Real",
-      "address": "365 State St, Los Altos, CA 94022",
-      "cuisine": "Japanese, sushi",
-      "phone": "(650) 948-5338",
-      "lunch_special": {
-        "name": "Sushi fresh delicious lunch special great deal $15.95",
-        "price_from": 15.95,
-        "price_to": 18.95,
-        "days": "daily",
-        "window": "11:30 AM - 2:30 PM",
-        "includes": "Yelp notes sushi fresh delicious lunch special great deal."
-      },
-      "hours_tuesday": "11:30 AM - 2:30 PM; 5:00 PM - 9:30 PM",
-      "days_open": "Monday-Saturday lunch 11:30 AM-2:30 PM dinner 5:00-9:30 PM Sunday closed",
-      "open_on_trip_date": true,
-      "fits_return_bus": {
-        "ok": false,
-        "note": "Los Altos."
-      },
-      "verification": {
-        "level": "review",
-        "sources": [
-          {
-            "label": "Yelp Los Altos Yoshi Sushi lunch special great deal",
-            "url": "https://www.yelp.com/search?find_desc=Lunch+Specials&find_loc=Los+Altos%2C+CA"
-          },
-          {
-            "label": "Yoshi Sushi Yelp listing",
-            "url": "https://www.yelp.com/biz/yoshi-sushi-los-altos"
-          }
-        ],
-        "accessed": "2026-09-11"
-      },
-      "review_links": {
-        "yelp": "https://www.yelp.com/biz/yoshi-sushi-los-altos",
-        "google_maps": "https://www.google.com/maps/search/?api=1&query=Yoshi+Sushi+365+State+St+Los+Altos"
-      },
-      "flags": [],
-      "id": "L666",
-      "coords": null,
-      "added_in": "batch13b_cupertino_core_100_verified.json",
-      "distance_mi": null
-    },
-    {
       "name": "Sushi Arashi Mountain View",
       "city": "Mountain View",
       "area": "El Camino Real",
@@ -33168,52 +33076,6 @@
       "distance_mi": null
     },
     {
-      "name": "Gochi Cupertino Japanese",
-      "city": "Cupertino",
-      "area": "Stevens Creek Blvd",
-      "address": "20690 Stevens Creek Blvd, Cupertino, CA 95014",
-      "cuisine": "Japanese, izakaya",
-      "phone": "(408) 459-6888",
-      "lunch_special": {
-        "name": "Lunch donburi $16.95-$19.95",
-        "price_from": 16.95,
-        "price_to": 19.95,
-        "days": "daily",
-        "window": "11:30 AM - 2:30 PM",
-        "includes": "Japanese donburi lunch."
-      },
-      "hours_tuesday": "11:30 AM - 2:30 PM; 5:00 PM - 10:00 PM",
-      "days_open": "Monday-Sunday lunch 11:30 AM-2:30 PM dinner 5:00-10:00 PM",
-      "open_on_trip_date": true,
-      "fits_return_bus": {
-        "ok": true,
-        "note": "Stevens Creek."
-      },
-      "verification": {
-        "level": "listing",
-        "sources": [
-          {
-            "label": "Yelp best restaurants near 20950 Stevens Creek Blvd Gochi",
-            "url": "https://www.yelp.com/search?cflt=restaurants&find_loc=20950+Stevens+Creek+Blvd%2C+Cupertino%2C+CA+95014"
-          },
-          {
-            "label": "Gochi Yelp listing",
-            "url": "https://www.yelp.com/biz/gochi-cupertino"
-          }
-        ],
-        "accessed": "2026-09-11"
-      },
-      "review_links": {
-        "yelp": "https://www.yelp.com/biz/gochi-cupertino",
-        "google_maps": "https://www.google.com/maps/search/?api=1&query=Gochi+20690+Stevens+Creek+Blvd+Cupertino"
-      },
-      "flags": [],
-      "id": "L682",
-      "coords": null,
-      "added_in": "batch13b_cupertino_core_100_verified.json",
-      "distance_mi": null
-    },
-    {
       "name": "Sweet Maple Cupertino",
       "city": "Cupertino",
       "area": "Stevens Creek Blvd",
@@ -33255,98 +33117,6 @@
       },
       "flags": [],
       "id": "L683",
-      "coords": null,
-      "added_in": "batch13b_cupertino_core_100_verified.json",
-      "distance_mi": null
-    },
-    {
-      "name": "JP Taiwan Bistro Cupertino",
-      "city": "Cupertino",
-      "area": "Stevens Creek Blvd",
-      "address": "20080 Stevens Creek Blvd Ste E, Cupertino, CA 95014",
-      "cuisine": "Taiwanese",
-      "phone": "(408) 333-3333",
-      "lunch_special": {
-        "name": "Taiwanese lunch $13.99-$16.99",
-        "price_from": 13.99,
-        "price_to": 16.99,
-        "days": "daily",
-        "window": "11:30 AM - 9:00 PM",
-        "includes": "New favorite Taiwanese place across from Cupertino library housing complex."
-      },
-      "hours_tuesday": "11:30 AM - 9:00 PM",
-      "days_open": "Monday-Sunday 11:30 AM - 9:00 PM",
-      "open_on_trip_date": true,
-      "fits_return_bus": {
-        "ok": true,
-        "note": "Stevens Creek."
-      },
-      "verification": {
-        "level": "review",
-        "sources": [
-          {
-            "label": "Yelp best restaurants near 20540 Stevens Creek Blvd JP Taiwan Bistro",
-            "url": "https://www.yelp.com/search?cflt=restaurants&find_loc=20540+Stevens+Creek+Blvd,+Cupertino,+CA+95014"
-          },
-          {
-            "label": "JP Taiwan Bistro Yelp listing",
-            "url": "https://www.yelp.com/biz/jp-taiwan-bistro-cupertino"
-          }
-        ],
-        "accessed": "2026-09-11"
-      },
-      "review_links": {
-        "yelp": "https://www.yelp.com/biz/jp-taiwan-bistro-cupertino",
-        "google_maps": "https://www.google.com/maps/search/?api=1&query=JP+Taiwan+Bistro+20080+Stevens+Creek+Blvd+Cupertino"
-      },
-      "flags": [],
-      "id": "L684",
-      "coords": null,
-      "added_in": "batch13b_cupertino_core_100_verified.json",
-      "distance_mi": null
-    },
-    {
-      "name": "Pho Ha Noi Cupertino",
-      "city": "Cupertino",
-      "area": "Stevens Creek Blvd",
-      "address": "20080 Stevens Creek Blvd Ste D, Cupertino, CA 95014",
-      "cuisine": "Vietnamese, pho",
-      "phone": "(408) 899-1234",
-      "lunch_special": {
-        "name": "Pho lunch $13.99-$16.99",
-        "price_from": 13.99,
-        "price_to": 16.99,
-        "days": "daily",
-        "window": "11:00 AM - 9:00 PM",
-        "includes": "Yelp notes peak hours dinner especially weekends packed wait list off times easy table."
-      },
-      "hours_tuesday": "11:00 AM - 9:00 PM",
-      "days_open": "Monday-Sunday 11:00 AM - 9:00 PM",
-      "open_on_trip_date": true,
-      "fits_return_bus": {
-        "ok": true,
-        "note": "Stevens Creek."
-      },
-      "verification": {
-        "level": "review",
-        "sources": [
-          {
-            "label": "Yelp best restaurants near 20540 Stevens Creek Blvd Pho Ha Noi",
-            "url": "https://www.yelp.com/search?cflt=restaurants&find_loc=20540+Stevens+Creek+Blvd,+Cupertino,+CA+95014"
-          },
-          {
-            "label": "Pho Ha Noi Yelp listing",
-            "url": "https://www.yelp.com/biz/pho-ha-noi-cupertino"
-          }
-        ],
-        "accessed": "2026-09-11"
-      },
-      "review_links": {
-        "yelp": "https://www.yelp.com/biz/pho-ha-noi-cupertino",
-        "google_maps": "https://www.google.com/maps/search/?api=1&query=Pho+Ha+Noi+20080+Stevens+Creek+Blvd+Cupertino"
-      },
-      "flags": [],
-      "id": "L685",
       "coords": null,
       "added_in": "batch13b_cupertino_core_100_verified.json",
       "distance_mi": null
@@ -33536,98 +33306,6 @@
       "distance_mi": null
     },
     {
-      "name": "YAYOI Cupertino Japanese",
-      "city": "Cupertino",
-      "area": "Stevens Creek Blvd",
-      "address": "19700 Vallco Pkwy Ste 110, Cupertino, CA 95014",
-      "cuisine": "Japanese, teishoku, bento",
-      "phone": "(408) 899-3000",
-      "lunch_special": {
-        "name": "Teishoku lunch $16.95-$19.95",
-        "price_from": 16.95,
-        "price_to": 19.95,
-        "days": "daily",
-        "window": "11:00 AM - 9:30 PM",
-        "includes": "Yayoi Japanese teishoku bento lunch."
-      },
-      "hours_tuesday": "11:00 AM - 9:30 PM",
-      "days_open": "Monday-Sunday 11:00 AM - 9:30 PM",
-      "open_on_trip_date": true,
-      "fits_return_bus": {
-        "ok": true,
-        "note": "Vallco."
-      },
-      "verification": {
-        "level": "listing",
-        "sources": [
-          {
-            "label": "Yelp best restaurants near 20520A Stevens Creek Blvd YAYOI",
-            "url": "https://www.yelp.com/search?find_desc=restaurants+&+food=&find_loc=20520A+Stevens+Creek+Blvd,+Cupertino,+CA+95014"
-          },
-          {
-            "label": "Yayoi Yelp listing",
-            "url": "https://www.yelp.com/biz/yayoi-cupertino"
-          }
-        ],
-        "accessed": "2026-09-11"
-      },
-      "review_links": {
-        "yelp": "https://www.yelp.com/biz/yayoi-cupertino",
-        "google_maps": "https://www.google.com/maps/search/?api=1&query=YAYOI+19700+Vallco+Pkwy+Cupertino"
-      },
-      "flags": [],
-      "id": "L690",
-      "coords": null,
-      "added_in": "batch13b_cupertino_core_100_verified.json",
-      "distance_mi": null
-    },
-    {
-      "name": "Sizzling Lunch Cupertino",
-      "city": "Cupertino",
-      "area": "Vallco",
-      "address": "19600 Vallco Pkwy Ste 110, Cupertino, CA 95014",
-      "cuisine": "Japanese, sizzling plates",
-      "phone": "(408) 899-1111",
-      "lunch_special": {
-        "name": "Sizzling plates lunch $14.99-$17.99",
-        "price_from": 14.99,
-        "price_to": 17.99,
-        "days": "daily",
-        "window": "11:00 AM - 9:30 PM",
-        "includes": "Sizzling lunch plates affordable."
-      },
-      "hours_tuesday": "11:00 AM - 9:30 PM",
-      "days_open": "Monday-Sunday 11:00 AM - 9:30 PM",
-      "open_on_trip_date": true,
-      "fits_return_bus": {
-        "ok": true,
-        "note": "Vallco."
-      },
-      "verification": {
-        "level": "listing",
-        "sources": [
-          {
-            "label": "Yelp best restaurants near 20520A Stevens Creek Blvd Sizzling Lunch",
-            "url": "https://www.yelp.com/search?find_desc=restaurants+&+food=&find_loc=20520A+Stevens+Creek+Blvd,+Cupertino,+CA+95014"
-          },
-          {
-            "label": "Sizzling Lunch Cupertino Yelp listing",
-            "url": "https://www.yelp.com/biz/sizzling-lunch-cupertino"
-          }
-        ],
-        "accessed": "2026-09-11"
-      },
-      "review_links": {
-        "yelp": "https://www.yelp.com/biz/sizzling-lunch-cupertino",
-        "google_maps": "https://www.google.com/maps/search/?api=1&query=Sizzling+Lunch+19600+Vallco+Pkwy+Cupertino"
-      },
-      "flags": [],
-      "id": "L691",
-      "coords": null,
-      "added_in": "batch13b_cupertino_core_100_verified.json",
-      "distance_mi": null
-    },
-    {
       "name": "DX Braised Chicken Rice",
       "city": "Cupertino",
       "area": "Stevens Creek Blvd",
@@ -33715,52 +33393,6 @@
       },
       "flags": [],
       "id": "L693",
-      "coords": null,
-      "added_in": "batch13b_cupertino_core_100_verified.json",
-      "distance_mi": null
-    },
-    {
-      "name": "Ippudo Cupertino Ramen",
-      "city": "Cupertino",
-      "area": "Main St Cupertino Vallco",
-      "address": "19540 Vallco Pkwy Ste 130, Cupertino, CA 95014",
-      "cuisine": "Japanese, ramen",
-      "phone": "(408) 899-9088",
-      "lunch_special": {
-        "name": "Ramen lunch $16.95-$19.95",
-        "price_from": 16.95,
-        "price_to": 19.95,
-        "days": "daily",
-        "window": "11:00 AM - 9:30 PM",
-        "includes": "Ippudo ramen lunch."
-      },
-      "hours_tuesday": "11:00 AM - 9:30 PM",
-      "days_open": "Monday-Sunday 11:00 AM - 9:30 PM",
-      "open_on_trip_date": true,
-      "fits_return_bus": {
-        "ok": true,
-        "note": "Vallco."
-      },
-      "verification": {
-        "level": "listing",
-        "sources": [
-          {
-            "label": "Main St Cupertino directory Ippudo 19540 Vallco Parkway",
-            "url": "https://mainstreetcupertino.com/directory/"
-          },
-          {
-            "label": "Ippudo Yelp listing",
-            "url": "https://www.yelp.com/biz/ippudo-cupertino"
-          }
-        ],
-        "accessed": "2026-09-11"
-      },
-      "review_links": {
-        "yelp": "https://www.yelp.com/biz/ippudo-cupertino",
-        "google_maps": "https://www.google.com/maps/search/?api=1&query=Ippudo+19540+Vallco+Pkwy+Cupertino"
-      },
-      "flags": [],
-      "id": "L694",
       "coords": null,
       "added_in": "batch13b_cupertino_core_100_verified.json",
       "distance_mi": null
@@ -42939,7 +42571,8 @@
       "flags": [
         "Level official for the menu (fetched directly 2026-09-16); address/hours come from the Yelp listing and conflict across sources - see LUNCH-FLAG-134.",
         "Price range spans the whole separate Lunch menu, not a single named special; the bento boxes are the closest thing to a lunch 'deal'.",
-        "$$$$ fine-dining context: the lunch menu is distinct from dinner (different items) but is not discounted to a flat lunch price."
+        "$$$$ fine-dining context: the lunch menu is distinct from dinner (different items) but is not discounted to a flat lunch price.",
+        "2026-09-17 direct re-fetch of noburestaurants.com/paloalto/menus succeeded: the priced Lunch section is live as captured (bento $39-$80, tacos $8-$19, Nobu Classic/Now items to $95); LUNCH-FLAG-133's fetch-proxy limitation is closed for this row."
       ],
       "review_links": {
         "yelp": "https://www.yelp.com/biz/nobu-palo-alto-palo-alto",
@@ -43031,12 +42664,12 @@
       "coords_source": "not geocoded (address from Yelp listing; direct fetch of the restaurant site failed this pass)",
       "cuisine": "Brazilian churrascaria (rodizio)",
       "lunch_special": {
-        "name": "Rodizio lunch - seven cuts of meat with salad bar",
+        "name": "Weekday lunch tiers: Unlimited Gourmet Hot Dishes & Salad Bar / Executive Lunch Experience / Churrasco Lunch Experience; weekend all-day rodizio",
         "price_from": 27.95,
-        "price_to": 39.95,
-        "days": "Daily - Mon-Fri $27.95 (seven cuts); Sat-Sun $39.95 (12-14 cuts)",
-        "window": "11:30 AM - 2:30 PM Mon-Fri (Yelp) vs until 2:00 PM (restaurant's own menu) - LUNCH-FLAG-135",
-        "includes": "Unlimited rodizio lunch: 7 cuts weekday, 12-14 cuts weekend lunch, Brazilian salad bar, blazed pineapple; desserts and beverages a la carte; dinner is $56.95 per person"
+        "price_to": 74.95,
+        "days": "Lunch menu Monday-Friday; Saturday-Sunday the all-day rodizio (weekend lunch) applies",
+        "window": "Not printed on the current menu page (the 2:00 vs 2:30 close conflict remains open - LUNCH-FLAG-135)",
+        "includes": "Official menu page fetched directly 2026-09-17: Mon-Fri lunch - Unlimited Gourmet Hot Dishes & Salad Bar $27.95; Executive Lunch Experience $37.95 (salad bar + 3 roasted cuts); Churrasco Lunch Experience $54.95 (salad bar + 7-9 rotating cuts). Weekend Lunch & Dinner $74.95 per person (12-14 cuts); dinner $74.95 daily; holiday pricing $84.95. Children 6-11 half price. THIS REPLACES the pass-22 figures ($27.95/$39.95 lunch, $56.95 dinner) - the restaurant restructured its menu (menu PDFs on the site are dated 2026/03)."
       },
       "hours_tuesday": "11:30 AM - 2:30 PM, 5:00 PM - 9:00 PM (Yelp; the menu page says lunch until 2:00 PM - see flag)",
       "days_open": "Mon-Fri 11:30 AM lunch + 5 PM dinner; Sat 12 PM - 3 PM + 5 PM; Sun 12 PM - 9 PM (Yelp)",
@@ -43047,24 +42680,24 @@
         "note": "San Mateo (~18 mi) - not on the trip route."
       },
       "flags": [
-        "Menu prices ($27.95/$39.95/$56.95) come from the restaurant's own menu as mirrored on SinglePlatform; direct fetch of espetus.com failed during the proxy outage - re-fetch next pass (LUNCH-FLAG-133).",
-        "Lunch close time conflicts: Yelp 2:30 PM vs the menu's 2:00 PM (LUNCH-FLAG-135)."
+        "PRICE RESTRUCTURE (2026-09-17): pass-22 figures are stale - official page now prints $27.95 salad-bar lunch, $37.95 executive, $54.95 churrasco lunch Mon-Fri; weekend lunch AND dinner are now $74.95 ($84.95 holidays). The $39.95 weekend-lunch and $56.95-dinner figures no longer exist on the site (LUNCH-FLAG-144).",
+        "The current menu page prints no lunch close time; the 2:00 PM (menu mirror) vs 2:30 PM (Yelp) conflict stays open (LUNCH-FLAG-135)."
       ],
       "review_links": {
         "yelp": "https://www.yelp.com/biz/espetus-san-mateo-san-mateo-7",
         "google_maps": "https://www.google.com/maps/search/?api=1&query=Espetus+Churrascaria+710+S+B+St+San+Mateo"
       },
       "verification": {
-        "level": "listing",
+        "level": "official",
         "accessed": "2026-09-16",
         "sources": [
           {
-            "label": "Espetus menu (restaurant's own menu mirrored on SinglePlatform) - 'Lunch (Monday-Friday): $27.95 per person (Seven cuts of meat) / Lunch (Saturday-Sunday): $39.95 / Dinner: $56.95' (search extraction 2026-09-16; re-fetch needed)",
-            "url": "https://places.singleplatform.com/espetus-churrascaria-brazilian-steak-house-1/menu"
+            "label": "Espetus official menu page - Mon-Fri lunch tiers $27.95/$37.95/$54.95, weekend $74.95, dinner $74.95 (fetched directly 2026-09-17)",
+            "url": "https://espetus.com/menu/"
           },
           {
-            "label": "Yelp listing - 710 S B St, hours (2026)",
-            "url": "https://www.yelp.com/biz/espetus-san-mateo-san-mateo-7"
+            "label": "Espetus official Mon-Fri lunch menu PDF (2026/03 upload)",
+            "url": "https://espetus.com/wp-content/uploads/2026/03/Espetus-Lunch-Monday-Friday-Menu.pdf"
           }
         ]
       },
@@ -43087,12 +42720,12 @@
         "name": "Separate Lunch Menu (starters, sandwiches, entrées)",
         "price_from": 14,
         "price_to": 30,
-        "days": "Mon-Sat (Sunday is dinner only)",
-        "window": "11:30 AM - 2:15 PM (TripAdvisor) vs 11:00 AM - 2:00 PM (restaurantji) - LUNCH-FLAG-136",
+        "days": "Monday-Friday (official site) - aggregator listings say Mon-Sat; conflict kept visible",
+        "window": "11:00 AM - 2:15 PM (official site)",
         "includes": "Current menu: salads from $14 (Caesar $14), lunch sandwiches $22-$24 (petrale sole $22, skirt steak $24), starters $15-$18, entrées $30 (paella, seasonal veg plate). An older owner-uploaded menu on restaurantguru shows $12-$18 (pre-increase)."
       },
-      "hours_tuesday": "11:30 AM - 2:15 PM, 5:00 PM - 9:00 PM (TripAdvisor; restaurantji says 11:00 AM - 2:00 PM, 4:30 PM - 9:00 PM - see flag)",
-      "days_open": "Mon-Sat lunch + dinner; Fri-Sat until 9:45 PM, Sun dinner 5-9 PM (TripAdvisor)",
+      "hours_tuesday": "11:00 AM - 2:15 PM, 5:00 PM - 9:00 PM (official site)",
+      "days_open": "Official: lunch Mon-Fri 11:00-2:15; dinner Mon-Thu 5-9, Fri-Sat 5-9:30, Sun 5-9. Aggregators (wheree/SinglePlatform) print Mon-Sat lunch 11:30-2:15/2:30.",
       "open_on_trip_date": true,
       "phone": "(650) 558-8401",
       "fits_return_bus": {
@@ -43100,9 +42733,8 @@
         "note": "San Mateo (~18 mi) - not on the trip route."
       },
       "flags": [
-        "Menu prices from the restaurant's menu mirrored on SinglePlatform (current) - direct fetch of the official site failed this pass (LUNCH-FLAG-133).",
-        "Hours conflict across TripAdvisor (11:30-2:15) and restaurantji (11-2; Sat 5-9, Sun 4:30-9); both kept (LUNCH-FLAG-136).",
-        "Older 'menu from owner 4 years ago' on restaurantguru prices the lunch items lower ($12-$18); the current mirror is used."
+        "RESOLVED IN PART (2026-09-17): the official site was fetched directly - lunch is Mon-Fri 11:00 AM - 2:15 PM on the restaurant's own page (the restaurantji '11-2' mirror figure and the wheree Mon-Sat 11:30-2:15 grid remain as secondary listings; Saturday lunch is wheree-only and contradicts the official Mon-Fri) (LUNCH-FLAG-145).",
+        "Menu prices ($14-$30 band) still come from the SinglePlatform mirror; the official lunch-menu body is JS-rendered and did not print prices on fetch (LUNCH-FLAG-133 closed, this limitation noted in place)."
       ],
       "review_links": {
         "yelp": "https://www.yelp.com/biz/central-park-bistro-san-mateo",
@@ -43113,8 +42745,8 @@
         "accessed": "2026-09-16",
         "sources": [
           {
-            "label": "Central Park Bistro menu (restaurant's menu mirrored on SinglePlatform) - 'Lunch Menu' section with prices (search extraction 2026-09-16; re-fetch needed)",
-            "url": "https://places.singleplatform.com/central-park-bistro/menu"
+            "label": "Central Park Bistro official site - Lunch Menu page: 'LUNCH Monday - Friday: 11:00 am - 2:15 pm' + 181 E 4th Ave (fetched directly 2026-09-17)",
+            "url": "https://centralparkbistro.com/lunch-menu/"
           },
           {
             "label": "TripAdvisor - 181 E 4th Ave, phone, hours (lunch Mon-Sat 11:30-2:15)",
@@ -43129,6 +42761,257 @@
       "id": "L882",
       "added_in": "batch22_pass22_ring_verified.json",
       "distance_mi": 23.65
+    },
+    {
+      "name": "Shiki Bistro",
+      "city": "San Carlos",
+      "area": "Downtown San Carlos (Laurel St)",
+      "address": "825 Laurel St, San Carlos, CA 94070",
+      "coords": null,
+      "coords_source": "not captured - street address printed in the official site's own title/menu header",
+      "cuisine": "Japanese sushi bistro",
+      "lunch_special": {
+        "name": "Lunch Special (Bento, Entree, Donburi, and Sushi options)",
+        "price_from": null,
+        "price_to": null,
+        "days": "Every day",
+        "window": "11:30 AM - 2:30 PM",
+        "includes": "The official menu page prints a named 'Lunch Special' served every day 11:30am-2:30pm, described as 'Shiki Lunch Special menu with Bento, Entree, Donburi, and Sushi options'. Prices are printed only inside menu JPG images (San Carlos lunch menu 2025.jpg / April 2024.jpg) that could not be text-extracted, so the price columns are deliberately left empty rather than guessed."
+      },
+      "hours_tuesday": "Lunch 11:30 AM - 2:30 PM (official); dinner hours not captured",
+      "days_open": "Lunch special every day 11:30 AM - 2:30 PM (official menu page)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "San Carlos (~14 mi from the Cupertino destination) - not on the VTA 55 walk; Caltrain-connected but outside the trip corridor."
+      },
+      "verification": {
+        "level": "official",
+        "sources": [
+          {
+            "label": "Shiki Bistro official site - Menu / Price List page: 'Lunch Special - Every Day 11:30am - 2:30pm' (fetched directly 2026-09-17)",
+            "url": "https://shikisancarlos.com/menu-1"
+          },
+          {
+            "label": "Shiki Bistro official site home page - 825 Laurel St, San Carlos (site title/header)",
+            "url": "https://shikisancarlos.com/"
+          }
+        ],
+        "accessed": "2026-09-17"
+      },
+      "review_links": {
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Shiki+Bistro+825+Laurel+St+San+Carlos"
+      },
+      "flags": [
+        "Prices live in unextractable menu JPGs (the 2025 'lunch menu Bento box' image and an April 2024 lunch menu); a Toast-ordering logo appears on the site but no text menu was found, so no price is printed here (LUNCH-FLAG-150).",
+        "The site's own file names say the lunch-special sheet is the 'San Carlos' menu - there is a separate same-brand Shiki in Half Moon Bay; this row is the San Carlos location only."
+      ],
+      "added_in": "batch23_pass23_ring_rescreen.json",
+      "id": "L891",
+      "distance_mi": null
+    },
+    {
+      "name": "Honō Izakaya & Sushi",
+      "city": "Campbell",
+      "area": "Downtown Campbell (S Central Ave)",
+      "address": "33 South Central Avenue, Campbell, CA 95008",
+      "coords": null,
+      "coords_source": "not captured - address printed on the official site's contact block",
+      "cuisine": "Japanese izakaya + sushi",
+      "lunch_special": {
+        "name": "Weekday lunch service (menu page says 'We are updating our menu'); a Google reviewer reports coming 'for a lunch special on a weekday'",
+        "price_from": null,
+        "price_to": null,
+        "days": "Monday-Friday (lunch service)",
+        "window": "11:30 AM - 2:30 PM",
+        "includes": "The official site prints real weekly hours with a Monday-Friday lunch block (Mon-Thu 11:30am-2:30pm + dinner 5-9:30pm; Fri lunch + dinner to 10:30pm; Sat from 12pm; Sun 12-9:30pm). The official food-menu page currently says 'We are updating our menu - please stay tuned', so no dish or price could be captured; the lunch-special claim rests on a Google review quote, which is recorded as a quote, never as a price."
+      },
+      "hours_tuesday": "11:30 AM - 2:30 PM, 5:00 PM - 9:30 PM",
+      "days_open": "Mon-Thu 11:30-2:30 + 5:00-9:30; Fri 11:30-2:30 + 5:00-10:30; Sat 12:00-10:30; Sun 12:00-9:30 (official site)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Downtown Campbell (~8.5 mi) - not on the VTA 55 Cupertino walk."
+      },
+      "verification": {
+        "level": "official",
+        "sources": [
+          {
+            "label": "Honō official site - hours with Mon-Fri 11:30am-2:30pm lunch block and 33 South Central Ave address (fetched directly 2026-09-17)",
+            "url": "https://honojapcuisine.com/"
+          },
+          {
+            "label": "Honō official food-menu page - 'We are updating our menu. Please stay tuned' (fetched directly 2026-09-17)",
+            "url": "https://honojapcuisine.com/food-menu"
+          }
+        ],
+        "accessed": "2026-09-17"
+      },
+      "review_links": {
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Hono+Izakaya+33+South+Central+Ave+Campbell"
+      },
+      "flags": [
+        "Lunch-special evidence is one Google review ('Came here for a lunch special on a weekday', shown on the official site's own reviews carousel) - recorded as a quote only; no restaurant-controlled price exists yet because the menu page is 'being updated' (LUNCH-FLAG-151).",
+        "Name trap: a different 'Hono Izakaya' operates at 670 Saint-Joseph St E, Quebec, Canada (OpenTable/wheree) - not this restaurant; queries must be watched for it."
+      ],
+      "added_in": "batch23_pass23_ring_rescreen.json",
+      "id": "L892",
+      "distance_mi": null
+    },
+    {
+      "name": "Radhe Chaat",
+      "city": "Sunnyvale",
+      "area": "E El Camino Real, Sunnyvale",
+      "address": "934 E El Camino Real, Sunnyvale, CA 94087",
+      "coords": null,
+      "coords_source": "not captured",
+      "cuisine": "Gujarati/North Indian vegetarian chaat + thali combos",
+      "lunch_special": {
+        "name": "Thali Combos 1-4 (all-day combo plates)",
+        "price_from": 12.99,
+        "price_to": 15.99,
+        "days": "Monday-Sunday",
+        "window": "11:00 AM - 9:00 PM (open hours; combos are all-day)",
+        "includes": "Official site menu: THALI COMBO 1 $12.99 (2 roti + veg dhal + veg of the day + white rice); THALI COMBO 2 $13.99 (1 paratha + dhal + veg + rice); THALI COMBO 3 $14.99 (2 poori + dhal + veg + rice + tea or chaas); BHEL THALI COMBO 4 $15.99 (bhel poori + dhal + veg + rice + beverage). Chaat items $5.99-$7.99."
+      },
+      "hours_tuesday": "11:00 AM - 9:00 PM",
+      "days_open": "Monday-Sunday 11:00 AM - 9:00 PM (official site)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Sunnyvale E El Camino (~6 mi) - not on the VTA 55 Cupertino walk; a short drive from the destination."
+      },
+      "verification": {
+        "level": "official",
+        "sources": [
+          {
+            "label": "Radhe Chaat official site - 'Our food menu' with Thali Combo 1-4 prices and 934 E El Camino Real address (fetched directly 2026-09-17)",
+            "url": "https://radhechaatpureveg.com/"
+          },
+          {
+            "label": "Radhe Chaat official site (second domain) - hours Mon-Sun 11AM-9PM + same address/phone",
+            "url": "https://radhechaatsv.com/"
+          }
+        ],
+        "accessed": "2026-09-17"
+      },
+      "review_links": {
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Radhe+Chaat+934+E+El+Camino+Real+Sunnyvale"
+      },
+      "flags": [
+        "The restaurant runs two official domains (radhechaatsv.com and radhechaatpureveg.com) with split content - hours on one, the priced menu on the other; both cite the same address and phone (LUNCH-FLAG-152).",
+        "Combos are all-day plates, not a time-boxed lunch special; listed because they are the restaurant's own standing, priced lunch-format offering."
+      ],
+      "added_in": "batch23_pass23_ring_rescreen.json",
+      "id": "L893",
+      "distance_mi": null
+    },
+    {
+      "name": "Rajbhog Thali",
+      "city": "Sunnyvale",
+      "area": "E El Camino Real, Sunnyvale",
+      "address": "1028 E El Camino Real, Sunnyvale, CA 94087",
+      "coords": [
+        37.3514,
+        -122.0061
+      ],
+      "coords_source": "DoorDash store JSON geo for 1028 E El Camino Real",
+      "cuisine": "Pure-vegetarian Indian thali (daily rotating regional menu)",
+      "lunch_special": {
+        "name": "Daily rotating 'Special Thali' - unlimited servings (Thu 'Rajbhog', Fri 'Gujarati', Sat 'Rajasthani', Sun 'Punjabi', Mon & Wed 'Special'); RajBhog Thali $21.99 listed on the delivery menu",
+        "price_from": 21.99,
+        "price_to": 21.99,
+        "days": "Mon + Wed-Sun (closed Tuesday per the official weekly strip); the $21.99 'RajBhog Thali (ONLY Thursday)' figure is from the delivery menu",
+        "window": "All day during open hours (thali is the standing format, not a time-boxed lunch deal)",
+        "includes": "Official site (fetched 2026-09-17) prints the weekly thali strip (Tue Closed / Wed Special / Thu Rajbhog / Fri Gujarati / Sat Rajasthani / Sun Punjabi / Mon Special) and a dated 'today's thali' composition (16th September 2026 - 14 items, unlimited refills). The official menu page prints the a-la-carte menu ($7.99-$14.99) but no thali price; the $21.99 Thursday figure comes from the restaurant's DoorDash/Postmates delivery menu."
+      },
+      "hours_tuesday": "Closed (official weekly strip: 'Tue Closed')",
+      "days_open": "Mon + Wed-Sun; store hours per DoorDash ~11:30 AM - 8:15 PM (Sun from 11:30 AM; Sat from 8:00 AM per DoorDash grid) - no hour grid printed on the official site",
+      "open_on_trip_date": false,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Sunnyvale (~6 mi) - not on the VTA 55 walk; also closed on the trip's Tuesday."
+      },
+      "verification": {
+        "level": "mixed",
+        "sources": [
+          {
+            "label": "Rajbhog Thali official site - weekly thali schedule, dated daily thali composition, unlimited-servings description (fetched directly 2026-09-17)",
+            "url": "https://rajbhogthali.com/"
+          },
+          {
+            "label": "Rajbhog Thali official menu page - a-la-carte prices; no thali price printed (fetched directly 2026-09-17)",
+            "url": "https://rajbhogthali.com/menu.html"
+          },
+          {
+            "label": "Postmates delivery menu - 'RajBhog Thali (ONLY Thursday) $21.99' + store hours + address",
+            "url": "https://postmates.com/store/rajbhog-thalis/dliyzKCPUkqaIREuG19IXw"
+          }
+        ],
+        "accessed": "2026-09-17"
+      },
+      "review_links": {
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Rajbhog+Thali+1028+E+El+Camino+Real+Sunnyvale"
+      },
+      "flags": [
+        "Level is 'mixed' on purpose: the thali's existence, schedule and unlimited format are official-site facts; the only printed thali price found ($21.99, Thursday) is on the delivery menus, so the price column carries that single day-specific figure (LUNCH-FLAG-153).",
+        "The official site shows 'unlimited servings'; whether the $21.99 DoorDash price is per-person unlimited dine-in was not printable-verified - re-check in store before relying on it."
+      ],
+      "added_in": "batch23_pass23_ring_rescreen.json",
+      "id": "L894",
+      "distance_mi": 2.97
+    },
+    {
+      "name": "Willow Street Wood-Fired Pizza - Willow Glen",
+      "city": "San Jose",
+      "area": "Willow Glen (Willow St)",
+      "address": "1072 Willow Street, San Jose, CA 95125",
+      "coords": [
+        37.3085,
+        -121.9004
+      ],
+      "coords_source": "official site's Google Maps direction link (Willow Street Pizza & Taproom)",
+      "cuisine": "Wood-fired pizza / California comfort food",
+      "lunch_special": {
+        "name": "Monday all-day 'Lunch Special' - any mini pizza or pasta with soup or salad (dine in only)",
+        "price_from": 16.99,
+        "price_to": 16.99,
+        "days": "Monday (part of the published Daily Specials list; Tuesday is Kids Eat Free, Wednesday Wine Wednesday, Thursday lasagna special, Friday shrimp scampi special)",
+        "window": "All day Monday (dine-in)",
+        "includes": "SinglePlatform menu (the restaurant-controlled menu feed, 'Last updated: July 27, 2026') under 'Daily Specials': 'Monday: All day \"Lunch Special\" $16.99 - All day, any mini pizza or pasta, with soup or salad. Dine in only.'"
+      },
+      "hours_tuesday": "Not captured - the OpenTable listing prints only dinner hours (Mon-Thu & Sun 4:00-8:30 PM, Fri-Sat 4:00-9:00 PM), which conflicts with an all-day Monday lunch special (LUNCH-FLAG-154)",
+      "days_open": "Per OpenTable listing: dinner Mon-Thu & Sun to 8:30 PM, Fri-Sat to 9:00 PM; the SinglePlatform menu implies Monday lunch service (all-day lunch special)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Willow Glen (~11 mi) - not on the VTA 55 Cupertino walk; and the lunch special itself is Monday-only."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {
+            "label": "Willow Street official site - Willow Glen location: 1072 Willow Street, San Jose, CA 95125, (408) 971-7080 (fetched directly 2026-09-17)",
+            "url": "https://www.willowstreet.com/willow-glen/"
+          },
+          {
+            "label": "OpenTable listing with SinglePlatform menu (updated July 27, 2026) - 'Daily Specials: Monday: All day Lunch Special $16.99, any mini pizza or pasta with soup or salad, dine in only'",
+            "url": "https://www.opentable.com/r/willow-street-pizza-and-taproom-san-jose"
+          }
+        ],
+        "accessed": "2026-09-17"
+      },
+      "review_links": {
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Willow+Street+Pizza+1072+Willow+St+San+Jose"
+      },
+      "flags": [
+        "The $16.99 Monday special is from the SinglePlatform mirror, not a directly-fetched willowstreet.com menu page - listing level by policy (LUNCH-FLAG-154).",
+        "Hours conflict: OpenTable prints dinner-only hours for this location while the menu feed advertises an all-day Monday lunch special; both kept visible until the restaurant's own menu page can be read.",
+        "The Los Gatos Willow Street (L69) is a separate location with its own row; this is the Willow Glen San Jose restaurant."
+      ],
+      "added_in": "batch23_pass23_ring_rescreen.json",
+      "id": "L895",
+      "distance_mi": 7.14
     }
   ],
   "top_picks_for_tuesday_sept_8": [
@@ -43164,5 +43047,6 @@
     }
   ],
   "transit_fit_note": "The return chain leaves 20387 Gillick Way at 11:50 AM for the 2:40 PM arrival, or at 12:20 PM for the 3:18 PM arrival. Every lunch stop in this radius has to fit one of those two departures, so the useful lunch window is roughly 11:15 AM - 12:10 PM (or - 12:40 PM).",
-  "added_to_master": 850
+  "added_to_master": 5,
+  "pass23_note": "Pass 23 (2026-09-17): 5 net-new rows (L883-L887), 8 duplicate rows removed with evidence (L106, L666, L682, L684, L685, L690, L691, L694 - wrong-address batch-13b twins), 9 rows upgraded/corrected from direct official fetches."
 }

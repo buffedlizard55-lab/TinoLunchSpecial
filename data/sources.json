@@ -1282,6 +1282,278 @@
       "url": "https://losaltosmenu.com/stuart-los-altos-mexican-restaurant-food-menu",
       "fetch_status": "snippet 2026-09-16",
       "used_for": "Reject: no Bay Area address could be established."
+    },
+    {
+      "id": "S161",
+      "agency": "espetus.com",
+      "label": "Espetus official menu page - lunch tiers $27.95/$37.95/$54.95, weekend $74.95 (fetched 2026-09-17)",
+      "url": "https://espetus.com/menu/",
+      "fetch_status": "fetched 2026-09-17",
+      "used_for": "L881 price-restructure correction (LUNCH-FLAG-144)."
+    },
+    {
+      "id": "S162",
+      "agency": "centralparkbistro.com",
+      "label": "Central Park Bistro official Lunch Menu page - LUNCH Mon-Fri 11:00 am - 2:15 pm (fetched 2026-09-17)",
+      "url": "https://centralparkbistro.com/lunch-menu/",
+      "fetch_status": "fetched 2026-09-17",
+      "used_for": "L882 official-hours update; LUNCH-FLAG-136 partially resolved."
+    },
+    {
+      "id": "S163",
+      "agency": "noburestaurants.com",
+      "label": "Nobu Palo Alto official menus page re-fetch - priced Lunch section live (fetched 2026-09-17)",
+      "url": "https://www.noburestaurants.com/paloalto/menus",
+      "fetch_status": "fetched 2026-09-17",
+      "used_for": "L879 re-verification; closes the LUNCH-FLAG-133 outage for this row."
+    },
+    {
+      "id": "S164",
+      "agency": "maverickjacks.com",
+      "label": "Maverick Jack's San Mateo Toast ordering page - JS shell only, no menu content (attempted 2026-09-17)",
+      "url": "https://maverickjacks.com/order/maverickjacks-san-mateo",
+      "fetch_status": "fetched 2026-09-17",
+      "used_for": "L880 re-fetch attempt; LUNCH-FLAG-137 stays open."
+    },
+    {
+      "id": "S165",
+      "agency": "phohanoi.com",
+      "label": "Pho Ha Noi official site - Cupertino block (10100 S De Anza Blvd + weekly hours)",
+      "url": "https://phohanoi.com/",
+      "fetch_status": "fetched 2026-09-17",
+      "used_for": "L16 upgrade to official hours/address."
+    },
+    {
+      "id": "S166",
+      "agency": "phohanoi.com",
+      "label": "Pho Ha Noi official Cupertino menu page - a-la-carte prices; empty 'Spring Special' header",
+      "url": "https://phohanoi.com/cupertino-en.html",
+      "fetch_status": "fetched 2026-09-17",
+      "used_for": "L16 menu prices; LUNCH-FLAG-147."
+    },
+    {
+      "id": "S167",
+      "agency": "toast.app",
+      "label": "Sizzling Lunch Cupertino official Toast page - 10033 Saich Way, daily 11:00 am - 8:30 pm",
+      "url": "https://toast.app/r/sizzlinglunch-cupertino/order",
+      "fetch_status": "fetched 2026-09-17",
+      "used_for": "L26 hours correction; proves L691's Vallco address wrong."
+    },
+    {
+      "id": "S168",
+      "agency": "pos.chowbus.com",
+      "label": "JP Taiwan Bistro chowbus POS ordering page - 'Special Time-Limited Menu 11:30 AM - 2:30 PM' + 10271 Torre Avenue",
+      "url": "https://pos.chowbus.com/online-ordering/store/Golden-Bowl-Taipei-Cuisine/21737",
+      "fetch_status": "snippet 2026-09-17",
+      "used_for": "L277 upgrade; address triple-confirmation."
+    },
+    {
+      "id": "S169",
+      "agency": "yelp.com",
+      "label": "Yelp (claimed) - JP Taiwan Bistro, 10271 Torre Ave, Tue closed",
+      "url": "https://www.yelp.com/biz/jp-taiwan-bistro-cupertino-2",
+      "fetch_status": "snippet 2026-09-17",
+      "used_for": "L277 hours + address."
+    },
+    {
+      "id": "S170",
+      "agency": "gochifusiontapas.com via yelp.com",
+      "label": "Gochi claimed Yelp page - 19980 E Homestead Rd + Tue-Sat 11:15 AM - 1:15 PM lunch (updated 2026)",
+      "url": "https://www.yelp.com/biz/gochi-cupertino-cupertino",
+      "fetch_status": "snippet 2026-09-17",
+      "used_for": "Proves L682's 20690 Stevens Creek address wrong."
+    },
+    {
+      "id": "S171",
+      "agency": "yayoi.com via yelp.com",
+      "label": "YAYOI claimed Yelp page - 20682 Homestead Rd (business website yayoi-us.com), Mon-Sun from 11:30 AM",
+      "url": "https://www.yelp.com/biz/yayoi-cupertino",
+      "fetch_status": "snippet 2026-09-17",
+      "used_for": "Proves L690's 19700 Vallco Pkwy address wrong."
+    },
+    {
+      "id": "S172",
+      "agency": "themugsusa.com + roadtrippers",
+      "label": "Yoshi Sushi Los Altos - 250 3rd St (chowbus POS + roadtrippers + TikTok listings agree)",
+      "url": "https://www.themugsusa.com/catalog/california/los-altos/japanese-restaurant/yoshi-sushi",
+      "fetch_status": "snippet 2026-09-17",
+      "used_for": "Proves L666's 365 State St address wrong."
+    },
+    {
+      "id": "S173",
+      "agency": "shikisancarlos.com",
+      "label": "Shiki Bistro official menu page - 'Lunch Special Every Day 11:30am - 2:30pm' (fetched 2026-09-17)",
+      "url": "https://shikisancarlos.com/menu-1",
+      "fetch_status": "fetched 2026-09-17",
+      "used_for": "L891 net-new row (official window; prices in JPGs)."
+    },
+    {
+      "id": "S174",
+      "agency": "honojapcuisine.com",
+      "label": "Honō official site - 33 S Central Ave + weekly hours with Mon-Fri 11:30am-2:30pm lunch (fetched 2026-09-17)",
+      "url": "https://honojapcuisine.com/",
+      "fetch_status": "fetched 2026-09-17",
+      "used_for": "L892 net-new row (official hours)."
+    },
+    {
+      "id": "S175",
+      "agency": "honojapcuisine.com",
+      "label": "Honō official food-menu page - 'We are updating our menu'",
+      "url": "https://honojapcuisine.com/food-menu",
+      "fetch_status": "fetched 2026-09-17",
+      "used_for": "Why L892's price columns are empty (LUNCH-FLAG-151)."
+    },
+    {
+      "id": "S176",
+      "agency": "radhechaatpureveg.com",
+      "label": "Radhe Chaat official menu - Thali Combos 1-4 $12.99-$15.99 + address/phone",
+      "url": "https://radhechaatpureveg.com/",
+      "fetch_status": "fetched 2026-09-17",
+      "used_for": "L893 net-new row (official prices)."
+    },
+    {
+      "id": "S177",
+      "agency": "radhechaatsv.com",
+      "label": "Radhe Chaat official site (hours domain) - Mon-Sun 11 AM - 9 PM, 934 E El Camino Real",
+      "url": "https://radhechaatsv.com/",
+      "fetch_status": "snippet 2026-09-17",
+      "used_for": "L893 hours; LUNCH-FLAG-152 dual-domain note."
+    },
+    {
+      "id": "S178",
+      "agency": "rajbhogthali.com",
+      "label": "Rajbhog Thali official site - weekly thali schedule, dated daily thali, unlimited format",
+      "url": "https://rajbhogthali.com/",
+      "fetch_status": "fetched 2026-09-17",
+      "used_for": "L894 net-new row (official schedule)."
+    },
+    {
+      "id": "S179",
+      "agency": "rajbhogthali.com",
+      "label": "Rajbhog Thali official menu page - a-la-carte prices; no thali price printed",
+      "url": "https://rajbhogthali.com/menu.html",
+      "fetch_status": "fetched 2026-09-17",
+      "used_for": "L894 a-la-carte prices; why level is mixed."
+    },
+    {
+      "id": "S180",
+      "agency": "postmates.com",
+      "label": "Rajbhog Thali delivery menu - 'RajBhog Thali (ONLY Thursday) $21.99' + store hours + geo",
+      "url": "https://postmates.com/store/rajbhog-thalis/dliyzKCPUkqaIREuG19IXw",
+      "fetch_status": "snippet 2026-09-17",
+      "used_for": "L894's single thali price figure."
+    },
+    {
+      "id": "S181",
+      "agency": "willowstreet.com",
+      "label": "Willow Street official site - Willow Glen: 1072 Willow Street, San Jose 95125 (fetched 2026-09-17)",
+      "url": "https://www.willowstreet.com/willow-glen/",
+      "fetch_status": "fetched 2026-09-17",
+      "used_for": "L895 address/phone."
+    },
+    {
+      "id": "S182",
+      "agency": "opentable.com",
+      "label": "Willow Street San Jose OpenTable listing - SinglePlatform menu updated 2026-07-27: Monday all-day Lunch Special $16.99",
+      "url": "https://www.opentable.com/r/willow-street-pizza-and-taproom-san-jose",
+      "fetch_status": "snippet 2026-09-17",
+      "used_for": "L895 lunch-special evidence + hours conflict (LUNCH-FLAG-154)."
+    },
+    {
+      "id": "S183",
+      "agency": "rwgrill.com",
+      "label": "Redwood Grill official Redwood City location page - 356 Woodside Plaza + hours (live 2026-09-17)",
+      "url": "https://www.rwgrill.com/location/redwood-grill/",
+      "fetch_status": "fetched 2026-09-17",
+      "used_for": "L617/L618 link-rot fix (LUNCH-FLAG-143)."
+    },
+    {
+      "id": "S184",
+      "agency": "rwgrill.com",
+      "label": "Redwood Grill official Los Altos location page (live 2026-09-17)",
+      "url": "https://www.rwgrill.com/location/los-altos",
+      "fetch_status": "fetched 2026-09-17",
+      "used_for": "L617 link-rot fix."
+    },
+    {
+      "id": "S185",
+      "agency": "yelp.com",
+      "label": "SHABUWAY Japanese Style Hot Pot - CLOSED (145 E 3rd Ave, San Mateo; updated April 2026)",
+      "url": "https://www.yelp.com/biz/shabuway-japanese-style-hot-pot-san-mateo",
+      "fetch_status": "snippet 2026-09-17",
+      "used_for": "Reject: pass-22 lead resolved as closure."
+    },
+    {
+      "id": "S186",
+      "agency": "opentable.com",
+      "label": "Luceti's on 25th Avenue - lunch Tue-Fri 11:30-3:00 + full menu with no lunch section",
+      "url": "https://www.opentable.com/lucetis-on-25th-avenue",
+      "fetch_status": "snippet 2026-09-17",
+      "used_for": "Reject: honest absence."
+    },
+    {
+      "id": "S187",
+      "agency": "opentable.com",
+      "label": "B Street & Vine - bruschetta/panini menu, no lunch special",
+      "url": "https://www.opentable.com/r/b-street-and-vine-san-mateo",
+      "fetch_status": "snippet 2026-09-17",
+      "used_for": "Reject: honest absence."
+    },
+    {
+      "id": "S188",
+      "agency": "opentable.com",
+      "label": "La Fondue Saratoga - hours + 4-course per-guest format",
+      "url": "https://www.opentable.com/r/la-fondue-saratoga",
+      "fetch_status": "snippet 2026-09-17",
+      "used_for": "Reject: no lunch program."
+    },
+    {
+      "id": "S189",
+      "agency": "withbites.com",
+      "label": "Boltiful Fresh Kitchen Santa Clara ordering menu - all-day bowls, no Today's Specials section",
+      "url": "https://withbites.com/merchants/boltifulsantaclara",
+      "fetch_status": "fetched 2026-09-17",
+      "used_for": "Reject: resolves pass-22 lead as absence."
+    },
+    {
+      "id": "S190",
+      "agency": "yelp.com",
+      "label": "Golden Wang Donkatsu Yelp menu - a-la-carte only",
+      "url": "https://www.yelp.com/menu/golden-wang-donkatsu-santa-clara",
+      "fetch_status": "snippet 2026-09-17",
+      "used_for": "Reject: resolves pass-22 lead as absence."
+    },
+    {
+      "id": "S191",
+      "agency": "mikiyashabu.com",
+      "label": "Mikiya San Mateo official location page - AYCE tiers $55-$98, no lunch tier",
+      "url": "https://mikiyashabu.com/project/san-mateo-ca/",
+      "fetch_status": "snippet 2026-09-17",
+      "used_for": "Reject: no verifiable lunch price."
+    },
+    {
+      "id": "S192",
+      "agency": "stackers-pizzeria.com",
+      "label": "Stackers Pizzeria Saratoga site - names Triple Seven Pizzeria in the past tense for the same storefront",
+      "url": "https://stackers-pizzeria.com/",
+      "fetch_status": "snippet 2026-09-17",
+      "used_for": "Reject: Triple Seven lead resolved as replaced business."
+    },
+    {
+      "id": "S193",
+      "agency": "opentable.com",
+      "label": "Kinjo Japanese Steakhouse - Saratoga Springs NY lunch menu (name trap)",
+      "url": "https://www.opentable.com/r/kinjo-japanese-steakhouse-saratoga-springs",
+      "fetch_status": "snippet 2026-09-17",
+      "used_for": "Reject: sixth Saratoga trap (LUNCH-FLAG-139 family)."
+    },
+    {
+      "id": "S194",
+      "agency": "discoversaratoga.org",
+      "label": "Discover Saratoga Restaurant Week Nov 2-8 2026 - Saratoga COUNTY New York",
+      "url": "https://www.discoversaratoga.org/events/restaurant-week/",
+      "fetch_status": "snippet 2026-09-17",
+      "used_for": "Fifth recurrence of the Saratoga-NY trap in search results."
     }
   ],
   "dead_ends": [

@@ -1,6 +1,6 @@
 {
   "purpose": "Line-by-line review log for candidates that were searched but NOT added to the master list. Recorded so nothing is silently dropped and so every rejection has a reason and a link.",
-  "search_date": "2026-09-07 through 2026-09-15",
+  "search_date": "2026-09-17 (16 new pass-23 rejects; Shabuway closure; Triple Seven replaced by Stackers)",
   "rejected": [
     {
       "id": "R01",
@@ -3928,12 +3928,240 @@
         }
       ],
       "searched": "2026-09-16"
+    },
+    {
+      "name": "Golden Wang Donkatsu",
+      "city": "Santa Clara",
+      "why": "Carried pass-22 lead resolved as an honest absence: the captured menus (Yelp menu mirror, Postmates, Uber Eats - all price-consistent) are one a-la-carte list (donkatsu $21.99-$25.99, pasta $18.99-$24.99); no lunch section, lunch special, or time-boxed deal exists. Discover Santa Clara's directory page confirms the business but carries no menu. Resolves LUNCH-FLAG-141's lead list.",
+      "links": [
+        {
+          "label": "Yelp menu - Golden Wang Donkatsu Santa Clara (a-la-carte only)",
+          "url": "https://www.yelp.com/menu/golden-wang-donkatsu-santa-clara"
+        },
+        {
+          "label": "Postmates store menu (same a-la-carte sections)",
+          "url": "https://postmates.com/store/golden-wang-donkatsu-santa-clara/_9UqJ_dVWQWHwTTfCu5unQ"
+        }
+      ],
+      "searched": "2026-09-17"
+    },
+    {
+      "name": "Boltiful Fresh Kitchen",
+      "city": "Santa Clara",
+      "why": "Carried pass-22 lead resolved as an honest absence: the live ordering menu (withbites.com merchant page, fetched 2026-09-17) shows Most Ordered / Build Your Own Bowl / Desserts / Drinks / Lifestyle Bowls / Lifestyle Salads - the 'Today's Specials' section pass 22 could not capture no longer exists. Bowls $14.99 (regular) / $18.99 (large) / kids $8.99, all-day; no lunch special. Note: Boltiful's San Jose originals (1078 E Brokaw) share the menu; the row is for the Santa Clara Rivermark store, 3937 Rivermark Plaza.",
+      "links": [
+        {
+          "label": "withbites.com - Boltiful Fresh Kitchen Santa Clara ordering menu (fetched 2026-09-17)",
+          "url": "https://withbites.com/merchants/boltifulsantaclara"
+        },
+        {
+          "label": "Yelp - Boltiful Fresh Kitchen, 3937 Rivermark Plaza, Santa Clara",
+          "url": "https://www.yelp.com/biz/boltiful-fresh-kitchen-santa-clara-2"
+        }
+      ],
+      "searched": "2026-09-17"
+    },
+    {
+      "name": "Shabuway",
+      "city": "San Mateo",
+      "why": "Carried pass-22 lead resolved as a CLOSURE: Yelp now lists 'SHABUWAY JAPANESE STYLE HOT POT - CLOSED' at 145 E 3rd Ave (updated April 2026). The old lunch pricing ($12.50-$19.99 hot-pot plates, 2015-2021 sources) is dead. Also note a same-name Shabuya chain exists; do not confuse.",
+      "links": [
+        {
+          "label": "Yelp - SHABUWAY JAPANESE STYLE HOT POT - CLOSED (145 E 3rd Ave, San Mateo)",
+          "url": "https://www.yelp.com/biz/shabuway-japanese-style-hot-pot-san-mateo"
+        },
+        {
+          "label": "TripAdvisor - Shabuway San Mateo (historic menu, now stale)",
+          "url": "https://www.tripadvisor.com/Restaurant_Review-g33031-d781824-Reviews-Shabuway-San_Mateo_California.html"
+        }
+      ],
+      "searched": "2026-09-17"
+    },
+    {
+      "name": "Luceti's on 25th Avenue",
+      "city": "San Mateo",
+      "why": "Carried pass-22 lead resolved as an honest absence: the current OpenTable listing prints 'Lunch Tue-Fri 11:30 am-3:00 pm' and a full menu (antipasti $11-$28, pastas $21-$32, steaks $43+) with NO separate lunch menu, lunch special, or priced lunch section. Lunch service exists; a lunch special does not.",
+      "links": [
+        {
+          "label": "OpenTable - Luceti's on 25th Avenue (hours + full menu, no lunch section)",
+          "url": "https://www.opentable.com/lucetis-on-25th-avenue"
+        }
+      ],
+      "searched": "2026-09-17"
+    },
+    {
+      "name": "Little Belmont Cafe",
+      "city": "Belmont",
+      "why": "Carried pass-22 lead resolved as an honest absence: every captured menu (SinglePlatform mirror, yellowpages menu copy, wherevi 2025 refresh) is one breakfast/sandwiches/entrees list - sandwiches $8.95-$10.95 (SinglePlatform) or $13.95-$15.50 (2025 refresh); no lunch section, no named special.",
+      "links": [
+        {
+          "label": "SinglePlatform - Little Belmont Cafe menu (single all-day list)",
+          "url": "https://places.singleplatform.com/little-belmont-cafe/menu"
+        },
+        {
+          "label": "wherevi - Little Belmont Cafe menu (2025 refresh, no lunch section)",
+          "url": "https://little-belmont-cafe.wherevi.com/menu.html"
+        }
+      ],
+      "searched": "2026-09-17"
+    },
+    {
+      "name": "B Street & Vine",
+      "city": "San Mateo",
+      "why": "Carried pass-22 lead resolved as an honest absence: the current OpenTable menu is bruschetta ($12-$16), panini ($9.50), small plates and desserts with lunch service Tue-Sun from 11:30 AM - no named or priced lunch special. (Address per OpenTable 314 S B St; a secondary directory says 320 S B St - minor conflict noted, not material to the absence.)",
+      "links": [
+        {
+          "label": "OpenTable - B Street & Vine menu and hours",
+          "url": "https://www.opentable.com/r/b-street-and-vine-san-mateo"
+        },
+        {
+          "label": "Yelp - B Street & Vine (claimed)",
+          "url": "https://www.yelp.com/biz/b-street-and-vine-san-mateo-2"
+        }
+      ],
+      "searched": "2026-09-17"
+    },
+    {
+      "name": "Mingalaba",
+      "city": "San Mateo",
+      "why": "Carried pass-22 lead could NOT be verified this pass: fresh searches for the Burmese room's lunch pricing surfaced nothing beyond the pass-22 review mention. No restaurant-controlled menu or priced lunch section was found, so it stays an unverified lead rather than a reject-with-evidence or a padded row. Re-screen next pass.",
+      "links": [
+        {
+          "label": "Yelp search - lunch San Mateo (Mingalaba did not surface with lunch-special evidence)",
+          "url": "https://www.yelp.com/search?find_desc=lunch&find_loc=San+Mateo%2C+CA"
+        }
+      ],
+      "searched": "2026-09-17"
+    },
+    {
+      "name": "Mikiya Wagyu Shabu House",
+      "city": "San Mateo",
+      "why": "The second Bay Area Mikiya (68 Hillsdale Mall) publishes AYCE tiers $55-$98 per person on its own site with happy-hour add-ons, but no separate lunch tier or lunch price was found on the official site or its listings - the $55-$98 figure applies without a printed lunch/dinner split, and a third-party guide's '$45-$98' disagrees. No verifiable lunch special; the Santa Clara Mikiya is already in the master (L163, also no lunch special).",
+      "links": [
+        {
+          "label": "Mikiya official site - San Mateo location page (AYCE tiers $55-$98, happy hour sets, no lunch tier)",
+          "url": "https://mikiyashabu.com/project/san-mateo-ca/"
+        },
+        {
+          "label": "Yelp - Mikiya Wagyu Shabu House San Mateo (hours from 11:00/11:30 AM)",
+          "url": "https://www.yelp.com/biz/mikiya-wagyu-shabu-house-san-mateo-2"
+        }
+      ],
+      "searched": "2026-09-17"
+    },
+    {
+      "name": "MJ Sushi",
+      "city": "Foster City",
+      "why": "Honest absence: captured menus (sagemenu mirror; zmenu) are a-la-carte sushi/teriyaki (rolls $17.24, teriyaki entrees $17.24-$19.54) with no lunch section or special. Data-quality note: zmenu lists '3515 20th St A, Foster City, CA 94110' - a San Francisco ZIP misfiled onto a Foster City street; Yelp's claimed page (977 E Hillsdale Blvd) is authoritative.",
+      "links": [
+        {
+          "label": "sagemenu - MJ Sushi Foster City menu (no lunch section)",
+          "url": "https://sagemenu.com/newark/mj-sushi-foster-city-foster-city/"
+        },
+        {
+          "label": "Yelp - MJ Sushi Foster City (claimed, 977 E Hillsdale Blvd)",
+          "url": "https://www.yelp.com/biz/mj-sushi-foster-city-foster-city"
+        }
+      ],
+      "searched": "2026-09-17"
+    },
+    {
+      "name": "Warehouse Buffet",
+      "city": "Foster City",
+      "why": "An AYCE Korean-BBQ/hotpot 'lunch under $25 per person' figure exists only in a third-party blog roundup (restaurantobserver); no official page with a printed lunch price was found. Reviewer/blog prose cannot fill the price columns, so the row is rejected rather than padded.",
+      "links": [
+        {
+          "label": "restaurantobserver - 'Warehouse Buffet in Foster City... all-you-can-eat lunch under $25' (blog prose only)",
+          "url": "https://restaurantobserver.com/restaurants-in-redwood-city-ca/"
+        }
+      ],
+      "searched": "2026-09-17"
+    },
+    {
+      "name": "La Fondue",
+      "city": "Saratoga",
+      "why": "Carried pass-22 lead resolved as an honest absence: OpenTable hours show Sunday 11 AM opening but no lunch program; the format is 4-course fondue menus priced per guest (current diner reports $72-$138/pp; allmenus mirror $86-$138) with a 2-guest minimum - fine dining pricing, no lunch special.",
+      "links": [
+        {
+          "label": "OpenTable - La Fondue Saratoga (hours + 4-course format, menu updated 12/14/2025)",
+          "url": "https://www.opentable.com/r/la-fondue-saratoga"
+        },
+        {
+          "label": "allmenus - La Fondue menu mirror ($86-$138 combos)",
+          "url": "https://www.allmenus.com/ca/saratoga/22197-la-fondue/menu/"
+        }
+      ],
+      "searched": "2026-09-17"
+    },
+    {
+      "name": "Falafelle",
+      "city": "Belmont",
+      "why": "Honest absence: the vegan falafel shop's captured menus (Uber Eats, ezCater, res-discover mirror) are all-day - pita pocket $12.75, Falafelle Combo $15.50, wraps $12-$13.50 - with no lunch-specific section or special. Hours Mon-Sat from 11:00/11:30 AM, Sunday closed.",
+      "links": [
+        {
+          "label": "Uber Eats - Falafelle Belmont menu",
+          "url": "https://www.ubereats.com/store/falafelle/hJdw3Pf2X9GQPJQm4TbrBA"
+        },
+        {
+          "label": "ezCater - Falafelle (hours + catering menu)",
+          "url": "https://www.ezcater.com/catering/falafelle-3"
+        }
+      ],
+      "searched": "2026-09-17"
+    },
+    {
+      "name": "Triple Seven Pizzeria",
+      "city": "Saratoga",
+      "why": "Carried pass-22 lead resolved as GONE: Stackers Pizzeria's own site (18572 Prospect Rd, the same storefront) describes the space's history - 'More recently, it was \"Triple Seven Pizzeria\" or 777 Pizzaria, which offered by-the-slice lunch specials Monday - Thursday 11:00 am - 8:00 pm' - past tense. Triple Seven no longer operates; Stackers' current menu was unreachable at fetch time (lead for Stackers itself).",
+      "links": [
+        {
+          "label": "stackers-pizzeria.com - Saratoga storefront history naming Triple Seven in the past tense",
+          "url": "https://stackers-pizzeria.com/"
+        }
+      ],
+      "searched": "2026-09-17"
+    },
+    {
+      "name": "NM Cafe (Neiman Marcus, Stanford Shopping Center)",
+      "city": "Palo Alto",
+      "why": "Honest absence: the captured lunch menu (Yelp menu mirror) is sandwiches $14-$18, salads $16-$19, mains $17-$23 - no lunch special or prix fixe. (The '$40 3-course lunch' quote floating in nearby search results belongs to Zaytinya reviewers, not NM Cafe, and Zaytinya itself is already rejected for lack of an official price.)",
+      "links": [
+        {
+          "label": "Yelp menu - NM Cafe Palo Alto (sandwiches/salads/mains, no special)",
+          "url": "https://www.yelp.com/menu/nm-cafe-palo-alto-3/item/stanford-club"
+        }
+      ],
+      "searched": "2026-09-17"
+    },
+    {
+      "name": "Kinjo Japanese Steakhouse",
+      "city": "Saratoga Springs, NY (name trap)",
+      "why": "Trap row, sixth Saratoga trap: the appealing lunch menu (2/3 roll specials $9/$12, bento $8-$14, house lunch box $13-$14) surfaced for 'Saratoga' but Kinjo is at 15 Contractor St, Saratoga Springs, NEW YORK (OpenTable 'saratoga-springs' slug). No Saratoga CA restaurant by this name was found.",
+      "links": [
+        {
+          "label": "OpenTable - Kinjo Japanese Steakhouse, Saratoga Springs NY (lunch menu)",
+          "url": "https://www.opentable.com/r/kinjo-japanese-steakhouse-saratoga-springs"
+        }
+      ],
+      "searched": "2026-09-17"
+    },
+    {
+      "name": "Rickshaw Corner Restaurant",
+      "city": "Foster City",
+      "why": "Re-screened this pass and unchanged: the only lunch-special figures ($8.50 1-item / $9.50 2-item) remain undated TripAdvisor reviewer quotes (2018-era); the restaurant menu mirrors show a-la-carte item prices with no lunch section. Stays rejected per the pass-9 ruling - recorded here so the lead stops resurfacing.",
+      "links": [
+        {
+          "label": "TripAdvisor - Rickshaw Corner (reviewer-quoted lunch specials, undated)",
+          "url": "https://www.tripadvisor.com/Restaurant_Review-g32405-d928697-Reviews-Rickshaw_Corner_Restaurant-Foster_City_California.html"
+        }
+      ],
+      "searched": "2026-09-17"
     }
   ],
   "notes": [
     "Reddit was searched for Cupertino / Sunnyvale / Los Gatos lunch specials and returned only threads about other cities, so no Reddit citation is used (see LUNCH-FLAG-8).",
     "Every rejection above is a source-of-truth decision, not a judgement about the food. Anything here can be promoted into the master list as soon as hours, days and a price are confirmed."
   ],
-  "distinct_businesses_rejected": 200,
+  "distinct_businesses_rejected": 270,
   "note": "133 rows covering 132 distinct businesses. R14 (first pass) groups the near-miss candidates surfaced by the same queries and rejected for the same reason (no published lunch special found in that pass); later passes appended one row per candidate or per grouped reason - 30 rows from the ninth pass on 2026-09-10 and 17 from the tenth pass on 2026-09-11. Every row carries the URL that proves the rejection, including three out-of-state name traps and two dinner-only venues whose directory pages still advertise 'Lunch Specials'."
 }
