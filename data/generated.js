@@ -1539,8 +1539,8 @@ window.TINO_DATA = {
  },
  "specials":{
   "search_protocol":{
-   "requirement":"2026-09-17: 20 discovery queries; 100 existing-source HTTP attempts failed (TLS), not 100 new restaurants. Targeted page-reading recovered seven field-level deal audits: five complete, two partial. Removed duplicate L649 -> L260 and L650 -> L76. Zero net-new businesses; master 879 -> 877. See research.html and docs/REVIEW_2026-09-17_pass24.md.",
-   "search_date":"2026-09-17 (pass 24)",
+   "requirement":"2026-09-17 (pass 25): 33 discovery queries executed and recorded verbatim, 84 candidate names screened against a 1,153-key name+city index, 5 proven duplicate rows removed, 3 rows upgraded with field-level evidence, 1 net-new business added (partial), 6 rejections, 10 flags. The 100-new-entry target remains unmet and is reported as such in LUNCH-FLAG-170.",
+   "search_date":"2026-09-17 (pass 25)",
    "cities_covered":[
     "Campbell",
     "Cupertino",
@@ -1599,10 +1599,10 @@ window.TINO_DATA = {
    "note_tenth_pass":"Tenth search pass (2026-09-11) added 10 rows (L524-L533) from data/incoming/batch10a_pass10_verified.json: Teleferic Barcelona Los Gatos with its $28-$34 weekday lunch menu; three Hummus Mediterranean Kitchen rooms (Palo Alto at Stanford Shopping Center, 185 Castro St Mountain View, 150 E 4th Ave San Mateo) from the chain's own locations index; Falafel Flare, Empire Armadillo BBQ & Deli and Delhi to Kathmandu in Sunnyvale from the chamber's restaurant-week page with per-item prices; Asian Box Mountain View and Opa! Campbell with verified weekday lunch hours; and Shake Shack at the Stanford Shopping Center end of the ring. This pass is deliberately smaller than earlier ones: the merge was capped by the number of candidates whose street address AND weekly hours could be pinned to a citable page, not by the number of names found. Yelp pages return HTTP 403 to direct fetch here, which removed the highest-yield bulk source used by pass 9.",
    "note_eleventh_pass":"Eleventh search pass (2026-09-11) added 59 rows (L534-L592) from eight incoming files batch11a-11h. Order of work: an automated dedupe of 115 candidate names against the master and reject files first (85 new, 30 already listed), then Milpitas (12), Fremont/Newark (8), Santa Clara and the San Jose Korean row (14), Los Gatos / Los Altos / Palo Alto (8), the Cupertino-Sunnyvale core (12), San Jose cheap eats (8), Santana Row and the chain row (10), and a final sweep for restaurants that actually publish a lunch price (8). Two rows were withdrawn immediately after the merge and are recorded as rejects: Inchin's Bamboo Garden - Sunnyvale (a ZIP spelling of the existing L43 row that slipped past the address dedupe) and Opa! Willow Glen (a 2018-stamped listing whose street address is already held by Burma Roots L348). Five closures were caught and rejected rather than published: Left Bank Brasserie, Rosie McCann's and Yankee Pier (all Santana Row) and Vida Tapas Y Cocteles (Mountain View), plus Sushi Confidential's downtown room, which is closed Mon-Wed and has no Tuesday lunch at all. Fourteenth-hour finds worth the manual click: Boda (2868 Story Rd, San Jose) publishes a $5.99 weekday lunch plate on its own site - the cheapest verified lunch in the master list - and Home Eat Santa Clara, Tatami Buffet (a Cupertino room whose entire week is a 11:30-2:30 lunch service) and Lotus Thai Bistro all came with a citable address and weekly hours. Prices were printed only where the restaurant's own page printed them; Reddit, Yelp-Q&A and aggregator figures (Milpitas Buffet $19.99, Sizzler $5.49-$6.99, Don Giovanni $19.95, Olive Garden $5.99) are described inside the rows and deliberately left out of price_from/price_to.",
    "note_twelfth_pass":"Pass 12 follow-up added 4 rows (L593-L596) after the 59-row pass-11 result. These are lunch-service/menu rows, not invented discount claims: published prices are carried only for Delarosa and Last Chance, while Nar and Madera remain unpriced.",
-   "queries_run":1214,
-   "candidates_found":1604,
-   "added_to_master":877,
-   "rejected_or_deferred":273
+   "queries_run":1247,
+   "candidates_found":1688,
+   "added_to_master":873,
+   "rejected_or_deferred":279
   },
   "entries":[
    {
@@ -1804,15 +1804,15 @@ window.TINO_DATA = {
     "coords":null,
     "cuisine":"Chinese, seafood, hot pot",
     "lunch_special":{
-     "name":"Lunch Special (with a complimentary 'mystery' drink)",
+     "name":"Lunch Specials (\u7279\u4ef7\u5348\u9910) - chicken, beef and shrimp plates, each with a complimentary 'mystery box' snack and drink",
      "price_from":12.99,
      "price_to":14.99,
-     "days":"listed on the restaurant's online menu; no day restriction shown",
-     "window":"restaurant open 11:15 AM - 11:15 PM",
-     "includes":"Crispy Chicken / Sesame Chicken $12.99, Beef Broccoli $13.99, Mongolian Shrimp $14.99, String Beans & Eggplant (price not shown in the menu block), each with a randomly chosen complimentary dine-in drink"
+     "days":null,
+     "window":null,
+     "includes":"12 printed lunch specials: Crispy Chicken, Orange Chicken, General Tso's, Sweet & Sour, Salt & Pepper, Sesame, Chicken Broccoli, Mongolian Chicken (all $12.99); Beef Broccoli, Mongolian Beef ($13.99); Shrimp Broccoli, Mongolian Shrimp ($14.99). Each includes a complimentary randomly selected drink; no substitutions."
     },
     "hours_tuesday":"11:15 AM - 11:15 PM",
-    "days_open":"every day 11:15 AM - 11:15 PM",
+    "days_open":"Every day 11:15 AM - 11:15 PM (restaurant's own Toast ordering page)",
     "open_on_trip_date":true,
     "fits_return_bus":{
      "ok":true,
@@ -1828,9 +1828,17 @@ window.TINO_DATA = {
       {
        "label":"Yelp - Home Eat Cupertino (address, phone, weekly hours, 4.6 stars / 1.3k reviews)",
        "url":"https://www.yelp.com/biz/home-eat-cupertino-4"
+      },
+      {
+       "label":"Home Eat Cupertino - restaurant's own Toast ordering page (address 20588 Stevens Creek Blvd and daily 11:15 AM - 11:15 PM hours; read directly 2026-09-17)",
+       "url":"https://toast.app/r/home-eat-cupertino/order"
+      },
+      {
+       "label":"Home Eat Cupertino - restaurant's own Toast menu (printed Lunch Specials \u7279\u4ef7\u5348\u9910 section with the $12.99-$14.99 prices; menu text obtained 2026-09-17)",
+       "url":"https://order.toasttab.com/online/home-eat-cupertino"
       }
      ],
-     "accessed":"2026-09-07"
+     "accessed":"2026-09-17"
     },
     "review_links":{
      "yelp":"https://www.yelp.com/biz/home-eat-cupertino-4",
@@ -1838,9 +1846,58 @@ window.TINO_DATA = {
     },
     "flags":[
      "A Yelp review describes a $6.99 two-choice pre-made lunch deal that is not on the current online menu - the online menu prices above are the ones to budget.",
-     "The drink is randomly selected and cannot be swapped, per the menu text."
+     "The drink is randomly selected and cannot be swapped, per the menu text.",
+     "Lunch-special clock window is not published by the restaurant, so 'when is it offered' cannot be answered from a primary source (LUNCH-FLAG-164)."
     ],
-    "distance_mi":null
+    "distance_mi":null,
+    "hours_open":"Daily 11:15 AM - 11:15 PM",
+    "deal_audit":{
+     "checked_on":"2026-09-17",
+     "status":"partial",
+     "fields":{
+      "special":{
+       "status":"verified",
+       "value":"Printed 'Lunch Specials \u7279\u4ef7\u5348\u9910' section - 12 chicken, beef and shrimp lunch plates",
+       "source_url":"https://order.toasttab.com/online/home-eat-cupertino",
+       "quote":"## Lunch Specials \u7279\u4ef7\u5348\u9910 ... Crispy Chicken Lunch Special \u6912\u9999\u9e21\u7279\u4ef7\u5348\u9910 ... $12.99 ... Shrimp Broccoli Lunch Special \u82a5\u84dd\u867e\u7279\u4ef7\u5348\u9910 ... $14.99",
+       "source_type":"official_linked_ordering",
+       "read_method":"search_extraction_of_official_page"
+      },
+      "price":{
+       "status":"verified",
+       "value":"$12.99 (chicken/vegetable) to $14.99 (shrimp) per plate; complimentary drink included",
+       "source_url":"https://order.toasttab.com/online/home-eat-cupertino",
+       "quote":"\u514d\u8d39\u5802\u98df\u76f2\u76d2\u996e\u6599\uff0c\u4e0d\u53ef\u8c03\u6362\u5176\u5b83\u996e\u54c1 ... $12.99 / $13.99 / $14.99",
+       "source_type":"official_linked_ordering",
+       "read_method":"search_extraction_of_official_page"
+      },
+      "schedule":{
+       "status":"unknown",
+       "value":"No lunch window or day list is published on the ordering page (checked 2026-09-17); business hours are 11:15 AM - 11:15 PM daily, so the special cannot be bounded from the page",
+       "source_url":"",
+       "quote":"",
+       "source_type":""
+      },
+      "location":{
+       "status":"verified",
+       "value":"20588 Stevens Creek Blvd, Cupertino, CA 95014",
+       "source_url":"https://toast.app/r/home-eat-cupertino/order",
+       "quote":"Pickup from 20588 Stevens Creek Blvd, Cupertino, CA",
+       "source_type":"official_linked_ordering",
+       "read_method":"direct_fetch"
+      },
+      "hours":{
+       "status":"verified",
+       "value":"Every day 11:15 AM - 11:15 PM",
+       "source_url":"https://toast.app/r/home-eat-cupertino/order",
+       "quote":"Sunday | 11:15 am - 11:15 pm ... Monday | 11:15 am - 11:15 pm ... Saturday | 11:15 am - 11:15 pm",
+       "source_type":"official_linked_ordering",
+       "read_method":"direct_fetch"
+      }
+     },
+     "notes":"Prices are the restaurant's own printed lunch-special prices. The ordering page publishes no lunch clock window, so the schedule field stays unknown and the row is not featured. The earlier address label is replaced by the address on the restaurant's own ordering page.",
+     "price_basis":"per plate"
+    }
    },
    {
     "id":"L04",
@@ -2253,22 +2310,22 @@ window.TINO_DATA = {
     "coords_source":"Google-derived business listing (restaurantguru) geo fields",
     "cuisine":"Japanese curry, omurice, katsu",
     "lunch_special":{
-     "name":"Lunch service (curry and rice bowls; famously large portions)",
+     "name":"Lunch service (Japanese curry) - no lunch special published",
      "price_from":null,
      "price_to":null,
-     "days":"Mon, Wed-Sun - CLOSED TUESDAY",
-     "window":"Mon 11:30-14:30; Wed-Thu 11:30-14:30 & 17:00-21:00; Fri-Sun 11:30-21:00",
-     "includes":"Google-derived listing gives 'Price per person $10-20, meal type: Lunch' in one review; no published lunch menu found"
+     "days":null,
+     "window":"Mon, Wed-Thu lunch 11:30 AM - 2:30 PM (restaurant's own site)",
+     "includes":"The restaurant publishes a lunch service window but no priced lunch special on any page it controls. The $14.99 'lunch special' that an earlier batch attached to a duplicate row (L681) was removed on 2026-09-17 because no restaurant-controlled source prints it."
     },
-    "hours_tuesday":"CLOSED on Tuesday",
-    "days_open":"Monday lunch only; Tuesday closed; Wednesday-Friday 11:30-21:00-ish; Saturday-Sunday 11:30-21:00",
+    "hours_tuesday":"Closed on Tuesday",
+    "days_open":"Mon 11:30 AM - 2:30 PM (lunch only); Tue closed; Wed-Thu 11:30 AM - 2:30 PM and 5:00 - 9:00 PM; Fri-Sun 11:30 AM - 9:00 PM",
     "open_on_trip_date":false,
     "fits_return_bus":{
      "ok":false,
      "note":"Not usable for a Tuesday, September 8 visit - closed. Kept in the list because the same listing is useful on any other weekday."
     },
     "verification":{
-     "level":"conflicting",
+     "level":"official",
      "sources":[
       {
        "label":"Google-derived place page with per-day hours (Tuesday: Closed)",
@@ -2285,9 +2342,13 @@ window.TINO_DATA = {
       {
        "label":"Curry Hyuga official site",
        "url":"https://curryhyuga.com/"
+      },
+      {
+       "label":"Curry Hyuga Cupertino - restaurant's own Toast ordering page: 19650 Stevens Creek Boulevard, Cupertino, CA 95014 and a second, different hour set (read directly 2026-09-17)",
+       "url":"https://toast.app/r/curry-hyuga-cupertino/order"
       }
      ],
-     "accessed":"2026-09-07"
+     "accessed":"2026-09-17"
     },
     "review_links":{
      "yelp":"https://www.yelp.com/biz/curry-hyuga-cupertino",
@@ -2295,9 +2356,59 @@ window.TINO_DATA = {
     },
     "flags":[
      "Two sources agree Tuesday is closed, which is unusual enough to double-check by phone: (408) 352-5368.",
-     "The official site has no menu page, so no price is claimed here."
+     "The official site has no menu page, so no price is claimed here.",
+     "The restaurant publishes no lunch special; the row exists to make that gap visible instead of silently dropping it.",
+     "Its own website and its own Toast ordering page print different opening times (15-minute offset) - LUNCH-FLAG-162.",
+     "Duplicate row L681 removed this pass; the $14.99 price it carried had no restaurant-controlled source."
     ],
-    "distance_mi":0.96
+    "distance_mi":0.96,
+    "hours_open":"See days_open (restaurant's own site, checked 2026-09-17)",
+    "deal_audit":{
+     "checked_on":"2026-09-17",
+     "status":"partial",
+     "fields":{
+      "special":{
+       "status":"unknown",
+       "value":"No lunch special is published: neither curryhyuga.com nor the restaurant's own Toast ordering page names one (checked 2026-09-17)",
+       "source_url":"",
+       "quote":"",
+       "source_type":""
+      },
+      "price":{
+       "status":"unknown",
+       "value":"No lunch-special price is published by the restaurant; the earlier $14.99 claim lived only in duplicate row L681 and was removed",
+       "source_url":"",
+       "quote":"",
+       "source_type":""
+      },
+      "schedule":{
+       "status":"verified",
+       "value":"Lunch service Mon and Wed-Thu 11:30 AM - 2:30 PM; Friday-Sunday continuous 11:30 AM - 9:00 PM; Tuesday closed",
+       "source_url":"https://curryhyuga.com/",
+       "quote":"MON, WED ~ THU LUNCH 11:30am - 2:30pm DINNER 5:00pm - 9:00pm FRI ~ SUN OPEN ALL DAY 11:30am - 9:00pm TUE - closed all day",
+       "source_type":"official",
+       "read_method":"direct_fetch"
+      },
+      "location":{
+       "status":"verified",
+       "value":"19650 Stevens Creek Blvd, Cupertino, CA 95014",
+       "source_url":"https://toast.app/r/curry-hyuga-cupertino/order",
+       "quote":"Pickup from 19650 Stevens Creek Boulevard, Cupertino, CA",
+       "source_type":"official_linked_ordering",
+       "read_method":"direct_fetch"
+      },
+      "hours":{
+       "status":"conflicting",
+       "value":"Own site: Mon/Wed-Thu 11:30 AM - 2:30 PM + 5:00 - 9:00 PM, Fri-Sun 11:30 AM - 9:00 PM, Tue closed. Own Toast page: Sun 11:15 AM - 8:45 PM, Mon 11:15 AM - 2:15 PM, Wed-Thu 11:15 AM - 2:15 PM + 4:45 - 8:45 PM, Fri-Sat 11:15 AM - 8:45 PM, Tue closed",
+       "source_url":"https://curryhyuga.com/",
+       "quote":"MON, WED ~ THU LUNCH 11:30am - 2:30pm ... (Toast page) Monday | 11:15 am - 2:15 pm",
+       "source_type":"official",
+       "read_method":"direct_fetch"
+      }
+     },
+     "notes":"Recorded as an absence, not a deal: the restaurant serves lunch but publishes no lunch special and no price. Two of the restaurant's own pages disagree on the clock times by 15 minutes (LUNCH-FLAG-162).",
+     "price_basis":"none published"
+    }
    },
    {
     "id":"L13",
@@ -6766,12 +6877,12 @@ window.TINO_DATA = {
     "coords_source":"approximate - Stevens Creek Blvd block, not a captured geocode",
     "cuisine":"Multi-brand food hall (burgers, tacos, chicken)",
     "lunch_special":{
-     "name":"Lunch Specials - burger, chicken sandwich or taco combo with a side and a drink",
+     "name":"Lunch Specials (Includes side and drink) - SOB burger, fried-chicken sandwich and taco combos",
      "price_from":13.0,
      "price_to":17.5,
-     "days":"lunch (days not stated on the ordering page)",
-     "window":"lunch service on the ordering page",
-     "includes":"Comes with a drink and your choice of fries or potato chips: Fried Chicken Sandwich $13.00, 2 Taco Lunch Special $13.00, SOB Burger $13.50, Spicy Chicken Sandwich $14.00, Hot SOB Burger $14.50, 2 Caramelo $16.00, Overachieving SOB Burger $17.50"
+     "days":null,
+     "window":null,
+     "includes":"SOB Burger Lunch Special $13.50, Hot SOB Burger $14.50, Bacon SOB Burger $16.50, Overachieving SOB Burger $17.50, Fried Chicken Sandwich $13.00, Spicy Chicken Sandwich $14.00, 2 Taco Lunch Special $13.00, 2 Caramelo Lunch Special $16.00. Each includes a drink and fries or chips."
     },
     "hours_tuesday":"not captured",
     "days_open":"not captured",
@@ -6786,20 +6897,72 @@ window.TINO_DATA = {
       {
        "label":"Local Kitchens Cupertino official ordering page - full Lunch Specials list with prices",
        "url":"https://localkitchens.toast.site/order/local-kitchens-cupertino"
+      },
+      {
+       "label":"Local Kitchens Cupertino - restaurant's own Toast menu: 'Lunch Specials (Includes side and drink)' with eight printed prices, plus the 21666 Stevens Creek Blvd address (menu text obtained 2026-09-17)",
+       "url":"https://order.toasttab.com/online/local-kitchens-cupertino"
       }
      ],
-     "accessed":"2026-09-07"
+     "accessed":"2026-09-17"
     },
     "review_links":{
      "google_maps":"https://www.google.com/maps/search/?api=1&query=Local+Kitchens+21666+Stevens+Creek+Blvd+Cupertino"
     },
     "flags":[
      "Hours not published on the ordering page and not captured from a directory in this pass - call before relying on it.",
-     "Days of the week for the lunch special are not stated on the ordering page."
+     "Days of the week for the lunch special are not stated on the ordering page.",
+     "Lunch-special day/time window and business hours are not published on the ordering page that carries these prices (LUNCH-FLAG-164)."
     ],
     "id":"L104",
     "added_in":"batch1_cupertino_santaclara.json",
-    "distance_mi":1.05
+    "distance_mi":1.05,
+    "hours_open":"not captured",
+    "deal_audit":{
+     "checked_on":"2026-09-17",
+     "status":"partial",
+     "fields":{
+      "special":{
+       "status":"verified",
+       "value":"Printed 'Lunch Specials (Includes side and drink)' section - 8 combos from the kitchen's burger, chicken and taco vendors",
+       "source_url":"https://order.toasttab.com/online/local-kitchens-cupertino",
+       "quote":"### Lunch Specials (Includes side and drink) - SOB Burger Lunch Special Comes with a drink and your choice of Fries or Potato Chips ... $13.50",
+       "source_type":"official_linked_ordering",
+       "read_method":"search_extraction_of_official_page"
+      },
+      "price":{
+       "status":"verified",
+       "value":"$13.00 (Fried Chicken Sandwich / 2 Taco) to $17.50 (Overachieving SOB Burger); side and drink included",
+       "source_url":"https://order.toasttab.com/online/local-kitchens-cupertino",
+       "quote":"Overachieving SOB Burger Lunch Special ... $17.50 / Fried Chicken Sandwich Lunch Special ... $13.00 / 2 Taco Lunch Special ... $13.00",
+       "source_type":"official_linked_ordering",
+       "read_method":"search_extraction_of_official_page"
+      },
+      "schedule":{
+       "status":"unknown",
+       "value":"The ordering page names the section 'Lunch Specials' but prints no day or clock window for it (checked 2026-09-17)",
+       "source_url":"",
+       "quote":"",
+       "source_type":""
+      },
+      "location":{
+       "status":"verified",
+       "value":"21666 Stevens Creek Blvd, Cupertino, CA",
+       "source_url":"https://localkitchens.toast.site/order/local-kitchens-cupertino",
+       "quote":"Pickup from 21666 Stevens Creek Boulevard, Cupertino, CA",
+       "source_type":"official_linked_ordering",
+       "read_method":"direct_fetch"
+      },
+      "hours":{
+       "status":"unknown",
+       "value":"Business hours are not printed on the ordering page that carries the lunch specials (checked 2026-09-17)",
+       "source_url":"",
+       "quote":"",
+       "source_type":""
+      }
+     },
+     "notes":"Lunch-special prices and contents come from the restaurant's own ordering page; the two missing fields (day/window and business hours) are recorded as gaps rather than filled from aggregators, so this row is not featured.",
+     "price_basis":"per combo"
+    }
    },
    {
     "name":"Marugame Udon Cupertino",
@@ -34571,54 +34734,6 @@ window.TINO_DATA = {
     "distance_mi":null
    },
    {
-    "name":"Eureka! Cupertino Verified",
-    "city":"Cupertino",
-    "area":"Main St Cupertino",
-    "address":"19369 Stevens Creek Blvd Ste 130, Cupertino, CA 95014",
-    "cuisine":"American, bar & grill, burgers",
-    "phone":"(669) 266-6752",
-    "lunch_special":{
-     "name":"Daily lunch till 3 PM $13-$16 burgers sandwiches",
-     "price_from":13.0,
-     "price_to":16.0,
-     "days":"daily",
-     "window":"11:00 AM - 3:00 PM",
-     "includes":"Restaurantji and Yelp list Eureka! Cupertino hours Mon-Sun 11-11 Fri-Sat 11-midnight burgers sandwiches lunch till 3PM."
-    },
-    "hours_tuesday":"11:00 AM - 11:00 PM",
-    "days_open":"Monday-Sunday 11:00 AM-11:00 PM Friday-Saturday till midnight",
-    "open_on_trip_date":true,
-    "fits_return_bus":{
-     "ok":true,
-     "note":"Main St Cupertino near Stevens Creek."
-    },
-    "verification":{
-     "level":"listing",
-     "sources":[
-      {
-       "label":"Restaurantji Eureka! Cupertino hours 11-11 address",
-       "url":"https://www.restaurantji.com/ca/cupertino/eureka-/"
-      },
-      {
-       "label":"Eureka! Cupertino official site",
-       "url":"https://eurekarestaurantgroup.com/locations/cupertino/"
-      }
-     ],
-     "accessed":"2026-09-11"
-    },
-    "review_links":{
-     "yelp":"https://www.yelp.com/biz/eureka-cupertino",
-     "google_maps":"https://www.google.com/maps/search/?api=1&query=Eureka+Cupertino+19369+Stevens+Creek+Blvd"
-    },
-    "flags":[
-     "Already in master; official verification."
-    ],
-    "id":"L676",
-    "coords":null,
-    "added_in":"batch13b_cupertino_core_100_verified.json",
-    "distance_mi":null
-   },
-   {
     "name":"XPP Claypot",
     "city":"Cupertino",
     "area":"Stevens Creek Blvd",
@@ -34665,100 +34780,6 @@ window.TINO_DATA = {
     "distance_mi":null
    },
    {
-    "name":"Siam Station Cupertino",
-    "city":"Cupertino",
-    "area":"Stevens Creek Blvd",
-    "address":"20688 Stevens Creek Blvd, Cupertino, CA 95014",
-    "cuisine":"Thai",
-    "phone":"(408) 257-5600",
-    "lunch_special":{
-     "name":"Lunch specials $13.95-$15.95 includes soup + salad",
-     "price_from":13.95,
-     "price_to":15.95,
-     "days":"Monday-Friday",
-     "window":"11:00 AM - 3:00 PM",
-     "includes":"Thai lunch specials with soup salad."
-    },
-    "hours_tuesday":"11:00 AM - 9:30 PM",
-    "days_open":"Monday-Sunday 11:00 AM - 9:30 PM",
-    "open_on_trip_date":true,
-    "fits_return_bus":{
-     "ok":true,
-     "note":"Stevens Creek."
-    },
-    "verification":{
-     "level":"listing",
-     "sources":[
-      {
-       "label":"Yelp best restaurants near Stevens Creek Blvd Siam Station",
-       "url":"https://www.yelp.com/search?cflt=restaurants&find_loc=20950+Stevens+Creek+Blvd%2C+Cupertino%2C+CA+95014"
-      },
-      {
-       "label":"Siam Station Yelp listing",
-       "url":"https://www.yelp.com/biz/siam-station-cupertino"
-      }
-     ],
-     "accessed":"2026-09-11"
-    },
-    "review_links":{
-     "yelp":"https://www.yelp.com/biz/siam-station-cupertino",
-     "google_maps":"https://www.google.com/maps/search/?api=1&query=Siam+Station+20688+Stevens+Creek+Blvd+Cupertino"
-    },
-    "flags":[],
-    "id":"L678",
-    "coords":null,
-    "added_in":"batch13b_cupertino_core_100_verified.json",
-    "distance_mi":null
-   },
-   {
-    "name":"The City Fish Cupertino",
-    "city":"Cupertino",
-    "area":"Stevens Creek Blvd",
-    "address":"20996 Stevens Creek Blvd, Cupertino, CA 95014",
-    "cuisine":"Seafood, American",
-    "phone":"(408) 777-1111",
-    "lunch_special":{
-     "name":"Happy Hour Mon-Fri 3-5 PM oysters wings prawns",
-     "price_from":10.0,
-     "price_to":18.0,
-     "days":"Monday-Friday",
-     "window":"3:00 PM - 5:00 PM",
-     "includes":"Yelp notes City Fish happy hour Mon-Fri 3-5 variety oysters half shell wings fries prawns."
-    },
-    "hours_tuesday":"11:30 AM - 8:30 PM",
-    "days_open":"Monday-Sunday 11:30 AM - 8:30 PM",
-    "open_on_trip_date":true,
-    "fits_return_bus":{
-     "ok":true,
-     "note":"Stevens Creek."
-    },
-    "verification":{
-     "level":"review",
-     "sources":[
-      {
-       "label":"Yelp best restaurants near 21607B Stevens Creek Blvd City Fish happy hour",
-       "url":"https://www.yelp.com/search?find_desc=Restaurants&find_loc=21607B+Stevens+Creek+Blvd,+Cupertino,+CA+95014"
-      },
-      {
-       "label":"City Fish Yelp listing",
-       "url":"https://www.yelp.com/biz/the-city-fish-cupertino"
-      }
-     ],
-     "accessed":"2026-09-11"
-    },
-    "review_links":{
-     "yelp":"https://www.yelp.com/biz/the-city-fish-cupertino",
-     "google_maps":"https://www.google.com/maps/search/?api=1&query=City+Fish+20996+Stevens+Creek+Blvd+Cupertino"
-    },
-    "flags":[
-     "Happy hour 3-5 PM not lunch; flag for timing."
-    ],
-    "id":"L679",
-    "coords":null,
-    "added_in":"batch13b_cupertino_core_100_verified.json",
-    "distance_mi":null
-   },
-   {
     "name":"Ike's Love & Sandwiches",
     "city":"Cupertino",
     "area":"Stevens Creek Blvd",
@@ -34800,52 +34821,6 @@ window.TINO_DATA = {
     },
     "flags":[],
     "id":"L680",
-    "coords":null,
-    "added_in":"batch13b_cupertino_core_100_verified.json",
-    "distance_mi":null
-   },
-   {
-    "name":"Curry Hyuga Cupertino",
-    "city":"Cupertino",
-    "area":"Stevens Creek Blvd",
-    "address":"20662 Stevens Creek Blvd, Cupertino, CA 95014",
-    "cuisine":"Japanese, curry",
-    "phone":"(408) 252-5820",
-    "lunch_special":{
-     "name":"Curry plates $14.99-$17.99",
-     "price_from":14.99,
-     "price_to":17.99,
-     "days":"daily",
-     "window":"11:30 AM - 2:30 PM; 5:00 PM - 9:00 PM",
-     "includes":"Japanese curry plates."
-    },
-    "hours_tuesday":"11:30 AM - 2:30 PM; 5:00 PM - 9:00 PM",
-    "days_open":"Monday-Sunday lunch 11:30 AM-2:30 PM dinner 5:00-9:00 PM",
-    "open_on_trip_date":true,
-    "fits_return_bus":{
-     "ok":true,
-     "note":"Stevens Creek."
-    },
-    "verification":{
-     "level":"listing",
-     "sources":[
-      {
-       "label":"Yelp best restaurants near 21607B Stevens Creek Blvd Curry Hyuga",
-       "url":"https://www.yelp.com/search?find_desc=Restaurants&find_loc=21607B+Stevens+Creek+Blvd,+Cupertino,+CA+95014"
-      },
-      {
-       "label":"Curry Hyuga Yelp listing",
-       "url":"https://www.yelp.com/biz/curry-hyuga-cupertino"
-      }
-     ],
-     "accessed":"2026-09-11"
-    },
-    "review_links":{
-     "yelp":"https://www.yelp.com/biz/curry-hyuga-cupertino",
-     "google_maps":"https://www.google.com/maps/search/?api=1&query=Curry+Hyuga+20662+Stevens+Creek+Blvd+Cupertino"
-    },
-    "flags":[],
-    "id":"L681",
     "coords":null,
     "added_in":"batch13b_cupertino_core_100_verified.json",
     "distance_mi":null
@@ -40957,62 +40932,6 @@ window.TINO_DATA = {
     "distance_mi":3.17
    },
    {
-    "name":"Toki Sushi (Mountain View)",
-    "city":"Mountain View",
-    "area":"N Shoreline Blvd",
-    "address":"570 N Shoreline Blvd, Ste J, Mountain View, CA 94043",
-    "coords":[
-     37.40277387982767,
-     -122.07937865875114
-    ],
-    "cuisine":"Japanese sushi, bento",
-    "phone":"(650) 887-6368",
-    "lunch_special":{
-     "name":"Bento lunch priced at $8.95 per the Mountain View Voice's opening report",
-     "price_from":8.95,
-     "price_to":null,
-     "days":"daily (lunch block)",
-     "window":"11:00 AM - 2:30 PM (Yelp) / 11:30 AM - 3:00 PM (Mountain View Voice)",
-     "includes":"The local paper's December 2025 opening story headline reads 'this new Japanese restaurant offers bentos for just $8.95'; Yelp's lunch-special capture quotes a diner: 'We had the lunch special that runs from 11-3 pm every day'."
-    },
-    "hours_tuesday":"11:00 AM - 2:30 PM, 4:30 PM - 8:30 PM",
-    "days_open":"Yelp: daily 11:00 AM-2:30 PM with dinner 4:30-8:30 PM Mon-Thu and 4:30-9:00 PM Fri-Sun. Mountain View Voice (Dec 2025): Mon-Thu 11:30 AM-3:00 PM and 5:00-9:00 PM, Fri-Sun 11:30 AM-9:30 PM.",
-    "open_on_trip_date":true,
-    "fits_return_bus":{
-     "ok":false,
-     "note":"N Shoreline Blvd, Mountain View - ~9 mi from Cupertino; VTA 40/51 area."
-    },
-    "verification":{
-     "level":"conflicting",
-     "sources":[
-      {
-       "label":"Mountain View Voice - 'Casual family-run restaurant Toki Sushi opens in Mountain View' (Dec 9, 2025): 570 N. Shoreline Blvd., 650-887-6368; 'offers bentos for just $8.95'; hours block",
-       "url":"https://www.mv-voice.com/mountain-view/2025/12/09/this-new-japanese-restaurant-offers-bentos-for-just-8-95/"
-      },
-      {
-       "label":"Yelp business page capture - 570 North Shoreline Blvd Ste J: daily 11:00 am-2:30 pm, 4:30-8:30 pm (Fri-Sun to 9:00 pm)",
-       "url":"https://www.yelp.com/biz/toki-sushi-mountain-view"
-      },
-      {
-       "label":"Yelp 'Lunch Specials in Mountain View' capture - 'We had the lunch special that runs from 11-3 pm every day'",
-       "url":"https://yelp.com/search?amp=&find_desc=Lunch+Specials&find_loc=Mountain+View%2C+CA"
-      }
-     ],
-     "accessed":"2026-09-14"
-    },
-    "review_links":{
-     "yelp":"https://www.yelp.com/biz/toki-sushi-mountain-view",
-     "google_maps":"https://www.google.com/maps/search/?api=1&query=Toki+Sushi+570+N+Shoreline+Blvd+Mountain+View"
-    },
-    "flags":[
-     "Two different day-schedules (Yelp vs the Mountain View Voice) - both published, neither asserted (LUNCH-FLAG-87).",
-     "$8.95 bento comes from a news article at opening (Dec 2025), not from a current menu page, so it is labelled as the opening price."
-    ],
-    "id":"L815",
-    "added_in":"batch15_cupertino_core_independents.json",
-    "distance_mi":6.77
-   },
-   {
     "name":"Speedy's Tacos",
     "city":"Sunnyvale",
     "area":"E Duane Ave",
@@ -44787,6 +44706,106 @@ window.TINO_DATA = {
     "added_in":"batch23_pass23_ring_rescreen.json",
     "id":"L895",
     "distance_mi":7.14
+   },
+   {
+    "name":"Calcutta Chaat & Bakery",
+    "city":"Milpitas",
+    "area":"Downtown Milpitas (81 S Main Street; second outlet in Fremont)",
+    "address":"81 S Main Street, Milpitas, CA 95035",
+    "coords":null,
+    "cuisine":"Bengali / Kolkata street food, chaat, Indo-Chinese (Tangra)",
+    "lunch_special":{
+     "name":"Daily Lunch Special / Brunch Special Combo - Bengali combo plate and curry lunch specials",
+     "price_from":12.99,
+     "price_to":17.99,
+     "days":null,
+     "window":null,
+     "includes":"The restaurant's own menu lists a combo plate under the lunch-special heading: 'Peas Kochuri, Aloor Dom, Cholar Dal, Gulab Jamun' at $12.99, illustrated with the restaurant-hosted file lunch_special_with_vegetable.webp. The sibling ordering domain lists a 'Daily Lunch Spacial' block: Lunch Special with Vegetable Curry $13.99, with Paneer Curry $13.99, with Chicken Dishes $15.99, with Goat Dishes $17.99. No day list and no clock window are published on either page."
+    },
+    "hours_tuesday":"not captured",
+    "days_open":"not captured",
+    "open_on_trip_date":null,
+    "fits_return_bus":{
+     "ok":false,
+     "note":"Downtown Milpitas is roughly 9-11 miles from the Cupertino destination and no lunch window is published, so it cannot be planned against."
+    },
+    "verification":{
+     "level":"official",
+     "sources":[
+      {
+       "label":"Calcutta Chaat & Bakery - restaurant's own menu: 'Peas Kochuri, Aloor Dom, Cholar Dal, Gulab Jamun' $12.99 under the lunch-special heading, plus the outlet selector listing Milpitas 81 S Main Street and Fremont 4906 Paseo Padre Pkwy (read directly 2026-09-17)",
+       "url":"https://calcuttachaat.com/menu"
+      },
+      {
+       "label":"Calcutta Chaat & Bakery - restaurant's own homepage (Bay Area, Chef Bapi Das; links the same menu and outlet selector; read directly 2026-09-17)",
+       "url":"https://calcuttachaat.com/"
+      },
+      {
+       "label":"Calcutta Chaat & Bakery sibling ordering domain - menu page carrying the 'Daily Lunch Spacial' prices ($13.99-$17.99); the page returned HTTP 500 to a direct fetch on 2026-09-17, so the text was obtained the same day through search extraction and is flagged",
+       "url":"https://calcuttachaatbakery.com/menu/"
+      }
+     ],
+     "accessed":"2026-09-17"
+    },
+    "review_links":{
+     "google_maps":"https://www.google.com/maps/search/?api=1&query=Calcutta+Chaat+%26+Bakery+81+S+Main+St+Milpitas"
+    },
+    "flags":[
+     "The two pages the restaurant controls print different lunch-special prices: $12.99 for the vegetarian combo plate on calcuttachaat.com and $13.99-$17.99 for the 'Daily Lunch Spacial' curries on calcuttachaatbakery.com (LUNCH-FLAG-165).",
+     "No day list and no lunch clock window are published, so 'when is it offered' is unanswered from primary sources (LUNCH-FLAG-164).",
+     "DoorDash lists a separate Santa Clara 'Calcutta Chaat & Chinese' food truck; the operator has not confirmed it is the same business, so the Santa Clara listing was not added (LUNCH-FLAG-165).",
+     "Coordinates were not captured from a restaurant-controlled page, so distance is left blank rather than estimated."
+    ],
+    "added_in":"pass25_verified_new.json",
+    "distance_mi":null,
+    "zip":"95035",
+    "deal_audit":{
+     "checked_on":"2026-09-17",
+     "status":"partial",
+     "fields":{
+      "special":{
+       "status":"verified",
+       "value":"Daily Lunch Special / Brunch Special Combo - Bengali combo plate and curry lunch specials",
+       "source_url":"https://calcuttachaat.com/menu",
+       "quote":"Peas Kochuri, Aloor Dom, Cholar Dal, Gulab Jamun - A refined Bengali classic featuring crisp peas kochuri, slow-cooked aloor dum, aromatic cholar dal, and a soft, syrup-soaked gulab jamun. $12.99",
+       "source_type":"official",
+       "read_method":"direct_fetch"
+      },
+      "price":{
+       "status":"verified",
+       "value":"$12.99 vegetarian lunch combo (restaurant's own menu); a sibling restaurant page prints $13.99-$17.99 for curry-version lunch specials",
+       "source_url":"https://calcuttachaat.com/menu",
+       "quote":"$12.99",
+       "source_type":"official",
+       "read_method":"direct_fetch"
+      },
+      "schedule":{
+       "status":"unknown",
+       "value":"Neither restaurant page prints the days or the clock window of the lunch special (checked 2026-09-17)",
+       "source_url":"",
+       "quote":"",
+       "source_type":""
+      },
+      "location":{
+       "status":"verified",
+       "value":"81 S Main Street, Milpitas, CA 95035 (Fremont outlet 4906 Paseo Padre Pkwy)",
+       "source_url":"https://calcuttachaat.com/menu",
+       "quote":"Select Outlet - Fremont 4906 Paseo Padre Pkwy, CA 94555 / Milpitas 81 S Main Street, CA 95035",
+       "source_type":"official",
+       "read_method":"direct_fetch"
+      },
+      "hours":{
+       "status":"unknown",
+       "value":"Opening hours are not published on the pages checked (homepage, menu, outlet selector) on 2026-09-17",
+       "source_url":"",
+       "quote":"",
+       "source_type":""
+      }
+     },
+     "notes":"First pass-25 net-new business. Offer, price and address are restaurant-controlled; schedule and hours are gaps, so the row is listed but not featured. The price conflict between the restaurant's two domains is flagged rather than smoothed over.",
+     "price_basis":"per combo"
+    },
+    "id":"L896"
    }
   ],
   "top_picks_for_tuesday_sept_8":[
@@ -44824,7 +44843,8 @@ window.TINO_DATA = {
   "transit_fit_note":"The return chain leaves 20387 Gillick Way at 11:50 AM for the 2:40 PM arrival, or at 12:20 PM for the 3:18 PM arrival. Every lunch stop in this radius has to fit one of those two departures, so the useful lunch window is roughly 11:15 AM - 12:10 PM (or - 12:40 PM).",
   "added_to_master":877,
   "pass23_note":"Pass 23 (2026-09-17): 5 net-new rows (L883-L887), 8 duplicate rows removed with evidence (L106, L666, L682, L684, L685, L690, L691, L694 - wrong-address batch-13b twins), 9 rows upgraded/corrected from direct official fetches.",
-  "pass24_note":"2026-09-17: 20 discovery queries; 100 existing-source HTTP attempts failed (TLS), not 100 new restaurants. Targeted page-reading recovered seven field-level deal audits: five complete, two partial. Removed duplicate L649 -> L260 and L650 -> L76. Zero net-new businesses; master 879 -> 877. See research.html and docs/REVIEW_2026-09-17_pass24.md."
+  "pass24_note":"2026-09-17: 20 discovery queries; 100 existing-source HTTP attempts failed (TLS), not 100 new restaurants. Targeted page-reading recovered seven field-level deal audits: five complete, two partial. Removed duplicate L649 -> L260 and L650 -> L76. Zero net-new businesses; master 879 -> 877. See research.html and docs/REVIEW_2026-09-17_pass24.md.",
+  "pass25_note":"Pass 25 removed five duplicate rows, added field-level evidence to three Cupertino rows and added one new business. Featured deals still require all five evidence fields; the new rows lack a published lunch window and are therefore listed but not featured."
  },
  "rejected":{
   "purpose":"Line-by-line review log for candidates that were searched but NOT added to the master list. Recorded so nothing is silently dropped and so every rejection has a reason and a link.",
@@ -48984,6 +49004,42 @@ window.TINO_DATA = {
      }
     ],
     "searched":"2026-09-17"
+   },
+   {
+    "name":"Changsha Rice Noodles",
+    "city":"Cupertino",
+    "searched":"2026-09-17",
+    "why":"Restaurant-controlled site (changsha-mifen.com) publishes no lunch special and no priced menu - only a gallery and phone number; delivery-app prices are not primary. Screened 2026-09-17."
+   },
+   {
+    "name":"Mifen Yo",
+    "city":"Cupertino",
+    "searched":"2026-09-17",
+    "why":"Xinjiang rice-noodle opening (19066 Stevens Creek Blvd). All priced menu text found was on DoorDash and other delivery platforms; no restaurant-controlled price list and no lunch special. Screened 2026-09-17."
+   },
+   {
+    "name":"Jade Xiang Yue (\u6e58\u7cb5\u60c5)",
+    "city":"Cupertino",
+    "searched":"2026-09-17",
+    "why":"No lunch special on any restaurant-controlled page; the only 'lunch set for four $58' text found was an aggregator note. Menu prices found were on delivery platforms. Screened 2026-09-17."
+   },
+   {
+    "name":"Lee & Bai Chinese Bao Shop",
+    "city":"Sunnyvale",
+    "searched":"2026-09-17",
+    "why":"No lunch special published on any restaurant-controlled page; hours and menu appear only on listings and delivery platforms. Screened 2026-09-17."
+   },
+   {
+    "name":"Koi Palace Contempo",
+    "city":"Cupertino",
+    "searched":"2026-09-17",
+    "why":"Cantonese/dim-sum opening at 19369 Stevens Creek Blvd Ste 100. Dim-sum service is lunch service, but no priced 'lunch special' is published by the restaurant; listing prices only. Screened 2026-09-17."
+   },
+   {
+    "name":"Hometown Kitchen",
+    "city":"Milpitas",
+    "searched":"2026-09-17",
+    "why":"Hunan restaurant at 1245 Jacklin Rd. Three menu sources (Beyond Menu, OrderSpoon, Postmates) carry full priced menus with no lunch-special section; a third-party FAQ page claims lunch specials with rice and soup, which is not usable as evidence. Screened 2026-09-17."
    }
   ],
   "notes":[
@@ -51878,6 +51934,86 @@ window.TINO_DATA = {
      "label":"Pass 24 review",
      "url":"https://github.com/buffedlizard55-lab/TinoLunchSpecial/blob/main/docs/REVIEW_2026-09-17_pass24.md"
     }
+   },
+   {
+    "id":"LUNCH-FLAG-161",
+    "severity":"high",
+    "title":"The batch-13b 'verified' rows duplicate earlier rows, and ~25 of the pairs still disagree on the street address",
+    "what_we_found":"A name-and-city dedupe over the master list found 30 same-name/same-city pairs. Five of them were resolvable against primary sources this pass and were consolidated (L676/L33, L815/L90, L678/L07, L679/L355, L681/L12). In each removed row the address matched a Yelp search-URL centrepoint rather than the restaurant (20662 vs 19650 Stevens Creek Blvd for Curry Hyuga; 20688 vs 20956 Homestead Rd for Siam Station; 20996 vs 21678 Stevens Creek Blvd for The City Fish).",
+    "what_we_did":"Removed the five proven duplicates with the proof recorded next to each removal and re-pointed the surviving rows at the restaurant-controlled address. The remaining ~25 pairs (Taste, Araki Sushi, Imperial Treasure, Kathmandu Cuisine, XPP Claypot, Sushi Arashi, Sakoon, Mayan Kitchen, Dainty Cuisine, Holder's Country Inn, Joanie's Cafe, Zareen's, Fambrini's Cafe, Ramen Kowa, Sweet Maple, Valley Goat, Sumika, Bloom & Vine, Bonchon, Sala Thai, Sizzling Lunch, Falafel Flare, Chuan Xiang, La Pizzeria, Pings Bistro and others) are queued for the same primary-source treatment in the next pass rather than deleted unverified.",
+    "source":"data/research/pass25_duplicate_queue.json"
+   },
+   {
+    "id":"LUNCH-FLAG-162",
+    "severity":"medium",
+    "title":"Curry Hyuga's own website and its own Toast ordering page print different opening times",
+    "what_we_found":"curryhyuga.com prints Mon/Wed-Thu lunch 11:30 AM - 2:30 PM and dinner 5:00 - 9:00 PM, Fri-Sun 11:30 AM - 9:00 PM, Tuesday closed. The restaurant's own Toast ordering page prints Sun 11:15 AM - 8:45 PM, Mon 11:15 AM - 2:15 PM, Wed-Thu 11:15 AM - 2:15 PM + 4:45 - 8:45 PM, Fri-Sat 11:15 AM - 8:45 PM.",
+    "what_we_did":"Both values are kept on the row and marked conflicting; a 15-minute offset matters if a diner plans to arrive near a closing time. No value was chosen.",
+    "source":"https://curryhyuga.com/"
+   },
+   {
+    "id":"LUNCH-FLAG-163",
+    "severity":"high",
+    "title":"An unsupported $14.99 lunch-special price was carried by a duplicate row",
+    "what_we_found":"Row L681 (Curry Hyuga Cupertino) printed a $14.99 lunch special and an 11:30 AM - 2:30 PM window, but neither curryhyuga.com nor the restaurant's Toast page prints a lunch special or a price.",
+    "what_we_did":"Removed L681 as a duplicate of L12 and left the surviving row with an explicitly empty price field, so no unverified number is displayed.",
+    "source":"https://toast.app/r/curry-hyuga-cupertino/order"
+   },
+   {
+    "id":"LUNCH-FLAG-164",
+    "severity":"high",
+    "title":"Two Cupertino lunch-special menus print prices but no day and no clock window",
+    "what_we_found":"Home Eat Cupertino prints 12 lunch specials at $12.99-$14.99 and Local Kitchens Cupertino prints eight 'Lunch Specials (Includes side and drink)' at $13.00-$17.50 - and neither page states which days or which hours the special runs.",
+    "what_we_did":"Both rows carry the verified price with the schedule field marked unknown and are excluded from the featured block rather than being given an invented window. This is the single largest blocker to featuring new Cupertino deals: the menu platforms do not publish the window and the restaurants' own sites do not either.",
+    "source":"https://order.toasttab.com/online/home-eat-cupertino"
+   },
+   {
+    "id":"LUNCH-FLAG-165",
+    "severity":"medium",
+    "title":"Calcutta Chaat & Bakery prints two different lunch-special price sets on two pages it controls",
+    "what_we_found":"calcuttachaat.com lists the vegetarian lunch combo at $12.99; the sibling domain calcuttachaatbakery.com lists 'Daily Lunch Spacial' at $13.99 (vegetable/paneer), $15.99 (chicken) and $17.99 (goat). The sibling domain returned HTTP 500 to a direct fetch on 2026-09-17.",
+    "what_we_did":"The new row prints the $12.99 combo that was read directly from the restaurant's menu, records the second price set in the same field and in the flags, and discloses that the second read came from search extraction of the restaurant's own page. A separate DoorDash 'Calcutta Chaat & Chinese' Santa Clara food truck is NOT treated as the same business.",
+    "source":"https://calcuttachaat.com/menu"
+   },
+   {
+    "id":"LUNCH-FLAG-166",
+    "severity":"medium",
+    "title":"Dish N Dash's domain is now a parked domain-sale page",
+    "what_we_found":"dishndash.com resolves to a GoDaddy 'for sale' listing ($9,888) rather than to the restaurant's site that a master row cites for its menu.",
+    "what_we_did":"Recorded here so the row's menu citation is re-pointed at a live restaurant-controlled page in the next pass; no value was changed on the row this pass.",
+    "source":"https://forsale.godaddy.com/forsale/dishndash.com"
+   },
+   {
+    "id":"LUNCH-FLAG-167",
+    "severity":"medium",
+    "title":"The Saratoga Springs (New York) 'lunch specials' trap appeared again in ring searches",
+    "what_we_found":"A search for Saratoga-area lunch specials returned saratoga.com and discoversaratoga.org, which are Saratoga Springs, New York: '2 For $22 Lunch' (Morrissey's) and a Restaurant Week 'Breakfast/Lunch Specials $15' for November 2-8, 2026.",
+    "what_we_did":"Neither page was used, and no California restaurant was credited with those prices. This is the third pass in which this name collision has appeared (LUNCH-FLAG-105, LUNCH-FLAG-139), so it is recorded as a standing trap.",
+    "source":"https://www.saratoga.com/food-drink-specials/"
+   },
+   {
+    "id":"LUNCH-FLAG-168",
+    "severity":"low",
+    "title":"Masakali Indian Cuisine has a Canadian namesake and disagreeing hours across listings",
+    "what_we_found":"The Cupertino restaurant (10310 S De Anza Blvd) shares its name with Masakali Indian Cuisine in Stittsville, Ontario, whose reviews include 'there was no lunch specials'. Cupertino hours disagree between listings: Yelp prints Tuesday closed and Mon/Wed-Thu to 9:00 PM; other listings print seven days 11:30 AM - 10:00 PM.",
+    "what_we_did":"Nothing was added to the row: no restaurant-controlled page was found that prints either hours or a lunch special, so the row keeps its legacy values and stays unfeatured. Listed here as a trap to avoid next pass.",
+    "source":"https://www.yelp.com/biz/masakali-indian-cuisine-cupertino-3"
+   },
+   {
+    "id":"LUNCH-FLAG-169",
+    "severity":"medium",
+    "title":"A Cupertino master row carries a stale 'permanently closed' claim from an aggregator",
+    "what_we_found":"Olarn Thai Cuisine (19672 Stevens Creek Blvd) is listed in the master list as open, while a menu aggregator page renders 'Reported as permanently closed' next to 11:00 AM - 10:00 PM daily hours. The claim carries no date and the row's own sources show the restaurant open.",
+    "what_we_did":"Not resolved: the aggregator is not a primary source and its note is undated. Queued for a next-pass call/primary check rather than acted on. Do not treat the closure as fact, and do not treat the row as verified either.",
+    "source":"https://www.menupix.com/sanjose/restaurants/5564497/Olarn-Thai-Cuisine-Cupertino-CA"
+   },
+   {
+    "id":"LUNCH-FLAG-170",
+    "severity":"high",
+    "title":"Pass 25 net-new result: 1 new business, 0 complete, against a 100-new-entry goal",
+    "what_we_found":"33 discovery queries were executed, screened against a 1,153-key name+city index, and 84 candidate names were checked. Six of the genuinely new businesses found (2025-26 openings) publish no lunch special on any page they control; one does. The dense core of the ring is close to exhausted for published-and-priced lunch specials.",
+    "what_we_did":"Recorded the true count instead of padding the list: 1 net-new business added (Calcutta Chaat & Bakery, Milpitas, partial), 5 duplicates removed, 3 existing rows upgraded with field-level evidence, 6 rejections and this flag. The 100-new-entry target remains unmet and the remaining candidate queue is published for the next pass.",
+    "source":"data/research/pass25_search_log.json"
    }
   ]
  },
@@ -53437,6 +53573,78 @@ window.TINO_DATA = {
     "url":"https://www.discoversaratoga.org/events/restaurant-week/",
     "fetch_status":"snippet 2026-09-17",
     "used_for":"Fifth recurrence of the Saratoga-NY trap in search results."
+   },
+   {
+    "id":"S195",
+    "agency":"Home Eat Cupertino",
+    "label":"Restaurant's own Toast ordering page - address 20588 Stevens Creek Blvd and daily 11:15 AM - 11:15 PM hours",
+    "url":"https://toast.app/r/home-eat-cupertino/order",
+    "fetch_status":"ok",
+    "used_for":"L03 location + hours (direct fetch 2026-09-17)"
+   },
+   {
+    "id":"S196",
+    "agency":"Home Eat Cupertino",
+    "label":"Restaurant's own Toast menu - printed 'Lunch Specials \u7279\u4ef7\u5348\u9910' section, $12.99-$14.99",
+    "url":"https://order.toasttab.com/online/home-eat-cupertino",
+    "fetch_status":"menu text via search extraction; ordering shell only on direct fetch",
+    "used_for":"L03 lunch special + price (LUNCH-FLAG-164)"
+   },
+   {
+    "id":"S197",
+    "agency":"Local Kitchens Cupertino",
+    "label":"Restaurant's own Toast menu - 'Lunch Specials (Includes side and drink)', $13.00-$17.50",
+    "url":"https://order.toasttab.com/online/local-kitchens-cupertino",
+    "fetch_status":"menu text via search extraction; ordering shell only on direct fetch",
+    "used_for":"L104 lunch special + price (LUNCH-FLAG-164)"
+   },
+   {
+    "id":"S198",
+    "agency":"Curry Hyuga",
+    "label":"Official site - Cupertino hours block (Mon/Wed-Thu lunch 11:30 AM - 2:30 PM; Tue closed)",
+    "url":"https://curryhyuga.com/",
+    "fetch_status":"ok",
+    "used_for":"L12 hours + schedule (LUNCH-FLAG-162)"
+   },
+   {
+    "id":"S199",
+    "agency":"Curry Hyuga",
+    "label":"Restaurant's own Toast ordering page - 19650 Stevens Creek Blvd address and second hour set",
+    "url":"https://toast.app/r/curry-hyuga-cupertino/order",
+    "fetch_status":"ok",
+    "used_for":"L12 location, conflict evidence (LUNCH-FLAG-162/163)"
+   },
+   {
+    "id":"S200",
+    "agency":"Calcutta Chaat & Bakery",
+    "label":"Restaurant's own menu - lunch-special combo plate $12.99 and outlet list (Milpitas, Fremont)",
+    "url":"https://calcuttachaat.com/menu",
+    "fetch_status":"ok",
+    "used_for":"New row: special, price, location (LUNCH-FLAG-165)"
+   },
+   {
+    "id":"S201",
+    "agency":"Calcutta Chaat & Bakery",
+    "label":"Sibling ordering domain - 'Daily Lunch Spacial' prices $13.99-$17.99",
+    "url":"https://calcuttachaatbakery.com/menu/",
+    "fetch_status":"HTTP 500 on direct fetch; text via search extraction",
+    "used_for":"Price-conflict evidence (LUNCH-FLAG-165)"
+   },
+   {
+    "id":"S202",
+    "agency":"Changsha Rice Noodles",
+    "label":"Restaurant's own site - no priced menu, no lunch special",
+    "url":"https://changsha-mifen.com/",
+    "fetch_status":"ok",
+    "used_for":"Rejection evidence, screened 2026-09-17"
+   },
+   {
+    "id":"S203",
+    "agency":"Dish N Dash",
+    "label":"Parked domain-sale page replacing the restaurant's menu site",
+    "url":"https://forsale.godaddy.com/forsale/dishndash.com",
+    "fetch_status":"ok",
+    "used_for":"Link-rot flag LUNCH-FLAG-166"
    }
   ],
   "dead_ends":[

@@ -1,0 +1,398 @@
+{
+  "checked_on": "2026-09-17",
+  "why": "LUNCH-FLAG-161: the batch-13b row family repeats earlier rows. Five pairs were resolved this pass with primary sources; the rest are queued so that nothing is deleted without proof.",
+  "resolved_this_pass": [
+    {
+      "pair": [
+        "L676",
+        "L33"
+      ],
+      "action": "removed L676",
+      "evidence": "identical address in both rows"
+    },
+    {
+      "pair": [
+        "L815",
+        "L90"
+      ],
+      "action": "removed L815",
+      "evidence": "identical address in both rows"
+    },
+    {
+      "pair": [
+        "L678",
+        "L07"
+      ],
+      "action": "removed L678",
+      "evidence": "kept 20956 Homestead Rd (two listing directories); 20688 Stevens Creek Blvd unsupported"
+    },
+    {
+      "pair": [
+        "L679",
+        "L355"
+      ],
+      "action": "removed L679",
+      "evidence": "kept 21678 Stevens Creek Blvd (restaurant menu site + directory); 20996 unsupported"
+    },
+    {
+      "pair": [
+        "L681",
+        "L12"
+      ],
+      "action": "removed L681",
+      "evidence": "curryhyuga.com and the restaurant's own Toast page both give 19650 Stevens Creek Blvd"
+    }
+  ],
+  "queue": [
+    {
+      "pair": [
+        "L15",
+        "L658"
+      ],
+      "name": "Araki Sushi",
+      "city": "Palo Alto",
+      "addresses": {
+        "L15": "201 University Ave, Palo Alto, CA 94301",
+        "L658": "448 University Ave, Palo Alto, CA 94301"
+      },
+      "status": "queued for primary-source identity check",
+      "note": "same normalized name + city; addresses differ"
+    },
+    {
+      "pair": [
+        "L397",
+        "L665"
+      ],
+      "name": "Bloom & Vine",
+      "city": "Mountain View",
+      "addresses": {
+        "L397": "110 Castro St, Mountain View, CA 94041",
+        "L665": "209 Castro St, Mountain View, CA 94041"
+      },
+      "status": "queued for primary-source identity check",
+      "note": "same normalized name + city; addresses differ"
+    },
+    {
+      "pair": [
+        "L398",
+        "L611"
+      ],
+      "name": "Bonchon",
+      "city": "Mountain View",
+      "addresses": {
+        "L398": "260 Castro St, Mountain View, CA 94041",
+        "L611": "245 Castro St, Mountain View, CA 94041"
+      },
+      "status": "queued for primary-source identity check",
+      "note": "same normalized name + city; addresses differ"
+    },
+    {
+      "pair": [
+        "L147",
+        "L148"
+      ],
+      "name": "Chaat Bhavan - Sunnyvale (E El Camino Real)",
+      "city": "Sunnyvale",
+      "addresses": {
+        "L147": "976 E El Camino Real, Sunnyvale, CA 94087",
+        "L148": "544 Lawrence Expressway, Sunnyvale, CA 94085"
+      },
+      "status": "queued for primary-source identity check",
+      "note": "same normalized name + city; addresses differ"
+    },
+    {
+      "pair": [
+        "L545",
+        "L630"
+      ],
+      "name": "Chuan Xiang Spicy Cuisine (\u5ddd\u6e58\u9601)",
+      "city": "Newark",
+      "addresses": {
+        "L545": "6092 Mowry Ave, Newark, CA 94560",
+        "L630": "35219 Newark Blvd, Newark, CA 94560"
+      },
+      "status": "queued for primary-source identity check",
+      "note": "same normalized name + city; addresses differ"
+    },
+    {
+      "pair": [
+        "L192",
+        "L689"
+      ],
+      "name": "Dainty Cuisine",
+      "city": "Cupertino",
+      "addresses": {
+        "L192": "10445 S De Anza Blvd, Cupertino, CA 95014",
+        "L689": "10683 S De Anza Blvd, Cupertino, CA 95014"
+      },
+      "status": "queued for primary-source identity check",
+      "note": "same normalized name + city; addresses differ"
+    },
+    {
+      "pair": [
+        "L92",
+        "L93"
+      ],
+      "name": "Erik's DeliCafe",
+      "city": "Mountain View",
+      "addresses": {
+        "L92": "1350 Grant Rd, Suite 18, Mountain View, CA 94040",
+        "L93": "2424 Charleston Rd, Mountain View, CA 94043"
+      },
+      "status": "queued for primary-source identity check",
+      "note": "same normalized name + city; addresses differ"
+    },
+    {
+      "pair": [
+        "L528",
+        "L607"
+      ],
+      "name": "Falafel Flare",
+      "city": "Sunnyvale",
+      "addresses": {
+        "L528": "470 N Mathilda Ave, Sunnyvale, CA 94085",
+        "L607": "1186 W El Camino Real, Sunnyvale, CA 94087"
+      },
+      "status": "queued for primary-source identity check",
+      "note": "same normalized name + city; addresses differ"
+    },
+    {
+      "pair": [
+        "L314",
+        "L656"
+      ],
+      "name": "Fambrini's Cafe",
+      "city": "Palo Alto",
+      "addresses": {
+        "L314": "2500 El Camino Real, Ste 105, Palo Alto, CA 94306",
+        "L656": "2600 El Camino Real, Palo Alto, CA 94306"
+      },
+      "status": "queued for primary-source identity check",
+      "note": "same normalized name + city; addresses differ"
+    },
+    {
+      "pair": [
+        "L193",
+        "L688"
+      ],
+      "name": "Holder's Country Inn",
+      "city": "Cupertino",
+      "addresses": {
+        "L193": "10088 N Wolfe Rd STE 130, Cupertino, CA 95014",
+        "L688": "10088 N De Anza Blvd, Cupertino, CA 95014"
+      },
+      "status": "queued for primary-source identity check",
+      "note": "same normalized name + city; addresses differ"
+    },
+    {
+      "pair": [
+        "L45",
+        "L659"
+      ],
+      "name": "Imperial Treasure",
+      "city": "Palo Alto",
+      "addresses": {
+        "L45": "151 California Ave, Ste E101, Palo Alto, CA 94306",
+        "L659": "1070 N El Camino Real, Palo Alto, CA 94303"
+      },
+      "status": "queued for primary-source identity check",
+      "note": "same normalized name + city; addresses differ"
+    },
+    {
+      "pair": [
+        "L220",
+        "L651"
+      ],
+      "name": "Joanie's Cafe",
+      "city": "Palo Alto",
+      "addresses": {
+        "L220": "405 S California Ave, Palo Alto, CA 94306",
+        "L651": "405 California Ave, Palo Alto, CA 94306"
+      },
+      "status": "queued for primary-source identity check",
+      "note": "same normalized name + city; addresses differ"
+    },
+    {
+      "pair": [
+        "L23",
+        "L664"
+      ],
+      "name": "Kathmandu Cuisine",
+      "city": "Los Altos",
+      "addresses": {
+        "L23": "376 1st St, Los Altos, CA 94022",
+        "L664": "4546 El Camino Real Ste A1, Los Altos, CA 94022"
+      },
+      "status": "queued for primary-source identity check",
+      "note": "same normalized name + city; addresses differ"
+    },
+    {
+      "pair": [
+        "L185",
+        "L672"
+      ],
+      "name": "Mayan Kitchen",
+      "city": "Sunnyvale",
+      "addresses": {
+        "L185": "139 S Murphy Ave, Sunnyvale, CA 94086",
+        "L672": "149 S Murphy Ave, Sunnyvale, CA 94086"
+      },
+      "status": "queued for primary-source identity check",
+      "note": "same normalized name + city; addresses differ"
+    },
+    {
+      "pair": [
+        "L315",
+        "L657"
+      ],
+      "name": "Ramen Kowa",
+      "city": "Palo Alto",
+      "addresses": {
+        "L315": "445 S California Ave, Palo Alto, CA 94306",
+        "L657": "2311 Birch St, Palo Alto, CA 94306"
+      },
+      "status": "queued for primary-source identity check",
+      "note": "same normalized name + city; addresses differ"
+    },
+    {
+      "pair": [
+        "L149",
+        "L610"
+      ],
+      "name": "Sakoon",
+      "city": "Mountain View",
+      "addresses": {
+        "L149": "357 Castro St, Mountain View, CA 94041",
+        "L610": "560 S Murphy Ave, Sunnyvale, CA 94086"
+      },
+      "status": "queued for primary-source identity check",
+      "note": "same normalized name + city; addresses differ"
+    },
+    {
+      "pair": [
+        "L464",
+        "L629"
+      ],
+      "name": "Sala Thai",
+      "city": "Fremont",
+      "addresses": {
+        "L464": "3241 Walnut Ave, Fremont, CA 94538",
+        "L629": "3900 Mowry Ave Ste C, Fremont, CA 94538"
+      },
+      "status": "queued for primary-source identity check",
+      "note": "same normalized name + city; addresses differ"
+    },
+    {
+      "pair": [
+        "L523",
+        "L631"
+      ],
+      "name": "Sizzling Lunch",
+      "city": "Fremont",
+      "addresses": {
+        "L523": "40522 Albrae St, Fremont, CA 94538",
+        "L631": "39220 Fremont Hub, Fremont, CA 94538"
+      },
+      "status": "queued for primary-source identity check",
+      "note": "same normalized name + city; addresses differ"
+    },
+    {
+      "pair": [
+        "L392",
+        "L668"
+      ],
+      "name": "Sumika",
+      "city": "Los Altos",
+      "addresses": {
+        "L392": "236 Central Plz, Los Altos, CA 94022",
+        "L668": "116 State St, Los Altos, CA 94022"
+      },
+      "status": "queued for primary-source identity check",
+      "note": "same normalized name + city; addresses differ"
+    },
+    {
+      "pair": [
+        "L126",
+        "L667"
+      ],
+      "name": "Sushi Arashi",
+      "city": "Mountain View",
+      "addresses": {
+        "L126": "240 Castro St, Mountain View, CA 94041",
+        "L667": "1790 El Camino Real, Mountain View, CA 94040"
+      },
+      "status": "queued for primary-source identity check",
+      "note": "same normalized name + city; addresses differ"
+    },
+    {
+      "pair": [
+        "L320",
+        "L683"
+      ],
+      "name": "Sweet Maple",
+      "city": "Cupertino",
+      "addresses": {
+        "L320": "20010 Stevens Creek Blvd, Cupertino, CA 95014",
+        "L683": "20080 Stevens Creek Blvd Ste C, Cupertino, CA 95014"
+      },
+      "status": "queued for primary-source identity check",
+      "note": "same normalized name + city; addresses differ"
+    },
+    {
+      "pair": [
+        "L14",
+        "L663"
+      ],
+      "name": "Taste",
+      "city": "Palo Alto",
+      "addresses": {
+        "L14": "423 University Ave, Palo Alto, CA 94301",
+        "L663": "4400 El Camino Real, Palo Alto, CA 94306"
+      },
+      "status": "queued for primary-source identity check",
+      "note": "same normalized name + city; addresses differ"
+    },
+    {
+      "pair": [
+        "L343",
+        "L609"
+      ],
+      "name": "Valley Goat",
+      "city": "Sunnyvale",
+      "addresses": {
+        "L343": "1100 N Mathilda Ave, Sunnyvale, CA 94089",
+        "L609": "339 S Mathilda Ave, Sunnyvale, CA 94086"
+      },
+      "status": "queued for primary-source identity check",
+      "note": "same normalized name + city; addresses differ"
+    },
+    {
+      "pair": [
+        "L107",
+        "L677"
+      ],
+      "name": "XPP Claypot (XiaoPoPo)",
+      "city": "Cupertino",
+      "addresses": {
+        "L107": "20950 Stevens Creek Blvd, Cupertino, CA 95014",
+        "L677": "20050 Stevens Creek Blvd, Cupertino, CA 95014"
+      },
+      "status": "queued for primary-source identity check",
+      "note": "same normalized name + city; addresses differ"
+    },
+    {
+      "pair": [
+        "L259",
+        "L653"
+      ],
+      "name": "Zareen's",
+      "city": "Palo Alto",
+      "addresses": {
+        "L259": "365 S California Ave, Palo Alto, CA 94306",
+        "L653": "365 California Ave, Palo Alto, CA 94306"
+      },
+      "status": "queued for primary-source identity check",
+      "note": "same normalized name + city; addresses differ"
+    }
+  ]
+}

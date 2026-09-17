@@ -11,9 +11,9 @@ A source-backed lunch research directory for Cupertino and nearby cities. The ex
 
 Live site: https://buffedlizard55-lab.github.io/TinoLunchSpecial/
 
-## Current lunch status — September 17, 2026 (pass 24)
+## Current lunch status — September 17, 2026 (pass 25)
 
-**877 research rows are not 877 verified lunch deals.** This pass recorded five complete field-level checks and two partial checks, corrected menu/price/hours claims, and consolidated two duplicate restaurants. The homepage defaults to complete evidence within a recorded 15-mile radius; unverified research remains inspectable.
+**873 research rows are not 873 verified deals.** Eleven rows now carry field-level evidence (five complete, six partial); the other 862 remain research. This pass removed five duplicate rows with proof, upgraded three Cupertino rows and added one net-new business. The homepage opens with the featured deals and defaults to complete evidence within a recorded 15-mile radius; everything else stays inspectable.
 
 - [Live lunch site](https://buffedlizard55-lab.github.io/TinoLunchSpecial/) · [Research and evidence](https://buffedlizard55-lab.github.io/TinoLunchSpecial/research.html) · [Pass 24 review and next steps](docs/REVIEW_2026-09-17_pass24.md)
 - [35-row evidence CSV](data/research/pass24_evidence.csv) · [20-query discovery log](data/research/pass24_discovery.json) · [100-source failed-attempt log](data/research/pass24_screen.json)
@@ -49,12 +49,13 @@ data/plan.json              trip definition, constraints, decision log
 data/transit_outbound.json  3 outbound plans, leg by leg, with per-leg links
 data/transit_return.json    3 return plans + the last-workable-train cutoff
 data/fares.json             agency fare tables and six day-total scenarios
-data/lunch_specials.json    879 lunch entries (882 through pass 22 + 5 net-new pass-23 rows L891-L895 on 2026-09-17, minus 8 wrong-address duplicate rows removed with evidence in the pass-23 audit), hours, days, prices, verification level
+data/lunch_specials.json    873 lunch entries (882 through pass 22, +5 pass-23 rows, +1 pass-25 row L896, minus 8 pass-23 and 5 pass-25 rows removed with evidence), hours, days, prices, verification level
 data/lunch_rejected.json    273 rejected/deferred rows covering 270 distinct businesses, each with a reason and a link
-data/flags.json             169 irregularities found while verifying (155 lunch, 14 transit) - one resolved (LUNCH-FLAG-133), the rest listed
+data/flags.json             184 irregularities found while verifying (170 lunch, 14 transit) - the rest listed; pass 25 added LUNCH-FLAG-161..170
 data/sources.json           194 source pages, what each one proved, and the fetch status
 docs/VERIFICATION.md        how to re-check every row, and what could not be verified
-docs/REVIEW_2026-09-17_pass23.md  current QA pass (twenty-third lunch pass - pass-22 outage rows re-fetched, 12 leads resolved, batch-13b wrong-address duplicate audit: 8 rows removed with evidence + 5 net-new + 16 rejects, 14 new flags, 879 total)
+docs/REVIEW_2026-09-17_pass25.md  current QA pass (twenty-fifth lunch pass - 5 duplicate rows removed with proof, 3 Cupertino rows upgraded with field-level evidence, 1 net-new business, 6 rejections, 10 flags, 873 total)
+docs/REVIEW_2026-09-17_pass23.md  prior pass (twenty-third lunch pass - pass-22 outage rows re-fetched, 12 leads resolved, batch-13b wrong-address duplicate audit: 8 rows removed with evidence + 5 net-new + 16 rejects, 14 new flags, 879 total)
 docs/REVIEW_2026-09-16_pass22.md  the twenty-second pass (4 net-new, 22 rejects, 9 flags, 882 total)
 docs/REVIEW_2026-09-15_pass18.md  the eighteenth pass (3 net-new, 8 rejections, 861 total)
 docs/REVIEW_2026-09-15_pass17.md  prior QA pass (seventeenth lunch pass - ~100 candidates screened against a 1031-key dedupe index, 8 net-new, 9 rejections/bad-source notes, 8 new flags, 858 total)

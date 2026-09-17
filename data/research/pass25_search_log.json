@@ -1,0 +1,73 @@
+{
+  "checked_on": "2026-09-17",
+  "pass": 25,
+  "method": "Web search (33 queries, recorded verbatim below) Cupertino first, then the 10-15 mile ring: Sunnyvale, Santa Clara, Campbell, Los Gatos, Los Altos, Mountain View, Palo Alto/Stanford, Saratoga, Milpitas, West San Jose, Fremont/Newark. Every candidate name was screened against a 1,153-key norm(name)|norm(city) index built from data/lunch_specials.json (877 rows) and data/lunch_rejected.json (273 rows) before any page was opened.",
+  "checkpoints": {
+    "20_query_checkpoint": "reached - the first 20 queries below",
+    "50_query_checkpoint": "not reached (33 executed)",
+    "100_query_checkpoint": "not reached"
+  },
+  "totals": {
+    "queries_executed": 33,
+    "direct_page_reads": 9,
+    "candidate_names_screened": 84,
+    "candidates_already_in_master_or_rejects": 77,
+    "genuinely_new_businesses_checked": 7,
+    "new_businesses_with_a_published_priced_lunch_special": 1,
+    "existing_rows_upgraded_with_field_level_evidence": 3,
+    "duplicate_rows_removed_with_proof": 5,
+    "rejections_filed": 6,
+    "flags_filed": 10
+  },
+  "queries": [
+    {"n": 1, "query": "Cupertino restaurant \"lunch special\" menu price official website", "result": "Home Eat Toast menu (used); Yelp Cupertino lunch-special list (leads; 24 names screened, all already in master)"},
+    {"n": 2, "query": "\"lunch special\" Cupertino CA 95014 restaurant Monday-Friday 11am price", "result": "Home Eat again; Yelp cheap-lunch list (leads only)"},
+    {"n": 3, "query": "Sunnyvale restaurant \"lunch special\" price menu official site 2026", "result": "Sunnyvale Chamber Restaurant Week page (event, dated); Yelp Sunnyvale list (leads)"},
+    {"n": 4, "query": "Santa Clara restaurant \"lunch special\" menu price official website", "result": "The Hut Santa Clara menu (already L112); Home Eat Santa Clara; Chungdam lunch menu (already L553)"},
+    {"n": 5, "query": "Campbell CA restaurant \"lunch special\" price menu official website downtown", "result": "La Pizzeria Campbell 'Lunch Special 11 AM to 4 PM' (already L226); Yelp Campbell list"},
+    {"n": 6, "query": "Los Gatos restaurant \"lunch special\" price menu official", "result": "Wine Cellar Los Gatos menu (already L488); Yelp Los Gatos list"},
+    {"n": 7, "query": "Los Altos restaurant \"lunch special\" price menu official website 2026", "result": "Los Altos Taqueria 'Lunchtime Specials served 11AM to 3PM Monday - Friday' + 'Muy Rapido Lunch $7.99' (Goose Creek SC trap, see LUNCH-FLAG-139)"},
+    {"n": 8, "query": "Mountain View restaurant \"lunch special\" price menu official Castro Street", "result": "OpenTable Don Giovanni (lunch specials quoted from reviews, not primary); Reddit r/mountainview thread (leads only)"},
+    {"n": 9, "query": "new restaurant opened 2026 Cupertino lunch special menu", "result": "Cupertino 2025-26 openings: Hometown Kitchen, Changsha Rice Noodles, Lee & Bai, Jade Xiang Yue, Mifen Yo, Calcutta Chaat & Chinese, Friendship BBQ, Urban Momo, Koi Palace Contempo, Pau Pau, Amakara"},
+    {"n": 10, "query": "\"lunch special\" Sunnyvale OR Cupertino OR \"Santa Clara\" restaurant \"11:00 AM\" \"2:30 PM\" price", "result": "Sunnyvale Chamber Restaurant Week again; Benihana Cupertino page (already L01); Yelp cheap-lunch list"},
+    {"n": 11, "query": "\"lunch special\" menu site restaurant Campbell OR \"Los Gatos\" OR Saratoga official \"served\" Monday price 2026", "result": "saratoga.com '2 For $22 Lunch' - Saratoga Springs, NEW YORK (trap, LUNCH-FLAG-167); Wine Cellar menu"},
+    {"n": 12, "query": "\"Lunch Special\" toast.site Cupertino OR Sunnyvale OR \"Santa Clara\" restaurant menu price", "result": "Local Kitchens Cupertino 'Lunch Specials (Includes side and drink)' (used); Home Eat Cupertino + Santa Clara (used); Yelp list"},
+    {"n": 13, "query": "Pau Pau Cupertino restaurant menu lunch special; Amakara Cupertino; Mesob Sunnyvale lunch", "result": "Pau Pizza (Hawaii/East Bay chain, different business); Amakara and Mesob not confirmed as separate local businesses - not added"},
+    {"n": 14, "query": "Eureka Restaurant Cupertino \"$13\" lunch specials official menu hours", "result": "Yelp Cupertino business highlight '$13 Lunch Specials ... Every Day, Open till 3pm' (already L33)"},
+    {"n": 15, "query": "\"Hometown Kitchen\" Cupertino menu lunch special hours official", "result": "Hometown Kitchen is Milpitas (1245 Jacklin Rd), not Cupertino; a third-party FAQ claims lunch specials with rice and soup (not usable)"},
+    {"n": 16, "query": "\"Changsha Rice Noodles\" Cupertino 10911 Wolfe menu lunch special price", "result": "Official site changsha-mifen.com (no priced menu, no lunch special) -> rejection"},
+    {"n": 17, "query": "\"Koi Palace\" Cupertino dim sum lunch menu hours price", "result": "Koi Palace Contempo Cupertino 19369 Stevens Creek Blvd Ste 100; dim sum menu only, no priced lunch special -> rejection"},
+    {"n": 18, "query": "\"Jade Xiang Yue\" OR \"Lee & Bai\" OR \"Mifen Yo\" Cupertino menu price lunch", "result": "Fantuan/DoorDash price lists for Jade Xiang Yue and Mifen Yo (third-party) -> rejections"},
+    {"n": 19, "query": "\"Mifen Yo\" Cupertino official site menu order online 19066 Stevens Creek", "result": "mifenyo.com referenced by a listing; no restaurant-controlled priced menu found -> rejection"},
+    {"n": 20, "query": "\"Lee & Bai\" bao Cupertino Sunnyvale official website menu hours lunch combo", "result": "Sunnyvale 1661 Hollenbeck Ave; listing hours only, no lunch special -> rejection"},
+    {"n": 21, "query": "\"Curry Hyuga\" Cupertino lunch special price hours official site", "result": "curryhyuga.com hours block + the restaurant's Toast item page (hours) - used for L12"},
+    {"n": 22, "query": "Masakali Indian Cuisine Cupertino lunch special menu price hours official", "result": "Listings only; Canadian namesake review 'there was no lunch specials' - LUNCH-FLAG-168"},
+    {"n": 23, "query": "\"Olarn Thai\" Cupertino lunch special price menu hours official", "result": "OpenTable lunch 11:00 AM - 3:00 PM listing; menupix 'reported as permanently closed' - LUNCH-FLAG-169"},
+    {"n": 24, "query": "\"Duan's Kitchen\" OR \"Mandarin Gourmet\" OR \"Harumi Sushi\" Cupertino lunch special menu price hours", "result": "Listing hours only; no restaurant-controlled lunch special found"},
+    {"n": 25, "query": "toasttab.com \"Lunch Special\" Cupertino OR Sunnyvale OR Campbell OR \"Los Altos\" restaurant menu price", "result": "Local Kitchens Cupertino (used), Home Eat Cupertino/Santa Clara, Saravanaa Bhavan Sunnyvale, Los Gatos Parkside, Kailash Parbat Santa Clara"},
+    {"n": 26, "query": "order.toasttab.com \"Lunch Specials\" Sunnyvale OR \"Santa Clara\" OR \"Mountain View\" OR \"Los Gatos\" restaurant menu prices", "result": "Home Eat Santa Clara, Anjappar Santa Clara (no lunch special section), Los Gatos Parkside (dinner only), Kailash Parbat Santa Clara"},
+    {"n": 27, "query": "\"lunch specials\" menu cupertino restaurant \"order online\" price combo 2026 site", "result": "Local Kitchens Cupertino FULL MENU confirmation + Home Eat Cupertino full menu"},
+    {"n": 28, "query": "BJ's Restaurant Brewhouse \"lunch specials\" menu price weekdays hours official", "result": "Third-party BJ's menu page and a 2023 shopping-centre promo: $13 lunch specials Mon-Fri 11 AM - 3 PM; not a restaurant-controlled current page"},
+    {"n": 29, "query": "Cupertino \"lunch special\" menu price Kikusushi OR Azuma OR \"Kong Tofu\" OR Wooga lunch hours", "result": "Menupages (Grubhub-powered) Azuma 'Azuma Daily Special (L) $18.95'; Kikusushi menupages listing - third-party, not usable as verification"},
+    {"n": 30, "query": "Cupertino restaurant own website \"lunch special\" \"Monday\" \"Friday\" \"11:30\" \"2:30\" price menu", "result": "EatDrinkLA (Los Angeles) weekday lunch specials list - out of area"},
+    {"n": 31, "query": "\"Siam Station\" Cupertino address 20956 Homestead official; \"The City Fish\" Cupertino 21678 Stevens Creek official", "result": "Corroborates the retained addresses for L07 and L355 against the batch-13b duplicates - LUNCH-FLAG-161"},
+    {"n": 32, "query": "\"Hometown Kitchen\" Milpitas Jacklin order online menu lunch special price", "result": "Beyond Menu, OrderSpoon and Postmates priced menus for 1245 Jacklin Rd: no lunch-special section -> rejection"},
+    {"n": 33, "query": "\"Calcutta\" Cupertino restaurant chaat Chinese order online menu lunch special price", "result": "calcuttachaatbakery.com 'Daily Lunch Spacial' $13.99-$17.99 (used, LUNCH-FLAG-165) and calcuttachaat.com outlet list (Milpitas/Fremont) -> new row"}
+  ],
+  "direct_page_reads": [
+    "https://www.benihana.com/locations/cupertino/ (control read of a row already audited; page unchanged)",
+    "https://www.gyu-kaku.com/cupertino/ (control read; Cupertino page 'Updated 9/8/2026', lunch menu Mon-Fri 11:30 AM - 4 PM confirmed)",
+    "https://order.toasttab.com/online/local-kitchens-cupertino (ordering shell only)",
+    "https://toast.app/r/home-eat-cupertino/order (address + hours)",
+    "https://toast.app/r/curry-hyuga-cupertino/order (address + hours)",
+    "https://curryhyuga.com/ (hours)",
+    "https://changsha-mifen.com/ (no priced menu)",
+    "https://calcuttachaat.com/menu (lunch-special combo $12.99 + outlets)",
+    "https://calcuttachaat.com/ (homepage)",
+    "https://www.dishndash.com/ (parked domain - LUNCH-FLAG-166)"
+  ],
+  "not_reached": [
+    "thecityfish.com did not load (fetch failed) - the City Fish address corroboration came from a listing directory instead",
+    "calcuttachaatbakery.com/menu/ returned HTTP 500; its text was obtained by search extraction and is labelled as such"
+  ]
+}
