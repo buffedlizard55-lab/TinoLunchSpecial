@@ -1,0 +1,160 @@
+{
+  "checked_on": "2026-09-17",
+  "removals": [
+    {
+      "id": "L676",
+      "name": "Eureka! Cupertino Verified",
+      "city": "Cupertino",
+      "kept_as": "L33",
+      "reason": "Duplicate of L33: same name, same city and the same address (19369 Stevens Creek Blvd Ste 130, Cupertino) in both rows.",
+      "evidence": [
+        "https://www.yelp.com/biz/eureka-cupertino-3"
+      ]
+    },
+    {
+      "id": "L815",
+      "name": "Toki Sushi (Mountain View)",
+      "city": "Mountain View",
+      "kept_as": "L90",
+      "reason": "Duplicate of L90: same name, same city and the same address (570 N Shoreline Blvd, Ste J, Mountain View) in both rows.",
+      "evidence": [
+        "https://www.mv-voice.com/mountain-view/2025/12/09/this-new-japanese-restaurant-offers-bentos-for-just-8-95/"
+      ]
+    },
+    {
+      "id": "L678",
+      "name": "Siam Station Cupertino",
+      "city": "Cupertino",
+      "kept_as": "L07",
+      "reason": "Duplicate of L07 Siam Station (Cupertino). The kept row carries 20956 Homestead Rd Ste A2, the address two independent listing directories agree on; L678's 20688 Stevens Creek Blvd appears in no restaurant-controlled source.",
+      "evidence": [
+        "https://www.giftly.com/gift-card/siam-station-cupertino"
+      ]
+    },
+    {
+      "id": "L679",
+      "name": "The City Fish Cupertino",
+      "city": "Cupertino",
+      "kept_as": "L355",
+      "reason": "Duplicate of L355 The City Fish (Cupertino). The kept row carries 21678 Stevens Creek Blvd, the address the restaurant's own menu site and listing directories use; L679's 20996 Stevens Creek Blvd appears in no restaurant-controlled source.",
+      "evidence": [
+        "https://www.cityfishco.com/menu-1",
+        "https://www.giftly.com/gift-card/siam-station-cupertino"
+      ]
+    },
+    {
+      "id": "L681",
+      "name": "Curry Hyuga Cupertino",
+      "city": "Cupertino",
+      "kept_as": "L12",
+      "reason": "Duplicate of L12 Curry Hyuga (Cupertino), and its address is contradicted by the restaurant: curryhyuga.com and the restaurant's own Toast ordering page both give 19650 Stevens Creek Blvd, not 20662 Stevens Creek Blvd. The $14.99 lunch-special price it carried has no restaurant-controlled source.",
+      "evidence": [
+        "https://curryhyuga.com/",
+        "https://toast.app/r/curry-hyuga-cupertino/order"
+      ]
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "L03",
+      "name": "Home Eat",
+      "status": "partial",
+      "fields": {
+        "special": "verified",
+        "price": "verified",
+        "schedule": "unknown",
+        "location": "verified",
+        "hours": "verified"
+      }
+    },
+    {
+      "id": "L104",
+      "name": "Local Kitchens - Cupertino",
+      "status": "partial",
+      "fields": {
+        "special": "verified",
+        "price": "verified",
+        "schedule": "unknown",
+        "location": "verified",
+        "hours": "unknown"
+      }
+    },
+    {
+      "id": "L12",
+      "name": "Curry Hyuga",
+      "status": "partial",
+      "fields": {
+        "special": "unknown",
+        "price": "unknown",
+        "schedule": "verified",
+        "location": "verified",
+        "hours": "conflicting"
+      }
+    }
+  ],
+  "additions": [
+    {
+      "id": "L896",
+      "name": "Calcutta Chaat & Bakery",
+      "city": "Milpitas",
+      "status": "partial",
+      "fields": {
+        "special": "verified",
+        "price": "verified",
+        "schedule": "unknown",
+        "location": "verified",
+        "hours": "unknown"
+      }
+    }
+  ],
+  "rejections": [
+    {
+      "name": "Changsha Rice Noodles",
+      "city": "Cupertino",
+      "searched": "2026-09-17",
+      "why": "Restaurant-controlled site (changsha-mifen.com) publishes no lunch special and no priced menu - only a gallery and phone number; delivery-app prices are not primary. Screened 2026-09-17."
+    },
+    {
+      "name": "Mifen Yo",
+      "city": "Cupertino",
+      "searched": "2026-09-17",
+      "why": "Xinjiang rice-noodle opening (19066 Stevens Creek Blvd). All priced menu text found was on DoorDash and other delivery platforms; no restaurant-controlled price list and no lunch special. Screened 2026-09-17."
+    },
+    {
+      "name": "Jade Xiang Yue (湘粵情)",
+      "city": "Cupertino",
+      "searched": "2026-09-17",
+      "why": "No lunch special on any restaurant-controlled page; the only 'lunch set for four $58' text found was an aggregator note. Menu prices found were on delivery platforms. Screened 2026-09-17."
+    },
+    {
+      "name": "Lee & Bai Chinese Bao Shop",
+      "city": "Sunnyvale",
+      "searched": "2026-09-17",
+      "why": "No lunch special published on any restaurant-controlled page; hours and menu appear only on listings and delivery platforms. Screened 2026-09-17."
+    },
+    {
+      "name": "Koi Palace Contempo",
+      "city": "Cupertino",
+      "searched": "2026-09-17",
+      "why": "Cantonese/dim-sum opening at 19369 Stevens Creek Blvd Ste 100. Dim-sum service is lunch service, but no priced 'lunch special' is published by the restaurant; listing prices only. Screened 2026-09-17."
+    },
+    {
+      "name": "Hometown Kitchen",
+      "city": "Milpitas",
+      "searched": "2026-09-17",
+      "why": "Hunan restaurant at 1245 Jacklin Rd. Three menu sources (Beyond Menu, OrderSpoon, Postmates) carry full priced menus with no lunch-special section; a third-party FAQ page claims lunch specials with rice and soup, which is not usable as evidence. Screened 2026-09-17."
+    }
+  ],
+  "flags": [
+    "LUNCH-FLAG-161",
+    "LUNCH-FLAG-162",
+    "LUNCH-FLAG-163",
+    "LUNCH-FLAG-164",
+    "LUNCH-FLAG-165",
+    "LUNCH-FLAG-166",
+    "LUNCH-FLAG-167",
+    "LUNCH-FLAG-168",
+    "LUNCH-FLAG-169",
+    "LUNCH-FLAG-170"
+  ]
+}

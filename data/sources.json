@@ -1554,6 +1554,78 @@
       "url": "https://www.discoversaratoga.org/events/restaurant-week/",
       "fetch_status": "snippet 2026-09-17",
       "used_for": "Fifth recurrence of the Saratoga-NY trap in search results."
+    },
+    {
+      "id": "S195",
+      "agency": "Home Eat Cupertino",
+      "label": "Restaurant's own Toast ordering page - address 20588 Stevens Creek Blvd and daily 11:15 AM - 11:15 PM hours",
+      "url": "https://toast.app/r/home-eat-cupertino/order",
+      "fetch_status": "ok",
+      "used_for": "L03 location + hours (direct fetch 2026-09-17)"
+    },
+    {
+      "id": "S196",
+      "agency": "Home Eat Cupertino",
+      "label": "Restaurant's own Toast menu - printed 'Lunch Specials 特价午餐' section, $12.99-$14.99",
+      "url": "https://order.toasttab.com/online/home-eat-cupertino",
+      "fetch_status": "menu text via search extraction; ordering shell only on direct fetch",
+      "used_for": "L03 lunch special + price (LUNCH-FLAG-164)"
+    },
+    {
+      "id": "S197",
+      "agency": "Local Kitchens Cupertino",
+      "label": "Restaurant's own Toast menu - 'Lunch Specials (Includes side and drink)', $13.00-$17.50",
+      "url": "https://order.toasttab.com/online/local-kitchens-cupertino",
+      "fetch_status": "menu text via search extraction; ordering shell only on direct fetch",
+      "used_for": "L104 lunch special + price (LUNCH-FLAG-164)"
+    },
+    {
+      "id": "S198",
+      "agency": "Curry Hyuga",
+      "label": "Official site - Cupertino hours block (Mon/Wed-Thu lunch 11:30 AM - 2:30 PM; Tue closed)",
+      "url": "https://curryhyuga.com/",
+      "fetch_status": "ok",
+      "used_for": "L12 hours + schedule (LUNCH-FLAG-162)"
+    },
+    {
+      "id": "S199",
+      "agency": "Curry Hyuga",
+      "label": "Restaurant's own Toast ordering page - 19650 Stevens Creek Blvd address and second hour set",
+      "url": "https://toast.app/r/curry-hyuga-cupertino/order",
+      "fetch_status": "ok",
+      "used_for": "L12 location, conflict evidence (LUNCH-FLAG-162/163)"
+    },
+    {
+      "id": "S200",
+      "agency": "Calcutta Chaat & Bakery",
+      "label": "Restaurant's own menu - lunch-special combo plate $12.99 and outlet list (Milpitas, Fremont)",
+      "url": "https://calcuttachaat.com/menu",
+      "fetch_status": "ok",
+      "used_for": "New row: special, price, location (LUNCH-FLAG-165)"
+    },
+    {
+      "id": "S201",
+      "agency": "Calcutta Chaat & Bakery",
+      "label": "Sibling ordering domain - 'Daily Lunch Spacial' prices $13.99-$17.99",
+      "url": "https://calcuttachaatbakery.com/menu/",
+      "fetch_status": "HTTP 500 on direct fetch; text via search extraction",
+      "used_for": "Price-conflict evidence (LUNCH-FLAG-165)"
+    },
+    {
+      "id": "S202",
+      "agency": "Changsha Rice Noodles",
+      "label": "Restaurant's own site - no priced menu, no lunch special",
+      "url": "https://changsha-mifen.com/",
+      "fetch_status": "ok",
+      "used_for": "Rejection evidence, screened 2026-09-17"
+    },
+    {
+      "id": "S203",
+      "agency": "Dish N Dash",
+      "label": "Parked domain-sale page replacing the restaurant's menu site",
+      "url": "https://forsale.godaddy.com/forsale/dishndash.com",
+      "fetch_status": "ok",
+      "used_for": "Link-rot flag LUNCH-FLAG-166"
     }
   ],
   "dead_ends": [

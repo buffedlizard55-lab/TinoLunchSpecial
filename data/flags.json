@@ -2883,6 +2883,86 @@
         "label": "Pass 24 review",
         "url": "https://github.com/buffedlizard55-lab/TinoLunchSpecial/blob/main/docs/REVIEW_2026-09-17_pass24.md"
       }
+    },
+    {
+      "id": "LUNCH-FLAG-161",
+      "severity": "high",
+      "title": "The batch-13b 'verified' rows duplicate earlier rows, and ~25 of the pairs still disagree on the street address",
+      "what_we_found": "A name-and-city dedupe over the master list found 30 same-name/same-city pairs. Five of them were resolvable against primary sources this pass and were consolidated (L676/L33, L815/L90, L678/L07, L679/L355, L681/L12). In each removed row the address matched a Yelp search-URL centrepoint rather than the restaurant (20662 vs 19650 Stevens Creek Blvd for Curry Hyuga; 20688 vs 20956 Homestead Rd for Siam Station; 20996 vs 21678 Stevens Creek Blvd for The City Fish).",
+      "what_we_did": "Removed the five proven duplicates with the proof recorded next to each removal and re-pointed the surviving rows at the restaurant-controlled address. The remaining ~25 pairs (Taste, Araki Sushi, Imperial Treasure, Kathmandu Cuisine, XPP Claypot, Sushi Arashi, Sakoon, Mayan Kitchen, Dainty Cuisine, Holder's Country Inn, Joanie's Cafe, Zareen's, Fambrini's Cafe, Ramen Kowa, Sweet Maple, Valley Goat, Sumika, Bloom & Vine, Bonchon, Sala Thai, Sizzling Lunch, Falafel Flare, Chuan Xiang, La Pizzeria, Pings Bistro and others) are queued for the same primary-source treatment in the next pass rather than deleted unverified.",
+      "source": "data/research/pass25_duplicate_queue.json"
+    },
+    {
+      "id": "LUNCH-FLAG-162",
+      "severity": "medium",
+      "title": "Curry Hyuga's own website and its own Toast ordering page print different opening times",
+      "what_we_found": "curryhyuga.com prints Mon/Wed-Thu lunch 11:30 AM - 2:30 PM and dinner 5:00 - 9:00 PM, Fri-Sun 11:30 AM - 9:00 PM, Tuesday closed. The restaurant's own Toast ordering page prints Sun 11:15 AM - 8:45 PM, Mon 11:15 AM - 2:15 PM, Wed-Thu 11:15 AM - 2:15 PM + 4:45 - 8:45 PM, Fri-Sat 11:15 AM - 8:45 PM.",
+      "what_we_did": "Both values are kept on the row and marked conflicting; a 15-minute offset matters if a diner plans to arrive near a closing time. No value was chosen.",
+      "source": "https://curryhyuga.com/"
+    },
+    {
+      "id": "LUNCH-FLAG-163",
+      "severity": "high",
+      "title": "An unsupported $14.99 lunch-special price was carried by a duplicate row",
+      "what_we_found": "Row L681 (Curry Hyuga Cupertino) printed a $14.99 lunch special and an 11:30 AM - 2:30 PM window, but neither curryhyuga.com nor the restaurant's Toast page prints a lunch special or a price.",
+      "what_we_did": "Removed L681 as a duplicate of L12 and left the surviving row with an explicitly empty price field, so no unverified number is displayed.",
+      "source": "https://toast.app/r/curry-hyuga-cupertino/order"
+    },
+    {
+      "id": "LUNCH-FLAG-164",
+      "severity": "high",
+      "title": "Two Cupertino lunch-special menus print prices but no day and no clock window",
+      "what_we_found": "Home Eat Cupertino prints 12 lunch specials at $12.99-$14.99 and Local Kitchens Cupertino prints eight 'Lunch Specials (Includes side and drink)' at $13.00-$17.50 - and neither page states which days or which hours the special runs.",
+      "what_we_did": "Both rows carry the verified price with the schedule field marked unknown and are excluded from the featured block rather than being given an invented window. This is the single largest blocker to featuring new Cupertino deals: the menu platforms do not publish the window and the restaurants' own sites do not either.",
+      "source": "https://order.toasttab.com/online/home-eat-cupertino"
+    },
+    {
+      "id": "LUNCH-FLAG-165",
+      "severity": "medium",
+      "title": "Calcutta Chaat & Bakery prints two different lunch-special price sets on two pages it controls",
+      "what_we_found": "calcuttachaat.com lists the vegetarian lunch combo at $12.99; the sibling domain calcuttachaatbakery.com lists 'Daily Lunch Spacial' at $13.99 (vegetable/paneer), $15.99 (chicken) and $17.99 (goat). The sibling domain returned HTTP 500 to a direct fetch on 2026-09-17.",
+      "what_we_did": "The new row prints the $12.99 combo that was read directly from the restaurant's menu, records the second price set in the same field and in the flags, and discloses that the second read came from search extraction of the restaurant's own page. A separate DoorDash 'Calcutta Chaat & Chinese' Santa Clara food truck is NOT treated as the same business.",
+      "source": "https://calcuttachaat.com/menu"
+    },
+    {
+      "id": "LUNCH-FLAG-166",
+      "severity": "medium",
+      "title": "Dish N Dash's domain is now a parked domain-sale page",
+      "what_we_found": "dishndash.com resolves to a GoDaddy 'for sale' listing ($9,888) rather than to the restaurant's site that a master row cites for its menu.",
+      "what_we_did": "Recorded here so the row's menu citation is re-pointed at a live restaurant-controlled page in the next pass; no value was changed on the row this pass.",
+      "source": "https://forsale.godaddy.com/forsale/dishndash.com"
+    },
+    {
+      "id": "LUNCH-FLAG-167",
+      "severity": "medium",
+      "title": "The Saratoga Springs (New York) 'lunch specials' trap appeared again in ring searches",
+      "what_we_found": "A search for Saratoga-area lunch specials returned saratoga.com and discoversaratoga.org, which are Saratoga Springs, New York: '2 For $22 Lunch' (Morrissey's) and a Restaurant Week 'Breakfast/Lunch Specials $15' for November 2-8, 2026.",
+      "what_we_did": "Neither page was used, and no California restaurant was credited with those prices. This is the third pass in which this name collision has appeared (LUNCH-FLAG-105, LUNCH-FLAG-139), so it is recorded as a standing trap.",
+      "source": "https://www.saratoga.com/food-drink-specials/"
+    },
+    {
+      "id": "LUNCH-FLAG-168",
+      "severity": "low",
+      "title": "Masakali Indian Cuisine has a Canadian namesake and disagreeing hours across listings",
+      "what_we_found": "The Cupertino restaurant (10310 S De Anza Blvd) shares its name with Masakali Indian Cuisine in Stittsville, Ontario, whose reviews include 'there was no lunch specials'. Cupertino hours disagree between listings: Yelp prints Tuesday closed and Mon/Wed-Thu to 9:00 PM; other listings print seven days 11:30 AM - 10:00 PM.",
+      "what_we_did": "Nothing was added to the row: no restaurant-controlled page was found that prints either hours or a lunch special, so the row keeps its legacy values and stays unfeatured. Listed here as a trap to avoid next pass.",
+      "source": "https://www.yelp.com/biz/masakali-indian-cuisine-cupertino-3"
+    },
+    {
+      "id": "LUNCH-FLAG-169",
+      "severity": "medium",
+      "title": "A Cupertino master row carries a stale 'permanently closed' claim from an aggregator",
+      "what_we_found": "Olarn Thai Cuisine (19672 Stevens Creek Blvd) is listed in the master list as open, while a menu aggregator page renders 'Reported as permanently closed' next to 11:00 AM - 10:00 PM daily hours. The claim carries no date and the row's own sources show the restaurant open.",
+      "what_we_did": "Not resolved: the aggregator is not a primary source and its note is undated. Queued for a next-pass call/primary check rather than acted on. Do not treat the closure as fact, and do not treat the row as verified either.",
+      "source": "https://www.menupix.com/sanjose/restaurants/5564497/Olarn-Thai-Cuisine-Cupertino-CA"
+    },
+    {
+      "id": "LUNCH-FLAG-170",
+      "severity": "high",
+      "title": "Pass 25 net-new result: 1 new business, 0 complete, against a 100-new-entry goal",
+      "what_we_found": "33 discovery queries were executed, screened against a 1,153-key name+city index, and 84 candidate names were checked. Six of the genuinely new businesses found (2025-26 openings) publish no lunch special on any page they control; one does. The dense core of the ring is close to exhausted for published-and-priced lunch specials.",
+      "what_we_did": "Recorded the true count instead of padding the list: 1 net-new business added (Calcutta Chaat & Bakery, Milpitas, partial), 5 duplicates removed, 3 existing rows upgraded with field-level evidence, 6 rejections and this flag. The 100-new-entry target remains unmet and the remaining candidate queue is published for the next pass.",
+      "source": "data/research/pass25_search_log.json"
     }
   ]
 }

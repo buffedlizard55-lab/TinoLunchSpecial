@@ -4156,6 +4156,42 @@
         }
       ],
       "searched": "2026-09-17"
+    },
+    {
+      "name": "Changsha Rice Noodles",
+      "city": "Cupertino",
+      "searched": "2026-09-17",
+      "why": "Restaurant-controlled site (changsha-mifen.com) publishes no lunch special and no priced menu - only a gallery and phone number; delivery-app prices are not primary. Screened 2026-09-17."
+    },
+    {
+      "name": "Mifen Yo",
+      "city": "Cupertino",
+      "searched": "2026-09-17",
+      "why": "Xinjiang rice-noodle opening (19066 Stevens Creek Blvd). All priced menu text found was on DoorDash and other delivery platforms; no restaurant-controlled price list and no lunch special. Screened 2026-09-17."
+    },
+    {
+      "name": "Jade Xiang Yue (湘粵情)",
+      "city": "Cupertino",
+      "searched": "2026-09-17",
+      "why": "No lunch special on any restaurant-controlled page; the only 'lunch set for four $58' text found was an aggregator note. Menu prices found were on delivery platforms. Screened 2026-09-17."
+    },
+    {
+      "name": "Lee & Bai Chinese Bao Shop",
+      "city": "Sunnyvale",
+      "searched": "2026-09-17",
+      "why": "No lunch special published on any restaurant-controlled page; hours and menu appear only on listings and delivery platforms. Screened 2026-09-17."
+    },
+    {
+      "name": "Koi Palace Contempo",
+      "city": "Cupertino",
+      "searched": "2026-09-17",
+      "why": "Cantonese/dim-sum opening at 19369 Stevens Creek Blvd Ste 100. Dim-sum service is lunch service, but no priced 'lunch special' is published by the restaurant; listing prices only. Screened 2026-09-17."
+    },
+    {
+      "name": "Hometown Kitchen",
+      "city": "Milpitas",
+      "searched": "2026-09-17",
+      "why": "Hunan restaurant at 1245 Jacklin Rd. Three menu sources (Beyond Menu, OrderSpoon, Postmates) carry full priced menus with no lunch-special section; a third-party FAQ page claims lunch specials with rice and soup, which is not usable as evidence. Screened 2026-09-17."
     }
   ],
   "notes": [
