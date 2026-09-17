@@ -1,0 +1,472 @@
+{
+  "pass": 23,
+  "searched": "2026-09-17",
+  "note": "Pass 23: carry-over verification of the pass-22 proxy-outage rows (all four re-fetched successfully - the fetch proxy works again), work of the 12 carried leads, and a ~60-candidate ring rescreen Cupertino-first. Dedupe index 1,137 name|city keys. Net-new rows are only those whose lunch evidence (special name, price, days, window, hours, address) was read from a citable page this session.",
+  "entries": [
+    {
+      "name": "Shiki Bistro",
+      "city": "San Carlos",
+      "area": "Downtown San Carlos (Laurel St)",
+      "address": "825 Laurel St, San Carlos, CA 94070",
+      "coords": null,
+      "coords_source": "not captured - street address printed in the official site's own title/menu header",
+      "cuisine": "Japanese sushi bistro",
+      "lunch_special": {
+        "name": "Lunch Special (Bento, Entree, Donburi, and Sushi options)",
+        "price_from": null,
+        "price_to": null,
+        "days": "Every day",
+        "window": "11:30 AM - 2:30 PM",
+        "includes": "The official menu page prints a named 'Lunch Special' served every day 11:30am-2:30pm, described as 'Shiki Lunch Special menu with Bento, Entree, Donburi, and Sushi options'. Prices are printed only inside menu JPG images (San Carlos lunch menu 2025.jpg / April 2024.jpg) that could not be text-extracted, so the price columns are deliberately left empty rather than guessed."
+      },
+      "hours_tuesday": "Lunch 11:30 AM - 2:30 PM (official); dinner hours not captured",
+      "days_open": "Lunch special every day 11:30 AM - 2:30 PM (official menu page)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "San Carlos (~14 mi from the Cupertino destination) - not on the VTA 55 walk; Caltrain-connected but outside the trip corridor."
+      },
+      "verification": {
+        "level": "official",
+        "sources": [
+          {
+            "label": "Shiki Bistro official site - Menu / Price List page: 'Lunch Special - Every Day 11:30am - 2:30pm' (fetched directly 2026-09-17)",
+            "url": "https://shikisancarlos.com/menu-1"
+          },
+          {
+            "label": "Shiki Bistro official site home page - 825 Laurel St, San Carlos (site title/header)",
+            "url": "https://shikisancarlos.com/"
+          }
+        ],
+        "accessed": "2026-09-17"
+      },
+      "review_links": {
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Shiki+Bistro+825+Laurel+St+San+Carlos"
+      },
+      "flags": [
+        "Prices live in unextractable menu JPGs (the 2025 'lunch menu Bento box' image and an April 2024 lunch menu); a Toast-ordering logo appears on the site but no text menu was found, so no price is printed here (LUNCH-FLAG-150).",
+        "The site's own file names say the lunch-special sheet is the 'San Carlos' menu - there is a separate same-brand Shiki in Half Moon Bay; this row is the San Carlos location only."
+      ],
+      "added_in": "batch23_pass23_ring_rescreen.json"
+    },
+    {
+      "name": "Honō Izakaya & Sushi",
+      "city": "Campbell",
+      "area": "Downtown Campbell (S Central Ave)",
+      "address": "33 South Central Avenue, Campbell, CA 95008",
+      "coords": null,
+      "coords_source": "not captured - address printed on the official site's contact block",
+      "cuisine": "Japanese izakaya + sushi",
+      "lunch_special": {
+        "name": "Weekday lunch service (menu page says 'We are updating our menu'); a Google reviewer reports coming 'for a lunch special on a weekday'",
+        "price_from": null,
+        "price_to": null,
+        "days": "Monday-Friday (lunch service)",
+        "window": "11:30 AM - 2:30 PM",
+        "includes": "The official site prints real weekly hours with a Monday-Friday lunch block (Mon-Thu 11:30am-2:30pm + dinner 5-9:30pm; Fri lunch + dinner to 10:30pm; Sat from 12pm; Sun 12-9:30pm). The official food-menu page currently says 'We are updating our menu - please stay tuned', so no dish or price could be captured; the lunch-special claim rests on a Google review quote, which is recorded as a quote, never as a price."
+      },
+      "hours_tuesday": "11:30 AM - 2:30 PM, 5:00 PM - 9:30 PM",
+      "days_open": "Mon-Thu 11:30-2:30 + 5:00-9:30; Fri 11:30-2:30 + 5:00-10:30; Sat 12:00-10:30; Sun 12:00-9:30 (official site)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Downtown Campbell (~8.5 mi) - not on the VTA 55 Cupertino walk."
+      },
+      "verification": {
+        "level": "official",
+        "sources": [
+          {
+            "label": "Honō official site - hours with Mon-Fri 11:30am-2:30pm lunch block and 33 South Central Ave address (fetched directly 2026-09-17)",
+            "url": "https://honojapcuisine.com/"
+          },
+          {
+            "label": "Honō official food-menu page - 'We are updating our menu. Please stay tuned' (fetched directly 2026-09-17)",
+            "url": "https://honojapcuisine.com/food-menu"
+          }
+        ],
+        "accessed": "2026-09-17"
+      },
+      "review_links": {
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Hono+Izakaya+33+South+Central+Ave+Campbell"
+      },
+      "flags": [
+        "Lunch-special evidence is one Google review ('Came here for a lunch special on a weekday', shown on the official site's own reviews carousel) - recorded as a quote only; no restaurant-controlled price exists yet because the menu page is 'being updated' (LUNCH-FLAG-151).",
+        "Name trap: a different 'Hono Izakaya' operates at 670 Saint-Joseph St E, Quebec, Canada (OpenTable/wheree) - not this restaurant; queries must be watched for it."
+      ],
+      "added_in": "batch23_pass23_ring_rescreen.json"
+    },
+    {
+      "name": "Radhe Chaat",
+      "city": "Sunnyvale",
+      "area": "E El Camino Real, Sunnyvale",
+      "address": "934 E El Camino Real, Sunnyvale, CA 94087",
+      "coords": null,
+      "coords_source": "not captured",
+      "cuisine": "Gujarati/North Indian vegetarian chaat + thali combos",
+      "lunch_special": {
+        "name": "Thali Combos 1-4 (all-day combo plates)",
+        "price_from": 12.99,
+        "price_to": 15.99,
+        "days": "Monday-Sunday",
+        "window": "11:00 AM - 9:00 PM (open hours; combos are all-day)",
+        "includes": "Official site menu: THALI COMBO 1 $12.99 (2 roti + veg dhal + veg of the day + white rice); THALI COMBO 2 $13.99 (1 paratha + dhal + veg + rice); THALI COMBO 3 $14.99 (2 poori + dhal + veg + rice + tea or chaas); BHEL THALI COMBO 4 $15.99 (bhel poori + dhal + veg + rice + beverage). Chaat items $5.99-$7.99."
+      },
+      "hours_tuesday": "11:00 AM - 9:00 PM",
+      "days_open": "Monday-Sunday 11:00 AM - 9:00 PM (official site)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Sunnyvale E El Camino (~6 mi) - not on the VTA 55 Cupertino walk; a short drive from the destination."
+      },
+      "verification": {
+        "level": "official",
+        "sources": [
+          {
+            "label": "Radhe Chaat official site - 'Our food menu' with Thali Combo 1-4 prices and 934 E El Camino Real address (fetched directly 2026-09-17)",
+            "url": "https://radhechaatpureveg.com/"
+          },
+          {
+            "label": "Radhe Chaat official site (second domain) - hours Mon-Sun 11AM-9PM + same address/phone",
+            "url": "https://radhechaatsv.com/"
+          }
+        ],
+        "accessed": "2026-09-17"
+      },
+      "review_links": {
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Radhe+Chaat+934+E+El+Camino+Real+Sunnyvale"
+      },
+      "flags": [
+        "The restaurant runs two official domains (radhechaatsv.com and radhechaatpureveg.com) with split content - hours on one, the priced menu on the other; both cite the same address and phone (LUNCH-FLAG-152).",
+        "Combos are all-day plates, not a time-boxed lunch special; listed because they are the restaurant's own standing, priced lunch-format offering."
+      ],
+      "added_in": "batch23_pass23_ring_rescreen.json"
+    },
+    {
+      "name": "Rajbhog Thali",
+      "city": "Sunnyvale",
+      "area": "E El Camino Real, Sunnyvale",
+      "address": "1028 E El Camino Real, Sunnyvale, CA 94087",
+      "coords": [37.3514, -122.0061],
+      "coords_source": "DoorDash store JSON geo for 1028 E El Camino Real",
+      "cuisine": "Pure-vegetarian Indian thali (daily rotating regional menu)",
+      "lunch_special": {
+        "name": "Daily rotating 'Special Thali' - unlimited servings (Thu 'Rajbhog', Fri 'Gujarati', Sat 'Rajasthani', Sun 'Punjabi', Mon & Wed 'Special'); RajBhog Thali $21.99 listed on the delivery menu",
+        "price_from": 21.99,
+        "price_to": 21.99,
+        "days": "Mon + Wed-Sun (closed Tuesday per the official weekly strip); the $21.99 'RajBhog Thali (ONLY Thursday)' figure is from the delivery menu",
+        "window": "All day during open hours (thali is the standing format, not a time-boxed lunch deal)",
+        "includes": "Official site (fetched 2026-09-17) prints the weekly thali strip (Tue Closed / Wed Special / Thu Rajbhog / Fri Gujarati / Sat Rajasthani / Sun Punjabi / Mon Special) and a dated 'today's thali' composition (16th September 2026 - 14 items, unlimited refills). The official menu page prints the a-la-carte menu ($7.99-$14.99) but no thali price; the $21.99 Thursday figure comes from the restaurant's DoorDash/Postmates delivery menu."
+      },
+      "hours_tuesday": "Closed (official weekly strip: 'Tue Closed')",
+      "days_open": "Mon + Wed-Sun; store hours per DoorDash ~11:30 AM - 8:15 PM (Sun from 11:30 AM; Sat from 8:00 AM per DoorDash grid) - no hour grid printed on the official site",
+      "open_on_trip_date": false,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Sunnyvale (~6 mi) - not on the VTA 55 walk; also closed on the trip's Tuesday."
+      },
+      "verification": {
+        "level": "mixed",
+        "sources": [
+          {
+            "label": "Rajbhog Thali official site - weekly thali schedule, dated daily thali composition, unlimited-servings description (fetched directly 2026-09-17)",
+            "url": "https://rajbhogthali.com/"
+          },
+          {
+            "label": "Rajbhog Thali official menu page - a-la-carte prices; no thali price printed (fetched directly 2026-09-17)",
+            "url": "https://rajbhogthali.com/menu.html"
+          },
+          {
+            "label": "Postmates delivery menu - 'RajBhog Thali (ONLY Thursday) $21.99' + store hours + address",
+            "url": "https://postmates.com/store/rajbhog-thalis/dliyzKCPUkqaIREuG19IXw"
+          }
+        ],
+        "accessed": "2026-09-17"
+      },
+      "review_links": {
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Rajbhog+Thali+1028+E+El+Camino+Real+Sunnyvale"
+      },
+      "flags": [
+        "Level is 'mixed' on purpose: the thali's existence, schedule and unlimited format are official-site facts; the only printed thali price found ($21.99, Thursday) is on the delivery menus, so the price column carries that single day-specific figure (LUNCH-FLAG-153).",
+        "The official site shows 'unlimited servings'; whether the $21.99 DoorDash price is per-person unlimited dine-in was not printable-verified - re-check in store before relying on it."
+      ],
+      "added_in": "batch23_pass23_ring_rescreen.json"
+    },
+    {
+      "name": "Willow Street Wood-Fired Pizza - Willow Glen",
+      "city": "San Jose",
+      "area": "Willow Glen (Willow St)",
+      "address": "1072 Willow Street, San Jose, CA 95125",
+      "coords": [37.3085, -121.9004],
+      "coords_source": "official site's Google Maps direction link (Willow Street Pizza & Taproom)",
+      "cuisine": "Wood-fired pizza / California comfort food",
+      "lunch_special": {
+        "name": "Monday all-day 'Lunch Special' - any mini pizza or pasta with soup or salad (dine in only)",
+        "price_from": 16.99,
+        "price_to": 16.99,
+        "days": "Monday (part of the published Daily Specials list; Tuesday is Kids Eat Free, Wednesday Wine Wednesday, Thursday lasagna special, Friday shrimp scampi special)",
+        "window": "All day Monday (dine-in)",
+        "includes": "SinglePlatform menu (the restaurant-controlled menu feed, 'Last updated: July 27, 2026') under 'Daily Specials': 'Monday: All day \"Lunch Special\" $16.99 - All day, any mini pizza or pasta, with soup or salad. Dine in only.'"
+      },
+      "hours_tuesday": "Not captured - the OpenTable listing prints only dinner hours (Mon-Thu & Sun 4:00-8:30 PM, Fri-Sat 4:00-9:00 PM), which conflicts with an all-day Monday lunch special (LUNCH-FLAG-154)",
+      "days_open": "Per OpenTable listing: dinner Mon-Thu & Sun to 8:30 PM, Fri-Sat to 9:00 PM; the SinglePlatform menu implies Monday lunch service (all-day lunch special)",
+      "open_on_trip_date": true,
+      "fits_return_bus": {
+        "ok": false,
+        "note": "Willow Glen (~11 mi) - not on the VTA 55 Cupertino walk; and the lunch special itself is Monday-only."
+      },
+      "verification": {
+        "level": "listing",
+        "sources": [
+          {
+            "label": "Willow Street official site - Willow Glen location: 1072 Willow Street, San Jose, CA 95125, (408) 971-7080 (fetched directly 2026-09-17)",
+            "url": "https://www.willowstreet.com/willow-glen/"
+          },
+          {
+            "label": "OpenTable listing with SinglePlatform menu (updated July 27, 2026) - 'Daily Specials: Monday: All day Lunch Special $16.99, any mini pizza or pasta with soup or salad, dine in only'",
+            "url": "https://www.opentable.com/r/willow-street-pizza-and-taproom-san-jose"
+          }
+        ],
+        "accessed": "2026-09-17"
+      },
+      "review_links": {
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Willow+Street+Pizza+1072+Willow+St+San+Jose"
+      },
+      "flags": [
+        "The $16.99 Monday special is from the SinglePlatform mirror, not a directly-fetched willowstreet.com menu page - listing level by policy (LUNCH-FLAG-154).",
+        "Hours conflict: OpenTable prints dinner-only hours for this location while the menu feed advertises an all-day Monday lunch special; both kept visible until the restaurant's own menu page can be read.",
+        "The Los Gatos Willow Street (L69) is a separate location with its own row; this is the Willow Glen San Jose restaurant."
+      ],
+      "added_in": "batch23_pass23_ring_rescreen.json"
+    }
+  ],
+  "rejected": [
+    {
+      "name": "Golden Wang Donkatsu",
+      "city": "Santa Clara",
+      "why": "Carried pass-22 lead resolved as an honest absence: the captured menus (Yelp menu mirror, Postmates, Uber Eats - all price-consistent) are one a-la-carte list (donkatsu $21.99-$25.99, pasta $18.99-$24.99); no lunch section, lunch special, or time-boxed deal exists. Discover Santa Clara's directory page confirms the business but carries no menu. Resolves LUNCH-FLAG-141's lead list.",
+      "links": [
+        {
+          "label": "Yelp menu - Golden Wang Donkatsu Santa Clara (a-la-carte only)",
+          "url": "https://www.yelp.com/menu/golden-wang-donkatsu-santa-clara"
+        },
+        {
+          "label": "Postmates store menu (same a-la-carte sections)",
+          "url": "https://postmates.com/store/golden-wang-donkatsu-santa-clara/_9UqJ_dVWQWHwTTfCu5unQ"
+        }
+      ],
+      "searched": "2026-09-17"
+    },
+    {
+      "name": "Boltiful Fresh Kitchen",
+      "city": "Santa Clara",
+      "why": "Carried pass-22 lead resolved as an honest absence: the live ordering menu (withbites.com merchant page, fetched 2026-09-17) shows Most Ordered / Build Your Own Bowl / Desserts / Drinks / Lifestyle Bowls / Lifestyle Salads - the 'Today's Specials' section pass 22 could not capture no longer exists. Bowls $14.99 (regular) / $18.99 (large) / kids $8.99, all-day; no lunch special. Note: Boltiful's San Jose originals (1078 E Brokaw) share the menu; the row is for the Santa Clara Rivermark store, 3937 Rivermark Plaza.",
+      "links": [
+        {
+          "label": "withbites.com - Boltiful Fresh Kitchen Santa Clara ordering menu (fetched 2026-09-17)",
+          "url": "https://withbites.com/merchants/boltifulsantaclara"
+        },
+        {
+          "label": "Yelp - Boltiful Fresh Kitchen, 3937 Rivermark Plaza, Santa Clara",
+          "url": "https://www.yelp.com/biz/boltiful-fresh-kitchen-santa-clara-2"
+        }
+      ],
+      "searched": "2026-09-17"
+    },
+    {
+      "name": "Shabuway",
+      "city": "San Mateo",
+      "why": "Carried pass-22 lead resolved as a CLOSURE: Yelp now lists 'SHABUWAY JAPANESE STYLE HOT POT - CLOSED' at 145 E 3rd Ave (updated April 2026). The old lunch pricing ($12.50-$19.99 hot-pot plates, 2015-2021 sources) is dead. Also note a same-name Shabuya chain exists; do not confuse.",
+      "links": [
+        {
+          "label": "Yelp - SHABUWAY JAPANESE STYLE HOT POT - CLOSED (145 E 3rd Ave, San Mateo)",
+          "url": "https://www.yelp.com/biz/shabuway-japanese-style-hot-pot-san-mateo"
+        },
+        {
+          "label": "TripAdvisor - Shabuway San Mateo (historic menu, now stale)",
+          "url": "https://www.tripadvisor.com/Restaurant_Review-g33031-d781824-Reviews-Shabuway-San_Mateo_California.html"
+        }
+      ],
+      "searched": "2026-09-17"
+    },
+    {
+      "name": "Luceti's on 25th Avenue",
+      "city": "San Mateo",
+      "why": "Carried pass-22 lead resolved as an honest absence: the current OpenTable listing prints 'Lunch Tue-Fri 11:30 am-3:00 pm' and a full menu (antipasti $11-$28, pastas $21-$32, steaks $43+) with NO separate lunch menu, lunch special, or priced lunch section. Lunch service exists; a lunch special does not.",
+      "links": [
+        {
+          "label": "OpenTable - Luceti's on 25th Avenue (hours + full menu, no lunch section)",
+          "url": "https://www.opentable.com/lucetis-on-25th-avenue"
+        }
+      ],
+      "searched": "2026-09-17"
+    },
+    {
+      "name": "Little Belmont Cafe",
+      "city": "Belmont",
+      "why": "Carried pass-22 lead resolved as an honest absence: every captured menu (SinglePlatform mirror, yellowpages menu copy, wherevi 2025 refresh) is one breakfast/sandwiches/entrees list - sandwiches $8.95-$10.95 (SinglePlatform) or $13.95-$15.50 (2025 refresh); no lunch section, no named special.",
+      "links": [
+        {
+          "label": "SinglePlatform - Little Belmont Cafe menu (single all-day list)",
+          "url": "http://places.singleplatform.com/little-belmont-cafe/menu"
+        },
+        {
+          "label": "wherevi - Little Belmont Cafe menu (2025 refresh, no lunch section)",
+          "url": "https://little-belmont-cafe.wherevi.com/menu.html"
+        }
+      ],
+      "searched": "2026-09-17"
+    },
+    {
+      "name": "B Street & Vine",
+      "city": "San Mateo",
+      "why": "Carried pass-22 lead resolved as an honest absence: the current OpenTable menu is bruschetta ($12-$16), panini ($9.50), small plates and desserts with lunch service Tue-Sun from 11:30 AM - no named or priced lunch special. (Address per OpenTable 314 S B St; a secondary directory says 320 S B St - minor conflict noted, not material to the absence.)",
+      "links": [
+        {
+          "label": "OpenTable - B Street & Vine menu and hours",
+          "url": "https://www.opentable.com/r/b-street-and-vine-san-mateo"
+        },
+        {
+          "label": "Yelp - B Street & Vine (claimed)",
+          "url": "https://www.yelp.com/biz/b-street-and-vine-san-mateo-2"
+        }
+      ],
+      "searched": "2026-09-17"
+    },
+    {
+      "name": "Mingalaba",
+      "city": "San Mateo",
+      "why": "Carried pass-22 lead could NOT be verified this pass: fresh searches for the Burmese room's lunch pricing surfaced nothing beyond the pass-22 review mention. No restaurant-controlled menu or priced lunch section was found, so it stays an unverified lead rather than a reject-with-evidence or a padded row. Re-screen next pass.",
+      "links": [
+        {
+          "label": "Yelp search - lunch San Mateo (Mingalaba did not surface with lunch-special evidence)",
+          "url": "https://www.yelp.com/search?find_desc=lunch&find_loc=San+Mateo%2C+CA"
+        }
+      ],
+      "searched": "2026-09-17"
+    },
+    {
+      "name": "Mikiya Wagyu Shabu House",
+      "city": "San Mateo",
+      "why": "The second Bay Area Mikiya (68 Hillsdale Mall) publishes AYCE tiers $55-$98 per person on its own site with happy-hour add-ons, but no separate lunch tier or lunch price was found on the official site or its listings - the $55-$98 figure applies without a printed lunch/dinner split, and a third-party guide's '$45-$98' disagrees. No verifiable lunch special; the Santa Clara Mikiya is already in the master (L163, also no lunch special).",
+      "links": [
+        {
+          "label": "Mikiya official site - San Mateo location page (AYCE tiers $55-$98, happy hour sets, no lunch tier)",
+          "url": "https://mikiyashabu.com/project/san-mateo-ca/"
+        },
+        {
+          "label": "Yelp - Mikiya Wagyu Shabu House San Mateo (hours from 11:00/11:30 AM)",
+          "url": "https://www.yelp.com/biz/mikiya-wagyu-shabu-house-san-mateo-2"
+        }
+      ],
+      "searched": "2026-09-17"
+    },
+    {
+      "name": "MJ Sushi",
+      "city": "Foster City",
+      "why": "Honest absence: captured menus (sagemenu mirror; zmenu) are a-la-carte sushi/teriyaki (rolls $17.24, teriyaki entrees $17.24-$19.54) with no lunch section or special. Data-quality note: zmenu lists '3515 20th St A, Foster City, CA 94110' - a San Francisco ZIP misfiled onto a Foster City street; Yelp's claimed page (977 E Hillsdale Blvd) is authoritative.",
+      "links": [
+        {
+          "label": "sagemenu - MJ Sushi Foster City menu (no lunch section)",
+          "url": "https://sagemenu.com/newark/mj-sushi-foster-city-foster-city/"
+        },
+        {
+          "label": "Yelp - MJ Sushi Foster City (claimed, 977 E Hillsdale Blvd)",
+          "url": "https://www.yelp.com/biz/mj-sushi-foster-city-foster-city"
+        }
+      ],
+      "searched": "2026-09-17"
+    },
+    {
+      "name": "Warehouse Buffet",
+      "city": "Foster City",
+      "why": "An AYCE Korean-BBQ/hotpot 'lunch under $25 per person' figure exists only in a third-party blog roundup (restaurantobserver); no official page with a printed lunch price was found. Reviewer/blog prose cannot fill the price columns, so the row is rejected rather than padded.",
+      "links": [
+        {
+          "label": "restaurantobserver - 'Warehouse Buffet in Foster City... all-you-can-eat lunch under $25' (blog prose only)",
+          "url": "https://restaurantobserver.com/restaurants-in-redwood-city-ca/"
+        }
+      ],
+      "searched": "2026-09-17"
+    },
+    {
+      "name": "La Fondue",
+      "city": "Saratoga",
+      "why": "Carried pass-22 lead resolved as an honest absence: OpenTable hours show Sunday 11 AM opening but no lunch program; the format is 4-course fondue menus priced per guest (current diner reports $72-$138/pp; allmenus mirror $86-$138) with a 2-guest minimum - fine dining pricing, no lunch special.",
+      "links": [
+        {
+          "label": "OpenTable - La Fondue Saratoga (hours + 4-course format, menu updated 12/14/2025)",
+          "url": "https://www.opentable.com/r/la-fondue-saratoga"
+        },
+        {
+          "label": "allmenus - La Fondue menu mirror ($86-$138 combos)",
+          "url": "https://www.allmenus.com/ca/saratoga/22197-la-fondue/menu/"
+        }
+      ],
+      "searched": "2026-09-17"
+    },
+    {
+      "name": "Falafelle",
+      "city": "Belmont",
+      "why": "Honest absence: the vegan falafel shop's captured menus (Uber Eats, ezCater, res-discover mirror) are all-day - pita pocket $12.75, Falafelle Combo $15.50, wraps $12-$13.50 - with no lunch-specific section or special. Hours Mon-Sat from 11:00/11:30 AM, Sunday closed.",
+      "links": [
+        {
+          "label": "Uber Eats - Falafelle Belmont menu",
+          "url": "https://www.ubereats.com/store/falafelle/hJdw3Pf2X9GQPJQm4TbrBA"
+        },
+        {
+          "label": "ezCater - Falafelle (hours + catering menu)",
+          "url": "https://www.ezcater.com/catering/falafelle-3"
+        }
+      ],
+      "searched": "2026-09-17"
+    },
+    {
+      "name": "Triple Seven Pizzeria",
+      "city": "Saratoga",
+      "why": "Carried pass-22 lead resolved as GONE: Stackers Pizzeria's own site (18572 Prospect Rd, the same storefront) describes the space's history - 'More recently, it was \"Triple Seven Pizzeria\" or 777 Pizzaria, which offered by-the-slice lunch specials Monday - Thursday 11:00 am - 8:00 pm' - past tense. Triple Seven no longer operates; Stackers' current menu was unreachable at fetch time (lead for Stackers itself).",
+      "links": [
+        {
+          "label": "stackers-pizzeria.com - Saratoga storefront history naming Triple Seven in the past tense",
+          "url": "https://stackers-pizzeria.com/"
+        }
+      ],
+      "searched": "2026-09-17"
+    },
+    {
+      "name": "NM Cafe (Neiman Marcus, Stanford Shopping Center)",
+      "city": "Palo Alto",
+      "why": "Honest absence: the captured lunch menu (Yelp menu mirror) is sandwiches $14-$18, salads $16-$19, mains $17-$23 - no lunch special or prix fixe. (The '$40 3-course lunch' quote floating in nearby search results belongs to Zaytinya reviewers, not NM Cafe, and Zaytinya itself is already rejected for lack of an official price.)",
+      "links": [
+        {
+          "label": "Yelp menu - NM Cafe Palo Alto (sandwiches/salads/mains, no special)",
+          "url": "https://www.yelp.com/menu/nm-cafe-palo-alto-3/item/stanford-club"
+        }
+      ],
+      "searched": "2026-09-17"
+    },
+    {
+      "name": "Kinjo Japanese Steakhouse",
+      "city": "Saratoga Springs, NY (name trap)",
+      "why": "Trap row, sixth Saratoga trap: the appealing lunch menu (2/3 roll specials $9/$12, bento $8-$14, house lunch box $13-$14) surfaced for 'Saratoga' but Kinjo is at 15 Contractor St, Saratoga Springs, NEW YORK (OpenTable 'saratoga-springs' slug). No Saratoga CA restaurant by this name was found.",
+      "links": [
+        {
+          "label": "OpenTable - Kinjo Japanese Steakhouse, Saratoga Springs NY (lunch menu)",
+          "url": "https://www.opentable.com/r/kinjo-japanese-steakhouse-saratoga-springs"
+        }
+      ],
+      "searched": "2026-09-17"
+    },
+    {
+      "name": "Rickshaw Corner Restaurant",
+      "city": "Foster City",
+      "why": "Re-screened this pass and unchanged: the only lunch-special figures ($8.50 1-item / $9.50 2-item) remain undated TripAdvisor reviewer quotes (2018-era); the restaurant menu mirrors show a-la-carte item prices with no lunch section. Stays rejected per the pass-9 ruling - recorded here so the lead stops resurfacing.",
+      "links": [
+        {
+          "label": "TripAdvisor - Rickshaw Corner (reviewer-quoted lunch specials, undated)",
+          "url": "https://www.tripadvisor.com/Restaurant_Review-g32405-d928697-Reviews-Rickshaw_Corner_Restaurant-Foster_City_California.html"
+        }
+      ],
+      "searched": "2026-09-17"
+    }
+  ]
+}
