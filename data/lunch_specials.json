@@ -1,7 +1,7 @@
 {
   "search_protocol": {
-    "requirement": "Pass 23 (2026-09-17): carry-over verification of the four pass-22 proxy-outage rows (all re-fetched - proxy healthy), resolution of all 12 pass-22 leads, a master-wide duplicate audit that removed 8 wrong-address rows with primary-source evidence, and a ~60-candidate ring rescreen Cupertino-first (Cupertino core, Sunnyvale, Santa Clara, Campbell, Los Altos, Palo Alto/Stanford, Menlo Park, Redwood City, San Carlos, Belmont, Foster City, Saratoga, San Jose/Willow Glen, Milpitas). 20 fresh searches + 20 direct page fetches. Result: 5 net-new rows (L891-L895), 16 rejections, 9 rows upgraded/corrected, LUNCH-FLAG-133 resolved, 14 new flags. The master list went 882 -> 879 only because the 8 evidence-verified duplicate removals outweighed the 5 net-new additions - fewer rows, but every remaining row is more correct.",
-    "search_date": "2026-09-17 (pass 23)",
+    "requirement": "2026-09-17: 20 discovery queries; 100 existing-source HTTP attempts failed (TLS), not 100 new restaurants. Targeted page-reading recovered seven field-level deal audits: five complete, two partial. Removed duplicate L649 -> L260 and L650 -> L76. Zero net-new businesses; master 879 -> 877. See research.html and docs/REVIEW_2026-09-17_pass24.md.",
+    "search_date": "2026-09-17 (pass 24)",
     "cities_covered": [
       "Campbell",
       "Cupertino",
@@ -49,7 +49,8 @@
       "2026-09-12 fourteenth pass: 102 new master rows L708-L809 from six incoming files (batch14_cupertino_sv_sc_mv, batch14_mil_mp_la, batch14_nw_fr, batch14_pa_sm_rc, batch14_sar_fc, batch14_sc_sj). Newark + Fremont carry most of the weight (38 rows). 13 candidates recorded as rejects (out-of-ring, closures, no-data, one duplicate of L459). Bell Tower Cafe (L799) superseded its pass-1 deferral. Seven rows carry open_on_trip_date = null (disputed Tuesday status). Newark Buffet (L758) is the only new priced row ($19.99 lunch buffet). Four verified rows are held back by street-number collisions - see LUNCH-FLAG-69.",
       "Pass 16 method note: the fastest reliable capture pattern is one multi-business query - 'yelp <City> hours address \"Name1\" \"Name2\" \"Name3\" \"Name4\"' - which returns two or three complete Yelp business captures (per-day hours, address, phone, price band, website) per search. City-level 'TOP 10 BEST Lunch' queries are only good for discovery because they print names and review quotes without addresses. Yelp pages themselves return HTTP 403 to direct fetches, so every Yelp citation in this pass is a dated search capture, and the verification level says so.",
       "Pass 20 (2026-09-16): swept the ring (Cupertino, Sunnyvale, Santa Clara, Mountain View, Palo Alto, Los Altos, Campbell, Los Gatos, Milpitas, Fremont, Newark, Union City, Saratoga, San Jose). Screened ~859 existing dedupe keys against the master and reject lists before opening a single page. 1 net-new row merged (L864 Mastro's Steakhouse Santa Clara - official lunch menu 2-2, 12 PM - 4 PM). 10 new rejections (R201-R210): Erthya, Peppermint, Happy Flower Eatery, Chaat House (no official sources), ZhangFei Hot Pot, Sake2Sushi (reviewer-quoted AYCE prices only), Naga's Kitchen, Taiwan Porridge (no lunch special), Pier 98 Sushi (old reviewer prices), Los Altos Taqueria (wrong state). The 10-15 mile ring is saturated at this verification standard after 20 passes and 1,319+ candidates.",
-      "Pass 21 (2026-09-16): opened Foster City and San Carlos cores plus Belmont, Union City and a Redwood City dedupe sweep. 84 candidates resolved against a 1072-key dedupe index (1,415 cumulative); queries not tallied this pass so queries_run is unchanged. 14 net-new rows merged (L865-L878: 7 official-priced, 2 official-unpriced, 1 official absence, 3 listing-priced, 1 listing-unpriced) and 25 new rejections. Reviewer-quoted prices held out throughout; traps caught include a hijacked restaurant domain (Joy, gambling spam), a satellite-domain lunch page that redirects (Yan's Garden), and a $13-14 vs $16 price conflict (Hot Wok Bistro Too). LUNCH-FLAG-120-132. See docs/REVIEW_2026-09-16_pass21.md."
+      "Pass 21 (2026-09-16): opened Foster City and San Carlos cores plus Belmont, Union City and a Redwood City dedupe sweep. 84 candidates resolved against a 1072-key dedupe index (1,415 cumulative); queries not tallied this pass so queries_run is unchanged. 14 net-new rows merged (L865-L878: 7 official-priced, 2 official-unpriced, 1 official absence, 3 listing-priced, 1 listing-unpriced) and 25 new rejections. Reviewer-quoted prices held out throughout; traps caught include a hijacked restaurant domain (Joy, gambling spam), a satellite-domain lunch page that redirects (Yan's Garden), and a $13-14 vs $16 price conflict (Hot Wok Bistro Too). LUNCH-FLAG-120-132. See docs/REVIEW_2026-09-16_pass21.md.",
+      "2026-09-17: 20 discovery queries; 100 existing-source HTTP attempts failed (TLS), not 100 new restaurants. Targeted page-reading recovered seven field-level deal audits: five complete, two partial. Removed duplicate L649 -> L260 and L650 -> L76. Zero net-new businesses; master 879 -> 877. See research.html and docs/REVIEW_2026-09-17_pass24.md."
     ],
     "note_fourth_pass": "Fourth search pass added 49 rows (L102-L150): Lazy Dog $8.95+, Tomatina Pick Two $13.50, The Hut Taco Tuesday $9, Pasta Market Gourmet Lunch $14.95, Urban Grill weekday buffet $16.99 (two-domain conflict), Local Kitchens combos $13.00-$17.50, Sakoon buffet $19.99-$24.99 (Wed-Sun only), plus hours-verified rows with no published lunch special. 9 candidates were rejected this pass (closed, dinner-only, or no verifiable address).",
     "note_seventh_pass": "Seventh search pass added 100 rows (L253-L352). Only fully verified rows were written: 48 listing-level, 27 review-level, 20 official-level, 4 conflicting, 1 unverified (Taiwan Restaurant SJ - no hours captured). Three verified venues remain unmerged due to address-key collisions (see notes) and are listed in flags.json.",
@@ -59,9 +60,9 @@
     "note_tenth_pass": "Tenth search pass (2026-09-11) added 10 rows (L524-L533) from data/incoming/batch10a_pass10_verified.json: Teleferic Barcelona Los Gatos with its $28-$34 weekday lunch menu; three Hummus Mediterranean Kitchen rooms (Palo Alto at Stanford Shopping Center, 185 Castro St Mountain View, 150 E 4th Ave San Mateo) from the chain's own locations index; Falafel Flare, Empire Armadillo BBQ & Deli and Delhi to Kathmandu in Sunnyvale from the chamber's restaurant-week page with per-item prices; Asian Box Mountain View and Opa! Campbell with verified weekday lunch hours; and Shake Shack at the Stanford Shopping Center end of the ring. This pass is deliberately smaller than earlier ones: the merge was capped by the number of candidates whose street address AND weekly hours could be pinned to a citable page, not by the number of names found. Yelp pages return HTTP 403 to direct fetch here, which removed the highest-yield bulk source used by pass 9.",
     "note_eleventh_pass": "Eleventh search pass (2026-09-11) added 59 rows (L534-L592) from eight incoming files batch11a-11h. Order of work: an automated dedupe of 115 candidate names against the master and reject files first (85 new, 30 already listed), then Milpitas (12), Fremont/Newark (8), Santa Clara and the San Jose Korean row (14), Los Gatos / Los Altos / Palo Alto (8), the Cupertino-Sunnyvale core (12), San Jose cheap eats (8), Santana Row and the chain row (10), and a final sweep for restaurants that actually publish a lunch price (8). Two rows were withdrawn immediately after the merge and are recorded as rejects: Inchin's Bamboo Garden - Sunnyvale (a ZIP spelling of the existing L43 row that slipped past the address dedupe) and Opa! Willow Glen (a 2018-stamped listing whose street address is already held by Burma Roots L348). Five closures were caught and rejected rather than published: Left Bank Brasserie, Rosie McCann's and Yankee Pier (all Santana Row) and Vida Tapas Y Cocteles (Mountain View), plus Sushi Confidential's downtown room, which is closed Mon-Wed and has no Tuesday lunch at all. Fourteenth-hour finds worth the manual click: Boda (2868 Story Rd, San Jose) publishes a $5.99 weekday lunch plate on its own site - the cheapest verified lunch in the master list - and Home Eat Santa Clara, Tatami Buffet (a Cupertino room whose entire week is a 11:30-2:30 lunch service) and Lotus Thai Bistro all came with a citable address and weekly hours. Prices were printed only where the restaurant's own page printed them; Reddit, Yelp-Q&A and aggregator figures (Milpitas Buffet $19.99, Sizzler $5.49-$6.99, Don Giovanni $19.95, Olive Garden $5.99) are described inside the rows and deliberately left out of price_from/price_to.",
     "note_twelfth_pass": "Pass 12 follow-up added 4 rows (L593-L596) after the 59-row pass-11 result. These are lunch-service/menu rows, not invented discount claims: published prices are carried only for Delarosa and Last Chance, while Nar and Madera remain unpriced.",
-    "queries_run": 1194,
+    "queries_run": 1214,
     "candidates_found": 1604,
-    "added_to_master": 879,
+    "added_to_master": 877,
     "rejected_or_deferred": 273
   },
   "entries": [
@@ -72,10 +73,10 @@
       "area": "Vallco Fashion Park (Wolfe Rd & I-280)",
       "address": "2074 Vallco Fashion Park, Cupertino, CA 95014",
       "coords": [
-        37.3263,
-        -122.0144
+        37.3275364,
+        -122.0137843
       ],
-      "coords_source": "official site JSON-LD",
+      "coords_source": "Official Cupertino page Get Directions link, re-read 2026-09-17",
       "cuisine": "Japanese teppanyaki / hibachi, sushi",
       "lunch_special": {
         "name": "Power Lunch - full 3-course hibachi meal, served in 45 minutes or less",
@@ -104,7 +105,7 @@
             "url": "https://www.benihana.com/menus/"
           }
         ],
-        "accessed": "2026-09-07"
+        "accessed": "2026-09-17"
       },
       "review_links": {
         "yelp": "https://www.yelp.com/biz/benihana-cupertino",
@@ -114,7 +115,51 @@
         "Chain location: the Power Lunch price is published on the Cupertino page, but the 45-minute guarantee is 'dining room only'.",
         "About 1.3 mi from 20387 Gillick Way - 25 min walk or a short ride; it is closer to the Stevens Creek & De Anza bus stop than to McClellan & Felton."
       ],
-      "distance_mi": 1.27
+      "distance_mi": 1.36,
+      "deal_audit": {
+        "checked_on": "2026-09-17",
+        "status": "complete",
+        "fields": {
+          "special": {
+            "status": "verified",
+            "value": "3-course Power Lunch",
+            "source_url": "https://www.benihana.com/locations/cupertino/",
+            "quote": "3-Course Power Lunch Starting at Just $15.95",
+            "source_type": "official"
+          },
+          "price": {
+            "status": "verified",
+            "value": "From $15.95",
+            "source_url": "https://www.benihana.com/locations/cupertino/",
+            "quote": "full 3-course hibachi meal from just $15.95",
+            "source_type": "official"
+          },
+          "schedule": {
+            "status": "verified",
+            "value": "Monday-Friday 11 AM-3 PM; dining room only",
+            "source_url": "https://www.benihana.com/locations/cupertino/",
+            "quote": "available Monday through Friday from 11am to 3pm in the dining room",
+            "source_type": "official"
+          },
+          "location": {
+            "status": "verified",
+            "value": "2074 Vallco Fashion Park, Cupertino, CA 95014",
+            "source_url": "https://www.benihana.com/locations/cupertino/",
+            "quote": "2074 Vallco Fashion Park, Cupertino, CA 95014",
+            "source_type": "official"
+          },
+          "hours": {
+            "status": "verified",
+            "value": "Sun-Wed 11 AM-10 PM; Thu-Sat 11 AM-11 PM",
+            "source_url": "https://www.benihana.com/locations/cupertino/",
+            "quote": "Sun - Wed, 11:00am - 10:00pm",
+            "source_type": "official"
+          }
+        },
+        "notes": "Starting price, not the price of every entree. Location page has differing takeout hours; dining hours are used.",
+        "price_basis": "per person"
+      },
+      "hours_open": "Sun-Wed 11 AM-10 PM; Thu-Sat 11 AM-11 PM"
     },
     {
       "id": "L02",
@@ -126,7 +171,7 @@
         37.3226,
         -122.01767
       ],
-      "coords_source": "OpenStreetMap node 2629332081 (Kong Tofu, same building block) - see flag",
+      "coords_source": "OpenStreetMap node 2629332081 (Kong Tofu, same building block) - see flag (approximate neighbouring block, not rooftop)",
       "cuisine": "Japanese BBQ (yakiniku)",
       "lunch_special": {
         "name": "Create Your Own Lunch Gyu-Combo",
@@ -134,7 +179,7 @@
         "price_to": 22.95,
         "days": "Monday-Friday (not weekends or holidays)",
         "window": "11:30 AM - 4:00 PM last seating",
-        "includes": "2 BBQ items $18.95 or 3 BBQ items $22.95, served with miso soup, lunch salad and rice; bowls $13.95-$16.95; ramen sets $14.95; value course for 2 $75"
+        "includes": "2 BBQ items $18.95 or 3 BBQ items $22.95, with miso soup, lunch salad and rice. Premium selections/add-ons may cost extra. The value-course price was not recoverable from the PDF text and is not asserted."
       },
       "hours_tuesday": "11:30 AM - 9:30 PM",
       "days_open": "Mon-Thu 11:30-21:30, Fri-Sat 11:30-22:00, Sun 11:30-21:30 (per the location page)",
@@ -155,7 +200,7 @@
             "url": "https://www.gyu-kaku.com/wp-content/uploads/2025/01/cp_lunch2411.pdf"
           }
         ],
-        "accessed": "2026-09-07"
+        "accessed": "2026-09-17"
       },
       "review_links": {
         "yelp": "https://www.yelp.com/search?find_desc=Gyu-Kaku&find_loc=Cupertino%2C+CA",
@@ -165,7 +210,51 @@
         "Address conflict: OpenStreetMap lists this Gyu-Kaku at 1920 Stevens Creek Blvd, the official page says 19620 Stevens Creek Blvd #150. The official page is used; distance is computed from the neighbouring verified node, so treat 1.0 mi as approximate.",
         "Premium All-You-Can-Eat is also weekday-priced (Mon-Thu to 8 PM), which can beat the lunch combo for big appetites."
       ],
-      "distance_mi": 0.96
+      "distance_mi": 0.96,
+      "deal_audit": {
+        "checked_on": "2026-09-17",
+        "status": "complete",
+        "fields": {
+          "special": {
+            "status": "verified",
+            "value": "Create Your Own Lunch Gyu-Combo",
+            "source_url": "https://www.gyu-kaku.com/wp-content/uploads/2025/01/cp_lunch2411.pdf",
+            "quote": "CREATE YOUR OWN LUNCH GYU-COMBO",
+            "source_type": "official"
+          },
+          "price": {
+            "status": "verified",
+            "value": "2 BBQ items $18.95; 3 BBQ items $22.95",
+            "source_url": "https://www.gyu-kaku.com/wp-content/uploads/2025/01/cp_lunch2411.pdf",
+            "quote": "2 BBQ ITEMS FOR 1 PERSON $1895; 3 BBQ ITEMS FOR 1 PERSON $2295",
+            "source_type": "official"
+          },
+          "schedule": {
+            "status": "verified",
+            "value": "Mon-Fri 11:30 AM-4 PM last seating; excludes holidays",
+            "source_url": "https://www.gyu-kaku.com/cupertino/",
+            "quote": "Mon–Fri 11:30AM–4PM (Last Seating) Not available weekends or holidays",
+            "source_type": "official"
+          },
+          "location": {
+            "status": "verified",
+            "value": "19620 Stevens Creek Blvd, #150, Cupertino, CA 95014",
+            "source_url": "https://www.gyu-kaku.com/cupertino/",
+            "quote": "19620 Stevens Creek Blvd, #150",
+            "source_type": "official"
+          },
+          "hours": {
+            "status": "verified",
+            "value": "Sun-Thu 11:30 AM-9:30 PM; Fri-Sat 11:30 AM-10 PM (last seating)",
+            "source_url": "https://www.gyu-kaku.com/cupertino/",
+            "quote": "MON–THU: 11:30AM–9:30PM (Last Seating)",
+            "source_type": "official"
+          }
+        },
+        "notes": "PDF extracts superscript cents as 1895 / 2295; represented as $18.95 / $22.95. Location page still links this 2025-path PDF. Distance remains an approximate neighbouring-block coordinate.",
+        "price_basis": "per person"
+      },
+      "hours_open": "Sun-Thu 11:30 AM-9:30 PM; Fri-Sat 11:30 AM-10 PM (last seating)"
     },
     {
       "id": "L03",
@@ -1598,12 +1687,12 @@
       "coords_source": "Tripadvisor JSON-LD",
       "cuisine": "Japanese fusion / izakaya",
       "lunch_special": {
-        "name": "Lunch service (no priced special found)",
-        "price_from": null,
-        "price_to": null,
+        "name": "Published lunch menu: donburi and meal sets",
+        "price_from": 17.5,
+        "price_to": 29.5,
         "days": "Tuesday-Saturday (closed Monday; Sunday dinner only)",
         "window": "11:15 AM - 1:15 PM",
-        "includes": "OpenTable and Yelp agree on a 2-hour lunch window. No lunch-special price published."
+        "includes": "Tori Soboro Don (soy-flavored ground chicken over rice), Mabo Tofu Don and Tofu Nanban Don $17.50. Meal sets include rice, miso soup and salad; Buta Shoga Yaki Set $20.50, Gyutan Katsu Set $29.50. This is a named lunch menu, not a proven discount against dinner prices."
       },
       "hours_tuesday": "11:15 AM - 1:15 PM, 6:00 PM - 8:30 PM",
       "days_open": "Mon closed; Tue-Thu lunch 11:15-13:15 dinner 18:00-20:30; Fri-Sat lunch 11:15-13:15 dinner 17:30-21:00; Sun dinner 17:30-20:30",
@@ -1613,7 +1702,7 @@
         "note": "Lunch ends 1:15 PM. Fits an 11:15 seating before the 11:50 AM walk-out."
       },
       "verification": {
-        "level": "listing",
+        "level": "official",
         "sources": [
           {
             "label": "OpenTable hours",
@@ -1622,18 +1711,75 @@
           {
             "label": "Yelp hours",
             "url": "https://www.yelp.com/biz/gochi-cupertino-cupertino"
+          },
+          {
+            "label": "Pass 24 primary source — Lunch menu donburi and meal sets",
+            "url": "https://www.gochifusiontapas.com/wp-content/uploads/2026/02/cpt_menus.pdf"
+          },
+          {
+            "label": "Pass 24 primary source — Tuesday-Saturday lunch 11:15 AM-1:15 PM; Mon closed; Sun dinner only",
+            "url": "https://www.gochifusiontapas.com/cupertino-gochi-fusion-tapas/"
+          },
+          {
+            "label": "Pass 24 primary source — 19980 Homestead Rd, Cupertino",
+            "url": "https://direct.chownow.com/order/23764/locations/34864"
           }
         ],
-        "accessed": "2026-09-07"
+        "accessed": "2026-09-17"
       },
       "review_links": {
         "yelp": "https://www.yelp.com/biz/gochi-cupertino-cupertino"
       },
       "flags": [
-        "No lunch price published. Phone (408) 725-0542."
+        "Official PDF includes a lunch menu; earlier no-price-found claim superseded 2026-09-17.",
+        "Menu adds a 4% processing fee for credit-card payments; no fee for cash."
       ],
       "distance_mi": 1.7,
-      "phone": "(408) 725-0542"
+      "phone": "(408) 725-0542",
+      "deal_audit": {
+        "checked_on": "2026-09-17",
+        "status": "complete",
+        "fields": {
+          "special": {
+            "status": "verified",
+            "value": "Lunch menu donburi and meal sets",
+            "source_url": "https://www.gochifusiontapas.com/wp-content/uploads/2026/02/cpt_menus.pdf",
+            "quote": "LUNCH MENU; MEAL SET",
+            "source_type": "official"
+          },
+          "price": {
+            "status": "verified",
+            "value": "Lunch entrees $17.50-$29.50 before card fee",
+            "source_url": "https://www.gochifusiontapas.com/wp-content/uploads/2026/02/cpt_menus.pdf",
+            "quote": "Soy flavor ground chicken over rice 17.50; Panko fried beef tongue cutlet 29.50",
+            "source_type": "official"
+          },
+          "schedule": {
+            "status": "verified",
+            "value": "Tuesday-Saturday lunch 11:15 AM-1:15 PM; Mon closed; Sun dinner only",
+            "source_url": "https://www.gochifusiontapas.com/cupertino-gochi-fusion-tapas/",
+            "quote": "Tuesday 11:15-1:15/6:00-8:30",
+            "source_type": "official"
+          },
+          "location": {
+            "status": "verified",
+            "value": "19980 Homestead Rd, Cupertino",
+            "source_url": "https://direct.chownow.com/order/23764/locations/34864",
+            "quote": "19980 Homestead Rd",
+            "source_type": "official_linked_ordering"
+          },
+          "hours": {
+            "status": "verified",
+            "value": "Mon closed; Tue-Thu lunch 11:15-13:15 dinner 18:00-20:30; Fri-Sat lunch 11:15-13:15 dinner 17:30-21:00; Sun dinner 17:30-20:30",
+            "source_url": "https://www.gochifusiontapas.com/cupertino-gochi-fusion-tapas/",
+            "quote": "MON | CLOSED; Sunday 5:30-8:30",
+            "source_type": "official"
+          }
+        },
+        "notes": "Lunch hours from the restaurant’s Cupertino page; address from its linked ChowNow location. Named lunch menu, not a claimed markdown. PDF states 4% credit-card processing fee; no fee for cash.",
+        "price_basis": "per person"
+      },
+      "hours_open": "Mon closed; Tue-Thu lunch 11:15-13:15 dinner 18:00-20:30; Fri-Sat lunch 11:15-13:15 dinner 17:30-21:00; Sun dinner 17:30-20:30"
     },
     {
       "id": "L32",
@@ -3702,19 +3848,19 @@
       "name": "Lotus Thai Bistro",
       "city": "Palo Alto",
       "area": "California Ave",
-      "address": "425 California Avenue, Palo Alto, CA",
+      "address": "425 California Avenue, Palo Alto, CA 94306",
       "coords": null,
       "cuisine": "Thai",
       "lunch_special": {
-        "name": "Lunch specials Mon-Sat (official; prices TBD)",
-        "price_from": null,
-        "price_to": null,
+        "name": "Lunch menu: Thai curries, sauteed dishes and Murtabak",
+        "price_from": 16.99,
+        "price_to": 18.99,
         "days": "Monday-Saturday",
-        "window": "daypart hours not published",
-        "includes": "Official site confirms lunch specials Mon-Sat and dinner; lunch menu is a linked PDF that was not fetched."
+        "window": "Lunch clock times not published in the reviewed official sources",
+        "includes": "Selected curry/sauteed lunch entrees: tofu, pork or chicken $16.99; beef, duck, shrimp, salmon, cod or crispy pork belly $18.99. Jasmine rice included for curries/sauteed dishes. Murtabak $18.99. This range excludes separately priced Street Food Specials, sides and drinks."
       },
       "hours_tuesday": "open Tuesday (hours of day not published)",
-      "days_open": "Mon-Sat open; Sun closed; closed Labor Day Mon 9/7/2026 (day before the trip)",
+      "days_open": "Monday-Saturday lunch and dinner confirmed; Sunday schedule not explicitly captured",
       "open_on_trip_date": true,
       "fits_return_bus": {
         "ok": false,
@@ -3726,19 +3872,62 @@
           {
             "label": "Lotus Thai Bistro official site - lunch specials Mon-Sat, address, phone",
             "url": "https://www.lotusthaibistro.com/"
+          },
+          {
+            "label": "Pass 24 primary source — Lunch Special / Thai Curry / Sauteed Style",
+            "url": "https://drive.google.com/file/d/1q2tRpy3m6ns8K-2ctjFAJgh_MitJKDtc/view"
           }
         ],
-        "accessed": "2026-09-07"
+        "accessed": "2026-09-17"
       },
       "review_links": {
         "yelp": "https://www.yelp.com/search?find_desc=Lotus+Thai+Bistro&find_loc=Palo+Alto%2C+CA",
         "google_maps": "https://www.google.com/maps/search/?api=1&query=Lotus+Thai+Bistro+425+California+Ave+Palo+Alto"
       },
       "flags": [
-        "Lunch prices and daypart hours TBD - check the Toast ordering page or phone (650) 289-0907."
+        "Official linked document is titled Lunch Menu 2025; linked live on 2026-09-17 but no effective-through date.",
+        "Lunch hours remain unknown. Removed duplicate L650 and its unsupported $13.95-$16.95 band and 11 AM-3 PM window."
       ],
       "distance_mi": null,
-      "phone": "(650) 289-0907"
+      "phone": "(650) 289-0907",
+      "deal_audit": {
+        "checked_on": "2026-09-17",
+        "status": "partial",
+        "fields": {
+          "special": {
+            "status": "verified",
+            "value": "Lunch Special / Thai Curry / Sauteed Style",
+            "source_url": "https://drive.google.com/file/d/1q2tRpy3m6ns8K-2ctjFAJgh_MitJKDtc/view",
+            "quote": "LUNCH MENU; Lunch Special",
+            "source_type": "official"
+          },
+          "price": {
+            "status": "verified",
+            "value": "Selected curries/sauteed dishes $16.99-$18.99; Murtabak $18.99",
+            "source_url": "https://drive.google.com/file/d/1q2tRpy3m6ns8K-2ctjFAJgh_MitJKDtc/view",
+            "quote": "Soft Tofu, Fried Tofu, Pork, or Chicken 16.99",
+            "source_type": "official"
+          },
+          "schedule": {
+            "status": "unknown",
+            "value": "Monday-Saturday confirmed on official homepage; clock times not published"
+          },
+          "location": {
+            "status": "verified",
+            "value": "425 California Avenue, Palo Alto, CA 94306",
+            "source_url": "https://drive.google.com/file/d/1q2tRpy3m6ns8K-2ctjFAJgh_MitJKDtc/view",
+            "quote": "425 California Avenue, Palo Alto, CA 94306",
+            "source_type": "official"
+          },
+          "hours": {
+            "status": "unknown",
+            "value": "Monday-Saturday lunch and dinner confirmed; operating clock times not published"
+          }
+        },
+        "notes": "Primary document reached through the homepage’s lunch specials link. Prices verified, but incomplete clock times prevent full verification.",
+        "price_basis": "per person"
+      },
+      "hours_open": "Monday-Saturday lunch and dinner confirmed; operating clock times not published"
     },
     {
       "id": "L77",
@@ -8877,38 +9066,38 @@
       "distance_mi": null
     },
     {
-      "address": "510 Lawrence Expy, Sunnyvale, CA 94085",
+      "address": "510 Lawrence Expy, Ste 110, Sunnyvale, CA 94085",
       "area": "Lawrence Expy",
       "city": "Sunnyvale",
       "cuisine": "American (bar & grill)",
-      "days_open": "Tue-Wed 11 AM - 9 PM; Thu-Fri 11 AM - 10 PM; Sat 11:30 AM - 9 PM; Sun-Mon closed",
+      "days_open": "Sun-Mon closed; Tue-Wed 11 AM-9 PM; Fri 11 AM-10 PM; Sat 11:30 AM-9 PM. Thursday closes 9 PM in footer / 10 PM in summer banner",
       "fits_return_bus": {
         "note": "OPEN on the trip Tuesday with a tri-tip special; but ~4 mi from Cupertino.",
         "ok": false
       },
       "flags": [
-        "'Tri Tip Tuesday' wording/pricing is one Reddit comment (Nov 2025) - not an official post.",
-        "Closed Sunday AND Monday - Tuesday opening day. Yelp hours undated in snippet."
+        "Official page conflicts with itself: Thursday summer hours close 10 PM but footer says 9 PM.",
+        "Tuesday lunch cutoff not stated. Not eligible for fully verified deal view until schedule is complete."
       ],
       "hours_tuesday": "11:00 AM - 9:00 PM",
       "lunch_special": {
-        "days": "Tuesday (reviewer wording)",
-        "includes": "Tri-tip special mentioned by one reviewer; price unknown.",
-        "name": "Reviewer-mention 'Tri Tip Tuesday' (no price)",
-        "price_from": null,
-        "price_to": null,
-        "window": "11:00 AM - 9:00 PM"
+        "name": "Tuesday lunch special: Santa Maria Tri Tip Sandwich",
+        "price_from": 14.5,
+        "price_to": 16.95,
+        "days": "Tuesday",
+        "window": "Lunch special cutoff not published; do not substitute business hours",
+        "includes": "Barbecued choice tri-tip, thin sliced with salsa on a French roll. Regular 5oz $14.50; half-pound $16.95. Other weekday lunch specials also listed; this price range is only the Tuesday sandwich."
       },
       "name": "St. John's Bar & Grill",
       "open_on_trip_date": true,
-      "phone": "(408) 244-0189",
+      "phone": "(408) 738-8515",
       "review_links": {
         "google_maps": "https://www.google.com/maps/search/?api=1&query=St+John+Bar+Grill+510+Lawrence+Expy+Sunnyvale",
         "yelp": "https://www.yelp.com/biz/st-johns-bar-and-grill-sunnyvale-2?start=40"
       },
       "verification": {
-        "accessed": "2026-09-07",
-        "level": "review",
+        "accessed": "2026-09-17",
+        "level": "official",
         "sources": [
           {
             "label": "Reddit r/downtownsunnyvale - favorite lunch specials thread (Tri Tip Tuesday)",
@@ -8917,13 +9106,55 @@
           {
             "label": "Yelp - St. John's Bar & Grill Sunnyvale (address, hours, phone)",
             "url": "https://www.yelp.com/biz/st-johns-bar-and-grill-sunnyvale-2?start=40"
+          },
+          {
+            "label": "Pass 24 primary source — Tuesday Santa Maria Tri Tip Sandwich lunch special",
+            "url": "https://stjohnsgrill.com/"
           }
         ]
       },
       "id": "L184",
       "coords": null,
       "added_in": "batch5b_sunnyvale_cupertino_mv.json",
-      "distance_mi": null
+      "distance_mi": null,
+      "deal_audit": {
+        "checked_on": "2026-09-17",
+        "status": "partial",
+        "fields": {
+          "special": {
+            "status": "verified",
+            "value": "Tuesday Santa Maria Tri Tip Sandwich lunch special",
+            "source_url": "https://stjohnsgrill.com/",
+            "quote": "TRITIP TUESDAY: Santa Maria Tri Tip Sandwich",
+            "source_type": "official"
+          },
+          "price": {
+            "status": "verified",
+            "value": "$14.50 regular 5oz; $16.95 half pound",
+            "source_url": "https://stjohnsgrill.com/",
+            "quote": "Regular (5oz) $14.50 half pounder $16.95",
+            "source_type": "official"
+          },
+          "schedule": {
+            "status": "unknown",
+            "value": "Tuesday confirmed; lunch cutoff unknown"
+          },
+          "location": {
+            "status": "verified",
+            "value": "510 Lawrence Expy, Ste 110, Sunnyvale, CA 94085",
+            "source_url": "https://stjohnsgrill.com/",
+            "quote": "510 Lawrence Expy. Ste.110 Sunnyvale, CA 94085",
+            "source_type": "official"
+          },
+          "hours": {
+            "status": "conflicting",
+            "value": "Sun-Mon closed; Tue-Wed 11 AM-9 PM; Fri 11 AM-10 PM; Sat 11:30 AM-9 PM. Thursday closes 9 PM in footer / 10 PM in summer banner"
+          }
+        },
+        "notes": "Restaurant confirms priced lunch special, but the lunch cutoff and Thursday operating hours are unresolved.",
+        "price_basis": "per person"
+      },
+      "hours_open": "Sun-Mon closed; Tue-Wed 11 AM-9 PM; Fri 11 AM-10 PM; Sat 11:30 AM-9 PM. Thursday closes 9 PM in footer / 10 PM in summer banner"
     },
     {
       "address": "139 S Murphy Ave, Sunnyvale, CA 94086",
@@ -12484,15 +12715,15 @@
       "address": "180 El Camino Real, Stanford Shopping Center, Palo Alto, CA 94304",
       "area": "Stanford Shopping Center",
       "cuisine": "Japanese",
-      "days_open": "Daily",
+      "days_open": "Sun-Thu 11:30 AM-9:30 PM; Fri-Sat 11:30 AM-10 PM",
       "hours_tuesday": "11:30 AM - 9:30 PM",
       "lunch_special": {
-        "name": "Weekday lunch specials (reviewer-confirmed)",
-        "price_from": null,
-        "price_to": null,
-        "days": "weekday lunch",
-        "window": "11:30 AM onward",
-        "includes": "Yelp review: 'Great weekday lunch specials and good sushi.' No published special price captured."
+        "name": "Lunch Specials $16-$28 Mon-Fri 11:30 AM-3 PM",
+        "price_from": 16.0,
+        "price_to": 28.0,
+        "days": "Monday-Friday",
+        "window": "11:30 AM - 3:00 PM",
+        "includes": "Official sushiroku.com lunch specials: Hand Roll Combo $19 Poke Bowl $19 Chicken $17 Beef $19 Salmon $18 Spicy Pork Belly Fried Rice $19 Fried Rice $16 Hakata Ramen $18 Sushi Fix $28 Chirashi $27 plus add-ons."
       },
       "open_on_trip_date": true,
       "fits_return_bus": {
@@ -12500,7 +12731,8 @@
         "note": "Stanford Shopping Center - off the return corridor."
       },
       "flags": [
-        "April 2024 opening coverage said dinner-only with lunch 'soon'; current mall + Yelp listings show lunch from 11:30 AM daily - the launch-era dinner-only text is outdated."
+        "L649 was a duplicate of this same Stanford Shopping Center location and was consolidated in pass 24.",
+        "Distance not geocoded; do not infer inclusion in a strict mileage filter from the city name."
       ],
       "phone": "(650) 507-2100",
       "review_links": {
@@ -12508,8 +12740,8 @@
         "google_maps": "https://www.google.com/maps/search/?api=1&query=Sushi+Roku+Stanford+Shopping+Center+Palo+Alto"
       },
       "verification": {
-        "level": "review",
-        "accessed": "2026-09-07",
+        "level": "official",
+        "accessed": "2026-09-17",
         "sources": [
           {
             "label": "Simon (Stanford Shopping Center official) - Sushi Roku (address, phone, Mo-Th 11:30-9:30, Fr-Sa 11:30-10, Su 11:30-9:30)",
@@ -12522,13 +12754,65 @@
           {
             "label": "The SF Peninsula listing - lunch + dinner Sun-Thu 11:30-9:30",
             "url": "https://www.thesanfranciscopeninsula.com/listing/sushi-roku/5403/"
+          },
+          {
+            "label": "Pass 24 primary source — Lunch Specials: sushi, donburi, fried rice and ramen",
+            "url": "https://www.sushiroku.com/menu/lunch-specials-palo-alto/"
+          },
+          {
+            "label": "Pass 24 primary source — 180 El Camino Real, Palo Alto, CA 94304",
+            "url": "https://www.sushiroku.com/location/palo-alto/"
           }
         ]
       },
       "id": "L260",
       "coords": null,
       "added_in": "batch7a.json",
-      "distance_mi": null
+      "distance_mi": null,
+      "deal_audit": {
+        "checked_on": "2026-09-17",
+        "status": "complete",
+        "fields": {
+          "special": {
+            "status": "verified",
+            "value": "Lunch Specials: sushi, donburi, fried rice and ramen",
+            "source_url": "https://www.sushiroku.com/menu/lunch-specials-palo-alto/",
+            "quote": "Lunch Specials",
+            "source_type": "official"
+          },
+          "price": {
+            "status": "verified",
+            "value": "Entrees $16-$28; add-ons excluded",
+            "source_url": "https://www.sushiroku.com/menu/lunch-specials-palo-alto/",
+            "quote": "Fried Rice $16; Sushi “Fix” Nigiri/Sashimi $28",
+            "source_type": "official"
+          },
+          "schedule": {
+            "status": "verified",
+            "value": "Monday-Friday 11:30 AM-3 PM",
+            "source_url": "https://www.sushiroku.com/menu/lunch-specials-palo-alto/",
+            "quote": "Monday-Friday 11:30AM-3:00PM",
+            "source_type": "official"
+          },
+          "location": {
+            "status": "verified",
+            "value": "180 El Camino Real, Palo Alto, CA 94304",
+            "source_url": "https://www.sushiroku.com/location/palo-alto/",
+            "quote": "180 El Camino Real, Palo Alto, CA 94304",
+            "source_type": "official"
+          },
+          "hours": {
+            "status": "verified",
+            "value": "Sun-Thu 11:30 AM-9:30 PM; Fri-Sat 11:30 AM-10 PM",
+            "source_url": "https://www.sushiroku.com/location/palo-alto/",
+            "quote": "Sunday-Thursday | 11:30AM-9:30PM",
+            "source_type": "official"
+          }
+        },
+        "notes": "Official location hours are continuous service, not the old duplicate row’s split-day or weekend dinner-only hours. Lowest entree excludes the $3 soup add-on.",
+        "price_basis": "per person"
+      },
+      "hours_open": "Sun-Thu 11:30 AM-9:30 PM; Fri-Sat 11:30 AM-10 PM"
     },
     {
       "name": "Rara",
@@ -26897,12 +27181,12 @@
         "name": "Lunch BBQ combos - Lunch BBQ For Two $60, Lunch BBQ For Three $99",
         "price_from": 60.0,
         "price_to": 99.0,
-        "days": "weekday lunch service (Yelp lists the 11:30 AM-2:30 PM block every day)",
-        "window": "11:30 AM - 2:15 PM (the restaurant's own lunch-menu page states 'lunch specials from 11:30am to 2:15pm')",
-        "includes": "Lunch BBQ For Two $60 - 8 oz marinated short rib / lightly marinated short rib / prime unmarinated short rib (+$35 options listed). Lunch BBQ For Three $99 - 16 oz of the same cuts. All side dishes and rice included. 'No substitutions allowed for Lunch Combos.'"
+        "days": "Monday-Friday only",
+        "window": "11:30 AM-2:15 PM",
+        "includes": "For two $60: choose two soup/noodle/bibimbap options and one meat (6oz black porkbelly or 5oz seasoned shortrib pieces). For three $99: choose three options and one meat (12oz porkbelly or 10oz seasoned shortrib pieces). Side dishes and rice included. Listed premium short-rib upgrades +$35. No substitutions."
       },
       "hours_tuesday": "11:30 AM - 2:30 PM and 5:00 PM - 9:00 PM",
-      "days_open": "Mon-Thu 11:30-14:30 and 17:00-21:00; Fri-Sat 11:30-14:30 and 17:00-22:00 (Yelp business page; Zmenu gives a 9:30 PM close Mon-Fri)",
+      "days_open": "Daily lunch 11:30 AM-2:30 PM (last call 2:15); dinner Sun-Thu 5-9 PM, Fri-Sat 5-10 PM",
       "open_on_trip_date": true,
       "fits_return_bus": {
         "ok": true,
@@ -26918,21 +27202,69 @@
           {
             "label": "Yelp business page - Chungdam, 3180 El Camino Real: Tue 11:30 am-2:30 pm and 5:00 pm-9:00 pm, chungdamsv.com, phone",
             "url": "https://www.yelp.com/biz/chungdam-santa-clara-6"
+          },
+          {
+            "label": "Pass 24 primary source — Daily lunch 11:30 AM-2:30 PM (last call 2:15); dinner Sun-Thu 5-9 PM, Fri-Sat 5-10 PM",
+            "url": "https://chungdamsv.com/"
           }
         ],
-        "accessed": "2026-09-11"
+        "accessed": "2026-09-17"
       },
       "review_links": {
         "yelp": "https://www.yelp.com/biz/chungdam-santa-clara-6",
         "google_maps": "https://www.google.com/maps/search/?api=1&query=Chungdam+3180+El+Camino+Real+Santa+Clara"
       },
       "flags": [
-        "Prices are per combo for two / three people, not per head - a solo diner cannot order them.",
-        "The restaurant's own lunch page says the specials run to 2:15 PM while Yelp prints the lunch block to 2:30 PM; both are printed."
+        "Prices are per combo for two or three, not per person. Premium short-rib upgrades +$35.",
+        "Lunch combo cutoff 2:15 PM differs from service close 2:30 PM; the official home page explicitly gives last call at 2:15 PM."
       ],
       "id": "L553",
       "added_in": "batch11c_santaclara_sanjose.json",
-      "distance_mi": 5.01
+      "distance_mi": 5.01,
+      "deal_audit": {
+        "checked_on": "2026-09-17",
+        "status": "complete",
+        "fields": {
+          "special": {
+            "status": "verified",
+            "value": "Lunch BBQ For Two / For Three",
+            "source_url": "https://chungdamsv.com/lunch-menu",
+            "quote": "Lunch BBQ For Two ($60)",
+            "source_type": "official"
+          },
+          "price": {
+            "status": "verified",
+            "value": "$60 for two; $99 for three; upgrades +$35",
+            "source_url": "https://chungdamsv.com/lunch-menu",
+            "quote": "Lunch BBQ For Three ($99)",
+            "source_type": "official"
+          },
+          "schedule": {
+            "status": "verified",
+            "value": "Monday-Friday 11:30 AM-2:15 PM",
+            "source_url": "https://chungdamsv.com/lunch-menu",
+            "quote": "Only Available Mondays-Fridays 11:30am-2:15pm",
+            "source_type": "official"
+          },
+          "location": {
+            "status": "verified",
+            "value": "3180 El Camino Real, Santa Clara, CA 95051",
+            "source_url": "https://chungdamsv.com/lunch-menu",
+            "quote": "3180 El Camino Real, Santa Clara, CA 95051",
+            "source_type": "official"
+          },
+          "hours": {
+            "status": "verified",
+            "value": "Daily lunch 11:30 AM-2:30 PM (last call 2:15); dinner Sun-Thu 5-9 PM, Fri-Sat 5-10 PM",
+            "source_url": "https://chungdamsv.com/",
+            "quote": "( Open 7 Days )",
+            "source_type": "official"
+          }
+        },
+        "notes": "Group-combo totals are not per-person prices. Lunch special is not offered at weekend lunch.",
+        "price_basis": "per combo (2 or 3 people)"
+      },
+      "hours_open": "Daily lunch 11:30 AM-2:30 PM (last call 2:15); dinner Sun-Thu 5-9 PM, Fri-Sat 5-10 PM"
     },
     {
       "name": "Kunjip",
@@ -31591,102 +31923,6 @@
       },
       "flags": [],
       "id": "L648",
-      "coords": null,
-      "added_in": "batch13b_cupertino_core_100_verified.json",
-      "distance_mi": null
-    },
-    {
-      "name": "Sushi Roku Palo Alto Verified",
-      "city": "Palo Alto",
-      "area": "Stanford Shopping Center",
-      "address": "180 El Camino Real Ste 700A, Palo Alto, CA 94304",
-      "cuisine": "Japanese, sushi",
-      "phone": "(650) 507-2100",
-      "lunch_special": {
-        "name": "Lunch Specials $16-$28 Mon-Fri 11:30 AM-3 PM",
-        "price_from": 16.0,
-        "price_to": 28.0,
-        "days": "Monday-Friday",
-        "window": "11:30 AM - 3:00 PM",
-        "includes": "Official sushiroku.com lunch specials: Hand Roll Combo $19 Poke Bowl $19 Chicken $17 Beef $19 Salmon $18 Spicy Pork Belly Fried Rice $19 Fried Rice $16 Hakata Ramen $18 Sushi Fix $28 Chirashi $27 plus add-ons."
-      },
-      "hours_tuesday": "11:30 AM - 3:00 PM; 5:30 PM - 9:30 PM",
-      "days_open": "Monday-Friday lunch 11:30 AM-3:00 PM dinner 5:30-9:30 PM Saturday-Sunday dinner only 5:30-9:30 PM",
-      "open_on_trip_date": true,
-      "fits_return_bus": {
-        "ok": false,
-        "note": "Palo Alto beyond short return."
-      },
-      "verification": {
-        "level": "official",
-        "sources": [
-          {
-            "label": "Sushi Roku official lunch specials $16-$28 Mon-Fri 11:30-3",
-            "url": "https://www.sushiroku.com/menu/lunch-specials-palo-alto/"
-          },
-          {
-            "label": "Sushi Roku Palo Alto location page with address",
-            "url": "https://www.sushiroku.com/location/palo-alto/"
-          }
-        ],
-        "accessed": "2026-09-11"
-      },
-      "review_links": {
-        "yelp": "https://www.yelp.com/biz/sushi-roku-palo-alto",
-        "google_maps": "https://www.google.com/maps/search/?api=1&query=Sushi+Roku+180+El+Camino+Real+Palo+Alto"
-      },
-      "flags": [
-        "Already in master as Sushi Roku Palo Alto; official verification for $16-$28 range."
-      ],
-      "id": "L649",
-      "coords": null,
-      "added_in": "batch13b_cupertino_core_100_verified.json",
-      "distance_mi": null
-    },
-    {
-      "name": "Lotus Thai Bistro Palo Alto Official",
-      "city": "Palo Alto",
-      "area": "California Ave",
-      "address": "425 California Ave, Palo Alto, CA 94306",
-      "cuisine": "Thai",
-      "phone": "(650) 289-0907",
-      "lunch_special": {
-        "name": "Lunch specials Mon-Sat",
-        "price_from": 13.95,
-        "price_to": 16.95,
-        "days": "Monday-Saturday",
-        "window": "11:00 AM - 3:00 PM",
-        "includes": "Official lotusthaibistro.com family owned conveniently located Palo Alto Business District California Ave open Monday-Saturday for lunch specials and dinner catering services."
-      },
-      "hours_tuesday": "11:00 AM - 3:00 PM; 5:00 PM - 9:30 PM",
-      "days_open": "Monday-Saturday 11:00 AM-3:00 PM 5:00-9:30 PM Sunday closed",
-      "open_on_trip_date": true,
-      "fits_return_bus": {
-        "ok": false,
-        "note": "Palo Alto California Ave."
-      },
-      "verification": {
-        "level": "official",
-        "sources": [
-          {
-            "label": "Lotus Thai Bistro official homepage lunch specials Mon-Sat",
-            "url": "https://www.lotusthaibistro.com/home"
-          },
-          {
-            "label": "Lotus Thai Bistro Palo Alto Online Best Thai 2025 lunch specials Mon-Fri",
-            "url": "https://www.paloaltoonline.com/best-of/2025-best-of/2025/07/19/best-of-2025-restaurants/"
-          }
-        ],
-        "accessed": "2026-09-11"
-      },
-      "review_links": {
-        "yelp": "https://www.yelp.com/biz/lotus-thai-bistro-palo-alto",
-        "google_maps": "https://www.google.com/maps/search/?api=1&query=Lotus+Thai+Bistro+425+California+Ave+Palo+Alto"
-      },
-      "flags": [
-        "Already in master; official verification."
-      ],
-      "id": "L650",
       "coords": null,
       "added_in": "batch13b_cupertino_core_100_verified.json",
       "distance_mi": null
@@ -43047,6 +43283,7 @@
     }
   ],
   "transit_fit_note": "The return chain leaves 20387 Gillick Way at 11:50 AM for the 2:40 PM arrival, or at 12:20 PM for the 3:18 PM arrival. Every lunch stop in this radius has to fit one of those two departures, so the useful lunch window is roughly 11:15 AM - 12:10 PM (or - 12:40 PM).",
-  "added_to_master": 5,
-  "pass23_note": "Pass 23 (2026-09-17): 5 net-new rows (L883-L887), 8 duplicate rows removed with evidence (L106, L666, L682, L684, L685, L690, L691, L694 - wrong-address batch-13b twins), 9 rows upgraded/corrected from direct official fetches."
+  "added_to_master": 877,
+  "pass23_note": "Pass 23 (2026-09-17): 5 net-new rows (L883-L887), 8 duplicate rows removed with evidence (L106, L666, L682, L684, L685, L690, L691, L694 - wrong-address batch-13b twins), 9 rows upgraded/corrected from direct official fetches.",
+  "pass24_note": "2026-09-17: 20 discovery queries; 100 existing-source HTTP attempts failed (TLS), not 100 new restaurants. Targeted page-reading recovered seven field-level deal audits: five complete, two partial. Removed duplicate L649 -> L260 and L650 -> L76. Zero net-new businesses; master 879 -> 877. See research.html and docs/REVIEW_2026-09-17_pass24.md."
 }

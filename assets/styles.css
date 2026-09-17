@@ -207,3 +207,26 @@ p code, li code { background: #eef1f5; color: var(--ink); padding: 1px 5px; bord
 .dealcard .links { margin-top: 2px; }
 
 @media print { .pagebar { display: none; } }
+
+/* Lunch discovery: focus, readable evidence, and small-screen navigation. */
+.skip-link { position:absolute; left:1rem; top:-100px; background:#fff; color:#111; padding:.75rem; z-index:100; }
+.skip-link:focus { top:1rem; }
+:focus-visible { outline:3px solid #d97706; outline-offset:3px; }
+body[data-page="lunch"] .deals-top { margin-top:1.5rem; }
+body[data-page="lunch"] .dealcard h3 { margin:.75rem 0 .2rem; }
+body[data-page="lunch"] .dealcard .price { margin-top:.6rem; }
+body[data-page="lunch"] .ver details { margin:.65rem 0; min-width:14rem; }
+body[data-page="lunch"] .ver details p { margin:.7rem 0; }
+body[data-page="lunch"] .ver q { color:#475569; }
+summary { cursor:pointer; font-weight:600; }
+.research-notice { border-left:4px solid #d97706; padding:1rem 1.25rem; background:#fff8eb; margin:1.5rem 0; }
+.evidence-table td { vertical-align:top; min-width:9rem; }
+.evidence-table td:last-child { min-width:20rem; }
+.research-page section { margin:2rem 0; }
+.research-page .scrollpanel { overflow:auto; }
+@media (max-width:700px) {
+  .pagebar { flex-wrap:wrap; gap:.75rem; }
+  body[data-page="lunch"] .filters { align-items:stretch; }
+  body[data-page="lunch"] .filters input[type="search"] { width:100%; }
+  .research-page h1 { font-size:2rem; }
+}

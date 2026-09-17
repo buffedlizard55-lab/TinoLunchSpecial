@@ -1,0 +1,36 @@
+id,name,city,checked_on,audit,field,status,value,excerpt,source_url
+L01,Benihana,Cupertino,2026-09-17,complete,special,verified,3-course Power Lunch,3-Course Power Lunch Starting at Just $15.95,https://www.benihana.com/locations/cupertino/
+L01,Benihana,Cupertino,2026-09-17,complete,price,verified,From $15.95,full 3-course hibachi meal from just $15.95,https://www.benihana.com/locations/cupertino/
+L01,Benihana,Cupertino,2026-09-17,complete,schedule,verified,Monday-Friday 11 AM-3 PM; dining room only,available Monday through Friday from 11am to 3pm in the dining room,https://www.benihana.com/locations/cupertino/
+L01,Benihana,Cupertino,2026-09-17,complete,location,verified,"2074 Vallco Fashion Park, Cupertino, CA 95014","2074 Vallco Fashion Park, Cupertino, CA 95014",https://www.benihana.com/locations/cupertino/
+L01,Benihana,Cupertino,2026-09-17,complete,hours,verified,Sun-Wed 11 AM-10 PM; Thu-Sat 11 AM-11 PM,"Sun - Wed, 11:00am - 10:00pm",https://www.benihana.com/locations/cupertino/
+L02,Gyu-Kaku Japanese BBQ,Cupertino,2026-09-17,complete,special,verified,Create Your Own Lunch Gyu-Combo,CREATE YOUR OWN LUNCH GYU-COMBO,https://www.gyu-kaku.com/wp-content/uploads/2025/01/cp_lunch2411.pdf
+L02,Gyu-Kaku Japanese BBQ,Cupertino,2026-09-17,complete,price,verified,2 BBQ items $18.95; 3 BBQ items $22.95,2 BBQ ITEMS FOR 1 PERSON $1895; 3 BBQ ITEMS FOR 1 PERSON $2295,https://www.gyu-kaku.com/wp-content/uploads/2025/01/cp_lunch2411.pdf
+L02,Gyu-Kaku Japanese BBQ,Cupertino,2026-09-17,complete,schedule,verified,Mon-Fri 11:30 AM-4 PM last seating; excludes holidays,Mon–Fri 11:30AM–4PM (Last Seating) Not available weekends or holidays,https://www.gyu-kaku.com/cupertino/
+L02,Gyu-Kaku Japanese BBQ,Cupertino,2026-09-17,complete,location,verified,"19620 Stevens Creek Blvd, #150, Cupertino, CA 95014","19620 Stevens Creek Blvd, #150",https://www.gyu-kaku.com/cupertino/
+L02,Gyu-Kaku Japanese BBQ,Cupertino,2026-09-17,complete,hours,verified,Sun-Thu 11:30 AM-9:30 PM; Fri-Sat 11:30 AM-10 PM (last seating),MON–THU: 11:30AM–9:30PM (Last Seating),https://www.gyu-kaku.com/cupertino/
+L31,Gochi Japanese Fusion Tapas,Cupertino,2026-09-17,complete,special,verified,Lunch menu donburi and meal sets,LUNCH MENU; MEAL SET,https://www.gochifusiontapas.com/wp-content/uploads/2026/02/cpt_menus.pdf
+L31,Gochi Japanese Fusion Tapas,Cupertino,2026-09-17,complete,price,verified,Lunch entrees $17.50-$29.50 before card fee,Soy flavor ground chicken over rice 17.50; Panko fried beef tongue cutlet 29.50,https://www.gochifusiontapas.com/wp-content/uploads/2026/02/cpt_menus.pdf
+L31,Gochi Japanese Fusion Tapas,Cupertino,2026-09-17,complete,schedule,verified,Tuesday-Saturday lunch 11:15 AM-1:15 PM; Mon closed; Sun dinner only,Tuesday 11:15-1:15/6:00-8:30,https://www.gochifusiontapas.com/cupertino-gochi-fusion-tapas/
+L31,Gochi Japanese Fusion Tapas,Cupertino,2026-09-17,complete,location,verified,"19980 Homestead Rd, Cupertino",19980 Homestead Rd,https://direct.chownow.com/order/23764/locations/34864
+L31,Gochi Japanese Fusion Tapas,Cupertino,2026-09-17,complete,hours,verified,Mon closed; Tue-Thu lunch 11:15-13:15 dinner 18:00-20:30; Fri-Sat lunch 11:15-13:15 dinner 17:30-21:00; Sun dinner 17:30-20:30,MON | CLOSED; Sunday 5:30-8:30,https://www.gochifusiontapas.com/cupertino-gochi-fusion-tapas/
+L76,Lotus Thai Bistro,Palo Alto,2026-09-17,partial,special,verified,Lunch Special / Thai Curry / Sauteed Style,LUNCH MENU; Lunch Special,https://drive.google.com/file/d/1q2tRpy3m6ns8K-2ctjFAJgh_MitJKDtc/view
+L76,Lotus Thai Bistro,Palo Alto,2026-09-17,partial,price,verified,Selected curries/sauteed dishes $16.99-$18.99; Murtabak $18.99,"Soft Tofu, Fried Tofu, Pork, or Chicken 16.99",https://drive.google.com/file/d/1q2tRpy3m6ns8K-2ctjFAJgh_MitJKDtc/view
+L76,Lotus Thai Bistro,Palo Alto,2026-09-17,partial,schedule,unknown,Monday-Saturday confirmed on official homepage; clock times not published,,
+L76,Lotus Thai Bistro,Palo Alto,2026-09-17,partial,location,verified,"425 California Avenue, Palo Alto, CA 94306","425 California Avenue, Palo Alto, CA 94306",https://drive.google.com/file/d/1q2tRpy3m6ns8K-2ctjFAJgh_MitJKDtc/view
+L76,Lotus Thai Bistro,Palo Alto,2026-09-17,partial,hours,unknown,Monday-Saturday lunch and dinner confirmed; operating clock times not published,,
+L184,St. John's Bar & Grill,Sunnyvale,2026-09-17,partial,special,verified,Tuesday Santa Maria Tri Tip Sandwich lunch special,TRITIP TUESDAY: Santa Maria Tri Tip Sandwich,https://stjohnsgrill.com/
+L184,St. John's Bar & Grill,Sunnyvale,2026-09-17,partial,price,verified,$14.50 regular 5oz; $16.95 half pound,Regular (5oz) $14.50 half pounder $16.95,https://stjohnsgrill.com/
+L184,St. John's Bar & Grill,Sunnyvale,2026-09-17,partial,schedule,unknown,Tuesday confirmed; lunch cutoff unknown,,
+L184,St. John's Bar & Grill,Sunnyvale,2026-09-17,partial,location,verified,"510 Lawrence Expy, Ste 110, Sunnyvale, CA 94085","510 Lawrence Expy. Ste.110 Sunnyvale, CA 94085",https://stjohnsgrill.com/
+L184,St. John's Bar & Grill,Sunnyvale,2026-09-17,partial,hours,conflicting,Sun-Mon closed; Tue-Wed 11 AM-9 PM; Fri 11 AM-10 PM; Sat 11:30 AM-9 PM. Thursday closes 9 PM in footer / 10 PM in summer banner,,
+L260,Sushi Roku,Palo Alto,2026-09-17,complete,special,verified,"Lunch Specials: sushi, donburi, fried rice and ramen",Lunch Specials,https://www.sushiroku.com/menu/lunch-specials-palo-alto/
+L260,Sushi Roku,Palo Alto,2026-09-17,complete,price,verified,Entrees $16-$28; add-ons excluded,Fried Rice $16; Sushi “Fix” Nigiri/Sashimi $28,https://www.sushiroku.com/menu/lunch-specials-palo-alto/
+L260,Sushi Roku,Palo Alto,2026-09-17,complete,schedule,verified,Monday-Friday 11:30 AM-3 PM,Monday-Friday 11:30AM-3:00PM,https://www.sushiroku.com/menu/lunch-specials-palo-alto/
+L260,Sushi Roku,Palo Alto,2026-09-17,complete,location,verified,"180 El Camino Real, Palo Alto, CA 94304","180 El Camino Real, Palo Alto, CA 94304",https://www.sushiroku.com/location/palo-alto/
+L260,Sushi Roku,Palo Alto,2026-09-17,complete,hours,verified,Sun-Thu 11:30 AM-9:30 PM; Fri-Sat 11:30 AM-10 PM,Sunday-Thursday | 11:30AM-9:30PM,https://www.sushiroku.com/location/palo-alto/
+L553,Chungdam,Santa Clara,2026-09-17,complete,special,verified,Lunch BBQ For Two / For Three,Lunch BBQ For Two ($60),https://chungdamsv.com/lunch-menu
+L553,Chungdam,Santa Clara,2026-09-17,complete,price,verified,$60 for two; $99 for three; upgrades +$35,Lunch BBQ For Three ($99),https://chungdamsv.com/lunch-menu
+L553,Chungdam,Santa Clara,2026-09-17,complete,schedule,verified,Monday-Friday 11:30 AM-2:15 PM,Only Available Mondays-Fridays 11:30am-2:15pm,https://chungdamsv.com/lunch-menu
+L553,Chungdam,Santa Clara,2026-09-17,complete,location,verified,"3180 El Camino Real, Santa Clara, CA 95051","3180 El Camino Real, Santa Clara, CA 95051",https://chungdamsv.com/lunch-menu
+L553,Chungdam,Santa Clara,2026-09-17,complete,hours,verified,"Daily lunch 11:30 AM-2:30 PM (last call 2:15); dinner Sun-Thu 5-9 PM, Fri-Sat 5-10 PM",( Open 7 Days ),https://chungdamsv.com/

@@ -26,11 +26,13 @@ jobs:
       - name: Validate the data and rebuild the browser bundle
         run: |
           python3 scripts/build_data.py
+          python3 scripts/build_research.py
+          python3 scripts/test_lunch_evidence.py
           python3 scripts/check_links.py --report
 
       - name: Fail if the committed bundle is stale
         run: |
-          if ! git diff --exit-code -- data/generated.js data/summary.md; then
+          if ! git diff --exit-code -- data/generated.js data/summary.md research.html data/research/pass24_evidence.csv; then
             echo "::error::data/generated.js or data/summary.md is out of date with data/*.json - run python3 scripts/build_data.py and commit the result."
             exit 1
           fi
@@ -40,12 +42,16 @@ jobs:
           node-version: "20"
 
       - name: Render every panel headlessly
-        run: node scripts/smoke_test.js
+        run: |
+          node scripts/smoke_test.js
+          node scripts/smoke_test.js lunch
+          node scripts/smoke_test.js transit
 
       - name: Assemble the site the same way Pages will serve it
         run: |
           test -f index.html
           test -f transit.html
+          test -f research.html
           test -f assets/app.js
           test -f assets/styles.css
           test -f data/generated.js

@@ -18,6 +18,7 @@ from collections import Counter
 import os
 import re
 import sys
+from lunch_evidence import evidence_errors
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA = os.path.join(ROOT, "data")
@@ -284,6 +285,10 @@ def main():
     validate_transit(outbound, "outbound")
     validate_transit(retplan, "return")
     validate_lunch(specials["entries"])
+    for entry in specials["entries"]:
+        if entry.get("deal_audit"):
+            for issue in evidence_errors(entry):
+                err(f"{entry['id']}: {issue}")
     validate_fares(fares)
 
     # search_protocol feeds the front-page summary sentence, where queries_run and

@@ -1,0 +1,36 @@
+{
+  "date": "2026-09-17",
+  "note": "Twenty executed web-search queries. Results are leads, not accepted evidence. These do not represent 100 new restaurant searches. Primary-source field audits are stored on seven existing master rows.",
+  "queries": [
+    {"query":"Cupertino restaurant \"lunch special\" menu price","outcome":"Home Eat priced menu surfaced; existing L03. Direct Toast read did not expose menu prices.","url":"https://homeeat.toast.site/order/home-eat-cupertino"},
+    {"query":"Sunnyvale restaurant \"lunch specials\" official menu","outcome":"St. John's primary page found; existing L184 upgraded with prices, but cutoff missing and Thursday hours conflict.","url":"https://stjohnsgrill.com/"},
+    {"query":"Santa Clara \"lunch special\" restaurant menu price","outcome":"Chungdam official lunch menu; existing L553 corrected, weekday-only terms and group portions recorded.","url":"https://chungdamsv.com/lunch-menu"},
+    {"query":"Campbell \"lunch special\" menu restaurant","outcome":"Yelp discovery list only; reviewer claims do not establish primary-source prices.","url":"https://www.yelp.com/search?find_desc=Lunch+Specials&find_loc=Campbell%2C+CA"},
+    {"query":"Los Gatos Saratoga \"lunch special\" menu","outcome":"Yelp lists existing leads; no new primary-source deal established.","url":"https://www.yelp.com/search?find_desc=Lunch+Specials&find_loc=Los+Gatos%2C+CA"},
+    {"query":"Los Altos Mountain View \"lunch special\" menu","outcome":"Name collision: Los Altos Taqueria Goose Creek menu does not establish a Los Altos, California location. Excluded.","url":"https://losaltosmexicangrill.com/goose-creek-los-altos-taqueria-food-menu"},
+    {"query":"Palo Alto Stanford \"lunch special\" restaurant menu","outcome":"2024 Reddit recommendations, not current official lunch prices.","url":"https://www.reddit.com/r/stanford/comments/1e3awrb/any_foods_recs_for_palo_alto_area/"},
+    {"query":"Cupertino new restaurant \"lunch special\" -site:yelp.com -site:reddit.com","outcome":"Home Eat found again; duplicate search hit, not new restaurant.","url":"https://homeeat.toast.site/order/home-eat-cupertino"},
+    {"query":"Sunnyvale \"lunch special\" menu -site:yelp.com -site:reddit.com -site:tripadvisor.com","outcome":"Sunnyvale Restaurant Week event page found; dates/current eligibility not verified. Pizza Hut Sunnyvale TX excluded.","url":"https://www.svcoc.org/sunnyvale-restaurant-week-where-to-dine/"},
+    {"query":"Campbell \"lunch specials\" -site:yelp.com -site:reddit.com menu price","outcome":"Campbell Hotel result is an Australian domain/event; excluded. Campbell Pizza aggregator menu does not establish lunch-only offer.","url":"https://thecampbellhotel.com.au/whats-on/15-lunch-specials/"},
+    {"query":"Palo Alto \"lunch special\" -site:yelp.com -site:reddit.com menu price","outcome":"Sushi Roku and Lotus Thai primary menus; both existing businesses with duplicate master rows. Consolidated and upgraded.","url":"https://www.sushiroku.com/menu/lunch-specials-palo-alto/"},
+    {"query":"Los Gatos \"lunch special\" -site:yelp.com -site:reddit.com menu price","outcome":"Wine Cellar luncheon entrees; no freshly verified lunch-special schedule. Not promoted.","url":"https://www.winecellarlosgatos.com/menus/"},
+    {"query":"Stanford shopping center \"lunch special\" official menu 2026","outcome":"Stanford's chain menu PDF is not evidence for Stanford Shopping Center; excluded pending location proof.","url":"https://stanfords.com/wp-content/uploads/2024/10/Stanfords-Lunch-Menu_10.24.pdf"},
+    {"query":"Los Altos \"lunch special\" -site:yelp.com -site:reddit.com -goose -mexicangrill","outcome":"Search still returned the Goose Creek name collision. No local promotion.","url":"https://losaltosmexicangrill.com/goose-creek-los-altos-taqueria-food-menu"},
+    {"query":"Mountain View \"lunch special\" official menu -site:yelp.com -site:reddit.com","outcome":"2018 local article is stale. Other Mountain View-named results lack California location verification; not promoted.","url":"https://www.ilovemv.org/new-blog-1/category/ten-places-for-lunch-for-less-than-10-bucks6"},
+    {"query":"Saratoga California \"lunch special\" official menu -site:yelp.com -site:reddit.com","outcome":"Saratoga County Restaurant Week is not evidence for Saratoga California; excluded.","url":"https://www.discoversaratoga.org/events/restaurant-week/"},
+    {"query":"West San Jose \"lunch special\" menu restaurant -site:yelp.com -site:reddit.com","outcome":"IHOP Miller Avenue generic all-day specials page gives no locally verified lunch price. Not promoted.","url":"https://restaurants.ihop.com/en-us/ca/san-jose/breakfast-1012-miller-ave-2133/specials"},
+    {"query":"Milpitas \"lunch special\" official menu -site:yelp.com -site:reddit.com","outcome":"Shabuya $22.99 surfaced in search extraction, existing L255. Direct page confirmed hours/address but did not expose lunch price text. No complete audit.","url":"https://www.shabuyarestaurant.com/milpitas-online"},
+    {"query":"Cupertino \"lunch combo\" \"menu\" official","outcome":"Benihana Power Lunch reverified. Local Kitchens Toast prices appear only in search extraction. School meals excluded from public restaurant list.","url":"https://www.benihana.com/locations/cupertino/"},
+    {"query":"Sunnyvale \"lunch specials\" \"menu\" \"2026\" -site:yelp.com -site:reddit.com","outcome":"Unaffiliated Red Lobster price guide and Pacific Catch reviews returned; neither establishes a new official local deal.","url":"https://www.opentable.com/r/pacific-catch-sunnyvale"}
+  ],
+  "follow_up": [
+    "Continue discovery toward 100 genuinely new business candidates; 20 queries and 100 existing-source network attempts do not fulfill that target.",
+    "Resolve approximately 20 remaining duplicate/address pairs from LUNCH-FLAG-142 with official location evidence before deleting or promoting.",
+    "Use the working page-reader fallback for the 100-target queue; direct sandbox HTTPS retrieval failed. Never treat HTTP success or a keyword match as verification.",
+    "Transcribe image menus and validate ordering prices for Home Eat, Local Kitchens, Shabuya and Pho Lyfe. Preserve search-extraction-only status until read directly.",
+    "Find official lunch clock times for Lotus Thai and St. John's. Resolve St. John's Thursday closing-time conflict.",
+    "Geocode verified locations with coordinate provenance. 681 archived rows currently lack coordinates; radius filters must not guess.",
+    "Add expiry/recheck policy for undated and old-but-still-linked menus. No source check guarantees future availability.",
+    "Keep trip-planning algorithms, transit schedules and fares out of restaurant-only work."
+  ]
+}
